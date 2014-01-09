@@ -1,0 +1,12 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/db/audit.cpp",
+                "src/mongo/db/audit.h"
+            ],
+            "comments": "# Stubs for auditing enterprise module"
+        }
+    ],
+    "title": "auditing"
+}

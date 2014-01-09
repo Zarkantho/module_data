@@ -1,0 +1,12 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/db/storage/data_file.cpp",
+                "src/mongo/db/storage/data_file.h"
+            ],
+            "comments": "# Interface to data file. Depends on journaling module. These are the actual data files on disk# \"<dbname>.#\". Handles file preallocation."
+        }
+    ],
+    "title": "mmap_file_interface"
+}

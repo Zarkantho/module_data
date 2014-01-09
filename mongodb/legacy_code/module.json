@@ -1,0 +1,12 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/db/d_globals.cpp",
+                "src/mongo/db/d_globals.h"
+            ],
+            "comments": "# Legacy files that should go away. Global class called \"d\" that used to contain a bunch of mongod# global variables."
+        }
+    ],
+    "title": "legacy_code"
+}

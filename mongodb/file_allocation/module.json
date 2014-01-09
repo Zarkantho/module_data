@@ -1,0 +1,12 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/util/file_allocator.cpp",
+                "src/mongo/util/file_allocator.h"
+            ],
+            "comments": "# File allocation library"
+        }
+    ],
+    "title": "file_allocation"
+}

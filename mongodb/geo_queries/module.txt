@@ -1,0 +1,23 @@
+######### geo_queries #########
+
+
+# GEO query code. TODO: describe the structure of this and how it interacts with the new index
+# system.
+
+src/mongo/db/geo/core.h
+src/mongo/db/geo/geoconstants.h
+src/mongo/db/geo/geoparser.cpp (mongod, mongos, and tools)
+src/mongo/db/geo/geoparser.h
+src/mongo/db/geo/geoparser_test.cpp (not built in anywhere)
+src/mongo/db/geo/geoquery.cpp (mongod, mongos, and tools)
+src/mongo/db/geo/geoquery.h
+src/mongo/db/geo/hash.cpp (mongod, mongos, and tools)
+src/mongo/db/geo/hash.h
+src/mongo/db/geo/hash_test.cpp (not built in anywhere)
+src/mongo/db/geo/haystack.cpp (mongod and tools)
+src/mongo/db/geo/s2common.cpp (mongod and tools)
+src/mongo/db/geo/s2common.h
+src/mongo/db/geo/shapes.cpp (mongod, mongos, and tools)
+src/mongo/db/geo/shapes.h
+
+

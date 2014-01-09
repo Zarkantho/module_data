@@ -1,0 +1,34 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/util/concurrency/rwlock.h",
+                "src/mongo/util/concurrency/rwlockimpl.cpp",
+                "src/mongo/util/concurrency/rwlockimpl.h",
+                "src/mongo/db/d_concurrency.cpp",
+                "src/mongo/db/d_concurrency.h",
+                "src/mongo/db/lockstat.cpp",
+                "src/mongo/db/lockstat.h",
+                "src/mongo/db/lockstate.cpp",
+                "src/mongo/db/lockstate.h"
+            ],
+            "comments": "# Core locks library. Only in mongod.## can you say a bit more? e.g. database locks are RWlocks, but what *are*## they exactly? any sort of fairness or other performance/\"how to use\" info?# TODO: There are also a bunch of concurrency related helpers in the UTILITIES section."
+        },
+        {
+            "files": [
+                "src/mongo/util/concurrency/spin_lock.cpp",
+                "src/mongo/util/concurrency/spin_lock.h",
+                "src/mongo/util/concurrency/spin_lock_test.cpp"
+            ],
+            "comments": "# Spin locks## can you give an example or two of where we tightly spin on locks?"
+        },
+        {
+            "files": [
+                "src/mongo/util/concurrency/synchronization.cpp",
+                "src/mongo/util/concurrency/synchronization.h"
+            ],
+            "comments": "# Condition Variables## why called 'synchronization' then? (what are these, really? can you give## an example?)"
+        }
+    ],
+    "title": "concurrency"
+}

@@ -1,0 +1,72 @@
+####### database_commands #######
+
+
+# Base class for mongodb commands. Has a big std::map with the keys of the command name and the
+# values as the Command itself. These are the commands that you run using
+# "db.$cmd.findOne({ "serverStatus" : true }).
+
+src/mongo/db/commands.cpp (mongod, mongos, and tools)
+src/mongo/db/commands.h
+
+# A bunch of commands for mongod. However, this ALSO has the definition of Command::execCommand for
+# mongod (the function that actually runs commands registered using the Command class, which gets
+# called whenever a query against the "$cmd" collection is made)
+
+src/mongo/db/dbcommands.cpp (mongod and tools)
+
+# Commands (run using db.$cmd.findOne(...))
+
+src/mongo/db/commands/apply_ops.cpp (mongod and tools)
+src/mongo/db/commands/authentication_commands.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/authentication_commands.h
+src/mongo/db/commands/cleanup_orphaned_cmd.cpp (mongod and tools)
+src/mongo/db/commands/collection_to_capped.cpp (mongod and tools)
+src/mongo/db/commands/connection_status.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/copydb.h
+src/mongo/db/commands/copydb_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/dbhash.cpp (mongod and tools)
+src/mongo/db/commands/dbhash.h
+src/mongo/db/commands/distinct.cpp (mongod and tools)
+src/mongo/db/commands/drop_indexes.cpp (mongod and tools)
+src/mongo/db/commands/fail_point_cmd.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/find_and_modify.cpp (mongod and tools)
+src/mongo/db/commands/find_and_modify.h
+src/mongo/db/commands/find_and_modify_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/geonear.cpp (mongod and tools)
+src/mongo/db/commands/get_last_error.cpp (mongod and tools)
+src/mongo/db/commands/group.cpp (mongod and tools)
+src/mongo/db/commands/hashcmd.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/index_stats.cpp (mongod and tools)
+src/mongo/db/commands/isself.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/merge_chunks_cmd.cpp (mongod and tools)
+src/mongo/db/commands/mr.cpp (mongod and tools)
+src/mongo/db/commands/mr.h
+src/mongo/db/commands/mr_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/parameters.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/pipeline_command.cpp (mongod and tools)
+src/mongo/db/commands/rename_collection.cpp (mongod and tools)
+src/mongo/db/commands/rename_collection.h
+src/mongo/db/commands/rename_collection_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/server_status.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/server_status.h
+src/mongo/db/commands/shutdown.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/shutdown.h
+src/mongo/db/commands/storage_details.cpp (mongod and tools)
+src/mongo/db/commands/test_commands.cpp (mongod and tools)
+src/mongo/db/commands/touch.cpp (mongod)
+src/mongo/db/commands/user_management_commands.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/validate.cpp (mongod and tools)
+src/mongo/db/compact.cpp (mongod and tools)
+src/mongo/db/dbcommands_admin.cpp (mongod and tools)
+src/mongo/db/dbcommands_generic.cpp (mongod, mongos, and tools)
+src/mongo/db/dbeval.cpp (mongod and tools)
+src/mongo/s/commands_admin.cpp (mongos)
+src/mongo/s/commands_public.cpp (mongos)
+src/mongo/db/driverHelpers.cpp (mongod and tools)
+
+# Commands + code for fsync of data files
+
+src/mongo/db/commands/fsync.cpp (mongod and tools)
+src/mongo/db/commands/fsync.h
+
+

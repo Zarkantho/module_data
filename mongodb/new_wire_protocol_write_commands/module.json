@@ -1,0 +1,80 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/db/commands/write_commands/write_commands.cpp",
+                "src/mongo/db/commands/write_commands/write_commands.h",
+                "src/mongo/db/commands/write_commands/batch_executor.cpp",
+                "src/mongo/db/commands/write_commands/batch_executor.h",
+                "src/mongo/db/commands/write_commands/write_commands_common.cpp",
+                "src/mongo/db/commands/write_commands/write_commands_common.h"
+            ],
+            "comments": "# New write commands for new wire protocol. The new \"write commands\" are all actual Commands run# using \"db.$cmd.findOne(...)\". The reason for this is that the old wire protocol didn't have# acknowledgements for anything BUT queries (which include commands), so everything is now a query# so we can get acknowledgements for writes (and not just for queries)."
+        },
+        {
+            "files": [
+                "src/mongo/s/commands/cluster_write_cmd.cpp",
+                "src/mongo/s/write_ops/batch_downconvert.cpp",
+                "src/mongo/s/write_ops/batch_downconvert.h",
+                "src/mongo/s/write_ops/batch_downconvert_test.cpp",
+                "src/mongo/s/write_ops/batch_upconvert.cpp",
+                "src/mongo/s/write_ops/batch_upconvert.h",
+                "src/mongo/s/write_ops/batch_upconvert_test.cpp",
+                "src/mongo/s/write_ops/batch_write_exec.cpp",
+                "src/mongo/s/write_ops/batch_write_exec.h",
+                "src/mongo/s/write_ops/batch_write_exec_test.cpp",
+                "src/mongo/s/write_ops/batch_write_op.cpp",
+                "src/mongo/s/write_ops/batch_write_op.h",
+                "src/mongo/s/write_ops/batch_write_op_test.cpp",
+                "src/mongo/s/write_ops/config_coordinator.cpp",
+                "src/mongo/s/write_ops/config_coordinator.h",
+                "src/mongo/s/write_ops/config_coordinator_test.cpp",
+                "src/mongo/s/write_ops/dbclient_safe_writer.cpp",
+                "src/mongo/s/write_ops/dbclient_safe_writer.h",
+                "src/mongo/s/write_ops/write_op.cpp",
+                "src/mongo/s/write_ops/write_op.h",
+                "src/mongo/s/write_ops/write_op_test.cpp"
+            ],
+            "comments": "# New wire protocol writes (in mongos)"
+        },
+        {
+            "files": [
+                "src/mongo/s/write_ops/batched_command_request.cpp",
+                "src/mongo/s/write_ops/batched_command_request.h",
+                "src/mongo/s/write_ops/batched_command_response.cpp",
+                "src/mongo/s/write_ops/batched_command_response.h",
+                "src/mongo/s/write_ops/batched_command_response_test.cpp",
+                "src/mongo/s/write_ops/batched_delete_document.cpp",
+                "src/mongo/s/write_ops/batched_delete_document.h",
+                "src/mongo/s/write_ops/batched_delete_request.cpp",
+                "src/mongo/s/write_ops/batched_delete_request.h",
+                "src/mongo/s/write_ops/batched_delete_request_test.cpp",
+                "src/mongo/s/write_ops/batched_insert_request.cpp",
+                "src/mongo/s/write_ops/batched_insert_request.h",
+                "src/mongo/s/write_ops/batched_insert_request_test.cpp",
+                "src/mongo/s/write_ops/batched_request_metadata.cpp",
+                "src/mongo/s/write_ops/batched_request_metadata.h",
+                "src/mongo/s/write_ops/batched_request_metadata_test.cpp",
+                "src/mongo/s/write_ops/batched_update_document.cpp",
+                "src/mongo/s/write_ops/batched_update_document.h",
+                "src/mongo/s/write_ops/batched_update_request.cpp",
+                "src/mongo/s/write_ops/batched_update_request.h",
+                "src/mongo/s/write_ops/batched_update_request_test.cpp",
+                "src/mongo/s/write_ops/batched_upsert_detail.cpp",
+                "src/mongo/s/write_ops/batched_upsert_detail.h",
+                "src/mongo/s/write_ops/wc_error_detail.cpp",
+                "src/mongo/s/write_ops/wc_error_detail.h",
+                "src/mongo/s/write_ops/write_error_detail.cpp",
+                "src/mongo/s/write_ops/write_error_detail.h"
+            ],
+            "comments": "# New wire protocol writes (in mongod)## why are these in s/ t"
+        },
+        {
+            "files": [
+                "src/mongo/db/wire_version.h"
+            ],
+            "comments": "# Header to enumerate the wire protocol version, along with the max and min supported versions## can you say a bit about who exactly cares (which components) about wire protocol version?"
+        }
+    ],
+    "title": "new_wire_protocol_write_commands"
+}

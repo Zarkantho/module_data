@@ -1,0 +1,10 @@
+###### mmap_file_interface #######
+
+
+# Interface to data file. Depends on journaling module. These are the actual data files on disk
+# "<dbname>.#". Handles file preallocation.
+
+src/mongo/db/storage/data_file.cpp (mongod and tools)
+src/mongo/db/storage/data_file.h
+
+

@@ -1,0 +1,10 @@
+######### legacy_code #########
+
+
+# Legacy files that should go away. Global class called "d" that used to contain a bunch of mongod
+# global variables.
+
+src/mongo/db/d_globals.cpp (mongod and tools)
+src/mongo/db/d_globals.h
+
+

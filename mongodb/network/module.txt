@@ -1,0 +1,35 @@
+####### network #######
+
+
+# Network library
+## can you say a few words about:
+## - what this does
+## - who uses it
+## - how to use it?
+
+src/mongo/util/net/listen.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/listen.h
+src/mongo/util/net/hostandport.h
+src/mongo/util/net/message.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/message.h
+src/mongo/util/net/message_port.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/message_port.h
+src/mongo/util/net/httpclient.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/httpclient.h
+src/mongo/util/net/sock.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/sock.h
+src/mongo/util/net/sock_test.cpp (not built in anywhere)
+src/mongo/util/net/socket_poll.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/socket_poll.h
+src/mongo/util/net/ssl_manager.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/net/ssl_manager.h
+src/mongo/util/net/ssl_options.cpp (mongod, mongos, and tools)
+src/mongo/util/net/ssl_options.h
+
+# Top level (?) of handling incoming network connections on mongod and mongos. Inherits from
+# Listener (listen.h).
+
+src/mongo/util/net/message_server.h
+src/mongo/util/net/message_server_port.cpp (mongod and mongos)
+
+

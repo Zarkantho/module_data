@@ -1,0 +1,17 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/mongo/db/dbwebserver.cpp",
+                "src/mongo/db/dbwebserver.h",
+                "src/mongo/db/restapi.cpp",
+                "src/mongo/db/restapi.h",
+                "src/mongo/db/clientlistplugin.cpp",
+                "src/mongo/util/net/miniwebserver.cpp",
+                "src/mongo/util/net/miniwebserver.h"
+            ],
+            "comments": "# Web access to the database, including rest, jsonp, and http."
+        }
+    ],
+    "title": "database_web_accesss"
+}

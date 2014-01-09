@@ -1,0 +1,99 @@
+###### unit_tests ######
+
+
+# Unittest framework (for both old style dbtests and new style tests)
+
+src/mongo/unittest/crutch.cpp (not built in anywhere)
+src/mongo/unittest/fixture_test.cpp (not built in anywhere)
+src/mongo/unittest/temp_dir.cpp (not built in anywhere)
+src/mongo/unittest/temp_dir.h
+src/mongo/unittest/temp_dir_test.cpp (not built in anywhere)
+src/mongo/unittest/unittest-inl.h
+src/mongo/unittest/unittest.cpp (not built in anywhere)
+src/mongo/unittest/unittest.h
+src/mongo/unittest/unittest_main.cpp (not built in anywhere)
+src/mongo/unittest/unittest_test.cpp (not built in anywhere)
+
+# Old style unittests ("test" binary)
+
+src/mongo/dbtests/accumulatortests.cpp (not built in anywhere)
+src/mongo/dbtests/basictests.cpp (not built in anywhere)
+src/mongo/dbtests/btreebuildertests.cpp (not built in anywhere)
+src/mongo/dbtests/btreetests.cpp (not built in anywhere)
+src/mongo/dbtests/btreetests.inl
+src/mongo/dbtests/chunk_manager_targeter_test.cpp (not built in anywhere)
+src/mongo/dbtests/chunktests.cpp (not built in anywhere)
+src/mongo/dbtests/clienttests.cpp (not built in anywhere)
+src/mongo/dbtests/commandtests.cpp (not built in anywhere)
+src/mongo/dbtests/config_server_fixture.cpp (not built in anywhere)
+src/mongo/dbtests/config_server_fixture.h
+src/mongo/dbtests/config_upgrade_tests.cpp (not built in anywhere)
+src/mongo/dbtests/counttests.cpp (not built in anywhere)
+src/mongo/dbtests/dbclient_multi_command_test.cpp (not built in anywhere)
+src/mongo/dbtests/dbhelper_tests.cpp (not built in anywhere)
+src/mongo/dbtests/dbtests.cpp (not built in anywhere)
+src/mongo/dbtests/dbtests.h
+src/mongo/dbtests/directclienttests.cpp (not built in anywhere)
+src/mongo/dbtests/documentsourcetests.cpp (not built in anywhere)
+src/mongo/dbtests/documenttests.cpp (not built in anywhere)
+src/mongo/dbtests/expressiontests.cpp (not built in anywhere)
+src/mongo/dbtests/extsorttests.cpp (not built in anywhere)
+src/mongo/dbtests/framework.cpp (not built in anywhere)
+src/mongo/dbtests/framework.h
+src/mongo/dbtests/framework_options.cpp (not built in anywhere)
+src/mongo/dbtests/framework_options.h
+src/mongo/dbtests/framework_options_init.cpp (not built in anywhere)
+src/mongo/dbtests/framework_options_test.cpp (not built in anywhere)
+src/mongo/dbtests/gle_test.cpp (not built in anywhere)
+src/mongo/dbtests/gridfstest.cpp (not built in anywhere)
+src/mongo/dbtests/indexcatalogtests.cpp (not built in anywhere)
+src/mongo/dbtests/indexupdatetests.cpp (not built in anywhere)
+src/mongo/dbtests/jsobjtests.cpp (not built in anywhere)
+src/mongo/dbtests/jsontests.cpp (not built in anywhere)
+src/mongo/dbtests/jstests.cpp (not built in anywhere)
+src/mongo/dbtests/keypatterntests.cpp (not built in anywhere)
+src/mongo/dbtests/macrotests.cpp (not built in anywhere)
+src/mongo/dbtests/matchertests.cpp (not built in anywhere)
+src/mongo/dbtests/merge_chunk_tests.cpp (not built in anywhere)
+src/mongo/dbtests/mmaptests.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_conn_registry.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_conn_registry.h
+src/mongo/dbtests/mock/mock_dbclient_connection.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_dbclient_connection.h
+src/mongo/dbtests/mock/mock_dbclient_cursor.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_dbclient_cursor.h
+src/mongo/dbtests/mock/mock_remote_db_server.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_remote_db_server.h
+src/mongo/dbtests/mock/mock_replica_set.cpp (not built in anywhere)
+src/mongo/dbtests/mock/mock_replica_set.h
+src/mongo/dbtests/mock_dbclient_conn_test.cpp (not built in anywhere)
+src/mongo/dbtests/mock_replica_set_test.cpp (not built in anywhere)
+src/mongo/dbtests/namespacetests.cpp (not built in anywhere)
+src/mongo/dbtests/oplogstarttests.cpp (not built in anywhere)
+src/mongo/dbtests/pdfiletests.cpp (not built in anywhere)
+src/mongo/dbtests/perf/perftest.cpp (not built in anywhere)
+src/mongo/dbtests/perftests.cpp (not built in anywhere)
+src/mongo/dbtests/pipelinetests.cpp (not built in anywhere)
+src/mongo/dbtests/profile_test.cpp (not built in anywhere)
+src/mongo/dbtests/query_multi_plan_runner.cpp (not built in anywhere)
+src/mongo/dbtests/query_single_solution_runner.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_and.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_collscan.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_fetch.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_limit_skip.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_merge_sort.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_sort.cpp (not built in anywhere)
+src/mongo/dbtests/query_stage_tests.cpp (not built in anywhere)
+src/mongo/dbtests/querytests.cpp (not built in anywhere)
+src/mongo/dbtests/queryutiltests.cpp (not built in anywhere)
+src/mongo/dbtests/replica_set_monitor_test.cpp (not built in anywhere)
+src/mongo/dbtests/replsettests.cpp (not built in anywhere)
+src/mongo/dbtests/repltests.cpp (not built in anywhere)
+src/mongo/dbtests/runner_registry.cpp (not built in anywhere)
+src/mongo/dbtests/sharding.cpp (not built in anywhere)
+src/mongo/dbtests/socktests.cpp (not built in anywhere)
+src/mongo/dbtests/stacktests.cpp (not built in anywhere)
+src/mongo/dbtests/threadedtests.cpp (not built in anywhere)
+src/mongo/dbtests/updatetests.cpp (not built in anywhere)
+
+

@@ -1,0 +1,67 @@
+###### tools ######
+
+
+# Tools and tool options. For most tools, just prepend "mongo" to get the name of the tool the file
+# is for. For example, "bridge.cpp" is the main for "mongobridge".
+
+src/mongo/tools/bridge.cpp (tools)
+src/mongo/tools/bsondump.cpp (tools)
+src/mongo/tools/bsondump_options.cpp (tools)
+src/mongo/tools/bsondump_options.h
+src/mongo/tools/bsondump_options_init.cpp (tools)
+src/mongo/tools/bsondump_options_test.cpp (not built in anywhere)
+src/mongo/tools/dump.cpp (tools)
+src/mongo/tools/export.cpp (tools)
+src/mongo/tools/files.cpp (tools)
+src/mongo/tools/import.cpp (tools)
+src/mongo/tools/mongobridge_options.cpp (tools)
+src/mongo/tools/mongobridge_options.h
+src/mongo/tools/mongobridge_options_init.cpp (tools)
+src/mongo/tools/mongobridge_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongodump_options.cpp (tools)
+src/mongo/tools/mongodump_options.h
+src/mongo/tools/mongodump_options_init.cpp (tools)
+src/mongo/tools/mongodump_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongoexport_options.cpp (tools)
+src/mongo/tools/mongoexport_options.h
+src/mongo/tools/mongoexport_options_init.cpp (tools)
+src/mongo/tools/mongoexport_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongofiles_options.cpp (tools)
+src/mongo/tools/mongofiles_options.h
+src/mongo/tools/mongofiles_options_init.cpp (tools)
+src/mongo/tools/mongofiles_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongoimport_options.cpp (tools)
+src/mongo/tools/mongoimport_options.h
+src/mongo/tools/mongoimport_options_init.cpp (tools)
+src/mongo/tools/mongoimport_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongooplog_options.cpp (tools)
+src/mongo/tools/mongooplog_options.h
+src/mongo/tools/mongooplog_options_init.cpp (tools)
+src/mongo/tools/mongooplog_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongorestore_options.cpp (tools)
+src/mongo/tools/mongorestore_options.h
+src/mongo/tools/mongorestore_options_init.cpp (tools)
+src/mongo/tools/mongorestore_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongostat_options.cpp (tools)
+src/mongo/tools/mongostat_options.h
+src/mongo/tools/mongostat_options_init.cpp (tools)
+src/mongo/tools/mongostat_options_test.cpp (not built in anywhere)
+src/mongo/tools/mongotop_options.cpp (tools)
+src/mongo/tools/mongotop_options.h
+src/mongo/tools/mongotop_options_init.cpp (tools)
+src/mongo/tools/mongotop_options_test.cpp (not built in anywhere)
+src/mongo/tools/oplog.cpp (tools)
+src/mongo/tools/restore.cpp (tools)
+src/mongo/tools/sniffer.cpp (tools)
+src/mongo/tools/stat.cpp (tools)
+src/mongo/tools/stat_util.cpp (tools)
+src/mongo/tools/stat_util.h
+src/mongo/tools/tool.cpp (tools)
+src/mongo/tools/tool.h
+src/mongo/tools/tool_logger.cpp (tools)
+src/mongo/tools/tool_logger.h
+src/mongo/tools/tool_options.cpp (tools)
+src/mongo/tools/tool_options.h
+src/mongo/tools/top.cpp (tools)
+
+

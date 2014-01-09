@@ -1,0 +1,29 @@
+####### javascript_libraries #######
+
+
+# v8 Javascript library files
+
+src/mongo/scripting/engine.cpp (mongod, mongos, and tools)
+src/mongo/scripting/engine.h
+src/mongo/scripting/engine_v8.cpp (mongod, mongos, and tools)
+src/mongo/scripting/engine_v8.h
+src/mongo/scripting/utils.cpp (mongod, mongos, and tools)
+src/mongo/scripting/v8_db.cpp (mongod, mongos, and tools)
+src/mongo/scripting/v8_db.h
+src/mongo/scripting/v8_deadline_monitor.h
+src/mongo/scripting/v8_deadline_monitor_test.cpp (not built in anywhere)
+src/mongo/scripting/v8_profiler.cpp (mongod, mongos, and tools)
+src/mongo/scripting/v8_profiler.h
+src/mongo/scripting/v8_utils.cpp (mongod, mongos, and tools)
+src/mongo/scripting/v8_utils.h
+
+# Benchrunner suite. See
+# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
+
+src/mongo/scripting/bench.cpp (mongod, mongos, and tools)
+src/mongo/scripting/bench.h
+src/mongo/scripting/bson_template_evaluator.cpp (mongod, mongos, and tools)
+src/mongo/scripting/bson_template_evaluator.h
+src/mongo/scripting/bson_template_evaluator_test.cpp (not built in anywhere)
+
+

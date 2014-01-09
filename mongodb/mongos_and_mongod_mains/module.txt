@@ -1,0 +1,28 @@
+###### mongos_and_mongod_mains #######
+
+
+# Main for mongod
+
+src/mongo/db/db.cpp (mongod)
+src/mongo/db/db.h
+
+# Mongod command line options
+
+src/mongo/db/mongod_options.cpp (mongod)
+src/mongo/db/mongod_options.h
+src/mongo/db/mongod_options_init.cpp (mongod)
+src/mongo/db/mongod_options_test.cpp (not built in anywhere)
+
+# Main for mongos
+
+src/mongo/s/server.cpp (mongos)
+src/mongo/s/server.h
+
+# Mongos command line options
+
+src/mongo/s/mongos_options.cpp (mongos)
+src/mongo/s/mongos_options.h
+src/mongo/s/mongos_options_init.cpp (mongos)
+src/mongo/s/mongos_options_test.cpp (not built in anywhere)
+
+

@@ -1,0 +1,10 @@
+###### mmap #######
+
+
+# mmap library (only depends on file allocation library)
+
+src/mongo/util/mmap.cpp (mongod and tools)
+src/mongo/util/mmap.h
+src/mongo/util/mmap_posix.cpp (mongod and tools)
+
+

@@ -1,0 +1,9 @@
+###### file_allocation #######
+
+
+# File allocation library
+
+src/mongo/util/file_allocator.cpp (mongod, mongos, cppclientdriver, and tools)
+src/mongo/util/file_allocator.h
+
+
