@@ -19,7 +19,7 @@ src/mongo/client/init.h
 # The Core C++ Client Driver Library
 ## who uses these, and why? maybe this description should be broken up into
 ## some components, e.g. what exactly is a 'dbclient', a 'dbclientcursor'
-## and a 'syncclusterconnection' t
+## and a 'syncclusterconnection' ?
 src/mongo/client/connpool.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/client/connpool.h
 src/mongo/client/constants.h

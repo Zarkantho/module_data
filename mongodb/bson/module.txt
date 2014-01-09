@@ -4,7 +4,7 @@
 # BSON library
 ## is this library standalone? (lots of third party stuff might want to make
 ## use of BSON) - what does it depend on?
-## why is some of this stuff in db/ t
+## why is some of this stuff in db/ ?
 src/mongo/bson/bson-inl.h
 src/mongo/bson/bson_builder_base.h
 src/mongo/bson/bson_db.h
@@ -43,7 +43,7 @@ src/mongo/db/json.h
 
 # Mutable BSON is built on top of the BSON library. It has a mutable, consistently sized vector of
 # the changes that have been made to an object.
-## is this part of libbson? does this depend on bson/* t
+## is this part of libbson? does this depend on bson/* ?
 src/mongo/bson/mutable/algorithm.h
 src/mongo/bson/mutable/const_element-inl.h
 src/mongo/bson/mutable/const_element.h

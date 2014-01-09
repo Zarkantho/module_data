@@ -38,7 +38,7 @@ src/mongo/s/write_ops/write_op.h
 src/mongo/s/write_ops/write_op_test.cpp (not built in anywhere)
 
 # New wire protocol writes (in mongod)
-## why are these in s/ t
+## why are these in s/ ?
 src/mongo/s/write_ops/batched_command_request.cpp (mongod, mongos, and tools)
 src/mongo/s/write_ops/batched_command_request.h
 src/mongo/s/write_ops/batched_command_response.cpp (mongod, mongos, and tools)

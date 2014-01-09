@@ -78,7 +78,7 @@ src/mongo/db/ops/update_result.h
 
 # Utilites for managing dotted field names such as "a.b.c". For example, has things like
 # "isPrefixOf".
-## is there any relationship between this and bson/ or bson/mutable t
+## is there any relationship between this and bson/ or bson/mutable ?
 src/mongo/db/field_ref.cpp (mongod, mongos, and tools)
 src/mongo/db/field_ref.h
 src/mongo/db/field_ref_set.cpp (mongod, mongos, and tools)

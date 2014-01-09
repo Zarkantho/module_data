@@ -18,7 +18,7 @@ src/mongo/db/range_deleter_test.cpp (not built in anywhere)
 src/mongo/db/range_preserver.h
 
 # Utilities for comparing ranges. Useful because our sharding is range based.
-## okay, but why in s/ t only used by sharding? seems weird that something
+## okay, but why in s/ ? only used by sharding? seems weird that something
 ## general like range arith is only in s/ but the more specific delete-range
 ## isn't.
 src/mongo/s/range_arithmetic.cpp (mongod, mongos, and tools)
