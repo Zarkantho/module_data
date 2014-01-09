@@ -33,7 +33,7 @@
                 "src/mongo/client/syncclusterconnection.cpp",
                 "src/mongo/client/syncclusterconnection.h"
             ],
-            "comments": "# The Core C++ Client Driver Library## who uses these, and why? maybe this description should be broken up into## some components, e.g. what exactly is a 'dbclient', a 'dbclientcursor'## and a 'syncclusterconnection' t"
+            "comments": "# The Core C++ Client Driver Library## who uses these, and why? maybe this description should be broken up into## some components, e.g. what exactly is a 'dbclient', a 'dbclientcursor'## and a 'syncclusterconnection' ?"
         },
         {
             "files": [

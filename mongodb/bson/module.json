@@ -38,7 +38,7 @@
                 "src/mongo/db/json.cpp",
                 "src/mongo/db/json.h"
             ],
-            "comments": "# BSON library## is this library standalone? (lots of third party stuff might want to make## use of BSON) - what does it depend on?## why is some of this stuff in db/ t"
+            "comments": "# BSON library## is this library standalone? (lots of third party stuff might want to make## use of BSON) - what does it depend on?## why is some of this stuff in db/ ?"
         },
         {
             "files": [
@@ -57,7 +57,7 @@
                 "src/mongo/bson/mutable/mutable_bson_test_utils.cpp",
                 "src/mongo/bson/mutable/mutable_bson_test_utils.h"
             ],
-            "comments": "# Mutable BSON is built on top of the BSON library. It has a mutable, consistently sized vector of# the changes that have been made to an object.## is this part of libbson? does this depend on bson/* t"
+            "comments": "# Mutable BSON is built on top of the BSON library. It has a mutable, consistently sized vector of# the changes that have been made to an object.## is this part of libbson? does this depend on bson/* ?"
         }
     ],
     "title": "bson"

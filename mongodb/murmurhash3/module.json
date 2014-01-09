@@ -1,0 +1,12 @@
+{
+    "groups": [
+        {
+            "files": [
+                "src/third_party/murmurhash3/MurmurHash3.cpp",
+                "src/third_party/murmurhash3/MurmurHash3.h"
+            ],
+            "comments": "# Third Party - Non cryptographic hashing library"
+        }
+    ],
+    "title": "murmurhash3"
+}

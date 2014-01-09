@@ -67,7 +67,7 @@
                 "src/mongo/s/write_ops/write_error_detail.cpp",
                 "src/mongo/s/write_ops/write_error_detail.h"
             ],
-            "comments": "# New wire protocol writes (in mongod)## why are these in s/ t"
+            "comments": "# New wire protocol writes (in mongod)## why are these in s/ ?"
         },
         {
             "files": [

@@ -24,7 +24,7 @@
                 "src/mongo/s/range_arithmetic.h",
                 "src/mongo/s/range_arithmetic_test.cpp"
             ],
-            "comments": "# Utilities for comparing ranges. Useful because our sharding is range based.## okay, but why in s/ t only used by sharding? seems weird that something## general like range arith is only in s/ but the more specific delete-range## isn't."
+            "comments": "# Utilities for comparing ranges. Useful because our sharding is range based.## okay, but why in s/ ? only used by sharding? seems weird that something## general like range arith is only in s/ but the more specific delete-range## isn't."
         },
         {
             "files": [
