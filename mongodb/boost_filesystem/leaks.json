@@ -1,0 +1,44 @@
+[
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::system_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v3/src/unique_path.o"
+    }, 
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::generic_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v3/src/operations.o"
+    }, 
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::system_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v3/src/operations.o"
+    }, 
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::system_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v2/src/v2_operations.o"
+    }, 
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::system_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v2/src/v2_path.o"
+    }, 
+    {
+        "sources": {
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
+        }, 
+        "symbol": "boost::system::generic_category()", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/filesystem/v2/src/v2_path.o"
+    }
+]

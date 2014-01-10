@@ -1,0 +1,50 @@
+[
+    {
+        "name": "mongo/s/s_only.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/client.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/curop.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/curop_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/kill_current_op.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongod.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongos.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/client_basic.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/s/client_info.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/clientcursor.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbhelpers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/introspect.o", 
+        "execs": []
+    }
+]

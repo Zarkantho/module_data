@@ -1,0 +1,18 @@
+[
+    {
+        "name": "mongo/db/dbwebserver.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/restapi.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/clientlistplugin.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/net/miniwebserver.o", 
+        "execs": []
+    }
+]

@@ -1,0 +1,282 @@
+[
+    {
+        "name": "mongo/util/paths.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/stats/counters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/stats/snapshots.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/stats/snapshots_webplugins.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/stats/timer_stats.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/stats/top.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/hasher.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/hasher_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/background.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/elapsed_tracker.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/progress_meter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/debug_util.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/thread_name.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/hex.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/background.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/background_job_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/memconcept.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/pch.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/assert_util.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/fail_point.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/fail_point_registry.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/fail_point_service.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/fail_point_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/intrusive_counter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/md5.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/md5_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/md5main.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/ntservice.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/auth_helpers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/safe_num.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/safe_num_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/signal_handlers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/stack_introspect.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/stacktrace.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/startup_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/string_map_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/stringutils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/stringutils_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/tcmalloc_server_status_section.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/text.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/text_startuptest.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/text_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/time_support.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/time_support_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/timer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/touch_pages.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/util.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/version.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/version_reporting.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/version_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/base64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/compress.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/mutexdebugger.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/task.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/thread_pool.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/descriptive_stats_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/exception_filter_win32.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/atomic_word_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/backtrace.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/bits_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/posix_fadvise.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/process_id.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/process_id_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/random.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/random_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/platform/strcasestr.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/platform_init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/processinfo.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/processinfo_darwin.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/processinfo_test.o", 
+        "execs": []
+    }
+]

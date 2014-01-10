@@ -1,0 +1,130 @@
+[
+    {
+        "name": "third_party/s2/base/int128.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/base/logging.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/base/stringprintf.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/base/strtoint.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s1angle.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s1interval.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2cap.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2cell.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2cellid.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2cellunion.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2edgeindex.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2edgeutil.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2latlng.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2latlngrect.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2loop.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2pointregion.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2polygon.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2polygonbuilder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2polyline.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2r2rect.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2region.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2regioncoverer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2regionintersection.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/s2regionunion.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/strings/split.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/strings/stringprintf.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/strings/strutil.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/util/coding/coder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/util/coding/varint.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/util/math/mathlimits.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/s2/util/math/mathutil.o", 
+        "execs": []
+    }
+]

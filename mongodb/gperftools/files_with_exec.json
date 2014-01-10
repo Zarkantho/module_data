@@ -1,0 +1,98 @@
+[
+    {
+        "name": "third_party/shim_allocator.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/atomicops-internals-x86.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/dynamic_annotations.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/logging.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/spinlock.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/spinlock_internal.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/base/sysinfo.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/central_freelist.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/internal_logging.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/malloc_extension.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/malloc_hook.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/maybe_threads.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/memfs_malloc.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/page_heap.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/sampler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/span.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/stack_trace_table.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/stacktrace.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/static_vars.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/symbolize.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/system-alloc.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/tcmalloc.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/gperftools-2.0/src/thread_cache.o", 
+        "execs": []
+    }
+]

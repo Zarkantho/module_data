@@ -1,0 +1,42 @@
+[
+    {
+        "name": "mongo/shell/dbshell.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/linenoise.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/linenoise_utf8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/mk_wcwidth.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_utils_extended.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_utils_launcher.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_options.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_options_init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/shell/shell_options_test.o", 
+        "execs": []
+    }
+]

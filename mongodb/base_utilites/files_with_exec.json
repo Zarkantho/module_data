@@ -1,0 +1,38 @@
+[
+    {
+        "name": "mongo/base/counter_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/owned_pointer_map_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/owned_pointer_vector_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/status.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/status_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/parse_number.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/parse_number_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/string_data.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/string_data_test.o", 
+        "execs": []
+    }
+]

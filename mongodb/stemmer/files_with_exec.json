@@ -1,0 +1,142 @@
+[
+    {
+        "name": "third_party/shim_stemmer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/libstemmer/libstemmer_utf8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/runtime/api.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/runtime/utilities.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_KOI8_R_russian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_danish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_dutch.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_english.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_finnish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_french.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_german.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_italian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_porter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_romanian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_russian.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_spanish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_swedish.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/libstemmer_c/src_c/stem_UTF_8_turkish.o", 
+        "execs": []
+    }
+]

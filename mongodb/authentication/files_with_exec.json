@@ -1,0 +1,154 @@
+[
+    {
+        "name": "mongo/db/auth/action_set.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/action_set_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/auth_index_d.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/auth_server_parameters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authorization_manager.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authorization_manager_global.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authorization_manager_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authorization_session.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authorization_session_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_documents_update_guard.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_manager_external_state.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_manager_external_state_d.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_manager_external_state_local.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_manager_external_state_mock.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_manager_external_state_s.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_session_external_state.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_session_external_state_d.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_session_external_state_s.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/authz_session_external_state_server_common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo_authentication_session.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/privilege.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/privilege_parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/privilege_parser_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/resource_pattern.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/role_graph.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/role_graph_builtin_roles.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/role_graph_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/role_graph_update.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/role_name.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/security_key.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_cache_invalidator_job.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_document_parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_document_parser_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_management_commands_parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_name.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_set.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/auth/user_set_test.o", 
+        "execs": []
+    }
+]

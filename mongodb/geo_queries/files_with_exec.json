@@ -1,0 +1,34 @@
+[
+    {
+        "name": "mongo/db/geo/geoparser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/geoparser_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/geoquery.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/hash.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/hash_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/haystack.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/s2common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/geo/shapes.o", 
+        "execs": []
+    }
+]

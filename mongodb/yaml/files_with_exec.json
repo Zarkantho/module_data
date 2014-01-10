@@ -1,0 +1,122 @@
+[
+    {
+        "name": "third_party/shim_yaml.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/binary.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/convert.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/directives.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/emit.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/emitfromevents.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/emitter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/emitterstate.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/emitterutils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/exp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/graphbuilder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/memory.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/node.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/nodebuilder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/nodeevents.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/null.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/ostream_wrapper.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/parse.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/regex.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/scanner.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/scanscalar.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/scantag.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/scantoken.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/simplekey.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/singledocparser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/stream.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/yaml-cpp-0.5.1/src/tag.o", 
+        "execs": []
+    }
+]

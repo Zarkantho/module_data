@@ -1,0 +1,30 @@
+[
+    {
+        "name": "mongo/util/concurrency/rwlockimpl.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/d_concurrency.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/lockstat.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/lockstate.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/spin_lock.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/spin_lock_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/concurrency/synchronization.o", 
+        "execs": []
+    }
+]

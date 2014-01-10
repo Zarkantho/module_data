@@ -1,0 +1,42 @@
+[
+    {
+        "name": "mongo/scripting/engine.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/engine_v8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/v8_db.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/v8_deadline_monitor_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/v8_profiler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/v8_utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/bench.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/bson_template_evaluator.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/scripting/bson_template_evaluator_test.o", 
+        "execs": []
+    }
+]

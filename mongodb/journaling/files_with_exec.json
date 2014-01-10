@@ -1,0 +1,42 @@
+[
+    {
+        "name": "mongo/util/alignedbuilder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur_commitjob.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur_journal.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur_preplogbuffer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur_recover.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dur_writetodatafiles.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/durop.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage/durable_mapped_file.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/logfile.o", 
+        "execs": []
+    }
+]

@@ -1,0 +1,514 @@
+[
+    {
+        "name": "third_party/shim_v8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/accessors.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/allocation.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/api.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/assembler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/ast.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/atomicops_internals_x86_gcc.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/bignum-dtoa.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/bignum.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/bootstrapper.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/builtins.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/cached-powers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/checks.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/circular-queue.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/code-stubs.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/codegen.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/compilation-cache.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/compiler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/contexts.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/conversions.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/counters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/cpu-profiler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/data-flow.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/date.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/dateparser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/debug-agent.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/debug.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/deoptimizer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/disassembler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/diy-fp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/dtoa.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/elements-kind.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/elements.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/execution.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/extensions/externalize-string-extension.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/extensions/gc-extension.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/extensions/statistics-extension.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/factory.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/fast-dtoa.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/fixed-dtoa.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/flags.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/frames.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/full-codegen.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/func-name-inferrer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/gdb-jit.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/global-handles.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/handles.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/heap-profiler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/heap.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/hydrogen-instructions.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/hydrogen.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/ic.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/incremental-marking.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/inspector.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/interface.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/interpreter-irregexp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/isolate.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/jsregexp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/lithium-allocator.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/lithium.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/liveedit.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/liveobjectlist.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/log-utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/log.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/mark-compact.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/messages.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/objects-printer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/objects-visiting.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/objects.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/once.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/optimizing-compiler-thread.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/platform-macos.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/platform-posix.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/preparse-data.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/preparser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/profile-generator.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/property.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/regexp-macro-assembler-irregexp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/regexp-macro-assembler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/regexp-stack.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/rewriter.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/runtime-profiler.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/runtime.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/safepoint-table.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/scanner-character-streams.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/scanner.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/scopeinfo.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/scopes.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/serialize.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/snapshot-common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/snapshot-empty.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/spaces.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/store-buffer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/string-search.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/string-stream.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/strtod.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/stub-cache.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/token.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/transitions.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/type-info.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/unicode.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/v8-counters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/v8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/v8conversions.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/v8threads.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/v8utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/variables.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/version.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/assembler-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/builtins-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/code-stubs-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/codegen-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/cpu-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/debug-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/deoptimizer-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/disasm-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/frames-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/full-codegen-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/ic-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/lithium-codegen-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/lithium-gap-resolver-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/lithium-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/macro-assembler-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/regexp-macro-assembler-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/x64/stub-cache-x64.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/v8/src/zone.o", 
+        "execs": []
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "mongo/db/startup_warnings.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/global_initializer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/global_initializer_registerer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/initializer.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/initializer_context.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/initializer_dependency_graph.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/initializer_dependency_graph_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/initializer_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/base/make_string_vector.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/initialize_server_global_state.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/constraints.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/environment.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/environment_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/option_description.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/option_section.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/options_parser.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/options_parser_init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/options_parser_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/startup_option_init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/startup_options.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/options_parser/value.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/cmdline_utils/censor_cmdline.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/cmdline_utils/censor_cmdline_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/util/password.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/server_options.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/server_options_helpers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/server_options_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/server_parameters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/server_parameters_test.o", 
+        "execs": []
+    }
+]

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "mongo/db/commands.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbcommands.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/apply_ops.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/authentication_commands.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/cleanup_orphaned_cmd.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/collection_to_capped.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/connection_status.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/copydb_common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/dbhash.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/distinct.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/drop_indexes.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/fail_point_cmd.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/find_and_modify.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/find_and_modify_common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/geonear.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/get_last_error.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/group.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/hashcmd.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/index_stats.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/isself.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/merge_chunks_cmd.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/mr.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/mr_common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/parameters.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/pipeline_command.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/rename_collection.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/rename_collection_common.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/server_status.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/shutdown.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/storage_details.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/test_commands.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/touch.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/user_management_commands.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/validate.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/compact.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbcommands_admin.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbcommands_generic.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbeval.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/s/commands_admin.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/s/commands_public.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/driverHelpers.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/commands/fsync.o", 
+        "execs": []
+    }
+]

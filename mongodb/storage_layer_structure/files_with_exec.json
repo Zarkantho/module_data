@@ -1,0 +1,114 @@
+[
+    {
+        "name": "mongo/db/namespace_string_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/namespace_details.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/database.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/database_holder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage/index_details.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage_options.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/btree/btree.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/btree/btree_stats.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/btree/btreebuilder.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/btree/key.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/btree/state.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/collection.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/collection_info_cache.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/collection_iterator.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/structure/record_store.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/cap.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/catalog/index_catalog.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/catalog/index_create.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/catalog/ondisk/namespace.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/catalog/ondisk/namespace_index.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/catalog/ondisk/namespace_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/diskloc_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage/record.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage/extent.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/storage/extent_manager.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/cloner.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/instance.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/pdfile.o", 
+        "execs": []
+    }
+]

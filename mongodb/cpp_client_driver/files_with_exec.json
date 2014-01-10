@@ -1,0 +1,98 @@
+[
+    {
+        "name": "mongo/client/clientAndShell.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/clientOnly.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/init.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/connpool.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/dbclient.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/dbclient_rs.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/dbclient_rs_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/dbclientcursor.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/scoped_db_conn_test.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/syncclusterconnection.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/dbmessage.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/db/lasterror.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/authTest.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/clientTest.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/first.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/httpClientTest.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/rs.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/second.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/tutorial.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/examples/whereExample.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongoperf.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/gridfs.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/parallel.o", 
+        "execs": []
+    }, 
+    {
+        "name": "mongo/client/sasl_client_authenticate.o", 
+        "execs": []
+    }
+]

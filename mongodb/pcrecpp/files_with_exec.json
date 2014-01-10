@@ -1,0 +1,106 @@
+[
+    {
+        "name": "third_party/shim_pcrecpp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_byte_order.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_chartables.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_compile.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_config.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_dfa_exec.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_exec.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_fullinfo.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_get.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_globals.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_maketables.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_newline.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_ord2utf8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_printint.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_refcount.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_scanner.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_string_utils.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_stringpiece.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_study.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_tables.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_ucd.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_valid_utf8.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_version.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcre_xclass.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcrecpp.o", 
+        "execs": []
+    }, 
+    {
+        "name": "third_party/pcre-8.30/pcreposix.o", 
+        "execs": []
+    }
+]
