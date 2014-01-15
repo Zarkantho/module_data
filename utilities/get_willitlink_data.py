@@ -84,7 +84,7 @@ def add_executable_data(graph, module_data):
     for module_name in module_data.keys():
         module_data[module_name]['files_with_exec'] = []
         for object_file in object_files(module_data[module_name]['files_flat']):
-            module_data[module_name]['files_with_exec'].append({ "name" : object_file_to_source_file(object_file), "execs" : get_executable_list(graph, [object_file]) })
+            module_data[module_name]['files_with_exec'].append({ "name" : object_file_to_source_file(graph, object_file), "execs" : get_executable_list(graph, [object_file]) })
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)
