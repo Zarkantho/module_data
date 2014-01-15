@@ -1,0 +1,28 @@
+# gperftools
+
+## Source Files
+
+- src/third\_party/gperftools-2.0/src/base/atomicops-internals-x86.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/base/dynamic\_annotations.c   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/base/logging.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/base/spinlock.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/base/spinlock\_internal.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/base/sysinfo.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/central\_freelist.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/common.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/internal\_logging.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/malloc\_extension.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/malloc\_hook.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/maybe\_threads.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/memfs\_malloc.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/page\_heap.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/sampler.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/span.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/stack\_trace\_table.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/stacktrace.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/static\_vars.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/symbolize.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/system-alloc.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/tcmalloc.cc   (mongod, tools, mongos)
+- src/third\_party/gperftools-2.0/src/thread\_cache.cc   (mongod, tools, mongos)
+- src/third\_party/shim\_allocator.cpp   (mongod, tools, mongos)

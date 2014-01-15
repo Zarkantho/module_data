@@ -1,0 +1,26 @@
+# full\_text\_search\_module
+
+## Source Files
+
+- src/mongo/db/fts/fts\_command.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_enabled.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_index\_format.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_index\_format\_test.cpp   ()
+- src/mongo/db/fts/fts\_language.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_language\_test.cpp   ()
+- src/mongo/db/fts/fts\_matcher.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_matcher\_test.cpp   ()
+- src/mongo/db/fts/fts\_query.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_query\_test.cpp   ()
+- src/mongo/db/fts/fts\_spec.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_spec\_test.cpp   ()
+- src/mongo/db/fts/fts\_util.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/fts\_util\_test.cpp   ()
+- src/mongo/db/fts/stemmer.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/stemmer\_test.cpp   ()
+- src/mongo/db/fts/stop\_words.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_test.cpp   ()
+- src/mongo/db/fts/tokenizer.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/tokenizer\_test.cpp   ()
+- src/mongo/db/interrupt\_status\_mongod.cpp   (mongod, tools)
+- src/mongo/s/interrupt\_status\_mongos.cpp   (mongod, tools, mongos)

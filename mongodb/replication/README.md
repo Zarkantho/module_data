@@ -1,0 +1,28 @@
+# replication
+
+## Source Files
+
+- src/mongo/db/repl/bgsync.cpp   (mongod, tools)
+- src/mongo/db/repl/consensus.cpp   (mongod, tools)
+- src/mongo/db/repl/health.cpp   (mongod, tools)
+- src/mongo/db/repl/heartbeat.cpp   (mongod, tools)
+- src/mongo/db/repl/manager.cpp   (mongod, tools)
+- src/mongo/db/repl/master\_slave.cpp   (mongod, tools)
+- src/mongo/db/repl/oplog.cpp   (mongod, tools)
+- src/mongo/db/repl/oplogreader.cpp   (mongod, tools)
+- src/mongo/db/repl/repl\_reads\_ok.cpp   (mongod, tools)
+- src/mongo/db/repl/repl\_start.cpp   (mongod, tools)
+- src/mongo/db/repl/replication\_server\_status.cpp   (mongod, tools)
+- src/mongo/db/repl/replset\_commands.cpp   (mongod, tools)
+- src/mongo/db/repl/replset\_web\_handler.cpp   (mongod)
+- src/mongo/db/repl/resync.cpp   (mongod, tools)
+- src/mongo/db/repl/rs.cpp   (mongod, tools)
+- src/mongo/db/repl/rs\_config.cpp   (mongod, tools)
+- src/mongo/db/repl/rs\_initialsync.cpp   (mongod, tools)
+- src/mongo/db/repl/rs\_initiate.cpp   (mongod, tools)
+- src/mongo/db/repl/rs\_rollback.cpp   (mongod, tools)
+- src/mongo/db/repl/rs\_sync.cpp   (mongod, tools)
+- src/mongo/db/repl/sync.cpp   (mongod, tools)
+- src/mongo/db/repl/sync\_source\_feedback.cpp   (mongod, tools)
+- src/mongo/db/repl/write\_concern.cpp   (mongod, tools)
+- src/mongo/db/write\_concern.cpp   (mongod, tools)

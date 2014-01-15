@@ -1,0 +1,28 @@
+# cpp\_client\_driver
+
+## Source Files
+
+- src/mongo/client/clientAndShell.cpp   (cppclientdriver)
+- src/mongo/client/clientOnly.cpp   (cppclientdriver)
+- src/mongo/client/connpool.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/dbclient.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/dbclient\_rs.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/dbclient\_rs\_test.cpp   ()
+- src/mongo/client/dbclientcursor.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/examples/authTest.cpp   (cppclientdriver)
+- src/mongo/client/examples/clientTest.cpp   (cppclientdriver)
+- src/mongo/client/examples/first.cpp   (cppclientdriver)
+- src/mongo/client/examples/httpClientTest.cpp   (cppclientdriver)
+- src/mongo/client/examples/mongoperf.cpp   (tools)
+- src/mongo/client/examples/rs.cpp   (cppclientdriver)
+- src/mongo/client/examples/second.cpp   (cppclientdriver)
+- src/mongo/client/examples/tutorial.cpp   (cppclientdriver)
+- src/mongo/client/examples/whereExample.cpp   (cppclientdriver)
+- src/mongo/client/gridfs.cpp   (cppclientdriver, tools)
+- src/mongo/client/init.cpp   (cppclientdriver)
+- src/mongo/client/parallel.cpp   (mongod, tools, mongos)
+- src/mongo/client/sasl\_client\_authenticate.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/scoped\_db\_conn\_test.cpp   ()
+- src/mongo/client/syncclusterconnection.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/db/dbmessage.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/db/lasterror.cpp   (mongod, cppclientdriver, tools, mongos)
