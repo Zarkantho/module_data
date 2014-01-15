@@ -1,28 +1,52 @@
 # unit\_tests
 
-## Source Files
+# Module Groups
+
+-------------
+
+Unittest framework (for both old style dbtests and new style tests)
+
+- src/mongo/unittest/crutch.cpp   ()
+- src/mongo/unittest/fixture\_test.cpp   ()
+- src/mongo/unittest/temp\_dir.cpp   ()
+- src/mongo/unittest/temp\_dir.h
+- src/mongo/unittest/temp\_dir\_test.cpp   ()
+- src/mongo/unittest/unittest-inl.h
+- src/mongo/unittest/unittest.cpp   ()
+- src/mongo/unittest/unittest.h
+- src/mongo/unittest/unittest\_main.cpp   ()
+- src/mongo/unittest/unittest\_test.cpp   ()
+
+-------------
+
+Old style unittests ("test" binary)
 
 - src/mongo/dbtests/accumulatortests.cpp   ()
 - src/mongo/dbtests/basictests.cpp   ()
 - src/mongo/dbtests/btreebuildertests.cpp   ()
 - src/mongo/dbtests/btreetests.cpp   ()
+- src/mongo/dbtests/btreetests.inl
 - src/mongo/dbtests/chunk\_manager\_targeter\_test.cpp   ()
 - src/mongo/dbtests/chunktests.cpp   ()
 - src/mongo/dbtests/clienttests.cpp   ()
 - src/mongo/dbtests/commandtests.cpp   ()
 - src/mongo/dbtests/config\_server\_fixture.cpp   ()
+- src/mongo/dbtests/config\_server\_fixture.h
 - src/mongo/dbtests/config\_upgrade\_tests.cpp   ()
 - src/mongo/dbtests/counttests.cpp   ()
 - src/mongo/dbtests/dbclient\_multi\_command\_test.cpp   ()
 - src/mongo/dbtests/dbhelper\_tests.cpp   ()
 - src/mongo/dbtests/dbtests.cpp   ()
+- src/mongo/dbtests/dbtests.h
 - src/mongo/dbtests/directclienttests.cpp   ()
 - src/mongo/dbtests/documentsourcetests.cpp   ()
 - src/mongo/dbtests/documenttests.cpp   ()
 - src/mongo/dbtests/expressiontests.cpp   ()
 - src/mongo/dbtests/extsorttests.cpp   ()
 - src/mongo/dbtests/framework.cpp   ()
+- src/mongo/dbtests/framework.h
 - src/mongo/dbtests/framework\_options.cpp   ()
+- src/mongo/dbtests/framework\_options.h
 - src/mongo/dbtests/framework\_options\_init.cpp   ()
 - src/mongo/dbtests/framework\_options\_test.cpp   ()
 - src/mongo/dbtests/gle\_test.cpp   ()
@@ -38,10 +62,15 @@
 - src/mongo/dbtests/merge\_chunk\_tests.cpp   ()
 - src/mongo/dbtests/mmaptests.cpp   ()
 - src/mongo/dbtests/mock/mock\_conn\_registry.cpp   ()
+- src/mongo/dbtests/mock/mock\_conn\_registry.h
 - src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp   ()
+- src/mongo/dbtests/mock/mock\_dbclient\_connection.h
 - src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp   ()
+- src/mongo/dbtests/mock/mock\_dbclient\_cursor.h
 - src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp   ()
+- src/mongo/dbtests/mock/mock\_remote\_db\_server.h
 - src/mongo/dbtests/mock/mock\_replica\_set.cpp   ()
+- src/mongo/dbtests/mock/mock\_replica\_set.h
 - src/mongo/dbtests/mock\_dbclient\_conn\_test.cpp   ()
 - src/mongo/dbtests/mock\_replica\_set\_test.cpp   ()
 - src/mongo/dbtests/namespacetests.cpp   ()
@@ -71,10 +100,3 @@
 - src/mongo/dbtests/stacktests.cpp   ()
 - src/mongo/dbtests/threadedtests.cpp   ()
 - src/mongo/dbtests/updatetests.cpp   ()
-- src/mongo/unittest/crutch.cpp   ()
-- src/mongo/unittest/fixture\_test.cpp   ()
-- src/mongo/unittest/temp\_dir.cpp   ()
-- src/mongo/unittest/temp\_dir\_test.cpp   ()
-- src/mongo/unittest/unittest.cpp   ()
-- src/mongo/unittest/unittest\_main.cpp   ()
-- src/mongo/unittest/unittest\_test.cpp   ()

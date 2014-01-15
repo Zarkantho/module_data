@@ -1,5 +1,10 @@
 # file\_allocation
 
-## Source Files
+# Module Groups
 
-- src/mongo/util/file\_allocator.cpp   (mongod, cppclientdriver, tools, mongos)
+-------------
+
+File allocation library
+
+- src/mongo/util/file\_allocator.cpp   (cppclientdriver)
+- src/mongo/util/file\_allocator.h

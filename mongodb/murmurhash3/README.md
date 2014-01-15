@@ -1,5 +1,10 @@
 # murmurhash3
 
-## Source Files
+# Module Groups
 
-- src/third\_party/murmurhash3/MurmurHash3.cpp   (mongod, cppclientdriver, tools, mongos)
+-------------
+
+Third Party - Non cryptographic hashing library
+
+- src/third\_party/murmurhash3/MurmurHash3.cpp   (mongod, tools, mongos)
+- src/third\_party/murmurhash3/MurmurHash3.h

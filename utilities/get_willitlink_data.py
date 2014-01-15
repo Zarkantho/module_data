@@ -44,23 +44,37 @@ def load_graph(data_file):
         g = MultiGraph(timers=False).load(data_file)
     return g
 
-def object_files(source_files):
+# The following four *_file_to_*_file(s) functions convert to/from *.o and *.cpp files.  They are
+# slow, but work.
+# TODO: Precompute source->object and object->source maps
+
+def source_file_to_object_file(graph, source_file):
     source_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party)).*\.)c[pc]?[p]?")
+    source_match = source_match_regex.match(source_file)
+    if source_match is None:
+        return None
+    for i in graph.files:
+        if i.endswith(source_match.group(1) + "o"):
+            return i
+
+def source_files_to_object_files(graph, source_files):
     object_files = []
     for source_file in source_files:
-        source_match = source_match_regex.match(source_file)
-        if source_match:
-            object_files.append(source_match.group(1) + "o")
+        object_file = source_file_to_object_file(graph, source_file)
+        if object_file is not None:
+            object_files.append(object_file)
     return object_files
 
 def object_file_to_source_file(graph, object_file):
-    object_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party)).+\.)o$")
+    print object_file
+    object_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party))\/.+\.)o$")
     object_match = object_match_regex.match(object_file)
     for i in graph.files:
         if i.endswith(object_match.group(1) + "cpp") or i.endswith(object_match.group(1) + "c") or i.endswith(object_match.group(1) + "cc"):
+            print i
             return i
 
-def source_files(graph, object_files):
+def object_files_to_source_files(graph, object_files):
     source_files = []
     for object_file in object_files:
         source_files.append(object_file_to_source_file(graph, object_file))
@@ -68,31 +82,44 @@ def source_files(graph, object_files):
 
 def add_interface_data(graph, module_data):
     for module_name in module_data.keys():
-        module_data[module_name]['interface'] = find_interface(graph, object_files(module_data[module_name]['files_flat']))
+        module_data[module_name]['interface'] = find_interface(graph, source_files_to_object_files(graph, module_data[module_name]['files_flat']))
         for interface_object in module_data[module_name]['interface']:
-            interface_object['object'] = source_files(graph, [interface_object['object']])[0]
-            interface_object['used_by'] = source_files(graph, interface_object['used_by'])
+            interface_object['object'] = object_files_to_source_files(graph, [interface_object['object']])[0]
+            interface_object['used_by'] = object_files_to_source_files(graph, interface_object['used_by'])
 
 def add_leak_data(graph, module_data):
     for module_name in module_data.keys():
-        module_data[module_name]['leaks'] = resolve_leak_info(graph, object_files(module_data[module_name]['files_flat']), 1, None, [])
+        module_data[module_name]['leaks'] = resolve_leak_info(graph, source_files_to_object_files(graph, module_data[module_name]['files_flat']), 1, None, [])
         for leak_object in module_data[module_name]['leaks']:
-            leak_object['object'] = source_files(graph, [leak_object['object']])[0]
-            leak_object['sources'] = source_files(graph, leak_object['sources'].keys())
+            leak_object['object'] = object_files_to_source_files(graph, [leak_object['object']])[0]
+            leak_object['sources'] = object_files_to_source_files(graph, leak_object['sources'].keys())
 
 def add_executable_data(graph, module_data):
     for module_name in module_data.keys():
         module_data[module_name]['files_with_exec'] = []
-        for object_file in object_files(module_data[module_name]['files_flat']):
-            module_data[module_name]['files_with_exec'].append({ "name" : object_file_to_source_file(graph, object_file), "execs" : get_executable_list(graph, [object_file]) })
+        for source_file in module_data[module_name]['files_flat']:
+            object_file = source_file_to_object_file(graph, source_file)
+            executable_list = []
+            if object_file is not None:
+                executable_list = get_executable_list(graph, object_file)
+                module_data[module_name]['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
 
 # Builds a map of source files to modules
-def build_reverse_file_map(module_data):
-    reverse_file_map = {}
+def build_file_to_module_map(module_data):
+    file_to_module = {}
     for module_name in module_data.keys():
         for module_file in module_data[module_name]['files_flat']:
-            reverse_file_map[module_file] = module_name
-    return reverse_file_map
+            file_to_module[module_file] = module_name
+    return file_to_module
+
+# Builds a map of source files to executables
+def build_file_to_executables_map(module_data):
+    file_to_executables = {}
+    for module_name in module_data.keys():
+        for file_with_exec in module_data[module_name]['files_with_exec']:
+            if (file_with_exec["name"] is not None):
+                file_to_executables[file_with_exec['name']] = file_with_exec['execs']
+    return file_to_executables
 
 # Simplifies the list of executables into something more readable.
 #
@@ -125,7 +152,7 @@ def get_exec_digest(exec_list):
 
 # Outputs a README.md file for each module with some useful information
 def output_readme_files_for_modules(modules_directory, module_data):
-    reverse_file_map = build_reverse_file_map(module_data)
+    file_to_executables = build_file_to_executables_map(module_data)
     module_directories = os.listdir(modules_directory)
     for module_name in module_directories:
         module_path = os.path.join(modules_directory, module_name)
@@ -135,13 +162,24 @@ def output_readme_files_for_modules(modules_directory, module_data):
             # First, the title of the module
             f.write("# " + module_name.replace("_", "\\_") + "\n\n")
 
-            # Next, the list of the files in the module (with executable list)
-            f.write("## Source Files" + "\n\n")
-            print sorted(module_data[module_name]['files_with_exec'], key=lambda file_with_exec: file_with_exec["name"])
-            for file_with_exec in sorted(module_data[module_name]['files_with_exec'], key=lambda file_with_exec: file_with_exec["name"]):
-                if (file_with_exec["name"] is not None):
-                    executable_list = "(" + ", ".join(get_exec_digest(file_with_exec['execs'])) + ")"
-                    f.write("- " + file_with_exec["name"].replace("_", "\\_") + "   " + executable_list + "\n")
+            f.write("# Module Groups\n")
+
+            # Do the following analysis for each group separately
+            for module_group in module_data[module_name]['groups']:
+
+                # Horizontal rule
+                f.write("\n-------------\n\n")
+
+                # Comments for this group of files
+                f.write(module_group["comments"].replace("#", " ").replace("_", "\\_").lstrip() + "\n\n")
+
+                for file_name in module_group["files"]:
+                    f.write("- " + file_name.replace("_", "\\_"))
+                    if file_name in file_to_executables:
+                        file_to_executables[file_name]
+                        f.write("   (" + ", ".join(get_exec_digest(file_to_executables[file_name])) + ")\n")
+                    else:
+                        f.write("\n")
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)
