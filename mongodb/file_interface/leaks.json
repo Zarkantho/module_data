@@ -1,174 +1,174 @@
 [
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/concurrency/thread_name.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/concurrency/thread_name.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp", 
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
         "symbol": "mongo::getThreadName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logger.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logger.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logger.cpp", 
+            "src/mongo/logger/logger.cpp"
+        ], 
         "symbol": "mongo::logger::globalLogManager()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
-        }, 
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
         "symbol": "boost::system::system_category()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
-        }, 
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
         "symbol": "boost::system::generic_category()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/log.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/log.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/log.cpp", 
+            "src/mongo/util/log.cpp"
+        ], 
         "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logstream_builder.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logstream_builder.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/concurrency/thread_name.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/concurrency/thread_name.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp", 
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
         "symbol": "mongo::getThreadName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/logger/logger.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/logger/logger.o": {}
-        }, 
+        "sources": [
+            "src/mongo/logger/logger.cpp", 
+            "src/mongo/logger/logger.cpp"
+        ], 
         "symbol": "mongo::logger::globalLogManager()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
-        }, 
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
         "symbol": "boost::system::system_category()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/boost/libs/system/src/error_code.o": {}
-        }, 
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
         "symbol": "boost::system::generic_category()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/log.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/log.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/log.cpp", 
+            "src/mongo/util/log.cpp"
+        ], 
         "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o"
+        "object": "src/mongo/util/file.cpp"
     }
 ]

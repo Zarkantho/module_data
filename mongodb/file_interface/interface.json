@@ -1,186 +1,186 @@
 [
     {
         "symbol": "mongo::File::write(unsigned long long, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::File()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::open(char const*, bool, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::truncate(unsigned long long)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::~File()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::is_open() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::freeSpace(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pdfile.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/pdfile.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::fsync() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::len()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::read(unsigned long long, char*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::write(unsigned long long, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::File()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::open(char const*, bool, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::truncate(unsigned long long)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::~File()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/dbshell.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/durop.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::is_open() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::freeSpace(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pdfile.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/pdfile.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::fsync() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/durop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::len()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::read(unsigned long long, char*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/file.o", 
+        "object": "src/mongo/util/file.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/engine.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o"
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/db/dur_journal.cpp"
         ]
     }
 ]

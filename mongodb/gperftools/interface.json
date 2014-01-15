@@ -1,9 +1,9 @@
 [
     {
         "symbol": "MallocExtension::instance()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/gperftools-2.0/src/malloc_extension.o", 
+        "object": "src/third_party/gperftools-2.0/src/malloc_extension.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/tcmalloc_server_status_section.o"
+            "src/mongo/util/tcmalloc_server_status_section.cpp"
         ]
     }
 ]

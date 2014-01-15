@@ -1,31 +1,31 @@
 [
     {
         "symbol": "mongo::webServerThread(mongo::AdminAccess const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
+        "object": "src/mongo/db/dbwebserver.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DbWebHandler::DbWebHandler(std::string const&, double, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
+        "object": "src/mongo/db/dbwebserver.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/replset_web_handler.o"
+            "src/mongo/db/repl/replset_web_handler.cpp"
         ]
     }, 
     {
         "symbol": "mongo::WebStatusPlugin::WebStatusPlugin(std::string const&, double, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
+        "object": "src/mongo/db/dbwebserver.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/stats/snapshots_webplugins.o"
+            "src/mongo/db/stats/snapshots_webplugins.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::RestAdminAccess", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/restapi.o", 
+        "object": "src/mongo/db/restapi.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o"
+            "src/mongo/db/db.cpp"
         ]
     }
 ]

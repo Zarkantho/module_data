@@ -1,42 +1,237 @@
 [
     {
-        "name": "mongo/util/net/listen.o", 
+        "name": "src/mongo/util/net/listen.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/message.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/message_port.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/httpclient.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/sock.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/sock_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/util/net/message.o", 
-        "execs": []
+        "name": "src/mongo/util/net/socket_poll.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/util/net/message_port.o", 
-        "execs": []
+        "name": "src/mongo/util/net/ssl_manager.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/util/net/httpclient.o", 
-        "execs": []
+        "name": "src/mongo/util/net/ssl_options.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/util/net/sock.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/net/sock_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/net/socket_poll.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/net/ssl_manager.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/net/ssl_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/net/message_server_port.o", 
-        "execs": []
+        "name": "src/mongo/util/net/message_server_port.cpp", 
+        "execs": [
+            "mongod", 
+            "mongos"
+        ]
     }
 ]

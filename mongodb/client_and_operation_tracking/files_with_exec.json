@@ -1,50 +1,200 @@
 [
     {
-        "name": "mongo/s/s_only.o", 
+        "name": "src/mongo/s/s_only.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/client.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/curop.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/curop_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/client.o", 
-        "execs": []
+        "name": "src/mongo/db/kill_current_op.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/curop.o", 
-        "execs": []
+        "name": "src/mongo/db/interrupt_status_mongod.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/curop_test.o", 
-        "execs": []
+        "name": "src/mongo/s/interrupt_status_mongos.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/kill_current_op.o", 
-        "execs": []
+        "name": "src/mongo/db/client_basic.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongod.o", 
-        "execs": []
+        "name": "src/mongo/s/client_info.cpp", 
+        "execs": [
+            "mongos"
+        ]
     }, 
     {
-        "name": "mongos.o", 
-        "execs": []
+        "name": "src/mongo/db/clientcursor.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/client_basic.o", 
-        "execs": []
+        "name": "src/mongo/db/dbhelpers.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/s/client_info.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/clientcursor.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/dbhelpers.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/introspect.o", 
-        "execs": []
+        "name": "src/mongo/db/introspect.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }
 ]

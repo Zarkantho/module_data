@@ -1,51 +1,51 @@
 [
     {
         "symbol": "snappy::MaxCompressedLength(unsigned long)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/compress.o"
+            "src/mongo/util/compress.cpp"
         ]
     }, 
     {
         "symbol": "snappy::Compress(char const*, unsigned long, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/compress.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_sort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/extsort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_group.o"
+            "src/mongo/util/compress.cpp", 
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/extsort.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp"
         ]
     }, 
     {
         "symbol": "snappy::RawCompress(char const*, unsigned long, char*, unsigned long*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/compress.o"
+            "src/mongo/util/compress.cpp"
         ]
     }, 
     {
         "symbol": "snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_sort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/extsort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_group.o"
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/extsort.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp"
         ]
     }, 
     {
         "symbol": "snappy::Uncompress(char const*, unsigned long, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/compress.o"
+            "src/mongo/util/compress.cpp"
         ]
     }, 
     {
         "symbol": "snappy::RawUncompress(char const*, unsigned long, char*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/snappy/snappy.o", 
+        "object": "src/third_party/snappy/snappy.cc", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_sort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/extsort.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/document_source_group.o"
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/extsort.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp"
         ]
     }
 ]

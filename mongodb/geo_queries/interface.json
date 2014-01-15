@@ -1,427 +1,427 @@
 [
     {
         "symbol": "mongo::GeometryContainer::parseFrom(mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_geo.o"
+            "src/mongo/db/matcher/expression_geo.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoQuery::getRegion() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/index_bounds_builder.o"
+            "src/mongo/db/query/index_bounds_builder.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoQuery::satisfiesPredicate(mongo::GeometryContainer const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_geo.o"
+            "src/mongo/db/matcher/expression_geo.cpp"
         ]
     }, 
     {
         "symbol": "mongo::NearQuery::parseFrom(mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_parser_geo.o"
+            "src/mongo/db/matcher/expression_parser_geo.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeometryContainer::hasS2Region() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/planner_ixselect.o"
+            "src/mongo/db/query/planner_ixselect.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeometryContainer::hasFlatRegion() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/planner_ixselect.o"
+            "src/mongo/db/query/planner_ixselect.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoQuery::parseFrom(mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoquery.o", 
+        "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_parser_geo.o"
+            "src/mongo/db/matcher/expression_parser_geo.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::Box(mongo::Point, mongo::Point)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Point::Point(mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/haystack_access_method.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Polygon::contains(mongo::Point const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::inside(mongo::Point, double) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::onBoundary(mongo::Point, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::Box(double, double, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o"
+            "src/mongo/db/exec/2dnear.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::fudge(double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Polygon::Polygon()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::intersects(mongo::Box const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::center() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Polygon::bounds()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::maxDim() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::checkEarthBounds(mongo::Point const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::distanceWithin(mongo::Point const&, mongo::Point const&, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::distance(mongo::Point const&, mongo::Point const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/haystack_access_method.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::Box()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Polygon::contains(mongo::Point const&, double) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Point::Point(mongo::BSONElement const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/haystack_access_method.o"
+            "src/mongo/db/index/haystack_access_method.cpp"
         ]
     }, 
     {
         "symbol": "mongo::spheredist_deg(mongo::Point const&, mongo::Point const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Point::Point(double, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Box::truncate(double, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Point::Point()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/shapes.o", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/s2near.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/planner_access.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_parser_geo.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/stage_builder.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/matcher/expression_geo.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/query_planner.o"
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/query/planner_access.cpp", 
+            "src/mongo/db/matcher/expression_parser_geo.cpp", 
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/matcher/expression_geo.cpp", 
+            "src/mongo/db/exec/2d.cpp", 
+            "src/mongo/db/query/query_planner.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoParser::isPoint(mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/geoparser.o", 
+        "object": "src/mongo/db/geo/geoparser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/geonear.o"
+            "src/mongo/db/commands/geonear.cpp"
         ]
     }, 
     {
         "symbol": "mongo::S2SearchUtil::getKeysForObject(mongo::BSONObj const&, mongo::S2IndexingParams const&, std::vector<std::string, std::allocator<std::string> >*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/s2common.o", 
+        "object": "src/mongo/db/geo/s2common.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/s2_access_method.o"
+            "src/mongo/db/index/s2_access_method.cpp"
         ]
     }, 
     {
         "symbol": "mongo::S2SearchUtil::distanceBetween(Vector3<double> const&, mongo::BSONObj const&, double*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/s2common.o", 
+        "object": "src/mongo/db/geo/s2common.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/s2near.o"
+            "src/mongo/db/exec/s2near.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::up() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::GeoHash(mongo::BSONElement const&, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::move(int, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::constrains() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::canRefine() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::hash(mongo::Point const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::GeoHash(mongo::GeoHash const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::hash(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::hash(mongo::BSONObj const&, mongo::BSONObj const*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/2d_access_method.o"
+            "src/mongo/db/index/2d_access_method.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::GeoHash()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::atMinX() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::operator+(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::sizeEdge(mongo::GeoHash const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::unhashToPoint(mongo::GeoHash const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::atMinY() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::operator=(mongo::GeoHash const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::atMaxY() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::GeoHash(unsigned int, unsigned int, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::hash(double, double) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dnear.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2d.o"
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::operator!=(mongo::GeoHash const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::GeoHashConverter(mongo::GeoHashConverter::Parameters const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/2d_access_method.o"
+            "src/mongo/db/index/2d_access_method.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::appendToBuilder(mongo::BSONObjBuilder*, char const*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/index/2d_access_method.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/index/2d_access_method.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHashConverter::unhashToPoint(mongo::BSONElement const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::hasPrefix(mongo::GeoHash const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }, 
     {
         "symbol": "mongo::GeoHash::atMaxX() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/geo/hash.o", 
+        "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/2dcommon.o"
+            "src/mongo/db/exec/2dcommon.cpp"
         ]
     }
 ]

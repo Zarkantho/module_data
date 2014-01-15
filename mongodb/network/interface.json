@@ -1,889 +1,889 @@
 [
     {
         "symbol": "mongo::doesOpGetAResponse(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message.o", 
+        "object": "src/mongo/util/net/message.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_logic.o"
+            "src/mongo/s/d_logic.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::globalConnectionNumber", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o"
+            "src/mongo/db/commands/server_status.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::setupSockets()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::globalTicketHolder", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/clientcursor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/initialize_server_global_state.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o"
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/db/commands/server_status.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::Listener(std::string const&, std::string const&, int, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::accepted(boost::shared_ptr<mongo::Socket>, long long)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::~Listener()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ListeningSockets::get()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o"
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::_timeTracker", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/storage/record.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/isself.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cursors.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/clientcursor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/curop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_rollback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_writeback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/elapsed_tracker.o"
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/commands/isself.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/util/elapsed_tracker.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::acceptedMP(mongo::MessagingPort*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::initAndListen()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "typeinfo for mongo::Listener", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::globalConnectionNumber", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o"
+            "src/mongo/db/commands/server_status.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::setupSockets()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::globalTicketHolder", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/clientcursor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/initialize_server_global_state.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o"
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/db/commands/server_status.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::Listener(std::string const&, std::string const&, int, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::accepted(boost::shared_ptr<mongo::Socket>, long long)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::~Listener()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ListeningSockets::get()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o"
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::_timeTracker", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/storage/record.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/isself.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cursors.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/clientcursor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/curop.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_rollback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dur_journal.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_writeback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/elapsed_tracker.o"
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/commands/isself.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/util/elapsed_tracker.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::acceptedMP(mongo::MessagingPort*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Listener::initAndListen()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "typeinfo for mongo::Listener", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/listen.o", 
+        "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/util/net/miniwebserver.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_options.o", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/tool_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_options.o"
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/shell/shell_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_options.o", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/server_options_helpers.o"
+            "src/mongo/db/server_options_helpers.cpp"
         ]
     }, 
     {
         "symbol": "mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_options.o", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/mongod_options.o"
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/db/mongod_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::storeSSLClientOptions(mongo::optionenvironment::Environment const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_options.o", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/tool_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_options.o"
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/shell/shell_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::createServer(mongo::MessageServer::Options const&, mongo::MessageHandler*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_server_port.o", 
+        "object": "src/mongo/util/net/message_server_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/httpclient.o", 
+        "object": "src/mongo/util/net/httpclient.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/stat.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/examples/httpClientTest.o"
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/client/examples/httpClientTest.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::MessagingPort(double, mongo::logger::LogSeverity)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::say(mongo::Message&, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/sniffer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::recv(mongo::Message&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::shutdown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::closeAllSockets(unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o"
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::piggyBack(mongo::Message&, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::setSocketTimeout(double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::call(mongo::Message&, mongo::Message&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/sniffer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::hostbyname(char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/socktests.o"
+            "src/mongo/s/config.cpp", 
+            "src/mongo/dbtests/socktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::unsafe_recv(char*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "typeinfo for mongo::SocketException", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_remote_db_server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_dbclient_connection.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_initialsync.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/sync.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/db/repl/rs_initialsync.cpp", 
+            "src/mongo/client/parallel.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/db/repl/sync.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::prettyHostName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/dbhash.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/lasterror.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbcommands_generic.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_logic.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/replset_web_handler.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/db/lasterror.o"
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/db/lasterror.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/s/d_logic.cpp", 
+            "src/mongo/db/repl/replset_web_handler.cpp", 
+            "src/mongo/db/lasterror.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::send(char const*, int, char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::isStillConnected()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_dbclient_connection.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp"
         ]
     }, 
     {
         "symbol": "mongo::unknownAddress", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/querytests.o"
+            "src/mongo/dbtests/querytests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::getPort() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/audit/audit_event.o"
+            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::isLocalHost() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o"
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::setTimeout(double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::connect(mongo::SockAddr&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getHostNameCached()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/log_process_details.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_mongos.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/balance.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/snmp/snmp.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/sasl/sasl_commands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_client_internal.o"
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/query/new_find.cpp", 
+            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
+            "src/mongo/s/cluster_client_internal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::enableIPv6(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/tool_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/mongod_options.o"
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/shell/shell_options.cpp", 
+            "src/mongo/db/mongod_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::secure(mongo::SSLManagerInterface*, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::getAddr() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/audit/audit_event.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::toString(bool) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/querytests.o"
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/dbtests/querytests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::IPv6Enabled()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/isself.o"
+            "src/mongo/db/commands/isself.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::SockAddr(char const*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::SocketException", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_remote_db_server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::close()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getHostName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_initiate.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/sync_source_feedback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/oplogreader.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/master_slave.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/perftests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/replsettests.o"
+            "src/mongo/s/config.cpp", 
+            "src/mongo/client/distlock.cpp", 
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/repl/rs_initiate.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/db/repl/oplogreader.cpp", 
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/dbtests/replsettests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::doSSLHandshake(char const*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::sslGlobalParams", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/parameters.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/examples/httpClientTest.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/commands/parameters.cpp", 
+            "src/mongo/client/examples/httpClientTest.cpp"
         ]
     }, 
     {
         "symbol": "mongo::isSSLServer", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getSSLVersion(std::string const&, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/version_reporting.o"
+            "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getSSLManager()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/authentication_commands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/initialize_server_global_state.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/background.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/background.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/user_management_commands.o"
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::MessagingPort(double, mongo::logger::LogSeverity)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::say(mongo::Message&, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/sniffer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::recv(mongo::Message&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::shutdown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::closeAllSockets(unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o"
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::piggyBack(mongo::Message&, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::setSocketTimeout(double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MessagingPort::call(mongo::Message&, mongo::Message&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/message_port.o", 
+        "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/sniffer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/tools/bridge.cpp"
         ]
     }, 
     {
         "symbol": "mongo::doesOpGetAResponse(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/message.o", 
+        "object": "src/mongo/util/net/message.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_logic.o"
+            "src/mongo/s/d_logic.cpp"
         ]
     }, 
     {
         "symbol": "mongo::hostbyname(char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/socktests.o"
+            "src/mongo/s/config.cpp", 
+            "src/mongo/dbtests/socktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::unsafe_recv(char*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "typeinfo for mongo::SocketException", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_remote_db_server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_dbclient_connection.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_initialsync.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/sync.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/db/repl/rs_initialsync.cpp", 
+            "src/mongo/client/parallel.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/db/repl/sync.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::prettyHostName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/dbhash.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/lasterror.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/server_status.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbcommands_generic.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_logic.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/replset_web_handler.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/db/lasterror.o"
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/db/lasterror.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/s/d_logic.cpp", 
+            "src/mongo/db/repl/replset_web_handler.cpp", 
+            "src/mongo/db/lasterror.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::send(char const*, int, char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::isStillConnected()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_dbclient_connection.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp"
         ]
     }, 
     {
         "symbol": "mongo::unknownAddress", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/querytests.o"
+            "src/mongo/dbtests/querytests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::getPort() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/audit/audit_event.o"
+            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::isLocalHost() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbwebserver.o"
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::setTimeout(double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::connect(mongo::SockAddr&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getHostNameCached()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/log_process_details.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_mongos.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/balance.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/snmp/snmp.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/sasl/sasl_commands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_client_internal.o"
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/query/new_find.cpp", 
+            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
+            "src/mongo/s/cluster_client_internal.cpp"
         ]
     }, 
     {
         "symbol": "mongo::enableIPv6(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/tool_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/mongod_options.o"
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/shell/shell_options.cpp", 
+            "src/mongo/db/mongod_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::secure(mongo::SSLManagerInterface*, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::getAddr() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/modules/subscription/src/audit/audit_event.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::toString(bool) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/bridge.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/querytests.o"
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/dbtests/querytests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::IPv6Enabled()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/isself.o"
+            "src/mongo/db/commands/isself.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SockAddr::SockAddr(char const*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::SocketException", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/mock/mock_remote_db_server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/connpool.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::close()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getHostName()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/shell_utils_extended.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs_initiate.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/sync_source_feedback.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/oplogreader.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/master_slave.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/perftests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/replsettests.o"
+            "src/mongo/s/config.cpp", 
+            "src/mongo/client/distlock.cpp", 
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/repl/rs_initiate.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/db/repl/oplogreader.cpp", 
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/dbtests/replsettests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Socket::doSSLHandshake(char const*, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/net/sock.o", 
+        "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/miniwebserver.o"
+            "src/mongo/util/net/miniwebserver.cpp"
         ]
     }, 
     {
         "symbol": "mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/httpclient.o", 
+        "object": "src/mongo/util/net/httpclient.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/stat.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/examples/httpClientTest.o"
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/client/examples/httpClientTest.cpp"
         ]
     }, 
     {
         "symbol": "mongo::sslGlobalParams", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/parameters.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/examples/httpClientTest.o"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/commands/parameters.cpp", 
+            "src/mongo/client/examples/httpClientTest.cpp"
         ]
     }, 
     {
         "symbol": "mongo::isSSLServer", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getSSLVersion(std::string const&, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/version_reporting.o"
+            "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getSSLManager()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/net/ssl_manager.o", 
+        "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/authentication_commands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/initialize_server_global_state.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/background.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/dbclient.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/background.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/user_management_commands.o"
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }
 ]

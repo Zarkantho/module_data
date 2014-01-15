@@ -1,306 +1,451 @@
 [
     {
-        "name": "mongo/unittest/crutch.o", 
+        "name": "src/mongo/unittest/crutch.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/unittest/fixture_test.o", 
+        "name": "src/mongo/unittest/fixture_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/unittest/temp_dir.o", 
-        "execs": []
+        "name": "src/mongo/unittest/temp_dir.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/unittest/temp_dir_test.o", 
+        "name": "src/mongo/unittest/temp_dir_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/unittest/unittest.o", 
-        "execs": []
+        "name": "src/mongo/unittest/unittest.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/unittest/unittest_main.o", 
+        "name": "src/mongo/unittest/unittest_main.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/unittest/unittest_test.o", 
+        "name": "src/mongo/unittest/unittest_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/dbtests/accumulatortests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/accumulatortests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/basictests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/basictests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/btreebuildertests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/btreebuildertests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/btreetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/btreetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/chunk_manager_targeter_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/chunk_manager_targeter_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/chunktests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/chunktests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/clienttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/clienttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/commandtests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/commandtests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/config_server_fixture.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/config_server_fixture.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/config_upgrade_tests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/config_upgrade_tests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/counttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/counttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/dbclient_multi_command_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/dbclient_multi_command_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/dbhelper_tests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/dbhelper_tests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/dbtests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/dbtests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/directclienttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/directclienttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/documentsourcetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/documentsourcetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/documenttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/documenttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/expressiontests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/expressiontests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/extsorttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/extsorttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/framework.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/framework.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/framework_options.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/framework_options.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/framework_options_init.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/framework_options_init.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/framework_options_test.o", 
+        "name": "src/mongo/dbtests/framework_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/dbtests/gle_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/gle_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/gridfstest.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/gridfstest.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/indexcatalogtests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/indexcatalogtests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/indexupdatetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/indexupdatetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/jsobjtests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/jsobjtests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/jsontests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/jsontests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/jstests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/jstests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/keypatterntests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/keypatterntests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/macrotests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/macrotests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/matchertests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/matchertests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/merge_chunk_tests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/merge_chunk_tests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mmaptests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mmaptests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock/mock_conn_registry.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock/mock_conn_registry.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock/mock_dbclient_connection.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock/mock_dbclient_cursor.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock/mock_dbclient_cursor.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock/mock_remote_db_server.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock/mock_replica_set.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock/mock_replica_set.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock_dbclient_conn_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock_dbclient_conn_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/mock_replica_set_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/mock_replica_set_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/namespacetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/namespacetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/oplogstarttests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/oplogstarttests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/pdfiletests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/pdfiletests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/perf/perftest.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/perf/perftest.cpp", 
+        "execs": [
+            "perftest"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/perftests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/perftests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/pipelinetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/pipelinetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/profile_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/profile_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_multi_plan_runner.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_multi_plan_runner.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_single_solution_runner.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_single_solution_runner.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_and.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_and.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_collscan.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_collscan.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_fetch.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_fetch.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_limit_skip.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_limit_skip.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_merge_sort.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_merge_sort.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_sort.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_sort.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/query_stage_tests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/query_stage_tests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/querytests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/querytests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/queryutiltests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/queryutiltests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/replica_set_monitor_test.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/replica_set_monitor_test.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/replsettests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/replsettests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/repltests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/repltests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/runner_registry.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/runner_registry.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/sharding.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/sharding.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/socktests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/socktests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/stacktests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/stacktests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/threadedtests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/threadedtests.cpp", 
+        "execs": [
+            "test"
+        ]
     }, 
     {
-        "name": "mongo/dbtests/updatetests.o", 
-        "execs": []
+        "name": "src/mongo/dbtests/updatetests.cpp", 
+        "execs": [
+            "test"
+        ]
     }
 ]

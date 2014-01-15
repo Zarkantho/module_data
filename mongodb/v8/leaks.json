@@ -1,93 +1,93 @@
 [
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/heap.o"
+        "object": "src/third_party/v8/src/heap.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetRawScriptSource(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetDebuggerCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetScriptName(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetDebuggerCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetBuiltinsCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/bootstrapper.o"
+        "object": "src/third_party/v8/src/bootstrapper.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetIndex(char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/debug.o"
+        "object": "src/third_party/v8/src/debug.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/debug.o"
+        "object": "src/third_party/v8/src/debug.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/serialize.o"
+        "object": "src/third_party/v8/src/serialize.cc"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/serialize.o"
+        "object": "src/third_party/v8/src/serialize.cc"
     }
 ]

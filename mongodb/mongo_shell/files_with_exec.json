@@ -1,42 +1,42 @@
 [
     {
-        "name": "mongo/shell/dbshell.o", 
+        "name": "src/mongo/shell/dbshell.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/linenoise.o", 
+        "name": "src/mongo/shell/linenoise.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/linenoise_utf8.o", 
+        "name": "src/mongo/shell/linenoise_utf8.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/mk_wcwidth.o", 
+        "name": "src/mongo/shell/mk_wcwidth.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_utils.o", 
+        "name": "src/mongo/shell/shell_utils.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_utils_extended.o", 
+        "name": "src/mongo/shell/shell_utils_extended.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_utils_launcher.o", 
+        "name": "src/mongo/shell/shell_utils_launcher.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_options.o", 
+        "name": "src/mongo/shell/shell_options.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_options_init.o", 
+        "name": "src/mongo/shell/shell_options_init.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/shell/shell_options_test.o", 
+        "name": "src/mongo/shell/shell_options_test.cpp", 
         "execs": []
     }
 ]

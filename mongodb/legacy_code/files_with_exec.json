@@ -1,6 +1,22 @@
 [
     {
-        "name": "mongo/db/d_globals.o", 
-        "execs": []
+        "name": "src/mongo/db/d_globals.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }
 ]

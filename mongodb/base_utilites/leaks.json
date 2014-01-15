@@ -1,549 +1,549 @@
 [
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/third_party/murmurhash3/MurmurHash3.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/murmurhash3/MurmurHash3.o": {}
-        }, 
+        "sources": [
+            "src/third_party/murmurhash3/MurmurHash3.cpp", 
+            "src/third_party/murmurhash3/MurmurHash3.cpp"
+        ], 
         "symbol": "MurmurHash3_x86_32(void const*, int, unsigned int, void*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/string_data.o"
+        "object": "src/mongo/base/string_data.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_vector_test.o"
+        "object": "src/mongo/base/owned_pointer_vector_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/third_party/murmurhash3/MurmurHash3.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/murmurhash3/MurmurHash3.o": {}
-        }, 
+        "sources": [
+            "src/third_party/murmurhash3/MurmurHash3.cpp", 
+            "src/third_party/murmurhash3/MurmurHash3.cpp"
+        ], 
         "symbol": "MurmurHash3_x86_32(void const*, int, unsigned int, void*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data.o"
+        "object": "src/mongo/base/string_data.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
+        ], 
         "symbol": "mongo::ErrorCodes::fromInt(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
+        ], 
         "symbol": "mongo::ErrorCodes::fromString(mongo::StringData const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status_test.o"
+        "object": "src/mongo/base/status_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/string_data_test.o"
+        "object": "src/mongo/base/string_data_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/owned_pointer_map_test.o"
+        "object": "src/mongo/base/owned_pointer_map_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/util/assert_util.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/assert_util.o": {}
-        }, 
+        "sources": [
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/parse_number_test.o"
+        "object": "src/mongo/base/parse_number_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/unittest/unittest.o": {}
-        }, 
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/counter_test.o"
+        "object": "src/mongo/base/counter_test.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
+        ], 
         "symbol": "mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/status.o"
+        "object": "src/mongo/base/status.cpp"
     }, 
     {
-        "sources": {
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.o": {}, 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.o": {}
-        }, 
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
+        ], 
         "symbol": "mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/status.o"
+        "object": "src/mongo/base/status.cpp"
     }
 ]

@@ -1,122 +1,568 @@
 [
     {
-        "name": "mongo/db/startup_warnings.o", 
+        "name": "src/mongo/db/startup_warnings.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/global_initializer.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/global_initializer_registerer.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/init.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/initializer.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/initializer_context.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/initializer_dependency_graph.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/initializer_dependency_graph_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/global_initializer.o", 
+        "name": "src/mongo/base/initializer_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/global_initializer_registerer.o", 
+        "name": "src/mongo/base/make_string_vector.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/initialize_server_global_state.cpp", 
+        "execs": [
+            "mongod", 
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/constraints.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/environment.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/environment_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/init.o", 
+        "name": "src/mongo/util/options_parser/option_description.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/option_section.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/options_parser.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/options_parser_init.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/options_parser_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/initializer.o", 
+        "name": "src/mongo/util/options_parser/startup_option_init.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/startup_options.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/options_parser/value.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/cmdline_utils/censor_cmdline.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/cmdline_utils/censor_cmdline_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/initializer_context.o", 
+        "name": "src/mongo/util/password.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/server_options.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/server_options_helpers.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/server_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/initializer_dependency_graph.o", 
-        "execs": []
+        "name": "src/mongo/db/server_parameters.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/base/initializer_dependency_graph_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/base/initializer_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/base/make_string_vector.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/initialize_server_global_state.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/constraints.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/environment.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/environment_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/option_description.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/option_section.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/options_parser.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/options_parser_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/options_parser_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/startup_option_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/startup_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/options_parser/value.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/cmdline_utils/censor_cmdline.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/cmdline_utils/censor_cmdline_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/util/password.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/server_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/server_options_helpers.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/server_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/server_parameters.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/server_parameters_test.o", 
+        "name": "src/mongo/db/server_parameters_test.cpp", 
         "execs": []
     }
 ]

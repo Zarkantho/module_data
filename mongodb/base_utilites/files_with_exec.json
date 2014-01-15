@@ -1,38 +1,113 @@
 [
     {
-        "name": "mongo/base/counter_test.o", 
+        "name": "src/mongo/base/counter_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/owned_pointer_map_test.o", 
+        "name": "src/mongo/base/owned_pointer_map_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/owned_pointer_vector_test.o", 
+        "name": "src/mongo/base/owned_pointer_vector_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/status.o", 
+        "name": "src/mongo/base/status.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/status_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/status_test.o", 
+        "name": "src/mongo/base/parse_number.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/base/parse_number_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/base/parse_number.o", 
-        "execs": []
+        "name": "src/mongo/base/string_data.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/base/parse_number_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/base/string_data.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/base/string_data_test.o", 
+        "name": "src/mongo/base/string_data_test.cpp", 
         "execs": []
     }
 ]

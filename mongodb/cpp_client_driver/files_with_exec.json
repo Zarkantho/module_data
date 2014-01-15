@@ -1,98 +1,372 @@
 [
     {
-        "name": "mongo/client/clientAndShell.o", 
+        "name": "src/mongo/client/clientAndShell.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/clientOnly.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/init.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/connpool.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/dbclient.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/dbclient_rs.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/dbclient_rs_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/client/clientOnly.o", 
+        "name": "src/mongo/client/dbclientcursor.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/client/scoped_db_conn_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/client/init.o", 
-        "execs": []
+        "name": "src/mongo/client/syncclusterconnection.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/client/connpool.o", 
-        "execs": []
+        "name": "src/mongo/db/dbmessage.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/client/dbclient.o", 
-        "execs": []
+        "name": "src/mongo/db/lasterror.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/client/dbclient_rs.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/authTest.cpp", 
+        "execs": [
+            "authTest"
+        ]
     }, 
     {
-        "name": "mongo/client/dbclient_rs_test.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/clientTest.cpp", 
+        "execs": [
+            "clientTest"
+        ]
     }, 
     {
-        "name": "mongo/client/dbclientcursor.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/first.cpp", 
+        "execs": [
+            "firstExample"
+        ]
     }, 
     {
-        "name": "mongo/client/scoped_db_conn_test.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/httpClientTest.cpp", 
+        "execs": [
+            "httpClientTest"
+        ]
     }, 
     {
-        "name": "mongo/client/syncclusterconnection.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/rs.cpp", 
+        "execs": [
+            "rsExample"
+        ]
     }, 
     {
-        "name": "mongo/db/dbmessage.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/second.cpp", 
+        "execs": [
+            "secondExample"
+        ]
     }, 
     {
-        "name": "mongo/db/lasterror.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/tutorial.cpp", 
+        "execs": [
+            "tutorial"
+        ]
     }, 
     {
-        "name": "mongo/client/examples/authTest.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/whereExample.cpp", 
+        "execs": [
+            "whereExample"
+        ]
     }, 
     {
-        "name": "mongo/client/examples/clientTest.o", 
-        "execs": []
+        "name": "src/mongo/client/examples/mongoperf.cpp", 
+        "execs": [
+            "mongoperf"
+        ]
     }, 
     {
-        "name": "mongo/client/examples/first.o", 
-        "execs": []
+        "name": "src/mongo/client/gridfs.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongofiles", 
+            "rsExample", 
+            "whereExample", 
+            "test", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
     }, 
     {
-        "name": "mongo/client/examples/httpClientTest.o", 
-        "execs": []
+        "name": "src/mongo/client/parallel.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/client/examples/rs.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/examples/second.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/examples/tutorial.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/examples/whereExample.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongoperf.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/gridfs.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/parallel.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/client/sasl_client_authenticate.o", 
-        "execs": []
+        "name": "src/mongo/client/sasl_client_authenticate.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
     }
 ]

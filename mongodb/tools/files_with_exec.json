@@ -1,182 +1,285 @@
 [
     {
-        "name": "mongo/tools/bridge.o", 
+        "name": "src/mongo/tools/bridge.cpp", 
+        "execs": [
+            "mongobridge"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/bsondump.cpp", 
+        "execs": [
+            "bsondump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/bsondump_options.cpp", 
+        "execs": [
+            "bsondump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/bsondump_options_init.cpp", 
+        "execs": [
+            "bsondump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/bsondump_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/bsondump.o", 
+        "name": "src/mongo/tools/dump.cpp", 
+        "execs": [
+            "mongodump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/export.cpp", 
+        "execs": [
+            "mongoexport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/files.cpp", 
+        "execs": [
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/import.cpp", 
+        "execs": [
+            "mongoimport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongobridge_options.cpp", 
+        "execs": [
+            "mongobridge"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongobridge_options_init.cpp", 
+        "execs": [
+            "mongobridge"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongobridge_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/bsondump_options.o", 
+        "name": "src/mongo/tools/mongodump_options.cpp", 
+        "execs": [
+            "mongodump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongodump_options_init.cpp", 
+        "execs": [
+            "mongodump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongodump_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/bsondump_options_init.o", 
+        "name": "src/mongo/tools/mongoexport_options.cpp", 
+        "execs": [
+            "mongoexport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongoexport_options_init.cpp", 
+        "execs": [
+            "mongoexport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongoexport_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/bsondump_options_test.o", 
+        "name": "src/mongo/tools/mongofiles_options.cpp", 
+        "execs": [
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongofiles_options_init.cpp", 
+        "execs": [
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongofiles_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/dump.o", 
+        "name": "src/mongo/tools/mongoimport_options.cpp", 
+        "execs": [
+            "mongoimport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongoimport_options_init.cpp", 
+        "execs": [
+            "mongoimport"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongoimport_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/export.o", 
+        "name": "src/mongo/tools/mongooplog_options.cpp", 
+        "execs": [
+            "mongooplog"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongooplog_options_init.cpp", 
+        "execs": [
+            "mongooplog"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongooplog_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/files.o", 
+        "name": "src/mongo/tools/mongorestore_options.cpp", 
+        "execs": [
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongorestore_options_init.cpp", 
+        "execs": [
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongorestore_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/tools/import.o", 
+        "name": "src/mongo/tools/mongostat_options.cpp", 
+        "execs": [
+            "mongostat"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongostat_options_init.cpp", 
+        "execs": [
+            "mongostat"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongostat_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongobridge_options.o", 
+        "name": "src/mongo/tools/mongotop_options.cpp", 
+        "execs": [
+            "mongotop"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongotop_options_init.cpp", 
+        "execs": [
+            "mongotop"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongotop_options_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongobridge_options_init.o", 
-        "execs": []
+        "name": "src/mongo/tools/oplog.cpp", 
+        "execs": [
+            "mongooplog"
+        ]
     }, 
     {
-        "name": "mongobridge_options_test.o", 
-        "execs": []
+        "name": "src/mongo/tools/restore.cpp", 
+        "execs": [
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongodump_options.o", 
-        "execs": []
+        "name": "src/mongo/tools/sniffer.cpp", 
+        "execs": [
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "mongodump_options_init.o", 
-        "execs": []
+        "name": "src/mongo/tools/stat.cpp", 
+        "execs": [
+            "mongostat"
+        ]
     }, 
     {
-        "name": "mongodump_options_test.o", 
-        "execs": []
+        "name": "src/mongo/tools/stat_util.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
     }, 
     {
-        "name": "mongoexport_options.o", 
-        "execs": []
+        "name": "src/mongo/tools/tool.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
     }, 
     {
-        "name": "mongoexport_options_init.o", 
-        "execs": []
+        "name": "src/mongo/tools/tool_logger.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
     }, 
     {
-        "name": "mongoexport_options_test.o", 
-        "execs": []
+        "name": "src/mongo/tools/tool_options.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles"
+        ]
     }, 
     {
-        "name": "mongofiles_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongofiles_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongofiles_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongoimport_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongoimport_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongoimport_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongooplog_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongooplog_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongooplog_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongorestore_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongorestore_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongorestore_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongostat_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongostat_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongostat_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongotop_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongotop_options_init.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongotop_options_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/oplog.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/restore.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/sniffer.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/stat.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/stat_util.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/tool.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/tool_logger.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/tool_options.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/tools/top.o", 
-        "execs": []
+        "name": "src/mongo/tools/top.cpp", 
+        "execs": [
+            "mongotop"
+        ]
     }
 ]

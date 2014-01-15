@@ -1,154 +1,629 @@
 [
     {
-        "name": "mongo/db/auth/action_set.o", 
+        "name": "src/mongo/db/auth/action_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/action_set_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/action_set_test.o", 
+        "name": "src/mongo/db/auth/auth_index_d.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/auth_server_parameters.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authorization_manager.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authorization_manager_global.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authorization_manager_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/auth_index_d.o", 
+        "name": "src/mongo/db/auth/authorization_session.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authorization_session_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/auth_server_parameters.o", 
+        "name": "src/mongo/db/auth/authz_documents_update_guard.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_manager_external_state.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_manager_external_state_local.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_manager_external_state_mock.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_session_external_state.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_session_external_state_d.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_session_external_state_s.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/authz_session_external_state_server_common.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/mongo_authentication_session.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/privilege.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/privilege_parser.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/privilege_parser_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/authorization_manager.o", 
+        "name": "src/mongo/db/auth/resource_pattern.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/role_graph.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/role_graph_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/authorization_manager_global.o", 
+        "name": "src/mongo/db/auth/role_graph_update.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/role_name.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/security_key.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/user.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/user_document_parser.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/auth/user_document_parser_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/auth/authorization_manager_test.o", 
-        "execs": []
+        "name": "src/mongo/db/auth/user_management_commands_parser.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/auth/authorization_session.o", 
-        "execs": []
+        "name": "src/mongo/db/auth/user_name.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/auth/authorization_session_test.o", 
-        "execs": []
+        "name": "src/mongo/db/auth/user_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
-        "name": "mongo/db/auth/authz_documents_update_guard.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_manager_external_state.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_manager_external_state_d.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_manager_external_state_local.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_manager_external_state_mock.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_manager_external_state_s.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_session_external_state.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_session_external_state_d.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_session_external_state_s.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/authz_session_external_state_server_common.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo_authentication_session.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/privilege.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/privilege_parser.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/privilege_parser_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/resource_pattern.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/role_graph.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/role_graph_builtin_roles.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/role_graph_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/role_graph_update.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/role_name.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/security_key.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_cache_invalidator_job.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_document_parser.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_document_parser_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_management_commands_parser.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_name.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_set.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/auth/user_set_test.o", 
+        "name": "src/mongo/db/auth/user_set_test.cpp", 
         "execs": []
     }
 ]

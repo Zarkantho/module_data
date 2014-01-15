@@ -1,1604 +1,1604 @@
 [
     {
         "symbol": "mongo::checkClusterMongoVersions(mongo::ConnectionString const&, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_client_internal.o", 
+        "object": "src/mongo/s/cluster_client_internal.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChangelogType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_changelog.o", 
+        "object": "src/mongo/s/type_changelog.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SettingsType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_settings.o", 
+        "object": "src/mongo/s/type_settings.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SettingsType::key", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_settings.o", 
+        "object": "src/mongo/s/type_settings.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SettingsType::balancerStopped", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_settings.o", 
+        "object": "src/mongo/s/type_settings.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::cursorCache", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cursors.o", 
+        "object": "src/mongo/s/cursors.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CursorCache::storeRef(std::string const&, long long, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cursors.o", 
+        "object": "src/mongo/s/cursors.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CursorCache::startTimeoutThread()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cursors.o", 
+        "object": "src/mongo/s/cursors.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_upsert_detail.o"
+            "src/mongo/s/write_ops/batched_upsert_detail.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/write_error_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_upsert_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/config_coordinator.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/wc_error_detail.o"
+            "src/mongo/s/write_ops/batched_command_response.cpp", 
+            "src/mongo/s/write_ops/write_error_detail.cpp", 
+            "src/mongo/s/write_ops/batched_upsert_detail.cpp", 
+            "src/mongo/s/write_ops/config_coordinator.cpp", 
+            "src/mongo/s/write_ops/wc_error_detail.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime> const&, mongo::OpTime*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o"
+            "src/mongo/s/write_ops/batched_command_response.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/write_error_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/config_coordinator.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/privilege_parser.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_insert_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_request_metadata.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/wc_error_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/type_explain.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_update_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_delete_request.o"
+            "src/mongo/s/write_ops/write_error_detail.cpp", 
+            "src/mongo/s/write_ops/config_coordinator.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
+            "src/mongo/db/auth/privilege_parser.cpp", 
+            "src/mongo/s/write_ops/batched_insert_request.cpp", 
+            "src/mongo/s/write_ops/batched_request_metadata.cpp", 
+            "src/mongo/s/write_ops/wc_error_detail.cpp", 
+            "src/mongo/db/query/type_explain.cpp", 
+            "src/mongo/s/write_ops/batched_update_request.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp", 
+            "src/mongo/s/write_ops/batched_command_response.cpp", 
+            "src/mongo/s/write_ops/batched_delete_request.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_update_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/write_error_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_insert_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/wc_error_detail.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_update_document.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_delete_document.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/type_explain.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_delete_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/s/write_ops/batched_update_request.cpp", 
+            "src/mongo/s/write_ops/batched_command_response.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
+            "src/mongo/s/write_ops/write_error_detail.cpp", 
+            "src/mongo/s/write_ops/batched_insert_request.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/write_ops/wc_error_detail.cpp", 
+            "src/mongo/s/write_ops/batched_update_document.cpp", 
+            "src/mongo/s/write_ops/batched_delete_document.cpp", 
+            "src/mongo/db/query/type_explain.cpp", 
+            "src/mongo/s/write_ops/batched_delete_request.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_delete_document.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/config_coordinator.o"
+            "src/mongo/s/write_ops/batched_delete_document.cpp", 
+            "src/mongo/s/write_ops/batched_command_response.cpp", 
+            "src/mongo/s/write_ops/config_coordinator.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/type_explain.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_update_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/privilege_parser.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_insert_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_update_document.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_delete_request.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/query/type_explain.cpp", 
+            "src/mongo/s/write_ops/batched_update_request.cpp", 
+            "src/mongo/db/auth/privilege_parser.cpp", 
+            "src/mongo/s/write_ops/batched_insert_request.cpp", 
+            "src/mongo/s/write_ops/batched_update_document.cpp", 
+            "src/mongo/s/write_ops/batched_delete_request.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long long> const&, long long*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_request_metadata.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/batched_command_response.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/type_explain.o"
+            "src/mongo/s/write_ops/batched_request_metadata.cpp", 
+            "src/mongo/s/write_ops/batched_command_response.cpp", 
+            "src/mongo/db/query/type_explain.cpp"
         ]
     }, 
     {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID> const&, mongo::OID*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/field_parser.o", 
+        "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o"
+            "src/mongo/db/commands/merge_chunks_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::removeDBIfExists(mongo::DBConfig const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::getDBConfig(mongo::StringData const&, bool, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::addShard(std::string*, mongo::ConnectionString const&, long long, std::string&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::setAllowLocalHost(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::knowAboutShard(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::flushConfig()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::grid", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Grid::allowLocalHost() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/grid.o", 
+        "object": "src/mongo/s/grid.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::~ShardConnection()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/client_info.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::releaseMyConnections()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::_finishInit()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/client_info.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::kill()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::sync()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/client_info.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::releaseConnectionsAfterResponse", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::forgetNS(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o"
+            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
         "symbol": "mongo::shardConnectionPool", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::ShardConnection(mongo::Shard const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardConnection::done()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardconnection.o", 
+        "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/client_info.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::setAddress(mongo::ConnectionString const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::reloadShardInfo()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::runCommand(std::string const&, mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::removeShard(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::ShardingConnectionHook", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::reset(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::_setAddr(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/dbtests/chunktests.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard.o", 
+        "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::isUniqueIndexCompatible(mongo::BSONObj, mongo::BSONObj)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shard_key_pattern.o", 
+        "object": "src/mongo/s/shard_key_pattern.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/write_commands/batch_executor.o"
+            "src/mongo/db/commands/write_commands/batch_executor.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::loadExistingRanges(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::MaxChunkSize", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::multiSplit(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, mongo::BSONObj&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::hasShardKey(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::createFirstChunks(std::string const&, mongo::Shard const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const*, std::vector<mongo::Shard, std::allocator<mongo::Shard> > const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::moveAndCommit(mongo::Shard const&, long long, bool, bool, int, mongo::BSONObj&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::ChunkManager(std::string const&, mongo::ShardKeyPattern const&, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::compatibleWith(mongo::ChunkManager const&, mongo::Shard const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::ShouldAutoSplit", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/mongos_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::getShardsForQuery(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/dbtests/chunktests.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::drop(boost::shared_ptr<mongo::ChunkManager const>) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::findChunkForDoc(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::findIntersectingChunk(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::splitIfShould(long) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkRangeManager::reloadAll(std::map<mongo::BSONObj, boost::shared_ptr<mongo::Chunk const>, mongo::BSONObjCmp, std::allocator<std::pair<mongo::BSONObj const, boost::shared_ptr<mongo::Chunk const> > > > const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o"
+            "src/mongo/dbtests/chunktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::_printChunks() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::ChunkManager(boost::shared_ptr<mongo::ChunkManager const>)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::ChunkManager()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o"
+            "src/mongo/dbtests/chunktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::Chunk(mongo::ChunkManager const*, mongo::BSONObj const&, mongo::BSONObj const&, mongo::Shard const&, mongo::ChunkVersion)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o"
+            "src/mongo/dbtests/chunktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::singleSplit(bool, mongo::BSONObj&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::getShardsForRange(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&, mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::setMaxChunkSizeSizeMB(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o"
+            "src/mongo/s/mongos_options.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::genID(std::string const&, mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::containsPoint(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::getVersion() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/chunk.o", 
+        "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Request::process(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/request.o", 
+        "object": "src/mongo/s/request.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Request::init()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/request.o", 
+        "object": "src/mongo/s/request.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/request.o", 
+        "object": "src/mongo/s/request.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::~CollectionType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::ns", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::isValid(std::string*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionType::CollectionType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_collection.o", 
+        "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getDeleter()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/range_deleter_service.o", 
+        "object": "src/mongo/db/range_deleter_service.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command.o"
+            "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::fts::FTSCommand", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command.o"
+            "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command.o"
+            "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::fts::FTSCommand", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/fts_command.o"
+            "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_manager.o", 
+        "object": "src/mongo/s/version_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/client/parallel.cpp", 
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::versionManager", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_manager.o", 
+        "object": "src/mongo/s/version_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/dbclient_safe_writer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_manager.o", 
+        "object": "src/mongo/s/version_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/dbclient_safe_writer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_manager.o", 
+        "object": "src/mongo/s/version_manager.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string> >)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::configServer", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getChunkManager(std::string const&, bool, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
         "symbol": "mongo::serverID", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::reloadSettings()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getShard(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::dropDatabase(std::string&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getChunkManagerIfExists(std::string const&, bool, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::logChange(std::string const&, std::string const&, mongo::BSONObj const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getAllShardedCollections(std::set<std::string, std::less<std::string>, std::allocator<std::string> >&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::setPrimary(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::enableSharding(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::removeSharding(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::shardCollection(std::string const&, mongo::ShardKeyPattern, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*, std::vector<mongo::Shard, std::allocator<mongo::Shard> >*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::isSharded(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::ok(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::replicaSetChange(mongo::ReplicaSetMonitor const*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::load()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ConfigServer::allUp(std::string&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DBConfig::reload()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config.o", 
+        "object": "src/mongo/s/config.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::needCollectionMetadata(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/ops/update_lifecycle_impl.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/idhack_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o"
+            "src/mongo/db/ops/update_lifecycle_impl.cpp", 
+            "src/mongo/db/query/idhack_runner.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/query/new_find.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardedConnectionInfo::addHook()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/pipeline_d.o"
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/pipeline/pipeline_d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::gotShardName(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::shardingState", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/ops/update_lifecycle_impl.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/pipeline_d.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/idhack_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/write_commands/batch_executor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/get_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/stage_builder.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbhelpers.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbcommands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/ops/update_lifecycle_impl.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
+            "src/mongo/db/pipeline/pipeline_d.cpp", 
+            "src/mongo/db/query/idhack_runner.cpp", 
+            "src/mongo/db/commands/write_commands/batch_executor.cpp", 
+            "src/mongo/db/query/new_find.cpp", 
+            "src/mongo/db/query/get_runner.cpp", 
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::resetMetadata(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::getCollectionMetadata(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/idhack_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/write_commands/batch_executor.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/get_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/stage_builder.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbhelpers.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/ops/update_lifecycle_impl.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/query/idhack_runner.cpp", 
+            "src/mongo/db/commands/write_commands/batch_executor.cpp", 
+            "src/mongo/db/query/new_find.cpp", 
+            "src/mongo/db/query/get_runner.cpp", 
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/ops/update_lifecycle_impl.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::initialize(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::refreshMetadataIfNeeded(std::string const&, mongo::ChunkVersion const&, mongo::ChunkVersion*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/write_commands/batch_executor.o"
+            "src/mongo/db/commands/write_commands/batch_executor.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::setShardName(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/write_commands/batch_executor.o"
+            "src/mongo/db/commands/write_commands/batch_executor.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::getVersion(std::string const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbcommands.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/pipeline/pipeline_d.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/new_find.o"
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/db/pipeline/pipeline_d.cpp", 
+            "src/mongo/db/query/new_find.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardedConnectionInfo::get(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o"
+            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::refreshMetadataNow(std::string const&, mongo::ChunkVersion*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::haveLocalShardingInfo(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/scripting/v8_db.o"
+            "src/mongo/scripting/v8_db.cpp"
         ]
     }, 
     {
         "symbol": "mongo::shardVersionOk(std::string const&, std::string&, mongo::ChunkVersion&, mongo::ChunkVersion&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/client.o"
+            "src/mongo/db/client.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardingState::resetShardingState()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_state.o", 
+        "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/rs.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/repl/rs.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SHARDED", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/strategy_shard.o", 
+        "object": "src/mongo/s/strategy_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Strategy::useClusterWriteCommands", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/strategy_shard.o", 
+        "object": "src/mongo/s/strategy_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::printShardingVersionInfo(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::printShardingVersionInfo(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/version_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_options.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config_upgrade.o", 
+        "object": "src/mongo/s/config_upgrade.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getConfigVersion(mongo::ConnectionString const&, mongo::VersionType*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config_upgrade.o", 
+        "object": "src/mongo/s/config_upgrade.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::setLockPingerEnabled(bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ScopedDistributedLock::acquire(long long, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/distlock.o", 
+        "object": "src/mongo/client/distlock.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::getMinKey() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::getNextOrphanRange(mongo::BSONObj const&, mongo::KeyRange*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbhelpers.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/query/idhack_runner.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/mr.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/exec/shard_filter.o"
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/query/idhack_runner.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/exec/shard_filter.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/dbhelpers.o"
+            "src/mongo/db/dbhelpers.cpp"
         ]
     }, 
     {
         "symbol": "mongo::CollectionMetadata::isValidKey(mongo::BSONObj const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/collection_metadata.o", 
+        "object": "src/mongo/s/collection_metadata.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::balancer", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/balance.o", 
+        "object": "src/mongo/s/balance.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::isJournalingEnabled()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_persistence_stubs.o", 
+        "object": "src/mongo/s/mongos_persistence_stubs.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/parameters.o"
+            "src/mongo/db/commands/parameters.cpp"
         ]
     }, 
     {
         "symbol": "mongo::getJournalCommitInterval()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_persistence_stubs.o", 
+        "object": "src/mongo/s/mongos_persistence_stubs.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/parameters.o"
+            "src/mongo/db/commands/parameters.cpp"
         ]
     }, 
     {
         "symbol": "mongo::setJournalCommitInterval(unsigned int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/mongos_persistence_stubs.o", 
+        "object": "src/mongo/s/mongos_persistence_stubs.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/parameters.o"
+            "src/mongo/db/commands/parameters.cpp"
         ]
     }, 
     {
         "symbol": "mongo::versionManager", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/default_version.o", 
+        "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/dbclient_safe_writer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/default_version.o", 
+        "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/default_version.o", 
+        "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/client/parallel.cpp", 
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/default_version.o", 
+        "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/write_ops/dbclient_safe_writer.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/client/parallel.o"
+            "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
         "symbol": "mongo::_handlePossibleShardedMessage(mongo::Message&, mongo::DbResponse*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_logic.o", 
+        "object": "src/mongo/s/d_logic.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/instance.o"
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
         "symbol": "mongo::startConfigServerChecker()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/config_server_checker_service.o", 
+        "object": "src/mongo/s/config_server_checker_service.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::~MongosType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::MongosType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::~MongosType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::MongosType::MongosType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::InterruptStatusMongos::status", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/interrupt_status_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::InterruptStatusMongos::status", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/interrupt_status_mongos.o", 
+        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::min", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::max", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::DEPRECATED_lastmod", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::~ChunkType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::ns", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::ChunkType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkType::shard", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_chunk.o", 
+        "object": "src/mongo/s/type_chunk.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
         "symbol": "mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_merge.o", 
+        "object": "src/mongo/s/d_merge.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/merge_chunk_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/merge_chunks_cmd.o"
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::name", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::~ShardType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/tools/stat.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::ShardType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::draining", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::maxSize", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_shard.o", 
+        "object": "src/mongo/s/type_shard.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ClusterWriterStats::hasShardStats() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_write.o", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands/cluster_write_cmd.o"
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ClusterWriter::write(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_write.o", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands/cluster_write_cmd.o"
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ClusterWriter::ClusterWriter(bool, int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_write.o", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands/cluster_write_cmd.o"
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ClusterWriter::getStats()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_write.o", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands/cluster_write_cmd.o"
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ClusterWriterStats::getShardStats() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/cluster_write.o", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands/cluster_write_cmd.o"
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/writeback_listener.o", 
+        "object": "src/mongo/s/writeback_listener.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/client_info.o"
+            "src/mongo/s/client_info.cpp"
         ]
     }, 
     {
         "symbol": "mongo::RangeDeleter::deleteNow(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/range_deleter.o", 
+        "object": "src/mongo/db/range_deleter.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/commands/cleanup_orphaned_cmd.o"
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
         ]
     }, 
     {
         "symbol": "mongo::RangeDeleter::startWorkers()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/range_deleter.o", 
+        "object": "src/mongo/db/range_deleter.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/db.o"
+            "src/mongo/db/db.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardkey.o", 
+        "object": "src/mongo/s/shardkey.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ShardKeyPattern::ShardKeyPattern(mongo::BSONObj)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/shardkey.o", 
+        "object": "src/mongo/s/shardkey.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_public.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/sharding.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/chunktests.o"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/dbtests/chunktests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::~DatabaseType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::DatabaseType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::parseBSON(mongo::BSONObj const&, std::string*)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o"
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::isValid(std::string*) const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/authz_manager_external_state_s.o"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::primary", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::DatabaseType::name", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_database.o", 
+        "object": "src/mongo/s/type_database.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/commands_admin.o"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::aboutToDeleteForSharding(mongo::StringData const&, mongo::Database const*, mongo::NamespaceDetails const*, mongo::DiskLoc const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_migrate.o", 
+        "object": "src/mongo/s/d_migrate.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/clientcursor.o"
+            "src/mongo/db/clientcursor.cpp"
         ]
     }, 
     {
         "symbol": "mongo::logOpForSharding(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/d_migrate.o", 
+        "object": "src/mongo/s/d_migrate.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/repl/oplog.o"
+            "src/mongo/db/repl/oplog.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionType::VersionType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_config_version.o", 
+        "object": "src/mongo/s/type_config_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionType::clear()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_config_version.o", 
+        "object": "src/mongo/s/type_config_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionType::~VersionType()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_config_version.o", 
+        "object": "src/mongo/s/type_config_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/server.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionType::ConfigNS", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_config_version.o", 
+        "object": "src/mongo/s/type_config_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_server_fixture.o", 
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }, 
     {
         "symbol": "mongo::VersionType::toBSON() const", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/s/type_config_version.o", 
+        "object": "src/mongo/s/type_config_version.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/dbtests/config_upgrade_tests.o"
+            "src/mongo/dbtests/config_upgrade_tests.cpp"
         ]
     }
 ]

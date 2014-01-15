@@ -1,58 +1,58 @@
 [
     {
         "symbol": "YAML::detail::node_data::end()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/node_data.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::node_data::begin()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/node_data.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::node_data::mark_defined()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/node_data.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::node_data::empty_scalar", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/node_data.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::node_data::set_null()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/node_data.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/node_data.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/memory.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/memory.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::detail::memory::create_node()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/memory.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/memory.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {
         "symbol": "YAML::Load(std::string const&)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/yaml-cpp-0.5.1/src/parse.o", 
+        "object": "src/third_party/yaml-cpp-0.5.1/src/parse.cpp", 
         "used_by": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/util/options_parser/options_parser.o"
+            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }
 ]

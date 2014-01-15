@@ -1,170 +1,526 @@
 [
     {
-        "name": "mongo/db/ops/modifier_add_to_set.o", 
+        "name": "src/mongo/db/ops/modifier_add_to_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_add_to_set_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_add_to_set_test.o", 
+        "name": "src/mongo/db/ops/modifier_bit.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_bit_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_bit.o", 
+        "name": "src/mongo/db/ops/modifier_compare.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_compare_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_bit_test.o", 
+        "name": "src/mongo/db/ops/modifier_current_date.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_current_date_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_compare.o", 
+        "name": "src/mongo/db/ops/modifier_inc.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_inc_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_compare_test.o", 
+        "name": "src/mongo/db/ops/modifier_object_replace.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_object_replace_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_current_date.o", 
+        "name": "src/mongo/db/ops/modifier_pop.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_pop_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_current_date_test.o", 
+        "name": "src/mongo/db/ops/modifier_pull.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_pull_all.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_pull_all_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_inc.o", 
+        "name": "src/mongo/db/ops/modifier_pull_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_inc_test.o", 
+        "name": "src/mongo/db/ops/modifier_push.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_push_sorter_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_object_replace.o", 
+        "name": "src/mongo/db/ops/modifier_push_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_object_replace_test.o", 
+        "name": "src/mongo/db/ops/modifier_rename.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_rename_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pop.o", 
+        "name": "src/mongo/db/ops/modifier_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_set_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pop_test.o", 
+        "name": "src/mongo/db/ops/modifier_unset.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_unset_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pull.o", 
+        "name": "src/mongo/db/ops/modifier_table.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/modifier_table_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pull_all.o", 
+        "name": "src/mongo/db/ops/update_driver.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/update_driver_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pull_all_test.o", 
+        "name": "src/mongo/db/ops/path_support.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/path_support_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_pull_test.o", 
+        "name": "src/mongo/db/ops/log_builder.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/log_builder_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_push.o", 
+        "name": "src/mongo/db/ops/field_checker.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/field_checker_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_push_sorter_test.o", 
+        "name": "src/mongo/db/ops/update_lifecycle_impl.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/field_ref.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/field_ref_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/field_ref_set_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/db/ops/modifier_push_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_rename.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_rename_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_set.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_set_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_unset.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_unset_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_table.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/modifier_table_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/update_driver.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/update_driver_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/path_support.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/path_support_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/log_builder.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/log_builder_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/field_checker.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/field_checker_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/update_lifecycle_impl.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/field_ref.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/field_ref_set.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/field_ref_set_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/field_ref_test.o", 
+        "name": "src/mongo/db/field_ref_test.cpp", 
         "execs": []
     }
 ]

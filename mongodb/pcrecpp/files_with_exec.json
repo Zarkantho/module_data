@@ -1,106 +1,531 @@
 [
     {
-        "name": "third_party/shim_pcrecpp.o", 
+        "name": "src/third_party/shim_pcrecpp.cc", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_byte_order.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_chartables.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_compile.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_config.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_dfa_exec.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_exec.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_fullinfo.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_get.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_globals.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_maketables.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_newline.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_ord2utf8.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/pcre-8.30/pcre_printint.c", 
         "execs": []
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_byte_order.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_refcount.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_chartables.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_scanner.cc", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_compile.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_string_utils.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_config.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_stringpiece.cc", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_dfa_exec.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_study.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_exec.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_tables.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_fullinfo.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_ucd.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_get.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_valid_utf8.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_globals.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_version.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_maketables.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcre_xclass.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_newline.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcrecpp.cc", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "third_party/pcre-8.30/pcre_ord2utf8.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_printint.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_refcount.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_scanner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_string_utils.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_stringpiece.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_study.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_tables.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_ucd.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_valid_utf8.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_version.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcre_xclass.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcrecpp.o", 
-        "execs": []
-    }, 
-    {
-        "name": "third_party/pcre-8.30/pcreposix.o", 
-        "execs": []
+        "name": "src/third_party/pcre-8.30/pcreposix.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
     }
 ]

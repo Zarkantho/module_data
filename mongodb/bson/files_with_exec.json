@@ -1,74 +1,252 @@
 [
     {
-        "name": "mongo/bson/bson_field_test.o", 
+        "name": "src/mongo/bson/bson_field_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/bson_obj_test.o", 
+        "name": "src/mongo/bson/bson_obj_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/bson_validate.o", 
+        "name": "src/mongo/bson/bson_validate.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/bson_validate_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/bson_validate_test.o", 
+        "name": "src/mongo/bson/bsondemo/bsondemo.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/bsondemo/bsondemo.o", 
+        "name": "src/mongo/bson/bsonobjbuilder_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/bsonobjbuilder_test.o", 
+        "name": "src/mongo/bson/oid.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/optime.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/util/bson_extract.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/util/bson_extract_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/oid.o", 
+        "name": "src/mongo/bson/util/builder_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/optime.o", 
+        "name": "src/mongo/db/jsobj.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/json.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/mutable/document.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/mutable/element.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/util/bson_extract.o", 
+        "name": "src/mongo/bson/mutable/mutable_bson_test.cpp", 
         "execs": []
     }, 
     {
-        "name": "mongo/bson/util/bson_extract_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/util/builder_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/jsobj.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/json.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/mutable/document.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/mutable/element.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/mutable/mutable_bson_algo_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/mutable/mutable_bson_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/bson/mutable/mutable_bson_test_utils.o", 
-        "execs": []
+        "name": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp", 
+        "execs": [
+            "test"
+        ]
     }
 ]

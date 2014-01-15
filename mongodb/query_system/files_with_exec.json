@@ -1,386 +1,1574 @@
 [
     {
-        "name": "mongo/db/matcher/expression.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_array.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_array_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_geo.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_geo_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_leaf.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_leaf_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_array_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_geo.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_geo_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_leaf_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_text.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_text_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_tree.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_parser_tree_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_text.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_tree.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_tree_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/expression_where.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/matchable.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/path.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/path_internal.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/path_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/matcher.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/matcher/match_details.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/cached_plan_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/canonical_query.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/eof_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/explain_plan.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/get_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/idhack_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/index_bounds.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/index_bounds_builder.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/index_bounds_builder_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/index_bounds_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/index_tag.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/internal_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/interval.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/interval_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/lite_parsed_query.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/lite_parsed_query_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/multi_plan_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/new_find.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/parsed_projection.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/parsed_projection_test.o", 
-        "execs": []
+        "name": "src/mongo/db/matcher/expression.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_array.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_array_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_geo.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_geo_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_leaf.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_leaf_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
     }, 
     {
-        "name": "mongo/db/query/plan_cache.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/plan_cache_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/plan_enumerator.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/plan_executor.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/plan_ranker.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/planner_access.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/planner_analysis.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/planner_ixselect.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/planner_ixselect_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/qlog.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/query_planner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/query_planner_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/query_solution.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/single_solution_runner.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/stage_builder.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/query/type_explain.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/2d.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/2dcommon.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/2dnear.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/and_hash.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/and_sorted.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/collection_scan.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/fetch.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/index_scan.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/limit.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/merge_sort.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/mock_stage.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/oplogstart.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/or.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/projection.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/projection_exec.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/projection_exec_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/s2near.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/shard_filter.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/skip.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/sort.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/sort_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/stagedebug_cmd.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/text.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/working_set.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/working_set_common.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/exec/working_set_test.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/queryutil.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/projection.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/count.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/delete.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/insert.o", 
-        "execs": []
-    }, 
-    {
-        "name": "mongo/db/ops/update.o", 
-        "execs": []
+        "name": "src/mongo/db/matcher/expression_parser_array_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_geo.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_geo_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_leaf_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_text.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_text_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_tree.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_parser_tree_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_text.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_tree.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_tree_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/expression_where.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/matchable.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/path.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/path_internal.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/path_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/matcher/matcher.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/matcher/match_details.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/cached_plan_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/canonical_query.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/eof_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/explain_plan.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/get_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/idhack_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/index_bounds.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/index_bounds_builder.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/index_bounds_builder_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/index_bounds_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/index_tag.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/internal_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/interval.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/interval_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/lite_parsed_query.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/lite_parsed_query_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/multi_plan_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/new_find.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/parsed_projection.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/parsed_projection_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/plan_cache.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/plan_cache_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/plan_enumerator.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/plan_executor.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/plan_ranker.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/planner_access.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/planner_analysis.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/planner_ixselect.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/planner_ixselect_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/qlog.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/query_planner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/query_planner_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/query_solution.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/single_solution_runner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/stage_builder.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/query/type_explain.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/2d.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/2dcommon.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/2dnear.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/and_hash.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/and_sorted.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/collection_scan.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/fetch.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/index_scan.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/limit.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/merge_sort.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/mock_stage.cpp", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/oplogstart.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/or.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/projection.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/projection_exec.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/projection_exec_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/exec/s2near.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/shard_filter.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/skip.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/sort.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/sort_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/exec/stagedebug_cmd.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/text.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/working_set.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/working_set_common.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/exec/working_set_test.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/queryutil.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/projection.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/count.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/delete.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/insert.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/ops/update.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }
 ]
