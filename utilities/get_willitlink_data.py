@@ -53,22 +53,38 @@ def object_files(source_files):
             object_files.append(source_match.group(1) + "o")
     return object_files
 
+def object_file_to_source_file(graph, object_file):
+    object_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party)).+\.)o$")
+    object_match = object_match_regex.match(object_file)
+    for i in graph.files:
+        if i.endswith(object_match.group(1) + "cpp") or i.endswith(object_match.group(1) + "c") or i.endswith(object_match.group(1) + "cc"):
+            return i
+
+def source_files(graph, object_files):
+    source_files = []
+    for object_file in object_files:
+        source_files.append(object_file_to_source_file(graph, object_file))
+    return source_files
+
 def add_interface_data(graph, module_data):
     for module_name in module_data.keys():
-        # TODO: Clean up the output of this.  Right now there are .o files everywhere.
         module_data[module_name]['interface'] = find_interface(graph, object_files(module_data[module_name]['files_flat']))
+        for interface_object in module_data[module_name]['interface']:
+            interface_object['object'] = source_files(graph, [interface_object['object']])[0]
+            interface_object['used_by'] = source_files(graph, interface_object['used_by'])
 
 def add_leak_data(graph, module_data):
     for module_name in module_data.keys():
-        # TODO: Clean up the output of this.  Right now there are .o files everywhere.
         module_data[module_name]['leaks'] = resolve_leak_info(graph, object_files(module_data[module_name]['files_flat']), 1, None, [])
+        for leak_object in module_data[module_name]['leaks']:
+            leak_object['object'] = source_files(graph, [leak_object['object']])[0]
+            leak_object['sources'] = source_files(graph, leak_object['sources'].keys())
 
 def add_executable_data(graph, module_data):
     for module_name in module_data.keys():
-        # TODO: Clean up the output of this.  Right now there are .o files everywhere.
         module_data[module_name]['files_with_exec'] = []
         for object_file in object_files(module_data[module_name]['files_flat']):
-            module_data[module_name]['files_with_exec'].append({ "name" : object_file, "execs" : [] })
+            module_data[module_name]['files_with_exec'].append({ "name" : object_file_to_source_file(object_file), "execs" : get_executable_list(graph, [object_file]) })
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)
@@ -86,7 +102,6 @@ def output_detailed_module_data(modules_directory, module_data):
             f = open(os.path.join(modules_directory, module_directory, "files_with_exec.json"), 'w')
             f.truncate()
             f.write(json.dumps(module_data[module_directory]['files_with_exec'], indent=4))
-
 
 def main():
 
