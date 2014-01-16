@@ -13,3 +13,6 @@ Stubs for auditing enterprise module
 
 # Interface
 (not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)

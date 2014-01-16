@@ -1,7 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/base/make_string_vector.cpp", 
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -9,7 +8,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp", 
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
@@ -17,7 +15,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/make_string_vector.cpp", 
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -25,7 +22,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp", 
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 

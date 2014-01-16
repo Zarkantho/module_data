@@ -571,3 +571,6 @@ Third Party - The boost thread library
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
+
+# Dependencies
+(no dependencies outside this module)

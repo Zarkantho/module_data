@@ -99,3 +99,6 @@ Third Party - Stemmer for various languages used in full text search
 - Used By:
 
     - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+
+# Dependencies
+(no dependencies outside this module)

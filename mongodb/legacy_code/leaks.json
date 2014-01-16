@@ -1,7 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/util/background.cpp", 
             "src/mongo/util/background.cpp"
         ], 
         "symbol": "mongo::BackgroundJob::BackgroundJob(bool)", 

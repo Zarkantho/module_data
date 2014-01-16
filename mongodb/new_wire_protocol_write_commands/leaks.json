@@ -85,7 +85,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -107,7 +106,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -115,7 +113,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/client/dbclient.cpp", 
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::ConnectionString::parse(std::string const&, std::string&)", 
@@ -130,7 +127,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -145,7 +141,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -153,7 +148,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::LT", 
@@ -161,7 +155,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::GTE", 
@@ -169,7 +162,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init(mongo::Date_t, bool)", 
@@ -205,7 +197,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -220,7 +211,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -228,7 +218,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -236,7 +225,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -258,7 +246,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -266,7 +253,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -274,7 +260,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -296,7 +281,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -304,7 +288,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -312,7 +295,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -320,7 +302,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -328,7 +309,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -336,7 +316,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -344,7 +323,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -352,7 +330,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -360,7 +337,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp", 
             "src/mongo/util/concurrency/thread_name.cpp"
         ], 
         "symbol": "mongo::getThreadName()", 
@@ -368,7 +344,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::causedBy(std::string const&)", 
@@ -376,7 +351,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -384,7 +358,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -392,7 +365,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -400,7 +372,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -408,7 +379,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logger.cpp", 
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -416,7 +386,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -424,7 +393,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
@@ -432,7 +400,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -440,7 +407,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -448,7 +414,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -456,7 +421,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -464,7 +428,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
@@ -493,7 +456,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -529,7 +491,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -537,7 +498,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp", 
             "src/mongo/util/concurrency/thread_name.cpp"
         ], 
         "symbol": "mongo::getThreadName()", 
@@ -545,7 +505,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/log.cpp", 
             "src/mongo/util/log.cpp"
         ], 
         "symbol": "mongo::tlogLevel", 
@@ -567,7 +526,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::toString() const", 
@@ -582,7 +540,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -660,7 +617,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -668,7 +624,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -676,7 +631,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logger.cpp", 
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -684,7 +638,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -699,7 +652,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -714,7 +666,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "typeinfo for mongo::UserException", 
@@ -750,7 +701,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
@@ -780,7 +730,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -788,7 +737,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init(mongo::Date_t, bool)", 
@@ -796,7 +744,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::valid() const", 
@@ -804,7 +751,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -819,7 +765,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -827,7 +772,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -835,7 +779,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/time_support.cpp", 
             "src/mongo/util/time_support.cpp"
         ], 
         "symbol": "mongo::curTimeMicros64()", 
@@ -857,7 +800,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
@@ -900,7 +842,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/server_options.cpp", 
             "src/mongo/db/server_options.cpp"
         ], 
         "symbol": "mongo::serverGlobalParams", 
@@ -929,7 +870,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -979,7 +919,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::fassertFailed(int)", 
@@ -987,7 +926,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
@@ -1002,7 +940,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1010,7 +947,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1046,7 +982,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1082,7 +1017,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1090,7 +1024,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1105,7 +1038,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1113,7 +1045,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -1121,7 +1052,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1143,7 +1073,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1158,7 +1087,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1173,7 +1101,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1188,7 +1115,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1203,7 +1129,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1211,7 +1136,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1219,7 +1143,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1227,7 +1150,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1235,7 +1157,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1243,7 +1164,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1265,7 +1185,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1273,7 +1192,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1281,7 +1199,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1296,7 +1213,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1304,7 +1220,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1312,7 +1227,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1320,7 +1234,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1328,7 +1241,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1336,7 +1248,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1351,7 +1262,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1366,7 +1276,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1374,7 +1283,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1382,7 +1290,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1390,7 +1297,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1398,7 +1304,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -1406,7 +1311,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1414,7 +1318,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1422,7 +1325,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1430,7 +1332,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1466,7 +1367,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1502,7 +1402,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1517,7 +1416,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1532,7 +1430,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1540,7 +1437,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -1548,7 +1444,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init()", 
@@ -1556,7 +1451,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1578,7 +1472,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1586,7 +1479,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1594,7 +1486,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1602,7 +1493,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1610,7 +1500,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1646,7 +1535,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1668,7 +1556,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1697,7 +1584,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1705,7 +1591,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1727,7 +1612,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -1735,7 +1619,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init()", 
@@ -1743,7 +1626,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1758,7 +1640,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1766,7 +1647,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1774,7 +1654,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1782,7 +1661,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1790,7 +1668,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1798,7 +1675,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1806,7 +1682,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -1814,7 +1689,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1822,7 +1696,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -1830,7 +1703,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1838,7 +1710,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -1853,7 +1724,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1875,7 +1745,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -1890,7 +1759,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -1898,7 +1766,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1913,7 +1780,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -1921,7 +1787,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::LT", 
@@ -1929,7 +1794,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::GTE", 
@@ -1937,7 +1801,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init(mongo::Date_t, bool)", 
@@ -1973,7 +1836,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -1988,7 +1850,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1996,7 +1857,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2018,7 +1878,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -2026,7 +1885,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2034,7 +1892,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -2056,7 +1913,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -2064,7 +1920,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -2086,7 +1941,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2136,7 +1990,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2151,7 +2004,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -2173,7 +2025,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2181,7 +2032,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -2189,7 +2039,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init()", 
@@ -2197,7 +2046,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2212,7 +2060,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2220,7 +2067,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2228,7 +2074,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2236,7 +2081,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2251,7 +2095,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/lasterror.cpp", 
             "src/mongo/db/lasterror.cpp"
         ], 
         "symbol": "mongo::LastErrorHolder::get(bool)", 
@@ -2273,7 +2116,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2281,7 +2123,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp", 
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
@@ -2310,7 +2151,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2325,7 +2165,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::fassertFailed(int)", 
@@ -2333,7 +2172,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2348,7 +2186,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/lasterror.cpp", 
             "src/mongo/db/lasterror.cpp"
         ], 
         "symbol": "mongo::lastError", 
@@ -2392,7 +2229,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2407,7 +2243,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/make_string_vector.cpp", 
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -2436,7 +2271,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/lasterror.cpp", 
             "src/mongo/db/lasterror.cpp"
         ], 
         "symbol": "mongo::setLastError(int, char const*)", 
@@ -2535,7 +2369,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2571,7 +2404,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2600,7 +2432,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2608,7 +2439,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -2616,7 +2446,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2638,7 +2467,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2646,7 +2474,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2661,7 +2488,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2676,7 +2502,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2691,7 +2516,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2699,7 +2523,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2707,7 +2530,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2715,7 +2537,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2723,7 +2544,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -2731,7 +2551,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -2781,7 +2600,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2817,7 +2635,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2832,7 +2649,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -2847,7 +2663,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2855,7 +2670,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
@@ -2863,7 +2677,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init()", 
@@ -2871,7 +2684,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2879,7 +2691,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2887,7 +2698,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2902,7 +2712,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2917,7 +2726,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -2925,7 +2733,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -2933,7 +2740,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -2948,7 +2754,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -2956,7 +2761,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -2964,23 +2768,22 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/default_version.cpp", 
-            "src/mongo/s/version_manager.cpp"
+            "src/mongo/s/version_manager.cpp", 
+            "src/mongo/s/default_version.cpp"
         ], 
         "symbol": "mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)", 
         "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/s/default_version.cpp", 
-            "src/mongo/s/version_manager.cpp"
+            "src/mongo/s/version_manager.cpp", 
+            "src/mongo/s/default_version.cpp"
         ], 
         "symbol": "mongo::versionManager", 
         "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "typeinfo for mongo::DBException", 
@@ -3023,7 +2826,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3066,7 +2868,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/make_string_vector.cpp", 
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -3081,7 +2882,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::fassertFailed(int)", 
@@ -3131,7 +2931,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3146,7 +2945,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp", 
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
@@ -3161,7 +2959,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3169,7 +2966,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3184,7 +2980,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3192,7 +2987,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3200,7 +2994,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3208,7 +3001,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3216,7 +3008,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3238,7 +3029,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3246,7 +3036,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3254,7 +3043,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3262,7 +3050,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3270,7 +3057,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3278,7 +3064,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -3286,7 +3071,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -3294,7 +3078,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3302,7 +3085,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3310,7 +3092,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -3318,7 +3099,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3326,7 +3106,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3334,7 +3113,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -3342,7 +3120,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init(mongo::Date_t, bool)", 
@@ -3350,7 +3127,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3358,7 +3134,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3366,7 +3141,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -3374,7 +3148,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -3396,7 +3169,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3404,7 +3176,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3412,7 +3183,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -3427,7 +3197,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3435,7 +3204,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3443,7 +3211,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::causedBy(std::string const&)", 
@@ -3451,7 +3218,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3459,7 +3225,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3467,7 +3232,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -3475,7 +3239,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -3490,7 +3253,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3512,7 +3274,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3520,7 +3281,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -3535,7 +3295,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3543,7 +3302,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3565,7 +3323,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3573,7 +3330,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3581,7 +3337,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3589,7 +3344,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3597,7 +3351,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3605,7 +3358,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3613,7 +3365,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3621,7 +3372,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3629,7 +3379,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3637,7 +3386,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3645,7 +3393,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3653,7 +3400,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3661,7 +3407,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3669,7 +3414,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::valid() const", 
@@ -3677,7 +3421,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3685,7 +3428,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/bson_validate.cpp", 
             "src/mongo/bson/bson_validate.cpp"
         ], 
         "symbol": "mongo::validateBSON(char const*, unsigned long long)", 
@@ -3693,7 +3435,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/server_options.cpp", 
             "src/mongo/db/server_options.cpp"
         ], 
         "symbol": "mongo::serverGlobalParams", 
@@ -3701,7 +3442,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3709,7 +3449,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3724,7 +3463,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3732,7 +3470,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3747,7 +3484,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3755,7 +3491,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3763,7 +3498,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -3771,7 +3505,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
@@ -3793,7 +3526,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3801,7 +3533,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3809,7 +3540,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -3824,7 +3554,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -3832,7 +3561,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -3840,7 +3568,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3848,7 +3575,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -3856,7 +3582,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -3878,7 +3603,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)", 
@@ -3886,7 +3610,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -3901,7 +3624,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
@@ -3916,7 +3638,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -3924,7 +3645,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::LT", 
@@ -3939,7 +3659,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp", 
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::GTE", 
@@ -3947,7 +3666,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::OID::init(mongo::Date_t, bool)", 
@@ -3983,7 +3701,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
@@ -3998,7 +3715,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -4006,7 +3722,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -4021,7 +3736,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp", 
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -4043,7 +3757,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
@@ -4051,7 +3764,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp", 
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -4059,7 +3771,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp", 
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 

@@ -1,7 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -9,7 +8,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -17,11 +15,10 @@
     }, 
     {
         "sources": [
-            "src/mongo/client/scoped_db_conn_test.cpp", 
             "src/mongo/unittest/crutch.cpp", 
+            "src/mongo/client/clientAndShell.cpp", 
             "src/mongo/db/instance.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
+            "src/mongo/client/scoped_db_conn_test.cpp", 
             "src/mongo/s/server.cpp"
         ], 
         "symbol": "mongo::inShutdown()", 
@@ -29,7 +26,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp", 
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -51,7 +47,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/file_allocator.cpp", 
             "src/mongo/util/file_allocator.cpp"
         ], 
         "symbol": "mongo::FileAllocator::requestAllocation(std::string const&, long&)", 
@@ -59,7 +54,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
@@ -67,7 +61,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -82,7 +75,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/file_allocator.cpp", 
             "src/mongo/util/file_allocator.cpp"
         ], 
         "symbol": "mongo::FileAllocator::get()", 
@@ -97,7 +89,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp", 
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
@@ -105,7 +96,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
@@ -113,7 +103,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp", 
             "src/mongo/util/concurrency/thread_name.cpp"
         ], 
         "symbol": "mongo::getThreadName()", 
@@ -121,7 +110,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logger.cpp", 
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -136,7 +124,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
@@ -158,7 +145,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp", 
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 

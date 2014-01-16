@@ -224,6 +224,178 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
+# Dependencies
+
+### src/mongo/s/s\_only.cpp
+
+<div></div>
+
+    mongo::setThreadName(mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, bool, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::LastErrorHolder::reset(mongo::LastError*)
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::lastError
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::AuthzSessionExternalStateMongos::AuthzSessionExternalStateMongos(mongo::AuthorizationManager*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../authentication)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::getGlobalAuthorizationManager()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::Command::_checkAuthorization(mongo::Command*, mongo::ClientBasic*, std::string const&, mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::LastErrorHolder::initThread()
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
 -------------
 
 # Group Description
@@ -745,6 +917,518 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
 
+# Dependencies
+
+### src/mongo/db/client.cpp
+
+<div></div>
+
+    mongo::FileAllocator::get()
+
+- Provided By:
+
+    - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
+
+<div></div>
+
+    mongo::killCurrentOp
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::FileAllocator::hasFailed() const
+
+- Provided By:
+
+    - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
+
+<div></div>
+
+    mongo::Lock::DBWrite::~DBWrite()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/privilege.cpp](../authentication)
+
+<div></div>
+
+    mongo::Lock::DBRead::DBRead(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::setThreadName(mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthzSessionExternalStateMongod::AuthzSessionExternalStateMongod(mongo::AuthorizationManager*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_session\_external\_state\_d.cpp](../authentication)
+
+<div></div>
+
+    mongo::theReplSet
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::LastErrorHolder::reset(mongo::LastError*)
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::dbHolderUnchecked()
+
+- Provided By:
+
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::LockState::hasAnyReadLock() const
+
+- Provided By:
+
+    - [src/mongo/db/lockstate.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ActionSet::addAction(mongo::ActionType const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+
+<div></div>
+
+    mongo::ExceptionInfo::append(mongo::BSONObjBuilder&, char const*, char const*) const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Lock::atLeastReadLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ReplSetImpl::registerSlave(mongo::BSONObj const&, int)
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Lock::somethingWriteLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ActionType::handshake
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+
+<div></div>
+
+    mongo::lastError
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::LastErrorHolder::initThread()
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::nested()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Lock::isW()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::OID const&)
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&) const
+
+- Provided By:
+
+    - [src/mongo/db/lockstat.cpp](../concurrency)
+
+<div></div>
+
+    mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)
+
+- Provided By:
+
+    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::LockState::hasAnyWriteLock() const
+
+- Provided By:
+
+    - [src/mongo/db/lockstate.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Lock::GlobalWrite::~GlobalWrite()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::LockStat::report() const
+
+- Provided By:
+
+    - [src/mongo/db/lockstat.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::getGlobalAuthorizationManager()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::shardVersionOk(std::string const&, std::string&, mongo::ChunkVersion&, mongo::ChunkVersion&)
+
+- Provided By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
 -------------
 
 # Group Description
@@ -899,6 +1583,508 @@ The current "operation" within the current "Client"
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+# Dependencies
+
+### src/mongo/db/curop.cpp
+
+<div></div>
+
+    mongo::killCurrentOp
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProgressMeter::reset(unsigned long long, int, int)
+
+- Provided By:
+
+    - [src/mongo/util/progress\_meter.cpp](../utilities)
+
+<div></div>
+
+    mongo::Top::global
+
+- Provided By:
+
+    - [src/mongo/db/stats/top.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::getGlobalFailPointRegistry()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+
+<div></div>
+
+    mongo::SpinLock::SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    mongo::FailPoint::slowShouldFailOpenBlock()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Matcher2::Matcher2(mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+
+<div></div>
+
+    mongo::LockStat::reset()
+
+- Provided By:
+
+    - [src/mongo/db/lockstat.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ProgressMeter::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/progress\_meter.cpp](../utilities)
+
+<div></div>
+
+    mongo::LockState::reportState(mongo::BSONObjBuilder&)
+
+- Provided By:
+
+    - [src/mongo/db/lockstate.cpp](../concurrency)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::ThreadSafeString const&)
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::FailPoint::shouldFailCloseBlock()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::Listener::_timeTracker
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::SpinLock::~SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Top::record(mongo::StringData const&, int, int, long long, bool)
+
+- Provided By:
+
+    - [src/mongo/db/stats/top.cpp](../utilities)
+
+<div></div>
+
+    mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::Matcher2::matches(mongo::BSONObj const&, mongo::MatchDetails*) const
+
+- Provided By:
+
+    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+
+<div></div>
+
+    mongo::LockState::hasAnyWriteLock() const
+
+- Provided By:
+
+    - [src/mongo/db/lockstate.cpp](../concurrency)
+
+<div></div>
+
+    mongo::LockStat::report() const
+
+- Provided By:
+
+    - [src/mongo/db/lockstat.cpp](../concurrency)
+
+<div></div>
+
+    mongo::FailPoint::FailPoint()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+### src/mongo/db/curop\_test.cpp
+
+<div></div>
+
+    mongo::sleepmillis(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::sleepmicros(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::Listener::Listener(std::string const&, std::string const&, int, bool)
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    mongo::Listener::accepted(boost::shared_ptr<mongo::Socket>, long long)
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    boost::thread::~thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    typeinfo for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Listener::~Listener()
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    boost::thread::start_thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Listener::initAndListen()
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::Listener
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Listener::_timeTracker
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    vtable for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    boost::detail::thread_data_base::~thread_data_base()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Listener::setupSockets()
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
 -------------
 
 # Group Description
@@ -985,6 +2171,114 @@ Functions to kill the current "operation"
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+# Dependencies
+
+### src/mongo/db/kill\_current\_op.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::somethingWriteLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::globalScriptEngine
+
+- Provided By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
 -------------
 
 # Group Description
@@ -999,6 +2293,9 @@ Helpers to check whether the current operation in the current client has been in
 
 # Interface
 (not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
 
 -------------
 
@@ -1086,6 +2383,34 @@ Base class for a Client on mongod and mongos: ClientBasic
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+# Dependencies
+
+### src/mongo/db/client\_basic.cpp
+
+<div></div>
+
+    mongo::AuthorizationSession::~AuthorizationSession()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 -------------
 
@@ -1205,6 +2530,386 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
+
+# Dependencies
+
+### src/mongo/s/client\_info.cpp
+
+<div></div>
+
+    mongo::DBConnectionPool::get(std::string const&, double)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::ScopedDbConnection
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::TimerStats::getReport() const
+
+- Provided By:
+
+    - [src/mongo/db/stats/timer\_stats.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::pool
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::ShardConnection::~ShardConnection()
+
+- Provided By:
+
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ScopedDbConnection::_setSocketTimeout()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::SpinLock::SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ShardConnection::done()
+
+- Provided By:
+
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    mongo::TimerHolder::TimerHolder(mongo::TimerStats*)
+
+- Provided By:
+
+    - [src/mongo/db/stats/timer\_stats.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::get_tss_data(void const*)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthzSessionExternalStateMongos::AuthzSessionExternalStateMongos(mongo::AuthorizationManager*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../authentication)
+
+<div></div>
+
+    mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)
+
+- Provided By:
+
+    - [src/mongo/s/writeback\_listener.cpp](../sharding)
+
+<div></div>
+
+    mongo::TimerHolder::~TimerHolder()
+
+- Provided By:
+
+    - [src/mongo/db/stats/timer\_stats.cpp](../utilities)
+
+<div></div>
+
+    mongo::causedBy(std::exception const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    vtable for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::SpinLock::~SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
+
+- Provided By:
+
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::causedBy(std::string const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::ShardConnection::_finishInit()
+
+- Provided By:
+
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    mongo::getGlobalAuthorizationManager()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::AScopedConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 -------------
 
@@ -1442,6 +3147,646 @@ The database's internal concept of a cursor from a client
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
+# Dependencies
+
+### src/mongo/db/clientcursor.cpp
+
+<div></div>
+
+    mongo::PseudoRandom::PseudoRandom(long long)
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProcessInfo::supported()
+
+- Provided By:
+
+    - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
+
+<div></div>
+
+    mongo::ServerStatusSection::ServerStatusSection(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::killCurrentOp
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+
+<div></div>
+
+    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/privilege.cpp](../authentication)
+
+<div></div>
+
+    mongo::updateSlaveLocation(mongo::CurOp&, char const*, mongo::OpTime)
+
+- Provided By:
+
+    - [src/mongo/db/repl/write\_concern.cpp](../replication)
+
+<div></div>
+
+    mongo::Lock::GlobalRead::GlobalRead(int)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::theReplSet
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::LockMongoFilesShared::mmmutex
+
+- Provided By:
+
+    - [src/mongo/util/mmap.cpp](../mmap)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::TempRelease::TempRelease()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::getcurns
+
+- Provided By:
+
+    - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
+    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Lock::assertWriteLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::sleepmicros(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::Listener::globalTicketHolder
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    mongo::BackgroundJob::~BackgroundJob()
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::NoPageFaultsAllowed::NoPageFaultsAllowed()
+
+- Provided By:
+
+    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+
+<div></div>
+
+    mongo::ReplSetImpl::replPrefetcherThreadCount
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::PseudoRandom::nextInt32()
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ActionType::killCursors
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+
+<div></div>
+
+    mongo::ActionSet::addAction(mongo::ActionType const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+
+<div></div>
+
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::wasserted(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProcessInfo::~ProcessInfo()
+
+- Provided By:
+
+    - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::TempRelease::~TempRelease()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::isR()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::get_tss_data(void const*)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Lock::GlobalRead::~GlobalRead()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ProcessInfo::getResidentSize()
+
+- Provided By:
+
+    - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ProcessId::getCurrent()
+
+- Provided By:
+
+    - [src/mongo/platform/process\_id.cpp](../utilities)
+
+<div></div>
+
+    mongo::Record::touch(bool) const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::aboutToDeleteForSharding(mongo::StringData const&, mongo::Database const*, mongo::NamespaceDetails const*, mongo::DiskLoc const&)
+
+- Provided By:
+
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Lock::nested()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Listener::_timeTracker
+
+- Provided By:
+
+    - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::~disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::ActionType::cursorInfo
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::sleepsecs(int)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::SecureRandom::create()
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProcessInfo::getVirtualMemorySize()
+
+- Provided By:
+
+    - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
+
+<div></div>
+
+    mongo::MongoFile::totalMappedLength()
+
+- Provided By:
+
+    - [src/mongo/util/mmap.cpp](../mmap)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Lock::isReadLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    typeinfo for mongo::BackgroundJob
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)
+
+- Provided By:
+
+    - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
+
+<div></div>
+
+    mongo::NoPageFaultsAllowed::~NoPageFaultsAllowed()
+
+- Provided By:
+
+    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BackgroundJob::BackgroundJob(bool)
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ReplSetImpl::replWriterThreadCount
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::Lock::isLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
 -------------
 
 # Group Description
@@ -1650,6 +3995,514 @@ Contains helper functions for running common operations against the local server
 
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
 
+# Dependencies
+
+### src/mongo/db/dbhelpers.cpp
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool, mongo::NamespaceString const&)
+
+- Provided By:
+
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::DBWrite::~DBWrite()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    vtable for mongo::UpdateLifecycleImpl
+
+- Provided By:
+
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
+
+<div></div>
+
+    mongo::InternalRunner::InternalRunner(std::string const&, mongo::PlanStage*, mongo::WorkingSet*)
+
+- Provided By:
+
+    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+
+<div></div>
+
+    mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/keypattern.cpp](../indexing)
+
+<div></div>
+
+    mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/s/collection\_metadata.cpp](../sharding)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::NamespaceDetails::findIndexByPrefix(mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::findIdIndex()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*)
+
+- Provided By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Collection::numRecords() const
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/s/collection\_metadata.cpp](../sharding)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::sleepmicros(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::OID const&)
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::WorkingSet::WorkingSet()
+
+- Provided By:
+
+    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::FetchStage::FetchStage(mongo::WorkingSet*, mongo::PlanStage*, mongo::MatchExpression const*)
+
+- Provided By:
+
+    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+
+<div></div>
+
+    mongo::logOp(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)
+
+- Provided By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+
+<div></div>
+
+    mongo::KeyPattern::extendRangeBound(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/keypattern.cpp](../indexing)
+
+<div></div>
+
+    mongo::shardingState
+
+- Provided By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
+    mongo::Collection::docFor(mongo::DiskLoc const&)
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ShardingState::getCollectionMetadata(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DiskLoc::obj() const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+
+<div></div>
+
+    mongo::waitForReplication(mongo::OpTime, int, int)
+
+- Provided By:
+
+    - [src/mongo/db/repl/write\_concern.cpp](../replication)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Lock::isLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
+
+- Provided By:
+
+    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::NamespaceIndex::details(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::terseCurrentTime(bool)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexScan::IndexScan(mongo::IndexScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
+
+- Provided By:
+
+    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::filesystem3::detail::create_directories(boost::filesystem3::path const&, boost::system::error_code*)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../boost\_filesystem)
+
+<div></div>
+
+    boost::filesystem3::path::m_erase_redundant_separator(unsigned long)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../boost\_filesystem)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    boost::filesystem3::path::m_append_separator_if_needed()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../boost\_filesystem)
+
+<div></div>
+
+    mongo::getRunner(mongo::CanonicalQuery*, mongo::Runner**, unsigned long)
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+
+<div></div>
+
+    boost::filesystem3::path::wchar_t_codecvt_facet()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../boost\_filesystem)
+
+<div></div>
+
+    mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)
+
+- Provided By:
+
+    - [src/mongo/db/ops/delete.cpp](../query\_system)
+
+<div></div>
+
+    mongo::KeyPattern::extractSingleKey(mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/keypattern.cpp](../indexing)
+
 -------------
 
 # Group Description
@@ -1680,6 +4533,266 @@ Code to get a handle to the "system.profile" collection for a given Database
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+# Dependencies
+
+### src/mongo/db/introspect.cpp
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::DBWrite::~DBWrite()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)
+
+- Provided By:
+
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Lock::assertWriteLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::dbHolderUnchecked()
+
+- Provided By:
+
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::jsTime()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationSession::getAuthenticatedUserNames()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::AuthorizationManager::USER_DB_FIELD_NAME
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::AuthorizationManager::USER_NAME_FIELD_NAME
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+
+<div></div>
+
+    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
 -------------
 
 # Group Description
@@ -1690,3 +4803,6 @@ Just an enum for different cursor time limit states.
 
 # Interface
 (not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)

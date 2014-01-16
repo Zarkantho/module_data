@@ -139,3 +139,6 @@ Third Party - Perl compatible regular expressions
 
     - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
+# Dependencies
+(no dependencies outside this module)

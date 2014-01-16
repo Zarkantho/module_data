@@ -114,3 +114,6 @@ Third Party - Google performance tools and tcmalloc
 - Used By:
 
     - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
+
+# Dependencies
+(no dependencies outside this module)

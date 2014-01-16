@@ -169,3 +169,6 @@ Third Party - Yaml markup parser. Used for yaml config files
 - Used By:
 
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+
+# Dependencies
+(no dependencies outside this module)

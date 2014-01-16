@@ -574,3 +574,6 @@ Third Party - The boost system library
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/db/stats/counters.cpp](../utilities)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
+
+# Dependencies
+(no dependencies outside this module)

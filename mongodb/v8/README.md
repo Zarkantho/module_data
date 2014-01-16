@@ -1547,3 +1547,117 @@ Third Party - V8 Javascript engine
 
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+# Dependencies
+
+### src/third\_party/v8/src/bootstrapper.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetRawScriptSource(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetDebuggerCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetScriptName(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetDebuggerCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetBuiltinsCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc
+
+### src/third\_party/v8/src/debug.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetIndex(char const*)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+### src/third\_party/v8/src/heap.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+### src/third\_party/v8/src/serialize.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc
+
+<div></div>
+
+    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc

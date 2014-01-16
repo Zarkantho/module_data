@@ -26,3 +26,6 @@ Third Party - Non cryptographic hashing library
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+# Dependencies
+(no dependencies outside this module)

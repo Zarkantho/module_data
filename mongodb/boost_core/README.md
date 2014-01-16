@@ -981,3 +981,6 @@ Third Party - The boost shim and the header files in boost core
 
 # Interface
 (not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
