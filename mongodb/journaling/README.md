@@ -15,12 +15,16 @@ Page aligned buffer builder   what sort of buffer? i don't understand ;(
 
 ### src/mongo/util/alignedbuilder.cpp
 
-- <pre>mongo::AlignedBuilder::kill()</pre>
-Used By:
+    mongo::AlignedBuilder::kill()
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::AlignedBuilder::AlignedBuilder(unsigned int)</pre>
-Used By:
+    mongo::AlignedBuilder::AlignedBuilder(unsigned int)
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
 
 -------------
@@ -51,32 +55,46 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 ### src/mongo/db/dur.cpp
 
-- <pre>mongo::dur::Stats::S::_asCSV()</pre>
-Used By:
+    mongo::dur::Stats::S::_asCSV()
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
-- <pre>mongo::dur::Stats::S::_asObj()</pre>
-Used By:
+    mongo::dur::Stats::S::_asObj()
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
-- <pre>mongo::dur::commitJob</pre>
-Used By:
+    mongo::dur::commitJob
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::dur::stats</pre>
-Used By:
+    mongo::dur::stats
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
-- <pre>mongo::dur::Stats::S::_CSVHeader()</pre>
-Used By:
+    mongo::dur::Stats::S::_CSVHeader()
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
-- <pre>mongo::dur::Stats::S::reset()</pre>
-Used By:
+    mongo::dur::Stats::S::reset()
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
-- <pre>mongo::dur::DurableInterface::_impl</pre>
-Used By:
+    mongo::dur::DurableInterface::_impl
+
+- Used By:
+
     - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
@@ -113,54 +131,72 @@ Used By:
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
-- <pre>mongo::dur::startup()</pre>
-Used By:
+    mongo::dur::startup()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 
-- <pre>mongo::dur::releasingWriteLock()</pre>
-Used By:
+    mongo::dur::releasingWriteLock()
+
+- Used By:
+
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 ### src/mongo/db/dur\_journal.cpp
 
-- <pre>mongo::dur::getJournalDir()</pre>
-Used By:
+    mongo::dur::getJournalDir()
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::dur::haveJournalFiles(bool)</pre>
-Used By:
+    mongo::dur::haveJournalFiles(bool)
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::dur::journalCleanup(bool)</pre>
-Used By:
+    mongo::dur::journalCleanup(bool)
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/storage/durable\_mapped\_file.cpp
 
-- <pre>mongo::DurableMappedFile::create(std::string const&, unsigned long long&, bool)</pre>
-Used By:
+    mongo::DurableMappedFile::create(std::string const&, unsigned long long&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 
-- <pre>mongo::DurableMappedFile::open(std::string const&, bool)</pre>
-Used By:
+    mongo::DurableMappedFile::open(std::string const&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
-- <pre>mongo::DurableMappedFile::~DurableMappedFile()</pre>
-Used By:
+    mongo::DurableMappedFile::~DurableMappedFile()
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 
-- <pre>mongo::DurableMappedFile::DurableMappedFile()</pre>
-Used By:
+    mongo::DurableMappedFile::DurableMappedFile()
+
+- Used By:
+
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
@@ -179,25 +215,35 @@ This is not actually used in our logging system. Just utilities to create files 
 
 ### src/mongo/util/logfile.cpp
 
-- <pre>mongo::LogFile::synchronousAppend(void const*, unsigned long)</pre>
-Used By:
+    mongo::LogFile::synchronousAppend(void const*, unsigned long)
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::LogFile::~LogFile()</pre>
-Used By:
+    mongo::LogFile::~LogFile()
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::LogFile::writeAt(unsigned long long, void const*, unsigned long)</pre>
-Used By:
+    mongo::LogFile::writeAt(unsigned long long, void const*, unsigned long)
+
+- Used By:
+
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::LogFile::LogFile(std::string const&, bool)</pre>
-Used By:
+    mongo::LogFile::LogFile(std::string const&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::LogFile::readAt(unsigned long long, void*, unsigned long)</pre>
-Used By:
+    mongo::LogFile::readAt(unsigned long long, void*, unsigned long)
+
+- Used By:
+
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)

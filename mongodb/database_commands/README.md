@@ -15,8 +15,10 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 ### src/mongo/db/commands.cpp
 
-- <pre>mongo::Command::Command(mongo::StringData, bool, mongo::StringData)</pre>
-Used By:
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -43,34 +45,44 @@ Used By:
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::Command::parseNsFullyQualified(std::string const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::Command::parseNsFullyQualified(std::string const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Command::findCommand(std::string const&)</pre>
-Used By:
+    mongo::Command::findCommand(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
-- <pre>mongo::Command::_checkAuthorization(mongo::Command*, mongo::ClientBasic*, std::string const&, mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::Command::_checkAuthorization(mongo::Command*, mongo::ClientBasic*, std::string const&, mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_split.cpp](../sharding)
 
-- <pre>vtable for mongo::Command</pre>
-Used By:
+    vtable for mongo::Command
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -99,13 +111,17 @@ Used By:
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::Command::testCommandsEnabled</pre>
-Used By:
+    mongo::Command::testCommandsEnabled
+
+- Used By:
+
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
 
-- <pre>mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -132,37 +148,10 @@ Used By:
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)</pre>
-Used By:
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../sharding)
-    - [src/mongo/db/repl/resync.cpp](../replication)
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/stats/top.cpp](../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
 
-- <pre>typeinfo for mongo::Command</pre>
-Used By:
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -190,12 +179,47 @@ Used By:
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::Command::_commandsByBestName</pre>
-Used By:
+    typeinfo for mongo::Command
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/consensus.cpp](../replication)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../sharding)
+    - [src/mongo/db/repl/resync.cpp](../replication)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../sharding)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
+    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../sharding)
+    - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/db/stats/top.cpp](../utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
+
+    mongo::Command::_commandsByBestName
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
-- <pre>mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -219,12 +243,16 @@ Used By:
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::Command::_webCommands</pre>
-Used By:
+    mongo::Command::_webCommands
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
-- <pre>mongo::Command::redactForLogging(mongo::mutablebson::Document*)</pre>
-Used By:
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -252,19 +280,25 @@ Used By:
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, bool, std::string const&)</pre>
-Used By:
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, bool, std::string const&)
+
+- Used By:
+
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)</pre>
-Used By:
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
+
+- Used By:
+
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/strategy\_single.cpp](../sharding)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const</pre>
-Used By:
+    mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Used By:
+
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
@@ -272,8 +306,10 @@ Used By:
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::Command::htmlHelp(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const</pre>
-Used By:
+    mongo::Command::htmlHelp(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
 -------------
@@ -288,12 +324,16 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 ### src/mongo/db/dbcommands.cpp
 
-- <pre>mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)</pre>
-Used By:
+    mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
-- <pre>mongo::_runCommands(char const*, mongo::BSONObj&, mongo::_BufBuilder<mongo::TrivialAllocator>&, mongo::BSONObjBuilder&, bool, int)</pre>
-Used By:
+    mongo::_runCommands(char const*, mongo::BSONObj&, mongo::_BufBuilder<mongo::TrivialAllocator>&, mongo::BSONObjBuilder&, bool, int)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
@@ -355,33 +395,43 @@ Commands (run using db.$cmd.findOne(...))
 
 ### src/mongo/db/commands/authentication\_commands.cpp
 
-- <pre>mongo::CmdAuthenticate::disableAuthMechanism(std::string)</pre>
-Used By:
+    mongo::CmdAuthenticate::disableAuthMechanism(std::string)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
 
 ### src/mongo/db/commands/copydb\_common.cpp
 
-- <pre>mongo::copydb::checkAuthForCopydbCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::copydb::checkAuthForCopydbCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/commands/dbhash.cpp
 
-- <pre>mongo::logOpForDbHash(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)</pre>
-Used By:
+    mongo::logOpForDbHash(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 ### src/mongo/db/commands/get\_last\_error.cpp
 
-- <pre>mongo::getLastErrorDefault</pre>
-Used By:
+    mongo::getLastErrorDefault
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
 ### src/mongo/db/commands/isself.cpp
 
-- <pre>mongo::HostAndPort::isSelf() const</pre>
-Used By:
+    mongo::HostAndPort::isSelf() const
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/dbtests/socktests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
@@ -391,8 +441,10 @@ Used By:
 
 ### src/mongo/db/commands/server\_status.cpp
 
-- <pre>mongo::ServerStatusSection::ServerStatusSection(std::string const&)</pre>
-Used By:
+    mongo::ServerStatusSection::ServerStatusSection(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
@@ -402,12 +454,16 @@ Used By:
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::OpCounterServerStatusSection::OpCounterServerStatusSection(std::string const&, mongo::OpCounters*)</pre>
-Used By:
+    mongo::OpCounterServerStatusSection::OpCounterServerStatusSection(std::string const&, mongo::OpCounters*)
+
+- Used By:
+
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
 
-- <pre>mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)</pre>
-Used By:
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
@@ -422,14 +478,18 @@ Used By:
 
 ### src/mongo/db/dbeval.cpp
 
-- <pre>mongo::dbEval(std::string const&, mongo::BSONObj&, mongo::BSONObjBuilder&, std::string&)</pre>
-Used By:
+    mongo::dbEval(std::string const&, mongo::BSONObj&, mongo::BSONObjBuilder&, std::string&)
+
+- Used By:
+
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
 ### src/mongo/s/commands\_public.cpp
 
-- <pre>mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)</pre>
-Used By:
+    mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)
+
+- Used By:
+
     - [src/mongo/s/strategy\_single.cpp](../sharding)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
@@ -446,17 +506,23 @@ Commands + code for fsync of data files
 
 ### src/mongo/db/commands/fsync.cpp
 
-- <pre>mongo::_unlockFsync()</pre>
-Used By:
+    mongo::_unlockFsync()
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::lockedForWriting()</pre>
-Used By:
+    mongo::lockedForWriting()
+
+- Used By:
+
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::filesLockedFsync</pre>
-Used By:
+    mongo::filesLockedFsync
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)

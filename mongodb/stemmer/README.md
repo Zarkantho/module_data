@@ -68,18 +68,26 @@ Third Party - Stemmer for various languages used in full text search
 
 ### src/third\_party/libstemmer\_c/libstemmer/libstemmer\_utf8.c
 
-- <pre>_sb_stemmer_length</pre>
-Used By:
+    _sb_stemmer_length
+
+- Used By:
+
     - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-- <pre>_sb_stemmer_delete</pre>
-Used By:
+    _sb_stemmer_delete
+
+- Used By:
+
     - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-- <pre>_sb_stemmer_stem</pre>
-Used By:
+    _sb_stemmer_stem
+
+- Used By:
+
     - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-- <pre>_sb_stemmer_new</pre>
-Used By:
+    _sb_stemmer_new
+
+- Used By:
+
     - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)

@@ -22,33 +22,45 @@ Third Party - Snappy compression library
 
 ### src/third\_party/snappy/snappy.cc
 
-- <pre>snappy::MaxCompressedLength(unsigned long)</pre>
-Used By:
+    snappy::MaxCompressedLength(unsigned long)
+
+- Used By:
+
     - [src/mongo/util/compress.cpp](../utilities)
 
-- <pre>snappy::Compress(char const*, unsigned long, std::string*)</pre>
-Used By:
+    snappy::Compress(char const*, unsigned long, std::string*)
+
+- Used By:
+
     - [src/mongo/util/compress.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
 
-- <pre>snappy::RawCompress(char const*, unsigned long, char*, unsigned long*)</pre>
-Used By:
+    snappy::RawCompress(char const*, unsigned long, char*, unsigned long*)
+
+- Used By:
+
     - [src/mongo/util/compress.cpp](../utilities)
 
-- <pre>snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)</pre>
-Used By:
+    snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
 
-- <pre>snappy::Uncompress(char const*, unsigned long, std::string*)</pre>
-Used By:
+    snappy::Uncompress(char const*, unsigned long, std::string*)
+
+- Used By:
+
     - [src/mongo/util/compress.cpp](../utilities)
 
-- <pre>snappy::RawUncompress(char const*, unsigned long, char*)</pre>
-Used By:
+    snappy::RawUncompress(char const*, unsigned long, char*)
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)

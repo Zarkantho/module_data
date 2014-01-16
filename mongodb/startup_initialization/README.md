@@ -15,8 +15,10 @@ Check various expected startup conditions and log warnings to the user if necess
 
 ### src/mongo/db/startup\_warnings.cpp
 
-- <pre>mongo::logStartupWarnings()</pre>
-Used By:
+    mongo::logStartupWarnings()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 -------------
@@ -47,15 +49,19 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 ### src/mongo/base/global\_initializer.cpp
 
-- <pre>mongo::getGlobalInitializer()</pre>
-Used By:
+    mongo::getGlobalInitializer()
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
 ### src/mongo/base/global\_initializer\_registerer.cpp
 
-- <pre>mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)</pre>
-Used By:
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options\_init.cpp
@@ -152,8 +158,10 @@ Used By:
 
 ### src/mongo/base/initializer.cpp
 
-- <pre>mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)</pre>
-Used By:
+    mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)
+
+- Used By:
+
     - [src/mongo/unittest/unittest\_main.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/sniffer.cpp](../tools)
@@ -164,50 +172,70 @@ Used By:
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/bridge.cpp](../tools)
 
-- <pre>mongo::runGlobalInitializers(int, char const* const*, char const* const*)</pre>
-Used By:
+    mongo::runGlobalInitializers(int, char const* const*, char const* const*)
+
+- Used By:
+
     - [src/mongo/client/init.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::Initializer::~Initializer()</pre>
-Used By:
+    mongo::Initializer::~Initializer()
+
+- Used By:
+
     - [src/mongo/base/global\_initializer.cpp](../startup\_initialization)
 
-- <pre>mongo::Initializer::Initializer()</pre>
-Used By:
+    mongo::Initializer::Initializer()
+
+- Used By:
+
     - [src/mongo/base/global\_initializer.cpp](../startup\_initialization)
 
 ### src/mongo/base/initializer\_context.cpp
 
-- <pre>mongo::InitializerContext::InitializerContext(std::vector<std::string, std::allocator<std::string> > const&, std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)</pre>
-Used By:
+    mongo::InitializerContext::InitializerContext(std::vector<std::string, std::allocator<std::string> > const&, std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 ### src/mongo/base/initializer\_dependency\_graph.cpp
 
-- <pre>mongo::InitializerDependencyGraph::~InitializerDependencyGraph()</pre>
-Used By:
+    mongo::InitializerDependencyGraph::~InitializerDependencyGraph()
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
-- <pre>mongo::InitializerDependencyGraph::addInitializer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)</pre>
-Used By:
+    mongo::InitializerDependencyGraph::addInitializer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Used By:
+
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
-- <pre>mongo::InitializerDependencyGraph::topSort(std::vector<std::string, std::allocator<std::string> >*) const</pre>
-Used By:
+    mongo::InitializerDependencyGraph::topSort(std::vector<std::string, std::allocator<std::string> >*) const
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
-- <pre>mongo::InitializerDependencyGraph::InitializerDependencyGraph()</pre>
-Used By:
+    mongo::InitializerDependencyGraph::InitializerDependencyGraph()
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
-- <pre>mongo::InitializerDependencyGraph::getInitializerFunction(std::string const&) const</pre>
-Used By:
+    mongo::InitializerDependencyGraph::getInitializerFunction(std::string const&) const
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 ### src/mongo/base/make\_string\_vector.cpp
 
-- <pre>mongo::_makeStringVector(int, ...)</pre>
-Used By:
+    mongo::_makeStringVector(int, ...)
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options\_init.cpp
@@ -315,23 +343,31 @@ Initialize the global state common to mongod and mongos, such as logging.
 
 ### src/mongo/db/initialize\_server\_global\_state.cpp
 
-- <pre>mongo::signalForkSuccess()</pre>
-Used By:
+    mongo::signalForkSuccess()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::initializeServerGlobalState()</pre>
-Used By:
+    mongo::initializeServerGlobalState()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::forkServerOrDie()</pre>
-Used By:
+    mongo::forkServerOrDie()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::setupCoreSignals()</pre>
-Used By:
+    mongo::setupCoreSignals()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
@@ -365,8 +401,10 @@ Options parser library (command line and config files)   where do the options ge
 
 ### src/mongo/util/options\_parser/environment.cpp
 
-- <pre>mongo::optionenvironment::Environment::operator[](std::string const&) const</pre>
-Used By:
+    mongo::optionenvironment::Environment::operator[](std::string const&) const
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -380,8 +418,10 @@ Used By:
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
 
-- <pre>mongo::optionenvironment::Environment::count(std::string const&) const</pre>
-Used By:
+    mongo::optionenvironment::Environment::count(std::string const&) const
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -404,8 +444,10 @@ Used By:
     - [src/mongo/tools/mongooplog\_options.cpp](../tools)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::optionenvironment::Environment::validate()</pre>
-Used By:
+    mongo::optionenvironment::Environment::validate()
+
+- Used By:
+
     - [src/mongo/tools/mongodump\_options\_init.cpp](../tools)
     - [src/mongo/tools/mongooplog\_options\_init.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options\_init.cpp](../tools)
@@ -423,8 +465,10 @@ Used By:
 
 ### src/mongo/util/options\_parser/option\_description.cpp
 
-- <pre>mongo::optionenvironment::OptionDescription::hidden()</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::hidden()
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoimport\_options.cpp](../tools)
@@ -438,8 +482,10 @@ Used By:
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
-- <pre>mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -452,25 +498,33 @@ Used By:
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
-- <pre>mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
 
-- <pre>mongo::optionenvironment::OptionDescription::requires(std::string const&)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::requires(std::string const&)
+
+- Used By:
+
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
 
-- <pre>mongo::optionenvironment::OptionDescription::format(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::format(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
 
-- <pre>mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)
+
+- Used By:
+
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -480,12 +534,16 @@ Used By:
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
-- <pre>mongo::optionenvironment::OptionDescription::incompatibleWith(std::string const&)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::incompatibleWith(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::optionenvironment::OptionDescription::positional(int, int)</pre>
-Used By:
+    mongo::optionenvironment::OptionDescription::positional(int, int)
+
+- Used By:
+
     - [src/mongo/tools/mongorestore\_options.cpp](../tools)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoimport\_options.cpp](../tools)
@@ -498,8 +556,10 @@ Used By:
 
 ### src/mongo/util/options\_parser/option\_section.cpp
 
-- <pre>mongo::optionenvironment::OptionSection::addOptionChaining(std::string const&, std::string const&, mongo::optionenvironment::OptionType, std::string const&)</pre>
-Used By:
+    mongo::optionenvironment::OptionSection::addOptionChaining(std::string const&, std::string const&, mongo::optionenvironment::OptionType, std::string const&)
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -521,16 +581,20 @@ Used By:
     - [src/mongo/tools/mongooplog\_options.cpp](../tools)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection const&)</pre>
-Used By:
+    mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection const&)
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
     - src/mongo/db/modules/subscription/src/snmp/snmp\_options.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
 
-- <pre>mongo::optionenvironment::OptionSection::helpString() const</pre>
-Used By:
+    mongo::optionenvironment::OptionSection::helpString() const
+
+- Used By:
+
     - [src/mongo/tools/mongorestore\_options.cpp](../tools)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -548,8 +612,10 @@ Used By:
 
 ### src/mongo/util/options\_parser/startup\_options.cpp
 
-- <pre>mongo::optionenvironment::startupOptionsParsed</pre>
-Used By:
+    mongo::optionenvironment::startupOptionsParsed
+
+- Used By:
+
     - [src/mongo/tools/mongodump\_options\_init.cpp](../tools)
     - [src/mongo/tools/mongooplog\_options\_init.cpp](../tools)
     - [src/mongo/tools/mongobridge\_options\_init.cpp](../tools)
@@ -571,8 +637,10 @@ Used By:
     - [src/mongo/dbtests/framework\_options\_init.cpp](../unit\_tests)
     - [src/mongo/tools/mongofiles\_options\_init.cpp](../tools)
 
-- <pre>mongo::optionenvironment::startupOptions</pre>
-Used By:
+    mongo::optionenvironment::startupOptions
+
+- Used By:
+
     - [src/mongo/tools/mongooplog\_options\_init.cpp](../tools)
     - [src/mongo/tools/bsondump\_options.cpp](../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
@@ -609,19 +677,25 @@ Used By:
 
 ### src/mongo/util/options\_parser/value.cpp
 
-- <pre>mongo::optionenvironment::Value::get(std::vector<std::string, std::allocator<std::string> >*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(std::vector<std::string, std::allocator<std::string> >*) const
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::optionenvironment::Value::get(double*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(double*) const
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::optionenvironment::Value::get(std::string*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(std::string*) const
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -633,31 +707,43 @@ Used By:
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
 
-- <pre>mongo::optionenvironment::Value::get(unsigned int*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(unsigned int*) const
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::optionenvironment::Value::get(long*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(long*) const
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::optionenvironment::Value::get(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >*) const
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
 
-- <pre>mongo::optionenvironment::Value::get(bool*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(bool*) const
+
+- Used By:
+
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::optionenvironment::Value::get(unsigned long long*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(unsigned long long*) const
+
+- Used By:
+
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::optionenvironment::Value::get(int*) const</pre>
-Used By:
+    mongo::optionenvironment::Value::get(int*) const
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -678,8 +764,10 @@ Command line utilities   can you say a bit more? (give an example?)
 
 ### src/mongo/util/cmdline\_utils/censor\_cmdline.cpp
 
-- <pre>mongo::cmdline_utils::censorArgvArray(int, char**)</pre>
-Used By:
+    mongo::cmdline_utils::censorArgvArray(int, char**)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
@@ -696,8 +784,10 @@ Only used to ask user for password at startup. TODO: move into cmdline\_utils di
 
 ### src/mongo/util/password.cpp
 
-- <pre>mongo::askPassword()</pre>
-Used By:
+    mongo::askPassword()
+
+- Used By:
+
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
@@ -717,8 +807,10 @@ Command line options shared between mongod and mongos   give an example (--hostn
 
 ### src/mongo/db/server\_options.cpp
 
-- <pre>mongo::serverGlobalParams</pre>
-Used By:
+    mongo::serverGlobalParams
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -784,22 +876,30 @@ Used By:
 
 ### src/mongo/db/server\_options\_helpers.cpp
 
-- <pre>mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)</pre>
-Used By:
+    mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)
+
+- Used By:
+
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::storeServerOptions(mongo::optionenvironment::Environment const&, std::vector<std::string, std::allocator<std::string> > const&)</pre>
-Used By:
+    mongo::storeServerOptions(mongo::optionenvironment::Environment const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Used By:
+
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::printCommandLineOpts()</pre>
-Used By:
+    mongo::printCommandLineOpts()
+
+- Used By:
+
     - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 
-- <pre>mongo::isMongos()</pre>
-Used By:
+    mongo::isMongos()
+
+- Used By:
+
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -821,56 +921,18 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
 
 ### src/mongo/db/server\_parameters.cpp
 
-- <pre>mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&)</pre>
-Used By:
+    mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::ServerParameter::~ServerParameter()</pre>
-Used By:
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
-    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
-    - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/query/qlog.cpp](../query\_system)
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../sharding)
+    mongo::ServerParameter::~ServerParameter()
 
-- <pre>mongo::ExportedServerParameter<std::string>::setFromString(std::string const&)</pre>
-Used By:
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+- Used By:
 
-- <pre>mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)</pre>
-Used By:
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
-    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
-    - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/query/qlog.cpp](../query\_system)
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-- <pre>typeinfo for mongo::ServerParameter</pre>
-Used By:
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
@@ -889,8 +951,58 @@ Used By:
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
-- <pre>mongo::ExportedServerParameter<bool>::setFromString(std::string const&)</pre>
-Used By:
+    mongo::ExportedServerParameter<std::string>::setFromString(std::string const&)
+
+- Used By:
+
+    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+
+    mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)
+
+- Used By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
+    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
+    - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
+    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/query/qlog.cpp](../query\_system)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+    typeinfo for mongo::ServerParameter
+
+- Used By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
+    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
+    - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
+    - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/query/qlog.cpp](../query\_system)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+    mongo::ExportedServerParameter<bool>::setFromString(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
@@ -903,21 +1015,29 @@ Used By:
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
-- <pre>mongo::ExportedServerParameter<int>::setFromString(std::string const&)</pre>
-Used By:
+    mongo::ExportedServerParameter<int>::setFromString(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
 
-- <pre>mongo::ExportedServerParameter<double>::setFromString(std::string const&)</pre>
-Used By:
+    mongo::ExportedServerParameter<double>::setFromString(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::ExportedServerParameter<std::vector<std::string, std::allocator<std::string> > >::setFromString(std::string const&)</pre>
-Used By:
+    mongo::ExportedServerParameter<std::vector<std::string, std::allocator<std::string> > >::setFromString(std::string const&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
 
-- <pre>mongo::ServerParameterSet::getGlobal()</pre>
-Used By:
+    mongo::ServerParameterSet::getGlobal()
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)

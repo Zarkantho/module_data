@@ -26,18 +26,24 @@ Helper classes to delete a range of documents. This is used for example in chunk
 
 ### src/mongo/db/range\_deleter.cpp
 
-- <pre>mongo::RangeDeleter::deleteNow(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, std::string*)</pre>
-Used By:
+    mongo::RangeDeleter::deleteNow(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::RangeDeleter::startWorkers()</pre>
-Used By:
+    mongo::RangeDeleter::startWorkers()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/range\_deleter\_service.cpp
 
-- <pre>mongo::getDeleter()</pre>
-Used By:
+    mongo::getDeleter()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
@@ -71,31 +77,43 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 
 ### src/mongo/s/collection\_metadata.cpp
 
-- <pre>mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const</pre>
-Used By:
+    mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionMetadata::getMinKey() const</pre>
-Used By:
+    mongo::CollectionMetadata::getMinKey() const
+
+- Used By:
+
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::CollectionMetadata::getNextOrphanRange(mongo::BSONObj const&, mongo::KeyRange*) const</pre>
-Used By:
+    mongo::CollectionMetadata::getNextOrphanRange(mongo::BSONObj const&, mongo::KeyRange*) const
+
+- Used By:
+
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
 
-- <pre>mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::CollectionMetadata::isValidKey(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::CollectionMetadata::isValidKey(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
 -------------
@@ -115,13 +133,17 @@ Code to upgrade config server metadata
 
 ### src/mongo/s/config\_upgrade.cpp
 
-- <pre>mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)</pre>
-Used By:
+    mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::getConfigVersion(mongo::ConnectionString const&, mongo::VersionType*)</pre>
-Used By:
+    mongo::getConfigVersion(mongo::ConnectionString const&, mongo::VersionType*)
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 -------------
@@ -138,31 +160,43 @@ Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
 ### src/mongo/client/distlock.cpp
 
-- <pre>mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)</pre>
-Used By:
+    mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)</pre>
-Used By:
+    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DistributedLock::unlock(mongo::BSONObj*)</pre>
-Used By:
+    mongo::DistributedLock::unlock(mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)</pre>
-Used By:
+    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::setLockPingerEnabled(bool)</pre>
-Used By:
+    mongo::setLockPingerEnabled(bool)
+
+- Used By:
+
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::ScopedDistributedLock::acquire(long long, std::string*)</pre>
-Used By:
+    mongo::ScopedDistributedLock::acquire(long long, std::string*)
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
 -------------
@@ -180,16 +214,22 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/db/field\_parser.cpp
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t> const&, mongo::Date_t*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t> const&, mongo::Date_t*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/type\_mongos.cpp](../sharding)
 
-- <pre>mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../new\_wire\_protocol\_write\_commands)
@@ -197,16 +237,22 @@ Used By:
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime> const&, mongo::OpTime*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime> const&, mongo::OpTime*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
@@ -221,8 +267,10 @@ Used By:
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
@@ -236,14 +284,18 @@ Used By:
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)
+
+- Used By:
+
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
@@ -253,14 +305,18 @@ Used By:
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long long> const&, long long*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long long> const&, long long*, std::string*)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
 
-- <pre>mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID> const&, mongo::OID*, std::string*)</pre>
-Used By:
+    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID> const&, mongo::OID*, std::string*)
+
+- Used By:
+
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
 -------------
@@ -307,186 +363,262 @@ Used By:
 
 ### src/mongo/s/type\_changelog.cpp
 
-- <pre>mongo::ChangelogType::ConfigNS</pre>
-Used By:
+    mongo::ChangelogType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_chunk.cpp
 
-- <pre>mongo::ChunkType::min</pre>
-Used By:
+    mongo::ChunkType::min
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::ConfigNS</pre>
-Used By:
+    mongo::ChunkType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkType::max</pre>
-Used By:
+    mongo::ChunkType::max
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::toBSON() const</pre>
-Used By:
+    mongo::ChunkType::toBSON() const
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::DEPRECATED_lastmod</pre>
-Used By:
+    mongo::ChunkType::DEPRECATED_lastmod
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::~ChunkType()</pre>
-Used By:
+    mongo::ChunkType::~ChunkType()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::ns</pre>
-Used By:
+    mongo::ChunkType::ns
+
+- Used By:
+
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::ChunkType()</pre>
-Used By:
+    mongo::ChunkType::ChunkType()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkType::shard</pre>
-Used By:
+    mongo::ChunkType::shard
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_collection.cpp
 
-- <pre>mongo::CollectionType::toBSON() const</pre>
-Used By:
+    mongo::CollectionType::toBSON() const
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionType::~CollectionType()</pre>
-Used By:
+    mongo::CollectionType::~CollectionType()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionType::ns</pre>
-Used By:
+    mongo::CollectionType::ns
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionType::ConfigNS</pre>
-Used By:
+    mongo::CollectionType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionType::isValid(std::string*) const</pre>
-Used By:
+    mongo::CollectionType::isValid(std::string*) const
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::CollectionType::CollectionType()</pre>
-Used By:
+    mongo::CollectionType::CollectionType()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_config\_version.cpp
 
-- <pre>mongo::VersionType::VersionType()</pre>
-Used By:
+    mongo::VersionType::VersionType()
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::VersionType::clear()</pre>
-Used By:
+    mongo::VersionType::clear()
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::VersionType::~VersionType()</pre>
-Used By:
+    mongo::VersionType::~VersionType()
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::VersionType::ConfigNS</pre>
-Used By:
+    mongo::VersionType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::VersionType::toBSON() const</pre>
-Used By:
+    mongo::VersionType::toBSON() const
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_database.cpp
 
-- <pre>mongo::DatabaseType::~DatabaseType()</pre>
-Used By:
+    mongo::DatabaseType::~DatabaseType()
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DatabaseType::DatabaseType()</pre>
-Used By:
+    mongo::DatabaseType::DatabaseType()
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DatabaseType::parseBSON(mongo::BSONObj const&, std::string*)</pre>
-Used By:
+    mongo::DatabaseType::parseBSON(mongo::BSONObj const&, std::string*)
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DatabaseType::ConfigNS</pre>
-Used By:
+    mongo::DatabaseType::ConfigNS
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::DatabaseType::isValid(std::string*) const</pre>
-Used By:
+    mongo::DatabaseType::isValid(std::string*) const
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DatabaseType::primary</pre>
-Used By:
+    mongo::DatabaseType::primary
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DatabaseType::name</pre>
-Used By:
+    mongo::DatabaseType::name
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 ### src/mongo/s/type\_settings.cpp
 
-- <pre>mongo::SettingsType::ConfigNS</pre>
-Used By:
+    mongo::SettingsType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::SettingsType::key</pre>
-Used By:
+    mongo::SettingsType::key
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::SettingsType::balancerStopped</pre>
-Used By:
+    mongo::SettingsType::balancerStopped
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_shard.cpp
 
-- <pre>mongo::ShardType::name</pre>
-Used By:
+    mongo::ShardType::name
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ShardType::~ShardType()</pre>
-Used By:
+    mongo::ShardType::~ShardType()
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ShardType::ConfigNS</pre>
-Used By:
+    mongo::ShardType::ConfigNS
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::ShardType::ShardType()</pre>
-Used By:
+    mongo::ShardType::ShardType()
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ShardType::draining</pre>
-Used By:
+    mongo::ShardType::draining
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ShardType::maxSize</pre>
-Used By:
+    mongo::ShardType::maxSize
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ShardType::toBSON() const</pre>
-Used By:
+    mongo::ShardType::toBSON() const
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 -------------
@@ -502,8 +634,10 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 ### src/mongo/s/writeback\_listener.cpp
 
-- <pre>mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)</pre>
-Used By:
+    mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)
+
+- Used By:
+
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
 
 -------------
@@ -600,321 +734,455 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/balance.cpp
 
-- <pre>mongo::balancer</pre>
-Used By:
+    mongo::balancer
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/chunk.cpp
 
-- <pre>mongo::ChunkManager::loadExistingRanges(std::string const&)</pre>
-Used By:
+    mongo::ChunkManager::loadExistingRanges(std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::Chunk::MaxChunkSize</pre>
-Used By:
+    mongo::Chunk::MaxChunkSize
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Chunk::multiSplit(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, mongo::BSONObj&) const</pre>
-Used By:
+    mongo::Chunk::multiSplit(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, mongo::BSONObj&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::hasShardKey(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::ChunkManager::hasShardKey(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::createFirstChunks(std::string const&, mongo::Shard const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const*, std::vector<mongo::Shard, std::allocator<mongo::Shard> > const*)</pre>
-Used By:
+    mongo::ChunkManager::createFirstChunks(std::string const&, mongo::Shard const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const*, std::vector<mongo::Shard, std::allocator<mongo::Shard> > const*)
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::Chunk::moveAndCommit(mongo::Shard const&, long long, bool, bool, int, mongo::BSONObj&) const</pre>
-Used By:
+    mongo::Chunk::moveAndCommit(mongo::Shard const&, long long, bool, bool, int, mongo::BSONObj&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::ChunkManager(std::string const&, mongo::ShardKeyPattern const&, bool)</pre>
-Used By:
+    mongo::ChunkManager::ChunkManager(std::string const&, mongo::ShardKeyPattern const&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkManager::compatibleWith(mongo::ChunkManager const&, mongo::Shard const&) const</pre>
-Used By:
+    mongo::ChunkManager::compatibleWith(mongo::ChunkManager const&, mongo::Shard const&) const
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::Chunk::ShouldAutoSplit</pre>
-Used By:
+    mongo::Chunk::ShouldAutoSplit
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ChunkManager::getShardsForQuery(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::ChunkManager::getShardsForQuery(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ChunkManager::drop(boost::shared_ptr<mongo::ChunkManager const>) const</pre>
-Used By:
+    mongo::ChunkManager::drop(boost::shared_ptr<mongo::ChunkManager const>) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::findChunkForDoc(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::ChunkManager::findChunkForDoc(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::findIntersectingChunk(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::ChunkManager::findIntersectingChunk(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const</pre>
-Used By:
+    mongo::ChunkManager::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::Chunk::splitIfShould(long) const</pre>
-Used By:
+    mongo::Chunk::splitIfShould(long) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::ChunkRangeManager::reloadAll(std::map<mongo::BSONObj, boost::shared_ptr<mongo::Chunk const>, mongo::BSONObjCmp, std::allocator<std::pair<mongo::BSONObj const, boost::shared_ptr<mongo::Chunk const> > > > const&)</pre>
-Used By:
+    mongo::ChunkRangeManager::reloadAll(std::map<mongo::BSONObj, boost::shared_ptr<mongo::Chunk const>, mongo::BSONObjCmp, std::allocator<std::pair<mongo::BSONObj const, boost::shared_ptr<mongo::Chunk const> > > > const&)
+
+- Used By:
+
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkManager::_printChunks() const</pre>
-Used By:
+    mongo::ChunkManager::_printChunks() const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::ChunkManager(boost::shared_ptr<mongo::ChunkManager const>)</pre>
-Used By:
+    mongo::ChunkManager::ChunkManager(boost::shared_ptr<mongo::ChunkManager const>)
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::ChunkManager::ChunkManager()</pre>
-Used By:
+    mongo::ChunkManager::ChunkManager()
+
+- Used By:
+
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
 
-- <pre>mongo::Chunk::Chunk(mongo::ChunkManager const*, mongo::BSONObj const&, mongo::BSONObj const&, mongo::Shard const&, mongo::ChunkVersion)</pre>
-Used By:
+    mongo::Chunk::Chunk(mongo::ChunkManager const*, mongo::BSONObj const&, mongo::BSONObj const&, mongo::Shard const&, mongo::ChunkVersion)
+
+- Used By:
+
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
 
-- <pre>mongo::Chunk::singleSplit(bool, mongo::BSONObj&) const</pre>
-Used By:
+    mongo::Chunk::singleSplit(bool, mongo::BSONObj&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::getShardsForRange(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::ChunkManager::getShardsForRange(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::Chunk::setMaxChunkSizeSizeMB(int)</pre>
-Used By:
+    mongo::Chunk::setMaxChunkSizeSizeMB(int)
+
+- Used By:
+
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::Chunk::genID(std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Chunk::genID(std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::Chunk::containsPoint(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::Chunk::containsPoint(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ChunkManager::getVersion() const</pre>
-Used By:
+    mongo::ChunkManager::getVersion() const
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 ### src/mongo/s/cluster\_client\_internal.cpp
 
-- <pre>mongo::checkClusterMongoVersions(mongo::ConnectionString const&, std::string const&)</pre>
-Used By:
+    mongo::checkClusterMongoVersions(mongo::ConnectionString const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 ### src/mongo/s/cluster\_write.cpp
 
-- <pre>mongo::ClusterWriterStats::hasShardStats() const</pre>
-Used By:
+    mongo::ClusterWriterStats::hasShardStats() const
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClusterWriter::write(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)</pre>
-Used By:
+    mongo::ClusterWriter::write(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClusterWriter::ClusterWriter(bool, int)</pre>
-Used By:
+    mongo::ClusterWriter::ClusterWriter(bool, int)
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClusterWriter::getStats()</pre>
-Used By:
+    mongo::ClusterWriter::getStats()
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClusterWriterStats::getShardStats() const</pre>
-Used By:
+    mongo::ClusterWriterStats::getShardStats() const
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
 ### src/mongo/s/config.cpp
 
-- <pre>mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string> >)</pre>
-Used By:
+    mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string> >)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::configServer</pre>
-Used By:
+    mongo::configServer
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
-- <pre>mongo::DBConfig::getChunkManager(std::string const&, bool, bool)</pre>
-Used By:
+    mongo::DBConfig::getChunkManager(std::string const&, bool, bool)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::serverID</pre>
-Used By:
+    mongo::serverID
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ConfigServer::reloadSettings()</pre>
-Used By:
+    mongo::ConfigServer::reloadSettings()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DBConfig::getShard(std::string const&)</pre>
-Used By:
+    mongo::DBConfig::getShard(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::dropDatabase(std::string&)</pre>
-Used By:
+    mongo::DBConfig::dropDatabase(std::string&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::getChunkManagerIfExists(std::string const&, bool, bool)</pre>
-Used By:
+    mongo::DBConfig::getChunkManagerIfExists(std::string const&, bool, bool)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ConfigServer::logChange(std::string const&, std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::ConfigServer::logChange(std::string const&, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const</pre>
-Used By:
+    mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::getAllShardedCollections(std::set<std::string, std::less<std::string>, std::allocator<std::string> >&) const</pre>
-Used By:
+    mongo::DBConfig::getAllShardedCollections(std::set<std::string, std::less<std::string>, std::allocator<std::string> >&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::setPrimary(std::string const&)</pre>
-Used By:
+    mongo::DBConfig::setPrimary(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::enableSharding(bool)</pre>
-Used By:
+    mongo::DBConfig::enableSharding(bool)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::removeSharding(std::string const&)</pre>
-Used By:
+    mongo::DBConfig::removeSharding(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::shardCollection(std::string const&, mongo::ShardKeyPattern, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*, std::vector<mongo::Shard, std::allocator<mongo::Shard> >*)</pre>
-Used By:
+    mongo::DBConfig::shardCollection(std::string const&, mongo::ShardKeyPattern, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*, std::vector<mongo::Shard, std::allocator<mongo::Shard> >*)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::isSharded(std::string const&)</pre>
-Used By:
+    mongo::DBConfig::isSharded(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::ConfigServer::ok(bool)</pre>
-Used By:
+    mongo::ConfigServer::ok(bool)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ConfigServer::replicaSetChange(mongo::ReplicaSetMonitor const*)</pre>
-Used By:
+    mongo::ConfigServer::replicaSetChange(mongo::ReplicaSetMonitor const*)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)</pre>
-Used By:
+    mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::DBConfig::load()</pre>
-Used By:
+    mongo::DBConfig::load()
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::ConfigServer::allUp(std::string&)</pre>
-Used By:
+    mongo::ConfigServer::allUp(std::string&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::DBConfig::reload()</pre>
-Used By:
+    mongo::DBConfig::reload()
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 ### src/mongo/s/config\_server\_checker\_service.cpp
 
-- <pre>mongo::startConfigServerChecker()</pre>
-Used By:
+    mongo::startConfigServerChecker()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/cursors.cpp
 
-- <pre>mongo::cursorCache</pre>
-Used By:
+    mongo::cursorCache
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::CursorCache::storeRef(std::string const&, long long, std::string const&)</pre>
-Used By:
+    mongo::CursorCache::storeRef(std::string const&, long long, std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::CursorCache::startTimeoutThread()</pre>
-Used By:
+    mongo::CursorCache::startTimeoutThread()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/d\_logic.cpp
 
-- <pre>mongo::_handlePossibleShardedMessage(mongo::Message&, mongo::DbResponse*)</pre>
-Used By:
+    mongo::_handlePossibleShardedMessage(mongo::Message&, mongo::DbResponse*)
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 ### src/mongo/s/d\_merge.cpp
 
-- <pre>mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)</pre>
-Used By:
+    mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
 ### src/mongo/s/d\_migrate.cpp
 
-- <pre>mongo::aboutToDeleteForSharding(mongo::StringData const&, mongo::Database const*, mongo::NamespaceDetails const*, mongo::DiskLoc const&)</pre>
-Used By:
+    mongo::aboutToDeleteForSharding(mongo::StringData const&, mongo::Database const*, mongo::NamespaceDetails const*, mongo::DiskLoc const&)
+
+- Used By:
+
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::logOpForSharding(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)</pre>
-Used By:
+    mongo::logOpForSharding(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 ### src/mongo/s/d\_state.cpp
 
-- <pre>mongo::ShardingState::needCollectionMetadata(std::string const&) const</pre>
-Used By:
+    mongo::ShardingState::needCollectionMetadata(std::string const&) const
+
+- Used By:
+
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::ShardedConnectionInfo::addHook()</pre>
-Used By:
+    mongo::ShardedConnectionInfo::addHook()
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
 
-- <pre>mongo::ShardingState::gotShardName(std::string const&)</pre>
-Used By:
+    mongo::ShardingState::gotShardName(std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::shardingState</pre>
-Used By:
+    mongo::shardingState
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
@@ -931,12 +1199,16 @@ Used By:
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::ShardingState::resetMetadata(std::string const&)</pre>
-Used By:
+    mongo::ShardingState::resetMetadata(std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
-- <pre>mongo::ShardingState::getCollectionMetadata(std::string const&)</pre>
-Used By:
+    mongo::ShardingState::getCollectionMetadata(std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
@@ -948,101 +1220,141 @@ Used By:
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
 
-- <pre>mongo::ShardingState::initialize(std::string const&)</pre>
-Used By:
+    mongo::ShardingState::initialize(std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::ShardingState::refreshMetadataIfNeeded(std::string const&, mongo::ChunkVersion const&, mongo::ChunkVersion*)</pre>
-Used By:
+    mongo::ShardingState::refreshMetadataIfNeeded(std::string const&, mongo::ChunkVersion const&, mongo::ChunkVersion*)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ShardingState::setShardName(std::string const&)</pre>
-Used By:
+    mongo::ShardingState::setShardName(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ShardingState::getVersion(std::string const&) const</pre>
-Used By:
+    mongo::ShardingState::getVersion(std::string const&) const
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::ShardedConnectionInfo::get(bool)</pre>
-Used By:
+    mongo::ShardedConnectionInfo::get(bool)
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::ShardingState::refreshMetadataNow(std::string const&, mongo::ChunkVersion*)</pre>
-Used By:
+    mongo::ShardingState::refreshMetadataNow(std::string const&, mongo::ChunkVersion*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
-- <pre>mongo::haveLocalShardingInfo(std::string const&)</pre>
-Used By:
+    mongo::haveLocalShardingInfo(std::string const&)
+
+- Used By:
+
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
-- <pre>mongo::shardVersionOk(std::string const&, std::string&, mongo::ChunkVersion&, mongo::ChunkVersion&)</pre>
-Used By:
+    mongo::shardVersionOk(std::string const&, std::string&, mongo::ChunkVersion&, mongo::ChunkVersion&)
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::ShardingState::resetShardingState()</pre>
-Used By:
+    mongo::ShardingState::resetShardingState()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
 ### src/mongo/s/default\_version.cpp
 
-- <pre>mongo::versionManager</pre>
-Used By:
+    mongo::versionManager
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)</pre>
-Used By:
+    mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)</pre>
-Used By:
+    mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)</pre>
-Used By:
+    mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 ### src/mongo/s/grid.cpp
 
-- <pre>mongo::Grid::removeDBIfExists(mongo::DBConfig const&)</pre>
-Used By:
+    mongo::Grid::removeDBIfExists(mongo::DBConfig const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::Grid::getDBConfig(mongo::StringData const&, bool, std::string const&)</pre>
-Used By:
+    mongo::Grid::getDBConfig(mongo::StringData const&, bool, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::Grid::addShard(std::string*, mongo::ConnectionString const&, long long, std::string&)</pre>
-Used By:
+    mongo::Grid::addShard(std::string*, mongo::ConnectionString const&, long long, std::string&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Grid::setAllowLocalHost(bool)</pre>
-Used By:
+    mongo::Grid::setAllowLocalHost(bool)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::Grid::knowAboutShard(std::string const&) const</pre>
-Used By:
+    mongo::Grid::knowAboutShard(std::string const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Grid::flushConfig()</pre>
-Used By:
+    mongo::Grid::flushConfig()
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::grid</pre>
-Used By:
+    mongo::grid
+
+- Used By:
+
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -1050,136 +1362,190 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::Grid::allowLocalHost() const</pre>
-Used By:
+    mongo::Grid::allowLocalHost() const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/mongos\_persistence\_stubs.cpp
 
-- <pre>mongo::isJournalingEnabled()</pre>
-Used By:
+    mongo::isJournalingEnabled()
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::getJournalCommitInterval()</pre>
-Used By:
+    mongo::getJournalCommitInterval()
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::setJournalCommitInterval(unsigned int)</pre>
-Used By:
+    mongo::setJournalCommitInterval(unsigned int)
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
 ### src/mongo/s/request.cpp
 
-- <pre>mongo::Request::process(int)</pre>
-Used By:
+    mongo::Request::process(int)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::Request::init()</pre>
-Used By:
+    mongo::Request::init()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)</pre>
-Used By:
+    mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/shard.cpp
 
-- <pre>mongo::Shard::setAddress(mongo::ConnectionString const&)</pre>
-Used By:
+    mongo::Shard::setAddress(mongo::ConnectionString const&)
+
+- Used By:
+
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::Shard::reloadShardInfo()</pre>
-Used By:
+    mongo::Shard::reloadShardInfo()
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Shard::runCommand(std::string const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::Shard::runCommand(std::string const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Shard::removeShard(std::string const&)</pre>
-Used By:
+    mongo::Shard::removeShard(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>vtable for mongo::ShardingConnectionHook</pre>
-Used By:
+    vtable for mongo::ShardingConnectionHook
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::Shard::reset(std::string const&)</pre>
-Used By:
+    mongo::Shard::reset(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::Shard::_setAddr(std::string const&)</pre>
-Used By:
+    mongo::Shard::_setAddr(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)</pre>
-Used By:
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 ### src/mongo/s/shard\_key\_pattern.cpp
 
-- <pre>mongo::isUniqueIndexCompatible(mongo::BSONObj, mongo::BSONObj)</pre>
-Used By:
+    mongo::isUniqueIndexCompatible(mongo::BSONObj, mongo::BSONObj)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
 ### src/mongo/s/shardconnection.cpp
 
-- <pre>mongo::ShardConnection::~ShardConnection()</pre>
-Used By:
+    mongo::ShardConnection::~ShardConnection()
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ShardConnection::releaseMyConnections()</pre>
-Used By:
+    mongo::ShardConnection::releaseMyConnections()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ShardConnection::_finishInit()</pre>
-Used By:
+    mongo::ShardConnection::_finishInit()
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ShardConnection::kill()</pre>
-Used By:
+    mongo::ShardConnection::kill()
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ShardConnection::sync()</pre>
-Used By:
+    mongo::ShardConnection::sync()
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)</pre>
-Used By:
+    mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ShardConnection::releaseConnectionsAfterResponse</pre>
-Used By:
+    mongo::ShardConnection::releaseConnectionsAfterResponse
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ShardConnection::forgetNS(std::string const&)</pre>
-Used By:
+    mongo::ShardConnection::forgetNS(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::shardConnectionPool</pre>
-Used By:
+    mongo::shardConnectionPool
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ShardConnection::ShardConnection(mongo::Shard const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)</pre>
-Used By:
+    mongo::ShardConnection::ShardConnection(mongo::Shard const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::ShardConnection::done()</pre>
-Used By:
+    mongo::ShardConnection::done()
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
@@ -1187,12 +1553,16 @@ Used By:
 
 ### src/mongo/s/shardkey.cpp
 
-- <pre>mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const</pre>
-Used By:
+    mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ShardKeyPattern::ShardKeyPattern(mongo::BSONObj)</pre>
-Used By:
+    mongo::ShardKeyPattern::ShardKeyPattern(mongo::BSONObj)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
@@ -1200,32 +1570,44 @@ Used By:
 
 ### src/mongo/s/strategy\_shard.cpp
 
-- <pre>mongo::SHARDED</pre>
-Used By:
+    mongo::SHARDED
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::Strategy::useClusterWriteCommands</pre>
-Used By:
+    mongo::Strategy::useClusterWriteCommands
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 ### src/mongo/s/version\_manager.cpp
 
-- <pre>mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)</pre>
-Used By:
+    mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::versionManager</pre>
-Used By:
+    mongo::versionManager
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)</pre>
-Used By:
+    mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)
+
+- Used By:
+
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)</pre>
-Used By:
+    mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
+
+- Used By:
+
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)

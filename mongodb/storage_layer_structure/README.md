@@ -67,58 +67,80 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/namespace\_details.cpp
 
-- <pre>mongo::bucketSizes</pre>
-Used By:
+    mongo::bucketSizes
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::quantizeAllocationSpace(int)</pre>
-Used By:
+    mongo::NamespaceDetails::quantizeAllocationSpace(int)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::alloc(mongo::StringData const&, int)</pre>
-Used By:
+    mongo::NamespaceDetails::alloc(mongo::StringData const&, int)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)</pre>
-Used By:
+    mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::maxCappedDocs() const</pre>
-Used By:
+    mongo::NamespaceDetails::maxCappedDocs() const
+
+- Used By:
+
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::syncUserFlags(std::string const&)</pre>
-Used By:
+    mongo::NamespaceDetails::syncUserFlags(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
 
-- <pre>mongo::NamespaceDetails::setStats(long long, long long)</pre>
-Used By:
+    mongo::NamespaceDetails::setStats(long long, long long)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::getRecordAllocationSize(int)</pre>
-Used By:
+    mongo::NamespaceDetails::getRecordAllocationSize(int)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::setUserFlag(int)</pre>
-Used By:
+    mongo::NamespaceDetails::setUserFlag(int)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
 
-- <pre>mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)</pre>
-Used By:
+    mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)
+
+- Used By:
+
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
@@ -130,62 +152,88 @@ Used By:
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
-- <pre>mongo::NamespaceDetails::orphanDeletedList()</pre>
-Used By:
+    mongo::NamespaceDetails::orphanDeletedList()
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::writingWithExtra()</pre>
-Used By:
+    mongo::NamespaceDetails::writingWithExtra()
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::setPaddingFactor(double)</pre>
-Used By:
+    mongo::NamespaceDetails::setPaddingFactor(double)
+
+- Used By:
+
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
-- <pre>mongo::NamespaceDetails::findIndexByPrefix(mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::NamespaceDetails::findIndexByPrefix(mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::NamespaceDetails::updateTTLIndex(int, mongo::BSONElement const&)</pre>
-Used By:
+    mongo::NamespaceDetails::updateTTLIndex(int, mongo::BSONElement const&)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::setLastExtentSize(int)</pre>
-Used By:
+    mongo::NamespaceDetails::setLastExtentSize(int)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::incrementStats(long long, long long)</pre>
-Used By:
+    mongo::NamespaceDetails::incrementStats(long long, long long)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::clearUserFlag(int)</pre>
-Used By:
+    mongo::NamespaceDetails::clearUserFlag(int)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::setIndexIsMultikey(int, bool)</pre>
-Used By:
+    mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
-- <pre>mongo::legalClientSystemNS(mongo::StringData const&, bool)</pre>
-Used By:
+    mongo::legalClientSystemNS(mongo::StringData const&, bool)
+
+- Used By:
+
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
 
 ### src/mongo/db/database.cpp
 
-- <pre>mongo::Database::clearTmpCollections()</pre>
-Used By:
+    mongo::Database::clearTmpCollections()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
-- <pre>mongo::Database::setProfilingLevel(int, std::string&)</pre>
-Used By:
+    mongo::Database::setProfilingLevel(int, std::string&)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)</pre>
-Used By:
+    mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
@@ -204,19 +252,25 @@ Used By:
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Database::renameCollection(mongo::StringData const&, mongo::StringData const&, bool)</pre>
-Used By:
+    mongo::Database::renameCollection(mongo::StringData const&, mongo::StringData const&, bool)
+
+- Used By:
+
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
 
-- <pre>mongo::Database::getOrCreateCollection(mongo::StringData const&)</pre>
-Used By:
+    mongo::Database::getOrCreateCollection(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
-- <pre>mongo::Database::getCollection(mongo::StringData const&)</pre>
-Used By:
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
@@ -272,12 +326,16 @@ Used By:
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::Database::duplicateUncasedName(bool, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)</pre>
-Used By:
+    mongo::Database::duplicateUncasedName(bool, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
 
-- <pre>mongo::Database::dropCollection(mongo::StringData const&)</pre>
-Used By:
+    mongo::Database::dropCollection(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
@@ -293,37 +351,51 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
-- <pre>mongo::Database::_initExtentFreeList()</pre>
-Used By:
+    mongo::Database::_initExtentFreeList()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::Database::Database(char const*, bool&, std::string const&)</pre>
-Used By:
+    mongo::Database::Database(char const*, bool&, std::string const&)
+
+- Used By:
+
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 ### src/mongo/db/database\_holder.cpp
 
-- <pre>mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&, bool)</pre>
-Used By:
+    mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)</pre>
-Used By:
+    mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
 ### src/mongo/db/storage\_options.cpp
 
-- <pre>mongo::getJournalCommitInterval()</pre>
-Used By:
+    mongo::getJournalCommitInterval()
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::setJournalCommitInterval(unsigned int)</pre>
-Used By:
+    mongo::setJournalCommitInterval(unsigned int)
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::storageGlobalParams</pre>
-Used By:
+    mongo::storageGlobalParams
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
@@ -406,209 +478,299 @@ Used By:
     - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
-- <pre>mongo::isJournalingEnabled()</pre>
-Used By:
+    mongo::isJournalingEnabled()
+
+- Used By:
+
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
 ### src/mongo/db/structure/btree/btree.cpp
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyBson const&)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyBson const&)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::addBucket(mongo::BtreeInMemoryState*)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::addBucket(mongo::BtreeInMemoryState*)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::advance(mongo::DiskLoc const&, int&, int, char const*) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::advance(mongo::DiskLoc const&, int&, int, char const*) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::addBucket(mongo::BtreeInMemoryState*)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::addBucket(mongo::BtreeInMemoryState*)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyV1 const&)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyV1 const&)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V0>::advance(mongo::DiskLoc const&, int&, int, char const*) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V0>::advance(mongo::DiskLoc const&, int&, int, char const*) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
-- <pre>mongo::BtreeBucket<mongo::BtreeData_V1>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const</pre>
-Used By:
+    mongo::BtreeBucket<mongo::BtreeData_V1>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
 ### src/mongo/db/structure/btree/btreebuilder.cpp
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V0>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V1>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V1>::commit(bool)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::commit(bool)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V0>::addKey(mongo::BSONObj&, mongo::DiskLoc)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::addKey(mongo::BSONObj&, mongo::DiskLoc)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V1>::addKey(mongo::BSONObj&, mongo::DiskLoc)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::addKey(mongo::BSONObj&, mongo::DiskLoc)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::BtreeBuilder<mongo::BtreeData_V0>::commit(bool)</pre>
-Used By:
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::commit(bool)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
 ### src/mongo/db/structure/btree/key.cpp
 
-- <pre>mongo::KeyV1::dataSize() const</pre>
-Used By:
+    mongo::KeyV1::dataSize() const
+
+- Used By:
+
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::KeyV1Owned::KeyV1Owned(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::KeyV1Owned::KeyV1Owned(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const</pre>
-Used By:
+    mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
+
+- Used By:
+
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::KeyV1::woEqual(mongo::KeyV1 const&) const</pre>
-Used By:
+    mongo::KeyV1::woEqual(mongo::KeyV1 const&) const
+
+- Used By:
+
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::KeyV1::toBson() const</pre>
-Used By:
+    mongo::KeyV1::toBson() const
+
+- Used By:
+
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::oldCompare(mongo::BSONObj const&, mongo::BSONObj const&, mongo::Ordering const&)</pre>
-Used By:
+    mongo::oldCompare(mongo::BSONObj const&, mongo::BSONObj const&, mongo::Ordering const&)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::KeyBson::woCompare(mongo::KeyBson const&, mongo::Ordering const&) const</pre>
-Used By:
+    mongo::KeyBson::woCompare(mongo::KeyBson const&, mongo::Ordering const&) const
+
+- Used By:
+
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
 ### src/mongo/db/structure/btree/state.cpp
 
-- <pre>mongo::BtreeInMemoryState::head() const</pre>
-Used By:
+    mongo::BtreeInMemoryState::head() const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
 
-- <pre>mongo::BtreeInMemoryState::setMultikey()</pre>
-Used By:
+    mongo::BtreeInMemoryState::setMultikey()
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
-- <pre>mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)</pre>
-Used By:
+    mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
 ### src/mongo/db/structure/collection.cpp
 
-- <pre>mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const</pre>
-Used By:
+    mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
-- <pre>mongo::Collection::docFor(mongo::DiskLoc const&)</pre>
-Used By:
+    mongo::Collection::docFor(mongo::DiskLoc const&)
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Collection::dataSize() const</pre>
-Used By:
+    mongo::Collection::dataSize() const
+
+- Used By:
+
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Collection::isCapped() const</pre>
-Used By:
+    mongo::Collection::isCapped() const
+
+- Used By:
+
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::Collection::insertDocument(mongo::DocWriter const*, bool)</pre>
-Used By:
+    mongo::Collection::insertDocument(mongo::DocWriter const*, bool)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
-- <pre>mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const</pre>
-Used By:
+    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
@@ -618,16 +780,20 @@ Used By:
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
 
-- <pre>mongo::Collection::numRecords() const</pre>
-Used By:
+    mongo::Collection::numRecords() const
+
+- Used By:
+
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Collection::insertDocument(mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/repl/oplog.cpp](../replication)
@@ -646,12 +812,16 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
-- <pre>mongo::Collection::updateDocument(mongo::DiskLoc const&, mongo::BSONObj const&, bool, mongo::OpDebug*)</pre>
-Used By:
+    mongo::Collection::updateDocument(mongo::DiskLoc const&, mongo::BSONObj const&, bool, mongo::OpDebug*)
+
+- Used By:
+
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
-- <pre>mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)</pre>
-Used By:
+    mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
@@ -659,56 +829,76 @@ Used By:
 
 ### src/mongo/db/structure/collection\_info\_cache.cpp
 
-- <pre>mongo::CollectionInfoCache::computeIndexKeys()</pre>
-Used By:
+    mongo::CollectionInfoCache::computeIndexKeys()
+
+- Used By:
+
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
 
-- <pre>mongo::CollectionInfoCache::reset()</pre>
-Used By:
+    mongo::CollectionInfoCache::reset()
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::CollectionInfoCache::getPlanCache() const</pre>
-Used By:
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Used By:
+
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
 
 ### src/mongo/db/structure/record\_store.cpp
 
-- <pre>mongo::RecordStore::recordFor(mongo::DiskLoc const&) const</pre>
-Used By:
+    mongo::RecordStore::recordFor(mongo::DiskLoc const&) const
+
+- Used By:
+
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
 ### src/mongo/db/cap.cpp
 
-- <pre>mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)</pre>
-Used By:
+    mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
 
-- <pre>mongo::NamespaceDetails::emptyCappedCollection(char const*)</pre>
-Used By:
+    mongo::NamespaceDetails::emptyCappedCollection(char const*)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/catalog/index\_catalog.cpp
 
-- <pre>mongo::IndexCatalog::IndexBuildBlock::IndexBuildBlock(mongo::IndexCatalog*, mongo::StringData const&, mongo::DiskLoc const&)</pre>
-Used By:
+    mongo::IndexCatalog::IndexBuildBlock::IndexBuildBlock(mongo::IndexCatalog*, mongo::StringData const&, mongo::DiskLoc const&)
+
+- Used By:
+
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::IndexBuildBlock::~IndexBuildBlock()</pre>
-Used By:
+    mongo::IndexCatalog::IndexBuildBlock::~IndexBuildBlock()
+
+- Used By:
+
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool)</pre>
-Used By:
+    mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::getDescriptor(int)</pre>
-Used By:
+    mongo::IndexCatalog::getDescriptor(int)
+
+- Used By:
+
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
@@ -729,14 +919,18 @@ Used By:
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::numIndexesTotal() const</pre>
-Used By:
+    mongo::IndexCatalog::numIndexesTotal() const
+
+- Used By:
+
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
@@ -744,21 +938,27 @@ Used By:
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::IndexCatalog::ensureHaveIdIndex()</pre>
-Used By:
+    mongo::IndexCatalog::ensureHaveIdIndex()
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::numIndexesReady() const</pre>
-Used By:
+    mongo::IndexCatalog::numIndexesReady() const
+
+- Used By:
+
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
 
-- <pre>mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)</pre>
-Used By:
+    mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
+
+- Used By:
+
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
@@ -768,63 +968,87 @@ Used By:
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::dropIndex(int)</pre>
-Used By:
+    mongo::IndexCatalog::dropIndex(int)
+
+- Used By:
+
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
 
-- <pre>mongo::IndexCatalog::findIdIndex()</pre>
-Used By:
+    mongo::IndexCatalog::findIdIndex()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
 
-- <pre>mongo::IndexCatalog::prepOneUnfinishedIndex()</pre>
-Used By:
+    mongo::IndexCatalog::prepOneUnfinishedIndex()
+
+- Used By:
+
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
 
-- <pre>mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::IndexCatalog::blowAwayInProgressIndexEntries()</pre>
-Used By:
+    mongo::IndexCatalog::blowAwayInProgressIndexEntries()
+
+- Used By:
+
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
 
-- <pre>mongo::IndexCatalog::dropAllIndexes(bool)</pre>
-Used By:
+    mongo::IndexCatalog::dropAllIndexes(bool)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::ok() const</pre>
-Used By:
+    mongo::IndexCatalog::ok() const
+
+- Used By:
+
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::fixIndexKey(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::IndexCatalog::fixIndexKey(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)</pre>
-Used By:
+    mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)
+
+- Used By:
+
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::getBtreeIndex(mongo::IndexDescriptor const*)</pre>
-Used By:
+    mongo::IndexCatalog::getBtreeIndex(mongo::IndexDescriptor const*)
+
+- Used By:
+
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
 
-- <pre>mongo::IndexCatalog::IndexBuildBlock::success()</pre>
-Used By:
+    mongo::IndexCatalog::IndexBuildBlock::success()
+
+- Used By:
+
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)</pre>
-Used By:
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
@@ -839,23 +1063,29 @@ Used By:
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::IndexCatalog::_getAccessMethodName(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::IndexCatalog::_getAccessMethodName(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
 
 ### src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
-- <pre>mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const</pre>
-Used By:
+    mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const
+
+- Used By:
+
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
 
-- <pre>mongo::NamespaceIndex::details(mongo::StringData const&)</pre>
-Used By:
+    mongo::NamespaceIndex::details(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
@@ -887,8 +1117,10 @@ Used By:
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::NamespaceIndex::_init()</pre>
-Used By:
+    mongo::NamespaceIndex::_init()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 -------------
@@ -916,8 +1148,10 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
 ### src/mongo/db/storage/record.cpp
 
-- <pre>mongo::DiskLoc::obj() const</pre>
-Used By:
+    mongo::DiskLoc::obj() const
+
+- Used By:
+
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/db/exec/working\_set\_common.cpp](../query\_system)
@@ -958,8 +1192,10 @@ Used By:
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
-- <pre>mongo::Record::touch(bool) const</pre>
-Used By:
+    mongo::Record::touch(bool) const
+
+- Used By:
+
     - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -967,12 +1203,16 @@ Used By:
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Record::likelyInPhysicalMemory() const</pre>
-Used By:
+    mongo::Record::likelyInPhysicalMemory() const
+
+- Used By:
+
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::DiskLoc::rec() const</pre>
-Used By:
+    mongo::DiskLoc::rec() const
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
@@ -992,8 +1232,10 @@ Used By:
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::Record::_accessing() const</pre>
-Used By:
+    mongo::Record::_accessing() const
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
@@ -1007,25 +1249,33 @@ Used By:
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
-- <pre>mongo::Record::MemoryTrackingEnabled</pre>
-Used By:
+    mongo::Record::MemoryTrackingEnabled
+
+- Used By:
+
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DiskLoc::drec() const</pre>
-Used By:
+    mongo::DiskLoc::drec() const
+
+- Used By:
+
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::Record::likelyInPhysicalMemory(char const*)</pre>
-Used By:
+    mongo::Record::likelyInPhysicalMemory(char const*)
+
+- Used By:
+
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
 
-- <pre>mongo::DiskLoc::ext() const</pre>
-Used By:
+    mongo::DiskLoc::ext() const
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
@@ -1035,8 +1285,10 @@ Used By:
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::DeletedRecord::_accessing() const</pre>
-Used By:
+    mongo::DeletedRecord::_accessing() const
+
+- Used By:
+
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
@@ -1054,29 +1306,41 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
 ### src/mongo/db/storage/extent.cpp
 
-- <pre>mongo::Extent::dump()</pre>
-Used By:
+    mongo::Extent::dump()
+
+- Used By:
+
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::Extent::initialSize(int)</pre>
-Used By:
+    mongo::Extent::initialSize(int)
+
+- Used By:
+
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
-- <pre>mongo::Extent::followupSize(int, int)</pre>
-Used By:
+    mongo::Extent::followupSize(int, int)
+
+- Used By:
+
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
-- <pre>mongo::Extent::markEmpty()</pre>
-Used By:
+    mongo::Extent::markEmpty()
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::Extent::validates(mongo::DiskLoc, mongo::BSONArrayBuilder*)</pre>
-Used By:
+    mongo::Extent::validates(mongo::DiskLoc, mongo::BSONArrayBuilder*)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
-- <pre>mongo::Extent::maxSize()</pre>
-Used By:
+    mongo::Extent::maxSize()
+
+- Used By:
+
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
 -------------
@@ -1092,42 +1356,58 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
 ### src/mongo/db/storage/extent\_manager.cpp
 
-- <pre>mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool) const</pre>
-Used By:
+    mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool) const
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
-- <pre>mongo::ExtentManager::flushFiles(bool)</pre>
-Used By:
+    mongo::ExtentManager::flushFiles(bool)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
-- <pre>mongo::ExtentManager::freeExtents(mongo::DiskLoc, mongo::DiskLoc)</pre>
-Used By:
+    mongo::ExtentManager::freeExtents(mongo::DiskLoc, mongo::DiskLoc)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
 
-- <pre>mongo::ExtentManager::quantizeExtentSize(int)</pre>
-Used By:
+    mongo::ExtentManager::quantizeExtentSize(int)
+
+- Used By:
+
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
-- <pre>mongo::ExtentManager::getFile(int, int, bool)</pre>
-Used By:
+    mongo::ExtentManager::getFile(int, int, bool)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::ExtentManager::getNextExtent(mongo::Extent*) const</pre>
-Used By:
+    mongo::ExtentManager::getNextExtent(mongo::Extent*) const
+
+- Used By:
+
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
-- <pre>mongo::ExtentManager::fileSize() const</pre>
-Used By:
+    mongo::ExtentManager::fileSize() const
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const</pre>
-Used By:
+    mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
@@ -1144,20 +1424,28 @@ Utilities to clone entire collections and databases
 
 ### src/mongo/db/cloner.cpp
 
-- <pre>mongo::Cloner::cloneFrom(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::string&, int*, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)</pre>
-Used By:
+    mongo::Cloner::cloneFrom(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::string&, int*, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
 
-- <pre>mongo::Cloner::Cloner()</pre>
-Used By:
+    mongo::Cloner::Cloner()
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
-- <pre>mongo::Cloner::copyCollectionFromRemote(std::string const&, std::string const&, std::string&)</pre>
-Used By:
+    mongo::Cloner::copyCollectionFromRemote(std::string const&, std::string const&, std::string&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
 
-- <pre>mongo::Cloner::go(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*, std::string&, int*)</pre>
-Used By:
+    mongo::Cloner::go(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*, std::string&, int*)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
 -------------
@@ -1173,19 +1461,25 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 ### src/mongo/db/instance.cpp
 
-- <pre>typeinfo for mongo::DBDirectClient</pre>
-Used By:
+    typeinfo for mongo::DBDirectClient
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::exitCleanly(mongo::ExitCode)</pre>
-Used By:
+    mongo::exitCleanly(mongo::ExitCode)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DBDirectClient::query(std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int, int)</pre>
-Used By:
+    mongo::DBDirectClient::query(std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int, int)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
@@ -1198,41 +1492,55 @@ Used By:
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
-- <pre>mongo::createDirectClient()</pre>
-Used By:
+    mongo::createDirectClient()
+
+- Used By:
+
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
-- <pre>mongo::DBDirectClient::_lookupAvailableOptions()</pre>
-Used By:
+    mongo::DBDirectClient::_lookupAvailableOptions()
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::lockFile</pre>
-Used By:
+    mongo::lockFile
+
+- Used By:
+
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 
-- <pre>mongo::_diaglog</pre>
-Used By:
+    mongo::_diaglog
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::mongoAbort(char const*)</pre>
-Used By:
+    mongo::mongoAbort(char const*)
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
 
-- <pre>mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)</pre>
-Used By:
+    mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>vtable for mongo::DBDirectClient</pre>
-Used By:
+    vtable for mongo::DBDirectClient
+
+- Used By:
+
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
@@ -1279,8 +1587,10 @@ Used By:
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
 
-- <pre>mongo::DBDirectClient::count(std::string const&, mongo::BSONObj const&, int, int, int)</pre>
-Used By:
+    mongo::DBDirectClient::count(std::string const&, mongo::BSONObj const&, int, int, int)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -1292,13 +1602,17 @@ Used By:
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::DiagLog::flush()</pre>
-Used By:
+    mongo::DiagLog::flush()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::inShutdown()</pre>
-Used By:
+    mongo::inShutdown()
+
+- Used By:
+
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -1333,12 +1647,16 @@ Used By:
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::assembleResponse(mongo::Message&, mongo::DbResponse&, mongo::HostAndPort const&)</pre>
-Used By:
+    mongo::assembleResponse(mongo::Message&, mongo::DbResponse&, mongo::HostAndPort const&)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::dbexit(mongo::ExitCode, char const*)</pre>
-Used By:
+    mongo::dbexit(mongo::ExitCode, char const*)
+
+- Used By:
+
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
@@ -1349,45 +1667,61 @@ Used By:
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::DiagLog::setLevel(int)</pre>
-Used By:
+    mongo::DiagLog::setLevel(int)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DBDirectClient::killCursor(long long)</pre>
-Used By:
+    mongo::DBDirectClient::killCursor(long long)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::dbExecCommand</pre>
-Used By:
+    mongo::dbExecCommand
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>non-virtual thunk to mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)</pre>
-Used By:
+    non-virtual thunk to mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::acquirePathLock(bool)</pre>
-Used By:
+    mongo::acquirePathLock(bool)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 
-- <pre>mongo::BSONElementManipulator::initTimestamp()</pre>
-Used By:
+    mongo::BSONElementManipulator::initTimestamp()
+
+- Used By:
+
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
-- <pre>mongo::replHasDatabases()</pre>
-Used By:
+    mongo::replHasDatabases()
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
-- <pre>mongo::killCurrentOp</pre>
-Used By:
+    mongo::killCurrentOp
+
+- Used By:
+
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
@@ -1412,26 +1746,34 @@ Used By:
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Database::closeDatabase(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::Database::closeDatabase(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)</pre>
-Used By:
+    mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>non-virtual thunk to mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)</pre>
-Used By:
+    non-virtual thunk to mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
-- <pre>mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string> >&, std::string const&)</pre>
-Used By:
+    mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string> >&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -1453,26 +1795,36 @@ This is another really hairy, really old legacy file. At this point it's easier 
 
 ### src/mongo/db/pdfile.cpp
 
-- <pre>mongo::inDBRepair</pre>
-Used By:
+    mongo::inDBRepair
+
+- Used By:
+
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
-- <pre>mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)</pre>
-Used By:
+    mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::dbSize(char const*)</pre>
-Used By:
+    mongo::dbSize(char const*)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::dropDatabase(std::string const&)</pre>
-Used By:
+    mongo::dropDatabase(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::dbHolderUnchecked()</pre>
-Used By:
+    mongo::dbHolderUnchecked()
+
+- Used By:
+
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
@@ -1480,13 +1832,17 @@ Used By:
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
-- <pre>mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)</pre>
-Used By:
+    mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)</pre>
-Used By:
+    mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
@@ -1499,19 +1855,27 @@ Used By:
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::_deleteDataFiles(char const*)</pre>
-Used By:
+    mongo::_deleteDataFiles(char const*)
+
+- Used By:
+
     - [src/mongo/db/durop.cpp](../journaling)
 
-- <pre>mongo::dropAllDatabasesExceptLocal()</pre>
-Used By:
+    mongo::dropAllDatabasesExceptLocal()
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
-- <pre>mongo::isValidNS(mongo::StringData const&)</pre>
-Used By:
+    mongo::isValidNS(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
-- <pre>mongo::repairDatabase(std::string, std::string&, bool, bool)</pre>
-Used By:
+    mongo::repairDatabase(std::string, std::string&, bool, bool)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)

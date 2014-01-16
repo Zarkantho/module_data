@@ -14,12 +14,16 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
 ### src/mongo/s/s\_only.cpp
 
-- <pre>mongo::Client::clientAddress(bool) const</pre>
-Used By:
+    mongo::Client::clientAddress(bool) const
+
+- Used By:
+
     - [src/mongo/s/config.cpp](../sharding)
 
-- <pre>mongo::Client::shutdown()</pre>
-Used By:
+    mongo::Client::shutdown()
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
@@ -42,16 +46,22 @@ Used By:
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
-- <pre>mongo::Command::execCommandClientBasic(mongo::Command*, mongo::ClientBasic&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)</pre>
-Used By:
+    mongo::Command::execCommandClientBasic(mongo::Command*, mongo::ClientBasic&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
-- <pre>mongo::usingAShardConnection(std::string const&)</pre>
-Used By:
+    mongo::usingAShardConnection(std::string const&)
+
+- Used By:
+
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
-- <pre>mongo::currentClient</pre>
-Used By:
+    mongo::currentClient
+
+- Used By:
+
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/write\_concern.cpp](../replication)
@@ -161,12 +171,16 @@ Used By:
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)</pre>
-Used By:
+    mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)
+
+- Used By:
+
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
-- <pre>mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)</pre>
-Used By:
+    mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
@@ -209,16 +223,22 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 ### src/mongo/db/client.cpp
 
-- <pre>mongo::Client::Context::inDB(std::string const&, std::string const&) const</pre>
-Used By:
+    mongo::Client::Context::inDB(std::string const&, std::string const&) const
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Client::appendLastOp(mongo::BSONObjBuilder&) const</pre>
-Used By:
+    mongo::Client::appendLastOp(mongo::BSONObjBuilder&) const
+
+- Used By:
+
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
 
-- <pre>mongo::Client::ReadContext::ReadContext(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::Client::ReadContext::ReadContext(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -242,12 +262,16 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::Client::clientAddress(bool) const</pre>
-Used By:
+    mongo::Client::clientAddress(bool) const
+
+- Used By:
+
     - [src/mongo/s/config.cpp](../sharding)
 
-- <pre>mongo::Client::Context::_finishInit()</pre>
-Used By:
+    mongo::Client::Context::_finishInit()
+
+- Used By:
+
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -256,25 +280,33 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Client::allowedToThrowPageFaultException() const</pre>
-Used By:
+    mongo::Client::allowedToThrowPageFaultException() const
+
+- Used By:
+
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
 
-- <pre>mongo::CachedBSONObj::_tooBig</pre>
-Used By:
+    mongo::CachedBSONObj::_tooBig
+
+- Used By:
+
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
 
-- <pre>mongo::OpDebug::reset()</pre>
-Used By:
+    mongo::OpDebug::reset()
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
 
-- <pre>mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)</pre>
-Used By:
+    mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
@@ -304,8 +336,10 @@ Used By:
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
-- <pre>mongo::Client::Context::~Context()</pre>
-Used By:
+    mongo::Client::Context::~Context()
+
+- Used By:
+
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
@@ -372,27 +406,37 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
 
-- <pre>mongo::Client::recommendedYieldMicros(int*, int*, bool)</pre>
-Used By:
+    mongo::Client::recommendedYieldMicros(int*, int*, bool)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
-- <pre>mongo::Client::Context::Context(std::string const&, mongo::Database*)</pre>
-Used By:
+    mongo::Client::Context::Context(std::string const&, mongo::Database*)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
-- <pre>mongo::Client::clientsMutex</pre>
-Used By:
+    mongo::Client::clientsMutex
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
 
-- <pre>mongo::Client::clients</pre>
-Used By:
+    mongo::Client::clients
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
 
-- <pre>mongo::Client::shutdown()</pre>
-Used By:
+    mongo::Client::shutdown()
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
@@ -415,8 +459,10 @@ Used By:
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
-- <pre>mongo::currentClient</pre>
-Used By:
+    mongo::currentClient
+
+- Used By:
+
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/write\_concern.cpp](../replication)
@@ -526,16 +572,22 @@ Used By:
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::Client::getActiveClientCount(int&, int&)</pre>
-Used By:
+    mongo::Client::getActiveClientCount(int&, int&)
+
+- Used By:
+
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
-- <pre>mongo::Client::gotHandshake(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Client::gotHandshake(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
 
-- <pre>mongo::ClientBasic::getCurrent()</pre>
-Used By:
+    mongo::ClientBasic::getCurrent()
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -557,8 +609,10 @@ Used By:
     - [src/mongo/db/repl/rs.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
-- <pre>mongo::Client::WriteContext::WriteContext(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::Client::WriteContext::WriteContext(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
@@ -587,13 +641,17 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::OpDebug::report(mongo::CurOp const&) const</pre>
-Used By:
+    mongo::OpDebug::report(mongo::CurOp const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Client::Context::Context(std::string const&, std::string const&, bool)</pre>
-Used By:
+    mongo::Client::Context::Context(std::string const&, std::string const&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
@@ -644,8 +702,10 @@ The current "operation" within the current "Client"
 
 ### src/mongo/db/curop.cpp
 
-- <pre>mongo::CurOp::ensureStarted()</pre>
-Used By:
+    mongo::CurOp::ensureStarted()
+
+- Used By:
+
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -654,60 +714,82 @@ Used By:
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
 
-- <pre>mongo::CurOp::enter(mongo::Client::Context*)</pre>
-Used By:
+    mongo::CurOp::enter(mongo::Client::Context*)
+
+- Used By:
+
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
-- <pre>mongo::CurOp::reset()</pre>
-Used By:
+    mongo::CurOp::reset()
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
-- <pre>mongo::CurOp::info()</pre>
-Used By:
+    mongo::CurOp::info()
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::CurOp::getRemainingMaxTimeMicros() const</pre>
-Used By:
+    mongo::CurOp::getRemainingMaxTimeMicros() const
+
+- Used By:
+
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::OpDebug::recordStats()</pre>
-Used By:
+    mongo::OpDebug::recordStats()
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::CurOp::kill(bool*)</pre>
-Used By:
+    mongo::CurOp::kill(bool*)
+
+- Used By:
+
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
-- <pre>mongo::CurOp::reset(mongo::HostAndPort const&, int)</pre>
-Used By:
+    mongo::CurOp::reset(mongo::HostAndPort const&, int)
+
+- Used By:
+
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::CurOp::getOp(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::CurOp::getOp(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/index\_builder.cpp](../indexing)
 
-- <pre>mongo::CurOp::~CurOp()</pre>
-Used By:
+    mongo::CurOp::~CurOp()
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::CurOp::setMaxTimeMicros(unsigned long long)</pre>
-Used By:
+    mongo::CurOp::setMaxTimeMicros(unsigned long long)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)</pre>
-Used By:
+    mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
@@ -718,12 +800,16 @@ Used By:
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::CurOp::setNS(mongo::StringData const&)</pre>
-Used By:
+    mongo::CurOp::setNS(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::CurOp::CurOp(mongo::Client*, mongo::CurOp*)</pre>
-Used By:
+    mongo::CurOp::CurOp(mongo::Client*, mongo::CurOp*)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -740,19 +826,25 @@ Functions to kill the current "operation"
 
 ### src/mongo/db/kill\_current\_op.cpp
 
-- <pre>mongo::KillCurrentOp::reset()</pre>
-Used By:
+    mongo::KillCurrentOp::reset()
+
+- Used By:
+
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::KillCurrentOp::checkForInterruptNoAssert()</pre>
-Used By:
+    mongo::KillCurrentOp::checkForInterruptNoAssert()
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/interrupt\_status\_mongod.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::KillCurrentOp::checkForInterrupt(bool)</pre>
-Used By:
+    mongo::KillCurrentOp::checkForInterrupt(bool)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
@@ -774,18 +866,24 @@ Used By:
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/write\_concern.cpp](../replication)
 
-- <pre>mongo::KillCurrentOp::notifyAllWaiters()</pre>
-Used By:
+    mongo::KillCurrentOp::notifyAllWaiters()
+
+- Used By:
+
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
-- <pre>mongo::KillCurrentOp::killAll()</pre>
-Used By:
+    mongo::KillCurrentOp::killAll()
+
+- Used By:
+
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::KillCurrentOp::kill(mongo::AtomicUInt)</pre>
-Used By:
+    mongo::KillCurrentOp::kill(mongo::AtomicUInt)
+
+- Used By:
+
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -817,22 +915,30 @@ Base class for a Client on mongod and mongos: ClientBasic
 
 ### src/mongo/db/client\_basic.cpp
 
-- <pre>mongo::ClientBasic::hasAuthorizationSession() const</pre>
-Used By:
+    mongo::ClientBasic::hasAuthorizationSession() const
+
+- Used By:
+
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
 
-- <pre>mongo::ClientBasic::resetAuthenticationSession(mongo::AuthenticationSession*)</pre>
-Used By:
+    mongo::ClientBasic::resetAuthenticationSession(mongo::AuthenticationSession*)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
-- <pre>mongo::ClientBasic::swapAuthenticationSession(boost::scoped_ptr<mongo::AuthenticationSession>&)</pre>
-Used By:
+    mongo::ClientBasic::swapAuthenticationSession(boost::scoped_ptr<mongo::AuthenticationSession>&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
-- <pre>mongo::ClientBasic::getAuthorizationSession() const</pre>
-Used By:
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
@@ -888,51 +994,71 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 ### src/mongo/s/client\_info.cpp
 
-- <pre>mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)</pre>
-Used By:
+    mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ClientInfo::newRequest()</pre>
-Used By:
+    mongo::ClientInfo::newRequest()
+
+- Used By:
+
     - [src/mongo/s/request.cpp](../sharding)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
 
-- <pre>mongo::ClientInfo::enforceWriteConcern(std::string const&, mongo::BSONObj const&, std::string*)</pre>
-Used By:
+    mongo::ClientInfo::enforceWriteConcern(std::string const&, mongo::BSONObj const&, std::string*)
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ClientInfo::disableForCommand()</pre>
-Used By:
+    mongo::ClientInfo::disableForCommand()
+
+- Used By:
+
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
-- <pre>mongo::ClientInfo::addHostOpTimes(std::map<mongo::ConnectionString, mongo::OpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString const, mongo::OpTime> > > const&)</pre>
-Used By:
+    mongo::ClientInfo::addHostOpTimes(std::map<mongo::ConnectionString, mongo::OpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString const, mongo::OpTime> > > const&)
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClientInfo::get(mongo::AbstractMessagingPort*)</pre>
-Used By:
+    mongo::ClientInfo::get(mongo::AbstractMessagingPort*)
+
+- Used By:
+
     - [src/mongo/s/request.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClientInfo::create(mongo::AbstractMessagingPort*)</pre>
-Used By:
+    mongo::ClientInfo::create(mongo::AbstractMessagingPort*)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::ClientInfo::newPeerRequest(mongo::HostAndPort const&)</pre>
-Used By:
+    mongo::ClientInfo::newPeerRequest(mongo::HostAndPort const&)
+
+- Used By:
+
     - [src/mongo/s/request.cpp](../sharding)
 
-- <pre>mongo::ClientInfo::exists()</pre>
-Used By:
+    mongo::ClientInfo::exists()
+
+- Used By:
+
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
-- <pre>mongo::ClientBasic::getCurrent()</pre>
-Used By:
+    mongo::ClientBasic::getCurrent()
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -967,8 +1093,10 @@ The database's internal concept of a cursor from a client
 
 ### src/mongo/db/clientcursor.cpp
 
-- <pre>mongo::ClientCursorPin::ClientCursorPin(long long)</pre>
-Used By:
+    mongo::ClientCursorPin::ClientCursorPin(long long)
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
@@ -976,60 +1104,80 @@ Used By:
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::find(std::string const&, std::set<long long, std::less<long long>, std::allocator<long long> >&)</pre>
-Used By:
+    mongo::ClientCursor::find(std::string const&, std::set<long long, std::less<long long>, std::allocator<long long> >&)
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
 
-- <pre>mongo::ClientCursorPin::deleteUnderlying()</pre>
-Used By:
+    mongo::ClientCursorPin::deleteUnderlying()
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::ClientCursor::~ClientCursor()</pre>
-Used By:
+    mongo::ClientCursor::~ClientCursor()
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
 
-- <pre>mongo::ClientCursor::suggestYieldMicros()</pre>
-Used By:
+    mongo::ClientCursor::suggestYieldMicros()
+
+- Used By:
+
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
 
-- <pre>mongo::ClientCursorPin::c() const</pre>
-Used By:
+    mongo::ClientCursorPin::c() const
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::ClientCursor::staticYield(int, mongo::StringData const&, mongo::Record const*)</pre>
-Used By:
+    mongo::ClientCursor::staticYield(int, mongo::StringData const&, mongo::Record const*)
+
+- Used By:
+
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
 
-- <pre>mongo::ClientCursor::updateSlaveLocation(mongo::CurOp&)</pre>
-Used By:
+    mongo::ClientCursor::updateSlaveLocation(mongo::CurOp&)
+
+- Used By:
+
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
-- <pre>mongo::ClientCursor::idleTimeReport(unsigned int)</pre>
-Used By:
+    mongo::ClientCursor::idleTimeReport(unsigned int)
+
+- Used By:
+
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::ClientCursor(std::string const&)</pre>
-Used By:
+    mongo::ClientCursor::ClientCursor(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::ClientCursor::registerRunner(mongo::Runner*)</pre>
-Used By:
+    mongo::ClientCursor::registerRunner(mongo::Runner*)
+
+- Used By:
+
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
@@ -1043,17 +1191,23 @@ Used By:
     - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
-- <pre>vtable for mongo::ClientCursorMonitor</pre>
-Used By:
+    vtable for mongo::ClientCursorMonitor
+
+- Used By:
+
     - [src/mongo/db/d\_globals.cpp](../legacy\_code)
 
-- <pre>mongo::ClientCursor::erase(long long)</pre>
-Used By:
+    mongo::ClientCursor::erase(long long)
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::ClientCursorPin::~ClientCursorPin()</pre>
-Used By:
+    mongo::ClientCursorPin::~ClientCursorPin()
+
+- Used By:
+
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
@@ -1061,28 +1215,38 @@ Used By:
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::shouldTimeout(unsigned int)</pre>
-Used By:
+    mongo::ClientCursor::shouldTimeout(unsigned int)
+
+- Used By:
+
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::aboutToDelete(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&)</pre>
-Used By:
+    mongo::ClientCursor::aboutToDelete(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&)
+
+- Used By:
+
     - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::ClientCursor::eraseIfAuthorized(int, long long*)</pre>
-Used By:
+    mongo::ClientCursor::eraseIfAuthorized(int, long long*)
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::ClientCursor::invalidate(mongo::StringData const&)</pre>
-Used By:
+    mongo::ClientCursor::invalidate(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::ClientCursor::deregisterRunner(mongo::Runner*)</pre>
-Used By:
+    mongo::ClientCursor::deregisterRunner(mongo::Runner*)
+
+- Used By:
+
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
@@ -1092,14 +1256,18 @@ Used By:
     - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::clientCursorsById</pre>
-Used By:
+    mongo::ClientCursor::clientCursorsById
+
+- Used By:
+
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
-- <pre>mongo::ClientCursor::ClientCursor(mongo::Runner*, int, mongo::BSONObj)</pre>
-Used By:
+    mongo::ClientCursor::ClientCursor(mongo::Runner*, int, mongo::BSONObj)
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
@@ -1119,84 +1287,114 @@ Contains helper functions for running common operations against the local server
 
 ### src/mongo/db/dbhelpers.cpp
 
-- <pre>mongo::Helpers::findById(mongo::Client&, char const*, mongo::BSONObj, mongo::BSONObj&, bool*, bool*)</pre>
-Used By:
+    mongo::Helpers::findById(mongo::Client&, char const*, mongo::BSONObj, mongo::BSONObj&, bool*, bool*)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::ensureIndex(char const*, mongo::BSONObj, bool, char const*)</pre>
-Used By:
+    mongo::Helpers::ensureIndex(char const*, mongo::BSONObj, bool, char const*)
+
+- Used By:
+
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
-- <pre>mongo::Helpers::findById(mongo::Collection*, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Helpers::findById(mongo::Collection*, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
-- <pre>mongo::Helpers::RemoveSaver::~RemoveSaver()</pre>
-Used By:
+    mongo::Helpers::RemoveSaver::~RemoveSaver()
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::toKeyFormat(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Helpers::toKeyFormat(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::RemoveSaver::RemoveSaver(std::string const&, std::string const&, std::string const&)</pre>
-Used By:
+    mongo::Helpers::RemoveSaver::RemoveSaver(std::string const&, std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::removeRange(mongo::KeyRange const&, bool, bool, mongo::Helpers::RemoveSaver*, bool, bool)</pre>
-Used By:
+    mongo::Helpers::removeRange(mongo::KeyRange const&, bool, bool, mongo::Helpers::RemoveSaver*, bool, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::reverseNaturalObj</pre>
-Used By:
+    mongo::reverseNaturalObj
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
-- <pre>mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
 
-- <pre>mongo::Helpers::findAll(std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Helpers::findAll(std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Helpers::inferKeyPattern(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::Helpers::inferKeyPattern(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::getLast(char const*, mongo::BSONObj&)</pre>
-Used By:
+    mongo::Helpers::getLast(char const*, mongo::BSONObj&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs.cpp](../replication)
 
-- <pre>mongo::Helpers::putSingleton(char const*, mongo::BSONObj)</pre>
-Used By:
+    mongo::Helpers::putSingleton(char const*, mongo::BSONObj)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
-- <pre>mongo::Helpers::upsert(std::string const&, mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::Helpers::upsert(std::string const&, mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj&, bool)</pre>
-Used By:
+    mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj&, bool)
+
+- Used By:
+
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
@@ -1204,24 +1402,32 @@ Used By:
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Helpers::putSingletonGod(char const*, mongo::BSONObj, bool)</pre>
-Used By:
+    mongo::Helpers::putSingletonGod(char const*, mongo::BSONObj, bool)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
 
-- <pre>mongo::Helpers::emptyCollection(char const*)</pre>
-Used By:
+    mongo::Helpers::emptyCollection(char const*)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
-- <pre>mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
 
-- <pre>mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)</pre>
-Used By:
+    mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -1230,8 +1436,10 @@ Used By:
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
-- <pre>mongo::Helpers::getLocsInRange(mongo::KeyRange const&, long long, std::set<mongo::DiskLoc, std::less<mongo::DiskLoc>, std::allocator<mongo::DiskLoc> >*, long long*, long long*)</pre>
-Used By:
+    mongo::Helpers::getLocsInRange(mongo::KeyRange const&, long long, std::set<mongo::DiskLoc, std::less<mongo::DiskLoc>, std::allocator<mongo::DiskLoc> >*, long long*, long long*)
+
+- Used By:
+
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
 
 -------------
@@ -1247,12 +1455,16 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 ### src/mongo/db/introspect.cpp
 
-- <pre>mongo::getOrCreateProfileCollection(mongo::Database*, bool, std::string*)</pre>
-Used By:
+    mongo::getOrCreateProfileCollection(mongo::Database*, bool, std::string*)
+
+- Used By:
+
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::profile(mongo::Client const&, int, mongo::CurOp&)</pre>
-Used By:
+    mongo::profile(mongo::Client const&, int, mongo::CurOp&)
+
+- Used By:
+
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 

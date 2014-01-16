@@ -84,8 +84,10 @@ Authapalooza! TODO: actually separate this logically.
 
 ### src/mongo/db/auth/action\_set.cpp
 
-- <pre>mongo::ActionSet::addAction(mongo::ActionType const&)</pre>
-Used By:
+    mongo::ActionSet::addAction(mongo::ActionType const&)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -132,119 +134,167 @@ Used By:
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::ActionSet::removeAllActions()</pre>
-Used By:
+    mongo::ActionSet::removeAllActions()
+
+- Used By:
+
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
 
 ### src/mongo/db/auth/auth\_index\_d.cpp
 
-- <pre>mongo::authindex::createSystemIndexes(mongo::NamespaceString const&)</pre>
-Used By:
+    mongo::authindex::createSystemIndexes(mongo::NamespaceString const&)
+
+- Used By:
+
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/auth/authorization\_manager.cpp
 
-- <pre>mongo::AuthorizationManager::updateAuthzDocuments(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, int*) const</pre>
-Used By:
+    mongo::AuthorizationManager::updateAuthzDocuments(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, int*) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::internalSecurity</pre>
-Used By:
+    mongo::internalSecurity
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::ROLE_NAME_FIELD_NAME</pre>
-Used By:
+    mongo::AuthorizationManager::ROLE_NAME_FIELD_NAME
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::AuthorizationManager::schemaVersion26Final</pre>
-Used By:
+    mongo::AuthorizationManager::schemaVersion26Final
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::updateRoleDocument(mongo::RoleName const&, mongo::BSONObj const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::AuthorizationManager::updateRoleDocument(mongo::RoleName const&, mongo::BSONObj const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::logOp(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, bool*)</pre>
-Used By:
+    mongo::AuthorizationManager::logOp(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, bool*)
+
+- Used By:
+
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
-- <pre>mongo::AuthorizationManager::rolesCollectionNamespace</pre>
-Used By:
+    mongo::AuthorizationManager::rolesCollectionNamespace
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::invalidateUsersFromDB(std::string const&)</pre>
-Used By:
+    mongo::AuthorizationManager::invalidateUsersFromDB(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::releaseUser(mongo::User*)</pre>
-Used By:
+    mongo::AuthorizationManager::releaseUser(mongo::User*)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)</pre>
-Used By:
+    mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::getBSONForPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&, mongo::mutablebson::Element)</pre>
-Used By:
+    mongo::AuthorizationManager::getBSONForPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&, mongo::mutablebson::Element)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::removePrivilegeDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const</pre>
-Used By:
+    mongo::AuthorizationManager::removePrivilegeDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::writeAuthSchemaVersionIfNeeded()</pre>
-Used By:
+    mongo::AuthorizationManager::writeAuthSchemaVersionIfNeeded()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::queryAuthzDocument(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, boost::function<void (mongo::BSONObj const&)> const&)</pre>
-Used By:
+    mongo::AuthorizationManager::queryAuthzDocument(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, boost::function<void (mongo::BSONObj const&)> const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::getRoleDescription(mongo::RoleName const&, bool, mongo::BSONObj*)</pre>
-Used By:
+    mongo::AuthorizationManager::getRoleDescription(mongo::RoleName const&, bool, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::acquireUser(mongo::UserName const&, mongo::User**)</pre>
-Used By:
+    mongo::AuthorizationManager::acquireUser(mongo::UserName const&, mongo::User**)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)</pre>
-Used By:
+    mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::AuthorizationManager::getUserDescription(mongo::UserName const&, mongo::BSONObj*)</pre>
-Used By:
+    mongo::AuthorizationManager::getUserDescription(mongo::UserName const&, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::ROLE_SOURCE_FIELD_NAME</pre>
-Used By:
+    mongo::AuthorizationManager::ROLE_SOURCE_FIELD_NAME
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::AuthorizationManager::removeRoleDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const</pre>
-Used By:
+    mongo::AuthorizationManager::removeRoleDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::hasAnyPrivilegeDocuments() const</pre>
-Used By:
+    mongo::AuthorizationManager::hasAnyPrivilegeDocuments() const
+
+- Used By:
+
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
-- <pre>mongo::AuthorizationManager::isAuthEnabled() const</pre>
-Used By:
+    mongo::AuthorizationManager::isAuthEnabled() const
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -257,52 +307,74 @@ Used By:
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::AuthorizationManager::invalidateUserCache()</pre>
-Used By:
+    mongo::AuthorizationManager::invalidateUserCache()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::schemaVersion26Upgrade</pre>
-Used By:
+    mongo::AuthorizationManager::schemaVersion26Upgrade
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::~AuthorizationManager()</pre>
-Used By:
+    mongo::AuthorizationManager::~AuthorizationManager()
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
-- <pre>mongo::AuthorizationManager::insertRoleDocument(mongo::BSONObj const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::AuthorizationManager::insertRoleDocument(mongo::BSONObj const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::updatePrivilegeDocument(mongo::UserName const&, mongo::BSONObj const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::AuthorizationManager::updatePrivilegeDocument(mongo::UserName const&, mongo::BSONObj const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::setAuthEnabled(bool)</pre>
-Used By:
+    mongo::AuthorizationManager::setAuthEnabled(bool)
+
+- Used By:
+
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::AuthorizationManager::invalidateUserByName(mongo::UserName const&)</pre>
-Used By:
+    mongo::AuthorizationManager::invalidateUserByName(mongo::UserName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::upgradeSchemaStep(mongo::BSONObj const&, bool*)</pre>
-Used By:
+    mongo::AuthorizationManager::upgradeSchemaStep(mongo::BSONObj const&, bool*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::initialize()</pre>
-Used By:
+    mongo::AuthorizationManager::initialize()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
-- <pre>mongo::AuthorizationManager::insertPrivilegeDocument(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::AuthorizationManager::insertPrivilegeDocument(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::USER_DB_FIELD_NAME</pre>
-Used By:
+    mongo::AuthorizationManager::USER_DB_FIELD_NAME
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
@@ -311,16 +383,22 @@ Used By:
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::AuthorizationManager::usersCollectionNamespace</pre>
-Used By:
+    mongo::AuthorizationManager::usersCollectionNamespace
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::getAuthorizationVersion()</pre>
-Used By:
+    mongo::AuthorizationManager::getAuthorizationVersion()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationManager::USER_NAME_FIELD_NAME</pre>
-Used By:
+    mongo::AuthorizationManager::USER_NAME_FIELD_NAME
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
@@ -331,8 +409,10 @@ Used By:
 
 ### src/mongo/db/auth/authorization\_manager\_global.cpp
 
-- <pre>mongo::getGlobalAuthorizationManager()</pre>
-Used By:
+    mongo::getGlobalAuthorizationManager()
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -355,8 +435,10 @@ Used By:
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
-- <pre>mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)</pre>
-Used By:
+    mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)
+
+- Used By:
+
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
@@ -364,13 +446,17 @@ Used By:
 
 ### src/mongo/db/auth/authorization\_session.cpp
 
-- <pre>mongo::AuthorizationSession::startRequest()</pre>
-Used By:
+    mongo::AuthorizationSession::startRequest()
+
+- Used By:
+
     - [src/mongo/s/request.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::grantInternalAuthorization()</pre>
-Used By:
+    mongo::AuthorizationSession::grantInternalAuthorization()
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
@@ -381,104 +467,144 @@ Used By:
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::AuthorizationSession::isAuthenticatedAsUserWithRole(mongo::RoleName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthenticatedAsUserWithRole(mongo::RoleName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::lookupUser(mongo::UserName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::lookupUser(mongo::UserName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionSet const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionSet const&)
+
+- Used By:
+
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::getAuthorizationManager()</pre>
-Used By:
+    mongo::AuthorizationSession::getAuthorizationManager()
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
-- <pre>mongo::AuthorizationSession::checkAuthorizedToRevokePrivilege(mongo::Privilege const&)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthorizedToRevokePrivilege(mongo::Privilege const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::setImpersonatedUserNames(std::vector<mongo::UserName, std::allocator<mongo::UserName> > const&)</pre>
-Used By:
+    mongo::AuthorizationSession::setImpersonatedUserNames(std::vector<mongo::UserName, std::allocator<mongo::UserName> > const&)
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)</pre>
-Used By:
+    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
+
+- Used By:
+
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForPrivilege(mongo::Privilege const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForPrivilege(mongo::Privilege const&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
 
-- <pre>mongo::AuthorizationSession::getAuthenticatedUserNamesToken()</pre>
-Used By:
+    mongo::AuthorizationSession::getAuthenticatedUserNamesToken()
+
+- Used By:
+
     - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::getImpersonatedUserNames() const</pre>
-Used By:
+    mongo::AuthorizationSession::getImpersonatedUserNames() const
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
 
-- <pre>mongo::AuthorizationSession::isAuthorizedToChangeOwnPasswordAsUser(mongo::UserName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedToChangeOwnPasswordAsUser(mongo::UserName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::getAuthenticatedUserNames()</pre>
-Used By:
+    mongo::AuthorizationSession::getAuthenticatedUserNames()
+
+- Used By:
+
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
-- <pre>mongo::AuthorizationSession::logoutDatabase(std::string const&)</pre>
-Used By:
+    mongo::AuthorizationSession::logoutDatabase(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::checkAuthForQuery(mongo::NamespaceString const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthForQuery(mongo::NamespaceString const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::checkAuthForInsert(mongo::NamespaceString const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthForInsert(mongo::NamespaceString const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::checkAuthForGetMore(mongo::NamespaceString const&, long long)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthForGetMore(mongo::NamespaceString const&, long long)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedToRevokeRole(mongo::RoleName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedToRevokeRole(mongo::RoleName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedToGrantRole(mongo::RoleName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedToGrantRole(mongo::RoleName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
@@ -494,128 +620,176 @@ Used By:
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::AuthorizationSession::~AuthorizationSession()</pre>
-Used By:
+    mongo::AuthorizationSession::~AuthorizationSession()
+
+- Used By:
+
     - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionSet const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionSet const&)
+
+- Used By:
+
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::checkAuthForDelete(mongo::NamespaceString const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthForDelete(mongo::NamespaceString const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::checkAuthForUpdate(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthForUpdate(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::AuthorizationSession::isImpersonating() const</pre>
-Used By:
+    mongo::AuthorizationSession::isImpersonating() const
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
+
+- Used By:
+
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::checkAuthorizedToGrantPrivilege(mongo::Privilege const&)</pre>
-Used By:
+    mongo::AuthorizationSession::checkAuthorizedToGrantPrivilege(mongo::Privilege const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::addAndAuthorizeUser(mongo::UserName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::addAndAuthorizeUser(mongo::UserName const&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
-- <pre>mongo::AuthorizationSession::clearImpersonatedUserNames()</pre>
-Used By:
+    mongo::AuthorizationSession::clearImpersonatedUserNames()
+
+- Used By:
+
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
-- <pre>mongo::AuthorizationSession::isAuthorizedToChangeOwnCustomDataAsUser(mongo::UserName const&)</pre>
-Used By:
+    mongo::AuthorizationSession::isAuthorizedToChangeOwnCustomDataAsUser(mongo::UserName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/auth/authz\_documents\_update\_guard.cpp
 
-- <pre>mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)</pre>
-Used By:
+    mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()</pre>
-Used By:
+    mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)</pre>
-Used By:
+    mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp
 
-- <pre>mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()</pre>
-Used By:
+    mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp
 
-- <pre>mongo::AuthzManagerExternalStateMock::AuthzManagerExternalStateMock()</pre>
-Used By:
+    mongo::AuthzManagerExternalStateMock::AuthzManagerExternalStateMock()
+
+- Used By:
+
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp
 
-- <pre>mongo::AuthzManagerExternalStateMongos::AuthzManagerExternalStateMongos()</pre>
-Used By:
+    mongo::AuthzManagerExternalStateMongos::AuthzManagerExternalStateMongos()
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/authz\_session\_external\_state.cpp
 
-- <pre>mongo::AuthzSessionExternalState::AuthzSessionExternalState(mongo::AuthorizationManager*)</pre>
-Used By:
+    mongo::AuthzSessionExternalState::AuthzSessionExternalState(mongo::AuthorizationManager*)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
-- <pre>mongo::AuthzSessionExternalState::~AuthzSessionExternalState()</pre>
-Used By:
+    mongo::AuthzSessionExternalState::~AuthzSessionExternalState()
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
-- <pre>typeinfo for mongo::AuthzSessionExternalState</pre>
-Used By:
+    typeinfo for mongo::AuthzSessionExternalState
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_d.cpp
 
-- <pre>mongo::AuthzSessionExternalStateMongod::AuthzSessionExternalStateMongod(mongo::AuthorizationManager*)</pre>
-Used By:
+    mongo::AuthzSessionExternalStateMongod::AuthzSessionExternalStateMongod(mongo::AuthorizationManager*)
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_s.cpp
 
-- <pre>mongo::AuthzSessionExternalStateMongos::AuthzSessionExternalStateMongos(mongo::AuthorizationManager*)</pre>
-Used By:
+    mongo::AuthzSessionExternalStateMongos::AuthzSessionExternalStateMongos(mongo::AuthorizationManager*)
+
+- Used By:
+
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 ### src/mongo/db/auth/mongo\_authentication\_session.cpp
 
-- <pre>mongo::MongoAuthenticationSession::MongoAuthenticationSession(unsigned long long)</pre>
-Used By:
+    mongo::MongoAuthenticationSession::MongoAuthenticationSession(unsigned long long)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/auth/privilege.cpp
 
-- <pre>mongo::Privilege::addPrivilegeToPrivilegeVector(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::Privilege const&)</pre>
-Used By:
+    mongo::Privilege::addPrivilegeToPrivilegeVector(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::Privilege const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)</pre>
-Used By:
+    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
+
+- Used By:
+
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -659,12 +833,16 @@ Used By:
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::Privilege::removeActions(mongo::ActionSet const&)</pre>
-Used By:
+    mongo::Privilege::removeActions(mongo::ActionSet const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionType const&)</pre>
-Used By:
+    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionType const&)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -674,75 +852,101 @@ Used By:
 
 ### src/mongo/db/auth/privilege\_parser.cpp
 
-- <pre>mongo::ParsedPrivilege::toBSON() const</pre>
-Used By:
+    mongo::ParsedPrivilege::toBSON() const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::ParsedPrivilege::ParsedPrivilege()</pre>
-Used By:
+    mongo::ParsedPrivilege::ParsedPrivilege()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::ParsedPrivilege::toString() const</pre>
-Used By:
+    mongo::ParsedPrivilege::toString() const
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::ParsedPrivilege::isValid(std::string*) const</pre>
-Used By:
+    mongo::ParsedPrivilege::isValid(std::string*) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::ParsedPrivilege::~ParsedPrivilege()</pre>
-Used By:
+    mongo::ParsedPrivilege::~ParsedPrivilege()
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
-- <pre>mongo::ParsedPrivilege::privilegeToParsedPrivilege(mongo::Privilege const&, mongo::ParsedPrivilege*, std::string*)</pre>
-Used By:
+    mongo::ParsedPrivilege::privilegeToParsedPrivilege(mongo::Privilege const&, mongo::ParsedPrivilege*, std::string*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 ### src/mongo/db/auth/resource\_pattern.cpp
 
-- <pre>mongo::ResourcePattern::toString() const</pre>
-Used By:
+    mongo::ResourcePattern::toString() const
+
+- Used By:
+
     - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
 
 ### src/mongo/db/auth/role\_graph\_builtin\_roles.cpp
 
-- <pre>mongo::RoleGraph::isBuiltinRole(mongo::RoleName const&)</pre>
-Used By:
+    mongo::RoleGraph::isBuiltinRole(mongo::RoleName const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::RoleGraph::generateUniversalPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)</pre>
-Used By:
+    mongo::RoleGraph::generateUniversalPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
+
+- Used By:
+
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
 
 ### src/mongo/db/auth/role\_name.cpp
 
-- <pre>mongo::RoleName::RoleName(mongo::StringData const&, mongo::StringData const&)</pre>
-Used By:
+    mongo::RoleName::RoleName(mongo::StringData const&, mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::operator<<(std::ostream&, mongo::RoleName const&)</pre>
-Used By:
+    mongo::operator<<(std::ostream&, mongo::RoleName const&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 ### src/mongo/db/auth/security\_key.cpp
 
-- <pre>mongo::isInternalAuthSet()</pre>
-Used By:
+    mongo::isInternalAuthSet()
+
+- Used By:
+
     - [src/mongo/db/repl/oplogreader.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
 
-- <pre>mongo::authenticateInternalUser(mongo::DBClientWithCommands*)</pre>
-Used By:
+    mongo::authenticateInternalUser(mongo::DBClientWithCommands*)
+
+- Used By:
+
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -752,112 +956,158 @@ Used By:
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
 
-- <pre>mongo::setInternalUserAuthParams(mongo::BSONObj)</pre>
-Used By:
+    mongo::setInternalUserAuthParams(mongo::BSONObj)
+
+- Used By:
+
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
-- <pre>mongo::setUpSecurityKey(std::string const&)</pre>
-Used By:
+    mongo::setUpSecurityKey(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 ### src/mongo/db/auth/user.cpp
 
-- <pre>mongo::User::getRoles() const</pre>
-Used By:
+    mongo::User::getRoles() const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::User::getCredentials() const</pre>
-Used By:
+    mongo::User::getCredentials() const
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
 
-- <pre>mongo::User::getName() const</pre>
-Used By:
+    mongo::User::getName() const
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/auth/user\_cache\_invalidator\_job.cpp
 
-- <pre>vtable for mongo::UserCacheInvalidator</pre>
-Used By:
+    vtable for mongo::UserCacheInvalidator
+
+- Used By:
+
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/user\_document\_parser.cpp
 
-- <pre>mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/auth/user\_management\_commands\_parser.cpp
 
-- <pre>mongo::auth::parseCreateOrUpdateUserCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateUserArgs*)</pre>
-Used By:
+    mongo::auth::parseCreateOrUpdateUserCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateUserArgs*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseDropRoleCommand(mongo::BSONObj const&, std::string const&, mongo::RoleName*, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseDropRoleCommand(mongo::BSONObj const&, std::string const&, mongo::RoleName*, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)</pre>
-Used By:
+    mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseDropAllRolesFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseDropAllRolesFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseRolesInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::RolesInfoArgs*)</pre>
-Used By:
+    mongo::auth::parseRolesInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::RolesInfoArgs*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseUsersInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::UsersInfoArgs*)</pre>
-Used By:
+    mongo::auth::parseUsersInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::UsersInfoArgs*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseUserNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*)</pre>
-Used By:
+    mongo::auth::parseUserNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
 
-- <pre>mongo::auth::parseAndValidateDropAllUsersFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseAndValidateDropAllUsersFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseRolePossessionManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, std::string*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseRolePossessionManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, std::string*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)</pre>
-Used By:
+    mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseCreateOrUpdateRoleCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateRoleArgs*)</pre>
-Used By:
+    mongo::auth::parseCreateOrUpdateRoleCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateRoleArgs*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::auth::parseAndValidatePrivilegeArray(mongo::BSONArray const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)</pre>
-Used By:
+    mongo::auth::parseAndValidatePrivilegeArray(mongo::BSONArray const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
+
+- Used By:
+
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/auth/user\_name.cpp
 
-- <pre>mongo::UserName::UserName(mongo::StringData const&, mongo::StringData const&)</pre>
-Used By:
+    mongo::UserName::UserName(mongo::StringData const&, mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-- <pre>mongo::operator<<(std::ostream&, mongo::UserName const&)</pre>
-Used By:
+    mongo::operator<<(std::ostream&, mongo::UserName const&)
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp

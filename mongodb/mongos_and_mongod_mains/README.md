@@ -15,8 +15,10 @@ Main for mongod
 
 ### src/mongo/db/db.cpp
 
-- <pre>mongo::snmpInit</pre>
-Used By:
+    mongo::snmpInit
+
+- Used By:
+
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
 
 -------------
@@ -46,13 +48,17 @@ Main for mongos
 
 ### src/mongo/s/server.cpp
 
-- <pre>mongo::createDirectClient()</pre>
-Used By:
+    mongo::createDirectClient()
+
+- Used By:
+
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
-- <pre>mongo::inShutdown()</pre>
-Used By:
+    mongo::inShutdown()
+
+- Used By:
+
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -86,8 +92,10 @@ Used By:
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
-- <pre>mongo::dbexit(mongo::ExitCode, char const*)</pre>
-Used By:
+    mongo::dbexit(mongo::ExitCode, char const*)
+
+- Used By:
+
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
@@ -98,13 +106,17 @@ Used By:
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::dbexitCalled</pre>
-Used By:
+    mongo::dbexitCalled
+
+- Used By:
+
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
-- <pre>mongo::haveLocalShardingInfo(std::string const&)</pre>
-Used By:
+    mongo::haveLocalShardingInfo(std::string const&)
+
+- Used By:
+
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
 -------------

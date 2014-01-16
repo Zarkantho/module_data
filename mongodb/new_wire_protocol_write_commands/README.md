@@ -50,48 +50,66 @@ New wire protocol writes (in mongos)
 
 ### src/mongo/s/write\_ops/batch\_downconvert.cpp
 
-- <pre>mongo::BatchSafeWriter::safeWriteBatch(mongo::DBClientBase*, mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)</pre>
-Used By:
+    mongo::BatchSafeWriter::safeWriteBatch(mongo::DBClientBase*, mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batch\_upconvert.cpp
 
-- <pre>mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)</pre>
-Used By:
+    mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
-- <pre>mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)</pre>
-Used By:
+    mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batch\_write\_exec.cpp
 
-- <pre>mongo::BatchWriteExec::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)</pre>
-Used By:
+    mongo::BatchWriteExec::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*, mongo::ShardResolver*, mongo::MultiCommandDispatch*)</pre>
-Used By:
+    mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*, mongo::ShardResolver*, mongo::MultiCommandDispatch*)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchWriteExec::releaseStats()</pre>
-Used By:
+    mongo::BatchWriteExec::releaseStats()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/config\_coordinator.cpp
 
-- <pre>mongo::ConfigCoordinator::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*, bool)</pre>
-Used By:
+    mongo::ConfigCoordinator::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*, bool)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::ConfigCoordinator::ConfigCoordinator(mongo::MultiCommandDispatch*, std::vector<mongo::ConnectionString, std::allocator<mongo::ConnectionString> > const&)</pre>
-Used By:
+    mongo::ConfigCoordinator::ConfigCoordinator(mongo::MultiCommandDispatch*, std::vector<mongo::ConnectionString, std::allocator<mongo::ConnectionString> > const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp
 
-- <pre>vtable for mongo::DBClientSafeWriter</pre>
-Used By:
+    vtable for mongo::DBClientSafeWriter
+
+- Used By:
+
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 -------------
@@ -132,195 +150,281 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_command\_request.cpp
 
-- <pre>mongo::BatchedCommandRequest::parseBSON(mongo::BSONObj const&, std::string*)</pre>
-Used By:
+    mongo::BatchedCommandRequest::parseBSON(mongo::BSONObj const&, std::string*)
+
+- Used By:
+
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::BatchedCommandRequest(mongo::BatchedCommandRequest::BatchType)</pre>
-Used By:
+    mongo::BatchedCommandRequest::BatchedCommandRequest(mongo::BatchedCommandRequest::BatchType)
+
+- Used By:
+
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::getNS() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::getNS() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::getTargetingNS() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::getTargetingNS() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::isWriteConcernSet() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::isWriteConcernSet() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>vtable for mongo::BatchedCommandRequest</pre>
-Used By:
+    vtable for mongo::BatchedCommandRequest
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::isInsertIndexRequest() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::isInsertIndexRequest() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::sizeWriteOps() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::sizeWriteOps() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::getOrdered() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::getOrdered() const
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::setNS(mongo::StringData const&)</pre>
-Used By:
+    mongo::BatchedCommandRequest::setNS(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandRequest::isVerboseWC() const</pre>
-Used By:
+    mongo::BatchedCommandRequest::isVerboseWC() const
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_command\_response.cpp
 
-- <pre>mongo::BatchedCommandResponse::setN(long long)</pre>
-Used By:
+    mongo::BatchedCommandResponse::setN(long long)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::setOk(int)</pre>
-Used By:
+    mongo::BatchedCommandResponse::setOk(int)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::BatchedCommandResponse()</pre>
-Used By:
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::setErrCode(int)</pre>
-Used By:
+    mongo::BatchedCommandResponse::setErrCode(int)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::~BatchedCommandResponse()</pre>
-Used By:
+    mongo::BatchedCommandResponse::~BatchedCommandResponse()
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::getN() const</pre>
-Used By:
+    mongo::BatchedCommandResponse::getN() const
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)</pre>
-Used By:
+    mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)
+
+- Used By:
+
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::setErrMessage(mongo::StringData const&)</pre>
-Used By:
+    mongo::BatchedCommandResponse::setErrMessage(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedCommandResponse::toBSON() const</pre>
-Used By:
+    mongo::BatchedCommandResponse::toBSON() const
+
+- Used By:
+
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_delete\_document.cpp
 
-- <pre>mongo::BatchedDeleteDocument::setLimit(int)</pre>
-Used By:
+    mongo::BatchedDeleteDocument::setLimit(int)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteDocument::getLimit() const</pre>
-Used By:
+    mongo::BatchedDeleteDocument::getLimit() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteDocument::BatchedDeleteDocument()</pre>
-Used By:
+    mongo::BatchedDeleteDocument::BatchedDeleteDocument()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteDocument::getQuery() const</pre>
-Used By:
+    mongo::BatchedDeleteDocument::getQuery() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_delete\_request.cpp
 
-- <pre>mongo::BatchedDeleteRequest::BatchedDeleteRequest()</pre>
-Used By:
+    mongo::BatchedDeleteRequest::BatchedDeleteRequest()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteRequest::addToDeletes(mongo::BatchedDeleteDocument*)</pre>
-Used By:
+    mongo::BatchedDeleteRequest::addToDeletes(mongo::BatchedDeleteDocument*)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedDeleteRequest::setWriteConcern(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedDeleteRequest::setWriteConcern(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_insert\_request.cpp
 
-- <pre>mongo::BatchedInsertRequest::BatchedInsertRequest()</pre>
-Used By:
+    mongo::BatchedInsertRequest::BatchedInsertRequest()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedInsertRequest::addToDocuments(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedInsertRequest::addToDocuments(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_update\_document.cpp
 
-- <pre>mongo::BatchedUpdateDocument::getUpdateExpr() const</pre>
-Used By:
+    mongo::BatchedUpdateDocument::getUpdateExpr() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::BatchedUpdateDocument()</pre>
-Used By:
+    mongo::BatchedUpdateDocument::BatchedUpdateDocument()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::getMulti() const</pre>
-Used By:
+    mongo::BatchedUpdateDocument::getMulti() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::setUpdateExpr(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedUpdateDocument::setUpdateExpr(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::setUpsert(bool)</pre>
-Used By:
+    mongo::BatchedUpdateDocument::setUpsert(bool)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::getUpsert() const</pre>
-Used By:
+    mongo::BatchedUpdateDocument::getUpsert() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::getQuery() const</pre>
-Used By:
+    mongo::BatchedUpdateDocument::getQuery() const
+
+- Used By:
+
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateDocument::setMulti(bool)</pre>
-Used By:
+    mongo::BatchedUpdateDocument::setMulti(bool)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_update\_request.cpp
 
-- <pre>mongo::BatchedUpdateRequest::addToUpdates(mongo::BatchedUpdateDocument*)</pre>
-Used By:
+    mongo::BatchedUpdateRequest::addToUpdates(mongo::BatchedUpdateDocument*)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateRequest::BatchedUpdateRequest()</pre>
-Used By:
+    mongo::BatchedUpdateRequest::BatchedUpdateRequest()
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
-- <pre>mongo::BatchedUpdateRequest::setWriteConcern(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::BatchedUpdateRequest::setWriteConcern(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 -------------

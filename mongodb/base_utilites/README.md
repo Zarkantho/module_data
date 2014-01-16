@@ -57,8 +57,10 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 ### src/mongo/base/status.cpp
 
-- <pre>mongo::operator<<(std::ostream&, mongo::Status const&)</pre>
-Used By:
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Used By:
+
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
@@ -68,15 +70,19 @@ Used By:
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
-- <pre>mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)</pre>
-Used By:
+    mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
+
+- Used By:
+
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/json.cpp](../bson)
 
-- <pre>mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)</pre>
-Used By:
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Used By:
+
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
     - [src/mongo/db/write\_concern.cpp](../replication)
@@ -213,8 +219,10 @@ Used By:
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
-- <pre>mongo::Status::operator!=(mongo::ErrorCodes::Error) const</pre>
-Used By:
+    mongo::Status::operator!=(mongo::ErrorCodes::Error) const
+
+- Used By:
+
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
@@ -222,13 +230,17 @@ Used By:
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
-- <pre>mongo::Status::operator==(mongo::Status const&) const</pre>
-Used By:
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Used By:
+
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
-- <pre>mongo::Status::operator==(mongo::ErrorCodes::Error) const</pre>
-Used By:
+    mongo::Status::operator==(mongo::ErrorCodes::Error) const
+
+- Used By:
+
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/util/options\_parser/constraints.cpp](../startup\_initialization)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
@@ -242,8 +254,10 @@ Used By:
     - [src/mongo/bson/util/bson\_extract.cpp](../bson)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
-- <pre>mongo::Status::toString() const</pre>
-Used By:
+    mongo::Status::toString() const
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -319,8 +333,10 @@ Used By:
     - [src/mongo/client/examples/authTest.cpp](../cpp\_client\_driver)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Status::operator!=(mongo::Status const&) const</pre>
-Used By:
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Used By:
+
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/auth/action\_set.cpp](../authentication)
     - [src/mongo/base/initializer\_dependency\_graph.cpp](../startup\_initialization)
@@ -332,8 +348,10 @@ Used By:
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
-- <pre>mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)</pre>
-Used By:
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Used By:
+
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -463,14 +481,18 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
 
 ### src/mongo/base/parse\_number.cpp
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<unsigned int>(mongo::StringData const&, int, unsigned int*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<unsigned int>(mongo::StringData const&, int, unsigned int*)
+
+- Used By:
+
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Used By:
+
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
@@ -588,18 +610,24 @@ Used By:
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<unsigned long long>(mongo::StringData const&, int, unsigned long long*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<unsigned long long>(mongo::StringData const&, int, unsigned long long*)
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData const&, int, double*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData const&, int, double*)
+
+- Used By:
+
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)
+
+- Used By:
+
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/util/version.cpp](../utilities)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
@@ -608,8 +636,10 @@ Used By:
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
-- <pre>mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData const&, int, long long*)</pre>
-Used By:
+    mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData const&, int, long long*)
+
+- Used By:
+
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/json.cpp](../bson)
@@ -629,8 +659,10 @@ The StringData class is a wrapper around a char* that can be constructed from ei
 
 ### src/mongo/base/string\_data.cpp
 
-- <pre>mongo::operator<<(std::ostream&, mongo::StringData const&)</pre>
-Used By:
+    mongo::operator<<(std::ostream&, mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/logger/log\_severity.cpp](../logging\_system)
     - [src/mongo/db/json.cpp](../bson)
@@ -661,7 +693,9 @@ Used By:
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/db/field\_ref.cpp](../update\_system)
 
-- <pre>mongo::StringData::Hasher::operator()(mongo::StringData const&) const</pre>
-Used By:
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Used By:
+
     - [src/mongo/db/ops/modifier\_table.cpp](../update\_system)
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)

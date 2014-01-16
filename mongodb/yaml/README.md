@@ -102,38 +102,54 @@ Third Party - Yaml markup parser. Used for yaml config files
 
 ### src/third\_party/yaml-cpp-0.5.1/src/memory.cpp
 
-- <pre>YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)</pre>
-Used By:
+    YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>YAML::detail::memory::create_node()</pre>
-Used By:
+    YAML::detail::memory::create_node()
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/node\_data.cpp
 
-- <pre>YAML::detail::node_data::end()</pre>
-Used By:
+    YAML::detail::node_data::end()
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>YAML::detail::node_data::begin()</pre>
-Used By:
+    YAML::detail::node_data::begin()
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>YAML::detail::node_data::mark_defined()</pre>
-Used By:
+    YAML::detail::node_data::mark_defined()
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>YAML::detail::node_data::empty_scalar</pre>
-Used By:
+    YAML::detail::node_data::empty_scalar
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
-- <pre>YAML::detail::node_data::set_null()</pre>
-Used By:
+    YAML::detail::node_data::set_null()
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/parse.cpp
 
-- <pre>YAML::Load(std::string const&)</pre>
-Used By:
+    YAML::Load(std::string const&)
+
+- Used By:
+
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)

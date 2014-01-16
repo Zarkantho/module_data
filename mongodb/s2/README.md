@@ -99,16 +99,20 @@ Third Party - Google spherical geometry math library
 
 ### src/third\_party/s2/base/logging.cc
 
-- <pre>google_base::DateLogger::HumanDate()</pre>
-Used By:
+    google_base::DateLogger::HumanDate()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>google_base::DateLogger::DateLogger()</pre>
-Used By:
+    google_base::DateLogger::DateLogger()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
@@ -117,21 +121,27 @@ Used By:
 
 ### src/third\_party/s2/s1angle.cc
 
-- <pre>S1Angle::S1Angle(Vector3<double> const&, Vector3<double> const&)</pre>
-Used By:
+    S1Angle::S1Angle(Vector3<double> const&, Vector3<double> const&)
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2.cc
 
-- <pre>S2::kAvgEdge</pre>
-Used By:
+    S2::kAvgEdge
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2::kMaxCellLevel</pre>
-Used By:
+    S2::kMaxCellLevel
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
@@ -139,29 +149,39 @@ Used By:
 
 ### src/third\_party/s2/s2cap.cc
 
-- <pre>vtable for S2Cap</pre>
-Used By:
+    vtable for S2Cap
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Cap::Complement() const</pre>
-Used By:
+    S2Cap::Complement() const
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
 
-- <pre>S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)</pre>
-Used By:
+    S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Cap::MayIntersect(S2Cell const&) const</pre>
-Used By:
+    S2Cap::MayIntersect(S2Cell const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2cell.cc
 
-- <pre>vtable for S2Cell</pre>
-Used By:
+    vtable for S2Cell
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -174,203 +194,285 @@ Used By:
     - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
     - [src/mongo/db/query/query\_planner.cpp](../query\_system)
 
-- <pre>S2Cell::MayIntersect(S2Cell const&) const</pre>
-Used By:
+    S2Cell::MayIntersect(S2Cell const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Cell::Init(S2CellId const&)</pre>
-Used By:
+    S2Cell::Init(S2CellId const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2cellid.cc
 
-- <pre>S2CellId::level() const</pre>
-Used By:
+    S2CellId::level() const
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2CellId::kNumFaces</pre>
-Used By:
+    S2CellId::kNumFaces
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2CellId::ToString() const</pre>
-Used By:
+    S2CellId::ToString() const
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2CellId::kMaxLevel</pre>
-Used By:
+    S2CellId::kMaxLevel
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2CellId::kPosBits</pre>
-Used By:
+    S2CellId::kPosBits
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2CellId::FromPoint(Vector3<double> const&)</pre>
-Used By:
+    S2CellId::FromPoint(Vector3<double> const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2latlng.cc
 
-- <pre>S2LatLng::Normalized() const</pre>
-Used By:
+    S2LatLng::Normalized() const
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2LatLng::ToPoint() const</pre>
-Used By:
+    S2LatLng::ToPoint() const
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2latlngrect.cc
 
-- <pre>S2LatLngRect::Area() const</pre>
-Used By:
+    S2LatLngRect::Area() const
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>vtable for S2LatLngRect</pre>
-Used By:
+    vtable for S2LatLngRect
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
 ### src/third\_party/s2/s2loop.cc
 
-- <pre>S2Loop::IsValid() const</pre>
-Used By:
+    S2Loop::IsValid() const
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Loop::~S2Loop()</pre>
-Used By:
+    S2Loop::~S2Loop()
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Loop::Contains(S2Loop const*) const</pre>
-Used By:
+    S2Loop::Contains(S2Loop const*) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Loop::Normalize()</pre>
-Used By:
+    S2Loop::Normalize()
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Loop::Invert()</pre>
-Used By:
+    S2Loop::Invert()
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Loop::S2Loop(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)</pre>
-Used By:
+    S2Loop::S2Loop(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2polygon.cc
 
-- <pre>S2Polygon::S2Polygon()</pre>
-Used By:
+    S2Polygon::S2Polygon()
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::Contains(S2Polygon const*) const</pre>
-Used By:
+    S2Polygon::Contains(S2Polygon const*) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*, std::allocator<S2Polyline*> >*) const</pre>
-Used By:
+    S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*, std::allocator<S2Polyline*> >*) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::MayIntersect(S2Cell const&) const</pre>
-Used By:
+    S2Polygon::MayIntersect(S2Cell const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::~S2Polygon()</pre>
-Used By:
+    S2Polygon::~S2Polygon()
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::Intersects(S2Polygon const*) const</pre>
-Used By:
+    S2Polygon::Intersects(S2Polygon const*) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::Contains(Vector3<double> const&) const</pre>
-Used By:
+    S2Polygon::Contains(Vector3<double> const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polygon::Project(Vector3<double> const&) const</pre>
-Used By:
+    S2Polygon::Project(Vector3<double> const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2polygonbuilder.cc
 
-- <pre>S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions const&)</pre>
-Used By:
+    S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2PolygonBuilder::~S2PolygonBuilder()</pre>
-Used By:
+    S2PolygonBuilder::~S2PolygonBuilder()
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2PolygonBuilder::AddLoop(S2Loop const*)</pre>
-Used By:
+    S2PolygonBuilder::AddLoop(S2Loop const*)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2PolygonBuilderOptions::set_xor_edges(bool)</pre>
-Used By:
+    S2PolygonBuilderOptions::set_xor_edges(bool)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)</pre>
-Used By:
+    S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2PolygonBuilderOptions::set_validate(bool)</pre>
-Used By:
+    S2PolygonBuilderOptions::set_validate(bool)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2polyline.cc
 
-- <pre>S2Polyline::MayIntersect(S2Cell const&) const</pre>
-Used By:
+    S2Polyline::MayIntersect(S2Cell const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polyline::S2Polyline()</pre>
-Used By:
+    S2Polyline::S2Polyline()
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polyline::IsValid(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)</pre>
-Used By:
+    S2Polyline::IsValid(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Polyline::~S2Polyline()</pre>
-Used By:
+    S2Polyline::~S2Polyline()
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)</pre>
-Used By:
+    S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
+
+- Used By:
+
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
-- <pre>S2Polyline::Intersects(S2Polyline const*) const</pre>
-Used By:
+    S2Polyline::Intersects(S2Polyline const*) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const</pre>
-Used By:
+    S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2Polyline::Project(Vector3<double> const&, int*) const</pre>
-Used By:
+    S2Polyline::Project(Vector3<double> const&, int*) const
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
 
 ### src/third\_party/s2/s2region.cc
 
-- <pre>S2Region::~S2Region()</pre>
-Used By:
+    S2Region::~S2Region()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
     - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
@@ -386,64 +488,88 @@ Used By:
 
 ### src/third\_party/s2/s2regioncoverer.cc
 
-- <pre>S2RegionCoverer::S2RegionCoverer()</pre>
-Used By:
+    S2RegionCoverer::S2RegionCoverer()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2RegionCoverer::set_max_cells(int)</pre>
-Used By:
+    S2RegionCoverer::set_max_cells(int)
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
 
-- <pre>S2RegionCoverer::set_max_level(int)</pre>
-Used By:
+    S2RegionCoverer::set_max_level(int)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2RegionCoverer::set_min_level(int)</pre>
-Used By:
+    S2RegionCoverer::set_min_level(int)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2RegionCoverer::~S2RegionCoverer()</pre>
-Used By:
+    S2RegionCoverer::~S2RegionCoverer()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
-- <pre>S2RegionCoverer::GetCovering(S2Region const&, std::vector<S2CellId, std::allocator<S2CellId> >*)</pre>
-Used By:
+    S2RegionCoverer::GetCovering(S2Region const&, std::vector<S2CellId, std::allocator<S2CellId> >*)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
 ### src/third\_party/s2/s2regionintersection.cc
 
-- <pre>S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)</pre>
-Used By:
+    S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
 
-- <pre>S2RegionIntersection::Init(std::vector<S2Region*, std::allocator<S2Region*> >*)</pre>
-Used By:
+    S2RegionIntersection::Init(std::vector<S2Region*, std::allocator<S2Region*> >*)
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
 
-- <pre>S2RegionIntersection::~S2RegionIntersection()</pre>
-Used By:
+    S2RegionIntersection::~S2RegionIntersection()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
 
-- <pre>S2RegionIntersection::S2RegionIntersection()</pre>
-Used By:
+    S2RegionIntersection::S2RegionIntersection()
+
+- Used By:
+
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
 
 ### src/third\_party/s2/s2regionunion.cc
 
-- <pre>S2RegionUnion::Add(S2Region*)</pre>
-Used By:
+    S2RegionUnion::Add(S2Region*)
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
-- <pre>S2RegionUnion::S2RegionUnion()</pre>
-Used By:
+    S2RegionUnion::S2RegionUnion()
+
+- Used By:
+
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)

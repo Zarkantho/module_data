@@ -206,8 +206,8 @@ def output_readme_files_for_modules(modules_directory, module_data):
                         something_in_interface = True
                         f.write("\n### " + file_name.replace("_", "\\_") + "\n")
                         for interface_object in file_to_interface[file_name]:
-                            f.write("\n- <pre>" + interface_object['symbol'] + "</pre>\n")
-                            f.write("Used By:\n")
+                            f.write("\n    " + interface_object['symbol'] + "\n\n")
+                            f.write("- Used By:\n\n")
                             for file_using in interface_object['used_by']:
                                 if file_using in file_to_module:
                                     f.write("    - [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")

@@ -15,28 +15,40 @@ Interface to data file. Depends on journaling module. These are the actual data 
 
 ### src/mongo/db/storage/data\_file.cpp
 
-- <pre>mongo::DataFile::openExisting(char const*)</pre>
-Used By:
+    mongo::DataFile::openExisting(char const*)
+
+- Used By:
+
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::DataFile::open(char const*, int, bool)</pre>
-Used By:
+    mongo::DataFile::open(char const*, int, bool)
+
+- Used By:
+
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::DataFile::flush(bool)</pre>
-Used By:
+    mongo::DataFile::flush(bool)
+
+- Used By:
+
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::DataFile::allocExtentArea(int)</pre>
-Used By:
+    mongo::DataFile::allocExtentArea(int)
+
+- Used By:
+
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::DataFile::maxSize()</pre>
-Used By:
+    mongo::DataFile::maxSize()
+
+- Used By:
+
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::DataFile::badOfs(int) const</pre>
-Used By:
+    mongo::DataFile::badOfs(int) const
+
+- Used By:
+
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)

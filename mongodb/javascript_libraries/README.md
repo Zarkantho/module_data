@@ -26,12 +26,16 @@ v8 Javascript library files
 
 ### src/mongo/scripting/engine.cpp
 
-- <pre>mongo::ScriptEngine::_checkInterruptCallback</pre>
-Used By:
+    mongo::ScriptEngine::_checkInterruptCallback
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::globalScriptEngine</pre>
-Used By:
+    mongo::globalScriptEngine
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
@@ -41,39 +45,53 @@ Used By:
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
-- <pre>mongo::ScriptEngine::_connectCallback</pre>
-Used By:
+    mongo::ScriptEngine::_connectCallback
+
+- Used By:
+
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
-- <pre>mongo::Scope::storedFuncMod()</pre>
-Used By:
+    mongo::Scope::storedFuncMod()
+
+- Used By:
+
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
-- <pre>mongo::Scope::invoke(char const*, mongo::BSONObj const*, mongo::BSONObj const*, int)</pre>
-Used By:
+    mongo::Scope::invoke(char const*, mongo::BSONObj const*, mongo::BSONObj const*, int)
+
+- Used By:
+
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
-- <pre>mongo::ScriptEngine::getPooledScope(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::ScriptEngine::getPooledScope(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
-- <pre>mongo::ScriptEngine::_getCurrentOpIdCallback</pre>
-Used By:
+    mongo::ScriptEngine::_getCurrentOpIdCallback
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/scripting/engine\_v8.cpp
 
-- <pre>mongo::ScriptEngine::getInterpreterVersionString()</pre>
-Used By:
+    mongo::ScriptEngine::getInterpreterVersionString()
+
+- Used By:
+
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
-- <pre>mongo::ScriptEngine::setup()</pre>
-Used By:
+    mongo::ScriptEngine::setup()
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)

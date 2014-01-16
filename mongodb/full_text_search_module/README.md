@@ -61,119 +61,165 @@
 
 ### src/mongo/db/fts/fts\_command\_mongod.cpp
 
-- <pre>mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)</pre>
-Used By:
+    mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
-- <pre>vtable for mongo::fts::FTSCommand</pre>
-Used By:
+    vtable for mongo::fts::FTSCommand
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
 ### src/mongo/db/fts/fts\_command\_mongos.cpp
 
-- <pre>mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)</pre>
-Used By:
+    mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
-- <pre>vtable for mongo::fts::FTSCommand</pre>
-Used By:
+    vtable for mongo::fts::FTSCommand
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
-- <pre>mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)</pre>
-Used By:
+    mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
-- <pre>vtable for mongo::fts::FTSCommand</pre>
-Used By:
+    vtable for mongo::fts::FTSCommand
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
 
 ### src/mongo/db/fts/fts\_index\_format.cpp
 
-- <pre>mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)</pre>
-Used By:
+    mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)
+
+- Used By:
+
     - [src/mongo/db/index/fts\_access\_method.cpp](../indexing)
 
-- <pre>mongo::fts::FTSIndexFormat::getIndexKey(double, std::string const&, mongo::BSONObj const&)</pre>
-Used By:
+    mongo::fts::FTSIndexFormat::getIndexKey(double, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
 
 ### src/mongo/db/fts/fts\_language.cpp
 
-- <pre>mongo::fts::FTSLanguage::makeFTSLanguage(std::string const&)</pre>
-Used By:
+    mongo::fts::FTSLanguage::makeFTSLanguage(std::string const&)
+
+- Used By:
+
     - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSLanguage::FTSLanguage(mongo::fts::FTSLanguage const&)</pre>
-Used By:
+    mongo::fts::FTSLanguage::FTSLanguage(mongo::fts::FTSLanguage const&)
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSLanguage::str() const</pre>
-Used By:
+    mongo::fts::FTSLanguage::str() const
+
+- Used By:
+
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSLanguage::operator=(mongo::fts::FTSLanguage const&)</pre>
-Used By:
+    mongo::fts::FTSLanguage::operator=(mongo::fts::FTSLanguage const&)
+
+- Used By:
+
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSLanguage::~FTSLanguage()</pre>
-Used By:
+    mongo::fts::FTSLanguage::~FTSLanguage()
+
+- Used By:
+
     - [src/mongo/db/index/fts\_access\_method.cpp](../indexing)
     - [src/mongo/db/exec/text.cpp](../query\_system)
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSLanguage::FTSLanguage()</pre>
-Used By:
+    mongo::fts::FTSLanguage::FTSLanguage()
+
+- Used By:
+
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
 ### src/mongo/db/fts/fts\_matcher.cpp
 
-- <pre>mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)</pre>
-Used By:
+    mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const</pre>
-Used By:
+    mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
 
 ### src/mongo/db/fts/fts\_query.cpp
 
-- <pre>mongo::fts::FTSQuery::parse(std::string const&, std::string const&)</pre>
-Used By:
+    mongo::fts::FTSQuery::parse(std::string const&, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
 ### src/mongo/db/fts/fts\_spec.cpp
 
-- <pre>mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/index\_legacy.cpp](../indexing)
 
-- <pre>mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)</pre>
-Used By:
+    mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+
+- Used By:
+
     - [src/mongo/db/index/fts\_access\_method.cpp](../indexing)
 
-- <pre>mongo::fts::MAX_WEIGHT</pre>
-Used By:
+    mongo::fts::MAX_WEIGHT
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)
 
-- <pre>mongo::fts::FTSSpec::getIndexPrefix(mongo::BSONObj const&, mongo::BSONObj*) const</pre>
-Used By:
+    mongo::fts::FTSSpec::getIndexPrefix(mongo::BSONObj const&, mongo::BSONObj*) const
+
+- Used By:
+
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
 ### src/mongo/db/fts/stemmer.cpp
 
-- <pre>mongo::fts::Stemmer::~Stemmer()</pre>
-Used By:
+    mongo::fts::Stemmer::~Stemmer()
+
+- Used By:
+
     - [src/mongo/db/exec/text.cpp](../query\_system)

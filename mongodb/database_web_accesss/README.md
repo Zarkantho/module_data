@@ -20,21 +20,29 @@ Web access to the database, including rest, jsonp, and http.
 
 ### src/mongo/db/dbwebserver.cpp
 
-- <pre>mongo::webServerThread(mongo::AdminAccess const*)</pre>
-Used By:
+    mongo::webServerThread(mongo::AdminAccess const*)
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-- <pre>mongo::DbWebHandler::DbWebHandler(std::string const&, double, bool)</pre>
-Used By:
+    mongo::DbWebHandler::DbWebHandler(std::string const&, double, bool)
+
+- Used By:
+
     - [src/mongo/db/repl/replset\_web\_handler.cpp](../replication)
 
-- <pre>mongo::WebStatusPlugin::WebStatusPlugin(std::string const&, double, std::string const&)</pre>
-Used By:
+    mongo::WebStatusPlugin::WebStatusPlugin(std::string const&, double, std::string const&)
+
+- Used By:
+
     - [src/mongo/db/stats/snapshots\_webplugins.cpp](../utilities)
 
 ### src/mongo/db/restapi.cpp
 
-- <pre>vtable for mongo::RestAdminAccess</pre>
-Used By:
+    vtable for mongo::RestAdminAccess
+
+- Used By:
+
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)

@@ -22,30 +22,42 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 ### src/mongo/util/concurrency/rwlockimpl.cpp
 
-- <pre>mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)</pre>
-Used By:
+    mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::SimpleRWLock::unlock()</pre>
-Used By:
+    mongo::SimpleRWLock::unlock()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::SimpleRWLock::lock()</pre>
-Used By:
+    mongo::SimpleRWLock::lock()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
 ### src/mongo/db/d\_concurrency.cpp
 
-- <pre>mongo::Lock::isR()</pre>
-Used By:
+    mongo::Lock::isR()
+
+- Used By:
+
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()</pre>
-Used By:
+    mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
-- <pre>mongo::Lock::somethingWriteLocked()</pre>
-Used By:
+    mongo::Lock::somethingWriteLocked()
+
+- Used By:
+
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
@@ -54,21 +66,27 @@ Used By:
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index\_builder.cpp](../indexing)
 
-- <pre>mongo::Lock::GlobalWrite::downgrade()</pre>
-Used By:
+    mongo::Lock::GlobalWrite::downgrade()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
 
-- <pre>mongo::writelocktry::~writelocktry()</pre>
-Used By:
+    mongo::writelocktry::~writelocktry()
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::DBRead::DBRead(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::DBRead::DBRead(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
@@ -80,14 +98,18 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
-- <pre>mongo::readlocktry::~readlocktry()</pre>
-Used By:
+    mongo::readlocktry::~readlocktry()
+
+- Used By:
+
     - [src/mongo/db/repl/health.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Lock::GlobalRead::GlobalRead(int)</pre>
-Used By:
+    mongo::Lock::GlobalRead::GlobalRead(int)
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -97,36 +119,48 @@ Used By:
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Lock::GlobalWrite::upgrade()</pre>
-Used By:
+    mongo::Lock::GlobalWrite::upgrade()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::dbLevelLockingEnabled()</pre>
-Used By:
+    mongo::Lock::dbLevelLockingEnabled()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::atLeastReadLocked(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::atLeastReadLocked(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::isWriteLocked(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::isWriteLocked(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::writelocktry::writelocktry(int)</pre>
-Used By:
+    mongo::writelocktry::writelocktry(int)
+
+- Used By:
+
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::nested()</pre>
-Used By:
+    mongo::Lock::nested()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -139,12 +173,16 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::ParallelBatchWriterMode::_batchLock</pre>
-Used By:
+    mongo::Lock::ParallelBatchWriterMode::_batchLock
+
+- Used By:
+
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
-- <pre>mongo::Lock::assertWriteLocked(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::assertWriteLocked(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
@@ -158,8 +196,10 @@ Used By:
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Lock::DBWrite::~DBWrite()</pre>
-Used By:
+    mongo::Lock::DBWrite::~DBWrite()
+
+- Used By:
+
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
@@ -205,8 +245,10 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
-- <pre>mongo::Lock::GlobalRead::~GlobalRead()</pre>
-Used By:
+    mongo::Lock::GlobalRead::~GlobalRead()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -216,13 +258,17 @@ Used By:
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
-- <pre>mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()</pre>
-Used By:
+    mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::TempRelease::~TempRelease()</pre>
-Used By:
+    mongo::Lock::TempRelease::~TempRelease()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -234,8 +280,10 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
@@ -243,13 +291,17 @@ Used By:
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()</pre>
-Used By:
+    mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::GlobalWrite::~GlobalWrite()</pre>
-Used By:
+    mongo::Lock::GlobalWrite::~GlobalWrite()
+
+- Used By:
+
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
@@ -281,8 +333,10 @@ Used By:
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)</pre>
-Used By:
+    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_merge.cpp](../sharding)
@@ -307,8 +361,10 @@ Used By:
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::TempRelease::TempRelease()</pre>
-Used By:
+    mongo::Lock::TempRelease::TempRelease()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -320,8 +376,10 @@ Used By:
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::GlobalWrite::GlobalWrite(bool, int)</pre>
-Used By:
+    mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
+
+- Used By:
+
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
@@ -354,8 +412,10 @@ Used By:
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
-- <pre>mongo::Lock::DBRead::~DBRead()</pre>
-Used By:
+    mongo::Lock::DBRead::~DBRead()
+
+- Used By:
+
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
@@ -366,21 +426,27 @@ Used By:
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
-- <pre>mongo::readlocktry::readlocktry(int)</pre>
-Used By:
+    mongo::readlocktry::readlocktry(int)
+
+- Used By:
+
     - [src/mongo/db/repl/health.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Lock::isReadLocked()</pre>
-Used By:
+    mongo::Lock::isReadLocked()
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
-- <pre>mongo::Lock::isW()</pre>
-Used By:
+    mongo::Lock::isW()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
@@ -391,8 +457,10 @@ Used By:
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Lock::isLocked()</pre>
-Used By:
+    mongo::Lock::isLocked()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
@@ -413,54 +481,76 @@ Used By:
 
 ### src/mongo/db/lockstat.cpp
 
-- <pre>mongo::LockStat::reset()</pre>
-Used By:
+    mongo::LockStat::reset()
+
+- Used By:
+
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::LockStat::report() const</pre>
-Used By:
+    mongo::LockStat::report() const
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&) const</pre>
-Used By:
+    mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&) const
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
 ### src/mongo/db/lockstate.cpp
 
-- <pre>mongo::LockState::LockState()</pre>
-Used By:
+    mongo::LockState::LockState()
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Acquiring::~Acquiring()</pre>
-Used By:
+    mongo::Acquiring::~Acquiring()
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
 
-- <pre>mongo::LockState::hasAnyReadLock() const</pre>
-Used By:
+    mongo::LockState::hasAnyReadLock() const
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::LockState::reportState(mongo::BSONObjBuilder&)</pre>
-Used By:
+    mongo::LockState::reportState(mongo::BSONObjBuilder&)
+
+- Used By:
+
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*, mongo::LockState&)</pre>
-Used By:
+    mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*, mongo::LockState&)
+
+- Used By:
+
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
 
-- <pre>mongo::LockState::Dump()</pre>
-Used By:
+    mongo::LockState::Dump()
+
+- Used By:
+
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
-- <pre>mongo::LockState::hasAnyWriteLock() const</pre>
-Used By:
+    mongo::LockState::hasAnyWriteLock() const
+
+- Used By:
+
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
-- <pre>mongo::LockState::reportState()</pre>
-Used By:
+    mongo::LockState::reportState()
+
+- Used By:
+
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
 
 -------------
@@ -477,8 +567,10 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
 
 ### src/mongo/util/concurrency/spin\_lock.cpp
 
-- <pre>mongo::SpinLock::SpinLock()</pre>
-Used By:
+    mongo::SpinLock::SpinLock()
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
@@ -495,8 +587,10 @@ Used By:
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
-- <pre>mongo::SpinLock::~SpinLock()</pre>
-Used By:
+    mongo::SpinLock::~SpinLock()
+
+- Used By:
+
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
@@ -526,31 +620,45 @@ Condition Variables   why called 'synchronization' then? (what are these, really
 
 ### src/mongo/util/concurrency/synchronization.cpp
 
-- <pre>mongo::NotifyAll::now()</pre>
-Used By:
+    mongo::NotifyAll::now()
+
+- Used By:
+
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
 
-- <pre>mongo::Notification::notifyOne()</pre>
-Used By:
+    mongo::Notification::notifyOne()
+
+- Used By:
+
     - [src/mongo/db/range\_deleter.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::NotifyAll::awaitBeyondNow()</pre>
-Used By:
+    mongo::NotifyAll::awaitBeyondNow()
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
 
-- <pre>mongo::Notification::waitToBeNotified()</pre>
-Used By:
+    mongo::Notification::waitToBeNotified()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::Notification::Notification()</pre>
-Used By:
+    mongo::Notification::Notification()
+
+- Used By:
+
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
-- <pre>mongo::NotifyAll::NotifyAll()</pre>
-Used By:
+    mongo::NotifyAll::NotifyAll()
+
+- Used By:
+
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
 
-- <pre>mongo::NotifyAll::notifyAll(unsigned long long)</pre>
-Used By:
+    mongo::NotifyAll::notifyAll(unsigned long long)
+
+- Used By:
+
     - [src/mongo/db/dur.cpp](../journaling)
