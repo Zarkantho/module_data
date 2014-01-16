@@ -57,7 +57,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 ### src/mongo/base/status.cpp
 
-- <pre>mongo::operator<<(std::ostream&, mongo::Status const&)</pre>
+- <pre>mongo::operator\<\<(std::ostream&, mongo::Status const&)</pre>
 Used By:
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
