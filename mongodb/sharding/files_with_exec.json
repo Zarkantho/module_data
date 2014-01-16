@@ -450,24 +450,9 @@
         "execs": []
     }, 
     {
-        "name": "src/mongo/s/interrupt_status_mongos.cpp", 
+        "name": "src/mongo/s/type_mongos.cpp", 
         "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
+            "mongos"
         ]
     }, 
     {
@@ -611,10 +596,6 @@
             "mongofiles", 
             "mongorestore"
         ]
-    }, 
-    {
-        "name": "src/mongo/s/chunk_diff-inl.cpp", 
-        "execs": []
     }, 
     {
         "name": "src/mongo/s/chunk_diff_test.cpp", 
@@ -1068,24 +1049,9 @@
         ]
     }, 
     {
-        "name": "src/mongo/s/interrupt_status_mongos.cpp", 
+        "name": "src/mongo/s/version_mongos.cpp", 
         "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
+            "mongos"
         ]
     }
 ]

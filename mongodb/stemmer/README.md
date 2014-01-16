@@ -4,8 +4,10 @@
 
 -------------
 
+# Group Description
 Third Party - Stemmer for various languages used in full text search
 
+# Files
 - src/third\_party/shim\_stemmer.cpp   (mongod, tools, mongos)
 - src/third\_party/libstemmer\_c/include/libstemmer.h
 - src/third\_party/libstemmer\_c/libstemmer/libstemmer\_utf8.c   (mongod, tools, mongos)
@@ -62,31 +64,22 @@ Third Party - Stemmer for various languages used in full text search
 - src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.c   (mongod, tools, mongos)
 - src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.h
 
-## Interface
-
+# Interface
 
 ### src/third\_party/libstemmer\_c/libstemmer/libstemmer\_utf8.c
 
-<pre>_sb_stemmer_length</pre>
+- <pre>_sb_stemmer_length</pre>
+Used By:
+    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-#### Used By:
+- <pre>_sb_stemmer_delete</pre>
+Used By:
+    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-- [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+- <pre>_sb_stemmer_stem</pre>
+Used By:
+    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
 
-<pre>_sb_stemmer_delete</pre>
-
-#### Used By:
-
-- [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
-
-<pre>_sb_stemmer_stem</pre>
-
-#### Used By:
-
-- [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
-
-<pre>_sb_stemmer_new</pre>
-
-#### Used By:
-
-- [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+- <pre>_sb_stemmer_new</pre>
+Used By:
+    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)

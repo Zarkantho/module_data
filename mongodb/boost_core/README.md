@@ -4,8 +4,10 @@
 
 -------------
 
+# Group Description
 Third Party - The boost shim and the header files in boost core
 
+# Files
 - src/third\_party/shim\_boost.cpp   (mongod, cppclientdriver, tools, mongos)
 - src/third\_party/boost/boost/algorithm/string.hpp
 - src/third\_party/boost/boost/algorithm/string/case\_conv.hpp
@@ -977,6 +979,5 @@ Third Party - The boost shim and the header files in boost core
 - src/third\_party/boost/boost/visit\_each.hpp
 - src/third\_party/boost/boost/weak\_ptr.hpp
 
-## Interface
-
+# Interface
 (not used outside this module)

@@ -4,8 +4,10 @@
 
 -------------
 
+# Group Description
 Javascript files that get wrapped in strings and put in cpp files. See the "env.JSHeader" calls  in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
+# Files
 - src/mongo/shell/assert.js
 - src/mongo/shell/collection.js
 - src/mongo/shell/db.js
@@ -22,14 +24,15 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 - src/mongo/shell/utils\_sh.js
 - src/mongo/shell/writes.js
 
-## Interface
-
+# Interface
 (not used outside this module)
 
 -------------
 
+# Group Description
 Files only built into the mongo shell
 
+# Files
 - src/mongo/shell/dbshell.cpp   ()
 - src/mongo/shell/linenoise.cpp   ()
 - src/mongo/shell/linenoise.h
@@ -44,19 +47,19 @@ Files only built into the mongo shell
 - src/mongo/shell/shell\_utils\_launcher.cpp   ()
 - src/mongo/shell/shell\_utils\_launcher.h
 
-## Interface
-
+# Interface
 (not used outside this module)
 
 -------------
 
+# Group Description
 Shell command line options
 
+# Files
 - src/mongo/shell/shell\_options.cpp   ()
 - src/mongo/shell/shell\_options.h
 - src/mongo/shell/shell\_options\_init.cpp   ()
 - src/mongo/shell/shell\_options\_test.cpp   ()
 
-## Interface
-
+# Interface
 (not used outside this module)

@@ -630,10 +630,6 @@
         ]
     }, 
     {
-        "name": "src/third_party/s2/util/math/mathlimits.cc", 
-        "execs": []
-    }, 
-    {
         "name": "src/third_party/s2/util/math/mathutil.cc", 
         "execs": [
             "mongotop", 

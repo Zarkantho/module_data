@@ -1,14 +1,14 @@
 [
     {
         "symbol": "mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
+        "object": "src/mongo/db/fts/fts_command_mongos.cpp", 
         "used_by": [
             "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::fts::FTSCommand", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
+        "object": "src/mongo/db/fts/fts_command_mongos.cpp", 
         "used_by": [
             "src/mongo/db/fts/fts_command.cpp"
         ]
@@ -500,14 +500,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::printShardingVersionInfo(bool)", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/mongos_options.cpp", 
-            "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::KillCurrentOp::reset()", 
         "object": "src/mongo/db/kill_current_op.cpp", 
         "used_by": [
@@ -520,7 +512,8 @@
         "object": "src/mongo/db/kill_current_op.cpp", 
         "used_by": [
             "src/mongo/db/compact.cpp", 
-            "src/mongo/db/db.cpp"
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/interrupt_status_mongod.cpp"
         ]
     }, 
     {
@@ -537,6 +530,7 @@
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/query/new_find.cpp", 
             "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/interrupt_status_mongod.cpp", 
             "src/mongo/db/commands/test_commands.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/structure/btree/btree.cpp", 
@@ -901,108 +895,16 @@
     }, 
     {
         "symbol": "mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&, int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&, mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)", 
-        "object": "src/mongo/db/interrupt_status_mongod.cpp", 
+        "object": "src/mongo/db/fts/fts_command_mongod.cpp", 
         "used_by": [
             "src/mongo/db/fts/fts_command.cpp"
         ]
     }, 
     {
         "symbol": "vtable for mongo::fts::FTSCommand", 
-        "object": "src/mongo/db/interrupt_status_mongod.cpp", 
+        "object": "src/mongo/db/fts/fts_command_mongod.cpp", 
         "used_by": [
             "src/mongo/db/fts/fts_command.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::name", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/balance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::mongoVersion", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/s/balance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::toBSON() const", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/config_upgrade_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::ConfigNS", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp", 
-            "src/mongo/dbtests/config_server_fixture.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::up", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/balance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::~MongosType()", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::ping", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/balance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::MongosType()", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::parseBSON(mongo::BSONObj const&, std::string*)", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/cluster_client_internal.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MongosType::waiting", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/balance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::InterruptStatusMongod::status", 
-        "object": "src/mongo/db/interrupt_status_mongod.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/dbtests/pipelinetests.cpp", 
-            "src/mongo/db/commands/pipeline_command.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::InterruptStatusMongos::status", 
-        "object": "src/mongo/s/interrupt_status_mongos.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {

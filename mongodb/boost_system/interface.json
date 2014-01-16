@@ -272,7 +272,7 @@
             "src/mongo/dbtests/matchertests.cpp", 
             "src/mongo/dbtests/framework_options.cpp", 
             "src/mongo/s/request.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/db/stats/counters.cpp", 
             "src/mongo/shell/shell_utils_launcher.cpp"
         ]
@@ -548,7 +548,7 @@
             "src/mongo/dbtests/matchertests.cpp", 
             "src/mongo/dbtests/framework_options.cpp", 
             "src/mongo/s/request.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/db/stats/counters.cpp", 
             "src/mongo/shell/shell_utils_launcher.cpp"
         ]

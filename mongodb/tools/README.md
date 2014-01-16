@@ -4,8 +4,10 @@
 
 -------------
 
+# Group Description
 Tools and tool options. For most tools, just prepend "mongo" to get the name of the tool the file  is for. For example, "bridge.cpp" is the main for "mongobridge".
 
+# Files
 - src/mongo/tools/bridge.cpp   (tools)
 - src/mongo/tools/bsondump.cpp   (tools)
 - src/mongo/tools/bsondump\_options.cpp   (tools)
@@ -66,6 +68,5 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 - src/mongo/tools/tool\_options.h
 - src/mongo/tools/top.cpp   (tools)
 
-## Interface
-
+# Interface
 (not used outside this module)

@@ -2,30 +2,22 @@
     {
         "name": "src/third_party/murmurhash3/MurmurHash3.cpp", 
         "execs": [
-            "clientTest", 
+            "mongotop", 
+            "mongod", 
             "perftest", 
-            "mongorestore", 
+            "mongoperf", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "rsExample", 
-            "mongoexport", 
-            "tutorial", 
-            "mongotop", 
-            "mongoperf", 
-            "mongoimport", 
-            "bsondump", 
-            "authTest", 
             "mongostat", 
-            "test", 
-            "whereExample", 
-            "mongooplog", 
-            "mongofiles", 
-            "mongod", 
-            "httpClientTest", 
-            "mongosniff", 
-            "firstExample", 
+            "bsondump", 
+            "mongoimport", 
             "mongos", 
-            "secondExample"
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
         ]
     }
 ]

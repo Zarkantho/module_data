@@ -3,29 +3,13 @@
         "name": "src/mongo/util/file_allocator.cpp", 
         "execs": [
             "clientTest", 
-            "perftest", 
-            "mongorestore", 
-            "mongodump", 
-            "mongobridge", 
-            "rsExample", 
-            "mongoexport", 
-            "tutorial", 
-            "mongotop", 
-            "mongoperf", 
-            "mongoimport", 
-            "bsondump", 
-            "authTest", 
-            "mongostat", 
-            "test", 
-            "whereExample", 
-            "mongooplog", 
-            "mongofiles", 
-            "mongod", 
             "httpClientTest", 
-            "mongosniff", 
             "firstExample", 
-            "mongos", 
-            "secondExample"
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
         ]
     }
 ]

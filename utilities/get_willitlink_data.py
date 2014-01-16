@@ -15,6 +15,9 @@ import willitlink
 willitlink_location = os.path.dirname(willitlink.__file__)
 default_data_file = os.path.join(willitlink_location, os.pardir, 'data', "dep_graph.json")
 
+def dbgprint(my_object):
+    print json.dumps(my_object, indent=4)
+
 # Returns a hash of all modules
 def get_module_data(modules_directory):
     module_directories = os.listdir(modules_directory)
@@ -182,8 +185,11 @@ def output_readme_files_for_modules(modules_directory, module_data):
                 f.write("\n-------------\n\n")
 
                 # Comments for this group of files
+                f.write("# Group Description\n")
                 f.write(module_group["comments"].replace("#", " ").replace("_", "\\_").lstrip() + "\n\n")
 
+                # Files in this module group
+                f.write("# Files\n")
                 for file_name in module_group["files"]:
                     f.write("- " + file_name.replace("_", "\\_"))
                     if file_name in file_to_executables:
@@ -192,22 +198,21 @@ def output_readme_files_for_modules(modules_directory, module_data):
                     else:
                         f.write("\n")
 
-                f.write("\n## Interface\n\n")
-
+                # Interface for this module group (symbols used from outside this module)
+                f.write("\n# Interface\n")
                 something_in_interface = False
                 for file_name in module_group["files"]:
                     if file_name in file_to_interface:
                         something_in_interface = True
                         f.write("\n### " + file_name.replace("_", "\\_") + "\n")
                         for interface_object in file_to_interface[file_name]:
-                            f.write("\n<pre>" + interface_object['symbol'] + "</pre>\n\n")
-                            f.write("#### Used By:\n\n")
+                            f.write("\n- <pre>" + interface_object['symbol'] + "</pre>\n")
+                            f.write("Used By:\n")
                             for file_using in interface_object['used_by']:
                                 if file_using in file_to_module:
-                                    f.write("- [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
+                                    f.write("    - [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
                                 else:
-                                    f.write("- " + file_using.replace("_", "\\_") + "\n")
-
+                                    f.write("    - " + file_using.replace("_", "\\_") + "\n")
                 if not something_in_interface:
                     f.write("(not used outside this module)\n")
 
@@ -247,3 +252,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

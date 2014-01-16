@@ -611,7 +611,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/version_mongos.cpp"
         ], 
         "symbol": "mongo::printShardingVersionInfo(bool)", 
         "object": "src/mongo/s/server.cpp"
@@ -1188,7 +1188,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/version_mongos.cpp"
         ], 
         "symbol": "mongo::printShardingVersionInfo(bool)", 
         "object": "src/mongo/s/mongos_options.cpp"

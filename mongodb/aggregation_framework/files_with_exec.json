@@ -586,10 +586,6 @@
         ]
     }, 
     {
-        "name": "src/mongo/db/sorter/sorter.cpp", 
-        "execs": []
-    }, 
-    {
         "name": "src/mongo/db/sorter/sorter_test.cpp", 
         "execs": []
     }, 

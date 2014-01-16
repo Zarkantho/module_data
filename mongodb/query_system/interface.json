@@ -25,7 +25,7 @@
             "src/mongo/db/commands/distinct.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/dbhelpers.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/db/commands/mr.cpp", 
             "src/mongo/db/commands/geonear.cpp", 
             "src/mongo/db/commands/group.cpp"
@@ -501,7 +501,7 @@
         "object": "src/mongo/db/query/type_explain.cpp", 
         "used_by": [
             "src/mongo/db/commands/distinct.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/db/commands/geonear.cpp"
         ]
     }, 
@@ -518,7 +518,7 @@
         "used_by": [
             "src/mongo/db/commands/geonear.cpp", 
             "src/mongo/db/commands/distinct.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -883,7 +883,7 @@
         "symbol": "mongo::LiteParsedQuery::metaTextScore", 
         "object": "src/mongo/db/query/lite_parsed_query.cpp", 
         "used_by": [
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -952,7 +952,7 @@
         "symbol": "mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, long long, long long, mongo::BSONObj const&, mongo::CanonicalQuery**)", 
         "object": "src/mongo/db/query/canonical_query.cpp", 
         "used_by": [
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/db/commands/geonear.cpp"
         ]
     }, 

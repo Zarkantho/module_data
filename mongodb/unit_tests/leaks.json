@@ -7404,7 +7404,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/type_mongos.cpp"
         ], 
         "symbol": "mongo::MongosType::ConfigNS", 
         "object": "src/mongo/dbtests/config_server_fixture.cpp"
@@ -13007,7 +13007,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/type_mongos.cpp"
         ], 
         "symbol": "mongo::MongosType::MongosType()", 
         "object": "src/mongo/dbtests/config_upgrade_tests.cpp"
@@ -13233,7 +13233,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/type_mongos.cpp"
         ], 
         "symbol": "mongo::MongosType::toBSON() const", 
         "object": "src/mongo/dbtests/config_upgrade_tests.cpp"
@@ -13254,14 +13254,14 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/type_mongos.cpp"
         ], 
         "symbol": "mongo::MongosType::ConfigNS", 
         "object": "src/mongo/dbtests/config_upgrade_tests.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/s/interrupt_status_mongos.cpp"
+            "src/mongo/s/type_mongos.cpp"
         ], 
         "symbol": "mongo::MongosType::~MongosType()", 
         "object": "src/mongo/dbtests/config_upgrade_tests.cpp"

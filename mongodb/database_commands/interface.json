@@ -126,7 +126,7 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
@@ -136,7 +136,7 @@
             "src/mongo/db/fts/fts_command.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -166,7 +166,7 @@
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
@@ -175,7 +175,7 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -198,7 +198,7 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
@@ -207,7 +207,7 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -230,7 +230,7 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
@@ -239,7 +239,7 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -267,14 +267,14 @@
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/db/stats/top.cpp", 
             "src/mongo/db/repl/rs_initiate.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -304,7 +304,7 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
@@ -313,7 +313,7 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp"
+            "src/mongo/db/fts/fts_command_mongod.cpp"
         ]
     }, 
     {
@@ -340,8 +340,8 @@
             "src/mongo/s/d_state.cpp", 
             "src/mongo/db/geo/haystack.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
-            "src/mongo/s/interrupt_status_mongos.cpp", 
-            "src/mongo/db/interrupt_status_mongod.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
             "src/mongo/s/commands/cluster_write_cmd.cpp"
         ]
     }, 

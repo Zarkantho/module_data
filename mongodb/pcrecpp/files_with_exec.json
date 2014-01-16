@@ -273,10 +273,6 @@
         ]
     }, 
     {
-        "name": "src/third_party/pcre-8.30/pcre_printint.c", 
-        "execs": []
-    }, 
-    {
         "name": "src/third_party/pcre-8.30/pcre_refcount.c", 
         "execs": [
             "mongotop", 
