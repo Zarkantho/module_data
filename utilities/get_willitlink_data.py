@@ -180,9 +180,20 @@ def output_readme_files_for_modules(modules_directory, module_data):
     file_to_dependencies = build_file_to_dependencies_map(module_data)
     file_to_module = build_file_to_module_map(module_data)
     module_directories = os.listdir(modules_directory)
+
+    top_level_readme = open(os.path.join(modules_directory, "README.md"), 'w')
+    top_level_readme.truncate()
+    top_level_readme.write("# Modules\n\n")
+
     for module_name in module_directories:
         module_path = os.path.join(modules_directory, module_name)
         if os.path.isdir(module_path):
+
+            # Add this module to the top level README
+            top_level_readme.write("## " + module_name.replace("_", "\\_") + "\n\n")
+            for source_file in module_data[module_name]['files_flat']:
+                top_level_readme.write("- [" + source_file.replace("_", "\\_") + "](" + module_name.replace("_", "\\_") + ")" + "\n")
+
             f = open(os.path.join(module_path, "README.md"), 'w')
             f.truncate()
             # First, the title of the module
