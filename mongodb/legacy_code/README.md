@@ -15,6 +15,8 @@ Legacy files that should go away. Global class called "d" that used to contain a
 
 ### src/mongo/db/d\_globals.cpp
 
+<div></div>
+
     mongo::d
 
 - Used By:

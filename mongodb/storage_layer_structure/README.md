@@ -67,11 +67,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/namespace\_details.cpp
 
+<div></div>
+
     mongo::bucketSizes
 
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NamespaceDetails::quantizeAllocationSpace(int)
 
@@ -80,11 +84,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::alloc(mongo::StringData const&, int)
 
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)
 
@@ -94,12 +102,16 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::maxCappedDocs() const
 
 - Used By:
 
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::NamespaceDetails::syncUserFlags(std::string const&)
 
@@ -109,17 +121,23 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
 
+<div></div>
+
     mongo::NamespaceDetails::setStats(long long, long long)
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::getRecordAllocationSize(int)
 
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NamespaceDetails::setUserFlag(int)
 
@@ -130,12 +148,16 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
 
+<div></div>
+
     mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)
 
 - Used By:
 
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
 
@@ -152,11 +174,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
+<div></div>
+
     mongo::NamespaceDetails::orphanDeletedList()
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
+
+<div></div>
 
     mongo::NamespaceDetails::writingWithExtra()
 
@@ -165,6 +191,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::NamespaceDetails::setPaddingFactor(double)
 
 - Used By:
@@ -172,11 +200,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::NamespaceDetails::findIndexByPrefix(mongo::BSONObj const&, bool)
 
 - Used By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::NamespaceDetails::updateTTLIndex(int, mongo::BSONElement const&)
 
@@ -184,11 +216,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::setLastExtentSize(int)
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
+
+<div></div>
 
     mongo::NamespaceDetails::incrementStats(long long, long long)
 
@@ -196,17 +232,23 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/compact.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::clearUserFlag(int)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
+<div></div>
+
     mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
 
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::legalClientSystemNS(mongo::StringData const&, bool)
 
@@ -217,6 +259,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/database.cpp
 
+<div></div>
+
     mongo::Database::clearTmpCollections()
 
 - Used By:
@@ -224,11 +268,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
+<div></div>
+
     mongo::Database::setProfilingLevel(int, std::string&)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)
 
@@ -252,12 +300,16 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Database::renameCollection(mongo::StringData const&, mongo::StringData const&, bool)
 
 - Used By:
 
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Database::getOrCreateCollection(mongo::StringData const&)
 
@@ -266,6 +318,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Database::getCollection(mongo::StringData const&)
 
@@ -326,11 +380,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::Database::duplicateUncasedName(bool, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)
 
 - Used By:
 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
+
+<div></div>
 
     mongo::Database::dropCollection(mongo::StringData const&)
 
@@ -351,12 +409,16 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Database::_initExtentFreeList()
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Database::Database(char const*, bool&, std::string const&)
 
@@ -366,11 +428,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/database\_holder.cpp
 
+<div></div>
+
     mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&, bool)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)
 
@@ -380,17 +446,23 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/storage\_options.cpp
 
+<div></div>
+
     mongo::getJournalCommitInterval()
 
 - Used By:
 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
+<div></div>
+
     mongo::setJournalCommitInterval(unsigned int)
 
 - Used By:
 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
 
     mongo::storageGlobalParams
 
@@ -478,6 +550,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::isJournalingEnabled()
 
 - Used By:
@@ -486,11 +560,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/btree/btree.cpp
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&) const
 
@@ -498,11 +576,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&) const
 
@@ -510,11 +592,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
 
@@ -522,11 +608,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V0>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyBson const&)
 
@@ -534,11 +624,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
 
@@ -546,11 +640,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V0>::addBucket(mongo::BtreeInMemoryState*)
 
@@ -558,11 +656,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::advance(mongo::DiskLoc const&, int&, int, char const*) const
 
@@ -570,11 +672,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V1>::addBucket(mongo::BtreeInMemoryState*)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyV1 const&)
 
@@ -582,11 +688,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
 
@@ -594,11 +704,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
 
@@ -606,11 +720,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBucket<mongo::BtreeData_V0>::advance(mongo::DiskLoc const&, int&, int, char const*) const
 
 - Used By:
 
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V1>::fullValidate(mongo::DiskLoc const&, mongo::BSONObj const&, long long*, bool, unsigned int) const
 
@@ -620,11 +738,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/btree/btreebuilder.cpp
 
+<div></div>
+
     mongo::BtreeBuilder<mongo::BtreeData_V0>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBuilder<mongo::BtreeData_V1>::BtreeBuilder(bool, mongo::BtreeInMemoryState*)
 
@@ -632,11 +754,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBuilder<mongo::BtreeData_V1>::commit(bool)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBuilder<mongo::BtreeData_V0>::addKey(mongo::BSONObj&, mongo::DiskLoc)
 
@@ -644,11 +770,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeBuilder<mongo::BtreeData_V1>::addKey(mongo::BSONObj&, mongo::DiskLoc)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeBuilder<mongo::BtreeData_V0>::commit(bool)
 
@@ -658,11 +788,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/btree/key.cpp
 
+<div></div>
+
     mongo::KeyV1::dataSize() const
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::KeyV1Owned::KeyV1Owned(mongo::BSONObj const&)
 
@@ -672,11 +806,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::KeyV1::woEqual(mongo::KeyV1 const&) const
 
@@ -684,6 +822,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::KeyV1::toBson() const
 
@@ -693,11 +833,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::oldCompare(mongo::BSONObj const&, mongo::BSONObj const&, mongo::Ordering const&)
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::KeyBson::woCompare(mongo::KeyBson const&, mongo::Ordering const&) const
 
@@ -707,6 +851,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/btree/state.cpp
 
+<div></div>
+
     mongo::BtreeInMemoryState::head() const
 
 - Used By:
@@ -714,12 +860,16 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
 
+<div></div>
+
     mongo::BtreeInMemoryState::setMultikey()
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
+
+<div></div>
 
     mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)
 
@@ -729,6 +879,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/collection.cpp
 
+<div></div>
+
     mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
 
 - Used By:
@@ -737,11 +889,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Collection::docFor(mongo::DiskLoc const&)
 
 - Used By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Collection::dataSize() const
 
@@ -750,6 +906,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::Collection::isCapped() const
 
@@ -761,11 +919,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Collection::insertDocument(mongo::DocWriter const*, bool)
 
 - Used By:
 
     - [src/mongo/db/repl/oplog.cpp](../replication)
+
+<div></div>
 
     mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
 
@@ -780,6 +942,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Collection::numRecords() const
 
 - Used By:
@@ -789,6 +953,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
 
@@ -812,11 +978,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Collection::updateDocument(mongo::DiskLoc const&, mongo::BSONObj const&, bool, mongo::OpDebug*)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)
 
@@ -829,17 +999,23 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/collection\_info\_cache.cpp
 
+<div></div>
+
     mongo::CollectionInfoCache::computeIndexKeys()
 
 - Used By:
 
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
 
+<div></div>
+
     mongo::CollectionInfoCache::reset()
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
+
+<div></div>
 
     mongo::CollectionInfoCache::getPlanCache() const
 
@@ -850,6 +1026,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/structure/record\_store.cpp
 
+<div></div>
+
     mongo::RecordStore::recordFor(mongo::DiskLoc const&) const
 
 - Used By:
@@ -859,6 +1037,8 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/cap.cpp
 
+<div></div>
+
     mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)
 
 - Used By:
@@ -866,6 +1046,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::NamespaceDetails::emptyCappedCollection(char const*)
 
@@ -877,11 +1059,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
 ### src/mongo/db/catalog/index\_catalog.cpp
 
+<div></div>
+
     mongo::IndexCatalog::IndexBuildBlock::IndexBuildBlock(mongo::IndexCatalog*, mongo::StringData const&, mongo::DiskLoc const&)
 
 - Used By:
 
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::IndexCatalog::IndexBuildBlock::~IndexBuildBlock()
 
@@ -889,11 +1075,15 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool)
 
 - Used By:
 
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::IndexCatalog::getDescriptor(int)
 
@@ -919,6 +1109,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
+<div></div>
+
     mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
 
 - Used By:
@@ -926,6 +1118,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+
+<div></div>
 
     mongo::IndexCatalog::numIndexesTotal() const
 
@@ -938,6 +1132,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::IndexCatalog::ensureHaveIdIndex()
 
 - Used By:
@@ -945,6 +1141,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::IndexCatalog::numIndexesReady() const
 
@@ -954,6 +1152,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+
+<div></div>
 
     mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
 
@@ -968,11 +1168,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
+<div></div>
+
     mongo::IndexCatalog::dropIndex(int)
 
 - Used By:
 
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
+
+<div></div>
 
     mongo::IndexCatalog::findIdIndex()
 
@@ -984,11 +1188,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
 
+<div></div>
+
     mongo::IndexCatalog::prepOneUnfinishedIndex()
 
 - Used By:
 
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+
+<div></div>
 
     mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
 
@@ -999,11 +1207,15 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::IndexCatalog::blowAwayInProgressIndexEntries()
 
 - Used By:
 
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+
+<div></div>
 
     mongo::IndexCatalog::dropAllIndexes(bool)
 
@@ -1013,17 +1225,23 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::IndexCatalog::ok() const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::IndexCatalog::fixIndexKey(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)
 
@@ -1033,17 +1251,23 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
 
+<div></div>
+
     mongo::IndexCatalog::getBtreeIndex(mongo::IndexDescriptor const*)
 
 - Used By:
 
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
 
+<div></div>
+
     mongo::IndexCatalog::IndexBuildBlock::success()
 
 - Used By:
 
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
 
@@ -1063,6 +1287,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::IndexCatalog::_getAccessMethodName(mongo::BSONObj const&)
 
 - Used By:
@@ -1071,6 +1297,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
 
 ### src/mongo/db/catalog/ondisk/namespace\_index.cpp
+
+<div></div>
 
     mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const
 
@@ -1081,6 +1309,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+
+<div></div>
 
     mongo::NamespaceIndex::details(mongo::StringData const&)
 
@@ -1117,6 +1347,8 @@ Files containing the structural metadata about the databases/data files/collecti
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::NamespaceIndex::_init()
 
 - Used By:
@@ -1147,6 +1379,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 # Interface
 
 ### src/mongo/db/storage/record.cpp
+
+<div></div>
 
     mongo::DiskLoc::obj() const
 
@@ -1192,6 +1426,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/exec/2d.cpp](../query\_system)
 
+<div></div>
+
     mongo::Record::touch(bool) const
 
 - Used By:
@@ -1203,11 +1439,15 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Record::likelyInPhysicalMemory() const
 
 - Used By:
 
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::DiskLoc::rec() const
 
@@ -1232,6 +1472,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::Record::_accessing() const
 
 - Used By:
@@ -1249,11 +1491,15 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 
+<div></div>
+
     mongo::Record::MemoryTrackingEnabled
 
 - Used By:
 
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DiskLoc::drec() const
 
@@ -1263,6 +1509,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Record::likelyInPhysicalMemory(char const*)
 
 - Used By:
@@ -1271,6 +1519,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+
+<div></div>
 
     mongo::DiskLoc::ext() const
 
@@ -1284,6 +1534,8 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
+
+<div></div>
 
     mongo::DeletedRecord::_accessing() const
 
@@ -1306,11 +1558,15 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
 ### src/mongo/db/storage/extent.cpp
 
+<div></div>
+
     mongo::Extent::dump()
 
 - Used By:
 
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Extent::initialSize(int)
 
@@ -1318,11 +1574,15 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Extent::followupSize(int, int)
 
 - Used By:
 
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Extent::markEmpty()
 
@@ -1330,12 +1590,16 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
     - [src/mongo/db/compact.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Extent::validates(mongo::DiskLoc, mongo::BSONArrayBuilder*)
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Extent::maxSize()
 
@@ -1356,6 +1620,8 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
 ### src/mongo/db/storage/extent\_manager.cpp
 
+<div></div>
+
     mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool) const
 
 - Used By:
@@ -1365,11 +1631,15 @@ Sits above an extent and has helper functions to manage them as a whole. This is
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ExtentManager::flushFiles(bool)
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+
+<div></div>
 
     mongo::ExtentManager::freeExtents(mongo::DiskLoc, mongo::DiskLoc)
 
@@ -1377,11 +1647,15 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
     - [src/mongo/db/compact.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ExtentManager::quantizeExtentSize(int)
 
 - Used By:
 
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ExtentManager::getFile(int, int, bool)
 
@@ -1389,6 +1663,8 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ExtentManager::getNextExtent(mongo::Extent*) const
 
@@ -1398,11 +1674,15 @@ Sits above an extent and has helper functions to manage them as a whole. This is
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ExtentManager::fileSize() const
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const
 
@@ -1424,11 +1704,15 @@ Utilities to clone entire collections and databases
 
 ### src/mongo/db/cloner.cpp
 
+<div></div>
+
     mongo::Cloner::cloneFrom(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::string&, int*, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)
 
 - Used By:
 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
+
+<div></div>
 
     mongo::Cloner::Cloner()
 
@@ -1436,11 +1720,15 @@ Utilities to clone entire collections and databases
 
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
+<div></div>
+
     mongo::Cloner::copyCollectionFromRemote(std::string const&, std::string const&, std::string&)
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+
+<div></div>
 
     mongo::Cloner::go(mongo::Client::Context&, std::string const&, mongo::CloneOptions const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*, std::string&, int*)
 
@@ -1461,6 +1749,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 ### src/mongo/db/instance.cpp
 
+<div></div>
+
     typeinfo for mongo::DBDirectClient
 
 - Used By:
@@ -1470,11 +1760,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::exitCleanly(mongo::ExitCode)
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DBDirectClient::query(std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int, int)
 
@@ -1492,12 +1786,16 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::createDirectClient()
 
 - Used By:
 
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::DBDirectClient::_lookupAvailableOptions()
 
@@ -1508,11 +1806,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::lockFile
 
 - Used By:
 
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::_diaglog
 
@@ -1522,11 +1824,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::mongoAbort(char const*)
 
 - Used By:
 
     - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
 
     mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
 
@@ -1536,6 +1842,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
 
     vtable for mongo::DBDirectClient
 
@@ -1587,6 +1895,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBDirectClient::count(std::string const&, mongo::BSONObj const&, int, int, int)
 
 - Used By:
@@ -1602,12 +1912,16 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DiagLog::flush()
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::inShutdown()
 
@@ -1647,11 +1961,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::assembleResponse(mongo::Message&, mongo::DbResponse&, mongo::HostAndPort const&)
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::dbexit(mongo::ExitCode, char const*)
 
@@ -1667,12 +1985,16 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::DiagLog::setLevel(int)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DBDirectClient::killCursor(long long)
 
@@ -1683,11 +2005,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dbExecCommand
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     non-virtual thunk to mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
 
@@ -1698,6 +2024,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::acquirePathLock(bool)
 
 - Used By:
@@ -1706,17 +2034,23 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSONElementManipulator::initTimestamp()
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::replHasDatabases()
 
 - Used By:
 
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
+
+<div></div>
 
     mongo::killCurrentOp
 
@@ -1746,11 +2080,15 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Database::closeDatabase(std::string const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
 
@@ -1761,6 +2099,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     non-virtual thunk to mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
 
 - Used By:
@@ -1769,6 +2109,8 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string> >&, std::string const&)
 
@@ -1795,11 +2137,15 @@ This is another really hairy, really old legacy file. At this point it's easier 
 
 ### src/mongo/db/pdfile.cpp
 
+<div></div>
+
     mongo::inDBRepair
 
 - Used By:
 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+
+<div></div>
 
     mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)
 
@@ -1808,11 +2154,15 @@ This is another really hairy, really old legacy file. At this point it's easier 
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dbSize(char const*)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::dropDatabase(std::string const&)
 
@@ -1820,6 +2170,8 @@ This is another really hairy, really old legacy file. At this point it's easier 
 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::dbHolderUnchecked()
 
@@ -1832,12 +2184,16 @@ This is another really hairy, really old legacy file. At this point it's easier 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)
 
@@ -1855,11 +2211,15 @@ This is another really hairy, really old legacy file. At this point it's easier 
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::_deleteDataFiles(char const*)
 
 - Used By:
 
     - [src/mongo/db/durop.cpp](../journaling)
+
+<div></div>
 
     mongo::dropAllDatabasesExceptLocal()
 
@@ -1867,11 +2227,15 @@ This is another really hairy, really old legacy file. At this point it's easier 
 
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
 
+<div></div>
+
     mongo::isValidNS(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::repairDatabase(std::string, std::string&, bool, bool)
 

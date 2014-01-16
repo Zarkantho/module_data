@@ -15,6 +15,8 @@ Contains the PageFaultException and NoPageFaultsAllowed classes.   where are the
 
 ### src/mongo/db/pagefault.cpp
 
+<div></div>
+
     mongo::PageFaultRetryableSection::~PageFaultRetryableSection()
 
 - Used By:
@@ -24,11 +26,15 @@ Contains the PageFaultException and NoPageFaultsAllowed classes.   where are the
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::NoPageFaultsAllowed::NoPageFaultsAllowed()
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::PageFaultException::touch()
 
@@ -39,6 +45,8 @@ Contains the PageFaultException and NoPageFaultsAllowed classes.   where are the
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::PageFaultRetryableSection::PageFaultRetryableSection()
 
 - Used By:
@@ -48,11 +56,15 @@ Contains the PageFaultException and NoPageFaultsAllowed classes.   where are the
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::PageFaultException::PageFaultException(mongo::Record const*)
 
 - Used By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::NoPageFaultsAllowed::~NoPageFaultsAllowed()
 
@@ -72,6 +84,8 @@ Code to go in and touch pages so that they are brought into memory.   who calls 
 # Interface
 
 ### src/mongo/db/prefetch.cpp
+
+<div></div>
 
     mongo::prefetchPagesForReplicatedOp(mongo::BSONObj const&)
 

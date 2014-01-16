@@ -58,6 +58,8 @@ Third Party - The boost thread library
 
 ### src/third\_party/boost/libs/thread/src/pthread/thread.cpp
 
+<div></div>
+
     typeinfo for boost::detail::thread_data_base
 
 - Used By:
@@ -93,6 +95,8 @@ Third Party - The boost thread library
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
 
+<div></div>
+
     boost::detail::thread_data_base::~thread_data_base()
 
 - Used By:
@@ -127,6 +131,8 @@ Third Party - The boost thread library
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
+
+<div></div>
 
     boost::this_thread::disable_interruption::disable_interruption()
 
@@ -164,11 +170,15 @@ Third Party - The boost thread library
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     boost::this_thread::yield()
 
 - Used By:
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     boost::this_thread::interruption_point()
 
@@ -233,6 +243,8 @@ Third Party - The boost thread library
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
+<div></div>
+
     boost::thread::start_thread()
 
 - Used By:
@@ -267,6 +279,8 @@ Third Party - The boost thread library
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
+
+<div></div>
 
     boost::this_thread::disable_interruption::~disable_interruption()
 
@@ -303,6 +317,8 @@ Third Party - The boost thread library
     - [src/mongo/util/mmap.cpp](../mmap)
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     boost::detail::get_current_thread_data()
 
@@ -367,6 +383,8 @@ Third Party - The boost thread library
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
+<div></div>
+
     boost::thread::join()
 
 - Used By:
@@ -381,6 +399,8 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
+
+<div></div>
 
     boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
 
@@ -425,6 +445,8 @@ Third Party - The boost thread library
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
 
+<div></div>
+
     boost::detail::get_tss_data(void const*)
 
 - Used By:
@@ -468,11 +490,15 @@ Third Party - The boost thread library
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
 
+<div></div>
+
     boost::thread::interrupt()
 
 - Used By:
 
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<div></div>
 
     boost::thread::~thread()
 
@@ -508,6 +534,8 @@ Third Party - The boost thread library
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
+
+<div></div>
 
     vtable for boost::detail::thread_data_base
 

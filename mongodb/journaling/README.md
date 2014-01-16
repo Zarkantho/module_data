@@ -15,11 +15,15 @@ Page aligned buffer builder   what sort of buffer? i don't understand ;(
 
 ### src/mongo/util/alignedbuilder.cpp
 
+<div></div>
+
     mongo::AlignedBuilder::kill()
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::AlignedBuilder::AlignedBuilder(unsigned int)
 
@@ -55,11 +59,15 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 ### src/mongo/db/dur.cpp
 
+<div></div>
+
     mongo::dur::Stats::S::_asCSV()
 
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::dur::Stats::S::_asObj()
 
@@ -67,11 +75,15 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dur::commitJob
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::dur::stats
 
@@ -79,17 +91,23 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dur::Stats::S::_CSVHeader()
 
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dur::Stats::S::reset()
 
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::dur::DurableInterface::_impl
 
@@ -131,6 +149,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
+<div></div>
+
     mongo::dur::startup()
 
 - Used By:
@@ -138,6 +158,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::dur::releasingWriteLock()
 
@@ -147,17 +169,23 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 ### src/mongo/db/dur\_journal.cpp
 
+<div></div>
+
     mongo::dur::getJournalDir()
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::dur::haveJournalFiles(bool)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::dur::journalCleanup(bool)
 
@@ -166,6 +194,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/storage/durable\_mapped\_file.cpp
+
+<div></div>
 
     mongo::DurableMappedFile::create(std::string const&, unsigned long long&, bool)
 
@@ -176,6 +206,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DurableMappedFile::open(std::string const&, bool)
 
 - Used By:
@@ -183,6 +215,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
+
+<div></div>
 
     mongo::DurableMappedFile::~DurableMappedFile()
 
@@ -192,6 +226,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DurableMappedFile::DurableMappedFile()
 
@@ -215,12 +251,16 @@ This is not actually used in our logging system. Just utilities to create files 
 
 ### src/mongo/util/logfile.cpp
 
+<div></div>
+
     mongo::LogFile::synchronousAppend(void const*, unsigned long)
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::LogFile::~LogFile()
 
@@ -229,11 +269,15 @@ This is not actually used in our logging system. Just utilities to create files 
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::LogFile::writeAt(unsigned long long, void const*, unsigned long)
 
 - Used By:
 
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::LogFile::LogFile(std::string const&, bool)
 
@@ -241,6 +285,8 @@ This is not actually used in our logging system. Just utilities to create files 
 
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::LogFile::readAt(unsigned long long, void*, unsigned long)
 

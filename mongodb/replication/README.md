@@ -53,11 +53,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/bgsync.cpp
 
+<div></div>
+
     mongo::replset::BackgroundSyncInterface::~BackgroundSyncInterface()
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     typeinfo for mongo::replset::BackgroundSyncInterface
 
@@ -67,11 +71,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/health.cpp
 
+<div></div>
+
     mongo::rsLog
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ReplSetImpl::lastOtherOpTime() const
 
@@ -80,6 +88,8 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
 ### src/mongo/db/repl/master\_slave.cpp
+
+<div></div>
 
     mongo::replAllDead
 
@@ -96,11 +106,15 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::DatabaseIgnorer::ignoreAt(std::string const&, mongo::OpTime const&)
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::replInfo
 
@@ -108,17 +122,23 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::DatabaseIgnorer::doIgnoreUntilAfter(std::string const&, mongo::OpTime const&)
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ReplSource::ReplSource(mongo::BSONObj)
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ReplSource::applyOperation(mongo::BSONObj const&)
 
@@ -128,6 +148,8 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/oplog.cpp
 
+<div></div>
+
     mongo::createOplog()
 
 - Used By:
@@ -135,11 +157,15 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::oplogCheckCloseDatabase(mongo::Database*)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::logOp(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)
 
@@ -160,11 +186,15 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::oldRepl()
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::applyOperation_inlock(mongo::BSONObj const&, bool, bool)
 
@@ -175,11 +205,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/oplogreader.cpp
 
+<div></div>
+
     mongo::replAuthenticate(mongo::DBClientBase*)
 
 - Used By:
 
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::OplogReader::connect(std::string const&)
 
@@ -187,11 +221,15 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/tools/oplog.cpp](../tools)
 
+<div></div>
+
     mongo::OplogReader::tailingQueryGTE(char const*, mongo::OpTime, mongo::BSONObj const*)
 
 - Used By:
 
     - [src/mongo/tools/oplog.cpp](../tools)
+
+<div></div>
 
     mongo::OplogReader::OplogReader()
 
@@ -201,6 +239,8 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/repl\_reads\_ok.cpp
 
+<div></div>
+
     mongo::replVerifyReadsOk(mongo::LiteParsedQuery const*)
 
 - Used By:
@@ -209,6 +249,8 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/repl\_start.cpp
 
+<div></div>
+
     mongo::startReplication()
 
 - Used By:
@@ -216,6 +258,8 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/repl/replication\_server\_status.cpp
+
+<div></div>
 
     mongo::replSettings
 
@@ -237,6 +281,8 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::anyReplEnabled()
 
 - Used By:
@@ -246,11 +292,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/rs.cpp
 
+<div></div>
+
     mongo::ReplSetImpl::replPrefetcherThreadCount
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::theReplSet
 
@@ -274,11 +324,15 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::ReplSetImpl::rss
 
 - Used By:
 
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+
+<div></div>
 
     mongo::ReplSet::shutdown()
 
@@ -286,11 +340,15 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::ReplSetImpl::replWriterThreadCount
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::ReplSet::ReplSet()
 
@@ -298,17 +356,23 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ReplSetImpl::_stepDown(int)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
+<div></div>
+
     mongo::isCurrentlyAReplSetPrimary()
 
 - Used By:
 
     - [src/mongo/db/compact.cpp](../database\_commands)
+
+<div></div>
 
     mongo::replSet
 
@@ -326,17 +390,23 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
 
+<div></div>
+
     mongo::ReplSetImpl::setMaintenanceMode(bool)
 
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ReplSetImpl::registerSlave(mongo::BSONObj const&, int)
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::replLocalAuth()
 
@@ -346,11 +416,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/rs\_config.cpp
 
+<div></div>
+
     mongo::ReplSetConfig::getMajority() const
 
 - Used By:
 
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::ReplSetConfig::make(mongo::BSONObj, bool)
 
@@ -360,11 +434,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/rs\_sync.cpp
 
+<div></div>
+
     mongo::replset::SyncTail::SyncTail(mongo::replset::BackgroundSyncInterface*)
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     typeinfo for mongo::replset::InitialSync
 
@@ -372,11 +450,15 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::replset::InitialSync::InitialSync(mongo::replset::BackgroundSyncInterface*)
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::replset::InitialSync::oplogApplication(mongo::BSONObj const&, mongo::BSONObj const&)
 
@@ -384,11 +466,15 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::replset::multiInitialSyncApply(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, mongo::replset::SyncTail*)
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::replset::InitialSync::~InitialSync()
 
@@ -396,11 +482,15 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::replset::SyncTail::oplogApplication()
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::replset::SyncTail::syncApply(mongo::BSONObj const&, bool)
 
@@ -410,6 +500,8 @@ Replication code? TODO: verify that this is all replication related and document
 
 ### src/mongo/db/repl/sync.cpp
 
+<div></div>
+
     vtable for mongo::Sync
 
 - Used By:
@@ -417,11 +509,15 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
+<div></div>
+
     typeinfo for mongo::Sync
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Sync::shouldRetry(mongo::BSONObj const&)
 
@@ -429,6 +525,8 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Sync::getMissingDoc(mongo::BSONObj const&)
 
@@ -438,6 +536,8 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
 
 ### src/mongo/db/repl/sync\_source\_feedback.cpp
+
+<div></div>
 
     vtable for mongo::SyncSourceFeedback
 
@@ -458,11 +558,15 @@ Helpers to wait for the appropriate write concern
 
 ### src/mongo/db/write\_concern.cpp
 
+<div></div>
+
     mongo::WriteConcernResult::appendTo(mongo::BSONObjBuilder*) const
 
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+
+<div></div>
 
     mongo::WriteConcernOptions::parse(mongo::BSONObj const&)
 
@@ -470,6 +574,8 @@ Helpers to wait for the appropriate write concern
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::waitForWriteConcern(mongo::WriteConcernOptions const&, mongo::OpTime const&, mongo::WriteConcernResult*)
 
@@ -491,11 +597,15 @@ Actual meat of the waiting for write concern code
 
 ### src/mongo/db/repl/write\_concern.cpp
 
+<div></div>
+
     mongo::updateSlaveLocation(mongo::CurOp&, char const*, mongo::OpTime)
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::opReplicatedEnough(mongo::OpTime, int)
 
@@ -503,12 +613,16 @@ Actual meat of the waiting for write concern code
 
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::waitForReplication(mongo::OpTime, int, int)
 
 - Used By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::opReplicatedEnough(mongo::OpTime, mongo::BSONElement)
 

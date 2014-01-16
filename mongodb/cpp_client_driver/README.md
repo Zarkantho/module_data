@@ -16,12 +16,16 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
 
 ### src/mongo/client/clientAndShell.cpp
 
+<div></div>
+
     mongo::dbexitCalled
 
 - Used By:
 
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
+<div></div>
 
     mongo::shell_utils::mongoProgramOutputMutex
 
@@ -30,11 +34,15 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
+<div></div>
+
     mongo::haveLocalShardingInfo(std::string const&)
 
 - Used By:
 
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::createDirectClient()
 
@@ -42,6 +50,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
 
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::dbexit(mongo::ExitCode, char const*)
 
@@ -58,11 +68,15 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Shard::isAShardNode(std::string const&)
 
 - Used By:
 
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
+
+<div></div>
 
     mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
 
@@ -73,6 +87,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::inShutdown()
 
@@ -109,6 +125,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
+<div></div>
+
     mongo::ClientBasic::getCurrent()
 
 - Used By:
@@ -136,6 +154,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
 
 ### src/mongo/client/clientOnly.cpp
 
+<div></div>
+
     mongo::StartupTest::~StartupTest()
 
 - Used By:
@@ -160,6 +180,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/db/hasher.cpp](../utilities)
     - [src/mongo/db/memconcept.cpp](../utilities)
 
+<div></div>
+
     mongo::StartupTest::StartupTest()
 
 - Used By:
@@ -183,6 +205,8 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/hasher.cpp](../utilities)
     - [src/mongo/db/memconcept.cpp](../utilities)
+
+<div></div>
 
     typeinfo for mongo::StartupTest
 
@@ -246,6 +270,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/connpool.cpp
 
+<div></div>
+
     vtable for mongo::ScopedDbConnection
 
 - Used By:
@@ -277,6 +303,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConnectionPool::appendInfo(mongo::BSONObjBuilder&)
 
 - Used By:
@@ -284,12 +312,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::DBConnectionPool::addHook(mongo::DBConnectionHook*)
 
 - Used By:
 
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::pool
 
@@ -326,11 +358,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConnectionPool::clear()
 
 - Used By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::DBConnectionPool::get(mongo::ConnectionString const&, double)
 
@@ -346,11 +382,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::DBConnectionPool::flush()
 
 - Used By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConnectionPool::removeHost(std::string const&)
 
@@ -358,6 +398,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ScopedDbConnection::_setSocketTimeout()
 
@@ -390,6 +432,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
 
 - Used By:
@@ -420,11 +464,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/s/chunk.cpp](../sharding)
 
+<div></div>
+
     mongo::DBConnectionPool::isConnectionGood(std::string const&, mongo::DBClientBase*)
 
 - Used By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::DBConnectionPool::get(std::string const&, double)
 
@@ -452,11 +500,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConnectionPool::onHandedOut(mongo::DBClientBase*)
 
 - Used By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::DBConnectionPool::~DBConnectionPool()
 
@@ -464,11 +516,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::DBConnectionPool::serverNameCompare::operator()(std::string const&, std::string const&) const
 
 - Used By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::AScopedConnection::_numConnections
 
@@ -503,11 +559,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConnectionPool::DBConnectionPool()
 
 - Used By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::ScopedDbConnection::~ScopedDbConnection()
 
@@ -539,6 +599,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/dbclient.cpp
 
+<div></div>
+
     mongo::DBClientWithCommands::simpleCommand(std::string const&, mongo::BSONObj*, std::string const&)
 
 - Used By:
@@ -564,6 +626,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     vtable for mongo::DBClientBase
 
@@ -635,6 +699,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::reIndex(std::string const&)
 
 - Used By:
@@ -649,6 +715,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Query::toString() const
 
 - Used By:
@@ -657,6 +725,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientBase::INVALID_SOCK_CREATION_TIME
 
@@ -672,11 +742,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Query::Query(std::string const&)
 
 - Used By:
 
     - [src/mongo/tools/export.cpp](../tools)
+
+<div></div>
 
     mongo::ConnectionString::_connectHookMutex
 
@@ -685,6 +759,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::getCollectionNames(std::string const&)
 
 - Used By:
@@ -692,11 +768,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::getDatabaseNames()
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+
+<div></div>
 
     mongo::DBClientBase::insert(std::string const&, mongo::BSONObj, int)
 
@@ -729,12 +809,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Query::ReadPrefField
 
 - Used By:
 
     - [src/mongo/s/strategy\_single.cpp](../sharding)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::getErrField(mongo::BSONObj const&)
 
@@ -743,6 +827,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::Query::Query(char const*)
 
@@ -753,12 +839,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Query::hasReadPreference(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBClientWithCommands::count(std::string const&, mongo::BSONObj const&, int, int, int)
 
@@ -767,6 +857,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientBase::query(boost::function<void (mongo::BSONObj const&)>, std::string const&, mongo::Query, mongo::BSONObj const*, int)
 
@@ -781,11 +873,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Query::explain()
 
 - Used By:
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientConnection::_auth(mongo::BSONObj const&)
 
@@ -793,11 +889,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Query::isExplain() const
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::DBClientWithCommands::isMaster(bool&, mongo::BSONObj*)
 
@@ -811,6 +911,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::ConnectionString::parse(std::string const&, std::string&)
 
@@ -833,12 +935,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
+<div></div>
+
     mongo::Query::getFilter() const
 
 - Used By:
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBClientBase::update(std::string const&, mongo::Query, mongo::BSONObj, bool, bool)
 
@@ -859,6 +965,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)
 
 - Used By:
@@ -872,6 +980,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
+
+<div></div>
 
     mongo::DBClientWithCommands::ensureIndex(std::string const&, mongo::BSONObj, bool, std::string const&, bool, bool, int, int)
 
@@ -897,6 +1007,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::_auth(mongo::BSONObj const&)
 
 - Used By:
@@ -907,6 +1019,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::DBClientConnection::setSoTimeout(double)
 
 - Used By:
@@ -914,6 +1028,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     vtable for mongo::DBClientWithCommands
 
@@ -983,6 +1099,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::getIndexes(std::string const&)
 
 - Used By:
@@ -996,6 +1114,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientWithCommands::dropIndex(std::string const&, mongo::BSONObj)
 
@@ -1012,11 +1132,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ConnectionString::typeToString(mongo::ConnectionString::ConnectionType)
 
 - Used By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientWithCommands::exists(std::string const&)
 
@@ -1025,11 +1149,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBClientConnection::setReplSetClientCallback(mongo::DBClientReplicaSet*)
 
 - Used By:
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::assembleRequest(std::string const&, mongo::BSONObj, int, int, mongo::BSONObj const*, int, mongo::Message&)
 
@@ -1037,6 +1165,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientBase::ConnectionIdSequence
 
@@ -1107,6 +1237,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
 
 - Used By:
@@ -1128,6 +1260,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/import.cpp](../tools)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::DBClientBase::remove(std::string const&, mongo::Query, int)
 
 - Used By:
@@ -1139,11 +1273,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::eval(std::string const&, std::string const&, mongo::BSONObj&, mongo::BSONElement&, mongo::BSONObj*)
 
 - Used By:
 
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Query::hint(std::string const&)
 
@@ -1151,12 +1289,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientInterface::findN(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&, std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int)
 
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/s/d\_merge.cpp](../sharding)
+
+<div></div>
 
     mongo::nsGetCollection(std::string const&)
 
@@ -1188,11 +1330,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::isOk(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientBase::update(std::string const&, mongo::Query, mongo::BSONObj, int)
 
@@ -1205,6 +1351,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ConnectionString::sameLogicalEndpoint(mongo::ConnectionString const&) const
 
 - Used By:
@@ -1215,11 +1363,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/chunk.cpp](../sharding)
 
+<div></div>
+
     non-virtual thunk to mongo::DBClientConnection::checkResponse(char const*, int, bool*, std::string*)
 
 - Used By:
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientWithCommands::auth(std::string const&, std::string const&, std::string const&, std::string&, bool)
 
@@ -1227,6 +1379,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::ConnectionString::_finishInit()
 
@@ -1250,6 +1404,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
+<div></div>
+
     mongo::DBClientConnection::connect(mongo::HostAndPort const&, std::string&)
 
 - Used By:
@@ -1257,6 +1413,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/tools/stat.cpp](../tools)
+
+<div></div>
 
     mongo::DBClientBase::query(boost::function<void (mongo::DBClientCursorBatchIterator&)>, std::string const&, mongo::Query, mongo::BSONObj const*, int)
 
@@ -1269,6 +1427,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::ConnectionString::_fillServers(std::string)
 
@@ -1286,6 +1446,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::DBClientWithCommands::auth(mongo::BSONObj const&)
 
 - Used By:
@@ -1297,6 +1459,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::setRunCommandHook(boost::function<void (mongo::BSONObjBuilder*)>)
 
 - Used By:
@@ -1307,6 +1471,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientBase::getMore(std::string const&, long long, int, int)
 
@@ -1320,11 +1486,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::getLastError(std::string const&, bool, bool, int, int)
 
 - Used By:
 
     - [src/mongo/tools/restore.cpp](../tools)
+
+<div></div>
 
     mongo::DBClientWithCommands::resetIndexCache()
 
@@ -1340,11 +1510,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Query::ReadPrefTagsField
 
 - Used By:
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     typeinfo for mongo::DBClientConnection
 
@@ -1354,6 +1528,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/tools/dump.cpp](../tools)
+
+<div></div>
 
     mongo::DBClientWithCommands::getLastErrorDetailed(bool, bool, int, int)
 
@@ -1367,11 +1543,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::isNotMasterErrorString(mongo::BSONElement const&)
 
 - Used By:
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     typeinfo for mongo::DBClientWithCommands
 
@@ -1379,6 +1559,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
+
+<div></div>
 
     mongo::DBClientWithCommands::runCommand(std::string const&, mongo::BSONObj const&, mongo::BSONObj&, int)
 
@@ -1399,6 +1581,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientBase::insert(std::string const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, int)
 
 - Used By:
@@ -1408,6 +1592,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::nsGetDB(std::string const&)
 
@@ -1439,6 +1625,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientInterface::findOne(std::string const&, mongo::Query const&, mongo::BSONObj const*, int)
 
 - Used By:
@@ -1458,17 +1646,23 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientConnection::_checkConnection()
 
 - Used By:
 
     - [src/mongo/tools/stat.cpp](../tools)
 
+<div></div>
+
     mongo::Query::isComplex(bool*) const
 
 - Used By:
 
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBClientConnection::_numConnections
 
@@ -1490,6 +1684,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::dropIndex(std::string const&, std::string const&)
 
 - Used By:
@@ -1503,12 +1699,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Query::minKey(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Query::hint(mongo::BSONObj)
 
@@ -1518,11 +1718,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Query::readPref(mongo::ReadPreference, mongo::BSONArray const&)
 
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
 
     mongo::Query::snapshot()
 
@@ -1531,6 +1735,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/export.cpp](../tools)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::DBClientWithCommands::createCollection(std::string const&, long long, bool, int, mongo::BSONObj*)
 
@@ -1547,6 +1753,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientConnection::_lazyKillCursor
 
 - Used By:
@@ -1554,11 +1762,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::createPasswordDigest(std::string const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
+
+<div></div>
 
     mongo::DBClientWithCommands::getLastErrorDetailed(std::string const&, bool, bool, int, int)
 
@@ -1573,6 +1785,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientWithCommands::dropIndexes(std::string const&)
 
@@ -1589,6 +1803,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientBase::remove(std::string const&, mongo::Query, bool)
 
@@ -1608,6 +1824,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::_lookupAvailableOptions()
 
 - Used By:
@@ -1617,12 +1835,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ConnectionString::_connectHook
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Query::maxKey(mongo::BSONObj const&)
 
@@ -1631,11 +1853,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientConnection::checkResponse(char const*, int, bool*, std::string*)
 
 - Used By:
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Query::ReadPrefModeField
 
@@ -1643,12 +1869,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientBase::query(std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int, int)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/tools/stat.cpp](../tools)
+
+<div></div>
 
     mongo::Query::sort(mongo::BSONObj const&)
 
@@ -1682,17 +1912,23 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::DBClientConnection::logout(std::string const&, mongo::BSONObj&)
 
 - Used By:
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
 
+<div></div>
+
     non-virtual thunk to mongo::DBClientConnection::recv(mongo::Message&)
 
 - Used By:
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientWithCommands::logout(std::string const&, mongo::BSONObj&)
 
@@ -1705,17 +1941,23 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientWithCommands::eval(std::string const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientConnection::recv(mongo::Message&)
 
 - Used By:
 
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
+
+<div></div>
 
     vtable for mongo::DBClientConnection
 
@@ -1736,6 +1978,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ConnectionString::connect(std::string&, double) const
 
 - Used By:
@@ -1747,6 +1991,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
+
+<div></div>
 
     typeinfo for mongo::DBClientBase
 
@@ -1760,6 +2006,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::hasErrField(mongo::BSONObj const&)
 
 - Used By:
@@ -1767,12 +2015,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientWithCommands::getPrevError()
 
 - Used By:
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::DBClientWithCommands::_countCmd(std::string const&, mongo::BSONObj const&, int, int, int)
 
@@ -1782,17 +2034,23 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/dbclient\_rs.cpp
 
+<div></div>
+
     mongo::DBClientReplicaSet::slaveConn()
 
 - Used By:
 
     - [src/mongo/tools/tool.cpp](../tools)
 
+<div></div>
+
     mongo::ReplicaSetMonitor::_maxFailedChecks
 
 - Used By:
 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ReplicaSetMonitor::remove(std::string const&, bool)
 
@@ -1801,6 +2059,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ReplicaSetMonitor::getServerAddress() const
 
 - Used By:
@@ -1808,11 +2068,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/grid.cpp](../sharding)
 
+<div></div>
+
     mongo::ReplicaSetMonitor::getAllTrackedSets(std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)
 
 - Used By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientReplicaSet::connect()
 
@@ -1820,11 +2084,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ReplicaSetMonitor::getMaster()
 
 - Used By:
 
     - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
+
+<div></div>
 
     mongo::ReplicaSetMonitor::appendInfo(mongo::BSONObjBuilder&) const
 
@@ -1833,11 +2101,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
+<div></div>
+
     mongo::ReplicaSetMonitor::setConfigChangeHook(boost::function1<void, mongo::ReplicaSetMonitor const*>)
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::ReplicaSetMonitor::get(std::string const&, bool)
 
@@ -1849,11 +2121,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
+<div></div>
+
     mongo::DBClientReplicaSet::isntMaster()
 
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::ReplicaSetMonitor::contains(std::string const&) const
 
@@ -1861,11 +2137,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/s/shard.cpp](../sharding)
 
+<div></div>
+
     mongo::DBClientReplicaSet::masterConn()
 
 - Used By:
 
     - [src/mongo/s/version\_manager.cpp](../sharding)
+
+<div></div>
 
     mongo::DBClientReplicaSet::DBClientReplicaSet(std::string const&, std::vector<mongo::HostAndPort, std::allocator<mongo::HostAndPort> > const&, double)
 
@@ -1875,6 +2155,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/dbclientcursor.cpp
 
+<div></div>
+
     mongo::DBClientCursor::peekError(mongo::BSONObj*)
 
 - Used By:
@@ -1882,11 +2164,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBClientCursor::init()
 
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientCursor::peek(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&, int)
 
@@ -1894,11 +2180,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
 
+<div></div>
+
     mongo::DBClientCursor::more()
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::DBClientCursor::initLazy(bool)
 
@@ -1906,17 +2196,23 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::DBClientCursor::next()
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::DBClientCursor::peekFirst()
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::DBClientCursor::_finishConsInit()
 
@@ -1927,11 +2223,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientCursor::initLazyFinish(bool&)
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
+
+<div></div>
 
     vtable for mongo::DBClientCursor
 
@@ -1942,6 +2242,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
 
+<div></div>
+
     typeinfo for mongo::DBClientCursor
 
 - Used By:
@@ -1949,11 +2251,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DBClientCursor::exhaustReceiveMore()
 
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::DBClientCursor::~DBClientCursor()
 
@@ -1964,12 +2270,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/scoped\_db\_conn\_test.cpp
 
+<div></div>
+
     mongo::createDirectClient()
 
 - Used By:
 
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::dbexit(mongo::ExitCode, char const*)
 
@@ -1985,6 +2295,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::inShutdown()
 
@@ -2021,6 +2333,8 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
+<div></div>
+
     mongo::haveLocalShardingInfo(std::string const&)
 
 - Used By:
@@ -2029,11 +2343,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 ### src/mongo/client/syncclusterconnection.cpp
 
+<div></div>
+
     mongo::SyncClusterConnection::prepare(std::string&)
 
 - Used By:
 
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
+
+<div></div>
 
     mongo::SyncClusterConnection::SyncClusterConnection(std::list<mongo::HostAndPort, std::allocator<mongo::HostAndPort> > const&, double)
 
@@ -2041,11 +2359,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     typeinfo for mongo::SyncClusterConnection
 
 - Used By:
 
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
+
+<div></div>
 
     mongo::SyncClusterConnection::setAllSoTimeouts(double)
 
@@ -2066,6 +2388,8 @@ Legacy wire protocol in the client driver   what is the new equivalent, and wher
 
 ### src/mongo/db/dbmessage.cpp
 
+<div></div>
+
     mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, void*, int, int, int, long long)
 
 - Used By:
@@ -2073,11 +2397,15 @@ Legacy wire protocol in the client driver   what is the new equivalent, and wher
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/cursors.cpp](../sharding)
 
+<div></div>
+
     mongo::replyToQuery(int, mongo::Message&, mongo::DbResponse&, mongo::BSONObj)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::Message::toString() const
 
@@ -2086,11 +2414,15 @@ Legacy wire protocol in the client driver   what is the new equivalent, and wher
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/s/d\_logic.cpp](../sharding)
 
+<div></div>
+
     mongo::replyToQuery(int, mongo::Message&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)
 
@@ -2113,6 +2445,8 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
 
 ### src/mongo/db/lasterror.cpp
 
+<div></div>
+
     mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)
 
 - Used By:
@@ -2121,6 +2455,8 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::LastErrorHolder::get(bool)
 
@@ -2138,11 +2474,15 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::isShell
 
 - Used By:
 
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
+<div></div>
 
     mongo::LastErrorHolder::reset(mongo::LastError*)
 
@@ -2156,6 +2496,8 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::LastErrorHolder::disableForCommand()
 
 - Used By:
@@ -2166,11 +2508,15 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
 
+<div></div>
+
     mongo::LastError::appendSelfStatus(mongo::BSONObjBuilder&)
 
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+
+<div></div>
 
     mongo::lastError
 
@@ -2200,11 +2546,15 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
+<div></div>
+
     mongo::LastErrorHolder::release()
 
 - Used By:
 
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::LastError::appendSelf(mongo::BSONObjBuilder&, bool)
 
@@ -2213,11 +2563,15 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::LastError::noError
 
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+
+<div></div>
 
     mongo::LastErrorHolder::initThread()
 
@@ -2226,11 +2580,15 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::LastErrorHolder::_get(bool)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::setLastError(int, char const*)
 
@@ -2306,11 +2664,15 @@ Gridfs wrapper around the client driver.
 
 ### src/mongo/client/gridfs.cpp
 
+<div></div>
+
     mongo::GridFS::findFile(std::string const&) const
 
 - Used By:
 
     - [src/mongo/tools/files.cpp](../tools)
+
+<div></div>
 
     mongo::GridFS::getChunkSize() const
 
@@ -2318,11 +2680,15 @@ Gridfs wrapper around the client driver.
 
     - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::GridFS::setChunkSize(unsigned int)
 
 - Used By:
 
     - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::GridFS::storeFile(std::string const&, std::string const&, std::string const&)
 
@@ -2330,17 +2696,23 @@ Gridfs wrapper around the client driver.
 
     - [src/mongo/tools/files.cpp](../tools)
 
+<div></div>
+
     mongo::GridFS::list(mongo::BSONObj) const
 
 - Used By:
 
     - [src/mongo/tools/files.cpp](../tools)
 
+<div></div>
+
     mongo::GridFile::write(std::string const&) const
 
 - Used By:
 
     - [src/mongo/tools/files.cpp](../tools)
+
+<div></div>
 
     mongo::GridFS::~GridFS()
 
@@ -2349,12 +2721,16 @@ Gridfs wrapper around the client driver.
     - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
     - [src/mongo/tools/files.cpp](../tools)
 
+<div></div>
+
     mongo::GridFS::GridFS(mongo::DBClientBase&, std::string const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
     - [src/mongo/tools/files.cpp](../tools)
+
+<div></div>
 
     mongo::GridFS::removeFile(std::string const&)
 
@@ -2375,11 +2751,15 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 ### src/mongo/client/parallel.cpp
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(std::set<mongo::ServerAndQuery, std::less<mongo::ServerAndQuery>, std::allocator<mongo::ServerAndQuery> > const&, std::string const&, mongo::Query const&, int, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Future::CommandResult::join(int)
 
@@ -2387,11 +2767,15 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Future::spawnCommand(std::string const&, std::string const&, mongo::BSONObj const&, int, mongo::DBClientBase*)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ParallelSortClusteredCursor::getShardCursor(mongo::Shard const&)
 
@@ -2399,17 +2783,23 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::next()
 
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::more()
 
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()
 
@@ -2418,17 +2808,23 @@ Cursor that represents a connection to a bunch of shards. You would think that t
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(mongo::QuerySpec const&, mongo::CommandInfo const&)
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::isSharded()
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::ClusteredCursor::init()
 
@@ -2437,11 +2833,15 @@ Cursor that represents a connection to a bunch of shards. You would think that t
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ParallelSortClusteredCursor::getQueryShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&)
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::ParallelSortClusteredCursor::getPrimary()
 
@@ -2462,6 +2862,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
 ### src/mongo/client/sasl\_client\_authenticate.cpp
 
+<div></div>
+
     mongo::saslCommandErrmsgFieldName
 
 - Used By:
@@ -2469,6 +2871,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslCommandUserFieldName
 
@@ -2486,6 +2890,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
+<div></div>
+
     mongo::saslCommandPasswordFieldName
 
 - Used By:
@@ -2499,6 +2905,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/tools/tool.cpp](../tools)
 
+<div></div>
+
     mongo::saslCommandDigestPasswordFieldName
 
 - Used By:
@@ -2507,6 +2915,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslCommandUserDBFieldName
 
@@ -2523,6 +2933,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
+<div></div>
+
     mongo::saslCommandServiceHostnameFieldName
 
 - Used By:
@@ -2530,12 +2942,16 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslCommandServiceNameFieldName
 
 - Used By:
 
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslCommandDoneFieldName
 
@@ -2545,11 +2961,15 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslCommandAutoAuthorizeFieldName
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
+
+<div></div>
 
     mongo::saslDefaultDBName
 
@@ -2557,6 +2977,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslStartCommandName
 
@@ -2566,6 +2988,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslCommandPayloadFieldName
 
 - Used By:
@@ -2573,6 +2997,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslExtractPayload(mongo::BSONObj const&, std::string*, mongo::BSONType*)
 
@@ -2582,11 +3008,15 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslCommandMechanismListFieldName
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
+
+<div></div>
 
     mongo::saslClientAuthenticate
 
@@ -2596,6 +3026,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslCommandConversationIdFieldName
 
 - Used By:
@@ -2603,6 +3035,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslContinueCommandName
 
@@ -2612,6 +3046,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::saslDefaultServiceName
 
 - Used By:
@@ -2619,6 +3055,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::saslCommandMechanismFieldName
 
@@ -2633,6 +3071,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/tools/tool.cpp](../tools)
+
+<div></div>
 
     mongo::saslCommandCodeFieldName
 

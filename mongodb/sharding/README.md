@@ -26,11 +26,15 @@ Helper classes to delete a range of documents. This is used for example in chunk
 
 ### src/mongo/db/range\_deleter.cpp
 
+<div></div>
+
     mongo::RangeDeleter::deleteNow(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, std::string*)
 
 - Used By:
 
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+
+<div></div>
 
     mongo::RangeDeleter::startWorkers()
 
@@ -39,6 +43,8 @@ Helper classes to delete a range of documents. This is used for example in chunk
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/range\_deleter\_service.cpp
+
+<div></div>
 
     mongo::getDeleter()
 
@@ -77,11 +83,15 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 
 ### src/mongo/s/collection\_metadata.cpp
 
+<div></div>
+
     mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::CollectionMetadata::getMinKey() const
 
@@ -89,11 +99,15 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
+<div></div>
+
     mongo::CollectionMetadata::getNextOrphanRange(mongo::BSONObj const&, mongo::KeyRange*) const
 
 - Used By:
 
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+
+<div></div>
 
     mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const
 
@@ -104,11 +118,15 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
 
+<div></div>
+
     mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::CollectionMetadata::isValidKey(mongo::BSONObj const&) const
 
@@ -133,12 +151,16 @@ Code to upgrade config server metadata
 
 ### src/mongo/s/config\_upgrade.cpp
 
+<div></div>
+
     mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::getConfigVersion(mongo::ConnectionString const&, mongo::VersionType*)
 
@@ -160,11 +182,15 @@ Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
 ### src/mongo/client/distlock.cpp
 
+<div></div>
+
     mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
 
     mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
 
@@ -173,12 +199,16 @@ Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DistributedLock::unlock(mongo::BSONObj*)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
 
@@ -187,11 +217,15 @@ Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::setLockPingerEnabled(bool)
 
 - Used By:
 
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ScopedDistributedLock::acquire(long long, std::string*)
 
@@ -214,17 +248,23 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/db/field\_parser.cpp
 
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t> const&, mongo::Date_t*, std::string*)
 
 - Used By:
 
     - [src/mongo/s/type\_mongos.cpp](../sharding)
 
+<div></div>
+
     mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
 
 - Used By:
 
     - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)
 
@@ -237,17 +277,23 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime> const&, mongo::OpTime*, std::string*)
 
 - Used By:
 
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)
 
@@ -267,6 +313,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
 
 - Used By:
@@ -284,6 +332,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
+<div></div>
+
     mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int> const&, int*, std::string*)
 
 - Used By:
@@ -291,6 +341,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)
 
@@ -305,6 +357,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long long> const&, long long*, std::string*)
 
 - Used By:
@@ -312,6 +366,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+
+<div></div>
 
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID> const&, mongo::OID*, std::string*)
 
@@ -363,6 +419,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_changelog.cpp
 
+<div></div>
+
     mongo::ChangelogType::ConfigNS
 
 - Used By:
@@ -371,12 +429,16 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_chunk.cpp
 
+<div></div>
+
     mongo::ChunkType::min
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkType::ConfigNS
 
@@ -387,6 +449,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkType::max
 
 - Used By:
@@ -394,11 +458,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ChunkType::toBSON() const
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkType::DEPRECATED_lastmod
 
@@ -407,11 +475,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ChunkType::~ChunkType()
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkType::ns
 
@@ -420,11 +492,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ChunkType::ChunkType()
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkType::shard
 
@@ -436,11 +512,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_collection.cpp
 
+<div></div>
+
     mongo::CollectionType::toBSON() const
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::CollectionType::~CollectionType()
 
@@ -448,11 +528,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::CollectionType::ns
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::CollectionType::ConfigNS
 
@@ -461,11 +545,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::CollectionType::isValid(std::string*) const
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::CollectionType::CollectionType()
 
@@ -475,6 +563,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_config\_version.cpp
 
+<div></div>
+
     mongo::VersionType::VersionType()
 
 - Used By:
@@ -482,11 +572,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::VersionType::clear()
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::VersionType::~VersionType()
 
@@ -495,12 +589,16 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::VersionType::ConfigNS
 
 - Used By:
 
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::VersionType::toBSON() const
 
@@ -510,11 +608,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_database.cpp
 
+<div></div>
+
     mongo::DatabaseType::~DatabaseType()
 
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
 
     mongo::DatabaseType::DatabaseType()
 
@@ -522,11 +624,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
+<div></div>
+
     mongo::DatabaseType::parseBSON(mongo::BSONObj const&, std::string*)
 
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
 
     mongo::DatabaseType::ConfigNS
 
@@ -536,17 +642,23 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::DatabaseType::isValid(std::string*) const
 
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
+<div></div>
+
     mongo::DatabaseType::primary
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DatabaseType::name
 
@@ -556,17 +668,23 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_settings.cpp
 
+<div></div>
+
     mongo::SettingsType::ConfigNS
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::SettingsType::key
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::SettingsType::balancerStopped
 
@@ -576,17 +694,23 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 ### src/mongo/s/type\_shard.cpp
 
+<div></div>
+
     mongo::ShardType::name
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ShardType::~ShardType()
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ShardType::ConfigNS
 
@@ -597,11 +721,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::ShardType::ShardType()
 
 - Used By:
 
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ShardType::draining
 
@@ -609,11 +737,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ShardType::maxSize
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ShardType::toBSON() const
 
@@ -633,6 +765,8 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 # Interface
 
 ### src/mongo/s/writeback\_listener.cpp
+
+<div></div>
 
     mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)
 
@@ -734,6 +868,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/balance.cpp
 
+<div></div>
+
     mongo::balancer
 
 - Used By:
@@ -742,11 +878,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/chunk.cpp
 
+<div></div>
+
     mongo::ChunkManager::loadExistingRanges(std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Chunk::MaxChunkSize
 
@@ -755,11 +895,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Chunk::multiSplit(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, mongo::BSONObj&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ChunkManager::hasShardKey(mongo::BSONObj const&) const
 
@@ -767,11 +911,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::createFirstChunks(std::string const&, mongo::Shard const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const*, std::vector<mongo::Shard, std::allocator<mongo::Shard> > const*)
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Chunk::moveAndCommit(mongo::Shard const&, long long, bool, bool, int, mongo::BSONObj&) const
 
@@ -779,11 +927,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::ChunkManager(std::string const&, mongo::ShardKeyPattern const&, bool)
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkManager::compatibleWith(mongo::ChunkManager const&, mongo::Shard const&) const
 
@@ -791,12 +943,16 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Chunk::ShouldAutoSplit
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::ChunkManager::getShardsForQuery(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&) const
 
@@ -806,11 +962,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ChunkManager::drop(boost::shared_ptr<mongo::ChunkManager const>) const
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ChunkManager::findChunkForDoc(mongo::BSONObj const&) const
 
@@ -819,6 +979,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::findIntersectingChunk(mongo::BSONObj const&) const
 
 - Used By:
@@ -826,11 +988,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Chunk::splitIfShould(long) const
 
@@ -838,11 +1004,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkRangeManager::reloadAll(std::map<mongo::BSONObj, boost::shared_ptr<mongo::Chunk const>, mongo::BSONObjCmp, std::allocator<std::pair<mongo::BSONObj const, boost::shared_ptr<mongo::Chunk const> > > > const&)
 
 - Used By:
 
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkManager::_printChunks() const
 
@@ -850,11 +1020,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::ChunkManager(boost::shared_ptr<mongo::ChunkManager const>)
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ChunkManager::ChunkManager()
 
@@ -862,11 +1036,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Chunk::Chunk(mongo::ChunkManager const*, mongo::BSONObj const&, mongo::BSONObj const&, mongo::Shard const&, mongo::ChunkVersion)
 
 - Used By:
 
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Chunk::singleSplit(bool, mongo::BSONObj&) const
 
@@ -874,11 +1052,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ChunkManager::getShardsForRange(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&, mongo::BSONObj const&, mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Chunk::setMaxChunkSizeSizeMB(int)
 
@@ -886,17 +1068,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::Chunk::genID(std::string const&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Chunk::containsPoint(mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ChunkManager::getVersion() const
 
@@ -908,6 +1096,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/cluster\_client\_internal.cpp
 
+<div></div>
+
     mongo::checkClusterMongoVersions(mongo::ConnectionString const&, std::string const&)
 
 - Used By:
@@ -916,11 +1106,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/cluster\_write.cpp
 
+<div></div>
+
     mongo::ClusterWriterStats::hasShardStats() const
 
 - Used By:
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::ClusterWriter::write(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
 
@@ -928,17 +1122,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::ClusterWriter::ClusterWriter(bool, int)
 
 - Used By:
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::ClusterWriter::getStats()
 
 - Used By:
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::ClusterWriterStats::getShardStats() const
 
@@ -948,11 +1148,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/config.cpp
 
+<div></div>
+
     mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string> >)
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::configServer
 
@@ -963,6 +1167,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
+<div></div>
+
     mongo::DBConfig::getChunkManager(std::string const&, bool, bool)
 
 - Used By:
@@ -971,17 +1177,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::serverID
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::ConfigServer::reloadSettings()
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DBConfig::getShard(std::string const&)
 
@@ -990,11 +1202,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBConfig::dropDatabase(std::string&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::getChunkManagerIfExists(std::string const&, bool, bool)
 
@@ -1004,11 +1220,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ConfigServer::logChange(std::string const&, std::string const&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const
 
@@ -1016,17 +1236,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBConfig::getAllShardedCollections(std::set<std::string, std::less<std::string>, std::allocator<std::string> >&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBConfig::setPrimary(std::string const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::enableSharding(bool)
 
@@ -1035,11 +1261,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DBConfig::removeSharding(std::string const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::shardCollection(std::string const&, mongo::ShardKeyPattern, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*, std::vector<mongo::Shard, std::allocator<mongo::Shard> >*)
 
@@ -1047,6 +1277,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::isSharded(std::string const&)
 
@@ -1056,17 +1288,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ConfigServer::ok(bool)
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::ConfigServer::replicaSetChange(mongo::ReplicaSetMonitor const*)
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
 
@@ -1075,17 +1313,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::DBConfig::load()
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ConfigServer::allUp(std::string&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::DBConfig::reload()
 
@@ -1096,6 +1340,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/config\_server\_checker\_service.cpp
 
+<div></div>
+
     mongo::startConfigServerChecker()
 
 - Used By:
@@ -1104,6 +1350,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/cursors.cpp
 
+<div></div>
+
     mongo::cursorCache
 
 - Used By:
@@ -1111,11 +1359,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::CursorCache::storeRef(std::string const&, long long, std::string const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::CursorCache::startTimeoutThread()
 
@@ -1125,6 +1377,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/d\_logic.cpp
 
+<div></div>
+
     mongo::_handlePossibleShardedMessage(mongo::Message&, mongo::DbResponse*)
 
 - Used By:
@@ -1132,6 +1386,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 ### src/mongo/s/d\_merge.cpp
+
+<div></div>
 
     mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)
 
@@ -1142,11 +1398,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/d\_migrate.cpp
 
+<div></div>
+
     mongo::aboutToDeleteForSharding(mongo::StringData const&, mongo::Database const*, mongo::NamespaceDetails const*, mongo::DiskLoc const&)
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::logOpForSharding(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)
 
@@ -1155,6 +1415,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 ### src/mongo/s/d\_state.cpp
+
+<div></div>
 
     mongo::ShardingState::needCollectionMetadata(std::string const&) const
 
@@ -1165,6 +1427,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
+<div></div>
+
     mongo::ShardedConnectionInfo::addHook()
 
 - Used By:
@@ -1172,12 +1436,16 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::ShardingState::gotShardName(std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+
+<div></div>
 
     mongo::shardingState
 
@@ -1199,11 +1467,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ShardingState::resetMetadata(std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::ShardingState::getCollectionMetadata(std::string const&)
 
@@ -1220,6 +1492,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
 
+<div></div>
+
     mongo::ShardingState::initialize(std::string const&)
 
 - Used By:
@@ -1227,17 +1501,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
+<div></div>
+
     mongo::ShardingState::refreshMetadataIfNeeded(std::string const&, mongo::ChunkVersion const&, mongo::ChunkVersion*)
 
 - Used By:
 
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::ShardingState::setShardName(std::string const&)
 
 - Used By:
 
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::ShardingState::getVersion(std::string const&) const
 
@@ -1247,11 +1527,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
+<div></div>
+
     mongo::ShardedConnectionInfo::get(bool)
 
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ShardingState::refreshMetadataNow(std::string const&, mongo::ChunkVersion*)
 
@@ -1260,17 +1544,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
+<div></div>
+
     mongo::haveLocalShardingInfo(std::string const&)
 
 - Used By:
 
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
+<div></div>
+
     mongo::shardVersionOk(std::string const&, std::string&, mongo::ChunkVersion&, mongo::ChunkVersion&)
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::ShardingState::resetShardingState()
 
@@ -1281,6 +1571,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/default\_version.cpp
 
+<div></div>
+
     mongo::versionManager
 
 - Used By:
@@ -1289,11 +1581,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
 
 - Used By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)
 
@@ -1301,6 +1597,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)
 
@@ -1311,11 +1609,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/grid.cpp
 
+<div></div>
+
     mongo::Grid::removeDBIfExists(mongo::DBConfig const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Grid::getDBConfig(mongo::StringData const&, bool, std::string const&)
 
@@ -1327,11 +1629,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Grid::addShard(std::string*, mongo::ConnectionString const&, long long, std::string&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Grid::setAllowLocalHost(bool)
 
@@ -1339,17 +1645,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::Grid::knowAboutShard(std::string const&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Grid::flushConfig()
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::grid
 
@@ -1362,6 +1674,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Grid::allowLocalHost() const
 
 - Used By:
@@ -1371,17 +1685,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/mongos\_persistence\_stubs.cpp
 
+<div></div>
+
     mongo::isJournalingEnabled()
 
 - Used By:
 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
+<div></div>
+
     mongo::getJournalCommitInterval()
 
 - Used By:
 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
 
     mongo::setJournalCommitInterval(unsigned int)
 
@@ -1391,17 +1711,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/request.cpp
 
+<div></div>
+
     mongo::Request::process(int)
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::Request::init()
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)
 
@@ -1411,11 +1737,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/shard.cpp
 
+<div></div>
+
     mongo::Shard::setAddress(mongo::ConnectionString const&)
 
 - Used By:
 
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Shard::reloadShardInfo()
 
@@ -1423,11 +1753,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Shard::runCommand(std::string const&, mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Shard::removeShard(std::string const&)
 
@@ -1435,17 +1769,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
+<div></div>
+
     vtable for mongo::ShardingConnectionHook
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::Shard::reset(std::string const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Shard::_setAddr(std::string const&)
 
@@ -1455,6 +1795,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
 
 - Used By:
@@ -1463,6 +1805,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/shard\_key\_pattern.cpp
 
+<div></div>
+
     mongo::isUniqueIndexCompatible(mongo::BSONObj, mongo::BSONObj)
 
 - Used By:
@@ -1470,6 +1814,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
 ### src/mongo/s/shardconnection.cpp
+
+<div></div>
 
     mongo::ShardConnection::~ShardConnection()
 
@@ -1480,11 +1826,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ShardConnection::releaseMyConnections()
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::ShardConnection::_finishInit()
 
@@ -1495,17 +1845,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ShardConnection::kill()
 
 - Used By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ShardConnection::sync()
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
 
@@ -1516,17 +1872,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::ShardConnection::releaseConnectionsAfterResponse
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::ShardConnection::forgetNS(std::string const&)
 
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
 
     mongo::shardConnectionPool
 
@@ -1535,12 +1897,16 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::ShardConnection::ShardConnection(mongo::Shard const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::ShardConnection::done()
 
@@ -1553,11 +1919,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/shardkey.cpp
 
+<div></div>
+
     mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ShardKeyPattern::ShardKeyPattern(mongo::BSONObj)
 
@@ -1570,11 +1940,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/strategy\_shard.cpp
 
+<div></div>
+
     mongo::SHARDED
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Strategy::useClusterWriteCommands
 
@@ -1584,12 +1958,16 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 ### src/mongo/s/version\_manager.cpp
 
+<div></div>
+
     mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)
 
 - Used By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::versionManager
 
@@ -1599,12 +1977,16 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)
 
 - Used By:
 
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
 

@@ -31,11 +31,15 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/listen.cpp
 
+<div></div>
+
     mongo::Listener::globalConnectionNumber
 
 - Used By:
 
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Listener::setupSockets()
 
@@ -43,6 +47,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/bridge.cpp](../tools)
+
+<div></div>
 
     mongo::Listener::globalTicketHolder
 
@@ -52,6 +58,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Listener::Listener(std::string const&, std::string const&, int, bool)
 
 - Used By:
@@ -59,11 +67,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::Listener::accepted(boost::shared_ptr<mongo::Socket>, long long)
 
 - Used By:
 
     - [src/mongo/tools/bridge.cpp](../tools)
+
+<div></div>
 
     mongo::Listener::~Listener()
 
@@ -73,12 +85,16 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::ListeningSockets::get()
 
 - Used By:
 
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::Listener::_timeTracker
 
@@ -95,6 +111,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/util/elapsed\_tracker.cpp](../utilities)
 
+<div></div>
+
     mongo::Listener::acceptedMP(mongo::MessagingPort*)
 
 - Used By:
@@ -102,12 +120,16 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::Listener::initAndListen()
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/bridge.cpp](../tools)
+
+<div></div>
 
     typeinfo for mongo::Listener
 
@@ -118,17 +140,23 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/message.cpp
 
+<div></div>
+
     mongo::Message::send(mongo::MessagingPort&, char const*)
 
 - Used By:
 
     - [src/mongo/util/net/message\_port.cpp](../network)
 
+<div></div>
+
     mongo::nextMessageId()
 
 - Used By:
 
     - [src/mongo/util/net/message\_port.cpp](../network)
+
+<div></div>
 
     mongo::doesOpGetAResponse(int)
 
@@ -138,12 +166,16 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/message\_port.cpp
 
+<div></div>
+
     mongo::MessagingPort::MessagingPort(double, mongo::logger::LogSeverity)
 
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::MessagingPort::say(mongo::Message&, int)
 
@@ -154,6 +186,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::MessagingPort::recv(mongo::Message&)
 
 - Used By:
@@ -161,6 +195,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/bridge.cpp](../tools)
+
+<div></div>
 
     mongo::MessagingPort::shutdown()
 
@@ -170,12 +206,16 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::MessagingPort::closeAllSockets(unsigned int)
 
 - Used By:
 
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::MessagingPort::piggyBack(mongo::Message&, int)
 
@@ -184,11 +224,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::MessagingPort::MessagingPort(boost::shared_ptr<mongo::Socket>)
 
 - Used By:
 
     - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
 
     mongo::MessagingPort::setSocketTimeout(double)
 
@@ -196,6 +240,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::MessagingPort::call(mongo::Message&, mongo::Message&)
 
@@ -206,6 +252,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::AbstractMessagingPort::setConnectionId(long long)
 
 - Used By:
@@ -213,6 +261,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/listen.cpp](../network)
 
 ### src/mongo/util/net/httpclient.cpp
+
+<div></div>
 
     mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)
 
@@ -223,6 +273,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/sock.cpp
 
+<div></div>
+
     mongo::hostbyname(char const*)
 
 - Used By:
@@ -230,12 +282,16 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/dbtests/socktests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Socket::unsafe_recv(char*, int)
 
 - Used By:
 
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/util/net/httpclient.cpp](../network)
+
+<div></div>
 
     typeinfo for mongo::SocketException
 
@@ -256,17 +312,23 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::Socket::send(std::vector<std::pair<char*, int>, std::allocator<std::pair<char*, int> > > const&, char const*)
 
 - Used By:
 
     - [src/mongo/util/net/message.cpp](../network)
 
+<div></div>
+
     mongo::portRecvFlags
 
 - Used By:
 
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
+
+<div></div>
 
     mongo::prettyHostName()
 
@@ -281,6 +343,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/repl/replset\_web\_handler.cpp](../replication)
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Socket::send(char const*, int, char const*)
 
 - Used By:
@@ -290,6 +354,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/message.cpp](../network)
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
 
+<div></div>
+
     mongo::Socket::~Socket()
 
 - Used By:
@@ -297,6 +363,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/httpclient.cpp](../network)
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
 
     mongo::Socket::isStillConnected()
 
@@ -306,11 +374,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Socket::recv(char*, int)
 
 - Used By:
 
     - [src/mongo/util/net/message\_port.cpp](../network)
+
+<div></div>
 
     mongo::unknownAddress
 
@@ -318,11 +390,15 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::portSendFlags
 
 - Used By:
 
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
+
+<div></div>
 
     mongo::SockAddr::getPort() const
 
@@ -331,6 +407,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/message\_port.cpp](../network)
     - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
 
+<div></div>
+
     mongo::Socket::Socket(double, mongo::logger::LogSeverity)
 
 - Used By:
@@ -338,11 +416,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/util/net/httpclient.cpp](../network)
 
+<div></div>
+
     mongo::SockAddr::isLocalHost() const
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
 
     mongo::Socket::setTimeout(double)
 
@@ -351,6 +433,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/util/net/message\_port.cpp](../network)
 
+<div></div>
+
     mongo::Socket::connect(mongo::SockAddr&)
 
 - Used By:
@@ -358,6 +442,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/httpclient.cpp](../network)
+
+<div></div>
 
     mongo::getHostNameCached()
 
@@ -374,6 +460,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
 
+<div></div>
+
     mongo::enableIPv6(bool)
 
 - Used By:
@@ -383,6 +471,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::Socket::secure(mongo::SSLManagerInterface*, std::string const&)
 
 - Used By:
@@ -390,6 +480,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/httpclient.cpp](../network)
+
+<div></div>
 
     mongo::SockAddr::getAddr() const
 
@@ -401,6 +493,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/listen.cpp](../network)
 
+<div></div>
+
     mongo::SockAddr::toString(bool) const
 
 - Used By:
@@ -411,6 +505,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
 
+<div></div>
+
     mongo::IPv6Enabled()
 
 - Used By:
@@ -418,11 +514,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Socket::secureAccepted(mongo::SSLManagerInterface*)
 
 - Used By:
 
     - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
 
     mongo::SockAddr::SockAddr(char const*, int)
 
@@ -433,11 +533,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/listen.cpp](../network)
 
+<div></div>
+
     mongo::disableNagle(int)
 
 - Used By:
 
     - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
 
     vtable for mongo::SocketException
 
@@ -451,11 +555,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Socket::handleRecvError(int, int)
 
 - Used By:
 
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
+
+<div></div>
 
     mongo::makeUnixSockPath(int)
 
@@ -463,12 +571,16 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/util/net/listen.cpp](../network)
 
+<div></div>
+
     mongo::Socket::close()
 
 - Used By:
 
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/util/net/message\_port.cpp](../network)
+
+<div></div>
 
     mongo::getHostName()
 
@@ -484,12 +596,16 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Socket::doSSLHandshake(char const*, int)
 
 - Used By:
 
     - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/util/net/message\_port.cpp](../network)
+
+<div></div>
 
     mongo::Socket::Socket(int, mongo::SockAddr const&)
 
@@ -498,11 +614,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/util/net/message\_port.cpp](../network)
 
+<div></div>
+
     mongo::Socket::handleSendError(int, char const*)
 
 - Used By:
 
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
+
+<div></div>
 
     mongo::SockAddr::getType() const
 
@@ -512,11 +632,15 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/socket\_poll.cpp
 
+<div></div>
+
     mongo::socketPoll(pollfd*, unsigned long, int)
 
 - Used By:
 
     - [src/mongo/util/net/sock.cpp](../network)
+
+<div></div>
 
     mongo::isPollSupported()
 
@@ -525,6 +649,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/util/net/sock.cpp](../network)
 
 ### src/mongo/util/net/ssl\_manager.cpp
+
+<div></div>
 
     mongo::sslGlobalParams
 
@@ -536,6 +662,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/client/examples/httpClientTest.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::isSSLServer
 
 - Used By:
@@ -543,11 +671,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::getSSLVersion(std::string const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/util/version\_reporting.cpp](../utilities)
+
+<div></div>
 
     mongo::getSSLManager()
 
@@ -563,6 +695,8 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/util/net/listen.cpp](../network)
 
+<div></div>
+
     mongo::SSLConnection::~SSLConnection()
 
 - Used By:
@@ -571,6 +705,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 ### src/mongo/util/net/ssl\_options.cpp
 
+<div></div>
+
     mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)
 
 - Used By:
@@ -578,11 +714,15 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
 
+<div></div>
+
     mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)
 
 - Used By:
 
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
 
@@ -590,6 +730,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::storeSSLClientOptions(mongo::optionenvironment::Environment const&)
 
@@ -610,6 +752,8 @@ Top level (?) of handling incoming network connections on mongod and mongos. Inh
 # Interface
 
 ### src/mongo/util/net/message\_server\_port.cpp
+
+<div></div>
 
     mongo::createServer(mongo::MessageServer::Options const&, mongo::MessageHandler*)
 

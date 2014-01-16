@@ -19,6 +19,8 @@ Third Party - The boost system library
 
 ### src/third\_party/boost/libs/system/src/error\_code.cpp
 
+<div></div>
+
     boost::system::system_category()
 
 - Used By:
@@ -295,6 +297,8 @@ Third Party - The boost system library
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/db/stats/counters.cpp](../utilities)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
+
+<div></div>
 
     boost::system::generic_category()
 

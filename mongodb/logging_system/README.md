@@ -48,11 +48,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/util/log.cpp
 
+<div></div>
+
     mongo::LogIndentLevel::~LogIndentLevel()
 
 - Used By:
 
     - [src/mongo/tools/dump.cpp](../tools)
+
+<div></div>
 
     mongo::logContext(char const*)
 
@@ -63,6 +67,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::rotateLogs()
 
 - Used By:
@@ -70,6 +76,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
 
     mongo::rawOut(mongo::StringData const&)
 
@@ -81,11 +89,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::setRawOutToStderr()
 
 - Used By:
 
     - [src/mongo/tools/tool\_logger.cpp](../tools)
+
+<div></div>
 
     mongo::warnings
 
@@ -94,6 +106,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
+
+<div></div>
 
     mongo::tlogLevel
 
@@ -114,6 +128,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
 
     mongo::getcurns
 
@@ -146,6 +162,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/util/net/message\_port.cpp](../network)
 
+<div></div>
+
     mongo::startupWarningsLog
 
 - Used By:
@@ -156,11 +174,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::LogIndentLevel::LogIndentLevel()
 
 - Used By:
 
     - [src/mongo/tools/dump.cpp](../tools)
+
+<div></div>
 
     mongo::errnoWithDescription(int)
 
@@ -200,6 +222,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/console.cpp
 
+<div></div>
+
     mongo::Console::Console()
 
 - Used By:
@@ -210,6 +234,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/tools/tool\_logger.cpp](../tools)
+
+<div></div>
 
     mongo::Console::out()
 
@@ -224,11 +250,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/log\_manager.cpp
 
+<div></div>
+
     mongo::logger::LogManager::LogManager()
 
 - Used By:
 
     - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::LogManager::getNamedDomain(std::string const&)
 
@@ -242,6 +272,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/log\_severity.cpp
 
+<div></div>
+
     mongo::logger::operator<<(std::ostream&, mongo::logger::LogSeverity)
 
 - Used By:
@@ -250,6 +282,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/logger.cpp
 
+<div></div>
+
     mongo::logger::globalRotatableFileManager()
 
 - Used By:
@@ -257,6 +291,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/log.cpp](../logging\_system)
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::logger::globalLogManager()
 
@@ -546,6 +582,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/logstream\_builder.cpp
 
+<div></div>
+
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Used By:
@@ -833,6 +871,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/s/request.cpp](../sharding)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
     - [src/mongo/db/stats/counters.cpp](../utilities)
+
+<div></div>
 
     mongo::logger::LogstreamBuilder::makeStream()
 
@@ -1122,6 +1162,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
     - [src/mongo/db/stats/counters.cpp](../utilities)
 
+<div></div>
+
     mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
 
 - Used By:
@@ -1146,6 +1188,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
 
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
@@ -1427,12 +1471,16 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
     - [src/mongo/db/stats/counters.cpp](../utilities)
 
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LabeledLevel)
 
 - Used By:
 
     - [src/mongo/client/distlock.cpp](../sharding)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)
 
@@ -1467,6 +1515,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/message\_event\_utf8\_encoder.cpp
 
+<div></div>
+
     mongo::logger::MessageEventDetailsEncoder::~MessageEventDetailsEncoder()
 
 - Used By:
@@ -1474,17 +1524,23 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
     - [src/mongo/logger/ramlog.cpp](../logging\_system)
 
+<div></div>
+
     mongo::logger::MessageEventDetailsEncoder::setDateFormatter(std::string (*)(mongo::Date_t))
 
 - Used By:
 
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 
+<div></div>
+
     vtable for mongo::logger::MessageEventWithContextEncoder
 
 - Used By:
 
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+
+<div></div>
 
     vtable for mongo::logger::MessageEventDetailsEncoder
 
@@ -1497,12 +1553,16 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
     - [src/mongo/tools/tool\_logger.cpp](../tools)
 
+<div></div>
+
     vtable for mongo::logger::MessageEventUnadornedEncoder
 
 - Used By:
 
     - [src/mongo/tools/tool\_logger.cpp](../tools)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
+<div></div>
 
     mongo::logger::MessageEventDetailsEncoder::encode(mongo::logger::MessageEventEphemeral const&, std::ostream&)
 
@@ -1513,6 +1573,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/message\_log\_domain.cpp
 
+<div></div>
+
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::clearAppenders()
 
 - Used By:
@@ -1520,17 +1582,23 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/tools/tool\_logger.cpp](../tools)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::~LogDomain()
 
 - Used By:
 
     - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 
+<div></div>
+
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::LogDomain()
 
 - Used By:
 
     - [src/mongo/logger/log\_manager.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::attachAppender(std::auto_ptr<mongo::logger::Appender<mongo::logger::MessageEventEphemeral> >)
 
@@ -1543,11 +1611,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/tools/tool\_logger.cpp](../tools)
 
+<div></div>
+
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::append(mongo::logger::MessageEventEphemeral const&)
 
 - Used By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::detachAppender(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::AppenderHandle)
 
@@ -1557,17 +1629,23 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/ramlog.cpp
 
+<div></div>
+
     mongo::RamLog::getNames(std::vector<std::string, std::allocator<std::string> >&)
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
+<div></div>
+
     mongo::RamLog::LineIterator::lastWrite()
 
 - Used By:
 
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
 
     mongo::RamLog::toHTML(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)
 
@@ -1576,12 +1654,16 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/repl/health.cpp](../replication)
 
+<div></div>
+
     mongo::RamLog::LineIterator::LineIterator(mongo::RamLog*)
 
 - Used By:
 
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
 
     mongo::RamLog::get(std::string const&)
 
@@ -1594,11 +1676,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/log.cpp](../logging\_system)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::RamLogAppender::RamLogAppender(mongo::RamLog*)
 
 - Used By:
 
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::RamLog::getLine_inlock(unsigned int) const
 
@@ -1607,11 +1693,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
+<div></div>
+
     mongo::RamLog::LineIterator::getTotalLinesWritten()
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
 
     mongo::RamLog::getIfExists(std::string const&)
 
@@ -1621,17 +1711,23 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/rotatable\_file\_manager.cpp
 
+<div></div>
+
     mongo::logger::RotatableFileManager::getFile(std::string const&)
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 
+<div></div>
+
     mongo::logger::RotatableFileManager::RotatableFileManager()
 
 - Used By:
 
     - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::RotatableFileManager::openFile(std::string const&, bool)
 
@@ -1640,11 +1736,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::logger::RotatableFileManager::~RotatableFileManager()
 
 - Used By:
 
     - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::RotatableFileManager::rotateAll(std::string const&)
 
@@ -1654,6 +1754,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 ### src/mongo/logger/rotatable\_file\_writer.cpp
 
+<div></div>
+
     mongo::logger::RotatableFileWriter::Use::Use(mongo::logger::RotatableFileWriter*)
 
 - Used By:
@@ -1662,11 +1764,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::logger::RotatableFileWriter::RotatableFileWriter()
 
 - Used By:
 
     - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::RotatableFileWriter::Use::status()
 
@@ -1675,11 +1781,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::logger::RotatableFileWriter::Use::rotate(std::string const&)
 
 - Used By:
 
     - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
+
+<div></div>
 
     mongo::logger::RotatableFileWriter::Use::setFileName(std::string const&, bool)
 
@@ -1700,12 +1810,16 @@ Helpers to dump a bunch of information about the current process   at crash time
 
 ### src/mongo/db/log\_process\_details.cpp
 
+<div></div>
+
     mongo::logProcessDetails()
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
+
+<div></div>
 
     mongo::logProcessDetailsForLogRotate()
 

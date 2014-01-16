@@ -22,17 +22,23 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 ### src/mongo/util/concurrency/rwlockimpl.cpp
 
+<div></div>
+
     mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::SimpleRWLock::unlock()
 
 - Used By:
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::SimpleRWLock::lock()
 
@@ -42,17 +48,23 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 ### src/mongo/db/d\_concurrency.cpp
 
+<div></div>
+
     mongo::Lock::isR()
 
 - Used By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
 
     mongo::Lock::somethingWriteLocked()
 
@@ -66,6 +78,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index\_builder.cpp](../indexing)
 
+<div></div>
+
     mongo::Lock::GlobalWrite::downgrade()
 
 - Used By:
@@ -73,6 +87,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
+
+<div></div>
 
     mongo::writelocktry::~writelocktry()
 
@@ -82,6 +98,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::DBRead::DBRead(mongo::StringData const&)
 
@@ -98,6 +116,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
+<div></div>
+
     mongo::readlocktry::~readlocktry()
 
 - Used By:
@@ -105,6 +125,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/repl/health.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::Lock::GlobalRead::GlobalRead(int)
 
@@ -119,6 +141,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Lock::GlobalWrite::upgrade()
 
 - Used By:
@@ -126,11 +150,15 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Lock::dbLevelLockingEnabled()
 
 - Used By:
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::atLeastReadLocked(mongo::StringData const&)
 
@@ -140,6 +168,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Lock::isWriteLocked(mongo::StringData const&)
 
 - Used By:
@@ -147,6 +177,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::writelocktry::writelocktry(int)
 
@@ -156,6 +188,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::nested()
 
@@ -173,11 +207,15 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Lock::ParallelBatchWriterMode::_batchLock
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
 
     mongo::Lock::assertWriteLocked(mongo::StringData const&)
 
@@ -195,6 +233,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::Lock::DBWrite::~DBWrite()
 
@@ -245,6 +285,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::Lock::GlobalRead::~GlobalRead()
 
 - Used By:
@@ -258,12 +300,16 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()
 
 - Used By:
 
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::TempRelease::~TempRelease()
 
@@ -280,6 +326,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
 
 - Used By:
@@ -291,12 +339,16 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()
 
 - Used By:
 
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::GlobalWrite::~GlobalWrite()
 
@@ -333,6 +385,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
 
 - Used By:
@@ -361,6 +415,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Lock::TempRelease::TempRelease()
 
 - Used By:
@@ -375,6 +431,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
 
@@ -412,6 +470,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::Lock::DBRead::~DBRead()
 
 - Used By:
@@ -426,6 +486,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
+<div></div>
+
     mongo::readlocktry::readlocktry(int)
 
 - Used By:
@@ -433,6 +495,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/repl/health.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::Lock::isReadLocked()
 
@@ -442,6 +506,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::Lock::isW()
 
@@ -456,6 +522,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Lock::isLocked()
 
@@ -481,11 +549,15 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 ### src/mongo/db/lockstat.cpp
 
+<div></div>
+
     mongo::LockStat::reset()
 
 - Used By:
 
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::LockStat::report() const
 
@@ -493,6 +565,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&) const
 
@@ -502,11 +576,15 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 ### src/mongo/db/lockstate.cpp
 
+<div></div>
+
     mongo::LockState::LockState()
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Acquiring::~Acquiring()
 
@@ -515,17 +593,23 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::LockState::hasAnyReadLock() const
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::LockState::reportState(mongo::BSONObjBuilder&)
 
 - Used By:
 
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*, mongo::LockState&)
 
@@ -534,11 +618,15 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::LockState::Dump()
 
 - Used By:
 
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
+
+<div></div>
 
     mongo::LockState::hasAnyWriteLock() const
 
@@ -546,6 +634,8 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::LockState::reportState()
 
@@ -567,6 +657,8 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
 
 ### src/mongo/util/concurrency/spin\_lock.cpp
 
+<div></div>
+
     mongo::SpinLock::SpinLock()
 
 - Used By:
@@ -586,6 +678,8 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
     - [src/mongo/db/stats/counters.cpp](../utilities)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     mongo::SpinLock::~SpinLock()
 
@@ -620,11 +714,15 @@ Condition Variables   why called 'synchronization' then? (what are these, really
 
 ### src/mongo/util/concurrency/synchronization.cpp
 
+<div></div>
+
     mongo::NotifyAll::now()
 
 - Used By:
 
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
+
+<div></div>
 
     mongo::Notification::notifyOne()
 
@@ -633,11 +731,15 @@ Condition Variables   why called 'synchronization' then? (what are these, really
     - [src/mongo/db/range\_deleter.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::NotifyAll::awaitBeyondNow()
 
 - Used By:
 
     - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
 
     mongo::Notification::waitToBeNotified()
 
@@ -645,17 +747,23 @@ Condition Variables   why called 'synchronization' then? (what are these, really
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Notification::Notification()
 
 - Used By:
 
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::NotifyAll::NotifyAll()
 
 - Used By:
 
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
+
+<div></div>
 
     mongo::NotifyAll::notifyAll(unsigned long long)
 

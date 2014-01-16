@@ -15,17 +15,23 @@ File allocation library
 
 ### src/mongo/util/file\_allocator.cpp
 
+<div></div>
+
     mongo::FileAllocator::requestAllocation(std::string const&, long&)
 
 - Used By:
 
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
+<div></div>
+
     mongo::ensureParentDirCreated(boost::filesystem3::path const&)
 
 - Used By:
 
     - [src/mongo/db/durop.cpp](../journaling)
+
+<div></div>
 
     mongo::FileAllocator::waitUntilFinished() const
 
@@ -35,11 +41,15 @@ File allocation library
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::FileAllocator::allocateAsap(std::string const&, unsigned long long&)
 
 - Used By:
 
     - [src/mongo/util/mmap\_posix.cpp](../mmap)
+
+<div></div>
 
     mongo::FileAllocator::get()
 
@@ -55,11 +65,15 @@ File allocation library
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
     - [src/mongo/util/mmap\_posix.cpp](../mmap)
 
+<div></div>
+
     mongo::FileAllocator::hasFailed() const
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::FileAllocator::start()
 

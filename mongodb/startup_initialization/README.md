@@ -15,6 +15,8 @@ Check various expected startup conditions and log warnings to the user if necess
 
 ### src/mongo/db/startup\_warnings.cpp
 
+<div></div>
+
     mongo::logStartupWarnings()
 
 - Used By:
@@ -49,6 +51,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 ### src/mongo/base/global\_initializer.cpp
 
+<div></div>
+
     mongo::getGlobalInitializer()
 
 - Used By:
@@ -57,6 +61,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
 ### src/mongo/base/global\_initializer\_registerer.cpp
+
+<div></div>
 
     mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
 
@@ -158,6 +164,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 ### src/mongo/base/initializer.cpp
 
+<div></div>
+
     mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)
 
 - Used By:
@@ -172,17 +180,23 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/bridge.cpp](../tools)
 
+<div></div>
+
     mongo::runGlobalInitializers(int, char const* const*, char const* const*)
 
 - Used By:
 
     - [src/mongo/client/init.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::Initializer::~Initializer()
 
 - Used By:
 
     - [src/mongo/base/global\_initializer.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::Initializer::Initializer()
 
@@ -192,6 +206,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 ### src/mongo/base/initializer\_context.cpp
 
+<div></div>
+
     mongo::InitializerContext::InitializerContext(std::vector<std::string, std::allocator<std::string> > const&, std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
 
 - Used By:
@@ -200,11 +216,15 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 ### src/mongo/base/initializer\_dependency\_graph.cpp
 
+<div></div>
+
     mongo::InitializerDependencyGraph::~InitializerDependencyGraph()
 
 - Used By:
 
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::InitializerDependencyGraph::addInitializer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
 
@@ -212,17 +232,23 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::InitializerDependencyGraph::topSort(std::vector<std::string, std::allocator<std::string> >*) const
 
 - Used By:
 
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
+<div></div>
+
     mongo::InitializerDependencyGraph::InitializerDependencyGraph()
 
 - Used By:
 
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::InitializerDependencyGraph::getInitializerFunction(std::string const&) const
 
@@ -231,6 +257,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 ### src/mongo/base/make\_string\_vector.cpp
+
+<div></div>
 
     mongo::_makeStringVector(int, ...)
 
@@ -343,12 +371,16 @@ Initialize the global state common to mongod and mongos, such as logging.
 
 ### src/mongo/db/initialize\_server\_global\_state.cpp
 
+<div></div>
+
     mongo::signalForkSuccess()
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::initializeServerGlobalState()
 
@@ -357,12 +389,16 @@ Initialize the global state common to mongod and mongos, such as logging.
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::forkServerOrDie()
 
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::setupCoreSignals()
 
@@ -401,6 +437,8 @@ Options parser library (command line and config files)   where do the options ge
 
 ### src/mongo/util/options\_parser/environment.cpp
 
+<div></div>
+
     mongo::optionenvironment::Environment::operator[](std::string const&) const
 
 - Used By:
@@ -417,6 +455,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
+
+<div></div>
 
     mongo::optionenvironment::Environment::count(std::string const&) const
 
@@ -444,6 +484,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongooplog\_options.cpp](../tools)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::optionenvironment::Environment::validate()
 
 - Used By:
@@ -465,6 +507,8 @@ Options parser library (command line and config files)   where do the options ge
 
 ### src/mongo/util/options\_parser/option\_description.cpp
 
+<div></div>
+
     mongo::optionenvironment::OptionDescription::hidden()
 
 - Used By:
@@ -482,6 +526,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
+<div></div>
+
     mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)
 
 - Used By:
@@ -498,6 +544,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
+<div></div>
+
     mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)
 
 - Used By:
@@ -506,12 +554,16 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
 
+<div></div>
+
     mongo::optionenvironment::OptionDescription::requires(std::string const&)
 
 - Used By:
 
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
+
+<div></div>
 
     mongo::optionenvironment::OptionDescription::format(std::string const&, std::string const&)
 
@@ -520,6 +572,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongodump\_options.cpp](../tools)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
+
+<div></div>
 
     mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)
 
@@ -534,11 +588,15 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
+<div></div>
+
     mongo::optionenvironment::OptionDescription::incompatibleWith(std::string const&)
 
 - Used By:
 
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::optionenvironment::OptionDescription::positional(int, int)
 
@@ -555,6 +613,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
 ### src/mongo/util/options\_parser/option\_section.cpp
+
+<div></div>
 
     mongo::optionenvironment::OptionSection::addOptionChaining(std::string const&, std::string const&, mongo::optionenvironment::OptionType, std::string const&)
 
@@ -581,6 +641,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongooplog\_options.cpp](../tools)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection const&)
 
 - Used By:
@@ -590,6 +652,8 @@ Options parser library (command line and config files)   where do the options ge
     - src/mongo/db/modules/subscription/src/snmp/snmp\_options.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
+
+<div></div>
 
     mongo::optionenvironment::OptionSection::helpString() const
 
@@ -611,6 +675,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/mongostat\_options.cpp](../tools)
 
 ### src/mongo/util/options\_parser/startup\_options.cpp
+
+<div></div>
 
     mongo::optionenvironment::startupOptionsParsed
 
@@ -636,6 +702,8 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/dbtests/framework\_options\_init.cpp](../unit\_tests)
     - [src/mongo/tools/mongofiles\_options\_init.cpp](../tools)
+
+<div></div>
 
     mongo::optionenvironment::startupOptions
 
@@ -677,6 +745,8 @@ Options parser library (command line and config files)   where do the options ge
 
 ### src/mongo/util/options\_parser/value.cpp
 
+<div></div>
+
     mongo::optionenvironment::Value::get(std::vector<std::string, std::allocator<std::string> >*) const
 
 - Used By:
@@ -686,11 +756,15 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::optionenvironment::Value::get(double*) const
 
 - Used By:
 
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::optionenvironment::Value::get(std::string*) const
 
@@ -707,6 +781,8 @@ Options parser library (command line and config files)   where do the options ge
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/tools/mongobridge\_options.cpp](../tools)
 
+<div></div>
+
     mongo::optionenvironment::Value::get(unsigned int*) const
 
 - Used By:
@@ -714,17 +790,23 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::optionenvironment::Value::get(long*) const
 
 - Used By:
 
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::optionenvironment::Value::get(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >*) const
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+
+<div></div>
 
     mongo::optionenvironment::Value::get(bool*) const
 
@@ -734,11 +816,15 @@ Options parser library (command line and config files)   where do the options ge
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::optionenvironment::Value::get(unsigned long long*) const
 
 - Used By:
 
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::optionenvironment::Value::get(int*) const
 
@@ -764,6 +850,8 @@ Command line utilities   can you say a bit more? (give an example?)
 
 ### src/mongo/util/cmdline\_utils/censor\_cmdline.cpp
 
+<div></div>
+
     mongo::cmdline_utils::censorArgvArray(int, char**)
 
 - Used By:
@@ -783,6 +871,8 @@ Only used to ask user for password at startup. TODO: move into cmdline\_utils di
 # Interface
 
 ### src/mongo/util/password.cpp
+
+<div></div>
 
     mongo::askPassword()
 
@@ -806,6 +896,8 @@ Command line options shared between mongod and mongos   give an example (--hostn
 # Interface
 
 ### src/mongo/db/server\_options.cpp
+
+<div></div>
 
     mongo::serverGlobalParams
 
@@ -876,12 +968,16 @@ Command line options shared between mongod and mongos   give an example (--hostn
 
 ### src/mongo/db/server\_options\_helpers.cpp
 
+<div></div>
+
     mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)
 
 - Used By:
 
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
 
     mongo::storeServerOptions(mongo::optionenvironment::Environment const&, std::vector<std::string, std::allocator<std::string> > const&)
 
@@ -890,11 +986,15 @@ Command line options shared between mongod and mongos   give an example (--hostn
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
+<div></div>
+
     mongo::printCommandLineOpts()
 
 - Used By:
 
     - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
+
+<div></div>
 
     mongo::isMongos()
 
@@ -921,6 +1021,8 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
 
 ### src/mongo/db/server\_parameters.cpp
 
+<div></div>
+
     mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&)
 
 - Used By:
@@ -928,6 +1030,8 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
 
     mongo::ServerParameter::~ServerParameter()
 
@@ -951,11 +1055,15 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::ExportedServerParameter<std::string>::setFromString(std::string const&)
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+
+<div></div>
 
     mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)
 
@@ -976,6 +1084,8 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
 
     typeinfo for mongo::ServerParameter
 
@@ -999,6 +1109,8 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::ExportedServerParameter<bool>::setFromString(std::string const&)
 
 - Used By:
@@ -1015,6 +1127,8 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
     mongo::ExportedServerParameter<int>::setFromString(std::string const&)
 
 - Used By:
@@ -1022,17 +1136,23 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
 
+<div></div>
+
     mongo::ExportedServerParameter<double>::setFromString(std::string const&)
 
 - Used By:
 
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::ExportedServerParameter<std::vector<std::string, std::allocator<std::string> > >::setFromString(std::string const&)
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
+
+<div></div>
 
     mongo::ServerParameterSet::getGlobal()
 

@@ -23,6 +23,8 @@ Unittest framework (for both old style dbtests and new style tests)
 
 ### src/mongo/unittest/crutch.cpp
 
+<div></div>
+
     mongo::dbexit(mongo::ExitCode, char const*)
 
 - Used By:
@@ -36,6 +38,8 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
 
     mongo::inShutdown()
 
@@ -75,12 +79,16 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::createDirectClient()
 
 - Used By:
 
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::haveLocalShardingInfo(std::string const&)
 
@@ -90,12 +98,16 @@ Unittest framework (for both old style dbtests and new style tests)
 
 ### src/mongo/unittest/unittest.cpp
 
+<div></div>
+
     mongo::unittest::Test::Test()
 
 - Used By:
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
+<div></div>
 
     mongo::unittest::Suite::getSuite(std::string const&)
 
@@ -104,12 +116,16 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     typeinfo for mongo::unittest::Test
 
 - Used By:
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
+<div></div>
 
     mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
 
@@ -118,6 +134,8 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
 
 - Used By:
@@ -125,12 +143,16 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Used By:
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
+<div></div>
 
     mongo::unittest::TestAssertion::fail(std::string const&) const
 
@@ -140,12 +162,16 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     mongo::unittest::Test::run()
 
 - Used By:
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
+<div></div>
 
     mongo::unittest::Test::setUp()
 
@@ -154,6 +180,8 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     mongo::unittest::Test::tearDown()
 
 - Used By:
@@ -161,12 +189,16 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
+<div></div>
+
     mongo::unittest::Test::~Test()
 
 - Used By:
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
+<div></div>
 
     mongo::unittest::TestAssertion::~TestAssertion()
 

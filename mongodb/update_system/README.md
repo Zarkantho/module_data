@@ -71,11 +71,15 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 ### src/mongo/db/ops/update\_driver.cpp
 
+<div></div>
+
     mongo::UpdateDriver::modsAffectIndices() const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::UpdateDriver::~UpdateDriver()
 
@@ -86,17 +90,23 @@ libupdate\_driver.a. This is the external interface to the new update system:
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::CanonicalQuery const*, mongo::mutablebson::Document&) const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::UpdateDriver::modOptions() const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::UpdateDriver::makeOplogEntryQuery(mongo::BSONObj const&, bool) const
 
@@ -105,11 +115,15 @@ libupdate\_driver.a. This is the external interface to the new update system:
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
+<div></div>
+
     mongo::UpdateDriver::setLogOp(bool)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::UpdateDriver::isDocReplacement() const
 
@@ -117,11 +131,15 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const&)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::UpdateDriver::UpdateDriver(mongo::UpdateDriver::Options const&)
 
@@ -132,6 +150,8 @@ libupdate\_driver.a. This is the external interface to the new update system:
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::UpdateDriver::parse(mongo::BSONObj const&)
 
 - Used By:
@@ -141,11 +161,15 @@ libupdate\_driver.a. This is the external interface to the new update system:
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::UpdateDriver::setContext(mongo::ModifierInterface::ExecInfo::UpdateContext)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::BSONObj const&, mongo::mutablebson::Document&) const
 
@@ -153,6 +177,8 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
+
+<div></div>
 
     mongo::UpdateDriver::update(mongo::StringData const&, mongo::mutablebson::Document*, mongo::BSONObj*, mongo::FieldRefSet*)
 
@@ -197,6 +223,8 @@ Other things used by the update system. TODO: figure out what these are for.
 
 ### src/mongo/db/ops/update\_lifecycle\_impl.cpp
 
+<div></div>
+
     mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool, mongo::NamespaceString const&)
 
 - Used By:
@@ -207,6 +235,8 @@ Other things used by the update system. TODO: figure out what these are for.
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     vtable for mongo::UpdateLifecycleImpl
 
@@ -236,6 +266,8 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 ### src/mongo/db/field\_ref.cpp
 
+<div></div>
+
     mongo::FieldRef::parse(mongo::StringData const&)
 
 - Used By:
@@ -246,6 +278,8 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::FieldRef::getPart(unsigned long) const
 
 - Used By:
@@ -255,6 +289,8 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/matcher/path.cpp](../query\_system)
+
+<div></div>
 
     mongo::FieldRef::dottedField(unsigned long) const
 
@@ -268,6 +304,8 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
+
+<div></div>
 
     mongo::FieldRef::equalsDottedField(mongo::StringData const&) const
 
@@ -284,11 +322,15 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 ### src/mongo/db/field\_ref\_set.cpp
 
+<div></div>
+
     mongo::FieldRefSet::findConflicts(mongo::FieldRef const*, mongo::FieldRefSet*) const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::FieldRefSet::toString() const
 
@@ -296,17 +338,23 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::FieldRefSet::fillFrom(std::vector<mongo::FieldRef*, std::allocator<mongo::FieldRef*> > const&)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::FieldRefSet::FieldRefSet()
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::FieldRefSet::keepShortest(mongo::FieldRef const*)
 

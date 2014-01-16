@@ -15,6 +15,8 @@ Main for mongod
 
 ### src/mongo/db/db.cpp
 
+<div></div>
+
     mongo::snmpInit
 
 - Used By:
@@ -48,12 +50,16 @@ Main for mongos
 
 ### src/mongo/s/server.cpp
 
+<div></div>
+
     mongo::createDirectClient()
 
 - Used By:
 
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<div></div>
 
     mongo::inShutdown()
 
@@ -92,6 +98,8 @@ Main for mongos
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::dbexit(mongo::ExitCode, char const*)
 
 - Used By:
@@ -106,12 +114,16 @@ Main for mongos
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::dbexitCalled
 
 - Used By:
 
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
+<div></div>
 
     mongo::haveLocalShardingInfo(std::string const&)
 

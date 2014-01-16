@@ -50,6 +50,8 @@ New wire protocol writes (in mongos)
 
 ### src/mongo/s/write\_ops/batch\_downconvert.cpp
 
+<div></div>
+
     mongo::BatchSafeWriter::safeWriteBatch(mongo::DBClientBase*, mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
 
 - Used By:
@@ -58,11 +60,15 @@ New wire protocol writes (in mongos)
 
 ### src/mongo/s/write\_ops/batch\_upconvert.cpp
 
+<div></div>
+
     mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)
 
@@ -72,17 +78,23 @@ New wire protocol writes (in mongos)
 
 ### src/mongo/s/write\_ops/batch\_write\_exec.cpp
 
+<div></div>
+
     mongo::BatchWriteExec::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*, mongo::ShardResolver*, mongo::MultiCommandDispatch*)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchWriteExec::releaseStats()
 
@@ -92,11 +104,15 @@ New wire protocol writes (in mongos)
 
 ### src/mongo/s/write\_ops/config\_coordinator.cpp
 
+<div></div>
+
     mongo::ConfigCoordinator::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*, bool)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::ConfigCoordinator::ConfigCoordinator(mongo::MultiCommandDispatch*, std::vector<mongo::ConnectionString, std::allocator<mongo::ConnectionString> > const&)
 
@@ -105,6 +121,8 @@ New wire protocol writes (in mongos)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp
+
+<div></div>
 
     vtable for mongo::DBClientSafeWriter
 
@@ -150,11 +168,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_command\_request.cpp
 
+<div></div>
+
     mongo::BatchedCommandRequest::parseBSON(mongo::BSONObj const&, std::string*)
 
 - Used By:
 
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandRequest::BatchedCommandRequest(mongo::BatchedCommandRequest::BatchType)
 
@@ -162,11 +184,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandRequest::getNS() const
 
@@ -176,17 +202,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::getTargetingNS() const
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::isWriteConcernSet() const
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     vtable for mongo::BatchedCommandRequest
 
@@ -195,11 +227,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::isInsertIndexRequest() const
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandRequest::sizeWriteOps() const
 
@@ -207,11 +243,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::getOrdered() const
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandRequest::setNS(mongo::StringData const&)
 
@@ -221,6 +261,8 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandRequest::isVerboseWC() const
 
 - Used By:
@@ -229,17 +271,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_command\_response.cpp
 
+<div></div>
+
     mongo::BatchedCommandResponse::setN(long long)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandResponse::setOk(int)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandResponse::BatchedCommandResponse()
 
@@ -248,11 +296,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandResponse::setErrCode(int)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandResponse::~BatchedCommandResponse()
 
@@ -261,11 +313,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandResponse::getN() const
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)
 
@@ -273,11 +329,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedCommandResponse::setErrMessage(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedCommandResponse::toBSON() const
 
@@ -287,11 +347,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_delete\_document.cpp
 
+<div></div>
+
     mongo::BatchedDeleteDocument::setLimit(int)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedDeleteDocument::getLimit() const
 
@@ -299,17 +363,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedDeleteDocument::BatchedDeleteDocument()
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedDeleteDocument::getQuery() const
 
@@ -319,17 +389,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_delete\_request.cpp
 
+<div></div>
+
     mongo::BatchedDeleteRequest::BatchedDeleteRequest()
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedDeleteRequest::addToDeletes(mongo::BatchedDeleteDocument*)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedDeleteRequest::setWriteConcern(mongo::BSONObj const&)
 
@@ -339,11 +415,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_insert\_request.cpp
 
+<div></div>
+
     mongo::BatchedInsertRequest::BatchedInsertRequest()
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedInsertRequest::addToDocuments(mongo::BSONObj const&)
 
@@ -353,11 +433,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_update\_document.cpp
 
+<div></div>
+
     mongo::BatchedUpdateDocument::getUpdateExpr() const
 
 - Used By:
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedUpdateDocument::BatchedUpdateDocument()
 
@@ -365,11 +449,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedUpdateDocument::getMulti() const
 
 - Used By:
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedUpdateDocument::setUpdateExpr(mongo::BSONObj const&)
 
@@ -377,11 +465,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedUpdateDocument::setUpsert(bool)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedUpdateDocument::getUpsert() const
 
@@ -389,17 +481,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedUpdateDocument::getQuery() const
 
 - Used By:
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedUpdateDocument::setMulti(bool)
 
@@ -409,17 +507,23 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 ### src/mongo/s/write\_ops/batched\_update\_request.cpp
 
+<div></div>
+
     mongo::BatchedUpdateRequest::addToUpdates(mongo::BatchedUpdateDocument*)
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+<div></div>
+
     mongo::BatchedUpdateRequest::BatchedUpdateRequest()
 
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
 
     mongo::BatchedUpdateRequest::setWriteConcern(mongo::BSONObj const&)
 

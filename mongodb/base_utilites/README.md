@@ -57,6 +57,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 ### src/mongo/base/status.cpp
 
+<div></div>
+
     mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Used By:
@@ -70,6 +72,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
 
 - Used By:
@@ -78,6 +82,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
 
     mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
 
@@ -219,6 +225,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
+<div></div>
+
     mongo::Status::operator!=(mongo::ErrorCodes::Error) const
 
 - Used By:
@@ -230,12 +238,16 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
+<div></div>
+
     mongo::Status::operator==(mongo::Status const&) const
 
 - Used By:
 
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::Status::operator==(mongo::ErrorCodes::Error) const
 
@@ -253,6 +265,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/bson/util/bson\_extract.cpp](../bson)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
+
+<div></div>
 
     mongo::Status::toString() const
 
@@ -333,6 +347,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/client/examples/authTest.cpp](../cpp\_client\_driver)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::Status::operator!=(mongo::Status const&) const
 
 - Used By:
@@ -347,6 +363,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
 
@@ -481,6 +499,8 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
 
 ### src/mongo/base/parse\_number.cpp
 
+<div></div>
+
     mongo::Status mongo::parseNumberFromStringWithBase<unsigned int>(mongo::StringData const&, int, unsigned int*)
 
 - Used By:
@@ -488,6 +508,8 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
 
@@ -610,11 +632,15 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Status mongo::parseNumberFromStringWithBase<unsigned long long>(mongo::StringData const&, int, unsigned long long*)
 
 - Used By:
 
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData const&, int, double*)
 
@@ -623,6 +649,8 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+
+<div></div>
 
     mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)
 
@@ -635,6 +663,8 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/util/version.cpp](../utilities)
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData const&, int, long long*)
 
@@ -658,6 +688,8 @@ The StringData class is a wrapper around a char* that can be constructed from ei
 # Interface
 
 ### src/mongo/base/string\_data.cpp
+
+<div></div>
 
     mongo::operator<<(std::ostream&, mongo::StringData const&)
 
@@ -692,6 +724,8 @@ The StringData class is a wrapper around a char* that can be constructed from ei
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
 
     mongo::StringData::Hasher::operator()(mongo::StringData const&) const
 

@@ -48,6 +48,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 ### src/mongo/bson/bson\_validate.cpp
 
+<div></div>
+
     mongo::validateBSON(char const*, unsigned long long)
 
 - Used By:
@@ -66,6 +68,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
 
 ### src/mongo/bson/oid.cpp
+
+<div></div>
 
     mongo::BSONObjBuilder::numStrs
 
@@ -208,11 +212,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OID::hash_combine(unsigned long&) const
 
 - Used By:
 
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::OID::init()
 
@@ -256,11 +264,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::OID::regenMachineId()
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
 
     mongo::operator<<(std::ostream&, mongo::OID const&)
 
@@ -318,6 +330,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
+<div></div>
+
     mongo::OID::init(mongo::Date_t, bool)
 
 - Used By:
@@ -326,6 +340,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
+
+<div></div>
 
     mongo::OID::init(std::string const&)
 
@@ -342,12 +358,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OID::initSequential()
 
 - Used By:
 
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::BSONObjBuilder::numStrsReady
 
@@ -490,11 +510,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OID::getMachineId()
 
 - Used By:
 
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
 
     mongo::OID::asTimeT()
 
@@ -505,12 +529,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 ### src/mongo/bson/optime.cpp
 
+<div></div>
+
     mongo::OpTime::last
 
 - Used By:
 
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
 
     mongo::OpTime::now(mongo::mutex::scoped_lock const&)
 
@@ -524,12 +552,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
 
+<div></div>
+
     mongo::OpTime::notifier
 
 - Used By:
 
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
 
     mongo::OpTime::m
 
@@ -544,6 +576,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
 
+<div></div>
+
     mongo::OpTime::_now()
 
 - Used By:
@@ -552,11 +586,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OpTime::waitForDifferent(unsigned int)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::OpTime::getLast(mongo::mutex::scoped_lock const&)
 
@@ -566,6 +604,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 ### src/mongo/bson/util/bson\_extract.cpp
 
+<div></div>
+
     mongo::bsonExtractTypedField(mongo::BSONObj const&, mongo::StringData const&, mongo::BSONType, mongo::BSONElement*)
 
 - Used By:
@@ -574,6 +614,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
 
+<div></div>
+
     mongo::bsonExtractStringFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, mongo::StringData const&, std::string*)
 
 - Used By:
@@ -581,6 +623,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
 
     mongo::bsonExtractStringField(mongo::BSONObj const&, mongo::StringData const&, std::string*)
 
@@ -593,6 +637,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
 
+<div></div>
+
     mongo::bsonExtractBooleanFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, bool, bool*)
 
 - Used By:
@@ -604,6 +650,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
 
+<div></div>
+
     mongo::bsonExtractField(mongo::BSONObj const&, mongo::StringData const&, mongo::BSONElement*)
 
 - Used By:
@@ -614,6 +662,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 ### src/mongo/db/jsobj.cpp
 
+<div></div>
+
     mongo::BSONObj::_okForStorage(bool, bool) const
 
 - Used By:
@@ -622,12 +672,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSIZE
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::BSONObj::clientReadable() const
 
@@ -637,6 +691,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/query/index\_bounds.cpp](../query\_system)
     - [src/mongo/db/queryutil.cpp](../query\_system)
 
+<div></div>
+
     mongo::MINKEY
 
 - Used By:
@@ -644,17 +700,23 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSONObj::couldBeArray() const
 
 - Used By:
 
     - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
 
+<div></div>
+
     mongo::nested2dotted(mongo::BSONObjBuilder&, mongo::BSONObj const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::typeName(mongo::BSONType)
 
@@ -680,12 +742,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
+<div></div>
+
     mongo::BSONObj::md5() const
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
+
+<div></div>
 
     mongo::GT
 
@@ -698,11 +764,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSONObj::replaceFieldNames(mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/s/d\_split.cpp](../sharding)
+
+<div></div>
 
     mongo::BSONNULL
 
@@ -711,6 +781,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::BSONElement::getGtLtOp(int) const
 
@@ -723,6 +795,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::minKey
 
 - Used By:
@@ -730,17 +804,23 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/queryutil.cpp](../query\_system)
 
+<div></div>
+
     mongo::BSONObjIteratorSorted::BSONObjIteratorSorted(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSONObj::filterFieldsUndotted(mongo::BSONObj const&, bool) const
 
 - Used By:
 
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
+
+<div></div>
 
     mongo::LTE
 
@@ -751,17 +831,23 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::dotted2nested(mongo::BSONObjBuilder&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::staticUndefined
 
 - Used By:
 
     - [src/mongo/db/queryutil.cpp](../query\_system)
+
+<div></div>
 
     mongo::BSONObj::isFieldNamePrefixOf(mongo::BSONObj const&) const
 
@@ -771,6 +857,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::LT
 
 - Used By:
@@ -779,6 +867,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/distlock.cpp](../sharding)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::BSONObj::valid() const
 
@@ -797,6 +887,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
 
+<div></div>
+
     mongo::GTE
 
 - Used By:
@@ -806,6 +898,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
+<div></div>
+
     mongo::BSONObjBuilder::appendMaxForType(mongo::StringData const&, int)
 
 - Used By:
@@ -814,6 +908,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/queryutil.cpp](../query\_system)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+
+<div></div>
 
     mongo::getGtLtOp(mongo::BSONElement const&)
 
@@ -825,6 +921,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
 
+<div></div>
+
     mongo::BSONArrayIteratorSorted::BSONArrayIteratorSorted(mongo::BSONArray const&)
 
 - Used By:
@@ -832,6 +930,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+
+<div></div>
 
     mongo::BSONObj::extractFields(mongo::BSONObj const&, bool) const
 
@@ -844,6 +944,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
+<div></div>
+
     mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::Ordering const&, bool) const
 
 - Used By:
@@ -851,6 +953,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::BSONElement::Array() const
 
@@ -867,6 +971,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
 
+<div></div>
+
     mongo::BSONObj::woSortOrder(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
 - Used By:
@@ -876,12 +982,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::MAXKEY
 
 - Used By:
 
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NIN
 
@@ -890,11 +1000,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/distlock.cpp](../sharding)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::fieldsMatch(mongo::BSONObj const&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
 
     mongo::BSONObj::getFieldsDotted(mongo::StringData const&, std::set<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement> >&, bool) const
 
@@ -905,6 +1019,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
+
+<div></div>
 
     mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
@@ -994,6 +1110,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
 
+<div></div>
+
     mongo::BSONObj::isPrefixOf(mongo::BSONObj const&) const
 
 - Used By:
@@ -1003,11 +1121,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::BSONObj::getFieldsDotted(mongo::StringData const&, std::multiset<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement> >&, bool) const
 
 - Used By:
 
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
+
+<div></div>
 
     mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
 
@@ -1035,6 +1157,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::BSONUndefined
 
 - Used By:
@@ -1042,11 +1166,15 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::compareDottedFieldNames(std::string const&, std::string const&, mongo::LexNumCmp const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::NE
 
@@ -1060,12 +1188,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/tools/files.cpp](../tools)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::BSONObjBuilder::appendAsNumber(mongo::StringData const&, std::string const&)
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/tools/import.cpp](../tools)
+
+<div></div>
 
     mongo::BSONObj::getFieldDottedOrArray(char const*&) const
 
@@ -1075,17 +1207,23 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/index/btree\_key\_generator.cpp](../indexing)
     - [src/mongo/db/index/hash\_access\_method.cpp](../indexing)
 
+<div></div>
+
     mongo::staticNull
 
 - Used By:
 
     - [src/mongo/db/queryutil.cpp](../query\_system)
 
+<div></div>
+
     mongo::BSONElement::jsonString(mongo::JsonStringFormat, bool, int) const
 
 - Used By:
 
     - [src/mongo/tools/export.cpp](../tools)
+
+<div></div>
 
     mongo::BSONObjBuilder::appendMinForType(mongo::StringData const&, int)
 
@@ -1096,12 +1234,16 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/queryutil.cpp](../query\_system)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 
+<div></div>
+
     mongo::maxKey
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/queryutil.cpp](../query\_system)
+
+<div></div>
 
     mongo::BSONObj::getFieldNames(std::set<std::string, std::less<std::string>, std::allocator<std::string> >&) const
 
@@ -1111,6 +1253,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/tools/dump.cpp](../tools)
 
 ### src/mongo/db/json.cpp
+
+<div></div>
 
     mongo::fromjson(std::string const&)
 
@@ -1133,6 +1277,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/tools/dump.cpp](../tools)
+
+<div></div>
 
     mongo::fromjson(char const*, int*)
 
@@ -1192,6 +1338,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 ### src/mongo/bson/mutable/document.cpp
 
+<div></div>
+
     mongo::mutablebson::Element::setValueSafeNum(mongo::SafeNum)
 
 - Used By:
@@ -1199,11 +1347,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::isNumeric() const
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::makeElementSafeNum(mongo::StringData const&, mongo::SafeNum)
 
@@ -1213,11 +1365,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::disableInPlaceUpdates()
 
 - Used By:
 
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData const&, mongo::mutablebson::ConstElement)
 
@@ -1228,6 +1384,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::reset()
 
 - Used By:
@@ -1235,11 +1393,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::isIntegral() const
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::rightSibling() const
 
@@ -1259,6 +1421,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::compareWithElement(mongo::mutablebson::ConstElement const&, bool) const
 
 - Used By:
@@ -1266,17 +1430,23 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::makeElementDate(mongo::StringData const&, mongo::Date_t)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::makeElementTimestamp(mongo::StringData const&, mongo::OpTime)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::makeElementArray(mongo::StringData const&)
 
@@ -1289,6 +1459,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::Document()
 
@@ -1303,12 +1475,16 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
 
+<div></div>
+
     mongo::mutablebson::Element::getValueSafeNum() const
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::getValue() const
 
@@ -1318,6 +1494,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::remove()
 
@@ -1333,12 +1511,16 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::rightChild() const
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::leftChild() const
 
@@ -1359,11 +1541,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::getInPlaceUpdates(std::vector<mongo::mutablebson::DamageEvent, std::allocator<mongo::mutablebson::DamageEvent> >*, char const**, unsigned long*)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::makeElementObject(mongo::StringData const&)
 
@@ -1375,6 +1561,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
     - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const
 
@@ -1390,6 +1578,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
+
+<div></div>
 
     mongo::mutablebson::Element::getType() const
 
@@ -1409,11 +1599,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueTimestamp(mongo::OpTime)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::Document(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)
 
@@ -1426,12 +1620,16 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueString(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::mutablebson::Document::reset(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)
 
@@ -1440,6 +1638,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
+<div></div>
+
     mongo::mutablebson::Document::makeElement(mongo::BSONElement const&)
 
 - Used By:
@@ -1447,11 +1647,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::makeElementBool(mongo::StringData const&, bool)
 
 - Used By:
 
     - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::leftSibling() const
 
@@ -1459,6 +1663,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData const&, mongo::BSONElement const&)
 
@@ -1472,6 +1678,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::compareWithBSONElement(mongo::BSONElement const&, bool) const
 
 - Used By:
@@ -1483,11 +1691,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueDate(mongo::Date_t)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::hasChildren() const
 
@@ -1502,17 +1714,23 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Document::makeElementNewOID(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueObject(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_set.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::parent() const
 
@@ -1522,6 +1740,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_unset.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueBSONElement(mongo::BSONElement const&)
 
 - Used By:
@@ -1529,11 +1749,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_compare.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::setValueNull()
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_unset.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Document::~Document()
 
@@ -1552,11 +1776,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::mutablebson::Element::addSiblingRight(mongo::mutablebson::Element)
 
 - Used By:
 
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::getFieldName() const
 
@@ -1578,6 +1806,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 ### src/mongo/bson/mutable/element.cpp
 
+<div></div>
+
     mongo::mutablebson::Element::appendElement(mongo::BSONElement const&)
 
 - Used By:
@@ -1586,12 +1816,16 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
+<div></div>
+
     mongo::mutablebson::Element::operator[](mongo::StringData const&) const
 
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::appendBool(mongo::StringData const&, bool)
 
@@ -1600,6 +1834,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
 
+<div></div>
+
     mongo::mutablebson::Element::appendString(mongo::StringData const&, mongo::StringData const&)
 
 - Used By:
@@ -1607,6 +1843,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+
+<div></div>
 
     mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
 
@@ -1621,6 +1859,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::toString() const
 
@@ -1637,6 +1877,8 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::appendObject(mongo::StringData const&, mongo::BSONObj const&)
 
 - Used By:
@@ -1645,11 +1887,15 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
 
+<div></div>
+
     mongo::mutablebson::Element::appendLong(mongo::StringData const&, long long)
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+
+<div></div>
 
     mongo::mutablebson::Element::appendInt(mongo::StringData const&, int)
 
@@ -1657,17 +1903,23 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
 
+<div></div>
+
     mongo::mutablebson::Element::appendNull(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
 
+<div></div>
+
     mongo::mutablebson::Element::operator[](unsigned long) const
 
 - Used By:
 
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
+
+<div></div>
 
     mongo::mutablebson::Element::pushFront(mongo::mutablebson::Element)
 
@@ -1679,12 +1931,16 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 ### src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp
 
+<div></div>
+
     mongo::mutablebson::checkEqualNoOrdering(mongo::mutablebson::Document const&, mongo::mutablebson::Document const&)
 
 - Used By:
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::mutablebson::operator<<(std::ostream&, mongo::mutablebson::UnorderedWrapper_Obj const&)
 

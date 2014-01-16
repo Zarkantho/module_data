@@ -42,6 +42,8 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 ### src/mongo/db/matcher/expression\_parser.cpp
 
+<div></div>
+
     mongo::MatchExpressionParser::_parse(mongo::BSONObj const&, bool)
 
 - Used By:
@@ -74,6 +76,8 @@ This is the code to say "does this document match the expression"? This is built
 
 ### src/mongo/db/matcher/path.cpp
 
+<div></div>
+
     mongo::BSONElementIterator::BSONElementIterator()
 
 - Used By:
@@ -87,6 +91,8 @@ This is the code to say "does this document match the expression"? This is built
     - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+
+<div></div>
 
     mongo::BSONElementIterator::~BSONElementIterator()
 
@@ -103,11 +109,15 @@ This is the code to say "does this document match the expression"? This is built
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
+<div></div>
+
     mongo::BSONElementIterator::BSONElementIterator(mongo::ElementPath const*, mongo::BSONObj const&)
 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
+
+<div></div>
 
     mongo::BSONElementIterator::reset(mongo::ElementPath const*, mongo::BSONObj const&)
 
@@ -129,6 +139,8 @@ Interface to actually test if a document matches.
 
 ### src/mongo/db/matcher/matcher.cpp
 
+<div></div>
+
     mongo::Matcher2::matches(mongo::BSONObj const&, mongo::MatchDetails*) const
 
 - Used By:
@@ -141,6 +153,8 @@ Interface to actually test if a document matches.
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Matcher2::Matcher2(mongo::BSONObj const&, bool)
 
@@ -168,17 +182,23 @@ Helper for requesting more details about what matched our query from the matcher
 
 ### src/mongo/db/matcher/match\_details.cpp
 
+<div></div>
+
     mongo::MatchDetails::elemMatchKey() const
 
 - Used By:
 
     - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::MatchDetails::MatchDetails()
 
 - Used By:
 
     - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::MatchDetails::hasElemMatchKey() const
 
@@ -270,6 +290,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/canonical\_query.cpp
 
+<div></div>
+
     mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
 
 - Used By:
@@ -278,12 +300,16 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, long long, long long, mongo::BSONObj const&, mongo::CanonicalQuery**)
 
 - Used By:
 
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
+
+<div></div>
 
     mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
 
@@ -300,6 +326,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
 ### src/mongo/db/query/eof\_runner.cpp
+
+<div></div>
 
     mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)
 
@@ -323,6 +351,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/get\_runner.cpp
 
+<div></div>
+
     mongo::getRunner(mongo::CanonicalQuery*, mongo::Runner**, unsigned long)
 
 - Used By:
@@ -337,6 +367,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
+<div></div>
+
     mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
 
 - Used By:
@@ -347,6 +379,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 
 ### src/mongo/db/query/internal\_runner.cpp
+
+<div></div>
 
     mongo::InternalRunner::InternalRunner(std::string const&, mongo::PlanStage*, mongo::WorkingSet*)
 
@@ -373,17 +407,23 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/lite\_parsed\_query.cpp
 
+<div></div>
+
     mongo::LiteParsedQuery::isTextScoreMeta(mongo::BSONElement)
 
 - Used By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
+<div></div>
+
     mongo::LiteParsedQuery::parseMaxTimeMSQuery(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/strategy\_shard.cpp](../sharding)
+
+<div></div>
 
     mongo::LiteParsedQuery::cmdOptionMaxTimeMS
 
@@ -394,11 +434,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::LiteParsedQuery::metaGeoNearPoint
 
 - Used By:
 
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
+
+<div></div>
 
     mongo::LiteParsedQuery::metaGeoNearDistance
 
@@ -406,12 +450,16 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
 
+<div></div>
+
     mongo::LiteParsedQuery::parseMaxTimeMSCommand(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
 
     mongo::LiteParsedQuery::metaTextScore
 
@@ -421,11 +469,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/multi\_plan\_runner.cpp
 
+<div></div>
+
     mongo::MultiPlanRunner::getNext(mongo::BSONObj*, mongo::DiskLoc*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::MultiPlanRunner::MultiPlanRunner(mongo::CanonicalQuery*)
 
@@ -433,17 +485,23 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::MultiPlanRunner::~MultiPlanRunner()
 
 - Used By:
 
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::MultiPlanRunner::pickBestPlan(unsigned long*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::MultiPlanRunner::addPlan(mongo::QuerySolution*, mongo::PlanStage*, mongo::WorkingSet*)
 
@@ -453,6 +511,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/new\_find.cpp
 
+<div></div>
+
     mongo::MaxBytesToReturnToClientAtOnce
 
 - Used By:
@@ -460,11 +520,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
 
+<div></div>
+
     mongo::newGetMore(char const*, int, long long, mongo::CurOp&, int, bool&, bool*)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::newRunQuery(mongo::Message&, mongo::QueryMessage&, mongo::CurOp&, mongo::Message&)
 
@@ -475,11 +539,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/plan\_cache.cpp
 
+<div></div>
+
     mongo::PlanCache::clear()
 
 - Used By:
 
     - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::PlanCache::~PlanCache()
 
@@ -488,6 +556,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/query/plan\_executor.cpp
+
+<div></div>
 
     mongo::PlanExecutor::PlanExecutor(mongo::WorkingSet*, mongo::PlanStage*)
 
@@ -498,6 +568,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::PlanExecutor::getNext(mongo::BSONObj*, mongo::DiskLoc*)
 
 - Used By:
@@ -506,6 +578,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::PlanExecutor::~PlanExecutor()
 
@@ -518,6 +592,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/single\_solution\_runner.cpp
 
+<div></div>
+
     mongo::SingleSolutionRunner::SingleSolutionRunner(mongo::CanonicalQuery*, mongo::QuerySolution*, mongo::PlanStage*, mongo::WorkingSet*)
 
 - Used By:
@@ -527,11 +603,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 ### src/mongo/db/query/type\_explain.cpp
 
+<div></div>
+
     mongo::TypeExplain::getScanAndOrder() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::scanAndOrder
 
@@ -539,11 +619,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::getAllPlansAt(unsigned long) const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::clauses
 
@@ -551,11 +635,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::sizeAllPlans() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::sizeClauses() const
 
@@ -563,11 +651,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::isMultiKey
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::isIndexBoundsSet() const
 
@@ -575,11 +667,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::isIsMultiKeySet() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::getCursor() const
 
@@ -587,6 +683,8 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
+
+<div></div>
 
     mongo::TypeExplain::getNScannedObjects() const
 
@@ -596,11 +694,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
 
+<div></div>
+
     mongo::TypeExplain::isAllPlansSet() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::getNScanned() const
 
@@ -610,11 +712,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::TypeExplain::indexBounds
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::isCursorSet() const
 
@@ -623,11 +729,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
 
+<div></div>
+
     mongo::TypeExplain::isScanAndOrderSet() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::isClausesSet() const
 
@@ -635,11 +745,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::getN() const
 
 - Used By:
 
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
+
+<div></div>
 
     mongo::TypeExplain::getClausesAt(unsigned long) const
 
@@ -647,17 +761,23 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::getIndexBounds() const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
+<div></div>
+
     mongo::TypeExplain::allPlans
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
 
     mongo::TypeExplain::cursor
 
@@ -730,11 +850,15 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/and\_hash.cpp
 
+<div></div>
+
     mongo::AndHashStage::AndHashStage(mongo::WorkingSet*, mongo::MatchExpression const*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::AndHashStage::addChild(mongo::PlanStage*)
 
@@ -744,11 +868,15 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/and\_sorted.cpp
 
+<div></div>
+
     mongo::AndSortedStage::AndSortedStage(mongo::WorkingSet*, mongo::MatchExpression const*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::AndSortedStage::addChild(mongo::PlanStage*)
 
@@ -757,6 +885,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
 
 ### src/mongo/db/exec/collection\_scan.cpp
+
+<div></div>
 
     mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
 
@@ -784,6 +914,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/fetch.cpp
 
+<div></div>
+
     mongo::FetchStage::FetchStage(mongo::WorkingSet*, mongo::PlanStage*, mongo::MatchExpression const*)
 
 - Used By:
@@ -801,6 +933,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 ### src/mongo/db/exec/index\_scan.cpp
+
+<div></div>
 
     mongo::IndexScan::IndexScan(mongo::IndexScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
 
@@ -820,6 +954,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/limit.cpp
 
+<div></div>
+
     mongo::LimitStage::LimitStage(int, mongo::WorkingSet*, mongo::PlanStage*)
 
 - Used By:
@@ -828,11 +964,15 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/merge\_sort.cpp
 
+<div></div>
+
     mongo::MergeSortStage::addChild(mongo::PlanStage*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::MergeSortStage::MergeSortStage(mongo::MergeSortStageParams const&, mongo::WorkingSet*)
 
@@ -842,6 +982,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/mock\_stage.cpp
 
+<div></div>
+
     mongo::MockStage::pushBack(mongo::WorkingSetMember const&)
 
 - Used By:
@@ -849,6 +991,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::MockStage::MockStage(mongo::WorkingSet*)
 
@@ -858,6 +1002,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::MockStage::pushBack(mongo::PlanStage::StageState)
 
 - Used By:
@@ -866,11 +1012,15 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/oplogstart.cpp
 
+<div></div>
+
     mongo::OplogStart::_backwardsScanTime
 
 - Used By:
 
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::OplogStart::OplogStart(std::string const&, mongo::MatchExpression*, mongo::WorkingSet*)
 
@@ -880,6 +1030,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/skip.cpp
 
+<div></div>
+
     mongo::SkipStage::SkipStage(int, mongo::WorkingSet*, mongo::PlanStage*)
 
 - Used By:
@@ -887,6 +1039,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
 
 ### src/mongo/db/exec/sort.cpp
+
+<div></div>
 
     mongo::SortStage::SortStage(mongo::SortStageParams const&, mongo::WorkingSet*, mongo::PlanStage*)
 
@@ -896,6 +1050,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 ### src/mongo/db/exec/working\_set.cpp
 
+<div></div>
+
     mongo::WorkingSetMember::WorkingSetMember()
 
 - Used By:
@@ -904,6 +1060,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::WorkingSetMember::~WorkingSetMember()
 
 - Used By:
@@ -911,6 +1069,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::WorkingSet::~WorkingSet()
 
@@ -926,6 +1086,8 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::WorkingSet::WorkingSet()
 
@@ -961,12 +1123,16 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::WorkingSetMember::hasObj() const
 
 - Used By:
 
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::WorkingSetMember::getFieldDotted(std::string const&, mongo::BSONElement*) const
 
@@ -976,11 +1142,15 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::WorkingSet::getFlagged() const
 
 - Used By:
 
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::WorkingSetMember::hasLoc() const
 
@@ -1003,11 +1173,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
 ### src/mongo/db/queryutil.cpp
 
+<div></div>
+
     mongo::FieldRangeVectorIterator::FieldIntervalMatcher::FieldIntervalMatcher(mongo::FieldInterval const&, mongo::BSONElement const&, bool)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRange::operator|=(mongo::FieldRange const&)
 
@@ -1015,11 +1189,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OrRangeGenerator::popOrClauseSingleKey()
 
 - Used By:
 
     - [src/mongo/s/chunk.cpp](../sharding)
+
+<div></div>
 
     mongo::FieldRangeSet::toString() const
 
@@ -1027,11 +1205,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeVectorIterator::prepDive()
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVector::FieldRangeVector(mongo::FieldRangeSet const&, mongo::BSONObj, int)
 
@@ -1039,11 +1221,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRange::operator-=(mongo::FieldRange const&)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldInterval::toString() const
 
@@ -1051,11 +1237,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeVector::startKey() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVector::endKey() const
 
@@ -1063,11 +1253,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeVector::startKeyInclusive() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVectorIterator::FieldIntervalMatcher::upperCmp() const
 
@@ -1075,11 +1269,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSet::subset(mongo::BSONObj const&) const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::isSimpleIdQuery(mongo::BSONObj const&)
 
@@ -1087,11 +1285,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
 
+<div></div>
+
     mongo::FieldRangeVectorIterator::advance(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeSetPair::frsForIndex(mongo::NamespaceDetails const*, int) const
 
@@ -1099,17 +1301,23 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRange::isPointIntervalSet() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeVectorIterator::FieldIntervalMatcher::lowerCmp() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeSet::universalRange() const
 
@@ -1119,6 +1327,8 @@ Legacy utilities for managing queries. Has utilities like range intersection and
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/chunk.cpp](../sharding)
 
+<div></div>
+
     mongo::FieldRange::universal() const
 
 - Used By:
@@ -1126,11 +1336,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/chunk.cpp](../sharding)
 
+<div></div>
+
     mongo::FieldRangeVectorIterator::CompoundRangeCounter::CompoundRangeCounter(int, int)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeSetPair::operator&=(mongo::FieldRangeSetPair const&)
 
@@ -1138,11 +1352,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/s/chunk.cpp](../sharding)
 
+<div></div>
+
     mongo::FieldRangeSetPair::operator-=(mongo::FieldRangeSet const&)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVector::isSingleInterval() const
 
@@ -1150,11 +1368,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRange::toString() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeSetPair::assertValidIndex(mongo::NamespaceDetails const*, int) const
 
@@ -1162,11 +1384,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSetPair::noNonUniversalRanges() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRange::FieldRange(mongo::BSONElement const&, bool, bool)
 
@@ -1174,11 +1400,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRange::intersect(mongo::FieldRange const&, bool)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVectorIterator::FieldRangeVectorIterator(mongo::FieldRangeVector const&, int)
 
@@ -1186,11 +1416,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSet::operator&=(mongo::FieldRangeSet const&)
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeSet::FieldRangeSet(char const*, mongo::BSONObj const&, bool, bool)
 
@@ -1198,11 +1432,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSet::getSpecial() const
 
 - Used By:
 
     - [src/mongo/s/chunk.cpp](../sharding)
+
+<div></div>
 
     mongo::FieldRangeVector::toString() const
 
@@ -1210,11 +1448,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSet::numNonUniversalRanges() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+
+<div></div>
 
     mongo::FieldRangeVector::endKeyInclusive() const
 
@@ -1222,11 +1464,15 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::applySkipLimit(long long, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
 
     mongo::FieldRangeSet::operator-=(mongo::FieldRangeSet const&)
 
@@ -1234,17 +1480,23 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::FieldRangeSetPair::toString() const
 
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::OrRangeGenerator::OrRangeGenerator(char const*, mongo::BSONObj const&, bool)
 
 - Used By:
 
     - [src/mongo/s/chunk.cpp](../sharding)
+
+<div></div>
 
     mongo::FieldRangeSet::prefixed(std::string const&) const
 
@@ -1265,11 +1517,15 @@ Old way of doing document projections. Given a doc and a projection, transforms 
 
 ### src/mongo/db/projection.cpp
 
+<div></div>
+
     mongo::Projection::init(mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+
+<div></div>
 
     mongo::Projection::transform(mongo::BSONObj const&, mongo::MatchDetails const*) const
 
@@ -1296,6 +1552,8 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 ### src/mongo/db/ops/count.cpp
 
+<div></div>
+
     mongo::runCount(char const*, mongo::BSONObj const&, std::string&, int&)
 
 - Used By:
@@ -1305,6 +1563,8 @@ Entry point for various database operations   locks: we should clarify locking, 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/ops/delete.cpp
+
+<div></div>
 
     mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)
 
@@ -1322,6 +1582,8 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 ### src/mongo/db/ops/insert.cpp
 
+<div></div>
+
     mongo::fixDocumentForInsert(mongo::BSONObj const&)
 
 - Used By:
@@ -1331,11 +1593,15 @@ Entry point for various database operations   locks: we should clarify locking, 
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::userAllowedWriteNS(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::userAllowedWriteNS(mongo::NamespaceString const&)
 
@@ -1344,6 +1610,8 @@ Entry point for various database operations   locks: we should clarify locking, 
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::userAllowedWriteNS(mongo::StringData const&, mongo::StringData const&)
 
 - Used By:
@@ -1351,6 +1619,8 @@ Entry point for various database operations   locks: we should clarify locking, 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
 
 ### src/mongo/db/ops/update.cpp
+
+<div></div>
 
     mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*)
 
@@ -1363,11 +1633,15 @@ Entry point for various database operations   locks: we should clarify locking, 
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
+<div></div>
+
     mongo::applyUpdateOperators(mongo::BSONObj const&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*, mongo::UpdateDriver*)
 

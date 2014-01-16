@@ -15,6 +15,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 ### src/mongo/db/commands.cpp
 
+<div></div>
+
     mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
 
 - Used By:
@@ -45,6 +47,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
+<div></div>
+
     mongo::Command::parseNsFullyQualified(std::string const&, mongo::BSONObj const&) const
 
 - Used By:
@@ -55,6 +59,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
+<div></div>
+
     mongo::Command::findCommand(std::string const&)
 
 - Used By:
@@ -63,11 +69,15 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
+<div></div>
+
     mongo::Command::_checkAuthorization(mongo::Command*, mongo::ClientBasic*, std::string const&, mongo::BSONObj const&, bool)
 
 - Used By:
 
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
 
@@ -78,6 +88,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_split.cpp](../sharding)
+
+<div></div>
 
     vtable for mongo::Command
 
@@ -111,12 +123,16 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::Command::testCommandsEnabled
 
 - Used By:
 
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+
+<div></div>
 
     mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
 
@@ -147,6 +163,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
+
+<div></div>
 
     mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
 
@@ -179,6 +197,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     typeinfo for mongo::Command
 
 - Used By:
@@ -210,11 +230,15 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::Command::_commandsByBestName
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
 
     mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
 
@@ -243,11 +267,15 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::Command::_webCommands
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
 
     mongo::Command::redactForLogging(mongo::mutablebson::Document*)
 
@@ -280,11 +308,15 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 
+<div></div>
+
     mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, bool, std::string const&)
 
 - Used By:
 
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
 
@@ -294,6 +326,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/strategy\_single.cpp](../sharding)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
 
     mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
 
@@ -305,6 +339,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
 
     mongo::Command::htmlHelp(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
 
@@ -324,11 +360,15 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 ### src/mongo/db/dbcommands.cpp
 
+<div></div>
+
     mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
 
     mongo::_runCommands(char const*, mongo::BSONObj&, mongo::_BufBuilder<mongo::TrivialAllocator>&, mongo::BSONObjBuilder&, bool, int)
 
@@ -395,6 +435,8 @@ Commands (run using db.$cmd.findOne(...))
 
 ### src/mongo/db/commands/authentication\_commands.cpp
 
+<div></div>
+
     mongo::CmdAuthenticate::disableAuthMechanism(std::string)
 
 - Used By:
@@ -402,6 +444,8 @@ Commands (run using db.$cmd.findOne(...))
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
 
 ### src/mongo/db/commands/copydb\_common.cpp
+
+<div></div>
 
     mongo::copydb::checkAuthForCopydbCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
 
@@ -411,6 +455,8 @@ Commands (run using db.$cmd.findOne(...))
 
 ### src/mongo/db/commands/dbhash.cpp
 
+<div></div>
+
     mongo::logOpForDbHash(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)
 
 - Used By:
@@ -418,6 +464,8 @@ Commands (run using db.$cmd.findOne(...))
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 ### src/mongo/db/commands/get\_last\_error.cpp
+
+<div></div>
 
     mongo::getLastErrorDefault
 
@@ -427,6 +475,8 @@ Commands (run using db.$cmd.findOne(...))
     - [src/mongo/db/repl/rs.cpp](../replication)
 
 ### src/mongo/db/commands/isself.cpp
+
+<div></div>
 
     mongo::HostAndPort::isSelf() const
 
@@ -441,6 +491,8 @@ Commands (run using db.$cmd.findOne(...))
 
 ### src/mongo/db/commands/server\_status.cpp
 
+<div></div>
+
     mongo::ServerStatusSection::ServerStatusSection(std::string const&)
 
 - Used By:
@@ -454,11 +506,15 @@ Commands (run using db.$cmd.findOne(...))
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
 
+<div></div>
+
     mongo::OpCounterServerStatusSection::OpCounterServerStatusSection(std::string const&, mongo::OpCounters*)
 
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+
+<div></div>
 
     mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
 
@@ -478,6 +534,8 @@ Commands (run using db.$cmd.findOne(...))
 
 ### src/mongo/db/dbeval.cpp
 
+<div></div>
+
     mongo::dbEval(std::string const&, mongo::BSONObj&, mongo::BSONObjBuilder&, std::string&)
 
 - Used By:
@@ -485,6 +543,8 @@ Commands (run using db.$cmd.findOne(...))
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
 ### src/mongo/s/commands\_public.cpp
+
+<div></div>
 
     mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)
 
@@ -506,11 +566,15 @@ Commands + code for fsync of data files
 
 ### src/mongo/db/commands/fsync.cpp
 
+<div></div>
+
     mongo::_unlockFsync()
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::lockedForWriting()
 
@@ -519,6 +583,8 @@ Commands + code for fsync of data files
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
 
     mongo::filesLockedFsync
 
