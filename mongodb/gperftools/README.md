@@ -102,7 +102,12 @@ Third Party - Google performance tools and tcmalloc
 - src/third\_party/gperftools-2.0/src/windows/port.h
 
 ## Interface
+
+
 ### src/third\_party/gperftools-2.0/src/malloc\_extension.cc
+
 <pre>MallocExtension::instance()</pre>
+
 #### Used By:
+
 - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)

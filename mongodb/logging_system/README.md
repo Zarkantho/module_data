@@ -43,26 +43,37 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - src/mongo/logger/tee.h
 
 ## Interface
+
+
 ### src/mongo/util/log.cpp
+
 <pre>mongo::LogIndentLevel::~LogIndentLevel()</pre>
+
 #### Used By:
+
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>mongo::logContext(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/assert\_util.cpp](../utilities)
 - [src/mongo/util/assert\_util.cpp](../utilities)
 - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>mongo::rotateLogs()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::rawOut(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/tools/bridge.cpp](../tools)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
@@ -70,17 +81,23 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <pre>mongo::setRawOutToStderr()</pre>
+
 #### Used By:
+
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 
 <pre>mongo::warnings</pre>
+
 #### Used By:
+
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/util/net/listen.cpp](../network)
 
 <pre>mongo::tlogLevel</pre>
+
 #### Used By:
+
 - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
 - [src/mongo/util/assert\_util.cpp](../utilities)
 - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
@@ -98,7 +115,9 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
 <pre>mongo::getcurns</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/assert\_util.cpp](../utilities)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -127,7 +146,9 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/util/net/message\_port.cpp](../network)
 
 <pre>mongo::startupWarningsLog</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/rs\_config.cpp](../replication)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/startup\_warnings.cpp](../startup\_initialization)
@@ -135,11 +156,15 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::LogIndentLevel::LogIndentLevel()</pre>
+
 #### Used By:
+
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>mongo::errnoWithDescription(int)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -171,9 +196,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/net/ssl\_manager.cpp](../network)
 - [src/mongo/util/net/sock.cpp](../network)
+
 ### src/mongo/logger/console.cpp
+
 <pre>mongo::Console::Console()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/unittest/unittest.cpp](../unit\_tests)
@@ -182,38 +211,56 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 
 <pre>mongo::Console::out()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 - [src/mongo/tools/tool\_logger.cpp](../tools)
+
 ### src/mongo/logger/log\_manager.cpp
+
 <pre>mongo::logger::LogManager::LogManager()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <pre>mongo::logger::LogManager::getNamedDomain(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
 ### src/mongo/logger/log\_severity.cpp
+
 <pre>mongo::logger::operator<<(std::ostream&, mongo::logger::LogSeverity)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/message\_event\_utf8\_encoder.cpp](../logging\_system)
+
 ### src/mongo/logger/logger.cpp
+
 <pre>mongo::logger::globalRotatableFileManager()</pre>
+
 #### Used By:
+
 - [src/mongo/util/log.cpp](../logging\_system)
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::logger::globalLogManager()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -495,9 +542,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/s/request.cpp](../sharding)
 - [src/mongo/db/auth/security\_key.cpp](../authentication)
 - [src/mongo/db/stats/counters.cpp](../utilities)
+
 ### src/mongo/logger/logstream\_builder.cpp
+
 <pre>mongo::logger::LogstreamBuilder::~LogstreamBuilder()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -783,7 +834,9 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/stats/counters.cpp](../utilities)
 
 <pre>mongo::logger::LogstreamBuilder::makeStream()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -1069,7 +1122,9 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/stats/counters.cpp](../utilities)
 
 <pre>mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -1092,7 +1147,9 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -1370,12 +1427,16 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/db/stats/counters.cpp](../utilities)
 
 <pre>mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LabeledLevel)</pre>
+
 #### Used By:
+
 - [src/mongo/client/distlock.cpp](../sharding)
 - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <pre>mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/assert\_util.cpp](../utilities)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -1402,22 +1463,32 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
 - [src/mongo/db/ops/delete.cpp](../query\_system)
 - [src/mongo/util/net/message\_port.cpp](../network)
+
 ### src/mongo/logger/message\_event\_utf8\_encoder.cpp
+
 <pre>mongo::logger::MessageEventDetailsEncoder::~MessageEventDetailsEncoder()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 - [src/mongo/logger/ramlog.cpp](../logging\_system)
 
 <pre>mongo::logger::MessageEventDetailsEncoder::setDateFormatter(std::string (*)(mongo::Date_t))</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 
 <pre>vtable for mongo::logger::MessageEventWithContextEncoder</pre>
+
 #### Used By:
+
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>vtable for mongo::logger::MessageEventDetailsEncoder</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/logger/ramlog.cpp](../logging\_system)
@@ -1426,30 +1497,44 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 
 <pre>vtable for mongo::logger::MessageEventUnadornedEncoder</pre>
+
 #### Used By:
+
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
 <pre>mongo::logger::MessageEventDetailsEncoder::encode(mongo::logger::MessageEventEphemeral const&, std::ostream&)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 - [src/mongo/logger/ramlog.cpp](../logging\_system)
+
 ### src/mongo/logger/message\_log\_domain.cpp
+
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::clearAppenders()</pre>
+
 #### Used By:
+
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::~LogDomain()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::LogDomain()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::attachAppender(std::auto_ptr<mongo::logger::Appender<mongo::logger::MessageEventEphemeral> >)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/log\_manager.cpp](../logging\_system)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/unittest/unittest.cpp](../unit\_tests)
@@ -1458,33 +1543,49 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/tools/tool\_logger.cpp](../tools)
 
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::append(mongo::logger::MessageEventEphemeral const&)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <pre>mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::detachAppender(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::AppenderHandle)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
+
 ### src/mongo/logger/ramlog.cpp
+
 <pre>mongo::RamLog::getNames(std::vector<std::string, std::allocator<std::string> >&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::RamLog::LineIterator::lastWrite()</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
 <pre>mongo::RamLog::toHTML(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 - [src/mongo/db/repl/health.cpp](../replication)
 
 <pre>mongo::RamLog::LineIterator::LineIterator(mongo::RamLog*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::RamLog::get(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
@@ -1493,64 +1594,96 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <pre>mongo::RamLogAppender::RamLogAppender(mongo::RamLog*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::RamLog::getLine_inlock(unsigned int) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::RamLog::LineIterator::getTotalLinesWritten()</pre>
+
 #### Used By:
+
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::RamLog::getIfExists(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
 ### src/mongo/logger/rotatable\_file\_manager.cpp
+
 <pre>mongo::logger::RotatableFileManager::getFile(std::string const&)</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 
 <pre>mongo::logger::RotatableFileManager::RotatableFileManager()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <pre>mongo::logger::RotatableFileManager::openFile(std::string const&, bool)</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::logger::RotatableFileManager::~RotatableFileManager()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <pre>mongo::logger::RotatableFileManager::rotateAll(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/util/log.cpp](../logging\_system)
+
 ### src/mongo/logger/rotatable\_file\_writer.cpp
+
 <pre>mongo::logger::RotatableFileWriter::Use::Use(mongo::logger::RotatableFileWriter*)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::logger::RotatableFileWriter::RotatableFileWriter()</pre>
+
 #### Used By:
+
 - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
 
 <pre>mongo::logger::RotatableFileWriter::Use::status()</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <pre>mongo::logger::RotatableFileWriter::Use::rotate(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
 
 <pre>mongo::logger::RotatableFileWriter::Use::setFileName(std::string const&, bool)</pre>
+
 #### Used By:
+
 - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
 
 -------------
@@ -1561,14 +1694,21 @@ Helpers to dump a bunch of information about the current process   at crash time
 - src/mongo/db/log\_process\_details.h
 
 ## Interface
+
+
 ### src/mongo/db/log\_process\_details.cpp
+
 <pre>mongo::logProcessDetails()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/version\_mongos.cpp](../sharding)
 
 <pre>mongo::logProcessDetailsForLogRotate()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
@@ -1580,3 +1720,5 @@ MONGO\_INITIALIZERs to add extra information to the server logs.
 - src/mongo/db/server\_extra\_log\_context.cpp   (mongod, mongos)
 
 ## Interface
+
+(not used outside this module)

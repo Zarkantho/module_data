@@ -978,3 +978,5 @@ Third Party - The boost shim and the header files in boost core
 - src/third\_party/boost/boost/weak\_ptr.hpp
 
 ## Interface
+
+(not used outside this module)

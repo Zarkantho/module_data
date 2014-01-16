@@ -24,6 +24,8 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 
 ## Interface
 
+(not used outside this module)
+
 -------------
 
 Files only built into the mongo shell
@@ -44,6 +46,8 @@ Files only built into the mongo shell
 
 ## Interface
 
+(not used outside this module)
+
 -------------
 
 Shell command line options
@@ -54,3 +58,5 @@ Shell command line options
 - src/mongo/shell/shell\_options\_test.cpp   ()
 
 ## Interface
+
+(not used outside this module)

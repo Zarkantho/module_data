@@ -36,16 +36,23 @@ Third Party - The boost filesystem library
 - src/third\_party/boost/libs/detail/utf8\_codecvt\_facet.cpp
 
 ## Interface
+
+
 ### src/third\_party/boost/libs/filesystem/v3/src/operations.cpp
+
 <pre>boost::filesystem3::absolute(boost::filesystem3::path const&, boost::filesystem3::path const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/util/net/ssl\_options.cpp](../network)
 - [src/mongo/util/mmap.cpp](../mmap)
 
 <pre>boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&, boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -57,16 +64,22 @@ Third Party - The boost filesystem library
 - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
 
 <pre>boost::filesystem3::detail::temp_directory_path(boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 
 <pre>boost::filesystem3::detail::rename(boost::filesystem3::path const&, boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/dur\_journal.cpp](../journaling)
 
 <pre>boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -78,11 +91,15 @@ Third Party - The boost filesystem library
 - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
 
 <pre>boost::filesystem3::detail::initial_path(boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 
 <pre>boost::filesystem3::detail::status(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/dur\_journal.cpp](../journaling)
@@ -110,7 +127,9 @@ Third Party - The boost filesystem library
 - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
 
 <pre>boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -122,7 +141,9 @@ Third Party - The boost filesystem library
 - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
 
 <pre>boost::filesystem3::detail::create_directory(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
@@ -133,7 +154,9 @@ Third Party - The boost filesystem library
 - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
 <pre>boost::filesystem3::detail::file_size(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -151,7 +174,9 @@ Third Party - The boost filesystem library
 - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
 
 <pre>boost::filesystem3::detail::dir_itr_close(void*&, void*&)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -163,12 +188,16 @@ Third Party - The boost filesystem library
 - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
 
 <pre>boost::filesystem3::detail::copy_file(boost::filesystem3::path const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 
 <pre>boost::filesystem3::detail::remove(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -182,7 +211,9 @@ Third Party - The boost filesystem library
 - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 
 <pre>boost::filesystem3::detail::remove_all(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
@@ -191,7 +222,9 @@ Third Party - The boost filesystem library
 - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
 
 <pre>boost::filesystem3::detail::create_directories(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
 - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
 - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
@@ -201,21 +234,29 @@ Third Party - The boost filesystem library
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>boost::filesystem3::detail::current_path(boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/util/net/ssl\_options.cpp](../network)
 - [src/mongo/util/mmap.cpp](../mmap)
+
 ### src/third\_party/boost/libs/filesystem/v3/src/path.cpp
+
 <pre>boost::filesystem3::path::operator/=(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
 - [src/mongo/db/dur\_journal.cpp](../journaling)
 
 <pre>boost::filesystem3::path::wchar_t_codecvt_facet()</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/durop.cpp](../journaling)
@@ -235,7 +276,9 @@ Third Party - The boost filesystem library
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>boost::filesystem3::path::operator/=(boost::filesystem3::path const&)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
@@ -248,13 +291,17 @@ Third Party - The boost filesystem library
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>boost::filesystem3::path::parent_path() const</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/tools/restore.cpp](../tools)
 
 <pre>boost::filesystem3::path::m_erase_redundant_separator(unsigned long)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
@@ -267,7 +314,9 @@ Third Party - The boost filesystem library
 - [src/mongo/db/durop.cpp](../journaling)
 
 <pre>boost::filesystem3::path::m_append_separator_if_needed()</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
@@ -280,7 +329,9 @@ Third Party - The boost filesystem library
 - [src/mongo/db/durop.cpp](../journaling)
 
 <pre>boost::filesystem3::path::filename() const</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -290,7 +341,11 @@ Third Party - The boost filesystem library
 - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
 - [src/mongo/tools/restore.cpp](../tools)
 - [src/mongo/tools/import.cpp](../tools)
+
 ### src/third\_party/boost/libs/filesystem/v3/src/unique\_path.cpp
+
 <pre>boost::filesystem3::detail::unique_path(boost::filesystem3::path const&, boost::system::error_code*)</pre>
+
 #### Used By:
+
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)

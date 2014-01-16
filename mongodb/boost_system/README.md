@@ -14,9 +14,14 @@ Third Party - The boost system library
 - src/third\_party/boost/libs/system/src/local\_free\_on\_destruction.hpp
 
 ## Interface
+
+
 ### src/third\_party/boost/libs/system/src/error\_code.cpp
+
 <pre>boost::system::system_category()</pre>
+
 #### Used By:
+
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -291,7 +296,9 @@ Third Party - The boost system library
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 
 <pre>boost::system::generic_category()</pre>
+
 #### Used By:
+
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)

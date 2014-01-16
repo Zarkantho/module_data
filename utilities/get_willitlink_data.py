@@ -192,19 +192,24 @@ def output_readme_files_for_modules(modules_directory, module_data):
                     else:
                         f.write("\n")
 
-                f.write("\n## Interface\n")
+                f.write("\n## Interface\n\n")
 
+                something_in_interface = False
                 for file_name in module_group["files"]:
                     if file_name in file_to_interface:
-                        f.write("### " + file_name.replace("_", "\\_"))
+                        something_in_interface = True
+                        f.write("\n### " + file_name.replace("_", "\\_") + "\n")
                         for interface_object in file_to_interface[file_name]:
-                            f.write("\n<pre>" + interface_object['symbol'] + "</pre>\n")
-                            f.write("#### Used By:\n")
+                            f.write("\n<pre>" + interface_object['symbol'] + "</pre>\n\n")
+                            f.write("#### Used By:\n\n")
                             for file_using in interface_object['used_by']:
                                 if file_using in file_to_module:
                                     f.write("- [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
                                 else:
                                     f.write("- " + file_using.replace("_", "\\_") + "\n")
+
+                if not something_in_interface:
+                    f.write("(not used outside this module)\n")
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)

@@ -10,9 +10,14 @@ Code to manage paths to files. Conversion from relative to full path within data
 - src/mongo/util/paths.h
 
 ## Interface
+
+
 ### src/mongo/util/paths.cpp
+
 <pre>mongo::flushMyDirectory(boost::filesystem3::path const&)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/durop.cpp](../journaling)
@@ -35,27 +40,40 @@ Classes to help in tracking statistics
 - src/mongo/db/stats/top.h
 
 ## Interface
+
+
 ### src/mongo/db/stats/counters.cpp
+
 <pre>mongo::replOpCounters</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
 - [src/mongo/db/dbcommands.cpp](../database\_commands)
 - [src/mongo/db/repl/oplog.cpp](../replication)
 
 <pre>mongo::OpCounters::gotOp(int, bool)</pre>
+
 #### Used By:
+
 - [src/mongo/s/request.cpp](../sharding)
 
 <pre>mongo::OpCounters::getObj() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
 <pre>mongo::NetworkCounter::hit(long long, long long)</pre>
+
 #### Used By:
+
 - [src/mongo/util/net/message\_server\_port.cpp](../network)
 
 <pre>mongo::globalOpCounters</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/oplog.cpp](../replication)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -65,20 +83,32 @@ Classes to help in tracking statistics
 - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
 
 <pre>mongo::networkCounter</pre>
+
 #### Used By:
+
 - [src/mongo/util/net/message\_server\_port.cpp](../network)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
 <pre>mongo::NetworkCounter::append(mongo::BSONObjBuilder&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
 ### src/mongo/db/stats/snapshots.cpp
+
 <pre>mongo::snapshotThread</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+
 ### src/mongo/db/stats/timer\_stats.cpp
+
 <pre>mongo::TimerStats::getReport() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -86,7 +116,9 @@ Classes to help in tracking statistics
 - [src/mongo/db/write\_concern.cpp](../replication)
 
 <pre>mongo::TimerHolder::TimerHolder(mongo::TimerStats*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -94,7 +126,9 @@ Classes to help in tracking statistics
 - [src/mongo/db/write\_concern.cpp](../replication)
 
 <pre>mongo::TimerHolder::~TimerHolder()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -102,20 +136,30 @@ Classes to help in tracking statistics
 - [src/mongo/db/write\_concern.cpp](../replication)
 
 <pre>mongo::TimerHolder::recordMillis()</pre>
+
 #### Used By:
+
 - [src/mongo/db/write\_concern.cpp](../replication)
+
 ### src/mongo/db/stats/top.cpp
+
 <pre>mongo::Top::global</pre>
+
 #### Used By:
+
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/db/database.cpp](../storage\_layer\_structure)
 
 <pre>mongo::Top::record(mongo::StringData const&, int, int, long long, bool)</pre>
+
 #### Used By:
+
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
 <pre>mongo::Top::collectionDropped(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/database.cpp](../storage\_layer\_structure)
 
 -------------
@@ -127,9 +171,14 @@ Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 - src/mongo/db/hasher\_test.cpp   ()
 
 ## Interface
+
+
 ### src/mongo/db/hasher.cpp
+
 <pre>mongo::BSONElementHasher::hash64(mongo::BSONElement const&, int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/hashcmd.cpp](../database\_commands)
 - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
 - [src/mongo/db/keypattern.cpp](../indexing)
@@ -144,37 +193,54 @@ Helpers to track in progress operations. The constructor registers itself in an 
 - src/mongo/db/background.h
 
 ## Interface
+
+
 ### src/mongo/db/background.cpp
+
 <pre>mongo::BackgroundOperation::dump(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
 <pre>mongo::BackgroundOperation::BackgroundOperation(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 
 <pre>mongo::BackgroundOperation::assertNoBgOpInProgForDb(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
 - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 
 <pre>typeinfo for mongo::BackgroundOperation</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 
 <pre>mongo::BackgroundOperation::~BackgroundOperation()</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 
 <pre>mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/compact.cpp](../database\_commands)
 - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
 - [src/mongo/db/database.cpp](../storage\_layer\_structure)
 - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <pre>mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -186,22 +252,31 @@ Utility to check whether a certain time interval has elapsed. Currently only use
 - src/mongo/util/elapsed\_tracker.h
 
 ## Interface
+
+
 ### src/mongo/util/elapsed\_tracker.cpp
+
 <pre>mongo::ElapsedTracker::resetLastTime()</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
 - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
 
 <pre>mongo::ElapsedTracker::intervalHasElapsed()</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
 - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <pre>mongo::ElapsedTracker::ElapsedTracker(int, int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/update.cpp](../query\_system)
 - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
 - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
@@ -216,9 +291,14 @@ Helper classes to accumulate and log progress in a nice format using the  loggin
 - src/mongo/util/progress\_meter.h
 
 ## Interface
+
+
 ### src/mongo/util/progress\_meter.cpp
+
 <pre>mongo::ProgressMeter::hit(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/compact.cpp](../database\_commands)
 - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 - [src/mongo/tools/tool.cpp](../tools)
@@ -232,12 +312,16 @@ Helper classes to accumulate and log progress in a nice format using the  loggin
 - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
 <pre>mongo::ProgressMeter::toString() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
 
 <pre>mongo::ProgressMeter::reset(unsigned long long, int, int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/tools/tool.cpp](../tools)
 - [src/mongo/db/dur\_journal.cpp](../journaling)
@@ -254,13 +338,20 @@ Debug macros and gdb server helpers
 - src/mongo/util/debug\_util.h
 
 ## Interface
+
+
 ### src/mongo/util/debug\_util.cpp
+
 <pre>mongo::mongo_breakpoint()</pre>
+
 #### Used By:
+
 - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <pre>mongo::setupSIGTRAPforGDB()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
@@ -272,9 +363,14 @@ Library to get and set the name of the current thread. Just uses a boost::thread
 - src/mongo/util/concurrency/thread\_name.h
 
 ## Interface
+
+
 ### src/mongo/util/concurrency/thread\_name.cpp
+
 <pre>mongo::setThreadName(mongo::StringData)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/background.cpp](../utilities)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
@@ -285,7 +381,9 @@ Library to get and set the name of the current thread. Just uses a boost::thread
 - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <pre>mongo::getThreadName()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -558,13 +656,20 @@ Utility library to manipulate hex strings
 - src/mongo/util/hex.h
 
 ## Interface
+
+
 ### src/mongo/util/hex.cpp
+
 <pre>std::string mongo::integerToHex<unsigned int>(unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
 
 <pre>std::string mongo::integerToHex<int>(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -964,9 +1069,14 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - src/mongo/util/background\_job\_test.cpp   ()
 
 ## Interface
+
+
 ### src/mongo/util/background.cpp
+
 <pre>mongo::BackgroundJob::~BackgroundJob()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/consensus.cpp](../replication)
 - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
@@ -995,35 +1105,47 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - [src/mongo/util/net/sock.cpp](../network)
 
 <pre>typeinfo for mongo::PeriodicTask</pre>
+
 #### Used By:
+
 - [src/mongo/s/d\_writeback.cpp](../sharding)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <pre>mongo::BackgroundJob::running() const</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 
 <pre>mongo::BackgroundJob::cancel()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 
 <pre>mongo::PeriodicTask::startRunningPeriodicTasks()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/client/init.cpp](../cpp\_client\_driver)
 
 <pre>mongo::PeriodicTask::~PeriodicTask()</pre>
+
 #### Used By:
+
 - [src/mongo/s/d\_writeback.cpp](../sharding)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <pre>mongo::BackgroundJob::go()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/ttl.cpp](../indexing)
 - [src/mongo/s/writeback\_listener.cpp](../sharding)
@@ -1044,11 +1166,15 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - [src/mongo/db/repl/oplog.cpp](../replication)
 
 <pre>mongo::PeriodicTask::stopRunningPeriodicTasks(int)</pre>
+
 #### Used By:
+
 - [src/mongo/client/init.cpp](../cpp\_client\_driver)
 
 <pre>mongo::BackgroundJob::wait(unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/consensus.cpp](../replication)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -1056,13 +1182,17 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - [src/mongo/util/net/sock.cpp](../network)
 
 <pre>mongo::PeriodicTask::PeriodicTask()</pre>
+
 #### Used By:
+
 - [src/mongo/s/d\_writeback.cpp](../sharding)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <pre>typeinfo for mongo::BackgroundJob</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/consensus.cpp](../replication)
 - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
 - [src/mongo/db/repl/write\_concern.cpp](../replication)
@@ -1085,7 +1215,9 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - [src/mongo/util/net/sock.cpp](../network)
 
 <pre>mongo::BackgroundJob::BackgroundJob(bool)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/consensus.cpp](../replication)
 - [src/mongo/db/repl/write\_concern.cpp](../replication)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -1116,6 +1248,8 @@ mapFindWithDefault - looks something up in a map with a default value.
 
 ## Interface
 
+(not used outside this module)
+
 -------------
 
 These appear to be for debugging. Not used on OSX so it's hard for met to tell. Notably used in  mmap\_win.cpp (windows mmap)
@@ -1124,6 +1258,8 @@ These appear to be for debugging. Not used on OSX so it's hard for met to tell. 
 - src/mongo/db/memconcept.h
 
 ## Interface
+
+(not used outside this module)
 
 -------------
 
@@ -1134,6 +1270,8 @@ I still don't know what this was originally for, but I know we are slowly gettin
 
 ## Interface
 
+(not used outside this module)
+
 -------------
 
 Assertion library.
@@ -1142,20 +1280,29 @@ Assertion library.
 - src/mongo/util/assert\_util.h
 
 ## Interface
+
+
 ### src/mongo/util/assert\_util.cpp
+
 <pre>mongo::causedBy(mongo::Status const&)</pre>
+
 #### Used By:
+
 - [src/mongo/s/config\_upgrade.cpp](../sharding)
 
 <pre>mongo::ExceptionInfo::append(mongo::BSONObjBuilder&, char const*, char const*) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 - [src/mongo/s/writeback\_listener.cpp](../sharding)
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <pre>mongo::DBException::traceExceptions</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
@@ -1163,7 +1310,9 @@ Assertion library.
 - [src/mongo/s/shardconnection.cpp](../sharding)
 
 <pre>mongo::uasserted(int, char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -1590,11 +1739,15 @@ Assertion library.
 - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
 <pre>mongo::fassertFailedNoTrace(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::msgasserted(int, std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -2011,7 +2164,9 @@ Assertion library.
 - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
 <pre>mongo::wasserted(char const*, char const*, unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
@@ -2031,7 +2186,9 @@ Assertion library.
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::causedBy(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -2125,14 +2282,18 @@ Assertion library.
 - [src/mongo/s/request.cpp](../sharding)
 
 <pre>mongo::msgassertedNoTrace(int, char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/repl/master\_slave.cpp](../replication)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/repl/rs\_config.cpp](../replication)
 
 <pre>mongo::msgasserted(int, char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -2647,7 +2808,9 @@ Assertion library.
 - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
 <pre>typeinfo for mongo::DBException</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -2801,7 +2964,9 @@ Assertion library.
 - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
 <pre>mongo::DBException::convertExceptionCode(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
 - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
@@ -2822,7 +2987,9 @@ Assertion library.
 - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <pre>vtable for mongo::UserException</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 - [src/mongo/db/index/btree\_interface.cpp](../indexing)
@@ -2845,7 +3012,9 @@ Assertion library.
 - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
 <pre>vtable for mongo::MsgAssertionException</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/json.cpp](../bson)
@@ -2886,11 +3055,15 @@ Assertion library.
 - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <pre>mongo::assertionCount</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
 <pre>mongo::verifyFailed(char const*, char const*, unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/db/matcher/match\_details.cpp](../query\_system)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
@@ -3402,7 +3575,9 @@ Assertion library.
 - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
 <pre>mongo::fassertFailed(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/consensus.cpp](../replication)
@@ -3487,7 +3662,9 @@ Assertion library.
 - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <pre>mongo::uasserted(int, std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -3897,7 +4074,9 @@ Assertion library.
 - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
 <pre>mongo::DBException::traceIfNeeded(mongo::DBException const&)</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
 - [src/mongo/db/index/btree\_interface.cpp](../indexing)
@@ -3982,7 +4161,9 @@ Assertion library.
 - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
 <pre>vtable for mongo::DBException</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
@@ -4071,7 +4252,9 @@ Assertion library.
 - [src/mongo/s/request.cpp](../sharding)
 
 <pre>typeinfo for mongo::UserException</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/db/index/btree\_interface.cpp](../indexing)
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
@@ -4118,7 +4301,9 @@ Assertion library.
 - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
 <pre>mongo::causedBy(std::exception const&)</pre>
+
 #### Used By:
+
 - [src/mongo/s/commands\_public.cpp](../database\_commands)
 - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
 - [src/mongo/client/distlock.cpp](../sharding)
@@ -4127,7 +4312,9 @@ Assertion library.
 - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <pre>typeinfo for mongo::MsgAssertionException</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
 - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
 - [src/mongo/db/json.cpp](../bson)
@@ -4177,7 +4364,9 @@ Assertion library.
 - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <pre>mongo::DBException::toString() const</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
 - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
 - [src/mongo/db/index/btree\_interface.cpp](../indexing)
@@ -4252,22 +4441,30 @@ Assertion library.
 - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
 <pre>mongo::causedBy(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/client/distlock.cpp](../sharding)
 
 <pre>mongo::fassertFailedWithStatus(int, mongo::Status const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
 - [src/mongo/db/auth/role\_graph.cpp](../authentication)
 
 <pre>mongo::errnoWithPrefix(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/tools/dump.cpp](../tools)
 
 <pre>mongo::causedBy(std::string const*)</pre>
+
 #### Used By:
+
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/s/config\_upgrade.cpp](../sharding)
@@ -4275,11 +4472,15 @@ Assertion library.
 - [src/mongo/client/distlock.cpp](../sharding)
 
 <pre>mongo::ErrorMsg::ErrorMsg(char const*, char)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/oplog.cpp](../replication)
 
 <pre>mongo::demangleName(std::type_info const&)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
@@ -4328,11 +4529,15 @@ Assertion library.
 - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 <pre>mongo::ExceptionInfo::toString() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 
 <pre>mongo::causedBy(mongo::DBException const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
 - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 - [src/mongo/s/d\_merge.cpp](../sharding)
@@ -4365,7 +4570,9 @@ Assertion library.
 - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <pre>mongo::UserException::appendPrefix(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const</pre>
+
 #### Used By:
+
 - [src/mongo/tools/sniffer.cpp](../tools)
 - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 - [src/mongo/client/examples/tutorial.cpp](../cpp\_client\_driver)
@@ -4384,13 +4591,20 @@ Library for adding fail points into the code for testing purposes
 - src/mongo/util/fail\_point\_test.cpp   ()
 
 ## Interface
+
+
 ### src/mongo/util/fail\_point.cpp
+
 <pre>mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
 <pre>mongo::FailPoint::slowShouldFailOpenBlock()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/exec/fetch.cpp](../query\_system)
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -4404,15 +4618,21 @@ Library for adding fail points into the code for testing purposes
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <pre>mongo::ScopedFailPoint::getData() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
 <pre>mongo::ScopedFailPoint::~ScopedFailPoint()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
 <pre>mongo::FailPoint::shouldFailCloseBlock()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/exec/fetch.cpp](../query\_system)
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -4425,11 +4645,15 @@ Library for adding fail points into the code for testing purposes
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <pre>mongo::FailPoint::toBSON() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
 
 <pre>mongo::FailPoint::FailPoint()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/exec/fetch.cpp](../query\_system)
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -4444,28 +4668,40 @@ Library for adding fail points into the code for testing purposes
 - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <pre>mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned int, mongo::BSONObj const&)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+
 ### src/mongo/util/fail\_point\_registry.cpp
+
 <pre>mongo::FailPointRegistry::FailPointRegistry()</pre>
+
 #### Used By:
+
 - [src/mongo/util/fail\_point\_service.cpp](../utilities)
 
 <pre>mongo::FailPointRegistry::getFailPoint(std::string const&) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
 
 <pre>mongo::FailPointRegistry::freeze()</pre>
+
 #### Used By:
+
 - [src/mongo/util/fail\_point\_service.cpp](../utilities)
 
 <pre>mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/exec/fetch.cpp](../query\_system)
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -4477,9 +4713,13 @@ Library for adding fail points into the code for testing purposes
 - [src/mongo/util/net/sock.cpp](../network)
 - [src/mongo/s/grid.cpp](../sharding)
 - [src/mongo/s/d\_migrate.cpp](../sharding)
+
 ### src/mongo/util/fail\_point\_service.cpp
+
 <pre>mongo::getGlobalFailPointRegistry()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/exec/fetch.cpp](../query\_system)
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -4501,9 +4741,14 @@ Helper library that you inherit from to make a class "reference counted"
 - src/mongo/util/intrusive\_counter.h
 
 ## Interface
+
+
 ### src/mongo/util/intrusive\_counter.cpp
+
 <pre>typeinfo for mongo::IntrusiveCounterUnsigned</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
 - [src/mongo/s/commands\_public.cpp](../database\_commands)
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
@@ -4516,7 +4761,9 @@ Helper library that you inherit from to make a class "reference counted"
 - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
 
 <pre>mongo::IntrusiveCounterUnsigned::addRef() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_skip.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
@@ -4541,7 +4788,9 @@ Helper library that you inherit from to make a class "reference counted"
 - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../aggregation\_framework)
 
 <pre>vtable for mongo::IntrusiveCounterUnsigned</pre>
+
 #### Used By:
+
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_skip.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
@@ -4566,12 +4815,16 @@ Helper library that you inherit from to make a class "reference counted"
 - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../aggregation\_framework)
 
 <pre>mongo::RCString::create(mongo::StringData)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
 
 <pre>mongo::IntrusiveCounterUnsigned::release() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_skip.cpp](../aggregation\_framework)
 - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
@@ -4606,9 +4859,14 @@ md5 hash library
 - src/mongo/util/md5main.cpp   (cppclientdriver)
 
 ## Interface
+
+
 ### src/mongo/util/md5.cpp
+
 <pre>_md5_finish</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
@@ -4623,7 +4881,9 @@ md5 hash library
 - [src/mongo/util/md5main.cpp](../utilities)
 
 <pre>_md5_init</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
@@ -4638,7 +4898,9 @@ md5 hash library
 - [src/mongo/util/md5main.cpp](../utilities)
 
 <pre>_md5_append</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
@@ -4661,6 +4923,8 @@ Windows service
 
 ## Interface
 
+(not used outside this module)
+
 -------------
 
 Utilities to hash a username + password
@@ -4669,9 +4933,14 @@ Utilities to hash a username + password
 - src/mongo/client/auth\_helpers.h
 
 ## Interface
+
+
 ### src/mongo/client/auth\_helpers.cpp
+
 <pre>mongo::auth::createPasswordDigest(mongo::StringData const&, mongo::StringData const&)</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
@@ -4771,55 +5040,86 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/heapcheck.h
 
 ## Interface
+
+
 ### src/mongo/util/safe\_num.cpp
+
 <pre>mongo::SafeNum::isIdentical(mongo::SafeNum const&) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
 <pre>mongo::SafeNum::orInternal(mongo::SafeNum const&, mongo::SafeNum const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 
 <pre>mongo::SafeNum::xorInternal(mongo::SafeNum const&, mongo::SafeNum const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 
 <pre>mongo::SafeNum::andInternal(mongo::SafeNum const&, mongo::SafeNum const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 
 <pre>mongo::SafeNum::debugString() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
 <pre>mongo::SafeNum::mulInternal(mongo::SafeNum const&, mongo::SafeNum const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
 <pre>mongo::SafeNum::SafeNum(mongo::BSONElement const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
 - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
 
 <pre>mongo::SafeNum::addInternal(mongo::SafeNum const&, mongo::SafeNum const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
+
 ### src/mongo/util/signal\_handlers.cpp
+
 <pre>mongo::printStackAndExit(int)</pre>
+
 #### Used By:
+
 - src/mongo/client/sasl\_client\_session.cpp
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - src/mongo/client/sasl\_client\_session.cpp
+
 ### src/mongo/util/stack\_introspect.cpp
+
 <pre>mongo::inConstructorChainSupported()</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/stacktests.cpp](../unit\_tests)
+
 ### src/mongo/util/stacktrace.cpp
+
 <pre>mongo::printStackTrace(std::ostream&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dur.cpp](../journaling)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/tools/bridge.cpp](../tools)
@@ -4831,9 +5131,13 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/util/log.cpp](../logging\_system)
 - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
 - [src/mongo/s/shardconnection.cpp](../sharding)
+
 ### src/mongo/util/startup\_test.cpp
+
 <pre>mongo::StartupTest::~StartupTest()</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
 - [src/mongo/bson/optime.cpp](../bson)
@@ -4851,7 +5155,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
 
 <pre>mongo::StartupTest::StartupTest()</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
 - [src/mongo/bson/optime.cpp](../bson)
@@ -4869,14 +5175,18 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
 
 <pre>mongo::StartupTest::runTests()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
 - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
 <pre>typeinfo for mongo::StartupTest</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
 - [src/mongo/bson/optime.cpp](../bson)
@@ -4892,72 +5202,106 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/util/logfile.cpp](../journaling)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+
 ### src/mongo/util/stringutils.cpp
+
 <pre>mongo::versionCmp(mongo::StringData, mongo::StringData)</pre>
+
 #### Used By:
+
 - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
 - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
 - [src/mongo/tools/restore.cpp](../tools)
 
 <pre>mongo::joinStringDelim(std::vector<std::string, std::allocator<std::string> > const&, std::string*, char)</pre>
+
 #### Used By:
+
 - [src/mongo/s/config.cpp](../sharding)
 
 <pre>mongo::LexNumCmp::operator()(mongo::StringData const&, mongo::StringData const&) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/jsobj.cpp](../bson)
 
 <pre>mongo::splitStringDelim(std::string const&, std::vector<std::string, std::allocator<std::string> >*, char)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/auth/action\_set.cpp](../authentication)
 
 <pre>mongo::LexNumCmp::cmp(mongo::StringData const&, mongo::StringData const&) const</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/jsobj.cpp](../bson)
 
 <pre>mongo::LexNumCmp::LexNumCmp(bool)</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+
 ### src/mongo/util/text.cpp
+
 <pre>mongo::parseLL(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 
 <pre>mongo::isValidUTF8(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/tools/bsondump.cpp](../tools)
 - [src/mongo/tools/import.cpp](../tools)
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 <pre>mongo::StringSplitter::split(std::vector<std::string, std::allocator<std::string> >&)</pre>
+
 #### Used By:
+
 - [src/mongo/tools/mongoimport\_options.cpp](../tools)
 
 <pre>mongo::StringSplitter::next()</pre>
+
 #### Used By:
+
 - [src/mongo/tools/stat.cpp](../tools)
 
 <pre>mongo::StringSplitter::join(std::vector<std::string, std::allocator<std::string> > const&, std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 <pre>mongo::StringSplitter::split(std::string const&, std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
+
 ### src/mongo/util/time\_support.cpp
+
 <pre>mongo::Date_t::toString() const</pre>
+
 #### Used By:
+
 - [src/mongo/client/distlock.cpp](../sharding)
 
 <pre>mongo::jsTime()</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
@@ -4978,7 +5322,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
 <pre>mongo::sleepmillis(long long)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/range\_deleter.cpp](../sharding)
@@ -5017,26 +5363,36 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/util/concurrency/task.cpp](../utilities)
 
 <pre>mongo::Date_t::toTimeT() const</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/snmp/serverstatus\_client.cpp
 - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
 <pre>mongo::Backoff::getNextSleepMillis(int, unsigned long long, unsigned long long) const</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 <pre>mongo::time_t_to_Struct(long, tm*, bool)</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/snmp/serverstatus\_client.cpp
 - [src/mongo/tools/stat\_util.cpp](../tools)
 
 <pre>mongo::currentDate()</pre>
+
 #### Used By:
+
 - [src/mongo/s/grid.cpp](../sharding)
 
 <pre>mongo::dateToISOStringLocal(mongo::Date_t)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/logger/message\_event\_utf8\_encoder.cpp](../logging\_system)
@@ -5044,7 +5400,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/jsobj.cpp](../bson)
 
 <pre>mongo::sleepmicros(long long)</pre>
+
 #### Used By:
+
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
@@ -5052,28 +5410,38 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
 
 <pre>mongo::toPointInTime(std::string const&, boost::posix_time::ptime*)</pre>
+
 #### Used By:
+
 - [src/mongo/s/type\_settings.cpp](../sharding)
 - [src/mongo/s/grid.cpp](../sharding)
 
 <pre>mongo::getJSTimeVirtualThreadSkew()</pre>
+
 #### Used By:
+
 - [src/mongo/client/distlock.cpp](../sharding)
 
 <pre>mongo::dateToISOStringUTC(mongo::Date_t)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/tools/export.cpp](../tools)
 
 <pre>mongo::Backoff::nextSleepMillis()</pre>
+
 #### Used By:
+
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
 - [src/mongo/s/strategy\_shard.cpp](../sharding)
 - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <pre>mongo::time_t_to_String_short(long)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
 - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
@@ -5087,7 +5455,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/tools/oplog.cpp](../tools)
 
 <pre>mongo::curTimeMicros64()</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/repl/bgsync.cpp](../replication)
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
@@ -5163,7 +5533,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
 <pre>mongo::terseCurrentTime(bool)</pre>
+
 #### Used By:
+
 - [src/mongo/s/config.cpp](../sharding)
 - [src/mongo/util/log.cpp](../logging\_system)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
@@ -5173,7 +5545,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/util/log.cpp](../logging\_system)
 
 <pre>mongo::sleepsecs(int)</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
@@ -5213,20 +5587,28 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
 
 <pre>mongo::jsTimeVirtualThreadSkew(long long)</pre>
+
 #### Used By:
+
 - [src/mongo/client/distlock.cpp](../sharding)
 
 <pre>mongo::dateToCtimeString(mongo::Date_t)</pre>
+
 #### Used By:
+
 - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::curTimeMicros()</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::curTimeMillis64()</pre>
+
 #### Used By:
+
 - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
 - [src/mongo/db/ttl.cpp](../indexing)
 - [src/mongo/db/repl/replset\_commands.cpp](../replication)
@@ -5239,9 +5621,13 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
+
 ### src/mongo/util/timer.cpp
+
 <pre>mongo::Timer::_countsPerSecond</pre>
+
 #### Used By:
+
 - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
 - [src/mongo/db/compact.cpp](../database\_commands)
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
@@ -5302,14 +5688,22 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
 - [src/mongo/db/commands/mr.cpp](../database\_commands)
 - [src/mongo/db/commands/distinct.cpp](../database\_commands)
+
 ### src/mongo/util/touch\_pages.cpp
+
 <pre>mongo::touch_pages(char const*, unsigned long)</pre>
+
 #### Used By:
+
 - [src/mongo/db/compact.cpp](../database\_commands)
 - [src/mongo/db/commands/touch.cpp](../database\_commands)
+
 ### src/mongo/util/util.cpp
+
 <pre>mongo::StaticObserver::_destroyingStatics</pre>
+
 #### Used By:
+
 - [src/mongo/util/net/listen.cpp](../network)
 - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
 - [src/mongo/db/dur\_journal.cpp](../journaling)
@@ -5405,21 +5799,31 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
 <pre>mongo::operator<<(std::ostream&, mongo::ThreadSafeString const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
 <pre>mongo::hexdump(char const*, unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dur\_recover.cpp](../journaling)
+
 ### src/mongo/util/version.cpp
+
 <pre>mongo::mongodVersion()</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::versionString</pre>
+
 #### Used By:
+
 - [src/mongo/tools/tool\_options.cpp](../tools)
 - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 - [src/mongo/s/version\_mongos.cpp](../sharding)
@@ -5433,61 +5837,87 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
 <pre>mongo::isSameMajorVersion(char const*)</pre>
+
 #### Used By:
+
 - [src/mongo/s/balance.cpp](../sharding)
+
 ### src/mongo/util/version\_reporting.cpp
+
 <pre>mongo::printSysInfo()</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 
 <pre>mongo::openSSLVersion(std::string const&, std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 - [src/mongo/s/version\_mongos.cpp](../sharding)
 
 <pre>mongo::appendBuildInfo(mongo::BSONObjBuilder&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
 <pre>mongo::printAllocator()</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 
 <pre>mongo::printGitVersion()</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::printOpenSSLVersion()</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 - [src/mongo/dbtests/framework.cpp](../unit\_tests)
 - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+
 ### src/mongo/util/base64.cpp
+
 <pre>mongo::base64::chars</pre>
+
 #### Used By:
+
 - [src/mongo/db/json.cpp](../bson)
 - [src/mongo/db/json.cpp](../bson)
 
 <pre>mongo::base64::encode(std::string const&)</pre>
+
 #### Used By:
+
 - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
 - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
 <pre>mongo::base64::encode(char const*, int)</pre>
+
 #### Used By:
+
 - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 <pre>mongo::base64::decode(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
 - [src/mongo/db/json.cpp](../bson)
 - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
@@ -5497,32 +5927,48 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/client/sasl\_client\_authenticate.cpp](../cpp\_client\_driver)
 
 <pre>mongo::base64::encode(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, char const*, int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/jsobj.cpp](../bson)
 - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
 - [src/mongo/db/jsobj.cpp](../bson)
+
 ### src/mongo/util/compress.cpp
+
 <pre>mongo::maxCompressedLength(unsigned long)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dur\_journal.cpp](../journaling)
 
 <pre>mongo::compress(char const*, unsigned long, std::string*)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
 <pre>mongo::uncompress(char const*, unsigned long, std::string*)</pre>
+
 #### Used By:
+
 - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 - [src/mongo/db/dur\_recover.cpp](../journaling)
 
 <pre>mongo::rawCompress(char const*, unsigned long, char*, unsigned long*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/dur\_journal.cpp](../journaling)
+
 ### src/mongo/util/concurrency/task.cpp
+
 <pre>vtable for mongo::task::Task</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/rs.cpp](../replication)
 - [src/mongo/db/repl/manager.cpp](../replication)
@@ -5530,92 +5976,128 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>typeinfo for mongo::task::Server</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::task::Server::send(boost::function<void ()>)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>vtable for mongo::task::Server</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/rs.cpp](../replication)
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::task::Task::run()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/s/cursors.cpp](../sharding)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::task::Task::Task()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/db/repl/rs.cpp](../replication)
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/s/cursors.cpp](../sharding)
 
 <pre>mongo::task::Task::setUp()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/s/cursors.cpp](../sharding)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::task::repeat(mongo::task::Task*, unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/s/cursors.cpp](../sharding)
 
 <pre>mongo::task::Task::halt()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
 <pre>mongo::task::Server::doWork()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/manager.cpp](../replication)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>typeinfo for mongo::task::Task</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
 - [src/mongo/s/cursors.cpp](../sharding)
 
 <pre>mongo::task::fork(mongo::task::Task*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/heartbeat.cpp](../replication)
+
 ### src/mongo/util/concurrency/thread\_pool.cpp
+
 <pre>mongo::threadpool::ThreadPool::ThreadPool(int)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/master\_slave.cpp](../replication)
 - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 - [src/mongo/db/repl/rs.cpp](../replication)
 
 <pre>mongo::threadpool::ThreadPool::~ThreadPool()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/master\_slave.cpp](../replication)
 - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 - [src/mongo/db/repl/rs.cpp](../replication)
 
 <pre>mongo::threadpool::ThreadPool::schedule(boost::function<void ()>)</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/master\_slave.cpp](../replication)
 - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <pre>mongo::threadpool::ThreadPool::join()</pre>
+
 #### Used By:
+
 - [src/mongo/db/repl/master\_slave.cpp](../replication)
 - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
 ### src/mongo/util/exception\_filter\_win32.cpp
+
 <pre>mongo::setWindowsUnhandledExceptionFilter()</pre>
+
 #### Used By:
+
 - [src/mongo/unittest/unittest\_main.cpp](../unit\_tests)
 - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
@@ -5665,16 +6147,23 @@ Platform specific code? TODO: Verify this and document what they are for.
 - src/mongo/util/mongoutils/str.h
 
 ## Interface
+
+
 ### src/mongo/platform/process\_id.cpp
+
 <pre>mongo::operator<<(std::ostream&, mongo::ProcessId)</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/s/version\_mongos.cpp](../sharding)
 - [src/mongo/util/processinfo.cpp](../utilities)
 - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <pre>mongo::ProcessId::getCurrent()</pre>
+
 #### Used By:
+
 - [src/mongo/bson/oid.cpp](../bson)
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
@@ -5692,30 +6181,42 @@ Platform specific code? TODO: Verify this and document what they are for.
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
 <pre>mongo::ProcessId::toString() const</pre>
+
 #### Used By:
+
 - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/s/version\_mongos.cpp](../sharding)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 <pre>mongo::ProcessId::asLongLong() const</pre>
+
 #### Used By:
+
 - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
 - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
 ### src/mongo/platform/random.cpp
+
 <pre>mongo::PseudoRandom::PseudoRandom(unsigned int)</pre>
+
 #### Used By:
+
 - [src/mongo/s/cursors.cpp](../sharding)
 
 <pre>mongo::PseudoRandom::PseudoRandom(long long)</pre>
+
 #### Used By:
+
 - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/s/chunk.cpp](../sharding)
 
 <pre>mongo::SecureRandom::create()</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 - [src/mongo/s/cursors.cpp](../sharding)
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -5724,24 +6225,36 @@ Platform specific code? TODO: Verify this and document what they are for.
 - [src/mongo/bson/oid.cpp](../bson)
 
 <pre>mongo::PseudoRandom::nextInt32()</pre>
+
 #### Used By:
+
 - [src/mongo/s/cursors.cpp](../sharding)
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/s/chunk.cpp](../sharding)
 - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
+
 ### src/mongo/util/processinfo.cpp
+
 <pre>mongo::ProcessInfo::systemInfo</pre>
+
 #### Used By:
+
 - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
 - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
 
 <pre>mongo::writePidFile(std::string const&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+
 ### src/mongo/util/processinfo\_darwin.cpp
+
 <pre>mongo::ProcessInfo::supported()</pre>
+
 #### Used By:
+
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
@@ -5749,19 +6262,27 @@ Platform specific code? TODO: Verify this and document what they are for.
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
 <pre>mongo::ProcessInfo::blockInMemory(void const*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
 
 <pre>mongo::ProcessInfo::getExtraInfo(mongo::BSONObjBuilder&)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 
 <pre>mongo::ProcessInfo::SystemInfo::collectSystemInfo()</pre>
+
 #### Used By:
+
 - [src/mongo/util/processinfo.cpp](../utilities)
 
 <pre>mongo::ProcessInfo::~ProcessInfo()</pre>
+
 #### Used By:
+
 - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
@@ -5771,31 +6292,41 @@ Platform specific code? TODO: Verify this and document what they are for.
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 
 <pre>mongo::ProcessInfo::getResidentSize()</pre>
+
 #### Used By:
+
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 - [src/mongo/util/mmap.cpp](../mmap)
 
 <pre>mongo::ProcessInfo::blockCheckSupported()</pre>
+
 #### Used By:
+
 - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
 - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
 - [src/mongo/db/startup\_warnings.cpp](../startup\_initialization)
 
 <pre>mongo::ProcessInfo::pagesInMemory(void const*, unsigned long, std::vector<char, std::allocator<char> >*)</pre>
+
 #### Used By:
+
 - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
 <pre>mongo::ProcessInfo::getVirtualMemorySize()</pre>
+
 #### Used By:
+
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
 - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
 - [src/mongo/util/mmap.cpp](../mmap)
 
 <pre>mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)</pre>
+
 #### Used By:
+
 - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
 - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 - src/mongo/db/modules/subscription/src/snmp/snmp.cpp

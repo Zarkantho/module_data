@@ -10,3 +10,5 @@ Stubs for auditing enterprise module
 - src/mongo/db/audit.h
 
 ## Interface
+
+(not used outside this module)
