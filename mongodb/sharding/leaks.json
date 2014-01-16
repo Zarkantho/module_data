@@ -127,13 +127,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::mongoVersion", 
-        "object": "src/mongo/s/cluster_client_internal.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -169,20 +162,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::ConfigNS", 
-        "object": "src/mongo/s/cluster_client_internal.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::~MongosType()", 
-        "object": "src/mongo/s/cluster_client_internal.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/net/sock.cpp"
         ], 
         "symbol": "mongo::getHostNameCached()", 
@@ -214,20 +193,6 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)", 
-        "object": "src/mongo/s/cluster_client_internal.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::MongosType()", 
-        "object": "src/mongo/s/cluster_client_internal.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::parseBSON(mongo::BSONObj const&, std::string*)", 
         "object": "src/mongo/s/cluster_client_internal.cpp"
     }, 
     {
@@ -4510,181 +4475,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "vtable for mongo::Command", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/fts/fts_command.cpp"
-        ], 
-        "symbol": "mongo::fts::FTSCommand::addRequiredPrivileges(std::string const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/fts/fts_command.cpp"
-        ], 
-        "symbol": "mongo::fts::FTSCommand::run(std::string const&, mongo::BSONObj&, int, std::string&, mongo::BSONObjBuilder&, bool)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::Command", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::redactForLogging(mongo::mutablebson::Document*)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/timer.cpp"
-        ], 
-        "symbol": "mongo::Timer::_countsPerSecond", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -6347,6 +6137,111 @@
         ], 
         "symbol": "mongo::KeyPattern::extractSingleKey(mongo::BSONObj const&) const", 
         "object": "src/mongo/s/strategy_shard.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/process_id.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ProcessId)", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+        ], 
+        "symbol": "mongo::gitVersion()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/process_id.cpp"
+        ], 
+        "symbol": "mongo::ProcessId::getCurrent()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/version.cpp"
+        ], 
+        "symbol": "mongo::versionString", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/log_process_details.cpp"
+        ], 
+        "symbol": "mongo::logProcessDetails()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::getHostNameCached()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/version_reporting.cpp"
+        ], 
+        "symbol": "mongo::openSSLVersion(std::string const&, std::string const&)", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/process_id.cpp"
+        ], 
+        "symbol": "mongo::ProcessId::toString() const", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_options.cpp"
+        ], 
+        "symbol": "mongo::serverGlobalParams", 
+        "object": "src/mongo/s/version_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+        ], 
+        "symbol": "mongo::sysInfo()", 
+        "object": "src/mongo/s/version_mongos.cpp"
     }, 
     {
         "sources": [
@@ -8142,13 +8037,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::name", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/background.cpp"
         ], 
         "symbol": "mongo::BackgroundJob::~BackgroundJob()", 
@@ -8184,13 +8072,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::mongoVersion", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -8222,20 +8103,6 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::causedBy(mongo::DBException const&)", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::ConfigNS", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::up", 
         "object": "src/mongo/s/balance.cpp"
     }, 
     {
@@ -8296,20 +8163,6 @@
             "src/mongo/util/time_support.cpp"
         ], 
         "symbol": "mongo::sleepsecs(int)", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::waiting", 
-        "object": "src/mongo/s/balance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::ping", 
         "object": "src/mongo/s/balance.cpp"
     }, 
     {
@@ -9626,6 +9479,48 @@
         ], 
         "symbol": "boost::thread::timed_join(boost::posix_time::ptime const&)", 
         "object": "src/mongo/db/range_deleter_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/s/type_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/s/type_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/type_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/s/type_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/s/type_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/s/type_mongos.cpp"
     }, 
     {
         "sources": [
@@ -14928,13 +14823,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::name", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -14952,20 +14840,6 @@
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::waiting", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::ping", 
         "object": "src/mongo/s/type_mongos_test.cpp"
     }, 
     {
@@ -14991,13 +14865,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::configVersion", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
@@ -15015,20 +14882,6 @@
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::MongosType()", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::parseBSON(mongo::BSONObj const&, std::string*)", 
         "object": "src/mongo/s/type_mongos_test.cpp"
     }, 
     {
@@ -15061,37 +14914,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::mongoVersion", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::up", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::~MongosType()", 
-        "object": "src/mongo/s/type_mongos_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/type_mongos.cpp"
-        ], 
-        "symbol": "mongo::MongosType::isValid(std::string*) const", 
         "object": "src/mongo/s/type_mongos_test.cpp"
     }, 
     {

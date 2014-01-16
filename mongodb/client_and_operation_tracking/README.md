@@ -2115,7 +2115,6 @@ Functions to kill the current "operation"
 
     - [src/mongo/db/compact.cpp](../database\_commands)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/interrupt\_status\_mongod.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -2133,7 +2132,6 @@ Functions to kill the current "operation"
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/interrupt\_status\_mongod.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
@@ -2292,10 +2290,56 @@ Helpers to check whether the current operation in the current client has been in
 - src/mongo/s/interrupt\_status\_mongos.h
 
 # Interface
-(not used outside this module)
+
+### src/mongo/db/interrupt\_status\_mongod.cpp
+
+<div></div>
+
+    mongo::InterruptStatusMongod::status
+
+- Used By:
+
+    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
+
+### src/mongo/s/interrupt\_status\_mongos.cpp
+
+<div></div>
+
+    mongo::InterruptStatusMongos::status
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
 # Dependencies
-(no dependencies outside this module)
+
+### src/mongo/db/interrupt\_status\_mongod.cpp
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::killCurrentOp
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 -------------
 

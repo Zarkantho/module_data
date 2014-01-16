@@ -4053,14 +4053,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t> const&, mongo::Date_t*, std::string*)
-
-- Used By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
 
 - Used By:
@@ -4076,7 +4068,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
@@ -4107,7 +4098,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
@@ -4155,7 +4145,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
@@ -4459,7 +4448,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - src/mongo/s/type\_locks.cpp   (mongod, tools, mongos)
 - src/mongo/s/type\_locks.h
 - src/mongo/s/type\_locks\_test.cpp   ()
-- src/mongo/s/type\_mongos.cpp   (mongos)
+- src/mongo/s/type\_mongos.cpp   (mongod, tools, mongos)
 - src/mongo/s/type\_mongos.h
 - src/mongo/s/type\_mongos\_test.cpp   ()
 - src/mongo/s/type\_settings.cpp   (mongod, tools, mongos)
@@ -4722,6 +4711,41 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+### src/mongo/s/type\_mongos.cpp
+
+<div></div>
+
+    mongo::MongosType::toBSON() const
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::MongosType::ConfigNS
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::MongosType::~MongosType()
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::MongosType::MongosType()
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
 
 ### src/mongo/s/type\_settings.cpp
 
@@ -6352,15 +6376,57 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
     - [src/mongo/util/hex.cpp](../utilities)
 
-### src/mongo/s/type\_mongos\_test.cpp
+### src/mongo/s/type\_mongos.cpp
 
 <div></div>
 
-    mongo::MongosType::name
+    mongo::uasserted(int, char const*)
 
 - Provided By:
 
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+### src/mongo/s/type\_mongos\_test.cpp
 
 <div></div>
 
@@ -6388,22 +6454,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::MongosType::waiting
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::ping
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -6428,14 +6478,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::MongosType::configVersion
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
 
 - Provided By:
@@ -6457,22 +6499,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::MongosType::MongosType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::parseBSON(mongo::BSONObj const&, std::string*)
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
 
 <div></div>
 
@@ -6508,43 +6534,11 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::MongosType::mongoVersion
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::MongosType::up
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::~MongosType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::isValid(std::string*) const
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
 
 <div></div>
 
@@ -9036,6 +9030,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
 <div></div>
@@ -9083,6 +9078,17 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+### src/mongo/s/version\_mongos.cpp
+
+<div></div>
+
+    mongo::printShardingVersionInfo(bool)
+
+- Used By:
+
+    - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 # Dependencies
 
@@ -9178,14 +9184,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::MongosType::name
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::BackgroundJob::~BackgroundJob()
 
 - Provided By:
@@ -9226,14 +9224,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::MongosType::mongoVersion
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::logger::globalLogManager()
 
 - Provided By:
@@ -9271,22 +9261,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::MongosType::ConfigNS
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::up
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
 
 <div></div>
 
@@ -9355,22 +9329,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/time\_support.cpp](../utilities)
-
-<div></div>
-
-    mongo::MongosType::waiting
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::ping
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
 
 <div></div>
 
@@ -10903,14 +10861,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::MongosType::mongoVersion
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::logger::globalLogManager()
 
 - Provided By:
@@ -10951,22 +10901,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::MongosType::ConfigNS
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::~MongosType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
     mongo::getHostNameCached()
 
 - Provided By:
@@ -11004,22 +10938,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::MongosType::MongosType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
-
-<div></div>
-
-    mongo::MongosType::parseBSON(mongo::BSONObj const&, std::string*)
-
-- Provided By:
-
-    - [src/mongo/s/type\_mongos.cpp](../sharding)
 
 <div></div>
 
@@ -19245,3 +19163,125 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
+
+### src/mongo/s/version\_mongos.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::ProcessId)
+
+- Provided By:
+
+    - [src/mongo/platform/process\_id.cpp](../utilities)
+
+<div></div>
+
+    mongo::gitVersion()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::ProcessId::getCurrent()
+
+- Provided By:
+
+    - [src/mongo/platform/process\_id.cpp](../utilities)
+
+<div></div>
+
+    mongo::versionString
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../utilities)
+
+<div></div>
+
+    mongo::logProcessDetails()
+
+- Provided By:
+
+    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::getHostNameCached()
+
+- Provided By:
+
+    - [src/mongo/util/net/sock.cpp](../network)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::openSSLVersion(std::string const&, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/version\_reporting.cpp](../utilities)
+
+<div></div>
+
+    mongo::ProcessId::toString() const
+
+- Provided By:
+
+    - [src/mongo/platform/process\_id.cpp](../utilities)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::sysInfo()
+
+- Provided By:
+
+    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp

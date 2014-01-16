@@ -52,7 +52,7 @@ def load_graph(data_file):
 # TODO: Precompute source->object and object->source maps
 
 def source_file_to_object_file(graph, source_file):
-    source_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party)).*\.)c[pc]?[p]?")
+    source_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party))\/.+\.)c[pc]?[p]?")
     source_match = source_match_regex.match(source_file)
     if source_match is None:
         return None
