@@ -22,6 +22,8 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 - src/mongo/shell/utils\_sh.js
 - src/mongo/shell/writes.js
 
+## Interface
+
 -------------
 
 Files only built into the mongo shell
@@ -40,6 +42,8 @@ Files only built into the mongo shell
 - src/mongo/shell/shell\_utils\_launcher.cpp   ()
 - src/mongo/shell/shell\_utils\_launcher.h
 
+## Interface
+
 -------------
 
 Shell command line options
@@ -48,3 +52,5 @@ Shell command line options
 - src/mongo/shell/shell\_options.h
 - src/mongo/shell/shell\_options\_init.cpp   ()
 - src/mongo/shell/shell\_options\_test.cpp   ()
+
+## Interface

@@ -358,3 +358,638 @@ Third Party - V8 Javascript engine
 - src/third\_party/v8/src/zone-inl.h
 - src/third\_party/v8/src/zone.cc   (mongod, tools, mongos)
 - src/third\_party/v8/src/zone.h
+
+## Interface
+### src/third\_party/v8/src/api.cc
+<pre>v8::Message::GetSourceLine() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Set(unsigned int, v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::False()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::True()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Array::CloneElementAt(unsigned int)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::ThrowException(v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToString() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::V8::DisposeGlobal(v8::internal::Object**)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IntegerValue() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetEndPosition() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::GetHiddenValue(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::HandleScope::~HandleScope()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Boolean::Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::InstanceTemplate()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::BooleanValue() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Date::New(double)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::CanContinue() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetTotalTime() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Delete(unsigned int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::HasOwnProperty(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfile::GetTopDownRoot() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Function::Call(v8::Handle<v8::Object>, int, v8::Handle<v8::Value>*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Array::New(int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::V8::IgnoreOutOfMemoryException()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Isolate::Exit()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::V8::IsExecutionTerminating(v8::Isolate*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::GetRealNamedProperty(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Set(v8::Handle<v8::Value>, v8::Handle<v8::Value>, v8::PropertyAttribute)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::ObjectTemplate::SetNamedPropertyHandler(v8::Handle<v8::Value> (*)(v8::Local<v8::String>, v8::AccessorInfo const&), v8::Handle<v8::Value> (*)(v8::Local<v8::String>, v8::Local<v8::Value>, v8::AccessorInfo const&), v8::Handle<v8::Integer> (*)(v8::Local<v8::String>, v8::AccessorInfo const&), v8::Handle<v8::Boolean> (*)(v8::Local<v8::String>, v8::AccessorInfo const&), v8::Handle<v8::Array> (*)(v8::AccessorInfo const&), v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::CheckedGetInternalField(int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsExternal() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Get(unsigned int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::HeapStatistics::HeapStatistics()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Array::Length() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::Exception() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Context::Exit()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetStartColumn() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetScriptResourceName() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetScriptResourceName() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetEndColumn() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::V8::GetVersion()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::V8::LowMemoryNotification()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsFunction() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Script::Compile(v8::Handle<v8::String>, v8::Handle<v8::Value>, v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Context::Global()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Object::GetOwnPropertyNames()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::GetPrototype()</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::Inherit(v8::Handle<v8::FunctionTemplate>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::String::Utf8Length() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::Uint32Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Integer::Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::V8::AddGCPrologueCallback(void (*)(v8::GCType, v8::GCCallbackFlags), v8::GCType)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::ForceSet(v8::Handle<v8::Value>, v8::Handle<v8::Value>, v8::PropertyAttribute)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Context::New(v8::ExtensionConfiguration*, v8::Handle<v8::ObjectTemplate>, v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetFunctionName() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Function::NewInstance() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetChildrenCount() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::String::New(char const*, int)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Isolate::Dispose()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Has(unsigned int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfiler::StopProfiling(v8::Handle<v8::String>, v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetChild(int) const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::V8::GetHeapStatistics(v8::HeapStatistics*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::SetClassName(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsObject() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Template::Set(v8::Handle<v8::String>, v8::Handle<v8::Data>, v8::PropertyAttribute)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::String::Utf8Value::~Utf8Value()</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsRegExp() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Number::Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::New()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::GetPropertyNames()</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Integer::New(int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Get(v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Date::NumberValue() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::V8::AddGCEpilogueCallback(void (*)(v8::GCType, v8::GCCallbackFlags), v8::GCType)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::V8::TerminateExecution(v8::Isolate*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Exception::Error(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsBoolean() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::TryCatch()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::V8::GlobalizeReference(v8::internal::Object**)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToInteger() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::HasInstance(v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::HandleScope::CreateHandle(v8::internal::Object*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToObject() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToNumber() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::New(v8::Handle<v8::Value> (*)(v8::Arguments const&), v8::Handle<v8::Value>, v8::Handle<v8::Signature>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::~TryCatch()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToUint32() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Has(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Int32::Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToBoolean() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::HandleScope::HandleScope()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::V8::MakeWeak(v8::internal::Object**, void*, void (*)(v8::Persistent<v8::Value>, void*))</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::V8::AdjustAmountOfExternalAllocatedMemory(long)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Value::ToInt32() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::ObjectTemplate::SetInternalFieldCount(int)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsArray() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Function::SetName(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::GetFunction()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Context::HasOutOfMemoryException()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetLineNumber() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetLineNumber() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::ObjectTemplate::SetIndexedPropertyHandler(v8::Handle<v8::Value> (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Value> (*)(unsigned int, v8::Local<v8::Value>, v8::AccessorInfo const&), v8::Handle<v8::Integer> (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Boolean> (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Array> (*)(v8::AccessorInfo const&), v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfileNode::GetSelfTime() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Isolate::Enter()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::External::New(void*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Function::NewInstance(int, v8::Handle<v8::Value>*) const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::Message() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::External::Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Number::New(double)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::HasCaught() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Message::GetStartPosition() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsDate() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::FunctionTemplate::PrototypeTemplate()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::ObjectTemplate::SetCallAsFunctionHandler(v8::Handle<v8::Value> (*)(v8::Arguments const&), v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Object::HasRealNamedProperty(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Isolate::New()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Null()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::SetInternalField(int, v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Script::Run()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::CpuProfiler::StartProfiling(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+
+<pre>v8::Value::Int32Value() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::TryCatch::ReThrow()</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::Delete(v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Script::New(v8::Handle<v8::String>, v8::ScriptOrigin*, v8::ScriptData*, v8::Handle<v8::String>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::Context::Enter()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Value::NumberValue() const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::String::Utf8Value::Utf8Value(v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::String::WriteAscii(char*, int, int, int) const</pre>
+#### Used By:
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Object::InternalFieldCount()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::StrictEquals(v8::Handle<v8::Value>) const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<pre>v8::HandleScope::RawClose(v8::internal::Object**)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Value::IsNumber() const</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+
+<pre>v8::Undefined()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Object::SetHiddenValue(v8::Handle<v8::String>, v8::Handle<v8::Value>)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+### src/third\_party/v8/src/v8threads.cc
+<pre>v8::Locker::Locker(v8::Isolate*)</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
+
+<pre>v8::Locker::~Locker()</pre>
+#### Used By:
+- [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+- [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)

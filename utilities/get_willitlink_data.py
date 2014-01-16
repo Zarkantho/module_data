@@ -66,12 +66,10 @@ def source_files_to_object_files(graph, source_files):
     return object_files
 
 def object_file_to_source_file(graph, object_file):
-    print object_file
     object_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party))\/.+\.)o$")
     object_match = object_match_regex.match(object_file)
     for i in graph.files:
         if i.endswith(object_match.group(1) + "cpp") or i.endswith(object_match.group(1) + "c") or i.endswith(object_match.group(1) + "cc"):
-            print i
             return i
 
 def object_files_to_source_files(graph, object_files):
@@ -121,6 +119,17 @@ def build_file_to_executables_map(module_data):
                 file_to_executables[file_with_exec['name']] = file_with_exec['execs']
     return file_to_executables
 
+# Builds a map of source files to interface
+def build_file_to_interface_map(module_data):
+    file_to_interface = {}
+    for module_name in module_data.keys():
+        for interface_object in module_data[module_name]['interface']:
+            file_name = interface_object['object']
+            if file_name not in file_to_interface:
+                file_to_interface[file_name] = []
+            file_to_interface[file_name].append(interface_object)
+    return file_to_interface
+
 # Simplifies the list of executables into something more readable.
 #
 # Example:
@@ -153,6 +162,8 @@ def get_exec_digest(exec_list):
 # Outputs a README.md file for each module with some useful information
 def output_readme_files_for_modules(modules_directory, module_data):
     file_to_executables = build_file_to_executables_map(module_data)
+    file_to_interface = build_file_to_interface_map(module_data)
+    file_to_module = build_file_to_module_map(module_data)
     module_directories = os.listdir(modules_directory)
     for module_name in module_directories:
         module_path = os.path.join(modules_directory, module_name)
@@ -180,6 +191,20 @@ def output_readme_files_for_modules(modules_directory, module_data):
                         f.write("   (" + ", ".join(get_exec_digest(file_to_executables[file_name])) + ")\n")
                     else:
                         f.write("\n")
+
+                f.write("\n## Interface\n")
+
+                for file_name in module_group["files"]:
+                    if file_name in file_to_interface:
+                        f.write("### " + file_name.replace("_", "\\_"))
+                        for interface_object in file_to_interface[file_name]:
+                            f.write("\n<pre>" + interface_object['symbol'] + "</pre>\n")
+                            f.write("#### Used By:\n")
+                            for file_using in interface_object['used_by']:
+                                if file_using in file_to_module:
+                                    f.write("- [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
+                                else:
+                                    f.write("- " + file_using.replace("_", "\\_") + "\n")
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)
