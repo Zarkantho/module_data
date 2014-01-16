@@ -93,7 +93,7 @@ def add_leak_data(graph, module_data):
         module_data[module_name]['leaks'] = resolve_leak_info(graph, source_files_to_object_files(graph, module_data[module_name]['files_flat']), 1, None, [])
         for leak_object in module_data[module_name]['leaks']:
             leak_object['object'] = object_files_to_source_files(graph, [leak_object['object']])[0]
-            leak_object['sources'] = object_files_to_source_files(graph, leak_object['sources'].keys())
+            leak_object['sources'] = list(set(object_files_to_source_files(graph, leak_object['sources'].keys())))
 
 def add_executable_data(graph, module_data):
     for module_name in module_data.keys():
@@ -133,6 +133,17 @@ def build_file_to_interface_map(module_data):
             file_to_interface[file_name].append(interface_object)
     return file_to_interface
 
+# Builds a map of source files to dependencies
+def build_file_to_dependencies_map(module_data):
+    file_to_dependencies = {}
+    for module_name in module_data.keys():
+        for dependencies_object in module_data[module_name]['leaks']:
+            file_name = dependencies_object['object']
+            if file_name not in file_to_dependencies:
+                file_to_dependencies[file_name] = []
+            file_to_dependencies[file_name].append(dependencies_object)
+    return file_to_dependencies
+
 # Simplifies the list of executables into something more readable.
 #
 # Example:
@@ -166,6 +177,7 @@ def get_exec_digest(exec_list):
 def output_readme_files_for_modules(modules_directory, module_data):
     file_to_executables = build_file_to_executables_map(module_data)
     file_to_interface = build_file_to_interface_map(module_data)
+    file_to_dependencies = build_file_to_dependencies_map(module_data)
     file_to_module = build_file_to_module_map(module_data)
     module_directories = os.listdir(modules_directory)
     for module_name in module_directories:
@@ -218,6 +230,27 @@ def output_readme_files_for_modules(modules_directory, module_data):
                                     f.write("    - " + file_using.replace("_", "\\_") + "\n")
                 if not something_in_interface:
                     f.write("(not used outside this module)\n")
+
+                # Dependencies for this module group (symbols used that are defined outside this module)
+                f.write("\n# Dependencies\n")
+                something_in_dependencies = False
+                for file_name in module_group["files"]:
+                    if file_name in file_to_dependencies:
+                        something_in_dependencies = True
+                        f.write("\n### " + file_name.replace("_", "\\_") + "\n")
+                        for dependencies_object in file_to_dependencies[file_name]:
+                            f.write("\n<div></div>\n") # This is a weird markdown idiosyncrasy to
+                                                       # make sure the indented block with the symbol
+                                                       # is interpreted as a literal block
+                            f.write("\n    " + dependencies_object['symbol'] + "\n\n")
+                            f.write("- Provided By:\n\n")
+                            for file_providing in dependencies_object['sources']:
+                                if file_providing in file_to_module:
+                                    f.write("    - [" + file_providing.replace("_", "\\_") + "](../" + file_to_module[file_providing].replace("_", "\\_") + ")" + "\n")
+                                else:
+                                    f.write("    - " + file_providing.replace("_", "\\_") + "\n")
+                if not something_in_dependencies:
+                    f.write("(no dependencies outside this module)\n")
 
 def output_detailed_module_data(modules_directory, module_data):
     module_directories = os.listdir(modules_directory)
