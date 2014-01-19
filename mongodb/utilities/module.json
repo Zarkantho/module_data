@@ -5,7 +5,7 @@
                 "src/mongo/util/paths.cpp",
                 "src/mongo/util/paths.h"
             ],
-            "comments": "# Code to manage paths to files. Conversion from relative to full path within database directory as# well as code to get the current partition (for readahead checks)."
+            "comments": "# Code to manage paths to files.  Conversion from relative to full path within database directory as# well as code to get the current partition (for readahead checks)."
         },
         {
             "files": [

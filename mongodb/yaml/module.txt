@@ -1,7 +1,7 @@
 ############ yaml ###########
 
 
-# Third Party - Yaml markup parser. Used for yaml config files
+# Third Party - Yaml markup parser.  Used for yaml config files
 
 
 src/third_party/shim_yaml.cpp

@@ -1,7 +1,7 @@
 ###### utilities ######
 
 
-# Code to manage paths to files. Conversion from relative to full path within database directory as
+# Code to manage paths to files.  Conversion from relative to full path within database directory as
 # well as code to get the current partition (for readahead checks).
 
 src/mongo/util/paths.cpp (mongod, mongos, cppclientdriver, and tools)

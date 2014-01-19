@@ -1,55 +1,86 @@
 #!/usr/bin/python
 
-# Get Arguments
 import sys
-
+import os
 import re
 import json
 
 def main():
 
-    if len(sys.argv) != 2:
-        print("Usage: process_module_files.py <module_file>")
+    if len(sys.argv) != 3:
+        print("Usage: process_module_files.py <modules_directory> <modules_description_file>")
         sys.exit(1)
 
     title_regex = re.compile("^#+ (.*) #+")
     comment_regex = re.compile("^(#+.*)")
     source_file_regex = re.compile("(src\S*)(:?.*)?")
 
-    module_filename = sys.argv[1]
-    module_file = open(module_filename)
+    modules_directory = sys.argv[1]
+    modules_description_filename = sys.argv[2]
 
     result_map = {}
-    result_map["groups"] = []
     current_comments = ""
     current_files = []
+    current_module = ""
 
-    for line in module_file:
+    module_file = open(os.path.join(modules_directory, 'general_notes.txt'), 'w')
+    modules_description_file = open(modules_description_filename)
+
+    # This loop is doing two things (maybe they could be separated)
+    # 1. Building the "result_map" object
+    # 2. Building a "modules.txt" file in each module directory
+    for line in modules_description_file:
         title_match = title_regex.match(line)
         comment_match = comment_regex.match(line)
         source_file_match = source_file_regex.match(line)
+
         if title_match:
-            result_map["title"] = title_match.group(1)
-            continue
-        if comment_match:
-            # We are starting a new section
+
+            # We are starting a new module, so add the current state to the previous one
+            if len(current_module) > 0:
+                group_map = {}
+                group_map["files"] = current_files
+                group_map["comments"] = current_comments
+                result_map[current_module]["groups"].append(group_map)
+                current_files = []
+                current_comments = ""
+
+            current_module = title_match.group(1)
+            module_directory = os.path.join(modules_directory, current_module)
+            if not os.path.exists(module_directory):
+                os.mkdir(module_directory)
+            module_file = open(os.path.join(modules_directory, current_module, 'module.txt'), 'w')
+            result_map[current_module] = {}
+            result_map[current_module]["groups"] = []
+            result_map[current_module]["title"] = current_module
+        elif comment_match:
+            # We are starting a new section, so add the current state to this module and reset
             if len(current_files) > 0:
                 group_map = {}
                 group_map["files"] = current_files
                 group_map["comments"] = current_comments
-                result_map["groups"].append(group_map)
+                result_map[current_module]["groups"].append(group_map)
                 current_files = []
                 current_comments = ""
-            current_comments = current_comments + comment_match.group(1)
-            continue
-        if source_file_match:
+
+            # Only aggregate comments if we are in a module
+            if len(current_module) > 0:
+                current_comments = current_comments + comment_match.group(1)
+        elif source_file_match:
             current_files = current_files + [ source_file_match.group(1) ]
-            continue
+
+        module_file.write(line)
+
     group_map = {}
     group_map["files"] = current_files
     group_map["comments"] = current_comments
-    result_map["groups"].append(group_map)
+    result_map[current_module]["groups"].append(group_map)
 
-    print json.dumps(result_map, indent=4, separators=(',', ': '))
+    for module_name in result_map.keys():
+        module_json_file = open(os.path.join(modules_directory, module_name, 'module.json'), 'w')
+        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': ')))
+
+    with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
+        f.write(json.dumps(result_map, indent=4, separators=(',', ': ')))
 
 main()

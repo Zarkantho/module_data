@@ -92,7 +92,7 @@
                 "src/third_party/yaml-cpp-0.5.1/src/tag.h",
                 "src/third_party/yaml-cpp-0.5.1/src/token.h"
             ],
-            "comments": "# Third Party - Yaml markup parser. Used for yaml config files"
+            "comments": "# Third Party - Yaml markup parser.  Used for yaml config files"
         }
     ],
     "title": "yaml"
