@@ -68,12 +68,6 @@ src/mongo/util/background_job_test.cpp (not built in anywhere)
 
 src/mongo/util/map_util.h
 
-# These appear to be for debugging. Not used on OSX so it's hard for met to tell. Notably used in
-# mmap_win.cpp (windows mmap)
-
-src/mongo/db/memconcept.cpp (mongod and tools)
-src/mongo/db/memconcept.h
-
 # I still don't know what this was originally for, but I know we are slowly getting rid of it.
 
 src/mongo/pch.cpp (mongod, mongos, cppclientdriver, and tools)
@@ -130,6 +124,8 @@ src/mongo/util/scopeguard.h
 src/mongo/util/sequence_util.h
 src/mongo/util/signal_handlers.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/util/signal_handlers.h
+src/mongo/util/signal_win32.cpp
+src/mongo/util/signal_win32.h
 src/mongo/util/stack_introspect.cpp (mongod, mongos, and tools)
 src/mongo/util/stack_introspect.h
 src/mongo/util/stacktrace.cpp (mongod, mongos, cppclientdriver, and tools)
@@ -137,7 +133,6 @@ src/mongo/util/stacktrace.h
 src/mongo/util/startup_test.cpp (mongod, mongos, and tools)
 src/mongo/util/startup_test.h
 src/mongo/util/string_map.h
-src/mongo/util/string_map_internal.h
 src/mongo/util/string_map_test.cpp (not built in anywhere)
 src/mongo/util/stringutils.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/util/stringutils.h
@@ -211,7 +206,8 @@ src/mongo/util/heapcheck.h
 # Platform specific code? TODO: Verify this and document what they are for.
 
 src/mongo/platform/atomic_intrinsics.h
-src/mongo/platform/atomic_intrinsics_gcc.h
+src/mongo/platform/atomic_intrinsics_gcc_generic.h
+src/mongo/platform/atomic_intrinsics_gcc_intel.h
 src/mongo/platform/atomic_intrinsics_win32.h
 src/mongo/platform/atomic_word.h
 src/mongo/platform/atomic_word_test.cpp (not built in anywhere)

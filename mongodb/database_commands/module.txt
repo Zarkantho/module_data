@@ -17,10 +17,12 @@ src/mongo/db/dbcommands.cpp (mongod and tools)
 # Commands (run using db.$cmd.findOne(...))
 
 src/mongo/db/commands/apply_ops.cpp (mongod and tools)
+src/mongo/db/commands/auth_schema_upgrade_d.cpp
 src/mongo/db/commands/authentication_commands.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/authentication_commands.h
 src/mongo/db/commands/cleanup_orphaned_cmd.cpp (mongod and tools)
 src/mongo/db/commands/collection_to_capped.cpp (mongod and tools)
+src/mongo/db/commands/compact.cpp
 src/mongo/db/commands/connection_status.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/copydb.h
 src/mongo/db/commands/copydb_common.cpp (mongod, mongos, and tools)
@@ -36,14 +38,21 @@ src/mongo/db/commands/geonear.cpp (mongod and tools)
 src/mongo/db/commands/get_last_error.cpp (mongod and tools)
 src/mongo/db/commands/group.cpp (mongod and tools)
 src/mongo/db/commands/hashcmd.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/hint_commands.cpp
+src/mongo/db/commands/hint_commands.h
+src/mongo/db/commands/hint_commands_test.cpp
 src/mongo/db/commands/index_stats.cpp (mongod and tools)
 src/mongo/db/commands/isself.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/merge_chunks_cmd.cpp (mongod and tools)
 src/mongo/db/commands/mr.cpp (mongod and tools)
 src/mongo/db/commands/mr.h
 src/mongo/db/commands/mr_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/oplog_note.cpp
 src/mongo/db/commands/parameters.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/pipeline_command.cpp (mongod and tools)
+src/mongo/db/commands/plan_cache_commands.cpp
+src/mongo/db/commands/plan_cache_commands.h
+src/mongo/db/commands/plan_cache_commands_test.cpp
 src/mongo/db/commands/rename_collection.cpp (mongod and tools)
 src/mongo/db/commands/rename_collection.h
 src/mongo/db/commands/rename_collection_common.cpp (mongod, mongos, and tools)
@@ -55,8 +64,8 @@ src/mongo/db/commands/storage_details.cpp (mongod and tools)
 src/mongo/db/commands/test_commands.cpp (mongod and tools)
 src/mongo/db/commands/touch.cpp (mongod)
 src/mongo/db/commands/user_management_commands.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/user_management_commands.h
 src/mongo/db/commands/validate.cpp (mongod and tools)
-src/mongo/db/compact.cpp (mongod and tools)
 src/mongo/db/dbcommands_admin.cpp (mongod and tools)
 src/mongo/db/dbcommands_generic.cpp (mongod, mongos, and tools)
 src/mongo/db/dbeval.cpp (mongod and tools)

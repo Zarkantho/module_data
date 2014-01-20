@@ -3,6 +3,7 @@
         {
             "files": [
                 "src/mongo/shell/assert.js",
+                "src/mongo/shell/batch_api.js",
                 "src/mongo/shell/collection.js",
                 "src/mongo/shell/db.js",
                 "src/mongo/shell/mongo.js",
@@ -15,8 +16,7 @@
                 "src/mongo/shell/shardingtest.js",
                 "src/mongo/shell/types.js",
                 "src/mongo/shell/utils.js",
-                "src/mongo/shell/utils_sh.js",
-                "src/mongo/shell/writes.js"
+                "src/mongo/shell/utils_sh.js"
             ],
             "comments": "# Javascript files that get wrapped in strings and put in cpp files. See the \"env.JSHeader\" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js"
         },

@@ -90,5 +90,9 @@ src/mongo/client/parallel.h
 
 src/mongo/client/sasl_client_authenticate.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/client/sasl_client_authenticate.h
+src/mongo/client/sasl_client_authenticate_impl.cpp
+src/mongo/client/sasl_client_session.cpp
+src/mongo/client/sasl_client_session.h
+src/mongo/client/sasl_sspi.cpp
 
 

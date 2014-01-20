@@ -87,13 +87,6 @@
         },
         {
             "files": [
-                "src/mongo/db/memconcept.cpp",
-                "src/mongo/db/memconcept.h"
-            ],
-            "comments": "# These appear to be for debugging. Not used on OSX so it's hard for met to tell. Notably used in# mmap_win.cpp (windows mmap)"
-        },
-        {
-            "files": [
                 "src/mongo/pch.cpp",
                 "src/mongo/pch.h"
             ],
@@ -161,6 +154,8 @@
                 "src/mongo/util/sequence_util.h",
                 "src/mongo/util/signal_handlers.cpp",
                 "src/mongo/util/signal_handlers.h",
+                "src/mongo/util/signal_win32.cpp",
+                "src/mongo/util/signal_win32.h",
                 "src/mongo/util/stack_introspect.cpp",
                 "src/mongo/util/stack_introspect.h",
                 "src/mongo/util/stacktrace.cpp",
@@ -168,7 +163,6 @@
                 "src/mongo/util/startup_test.cpp",
                 "src/mongo/util/startup_test.h",
                 "src/mongo/util/string_map.h",
-                "src/mongo/util/string_map_internal.h",
                 "src/mongo/util/string_map_test.cpp",
                 "src/mongo/util/stringutils.cpp",
                 "src/mongo/util/stringutils.h",
@@ -244,7 +238,8 @@
         {
             "files": [
                 "src/mongo/platform/atomic_intrinsics.h",
-                "src/mongo/platform/atomic_intrinsics_gcc.h",
+                "src/mongo/platform/atomic_intrinsics_gcc_generic.h",
+                "src/mongo/platform/atomic_intrinsics_gcc_intel.h",
                 "src/mongo/platform/atomic_intrinsics_win32.h",
                 "src/mongo/platform/atomic_word.h",
                 "src/mongo/platform/atomic_word_test.cpp",

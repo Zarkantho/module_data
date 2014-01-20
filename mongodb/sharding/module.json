@@ -50,9 +50,9 @@
         },
         {
             "files": [
-                "src/mongo/client/distlock.cpp",
-                "src/mongo/client/distlock.h",
-                "src/mongo/client/distlock_test.cpp"
+                "src/mongo/s/distlock.cpp",
+                "src/mongo/s/distlock.h",
+                "src/mongo/s/distlock_test.cpp"
             ],
             "comments": "# Distributed lock (lock on the config servers from mongos, i.e. \"balancer lock\")"
         },
@@ -138,7 +138,10 @@
                 "src/mongo/s/cluster_client_internal.h",
                 "src/mongo/s/cluster_write.cpp",
                 "src/mongo/s/cluster_write.h",
+                "src/mongo/s/commands/auth_schema_upgrade_s.cpp",
+                "src/mongo/s/commands/cluster_hint_cmd.cpp",
                 "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp",
+                "src/mongo/s/commands/cluster_plan_cache_cmd.cpp",
                 "src/mongo/s/config.cpp",
                 "src/mongo/s/config.h",
                 "src/mongo/s/config_server_checker_service.cpp",
@@ -160,7 +163,7 @@
                 "src/mongo/s/default_version.cpp",
                 "src/mongo/s/grid.cpp",
                 "src/mongo/s/grid.h",
-                "src/mongo/s/mock_multi_command.h",
+                "src/mongo/s/mock_multi_write_command.h",
                 "src/mongo/s/mock_ns_targeter.h",
                 "src/mongo/s/mock_shard_resolver.h",
                 "src/mongo/s/mongo_version_range.cpp",
@@ -184,8 +187,6 @@
                 "src/mongo/s/stale_exception.h",
                 "src/mongo/s/strategy.cpp",
                 "src/mongo/s/strategy.h",
-                "src/mongo/s/strategy_shard.cpp",
-                "src/mongo/s/strategy_single.cpp",
                 "src/mongo/s/version_manager.cpp",
                 "src/mongo/s/version_manager.h",
                 "src/mongo/s/version_mongos.cpp",

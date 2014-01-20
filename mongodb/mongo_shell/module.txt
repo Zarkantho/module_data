@@ -5,6 +5,7 @@
 # in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
 src/mongo/shell/assert.js
+src/mongo/shell/batch_api.js
 src/mongo/shell/collection.js
 src/mongo/shell/db.js
 src/mongo/shell/mongo.js
@@ -18,7 +19,6 @@ src/mongo/shell/shardingtest.js
 src/mongo/shell/types.js
 src/mongo/shell/utils.js
 src/mongo/shell/utils_sh.js
-src/mongo/shell/writes.js
 
 # Files only built into the mongo shell
 

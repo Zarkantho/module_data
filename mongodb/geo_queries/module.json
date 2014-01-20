@@ -13,6 +13,7 @@
                 "src/mongo/db/geo/hash.h",
                 "src/mongo/db/geo/hash_test.cpp",
                 "src/mongo/db/geo/haystack.cpp",
+                "src/mongo/db/geo/s2.h",
                 "src/mongo/db/geo/s2common.cpp",
                 "src/mongo/db/geo/s2common.h",
                 "src/mongo/db/geo/shapes.cpp",

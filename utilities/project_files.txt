@@ -389,6 +389,10 @@ src/mongo/client/parallel.h
 
 src/mongo/client/sasl_client_authenticate.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/client/sasl_client_authenticate.h
+src/mongo/client/sasl_client_authenticate_impl.cpp
+src/mongo/client/sasl_client_session.cpp
+src/mongo/client/sasl_client_session.h
+src/mongo/client/sasl_sspi.cpp
 
 
 ####### database_commands #######
@@ -410,10 +414,12 @@ src/mongo/db/dbcommands.cpp (mongod and tools)
 # Commands (run using db.$cmd.findOne(...))
 
 src/mongo/db/commands/apply_ops.cpp (mongod and tools)
+src/mongo/db/commands/auth_schema_upgrade_d.cpp
 src/mongo/db/commands/authentication_commands.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/authentication_commands.h
 src/mongo/db/commands/cleanup_orphaned_cmd.cpp (mongod and tools)
 src/mongo/db/commands/collection_to_capped.cpp (mongod and tools)
+src/mongo/db/commands/compact.cpp
 src/mongo/db/commands/connection_status.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/copydb.h
 src/mongo/db/commands/copydb_common.cpp (mongod, mongos, and tools)
@@ -429,14 +435,21 @@ src/mongo/db/commands/geonear.cpp (mongod and tools)
 src/mongo/db/commands/get_last_error.cpp (mongod and tools)
 src/mongo/db/commands/group.cpp (mongod and tools)
 src/mongo/db/commands/hashcmd.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/hint_commands.cpp
+src/mongo/db/commands/hint_commands.h
+src/mongo/db/commands/hint_commands_test.cpp
 src/mongo/db/commands/index_stats.cpp (mongod and tools)
 src/mongo/db/commands/isself.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/merge_chunks_cmd.cpp (mongod and tools)
 src/mongo/db/commands/mr.cpp (mongod and tools)
 src/mongo/db/commands/mr.h
 src/mongo/db/commands/mr_common.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/oplog_note.cpp
 src/mongo/db/commands/parameters.cpp (mongod, mongos, and tools)
 src/mongo/db/commands/pipeline_command.cpp (mongod and tools)
+src/mongo/db/commands/plan_cache_commands.cpp
+src/mongo/db/commands/plan_cache_commands.h
+src/mongo/db/commands/plan_cache_commands_test.cpp
 src/mongo/db/commands/rename_collection.cpp (mongod and tools)
 src/mongo/db/commands/rename_collection.h
 src/mongo/db/commands/rename_collection_common.cpp (mongod, mongos, and tools)
@@ -448,8 +461,8 @@ src/mongo/db/commands/storage_details.cpp (mongod and tools)
 src/mongo/db/commands/test_commands.cpp (mongod and tools)
 src/mongo/db/commands/touch.cpp (mongod)
 src/mongo/db/commands/user_management_commands.cpp (mongod, mongos, and tools)
+src/mongo/db/commands/user_management_commands.h
 src/mongo/db/commands/validate.cpp (mongod and tools)
-src/mongo/db/compact.cpp (mongod and tools)
 src/mongo/db/dbcommands_admin.cpp (mongod and tools)
 src/mongo/db/dbcommands_generic.cpp (mongod, mongos, and tools)
 src/mongo/db/dbeval.cpp (mongod and tools)
@@ -604,6 +617,7 @@ src/mongo/db/query/cached_plan_runner.cpp (mongod and tools)
 src/mongo/db/query/cached_plan_runner.h
 src/mongo/db/query/canonical_query.cpp (mongod, mongos, and tools)
 src/mongo/db/query/canonical_query.h
+src/mongo/db/query/canonical_query_test.cpp
 src/mongo/db/query/eof_runner.cpp (mongod and tools)
 src/mongo/db/query/eof_runner.h
 src/mongo/db/query/explain_plan.cpp (mongod and tools)
@@ -611,6 +625,7 @@ src/mongo/db/query/explain_plan.h
 src/mongo/db/query/find_constants.h
 src/mongo/db/query/get_runner.cpp (mongod and tools)
 src/mongo/db/query/get_runner.h
+src/mongo/db/query/get_runner_test.cpp
 src/mongo/db/query/idhack_runner.cpp (mongod and tools)
 src/mongo/db/query/idhack_runner.h
 src/mongo/db/query/index_bounds.cpp (mongod, mongos, and tools)
@@ -662,6 +677,10 @@ src/mongo/db/query/query_planner.h
 src/mongo/db/query/query_planner_common.h
 src/mongo/db/query/query_planner_params.h
 src/mongo/db/query/query_planner_test.cpp (not built in anywhere)
+src/mongo/db/query/query_planner_test_lib.cpp
+src/mongo/db/query/query_planner_test_lib.h
+src/mongo/db/query/query_settings.cpp
+src/mongo/db/query/query_settings.h
 src/mongo/db/query/query_solution.cpp (mongod, mongos, and tools)
 src/mongo/db/query/query_solution.h
 src/mongo/db/query/runner.h
@@ -1139,6 +1158,7 @@ src/mongo/scripting/bson_template_evaluator_test.cpp (not built in anywhere)
 # in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
 src/mongo/shell/assert.js
+src/mongo/shell/batch_api.js
 src/mongo/shell/collection.js
 src/mongo/shell/db.js
 src/mongo/shell/mongo.js
@@ -1152,7 +1172,6 @@ src/mongo/shell/shardingtest.js
 src/mongo/shell/types.js
 src/mongo/shell/utils.js
 src/mongo/shell/utils_sh.js
-src/mongo/shell/writes.js
 
 # Files only built into the mongo shell
 
@@ -1294,15 +1313,21 @@ src/mongo/db/namespace_string_test.cpp (not built in anywhere)
 # Files containing the structural metadata about the databases/data files/collections/indexes.
 # TODO: Add more details here about the relationships between these files.
 
-src/mongo/db/namespace_details-inl.h
-src/mongo/db/namespace_details.cpp (mongod and tools)
-src/mongo/db/namespace_details.h
-src/mongo/db/database.cpp (mongod and tools)
-src/mongo/db/database.h
-src/mongo/db/database_holder.cpp (mongod and tools)
-src/mongo/db/database_holder.h
-src/mongo/db/storage/index_details.cpp (mongod and tools)
-src/mongo/db/storage/index_details.h
+src/mongo/db/cap.cpp # Capped collection namespace details
+src/mongo/db/catalog/collection.cpp
+src/mongo/db/catalog/collection.h
+src/mongo/db/catalog/collection_info_cache.cpp
+src/mongo/db/catalog/collection_info_cache.h
+src/mongo/db/catalog/database.cpp
+src/mongo/db/catalog/database.h
+src/mongo/db/catalog/database_holder.cpp
+src/mongo/db/catalog/database_holder.h
+src/mongo/db/catalog/index_catalog.cpp (mongod and tools)
+src/mongo/db/catalog/index_catalog.h
+src/mongo/db/catalog/index_catalog_entry.cpp
+src/mongo/db/catalog/index_catalog_entry.h
+src/mongo/db/catalog/index_create.cpp (mongod and tools)
+src/mongo/db/catalog/index_create.h
 src/mongo/db/storage_options.cpp (mongod and tools)
 src/mongo/db/storage_options.h
 src/mongo/db/structure/btree/btree.cpp (mongod and tools)
@@ -1313,34 +1338,32 @@ src/mongo/db/structure/btree/btreebuilder.cpp (mongod and tools)
 src/mongo/db/structure/btree/btreebuilder.h
 src/mongo/db/structure/btree/key.cpp (mongod and tools)
 src/mongo/db/structure/btree/key.h
-src/mongo/db/structure/btree/state-inl.h
-src/mongo/db/structure/btree/state.cpp (mongod and tools)
-src/mongo/db/structure/btree/state.h
-src/mongo/db/structure/collection.cpp (mongod and tools)
-src/mongo/db/structure/collection.h
-src/mongo/db/structure/collection_info_cache.cpp (mongod and tools)
-src/mongo/db/structure/collection_info_cache.h
+src/mongo/db/structure/catalog/index_details.cpp
+src/mongo/db/structure/catalog/index_details.h
+src/mongo/db/structure/catalog/namespace-inl.h
+src/mongo/db/structure/catalog/namespace.cpp
+src/mongo/db/structure/catalog/namespace.h
+src/mongo/db/structure/catalog/namespace_details-inl.h
+src/mongo/db/structure/catalog/namespace_details.cpp
+src/mongo/db/structure/catalog/namespace_details.h
+src/mongo/db/structure/catalog/namespace_index.cpp
+src/mongo/db/structure/catalog/namespace_index.h
+src/mongo/db/structure/catalog/namespace_test.cpp
+src/mongo/db/structure/collection_compact.cpp
 src/mongo/db/structure/collection_iterator.cpp (mongod and tools)
 src/mongo/db/structure/collection_iterator.h
 src/mongo/db/structure/record_store.cpp (mongod and tools)
 src/mongo/db/structure/record_store.h
-src/mongo/db/cap.cpp # Capped collection namespace details
-src/mongo/db/catalog/index_catalog.cpp (mongod and tools)
-src/mongo/db/catalog/index_catalog.h
-src/mongo/db/catalog/index_create.cpp (mongod and tools)
-src/mongo/db/catalog/index_create.h
-src/mongo/db/catalog/ondisk/namespace-inl.h
-src/mongo/db/catalog/ondisk/namespace.cpp (mongod, mongos, and tools)
-src/mongo/db/catalog/ondisk/namespace.h
-src/mongo/db/catalog/ondisk/namespace_index.cpp (mongod and tools)
-src/mongo/db/catalog/ondisk/namespace_index.h
-src/mongo/db/catalog/ondisk/namespace_test.cpp (not built in anywhere)
 
 # A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an
 # "address" into our database's storage space.
 
 src/mongo/db/diskloc.h
 src/mongo/db/diskloc_test.cpp (not built in anywhere)
+
+# Type of a DiskLoc invalidation.
+
+src/mongo/db/invalidation_type.h
 
 # A record is simply a "node" in a linked list. It contains "prev" and "next" offsets, as well as
 # the offset of the extent in the current file.
@@ -1435,9 +1458,8 @@ src/mongo/db/index/2d_access_method.h
 src/mongo/db/index/2d_common.h
 src/mongo/db/index/btree_access_method.cpp (mongod and tools)
 src/mongo/db/index/btree_access_method.h
-src/mongo/db/index/btree_access_method_internal.h
-src/mongo/db/index/btree_based_builder.cpp (mongod and tools)
-src/mongo/db/index/btree_based_builder.h
+src/mongo/db/index/btree_based_access_method.cpp
+src/mongo/db/index/btree_based_access_method.h
 src/mongo/db/index/btree_index_cursor.cpp (mongod and tools)
 src/mongo/db/index/btree_index_cursor.h
 src/mongo/db/index/btree_interface.cpp (mongod and tools)
@@ -1550,6 +1572,7 @@ src/mongo/db/geo/hash.cpp (mongod, mongos, and tools)
 src/mongo/db/geo/hash.h
 src/mongo/db/geo/hash_test.cpp (not built in anywhere)
 src/mongo/db/geo/haystack.cpp (mongod and tools)
+src/mongo/db/geo/s2.h
 src/mongo/db/geo/s2common.cpp (mongod and tools)
 src/mongo/db/geo/s2common.h
 src/mongo/db/geo/shapes.cpp (mongod, mongos, and tools)
@@ -1629,6 +1652,11 @@ src/mongo/db/write_concern.h
 src/mongo/db/repl/write_concern.cpp (mongod and tools)
 src/mongo/db/repl/write_concern.h
 
+# Helper to parse write concern options out of a BSONObj
+
+src/mongo/db/write_concern_options.cpp
+src/mongo/db/write_concern_options.h
+
 
 ###### sharding ######
 
@@ -1678,9 +1706,9 @@ src/mongo/s/config_upgrade_v4_to_v5.cpp (mongos)
 
 # Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
-src/mongo/client/distlock.cpp (mongod, mongos, and tools)
-src/mongo/client/distlock.h
-src/mongo/client/distlock_test.cpp (mongod and tools)
+src/mongo/s/distlock.cpp
+src/mongo/s/distlock.h
+src/mongo/s/distlock_test.cpp
 
 # Parser for fields in a BSON object. Meant to help enforce a schema on a BSON object.
 
@@ -1770,7 +1798,10 @@ src/mongo/s/cluster_client_internal.cpp (mongos)
 src/mongo/s/cluster_client_internal.h
 src/mongo/s/cluster_write.cpp (mongod, mongos, and tools)
 src/mongo/s/cluster_write.h
+src/mongo/s/commands/auth_schema_upgrade_s.cpp
+src/mongo/s/commands/cluster_hint_cmd.cpp
 src/mongo/s/commands/cluster_merge_chunks_cmd.cpp (mongos)
+src/mongo/s/commands/cluster_plan_cache_cmd.cpp
 src/mongo/s/config.cpp (mongod, mongos, and tools)
 src/mongo/s/config.h
 src/mongo/s/config_server_checker_service.cpp (mongod, mongos, and tools)
@@ -1792,7 +1823,7 @@ src/mongo/s/dbclient_shard_resolver.h
 src/mongo/s/default_version.cpp (mongod and tools)
 src/mongo/s/grid.cpp (mongod, mongos, and tools)
 src/mongo/s/grid.h
-src/mongo/s/mock_multi_command.h
+src/mongo/s/mock_multi_write_command.h
 src/mongo/s/mock_ns_targeter.h
 src/mongo/s/mock_shard_resolver.h
 src/mongo/s/mongo_version_range.cpp (mongod, mongos, and tools)
@@ -1816,8 +1847,6 @@ src/mongo/s/shardkey.h
 src/mongo/s/stale_exception.h
 src/mongo/s/strategy.cpp (mongos)
 src/mongo/s/strategy.h
-src/mongo/s/strategy_shard.cpp (mongos)
-src/mongo/s/strategy_single.cpp (mongos)
 src/mongo/s/version_manager.cpp (mongos)
 src/mongo/s/version_manager.h
 src/mongo/s/version_mongos.cpp (mongos)
@@ -2060,12 +2089,6 @@ src/mongo/util/background_job_test.cpp (not built in anywhere)
 
 src/mongo/util/map_util.h
 
-# These appear to be for debugging. Not used on OSX so it's hard for met to tell. Notably used in
-# mmap_win.cpp (windows mmap)
-
-src/mongo/db/memconcept.cpp (mongod and tools)
-src/mongo/db/memconcept.h
-
 # I still don't know what this was originally for, but I know we are slowly getting rid of it.
 
 src/mongo/pch.cpp (mongod, mongos, cppclientdriver, and tools)
@@ -2122,6 +2145,8 @@ src/mongo/util/scopeguard.h
 src/mongo/util/sequence_util.h
 src/mongo/util/signal_handlers.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/util/signal_handlers.h
+src/mongo/util/signal_win32.cpp
+src/mongo/util/signal_win32.h
 src/mongo/util/stack_introspect.cpp (mongod, mongos, and tools)
 src/mongo/util/stack_introspect.h
 src/mongo/util/stacktrace.cpp (mongod, mongos, cppclientdriver, and tools)
@@ -2129,7 +2154,6 @@ src/mongo/util/stacktrace.h
 src/mongo/util/startup_test.cpp (mongod, mongos, and tools)
 src/mongo/util/startup_test.h
 src/mongo/util/string_map.h
-src/mongo/util/string_map_internal.h
 src/mongo/util/string_map_test.cpp (not built in anywhere)
 src/mongo/util/stringutils.cpp (mongod, mongos, cppclientdriver, and tools)
 src/mongo/util/stringutils.h
@@ -2203,7 +2227,8 @@ src/mongo/util/heapcheck.h
 # Platform specific code? TODO: Verify this and document what they are for.
 
 src/mongo/platform/atomic_intrinsics.h
-src/mongo/platform/atomic_intrinsics_gcc.h
+src/mongo/platform/atomic_intrinsics_gcc_generic.h
+src/mongo/platform/atomic_intrinsics_gcc_intel.h
 src/mongo/platform/atomic_intrinsics_win32.h
 src/mongo/platform/atomic_word.h
 src/mongo/platform/atomic_word_test.cpp (not built in anywhere)
@@ -4169,3 +4194,76 @@ src/third_party/yaml-cpp-0.5.1/src/stringsource.h
 src/third_party/yaml-cpp-0.5.1/src/tag.cpp
 src/third_party/yaml-cpp-0.5.1/src/tag.h
 src/third_party/yaml-cpp-0.5.1/src/token.h
+
+
+############ build_generated_files ###########
+
+
+# Files auto generated by the build process
+
+
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/buildinfo.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
+build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
+
+
+############ openssl ###########
+
+
+# OpenSSL headers
+
+
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/asn1.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/bio.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/bn.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/buffer.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/comp.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/conf.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/crypto.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/dh.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/dtls1.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/e_os2.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ebcdic.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ec.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdh.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdsa.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/err.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/evp.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/hmac.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/kssl.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/obj_mac.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslconf.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ossl_typ.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/pem.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/pkcs7.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/pqueue.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/rsa.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/safestack.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/sha.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/srtp.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl2.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl23.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl3.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/symhacks.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/tls1.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/x509.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
+/usr/local/Cellar/openssl/1.0.1e/include/openssl/x509v3.h

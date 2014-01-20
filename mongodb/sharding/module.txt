@@ -46,9 +46,9 @@ src/mongo/s/config_upgrade_v4_to_v5.cpp (mongos)
 
 # Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
-src/mongo/client/distlock.cpp (mongod, mongos, and tools)
-src/mongo/client/distlock.h
-src/mongo/client/distlock_test.cpp (mongod and tools)
+src/mongo/s/distlock.cpp
+src/mongo/s/distlock.h
+src/mongo/s/distlock_test.cpp
 
 # Parser for fields in a BSON object. Meant to help enforce a schema on a BSON object.
 
@@ -138,7 +138,10 @@ src/mongo/s/cluster_client_internal.cpp (mongos)
 src/mongo/s/cluster_client_internal.h
 src/mongo/s/cluster_write.cpp (mongod, mongos, and tools)
 src/mongo/s/cluster_write.h
+src/mongo/s/commands/auth_schema_upgrade_s.cpp
+src/mongo/s/commands/cluster_hint_cmd.cpp
 src/mongo/s/commands/cluster_merge_chunks_cmd.cpp (mongos)
+src/mongo/s/commands/cluster_plan_cache_cmd.cpp
 src/mongo/s/config.cpp (mongod, mongos, and tools)
 src/mongo/s/config.h
 src/mongo/s/config_server_checker_service.cpp (mongod, mongos, and tools)
@@ -160,7 +163,7 @@ src/mongo/s/dbclient_shard_resolver.h
 src/mongo/s/default_version.cpp (mongod and tools)
 src/mongo/s/grid.cpp (mongod, mongos, and tools)
 src/mongo/s/grid.h
-src/mongo/s/mock_multi_command.h
+src/mongo/s/mock_multi_write_command.h
 src/mongo/s/mock_ns_targeter.h
 src/mongo/s/mock_shard_resolver.h
 src/mongo/s/mongo_version_range.cpp (mongod, mongos, and tools)
@@ -184,8 +187,6 @@ src/mongo/s/shardkey.h
 src/mongo/s/stale_exception.h
 src/mongo/s/strategy.cpp (mongos)
 src/mongo/s/strategy.h
-src/mongo/s/strategy_shard.cpp (mongos)
-src/mongo/s/strategy_single.cpp (mongos)
 src/mongo/s/version_manager.cpp (mongos)
 src/mongo/s/version_manager.h
 src/mongo/s/version_mongos.cpp (mongos)

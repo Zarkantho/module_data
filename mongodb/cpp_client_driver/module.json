@@ -99,7 +99,11 @@
         {
             "files": [
                 "src/mongo/client/sasl_client_authenticate.cpp",
-                "src/mongo/client/sasl_client_authenticate.h"
+                "src/mongo/client/sasl_client_authenticate.h",
+                "src/mongo/client/sasl_client_authenticate_impl.cpp",
+                "src/mongo/client/sasl_client_session.cpp",
+                "src/mongo/client/sasl_client_session.h",
+                "src/mongo/client/sasl_sspi.cpp"
             ],
             "comments": "# Hookup of client to sasl authentication. Only built in when user passes --use-sasl-client"
         }

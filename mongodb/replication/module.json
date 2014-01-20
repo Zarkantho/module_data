@@ -58,6 +58,13 @@
                 "src/mongo/db/repl/write_concern.h"
             ],
             "comments": "# Actual meat of the waiting for write concern code"
+        },
+        {
+            "files": [
+                "src/mongo/db/write_concern_options.cpp",
+                "src/mongo/db/write_concern_options.h"
+            ],
+            "comments": "# Helper to parse write concern options out of a BSONObj"
         }
     ],
     "title": "replication"

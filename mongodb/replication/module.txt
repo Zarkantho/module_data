@@ -57,4 +57,9 @@ src/mongo/db/write_concern.h
 src/mongo/db/repl/write_concern.cpp (mongod and tools)
 src/mongo/db/repl/write_concern.h
 
+# Helper to parse write concern options out of a BSONObj
+
+src/mongo/db/write_concern_options.cpp
+src/mongo/db/write_concern_options.h
+
 

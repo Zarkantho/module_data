@@ -13,7 +13,7 @@ def main():
 
     title_regex = re.compile("^#+ (.*) #+")
     comment_regex = re.compile("^(#+.*)")
-    source_file_regex = re.compile("(src\S*)(:?.*)?")
+    source_file_regex = re.compile("((:?(:?src)|(:?build))\S*)(:?.*)?")
 
     modules_directory = sys.argv[1]
     modules_description_filename = sys.argv[2]

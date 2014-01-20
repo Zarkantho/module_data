@@ -10,15 +10,21 @@ src/mongo/db/namespace_string_test.cpp (not built in anywhere)
 # Files containing the structural metadata about the databases/data files/collections/indexes.
 # TODO: Add more details here about the relationships between these files.
 
-src/mongo/db/namespace_details-inl.h
-src/mongo/db/namespace_details.cpp (mongod and tools)
-src/mongo/db/namespace_details.h
-src/mongo/db/database.cpp (mongod and tools)
-src/mongo/db/database.h
-src/mongo/db/database_holder.cpp (mongod and tools)
-src/mongo/db/database_holder.h
-src/mongo/db/storage/index_details.cpp (mongod and tools)
-src/mongo/db/storage/index_details.h
+src/mongo/db/cap.cpp # Capped collection namespace details
+src/mongo/db/catalog/collection.cpp
+src/mongo/db/catalog/collection.h
+src/mongo/db/catalog/collection_info_cache.cpp
+src/mongo/db/catalog/collection_info_cache.h
+src/mongo/db/catalog/database.cpp
+src/mongo/db/catalog/database.h
+src/mongo/db/catalog/database_holder.cpp
+src/mongo/db/catalog/database_holder.h
+src/mongo/db/catalog/index_catalog.cpp (mongod and tools)
+src/mongo/db/catalog/index_catalog.h
+src/mongo/db/catalog/index_catalog_entry.cpp
+src/mongo/db/catalog/index_catalog_entry.h
+src/mongo/db/catalog/index_create.cpp (mongod and tools)
+src/mongo/db/catalog/index_create.h
 src/mongo/db/storage_options.cpp (mongod and tools)
 src/mongo/db/storage_options.h
 src/mongo/db/structure/btree/btree.cpp (mongod and tools)
@@ -29,34 +35,32 @@ src/mongo/db/structure/btree/btreebuilder.cpp (mongod and tools)
 src/mongo/db/structure/btree/btreebuilder.h
 src/mongo/db/structure/btree/key.cpp (mongod and tools)
 src/mongo/db/structure/btree/key.h
-src/mongo/db/structure/btree/state-inl.h
-src/mongo/db/structure/btree/state.cpp (mongod and tools)
-src/mongo/db/structure/btree/state.h
-src/mongo/db/structure/collection.cpp (mongod and tools)
-src/mongo/db/structure/collection.h
-src/mongo/db/structure/collection_info_cache.cpp (mongod and tools)
-src/mongo/db/structure/collection_info_cache.h
+src/mongo/db/structure/catalog/index_details.cpp
+src/mongo/db/structure/catalog/index_details.h
+src/mongo/db/structure/catalog/namespace-inl.h
+src/mongo/db/structure/catalog/namespace.cpp
+src/mongo/db/structure/catalog/namespace.h
+src/mongo/db/structure/catalog/namespace_details-inl.h
+src/mongo/db/structure/catalog/namespace_details.cpp
+src/mongo/db/structure/catalog/namespace_details.h
+src/mongo/db/structure/catalog/namespace_index.cpp
+src/mongo/db/structure/catalog/namespace_index.h
+src/mongo/db/structure/catalog/namespace_test.cpp
+src/mongo/db/structure/collection_compact.cpp
 src/mongo/db/structure/collection_iterator.cpp (mongod and tools)
 src/mongo/db/structure/collection_iterator.h
 src/mongo/db/structure/record_store.cpp (mongod and tools)
 src/mongo/db/structure/record_store.h
-src/mongo/db/cap.cpp # Capped collection namespace details
-src/mongo/db/catalog/index_catalog.cpp (mongod and tools)
-src/mongo/db/catalog/index_catalog.h
-src/mongo/db/catalog/index_create.cpp (mongod and tools)
-src/mongo/db/catalog/index_create.h
-src/mongo/db/catalog/ondisk/namespace-inl.h
-src/mongo/db/catalog/ondisk/namespace.cpp (mongod, mongos, and tools)
-src/mongo/db/catalog/ondisk/namespace.h
-src/mongo/db/catalog/ondisk/namespace_index.cpp (mongod and tools)
-src/mongo/db/catalog/ondisk/namespace_index.h
-src/mongo/db/catalog/ondisk/namespace_test.cpp (not built in anywhere)
 
 # A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an
 # "address" into our database's storage space.
 
 src/mongo/db/diskloc.h
 src/mongo/db/diskloc_test.cpp (not built in anywhere)
+
+# Type of a DiskLoc invalidation.
+
+src/mongo/db/invalidation_type.h
 
 # A record is simply a "node" in a linked list. It contains "prev" and "next" offsets, as well as
 # the offset of the extent in the current file.

@@ -13,9 +13,8 @@ src/mongo/db/index/2d_access_method.h
 src/mongo/db/index/2d_common.h
 src/mongo/db/index/btree_access_method.cpp (mongod and tools)
 src/mongo/db/index/btree_access_method.h
-src/mongo/db/index/btree_access_method_internal.h
-src/mongo/db/index/btree_based_builder.cpp (mongod and tools)
-src/mongo/db/index/btree_based_builder.h
+src/mongo/db/index/btree_based_access_method.cpp
+src/mongo/db/index/btree_based_access_method.h
 src/mongo/db/index/btree_index_cursor.cpp (mongod and tools)
 src/mongo/db/index/btree_index_cursor.h
 src/mongo/db/index/btree_interface.cpp (mongod and tools)
