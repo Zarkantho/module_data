@@ -1,0 +1,6 @@
+# These are the regular expressions I used in vim to clean up the yaml file.  Could possibly use
+# them in a perl or python script.
+
+%s/\[\(s\|b.*\)/[\r            \1/g
+%s/^\([ ]\+\)\(.*\)\]/\1\2\r\1]/g
+%s/^\([ ]\+\)\([^ ,]\+,\) \([^ ,]\+,\?\)$/\1\2\r\1\3recording

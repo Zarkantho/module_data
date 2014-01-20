@@ -96,15 +96,16 @@ def main():
     modules_directory = sys.argv[1]
     modules_description_filename = sys.argv[2]
 
+    # TODO: Actually do some processing before I output the files here
     if modules_description_filename.endswith(".yaml"):
         with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
             f.write(json.dumps(split_yaml_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
         with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(json.dumps(split_yaml_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
+            f.write(yaml.dump(split_yaml_version(modules_directory, modules_description_filename), indent=4))
     else:
         with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
             f.write(json.dumps(split_txt_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
         with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(json.dumps(split_txt_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
+            f.write(yaml.dump(split_txt_version(modules_directory, modules_description_filename), indent=4))
 
 main()
