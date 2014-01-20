@@ -3161,6 +3161,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/cached\_plan\_runner.h
 - src/mongo/db/query/canonical\_query.cpp   (mongod, tools, mongos)
 - src/mongo/db/query/canonical\_query.h
+- src/mongo/db/query/canonical\_query\_test.cpp
 - src/mongo/db/query/eof\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/eof\_runner.h
 - src/mongo/db/query/explain\_plan.cpp   (mongod, tools)
@@ -3168,6 +3169,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/find\_constants.h
 - src/mongo/db/query/get\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/get\_runner.h
+- src/mongo/db/query/get\_runner\_test.cpp
 - src/mongo/db/query/idhack\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/idhack\_runner.h
 - src/mongo/db/query/index\_bounds.cpp   (mongod, tools, mongos)
@@ -3219,6 +3221,10 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/query\_planner\_common.h
 - src/mongo/db/query/query\_planner\_params.h
 - src/mongo/db/query/query\_planner\_test.cpp   ()
+- src/mongo/db/query/query\_planner\_test\_lib.cpp
+- src/mongo/db/query/query\_planner\_test\_lib.h
+- src/mongo/db/query/query\_settings.cpp
+- src/mongo/db/query/query\_settings.h
 - src/mongo/db/query/query\_solution.cpp   (mongod, tools, mongos)
 - src/mongo/db/query/query\_solution.h
 - src/mongo/db/query/runner.h
@@ -3286,12 +3292,12 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
 ### src/mongo/db/query/get\_runner.cpp
@@ -3339,13 +3345,13 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -3366,7 +3372,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -3490,7 +3496,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
 
 <div></div>
 
@@ -3498,7 +3504,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 ### src/mongo/db/query/plan\_executor.cpp
 
@@ -3970,7 +3976,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4002,7 +4008,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -4035,7 +4041,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
 
 <div></div>
 
@@ -5524,7 +5530,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -5572,7 +5578,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
 
 <div></div>
 
@@ -5686,7 +5692,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -5854,7 +5860,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7696,7 +7702,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -7736,7 +7742,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -8076,12 +8082,12 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 ### src/mongo/db/exec/fetch.cpp
@@ -8281,7 +8287,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -8292,7 +8298,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -8429,7 +8435,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -8453,7 +8459,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9034,7 +9040,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -9050,7 +9056,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9345,7 +9351,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -9361,7 +9367,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9882,7 +9888,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -10509,7 +10515,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11182,7 +11188,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11247,7 +11253,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -11263,7 +11269,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -11490,7 +11496,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -12639,7 +12645,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
@@ -12706,7 +12712,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Used By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -12742,7 +12748,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -12913,7 +12919,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -12937,7 +12943,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -12961,7 +12967,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13001,7 +13007,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -13174,7 +13180,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13358,7 +13364,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -13574,7 +13580,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -13614,7 +13620,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13751,7 +13757,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -13759,7 +13765,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 

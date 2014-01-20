@@ -3064,7 +3064,7 @@ should be a library ;(   who calls/owns this stuff?
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3176,7 +3176,7 @@ should be a library ;(   who calls/owns this stuff?
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3224,7 +3224,7 @@ should be a library ;(   who calls/owns this stuff?
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3443,7 +3443,7 @@ should be a library ;(   who calls/owns this stuff?
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -3949,7 +3949,7 @@ Code for external sort. This sits inside the sorter, and the sorter "spills over
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
 
 # Dependencies

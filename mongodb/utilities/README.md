@@ -5,7 +5,7 @@
 -------------
 
 # Group Description
-Code to manage paths to files. Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
+Code to manage paths to files.  Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
 
 # Files
 - src/mongo/util/paths.cpp   (mongod, tools, mongos)
@@ -112,7 +112,7 @@ Classes to help in tracking statistics
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/s/request.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
 
@@ -198,7 +198,7 @@ Classes to help in tracking statistics
 - Used By:
 
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -214,7 +214,7 @@ Classes to help in tracking statistics
 
 - Used By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 # Dependencies
 
@@ -415,7 +415,7 @@ Classes to help in tracking statistics
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -747,9 +747,9 @@ Helpers to track in progress operations. The constructor registers itself in an 
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -758,7 +758,7 @@ Helpers to track in progress operations. The constructor registers itself in an 
 
 - Used By:
 
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 # Dependencies
@@ -841,14 +841,14 @@ Helper classes to accumulate and log progress in a nice format using the  loggin
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/util/mmap.cpp](../mmap)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/import.cpp](../tools)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
@@ -967,7 +967,7 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
@@ -1003,7 +1003,7 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -1011,13 +1011,14 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
+    - src/mongo/db/memconcept.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
@@ -1066,12 +1067,12 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/repl/health.cpp](../replication)
@@ -1105,7 +1106,7 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
@@ -1135,7 +1136,7 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/db/exec/projection.cpp](../query\_system)
@@ -1158,13 +1159,13 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
@@ -1186,7 +1187,7 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -1210,8 +1211,8 @@ Library to get and set the name of the current thread. Just uses a boost::thread
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -1359,7 +1360,7 @@ Utility library to manipulate hex strings
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -1380,14 +1381,14 @@ Utility library to manipulate hex strings
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
@@ -1395,7 +1396,7 @@ Utility library to manipulate hex strings
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/queryutil.cpp](../query\_system)
@@ -1411,7 +1412,7 @@ Utility library to manipulate hex strings
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -1484,14 +1485,14 @@ Utility library to manipulate hex strings
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -1504,8 +1505,8 @@ Utility library to manipulate hex strings
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/examples/clientTest.cpp](../cpp\_client\_driver)
@@ -1540,13 +1541,13 @@ Utility library to manipulate hex strings
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/tools/bsondump.cpp](../tools)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/pipeline/document\_source\_project.cpp](../aggregation\_framework)
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
@@ -1604,7 +1605,7 @@ Utility library to manipulate hex strings
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
     - [src/mongo/tools/export.cpp](../tools)
@@ -1618,7 +1619,7 @@ Utility library to manipulate hex strings
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -2135,54 +2136,6 @@ mapFindWithDefault - looks something up in a map with a default value.
 -------------
 
 # Group Description
-These appear to be for debugging. Not used on OSX so it's hard for met to tell. Notably used in  mmap\_win.cpp (windows mmap)
-
-# Files
-- src/mongo/db/memconcept.cpp   (mongod, tools)
-- src/mongo/db/memconcept.h
-
-# Interface
-(not used outside this module)
-
-# Dependencies
-
-### src/mongo/db/memconcept.cpp
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
--------------
-
-# Group Description
 I still don't know what this was originally for, but I know we are slowly getting rid of it.
 
 # Files
@@ -2317,7 +2270,7 @@ Assertion library.
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -2339,7 +2292,7 @@ Assertion library.
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2347,7 +2300,7 @@ Assertion library.
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
@@ -2356,7 +2309,7 @@ Assertion library.
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/queryutil.cpp](../query\_system)
@@ -2373,7 +2326,7 @@ Assertion library.
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -2456,14 +2409,14 @@ Assertion library.
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -2476,8 +2429,8 @@ Assertion library.
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/examples/clientTest.cpp](../cpp\_client\_driver)
@@ -2498,7 +2451,7 @@ Assertion library.
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2516,7 +2469,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/tools/bsondump.cpp](../tools)
@@ -2584,11 +2537,11 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/pipeline/document\_source\_limit.cpp](../aggregation\_framework)
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
@@ -2605,7 +2558,7 @@ Assertion library.
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -2758,7 +2711,7 @@ Assertion library.
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -2780,14 +2733,14 @@ Assertion library.
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
@@ -2795,7 +2748,7 @@ Assertion library.
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/queryutil.cpp](../query\_system)
@@ -2811,7 +2764,7 @@ Assertion library.
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -2891,16 +2844,16 @@ Assertion library.
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -2914,8 +2867,8 @@ Assertion library.
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/util/file.cpp](../file\_interface)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/examples/clientTest.cpp](../cpp\_client\_driver)
@@ -2935,7 +2888,7 @@ Assertion library.
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2951,7 +2904,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/tools/bsondump.cpp](../tools)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
@@ -3018,7 +2971,7 @@ Assertion library.
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
     - [src/mongo/tools/export.cpp](../tools)
@@ -3033,7 +2986,7 @@ Assertion library.
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -3108,7 +3061,7 @@ Assertion library.
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -3138,11 +3091,11 @@ Assertion library.
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
@@ -3153,7 +3106,7 @@ Assertion library.
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -3181,7 +3134,7 @@ Assertion library.
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
@@ -3210,8 +3163,8 @@ Assertion library.
     - [src/mongo/bson/optime.cpp](../bson)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/util/options\_parser/environment.cpp](../startup\_initialization)
@@ -3323,7 +3276,7 @@ Assertion library.
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
@@ -3348,7 +3301,7 @@ Assertion library.
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/util/time\_support.cpp](../utilities)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -3357,20 +3310,20 @@ Assertion library.
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/logger/rotatable\_file\_writer.cpp](../logging\_system)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
@@ -3389,7 +3342,7 @@ Assertion library.
     - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_unset.cpp](../update\_system)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
@@ -3487,17 +3440,17 @@ Assertion library.
     - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -3513,11 +3466,11 @@ Assertion library.
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/util/file.cpp](../file\_interface)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
     - [src/mongo/client/examples/clientTest.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/pipeline/document\_source\_unwind.cpp](../aggregation\_framework)
@@ -3538,10 +3491,10 @@ Assertion library.
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/util/net/httpclient.cpp](../network)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
@@ -3560,7 +3513,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
     - [src/mongo/tools/bsondump.cpp](../tools)
@@ -3642,12 +3595,12 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/auth/role\_graph.cpp](../authentication)
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
     - [src/mongo/tools/export.cpp](../tools)
@@ -3666,7 +3619,7 @@ Assertion library.
     - [src/mongo/db/matcher/expression.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -3774,15 +3727,15 @@ Assertion library.
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
@@ -3826,13 +3779,13 @@ Assertion library.
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/tools/top.cpp](../tools)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/s/version\_manager.cpp](../sharding)
@@ -3842,7 +3795,7 @@ Assertion library.
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
@@ -3856,7 +3809,7 @@ Assertion library.
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
@@ -3874,7 +3827,7 @@ Assertion library.
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/client/examples/rs.cpp](../cpp\_client\_driver)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
@@ -3884,12 +3837,12 @@ Assertion library.
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/bson/optime.cpp](../bson)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/tools/import.cpp](../tools)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -3906,7 +3859,7 @@ Assertion library.
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
     - [src/mongo/s/request.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
 <div></div>
@@ -3916,20 +3869,20 @@ Assertion library.
 - Used By:
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
@@ -3950,7 +3903,7 @@ Assertion library.
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/s/request.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
@@ -3981,14 +3934,14 @@ Assertion library.
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/namespace\_details.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
@@ -4106,7 +4059,7 @@ Assertion library.
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
     - [src/mongo/client/examples/httpClientTest.cpp](../cpp\_client\_driver)
@@ -4134,7 +4087,7 @@ Assertion library.
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/util/time\_support.cpp](../utilities)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
@@ -4143,7 +4096,7 @@ Assertion library.
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
@@ -4151,13 +4104,13 @@ Assertion library.
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
     - [src/mongo/logger/rotatable\_file\_writer.cpp](../logging\_system)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
@@ -4175,7 +4128,7 @@ Assertion library.
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -4272,17 +4225,17 @@ Assertion library.
     - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/config\_upgrade\_v4\_to\_v5.cpp](../sharding)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -4297,8 +4250,8 @@ Assertion library.
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/util/file.cpp](../file\_interface)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
@@ -4325,10 +4278,10 @@ Assertion library.
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/util/net/httpclient.cpp](../network)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
@@ -4345,7 +4298,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/query/index\_tag.cpp](../query\_system)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
@@ -4426,11 +4379,11 @@ Assertion library.
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
     - [src/mongo/tools/export.cpp](../tools)
@@ -4449,7 +4402,7 @@ Assertion library.
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -4568,12 +4521,12 @@ Assertion library.
     - [src/mongo/unittest/crutch.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/sasl/mongo\_gssapi.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/driverHelpers.cpp](../database\_commands)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands.cpp](../database\_commands)
@@ -4698,7 +4651,7 @@ Assertion library.
     - [src/mongo/db/query/parsed\_projection.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -4719,7 +4672,7 @@ Assertion library.
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/lockstat.cpp](../concurrency)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
@@ -4727,7 +4680,7 @@ Assertion library.
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/matcher/expression\_parser\_tree.cpp](../query\_system)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
@@ -4735,7 +4688,7 @@ Assertion library.
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/tools/oplog.cpp](../tools)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/queryutil.cpp](../query\_system)
@@ -4752,7 +4705,7 @@ Assertion library.
     - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -4828,7 +4781,7 @@ Assertion library.
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/tools/restore.cpp](../tools)
@@ -4836,7 +4789,7 @@ Assertion library.
     - [src/mongo/db/pipeline/document\_source\_redact.cpp](../aggregation\_framework)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/query/query\_solution.cpp](../query\_system)
@@ -4849,8 +4802,8 @@ Assertion library.
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/client/examples/clientTest.cpp](../cpp\_client\_driver)
@@ -4886,13 +4839,13 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../unit\_tests)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/tools/bsondump.cpp](../tools)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/pipeline/document\_source\_project.cpp](../aggregation\_framework)
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
@@ -4954,7 +4907,7 @@ Assertion library.
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../sharding)
     - [src/mongo/tools/export.cpp](../tools)
@@ -4971,7 +4924,7 @@ Assertion library.
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -5044,7 +4997,7 @@ Assertion library.
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
@@ -5066,21 +5019,21 @@ Assertion library.
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/bson/optime.cpp](../bson)
     - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/tools/import.cpp](../tools)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
@@ -5089,7 +5042,7 @@ Assertion library.
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/examples/tutorial.cpp](../cpp\_client\_driver)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
@@ -5138,12 +5091,12 @@ Assertion library.
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/exec/text.cpp](../query\_system)
@@ -5153,7 +5106,7 @@ Assertion library.
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
@@ -5176,7 +5129,7 @@ Assertion library.
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -5203,9 +5156,9 @@ Assertion library.
     - [src/mongo/bson/optime.cpp](../bson)
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/util/options\_parser/environment.cpp](../startup\_initialization)
@@ -5228,7 +5181,7 @@ Assertion library.
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/import.cpp](../tools)
@@ -5236,7 +5189,7 @@ Assertion library.
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -5274,7 +5227,7 @@ Assertion library.
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
@@ -5303,15 +5256,15 @@ Assertion library.
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/namespace\_details.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
@@ -5344,7 +5297,7 @@ Assertion library.
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/s/version\_manager.cpp](../sharding)
@@ -5363,26 +5316,26 @@ Assertion library.
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/bson/optime.cpp](../bson)
     - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/client/gridfs.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/examples/tutorial.cpp](../cpp\_client\_driver)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
@@ -5418,7 +5371,7 @@ Assertion library.
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -5449,7 +5402,7 @@ Assertion library.
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/d\_merge.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -5526,7 +5479,7 @@ Assertion library.
 
 - Used By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -5537,7 +5490,7 @@ Assertion library.
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -5551,7 +5504,7 @@ Assertion library.
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/grid.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -6474,9 +6427,9 @@ Utilities to hash a username + password
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 # Dependencies
 (no dependencies outside this module)
@@ -6497,6 +6450,8 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/sequence\_util.h
 - src/mongo/util/signal\_handlers.cpp   (cppclientdriver)
 - src/mongo/util/signal\_handlers.h
+- src/mongo/util/signal\_win32.cpp
+- src/mongo/util/signal\_win32.h
 - src/mongo/util/stack\_introspect.cpp   (mongod, tools, mongos)
 - src/mongo/util/stack\_introspect.h
 - src/mongo/util/stacktrace.cpp   (mongod, tools, mongos)
@@ -6504,7 +6459,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/startup\_test.cpp   (mongod, tools, mongos)
 - src/mongo/util/startup\_test.h
 - src/mongo/util/string\_map.h
-- src/mongo/util/string\_map\_internal.h
 - src/mongo/util/string\_map\_test.cpp   ()
 - src/mongo/util/stringutils.cpp   (mongod, tools, mongos)
 - src/mongo/util/stringutils.h
@@ -6655,9 +6609,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Used By:
 
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
 
 ### src/mongo/util/stack\_introspect.cpp
 
@@ -6711,7 +6665,8 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
+    - src/mongo/db/memconcept.cpp
 
 <div></div>
 
@@ -6733,7 +6688,8 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
+    - src/mongo/db/memconcept.cpp
 
 <div></div>
 
@@ -6766,7 +6722,8 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
+    - src/mongo/db/memconcept.cpp
 
 ### src/mongo/util/stringutils.cpp
 
@@ -6887,7 +6844,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -6899,7 +6856,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
@@ -6936,7 +6893,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/scripting/bench.cpp](../javascript\_libraries)
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/scripting/utils.cpp](../javascript\_libraries)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
@@ -7031,7 +6988,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -7050,7 +7007,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -7089,8 +7046,8 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/s/strategy\_shard.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
@@ -7102,7 +7059,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
@@ -7129,7 +7086,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
@@ -7188,7 +7145,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
@@ -7215,7 +7172,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -7262,7 +7219,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - Used By:
 
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
@@ -7270,7 +7227,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -7281,7 +7238,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_state.cpp](../sharding)
@@ -7303,7 +7260,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
@@ -7330,7 +7287,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
 
 ### src/mongo/util/util.cpp
@@ -7365,7 +7322,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
@@ -7390,7 +7347,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
     - [src/mongo/util/fail\_point\_service.cpp](../utilities)
@@ -7418,12 +7375,12 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/util/net/listen.cpp](../network)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/util/concurrency/synchronization.cpp](../concurrency)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -7566,9 +7523,9 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -8509,7 +8466,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8525,7 +8482,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8541,7 +8498,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8565,7 +8522,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8573,7 +8530,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8581,7 +8538,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 ### src/mongo/util/version\_test.cpp
 
@@ -9028,7 +8985,8 @@ Platform specific code? TODO: Verify this and document what they are for.
 
 # Files
 - src/mongo/platform/atomic\_intrinsics.h
-- src/mongo/platform/atomic\_intrinsics\_gcc.h
+- src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h
+- src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h
 - src/mongo/platform/atomic\_intrinsics\_win32.h
 - src/mongo/platform/atomic\_word.h
 - src/mongo/platform/atomic\_word\_test.cpp   ()

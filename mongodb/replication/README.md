@@ -102,7 +102,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
@@ -181,7 +181,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -278,7 +278,7 @@ Replication code? TODO: verify that this is all replication related and document
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -308,7 +308,7 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_state.cpp](../sharding)
@@ -320,7 +320,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
@@ -370,7 +370,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
 
 <div></div>
 
@@ -385,7 +385,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
@@ -1156,7 +1156,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1316,7 +1316,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/repl/health.cpp
 
@@ -1683,7 +1683,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3091,7 +3091,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -3107,7 +3107,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3417,7 +3417,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3441,7 +3441,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3481,7 +3481,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3617,7 +3617,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4532,7 +4532,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -4726,7 +4726,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4822,7 +4822,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4854,7 +4854,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4935,7 +4935,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4959,7 +4959,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5067,7 +5067,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5599,7 +5599,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -6427,7 +6427,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -6677,7 +6677,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7224,7 +7224,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -7264,7 +7264,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7903,7 +7903,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7993,7 +7993,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -8001,7 +8001,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -8049,7 +8049,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9098,3 +9098,18 @@ Actual meat of the waiting for write concern code
 - Provided By:
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+-------------
+
+# Group Description
+Helper to parse write concern options out of a BSONObj
+
+# Files
+- src/mongo/db/write\_concern\_options.cpp
+- src/mongo/db/write\_concern\_options.h
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)

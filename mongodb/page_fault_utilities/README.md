@@ -469,7 +469,7 @@ Code to go in and touch pages so that they are brought into memory.   who calls 
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 

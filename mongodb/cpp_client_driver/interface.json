@@ -1644,6 +1644,48 @@
         ]
     }, 
     {
+        "symbol": "mongo::SaslClientSession::initialize()", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SaslClientSession::setParameter(mongo::SaslClientSession::Parameter, mongo::StringData const&)", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SaslClientSession::getParameter(mongo::SaslClientSession::Parameter)", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SaslClientSession::step(mongo::StringData const&, std::string*)", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SaslClientSession::~SaslClientSession()", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SaslClientSession::SaslClientSession()", 
+        "object": "src/mongo/client/sasl_client_session.cpp", 
+        "used_by": [
+            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::SyncClusterConnection::prepare(std::string&)", 
         "object": "src/mongo/client/syncclusterconnection.cpp", 
         "used_by": [
@@ -1966,7 +2008,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -1977,7 +2018,6 @@
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
             "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/tools/stat.cpp", 
             "src/mongo/shell/dbshell.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
@@ -1993,7 +2033,6 @@
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/tools/stat.cpp", 
             "src/mongo/shell/dbshell.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
@@ -2007,8 +2046,7 @@
         "used_by": [
             "src/mongo/db/auth/security_key.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
@@ -2018,7 +2056,6 @@
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
             "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/tools/stat.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
@@ -2031,7 +2068,6 @@
         "symbol": "mongo::saslCommandServiceHostnameFieldName", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2039,7 +2075,6 @@
         "symbol": "mongo::saslCommandServiceNameFieldName", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2048,7 +2083,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2063,7 +2097,6 @@
         "symbol": "mongo::saslDefaultDBName", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2072,7 +2105,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2081,7 +2113,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2090,7 +2121,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2106,7 +2136,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2115,7 +2144,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2124,7 +2152,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2133,7 +2160,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 
@@ -2144,7 +2170,6 @@
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
             "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
             "src/mongo/tools/stat.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
@@ -2157,7 +2182,6 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/sasl_client_authenticate_impl.cpp"
         ]
     }, 

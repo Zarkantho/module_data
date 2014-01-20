@@ -9,6 +9,7 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 
 # Files
 - src/mongo/shell/assert.js
+- src/mongo/shell/batch\_api.js
 - src/mongo/shell/collection.js
 - src/mongo/shell/db.js
 - src/mongo/shell/mongo.js
@@ -22,7 +23,6 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 - src/mongo/shell/types.js
 - src/mongo/shell/utils.js
 - src/mongo/shell/utils\_sh.js
-- src/mongo/shell/writes.js
 
 # Interface
 (not used outside this module)
@@ -589,7 +589,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -613,7 +613,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -637,7 +637,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -693,7 +693,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -701,7 +701,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 ### src/mongo/shell/shell\_utils\_extended.cpp
 

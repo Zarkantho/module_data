@@ -22,7 +22,7 @@ mmap library (only depends on file allocation library)
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 

@@ -5,7 +5,7 @@
 -------------
 
 # Group Description
-Interface to data file. Depends on journaling module. These are the actual data files on disk  "<dbname>. ". Handles file preallocation.
+Interface to data file. Depends on journaling module. These are the actual data files on disk  "<dbname>. ".  Handles file preallocation.
 
 # Files
 - src/mongo/db/storage/data\_file.cpp   (mongod, tools)

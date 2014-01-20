@@ -77,7 +77,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
@@ -114,7 +114,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
@@ -141,7 +141,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
@@ -167,7 +167,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/util/mmap.cpp](../mmap)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -188,7 +188,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
@@ -240,7 +240,7 @@ Third Party - The boost thread library
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <div></div>
@@ -262,7 +262,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
@@ -289,7 +289,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
@@ -315,7 +315,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/util/mmap.cpp](../mmap)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -328,7 +328,7 @@ Third Party - The boost thread library
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
@@ -380,7 +380,7 @@ Third Party - The boost thread library
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
 
 <div></div>
@@ -414,7 +414,7 @@ Third Party - The boost thread library
     - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
@@ -422,7 +422,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
@@ -460,14 +460,14 @@ Third Party - The boost thread library
     - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
@@ -517,7 +517,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
@@ -554,7 +554,7 @@ Third Party - The boost thread library
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../sharding)

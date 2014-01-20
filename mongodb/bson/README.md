@@ -61,10 +61,10 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
 
 ### src/mongo/bson/oid.cpp
@@ -77,7 +77,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
@@ -89,7 +89,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
@@ -140,7 +140,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/tools/restore.cpp](../tools)
@@ -155,7 +155,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
@@ -181,7 +181,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
     - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
@@ -231,7 +231,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/version\_manager.cpp](../sharding)
     - [src/mongo/dbtests/jsontests.cpp](../unit\_tests)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -240,7 +240,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
@@ -298,7 +298,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/shardconnection.cpp](../sharding)
@@ -321,7 +321,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -375,7 +375,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
@@ -387,7 +387,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
@@ -438,7 +438,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/scripting/v8\_profiler.cpp](../javascript\_libraries)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/tools/restore.cpp](../tools)
@@ -453,7 +453,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
@@ -479,7 +479,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
     - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
@@ -621,8 +621,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -632,9 +632,9 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
 
 <div></div>
@@ -645,9 +645,9 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
 
 <div></div>
@@ -864,7 +864,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
@@ -874,7 +874,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
@@ -916,7 +916,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/queryutil.cpp](../query\_system)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
@@ -950,7 +950,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
@@ -997,7 +997,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -1045,7 +1045,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/query/interval.cpp](../query\_system)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/queryutil.cpp](../query\_system)
@@ -1076,7 +1076,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/index/btree\_access\_method.cpp](../indexing)
     - [src/mongo/dbtests/mock/mock\_replica\_set.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsontests.cpp](../unit\_tests)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
@@ -1088,13 +1088,13 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
@@ -1117,7 +1117,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
@@ -1140,7 +1140,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/jsontests.cpp](../unit\_tests)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/client/examples/first.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/export.cpp](../tools)
@@ -1291,7 +1291,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
@@ -2849,7 +2849,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 <div></div>
 

@@ -40,26 +40,6 @@
         ]
     }, 
     {
-        "name": "src/mongo/db/index/btree_based_builder.cpp", 
-        "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
-        ]
-    }, 
-    {
         "name": "src/mongo/db/index/btree_index_cursor.cpp", 
         "execs": [
             "mongotop", 

@@ -30,7 +30,7 @@ Unittest framework (for both old style dbtests and new style tests)
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -58,7 +58,7 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -73,7 +73,7 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
@@ -1235,7 +1235,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1852,7 +1852,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -2584,7 +2584,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -3318,7 +3318,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3406,7 +3406,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3527,7 +3527,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3551,7 +3551,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -5802,7 +5802,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 
@@ -5891,7 +5891,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -5955,7 +5955,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -6964,7 +6964,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -6996,7 +6996,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7086,7 +7086,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 
@@ -7230,7 +7230,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -7302,7 +7302,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -7390,7 +7390,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7414,7 +7414,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 
@@ -7463,7 +7463,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -7479,7 +7479,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 
@@ -7487,7 +7487,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -7535,7 +7535,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7551,7 +7551,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -10647,7 +10647,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -10679,7 +10679,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -10719,7 +10719,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -10807,7 +10807,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -10815,7 +10815,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -10887,7 +10887,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -10935,7 +10935,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -10951,7 +10951,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11024,7 +11024,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11048,7 +11048,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -11056,7 +11056,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11064,7 +11064,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11104,7 +11104,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11306,7 +11306,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11362,7 +11362,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11404,7 +11404,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -11412,7 +11412,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -11476,7 +11476,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11484,7 +11484,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -12396,7 +12396,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13011,7 +13011,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13035,7 +13035,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -13326,7 +13326,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13350,7 +13350,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -13656,7 +13656,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -13680,7 +13680,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -13744,7 +13744,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -13800,7 +13800,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -14075,7 +14075,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -14083,7 +14083,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -14147,7 +14147,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -14349,7 +14349,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -14421,7 +14421,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -14461,7 +14461,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -14777,7 +14777,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -14793,7 +14793,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -14857,7 +14857,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -14913,7 +14913,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -15107,7 +15107,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -15155,7 +15155,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -15203,7 +15203,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -15365,7 +15365,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -15381,7 +15381,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -15655,7 +15655,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -15839,7 +15839,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -15992,7 +15992,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -16008,7 +16008,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -16643,7 +16643,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -16723,7 +16723,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -17305,7 +17305,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -17553,7 +17553,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -17674,7 +17674,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -17746,7 +17746,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -17770,7 +17770,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -17956,7 +17956,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -18060,7 +18060,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -18148,7 +18148,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -18156,7 +18156,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -18204,7 +18204,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 

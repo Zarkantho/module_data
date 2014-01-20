@@ -5,7 +5,7 @@
 -------------
 
 # Group Description
-Third Party - Yaml markup parser. Used for yaml config files
+Third Party - Yaml markup parser.  Used for yaml config files
 
 # Files
 - src/third\_party/shim\_yaml.cpp   (mongod, tools, mongos)

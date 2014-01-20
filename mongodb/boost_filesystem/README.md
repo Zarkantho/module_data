@@ -133,7 +133,7 @@ Third Party - The boost filesystem library
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/util/mmap.cpp](../mmap)
     - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
@@ -165,7 +165,7 @@ Third Party - The boost filesystem library
 
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
@@ -308,7 +308,7 @@ Third Party - The boost filesystem library
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/tools/dump.cpp](../tools)
 
@@ -347,7 +347,7 @@ Third Party - The boost filesystem library
 
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -364,7 +364,7 @@ Third Party - The boost filesystem library
 
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)

@@ -6947,7 +6947,7 @@ Other things used by the update system. TODO: figure out what these are for.
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
 
 <div></div>
 
@@ -6955,7 +6955,7 @@ Other things used by the update system. TODO: figure out what these are for.
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 

@@ -2685,6 +2685,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
+        "object": "src/mongo/s/chunk.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/startup_test.cpp", 
             "src/mongo/client/clientOnly.cpp"
         ], 
@@ -2897,6 +2904,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
+        "object": "src/mongo/s/chunk.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
@@ -3020,6 +3034,13 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::ConnectionString::_finishInit()", 
+        "object": "src/mongo/s/chunk.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
         "object": "src/mongo/s/chunk.cpp"
     }, 
     {
@@ -3182,295 +3203,6 @@
         ], 
         "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
         "object": "src/mongo/s/chunk_diff_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "vtable for mongo::ScopedDbConnection", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::pool", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::_setSocketTimeout()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::convertExceptionCode(int)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::get(std::string const&, double)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::inprog", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::Query::ReadPrefField", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::killop", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/commands_public.cpp"
-        ], 
-        "symbol": "mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client_basic.cpp"
-        ], 
-        "symbol": "mongo::ClientBasic::getAuthorizationSession() const", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/client/clientAndShell.cpp"
-        ], 
-        "symbol": "mongo::ClientBasic::getCurrent()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::~ScopedDbConnection()", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/bson_validate.cpp"
-        ], 
-        "symbol": "mongo::validateBSON(char const*, unsigned long long)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::AScopedConnection::_numConnections", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_options.cpp"
-        ], 
-        "symbol": "mongo::serverGlobalParams", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbmessage.cpp"
-        ], 
-        "symbol": "mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_single.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
-        "object": "src/mongo/s/strategy_single.cpp"
     }, 
     {
         "sources": [
@@ -3936,6 +3668,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/s/strategy_shard.cpp"
+        ], 
+        "symbol": "mongo::SHARDED", 
+        "object": "src/mongo/s/request.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -4079,6 +3818,13 @@
             "src/third_party/boost/libs/system/src/error_code.cpp"
         ], 
         "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/s/request.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/strategy_single.cpp"
+        ], 
+        "symbol": "mongo::SINGLE", 
         "object": "src/mongo/s/request.cpp"
     }, 
     {
@@ -5497,649 +5243,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "vtable for mongo::ScopedDbConnection", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::ServerParameter", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbmessage.cpp"
-        ], 
-        "symbol": "mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, void*, int, int, int, long long)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::getGtLtOp(mongo::BSONElement const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/lasterror.cpp"
-        ], 
-        "symbol": "mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logInsertAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::pool", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::ConnectionString::parse(std::string const&, std::string&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/lasterror.cpp"
-        ], 
-        "symbol": "mongo::LastErrorHolder::get(bool)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/client_info.cpp"
-        ], 
-        "symbol": "mongo::ClientInfo::newRequest()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/query/lite_parsed_query.cpp"
-        ], 
-        "symbol": "mongo::LiteParsedQuery::parseMaxTimeMSQuery(mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/timer.cpp"
-        ], 
-        "symbol": "mongo::Timer::_countsPerSecond", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::_setSocketTimeout()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::UserException", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batch_upconvert.cpp"
-        ], 
-        "symbol": "mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client_basic.cpp"
-        ], 
-        "symbol": "mongo::ClientBasic::getAuthorizationSession() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::get(std::string const&, double)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_response.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandResponse::BatchedCommandResponse()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameter::~ServerParameter()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logDeleteAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::isSharded()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::Query::isExplain() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/lasterror.cpp"
-        ], 
-        "symbol": "mongo::lastError", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::UserException", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/stats/counters.cpp"
-        ], 
-        "symbol": "mongo::globalOpCounters", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/commands_public.cpp"
-        ], 
-        "symbol": "mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::getShardCursor(mongo::Shard const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclientcursor.cpp"
-        ], 
-        "symbol": "mongo::DBClientCursor::peekFirst()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ClusteredCursor::init()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/crutch.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/client/scoped_db_conn_test.cpp", 
-            "src/mongo/s/server.cpp"
-        ], 
-        "symbol": "mongo::inShutdown()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batch_upconvert.cpp"
-        ], 
-        "symbol": "mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ExportedServerParameter<bool>::setFromString(std::string const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::checkAuthForQuery(mongo::NamespaceString const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::checkAuthForInsert(mongo::NamespaceString const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/client_info.cpp"
-        ], 
-        "symbol": "mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(mongo::DBException const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::Backoff::nextSleepMillis()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::checkAuthForGetMore(mongo::NamespaceString const&, long long)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_response.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandResponse::~BatchedCommandResponse()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::checkAuthForDelete(mongo::NamespaceString const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_response.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/keypattern.cpp"
-        ], 
-        "symbol": "mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::getQueryShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_session.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationSession::checkAuthForUpdate(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_request.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandRequest::getOrdered() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_response.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandResponse::getN() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_request.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandRequest::getNS() const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/client/clientAndShell.cpp"
-        ], 
-        "symbol": "mongo::ClientBasic::getCurrent()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(mongo::QuerySpec const&, mongo::CommandInfo const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::getPrimary()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/write_ops/batched_command_request.cpp"
-        ], 
-        "symbol": "mongo::BatchedCommandRequest::setNS(mongo::StringData const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::~ScopedDbConnection()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ], 
-        "symbol": "mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/bson_validate.cpp"
-        ], 
-        "symbol": "mongo::validateBSON(char const*, unsigned long long)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::OID::init()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameterSet::getGlobal()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/parallel.cpp"
-        ], 
-        "symbol": "mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::AScopedConnection::_numConnections", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_options.cpp"
-        ], 
-        "symbol": "mongo::serverGlobalParams", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbmessage.cpp"
-        ], 
-        "symbol": "mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/keypattern.cpp"
-        ], 
-        "symbol": "mongo::KeyPattern::extractSingleKey(mongo::BSONObj const&) const", 
-        "object": "src/mongo/s/strategy_shard.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -6497,6 +5600,27 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::~ScopedDistributedLock()", 
+        "object": "src/mongo/s/config_upgrade.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::acquire(long long, std::string*)", 
+        "object": "src/mongo/s/config_upgrade.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)", 
+        "object": "src/mongo/s/config_upgrade.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/version.cpp"
         ], 
         "symbol": "mongo::versionString", 
@@ -6585,430 +5709,6 @@
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/s/config_upgrade.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "typeinfo for boost::detail::thread_data_base", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "vtable for mongo::ScopedDbConnection", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::Date_t::toString() const", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTimeVirtualThreadSkew(long long)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LabeledLevel)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::setThreadName(mongo::StringData)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::pool", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/timer.cpp"
-        ], 
-        "symbol": "mongo::Timer::_countsPerSecond", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::_setSocketTimeout()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::DBClientWithCommands::getLastError(bool, bool, int, int)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTime()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::sleepmillis(long long)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::LT", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::get(std::string const&, double)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::thread::start_thread()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::thread_data_base::~thread_data_base()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::~ScopedDbConnection()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::UserException", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::exception const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(mongo::DBException const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::NIN", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(char const*)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/crutch.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/client/scoped_db_conn_test.cpp", 
-            "src/mongo/s/server.cpp"
-        ], 
-        "symbol": "mongo::inShutdown()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::ConnectionString::_finishInit()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::thread::~thread()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const*)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::sleepsecs(int)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::getHostName()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "vtable for boost::detail::thread_data_base", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::OID::init()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::AScopedConnection::_numConnections", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_options.cpp"
-        ], 
-        "symbol": "mongo::serverGlobalParams", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::getJSTimeVirtualThreadSkew()", 
-        "object": "src/mongo/client/distlock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)", 
-        "object": "src/mongo/client/distlock.cpp"
     }, 
     {
         "sources": [
@@ -7967,6 +6667,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
+        "object": "src/mongo/s/balance.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/version.cpp"
         ], 
         "symbol": "mongo::isSameMajorVersion(char const*)", 
@@ -8086,6 +6793,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
+        "object": "src/mongo/s/balance.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/version.cpp"
         ], 
         "symbol": "mongo::versionString", 
@@ -8149,6 +6863,13 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::ConnectionString::_finishInit()", 
+        "object": "src/mongo/s/balance.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
         "object": "src/mongo/s/balance.cpp"
     }, 
     {
@@ -10308,6 +9029,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::tryAcquire(std::string*)", 
+        "object": "src/mongo/s/d_merge.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::causedBy(std::string const&)", 
@@ -10385,6 +9113,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::~ScopedDistributedLock()", 
+        "object": "src/mongo/s/d_merge.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -10416,6 +9151,13 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::Query::minKey(mongo::BSONObj const&)", 
+        "object": "src/mongo/s/d_merge.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)", 
         "object": "src/mongo/s/d_merge.cpp"
     }, 
     {
@@ -11740,6 +10482,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
+        "object": "src/mongo/s/d_split.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -11964,6 +10713,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
+        "object": "src/mongo/s/d_split.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
@@ -12114,6 +10870,13 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::ConnectionString::_finishInit()", 
+        "object": "src/mongo/s/d_split.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
         "object": "src/mongo/s/d_split.cpp"
     }, 
     {
@@ -12660,370 +11423,6 @@
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "typeinfo for boost::detail::thread_data_base", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::get(std::string const&, double)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "vtable for mongo::ScopedDbConnection", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::Date_t::toString() const", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTimeVirtualThreadSkew(long long)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::setThreadName(mongo::StringData)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::pool", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "vtable for mongo::Command", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/timer.cpp"
-        ], 
-        "symbol": "mongo::Timer::_countsPerSecond", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::_setSocketTimeout()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp"
-        ], 
-        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTime()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::sleepmillis(long long)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::Command", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::thread::start_thread()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONElement::Array() const", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::thread_data_base::~thread_data_base()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(mongo::DBException const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::testCommandsEnabled", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::thread::join()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTimeVirtualSkew(long long)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::ConnectionString::_finishInit()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::thread::~thread()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::sleepsecs(int)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::ConnectionString::_fillServers(std::string)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "vtable for boost::detail::thread_data_base", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::ScopedDbConnection::~ScopedDbConnection()", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/make_string_vector.cpp"
-        ], 
-        "symbol": "mongo::_makeStringVector(int, ...)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::redactForLogging(mongo::mutablebson::Document*)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::AScopedConnection::_numConnections", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/connpool.cpp"
-        ], 
-        "symbol": "mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/client/distlock_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "typeinfo for boost::detail::thread_data_base", 
         "object": "src/mongo/db/range_deleter.cpp"
     }, 
     {
@@ -13434,6 +11833,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
+        "object": "src/mongo/s/d_migrate.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/auth/authorization_session.cpp"
         ], 
         "symbol": "mongo::AuthorizationSession::grantInternalAuthorization()", 
@@ -13523,6 +11929,13 @@
             "src/mongo/db/keypattern.cpp"
         ], 
         "symbol": "mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)", 
+        "object": "src/mongo/s/d_migrate.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::isLockHeld(double, std::string*)", 
         "object": "src/mongo/s/d_migrate.cpp"
     }, 
     {
@@ -13963,6 +12376,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
+        "object": "src/mongo/s/d_migrate.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
@@ -14224,6 +12644,13 @@
             "src/mongo/db/storage/record.cpp"
         ], 
         "symbol": "mongo::Record::likelyInPhysicalMemory() const", 
+        "object": "src/mongo/s/d_migrate.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/distlock.cpp"
+        ], 
+        "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
         "object": "src/mongo/s/d_migrate.cpp"
     }, 
     {

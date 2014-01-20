@@ -173,7 +173,7 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - src/mongo/db/modules/subscription/src/audit/audit\_options\_init.cpp
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
@@ -197,8 +197,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/tools/mongotop\_options\_init.cpp](../tools)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
     - [src/mongo/util/processinfo.cpp](../utilities)
@@ -255,7 +255,7 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/mongostat\_options\_init.cpp](../tools)
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -369,7 +369,7 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - src/mongo/db/modules/subscription/src/audit/audit\_options\_init.cpp
     - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
@@ -393,8 +393,8 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - src/mongo/db/modules/subscription/src/audit/audit\_log\_domain.cpp
     - [src/mongo/tools/mongotop\_options\_init.cpp](../tools)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
     - [src/mongo/util/processinfo.cpp](../utilities)
@@ -451,7 +451,7 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/tools/mongostat\_options\_init.cpp](../tools)
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -3203,7 +3203,7 @@ Command line options shared between mongod and mongos   give an example (--hostn
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/tools/bridge.cpp](../tools)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/db/write\_concern.cpp](../replication)
@@ -3223,20 +3223,20 @@ Command line options shared between mongod and mongos   give an example (--hostn
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/db/repl/health.cpp](../replication)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
     - src/mongo/db/modules/subscription/src/snmp/snmp\_oid.cpp
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
@@ -3764,7 +3764,7 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../query\_system)
@@ -3795,7 +3795,7 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../query\_system)
@@ -3818,7 +3818,7 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../query\_system)
@@ -3838,7 +3838,7 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
@@ -3885,7 +3885,7 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../query\_system)

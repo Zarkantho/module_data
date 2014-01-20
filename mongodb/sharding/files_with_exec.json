@@ -209,47 +209,6 @@
         ]
     }, 
     {
-        "name": "src/mongo/client/distlock.cpp", 
-        "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
-        ]
-    }, 
-    {
-        "name": "src/mongo/client/distlock_test.cpp", 
-        "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
-        ]
-    }, 
-    {
         "name": "src/mongo/db/field_parser.cpp", 
         "execs": [
             "mongotop", 
@@ -1041,18 +1000,6 @@
     }, 
     {
         "name": "src/mongo/s/strategy.cpp", 
-        "execs": [
-            "mongos"
-        ]
-    }, 
-    {
-        "name": "src/mongo/s/strategy_shard.cpp", 
-        "execs": [
-            "mongos"
-        ]
-    }, 
-    {
-        "name": "src/mongo/s/strategy_single.cpp", 
         "execs": [
             "mongos"
         ]

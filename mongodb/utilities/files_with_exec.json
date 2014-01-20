@@ -259,26 +259,6 @@
         "execs": []
     }, 
     {
-        "name": "src/mongo/db/memconcept.cpp", 
-        "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
-        ]
-    }, 
-    {
         "name": "src/mongo/pch.cpp", 
         "execs": [
             "clientTest", 

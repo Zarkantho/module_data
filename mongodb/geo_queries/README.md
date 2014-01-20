@@ -19,6 +19,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - src/mongo/db/geo/hash.h
 - src/mongo/db/geo/hash\_test.cpp   ()
 - src/mongo/db/geo/haystack.cpp   (mongod, tools)
+- src/mongo/db/geo/s2.h
 - src/mongo/db/geo/s2common.cpp   (mongod, tools)
 - src/mongo/db/geo/s2common.h
 - src/mongo/db/geo/shapes.cpp   (mongod, tools, mongos)
@@ -1715,7 +1716,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1755,7 +1756,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 

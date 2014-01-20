@@ -381,11 +381,11 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/log.cpp](../logging\_system)
     - [src/mongo/bson/bson\_validate.cpp](../bson)
     - [src/mongo/logger/ramlog.cpp](../logging\_system)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/audit\_manager\_global.cpp
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
@@ -428,7 +428,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/net/ssl\_options.cpp](../network)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
@@ -477,12 +477,12 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/base/parse\_number.cpp](../base\_utilites)
     - [src/mongo/tools/mongooplog\_options.cpp](../tools)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/bson/mutable/document.cpp](../bson)
     - src/mongo/db/modules/subscription/src/sasl/mongo\_gssapi.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/query/single\_solution\_runner.cpp](../query\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
@@ -512,8 +512,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -550,7 +550,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/tools/mongoexport\_options.cpp](../tools)
     - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
@@ -589,7 +589,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/tools/mongofiles\_options\_init.cpp](../tools)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/tools/mongobridge\_options\_init.cpp](../tools)
     - [src/mongo/client/examples/first.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands.cpp](../database\_commands)
@@ -600,7 +600,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/client/examples/tutorial.cpp](../cpp\_client\_driver)
     - [src/mongo/db/mongod\_options\_init.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/s/config\_upgrade\_v4\_to\_v5.cpp](../sharding)
@@ -660,12 +660,12 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/db/json.cpp](../bson)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
     - [src/mongo/logger/rotatable\_file\_manager.cpp](../logging\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_options.cpp
     - [src/mongo/base/initializer\_dependency\_graph.cpp](../startup\_initialization)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
@@ -680,7 +680,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
     - [src/mongo/db/auth/authz\_manager\_external\_state.cpp](../authentication)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/util/options\_parser/constraints.cpp](../startup\_initialization)
     - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
@@ -689,7 +689,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/bson/util/bson\_extract.cpp](../bson)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
     - [src/mongo/db/jsobj.cpp](../bson)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/base/initializer\_dependency\_graph.cpp](../startup\_initialization)
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
@@ -703,7 +703,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
     - [src/mongo/db/ops/field\_checker.cpp](../update\_system)
     - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
@@ -734,7 +734,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
     - [src/mongo/logger/rotatable\_file\_writer.cpp](../logging\_system)
     - [src/mongo/util/time\_support.cpp](../utilities)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
     - [src/mongo/base/initializer.cpp](../startup\_initialization)
     - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
@@ -745,7 +745,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/logger/rotatable\_file\_writer.cpp](../logging\_system)
     - src/mongo/db/modules/subscription/src/sasl/mongo\_gssapi.cpp
-    - src/mongo/client/sasl\_client\_session.cpp
+    - [src/mongo/client/sasl\_client\_session.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
@@ -772,7 +772,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 ### src/mongo/base/status\_test.cpp
 
@@ -806,7 +806,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -886,7 +886,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 -------------
 
@@ -929,7 +929,7 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
@@ -949,7 +949,7 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/bson/mutable/element.cpp](../bson)
@@ -1223,10 +1223,10 @@ The StringData class is a wrapper around a char* that can be constructed from ei
     - src/mongo/db/modules/subscription/src/snmp/serverstatus\_client.cpp
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/json.cpp](../bson)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
@@ -1234,7 +1234,7 @@ The StringData class is a wrapper around a char* that can be constructed from ei
     - src/mongo/db/modules/subscription/src/audit/audit\_indexes\_collections\_databases.cpp
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/logger/log\_severity.cpp](../logging\_system)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
     - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)

@@ -680,26 +680,6 @@
         ]
     }, 
     {
-        "name": "src/mongo/db/compact.cpp", 
-        "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
-        ]
-    }, 
-    {
         "name": "src/mongo/db/dbcommands_admin.cpp", 
         "execs": [
             "mongotop", 

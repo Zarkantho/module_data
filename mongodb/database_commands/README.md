@@ -34,6 +34,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
@@ -83,6 +84,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
@@ -108,6 +110,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
@@ -151,6 +154,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
@@ -216,6 +220,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
@@ -256,6 +261,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
@@ -294,6 +300,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
@@ -324,7 +331,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
@@ -486,7 +493,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -614,7 +621,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -743,7 +750,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -783,7 +790,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -855,7 +862,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -919,7 +926,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -951,7 +958,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -999,7 +1006,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -1007,7 +1014,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1119,7 +1126,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1135,7 +1142,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
 
 <div></div>
 
@@ -1191,7 +1198,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1231,7 +1238,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -1271,7 +1278,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1279,7 +1286,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -1399,7 +1406,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1407,7 +1414,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1431,7 +1438,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1471,7 +1478,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1479,7 +1486,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1535,7 +1542,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1567,7 +1574,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1583,7 +1590,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1663,7 +1670,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -1704,7 +1711,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -1736,7 +1743,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1776,7 +1783,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -1816,7 +1823,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1824,7 +1831,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1856,7 +1863,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1864,7 +1871,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1896,7 +1903,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1928,7 +1935,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1969,10 +1976,12 @@ Commands (run using db.$cmd.findOne(...))
 
 # Files
 - src/mongo/db/commands/apply\_ops.cpp   (mongod, tools)
+- src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp
 - src/mongo/db/commands/authentication\_commands.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/authentication\_commands.h
 - src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp   (mongod, tools)
 - src/mongo/db/commands/collection\_to\_capped.cpp   (mongod, tools)
+- src/mongo/db/commands/compact.cpp
 - src/mongo/db/commands/connection\_status.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/copydb.h
 - src/mongo/db/commands/copydb\_common.cpp   (mongod, tools, mongos)
@@ -1988,14 +1997,21 @@ Commands (run using db.$cmd.findOne(...))
 - src/mongo/db/commands/get\_last\_error.cpp   (mongod, tools)
 - src/mongo/db/commands/group.cpp   (mongod, tools)
 - src/mongo/db/commands/hashcmd.cpp   (mongod, tools, mongos)
+- src/mongo/db/commands/hint\_commands.cpp
+- src/mongo/db/commands/hint\_commands.h
+- src/mongo/db/commands/hint\_commands\_test.cpp
 - src/mongo/db/commands/index\_stats.cpp   (mongod, tools)
 - src/mongo/db/commands/isself.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/merge\_chunks\_cmd.cpp   (mongod, tools)
 - src/mongo/db/commands/mr.cpp   (mongod, tools)
 - src/mongo/db/commands/mr.h
 - src/mongo/db/commands/mr\_common.cpp   (mongod, tools, mongos)
+- src/mongo/db/commands/oplog\_note.cpp
 - src/mongo/db/commands/parameters.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/pipeline\_command.cpp   (mongod, tools)
+- src/mongo/db/commands/plan\_cache\_commands.cpp
+- src/mongo/db/commands/plan\_cache\_commands.h
+- src/mongo/db/commands/plan\_cache\_commands\_test.cpp
 - src/mongo/db/commands/rename\_collection.cpp   (mongod, tools)
 - src/mongo/db/commands/rename\_collection.h
 - src/mongo/db/commands/rename\_collection\_common.cpp   (mongod, tools, mongos)
@@ -2007,8 +2023,8 @@ Commands (run using db.$cmd.findOne(...))
 - src/mongo/db/commands/test\_commands.cpp   (mongod, tools)
 - src/mongo/db/commands/touch.cpp   (mongod)
 - src/mongo/db/commands/user\_management\_commands.cpp   (mongod, tools, mongos)
+- src/mongo/db/commands/user\_management\_commands.h
 - src/mongo/db/commands/validate.cpp   (mongod, tools)
-- src/mongo/db/compact.cpp   (mongod, tools)
 - src/mongo/db/dbcommands\_admin.cpp   (mongod, tools)
 - src/mongo/db/dbcommands\_generic.cpp   (mongod, tools, mongos)
 - src/mongo/db/dbeval.cpp   (mongod, tools)
@@ -2107,7 +2123,7 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
@@ -2135,8 +2151,8 @@ Commands (run using db.$cmd.findOne(...))
 
 - Used By:
 
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/s/strategy\_shard.cpp
 
 # Dependencies
 
@@ -2722,7 +2738,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2996,7 +3012,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3012,7 +3028,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3044,7 +3060,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3108,7 +3124,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3172,7 +3188,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3180,7 +3196,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3237,7 +3253,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3253,7 +3269,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3269,7 +3285,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -3277,7 +3293,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3427,7 +3443,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3435,7 +3451,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3475,7 +3491,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3701,7 +3717,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3725,7 +3741,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3782,7 +3798,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -3806,7 +3822,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 ### src/mongo/db/commands/distinct.cpp
 
@@ -3944,7 +3960,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -3985,7 +4001,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4220,7 +4236,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -4260,7 +4276,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -4292,7 +4308,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4324,7 +4340,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4364,7 +4380,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4883,7 +4899,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4891,7 +4907,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4907,7 +4923,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4939,7 +4955,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5198,7 +5214,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -5254,7 +5270,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5603,7 +5619,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -5668,7 +5684,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5859,7 +5875,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -6051,7 +6067,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -6335,7 +6351,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -6753,7 +6769,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -6841,7 +6857,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7033,7 +7049,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7276,7 +7292,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7358,7 +7374,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7366,7 +7382,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7390,7 +7406,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7430,7 +7446,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7553,7 +7569,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7706,7 +7722,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8113,7 +8129,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -8193,7 +8209,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -8257,7 +8273,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -8322,7 +8338,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -8330,7 +8346,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -8346,7 +8362,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -8354,7 +8370,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -8380,7 +8396,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8388,7 +8404,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8428,7 +8444,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8460,7 +8476,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8484,7 +8500,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/commands/server\_status.cpp
 
@@ -8734,7 +8750,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -8898,7 +8914,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/commands/storage\_details.cpp
 
@@ -9053,7 +9069,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -9109,7 +9125,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -9117,7 +9133,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9352,7 +9368,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -9416,7 +9432,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9496,7 +9512,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -9520,7 +9536,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9570,7 +9586,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -9795,7 +9811,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -9875,7 +9891,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -9941,7 +9957,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10029,7 +10045,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10141,7 +10157,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10173,7 +10189,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10285,7 +10301,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10317,7 +10333,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10469,7 +10485,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10533,7 +10549,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10549,7 +10565,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10589,7 +10605,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -10653,7 +10669,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -11033,7 +11049,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -11097,7 +11113,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11121,7 +11137,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -11161,7 +11177,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -11226,7 +11242,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -11234,7 +11250,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11242,7 +11258,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -11275,529 +11291,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/server\_options.cpp](../startup\_initialization)
-
-### src/mongo/db/compact.cpp
-
-<div></div>
-
-    mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool) const
-
-- Provided By:
-
-    - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::killCurrentOp
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Lock::DBWrite::~DBWrite()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::Record::_accessing() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::KillCurrentOp::checkForInterruptNoAssert()
-
-- Provided By:
-
-    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::KillCurrentOp::checkForInterrupt(bool)
-
-- Provided By:
-
-    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Status::toString() const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::DiskLoc::ext() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::Timer::_countsPerSecond
-
-- Provided By:
-
-    - [src/mongo/util/timer.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::NamespaceDetails::incrementStats(long long, long long)
-
-- Provided By:
-
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::dur::DurableInterface::_impl
-
-- Provided By:
-
-    - [src/mongo/db/dur.cpp](../journaling)
-
-<div></div>
-
-    mongo::Extent::markEmpty()
-
-- Provided By:
-
-    - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ProgressMeter::hit(int)
-
-- Provided By:
-
-    - [src/mongo/util/progress\_meter.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::touch_pages(char const*, unsigned long)
-
-- Provided By:
-
-    - [src/mongo/util/touch\_pages.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionSet::addAction(mongo::ActionType const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
-
-<div></div>
-
-    mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)
-
-- Provided By:
-
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/index\_builder.cpp](../indexing)
-
-<div></div>
-
-    mongo::BSONObj::valid() const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::IndexCatalog::dropAllIndexes(bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::NamespaceDetails::setLastExtentSize(int)
-
-- Provided By:
-
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::isCurrentlyAReplSetPrimary()
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../replication)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Database::getCollection(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/index\_builder.cpp](../indexing)
-
-<div></div>
-
-    mongo::Client::Context::~Context()
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::NamespaceDetails::orphanDeletedList()
-
-- Provided By:
-
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::Extent::validates(mongo::DiskLoc, mongo::BSONArrayBuilder*)
-
-- Provided By:
-
-    - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::CollectionInfoCache::reset()
-
-- Provided By:
-
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)
-
-- Provided By:
-
-    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::curTimeMicros64()
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../utilities)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)
-
-- Provided By:
-
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ExtentManager::freeExtents(mongo::DiskLoc, mongo::DiskLoc)
-
-- Provided By:
-
-    - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)
-
-- Provided By:
-
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DiskLoc::rec() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::ActionType::compact
-
-- Provided By:
-
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
-
-<div></div>
-
-    mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/background.cpp](../utilities)
-
-<div></div>
-
-    mongo::storageGlobalParams
-
-- Provided By:
-
-    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::NamespaceDetails::setStats(long long, long long)
-
-- Provided By:
-
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const
-
-- Provided By:
-
-    - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Client::Context::Context(std::string const&, std::string const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
 ### src/mongo/db/dbcommands\_admin.cpp
 
@@ -12034,7 +11527,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12090,7 +11583,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12098,7 +11591,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12186,7 +11679,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12597,7 +12090,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12613,7 +12106,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -12637,7 +12130,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12749,7 +12242,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12901,7 +12394,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -12997,7 +12490,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13029,7 +12522,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13093,7 +12586,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -13109,7 +12602,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13173,7 +12666,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13197,7 +12690,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13438,7 +12931,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -13486,7 +12979,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13502,7 +12995,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13576,7 +13069,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -13584,7 +13077,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13634,7 +13127,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13667,7 +13160,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -13683,7 +13176,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -13699,7 +13192,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13723,7 +13216,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13771,7 +13264,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14060,7 +13553,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14124,7 +13617,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14228,7 +13721,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -14252,7 +13745,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14260,7 +13753,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14324,7 +13817,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14340,7 +13833,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14380,7 +13873,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14412,7 +13905,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14476,7 +13969,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14524,7 +14017,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -14540,7 +14033,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14596,7 +14089,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14748,7 +14241,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14972,7 +14465,7 @@ Commands + code for fsync of data files
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 

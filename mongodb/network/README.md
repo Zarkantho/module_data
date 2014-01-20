@@ -587,7 +587,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)

@@ -125,7 +125,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/util/assert\_util.cpp](../utilities)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
@@ -148,7 +148,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/util/mmap\_posix.cpp](../mmap)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/assert\_util.cpp](../utilities)
@@ -323,7 +323,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -331,14 +331,14 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
@@ -390,13 +390,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/util/progress\_meter.cpp](../utilities)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/repl/health.cpp](../replication)
@@ -431,7 +431,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
@@ -463,7 +463,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/db/exec/projection.cpp](../query\_system)
@@ -488,13 +488,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
@@ -518,7 +518,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -543,8 +543,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -614,7 +614,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -622,14 +622,14 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
@@ -679,13 +679,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/util/progress\_meter.cpp](../utilities)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/repl/health.cpp](../replication)
@@ -720,7 +720,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
@@ -753,7 +753,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/db/exec/projection.cpp](../query\_system)
@@ -780,13 +780,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
@@ -809,7 +809,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -835,8 +835,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/tools/export.cpp](../tools)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -904,7 +904,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -912,14 +912,14 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
@@ -969,13 +969,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/util/progress\_meter.cpp](../utilities)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/repl/health.cpp](../replication)
@@ -1010,7 +1010,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
@@ -1043,7 +1043,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/db/exec/projection.cpp](../query\_system)
@@ -1070,13 +1070,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
@@ -1099,7 +1099,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -1125,8 +1125,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/tools/export.cpp](../tools)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -1220,7 +1220,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../indexing)
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -1228,14 +1228,14 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
     - [src/mongo/util/background.cpp](../utilities)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/assert\_util.cpp](../utilities)
     - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
@@ -1284,13 +1284,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/util/progress\_meter.cpp](../utilities)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/util/file\_allocator.cpp](../file\_allocation)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/fts/fts\_enabled.cpp](../full\_text\_search\_module)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/repl/health.cpp](../replication)
@@ -1324,7 +1324,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_options.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
@@ -1355,7 +1355,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/util/fail\_point.cpp](../utilities)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
     - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/db/exec/projection.cpp](../query\_system)
@@ -1380,13 +1380,13 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../mongo\_shell)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/util/net/ssl\_options.cpp](../network)
@@ -1410,7 +1410,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/tools/bridge.cpp](../tools)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -1435,8 +1435,8 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/isself.cpp](../database\_commands)
@@ -1477,7 +1477,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 - Used By:
 
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -1499,7 +1499,7 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/util/mmap\_posix.cpp](../mmap)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/util/assert\_util.cpp](../utilities)

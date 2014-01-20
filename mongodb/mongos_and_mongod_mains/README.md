@@ -202,7 +202,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -490,7 +490,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -755,7 +755,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -819,7 +819,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -1020,7 +1020,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -1132,7 +1132,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -1973,7 +1973,7 @@ Main for mongos
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -1987,7 +1987,7 @@ Main for mongos
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
@@ -2000,7 +2000,7 @@ Main for mongos
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)

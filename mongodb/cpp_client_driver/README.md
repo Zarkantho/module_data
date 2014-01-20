@@ -58,7 +58,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
@@ -82,7 +82,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
 
 - Used By:
 
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/s/strategy.cpp](../sharding)
@@ -105,7 +105,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -120,7 +120,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
@@ -136,7 +136,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
@@ -146,7 +146,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/repl/rs.cpp](../replication)
@@ -176,9 +176,9 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/util/text\_startuptest.cpp](../utilities)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/hasher.cpp](../utilities)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
 
 <div></div>
 
@@ -202,9 +202,9 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/util/text\_startuptest.cpp](../utilities)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/hasher.cpp](../utilities)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
 
 <div></div>
 
@@ -228,9 +228,9 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/util/logfile.cpp](../journaling)
     - [src/mongo/db/jsobj.cpp](../bson)
     - [src/mongo/util/text\_startuptest.cpp](../utilities)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/hasher.cpp](../utilities)
-    - [src/mongo/db/memconcept.cpp](../utilities)
+    - src/mongo/db/memconcept.cpp
 
 # Dependencies
 
@@ -373,15 +373,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
@@ -424,17 +424,17 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -502,15 +502,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
@@ -535,14 +535,14 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
@@ -575,13 +575,13 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -627,15 +627,15 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/db/commands.cpp](../database\_commands)
@@ -670,14 +670,14 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/config\_upgrade.cpp](../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/metadata\_loader.cpp](../sharding)
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -768,7 +768,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/directclienttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
@@ -911,7 +911,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -991,7 +991,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -1021,7 +1021,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_merge.cpp](../sharding)
@@ -1068,7 +1068,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
@@ -1169,7 +1169,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/directclienttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
@@ -1307,7 +1307,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/directclienttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
@@ -1341,7 +1341,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
     - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/dbtests/directclienttests.cpp](../unit\_tests)
     - [src/mongo/s/grid.cpp](../sharding)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
@@ -1413,7 +1413,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -1486,7 +1486,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
@@ -1709,7 +1709,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
@@ -2306,7 +2306,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -2382,7 +2382,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
@@ -2409,7 +2409,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/client/distlock.cpp](../sharding)
+    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -2424,7 +2424,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
@@ -4346,7 +4346,7 @@ Legacy wire protocol in the client driver   what is the new equivalent, and wher
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/cursors.cpp](../sharding)
 
 <div></div>
@@ -4380,8 +4380,8 @@ Legacy wire protocol in the client driver   what is the new equivalent, and wher
 
 - Used By:
 
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 # Dependencies
@@ -4473,7 +4473,7 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -4484,14 +4484,14 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/tools/tool.cpp](../tools)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
     - [src/mongo/s/d\_logic.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
 <div></div>
@@ -4544,7 +4544,7 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/d\_state.cpp](../sharding)
@@ -4563,7 +4563,7 @@ Utilities for keeping track of the data needed for getLastError (part of legacy 
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/tools/tool.cpp](../tools)
 
 <div></div>
@@ -6005,7 +6005,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -6029,7 +6029,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -6038,7 +6038,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -6046,7 +6046,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -6054,7 +6054,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -6063,7 +6063,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -6071,7 +6071,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 # Dependencies
 
@@ -6489,6 +6489,10 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 # Files
 - src/mongo/client/sasl\_client\_authenticate.cpp   (mongod, tools, mongos)
 - src/mongo/client/sasl\_client\_authenticate.h
+- src/mongo/client/sasl\_client\_authenticate\_impl.cpp   (mongod, tools, mongos)
+- src/mongo/client/sasl\_client\_session.cpp   (cppclientdriver)
+- src/mongo/client/sasl\_client\_session.h
+- src/mongo/client/sasl\_sspi.cpp   (mongod, tools, mongos)
 
 # Interface
 
@@ -6501,8 +6505,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6513,12 +6516,11 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
@@ -6530,11 +6532,10 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool.cpp](../tools)
 
 <div></div>
@@ -6544,9 +6545,8 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
 
 <div></div>
 
@@ -6557,11 +6557,10 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool.cpp](../tools)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
@@ -6571,8 +6570,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
 - Used By:
 
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6580,8 +6578,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
 - Used By:
 
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6590,8 +6587,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6607,8 +6603,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 
 - Used By:
 
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6617,8 +6612,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6627,8 +6621,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6637,8 +6630,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6655,8 +6647,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6665,8 +6656,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6675,8 +6665,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6685,8 +6674,7 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6697,11 +6685,10 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/auth/security\_key.cpp](../authentication)
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
     - [src/mongo/tools/tool.cpp](../tools)
 
 <div></div>
@@ -6711,8 +6698,57 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Used By:
 
     - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
-    - src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+### src/mongo/client/sasl\_client\_session.cpp
+
+<div></div>
+
+    mongo::SaslClientSession::initialize()
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::SaslClientSession::setParameter(mongo::SaslClientSession::Parameter, mongo::StringData const&)
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::SaslClientSession::getParameter(mongo::SaslClientSession::Parameter)
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::SaslClientSession::step(mongo::StringData const&, std::string*)
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::SaslClientSession::~SaslClientSession()
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::SaslClientSession::SaslClientSession()
+
+- Used By:
+
+    - [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](../cpp\_client\_driver)
 
 # Dependencies
 
@@ -6797,6 +6833,274 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 - Provided By:
 
     - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+### src/mongo/client/sasl\_client\_authenticate\_impl.cpp
+
+<div></div>
+
+    mongo::auth::createPasswordDigest(mongo::StringData const&, mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/client/auth\_helpers.cpp](../utilities)
+
+<div></div>
+
+    mongo::bsonExtractBooleanFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, bool, bool*)
+
+- Provided By:
+
+    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::ErrorCodes::Error) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::bsonExtractStringFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, mongo::StringData const&, std::string*)
+
+- Provided By:
+
+    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::bsonExtractStringField(mongo::BSONObj const&, mongo::StringData const&, std::string*)
+
+- Provided By:
+
+    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::base64::encode(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/base64.cpp](../utilities)
+
+<div></div>
+
+    mongo::ErrorCodes::fromInt(int)
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+### src/mongo/client/sasl\_client\_session.cpp
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::printStackAndExit(int)
+
+- Provided By:
+
+    - [src/mongo/util/signal\_handlers.cpp](../utilities)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
 <div></div>
 

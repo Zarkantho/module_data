@@ -327,42 +327,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::BtreeBasedBuilder::fastBuildIndex(mongo::Collection*, mongo::BtreeInMemoryState*, bool)", 
-        "object": "src/mongo/db/index/btree_based_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_create.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeBasedBuilder::doDropDups(mongo::Collection*, std::set<mongo::DiskLoc, std::less<mongo::DiskLoc>, std::allocator<mongo::DiskLoc> > const&, bool)", 
-        "object": "src/mongo/db/index/btree_based_builder.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/indexupdatetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeBasedBuilder::getComparison(int, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index/btree_based_builder.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/extsorttests.cpp", 
-            "src/mongo/dbtests/indexupdatetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeBasedBuilder::addKeysToPhaseOne(mongo::Collection*, mongo::IndexDescriptor const*, mongo::BSONObj const&, mongo::SortPhaseOne*, mongo::ProgressMeter*, bool)", 
-        "object": "src/mongo/db/index/btree_based_builder.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/indexupdatetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeBasedBuilder::makeEmptyIndex(mongo::BtreeInMemoryState*)", 
-        "object": "src/mongo/db/index/btree_based_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_create.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::BtreeKeyGeneratorV1::BtreeKeyGeneratorV1(std::vector<char const*, std::allocator<char const*> >, std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> >, bool)", 
         "object": "src/mongo/db/index/btree_key_generator.cpp", 
         "used_by": [

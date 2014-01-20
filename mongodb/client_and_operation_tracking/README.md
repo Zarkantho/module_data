@@ -72,7 +72,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
 - Used By:
 
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -83,10 +83,10 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
@@ -170,7 +170,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -178,7 +178,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/s/d\_logic.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -548,7 +548,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
@@ -577,12 +577,12 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
@@ -681,7 +681,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Used By:
 
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
@@ -692,10 +692,10 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
@@ -779,7 +779,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -787,7 +787,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/s/d\_logic.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -817,7 +817,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
@@ -827,7 +827,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/repl/rs.cpp](../replication)
@@ -884,7 +884,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
@@ -896,10 +896,10 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
@@ -1223,7 +1223,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1339,7 +1339,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Provided By:
 
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
 
 <div></div>
 
@@ -1556,12 +1556,12 @@ The current "operation" within the current "Client"
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -2113,7 +2113,7 @@ Functions to kill the current "operation"
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>
@@ -2122,7 +2122,7 @@ Functions to kill the current "operation"
 
 - Used By:
 
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
@@ -2136,7 +2136,7 @@ Functions to kill the current "operation"
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
@@ -2387,7 +2387,7 @@ Base class for a Client on mongod and mongos: ClientBasic
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
@@ -2401,7 +2401,7 @@ Base class for a Client on mongod and mongos: ClientBasic
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
@@ -2475,7 +2475,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
@@ -2486,7 +2486,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 - Used By:
 
     - [src/mongo/s/request.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
 
 <div></div>
@@ -2559,7 +2559,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
@@ -2569,7 +2569,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - [src/mongo/s/strategy\_single.cpp](../sharding)
+    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/repl/rs.cpp](../replication)
@@ -3132,7 +3132,7 @@ The database's internal concept of a cursor from a client
 
 - Used By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -3150,7 +3150,7 @@ The database's internal concept of a cursor from a client
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
@@ -3425,7 +3425,7 @@ The database's internal concept of a cursor from a client
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3637,7 +3637,7 @@ The database's internal concept of a cursor from a client
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3985,7 +3985,7 @@ Contains helper functions for running common operations against the local server
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
@@ -4012,7 +4012,7 @@ Contains helper functions for running common operations against the local server
 
 - Used By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
@@ -4121,7 +4121,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -4145,7 +4145,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -4257,7 +4257,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -4329,7 +4329,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4425,7 +4425,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -4441,7 +4441,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -4566,7 +4566,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Used By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4675,7 +4675,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -4763,7 +4763,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -4779,7 +4779,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 

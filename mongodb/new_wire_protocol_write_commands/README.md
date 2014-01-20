@@ -399,7 +399,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -551,7 +551,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -696,7 +696,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -754,7 +754,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -770,7 +770,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -786,7 +786,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -810,7 +810,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -884,7 +884,7 @@ New wire protocol writes (in mongos)
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -892,7 +892,7 @@ New wire protocol writes (in mongos)
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 ### src/mongo/s/write\_ops/batch\_write\_exec.cpp
 
@@ -2753,7 +2753,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2803,7 +2803,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -2812,7 +2812,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2847,7 +2847,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2864,7 +2864,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2873,7 +2873,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -2881,7 +2881,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 

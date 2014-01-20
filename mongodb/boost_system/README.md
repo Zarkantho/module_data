@@ -49,17 +49,17 @@ Third Party - The boost system library
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/util/file.cpp](../file\_interface)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
@@ -203,7 +203,7 @@ Third Party - The boost system library
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync.cpp](../replication)
@@ -211,7 +211,7 @@ Third Party - The boost system library
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
@@ -235,7 +235,7 @@ Third Party - The boost system library
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/exec/working\_set\_common.cpp](../query\_system)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -245,7 +245,7 @@ Third Party - The boost system library
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/util/util.cpp](../utilities)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
@@ -256,15 +256,15 @@ Third Party - The boost system library
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/tools/import.cpp](../tools)
     - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/util/file.cpp](../file\_interface)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
     - [src/mongo/tools/export.cpp](../tools)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -279,7 +279,7 @@ Third Party - The boost system library
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/index/hash\_access\_method.cpp](../indexing)
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
@@ -328,17 +328,17 @@ Third Party - The boost system library
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/database\_holder.cpp](../storage\_layer\_structure)
+    - src/mongo/db/database\_holder.cpp
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
     - [src/mongo/db/index\_legacy.cpp](../indexing)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/util/file.cpp](../file\_interface)
-    - [src/mongo/db/namespace\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/db/structure/btree/state.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/btree/state.cpp
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
@@ -481,7 +481,7 @@ Third Party - The boost system library
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/s/strategy\_shard.cpp](../sharding)
+    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
     - [src/mongo/dbtests/commandtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync.cpp](../replication)
@@ -489,7 +489,7 @@ Third Party - The boost system library
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
-    - [src/mongo/db/catalog/ondisk/namespace\_index.cpp](../storage\_layer\_structure)
+    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/exec/fetch.cpp](../query\_system)
     - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
@@ -513,7 +513,7 @@ Third Party - The boost system library
     - [src/mongo/db/exec/s2near.cpp](../query\_system)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/db/structure/collection.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/exec/working\_set\_common.cpp](../query\_system)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
@@ -522,7 +522,7 @@ Third Party - The boost system library
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
-    - [src/mongo/db/storage/index\_details.cpp](../storage\_layer\_structure)
+    - src/mongo/db/storage/index\_details.cpp
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/util/util.cpp](../utilities)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
@@ -533,15 +533,15 @@ Third Party - The boost system library
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/tools/import.cpp](../tools)
     - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
-    - [src/mongo/db/structure/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/util/file.cpp](../file\_interface)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
     - [src/mongo/tools/export.cpp](../tools)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - [src/mongo/db/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/compact.cpp](../database\_commands)
+    - src/mongo/db/database.cpp
+    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
@@ -556,7 +556,7 @@ Third Party - The boost system library
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/index/btree\_based\_builder.cpp](../indexing)
+    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/index/hash\_access\_method.cpp](../indexing)
     - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
