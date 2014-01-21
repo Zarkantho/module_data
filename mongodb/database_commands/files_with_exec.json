@@ -61,6 +61,26 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/commands/authentication_commands.cpp", 
         "execs": [
             "mongotop", 
@@ -103,6 +123,26 @@
     }, 
     {
         "name": "src/mongo/db/commands/collection_to_capped.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/commands/compact.cpp", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -367,6 +407,30 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/commands/hint_commands.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/commands/hint_commands_test.cpp", 
+        "execs": []
+    }, 
+    {
         "name": "src/mongo/db/commands/index_stats.cpp", 
         "execs": [
             "mongotop", 
@@ -469,6 +533,26 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/commands/oplog_note.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/commands/parameters.cpp", 
         "execs": [
             "mongotop", 
@@ -508,6 +592,30 @@
             "mongofiles", 
             "mongorestore"
         ]
+    }, 
+    {
+        "name": "src/mongo/db/commands/plan_cache_commands.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/commands/plan_cache_commands_test.cpp", 
+        "execs": []
     }, 
     {
         "name": "src/mongo/db/commands/rename_collection.cpp", 

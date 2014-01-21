@@ -13,7 +13,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 - src/mongo/db/index/2d\_common.h
 - src/mongo/db/index/btree\_access\_method.cpp   (mongod, tools)
 - src/mongo/db/index/btree\_access\_method.h
-- src/mongo/db/index/btree\_based\_access\_method.cpp
+- src/mongo/db/index/btree\_based\_access\_method.cpp   (mongod, tools)
 - src/mongo/db/index/btree\_based\_access\_method.h
 - src/mongo/db/index/btree\_index\_cursor.cpp   (mongod, tools)
 - src/mongo/db/index/btree\_index\_cursor.h
@@ -52,7 +52,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::BtreeInMemoryState*)
+    mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)
 
 - Used By:
 
@@ -70,19 +70,22 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    typeinfo for mongo::BtreeBasedAccessMethod
+    mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::IndexCatalogEntry*)
 
 - Used By:
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+### src/mongo/db/index/btree\_based\_access\_method.cpp
 
 <div></div>
 
-    mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::BtreeInMemoryState*)
+    mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
 
 ### src/mongo/db/index/btree\_index\_cursor.cpp
 
@@ -136,21 +139,29 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::FTSAccessMethod::FTSAccessMethod(mongo::BtreeInMemoryState*)
-
-- Used By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     typeinfo for mongo::FTSAccessMethod
 
 - Used By:
 
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
 
+<div></div>
+
+    mongo::FTSAccessMethod::FTSAccessMethod(mongo::IndexCatalogEntry*)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
 ### src/mongo/db/index/hash\_access\_method.cpp
+
+<div></div>
+
+    mongo::HashAccessMethod::HashAccessMethod(mongo::IndexCatalogEntry*)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -159,14 +170,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::HashAccessMethod::HashAccessMethod(mongo::BtreeInMemoryState*)
-
-- Used By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -180,7 +183,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::BtreeInMemoryState*)
+    mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::IndexCatalogEntry*)
 
 - Used By:
 
@@ -198,7 +201,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::S2AccessMethod::S2AccessMethod(mongo::BtreeInMemoryState*)
+    mongo::S2AccessMethod::S2AccessMethod(mongo::IndexCatalogEntry*)
 
 - Used By:
 
@@ -220,7 +223,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
@@ -241,11 +244,12 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -292,12 +296,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/exec/text.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
 
 <div></div>
 
@@ -316,10 +315,9 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Used By:
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/queryutil.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
 
 <div></div>
 
@@ -327,10 +325,9 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
     - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -368,8 +365,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
-    - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -377,7 +373,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -414,14 +410,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -462,14 +450,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -518,6 +498,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -579,11 +567,125 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+### src/mongo/db/index/btree\_based\_access\_method.cpp
+
+<div></div>
+
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::BtreeBuilder(bool, mongo::IndexCatalogEntry*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::Ordering const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::killCurrentOp
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::commit(bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::asVersion(mongo::Record*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -603,6 +705,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::theReplSet
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
     mongo::getThreadName()
 
 - Provided By:
@@ -611,11 +721,19 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::Record::_accessing() const
+    mongo::LastErrorHolder::get(bool)
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Collection::numRecords() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -624,6 +742,38 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::KillCurrentOp::checkForInterrupt(bool)
+
+- Provided By:
+
+    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    mongo::RecordStore::deleteRecord(mongo::DiskLoc const&)
+
+- Provided By:
+
+    - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -651,11 +801,27 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeInMemoryState::setMultikey()
+    mongo::inDBRepair
 
 - Provided By:
 
-    - src/mongo/db/structure/btree/state.cpp
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::ProgressMeter::hit(int)
+
+- Provided By:
+
+    - [src/mongo/util/progress\_meter.cpp](../utilities)
 
 <div></div>
 
@@ -672,6 +838,22 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::addBucket(mongo::IndexCatalogEntry*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BSONObjExternalSorter::BSONObjExternalSorter(mongo::ExternalSortComparison const*, long)
+
+- Provided By:
+
+    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
 
 <div></div>
 
@@ -699,6 +881,30 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::IndexCatalogEntry::setMultikey()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::~disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::IndexCatalogEntry::head() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::DiskLoc::obj() const
 
 - Provided By:
@@ -707,11 +913,51 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::IndexCatalogEntry::setHead(mongo::DiskLoc)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::lastError
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::addBucket(mongo::IndexCatalogEntry*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -723,11 +969,28 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::addKey(mongo::BSONObj&, mongo::DiskLoc)
 
 - Provided By:
 
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::BtreeBuilder(bool, mongo::IndexCatalogEntry*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -739,19 +1002,19 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)
+
+- Provided By:
+
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::BtreeInMemoryState::head() const
-
-- Provided By:
-
-    - src/mongo/db/structure/btree/state.cpp
 
 <div></div>
 
@@ -763,11 +1026,43 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::IndexCatalogEntry::isReady() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
     mongo::RecordStore::recordFor(mongo::DiskLoc const&) const
 
 - Provided By:
 
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBuilder<mongo::BtreeData_V0>::commit(bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -779,7 +1074,15 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&) const
+    mongo::oldCompare(mongo::BSONObj const&, mongo::BSONObj const&, mongo::Ordering const&)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/key.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::asVersion(mongo::Record*)
 
 - Provided By:
 
@@ -787,11 +1090,19 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+    mongo::BtreeBuilder<mongo::BtreeData_V1>::addKey(mongo::BSONObj&, mongo::DiskLoc)
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 ### src/mongo/db/index/btree\_index\_cursor.cpp
 
@@ -810,14 +1121,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::BtreeInMemoryState::head() const
-
-- Provided By:
-
-    - src/mongo/db/structure/btree/state.cpp
 
 <div></div>
 
@@ -846,6 +1149,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 <div></div>
 
     mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
 
 - Provided By:
 
@@ -917,11 +1228,11 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::msgasserted(int, char const*)
+    mongo::IndexCatalogEntry::head() const
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -943,6 +1254,22 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::IndexCatalogEntry*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::IndexCatalogEntry const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -951,7 +1278,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
+    mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::IndexCatalogEntry const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
 
 - Provided By:
 
@@ -967,6 +1294,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::BtreeBucket<mongo::BtreeData_V0>::asVersion(mongo::Record*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -975,15 +1310,15 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::Record::_accessing() const
+    mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::IndexCatalogEntry*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyV1 const&)
+    mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::IndexCatalogEntry*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
 
 - Provided By:
 
@@ -999,11 +1334,11 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
+    boost::system::generic_category()
 
 - Provided By:
 
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -1023,23 +1358,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
+    mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::IndexCatalogEntry*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
 
 - Provided By:
 
@@ -1048,30 +1367,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 <div></div>
 
     mongo::BtreeBucket<mongo::BtreeData_V0>::advance(mongo::DiskLoc const&, int&, int, char const*) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
 
 - Provided By:
 
@@ -1103,27 +1398,11 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::BtreeInMemoryState const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     vtable for mongo::DBException
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1151,6 +1430,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor const*, mongo::KeyV1 const&)
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     vtable for mongo::UserException
 
 - Provided By:
@@ -1159,7 +1446,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const
+    mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&) const
 
 - Provided By:
 
@@ -1199,22 +1486,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::BtreeInMemoryState const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DiskLoc::rec() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::BtreeBucket<mongo::BtreeData_V1>::advance(mongo::DiskLoc const&, int&, int, char const*) const
 
 - Provided By:
@@ -1231,7 +1502,47 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::BtreeInMemoryState*, mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const
+    mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::IndexCatalogEntry const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc const&, int) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::IndexCatalogEntry const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::IndexCatalogEntry const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&, int) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BtreeBucket<mongo::BtreeData_V1>::asVersion(mongo::Record*)
 
 - Provided By:
 
@@ -1437,22 +1748,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::BSONObj::getFieldDottedOrArray(char const*&) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -1498,6 +1793,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObj::getFieldDottedOrArray(char const*&) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -1620,14 +1923,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -1846,14 +2141,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/third\_party/s2/base/logging.cc](../s2)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -2102,6 +2389,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::CurOp::reset(mongo::HostAndPort const&, int)
+
+- Provided By:
+
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -2138,7 +2433,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2170,7 +2465,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2198,14 +2493,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     typeinfo for mongo::BackgroundJob
 
 - Provided By:
@@ -2228,6 +2515,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
     - [src/mongo/util/background.cpp](../utilities)
 
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
 ### src/mongo/db/index\_legacy.cpp
 
 <div></div>
@@ -2236,7 +2531,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2268,7 +2563,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2353,6 +2648,14 @@ Indexes and index management code. TODO: go into more details about this. The co
     - [src/mongo/util/assert\_util.cpp](../utilities)
 
 ### src/mongo/db/index\_rebuilder.cpp
+
+<div></div>
+
+    mongo::IndexCatalog::getAndClearUnfinishedIndexes()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2479,14 +2782,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::IndexCatalog::numIndexesReady() const
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::BackgroundJob::~BackgroundJob()
 
 - Provided By:
@@ -2515,19 +2810,11 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
     mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::fassertFailed(int)
 
 - Provided By:
 
@@ -2543,6 +2830,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
+    mongo::IndexCatalog::dropAllIndexes(bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
@@ -2555,15 +2850,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
-
-<div></div>
-
-    mongo::IndexCatalog::blowAwayInProgressIndexEntries()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2599,14 +2886,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 <div></div>
 
-    mongo::IndexCatalog::prepOneUnfinishedIndex()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::ClientBasic::getAuthorizationSession() const
 
 - Provided By:
@@ -2628,14 +2907,6 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2668,6 +2939,14 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Provided By:
 
     - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/index\_set.cpp
 
@@ -2792,16 +3071,6 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
 <div></div>
 
-    mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - src/mongo/db/structure/collection.cpp
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)
 
 - Used By:
@@ -2811,12 +3080,20 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2857,7 +3134,6 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
     - [src/mongo/s/chunk.cpp](../sharding)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -3051,7 +3327,7 @@ Background job that periodically checks a ttl index.
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3139,7 +3415,7 @@ Background job that periodically checks a ttl index.
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3255,6 +3531,22 @@ Background job that periodically checks a ttl index.
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::ExportedServerParameter<bool>::setFromString(std::string const&)
 
 - Provided By:
@@ -3345,14 +3637,6 @@ Background job that periodically checks a ttl index.
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 

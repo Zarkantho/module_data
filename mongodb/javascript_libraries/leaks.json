@@ -2167,6 +2167,13 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp"
         ], 
+        "symbol": "mongo::JSFiles::batch_api", 
+        "object": "src/mongo/scripting/engine.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp"
+        ], 
         "symbol": "mongo::JSFiles::mongo", 
         "object": "src/mongo/scripting/engine.cpp"
     }, 
@@ -2291,13 +2298,6 @@
             "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
         ], 
         "symbol": "boost::filesystem3::path::wchar_t_codecvt_facet()", 
-        "object": "src/mongo/scripting/engine.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp"
-        ], 
-        "symbol": "mongo::JSFiles::writes", 
         "object": "src/mongo/scripting/engine.cpp"
     }, 
     {

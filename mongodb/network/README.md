@@ -405,7 +405,6 @@ Network library   can you say a few words about:   - what this does   - who uses
 - Used By:
 
     - [src/mongo/util/net/message\_port.cpp](../network)
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
 
 <div></div>
 
@@ -449,15 +448,13 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
-    - [src/mongo/s/config.cpp](../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
+    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
 
 <div></div>
@@ -488,7 +485,6 @@ Network library   can you say a few words about:   - what this does   - who uses
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
     - [src/mongo/util/net/message\_port.cpp](../network)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -553,7 +549,14 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Socket::handleSendError(int, char const*)
+
+- Used By:
+
+    - [src/mongo/util/net/ssl\_manager.cpp](../network)
 
 <div></div>
 
@@ -587,12 +590,12 @@ Network library   can you say a few words about:   - what this does   - who uses
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - src/mongo/client/distlock.cpp
     - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/repl/oplogreader.cpp](../replication)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/s/distlock.cpp](../sharding)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
@@ -613,14 +616,6 @@ Network library   can you say a few words about:   - what this does   - who uses
 
     - [src/mongo/util/net/listen.cpp](../network)
     - [src/mongo/util/net/message\_port.cpp](../network)
-
-<div></div>
-
-    mongo::Socket::handleSendError(int, char const*)
-
-- Used By:
-
-    - [src/mongo/util/net/ssl\_manager.cpp](../network)
 
 <div></div>
 

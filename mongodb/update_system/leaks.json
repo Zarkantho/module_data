@@ -218,9 +218,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/hex.cpp"
+            "src/mongo/db/jsobj.cpp"
         ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "symbol": "mongo::typeName(mongo::BSONType)", 
         "object": "src/mongo/db/ops/modifier_push.cpp"
     }, 
     {
@@ -253,9 +253,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp"
+            "src/mongo/util/hex.cpp"
         ], 
-        "symbol": "mongo::typeName(mongo::BSONType)", 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/ops/modifier_push.cpp"
     }, 
     {
@@ -771,13 +771,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/ops/modifier_object_replace_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/json.cpp"
         ], 
         "symbol": "mongo::fromjson(char const*, int*)", 
@@ -851,6 +844,13 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/ops/modifier_object_replace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
         "object": "src/mongo/db/ops/modifier_object_replace_test.cpp"
     }, 
     {
@@ -1226,16 +1226,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection_info_cache.cpp"
+            "src/mongo/db/catalog/collection_info_cache.cpp"
         ], 
         "symbol": "mongo::CollectionInfoCache::computeIndexKeys()", 
-        "object": "src/mongo/db/ops/update_lifecycle_impl.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/ops/update_lifecycle_impl.cpp"
     }, 
     {
@@ -1268,13 +1261,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/ops/update_lifecycle_impl.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/s/d_state.cpp"
         ], 
         "symbol": "mongo::ShardingState::needCollectionMetadata(std::string const&) const", 
@@ -1303,10 +1289,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::currentClient", 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
         "object": "src/mongo/db/ops/update_lifecycle_impl.cpp"
     }, 
     {
@@ -1640,6 +1625,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::typeName(mongo::BSONType)", 
+        "object": "src/mongo/db/ops/modifier_current_date.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1657,13 +1649,6 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/ops/modifier_current_date.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/ops/modifier_current_date.cpp"
     }, 
     {
@@ -1717,9 +1702,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/jsobj.cpp"
+            "src/mongo/util/hex.cpp"
         ], 
-        "symbol": "mongo::typeName(mongo::BSONType)", 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/ops/modifier_current_date.cpp"
     }, 
     {
@@ -4027,9 +4012,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
         "object": "src/mongo/db/ops/modifier_pull_test.cpp"
     }, 
     {
@@ -4097,13 +4082,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/ops/modifier_pull_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
@@ -4114,6 +4092,13 @@
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/ops/modifier_pull_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
         "object": "src/mongo/db/ops/modifier_pull_test.cpp"
     }, 
     {
@@ -4279,13 +4264,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/ops/path_support_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/bson/mutable/element.cpp"
         ], 
         "symbol": "mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)", 
@@ -4442,7 +4420,7 @@
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
+        "symbol": "mongo::unittest::Test::Test()", 
         "object": "src/mongo/db/ops/path_support_test.cpp"
     }, 
     {
@@ -4552,6 +4530,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/ops/path_support_test.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/bson/mutable/document.cpp"
         ], 
         "symbol": "mongo::mutablebson::Document::Document()", 
@@ -4591,6 +4576,230 @@
         ], 
         "symbol": "mongo::mutablebson::Element::rightChild() const", 
         "object": "src/mongo/db/ops/path_support_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::~Document()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::Document(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/json.cpp"
+        ], 
+        "symbol": "mongo::fromjson(char const*, int*)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::getCurrentInPlaceMode() const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::Document()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/element.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Element::operator[](mongo::StringData const&) const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::checkDoc(mongo::mutablebson::Document const&, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Element::getType() const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::operator<<(std::ostream&, mongo::mutablebson::Document const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Element::rightChild() const", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
     }, 
     {
         "sources": [
@@ -4814,13 +5023,6 @@
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
-        "object": "src/mongo/db/ops/update_driver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index_set.cpp"
-        ], 
-        "symbol": "mongo::IndexPathSet::clear()", 
         "object": "src/mongo/db/ops/update_driver.cpp"
     }, 
     {
@@ -5427,16 +5629,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/base/status.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::Test()", 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
         "object": "src/mongo/db/ops/modifier_pull_all_test.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp"
+            "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "symbol": "mongo::unittest::Test::Test()", 
         "object": "src/mongo/db/ops/modifier_pull_all_test.cpp"
     }, 
     {
@@ -5606,230 +5808,6 @@
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/ops/modifier_pull_all_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::~Document()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::Document(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/json.cpp"
-        ], 
-        "symbol": "mongo::fromjson(char const*, int*)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::getCurrentInPlaceMode() const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::Document()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/element.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Element::operator[](mongo::StringData const&) const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::checkDoc(mongo::mutablebson::Document const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Element::getType() const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::operator<<(std::ostream&, mongo::mutablebson::Document const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Element::rightChild() const", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/ops/modifier_inc_test.cpp"
     }, 
     {
         "sources": [

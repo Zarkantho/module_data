@@ -364,8 +364,7 @@
         "symbol": "mongo::SockAddr::getPort() const", 
         "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "src/mongo/util/net/message_port.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp"
+            "src/mongo/util/net/message_port.cpp"
         ]
     }, 
     {
@@ -404,15 +403,13 @@
         "symbol": "mongo::getHostNameCached()", 
         "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/s/config.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/version_mongos.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/config.cpp", 
             "src/mongo/db/query/new_find.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
+            "src/mongo/db/log_process_details.cpp", 
             "src/mongo/s/cluster_client_internal.cpp"
         ]
     }, 
@@ -440,7 +437,6 @@
         "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
             "src/mongo/util/net/message_port.cpp", 
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/util/net/listen.cpp"
@@ -498,8 +494,14 @@
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
             "src/mongo/client/connpool.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/client/parallel.cpp"
+            "src/mongo/client/connpool.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Socket::handleSendError(int, char const*)", 
+        "object": "src/mongo/util/net/sock.cpp", 
+        "used_by": [
+            "src/mongo/util/net/ssl_manager.cpp"
         ]
     }, 
     {
@@ -529,12 +531,12 @@
         "object": "src/mongo/util/net/sock.cpp", 
         "used_by": [
             "src/mongo/s/config.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/repl/sync_source_feedback.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
             "src/mongo/dbtests/replsettests.cpp"
         ]
@@ -553,13 +555,6 @@
         "used_by": [
             "src/mongo/util/net/listen.cpp", 
             "src/mongo/util/net/message_port.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Socket::handleSendError(int, char const*)", 
-        "object": "src/mongo/util/net/sock.cpp", 
-        "used_by": [
-            "src/mongo/util/net/ssl_manager.cpp"
         ]
     }, 
     {

@@ -65,14 +65,14 @@
         ]
     }, 
     {
-        "symbol": "mongo::Polygon::contains(mongo::Point const&) const", 
+        "symbol": "mongo::Box::inside(mongo::Point, double) const", 
         "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
             "src/mongo/db/exec/2d.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::Box::inside(mongo::Point, double) const", 
+        "symbol": "mongo::Polygon::contains(mongo::Point const&) const", 
         "object": "src/mongo/db/geo/shapes.cpp", 
         "used_by": [
             "src/mongo/db/exec/2d.cpp"
@@ -392,7 +392,8 @@
         "symbol": "mongo::GeoHashConverter::GeoHashConverter(mongo::GeoHashConverter::Parameters const&)", 
         "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
-            "src/mongo/db/index/2d_access_method.cpp"
+            "src/mongo/db/index/2d_access_method.cpp", 
+            "src/mongo/db/query/planner_ixselect.cpp"
         ]
     }, 
     {

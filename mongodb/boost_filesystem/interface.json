@@ -90,8 +90,8 @@
             "src/mongo/shell/shell_utils.cpp", 
             "src/mongo/shell/shell_utils_launcher.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
             "src/mongo/db/db.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/util/mmap.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/db/storage/data_file.cpp", 
@@ -119,10 +119,10 @@
         "object": "src/third_party/boost/libs/filesystem/v3/src/operations.cpp", 
         "used_by": [
             "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/pdfile.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
             "src/mongo/shell/shell_utils_launcher.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
+            "src/mongo/db/pdfile.cpp", 
             "src/mongo/db/dur_journal.cpp", 
             "src/mongo/unittest/temp_dir.cpp", 
             "src/mongo/dbtests/framework_options.cpp"
@@ -139,12 +139,12 @@
             "src/mongo/tools/tool.cpp", 
             "src/mongo/util/file_allocator.cpp", 
             "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/util/mmap.cpp", 
+            "src/mongo/db/instance.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/db/extsort.cpp", 
             "src/mongo/tools/restore.cpp", 
             "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/db/instance.cpp", 
+            "src/mongo/util/mmap.cpp", 
             "src/mongo/tools/import.cpp", 
             "src/mongo/db/pipeline/document_source_group.cpp"
         ]
@@ -244,6 +244,7 @@
             "src/mongo/db/dur_recover.cpp", 
             "src/mongo/util/file_allocator.cpp", 
             "src/mongo/db/db.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/db/dur_journal.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
@@ -252,7 +253,6 @@
             "src/mongo/tools/restore.cpp", 
             "src/mongo/db/dbhelpers.cpp", 
             "src/mongo/scripting/engine.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
             "src/mongo/db/storage/extent_manager.cpp", 
             "src/mongo/tools/dump.cpp"
         ]
@@ -288,14 +288,14 @@
         "used_by": [
             "src/mongo/util/file_allocator.cpp", 
             "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
+            "src/mongo/db/durop.cpp", 
             "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/db/dur_journal.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/db/dbhelpers.cpp", 
             "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/tools/dump.cpp", 
-            "src/mongo/db/durop.cpp"
+            "src/mongo/tools/dump.cpp"
         ]
     }, 
     {
@@ -304,14 +304,14 @@
         "used_by": [
             "src/mongo/util/file_allocator.cpp", 
             "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
+            "src/mongo/db/durop.cpp", 
             "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/db/dur_journal.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/db/dbhelpers.cpp", 
             "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/tools/dump.cpp", 
-            "src/mongo/db/durop.cpp"
+            "src/mongo/tools/dump.cpp"
         ]
     }, 
     {

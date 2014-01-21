@@ -4,7 +4,6 @@
         "object": "src/mongo/db/auth/authz_manager_external_state_mock.cpp", 
         "used_by": [
             "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp", 
             "src/mongo/dbtests/dbtests.cpp"
         ]
     }, 
@@ -27,18 +26,8 @@
         "object": "src/mongo/db/auth/user_name.cpp", 
         "used_by": [
             "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/auxprop_mongodb_internal.cpp", 
             "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::operator<<(std::ostream&, mongo::UserName const&)", 
-        "object": "src/mongo/db/auth/user_name.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
         ]
     }, 
     {
@@ -60,6 +49,7 @@
             "src/mongo/s/shard.cpp", 
             "src/mongo/db/repl/sync_source_feedback.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/repl/manager.cpp", 
             "src/mongo/db/repl/rs_config.cpp"
         ]
@@ -86,24 +76,25 @@
         ]
     }, 
     {
-        "symbol": "mongo::AuthzSessionExternalState::AuthzSessionExternalState(mongo::AuthorizationManager*)", 
-        "object": "src/mongo/db/auth/authz_session_external_state.cpp", 
+        "symbol": "mongo::auth::parseDropRoleCommand(mongo::BSONObj const&, std::string const&, mongo::RoleName*, mongo::BSONObj*)", 
+        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::AuthzSessionExternalState::~AuthzSessionExternalState()", 
-        "object": "src/mongo/db/auth/authz_session_external_state.cpp", 
+        "symbol": "mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)", 
+        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
-        "symbol": "typeinfo for mongo::AuthzSessionExternalState", 
-        "object": "src/mongo/db/auth/authz_session_external_state.cpp", 
+        "symbol": "mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, int*, bool*, mongo::BSONObj*)", 
+        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp"
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
@@ -115,20 +106,6 @@
     }, 
     {
         "symbol": "mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)", 
-        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::auth::parseDropRoleCommand(mongo::BSONObj const&, std::string const&, mongo::RoleName*, mongo::BSONObj*)", 
-        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)", 
         "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
@@ -156,17 +133,10 @@
         ]
     }, 
     {
-        "symbol": "mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)", 
+        "symbol": "mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)", 
         "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::auth::parseUserNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*)", 
-        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_d.cpp"
         ]
     }, 
     {
@@ -178,13 +148,6 @@
     }, 
     {
         "symbol": "mongo::auth::parseRolePossessionManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, std::string*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*, mongo::BSONObj*)", 
-        "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)", 
         "object": "src/mongo/db/auth/user_management_commands_parser.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
@@ -229,10 +192,8 @@
             "src/mongo/db/ttl.cpp", 
             "src/mongo/db/dbwebserver.cpp", 
             "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
             "src/mongo/db/index_rebuilder.cpp", 
             "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/range_deleter_db_env.cpp", 
             "src/mongo/s/d_migrate.cpp"
         ]
     }, 
@@ -274,7 +235,6 @@
         "used_by": [
             "src/mongo/db/commands.cpp", 
             "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/auxprop_mongodb_internal.cpp", 
             "src/mongo/db/restapi.cpp"
         ]
     }, 
@@ -296,17 +256,9 @@
         "symbol": "mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/db/client.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp", 
+            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/s_only.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::AuthorizationSession::isAuthorizedForPrivilege(mongo::Privilege const&)", 
-        "object": "src/mongo/db/auth/authorization_session.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_d.cpp"
         ]
     }, 
     {
@@ -317,13 +269,6 @@
             "src/mongo/db/commands/mr.cpp", 
             "src/mongo/db/dbeval.cpp", 
             "src/mongo/db/commands/group.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::AuthorizationSession::getImpersonatedUserNames() const", 
-        "object": "src/mongo/db/auth/authorization_session.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_private.cpp"
         ]
     }, 
     {
@@ -339,9 +284,7 @@
         "used_by": [
             "src/mongo/db/commands/connection_status.cpp", 
             "src/mongo/db/server_extra_log_context.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_private.cpp", 
-            "src/mongo/db/introspect.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_s.cpp"
+            "src/mongo/db/introspect.cpp"
         ]
     }, 
     {
@@ -355,7 +298,7 @@
         "symbol": "mongo::AuthorizationSession::checkAuthForQuery(mongo::NamespaceString const&, mongo::BSONObj const&)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -363,7 +306,6 @@
         "symbol": "mongo::AuthorizationSession::checkAuthForInsert(mongo::NamespaceString const&, mongo::BSONObj const&)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -371,7 +313,7 @@
         "symbol": "mongo::AuthorizationSession::checkAuthForGetMore(mongo::NamespaceString const&, long long)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -396,15 +338,19 @@
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/db/commands/merge_chunks_cmd.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/commands/rename_collection_common.cpp", 
-            "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
+            "src/mongo/s/commands/cluster_plan_cache_cmd.cpp", 
+            "src/mongo/s/commands/cluster_hint_cmd.cpp", 
+            "src/mongo/db/commands/hint_commands.cpp", 
+            "src/mongo/db/commands/oplog_note.cpp", 
+            "src/mongo/db/commands/plan_cache_commands.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/s/d_state.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_command.cpp", 
+            "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
             "src/mongo/db/commands/cleanup_orphaned_cmd.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp"
         ]
@@ -413,8 +359,7 @@
         "symbol": "mongo::AuthorizationSession::~AuthorizationSession()", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/db/client_basic.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp"
+            "src/mongo/db/client_basic.cpp"
         ]
     }, 
     {
@@ -428,7 +373,6 @@
         "symbol": "mongo::AuthorizationSession::checkAuthForDelete(mongo::NamespaceString const&, mongo::BSONObj const&)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -436,7 +380,6 @@
         "symbol": "mongo::AuthorizationSession::checkAuthForUpdate(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -467,7 +410,6 @@
         "symbol": "mongo::AuthorizationSession::addAndAuthorizeUser(mongo::UserName const&)", 
         "object": "src/mongo/db/auth/authorization_session.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
             "src/mongo/db/commands/authentication_commands.cpp", 
             "src/mongo/db/dbwebserver.cpp"
         ]
@@ -490,21 +432,27 @@
         "symbol": "mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)", 
         "object": "src/mongo/db/auth/authz_documents_update_guard.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()", 
         "object": "src/mongo/db/auth/authz_documents_update_guard.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
         "symbol": "mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)", 
         "object": "src/mongo/db/auth/authz_documents_update_guard.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
@@ -512,7 +460,7 @@
         "object": "src/mongo/db/auth/user_document_parser.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ]
     }, 
     {
@@ -520,14 +468,6 @@
         "object": "src/mongo/db/auth/role_name.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::operator<<(std::ostream&, mongo::RoleName const&)", 
-        "object": "src/mongo/db/auth/role_name.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
         ]
     }, 
     {
@@ -541,11 +481,10 @@
         "symbol": "mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)", 
         "object": "src/mongo/db/auth/privilege.cpp", 
         "used_by": [
-            "src/mongo/db/compact.cpp", 
+            "src/mongo/db/commands/index_stats.cpp", 
             "src/mongo/db/repl/heartbeat.cpp", 
             "src/mongo/db/repl/consensus.cpp", 
             "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/db/commands/index_stats.cpp", 
             "src/mongo/db/dbcommands_generic.cpp", 
             "src/mongo/db/commands/find_and_modify_common.cpp", 
             "src/mongo/db/commands/drop_indexes.cpp", 
@@ -564,6 +503,7 @@
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/db/commands.cpp", 
             "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/commands/compact.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/commands/collection_to_capped.cpp", 
             "src/mongo/db/commands/write_commands/write_commands_common.cpp", 
@@ -600,8 +540,7 @@
             "src/mongo/db/commands/mr_common.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/pipeline/pipeline.cpp", 
-            "src/mongo/db/commands/write_commands/write_commands_common.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_d.cpp"
+            "src/mongo/db/commands/write_commands/write_commands_common.cpp"
         ]
     }, 
     {
@@ -611,24 +550,26 @@
             "src/mongo/db/commands/authentication_commands.cpp", 
             "src/mongo/db/repl/heartbeat.cpp", 
             "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/s/shard.cpp", 
             "src/mongo/db/mongod_options.cpp", 
-            "src/mongo/db/repl/rs_initialsync.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/db/repl/oplogreader.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/s/s_only.cpp", 
+            "src/mongo/db/repl/rs_initialsync.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/commands/isself.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/s/s_only.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp"
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/s/shard.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/repl/oplogreader.cpp"
         ]
     }, 
     {
@@ -652,14 +593,14 @@
         "symbol": "mongo::authindex::createSystemIndexes(mongo::NamespaceString const&)", 
         "object": "src/mongo/db/auth/auth_index_d.cpp", 
         "used_by": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ActionSet::addAction(mongo::ActionType const&)", 
         "object": "src/mongo/db/auth/action_set.cpp", 
         "used_by": [
-            "src/mongo/db/compact.cpp", 
+            "src/mongo/db/commands/index_stats.cpp", 
             "src/mongo/db/repl/heartbeat.cpp", 
             "src/mongo/db/repl/consensus.cpp", 
             "src/mongo/db/commands/dbhash.cpp", 
@@ -684,8 +625,8 @@
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/db/commands.cpp", 
             "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/commands/compact.cpp", 
             "src/mongo/db/client.cpp", 
-            "src/mongo/db/commands/index_stats.cpp", 
             "src/mongo/db/commands/collection_to_capped.cpp", 
             "src/mongo/db/commands/write_commands/write_commands_common.cpp", 
             "src/mongo/s/d_split.cpp", 
@@ -732,9 +673,7 @@
         "symbol": "mongo::AuthorizationManager::ROLE_NAME_FIELD_NAME", 
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
@@ -777,16 +716,8 @@
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
             "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/auxprop_mongodb_internal.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)", 
-        "object": "src/mongo/db/auth/authorization_manager.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
@@ -829,9 +760,16 @@
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
             "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/auxprop_mongodb_internal.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/commands/user_management_commands.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/dbwebserver.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::AuthorizationManager::upgradeSchema(int, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/auth/authorization_manager.cpp", 
+        "used_by": [
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
@@ -840,7 +778,6 @@
         "used_by": [
             "src/mongo/s/server.cpp", 
             "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp", 
             "src/mongo/dbtests/dbtests.cpp", 
             "src/mongo/db/db.cpp"
         ]
@@ -856,9 +793,7 @@
         "symbol": "mongo::AuthorizationManager::ROLE_SOURCE_FIELD_NAME", 
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
@@ -887,6 +822,7 @@
             "src/mongo/db/db.cpp", 
             "src/mongo/db/repl/sync_source_feedback.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/repl/manager.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
             "src/mongo/s/d_migrate.cpp"
@@ -904,13 +840,6 @@
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::AuthorizationManager::~AuthorizationManager()", 
-        "object": "src/mongo/db/auth/authorization_manager.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_authentication_session.cpp"
         ]
     }, 
     {
@@ -943,7 +872,7 @@
         ]
     }, 
     {
-        "symbol": "mongo::AuthorizationManager::upgradeSchemaStep(mongo::BSONObj const&, bool*)", 
+        "symbol": "mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)", 
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp"
@@ -970,13 +899,9 @@
         "symbol": "mongo::AuthorizationManager::USER_DB_FIELD_NAME", 
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authentication.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
             "src/mongo/db/introspect.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/commands/connection_status.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/connection_status.cpp"
         ]
     }, 
     {
@@ -997,13 +922,9 @@
         "symbol": "mongo::AuthorizationManager::USER_NAME_FIELD_NAME", 
         "object": "src/mongo/db/auth/authorization_manager.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authentication.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
             "src/mongo/db/introspect.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/commands/connection_status.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/connection_status.cpp"
         ]
     }, 
     {
@@ -1018,8 +939,7 @@
         "object": "src/mongo/db/auth/user.cpp", 
         "used_by": [
             "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/auxprop_mongodb_internal.cpp"
+            "src/mongo/db/dbwebserver.cpp"
         ]
     }, 
     {
@@ -1033,23 +953,14 @@
         "symbol": "mongo::ParsedPrivilege::toBSON() const", 
         "object": "src/mongo/db/auth/privilege_parser.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ParsedPrivilege::ParsedPrivilege()", 
         "object": "src/mongo/db/auth/privilege_parser.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParsedPrivilege::toString() const", 
-        "object": "src/mongo/db/auth/privilege_parser.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
@@ -1063,16 +974,14 @@
         "symbol": "mongo::ParsedPrivilege::~ParsedPrivilege()", 
         "object": "src/mongo/db/auth/privilege_parser.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ParsedPrivilege::privilegeToParsedPrivilege(mongo::Privilege const&, mongo::ParsedPrivilege*, std::string*)", 
         "object": "src/mongo/db/auth/privilege_parser.cpp", 
         "used_by": [
-            "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/commands/user_management_commands.cpp"
         ]
     }, 
     {

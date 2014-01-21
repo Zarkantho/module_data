@@ -99,6 +99,104 @@
     }, 
     {
         "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_test.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -130,13 +228,6 @@
             "src/mongo/db/client.cpp"
         ], 
         "symbol": "mongo::Client::Context::_finishInit()", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::Query::snapshot()", 
         "object": "src/mongo/db/cloner.cpp"
     }, 
     {
@@ -274,13 +365,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -333,13 +417,6 @@
             "src/mongo/db/d_concurrency.cpp"
         ], 
         "symbol": "mongo::Lock::TempRelease::~TempRelease()", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::valid() const", 
         "object": "src/mongo/db/cloner.cpp"
     }, 
     {
@@ -414,13 +491,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "vtable for mongo::DBClientConnection", 
@@ -431,13 +501,6 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::legalClientSystemNS(mongo::StringData const&, bool)", 
         "object": "src/mongo/db/cloner.cpp"
     }, 
     {
@@ -459,6 +522,13 @@
             "src/mongo/db/d_concurrency.cpp"
         ], 
         "symbol": "mongo::Lock::isLocked()", 
+        "object": "src/mongo/db/cloner.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "mongo::Query::snapshot()", 
         "object": "src/mongo/db/cloner.cpp"
     }, 
     {
@@ -555,16 +625,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/bson/bson_validate.cpp"
         ], 
-        "symbol": "mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)", 
-        "object": "src/mongo/db/cloner.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands/isself.cpp"
-        ], 
-        "symbol": "mongo::HostAndPort::isSelf() const", 
+        "symbol": "mongo::validateBSON(char const*, unsigned long long)", 
         "object": "src/mongo/db/cloner.cpp"
     }, 
     {
@@ -583,6 +646,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/commands/isself.cpp"
+        ], 
+        "symbol": "mongo::HostAndPort::isSelf() const", 
+        "object": "src/mongo/db/cloner.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)", 
@@ -597,6 +667,230 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/repl/rs.cpp"
+        ], 
+        "symbol": "mongo::theReplSet", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/keypattern.cpp"
+        ], 
+        "symbol": "mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/plan_cache.cpp"
+        ], 
+        "symbol": "mongo::PlanCache::~PlanCache()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/clientcursor.cpp"
+        ], 
+        "symbol": "mongo::ClientCursor::invalidateDocument(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&, mongo::InvalidationType)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/query_settings.cpp"
+        ], 
+        "symbol": "mongo::QuerySettings::~QuerySettings()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(mongo::DBException const&)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands/server_status.cpp"
+        ], 
+        "symbol": "mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/auth/user_document_parser.cpp"
+        ], 
+        "symbol": "mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/db/catalog/collection.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/index_names.cpp"
         ], 
         "symbol": "mongo::IndexNames::findPluginName(mongo::BSONObj const&)", 
@@ -604,16 +898,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/db/field_ref.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::swapIndex(int, int)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/fts_access_method.cpp"
-        ], 
-        "symbol": "mongo::FTSAccessMethod::FTSAccessMethod(mongo::BtreeInMemoryState*)", 
+        "symbol": "mongo::FieldRef::FieldRef()", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -632,16 +919,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/index/hash_access_method.cpp"
+            "src/mongo/db/index/2d_access_method.cpp"
         ], 
-        "symbol": "mongo::HashAccessMethod::HashAccessMethod(mongo::BtreeInMemoryState*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::getExtentManager()", 
+        "symbol": "mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -653,9 +933,23 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/matcher/expression_leaf.cpp"
+        ], 
+        "symbol": "mongo::LeafMatchExpression::matches(mongo::MatchableDocument const*, mongo::MatchDetails*) const", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/repl/rs.cpp"
         ], 
         "symbol": "mongo::theReplSet", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::invariantFailed(char const*, char const*, unsigned int)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -681,13 +975,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::clearSystemFlag(int)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::toString() const", 
@@ -695,9 +982,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/matcher/expression_leaf.cpp"
         ], 
-        "symbol": "vtable for mongo::MsgAssertionException", 
+        "symbol": "mongo::ComparisonMatchExpression::equivalent(mongo::MatchExpression const*) const", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -718,7 +1005,14 @@
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -730,9 +1024,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/d_concurrency.cpp"
         ], 
-        "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
+        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -765,16 +1059,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/matcher/expression_leaf.cpp"
         ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dur.cpp"
-        ], 
-        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "symbol": "mongo::ComparisonMatchExpression::init(mongo::StringData const&, mongo::BSONElement const&)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -786,16 +1073,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/db/clientcursor.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)", 
+        "symbol": "mongo::ClientCursor::invalidate(mongo::StringData const&)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/clientcursor.cpp"
+            "src/mongo/db/matcher/expression_leaf.cpp"
         ], 
-        "symbol": "mongo::ClientCursor::invalidate(mongo::StringData const&)", 
+        "symbol": "typeinfo for mongo::ComparisonMatchExpression", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -814,6 +1101,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/index/hash_access_method.cpp"
+        ], 
+        "symbol": "mongo::HashAccessMethod::HashAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::fassertFailed(int)", 
@@ -828,16 +1122,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/index/haystack_access_method.cpp"
         ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "symbol": "mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/storage/index_details.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::IndexDetails::areIndexOptionsEquivalent(mongo::BSONObj const&) const", 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -849,16 +1143,23 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/util/hex.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)", 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/matcher/expression.cpp"
         ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "symbol": "vtable for mongo::MatchExpression", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/matcher/expression_leaf.cpp"
+        ], 
+        "symbol": "vtable for mongo::LeafMatchExpression", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -870,27 +1171,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::_removeIndexFromMe(int)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::MsgAssertionException", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
@@ -898,9 +1178,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/matcher/expression_leaf.cpp"
         ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "symbol": "mongo::ComparisonMatchExpression::debugString(mongo::StringBuilderImpl<mongo::TrivialAllocator>&, int) const", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/matcher/expression.cpp"
+        ], 
+        "symbol": "mongo::MatchExpression::toString() const", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -912,30 +1199,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection_info_cache.cpp"
-        ], 
-        "symbol": "mongo::CollectionInfoCache::clearQueryCache()", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::setIndexIsMultikey(int, bool)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/index_names.cpp"
         ], 
         "symbol": "mongo::IndexNames::TEXT", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/haystack_access_method.cpp"
-        ], 
-        "symbol": "mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::BtreeInMemoryState*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -947,37 +1213,23 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
+            "src/mongo/db/matcher/expression_leaf.cpp"
         ], 
-        "symbol": "mongo::NamespaceIndex::add_ns(mongo::StringData const&, mongo::DiskLoc const&, bool)", 
+        "symbol": "mongo::ComparisonMatchExpression::matchesSingleElement(mongo::BSONElement const&) const", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/field_ref.cpp"
         ], 
-        "symbol": "mongo::DBException::toString() const", 
+        "symbol": "mongo::FieldRef::FieldRef(mongo::StringData const&)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::_clearCollectionCache(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logDropIndex(mongo::ClientBasic*, mongo::StringData const&, mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::isCapped() const", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -985,6 +1237,13 @@
             "src/mongo/db/exec/collection_scan.cpp"
         ], 
         "symbol": "mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/index/s2_access_method.cpp"
+        ], 
+        "symbol": "mongo::S2AccessMethod::S2AccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -1004,30 +1263,16 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/matcher/expression.cpp"
+        ], 
+        "symbol": "mongo::MatchExpression::matchesBSON(mongo::BSONObj const&, mongo::MatchDetails*) const", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/index/btree_access_method.cpp"
         ], 
-        "symbol": "typeinfo for mongo::BtreeBasedAccessMethod", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection_info_cache.cpp"
-        ], 
-        "symbol": "mongo::CollectionInfoCache::reset()", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/2d_access_method.cpp"
-        ], 
-        "symbol": "mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::BtreeInMemoryState*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "symbol": "mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -1046,27 +1291,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/index/btree_access_method.cpp"
-        ], 
-        "symbol": "mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::BtreeInMemoryState*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::_initExtentFreeList()", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/index_names.cpp"
         ], 
         "symbol": "mongo::IndexNames::GEO_HAYSTACK", 
@@ -1074,16 +1298,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/db/index/fts_access_method.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::setSystemFlag(int)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::_addNamespaceToCatalog(mongo::StringData const&, mongo::BSONObj const*)", 
+        "symbol": "mongo::FTSAccessMethod::FTSAccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -1095,13 +1312,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::BtreeInMemoryState(mongo::Collection*, mongo::IndexDescriptor const*, mongo::RecordStore*, mongo::IndexDetails*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
         ], 
         "symbol": "mongo::ErrorCodes::fromInt(int)", 
@@ -1109,37 +1319,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::_init()", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/field_ref.cpp"
-        ], 
-        "symbol": "mongo::FieldRef::parse(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::getNextIndexDetails(char const*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/index_names.cpp"
         ], 
         "symbol": "mongo::IndexNames::GEO_2D", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)", 
         "object": "src/mongo/db/catalog/index_catalog.cpp"
     }, 
     {
@@ -1172,20 +1354,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/index/s2_access_method.cpp"
-        ], 
-        "symbol": "mongo::S2AccessMethod::S2AccessMethod(mongo::BtreeInMemoryState*)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::_dropNS(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_catalog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/ops/delete.cpp"
         ], 
         "symbol": "mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)", 
@@ -1200,6 +1368,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/matcher/expression.cpp"
+        ], 
+        "symbol": "mongo::MatchExpression::MatchExpression(mongo::MatchExpression::MatchType)", 
+        "object": "src/mongo/db/catalog/index_catalog.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONObj::isPrefixOf(mongo::BSONObj const&) const", 
@@ -1207,9 +1382,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/elapsed_tracker.cpp"
+            "src/mongo/db/repl/master_slave.cpp"
         ], 
-        "symbol": "mongo::ElapsedTracker::ElapsedTracker(int, int)", 
+        "symbol": "mongo::replAllDead", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1270,16 +1445,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/keypattern.cpp"
+            "src/mongo/util/elapsed_tracker.cpp"
         ], 
-        "symbol": "mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::numRecords() const", 
+        "symbol": "mongo::ElapsedTracker::ElapsedTracker(int, int)", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1287,6 +1455,13 @@
             "src/mongo/db/kill_current_op.cpp"
         ], 
         "symbol": "mongo::KillCurrentOp::checkForInterrupt(bool)", 
+        "object": "src/mongo/db/catalog/index_create.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1326,16 +1501,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/d_concurrency.cpp"
+            "src/mongo/util/elapsed_tracker.cpp"
         ], 
-        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
+        "symbol": "mongo::ElapsedTracker::intervalHasElapsed()", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/elapsed_tracker.cpp"
+            "src/mongo/db/repl/replication_server_status.cpp"
         ], 
-        "symbol": "mongo::ElapsedTracker::intervalHasElapsed()", 
+        "symbol": "mongo::replSettings", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1368,20 +1543,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/background.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::BackgroundOperation", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/btree_based_builder.cpp"
-        ], 
-        "symbol": "mongo::BtreeBasedBuilder::fastBuildIndex(mongo::Collection*, mongo::BtreeInMemoryState*, bool)", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1392,13 +1553,6 @@
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1417,7 +1571,14 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/repl/rs.cpp"
+        ], 
+        "symbol": "mongo::replSet", 
+        "object": "src/mongo/db/catalog/index_create.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj const*, mongo::StringData const&, mongo::StringData const&)", 
         "object": "src/mongo/db/catalog/index_create.cpp"
@@ -1438,13 +1599,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/query/eof_runner.cpp"
         ], 
         "symbol": "mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)", 
@@ -1455,13 +1609,6 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/btree_based_builder.cpp"
-        ], 
-        "symbol": "mongo::BtreeBasedBuilder::makeEmptyIndex(mongo::BtreeInMemoryState*)", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1516,20 +1663,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/background.cpp"
-        ], 
-        "symbol": "mongo::BackgroundOperation::~BackgroundOperation()", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection_info_cache.cpp"
-        ], 
-        "symbol": "mongo::CollectionInfoCache::reset()", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
@@ -1551,13 +1684,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::head() const", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/time_support.cpp"
         ], 
         "symbol": "mongo::curTimeMicros64()", 
@@ -1565,23 +1691,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::this_thread::interruption_point()", 
-        "object": "src/mongo/db/catalog/index_create.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)", 
         "object": "src/mongo/db/catalog/index_create.cpp"
     }, 
     {
@@ -1611,6 +1723,557 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/db/catalog/index_create.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/kill_current_op.cpp"
+        ], 
+        "symbol": "mongo::KillCurrentOp::checkForInterruptNoAssert()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/kill_current_op.cpp"
+        ], 
+        "symbol": "mongo::KillCurrentOp::checkForInterrupt(bool)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/timer.cpp"
+        ], 
+        "symbol": "mongo::Timer::_countsPerSecond", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/progress_meter.cpp"
+        ], 
+        "symbol": "mongo::ProgressMeter::hit(int)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/touch_pages.cpp"
+        ], 
+        "symbol": "mongo::touch_pages(char const*, unsigned long)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONObj::valid() const", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/curop.cpp"
+        ], 
+        "symbol": "mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::curTimeMicros64()", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/structure/collection_compact.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "mongo::StartupTest::StartupTest()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::MsgAssertionException", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::StartupTest", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/update.cpp"
+        ], 
+        "symbol": "mongo::applyUpdateOperators(mongo::BSONObj const&, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::MsgAssertionException", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/scripting/engine.cpp"
+        ], 
+        "symbol": "mongo::Scope::storedFuncMod()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::toString() const", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "mongo::StartupTest::~StartupTest()", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/json.cpp"
+        ], 
+        "symbol": "mongo::fromjson(char const*, int*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/structure/catalog/index_details.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/structure/record_store.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/structure/record_store.cpp"
     }, 
     {
         "sources": [
@@ -1737,13 +2400,6 @@
             "src/mongo/db/repl/rs.cpp"
         ], 
         "symbol": "mongo::replSet", 
-        "object": "src/mongo/db/structure/btree/btreebuilder.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)", 
         "object": "src/mongo/db/structure/btree/btreebuilder.cpp"
     }, 
     {
@@ -1989,13 +2645,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::setHead(mongo::DiskLoc)", 
-        "object": "src/mongo/db/structure/btree/btree.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
@@ -2032,13 +2681,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/btree/state.cpp"
-        ], 
-        "symbol": "mongo::BtreeInMemoryState::head() const", 
-        "object": "src/mongo/db/structure/btree/btree.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/index/btree_index_cursor.cpp"
         ], 
         "symbol": "mongo::BtreeIndexCursor::aboutToDeleteBucket(mongo::DiskLoc const&)", 
@@ -2050,27 +2692,6 @@
         ], 
         "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
         "object": "src/mongo/db/structure/btree/btree.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::lastRecord(mongo::DiskLoc const&) const", 
-        "object": "src/mongo/db/structure/collection_iterator.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::firstRecord(mongo::DiskLoc const&) const", 
-        "object": "src/mongo/db/structure/collection_iterator.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::getExtentManager() const", 
-        "object": "src/mongo/db/structure/collection_iterator.cpp"
     }, 
     {
         "sources": [
@@ -2347,6 +2968,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(mongo::Status const&)", 
+        "object": "src/mongo/db/instance.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/ops/update_lifecycle_impl.cpp"
         ], 
         "symbol": "mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool, mongo::NamespaceString const&)", 
@@ -2445,6 +3073,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/ops/update.cpp"
+        ], 
+        "symbol": "mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*, mongo::UpdateDriver*, mongo::CanonicalQuery*)", 
+        "object": "src/mongo/db/instance.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/lasterror.cpp"
         ], 
         "symbol": "mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)", 
@@ -2459,7 +3094,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logInsertAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -2536,13 +3171,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/ops/update.cpp"
-        ], 
-        "symbol": "mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*, mongo::UpdateDriver*)", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/clientcursor.cpp"
         ], 
         "symbol": "mongo::ClientCursor::erase(long long)", 
@@ -2560,13 +3188,6 @@
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::DBClientBase::ConnectionIdSequence", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -2634,13 +3255,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/repl/replication_server_status.cpp"
         ], 
         "symbol": "mongo::replSettings", 
@@ -2658,13 +3272,6 @@
             "src/mongo/db/repl/rs.cpp"
         ], 
         "symbol": "mongo::ReplSet::shutdown()", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::~Database()", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -2697,7 +3304,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_shutdown.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logShutdown(mongo::ClientBasic*)", 
         "object": "src/mongo/db/instance.cpp"
@@ -2746,9 +3353,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/optime.cpp"
+            "src/mongo/bson/oid.cpp"
         ], 
-        "symbol": "mongo::OpTime::now(mongo::mutex::scoped_lock const&)", 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -2784,13 +3391,6 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::ExceptionInfo::append(mongo::BSONObjBuilder&, char const*, char const*) const", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -2837,7 +3437,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -2914,6 +3514,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::ErrorCodes::Error) const", 
+        "object": "src/mongo/db/instance.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/platform/process_id.cpp"
         ], 
         "symbol": "mongo::ProcessId::getCurrent()", 
@@ -2977,7 +3584,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3138,13 +3745,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/ops/count.cpp"
-        ], 
-        "symbol": "mongo::runCount(char const*, mongo::BSONObj const&, std::string&, int&)", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::DBClientBase::remove(std::string const&, mongo::Query, bool)", 
@@ -3162,13 +3762,6 @@
             "src/mongo/db/ops/insert.cpp"
         ], 
         "symbol": "mongo::fixDocumentForInsert(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/instance.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -3278,7 +3871,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3322,7 +3915,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3332,6 +3925,13 @@
             "src/mongo/db/dbhelpers.cpp"
         ], 
         "symbol": "mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)", 
+        "object": "src/mongo/db/instance.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/count.cpp"
+        ], 
+        "symbol": "mongo::runCount(std::string const&, mongo::BSONObj const&, std::string&, int&)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -3448,7 +4048,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logDeleteAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3483,7 +4083,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logFsyncUnlockAuthzCheck(mongo::ClientBasic*, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3602,7 +4202,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)", 
         "object": "src/mongo/db/instance.cpp"
@@ -3612,6 +4212,13 @@
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/db/instance.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/canonical_query.cpp"
+        ], 
+        "symbol": "mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::CanonicalQuery**)", 
         "object": "src/mongo/db/instance.cpp"
     }, 
     {
@@ -3721,16 +4328,325 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/file_allocator.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "mongo::FileAllocator::waitUntilFinished() const", 
-        "object": "src/mongo/db/pdfile.cpp"
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::setMaxCappedDocs(long long)", 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ], 
+        "symbol": "mongo::DurableMappedFile::create(std::string const&, unsigned long long&, bool)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::create_directory(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::m_erase_redundant_separator(unsigned long)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::m_append_separator_if_needed()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ], 
+        "symbol": "mongo::DurableMappedFile::open(std::string const&, bool)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::wchar_t_codecvt_facet()", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::status(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/structure/catalog/namespace_index.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::wasserted(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isWriteLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::~Context()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isW()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::Context(std::string const&, std::string const&, bool)", 
+        "object": "src/mongo/db/catalog/database_holder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/file_allocator.cpp"
+        ], 
+        "symbol": "mongo::FileAllocator::waitUntilFinished() const", 
         "object": "src/mongo/db/pdfile.cpp"
     }, 
     {
@@ -3868,7 +4784,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logDropDatabase(mongo::ClientBasic*, mongo::StringData const&)", 
         "object": "src/mongo/db/pdfile.cpp"
@@ -3924,13 +4840,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
         ], 
         "symbol": "boost::filesystem3::detail::file_size(boost::filesystem3::path const&, boost::system::error_code*)", 
@@ -3945,30 +4854,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::increaseStorageSize(int, bool)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::alloc(mongo::StringData const&, int)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::legalClientSystemNS(mongo::StringData const&, bool)", 
         "object": "src/mongo/db/pdfile.cpp"
     }, 
     {
@@ -4016,20 +4904,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::replaceUserFlags(int)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/d_concurrency.cpp"
         ], 
         "symbol": "mongo::Lock::GlobalWrite::~GlobalWrite()", 
@@ -4047,20 +4921,6 @@
             "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
         ], 
         "symbol": "boost::filesystem3::path::filename() const", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)", 
-        "object": "src/mongo/db/pdfile.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::validMaxCappedDocs(long long*)", 
         "object": "src/mongo/db/pdfile.cpp"
     }, 
     {
@@ -4297,6 +5157,111 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/index_set.cpp"
+        ], 
+        "symbol": "mongo::IndexPathSet::clear()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/query_settings.cpp"
+        ], 
+        "symbol": "mongo::QuerySettings::QuerySettings()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/plan_cache.cpp"
+        ], 
+        "symbol": "mongo::PlanCache::notifyOfWriteOp()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/index_set.cpp"
+        ], 
+        "symbol": "mongo::IndexPathSet::addPath(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/plan_cache.cpp"
+        ], 
+        "symbol": "mongo::PlanCache::~PlanCache()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/plan_cache.cpp"
+        ], 
+        "symbol": "mongo::PlanCache::clear()", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/collection_info_cache.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -4496,44 +5461,444 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::maybeComplain(mongo::StringData const&, int) const", 
-        "object": "src/mongo/db/cap.cpp"
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)", 
-        "object": "src/mongo/db/cap.cpp"
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::maxCappedDocs() const", 
-        "object": "src/mongo/db/cap.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/cap.cpp"
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/cap.cpp"
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*, mongo::DiskLoc)", 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/catalog/index_catalog_entry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBClientWithCommands", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/internal_runner.cpp"
+        ], 
+        "symbol": "mongo::InternalRunner::InternalRunner(std::string const&, mongo::PlanStage*, mongo::WorkingSet*)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBClientBase", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/stats/top.cpp"
+        ], 
+        "symbol": "mongo::Top::global", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "mongo::DBClientBase::ConnectionIdSequence", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/audit.cpp"
+        ], 
+        "symbol": "mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData const&, mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/audit.cpp"
+        ], 
+        "symbol": "mongo::audit::logCreateCollection(mongo::ClientBasic*, mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "mongo::nsGetDB(std::string const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/audit.cpp"
+        ], 
+        "symbol": "mongo::audit::logDropCollection(mongo::ClientBasic*, mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/clientcursor.cpp"
+        ], 
+        "symbol": "mongo::ClientCursor::invalidate(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/stats/top.cpp"
+        ], 
+        "symbol": "mongo::Top::collectionDropped(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/exec/working_set.cpp"
+        ], 
+        "symbol": "mongo::WorkingSet::WorkingSet()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "mongo::nsGetCollection(std::string const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/eof_runner.cpp"
+        ], 
+        "symbol": "mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ], 
+        "symbol": "mongo::DurableMappedFile::~DurableMappedFile()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/audit.cpp"
+        ], 
+        "symbol": "mongo::audit::logCreateDatabase(mongo::ClientBasic*, mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::~Context()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isW()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/exec/collection_scan.cpp"
+        ], 
+        "symbol": "mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/introspect.cpp"
+        ], 
+        "symbol": "mongo::getOrCreateProfileCollection(mongo::Database*, bool, std::string*)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/auth/auth_index_d.cpp"
+        ], 
+        "symbol": "mongo::authindex::createSystemIndexes(mongo::NamespaceString const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj&, bool)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ], 
+        "symbol": "mongo::DurableMappedFile::DurableMappedFile()", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_options.cpp"
+        ], 
+        "symbol": "mongo::serverGlobalParams", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/delete.cpp"
+        ], 
+        "symbol": "mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::Context(std::string const&, std::string const&, bool)", 
+        "object": "src/mongo/db/catalog/database.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
         "object": "src/mongo/db/cap.cpp"
     }, 
     {
@@ -4548,13 +5913,6 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/cap.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection.cpp"
-        ], 
-        "symbol": "mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const", 
         "object": "src/mongo/db/cap.cpp"
     }, 
     {
@@ -4612,13 +5970,6 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/cap.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/structure/collection_info_cache.cpp"
-        ], 
-        "symbol": "mongo::CollectionInfoCache::reset()", 
         "object": "src/mongo/db/cap.cpp"
     }, 
     {
@@ -4701,13 +6052,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::setFirstExtent(mongo::DiskLoc)", 
-        "object": "src/mongo/db/storage/extent_manager.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
         ], 
         "symbol": "boost::filesystem3::detail::status(boost::filesystem3::path const&, boost::system::error_code*)", 
@@ -4764,13 +6108,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::setLastExtentSize(int)", 
-        "object": "src/mongo/db/storage/extent_manager.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
         ], 
         "symbol": "boost::filesystem3::path::wchar_t_codecvt_facet()", 
@@ -4788,13 +6125,6 @@
             "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
         ], 
         "symbol": "boost::filesystem3::detail::file_size(boost::filesystem3::path const&, boost::system::error_code*)", 
-        "object": "src/mongo/db/storage/extent_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::setLastExtent(mongo::DiskLoc)", 
         "object": "src/mongo/db/storage/extent_manager.cpp"
     }, 
     {
@@ -4855,13 +6185,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*, mongo::DiskLoc)", 
-        "object": "src/mongo/db/storage/extent_manager.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
         ], 
         "symbol": "boost::filesystem3::path::m_append_separator_if_needed()", 
@@ -4873,104 +6196,6 @@
         ], 
         "symbol": "mongo::DurableMappedFile::DurableMappedFile()", 
         "object": "src/mongo/db/storage/extent_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*, mongo::DiskLoc)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::alloc(mongo::StringData const&, int)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::fassertFailed(int)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::getRecordAllocationSize(int)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/namespace_details.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::incrementStats(long long, long long)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dur.cpp"
-        ], 
-        "symbol": "mongo::dur::DurableInterface::_impl", 
-        "object": "src/mongo/db/structure/record_store.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
-        "object": "src/mongo/db/structure/record_store.cpp"
     }, 
     {
         "sources": [

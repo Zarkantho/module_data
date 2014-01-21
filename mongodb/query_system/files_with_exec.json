@@ -6,18 +6,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -27,18 +27,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -77,18 +77,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -102,18 +102,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -185,18 +185,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -235,18 +235,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -281,18 +281,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -302,18 +302,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -323,18 +323,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -369,18 +369,18 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
-            "mongofiles", 
+            "mongostat", 
             "bsondump", 
             "mongoimport", 
             "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
-            "mongostat", 
-            "mongosniff"
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -423,6 +423,10 @@
             "mongofiles", 
             "mongorestore"
         ]
+    }, 
+    {
+        "name": "src/mongo/db/query/canonical_query_test.cpp", 
+        "execs": []
     }, 
     {
         "name": "src/mongo/db/query/eof_runner.cpp", 
@@ -483,6 +487,10 @@
             "mongofiles", 
             "mongorestore"
         ]
+    }, 
+    {
+        "name": "src/mongo/db/query/get_runner_test.cpp", 
+        "execs": []
     }, 
     {
         "name": "src/mongo/db/query/idhack_runner.cpp", 
@@ -908,6 +916,31 @@
     {
         "name": "src/mongo/db/query/query_planner_test.cpp", 
         "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/query_planner_test_lib.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/query/query_settings.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
         "name": "src/mongo/db/query/query_solution.cpp", 

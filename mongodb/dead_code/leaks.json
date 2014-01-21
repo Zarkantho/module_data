@@ -1,1 +1,170 @@
-[]
+[
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::lock_shared()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::unlock()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::unlock_shared()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::lock()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/spin_lock.cpp"
+        ], 
+        "symbol": "mongo::SpinLock::SpinLock()", 
+        "object": "src/mongo/db/stats/service_stats.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/spin_lock.cpp"
+        ], 
+        "symbol": "mongo::SpinLock::~SpinLock()", 
+        "object": "src/mongo/db/stats/service_stats.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/stats/service_stats.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::Suite(std::string const&)", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::demangleName(std::type_info const&)", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Suite", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::~Suite()", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/dbtests/histogram_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/stacktrace.cpp"
+        ], 
+        "symbol": "mongo::printStackTrace(std::ostream&)", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/tests.cpp"
+    }
+]

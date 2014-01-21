@@ -17,6 +17,14 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 <div></div>
 
+    mongo::Command::getStatusFromCommandResult(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
     mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
 
 - Used By:
@@ -25,7 +33,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -34,16 +41,16 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
@@ -84,7 +91,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
@@ -101,7 +109,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -110,10 +117,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -121,6 +126,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
@@ -145,7 +152,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -154,16 +160,17 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
@@ -178,7 +185,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -189,14 +195,16 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
@@ -211,7 +219,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -220,10 +227,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -231,6 +236,8 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
@@ -245,15 +252,23 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 <div></div>
 
+    mongo::Command::htmlHelp(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Used By:
+
+    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
+
     mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -261,9 +276,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -291,7 +304,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
@@ -300,17 +312,18 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/shardconnection.cpp](../sharding)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
@@ -329,10 +342,11 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 <div></div>
 
@@ -346,14 +360,6 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
-
-<div></div>
-
-    mongo::Command::htmlHelp(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
-
-- Used By:
-
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
 # Dependencies
 
@@ -373,7 +379,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -786,11 +792,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::ActionType::dropDatabase
+    mongo::IndexCatalog::IndexIterator::next()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -802,11 +808,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::IndexCatalog::getDescriptor(int)
+    mongo::OpTime::m
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/bson/optime.cpp](../bson)
 
 <div></div>
 
@@ -938,6 +944,14 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::ReplSetImpl::setMaintenanceMode(bool)
 
 - Provided By:
@@ -958,7 +972,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1006,7 +1020,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1014,7 +1028,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1126,7 +1140,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1142,7 +1156,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1159,6 +1173,14 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 - Provided By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::dropDatabase
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1210,14 +1232,6 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::ClientBasic::getAuthorizationSession() const
 
 - Provided By:
@@ -1238,7 +1252,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1278,15 +1292,15 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
+    mongo::IndexCatalog::updateTTLSetting(mongo::IndexDescriptor const*, long long)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1314,11 +1328,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
+    mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1410,11 +1424,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::NamespaceDetails::updateTTLIndex(int, mongo::BSONElement const&)
+    mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -1426,19 +1440,19 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
+    mongo::runCount(std::string const&, mongo::BSONObj const&, std::string&, int&)
+
+- Provided By:
+
+    - [src/mongo/db/ops/count.cpp](../query\_system)
+
+<div></div>
+
     mongo::Query::hasReadPreference(mongo::BSONObj const&)
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -1498,6 +1512,14 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::writelocktry::writelocktry(int)
 
 - Provided By:
@@ -1522,14 +1544,6 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::runCount(char const*, mongo::BSONObj const&, std::string&, int&)
-
-- Provided By:
-
-    - [src/mongo/db/ops/count.cpp](../query\_system)
-
-<div></div>
-
     mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
 - Provided By:
@@ -1542,7 +1556,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1582,7 +1596,15 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
+
+<div></div>
+
+    mongo::ScopedRunnerRegistration::ScopedRunnerRegistration(mongo::Runner*)
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
 
 <div></div>
 
@@ -1610,14 +1632,6 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::OpTime::m
-
-- Provided By:
-
-    - [src/mongo/bson/optime.cpp](../bson)
-
-<div></div>
-
     mongo::Lock::nested()
 
 - Provided By:
@@ -1631,14 +1645,6 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -1670,7 +1676,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1711,7 +1717,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1779,11 +1785,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
+    mongo::IndexCatalog::IndexIterator::more()
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1792,14 +1798,6 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 - Provided By:
 
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::serverGlobalParams
-
-- Provided By:
-
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -1859,6 +1857,14 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::ActionType::dbStats
 
 - Provided By:
@@ -1867,11 +1873,19 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
+    mongo::ScopedRunnerRegistration::~ScopedRunnerRegistration()
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+
+<div></div>
+
     mongo::Database::dropCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1903,7 +1917,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1935,7 +1949,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1955,11 +1969,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 <div></div>
 
-    mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
+    mongo::serverGlobalParams
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -1976,12 +1990,12 @@ Commands (run using db.$cmd.findOne(...))
 
 # Files
 - src/mongo/db/commands/apply\_ops.cpp   (mongod, tools)
-- src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp
+- src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp   (mongod, tools)
 - src/mongo/db/commands/authentication\_commands.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/authentication\_commands.h
 - src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp   (mongod, tools)
 - src/mongo/db/commands/collection\_to\_capped.cpp   (mongod, tools)
-- src/mongo/db/commands/compact.cpp
+- src/mongo/db/commands/compact.cpp   (mongod, tools)
 - src/mongo/db/commands/connection\_status.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/copydb.h
 - src/mongo/db/commands/copydb\_common.cpp   (mongod, tools, mongos)
@@ -1997,21 +2011,21 @@ Commands (run using db.$cmd.findOne(...))
 - src/mongo/db/commands/get\_last\_error.cpp   (mongod, tools)
 - src/mongo/db/commands/group.cpp   (mongod, tools)
 - src/mongo/db/commands/hashcmd.cpp   (mongod, tools, mongos)
-- src/mongo/db/commands/hint\_commands.cpp
+- src/mongo/db/commands/hint\_commands.cpp   (mongod, tools)
 - src/mongo/db/commands/hint\_commands.h
-- src/mongo/db/commands/hint\_commands\_test.cpp
+- src/mongo/db/commands/hint\_commands\_test.cpp   ()
 - src/mongo/db/commands/index\_stats.cpp   (mongod, tools)
 - src/mongo/db/commands/isself.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/merge\_chunks\_cmd.cpp   (mongod, tools)
 - src/mongo/db/commands/mr.cpp   (mongod, tools)
 - src/mongo/db/commands/mr.h
 - src/mongo/db/commands/mr\_common.cpp   (mongod, tools, mongos)
-- src/mongo/db/commands/oplog\_note.cpp
+- src/mongo/db/commands/oplog\_note.cpp   (mongod, tools)
 - src/mongo/db/commands/parameters.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/pipeline\_command.cpp   (mongod, tools)
-- src/mongo/db/commands/plan\_cache\_commands.cpp
+- src/mongo/db/commands/plan\_cache\_commands.cpp   (mongod, tools)
 - src/mongo/db/commands/plan\_cache\_commands.h
-- src/mongo/db/commands/plan\_cache\_commands\_test.cpp
+- src/mongo/db/commands/plan\_cache\_commands\_test.cpp   ()
 - src/mongo/db/commands/rename\_collection.cpp   (mongod, tools)
 - src/mongo/db/commands/rename\_collection.h
 - src/mongo/db/commands/rename\_collection\_common.cpp   (mongod, tools, mongos)
@@ -2033,16 +2047,6 @@ Commands (run using db.$cmd.findOne(...))
 - src/mongo/db/driverHelpers.cpp   (mongod, tools)
 
 # Interface
-
-### src/mongo/db/commands/authentication\_commands.cpp
-
-<div></div>
-
-    mongo::CmdAuthenticate::disableAuthMechanism(std::string)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
 
 ### src/mongo/db/commands/copydb\_common.cpp
 
@@ -2123,7 +2127,7 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
@@ -2132,6 +2136,72 @@ Commands (run using db.$cmd.findOne(...))
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+### src/mongo/db/commands/user\_management\_commands.cpp
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::CmdAuthSchemaUpgrade()
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::~CmdAuthSchemaUpgrade()
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::locktype() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::adminOnly() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    typeinfo for mongo::CmdAuthSchemaUpgrade
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::slaveOk() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
 
 ### src/mongo/db/dbeval.cpp
 
@@ -2151,8 +2221,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Used By:
 
-    - src/mongo/s/strategy\_single.cpp
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 # Dependencies
 
@@ -2349,6 +2418,392 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+### src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp
+
+<div></div>
+
+    mongo::rsLog
+
+- Provided By:
+
+    - [src/mongo/db/repl/health.cpp](../replication)
+
+<div></div>
+
+    mongo::ScopedConn::keepOpen
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::isSameMajorVersion(char const*)
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::DBClientWithCommands
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::theReplSet
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::BackgroundJob::wait(unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::versionArray
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBClientBase::ConnectionIdSequence
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::BackgroundJob::go()
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::BackgroundJob::~BackgroundJob()
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::ScopedConn::mapMutex
+
+- Provided By:
+
+    - [src/mongo/db/repl/health.cpp](../replication)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    vtable for mongo::DBClientBase
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::authenticateInternalUser(mongo::DBClientWithCommands*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/security\_key.cpp](../authentication)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::AuthorizationManager::upgradeSchema(int, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ReplSetImpl::findById(unsigned int) const
+
+- Provided By:
+
+    - [src/mongo/db/repl/health.cpp](../replication)
+
+<div></div>
+
+    mongo::AuthorizationManager::isAuthEnabled() const
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+
+<div></div>
+
+    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, int*, bool*, mongo::BSONObj*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
+
+<div></div>
+
+    vtable for mongo::DBClientConnection
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    typeinfo for mongo::BackgroundJob
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBClientConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::ScopedConn::_map
+
+- Provided By:
+
+    - [src/mongo/db/repl/health.cpp](../replication)
+
+<div></div>
+
+    mongo::ReplSetConfig::DEFAULT_HB_TIMEOUT
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs\_config.cpp](../replication)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::getGlobalAuthorizationManager()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::toVersionArray(char const*)
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../utilities)
+
+<div></div>
+
+    mongo::BackgroundJob::BackgroundJob(bool)
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 ### src/mongo/db/commands/authentication\_commands.cpp
 
@@ -2720,7 +3175,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -3012,7 +3467,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3124,7 +3579,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3196,7 +3651,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3213,6 +3668,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/index\_builder.cpp](../indexing)
 
 <div></div>
 
@@ -3253,7 +3716,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3281,19 +3744,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     mongo::Database::dropCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3310,6 +3765,240 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Client::Context::Context(std::string const&, std::string const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+### src/mongo/db/commands/compact.cpp
+
+<div></div>
+
+    mongo::Collection::compact(mongo::CompactOptions const*)
+
+- Provided By:
+
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::DBWrite::~DBWrite()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/privilege.cpp](../authentication)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::ActionSet::addAction(mongo::ActionType const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+
+<div></div>
+
+    mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)
+
+- Provided By:
+
+    - [src/mongo/db/index\_builder.cpp](../indexing)
+
+<div></div>
+
+    mongo::CompactOptions::toString() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::isCurrentlyAReplSetPrimary()
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/index\_builder.cpp](../indexing)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::compact
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -3537,14 +4226,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::IndexCatalog::findIdIndex()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     _md5_finish
 
 - Provided By:
@@ -3598,6 +4279,15 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3717,7 +4407,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3753,15 +4443,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -3794,11 +4475,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
+    mongo::IndexCatalog::findIdIndex() const
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3822,7 +4503,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/commands/distinct.cpp
 
@@ -3948,6 +4629,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::ScopedRunnerRegistration::~ScopedRunnerRegistration()
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+
+<div></div>
+
     mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
 
 - Provided By:
@@ -3960,7 +4649,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3969,6 +4658,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+
+<div></div>
+
+    mongo::ScopedRunnerRegistration::ScopedRunnerRegistration(mongo::Runner*)
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
 
 <div></div>
 
@@ -4043,22 +4740,6 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/db/jsobj.cpp](../bson)
 
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
-
-- Provided By:
-
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-
 ### src/mongo/db/commands/drop\_indexes.cpp
 
 <div></div>
@@ -4095,24 +4776,15 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::currentClient
+    mongo::ActionType::reIndex
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
     mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
 
 - Provided By:
 
@@ -4128,14 +4800,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::tlogLevel
 
 - Provided By:
@@ -4144,27 +4808,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::DBClientBase::ConnectionIdSequence
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -4177,14 +4825,6 @@ Commands (run using db.$cmd.findOne(...))
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -4216,6 +4856,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    vtable for mongo::DBClientBase
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)
 
 - Provided By:
@@ -4229,14 +4877,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -4272,35 +4912,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4308,7 +4924,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4333,14 +4949,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::ActionType::reIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4376,6 +4984,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::IndexCatalog::dropIndex(mongo::IndexDescriptor*)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::ActionType::dropIndex
 
 - Provided By:
@@ -4384,15 +5000,16 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::IndexCatalog::dropIndex(int)
+    mongo::currentClient
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+    mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool) const
 
 - Provided By:
 
@@ -4416,11 +5033,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::toString() const
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/commands/fail\_point\_cmd.cpp
 
@@ -4977,11 +5594,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+    mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../indexing)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5033,36 +5650,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::getThreadName()
 
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -5075,14 +5667,6 @@ Commands (run using db.$cmd.findOne(...))
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -5186,35 +5770,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5226,22 +5786,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     boost::system::system_category()
 
 - Provided By:
@@ -5250,11 +5794,12 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
+    mongo::currentClient
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5372,6 +5917,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::validateWriteConcern(mongo::WriteConcernOptions const&)
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern.cpp](../replication)
+
+<div></div>
+
     boost::system::system_category()
 
 - Provided By:
@@ -5386,14 +5939,6 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Status::toString() const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -5425,7 +5970,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -5619,7 +6164,15 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ScopedRunnerRegistration::ScopedRunnerRegistration(mongo::Runner*)
+
+- Provided By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
 
 <div></div>
 
@@ -5628,14 +6181,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5738,7 +6283,7 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
+    mongo::ScopedRunnerRegistration::~ScopedRunnerRegistration()
 
 - Provided By:
 
@@ -5786,6 +6331,530 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
+### src/mongo/db/commands/hint\_commands.cpp
+
+<div></div>
+
+    mongo::Client::ReadContext::ReadContext(std::string const&, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::QuerySettings::clearAllowedIndices()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ActionType::planCacheHint
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::QuerySettings::setAllowedIndices(mongo::CanonicalQuery const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::BSONElement::Array() const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::PlanCache::remove(mongo::CanonicalQuery const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getQuerySettings() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::QuerySettings::removeAllowedIndices(mongo::CanonicalQuery const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::AllowedIndexEntry::~AllowedIndexEntry()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::QuerySettings::getAllAllowedIndices() const
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+### src/mongo/db/commands/hint\_commands\_test.cpp
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::CachedSolution::~CachedSolution()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::CanonicalQuery::getPlanCacheKey() const
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::PlanCache::add(mongo::CanonicalQuery const&, std::vector<mongo::QuerySolution*, std::allocator<mongo::QuerySolution*> > const&, mongo::PlanRankingDecision*)
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::QuerySettings::QuerySettings()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::PlanCache::~PlanCache()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::QuerySettings::~QuerySettings()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::BSONElement::Array() const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::PlanCache::getAllSolutions() const
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
 ### src/mongo/db/commands/index\_stats.cpp
 
 <div></div>
@@ -5814,15 +6883,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -5839,11 +6899,12 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
+    mongo::currentClient
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5887,22 +6948,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::system::generic_category()
 
 - Provided By:
@@ -5912,14 +6957,6 @@ Commands (run using db.$cmd.findOne(...))
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -5999,22 +7036,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::DiskLoc::obj() const
 
 - Provided By:
@@ -6031,11 +7052,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::toString() const
+    mongo::NamespaceDetails::idx(int, bool)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6067,7 +7088,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6395,19 +7416,19 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
+
+- Provided By:
+
+    - [src/mongo/db/field\_parser.cpp](../sharding)
+
+<div></div>
+
     mongo::ShardingState::initialize(std::string const&)
 
 - Provided By:
 
     - [src/mongo/s/d\_state.cpp](../sharding)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../sharding)
 
 <div></div>
 
@@ -6517,14 +7538,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::IndexCatalog::numIndexesTotal() const
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::replAllDead
 
 - Provided By:
@@ -6541,6 +7554,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::next()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::ShardConnection::forgetNS(std::string const&)
 
 - Provided By:
@@ -6549,11 +7570,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBClientBase::ConnectionIdSequence
+    vtable for mongo::DBException
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -6709,11 +7730,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::Timer::_countsPerSecond
+    mongo::DBClientBase::ConnectionIdSequence
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6769,7 +7790,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6850,14 +7871,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/s/grid.cpp](../sharding)
-
-<div></div>
-
-    mongo::ActionType::mapReduceShardedFinish
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -6989,11 +8002,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    vtable for mongo::DBException
+    mongo::ScopedRunnerRegistration::~ScopedRunnerRegistration()
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
 
 <div></div>
 
@@ -7010,6 +8023,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
 
 <div></div>
 
@@ -7049,15 +8070,15 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::ClusteredCursor::init()
+    mongo::ScopedRunnerRegistration::ScopedRunnerRegistration(mongo::Runner*)
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
 
 <div></div>
 
@@ -7093,14 +8114,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()
 
 - Provided By:
@@ -7122,14 +8135,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7214,19 +8219,19 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::more()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Helpers::upsert(std::string const&, mongo::BSONObj const&, bool)
 
 - Provided By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7254,11 +8259,27 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::ParallelSortClusteredCursor::init()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     mongo::ParallelSortClusteredCursor::next()
 
 - Provided By:
 
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7292,7 +8313,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7336,11 +8357,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
+    mongo::ActionType::internal
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -7349,6 +8370,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7495,6 +8524,120 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/auth/privilege.cpp](../authentication)
+
+### src/mongo/db/commands/oplog\_note.cpp
+
+<div></div>
+
+    mongo::replSettings
+
+- Provided By:
+
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::bsonExtractTypedField(mongo::BSONObj const&, mongo::StringData const&, mongo::BSONType, mongo::BSONElement*)
+
+- Provided By:
+
+    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ActionType::appendOplogNote
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logOpComment(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
 
 ### src/mongo/db/commands/parameters.cpp
 
@@ -8113,15 +9256,491 @@ Commands (run using db.$cmd.findOne(...))
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
-### src/mongo/db/commands/rename\_collection.cpp
+### src/mongo/db/commands/plan\_cache\_commands.cpp
 
 <div></div>
 
-    mongo::IndexCatalog::numIndexesTotal() const
+    mongo::Client::ReadContext::ReadContext(std::string const&, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::SolutionCacheData::toString() const
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::PlanCache::clear()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::ActionType::planCacheWrite
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::PlanCache::get(mongo::CanonicalQuery const&, mongo::CachedSolution**) const
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::CachedSolution::~CachedSolution()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::PlanCache::remove(mongo::CanonicalQuery const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::planCacheRead
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::PlanCache::getAllSolutions() const
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+### src/mongo/db/commands/plan\_cache\_commands\_test.cpp
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::CanonicalQuery::getPlanCacheKey() const
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::PlanCache::add(mongo::CanonicalQuery const&, std::vector<mongo::QuerySolution*, std::allocator<mongo::QuerySolution*> > const&, mongo::PlanRankingDecision*)
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::PlanCache::~PlanCache()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::BSONElement::Array() const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj const&, mongo::CanonicalQuery**)
+
+- Provided By:
+
+    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+### src/mongo/db/commands/rename\_collection.cpp
 
 <div></div>
 
@@ -8129,7 +9748,15 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::IndexIterator::next()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8209,7 +9836,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8273,7 +9900,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8298,14 +9925,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8338,7 +9957,15 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::IndexIterator::more()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8346,11 +9973,11 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
 
 - Provided By:
 
@@ -8362,7 +9989,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8370,7 +9997,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8379,6 +10006,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9069,7 +10704,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9133,7 +10768,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9368,7 +11003,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9432,7 +11067,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9512,7 +11147,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9536,7 +11171,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9614,15 +11249,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -9639,11 +11265,12 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
+    mongo::currentClient
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -9671,27 +11298,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::Timer::_countsPerSecond
 
 - Provided By:
 
     - [src/mongo/util/timer.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -9704,14 +11315,6 @@ Commands (run using db.$cmd.findOne(...))
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -9783,22 +11386,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::DiskLoc::obj() const
 
 - Provided By:
@@ -9811,7 +11398,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9839,19 +11426,19 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::this_thread::disable_interruption::~disable_interruption()
 
 - Provided By:
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::NamespaceDetails::idx(int, bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9891,7 +11478,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9973,7 +11560,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10013,7 +11600,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10037,7 +11624,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10101,7 +11688,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10125,7 +11712,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10237,7 +11824,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10262,14 +11849,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::upgradeSchemaStep(mongo::BSONObj const&, bool*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
 
 <div></div>
 
@@ -10317,7 +11896,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10389,7 +11968,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10405,7 +11984,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10473,14 +12052,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
-
-<div></div>
-
     mongo::ActionType::changeCustomData
 
 - Provided By:
@@ -10509,7 +12080,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10525,7 +12096,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10661,7 +12232,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10701,7 +12272,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10773,7 +12344,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -10885,6 +12456,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::next()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::killCurrentOp
 
 - Provided By:
@@ -10981,14 +12560,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::system::generic_category()
 
 - Provided By:
@@ -11018,6 +12589,14 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::IndexCatalog::numIndexesReady() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11061,14 +12640,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::BSONObj::valid() const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
     mongo::WorkingSet::WorkingSet()
 
 - Provided By:
@@ -11101,19 +12672,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::NamespaceDetails::quantizeAllocationSpace(int)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11125,19 +12688,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11165,19 +12720,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::Collection::isCapped() const
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11238,11 +12785,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
+    mongo::IndexCatalog::IndexIterator::more()
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11250,7 +12797,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11258,7 +12805,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11270,11 +12817,19 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::DiskLoc::obj() const
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::validateBSON(char const*, unsigned long long)
+
+- Provided By:
+
+    - [src/mongo/bson/bson\_validate.cpp](../bson)
 
 <div></div>
 
@@ -12062,6 +13617,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
     mongo::DBClientWithCommands::simpleCommand(std::string const&, mongo::BSONObj*, std::string const&)
 
 - Provided By:
@@ -12106,7 +13669,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -12262,6 +13825,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::clusterCreateIndex(std::string const&, mongo::BSONObj, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
     mongo::Timer::_countsPerSecond
 
 - Provided By:
@@ -12275,14 +13846,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -12326,11 +13889,27 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
     mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
 
 - Provided By:
 
     - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::WriteConcernOptions::Default
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -12398,19 +13977,19 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::ClientInfo::enforceWriteConcern(std::string const&, mongo::BSONObj const&, std::string*)
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::Grid::flushConfig()
 
 - Provided By:
 
     - [src/mongo/s/grid.cpp](../sharding)
+
+<div></div>
+
+    mongo::DBClientMultiCommand::~DBClientMultiCommand()
+
+- Provided By:
+
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
 
@@ -12586,7 +14165,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -12726,14 +14305,6 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::DatabaseType::name
 
 - Provided By:
@@ -12802,7 +14373,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -12822,6 +14393,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::enforceLegacyWriteConcern(mongo::MultiCommandDispatch*, mongo::StringData const&, mongo::BSONObj const&, std::map<mongo::ConnectionString, mongo::OpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString const, mongo::OpTime> > > const&, std::vector<mongo::LegacyWCResponse, std::allocator<mongo::LegacyWCResponse> >*)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::fieldsMatch(mongo::BSONObj const&, mongo::BSONObj const&)
 
 - Provided By:
@@ -12834,7 +14413,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -12931,7 +14510,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -12939,7 +14518,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -12947,7 +14526,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -13049,6 +14628,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    vtable for mongo::DBClientMultiCommand
+
+- Provided By:
+
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
+
+<div></div>
+
     mongo::ScopedDbConnection::~ScopedDbConnection()
 
 - Provided By:
@@ -13065,11 +14652,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::Strategy::useClusterWriteCommands
+    mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
 
 - Provided By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -13156,11 +14743,11 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
-    mongo::SHARDED
+    vtable for mongo::ScopedDbConnection
 
 - Provided By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -13176,7 +14763,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -13241,14 +14828,6 @@ Commands (run using db.$cmd.findOne(...))
 - Provided By:
 
     - [src/mongo/s/cursors.cpp](../sharding)
-
-<div></div>
-
-    vtable for mongo::ScopedDbConnection
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -13533,6 +15112,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::STRATEGY
+
+- Provided By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -13721,7 +15308,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -14005,6 +15592,14 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::Strategy::commandOp(std::string const&, mongo::BSONObj const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult, std::allocator<mongo::Strategy::CommandResult> >*)
+
+- Provided By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
     typeinfo for mongo::IntrusiveCounterUnsigned
 
 - Provided By:
@@ -14017,7 +15612,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 

@@ -757,9 +757,58 @@
     }, 
     {
         "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::find", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ], 
+        "symbol": "mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "vtable for mongo::Command", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/index/haystack_access_method.cpp"
+        ], 
+        "symbol": "mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/index_names.cpp"
         ], 
-        "symbol": "mongo::IndexNames::findPluginName(mongo::BSONObj const&)", 
+        "symbol": "mongo::IndexNames::GEO_HAYSTACK", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {
@@ -771,6 +820,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/auth/action_set.cpp"
+        ], 
+        "symbol": "mongo::ActionSet::addAction(mongo::ActionType const&)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/auth/privilege.cpp"
         ], 
         "symbol": "mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)", 
@@ -778,9 +834,44 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::Command", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/haystack.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::redactForLogging(mongo::mutablebson::Document*)", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {
@@ -802,21 +893,14 @@
         "sources": [
             "src/mongo/db/commands.cpp"
         ], 
-        "symbol": "vtable for mongo::Command", 
+        "symbol": "mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/db/commands.cpp"
         ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::MsgAssertionException", 
+        "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {
@@ -835,114 +919,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index/haystack_access_method.cpp"
-        ], 
-        "symbol": "mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/action_set.cpp"
-        ], 
-        "symbol": "mongo::ActionSet::addAction(mongo::ActionType const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/commands.cpp"
         ], 
-        "symbol": "typeinfo for mongo::Command", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/storage/record.cpp"
-        ], 
-        "symbol": "mongo::DiskLoc::obj() const", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ], 
-        "symbol": "mongo::IndexCatalog::getDescriptor(int)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::MsgAssertionException", 
+        "symbol": "mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {
@@ -957,48 +936,6 @@
             "src/mongo/db/catalog/index_catalog.cpp"
         ], 
         "symbol": "mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::find", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/index_names.cpp"
-        ], 
-        "symbol": "mongo::IndexNames::GEO_HAYSTACK", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::redactForLogging(mongo::mutablebson::Document*)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/geo/haystack.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
         "object": "src/mongo/db/geo/haystack.cpp"
     }, 
     {

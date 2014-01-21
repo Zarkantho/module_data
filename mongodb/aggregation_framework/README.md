@@ -113,17 +113,6 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    vtable for mongo::DocumentStorage
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::MutableDocument::getNestedField(mongo::FieldPath const&)
 
 - Used By:
@@ -161,6 +150,25 @@ should be a library ;(   who calls/owns this stuff?
 <div></div>
 
     mongo::MutableDocument::getNestedField(std::vector<mongo::Position, std::allocator<mongo::Position> > const&)
+
+- Used By:
+
+    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
+
+<div></div>
+
+    vtable for mongo::DocumentStorage
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Document::deserializeForSorter(mongo::BufReader&, mongo::Document::SorterDeserializeSettings const&)
 
 - Used By:
 
@@ -238,14 +246,6 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    mongo::Document::deserializeForSorter(mongo::BufReader&, mongo::Document::SorterDeserializeSettings const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::Document::compare(mongo::Document const&, mongo::Document const&)
 
 - Used By:
@@ -264,20 +264,20 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    mongo::DocumentSource::depsToProjection(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
-
-<div></div>
-
     typeinfo for mongo::DocumentSource
 
 - Used By:
 
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::DocumentSource::depsToProjection(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
+
+- Used By:
+
+    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_bson\_array.cpp
 
@@ -423,7 +423,7 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
+    typeinfo for mongo::DocumentSourceSort
 
 - Used By:
 
@@ -431,7 +431,7 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    typeinfo for mongo::DocumentSourceSort
+    mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
 
 - Used By:
 
@@ -452,6 +452,14 @@ should be a library ;(   who calls/owns this stuff?
 <div></div>
 
     mongo::Expression::ObjectCtx::ObjectCtx(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)
 
 - Used By:
 
@@ -572,14 +580,6 @@ should be a library ;(   who calls/owns this stuff?
 <div></div>
 
     mongo::ExpressionObject::includePath(std::string const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)
 
 - Used By:
 
@@ -840,14 +840,6 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
-    mongo::Value::getWidestNumeric(mongo::BSONType, mongo::BSONType)
-
-- Used By:
-
-    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::Value::coerceToDate() const
 
 - Used By:
@@ -865,6 +857,14 @@ should be a library ;(   who calls/owns this stuff?
 <div></div>
 
     mongo::Value::serializeForSorter(mongo::_BufBuilder<mongo::TrivialAllocator>&) const
+
+- Used By:
+
+    - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Value::getWidestNumeric(mongo::BSONType, mongo::BSONType)
 
 - Used By:
 
@@ -1653,6 +1653,14 @@ should be a library ;(   who calls/owns this stuff?
 - Provided By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::TypeExplain::getIsMultiKey() const
+
+- Provided By:
+
+    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
 
 <div></div>
 
@@ -3016,6 +3024,14 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::_makeStringVector(int, ...)
 
 - Provided By:
@@ -3398,6 +3414,14 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -3406,20 +3430,19 @@ should be a library ;(   who calls/owns this stuff?
 
 <div></div>
 
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     boost::system::system_category()
 
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3436,14 +3459,6 @@ should be a library ;(   who calls/owns this stuff?
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -3949,8 +3964,8 @@ Code for external sort. This sits inside the sorter, and the sorter "spills over
 
 - Used By:
 
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
 
 # Dependencies
 

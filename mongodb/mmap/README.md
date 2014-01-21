@@ -18,14 +18,6 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
-    mongo::printMemInfo(char const*)
-
-- Used By:
-
-    - src/mongo/db/index/btree\_based\_builder.cpp
-
-<div></div>
-
     mongo::LockMongoFilesShared::mmmutex
 
 - Used By:
@@ -103,8 +95,8 @@ mmap library (only depends on file allocation library)
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
 
 <div></div>
 
@@ -158,9 +150,9 @@ mmap library (only depends on file allocation library)
 
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
 
 <div></div>
 
@@ -178,9 +170,9 @@ mmap library (only depends on file allocation library)
 
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
 
 <div></div>
 
@@ -188,6 +180,15 @@ mmap library (only depends on file allocation library)
 
 - Used By:
 
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
+
+<div></div>
+
+    mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)
+
+- Used By:
+
+    - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
 
 <div></div>
@@ -209,15 +210,6 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
-    mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)
-
-- Used By:
-
-    - [src/mongo/tools/sniffer.cpp](../tools)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
-
-<div></div>
-
     mongo::g_minOSPageSizeBytes
 
 - Used By:
@@ -234,9 +226,9 @@ mmap library (only depends on file allocation library)
 
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
 
 # Dependencies
 
@@ -268,6 +260,14 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
+    mongo::getcurns
+
+- Provided By:
+
+    - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
     boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
 
 - Provided By:
@@ -289,6 +289,14 @@ mmap library (only depends on file allocation library)
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <div></div>
 
@@ -558,11 +566,27 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::~disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -579,14 +603,6 @@ mmap library (only depends on file allocation library)
 - Provided By:
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <div></div>
 
@@ -614,6 +630,14 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -622,8 +646,24 @@ mmap library (only depends on file allocation library)
 
 <div></div>
 
+    boost::this_thread::disable_interruption::disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
     mongo::errnoWithDescription(int)
 
 - Provided By:
 
     - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)

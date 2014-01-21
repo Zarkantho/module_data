@@ -1381,6 +1381,220 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::prepareFlush()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::close()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::createPrivateMap()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::mapWithOptions(char const*, int)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "vtable for mongo::MemoryMappedFile", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::MemoryMappedFile()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::LockMongoFilesShared::era", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::MemoryMappedFile", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::somethingWriteLocked()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::flush(bool)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::LockMongoFilesShared::mmmutex", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap_posix.cpp"
+        ], 
+        "symbol": "mongo::MemoryMappedFile::remapPrivateView(void*)", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/crutch.cpp", 
+            "src/mongo/client/clientAndShell.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/client/scoped_db_conn_test.cpp", 
+            "src/mongo/s/server.cpp"
+        ], 
+        "symbol": "mongo::inShutdown()", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage_options.cpp"
+        ], 
+        "symbol": "mongo::storageGlobalParams", 
+        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/startup_test.cpp", 
             "src/mongo/client/clientOnly.cpp"
         ], 
@@ -1745,219 +1959,5 @@
         ], 
         "symbol": "boost::system::generic_category()", 
         "object": "src/mongo/db/dur_writetodatafiles.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::prepareFlush()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::close()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::createPrivateMap()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::mapWithOptions(char const*, int)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "vtable for mongo::MemoryMappedFile", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::MemoryMappedFile()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::LockMongoFilesShared::era", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::fassertFailed(int)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::MemoryMappedFile", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::somethingWriteLocked()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::flush(bool)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::LockMongoFilesShared::mmmutex", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap_posix.cpp"
-        ], 
-        "symbol": "mongo::MemoryMappedFile::remapPrivateView(void*)", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/crutch.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/client/scoped_db_conn_test.cpp", 
-            "src/mongo/s/server.cpp"
-        ], 
-        "symbol": "mongo::inShutdown()", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/storage_options.cpp"
-        ], 
-        "symbol": "mongo::storageGlobalParams", 
-        "object": "src/mongo/db/storage/durable_mapped_file.cpp"
     }
 ]

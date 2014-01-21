@@ -223,13 +223,11 @@
         "name": "src/mongo/db/auth/authz_manager_external_state_mock.cpp", 
         "execs": [
             "mongotop", 
-            "mongod", 
             "mongorestore", 
             "mongodump", 
             "mongofiles", 
             "bsondump", 
             "mongoimport", 
-            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 

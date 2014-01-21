@@ -72,24 +72,46 @@
         ]
     }, 
     {
+        "symbol": "mongo::SimpleRWLock::lock_shared()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp", 
+        "used_by": [
+            "src/mongo/util/trace.cpp", 
+            "src/mongo/util/trace.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SimpleRWLock::unlock_shared()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp", 
+        "used_by": [
+            "src/mongo/util/trace.cpp", 
+            "src/mongo/util/trace.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)", 
         "object": "src/mongo/util/concurrency/rwlockimpl.cpp", 
         "used_by": [
-            "src/mongo/dbtests/threadedtests.cpp"
+            "src/mongo/util/trace.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/util/trace.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SimpleRWLock::unlock()", 
         "object": "src/mongo/util/concurrency/rwlockimpl.cpp", 
         "used_by": [
-            "src/mongo/dbtests/threadedtests.cpp"
+            "src/mongo/util/trace.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/util/trace.cpp"
         ]
     }, 
     {
         "symbol": "mongo::SimpleRWLock::lock()", 
         "object": "src/mongo/util/concurrency/rwlockimpl.cpp", 
         "used_by": [
-            "src/mongo/dbtests/threadedtests.cpp"
+            "src/mongo/util/trace.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/util/trace.cpp"
         ]
     }, 
     {
@@ -104,6 +126,7 @@
             "src/mongo/db/prefetch.cpp", 
             "src/mongo/util/net/sock.cpp", 
             "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/db/stats/service_stats.cpp", 
             "src/mongo/db/repl/rs_sync.cpp", 
             "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
@@ -125,6 +148,7 @@
             "src/mongo/db/prefetch.cpp", 
             "src/mongo/util/net/sock.cpp", 
             "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/db/stats/service_stats.cpp", 
             "src/mongo/db/repl/rs_sync.cpp", 
             "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
@@ -152,11 +176,11 @@
         "symbol": "mongo::Lock::somethingWriteLocked()", 
         "object": "src/mongo/db/d_concurrency.cpp", 
         "used_by": [
-            "src/mongo/db/storage/data_file.cpp", 
+            "src/mongo/db/structure/btree/btree.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/storage/durable_mapped_file.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/db/structure/btree/btree.cpp", 
+            "src/mongo/db/storage/data_file.cpp", 
             "src/mongo/db/kill_current_op.cpp", 
             "src/mongo/db/index_builder.cpp"
         ]
@@ -168,16 +192,6 @@
             "src/mongo/db/dur.cpp", 
             "src/mongo/dbtests/threadedtests.cpp", 
             "src/mongo/db/commands/fsync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::writelocktry::~writelocktry()", 
-        "object": "src/mongo/db/d_concurrency.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/repl/rs_rollback.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp"
         ]
     }, 
     {
@@ -244,12 +258,22 @@
         ]
     }, 
     {
+        "symbol": "mongo::writelocktry::~writelocktry()", 
+        "object": "src/mongo/db/d_concurrency.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::Lock::isWriteLocked(mongo::StringData const&)", 
         "object": "src/mongo/db/d_concurrency.cpp", 
         "used_by": [
             "src/mongo/db/catalog/index_create.cpp", 
             "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/db/database_holder.cpp"
+            "src/mongo/db/catalog/database_holder.cpp"
         ]
     }, 
     {
@@ -290,17 +314,17 @@
         "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
         "object": "src/mongo/db/d_concurrency.cpp", 
         "used_by": [
-            "src/mongo/db/structure/collection_info_cache.cpp", 
             "src/mongo/db/pdfile.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
-            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/db/introspect.cpp", 
             "src/mongo/db/commands/write_commands/batch_executor.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/db/namespace_details.cpp", 
+            "src/mongo/db/structure/catalog/namespace_details.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp", 
+            "src/mongo/db/catalog/collection_info_cache.cpp", 
             "src/mongo/s/d_migrate.cpp"
         ]
     }, 
@@ -328,9 +352,9 @@
             "src/mongo/s/d_state.cpp", 
             "src/mongo/dbtests/threadedtests.cpp", 
             "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/compact.cpp", 
             "src/mongo/dbtests/indexcatalogtests.cpp", 
             "src/mongo/db/ttl.cpp", 
+            "src/mongo/db/commands/compact.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
@@ -396,12 +420,12 @@
         "symbol": "mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)", 
         "object": "src/mongo/db/d_concurrency.cpp", 
         "used_by": [
-            "src/mongo/db/database_holder.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/client.cpp", 
-            "src/mongo/db/dbhelpers.cpp"
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/catalog/database_holder.cpp"
         ]
     }, 
     {
@@ -444,7 +468,6 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp", 
             "src/mongo/db/commands/mr.cpp"
         ]
     }, 
@@ -463,7 +486,7 @@
             "src/mongo/s/d_state.cpp", 
             "src/mongo/dbtests/threadedtests.cpp", 
             "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/compact.cpp", 
+            "src/mongo/db/commands/compact.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/dbtests/queryutiltests.cpp", 
@@ -525,7 +548,6 @@
             "src/mongo/db/repl/rs_initiate.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/commands/mr.cpp"
         ]
@@ -570,27 +592,27 @@
         "used_by": [
             "src/mongo/db/dur.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/database_holder.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/db/stats/snapshots_webplugins.cpp", 
             "src/mongo/db/client.cpp", 
             "src/mongo/db/repl/rs_rollback.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/db/instance.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp"
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/catalog/database_holder.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Lock::isLocked()", 
         "object": "src/mongo/db/d_concurrency.cpp", 
         "used_by": [
-            "src/mongo/db/dur.cpp", 
+            "src/mongo/db/pagefault.cpp", 
             "src/mongo/db/repl/replication_server_status.cpp", 
             "src/mongo/dbtests/counttests.cpp", 
             "src/mongo/db/clientcursor.cpp", 
             "src/mongo/db/auth/authz_session_external_state_d.cpp", 
             "src/mongo/dbtests/threadedtests.cpp", 
             "src/mongo/db/repl/rs_rollback.cpp", 
-            "src/mongo/db/pagefault.cpp", 
+            "src/mongo/db/dur.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
             "src/mongo/db/dbcommands.cpp", 
             "src/mongo/db/repl/rs_sync.cpp", 

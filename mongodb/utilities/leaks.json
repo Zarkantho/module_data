@@ -218,7 +218,7 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::gitVersion()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -232,7 +232,7 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::allocator()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -246,7 +246,7 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::compiledJSEngine()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -267,21 +267,21 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::loaderFlags()", 
         "object": "src/mongo/util/version_reporting.cpp"
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::sysInfo()", 
         "object": "src/mongo/util/version_reporting.cpp"
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::compilerFlags()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -432,6 +432,34 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)", 
+        "object": "src/mongo/util/version.cpp"
     }, 
     {
         "sources": [
@@ -624,94 +652,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::logContext(char const*)", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/crutch.cpp", 
-            "src/mongo/client/clientAndShell.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/client/scoped_db_conn_test.cpp", 
-            "src/mongo/s/server.cpp"
-        ], 
-        "symbol": "mongo::inShutdown()", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::tlogLevel", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::getcurns", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::toString() const", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/lasterror.cpp"
-        ], 
-        "symbol": "mongo::setLastError(int, char const*)", 
-        "object": "src/mongo/util/assert_util.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -814,90 +754,6 @@
         ], 
         "symbol": "mongo::unittest::Test::setUp()", 
         "object": "src/mongo/util/descriptive_stats_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/util/string_map_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/util/string_map_test.cpp"
     }, 
     {
         "sources": [
@@ -979,34 +835,6 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/concurrency/task.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/util/version.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/util/version.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/util/version.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)", 
-        "object": "src/mongo/util/version.cpp"
     }, 
     {
         "sources": [
@@ -1251,14 +1079,88 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/stats/snapshots.cpp"
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::logContext(char const*)", 
+        "object": "src/mongo/util/assert_util.cpp"
     }, 
     {
         "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/stats/snapshots.cpp"
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/crutch.cpp", 
+            "src/mongo/client/clientAndShell.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/client/scoped_db_conn_test.cpp", 
+            "src/mongo/s/server.cpp"
+        ], 
+        "symbol": "mongo::inShutdown()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::tlogLevel", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/lasterror.cpp"
+        ], 
+        "symbol": "mongo::setLastError(int, char const*)", 
+        "object": "src/mongo/util/assert_util.cpp"
     }, 
     {
         "sources": [
@@ -1281,17 +1183,38 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/stats/snapshots.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/client.cpp", 
             "src/mongo/s/s_only.cpp"
         ], 
         "symbol": "mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)", 
+        "object": "src/mongo/db/stats/snapshots.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/db/stats/snapshots.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/stats/snapshots.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/stats/snapshots.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
         "object": "src/mongo/db/stats/snapshots.cpp"
     }, 
     {
@@ -1303,9 +1226,9 @@
     }, 
     {
         "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "boost::system::system_category()", 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
         "object": "src/mongo/db/stats/snapshots.cpp"
     }, 
     {
@@ -1318,16 +1241,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/server_options.cpp"
+            "src/mongo/logger/logstream_builder.cpp"
         ], 
-        "symbol": "mongo::serverGlobalParams", 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
         "object": "src/mongo/db/stats/snapshots.cpp"
     }, 
     {
         "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
+            "src/mongo/db/server_options.cpp"
         ], 
-        "symbol": "boost::system::generic_category()", 
+        "symbol": "mongo::serverGlobalParams", 
         "object": "src/mongo/db/stats/snapshots.cpp"
     }, 
     {
@@ -1413,6 +1336,97 @@
         ], 
         "symbol": "mongo::unittest::Test::setUp()", 
         "object": "src/mongo/platform/process_id_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/util/string_map_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/util/string_map_test.cpp"
     }, 
     {
         "sources": [
@@ -2420,6 +2434,13 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/stats/top.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
         "object": "src/mongo/db/stats/top.cpp"
     }, 
     {

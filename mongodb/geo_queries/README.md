@@ -271,6 +271,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - Used By:
 
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../query\_system)
 
 <div></div>
 
@@ -345,7 +346,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    mongo::Polygon::contains(mongo::Point const&) const
+    mongo::Box::inside(mongo::Point, double) const
 
 - Used By:
 
@@ -353,7 +354,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    mongo::Box::inside(mongo::Point, double) const
+    mongo::Polygon::contains(mongo::Point const&) const
 
 - Used By:
 
@@ -1519,11 +1520,67 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+    mongo::ActionType::find
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
+
+<div></div>
+
+    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::IndexNames::GEO_HAYSTACK
 
 - Provided By:
 
     - [src/mongo/db/index\_names.cpp](../indexing)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1535,6 +1592,14 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
+    mongo::ActionSet::addAction(mongo::ActionType const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+
+<div></div>
+
     mongo::Privilege::Privilege(mongo::ResourcePattern const&, mongo::ActionSet const&)
 
 - Provided By:
@@ -1543,11 +1608,51 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -1568,7 +1673,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    vtable for mongo::Command
+    mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
 
 - Provided By:
 
@@ -1576,19 +1681,11 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -1608,131 +1705,11 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 <div></div>
 
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
-
-<div></div>
-
-    mongo::ActionSet::addAction(mongo::ActionType const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
-
-<div></div>
-
-    typeinfo for mongo::Command
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
 
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::Database::getCollection(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/database.cpp
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -1749,54 +1726,6 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - Provided By:
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::IndexNames::GEO_HAYSTACK
-
-- Provided By:
-
-    - [src/mongo/db/index\_names.cpp](../indexing)
-
-<div></div>
-
-    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 ### src/mongo/db/geo/s2common.cpp
 

@@ -7,6 +7,13 @@
         ]
     }, 
     {
+        "symbol": "mongo::enforceLegacyWriteConcern(mongo::MultiCommandDispatch*, mongo::StringData const&, mongo::BSONObj const&, std::map<mongo::ConnectionString, mongo::OpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString const, mongo::OpTime> > > const&, std::vector<mongo::LegacyWCResponse, std::allocator<mongo::LegacyWCResponse> >*)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::BatchWriteExec::executeBatch(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)", 
         "object": "src/mongo/s/write_ops/batch_write_exec.cpp", 
         "used_by": [
@@ -28,6 +35,20 @@
         ]
     }, 
     {
+        "symbol": "mongo::WriteErrorDetail::getErrMessage() const", 
+        "object": "src/mongo/s/write_ops/write_error_detail.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::WriteErrorDetail::getErrCode() const", 
+        "object": "src/mongo/s/write_ops/write_error_detail.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::BatchedDeleteRequest::BatchedDeleteRequest()", 
         "object": "src/mongo/s/write_ops/batched_delete_request.cpp", 
         "used_by": [
@@ -44,6 +65,20 @@
     {
         "symbol": "mongo::BatchedDeleteRequest::setWriteConcern(mongo::BSONObj const&)", 
         "object": "src/mongo/s/write_ops/batched_delete_request.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::WCErrorDetail::getErrMessage() const", 
+        "object": "src/mongo/s/write_ops/wc_error_detail.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::WCErrorDetail::getErrCode() const", 
+        "object": "src/mongo/s/write_ops/wc_error_detail.cpp", 
         "used_by": [
             "src/mongo/s/cluster_write.cpp"
         ]
@@ -147,6 +182,20 @@
         ]
     }, 
     {
+        "symbol": "mongo::BatchedCommandResponse::getErrDetails() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::isErrDetailsSet() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::BatchedCommandResponse::setN(long long)", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
@@ -164,7 +213,10 @@
         "symbol": "mongo::BatchedCommandResponse::BatchedCommandResponse()", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/s/cluster_write.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp"
         ]
     }, 
@@ -179,7 +231,10 @@
         "symbol": "mongo::BatchedCommandResponse::~BatchedCommandResponse()", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/s/cluster_write.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp"
         ]
     }, 
@@ -187,14 +242,43 @@
         "symbol": "mongo::BatchedCommandResponse::getN() const", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::getErrCode() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::isWriteConcernErrorSet() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::getErrMessage() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
         ]
     }, 
     {
         "symbol": "mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::getWriteConcernError() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
         ]
     }, 
     {
@@ -208,7 +292,15 @@
         "symbol": "mongo::BatchedCommandResponse::toBSON() const", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
         "used_by": [
+            "src/mongo/s/config.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandResponse::getOk() const", 
+        "object": "src/mongo/s/write_ops/batched_command_response.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
         ]
     }, 
     {
@@ -236,8 +328,8 @@
         "symbol": "mongo::BatchedCommandRequest::getNS() const", 
         "object": "src/mongo/s/write_ops/batched_command_request.cpp", 
         "used_by": [
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/cluster_write.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp"
         ]
     }, 
@@ -281,15 +373,22 @@
         "symbol": "mongo::BatchedCommandRequest::getOrdered() const", 
         "object": "src/mongo/s/write_ops/batched_command_request.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BatchedCommandRequest::getWriteConcern() const", 
+        "object": "src/mongo/s/write_ops/batched_command_request.cpp", 
+        "used_by": [
+            "src/mongo/s/cluster_write.cpp"
         ]
     }, 
     {
         "symbol": "mongo::BatchedCommandRequest::setNS(mongo::StringData const&)", 
         "object": "src/mongo/s/write_ops/batched_command_request.cpp", 
         "used_by": [
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/cluster_write.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp"
         ]
     }, 
@@ -304,14 +403,14 @@
         "symbol": "mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)", 
         "object": "src/mongo/s/write_ops/batch_upconvert.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
         "symbol": "mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)", 
         "object": "src/mongo/s/write_ops/batch_upconvert.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {

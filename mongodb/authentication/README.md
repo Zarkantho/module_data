@@ -32,7 +32,7 @@ Authapalooza! TODO: actually separate this logically.
 - src/mongo/db/auth/authz\_manager\_external\_state\_d.h
 - src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/authz\_manager\_external\_state\_local.h
-- src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp   (tools)
 - src/mongo/db/auth/authz\_manager\_external\_state\_mock.h
 - src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp   (mongos)
 - src/mongo/db/auth/authz\_manager\_external\_state\_s.h
@@ -90,7 +90,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
@@ -115,8 +115,8 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -153,7 +153,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/auth/authorization\_manager.cpp
 
@@ -179,9 +179,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -230,17 +228,8 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)
-
-- Used By:
-
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -289,9 +278,17 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+
+<div></div>
+
+    mongo::AuthorizationManager::upgradeSchema(int, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -301,7 +298,6 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool.cpp](../tools)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
@@ -319,9 +315,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -353,6 +347,7 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/repl/oplogreader.cpp](../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -372,14 +367,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::AuthorizationManager::~AuthorizationManager()
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
 <div></div>
 
@@ -416,7 +403,7 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::AuthorizationManager::upgradeSchemaStep(mongo::BSONObj const&, bool*)
+    mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)
 
 - Used By:
 
@@ -447,13 +434,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -477,13 +460,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 ### src/mongo/db/auth/authorization\_manager\_global.cpp
 
@@ -496,24 +475,26 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/commands/isself.cpp](../database\_commands)
-    - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/oplogreader.cpp](../replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/db/commands/isself.cpp](../database\_commands)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+    - [src/mongo/s/shard.cpp](../sharding)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/oplogreader.cpp](../replication)
 
 <div></div>
 
@@ -547,10 +528,8 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
-    - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <div></div>
@@ -597,7 +576,6 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
 
 <div></div>
@@ -622,18 +600,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedForPrivilege(mongo::Privilege const&)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
 
 <div></div>
 
@@ -645,14 +614,6 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::AuthorizationSession::getImpersonatedUserNames() const
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
 
 <div></div>
 
@@ -670,9 +631,7 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
 
 <div></div>
 
@@ -688,7 +647,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -697,7 +656,6 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -706,7 +664,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -734,15 +692,19 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+    - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
@@ -753,7 +715,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
 <div></div>
 
@@ -769,7 +730,6 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -778,7 +738,6 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -813,7 +772,6 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
 
@@ -841,7 +799,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -849,7 +809,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -857,7 +819,9 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp
 
@@ -878,7 +842,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/tools/tool.cpp](../tools)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
     - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp
@@ -890,32 +853,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-### src/mongo/db/auth/authz\_session\_external\_state.cpp
-
-<div></div>
-
-    mongo::AuthzSessionExternalState::AuthzSessionExternalState(mongo::AuthorizationManager*)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
-
-<div></div>
-
-    mongo::AuthzSessionExternalState::~AuthzSessionExternalState()
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
-
-<div></div>
-
-    typeinfo for mongo::AuthzSessionExternalState
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_authentication\_session.cpp
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_d.cpp
 
@@ -964,11 +901,10 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
@@ -987,6 +923,7 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/s/shardconnection.cpp](../sharding)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
@@ -1026,7 +963,6 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
 
 ### src/mongo/db/auth/privilege\_parser.cpp
 
@@ -1037,7 +973,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -1046,15 +981,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-
-<div></div>
-
-    mongo::ParsedPrivilege::toString() const
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -1071,7 +997,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 <div></div>
 
@@ -1080,7 +1005,6 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 ### src/mongo/db/auth/resource\_pattern.cpp
 
@@ -1124,15 +1048,6 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::RoleName const&)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-
 ### src/mongo/db/auth/security\_key.cpp
 
 <div></div>
@@ -1157,6 +1072,7 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/s/shard.cpp](../sharding)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/repl/oplogreader.cpp](../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
 
@@ -1194,7 +1110,6 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
 
 <div></div>
 
@@ -1223,25 +1138,9 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/auth/user\_management\_commands\_parser.cpp
-
-<div></div>
-
-    mongo::auth::parseCreateOrUpdateUserCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateUserArgs*)
-
-- Used By:
-
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)
-
-- Used By:
-
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -1254,6 +1153,31 @@ Authapalooza! TODO: actually separate this logically.
 <div></div>
 
     mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, int*, bool*, mongo::BSONObj*)
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::auth::parseCreateOrUpdateUserCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateUserArgs*)
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)
 
 - Used By:
 
@@ -1285,19 +1209,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
+    mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)
 
 - Used By:
 
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::auth::parseUserNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_d.cpp
 
 <div></div>
 
@@ -1310,14 +1226,6 @@ Authapalooza! TODO: actually separate this logically.
 <div></div>
 
     mongo::auth::parseRolePossessionManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, std::string*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*, mongo::BSONObj*)
-
-- Used By:
-
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)
 
 - Used By:
 
@@ -1348,19 +1256,8 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/sasl/auxprop\_mongodb\_internal.cpp
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::UserName const&)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
 
 # Dependencies
 
@@ -1896,6 +1793,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -2196,6 +2101,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -2401,6 +2314,14 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::ErrorCodes::Error) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 ### src/mongo/db/auth/authorization\_session.cpp
 
@@ -3652,11 +3573,27 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
     vtable for mongo::ScopedDbConnection
 
 - Provided By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -3713,6 +3650,14 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/s/type\_database.cpp](../sharding)
+
+<div></div>
+
+    mongo::clusterCreateIndex(std::string const&, mongo::BSONObj, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -3788,6 +3733,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::grid
 
 - Provided By:
@@ -3856,7 +3809,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -3864,7 +3817,15 @@ Authapalooza! TODO: actually separate this logically.
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getN() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -3873,6 +3834,14 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::~BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -3929,6 +3898,14 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Provided By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -4126,6 +4103,14 @@ Authapalooza! TODO: actually separate this logically.
 <div></div>
 
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)
+
+- Provided By:
+
+    - [src/mongo/db/field\_parser.cpp](../sharding)
+
+<div></div>
+
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)
 
 - Provided By:
 
@@ -4515,6 +4500,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::ActionType::planCacheRead
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
     mongo::ActionType::reIndex
 
 - Provided By:
@@ -4603,7 +4596,7 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::top
+    mongo::ActionType::planCacheWrite
 
 - Provided By:
 
@@ -4731,14 +4724,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::listShards
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::ActionType::createCollection
 
 - Provided By:
@@ -4819,6 +4804,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::ActionType::listShards
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
     mongo::ActionType::changeCustomData
 
 - Provided By:
@@ -4860,6 +4853,14 @@ Authapalooza! TODO: actually separate this logically.
 <div></div>
 
     mongo::ActionType::viewUser
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::ActionType::appendOplogNote
 
 - Provided By:
 
@@ -4923,6 +4924,22 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::ActionType::planCacheHint
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::ActionType::top
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
     mongo::ActionType::cursorInfo
 
 - Provided By:
@@ -4932,14 +4949,6 @@ Authapalooza! TODO: actually separate this logically.
 <div></div>
 
     mongo::ActionType::getShardMap
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::clean
 
 - Provided By:
 
@@ -6062,6 +6071,14 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -6070,11 +6087,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
+    mongo::bsonExtractIntegerFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, long long, long long*)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
 
 <div></div>
 

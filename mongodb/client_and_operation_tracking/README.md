@@ -20,6 +20,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
 - Used By:
 
+    - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
 
 <div></div>
@@ -72,24 +73,20 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
 - Used By:
 
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - src/mongo/db/database.cpp
+    - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
@@ -100,7 +97,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/repl\_reads\_ok.cpp](../replication)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
@@ -114,15 +111,18 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/lockstate.cpp](../concurrency)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
     - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
@@ -137,25 +137,22 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/framework.cpp](../unit\_tests)
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -166,19 +163,17 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/d\_logic.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -197,7 +192,6 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
-    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
@@ -219,8 +213,7 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
@@ -432,9 +425,11 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 - Used By:
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
@@ -460,6 +455,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Used By:
 
+    - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
 
 <div></div>
@@ -513,7 +509,6 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
     - [src/mongo/db/repl/bgsync.cpp](../replication)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../authentication)
-    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
@@ -535,8 +530,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
 
@@ -548,12 +542,11 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -568,21 +561,22 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/compact.cpp
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - src/mongo/db/database.cpp
+    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
@@ -594,7 +588,9 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_config.cpp](../replication)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
@@ -681,24 +677,20 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Used By:
 
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/stats/snapshots.cpp](../utilities)
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - src/mongo/db/namespace\_details.cpp
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - src/mongo/db/database.cpp
+    - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
@@ -709,7 +701,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/repl\_reads\_ok.cpp](../replication)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/dur\_commitjob.cpp](../journaling)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
@@ -723,15 +715,18 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/pipeline\_command.cpp](../database\_commands)
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/lockstate.cpp](../concurrency)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
     - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/tools/tool.cpp](../tools)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
@@ -746,25 +741,22 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/framework.cpp](../unit\_tests)
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -775,19 +767,17 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/d\_logic.cpp](../sharding)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -817,21 +807,17 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/s/cursors.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
+    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
+    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 <div></div>
 
@@ -884,7 +870,6 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
@@ -893,18 +878,19 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/repl/sync.cpp](../replication)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
@@ -1099,6 +1085,14 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 <div></div>
 
+    mongo::mutablebson::Document::~Document()
+
+- Provided By:
+
+    - [src/mongo/bson/mutable/document.cpp](../bson)
+
+<div></div>
+
     mongo::ActionSet::addAction(mongo::ActionType const&)
 
 - Provided By:
@@ -1120,6 +1114,14 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const
+
+- Provided By:
+
+    - [src/mongo/bson/mutable/document.cpp](../bson)
 
 <div></div>
 
@@ -1219,14 +1221,6 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 <div></div>
 
-    mongo::ActionType::handshake
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::lastError
 
 - Provided By:
@@ -1240,6 +1234,14 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::mutablebson::Document::Document(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)
+
+- Provided By:
+
+    - [src/mongo/bson/mutable/document.cpp](../bson)
 
 <div></div>
 
@@ -1339,7 +1341,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 - Provided By:
 
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1420,6 +1422,14 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 - Provided By:
 
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::internal
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1511,7 +1521,6 @@ The current "operation" within the current "Client"
 - Used By:
 
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
 
 <div></div>
@@ -1520,6 +1529,7 @@ The current "operation" within the current "Client"
 
 - Used By:
 
+    - [src/mongo/db/index\_builder.cpp](../indexing)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -1556,12 +1566,11 @@ The current "operation" within the current "Client"
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -1572,7 +1581,7 @@ The current "operation" within the current "Client"
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2113,8 +2122,8 @@ Functions to kill the current "operation"
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2122,13 +2131,14 @@ Functions to kill the current "operation"
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
@@ -2136,9 +2146,8 @@ Functions to kill the current "operation"
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
-    - src/mongo/db/index/btree\_based\_builder.cpp
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/write\_concern.cpp](../replication)
 
@@ -2175,43 +2184,11 @@ Functions to kill the current "operation"
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+    mongo::PseudoRandom::PseudoRandom(long long)
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Lock::somethingWriteLocked()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    boost::this_thread::interruption_point()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/platform/random.cpp](../utilities)
 
 <div></div>
 
@@ -2223,35 +2200,11 @@ Functions to kill the current "operation"
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+    mongo::StaticObserver::_destroyingStatics
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::globalScriptEngine
-
-- Provided By:
-
-    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/util/util.cpp](../utilities)
 
 <div></div>
 
@@ -2263,11 +2216,171 @@ Functions to kill the current "operation"
 
 <div></div>
 
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
     boost::system::generic_category()
 
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::getGlobalFailPointRegistry()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::PseudoRandom::nextInt64()
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::FailPoint::slowShouldFailOpenBlock()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::ScopedFailPoint::getData() const
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::globalScriptEngine
+
+- Provided By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Lock::somethingWriteLocked()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ScopedFailPoint::~ScopedFailPoint()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::FailPoint::FailPoint()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../utilities)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -2368,7 +2481,6 @@ Base class for a Client on mongod and mongos: ClientBasic
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
 <div></div>
@@ -2377,7 +2489,6 @@ Base class for a Client on mongod and mongos: ClientBasic
 
 - Used By:
 
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
 
 <div></div>
@@ -2387,22 +2498,20 @@ Base class for a Client on mongod and mongos: ClientBasic
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
     - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../sharding)
+    - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
     - [src/mongo/s/d\_state.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
-    - src/mongo/s/strategy\_single.cpp
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/commands.cpp](../database\_commands)
@@ -2410,19 +2519,19 @@ Base class for a Client on mongod and mongos: ClientBasic
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
     - [src/mongo/s/request.cpp](../sharding)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
-    - src/mongo/db/modules/subscription/src/audit/audit\_private.cpp
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2471,13 +2580,11 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
-    mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)
+    mongo::ClientInfo::exists()
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2486,16 +2593,6 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 - Used By:
 
     - [src/mongo/s/request.cpp](../sharding)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/s/writeback\_listener.cpp](../sharding)
-
-<div></div>
-
-    mongo::ClientInfo::enforceWriteConcern(std::string const&, mongo::BSONObj const&, std::string*)
-
-- Used By:
-
-    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 <div></div>
 
@@ -2512,6 +2609,37 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 - Used By:
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ClientBasic::getCurrent()
+
+- Used By:
+
+    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/db/dbeval.cpp](../database\_commands)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
+    mongo::ClientInfo::newPeerRequest(mongo::HostAndPort const&)
+
+- Used By:
+
+    - [src/mongo/s/request.cpp](../sharding)
 
 <div></div>
 
@@ -2532,268 +2660,9 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
-<div></div>
-
-    mongo::ClientInfo::newPeerRequest(mongo::HostAndPort const&)
-
-- Used By:
-
-    - [src/mongo/s/request.cpp](../sharding)
-
-<div></div>
-
-    mongo::ClientInfo::exists()
-
-- Used By:
-
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
-
-<div></div>
-
-    mongo::ClientBasic::getCurrent()
-
-- Used By:
-
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/sasl/sasl\_commands.cpp
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/audit\_command.cpp
-    - src/mongo/s/strategy\_single.cpp
-    - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
-    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
-
 # Dependencies
 
 ### src/mongo/s/client\_info.cpp
-
-<div></div>
-
-    mongo::DBConnectionPool::get(std::string const&, double)
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    vtable for mongo::ScopedDbConnection
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::TimerStats::getReport() const
-
-- Provided By:
-
-    - [src/mongo/db/stats/timer\_stats.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::pool
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::ShardConnection::~ShardConnection()
-
-- Provided By:
-
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
-    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ScopedDbConnection::_setSocketTimeout()
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::SpinLock::SpinLock()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
-
-<div></div>
-
-    mongo::ShardConnection::done()
-
-- Provided By:
-
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
-    mongo::TimerHolder::TimerHolder(mongo::TimerStats*)
-
-- Provided By:
-
-    - [src/mongo/db/stats/timer\_stats.cpp](../utilities)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::detail::get_tss_data(void const*)
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -2813,15 +2682,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
-    mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)
-
-- Provided By:
-
-    - [src/mongo/s/writeback\_listener.cpp](../sharding)
-
-<div></div>
-
-    mongo::TimerHolder::~TimerHolder()
+    mongo::TimerStats::getReport() const
 
 - Provided By:
 
@@ -2829,7 +2690,15 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
-    mongo::causedBy(std::exception const&)
+    mongo::SpinLock::SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    vtable for mongo::DBException
 
 - Provided By:
 
@@ -2837,15 +2706,39 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+    mongo::getGlobalAuthorizationManager()
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationSession::AuthorizationSession(mongo::AuthzSessionExternalState*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
 
 <div></div>
 
     mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
@@ -2861,83 +2754,27 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
+    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     vtable for mongo::UserException
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::SpinLock::~SpinLock()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
-
-<div></div>
-
-    mongo::ShardConnection::ShardConnection(std::string const&, std::string const&, boost::shared_ptr<mongo::ChunkManager const>)
-
-- Provided By:
-
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::causedBy(std::string const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ShardConnection::_finishInit()
-
-- Provided By:
-
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
-    mongo::getGlobalAuthorizationManager()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
 
 <div></div>
 
@@ -2949,11 +2786,51 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 <div></div>
 
-    mongo::AScopedConnection::_numConnections
+    boost::detail::get_tss_data(void const*)
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::SpinLock::~SpinLock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 -------------
 
@@ -2990,6 +2867,14 @@ The database's internal concept of a cursor from a client
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
+
+<div></div>
+
+    mongo::ClientCursor::setIdleTime(unsigned int)
+
+- Used By:
+
+    - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
 <div></div>
 
@@ -3055,6 +2940,23 @@ The database's internal concept of a cursor from a client
 
 <div></div>
 
+    mongo::ClientCursor::invalidateDocument(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&, mongo::InvalidationType)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::ClientCursorMonitor
+
+- Used By:
+
+    - [src/mongo/db/d\_globals.cpp](../legacy\_code)
+
+<div></div>
+
     mongo::ClientCursor::idleTimeReport(unsigned int)
 
 - Used By:
@@ -3075,26 +2977,11 @@ The database's internal concept of a cursor from a client
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
-    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
-
-<div></div>
-
-    vtable for mongo::ClientCursorMonitor
-
-- Used By:
-
-    - [src/mongo/db/d\_globals.cpp](../legacy\_code)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 <div></div>
 
@@ -3128,14 +3015,6 @@ The database's internal concept of a cursor from a client
 
 <div></div>
 
-    mongo::ClientCursor::aboutToDelete(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&)
-
-- Used By:
-
-    - src/mongo/db/structure/collection.cpp
-
-<div></div>
-
     mongo::ClientCursor::eraseIfAuthorized(int, long long*)
 
 - Used By:
@@ -3150,7 +3029,7 @@ The database's internal concept of a cursor from a client
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
 
@@ -3241,7 +3120,7 @@ The database's internal concept of a cursor from a client
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -3866,6 +3745,14 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
+    mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+
+<div></div>
+
     mongo::Helpers::findById(mongo::Collection*, mongo::BSONObj const&)
 
 - Used By:
@@ -3926,14 +3813,6 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
-    mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-
-<div></div>
-
     mongo::Helpers::findAll(std::string const&, mongo::BSONObj const&)
 
 - Used By:
@@ -3983,11 +3862,25 @@ Contains helper functions for running common operations against the local server
 - Used By:
 
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/db/repl/health.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
 <div></div>
 
@@ -4012,24 +3905,10 @@ Contains helper functions for running common operations against the local server
 
 - Used By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/db/repl/health.cpp](../replication)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
 
 <div></div>
 
@@ -4042,14 +3921,6 @@ Contains helper functions for running common operations against the local server
 # Dependencies
 
 ### src/mongo/db/dbhelpers.cpp
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 <div></div>
 
@@ -4117,19 +3988,19 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByPrefix(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    mongo::IndexCatalog::findIdIndex()
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool) const
 
 - Provided By:
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 <div></div>
 
@@ -4145,7 +4016,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4213,14 +4084,6 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
-    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::FetchStage::FetchStage(mongo::WorkingSet*, mongo::PlanStage*, mongo::MatchExpression const*)
 
 - Provided By:
@@ -4257,7 +4120,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4325,11 +4188,19 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4354,14 +4225,6 @@ Contains helper functions for running common operations against the local server
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4397,6 +4260,14 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
+    mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
@@ -4421,11 +4292,11 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
+    mongo::IndexCatalog::findIdIndex() const
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4441,7 +4312,7 @@ Contains helper functions for running common operations against the local server
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4450,14 +4321,6 @@ Contains helper functions for running common operations against the local server
 - Provided By:
 
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4517,14 +4380,6 @@ Contains helper functions for running common operations against the local server
 
 <div></div>
 
-    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::storageGlobalParams
 
 - Provided By:
@@ -4538,6 +4393,14 @@ Contains helper functions for running common operations against the local server
 - Provided By:
 
     - [src/mongo/db/ops/delete.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4566,7 +4429,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Used By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4675,7 +4538,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4763,7 +4626,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4779,7 +4642,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 

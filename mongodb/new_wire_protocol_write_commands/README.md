@@ -88,14 +88,6 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::fixDocumentForInsert(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
-
-<div></div>
-
     mongo::userAllowedWriteNS(mongo::NamespaceString const&)
 
 - Provided By:
@@ -168,14 +160,6 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::getLastErrorDefault
-
-- Provided By:
-
-    - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
-
-<div></div>
-
     boost::system::system_category()
 
 - Provided By:
@@ -217,6 +201,14 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
+    mongo::getLastErrorDefault
+
+- Provided By:
+
+    - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+
+<div></div>
+
     mongo::_makeStringVector(int, ...)
 
 - Provided By:
@@ -233,14 +225,6 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::CurOp::setNS(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
 
 - Provided By:
@@ -254,6 +238,14 @@ New write commands for new wire protocol. The new "write commands" are all actua
 - Provided By:
 
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 ### src/mongo/db/commands/write\_commands/batch\_executor.cpp
 
@@ -363,11 +355,11 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::Status::toString() const
+    mongo::causedBy(std::string const&)
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -387,6 +379,22 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::Lock::assertWriteLocked(mongo::StringData const&)
 
 - Provided By:
@@ -399,7 +407,15 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -483,6 +499,14 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
+    mongo::ShardingState::getCollectionMetadata(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
     mongo::logger::globalLogManager()
 
 - Provided By:
@@ -503,7 +527,15 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -523,14 +555,6 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    typeinfo for mongo::UserException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::fixDocumentForInsert(mongo::BSONObj const&)
 
 - Provided By:
@@ -539,19 +563,11 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::ShardingState::getCollectionMetadata(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../sharding)
-
-<div></div>
-
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -668,11 +684,11 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+    mongo::validateWriteConcern(mongo::WriteConcernOptions const&)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/write\_concern.cpp](../replication)
 
 <div></div>
 
@@ -696,7 +712,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -705,6 +721,14 @@ New write commands for new wire protocol. The new "write commands" are all actua
 - Provided By:
 
     - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
+    mongo::CurOp::setNS(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -737,6 +761,14 @@ New write commands for new wire protocol. The new "write commands" are all actua
 - Provided By:
 
     - [src/mongo/db/ops/delete.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -876,6 +908,14 @@ New wire protocol writes (in mongos)
 
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
+<div></div>
+
+    mongo::enforceLegacyWriteConcern(mongo::MultiCommandDispatch*, mongo::StringData const&, mongo::BSONObj const&, std::map<mongo::ConnectionString, mongo::OpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString const, mongo::OpTime> > > const&, std::vector<mongo::LegacyWCResponse, std::allocator<mongo::LegacyWCResponse> >*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
 ### src/mongo/s/write\_ops/batch\_upconvert.cpp
 
 <div></div>
@@ -884,7 +924,7 @@ New wire protocol writes (in mongos)
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 <div></div>
 
@@ -892,7 +932,7 @@ New wire protocol writes (in mongos)
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batch\_write\_exec.cpp
 
@@ -1156,6 +1196,232 @@ New wire protocol writes (in mongos)
 
 <div></div>
 
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::toString() const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::time_t_to_String_short(long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+### src/mongo/s/write\_ops/batch\_downconvert\_test.cpp
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::time_t_to_String_short(long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -1172,21 +1438,19 @@ New wire protocol writes (in mongos)
 
 <div></div>
 
-    mongo::msgasserted(int, char const*)
+    mongo::unittest::Test::setUp()
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
-    std::string mongo::integerToHex<int>(int)
+    mongo::Status::operator!=(mongo::Status const&) const
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
-
-### src/mongo/s/write\_ops/batch\_downconvert\_test.cpp
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -1198,71 +1462,39 @@ New wire protocol writes (in mongos)
 
 <div></div>
 
-    typeinfo for mongo::unittest::Test
+    mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
-    mongo::unittest::Test::Test()
+    mongo::Status::operator==(mongo::Status const&) const
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
-    mongo::unittest::Test::~Test()
+    std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
-    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+    mongo::fromjson(char const*, int*)
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/json.cpp](../bson)
 
 <div></div>
 
     mongo::unittest::TestAssertion::~TestAssertion()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::run()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::getSuite(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::setUp()
 
 - Provided By:
 
@@ -2344,12 +2576,44 @@ New wire protocol writes (in mongos)
 
 <div></div>
 
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)
 
 - Provided By:
 
     - [src/mongo/s/version\_manager.cpp](../sharding)
     - [src/mongo/s/default\_version.cpp](../sharding)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -2362,11 +2626,43 @@ New wire protocol writes (in mongos)
 
 <div></div>
 
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     typeinfo for mongo::DBException
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
 
 ### src/mongo/s/write\_ops/write\_op.cpp
 
@@ -2752,8 +3048,8 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
+    - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2803,7 +3099,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandRequest::getWriteConcern() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -2811,8 +3115,8 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
+    - [src/mongo/s/strategy.cpp](../sharding)
     - [src/mongo/s/cluster\_write.cpp](../sharding)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2824,6 +3128,22 @@ New wire protocol writes (in mongod)   why are these in s/ ?
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_command\_response.cpp
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getErrDetails() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isErrDetailsSet() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -2847,7 +3167,10 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/config.cpp](../sharding)
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2864,7 +3187,10 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/config.cpp](../sharding)
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
 
 <div></div>
@@ -2873,7 +3199,32 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getErrCode() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getErrMessage() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -2881,7 +3232,15 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getWriteConcernError() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 <div></div>
 
@@ -2897,7 +3256,16 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 - Used By:
 
+    - [src/mongo/s/config.cpp](../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../sharding)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getOk() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
 
 ### src/mongo/s/write\_ops/batched\_delete\_document.cpp
 
@@ -3085,6 +3453,42 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
     - [src/mongo/s/cluster\_write.cpp](../sharding)
 
+### src/mongo/s/write\_ops/wc\_error\_detail.cpp
+
+<div></div>
+
+    mongo::WCErrorDetail::getErrMessage() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
+    mongo::WCErrorDetail::getErrCode() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+### src/mongo/s/write\_ops/write\_error\_detail.cpp
+
+<div></div>
+
+    mongo::WriteErrorDetail::getErrMessage() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
+<div></div>
+
+    mongo::WriteErrorDetail::getErrCode() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../sharding)
+
 # Dependencies
 
 ### src/mongo/s/write\_ops/batched\_command\_request.cpp
@@ -3202,14 +3606,6 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../sharding)
 
 <div></div>
 
@@ -3807,15 +4203,7 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 <div></div>
 
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../sharding)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)
 
 - Provided By:
 
@@ -3839,19 +4227,19 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 
 <div></div>
 
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
+
+- Provided By:
+
+    - [src/mongo/db/field\_parser.cpp](../sharding)
+
+<div></div>
+
     mongo::BSONObjBuilder::numStrs
 
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../sharding)
 
 <div></div>
 
@@ -3876,6 +4264,14 @@ New wire protocol writes (in mongod)   why are these in s/ ?
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool> const&, bool*, std::string*)
+
+- Provided By:
+
+    - [src/mongo/db/field\_parser.cpp](../sharding)
 
 <div></div>
 

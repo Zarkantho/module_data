@@ -1,7 +1,7 @@
 [
     {
         "symbol": "mongo::gitVersion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/tools/tool_options.cpp", 
             "src/mongo/util/version_reporting.cpp", 
@@ -12,28 +12,28 @@
     }, 
     {
         "symbol": "mongo::allocator()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::compiledJSEngine()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::loaderFlags()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::sysInfo()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp", 
             "src/mongo/s/version_mongos.cpp", 
@@ -42,13 +42,20 @@
     }, 
     {
         "symbol": "mongo::compilerFlags()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::JSFiles::utils", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp", 
+        "used_by": [
+            "src/mongo/scripting/engine.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::JSFiles::batch_api", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp", 
         "used_by": [
             "src/mongo/scripting/engine.cpp"
@@ -111,13 +118,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::JSFiles::writes", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp", 
-        "used_by": [
-            "src/mongo/scripting/engine.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::JSFiles::replsetbridge", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp", 
         "used_by": [
@@ -166,9 +166,7 @@
         "symbol": "mongo::ErrorCodes::fromInt(int)", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
         "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+            "src/mongo/db/catalog/index_catalog.cpp"
         ]
     }, 
     {
@@ -227,26 +225,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::revokeRolesFromRole", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::addShard", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_sharding.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::replSetReconfig", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_replset.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -271,20 +254,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::dropAllRolesFromDatabase", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::authCheck", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authz_check.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::insert", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
@@ -304,10 +273,12 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::_recvChunkCommit", 
+        "symbol": "mongo::ActionType::planCacheRead", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/s/d_migrate.cpp"
+            "src/mongo/s/commands/cluster_plan_cache_cmd.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/commands/plan_cache_commands.cpp"
         ]
     }, 
     {
@@ -317,21 +288,6 @@
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
             "src/mongo/db/auth/authorization_session.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::grantRolesToRole", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::indexStats", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/index_stats.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -351,13 +307,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::updateRole", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::netstat", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
@@ -370,8 +319,15 @@
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_sharding.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::indexStats", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/index_stats.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -384,25 +340,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::replSetHeartbeat", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::getParameter", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
             "src/mongo/db/commands/parameters.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::dropAllUsersFromDatabase", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp"
         ]
     }, 
     {
@@ -447,42 +389,20 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::replSetUpdatePosition", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/replset_commands.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::dropRole", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::planCacheWrite", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/s/commands/cluster_plan_cache_cmd.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::applicationMessage", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_command.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_application_message.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::handshake", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/client.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::unsetSharding", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_state.cpp"
+            "src/mongo/db/commands/plan_cache_commands.cpp"
         ]
     }, 
     {
@@ -491,8 +411,7 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/dbcommands.cpp"
         ]
     }, 
     {
@@ -512,10 +431,35 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::mapReduceShardedFinish", 
+        "symbol": "mongo::ActionType::splitChunk", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/commands/mr.cpp"
+            "src/mongo/s/d_split.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::getLog", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::internal", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/db/repl/replset_commands.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/d_state.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
@@ -534,13 +478,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::grantPrivilegesToRole", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::moveChunk", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
@@ -550,58 +487,36 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::_recvChunkStatus", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::createRole", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::revokeRolesFromUser", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ActionType::dropUser", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::setShardVersion", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_state.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ActionType::inprog", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::renameCollection", 
+        "symbol": "mongo::ActionType::unlock", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {
@@ -610,6 +525,13 @@
         "used_by": [
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
             "src/mongo/db/repl/replset_commands.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::applicationMessage", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -654,32 +576,9 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::replSetFresh", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/consensus.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::unlock", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::_recvChunkStart", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::createIndex", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp", 
             "src/mongo/db/commands/rename_collection_common.cpp", 
             "src/mongo/db/auth/authorization_manager.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
@@ -701,8 +600,8 @@
         "symbol": "mongo::ActionType::killop", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -742,20 +641,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::_recvChunkAbort", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::updateUser", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::remove", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
@@ -769,19 +654,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::createDatabase", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::enableSharding", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_sharding.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -793,32 +670,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::_transferMods", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::grantRolesToUser", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::listShards", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::replSetGetRBID", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/replset_commands.cpp"
         ]
     }, 
     {
@@ -859,6 +715,14 @@
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/commands/user_management_commands.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ActionType::appendOplogNote", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/oplog_note.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
@@ -921,7 +785,6 @@
         "symbol": "mongo::ActionType::createUser", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_user_management.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
@@ -945,17 +808,19 @@
         ]
     }, 
     {
+        "symbol": "mongo::ActionType::planCacheHint", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
+        "used_by": [
+            "src/mongo/s/commands/cluster_hint_cmd.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/commands/hint_commands.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::ActionType::changeOwnCustomData", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/auth/authorization_session.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::shardCollection", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_sharding.cpp"
         ]
     }, 
     {
@@ -976,30 +841,12 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::clean", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::reIndex", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/commands/drop_indexes.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::dropIndex", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/auth/authorization_manager.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/commands/drop_indexes.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
         ]
     }, 
     {
@@ -1027,25 +874,13 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::getLog", 
+        "symbol": "mongo::ActionType::dropIndex", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::revokePrivilegesFromRole", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_role_management.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::_migrateClone", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_migrate.cpp"
+            "src/mongo/db/auth/authorization_manager.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/commands/drop_indexes.cpp", 
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -1081,28 +916,10 @@
         ]
     }, 
     {
-        "symbol": "mongo::ActionType::splitChunk", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/s/d_split.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ActionType::emptycapped", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::impersonate", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_d.cpp"
         ]
     }, 
     {
@@ -1118,9 +935,9 @@
         "symbol": "mongo::ActionType::compact", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/compact.cpp", 
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
+            "src/mongo/db/commands/compact.cpp"
         ]
     }, 
     {
@@ -1143,7 +960,6 @@
         "symbol": "mongo::ActionType::toString() const", 
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_event.cpp", 
             "src/mongo/db/auth/action_set.cpp"
         ]
     }, 
@@ -1161,8 +977,7 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp"
+            "src/mongo/db/dbcommands.cpp"
         ]
     }, 
     {
@@ -1170,8 +985,7 @@
         "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
         "used_by": [
             "src/mongo/db/commands/shutdown.cpp", 
-            "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_shutdown.cpp"
+            "src/mongo/db/auth/role_graph_builtin_roles.cpp"
         ]
     }, 
     {
@@ -1181,22 +995,7 @@
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/auth/role_graph_builtin_roles.cpp", 
             "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_indexes_collections_databases.cpp", 
             "src/mongo/db/commands/rename_collection_common.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::authenticate", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/audit/audit_authentication.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ActionType::replSetElect", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/consensus.cpp"
         ]
     }, 
     {

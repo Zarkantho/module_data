@@ -77,7 +77,24 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::ReplSetImpl::findById(unsigned int) const
+
+- Used By:
+
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ScopedConn::_map
+
+- Used By:
+
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -86,6 +103,14 @@ Replication code? TODO: verify that this is all replication related and document
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ScopedConn::mapMutex
+
+- Used By:
+
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 ### src/mongo/db/repl/master\_slave.cpp
 
@@ -96,15 +121,14 @@ Replication code? TODO: verify that this is all replication related and document
 - Used By:
 
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/d\_state.cpp](../sharding)
+    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/s/d\_state.cpp](../sharding)
 
 <div></div>
 
@@ -181,7 +205,6 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -202,6 +225,14 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::logOpComment(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
 
 ### src/mongo/db/repl/oplogreader.cpp
 
@@ -267,6 +298,7 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
@@ -275,10 +307,9 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
+    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -291,6 +322,14 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 ### src/mongo/db/repl/rs.cpp
+
+<div></div>
+
+    mongo::ScopedConn::keepOpen
+
+- Used By:
+
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -308,19 +347,19 @@ Replication code? TODO: verify that this is all replication related and document
 
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
-    - src/mongo/db/structure/collection.cpp
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
@@ -370,7 +409,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
 
 <div></div>
 
@@ -378,14 +417,13 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
-    - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_state.cpp](../sharding)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
@@ -415,6 +453,14 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/index\_builder.cpp](../indexing)
 
 ### src/mongo/db/repl/rs\_config.cpp
+
+<div></div>
+
+    mongo::ReplSetConfig::DEFAULT_HB_TIMEOUT
+
+- Used By:
+
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 <div></div>
 
@@ -1152,7 +1198,15 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::ActionType::replSetFresh
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::internal
 
 - Provided By:
 
@@ -1221,14 +1275,6 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
-
-- Provided By:
-
-    - [src/mongo/db/commands.cpp](../database\_commands)
 
 <div></div>
 
@@ -1309,14 +1355,6 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::ActionType::replSetElect
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/repl/health.cpp
 
@@ -1679,14 +1717,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::ActionType::replSetHeartbeat
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::Timer::_countsPerSecond
 
 - Provided By:
@@ -1916,6 +1946,14 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::internal
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2758,6 +2796,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     boost::thread::start_thread()
 
 - Provided By:
@@ -3087,14 +3133,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     boost::thread::~thread()
 
 - Provided By:
@@ -3107,7 +3145,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3417,7 +3455,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3441,7 +3479,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3469,6 +3507,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::IndexCatalog::haveIdIndex() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     vtable for mongo::DBClientBase
 
 - Provided By:
@@ -3481,7 +3527,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3565,14 +3611,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     typeinfo for mongo::MsgAssertionException
 
 - Provided By:
@@ -3617,7 +3655,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3666,6 +3704,14 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/bson/optime.cpp](../bson)
+
+<div></div>
+
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4455,6 +4501,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)
 
 - Provided By:
@@ -4525,14 +4579,6 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
 
 <div></div>
 
@@ -4722,14 +4768,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::ActionType::replSetUpdatePosition
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
 
 - Provided By:
@@ -4818,6 +4856,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::ActionType::internal
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
     mongo::ActionType::replSetConfigure
 
 - Provided By:
@@ -4847,14 +4893,6 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::ActionType::replSetGetRBID
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5599,7 +5637,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5744,7 +5782,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_replset.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -6222,6 +6260,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Collection::numRecords() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
 
 - Provided By:
@@ -6326,11 +6372,11 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::DBClientWithCommands::getDatabaseNames()
+    mongo::logger::globalLogManager()
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <div></div>
 
@@ -6366,11 +6412,11 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::logger::globalLogManager()
+    mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6406,15 +6452,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
@@ -6423,11 +6460,11 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
+    mongo::DBClientWithCommands::getDatabaseNames()
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -6867,6 +6904,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Collection::numRecords() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Status::toString() const
 
 - Provided By:
@@ -6963,19 +7008,19 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::Lock::TempRelease::~TempRelease()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
     mongo::WorkingSet::WorkingSet()
 
 - Provided By:
 
     - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Lock::TempRelease::~TempRelease()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -7075,6 +7120,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)
 
 - Provided By:
@@ -7155,6 +7208,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
 
 - Provided By:
@@ -7220,14 +7281,6 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     boost::this_thread::interruption_point()
 
 - Provided By:
@@ -7264,7 +7317,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7903,7 +7956,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7993,15 +8046,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8037,6 +8082,14 @@ Replication code? TODO: verify that this is all replication related and document
 
 <div></div>
 
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -8049,7 +8102,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8082,6 +8135,14 @@ Replication code? TODO: verify that this is all replication related and document
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::Collection::isCapped() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8542,7 +8603,7 @@ Helpers to wait for the appropriate write concern
 
 <div></div>
 
-    mongo::WriteConcernOptions::parse(mongo::BSONObj const&)
+    mongo::waitForWriteConcern(mongo::WriteConcernOptions const&, mongo::OpTime const&, mongo::WriteConcernResult*)
 
 - Used By:
 
@@ -8551,7 +8612,7 @@ Helpers to wait for the appropriate write concern
 
 <div></div>
 
-    mongo::waitForWriteConcern(mongo::WriteConcernOptions const&, mongo::OpTime const&, mongo::WriteConcernResult*)
+    mongo::validateWriteConcern(mongo::WriteConcernOptions const&)
 
 - Used By:
 
@@ -8668,14 +8729,6 @@ Helpers to wait for the appropriate write concern
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -8692,12 +8745,11 @@ Helpers to wait for the appropriate write concern
 
 <div></div>
 
-    mongo::currentClient
+    mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -8765,11 +8817,27 @@ Helpers to wait for the appropriate write concern
 
 <div></div>
 
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::dur::DurableInterface::_impl
 
 - Provided By:
 
     - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -9105,11 +9173,109 @@ Actual meat of the waiting for write concern code
 Helper to parse write concern options out of a BSONObj
 
 # Files
-- src/mongo/db/write\_concern\_options.cpp
+- src/mongo/db/write\_concern\_options.cpp   (mongod, tools, mongos)
 - src/mongo/db/write\_concern\_options.h
 
 # Interface
-(not used outside this module)
+
+### src/mongo/db/write\_concern\_options.cpp
+
+<div></div>
+
+    mongo::WriteConcernOptions::Default
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::WriteConcernOptions::AllConfigs
+
+- Used By:
+
+    - [src/mongo/s/config.cpp](../sharding)
+    - [src/mongo/s/grid.cpp](../sharding)
+    - [src/mongo/s/balance.cpp](../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/s/chunk.cpp](../sharding)
+    - [src/mongo/s/config\_upgrade\_v0\_to\_v5.cpp](../sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../sharding)
+
+<div></div>
+
+    mongo::WriteConcernOptions::parse(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/get\_last\_error.cpp](../database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::WriteConcernOptions::Unacknowledged
+
+- Used By:
+
+    - [src/mongo/s/balance.cpp](../sharding)
 
 # Dependencies
-(no dependencies outside this module)
+
+### src/mongo/db/write\_concern\_options.cpp
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)

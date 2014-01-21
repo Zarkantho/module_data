@@ -64,9 +64,23 @@
     }, 
     {
         "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
         "object": "src/mongo/util/mmap_posix.cpp"
     }, 
     {
@@ -81,13 +95,6 @@
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
         "object": "src/mongo/util/mmap_posix.cpp"
     }, 
     {
@@ -113,6 +120,13 @@
     }, 
     {
         "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
@@ -120,9 +134,23 @@
     }, 
     {
         "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/log.cpp"
         ], 
         "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/mmap_posix.cpp"
     }, 
     {
@@ -148,6 +176,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/util/mmap.cpp"
+    }, 
+    {
+        "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
@@ -165,6 +200,13 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/mmap.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
         "object": "src/mongo/util/mmap.cpp"
     }, 
     {

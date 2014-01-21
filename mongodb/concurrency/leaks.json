@@ -302,6 +302,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/db/d_concurrency.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/concurrency/thread_name.cpp"
         ], 
         "symbol": "mongo::getThreadName()", 

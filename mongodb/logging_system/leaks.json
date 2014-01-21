@@ -115,6 +115,34 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::curTimeMillis64()", 
+        "object": "src/mongo/logger/logstream_builder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/logger/logstream_builder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/make_string_vector.cpp"
+        ], 
+        "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/logger/logstream_builder.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/global_initializer_registerer.cpp"
+        ], 
+        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/logger/logstream_builder.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/version_reporting.cpp"
         ], 
         "symbol": "mongo::printGitVersion()", 
@@ -210,34 +238,6 @@
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
         "object": "src/mongo/logger/logger.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMillis64()", 
-        "object": "src/mongo/logger/logstream_builder.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/logger/logstream_builder.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/make_string_vector.cpp"
-        ], 
-        "symbol": "mongo::_makeStringVector(int, ...)", 
-        "object": "src/mongo/logger/logstream_builder.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp"
-        ], 
-        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/logger/logstream_builder.cpp"
     }, 
     {
         "sources": [

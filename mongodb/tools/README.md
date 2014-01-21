@@ -431,14 +431,6 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 <div></div>
 
-    mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -447,11 +439,27 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 <div></div>
 
+    mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::validateBSON(char const*, unsigned long long)
+
+- Provided By:
+
+    - [src/mongo/bson/bson\_validate.cpp](../bson)
 
 <div></div>
 
@@ -915,7 +923,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -995,7 +1003,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1092,7 +1100,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1218,6 +1226,14 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 <div></div>
 
+    mongo::fromjson(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
     boost::system::generic_category()
 
 - Provided By:
@@ -1295,6 +1311,14 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 - Provided By:
 
     - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../boost\_filesystem)
+
+<div></div>
+
+    mongo::Query::sort(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 ### src/mongo/tools/files.cpp
 
@@ -5468,14 +5492,6 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 <div></div>
 
-    mongo::BSONObj::valid() const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -5497,14 +5513,6 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -5572,11 +5580,11 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 <div></div>
 
-    mongo::typeName(mongo::BSONType)
+    std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -5617,6 +5625,14 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 - Provided By:
 
     - [src/mongo/client/sasl\_client\_authenticate.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::validateBSON(char const*, unsigned long long)
+
+- Provided By:
+
+    - [src/mongo/bson/bson\_validate.cpp](../bson)
 
 <div></div>
 
@@ -6008,7 +6024,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 

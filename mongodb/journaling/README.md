@@ -141,38 +141,36 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 - Used By:
 
-    - src/mongo/db/structure/collection.cpp
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../storage\_layer\_structure)
-    - src/mongo/db/database\_holder.cpp
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/write\_concern.cpp](../replication)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../storage\_layer\_structure)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/structure/collection\_compact.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-    - src/mongo/db/namespace\_details.cpp
-    - src/mongo/db/structure/btree/state.cpp
-    - src/mongo/db/compact.cpp
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/storage/extent.cpp](../storage\_layer\_structure)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
     - [src/mongo/db/ops/delete.cpp](../query\_system)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/cap.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -230,9 +228,9 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 - Used By:
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
+    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
 <div></div>
 
@@ -240,8 +238,8 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 - Used By:
 
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
 
 <div></div>
@@ -252,7 +250,7 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
 
 <div></div>
@@ -264,7 +262,7 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 # Dependencies
 

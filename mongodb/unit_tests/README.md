@@ -30,8 +30,8 @@ Unittest framework (for both old style dbtests and new style tests)
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
@@ -58,7 +58,6 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -71,13 +70,12 @@ Unittest framework (for both old style dbtests and new style tests)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
+    - [src/mongo/s/distlock.cpp](../sharding)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -1167,14 +1165,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::isValidNS(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::curTimeMicros64()
 
 - Provided By:
@@ -1235,7 +1225,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1852,7 +1842,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -2132,11 +2122,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::msgasserted(int, std::string const&)
+    mongo::ConfigServer::init(std::string const&)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/s/config.cpp](../sharding)
 
 <div></div>
 
@@ -2153,6 +2143,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::DBClientBase
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -2284,14 +2282,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::DBDirectClient::count(std::string const&, mongo::BSONObj const&, int, int, int)
 
 - Provided By:
@@ -2313,6 +2303,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::configServer
+
+- Provided By:
+
+    - [src/mongo/s/config.cpp](../sharding)
 
 <div></div>
 
@@ -2516,6 +2514,14 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::ConnectionString::_finishInit()
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     mongo::DBClientBase::query(boost::function<void (mongo::BSONObj const&)>, std::string const&, mongo::Query, mongo::BSONObj const*, int)
 
 - Provided By:
@@ -2545,6 +2551,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -2584,7 +2598,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
 
 <div></div>
 
@@ -3318,7 +3332,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3378,11 +3392,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    boost::detail::thread_data_base::~thread_data_base()
+    mongo::runCount(std::string const&, mongo::BSONObj const&, std::string&, int&)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/mongo/db/ops/count.cpp](../query\_system)
 
 <div></div>
 
@@ -3394,11 +3408,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::runCount(char const*, mongo::BSONObj const&, std::string&, int&)
+    boost::detail::get_current_thread_data()
 
 - Provided By:
 
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -3406,7 +3420,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3475,6 +3489,14 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    boost::detail::thread_data_base::~thread_data_base()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -3507,14 +3529,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::fromjson(char const*, int*)
 
 - Provided By:
@@ -3527,7 +3541,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3551,7 +3565,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3571,11 +3585,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    boost::detail::get_current_thread_data()
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5798,14 +5812,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::BtreeBasedBuilder::getComparison(int, mongo::BSONObj const&)
-
-- Provided By:
-
-    - src/mongo/db/index/btree\_based\_builder.cpp
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -5838,6 +5844,15 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -5846,12 +5861,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::currentClient
+    mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj const&)
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
 
 <div></div>
 
@@ -5891,7 +5905,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5955,7 +5969,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6920,6 +6934,22 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::more()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::IndexIterator::next()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -6933,14 +6963,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6960,11 +6982,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Database::dropCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6996,7 +7026,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7013,14 +7043,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7072,6 +7094,14 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -7079,14 +7109,6 @@ Old style unittests ("test" binary)
     - [src/mongo/util/hex.cpp](../utilities)
 
 ### src/mongo/dbtests/indexupdatetests.cpp
-
-<div></div>
-
-    mongo::BtreeBasedBuilder::getComparison(int, mongo::BSONObj const&)
-
-- Provided By:
-
-    - src/mongo/db/index/btree\_based\_builder.cpp
 
 <div></div>
 
@@ -7138,6 +7160,15 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::Status::operator!=(mongo::ErrorCodes::Error) const
 
 - Provided By:
@@ -7170,11 +7201,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::Record::_accessing() const
+    mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj const&)
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
 
 <div></div>
 
@@ -7210,11 +7241,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::dur::DurableInterface::_impl
+    vtable for mongo::DBDirectClient
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7230,23 +7261,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
-
-<div></div>
-
-    mongo::IndexCatalog::IndexBuildBlock::~IndexBuildBlock()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::IndexCatalog::IndexBuildBlock::success()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7258,27 +7273,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::CurOp::kill(bool*)
-
-- Provided By:
-
-    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::nsGetDB(std::string const&)
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)
-
-- Provided By:
-
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7295,14 +7294,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::NamespaceDetails::findIndexByName(mongo::StringData const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
 
 <div></div>
 
@@ -7346,51 +7337,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::IndexCatalog::IndexBuildBlock::IndexBuildBlock(mongo::IndexCatalog*, mongo::StringData const&, mongo::DiskLoc const&)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::UserException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::Database::getCollection(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/database.cpp
 
 <div></div>
 
@@ -7410,14 +7361,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::BtreeBasedBuilder::doDropDups(mongo::Collection*, std::set<mongo::DiskLoc, std::less<mongo::DiskLoc>, std::allocator<mongo::DiskLoc> > const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/index/btree\_based\_builder.cpp
-
-<div></div>
-
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -7434,60 +7377,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
     - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)
-
-- Provided By:
-
-    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
-    vtable for mongo::DBDirectClient
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BtreeBasedBuilder::addKeysToPhaseOne(mongo::Collection*, mongo::IndexDescriptor const*, mongo::BSONObj const&, mongo::SortPhaseOne*, mongo::ProgressMeter*, bool)
-
-- Provided By:
-
-    - src/mongo/db/index/btree\_based\_builder.cpp
-
-<div></div>
-
-    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
-
-- Provided By:
-
-    - src/mongo/db/structure/collection.cpp
 
 <div></div>
 
@@ -7499,27 +7393,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)
-
-- Provided By:
-
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
+    mongo::IndexCatalog::findIndexByName(mongo::StringData const&, bool) const
 
 - Provided By:
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DiskLoc::rec() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7535,7 +7413,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7551,7 +7429,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7568,6 +7446,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 ### src/mongo/dbtests/jsobjtests.cpp
 
@@ -7637,20 +7523,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::BSONObj::_okForStorage(bool, bool) const
 
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    typeinfo for mongo::MsgAssertionException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -7670,27 +7555,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::BSONObjIteratorSorted::BSONObjIteratorSorted(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
     mongo::BSIZE
 
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -7726,11 +7595,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
+    mongo::BSONObjIteratorSorted::BSONObjIteratorSorted(mongo::BSONObj const&)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -7870,14 +7739,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::jsTime()
 
 - Provided By:
@@ -7939,15 +7800,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8031,14 +7883,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::BSONElementManipulator::initTimestamp()
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::sleepsecs(int)
 
 - Provided By:
@@ -8047,11 +7891,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::Lock::GlobalWrite::~GlobalWrite()
+    mongo::BSONObj::md5() const
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -8071,14 +7915,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::OpTime::_now()
-
-- Provided By:
-
-    - [src/mongo/bson/optime.cpp](../bson)
-
-<div></div>
-
     mongo::demangleName(std::type_info const&)
 
 - Provided By:
@@ -8088,14 +7924,6 @@ Old style unittests ("test" binary)
 <div></div>
 
     mongo::BSONObj::isFieldNamePrefixOf(mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::BSONObj::md5() const
 
 - Provided By:
 
@@ -8124,6 +7952,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -10647,7 +10483,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10679,7 +10515,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10719,15 +10555,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10736,14 +10564,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -10764,14 +10584,6 @@ Old style unittests ("test" binary)
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -10807,7 +10619,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10815,15 +10627,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    mongo::WorkingSet::WorkingSet()
-
-- Provided By:
-
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10851,6 +10655,14 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::WorkingSet::WorkingSet()
+
+- Provided By:
+
+    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -10875,43 +10687,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::NamespaceDetails::quantizeAllocationSpace(int)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10935,7 +10715,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10951,7 +10731,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10976,14 +10756,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -11024,7 +10796,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11048,7 +10820,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11056,7 +10828,15 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::findIdIndex() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11064,7 +10844,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11104,7 +10884,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11306,7 +11086,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11362,7 +11142,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11404,7 +11184,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11412,7 +11192,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11476,7 +11256,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11484,7 +11264,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12396,7 +12176,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13007,19 +12787,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::nsGetCollection(std::string const&)
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13035,7 +12815,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13060,14 +12840,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13322,19 +13094,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13350,7 +13122,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13383,14 +13155,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13652,19 +13416,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::nsGetCollection(std::string const&)
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13680,7 +13444,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13697,14 +13461,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13744,7 +13500,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13800,7 +13556,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13809,6 +13565,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -14075,7 +13839,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14083,7 +13847,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14147,7 +13911,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14349,7 +14113,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14421,7 +14185,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14461,7 +14225,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14773,14 +14537,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::nsGetCollection(std::string const&)
 
 - Provided By:
@@ -14789,11 +14545,19 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14810,14 +14574,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14857,7 +14613,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14913,7 +14669,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15107,7 +14863,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15155,7 +14911,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15203,7 +14959,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15266,14 +15022,6 @@ Old style unittests ("test" binary)
 <div></div>
 
     mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
 
 - Provided By:
 
@@ -15361,14 +15109,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::nsGetCollection(std::string const&)
 
 - Provided By:
@@ -15377,11 +15117,27 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    typeinfo for mongo::MsgAssertionException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15406,14 +15162,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15611,11 +15359,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
+    mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -15655,7 +15403,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15683,11 +15431,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
+    mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -15839,7 +15587,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -15940,14 +15688,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::DBClientWithCommands::getPrevError()
 
 - Provided By:
@@ -15992,7 +15732,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16008,7 +15748,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16097,6 +15837,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/query/new\_find.cpp](../query\_system)
+
+<div></div>
+
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16230,27 +15978,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
+    mongo::FieldRangeVectorIterator::FieldIntervalMatcher::lowerCmp() const
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBClientBase::ConnectionIdSequence
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/queryutil.cpp](../query\_system)
 
 <div></div>
 
@@ -16270,11 +16002,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    typeinfo for mongo::DBException
+    vtable for mongo::DBDirectClient
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16318,11 +16050,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::FieldRangeVectorIterator::FieldIntervalMatcher::lowerCmp() const
+    mongo::DBClientBase::ConnectionIdSequence
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -16454,14 +16186,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::FieldRangeSet::FieldRangeSet(char const*, mongo::BSONObj const&, bool, bool)
 
 - Provided By:
@@ -16470,27 +16194,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::DiskLoc::obj() const
 
 - Provided By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -16574,14 +16282,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::system::system_category()
 
 - Provided By:
@@ -16604,6 +16304,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::NamespaceDetails::idx(int, bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16643,15 +16351,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
-    vtable for mongo::DBDirectClient
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -16723,7 +16423,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17197,14 +16897,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::replset::SyncTail::oplogApplication()
 
 - Provided By:
@@ -17218,14 +16910,6 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -17246,14 +16930,6 @@ Old style unittests ("test" binary)
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -17305,7 +16981,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17469,14 +17145,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)
 
 - Provided By:
@@ -17501,22 +17169,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::detail::get_current_thread_data()
 
 - Provided By:
@@ -17530,6 +17182,14 @@ Old style unittests ("test" binary)
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_pool.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -17553,7 +17213,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17638,14 +17298,6 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -17674,7 +17326,15 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::findIdIndex() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17734,27 +17394,11 @@ Old style unittests ("test" binary)
 
 <div></div>
 
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::Database::dropCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
-
-<div></div>
-
-    mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17770,7 +17414,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -17956,7 +17600,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -18060,7 +17704,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -18148,7 +17792,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -18156,7 +17800,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -18204,7 +17848,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 

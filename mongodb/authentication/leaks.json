@@ -336,223 +336,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::reset()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::insert", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::~Document()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONElement::Array() const", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::find", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/mutable/document.cpp"
-        ], 
-        "symbol": "mongo::mutablebson::Document::Document()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -693,106 +476,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ExportedServerParameter<bool>::setFromString(std::string const&)", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameter::~ServerParameter()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameterSet::getGlobal()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_parameters.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::ServerParameter", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/client/clientAndShell.cpp"
-        ], 
-        "symbol": "mongo::ClientBasic::getCurrent()", 
-        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
@@ -837,14 +520,21 @@
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
         "object": "src/mongo/db/auth/user_management_commands_parser.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/user_management_commands_parser.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/util/bson_extract.cpp"
+        ], 
+        "symbol": "mongo::bsonExtractIntegerFieldWithDefault(mongo::BSONObj const&, mongo::StringData const&, long long, long long*)", 
         "object": "src/mongo/db/auth/user_management_commands_parser.cpp"
     }, 
     {
@@ -1336,6 +1026,237 @@
         ], 
         "symbol": "mongo::ActionType::shutdown", 
         "object": "src/mongo/db/auth/role_graph_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::reset()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::insert", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::~Document()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONElement::Array() const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::find", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/mutable/document.cpp"
+        ], 
+        "symbol": "mongo::mutablebson::Document::Document()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::ErrorCodes::Error) const", 
+        "object": "src/mongo/db/auth/authorization_manager_test.cpp"
     }, 
     {
         "sources": [
@@ -1934,9 +1855,23 @@
     }, 
     {
         "sources": [
+            "src/mongo/s/cluster_write.cpp"
+        ], 
+        "symbol": "mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/client/connpool.cpp"
         ], 
         "symbol": "vtable for mongo::ScopedDbConnection", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/cluster_write.cpp"
+        ], 
+        "symbol": "mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
@@ -1986,6 +1921,13 @@
             "src/mongo/s/type_database.cpp"
         ], 
         "symbol": "mongo::DatabaseType::ConfigNS", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/cluster_write.cpp"
+        ], 
+        "symbol": "mongo::clusterCreateIndex(std::string const&, mongo::BSONObj, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
@@ -2053,6 +1995,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/s/write_ops/batched_command_response.cpp"
+        ], 
+        "symbol": "mongo::BatchedCommandResponse::BatchedCommandResponse()", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/s/grid.cpp"
         ], 
         "symbol": "mongo::grid", 
@@ -2109,16 +2058,23 @@
     }, 
     {
         "sources": [
-            "src/mongo/client/distlock.cpp"
+            "src/mongo/s/distlock.cpp"
         ], 
         "symbol": "mongo::ScopedDistributedLock::acquire(long long, std::string*)", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/client/distlock.cpp"
+            "src/mongo/s/distlock.cpp"
         ], 
         "symbol": "mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/write_ops/batched_command_response.cpp"
+        ], 
+        "symbol": "mongo::BatchedCommandResponse::getN() const", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
@@ -2126,6 +2082,13 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/write_ops/batched_command_response.cpp"
+        ], 
+        "symbol": "mongo::BatchedCommandResponse::~BatchedCommandResponse()", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
@@ -2175,6 +2138,13 @@
             "src/mongo/client/connpool.cpp"
         ], 
         "symbol": "mongo::pool", 
+        "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/cluster_write.cpp"
+        ], 
+        "symbol": "mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
         "object": "src/mongo/db/auth/authz_manager_external_state_s.cpp"
     }, 
     {
@@ -2851,6 +2821,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/db/auth/authorization_manager.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
@@ -3022,6 +2999,167 @@
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
         "object": "src/mongo/db/auth/privilege_parser.cpp"
     }, 
     {
@@ -3036,6 +3174,13 @@
             "src/mongo/db/field_parser.cpp"
         ], 
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
+        "object": "src/mongo/db/auth/privilege_parser.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/field_parser.cpp"
+        ], 
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
         "object": "src/mongo/db/auth/privilege_parser.cpp"
     }, 
     {
@@ -3159,6 +3304,106 @@
     }, 
     {
         "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_parameters.cpp"
+        ], 
+        "symbol": "mongo::ExportedServerParameter<bool>::setFromString(std::string const&)", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_parameters.cpp"
+        ], 
+        "symbol": "mongo::ServerParameter::~ServerParameter()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_parameters.cpp"
+        ], 
+        "symbol": "mongo::ServerParameterSet::getGlobal()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_parameters.cpp"
+        ], 
+        "symbol": "mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_parameters.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::ServerParameter", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/client/clientAndShell.cpp"
+        ], 
+        "symbol": "mongo::ClientBasic::getCurrent()", 
+        "object": "src/mongo/db/auth/authz_session_external_state_server_common.cpp"
+    }, 
+    {
+        "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
         "symbol": "mongo::ActionType::collStats", 
@@ -3225,6 +3470,13 @@
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
         "symbol": "mongo::ActionType::insert", 
+        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::planCacheRead", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
     {
@@ -3308,7 +3560,7 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
-        "symbol": "mongo::ActionType::top", 
+        "symbol": "mongo::ActionType::planCacheWrite", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
     {
@@ -3420,13 +3672,6 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
-        "symbol": "mongo::ActionType::listShards", 
-        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
         "symbol": "mongo::ActionType::createCollection", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
@@ -3497,6 +3742,13 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
+        "symbol": "mongo::ActionType::listShards", 
+        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
         "symbol": "mongo::ActionType::changeCustomData", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
@@ -3533,6 +3785,13 @@
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
         "symbol": "mongo::ActionType::viewUser", 
+        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::appendOplogNote", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
     {
@@ -3588,6 +3847,20 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
+        "symbol": "mongo::ActionType::planCacheHint", 
+        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::top", 
+        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
         "symbol": "mongo::ActionType::cursorInfo", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
@@ -3596,13 +3869,6 @@
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
         "symbol": "mongo::ActionType::getShardMap", 
-        "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::clean", 
         "object": "src/mongo/db/auth/role_graph_builtin_roles.cpp"
     }, 
     {
@@ -4024,166 +4290,5 @@
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/db/auth/role_graph.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/auth/user_document_parser_test.cpp"
     }
 ]

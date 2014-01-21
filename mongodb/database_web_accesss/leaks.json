@@ -395,7 +395,7 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::sysInfo()", 
         "object": "src/mongo/db/dbwebserver.cpp"
@@ -572,7 +572,7 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::gitVersion()", 
         "object": "src/mongo/db/dbwebserver.cpp"

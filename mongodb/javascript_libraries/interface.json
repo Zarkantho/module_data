@@ -47,7 +47,7 @@
         "symbol": "mongo::Scope::storedFuncMod()", 
         "object": "src/mongo/scripting/engine.cpp", 
         "used_by": [
-            "src/mongo/db/namespace_details.cpp", 
+            "src/mongo/db/structure/catalog/namespace_details.cpp", 
             "src/mongo/db/repl/oplog.cpp"
         ]
     }, 

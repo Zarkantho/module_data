@@ -38,6 +38,13 @@
         ]
     }, 
     {
+        "symbol": "mongo::AccumulatorSum::create()", 
+        "object": "src/mongo/db/pipeline/accumulator_sum.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/accumulatortests.cpp"
+        ]
+    }, 
+    {
         "symbol": "typeinfo for mongo::DocumentSourceOut", 
         "object": "src/mongo/db/pipeline/document_source_out.cpp", 
         "used_by": [
@@ -59,18 +66,18 @@
         ]
     }, 
     {
-        "symbol": "mongo::DocumentSource::depsToProjection(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/db/pipeline/document_source.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documentsourcetests.cpp"
-        ]
-    }, 
-    {
         "symbol": "typeinfo for mongo::DocumentSource", 
         "object": "src/mongo/db/pipeline/document_source.cpp", 
         "used_by": [
             "src/mongo/dbtests/documentsourcetests.cpp", 
             "src/mongo/s/commands_public.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DocumentSource::depsToProjection(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/db/pipeline/document_source.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/documentsourcetests.cpp"
         ]
     }, 
     {
@@ -85,16 +92,6 @@
         "object": "src/mongo/db/pipeline/document_source_limit.cpp", 
         "used_by": [
             "src/mongo/dbtests/documentsourcetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for mongo::DocumentStorage", 
-        "object": "src/mongo/db/pipeline/document.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/dbtests/documenttests.cpp", 
-            "src/mongo/dbtests/expressiontests.cpp", 
-            "src/mongo/dbtests/accumulatortests.cpp"
         ]
     }, 
     {
@@ -131,6 +128,23 @@
     }, 
     {
         "symbol": "mongo::MutableDocument::getNestedField(std::vector<mongo::Position, std::allocator<mongo::Position> > const&)", 
+        "object": "src/mongo/db/pipeline/document.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/documenttests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::DocumentStorage", 
+        "object": "src/mongo/db/pipeline/document.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/dbtests/documenttests.cpp", 
+            "src/mongo/dbtests/expressiontests.cpp", 
+            "src/mongo/dbtests/accumulatortests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Document::deserializeForSorter(mongo::BufReader&, mongo::Document::SorterDeserializeSettings const&)", 
         "object": "src/mongo/db/pipeline/document.cpp", 
         "used_by": [
             "src/mongo/dbtests/documenttests.cpp"
@@ -200,13 +214,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::Document::deserializeForSorter(mongo::BufReader&, mongo::Document::SorterDeserializeSettings const&)", 
-        "object": "src/mongo/db/pipeline/document.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documenttests.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::Document::compare(mongo::Document const&, mongo::Document const&)", 
         "object": "src/mongo/db/pipeline/document.cpp", 
         "used_by": [
@@ -257,6 +264,13 @@
     }, 
     {
         "symbol": "mongo::Expression::ObjectCtx::ObjectCtx(int)", 
+        "object": "src/mongo/db/pipeline/expression.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/expressiontests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)", 
         "object": "src/mongo/db/pipeline/expression.cpp", 
         "used_by": [
             "src/mongo/dbtests/expressiontests.cpp"
@@ -368,13 +382,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)", 
-        "object": "src/mongo/db/pipeline/expression.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/expressiontests.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ExpressionObject::create()", 
         "object": "src/mongo/db/pipeline/expression.cpp", 
         "used_by": [
@@ -469,13 +476,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::Value::getWidestNumeric(mongo::BSONType, mongo::BSONType)", 
-        "object": "src/mongo/db/pipeline/value.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documenttests.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::Value::coerceToDate() const", 
         "object": "src/mongo/db/pipeline/value.cpp", 
         "used_by": [
@@ -491,6 +491,13 @@
     }, 
     {
         "symbol": "mongo::Value::serializeForSorter(mongo::_BufBuilder<mongo::TrivialAllocator>&) const", 
+        "object": "src/mongo/db/pipeline/value.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/documenttests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Value::getWidestNumeric(mongo::BSONType, mongo::BSONType)", 
         "object": "src/mongo/db/pipeline/value.cpp", 
         "used_by": [
             "src/mongo/dbtests/documenttests.cpp"
@@ -633,18 +640,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::AccumulatorSum::create()", 
-        "object": "src/mongo/db/pipeline/accumulator_sum.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/accumulatortests.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::BSONObjExternalSorter::BSONObjExternalSorter(mongo::ExternalSortComparison const*, long)", 
         "object": "src/mongo/db/extsort.cpp", 
         "used_by": [
-            "src/mongo/db/index/btree_based_builder.cpp", 
-            "src/mongo/dbtests/extsorttests.cpp"
+            "src/mongo/dbtests/extsorttests.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp"
         ]
     }, 
     {
@@ -655,14 +655,14 @@
         ]
     }, 
     {
-        "symbol": "mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)", 
+        "symbol": "typeinfo for mongo::DocumentSourceSort", 
         "object": "src/mongo/db/pipeline/document_source_sort.cpp", 
         "used_by": [
             "src/mongo/dbtests/documentsourcetests.cpp"
         ]
     }, 
     {
-        "symbol": "typeinfo for mongo::DocumentSourceSort", 
+        "symbol": "mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)", 
         "object": "src/mongo/db/pipeline/document_source_sort.cpp", 
         "used_by": [
             "src/mongo/dbtests/documentsourcetests.cpp"

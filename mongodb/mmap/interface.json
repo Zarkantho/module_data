@@ -12,9 +12,9 @@
         "used_by": [
             "src/mongo/tools/sniffer.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
             "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/dur_recover.cpp"
+            "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }, 
     {
@@ -30,15 +30,23 @@
         "used_by": [
             "src/mongo/tools/sniffer.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
             "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/dur_recover.cpp"
+            "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }, 
     {
         "symbol": "typeinfo for mongo::MemoryMappedFile", 
         "object": "src/mongo/util/mmap_posix.cpp", 
         "used_by": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/tools/sniffer.cpp", 
             "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }, 
@@ -58,14 +66,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::g_minOSPageSizeBytes", 
         "object": "src/mongo/util/mmap_posix.cpp", 
         "used_by": [
@@ -80,16 +80,9 @@
         "used_by": [
             "src/mongo/tools/sniffer.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
             "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/dur_recover.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printMemInfo(char const*)", 
-        "object": "src/mongo/util/mmap.cpp", 
-        "used_by": [
-            "src/mongo/db/index/btree_based_builder.cpp"
+            "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }, 
     {
@@ -163,8 +156,8 @@
         "object": "src/mongo/util/mmap.cpp", 
         "used_by": [
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp", 
-            "src/mongo/db/dur_recover.cpp"
+            "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }, 
     {

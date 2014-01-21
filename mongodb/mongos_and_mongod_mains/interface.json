@@ -24,7 +24,6 @@
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/db/clientcursor.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/util/net/listen.cpp", 
@@ -37,12 +36,11 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/client/connpool.cpp", 
             "src/mongo/util/net/message_server_port.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/client/connpool.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/s/config_server_checker_service.cpp", 
-            "src/mongo/db/storage/data_file.cpp", 
-            "src/mongo/client/connpool.cpp"
+            "src/mongo/db/storage/data_file.cpp"
         ]
     }, 
     {
@@ -50,7 +48,7 @@
         "object": "src/mongo/s/server.cpp", 
         "used_by": [
             "src/mongo/s/config.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/dbtests/framework.cpp", 
             "src/mongo/db/dbcommands_generic.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
@@ -73,13 +71,6 @@
         "object": "src/mongo/s/server.cpp", 
         "used_by": [
             "src/mongo/scripting/v8_db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::snmpInit", 
-        "object": "src/mongo/db/db.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp"
         ]
     }
 ]

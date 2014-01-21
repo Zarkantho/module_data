@@ -12,16 +12,7 @@ Main for mongod
 - src/mongo/db/db.h
 
 # Interface
-
-### src/mongo/db/db.cpp
-
-<div></div>
-
-    mongo::snmpInit
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
+(not used outside this module)
 
 # Dependencies
 
@@ -34,14 +25,6 @@ Main for mongod
 - Provided By:
 
     - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../boost\_filesystem)
-
-<div></div>
-
-    mongo::IndexCatalog::findIdIndex()
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -165,6 +148,14 @@ Main for mongod
 
 <div></div>
 
+    mongo::ProcessId::asLongLong() const
+
+- Provided By:
+
+    - [src/mongo/platform/process\_id.cpp](../utilities)
+
+<div></div>
+
     mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)
 
 - Provided By:
@@ -202,7 +193,7 @@ Main for mongod
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -227,14 +218,6 @@ Main for mongod
 - Provided By:
 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)
-
-- Provided By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -478,19 +461,11 @@ Main for mongod
 
 <div></div>
 
-    mongo::signalForkSuccess()
-
-- Provided By:
-
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
-
-<div></div>
-
     mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -755,7 +730,7 @@ Main for mongod
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -819,7 +794,7 @@ Main for mongod
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1016,14 +991,6 @@ Main for mongod
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()
 
 - Provided By:
@@ -1112,6 +1079,14 @@ Main for mongod
 
 <div></div>
 
+    mongo::runGlobalInitializers(int, char const* const*, char const* const*)
+
+- Provided By:
+
+    - [src/mongo/base/initializer.cpp](../startup\_initialization)
+
+<div></div>
+
     mongo::repairDatabase(std::string, std::string&, bool, bool)
 
 - Provided By:
@@ -1120,11 +1095,11 @@ Main for mongod
 
 <div></div>
 
-    mongo::ProcessId::asLongLong() const
+    mongo::IndexCatalog::findIdIndex() const
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1132,7 +1107,7 @@ Main for mongod
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -1221,6 +1196,14 @@ Main for mongod
 - Provided By:
 
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::signalForkSuccess()
+
+- Provided By:
+
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -1973,7 +1956,6 @@ Main for mongos
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
-    - src/mongo/client/distlock.cpp
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/util/net/listen.cpp](../network)
@@ -1986,12 +1968,11 @@ Main for mongos
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
-    - src/mongo/db/modules/subscription/src/snmp/snmp.cpp
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/distlock.cpp](../sharding)
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/util/concurrency/task.cpp](../utilities)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../sharding)
     - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -2000,7 +1981,7 @@ Main for mongos
 - Used By:
 
     - [src/mongo/s/config.cpp](../sharding)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/framework.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
@@ -2132,7 +2113,7 @@ Main for mongos
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_shutdown.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -2197,14 +2178,6 @@ Main for mongos
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)
-
-- Provided By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -2650,14 +2623,6 @@ Main for mongos
 
 <div></div>
 
-    mongo::ShardConnection::releaseConnectionsAfterResponse
-
-- Provided By:
-
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-
-<div></div>
-
     mongo::serverID
 
 - Provided By:
@@ -2679,6 +2644,14 @@ Main for mongos
 - Provided By:
 
     - [src/mongo/s/grid.cpp](../sharding)
+
+<div></div>
+
+    mongo::runGlobalInitializers(int, char const* const*, char const* const*)
+
+- Provided By:
+
+    - [src/mongo/base/initializer.cpp](../startup\_initialization)
 
 <div></div>
 

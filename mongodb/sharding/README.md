@@ -305,22 +305,6 @@ Helper classes to delete a range of documents. This is used for example in chunk
 
 <div></div>
 
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::AuthorizationSession::grantInternalAuthorization()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -1449,6 +1433,14 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -2525,30 +2517,6 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    mongo::ScopedDistributedLock::~ScopedDistributedLock()
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::ScopedDistributedLock::acquire(long long, std::string*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::versionString
 
 - Provided By:
@@ -2655,14 +2623,6 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    mongo::DBConnectionPool::get(std::string const&, double)
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     vtable for mongo::ScopedDbConnection
 
 - Provided By:
@@ -2676,14 +2636,6 @@ Code to upgrade config server metadata
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBClientWithCommands::createCollection(std::string const&, long long, bool, int, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -2708,14 +2660,6 @@ Code to upgrade config server metadata
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::Timer::_countsPerSecond
-
-- Provided By:
-
-    - [src/mongo/util/timer.cpp](../utilities)
 
 <div></div>
 
@@ -2775,6 +2719,14 @@ Code to upgrade config server metadata
 
 <div></div>
 
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -2815,14 +2767,6 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    mongo::causedBy(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -2836,14 +2780,6 @@ Code to upgrade config server metadata
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::curTimeMicros64()
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../utilities)
 
 <div></div>
 
@@ -2921,22 +2857,6 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    vtable for mongo::ScopedDbConnection
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::AScopedConnection::_numConnections
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -2950,6 +2870,14 @@ Code to upgrade config server metadata
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::OID::init()
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
 
 <div></div>
 
@@ -2969,51 +2897,11 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    mongo::pool
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::causedBy(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ScopedDbConnection::~ScopedDbConnection()
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::getThreadName()
 
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBConnectionPool::get(mongo::ConnectionString const&, double)
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::OID::init()
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
 
 <div></div>
 
@@ -3033,22 +2921,6 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ScopedDbConnection::_setSocketTimeout()
-
-- Provided By:
-
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::msgasserted(int, char const*)
 
 - Provided By:
@@ -3057,11 +2929,11 @@ Code to upgrade config server metadata
 
 <div></div>
 
-    mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+    mongo::WriteConcernOptions::AllConfigs
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -3095,15 +2967,970 @@ Code to upgrade config server metadata
 Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
 # Files
-- src/mongo/s/distlock.cpp
+- src/mongo/s/distlock.cpp   (mongod, tools, mongos)
 - src/mongo/s/distlock.h
-- src/mongo/s/distlock\_test.cpp
+- src/mongo/s/distlock\_test.cpp   (mongod, tools)
 
 # Interface
-(not used outside this module)
+
+### src/mongo/s/distlock.cpp
+
+<div></div>
+
+    mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
+
+    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::DistributedLock::unlock(mongo::BSONObj*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::setLockPingerEnabled(bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::ScopedDistributedLock::acquire(long long, std::string*)
+
+- Used By:
+
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
 # Dependencies
-(no dependencies outside this module)
+
+### src/mongo/s/distlock.cpp
+
+<div></div>
+
+    typeinfo for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    vtable for mongo::ScopedDbConnection
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Date_t::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::jsTimeVirtualThreadSkew(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LabeledLevel)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::setThreadName(mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::pool
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    mongo::ScopedDbConnection::_setSocketTimeout()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::jsTime()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::sleepmillis(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::LT
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::DBConnectionPool::get(std::string const&, double)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::thread::start_thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::thread_data_base::~thread_data_base()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    boost::detail::get_tss_data(void const*)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::ScopedDbConnection::~ScopedDbConnection()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::causedBy(std::exception const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::causedBy(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::NIN
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::causedBy(char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::ConnectionString::_finishInit()
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::thread::~thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::causedBy(std::string const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::sleepsecs(int)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::getHostName()
+
+- Provided By:
+
+    - [src/mongo/util/net/sock.cpp](../network)
+
+<div></div>
+
+    mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    vtable for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::OID::init()
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::AScopedConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::getJSTimeVirtualThreadSkew()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+### src/mongo/s/distlock\_test.cpp
+
+<div></div>
+
+    typeinfo for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::DBConnectionPool::get(std::string const&, double)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::ScopedDbConnection
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Date_t::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::jsTimeVirtualThreadSkew(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::setThreadName(mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::pool
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Timer::_countsPerSecond
+
+- Provided By:
+
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    mongo::ScopedDbConnection::_setSocketTimeout()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::jsTime()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::sleepmillis(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    boost::thread::start_thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::BSONElement::Array() const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::thread_data_base::~thread_data_base()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    boost::detail::get_tss_data(void const*)
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::causedBy(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::testCommandsEnabled
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    boost::thread::join()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::jsTimeVirtualSkew(long long)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::ConnectionString::_finishInit()
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    boost::thread::~thread()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::sleepsecs(int)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::ConnectionString::_fillServers(std::string)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    vtable for boost::detail::thread_data_base
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::ScopedDbConnection::~ScopedDbConnection()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::AScopedConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
 
 -------------
 
@@ -3150,6 +3977,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)
+
+- Used By:
+
+    - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)
 
 - Used By:
@@ -3166,7 +4002,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
@@ -3182,11 +4017,8 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - Used By:
 
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
@@ -3213,10 +4045,17 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool> const&, bool*, std::string*)
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -3227,6 +4066,15 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+
+<div></div>
+
+    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
 
 <div></div>
 
@@ -3305,6 +4153,14 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -3396,14 +4252,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::unittest::Test::run()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -3420,7 +4268,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::unittest::Test::tearDown()
+    mongo::unittest::Test::run()
 
 - Provided By:
 
@@ -3428,7 +4276,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
-    mongo::unittest::Test::~Test()
+    mongo::unittest::Test::tearDown()
 
 - Provided By:
 
@@ -3637,6 +4485,14 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 <div></div>
 
+    mongo::CollectionType::CollectionType()
+
+- Used By:
+
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+
+<div></div>
+
     mongo::CollectionType::~CollectionType()
 
 - Used By:
@@ -3663,14 +4519,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 <div></div>
 
     mongo::CollectionType::isValid(std::string*) const
-
-- Used By:
-
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::CollectionType::CollectionType()
 
 - Used By:
 
@@ -3780,90 +4628,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-
-### src/mongo/s/type\_lockpings.cpp
-
-<div></div>
-
-    mongo::LockpingsType::ping
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LockpingsType::ConfigNS
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LockpingsType::process
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-### src/mongo/s/type\_locks.cpp
-
-<div></div>
-
-    mongo::LocksType::process
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::state
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::name
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::ConfigNS
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::lockID
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::who
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::LocksType::why
-
-- Used By:
-
-    - src/mongo/client/distlock.cpp
 
 ### src/mongo/s/type\_mongos.cpp
 
@@ -6355,16 +7119,7 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 - src/mongo/s/writeback\_listener.h
 
 # Interface
-
-### src/mongo/s/writeback\_listener.cpp
-
-<div></div>
-
-    mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)
-
-- Used By:
-
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+(not used outside this module)
 
 # Dependencies
 
@@ -6380,39 +7135,11 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    mongo::AuthorizationSession::grantInternalAuthorization()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
-
-<div></div>
-
-    mongo::ExceptionInfo::append(mongo::BSONObjBuilder&, char const*, char const*) const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::inShutdown()
-
-- Provided By:
-
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -6456,22 +7183,6 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    mongo::ClientInfo::newRequest()
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Timer::_countsPerSecond
-
-- Provided By:
-
-    - [src/mongo/util/timer.cpp](../utilities)
-
-<div></div>
-
     mongo::ScopedDbConnection::_setSocketTimeout()
 
 - Provided By:
@@ -6496,51 +7207,11 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::sleepmillis(long long)
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../utilities)
-
-<div></div>
-
     mongo::BackgroundJob::go()
 
 - Provided By:
 
     - [src/mongo/util/background.cpp](../utilities)
-
-<div></div>
-
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <div></div>
 
@@ -6552,19 +7223,11 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    mongo::BSONObj::filterFieldsUndotted(mongo::BSONObj const&, bool) const
+    mongo::BackgroundJob::~BackgroundJob()
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/util/background.cpp](../utilities)
 
 <div></div>
 
@@ -6600,27 +7263,11 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    mongo::ClientInfo::getLastError(std::string const&, mongo::BSONObj const&, mongo::BSONObjBuilder&, std::string&, bool)
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     boost::system::system_category()
 
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::OID const&)
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
 
 <div></div>
 
@@ -6640,31 +7287,19 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
-    mongo::BSONObjBuilder::numStrsReady
+    mongo::inShutdown()
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::curTimeMicros64()
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>
 
     mongo::BackgroundJob::BackgroundJob(bool)
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../utilities)
-
-<div></div>
-
-    mongo::BackgroundJob::~BackgroundJob()
 
 - Provided By:
 
@@ -6677,6 +7312,14 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 - Provided By:
 
     - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <div></div>
 
@@ -6701,14 +7344,6 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::Message::toString() const
-
-- Provided By:
-
-    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -7048,10 +7683,10 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - src/mongo/s/cluster\_client\_internal.h
 - src/mongo/s/cluster\_write.cpp   (mongod, tools, mongos)
 - src/mongo/s/cluster\_write.h
-- src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp
-- src/mongo/s/commands/cluster\_hint\_cmd.cpp
+- src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp   (mongos)
+- src/mongo/s/commands/cluster\_hint\_cmd.cpp   (mongos)
 - src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp   (mongos)
-- src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp
+- src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp   (mongos)
 - src/mongo/s/config.cpp   (mongod, tools, mongos)
 - src/mongo/s/config.h
 - src/mongo/s/config\_server\_checker\_service.cpp   (mongod, tools, mongos)
@@ -7148,7 +7783,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -7189,7 +7823,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>
@@ -7199,7 +7832,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
@@ -7218,7 +7850,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 <div></div>
@@ -7229,7 +7860,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -7238,7 +7868,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -7247,7 +7876,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -7335,10 +7963,9 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
 
 ### src/mongo/s/cluster\_client\_internal.cpp
 
@@ -7354,7 +7981,24 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
     mongo::ClusterWriterStats::hasShardStats() const
+
+- Used By:
+
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ClusterWriterStats::getShardStats() const
 
 - Used By:
 
@@ -7367,6 +8011,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::clusterCreateIndex(std::string const&, mongo::BSONObj, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 <div></div>
 
@@ -7386,11 +8039,20 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ClusterWriterStats::getShardStats() const
+    mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+
+<div></div>
+
+    mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
 
 ### src/mongo/s/config.cpp
 
@@ -7412,6 +8074,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
 
 <div></div>
 
@@ -7421,7 +8084,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -7465,7 +8127,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -7502,6 +8172,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::ConfigServer::init(std::string const&)
+
+- Used By:
+
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+
+<div></div>
+
     mongo::DBConfig::enableSharding(bool)
 
 - Used By:
@@ -7534,7 +8212,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -7552,16 +8229,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -7602,53 +8269,12 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ShardedClientCursor::ShardedClientCursor(mongo::QueryMessage&, mongo::ClusteredCursor*)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::ShardedClientCursor::accessed()
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
     mongo::cursorCache
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::CursorCache::removeRef(long long)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::CursorCache::store(boost::shared_ptr<mongo::ShardedClientCursor>, int)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::CursorCache::updateMaxTimeMS(long long, int)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -7660,75 +8286,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::CursorCache::getMaxTimeMS(long long) const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::ShardedClientCursor::sendNextBatch(mongo::Request&, int, mongo::_BufBuilder<mongo::TrivialAllocator>&, int&)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
     mongo::CursorCache::startTimeoutThread()
 
 - Used By:
 
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::ShardedClientCursor::INIT_REPLY_BUFFER_SIZE
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::CursorCache::remove(long long)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::CursorCache::get(long long) const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::ShardedClientCursor::getId()
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::ShardedClientCursor::getTotalSent() const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::CursorCache::getRef(long long) const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
 
 ### src/mongo/s/d\_logic.cpp
 
@@ -7770,17 +8332,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 ### src/mongo/s/d\_state.cpp
-
-<div></div>
-
-    mongo::ShardingState::needCollectionMetadata(std::string const&) const
-
-- Used By:
-
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
 
 <div></div>
 
@@ -7874,6 +8425,17 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::ShardingState::needCollectionMetadata(std::string const&) const
+
+- Used By:
+
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+
+<div></div>
+
     mongo::ShardingState::getVersion(std::string const&) const
 
 - Used By:
@@ -7924,6 +8486,24 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
 
+### src/mongo/s/dbclient\_multi\_command.cpp
+
+<div></div>
+
+    mongo::DBClientMultiCommand::~DBClientMultiCommand()
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
+<div></div>
+
+    vtable for mongo::DBClientMultiCommand
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../database\_commands)
+
 ### src/mongo/s/default\_version.cpp
 
 <div></div>
@@ -7934,8 +8514,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
-    - src/mongo/s/strategy\_shard.cpp
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -7952,10 +8530,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - src/mongo/s/strategy\_single.cpp
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -7985,7 +8561,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
@@ -8031,7 +8606,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
@@ -8071,38 +8645,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
 ### src/mongo/s/request.cpp
-
-<div></div>
-
-    mongo::Request::gotInsert()
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::Request::reset()
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::Request::primaryShard() const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::Request::reply(mongo::Message&, std::string const&)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -8177,7 +8719,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_single.cpp
 
 <div></div>
 
@@ -8195,7 +8736,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 ### src/mongo/s/shard\_key\_pattern.cpp
@@ -8212,15 +8752,20 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::ShardConnection::forgetNS(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+
+<div></div>
+
     mongo::ShardConnection::~ShardConnection()
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -8237,9 +8782,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -8248,7 +8791,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -8267,24 +8809,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ShardConnection::releaseConnectionsAfterResponse
-
-- Used By:
-
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::ShardConnection::forgetNS(std::string const&)
-
-- Used By:
-
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
 
@@ -8302,16 +8827,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ShardConnection::checkMyConnectionVersions(std::string const&)
-
-- Used By:
-
-    - src/mongo/s/strategy\_single.cpp
 
 <div></div>
 
@@ -8320,28 +8836,9 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 ### src/mongo/s/shardkey.cpp
-
-<div></div>
-
-    mongo::ShardKeyPattern::toString() const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::ShardKeyPattern::hasShardKey(mongo::BSONObj const&) const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -8349,7 +8846,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
     - [src/mongo/s/commands\_admin.cpp](../database\_commands)
 
 <div></div>
@@ -8363,39 +8859,25 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
 
-<div></div>
-
-    mongo::ShardKeyPattern::moveToFront(mongo::BSONObj const&) const
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
 ### src/mongo/s/strategy.cpp
 
 <div></div>
 
-    mongo::Strategy::doIndexQuery(mongo::Request&, mongo::Shard const&)
+    mongo::Strategy::commandOp(std::string const&, mongo::BSONObj const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult, std::allocator<mongo::Strategy::CommandResult> >*)
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
 <div></div>
 
-    mongo::Strategy::doWrite(int, mongo::Request&, mongo::Shard const&, bool)
+    mongo::STRATEGY
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
-    mongo::Strategy::broadcastWrite(int, mongo::Request&)
-
-- Used By:
-
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
 
 ### src/mongo/s/version\_manager.cpp
 
@@ -8405,10 +8887,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Used By:
 
-    - src/mongo/s/strategy\_single.cpp
-    - src/mongo/s/strategy\_shard.cpp
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -8418,8 +8898,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
-    - src/mongo/s/strategy\_shard.cpp
-    - src/mongo/s/strategy\_single.cpp
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
@@ -8461,14 +8939,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -8584,6 +9054,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -8605,14 +9083,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -8692,14 +9162,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::unlock(mongo::BSONObj*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::BackgroundJob::BackgroundJob(bool)
 
 - Provided By:
@@ -8729,6 +9191,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::WriteConcernOptions::Unacknowledged
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -9114,11 +9584,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
+    mongo::FieldRangeSet::universalRange() const
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/mongo/db/queryutil.cpp](../query\_system)
 
 <div></div>
 
@@ -9252,14 +9722,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DBClientWithCommands::getLastError(bool, bool, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
     mongo::msgasserted(int, char const*)
 
 - Provided By:
@@ -9316,11 +9778,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::FieldRangeSet::universalRange() const
+    mongo::WriteConcernOptions::AllConfigs
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -9361,14 +9823,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -9514,14 +9968,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DistributedLock::unlock(mongo::BSONObj*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -10253,6 +10699,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -10383,6 +10837,22 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::WriteErrorDetail::getErrMessage() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*, mongo::ShardResolver*, mongo::MultiCommandDispatch*)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::BatchedDeleteDocument::setLimit(int)
 
 - Provided By:
@@ -10407,7 +10877,23 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getOk() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandRequest::getWriteConcern() const
 
 - Provided By:
 
@@ -10452,6 +10938,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::WriteErrorDetail::getErrCode() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10519,11 +11013,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*, mongo::ShardResolver*, mongo::MultiCommandDispatch*)
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10532,6 +11026,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::WCErrorDetail::getErrMessage() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10559,6 +11061,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getErrDetails() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -10572,6 +11082,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::WCErrorDetail::getErrCode() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10623,6 +11141,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getErrMessage() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)
 
 - Provided By:
@@ -10644,6 +11170,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isErrDetailsSet() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10719,6 +11253,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::~BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -10751,11 +11293,27 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getErrCode() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::BatchedUpdateDocument::setMulti(bool)
 
 - Provided By:
 
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -10799,11 +11357,487 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getWriteConcernError() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::BatchedCommandRequest::setNS(mongo::StringData const&)
 
 - Provided By:
 
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+### src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::CmdAuthSchemaUpgrade()
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    vtable for mongo::ScopedDbConnection
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::ConnectionString::_finishInit()
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::AScopedConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Command::getStatusFromCommandResult(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::slaveOk() const
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ConnectionString::_fillServers(std::string)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::getGlobalAuthorizationManager()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::adminOnly() const
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::pool
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()
+
+- Provided By:
+
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+
+<div></div>
+
+    mongo::ScopedDbConnection::~ScopedDbConnection()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBConnectionPool::get(mongo::ConnectionString const&, double)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationManager::upgradeSchema(int, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::locktype() const
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ScopedDbConnection::_setSocketTimeout()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, int*, bool*, mongo::BSONObj*)
+
+- Provided By:
+
+    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::~CmdAuthSchemaUpgrade()
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    typeinfo for mongo::CmdAuthSchemaUpgrade
+
+- Provided By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+### src/mongo/s/commands/cluster\_hint\_cmd.cpp
+
+<div></div>
+
+    mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::ActionType::planCacheHint
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
 
 ### src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp
 
@@ -11023,6 +12057,160 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/db/commands.cpp](../database\_commands)
 
+### src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp
+
+<div></div>
+
+    mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::ActionType::planCacheWrite
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    vtable for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::planCacheRead
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::Command::parseNs(std::string const&, mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    typeinfo for mongo::Command
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+
 ### src/mongo/s/config.cpp
 
 <div></div>
@@ -11212,11 +12400,35 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
 
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::toBSON() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11330,6 +12542,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::~BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11651,6 +12871,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::ParallelSortClusteredCursor::getNS()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, void*, int, int, int, long long)
 
 - Provided By:
@@ -11663,7 +12891,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -11803,6 +13031,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::ParallelSortClusteredCursor::more()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
 
 - Provided By:
@@ -11840,6 +13076,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -11896,6 +13140,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::next()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -12242,14 +13494,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ScopedDistributedLock::tryAcquire(std::string*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::causedBy(std::string const&)
 
 - Provided By:
@@ -12338,14 +13582,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ScopedDistributedLock::~ScopedDistributedLock()
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -12383,14 +13619,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -12532,14 +13760,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::AuthorizationSession::grantInternalAuthorization()
 
 - Provided By:
@@ -12630,14 +13850,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::_recvChunkCommit
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)
 
 - Provided By:
@@ -12646,19 +13858,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::isLockHeld(double, std::string*)
+    mongo::Lock::GlobalRead::GlobalRead(int)
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
-    mongo::ActionType::_migrateClone
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -12676,6 +13880,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12748,7 +13960,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12912,27 +14124,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+    mongo::Client::WriteContext::WriteContext(std::string const&, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::FailPoint::slowShouldFailOpenBlock()
-
-- Provided By:
-
-    - [src/mongo/util/fail\_point.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -13040,11 +14236,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::_recvChunkStatus
+    mongo::FailPoint::slowShouldFailOpenBlock()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [src/mongo/util/fail\_point.cpp](../utilities)
 
 <div></div>
 
@@ -13104,14 +14300,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::Helpers::toKeyFormat(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::Helpers::removeRange(mongo::KeyRange const&, bool, bool, mongo::Helpers::RemoveSaver*, bool, bool)
 
 - Provided By:
@@ -13152,11 +14340,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
+    boost::detail::get_tss_data(void const*)
 
 - Provided By:
 
-    - src/mongo/client/distlock.cpp
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -13176,19 +14364,19 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::_recvChunkStart
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::DiskLoc::obj() const
 
 - Provided By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::internal
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -13220,11 +14408,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::_recvChunkAbort
+    boost::detail::get_current_thread_data()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -13252,11 +14440,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::_transferMods
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -13264,15 +14452,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    boost::detail::get_tss_data(void const*)
+    mongo::Helpers::toKeyFormat(mongo::BSONObj const&)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -13361,7 +14549,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13378,14 +14566,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
-
-<div></div>
-
-    mongo::Helpers::upsert(std::string const&, mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -13462,14 +14642,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DistributedLock::unlock(mongo::BSONObj*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
-
-<div></div>
-
     mongo::ReplSetConfig::getMajority() const
 
 - Provided By:
@@ -13478,11 +14650,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::Lock::GlobalRead::GlobalRead(int)
+    mongo::Helpers::upsert(std::string const&, mongo::BSONObj const&, bool)
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -13507,14 +14679,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-
-<div></div>
-
-    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13574,19 +14738,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::Client::WriteContext::WriteContext(std::string const&, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13694,11 +14850,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    boost::detail::get_current_thread_data()
+    mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13725,14 +14881,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -13789,6 +14937,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13896,11 +15052,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::IndexCatalog::findIndexByPrefix(mongo::BSONObj const&, bool)
+    boost::system::generic_category()
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -13968,14 +15124,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
     mongo::logger::globalLogManager()
 
 - Provided By:
@@ -13989,14 +15137,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -14044,7 +15184,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -14173,14 +15313,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DistributedLock::unlock(mongo::BSONObj*)
-
-- Provided By:
-
-    - src/mongo/client/distlock.cpp
 
 <div></div>
 
@@ -14319,6 +15451,15 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Client::clientAddress(bool) const
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -14498,14 +15639,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::ActionType::unsetSharding
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -14527,14 +15660,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::ActionType::setShardVersion
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14607,6 +15732,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::ActionType::internal
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -14905,7 +16038,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -15201,6 +16334,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::WriteConcernOptions::AllConfigs
+
+- Provided By:
+
+    - [src/mongo/db/write\_concern\_options.cpp](../replication)
 
 <div></div>
 
@@ -15611,14 +16752,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::SHARDED
-
-- Provided By:
-
-    - src/mongo/s/strategy\_shard.cpp
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -15784,14 +16917,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::SINGLE
-
-- Provided By:
-
-    - src/mongo/s/strategy\_single.cpp
 
 <div></div>
 
@@ -16033,7 +17158,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - src/mongo/db/modules/subscription/src/audit/impersonate\_helpers\_s.cpp
+    - [src/mongo/db/audit.cpp](../auditing)
 
 <div></div>
 
@@ -16741,6 +17866,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -17248,43 +18381,27 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+    vtable for mongo::ScopedDbConnection
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
-    mongo::BSONObjBuilder::numStrsReady
+    mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, void*, int, int, int, long long)
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
 
 <div></div>
 
-    mongo::operator<<(std::ostream&, mongo::OID const&)
+    mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -17296,43 +18413,51 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::BSONObjBuilder::numStrs
+    mongo::ParallelSortClusteredCursor::explain(mongo::BSONObjBuilder&)
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
 
 <div></div>
 
-    mongo::DBException::toString() const
+    mongo::pool
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
-    mongo::verifyFailed(char const*, char const*, unsigned int)
+    mongo::ConnectionString::parse(std::string const&, std::string&)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
 
 <div></div>
 
-    boost::system::system_category()
+    mongo::getThreadName()
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
+    mongo::LastErrorHolder::get(bool)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::LiteParsedQuery::parseMaxTimeMSQuery(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
 
 <div></div>
 
@@ -17344,11 +18469,19 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+    mongo::Timer::_countsPerSecond
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../utilities)
+
+<div></div>
+
+    mongo::ScopedDbConnection::_setSocketTimeout()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -17376,11 +18509,493 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::DBConnectionPool::get(std::string const&, double)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::ActionType::inprog
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Query::ReadPrefField
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::isSharded()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Query::isExplain() const
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::ActionType::killop
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+
+<div></div>
+
+    mongo::lastError
+
+- Provided By:
+
+    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    typeinfo for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Command::runAgainstRegistered(char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, int)
+
+- Provided By:
+
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::getShardCursor(mongo::Shard const&)
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::DBClientCursor::peekFirst()
+
+- Provided By:
+
+    - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::AuthorizationSession::checkAuthForQuery(mongo::NamespaceString const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::AuthorizationSession::checkAuthForGetMore(mongo::NamespaceString const&, long long)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/db/audit.cpp](../auditing)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/db/audit.cpp](../auditing)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::OID const&)
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::~BatchedCommandResponse()
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj const&, std::string*)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
     - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::getQueryShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::BatchedCommandRequest::getOrdered() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::curTimeMicros64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../utilities)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getN() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::init()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::BatchedCommandRequest::getNS() const
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ClientBasic::getCurrent()
+
+- Provided By:
+
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(mongo::QuerySpec const&, mongo::CommandInfo const&)
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::getPrimary()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::BatchedCommandRequest::setNS(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ScopedDbConnection::~ScopedDbConnection()
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/db/audit.cpp](../auditing)
+
+<div></div>
+
+    mongo::validateBSON(char const*, unsigned long long)
+
+- Provided By:
+
+    - [src/mongo/bson/bson\_validate.cpp](../bson)
+
+<div></div>
+
+    mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()
+
+- Provided By:
+
+    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::AScopedConnection::_numConnections
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+
+<div></div>
+
+    mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+
+- Provided By:
+
+    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/db/audit.cpp](../auditing)
 
 ### src/mongo/s/version\_manager.cpp
 
@@ -17624,7 +19239,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -17720,4 +19335,4 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)

@@ -113,20 +113,19 @@
             "src/mongo/bson/optime.cpp", 
             "src/mongo/db/structure/btree/btree.cpp", 
             "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/structure/catalog/namespace_details.cpp", 
             "src/mongo/util/util.cpp", 
             "src/mongo/s/shardkey.cpp", 
             "src/mongo/shell/dbshell.cpp", 
             "src/mongo/util/util.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/repl/health.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/util/logfile.cpp", 
             "src/mongo/db/jsobj.cpp", 
             "src/mongo/util/text_startuptest.cpp", 
-            "src/mongo/db/namespace_details.cpp", 
             "src/mongo/db/hasher.cpp", 
-            "src/mongo/db/memconcept.cpp"
+            "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
@@ -138,20 +137,19 @@
             "src/mongo/bson/optime.cpp", 
             "src/mongo/db/structure/btree/btree.cpp", 
             "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/structure/catalog/namespace_details.cpp", 
             "src/mongo/util/util.cpp", 
             "src/mongo/s/shardkey.cpp", 
             "src/mongo/shell/dbshell.cpp", 
             "src/mongo/util/util.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/repl/health.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/util/logfile.cpp", 
             "src/mongo/db/jsobj.cpp", 
             "src/mongo/util/text_startuptest.cpp", 
-            "src/mongo/db/namespace_details.cpp", 
             "src/mongo/db/hasher.cpp", 
-            "src/mongo/db/memconcept.cpp"
+            "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
@@ -163,20 +161,19 @@
             "src/mongo/bson/optime.cpp", 
             "src/mongo/db/structure/btree/btree.cpp", 
             "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/db/structure/catalog/namespace_details.cpp", 
             "src/mongo/util/util.cpp", 
             "src/mongo/s/shardkey.cpp", 
             "src/mongo/shell/dbshell.cpp", 
             "src/mongo/util/util.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/repl/health.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/util/logfile.cpp", 
             "src/mongo/db/jsobj.cpp", 
             "src/mongo/util/text_startuptest.cpp", 
-            "src/mongo/db/namespace_details.cpp", 
             "src/mongo/db/hasher.cpp", 
-            "src/mongo/db/memconcept.cpp"
+            "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
@@ -215,8 +212,8 @@
         "object": "src/mongo/client/clientAndShell.cpp", 
         "used_by": [
             "src/mongo/s/config.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
             "src/mongo/db/db.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/dbtests/framework.cpp", 
             "src/mongo/db/dbcommands_generic.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
@@ -237,7 +234,7 @@
         "symbol": "mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)", 
         "object": "src/mongo/client/clientAndShell.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/s/strategy.cpp", 
@@ -259,7 +256,6 @@
             "src/mongo/db/stats/snapshots.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/db/clientcursor.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/util/net/listen.cpp", 
@@ -272,9 +268,8 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/client/connpool.cpp", 
             "src/mongo/util/net/message_server_port.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/db/db.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/s/config_server_checker_service.cpp", 
             "src/mongo/db/storage/data_file.cpp"
@@ -289,21 +284,17 @@
             "src/mongo/db/commands/mr.cpp", 
             "src/mongo/db/dbeval.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/db/auth/authz_session_external_state_server_common.cpp", 
-            "src/mongo/db/commands/group.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
             "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
+            "src/mongo/db/auth/authz_session_external_state_server_common.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
             "src/mongo/db/matcher/expression_where.cpp", 
             "src/mongo/db/commands/user_management_commands.cpp", 
             "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/audit_command.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/db/commands/connection_status.cpp", 
             "src/mongo/db/server_extra_log_context.cpp", 
             "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_s.cpp"
+            "src/mongo/db/commands/group.cpp", 
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -348,10 +339,10 @@
             "src/mongo/dbtests/query_stage_fetch.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
             "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/cloner.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/serverstatus_client.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
             "src/mongo/dbtests/query_stage_sort.cpp", 
             "src/mongo/dbtests/query_stage_collscan.cpp", 
             "src/mongo/dbtests/clienttests.cpp", 
@@ -372,11 +363,10 @@
             "src/mongo/dbtests/merge_chunk_tests.cpp", 
             "src/mongo/db/ttl.cpp", 
             "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/dbtests/oplogstarttests.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/dbtests/directclienttests.cpp", 
             "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/dbtests/extsorttests.cpp", 
@@ -384,6 +374,7 @@
             "src/mongo/dbtests/indexupdatetests.cpp", 
             "src/mongo/dbtests/gridfstest.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
+            "src/mongo/dbtests/oplogstarttests.cpp", 
             "src/mongo/dbtests/repltests.cpp", 
             "src/mongo/dbtests/runner_registry.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
@@ -393,7 +384,6 @@
             "src/mongo/dbtests/sharding.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
             "src/mongo/db/commands/drop_indexes.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/db/dbcommands.cpp", 
@@ -427,6 +417,15 @@
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/client/syncclusterconnection.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DBClientConnection::connect(mongo::HostAndPort const&, std::string&)", 
+        "object": "src/mongo/client/dbclient.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/isself.cpp", 
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/tools/stat.cpp"
         ]
     }, 
     {
@@ -507,11 +506,25 @@
         ]
     }, 
     {
+        "symbol": "mongo::DBClientWithCommands::dropIndex(std::string const&, std::string const&)", 
+        "object": "src/mongo/client/dbclient.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/client/syncclusterconnection.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::Query::ReadPrefField", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
-            "src/mongo/client/dbclient_rs.cpp"
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -531,14 +544,6 @@
             "src/mongo/dbtests/querytests.cpp", 
             "src/mongo/dbtests/updatetests.cpp", 
             "src/mongo/dbtests/jstests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Query::hasReadPreference(mongo::BSONObj const&)", 
-        "object": "src/mongo/client/dbclient.cpp", 
-        "used_by": [
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/dbcommands.cpp"
         ]
     }, 
     {
@@ -582,7 +587,7 @@
         "symbol": "mongo::Query::isExplain() const", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -610,7 +615,6 @@
             "src/mongo/scripting/v8_db.cpp", 
             "src/mongo/client/connpool.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/d_state.cpp", 
             "src/mongo/s/d_merge.cpp", 
@@ -618,7 +622,8 @@
             "src/mongo/scripting/bench.cpp", 
             "src/mongo/s/dbclient_shard_resolver.cpp", 
             "src/mongo/tools/tool.cpp", 
-            "src/mongo/shell/shell_utils.cpp"
+            "src/mongo/shell/shell_utils.cpp", 
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -653,12 +658,11 @@
         "symbol": "mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj const&)", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/db/pipeline/document_source_out.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/client/gridfs.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp"
@@ -723,10 +727,10 @@
             "src/mongo/dbtests/query_stage_fetch.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
             "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/cloner.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/serverstatus_client.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
             "src/mongo/dbtests/query_stage_sort.cpp", 
             "src/mongo/dbtests/query_stage_collscan.cpp", 
             "src/mongo/dbtests/clienttests.cpp", 
@@ -747,11 +751,10 @@
             "src/mongo/dbtests/merge_chunk_tests.cpp", 
             "src/mongo/db/ttl.cpp", 
             "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/dbtests/oplogstarttests.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/dbtests/directclienttests.cpp", 
             "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/dbtests/extsorttests.cpp", 
@@ -759,6 +762,7 @@
             "src/mongo/dbtests/indexupdatetests.cpp", 
             "src/mongo/dbtests/gridfstest.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
+            "src/mongo/dbtests/oplogstarttests.cpp", 
             "src/mongo/dbtests/repltests.cpp", 
             "src/mongo/dbtests/runner_registry.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
@@ -767,7 +771,6 @@
             "src/mongo/dbtests/updatetests.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
             "src/mongo/db/commands/drop_indexes.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/db/dbcommands.cpp", 
@@ -810,13 +813,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::ConnectionString::typeToString(mongo::ConnectionString::ConnectionType)", 
-        "object": "src/mongo/client/dbclient.cpp", 
-        "used_by": [
-            "src/mongo/client/connpool.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::DBClientWithCommands::exists(std::string const&)", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
@@ -854,10 +850,10 @@
             "src/mongo/dbtests/query_stage_fetch.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
             "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/cloner.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/serverstatus_client.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
             "src/mongo/dbtests/query_stage_sort.cpp", 
             "src/mongo/dbtests/query_stage_collscan.cpp", 
             "src/mongo/dbtests/clienttests.cpp", 
@@ -878,11 +874,10 @@
             "src/mongo/dbtests/merge_chunk_tests.cpp", 
             "src/mongo/db/ttl.cpp", 
             "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/dbtests/oplogstarttests.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/dbtests/directclienttests.cpp", 
             "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
-            "src/mongo/db/database.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/dbtests/extsorttests.cpp", 
@@ -890,6 +885,7 @@
             "src/mongo/dbtests/indexupdatetests.cpp", 
             "src/mongo/dbtests/gridfstest.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
+            "src/mongo/dbtests/oplogstarttests.cpp", 
             "src/mongo/dbtests/repltests.cpp", 
             "src/mongo/dbtests/runner_registry.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
@@ -915,18 +911,16 @@
         "used_by": [
             "src/mongo/s/config.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/dbtests/directclienttests.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/client/syncclusterconnection.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/chunk.cpp", 
+            "src/mongo/dbtests/querytests.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/dbtests/indexupdatetests.cpp", 
             "src/mongo/tools/files.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/scripting/bench.cpp", 
-            "src/mongo/dbtests/querytests.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
             "src/mongo/tools/import.cpp", 
             "src/mongo/s/shardconnection.cpp"
         ]
@@ -982,7 +976,7 @@
             "src/mongo/client/dbclient_rs.cpp", 
             "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/dbtests/merge_chunk_tests.cpp", 
-            "src/mongo/db/database.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/db/commands/mr.cpp", 
@@ -1049,11 +1043,13 @@
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/dbtests/clienttests.cpp", 
             "src/mongo/s/config.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
@@ -1062,15 +1058,6 @@
             "src/mongo/s/chunk.cpp", 
             "src/mongo/s/cluster_write.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::DBClientConnection::connect(mongo::HostAndPort const&, std::string&)", 
-        "object": "src/mongo/client/dbclient.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/tools/bridge.cpp", 
-            "src/mongo/tools/stat.cpp"
         ]
     }, 
     {
@@ -1092,6 +1079,7 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/config.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/s/commands_admin.cpp", 
@@ -1200,31 +1188,18 @@
         ]
     }, 
     {
+        "symbol": "mongo::ConnectionString::typeToString(mongo::ConnectionString::ConnectionType)", 
+        "object": "src/mongo/client/dbclient.cpp", 
+        "used_by": [
+            "src/mongo/client/connpool.cpp"
+        ]
+    }, 
+    {
         "symbol": "typeinfo for mongo::DBClientWithCommands", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
             "src/mongo/scripting/engine_v8.cpp", 
             "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::DBClientWithCommands::runCommand(std::string const&, mongo::BSONObj const&, mongo::BSONObj&, int)", 
-        "object": "src/mongo/client/dbclient.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/merge_chunk_tests.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp", 
-            "src/mongo/dbtests/commandtests.cpp", 
-            "src/mongo/dbtests/config_server_fixture.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/dbtests/clienttests.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/serverstatus_client.cpp", 
-            "src/mongo/db/commands/mr.cpp", 
-            "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/dbtests/sharding.cpp", 
-            "src/mongo/client/syncclusterconnection.cpp"
         ]
     }, 
     {
@@ -1256,7 +1231,7 @@
             "src/mongo/client/dbclientcursor.cpp", 
             "src/mongo/dbtests/config_server_fixture.cpp", 
             "src/mongo/dbtests/merge_chunk_tests.cpp", 
-            "src/mongo/db/database.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
             "src/mongo/dbtests/query_stage_and.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/dbtests/indexupdatetests.cpp", 
@@ -1266,6 +1241,25 @@
             "src/mongo/dbtests/jstests.cpp", 
             "src/mongo/dbtests/sharding.cpp", 
             "src/mongo/dbtests/query_single_solution_runner.cpp", 
+            "src/mongo/client/syncclusterconnection.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DBClientWithCommands::runCommand(std::string const&, mongo::BSONObj const&, mongo::BSONObj&, int)", 
+        "object": "src/mongo/client/dbclient.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/merge_chunk_tests.cpp", 
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/dbtests/commandtests.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_d.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/dbtests/clienttests.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/dbtests/querytests.cpp", 
+            "src/mongo/dbtests/sharding.cpp", 
             "src/mongo/client/syncclusterconnection.cpp"
         ]
     }, 
@@ -1297,6 +1291,14 @@
         ]
     }, 
     {
+        "symbol": "mongo::Query::hasReadPreference(mongo::BSONObj const&)", 
+        "object": "src/mongo/client/dbclient.cpp", 
+        "used_by": [
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/dbcommands.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::Query::isComplex(bool*) const", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
@@ -1307,34 +1309,21 @@
         "symbol": "mongo::DBClientConnection::_numConnections", 
         "object": "src/mongo/client/dbclient.cpp", 
         "used_by": [
-            "src/mongo/db/commands.cpp", 
             "src/mongo/db/repl/heartbeat.cpp", 
             "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/commands/isself.cpp", 
             "src/mongo/tools/bridge.cpp", 
             "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp", 
             "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/tools/stat.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/cloner.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/commands.cpp", 
+            "src/mongo/db/commands/isself.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
-            "src/mongo/client/syncclusterconnection.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::DBClientWithCommands::dropIndex(std::string const&, std::string const&)", 
-        "object": "src/mongo/client/dbclient.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/merge_chunk_tests.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp", 
-            "src/mongo/dbtests/sharding.cpp", 
-            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/dbtests/config_server_fixture.cpp", 
+            "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/client/syncclusterconnection.cpp"
         ]
     }, 
@@ -1383,7 +1372,6 @@
             "src/mongo/dbtests/indexupdatetests.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/dbtests/perf/perftest.cpp", 
-            "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/dbtests/clienttests.cpp"
         ]
     }, 
@@ -1516,15 +1504,16 @@
             "src/mongo/s/config.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/db/repl/rs_initialsync.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
             "src/mongo/db/repl/health.cpp", 
-            "src/mongo/s/metadata_loader.cpp", 
+            "src/mongo/tools/export.cpp", 
             "src/mongo/dbtests/repltests.cpp", 
             "src/mongo/tools/restore.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/dbtests/perf/perftest.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
             "src/mongo/dbtests/updatetests.cpp", 
@@ -1588,6 +1577,7 @@
             "src/mongo/dbtests/perftests.cpp", 
             "src/mongo/db/repl/oplogreader.cpp", 
             "src/mongo/tools/stat.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/db/repl/manager.cpp", 
             "src/mongo/db/cloner.cpp", 
             "src/mongo/db/repl/rs_config.cpp", 
@@ -1644,48 +1634,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::SaslClientSession::initialize()", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SaslClientSession::setParameter(mongo::SaslClientSession::Parameter, mongo::StringData const&)", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SaslClientSession::getParameter(mongo::SaslClientSession::Parameter)", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SaslClientSession::step(mongo::StringData const&, std::string*)", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SaslClientSession::~SaslClientSession()", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SaslClientSession::SaslClientSession()", 
-        "object": "src/mongo/client/sasl_client_session.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::SyncClusterConnection::prepare(std::string&)", 
         "object": "src/mongo/client/syncclusterconnection.cpp", 
         "used_by": [
@@ -1714,96 +1662,10 @@
         ]
     }, 
     {
-        "symbol": "mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(std::set<mongo::ServerAndQuery, std::less<mongo::ServerAndQuery>, std::allocator<mongo::ServerAndQuery> > const&, std::string const&, mongo::Query const&, int, mongo::BSONObj const&)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/mr.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Future::CommandResult::join(int)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_public.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Future::spawnCommand(std::string const&, std::string const&, mongo::BSONObj const&, int, mongo::DBClientBase*)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_public.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::getShardCursor(mongo::Shard const&)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::next()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/mr.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::more()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/mr.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/db/commands/mr.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(mongo::QuerySpec const&, mongo::CommandInfo const&)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::isSharded()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ClusteredCursor::init()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/db/commands/mr.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::getQueryShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&)", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ParallelSortClusteredCursor::getPrimary()", 
-        "object": "src/mongo/client/parallel.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, void*, int, int, int, long long)", 
         "object": "src/mongo/db/dbmessage.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/cursors.cpp"
         ]
     }, 
@@ -1818,7 +1680,6 @@
         "symbol": "mongo::Message::toString() const", 
         "object": "src/mongo/db/dbmessage.cpp", 
         "used_by": [
-            "src/mongo/s/writeback_listener.cpp", 
             "src/mongo/s/d_logic.cpp"
         ]
     }, 
@@ -1833,9 +1694,8 @@
         "symbol": "mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)", 
         "object": "src/mongo/db/dbmessage.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/s/server.cpp"
+            "src/mongo/s/server.cpp", 
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -1950,7 +1810,7 @@
         "symbol": "mongo::DBClientCursor::peekFirst()", 
         "object": "src/mongo/client/dbclientcursor.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/strategy.cpp"
         ]
     }, 
     {
@@ -2004,27 +1864,17 @@
         ]
     }, 
     {
-        "symbol": "mongo::saslCommandErrmsgFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::saslCommandUserFieldName", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
             "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/tools/stat.cpp", 
             "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/tools/stat.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_s.cpp"
+            "src/mongo/tools/tool.cpp"
         ]
     }, 
     {
@@ -2032,12 +1882,11 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
-            "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/tools/stat.cpp", 
+            "src/mongo/tools/tool.cpp", 
             "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/tools/stat.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/tools/tool.cpp"
+            "src/mongo/scripting/v8_db.cpp"
         ]
     }, 
     {
@@ -2045,122 +1894,14 @@
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
             "src/mongo/db/auth/security_key.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
             "src/mongo/client/dbclient.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandUserDBFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/tools/stat.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/auth/security_key.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/modules/subscription/src/audit/impersonate_helpers_s.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandServiceHostnameFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandServiceNameFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandDoneFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandAutoAuthorizeFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslDefaultDBName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslStartCommandName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandPayloadFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslExtractPayload(mongo::BSONObj const&, std::string*, mongo::BSONType*)", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandMechanismListFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp"
         ]
     }, 
     {
         "symbol": "mongo::saslClientAuthenticate", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslCommandConversationIdFieldName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslContinueCommandName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::saslDefaultServiceName", 
-        "object": "src/mongo/client/sasl_client_authenticate.cpp", 
-        "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+            "src/mongo/client/dbclient.cpp"
         ]
     }, 
     {
@@ -2169,20 +1910,23 @@
         "used_by": [
             "src/mongo/client/dbclient.cpp", 
             "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
+            "src/mongo/tools/tool.cpp", 
             "src/mongo/tools/stat.cpp", 
             "src/mongo/db/auth/security_key.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-            "src/mongo/tools/tool.cpp"
+            "src/mongo/scripting/v8_db.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::saslCommandCodeFieldName", 
+        "symbol": "mongo::saslCommandUserDBFieldName", 
         "object": "src/mongo/client/sasl_client_authenticate.cpp", 
         "used_by": [
-            "src/mongo/db/modules/subscription/src/sasl/sasl_commands.cpp", 
-            "src/mongo/client/sasl_client_authenticate_impl.cpp"
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/auth/security_key.cpp", 
+            "src/mongo/scripting/v8_db.cpp"
         ]
     }, 
     {
@@ -2198,8 +1942,8 @@
         "object": "src/mongo/client/scoped_db_conn_test.cpp", 
         "used_by": [
             "src/mongo/s/config.cpp", 
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp", 
             "src/mongo/db/db.cpp", 
+            "src/mongo/db/structure/catalog/namespace_index.cpp", 
             "src/mongo/dbtests/framework.cpp", 
             "src/mongo/db/dbcommands_generic.cpp", 
             "src/mongo/db/repl/master_slave.cpp", 
@@ -2224,7 +1968,6 @@
             "src/mongo/db/stats/snapshots.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/db/clientcursor.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/util/net/listen.cpp", 
@@ -2237,9 +1980,8 @@
             "src/mongo/db/client.cpp", 
             "src/mongo/client/connpool.cpp", 
             "src/mongo/util/net/message_server_port.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/db/db.cpp", 
-            "src/mongo/db/modules/subscription/src/snmp/snmp.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
             "src/mongo/s/config_server_checker_service.cpp", 
             "src/mongo/db/storage/data_file.cpp"
@@ -2256,9 +1998,9 @@
         "symbol": "mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)", 
         "object": "src/mongo/db/lasterror.cpp", 
         "used_by": [
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/instance.cpp"
         ]
     }, 
@@ -2267,15 +2009,15 @@
         "object": "src/mongo/db/lasterror.cpp", 
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/tools/tool.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/instance.cpp", 
             "src/mongo/db/catalog/index_create.cpp", 
             "src/mongo/db/commands/get_last_error.cpp", 
             "src/mongo/s/d_logic.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
-            "src/mongo/db/index/btree_based_builder.cpp", 
             "src/mongo/s/shardconnection.cpp"
         ]
     }, 
@@ -2323,7 +2065,6 @@
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
             "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/dbtests/perftests.cpp", 
             "src/mongo/s/server.cpp", 
             "src/mongo/s/d_state.cpp", 
@@ -2335,14 +2076,15 @@
             "src/mongo/util/net/message_server_port.cpp", 
             "src/mongo/s/d_logic.cpp", 
             "src/mongo/s/s_only.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp", 
             "src/mongo/db/repl/replset_commands.cpp", 
             "src/mongo/db/db.cpp", 
             "src/mongo/dbtests/querytests.cpp", 
             "src/mongo/dbtests/updatetests.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/commands/write_commands/write_commands.cpp", 
-            "src/mongo/db/index/btree_based_builder.cpp", 
             "src/mongo/tools/tool.cpp"
         ]
     }, 
@@ -2397,28 +2139,26 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/client/dbclientcursor.cpp"
@@ -2445,42 +2185,33 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/client/distlock.cpp", 
             "src/mongo/s/balance.cpp", 
             "src/mongo/s/d_state.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/db/commands.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/client/dbclientcursor.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::DBConnectionPool::clear()", 
-        "object": "src/mongo/client/connpool.cpp", 
-        "used_by": [
-            "src/mongo/s/shardconnection.cpp"
         ]
     }, 
     {
@@ -2490,7 +2221,7 @@
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
             "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
@@ -2518,28 +2249,26 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/client/dbclientcursor.cpp"
@@ -2550,14 +2279,13 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/dbclient_multi_command.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/client/dbclientcursor.cpp", 
@@ -2565,14 +2293,14 @@
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp"
         ]
     }, 
@@ -2588,26 +2316,23 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
+            "src/mongo/client/dbclientcursor.cpp", 
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/s/chunk.cpp", 
-            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
-            "src/mongo/client/dbclientcursor.cpp"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
@@ -2632,34 +2357,39 @@
         ]
     }, 
     {
+        "symbol": "mongo::DBConnectionPool::clear()", 
+        "object": "src/mongo/client/connpool.cpp", 
+        "used_by": [
+            "src/mongo/s/shardconnection.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::AScopedConnection::_numConnections", 
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/cluster_client_internal.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/s/shardconnection.cpp", 
             "src/mongo/db/commands.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/client/dbclientcursor.cpp"
@@ -2677,28 +2407,130 @@
         "object": "src/mongo/client/connpool.cpp", 
         "used_by": [
             "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/config_upgrade.cpp", 
             "src/mongo/s/config_upgrade_helpers.cpp", 
             "src/mongo/s/config.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/client/distlock.cpp", 
+            "src/mongo/s/strategy.cpp", 
             "src/mongo/s/balance.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/metadata_loader.cpp", 
             "src/mongo/client/dbclientcursor.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
             "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
-            "src/mongo/s/config_upgrade_v0_to_v5.cpp", 
+            "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+            "src/mongo/s/distlock.cpp", 
             "src/mongo/s/d_split.cpp", 
             "src/mongo/s/d_migrate.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/shard.cpp", 
             "src/mongo/s/cursors.cpp", 
             "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_merge.cpp", 
             "src/mongo/s/chunk.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(std::set<mongo::ServerAndQuery, std::less<mongo::ServerAndQuery>, std::allocator<mongo::ServerAndQuery> > const&, std::string const&, mongo::Query const&, int, mongo::BSONObj const&)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::getNS()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Future::CommandResult::join(int)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Future::spawnCommand(std::string const&, std::string const&, mongo::BSONObj const&, int, mongo::DBClientBase*)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::getShardCursor(mongo::Shard const&)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::init()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::more()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::~ParallelSortClusteredCursor()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::ParallelSortClusteredCursor(mongo::QuerySpec const&, mongo::CommandInfo const&)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::isSharded()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::getQueryShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::explain(mongo::BSONObjBuilder&)", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::next()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ParallelSortClusteredCursor::getPrimary()", 
+        "object": "src/mongo/client/parallel.cpp", 
+        "used_by": [
+            "src/mongo/s/strategy.cpp"
         ]
     }
 ]

@@ -628,6 +628,22 @@
 
 <div></div>
 
+    mongo::Strategy::commandOp(std::string const&, mongo::BSONObj const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult, std::allocator<mongo::Strategy::CommandResult> >*)
+
+- Provided By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
+    mongo::STRATEGY
+
+- Provided By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+
+<div></div>
+
     mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
 
 - Provided By:
@@ -665,14 +681,6 @@
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::SHARDED
-
-- Provided By:
-
-    - src/mongo/s/strategy\_shard.cpp
 
 <div></div>
 
@@ -1097,6 +1105,14 @@
     - [src/mongo/util/hex.cpp](../utilities)
 
 ### src/mongo/db/fts/fts\_language.cpp
+
+<div></div>
+
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
 
 <div></div>
 
@@ -1598,6 +1614,14 @@
 
 <div></div>
 
+    mongo::FieldRef::FieldRef(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::BSONElement::getGtLtOp(int) const
 
 - Provided By:
@@ -1611,14 +1635,6 @@
 - Provided By:
 
     - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::FieldRef::parse(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 

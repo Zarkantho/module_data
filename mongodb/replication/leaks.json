@@ -204,9 +204,16 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
+        "object": "src/mongo/db/repl/consensus.cpp"
+    }, 
+    {
+        "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
-        "symbol": "mongo::ActionType::replSetFresh", 
+        "symbol": "mongo::ActionType::internal", 
         "object": "src/mongo/db/repl/consensus.cpp"
     }, 
     {
@@ -263,13 +270,6 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/repl/consensus.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
         "object": "src/mongo/db/repl/consensus.cpp"
     }, 
     {
@@ -340,13 +340,6 @@
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
-        "object": "src/mongo/db/repl/consensus.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::replSetElect", 
         "object": "src/mongo/db/repl/consensus.cpp"
     }, 
     {
@@ -444,13 +437,6 @@
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/write_concern.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
         "object": "src/mongo/db/write_concern.cpp"
     }, 
@@ -463,10 +449,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::currentClient", 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
         "object": "src/mongo/db/write_concern.cpp"
     }, 
     {
@@ -527,9 +512,23 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/write_concern.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/dur.cpp"
         ], 
         "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/write_concern.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
         "object": "src/mongo/db/write_concern.cpp"
     }, 
     {
@@ -1187,7 +1186,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::clearTmpCollections()", 
         "object": "src/mongo/db/repl/rs.cpp"
@@ -1314,7 +1313,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_replset.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logReplSetReconfig(mongo::ClientBasic*, mongo::BSONObj const*, mongo::BSONObj const*)", 
         "object": "src/mongo/db/repl/rs.cpp"
@@ -1783,16 +1782,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
         "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
-        "object": "src/mongo/db/repl/sync.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/sync.cpp"
     }, 
     {
@@ -1825,6 +1817,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/sync.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -1832,7 +1831,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::getOrCreateCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/sync.cpp"
@@ -1863,6 +1862,13 @@
             "src/mongo/util/concurrency/thread_name.cpp"
         ], 
         "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/repl/sync.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/collection.cpp"
+        ], 
+        "symbol": "mongo::Collection::isCapped() const", 
         "object": "src/mongo/db/repl/sync.cpp"
     }, 
     {
@@ -1945,6 +1951,518 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::RemoveSaver::RemoveSaver(std::string const&, std::string const&, std::string const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/update_lifecycle_impl.cpp"
+        ], 
+        "symbol": "mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool, mongo::NamespaceString const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/update_lifecycle_impl.cpp"
+        ], 
+        "symbol": "vtable for mongo::UpdateLifecycleImpl", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::DBRead::DBRead(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/internal_runner.cpp"
+        ], 
+        "symbol": "mongo::InternalRunner::InternalRunner(std::string const&, mongo::PlanStage*, mongo::WorkingSet*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::TempRelease::TempRelease()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/update.cpp"
+        ], 
+        "symbol": "mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/collection.cpp"
+        ], 
+        "symbol": "mongo::Collection::numRecords() const", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/cloner.cpp"
+        ], 
+        "symbol": "mongo::Cloner::copyCollectionFromRemote(std::string const&, std::string const&, std::string&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/cap.cpp"
+        ], 
+        "symbol": "mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dur.cpp"
+        ], 
+        "symbol": "mongo::dur::DurableInterface::_impl", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::OpDebug::reset()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/exec/working_set.cpp"
+        ], 
+        "symbol": "mongo::WorkingSet::WorkingSet()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::TempRelease::~TempRelease()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/auth/authorization_manager.cpp"
+        ], 
+        "symbol": "mongo::AuthorizationManager::initialize()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::DBRead::~DBRead()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::RemoveSaver::~RemoveSaver()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::writelocktry::writelocktry(int)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::MongoFile::flushAll(bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/eof_runner.cpp"
+        ], 
+        "symbol": "mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::writelocktry::~writelocktry()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::_finishInit()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::nested()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::~Context()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isW()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isLocked()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/cap.cpp"
+        ], 
+        "symbol": "mongo::NamespaceDetails::emptyCappedCollection(char const*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/collection.cpp"
+        ], 
+        "symbol": "mongo::Collection::isCapped() const", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/exec/collection_scan.cpp"
+        ], 
+        "symbol": "mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::time_t_to_String_short(long)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::sleepsecs(int)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/commands.cpp"
+        ], 
+        "symbol": "mongo::Command::findCommand(std::string const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj&, bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::dropCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/auth/authorization_manager_global.cpp"
+        ], 
+        "symbol": "mongo::getGlobalAuthorizationManager()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/client/dbclient.cpp"
+        ], 
+        "symbol": "mongo::Query::sort(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/dbhelpers.cpp"
+        ], 
+        "symbol": "mongo::reverseNaturalObj", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage_options.cpp"
+        ], 
+        "symbol": "mongo::storageGlobalParams", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/ops/delete.cpp"
+        ], 
+        "symbol": "mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::Context::Context(std::string const&, std::string const&, bool)", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/listen.cpp"
+        ], 
+        "symbol": "mongo::Listener::_timeTracker", 
+        "object": "src/mongo/db/repl/rs_rollback.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "mongo::DBClientWithCommands::simpleCommand(std::string const&, mongo::BSONObj*, std::string const&)", 
@@ -2018,13 +2536,6 @@
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/db/repl/replset_commands.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::replSetUpdatePosition", 
         "object": "src/mongo/db/repl/replset_commands.cpp"
     }, 
     {
@@ -2108,6 +2619,13 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
         ], 
+        "symbol": "mongo::ActionType::internal", 
+        "object": "src/mongo/db/repl/replset_commands.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
         "symbol": "mongo::ActionType::replSetConfigure", 
         "object": "src/mongo/db/repl/replset_commands.cpp"
     }, 
@@ -2130,13 +2648,6 @@
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/repl/replset_commands.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::replSetGetRBID", 
         "object": "src/mongo/db/repl/replset_commands.cpp"
     }, 
     {
@@ -3294,504 +3805,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::RemoveSaver::RemoveSaver(std::string const&, std::string const&, std::string const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::RemoveSaver::goingToDelete(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/ops/update_lifecycle_impl.cpp"
-        ], 
-        "symbol": "mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool, mongo::NamespaceString const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::getSingleton(char const*, mongo::BSONObj&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/ops/update_lifecycle_impl.cpp"
-        ], 
-        "symbol": "vtable for mongo::UpdateLifecycleImpl", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::DBRead::DBRead(mongo::StringData const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/query/internal_runner.cpp"
-        ], 
-        "symbol": "mongo::InternalRunner::InternalRunner(std::string const&, mongo::PlanStage*, mongo::WorkingSet*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::TempRelease::TempRelease()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/ops/update.cpp"
-        ], 
-        "symbol": "mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::toString() const", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/cloner.cpp"
-        ], 
-        "symbol": "mongo::Cloner::copyCollectionFromRemote(std::string const&, std::string const&, std::string&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/cap.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dur.cpp"
-        ], 
-        "symbol": "mongo::dur::DurableInterface::_impl", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::OpDebug::reset()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::TempRelease::~TempRelease()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/exec/working_set.cpp"
-        ], 
-        "symbol": "mongo::WorkingSet::WorkingSet()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_manager.cpp"
-        ], 
-        "symbol": "mongo::AuthorizationManager::initialize()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::DBRead::~DBRead()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_current_thread_data()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::RemoveSaver::~RemoveSaver()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::writelocktry::writelocktry(int)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::MongoFile::flushAll(bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/query/eof_runner.cpp"
-        ], 
-        "symbol": "mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::writelocktry::~writelocktry()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::Context::_finishInit()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::nested()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::Context::~Context()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::isW()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::isLocked()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/cap.cpp"
-        ], 
-        "symbol": "mongo::NamespaceDetails::emptyCappedCollection(char const*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/exec/collection_scan.cpp"
-        ], 
-        "symbol": "mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
-        ], 
-        "symbol": "mongo::currentClient", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::OID const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::time_t_to_String_short(long)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::interruption_point()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::sleepsecs(int)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/commands.cpp"
-        ], 
-        "symbol": "mongo::Command::findCommand(std::string const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj&, bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
-        ], 
-        "symbol": "mongo::Database::dropCollection(mongo::StringData const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/auth/authorization_manager_global.cpp"
-        ], 
-        "symbol": "mongo::getGlobalAuthorizationManager()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/client/dbclient.cpp"
-        ], 
-        "symbol": "mongo::Query::sort(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/dbhelpers.cpp"
-        ], 
-        "symbol": "mongo::reverseNaturalObj", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/storage_options.cpp"
-        ], 
-        "symbol": "mongo::storageGlobalParams", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/ops/delete.cpp"
-        ], 
-        "symbol": "mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::Context::Context(std::string const&, std::string const&, bool)", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/listen.cpp"
-        ], 
-        "symbol": "mongo::Listener::_timeTracker", 
-        "object": "src/mongo/db/repl/rs_rollback.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -3873,6 +3886,55 @@
         ], 
         "symbol": "boost::system::generic_category()", 
         "object": "src/mongo/db/repl/repl_start.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/write_concern_options.cpp"
     }, 
     {
         "sources": [
@@ -4065,6 +4127,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/replication_server_status.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/query/eof_runner.cpp"
         ], 
         "symbol": "mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)", 
@@ -4125,13 +4194,6 @@
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/repl/replication_server_status.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/replication_server_status.cpp"
     }, 
     {
@@ -4300,13 +4362,6 @@
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/db/repl/heartbeat.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
-        ], 
-        "symbol": "mongo::ActionType::replSetHeartbeat", 
         "object": "src/mongo/db/repl/heartbeat.cpp"
     }, 
     {
@@ -4510,6 +4565,13 @@
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::Command(mongo::StringData, bool, mongo::StringData)", 
+        "object": "src/mongo/db/repl/heartbeat.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp"
+        ], 
+        "symbol": "mongo::ActionType::internal", 
         "object": "src/mongo/db/repl/heartbeat.cpp"
     }, 
     {
@@ -5450,7 +5512,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::dropCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/rs_sync.cpp"
@@ -6003,7 +6065,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
         "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
         "object": "src/mongo/db/repl/oplog.cpp"
@@ -6024,7 +6086,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
         "symbol": "mongo::Collection::insertDocument(mongo::DocWriter const*, bool)", 
         "object": "src/mongo/db/repl/oplog.cpp"
@@ -6052,6 +6114,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ], 
+        "symbol": "mongo::IndexCatalog::haveIdIndex() const", 
+        "object": "src/mongo/db/repl/oplog.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "vtable for mongo::DBClientBase", 
@@ -6059,7 +6128,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
         "symbol": "mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const", 
         "object": "src/mongo/db/repl/oplog.cpp"
@@ -6136,13 +6205,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/storage/record.cpp"
-        ], 
-        "symbol": "mongo::DiskLoc::obj() const", 
-        "object": "src/mongo/db/repl/oplog.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "typeinfo for mongo::MsgAssertionException", 
@@ -6178,7 +6240,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/oplog.cpp"
@@ -6223,6 +6285,13 @@
             "src/mongo/bson/optime.cpp"
         ], 
         "symbol": "mongo::OpTime::m", 
+        "object": "src/mongo/db/repl/oplog.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/collection.cpp"
+        ], 
+        "symbol": "mongo::Collection::isCapped() const", 
         "object": "src/mongo/db/repl/oplog.cpp"
     }, 
     {
@@ -6656,6 +6725,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/repl/master_slave.cpp"
+    }, 
+    {
+        "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::thread::start_thread()", 
@@ -6944,13 +7020,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/repl/master_slave.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::thread::~thread()", 
@@ -6958,7 +7027,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::duplicateUncasedName(bool, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> >*)", 
         "object": "src/mongo/db/repl/master_slave.cpp"
@@ -7095,6 +7164,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/collection.cpp"
+        ], 
+        "symbol": "mongo::Collection::numRecords() const", 
+        "object": "src/mongo/db/repl/rs_initialsync.cpp"
+    }, 
+    {
+        "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
         "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
@@ -7186,9 +7262,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/client/dbclient.cpp"
+            "src/mongo/logger/logger.cpp"
         ], 
-        "symbol": "mongo::DBClientWithCommands::getDatabaseNames()", 
+        "symbol": "mongo::logger::globalLogManager()", 
         "object": "src/mongo/db/repl/rs_initialsync.cpp"
     }, 
     {
@@ -7221,9 +7297,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/logger/logger.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
-        "symbol": "mongo::logger::globalLogManager()", 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/repl/rs_initialsync.cpp"
     }, 
     {
@@ -7256,14 +7332,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
-        ], 
-        "symbol": "mongo::currentClient", 
-        "object": "src/mongo/db/repl/rs_initialsync.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -7271,9 +7339,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
+            "src/mongo/client/dbclient.cpp"
         ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
+        "symbol": "mongo::DBClientWithCommands::getDatabaseNames()", 
         "object": "src/mongo/db/repl/rs_initialsync.cpp"
     }, 
     {

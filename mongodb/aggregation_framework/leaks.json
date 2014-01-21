@@ -288,6 +288,20 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/pipeline/accumulator_sum.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/pipeline/accumulator_sum.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/intrusive_counter.cpp"
         ], 
         "symbol": "mongo::IntrusiveCounterUnsigned::addRef() const", 
@@ -1051,6 +1065,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/db/pipeline/expression.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -1303,6 +1324,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/catalog/database.cpp"
+        ], 
+        "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
+        "object": "src/mongo/db/pipeline/pipeline_d.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/client.cpp"
         ], 
         "symbol": "mongo::Client::Context::~Context()", 
@@ -1310,17 +1338,16 @@
     }, 
     {
         "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
-        "symbol": "boost::system::system_category()", 
+        "symbol": "mongo::Collection::isCapped() const", 
         "object": "src/mongo/db/pipeline/pipeline_d.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
+            "src/third_party/boost/libs/system/src/error_code.cpp"
         ], 
-        "symbol": "mongo::currentClient", 
+        "symbol": "boost::system::system_category()", 
         "object": "src/mongo/db/pipeline/pipeline_d.cpp"
     }, 
     {
@@ -1335,13 +1362,6 @@
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/pipeline/pipeline_d.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
         "object": "src/mongo/db/pipeline/pipeline_d.cpp"
     }, 
     {
@@ -1364,20 +1384,6 @@
         ], 
         "symbol": "mongo::storageGlobalParams", 
         "object": "src/mongo/db/pipeline/pipeline_d.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/pipeline/accumulator_sum.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/pipeline/accumulator_sum.cpp"
     }, 
     {
         "sources": [
@@ -2253,6 +2259,13 @@
             "src/mongo/db/clientcursor.cpp"
         ], 
         "symbol": "mongo::ClientCursorPin::c() const", 
+        "object": "src/mongo/db/pipeline/document_source_cursor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/query/type_explain.cpp"
+        ], 
+        "symbol": "mongo::TypeExplain::getIsMultiKey() const", 
         "object": "src/mongo/db/pipeline/document_source_cursor.cpp"
     }, 
     {

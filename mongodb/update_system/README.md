@@ -1248,6 +1248,14 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
+    mongo::typeName(mongo::BSONType)
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -1269,14 +1277,6 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -1336,11 +1336,11 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::typeName(mongo::BSONType)
+    std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -1806,14 +1806,6 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::unittest::TestAssertion::~TestAssertion()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
     typeinfo for mongo::unittest::Test
 
 - Provided By:
@@ -1911,6 +1903,14 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 <div></div>
 
     mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
 
 - Provided By:
 
@@ -2242,14 +2242,6 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::fromjson(char const*, int*)
 
 - Provided By:
@@ -2335,6 +2327,14 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -3020,19 +3020,19 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::unittest::Test::Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -3278,11 +3278,11 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+    mongo::msgasserted(int, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -3358,14 +3358,6 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::Status::operator==(mongo::Status const&) const
 
 - Provided By:
@@ -3375,6 +3367,14 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 <div></div>
 
     mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Provided By:
 
@@ -3608,11 +3608,11 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    std::string mongo::integerToHex<int>(int)
+    mongo::typeName(mongo::BSONType)
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -3648,11 +3648,11 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 <div></div>
 
-    mongo::typeName(mongo::BSONType)
+    std::string mongo::integerToHex<int>(int)
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -5273,7 +5273,23 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 <div></div>
 
+    mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::CanonicalQuery const*, mongo::mutablebson::Document&) const
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
     mongo::UpdateDriver::modsAffectIndices() const
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
+    mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const*)
 
 - Used By:
 
@@ -5289,14 +5305,6 @@ libupdate\_driver.a. This is the external interface to the new update system:
     - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::CanonicalQuery const*, mongo::mutablebson::Document&) const
-
-- Used By:
-
-    - [src/mongo/db/ops/update.cpp](../query\_system)
 
 <div></div>
 
@@ -5326,14 +5334,6 @@ libupdate\_driver.a. This is the external interface to the new update system:
 <div></div>
 
     mongo::UpdateDriver::isDocReplacement() const
-
-- Used By:
-
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-
-<div></div>
-
-    mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const&)
 
 - Used By:
 
@@ -5515,14 +5515,6 @@ libupdate\_driver.a. This is the external interface to the new update system:
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::IndexPathSet::clear()
-
-- Provided By:
-
-    - [src/mongo/db/index\_set.cpp](../indexing)
 
 <div></div>
 
@@ -6017,14 +6009,6 @@ Utilities for the new update system (libupdate\_common.a)
 
 <div></div>
 
-    mongo::unittest::Test::Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
 
 - Provided By:
@@ -6201,7 +6185,7 @@ Utilities for the new update system (libupdate\_common.a)
 
 <div></div>
 
-    mongo::unittest::Test::setUp()
+    mongo::unittest::Test::Test()
 
 - Provided By:
 
@@ -6326,6 +6310,14 @@ Utilities for the new update system (libupdate\_common.a)
 - Provided By:
 
     - [src/mongo/bson/mutable/document.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -6947,15 +6939,7 @@ Other things used by the update system. TODO: figure out what these are for.
 
 - Provided By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
-
-<div></div>
-
-    mongo::Database::getCollection(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -6991,14 +6975,6 @@ Other things used by the update system. TODO: figure out what these are for.
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::ShardingState::needCollectionMetadata(std::string const&) const
 
 - Provided By:
@@ -7031,12 +7007,11 @@ Other things used by the update system. TODO: figure out what these are for.
 
 <div></div>
 
-    mongo::currentClient
+    mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -7097,15 +7072,39 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Used By:
+
+    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/matcher/path.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_text.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/s/collection\_metadata.cpp](../sharding)
+    - [src/mongo/db/matcher/expression\_array.cpp](../query\_system)
+
+<div></div>
+
     mongo::FieldRef::parse(mongo::StringData const&)
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/matcher/path.cpp](../query\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
+    - [src/mongo/db/matcher/path.cpp](../query\_system)
+
+<div></div>
+
+    mongo::FieldRef::FieldRef(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 

@@ -367,14 +367,22 @@
     {
         "name": "src/mongo/util/md5.cpp", 
         "execs": [
-            "clientTest", 
-            "httpClientTest", 
-            "firstExample", 
-            "rsExample", 
-            "whereExample", 
-            "authTest", 
-            "secondExample", 
-            "tutorial"
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -383,16 +391,7 @@
     }, 
     {
         "name": "src/mongo/util/md5main.cpp", 
-        "execs": [
-            "clientTest", 
-            "httpClientTest", 
-            "firstExample", 
-            "rsExample", 
-            "whereExample", 
-            "authTest", 
-            "secondExample", 
-            "tutorial"
-        ]
+        "execs": []
     }, 
     {
         "name": "src/mongo/util/ntservice.cpp", 
@@ -450,6 +449,27 @@
             "authTest", 
             "secondExample", 
             "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/signal_win32.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -693,22 +713,14 @@
     {
         "name": "src/mongo/util/version.cpp", 
         "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
         ]
     }, 
     {
@@ -856,22 +868,14 @@
     {
         "name": "src/mongo/platform/backtrace.cpp", 
         "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
         ]
     }, 
     {

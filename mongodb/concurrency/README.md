@@ -9,7 +9,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 # Files
 - src/mongo/util/concurrency/rwlock.h
-- src/mongo/util/concurrency/rwlockimpl.cpp   (cppclientdriver)
+- src/mongo/util/concurrency/rwlockimpl.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/rwlockimpl.h
 - src/mongo/db/d\_concurrency.cpp   (mongod, tools)
 - src/mongo/db/d\_concurrency.h
@@ -24,11 +24,31 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 <div></div>
 
+    mongo::SimpleRWLock::lock_shared()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
+    mongo::SimpleRWLock::unlock_shared()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
     mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
 
 - Used By:
 
+    - [src/mongo/util/trace.cpp](../dead\_code)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
 
 <div></div>
 
@@ -36,7 +56,9 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
+    - [src/mongo/util/trace.cpp](../dead\_code)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
 
 <div></div>
 
@@ -44,7 +66,9 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
+    - [src/mongo/util/trace.cpp](../dead\_code)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
 
 ### src/mongo/db/d\_concurrency.cpp
 
@@ -70,11 +94,11 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
+    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/index\_builder.cpp](../indexing)
 
@@ -87,17 +111,6 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::writelocktry::~writelocktry()
-
-- Used By:
-
-    - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
 
 <div></div>
 
@@ -170,13 +183,24 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 <div></div>
 
+    mongo::writelocktry::~writelocktry()
+
+- Used By:
+
+    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
+
     mongo::Lock::isWriteLocked(mongo::StringData const&)
 
 - Used By:
 
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/storage/extent\_manager.cpp](../storage\_layer\_structure)
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -221,17 +245,17 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <div></div>
@@ -260,9 +284,9 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/compact.cpp
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -332,12 +356,12 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -382,7 +406,6 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -402,7 +425,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/s/d\_state.cpp](../sharding)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - src/mongo/db/compact.cpp
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
@@ -466,7 +489,6 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
@@ -515,13 +537,13 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
     - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/oplog.cpp](../replication)
-    - src/mongo/db/database\_holder.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/stats/snapshots\_webplugins.cpp](../utilities)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -529,14 +551,14 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/auth/authz\_session\_external\_state\_d.cpp](../authentication)
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/dur.cpp](../journaling)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -704,6 +726,14 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
 
 <div></div>
 
@@ -1147,6 +1177,7 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/stats/service\_stats.cpp](../dead\_code)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
@@ -1169,6 +1200,7 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/util/net/sock.cpp](../network)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/stats/service\_stats.cpp](../dead\_code)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)

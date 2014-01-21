@@ -414,6 +414,20 @@
     }, 
     {
         "sources": [
+            "src/mongo/s/strategy.cpp"
+        ], 
+        "symbol": "mongo::Strategy::commandOp(std::string const&, mongo::BSONObj const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult, std::allocator<mongo::Strategy::CommandResult> >*)", 
+        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/s/strategy.cpp"
+        ], 
+        "symbol": "mongo::STRATEGY", 
+        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)", 
@@ -445,13 +459,6 @@
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "typeinfo for mongo::Command", 
-        "object": "src/mongo/db/fts/fts_command_mongos.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/s/strategy_shard.cpp"
-        ], 
-        "symbol": "mongo::SHARDED", 
         "object": "src/mongo/db/fts/fts_command_mongos.cpp"
     }, 
     {
@@ -1016,6 +1023,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::StringData::Hasher::operator()(mongo::StringData const&) const", 
+        "object": "src/mongo/db/fts/fts_language.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
@@ -1555,6 +1569,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/field_ref.cpp"
+        ], 
+        "symbol": "mongo::FieldRef::FieldRef(mongo::StringData const&)", 
+        "object": "src/mongo/db/fts/fts_spec.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/jsobj.cpp"
         ], 
         "symbol": "mongo::BSONElement::getGtLtOp(int) const", 
@@ -1565,13 +1586,6 @@
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/fts/fts_spec.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/field_ref.cpp"
-        ], 
-        "symbol": "mongo::FieldRef::parse(mongo::StringData const&)", 
         "object": "src/mongo/db/fts/fts_spec.cpp"
     }, 
     {

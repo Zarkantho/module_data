@@ -380,22 +380,14 @@
     {
         "name": "src/mongo/util/password.cpp", 
         "execs": [
-            "mongotop", 
-            "mongod", 
-            "perftest", 
-            "mongoperf", 
-            "mongosniff", 
-            "mongodump", 
-            "mongobridge", 
-            "mongostat", 
-            "bsondump", 
-            "mongoimport", 
-            "mongos", 
-            "mongooplog", 
-            "test", 
-            "mongoexport", 
-            "mongofiles", 
-            "mongorestore"
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
         ]
     }, 
     {

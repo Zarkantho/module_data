@@ -59,14 +59,36 @@
         ]
     }, 
     {
+        "symbol": "mongo::FieldRef::FieldRef()", 
+        "object": "src/mongo/db/field_ref.cpp", 
+        "used_by": [
+            "src/mongo/db/matcher/expression_geo.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp", 
+            "src/mongo/db/matcher/path.cpp", 
+            "src/mongo/db/matcher/expression_parser_text.cpp", 
+            "src/mongo/db/matcher/expression_text.cpp", 
+            "src/mongo/db/matcher/expression_parser.cpp", 
+            "src/mongo/db/matcher/expression_parser_geo.cpp", 
+            "src/mongo/db/matcher/expression_leaf.cpp", 
+            "src/mongo/s/collection_metadata.cpp", 
+            "src/mongo/db/matcher/expression_array.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::FieldRef::parse(mongo::StringData const&)", 
         "object": "src/mongo/db/field_ref.cpp", 
         "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp", 
-            "src/mongo/db/matcher/path.cpp", 
-            "src/mongo/db/ops/update.cpp", 
             "src/mongo/s/collection_metadata.cpp", 
-            "src/mongo/db/fts/fts_spec.cpp"
+            "src/mongo/db/matcher/path.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FieldRef::FieldRef(mongo::StringData const&)", 
+        "object": "src/mongo/db/field_ref.cpp", 
+        "used_by": [
+            "src/mongo/db/fts/fts_spec.cpp", 
+            "src/mongo/db/ops/update.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
         ]
     }, 
     {
@@ -109,7 +131,21 @@
         ]
     }, 
     {
+        "symbol": "mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::CanonicalQuery const*, mongo::mutablebson::Document&) const", 
+        "object": "src/mongo/db/ops/update_driver.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/update.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::UpdateDriver::modsAffectIndices() const", 
+        "object": "src/mongo/db/ops/update_driver.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/update.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const*)", 
         "object": "src/mongo/db/ops/update_driver.cpp", 
         "used_by": [
             "src/mongo/db/ops/update.cpp"
@@ -123,13 +159,6 @@
             "src/mongo/db/ops/update.cpp", 
             "src/mongo/db/auth/authz_manager_external_state_mock.cpp", 
             "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::UpdateDriver::populateDocumentWithQueryFields(mongo::CanonicalQuery const*, mongo::mutablebson::Document&) const", 
-        "object": "src/mongo/db/ops/update_driver.cpp", 
-        "used_by": [
-            "src/mongo/db/ops/update.cpp"
         ]
     }, 
     {
@@ -156,13 +185,6 @@
     }, 
     {
         "symbol": "mongo::UpdateDriver::isDocReplacement() const", 
-        "object": "src/mongo/db/ops/update_driver.cpp", 
-        "used_by": [
-            "src/mongo/db/ops/update.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const&)", 
         "object": "src/mongo/db/ops/update_driver.cpp", 
         "used_by": [
             "src/mongo/db/ops/update.cpp"

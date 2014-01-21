@@ -85,7 +85,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/modules/subscription/src/audit/audit_shutdown.cpp"
+            "src/mongo/db/audit.cpp"
         ], 
         "symbol": "mongo::audit::logShutdown(mongo::ClientBasic*)", 
         "object": "src/mongo/s/server.cpp"
@@ -144,13 +144,6 @@
             "src/mongo/base/status.cpp"
         ], 
         "symbol": "mongo::Status::toString() const", 
-        "object": "src/mongo/s/server.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/initializer.cpp"
-        ], 
-        "symbol": "mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)", 
         "object": "src/mongo/s/server.cpp"
     }, 
     {
@@ -542,13 +535,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/shardconnection.cpp"
-        ], 
-        "symbol": "mongo::ShardConnection::releaseConnectionsAfterResponse", 
-        "object": "src/mongo/s/server.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/s/config.cpp"
         ], 
         "symbol": "mongo::serverID", 
@@ -566,6 +552,13 @@
             "src/mongo/s/grid.cpp"
         ], 
         "symbol": "mongo::Grid::allowLocalHost() const", 
+        "object": "src/mongo/s/server.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/initializer.cpp"
+        ], 
+        "symbol": "mongo::runGlobalInitializers(int, char const* const*, char const* const*)", 
         "object": "src/mongo/s/server.cpp"
     }, 
     {
@@ -1501,13 +1494,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ], 
-        "symbol": "mongo::IndexCatalog::findIdIndex()", 
-        "object": "src/mongo/db/db.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/client/dbclient.cpp"
         ], 
         "symbol": "vtable for mongo::DBClientBase", 
@@ -1613,6 +1599,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/platform/process_id.cpp"
+        ], 
+        "symbol": "mongo::ProcessId::asLongLong() const", 
+        "object": "src/mongo/db/db.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/lasterror.cpp"
         ], 
         "symbol": "mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)", 
@@ -1642,7 +1635,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::_initExtentFreeList()", 
         "object": "src/mongo/db/db.cpp"
@@ -1666,13 +1659,6 @@
             "src/mongo/db/instance.cpp"
         ], 
         "symbol": "mongo::_diaglog", 
-        "object": "src/mongo/db/db.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/initializer.cpp"
-        ], 
-        "symbol": "mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)", 
         "object": "src/mongo/db/db.cpp"
     }, 
     {
@@ -1887,14 +1873,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/initialize_server_global_state.cpp"
-        ], 
-        "symbol": "mongo::signalForkSuccess()", 
-        "object": "src/mongo/db/db.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
+            "src/mongo/db/structure/catalog/namespace_index.cpp"
         ], 
         "symbol": "mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const", 
         "object": "src/mongo/db/db.cpp"
@@ -2126,7 +2105,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/db.cpp"
@@ -2182,7 +2161,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::clearTmpCollections()", 
         "object": "src/mongo/db/db.cpp"
@@ -2358,13 +2337,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
-        ], 
-        "symbol": "mongo::NamespaceIndex::details(mongo::StringData const&)", 
-        "object": "src/mongo/db/db.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/auth/authz_manager_external_state_d.cpp"
         ], 
         "symbol": "mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()", 
@@ -2442,6 +2414,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/initializer.cpp"
+        ], 
+        "symbol": "mongo::runGlobalInitializers(int, char const* const*, char const* const*)", 
+        "object": "src/mongo/db/db.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/pdfile.cpp"
         ], 
         "symbol": "mongo::repairDatabase(std::string, std::string&, bool, bool)", 
@@ -2449,14 +2428,14 @@
     }, 
     {
         "sources": [
-            "src/mongo/platform/process_id.cpp"
+            "src/mongo/db/catalog/index_catalog.cpp"
         ], 
-        "symbol": "mongo::ProcessId::asLongLong() const", 
+        "symbol": "mongo::IndexCatalog::findIdIndex() const", 
         "object": "src/mongo/db/db.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/ondisk/namespace_index.cpp"
+            "src/mongo/db/structure/catalog/namespace_index.cpp"
         ], 
         "symbol": "mongo::NamespaceIndex::_init()", 
         "object": "src/mongo/db/db.cpp"
@@ -2536,6 +2515,13 @@
             "src/mongo/scripting/engine_v8.cpp"
         ], 
         "symbol": "mongo::ScriptEngine::setup()", 
+        "object": "src/mongo/db/db.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/initialize_server_global_state.cpp"
+        ], 
+        "symbol": "mongo::signalForkSuccess()", 
         "object": "src/mongo/db/db.cpp"
     }, 
     {

@@ -274,6 +274,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/password.cpp"
+    }, 
+    {
+        "sources": [
             "src/third_party/boost/libs/program_options/src/convert.cpp"
         ], 
         "symbol": "boost::program_options::to_internal(std::string const&)", 
@@ -1419,13 +1426,6 @@
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/db/server_parameters_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "src/mongo/util/password.cpp"
     }, 
     {
         "sources": [

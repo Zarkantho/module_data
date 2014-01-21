@@ -6,7 +6,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -17,7 +17,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -27,7 +27,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -38,7 +38,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -48,7 +48,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -59,7 +59,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -69,7 +69,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -80,7 +80,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -90,7 +90,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -101,7 +101,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -111,7 +111,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -122,7 +122,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -132,7 +132,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -143,7 +143,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -153,7 +153,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -164,7 +164,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -174,7 +174,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -185,7 +185,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -195,7 +195,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -206,7 +206,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -216,7 +216,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -227,7 +227,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -237,7 +237,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -248,7 +248,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -258,7 +258,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -269,7 +269,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -279,7 +279,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -290,7 +290,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -300,7 +300,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -311,7 +311,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -321,7 +321,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -332,7 +332,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -342,7 +342,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -353,7 +353,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -363,7 +363,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -374,7 +374,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -384,7 +384,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -395,7 +395,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -405,7 +405,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -416,7 +416,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -426,7 +426,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -437,7 +437,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -447,7 +447,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -458,7 +458,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -468,7 +468,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -479,7 +479,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -489,7 +489,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -500,7 +500,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }, 
     {
@@ -510,7 +510,7 @@
             "mongod", 
             "perftest", 
             "mongoperf", 
-            "mongorestore", 
+            "mongosniff", 
             "mongodump", 
             "mongobridge", 
             "mongostat", 
@@ -521,7 +521,7 @@
             "test", 
             "mongoexport", 
             "mongofiles", 
-            "mongosniff"
+            "mongorestore"
         ]
     }
 ]

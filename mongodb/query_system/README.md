@@ -40,6 +40,98 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 # Interface
 
+### src/mongo/db/matcher/expression.cpp
+
+<div></div>
+
+    mongo::MatchExpression::toString() const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::MatchExpression
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::MatchExpression::MatchExpression(mongo::MatchExpression::MatchType)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::MatchExpression::matchesBSON(mongo::BSONObj const&, mongo::MatchDetails*) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+### src/mongo/db/matcher/expression\_leaf.cpp
+
+<div></div>
+
+    mongo::ComparisonMatchExpression::init(mongo::StringData const&, mongo::BSONElement const&)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ComparisonMatchExpression::debugString(mongo::StringBuilderImpl<mongo::TrivialAllocator>&, int) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::LeafMatchExpression
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ComparisonMatchExpression::matchesSingleElement(mongo::BSONElement const&) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::LeafMatchExpression::matches(mongo::MatchableDocument const*, mongo::MatchDetails*) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ComparisonMatchExpression::equivalent(mongo::MatchExpression const*) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    typeinfo for mongo::ComparisonMatchExpression
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
 ### src/mongo/db/matcher/expression\_parser.cpp
 
 <div></div>
@@ -52,7 +144,6 @@ Matcher expressions. The point of all of this is to take a query string and turn
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
-    - src/mongo/db/modules/subscription/src/audit/audit\_manager\_global.cpp
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
@@ -71,6 +162,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
     - [src/mongo/util/assert\_util.cpp](../utilities)
 
 ### src/mongo/db/matcher/expression\_array.cpp
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -124,11 +223,11 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
-    mongo::unittest::Test::Test()
+    mongo::FieldRef::FieldRef()
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -189,6 +288,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 <div></div>
 
     typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
 
 - Provided By:
 
@@ -302,6 +409,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -405,6 +520,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -586,6 +709,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     pcrecpp::RE::no_arg
 
 - Provided By:
@@ -692,11 +823,11 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
-    mongo::unittest::Test::Test()
+    mongo::FieldRef::FieldRef()
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -749,6 +880,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 <div></div>
 
     typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
 
 - Provided By:
 
@@ -899,6 +1038,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 ### src/mongo/db/matcher/expression\_parser.cpp
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -1104,6 +1251,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::OID::init()
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
@@ -1143,6 +1298,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
     - [src/mongo/util/hex.cpp](../utilities)
 
 ### src/mongo/db/matcher/expression\_parser\_geo.cpp
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -1738,6 +1901,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -1770,27 +1941,11 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
     mongo::fts::FTSLanguage::makeFTSLanguage(std::string const&)
 
 - Provided By:
 
     - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -2186,6 +2341,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Provided By:
@@ -2300,6 +2463,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 <div></div>
 
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
+
+<div></div>
+
     mongo::msgasserted(int, char const*)
 
 - Provided By:
@@ -2389,6 +2560,14 @@ Matcher expressions. The point of all of this is to take a query string and turn
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -2666,61 +2845,19 @@ This is the code to say "does this document match the expression"? This is built
 - src/mongo/db/matcher/path\_test.cpp   ()
 
 # Interface
-
-### src/mongo/db/matcher/path.cpp
-
-<div></div>
-
-    mongo::BSONElementIterator::BSONElementIterator()
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_indexes\_collections\_databases.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_replset.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_shutdown.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_application\_message.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-
-<div></div>
-
-    mongo::BSONElementIterator::~BSONElementIterator()
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_authentication.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_indexes\_collections\_databases.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_user\_management.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_replset.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_shutdown.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_application\_message.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_authz\_check.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_sharding.cpp
-    - src/mongo/db/modules/subscription/src/audit/audit\_role\_management.cpp
-
-<div></div>
-
-    mongo::BSONElementIterator::BSONElementIterator(mongo::ElementPath const*, mongo::BSONObj const&)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
-
-<div></div>
-
-    mongo::BSONElementIterator::reset(mongo::ElementPath const*, mongo::BSONObj const&)
-
-- Used By:
-
-    - src/mongo/db/modules/subscription/src/audit/audit\_event.cpp
+(not used outside this module)
 
 # Dependencies
 
 ### src/mongo/db/matcher/path.cpp
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -2885,6 +3022,14 @@ This is the code to say "does this document match the expression"? This is built
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::FieldRef::FieldRef()
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -3161,7 +3306,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/cached\_plan\_runner.h
 - src/mongo/db/query/canonical\_query.cpp   (mongod, tools, mongos)
 - src/mongo/db/query/canonical\_query.h
-- src/mongo/db/query/canonical\_query\_test.cpp
+- src/mongo/db/query/canonical\_query\_test.cpp   ()
 - src/mongo/db/query/eof\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/eof\_runner.h
 - src/mongo/db/query/explain\_plan.cpp   (mongod, tools)
@@ -3169,7 +3314,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/find\_constants.h
 - src/mongo/db/query/get\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/get\_runner.h
-- src/mongo/db/query/get\_runner\_test.cpp
+- src/mongo/db/query/get\_runner\_test.cpp   ()
 - src/mongo/db/query/idhack\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/idhack\_runner.h
 - src/mongo/db/query/index\_bounds.cpp   (mongod, tools, mongos)
@@ -3221,9 +3366,9 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/query\_planner\_common.h
 - src/mongo/db/query/query\_planner\_params.h
 - src/mongo/db/query/query\_planner\_test.cpp   ()
-- src/mongo/db/query/query\_planner\_test\_lib.cpp
+- src/mongo/db/query/query\_planner\_test\_lib.cpp   ()
 - src/mongo/db/query/query\_planner\_test\_lib.h
-- src/mongo/db/query/query\_settings.cpp
+- src/mongo/db/query/query\_settings.cpp   (mongod, tools, mongos)
 - src/mongo/db/query/query\_settings.h
 - src/mongo/db/query/query\_solution.cpp   (mongod, tools, mongos)
 - src/mongo/db/query/query\_solution.h
@@ -3247,9 +3392,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
 
@@ -3271,6 +3418,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
@@ -3287,20 +3435,30 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
 
 ### src/mongo/db/query/get\_runner.cpp
+
+<div></div>
+
+    mongo::ScopedRunnerRegistration::ScopedRunnerRegistration(mongo::Runner*)
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
+    - [src/mongo/db/commands/group.cpp](../database\_commands)
 
 <div></div>
 
@@ -3320,7 +3478,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::DeregisterEvenIfUnderlyingCodeThrows::~DeregisterEvenIfUnderlyingCodeThrows()
+    mongo::ScopedRunnerRegistration::~ScopedRunnerRegistration()
 
 - Used By:
 
@@ -3337,23 +3495,22 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - src/mongo/db/database.cpp
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/index/btree\_based\_builder.cpp
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
+    - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 ### src/mongo/db/query/lite\_parsed\_query.cpp
@@ -3372,7 +3529,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - src/mongo/s/strategy\_shard.cpp
+    - [src/mongo/s/strategy.cpp](../sharding)
 
 <div></div>
 
@@ -3492,11 +3649,19 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::PlanCache::clear()
+    mongo::SolutionCacheData::toString() const
 
 - Used By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::PlanCache::notifyOfWriteOp()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3504,7 +3669,50 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Used By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::PlanCache::clear()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::PlanCache::get(mongo::CanonicalQuery const&, mongo::CachedSolution**) const
+
+- Used By:
+
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::CachedSolution::~CachedSolution()
+
+- Used By:
+
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::PlanCache::remove(mongo::CanonicalQuery const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::PlanCache::getAllSolutions() const
+
+- Used By:
+
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
 
 ### src/mongo/db/query/plan\_executor.cpp
 
@@ -3541,6 +3749,64 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
 
+### src/mongo/db/query/query\_settings.cpp
+
+<div></div>
+
+    mongo::QuerySettings::clearAllowedIndices()
+
+- Used By:
+
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::AllowedIndexEntry::~AllowedIndexEntry()
+
+- Used By:
+
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::QuerySettings::setAllowedIndices(mongo::CanonicalQuery const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::QuerySettings::QuerySettings()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::QuerySettings::~QuerySettings()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::QuerySettings::removeAllowedIndices(mongo::CanonicalQuery const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::QuerySettings::getAllAllowedIndices() const
+
+- Used By:
+
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+
 ### src/mongo/db/query/single\_solution\_runner.cpp
 
 <div></div>
@@ -3553,14 +3819,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 ### src/mongo/db/query/type\_explain.cpp
-
-<div></div>
-
-    mongo::TypeExplain::getScanAndOrder() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
 
 <div></div>
 
@@ -3596,6 +3854,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::TypeExplain::isIndexBoundsSet() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::sizeClauses() const
 
 - Used By:
@@ -3612,22 +3878,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::TypeExplain::isIndexBoundsSet() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
-
-<div></div>
-
-    mongo::TypeExplain::isIsMultiKeySet() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
-
-<div></div>
-
     mongo::TypeExplain::getCursor() const
 
 - Used By:
@@ -3637,13 +3887,21 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::TypeExplain::getScanAndOrder() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::getNScannedObjects() const
 
 - Used By:
 
+    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../full\_text\_search\_module)
-    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
 
 <div></div>
 
@@ -3665,7 +3923,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::TypeExplain::indexBounds
+    mongo::TypeExplain::isIsMultiKeySet() const
 
 - Used By:
 
@@ -3673,12 +3931,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::TypeExplain::isCursorSet() const
+    mongo::TypeExplain::indexBounds
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
-    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
 
 <div></div>
 
@@ -3706,11 +3963,28 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::TypeExplain::getIsMultiKey() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::getClausesAt(unsigned long) const
 
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
+    mongo::TypeExplain::isCursorSet() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
 
 <div></div>
 
@@ -3742,11 +4016,108 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
     mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Status::toString() const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 ### src/mongo/db/query/canonical\_query.cpp
 
@@ -3806,15 +4177,217 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/util/hex.cpp](../utilities)
 
+### src/mongo/db/query/canonical\_query\_test.cpp
+
 <div></div>
 
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+    mongo::Status::operator!=(mongo::Status const&) const
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::fromjson(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::toString() const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
 ### src/mongo/db/query/explain\_plan.cpp
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
 
 <div></div>
 
@@ -3824,23 +4397,71 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrs
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
 ### src/mongo/db/query/get\_runner.cpp
 
 <div></div>
 
-    mongo::getThreadName()
+    mongo::IndexCatalog::IndexIterator::next()
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::ServerParameter
-
-- Provided By:
-
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3868,11 +4489,19 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::IndexCatalog::findIdIndex()
+    mongo::invariantFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 <div></div>
 
@@ -3889,14 +4518,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::numIndexesReady() const
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3924,14 +4545,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::ServerParameter::~ServerParameter()
-
-- Provided By:
-
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
-
-<div></div>
-
     mongo::ShardingState::getCollectionMetadata(std::string const&)
 
 - Provided By:
@@ -3956,14 +4569,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)
-
-- Provided By:
-
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
-
-<div></div>
-
     mongo::ClientCursor::deregisterRunner(mongo::Runner*)
 
 - Provided By:
@@ -3976,15 +4581,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::ExportedServerParameter<bool>::setFromString(std::string const&)
+    mongo::CollectionInfoCache::getQuerySettings() const
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -3996,11 +4601,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::IndexCatalog::getDescriptor(int)
+    mongo::ClientCursor::registerRunner(mongo::Runner*)
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -4008,7 +4613,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4037,11 +4642,35 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::IndexCatalog::IndexIterator::more()
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::CollectionInfoCache::getPlanCache() const
 
 - Provided By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::findIdIndex() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog const*, bool)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4053,11 +4682,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::ServerParameterSet::getGlobal()
+    mongo::IndexCatalog::isMultikey(mongo::IndexDescriptor const*)
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -4075,23 +4704,143 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
-### src/mongo/db/query/idhack\_runner.cpp
+### src/mongo/db/query/get\_runner\_test.cpp
 
 <div></div>
 
-    mongo::IndexCatalog::findIdIndex()
+    mongo::unittest::Test::tearDown()
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -4103,11 +4852,61 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::IndexCatalog::getBtreeBasedIndex(mongo::IndexDescriptor const*)
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+### src/mongo/db/query/idhack\_runner.cpp
+
+<div></div>
+
+    mongo::IndexCatalog::findIdIndex() const
 
 - Provided By:
 
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::shardingState
+
+- Provided By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
 
 <div></div>
 
@@ -4160,14 +4959,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 <div></div>
 
     mongo::ShardingState::needCollectionMetadata(std::string const&) const
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../sharding)
-
-<div></div>
-
-    mongo::shardingState
 
 - Provided By:
 
@@ -4252,6 +5043,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/db/keypattern.cpp](../indexing)
+
+<div></div>
+
+    mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 ### src/mongo/db/query/index\_bounds.cpp
 
@@ -4364,14 +5163,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 <div></div>
 
     mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
 
 - Provided By:
 
@@ -4568,6 +5359,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -4960,6 +5759,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 ### src/mongo/db/query/interval.cpp
 
@@ -5470,6 +6277,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::ElapsedTracker::intervalHasElapsed()
 
 - Provided By:
@@ -5518,6 +6333,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::ClientCursor::suggestYieldMicros()
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::ClientCursor::deregisterRunner(mongo::Runner*)
 
 - Provided By:
@@ -5530,7 +6353,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5547,14 +6370,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ClientCursor::suggestYieldMicros()
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5578,7 +6393,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/structure/collection\_info\_cache.cpp
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5664,14 +6479,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
     mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&, mongo::Status const&)
 
 - Provided By:
@@ -5692,7 +6499,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5840,14 +6647,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::ShardingState::getVersion(std::string const&) const
 
 - Provided By:
@@ -5860,7 +6659,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -5869,14 +6668,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5904,11 +6695,27 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::ClientCursor::setIdleTime(unsigned int)
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::CurOp::getRemainingMaxTimeMicros() const
 
 - Provided By:
 
     - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -5968,19 +6775,19 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::serverGlobalParams
-
-- Provided By:
-
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
-
-<div></div>
-
     mongo::ClientCursor::ClientCursor(mongo::Runner*, int, mongo::BSONObj)
 
 - Provided By:
 
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -6013,6 +6820,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -6206,15 +7021,31 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::operator<<(std::ostream&, mongo::StringData const&)
+    mongo::uasserted(int, char const*)
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
     mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
@@ -6228,31 +7059,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
 
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
 ### src/mongo/db/query/plan\_cache\_test.cpp
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::unittest::Test::tearDown()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    typeinfo for mongo::unittest::Test
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -6264,15 +7079,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::operator<<(std::ostream&, mongo::Status const&)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+    mongo::unittest::Test::tearDown()
 
 - Provided By:
 
@@ -6280,7 +7087,31 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::fromjson(char const*, int*)
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fromjson(std::string const&)
 
 - Provided By:
 
@@ -6288,7 +7119,23 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::unittest::Test::~Test()
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
 
 - Provided By:
 
@@ -6312,27 +7159,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::unittest::TestAssertion::~TestAssertion()
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Status::operator==(mongo::Status const&) const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -6352,6 +7183,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
@@ -6360,7 +7199,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::Status::toString() const
+    mongo::Status::operator!=(mongo::Status const&) const
 
 - Provided By:
 
@@ -6368,19 +7207,35 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::uasserted(int, char const*)
+    mongo::operator<<(std::ostream&, mongo::Status const&)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
-    mongo::unittest::Suite::getSuite(std::string const&)
+    mongo::Status::operator==(mongo::Status const&) const
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
 
 <div></div>
 
@@ -6392,19 +7247,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::msgasserted(int, char const*)
+    mongo::unittest::TestAssertion::~TestAssertion()
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 ### src/mongo/db/query/plan\_enumerator.cpp
 
@@ -6614,14 +7461,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -6659,6 +7498,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 ### src/mongo/db/query/planner\_access.cpp
 
@@ -6932,6 +7779,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::GeoHashConverter::GeoHashConverter(mongo::GeoHashConverter::Parameters const&)
+
+- Provided By:
+
+    - [src/mongo/db/geo/hash.cpp](../geo\_queries)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -7014,19 +7869,19 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::fromjson(char const*, int*)
-
-- Provided By:
-
-    - [src/mongo/db/json.cpp](../bson)
-
-<div></div>
-
     mongo::unittest::Test::~Test()
 
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
 
 <div></div>
 
@@ -7280,6 +8135,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/db/jsobj.cpp](../bson)
 
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
 ### src/mongo/db/query/query\_planner\_test.cpp
 
 <div></div>
@@ -7289,6 +8152,14 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -7316,11 +8187,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/jsobj.cpp](../bson)
 
 <div></div>
 
@@ -7396,7 +8267,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::unittest::Test::run()
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Provided By:
 
@@ -7404,11 +8275,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+    mongo::unittest::Test::run()
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
 <div></div>
 
@@ -7441,6 +8312,130 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+### src/mongo/db/query/query\_planner\_test\_lib.cpp
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+### src/mongo/db/query/query\_settings.cpp
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -7542,15 +8537,23 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
 ### src/mongo/db/query/stage\_builder.cpp
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+    mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../indexing)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7586,6 +8589,15 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::fts::FTSLanguage::~FTSLanguage()
 
 - Provided By:
@@ -7602,22 +8614,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::system::generic_category()
 
 - Provided By:
@@ -7627,14 +8623,6 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -7698,43 +8686,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7742,7 +8698,7 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -7778,36 +8734,11 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 <div></div>
 
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     boost::system::system_category()
 
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8072,22 +9003,21 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 ### src/mongo/db/exec/fetch.cpp
@@ -8282,12 +9212,12 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -8298,7 +9228,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../unit\_tests)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - src/mongo/db/index/btree\_based\_builder.cpp
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
 
 <div></div>
@@ -8356,14 +9285,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/db/geo/shapes.cpp](../geo\_queries)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8431,19 +9352,19 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::DiskLoc::obj() const
 
 - Provided By:
 
     - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8459,7 +9380,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -8956,14 +9877,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -9036,14 +9949,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::NamespaceDetails::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - src/mongo/db/namespace\_details.cpp
-
-<div></div>
-
     mongo::GeoHash::constrains() const
 
 - Provided By:
@@ -9052,11 +9957,19 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9351,7 +10264,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9367,7 +10280,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9648,14 +10561,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
     mongo::getThreadName()
 
 - Provided By:
@@ -9669,6 +10574,14 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
@@ -9688,14 +10601,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexCatalog::getBtreeIndex(mongo::IndexDescriptor const*)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::FieldRef::dottedField(unsigned long) const
 
 - Provided By:
@@ -9709,22 +10614,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::IndexNames::GEO_2D
-
-- Provided By:
-
-    - [src/mongo/db/index\_names.cpp](../indexing)
-
-<div></div>
-
-    mongo::IndexNames::GEO_2DSPHERE
-
-- Provided By:
-
-    - [src/mongo/db/index\_names.cpp](../indexing)
 
 <div></div>
 
@@ -9792,19 +10681,19 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexCatalog::_getAccessMethodName(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
 
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::IndexCatalog::isMultikey(mongo::IndexDescriptor const*)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -9888,7 +10777,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10120,6 +11009,14 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
 
 <div></div>
 
@@ -10503,6 +11400,14 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     S2CellId::level() const
 
 - Provided By:
@@ -10515,7 +11420,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10645,14 +11550,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/third\_party/s2/s2cellid.cc](../s2)
-
-<div></div>
-
-    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -10960,11 +11857,11 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+    mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../indexing)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11008,14 +11905,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::fts::FTSLanguage::~FTSLanguage()
 
 - Provided By:
@@ -11040,22 +11929,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     boost::system::generic_category()
 
 - Provided By:
@@ -11065,14 +11938,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -11136,14 +12001,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
 
 - Provided By:
@@ -11152,27 +12009,19 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::Command::parseResourcePattern(std::string const&, mongo::BSONObj const&) const
 
 - Provided By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11188,7 +12037,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11205,22 +12054,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexCatalog::getDescriptor(int)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11265,14 +12098,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     mongo::fts::FTSLanguage::operator=(mongo::fts::FTSLanguage const&)
 
 - Provided By:
@@ -11297,14 +12122,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-
-<div></div>
-
     mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj const&)
 
 - Provided By:
@@ -11323,104 +12140,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/index\_names.cpp](../indexing)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/fts/fts\_matcher.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::fts::FTSLanguage::~FTSLanguage()
-
-- Provided By:
-
-    - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
@@ -11436,51 +12156,19 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::logger::globalLogManager()
+    mongo::IndexCatalog::findIndexByType(std::string const&, std::vector<mongo::IndexDescriptor*, std::allocator<mongo::IndexDescriptor*> >&) const
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
+    mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::fts::MAX_WEIGHT
-
-- Provided By:
-
-    - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <div></div>
 
@@ -11496,7 +12184,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -11524,6 +12212,14 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
+    mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)
+
+- Provided By:
+
+    - [src/mongo/db/fts/fts\_matcher.cpp](../full\_text\_search\_module)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -11532,11 +12228,51 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    mongo::IndexCatalog::getDescriptor(int)
+    mongo::fts::MAX_WEIGHT
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
+
+<div></div>
+
+    mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/fts/fts\_matcher.cpp](../full\_text\_search\_module)
+
+<div></div>
+
+    mongo::fts::FTSLanguage::~FTSLanguage()
+
+- Provided By:
+
+    - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::DiskLoc::obj() const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <div></div>
 
@@ -11548,19 +12284,28 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
 
 <div></div>
 
@@ -11569,30 +12314,6 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - Provided By:
 
     - [src/mongo/db/field\_ref.cpp](../update\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)
-
-- Provided By:
-
-    - [src/mongo/db/fts/fts\_matcher.cpp](../full\_text\_search\_module)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 ### src/mongo/db/exec/working\_set.cpp
 
@@ -12163,19 +12884,19 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
 <div></div>
 
-    mongo::FieldRangeVector::endKeyInclusive() const
-
-- Used By:
-
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-
-<div></div>
-
     mongo::applySkipLimit(long long, mongo::BSONObj const&)
 
 - Used By:
 
     - [src/mongo/s/commands\_public.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::FieldRangeVector::endKeyInclusive() const
+
+- Used By:
+
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
 
 <div></div>
 
@@ -12568,6 +13289,14 @@ Old way of doing document projections. Given a doc and a projection, transforms 
 
 <div></div>
 
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
     mongo::logger::globalLogManager()
 
 - Provided By:
@@ -12627,7 +13356,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::runCount(char const*, mongo::BSONObj const&, std::string&, int&)
+    mongo::runCount(std::string const&, mongo::BSONObj const&, std::string&, int&)
 
 - Used By:
 
@@ -12644,12 +13373,12 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Used By:
 
     - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
 
@@ -12661,17 +13390,8 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::userAllowedWriteNS(mongo::StringData const&)
-
-- Used By:
-
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -12681,6 +13401,14 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Used By:
 
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::userAllowedWriteNS(mongo::StringData const&)
+
+- Used By:
+
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -12712,11 +13440,11 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Used By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
-    mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*, mongo::UpdateDriver*)
+    mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*, mongo::UpdateDriver*, mongo::CanonicalQuery*)
 
 - Used By:
 
@@ -12744,19 +13472,19 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Provided By:
-
-    - src/mongo/db/catalog/ondisk/namespace\_index.cpp
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Database::getCollection(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12784,22 +13512,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -12824,6 +13536,14 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
+    mongo::Collection::numRecords() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     boost::system::system_category()
 
 - Provided By:
@@ -12832,12 +13552,19 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::currentClient
+    mongo::uasserted(int, std::string const&)
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -12858,14 +13585,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 <div></div>
 
     mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
 
 - Provided By:
 
@@ -12919,7 +13638,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12943,7 +13662,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12967,7 +13686,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -12976,14 +13695,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -13007,7 +13718,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13180,7 +13891,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13197,6 +13908,14 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Provided By:
 
     - [src/mongo/util/elapsed\_tracker.cpp](../utilities)
+
+<div></div>
+
+    mongo::causedBy(mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -13232,7 +13951,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    typeinfo for mongo::MsgAssertionException
+    mongo::msgasserted(int, std::string const&)
 
 - Provided By:
 
@@ -13240,11 +13959,11 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::msgasserted(int, std::string const&)
+    mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const*)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
 
 <div></div>
 
@@ -13269,14 +13988,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::FieldRef::parse(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -13312,22 +14023,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::UpdateDriver::modOptions() const
 
 - Provided By:
@@ -13344,14 +14039,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::dur::DurableInterface::_impl
 
 - Provided By:
@@ -13360,11 +14047,19 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
+    mongo::ClientCursor::invalidateDocument(mongo::StringData const&, mongo::NamespaceDetails const*, mongo::DiskLoc const&, mongo::InvalidationType)
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13424,6 +14119,14 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
+    mongo::IndexCatalog::haveIdIndex() const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::FieldRefSet::toString() const
 
 - Provided By:
@@ -13472,14 +14175,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::IndexCatalog::ok() const
 
 - Provided By:
@@ -13488,27 +14183,11 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
     mongo::UpdateDriver::update(mongo::StringData const&, mongo::mutablebson::Document*, mongo::BSONObj*, mongo::FieldRefSet*)
 
 - Provided By:
 
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13580,7 +14259,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13608,19 +14287,19 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::UpdateDriver::refreshIndexKeys(mongo::IndexPathSet const&)
-
-- Provided By:
-
-    - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
-
-<div></div>
-
     mongo::legalClientSystemNS(mongo::StringData const&, bool)
 
 - Provided By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::FieldRef::FieldRef(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../update\_system)
 
 <div></div>
 
@@ -13629,14 +14308,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Provided By:
 
     - [src/mongo/bson/mutable/document.cpp](../bson)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -13737,14 +14408,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 <div></div>
 
-    mongo::mutablebson::Document::Document()
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../bson)
-
-<div></div>
-
     mongo::UpdateDriver::~UpdateDriver()
 
 - Provided By:
@@ -13757,7 +14420,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/database.cpp
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13765,7 +14428,7 @@ Entry point for various database operations   locks: we should clarify locking, 
 
 - Provided By:
 
-    - src/mongo/db/structure/collection.cpp
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
 
 <div></div>
 
@@ -13774,14 +14437,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 - Provided By:
 
     - [src/mongo/db/field\_ref\_set.cpp](../update\_system)
-
-<div></div>
-
-    mongo::ClientCursor::registerRunner(mongo::Runner*)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 

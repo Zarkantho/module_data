@@ -1,1 +1,75 @@
-[]
+[
+    {
+        "name": "src/mongo/util/trace.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/tests.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/stats/service_stats.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/histogram.cpp", 
+        "execs": [
+            "clientTest", 
+            "httpClientTest", 
+            "firstExample", 
+            "rsExample", 
+            "whereExample", 
+            "authTest", 
+            "secondExample", 
+            "tutorial"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/histogram_test.cpp", 
+        "execs": [
+            "test"
+        ]
+    }
+]

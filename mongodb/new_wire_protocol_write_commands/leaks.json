@@ -295,16 +295,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/util/concurrency/thread_name.cpp"
         ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "symbol": "mongo::getThreadName()", 
         "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
+            "src/mongo/base/status.cpp"
         ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "symbol": "mongo::Status::toString() const", 
         "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
     }, 
     {
@@ -316,9 +316,79 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::time_t_to_String_short(long)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/s/write_ops/batch_downconvert.cpp"
     }, 
     {
@@ -526,9 +596,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::Status::toString() const", 
+        "symbol": "mongo::causedBy(std::string const&)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -547,6 +617,20 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/d_concurrency.cpp"
         ], 
         "symbol": "mongo::Lock::assertWriteLocked(mongo::StringData const&)", 
@@ -554,9 +638,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/structure/collection.cpp"
+            "src/mongo/db/catalog/collection.cpp"
         ], 
         "symbol": "mongo::Collection::insertDocument(mongo::BSONObj const&, bool)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -631,6 +722,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/s/d_state.cpp"
+        ], 
+        "symbol": "mongo::ShardingState::getCollectionMetadata(std::string const&)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logger.cpp"
         ], 
         "symbol": "mongo::logger::globalLogManager()", 
@@ -645,9 +743,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/write_concern.cpp"
+            "src/mongo/db/write_concern_options.cpp"
         ], 
         "symbol": "mongo::WriteConcernOptions::parse(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -666,13 +771,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::UserException", 
-        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/db/ops/insert.cpp"
         ], 
         "symbol": "mongo::fixDocumentForInsert(mongo::BSONObj const&)", 
@@ -680,14 +778,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/s/d_state.cpp"
-        ], 
-        "symbol": "mongo::ShardingState::getCollectionMetadata(std::string const&)", 
-        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::getCollection(mongo::StringData const&)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
@@ -793,9 +884,9 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/catalog/index_catalog.cpp"
+            "src/mongo/db/write_concern.cpp"
         ], 
-        "symbol": "mongo::IndexCatalog::createIndex(mongo::BSONObj, bool)", 
+        "symbol": "mongo::validateWriteConcern(mongo::WriteConcernOptions const&)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -814,7 +905,7 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/database.cpp"
+            "src/mongo/db/catalog/database.cpp"
         ], 
         "symbol": "mongo::Database::createCollection(mongo::StringData const&, bool, mongo::BSONObj const*, bool)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
@@ -824,6 +915,13 @@
             "src/mongo/s/d_state.cpp"
         ], 
         "symbol": "mongo::ShardingState::setShardName(std::string const&)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/curop.cpp"
+        ], 
+        "symbol": "mongo::CurOp::setNS(mongo::StringData const&)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -852,6 +950,13 @@
             "src/mongo/db/ops/delete.cpp"
         ], 
         "symbol": "mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj, bool, bool, bool)", 
+        "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ], 
+        "symbol": "mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)", 
         "object": "src/mongo/db/commands/write_commands/batch_executor.cpp"
     }, 
     {
@@ -1913,167 +2018,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::OID::init()", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
@@ -2126,13 +2070,6 @@
             "src/mongo/base/global_initializer_registerer.cpp"
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/ops/insert.cpp"
-        ], 
-        "symbol": "mongo::fixDocumentForInsert(mongo::BSONObj const&)", 
         "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
     }, 
     {
@@ -2200,13 +2137,6 @@
     }, 
     {
         "sources": [
-            "src/mongo/db/commands/get_last_error.cpp"
-        ], 
-        "symbol": "mongo::getLastErrorDefault", 
-        "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/boost/libs/system/src/error_code.cpp"
         ], 
         "symbol": "boost::system::system_category()", 
@@ -2243,6 +2173,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/db/commands/get_last_error.cpp"
+        ], 
+        "symbol": "mongo::getLastErrorDefault", 
+        "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/base/make_string_vector.cpp"
         ], 
         "symbol": "mongo::_makeStringVector(int, ...)", 
@@ -2253,13 +2190,6 @@
             "src/mongo/db/commands.cpp"
         ], 
         "symbol": "mongo::Command::redactForLogging(mongo::mutablebson::Document*)", 
-        "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/curop.cpp"
-        ], 
-        "symbol": "mongo::CurOp::setNS(mongo::StringData const&)", 
         "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
     }, 
     {
@@ -2278,9 +2208,58 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/commands/write_commands/write_commands.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
     {
@@ -2294,20 +2273,6 @@
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
         "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
@@ -2315,7 +2280,14 @@
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::time_t_to_String_short(long)", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
     {
@@ -2329,14 +2301,28 @@
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::run()", 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
     {
@@ -2344,6 +2330,55 @@
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/json.cpp"
+        ], 
+        "symbol": "mongo::fromjson(char const*, int*)", 
+        "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
         "object": "src/mongo/s/write_ops/batch_downconvert_test.cpp"
     }, 
     {
@@ -2768,10 +2803,38 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/s/version_manager.cpp", 
             "src/mongo/s/default_version.cpp"
         ], 
         "symbol": "mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*, std::string const&, bool, int)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
         "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
     }, 
     {
@@ -2786,7 +2849,35 @@
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
         "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
+        "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/s/write_ops/dbclient_safe_writer.cpp"
     }, 
     {
@@ -3157,14 +3248,7 @@
         "sources": [
             "src/mongo/db/field_parser.cpp"
         ], 
-        "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
-        "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/field_parser.cpp"
-        ], 
-        "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool> const&, bool*, std::string*)", 
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
         "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
     }, 
     {
@@ -3183,16 +3267,16 @@
     }, 
     {
         "sources": [
-            "src/mongo/bson/oid.cpp"
+            "src/mongo/db/field_parser.cpp"
         ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
         "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/db/field_parser.cpp"
+            "src/mongo/bson/oid.cpp"
         ], 
-        "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
         "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
     }, 
     {
@@ -3214,6 +3298,13 @@
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/field_parser.cpp"
+        ], 
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool> const&, bool*, std::string*)", 
         "object": "src/mongo/s/write_ops/batched_insert_request.cpp"
     }, 
     {
@@ -3284,13 +3375,6 @@
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/s/write_ops/batched_command_response.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/field_parser.cpp"
-        ], 
-        "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
         "object": "src/mongo/s/write_ops/batched_command_response.cpp"
     }, 
     {
@@ -3439,6 +3523,167 @@
         ], 
         "symbol": "mongo::serverGlobalParams", 
         "object": "src/mongo/s/write_ops/batch_upconvert.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::OID::init()", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/s/write_ops/batched_update_request_test.cpp"
     }, 
     {
         "sources": [

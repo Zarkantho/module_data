@@ -12,22 +12,22 @@
         "symbol": "mongo::File::File()", 
         "object": "src/mongo/util/file.cpp", 
         "used_by": [
+            "src/mongo/db/dur_journal.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/scripting/engine.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/db/durop.cpp"
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/shell/dbshell.cpp"
         ]
     }, 
     {
         "symbol": "mongo::File::open(char const*, bool, bool)", 
         "object": "src/mongo/util/file.cpp", 
         "used_by": [
+            "src/mongo/db/dur_journal.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/scripting/engine.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/db/durop.cpp"
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/shell/dbshell.cpp"
         ]
     }, 
     {
@@ -41,11 +41,11 @@
         "symbol": "mongo::File::~File()", 
         "object": "src/mongo/util/file.cpp", 
         "used_by": [
+            "src/mongo/db/dur_journal.cpp", 
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/scripting/engine.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/db/durop.cpp"
+            "src/mongo/db/durop.cpp", 
+            "src/mongo/shell/dbshell.cpp"
         ]
     }, 
     {

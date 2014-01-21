@@ -63,7 +63,7 @@ v8 Javascript library files
 
 - Used By:
 
-    - src/mongo/db/namespace\_details.cpp
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../replication)
 
 <div></div>
@@ -256,6 +256,14 @@ v8 Javascript library files
 
 <div></div>
 
+    mongo::JSFiles::batch_api
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../build\_generated\_files)
+
+<div></div>
+
     mongo::JSFiles::mongo
 
 - Provided By:
@@ -401,14 +409,6 @@ v8 Javascript library files
 - Provided By:
 
     - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../boost\_filesystem)
-
-<div></div>
-
-    mongo::JSFiles::writes
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../build\_generated\_files)
 
 ### src/mongo/scripting/engine\_v8.cpp
 

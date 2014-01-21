@@ -209,6 +209,47 @@
         ]
     }, 
     {
+        "name": "src/mongo/s/distlock.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/s/distlock_test.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/field_parser.cpp", 
         "execs": [
             "mongotop", 
@@ -629,7 +670,25 @@
         ]
     }, 
     {
+        "name": "src/mongo/s/commands/auth_schema_upgrade_s.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/s/commands/cluster_hint_cmd.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
         "name": "src/mongo/s/commands/cluster_merge_chunks_cmd.cpp", 
+        "execs": [
+            "mongos"
+        ]
+    }, 
+    {
+        "name": "src/mongo/s/commands/cluster_plan_cache_cmd.cpp", 
         "execs": [
             "mongos"
         ]

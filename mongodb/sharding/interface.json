@@ -35,47 +35,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::ShardedClientCursor::ShardedClientCursor(mongo::QueryMessage&, mongo::ClusteredCursor*)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardedClientCursor::accessed()", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::cursorCache", 
         "object": "src/mongo/s/cursors.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::removeRef(long long)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::store(boost::shared_ptr<mongo::ShardedClientCursor>, int)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::updateMaxTimeMS(long long, int)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
         ]
     }, 
     {
@@ -86,66 +50,10 @@
         ]
     }, 
     {
-        "symbol": "mongo::CursorCache::getMaxTimeMS(long long) const", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardedClientCursor::sendNextBatch(mongo::Request&, int, mongo::_BufBuilder<mongo::TrivialAllocator>&, int&)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::CursorCache::startTimeoutThread()", 
         "object": "src/mongo/s/cursors.cpp", 
         "used_by": [
             "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardedClientCursor::INIT_REPLY_BUFFER_SIZE", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::remove(long long)", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::get(long long) const", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardedClientCursor::getId()", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardedClientCursor::getTotalSent() const", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::CursorCache::getRef(long long) const", 
-        "object": "src/mongo/s/cursors.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
         ]
     }, 
     {
@@ -174,6 +82,14 @@
         ]
     }, 
     {
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string> const&, std::string*, std::string*)", 
+        "object": "src/mongo/db/field_parser.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/privilege_parser.cpp", 
+            "src/mongo/s/write_ops/batched_insert_request.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray> const&, mongo::BSONArray*, std::string*)", 
         "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
@@ -188,7 +104,6 @@
             "src/mongo/s/write_ops/config_coordinator.cpp", 
             "src/mongo/db/commands/merge_chunks_cmd.cpp", 
             "src/mongo/db/auth/privilege_parser.cpp", 
-            "src/mongo/s/write_ops/batched_insert_request.cpp", 
             "src/mongo/s/write_ops/batched_request_metadata.cpp", 
             "src/mongo/s/write_ops/wc_error_detail.cpp", 
             "src/mongo/db/query/type_explain.cpp", 
@@ -203,11 +118,8 @@
         "object": "src/mongo/db/field_parser.cpp", 
         "used_by": [
             "src/mongo/s/write_ops/batched_update_request.cpp", 
-            "src/mongo/s/write_ops/batched_command_response.cpp", 
-            "src/mongo/db/commands/merge_chunks_cmd.cpp", 
-            "src/mongo/s/write_ops/write_error_detail.cpp", 
-            "src/mongo/s/write_ops/batched_insert_request.cpp", 
             "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/s/write_ops/write_error_detail.cpp", 
             "src/mongo/s/write_ops/wc_error_detail.cpp", 
             "src/mongo/s/write_ops/batched_update_document.cpp", 
             "src/mongo/s/write_ops/batched_delete_document.cpp", 
@@ -232,10 +144,16 @@
             "src/mongo/db/query/type_explain.cpp", 
             "src/mongo/s/write_ops/batched_update_request.cpp", 
             "src/mongo/db/auth/privilege_parser.cpp", 
-            "src/mongo/s/write_ops/batched_insert_request.cpp", 
             "src/mongo/s/write_ops/batched_update_document.cpp", 
             "src/mongo/s/write_ops/batched_delete_request.cpp", 
             "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool> const&, bool*, std::string*)", 
+        "object": "src/mongo/db/field_parser.cpp", 
+        "used_by": [
+            "src/mongo/s/write_ops/batched_insert_request.cpp"
         ]
     }, 
     {
@@ -245,6 +163,14 @@
             "src/mongo/s/write_ops/batched_request_metadata.cpp", 
             "src/mongo/s/write_ops/batched_command_response.cpp", 
             "src/mongo/db/query/type_explain.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)", 
+        "object": "src/mongo/db/field_parser.cpp", 
+        "used_by": [
+            "src/mongo/s/write_ops/batched_insert_request.cpp", 
+            "src/mongo/db/commands/merge_chunks_cmd.cpp"
         ]
     }, 
     {
@@ -268,7 +194,6 @@
             "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/commands/mr.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
@@ -309,7 +234,6 @@
             "src/mongo/s/server.cpp", 
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/commands/mr.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
@@ -323,14 +247,26 @@
         ]
     }, 
     {
+        "symbol": "mongo::getDeleter()", 
+        "object": "src/mongo/db/range_deleter_service.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ShardConnection::forgetNS(std::string const&)", 
+        "object": "src/mongo/s/shardconnection.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/mr.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::ShardConnection::~ShardConnection()", 
         "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
@@ -345,9 +281,7 @@
         "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
     }, 
@@ -355,7 +289,6 @@
         "symbol": "mongo::ShardConnection::kill()", 
         "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
     }, 
@@ -372,22 +305,7 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/client_info.cpp", 
             "src/mongo/client/parallel.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardConnection::releaseConnectionsAfterResponse", 
-        "object": "src/mongo/s/shardconnection.cpp", 
-        "used_by": [
-            "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardConnection::forgetNS(std::string const&)", 
-        "object": "src/mongo/s/shardconnection.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/mr.cpp"
         ]
     }, 
     {
@@ -403,15 +321,7 @@
         "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/client/parallel.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardConnection::checkMyConnectionVersions(std::string const&)", 
-        "object": "src/mongo/s/shardconnection.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_single.cpp"
         ]
     }, 
     {
@@ -419,10 +329,7 @@
         "object": "src/mongo/s/shardconnection.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
@@ -464,8 +371,7 @@
         "symbol": "mongo::Shard::reset(std::string const&)", 
         "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_single.cpp"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
@@ -481,7 +387,6 @@
         "symbol": "mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)", 
         "object": "src/mongo/s/shard.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/s/commands_admin.cpp"
         ]
     }, 
@@ -518,8 +423,7 @@
         "symbol": "mongo::ChunkManager::hasShardKey(mongo::BSONObj const&) const", 
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
@@ -555,7 +459,6 @@
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/mongos_options.cpp"
         ]
     }, 
@@ -564,7 +467,6 @@
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/dbtests/chunktests.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
@@ -581,7 +483,6 @@
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/commands_admin.cpp"
         ]
     }, 
@@ -590,24 +491,21 @@
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ChunkManager::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>, std::allocator<mongo::Shard> >&) const", 
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
         "symbol": "mongo::Chunk::splitIfShould(long) const", 
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
@@ -684,38 +582,9 @@
         "symbol": "mongo::ChunkManager::getVersion() const", 
         "object": "src/mongo/s/chunk.cpp", 
         "used_by": [
-            "src/mongo/dbtests/sharding.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Request::gotInsert()", 
-        "object": "src/mongo/s/request.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Request::reset()", 
-        "object": "src/mongo/s/request.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Request::primaryShard() const", 
-        "object": "src/mongo/s/request.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Request::reply(mongo::Message&, std::string const&)", 
-        "object": "src/mongo/s/request.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/client/parallel.cpp", 
+            "src/mongo/dbtests/sharding.cpp"
         ]
     }, 
     {
@@ -740,7 +609,59 @@
         ]
     }, 
     {
+        "symbol": "mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString const&, std::string const&)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DistributedLock::DistributedLock(mongo::ConnectionString const&, std::string const&, unsigned long long, bool)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DistributedLock::unlock(mongo::BSONObj*)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DistributedLock::lock_try(std::string const&, bool, mongo::BSONObj*, double)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::setLockPingerEnabled(bool)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/config_server_fixture.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ScopedDistributedLock::acquire(long long, std::string*)", 
+        "object": "src/mongo/s/distlock.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::CollectionType::toBSON() const", 
+        "object": "src/mongo/s/type_collection.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/merge_chunk_tests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::CollectionType::CollectionType()", 
         "object": "src/mongo/s/type_collection.cpp", 
         "used_by": [
             "src/mongo/dbtests/merge_chunk_tests.cpp"
@@ -776,28 +697,11 @@
         ]
     }, 
     {
-        "symbol": "mongo::CollectionType::CollectionType()", 
-        "object": "src/mongo/s/type_collection.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/merge_chunk_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::getDeleter()", 
-        "object": "src/mongo/db/range_deleter_service.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/commands/cleanup_orphaned_cmd.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)", 
         "object": "src/mongo/s/version_manager.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp", 
-            "src/mongo/s/commands_public.cpp"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
@@ -806,8 +710,6 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
     }, 
@@ -827,55 +729,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::LocksType::process", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::state", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::name", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::ConfigNS", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::lockID", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::who", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LocksType::why", 
-        "object": "src/mongo/s/type_locks.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string> >)", 
         "object": "src/mongo/s/config.cpp", 
         "used_by": [
@@ -889,7 +742,8 @@
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/dbtests/config_server_fixture.cpp"
         ]
     }, 
     {
@@ -898,7 +752,6 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/commands/mr.cpp"
         ]
     }, 
@@ -937,7 +790,14 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
+            "src/mongo/client/parallel.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)", 
+        "object": "src/mongo/s/config.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_public.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
     }, 
@@ -970,6 +830,13 @@
         ]
     }, 
     {
+        "symbol": "mongo::ConfigServer::init(std::string const&)", 
+        "object": "src/mongo/s/config.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/config_server_fixture.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::DBConfig::enableSharding(bool)", 
         "object": "src/mongo/s/config.cpp", 
         "used_by": [
@@ -998,7 +865,6 @@
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/db/commands/mr.cpp"
         ]
     }, 
@@ -1014,15 +880,6 @@
         "object": "src/mongo/s/config.cpp", 
         "used_by": [
             "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::DBConfig::getChunkManagerOrPrimary(std::string const&, boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)", 
-        "object": "src/mongo/s/config.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
@@ -1045,16 +902,6 @@
         "used_by": [
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/client/parallel.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardingState::needCollectionMetadata(std::string const&) const", 
-        "object": "src/mongo/s/d_state.cpp", 
-        "used_by": [
-            "src/mongo/db/ops/update_lifecycle_impl.cpp", 
-            "src/mongo/db/query/idhack_runner.cpp", 
-            "src/mongo/db/commands/mr.cpp", 
-            "src/mongo/db/query/new_find.cpp"
         ]
     }, 
     {
@@ -1137,6 +984,16 @@
         "object": "src/mongo/s/d_state.cpp", 
         "used_by": [
             "src/mongo/db/commands/write_commands/batch_executor.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ShardingState::needCollectionMetadata(std::string const&) const", 
+        "object": "src/mongo/s/d_state.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/update_lifecycle_impl.cpp", 
+            "src/mongo/db/query/idhack_runner.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/query/new_find.cpp"
         ]
     }, 
     {
@@ -1254,27 +1111,6 @@
         ]
     }, 
     {
-        "symbol": "mongo::LockpingsType::ping", 
-        "object": "src/mongo/s/type_lockpings.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LockpingsType::ConfigNS", 
-        "object": "src/mongo/s/type_lockpings.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LockpingsType::process", 
-        "object": "src/mongo/s/type_lockpings.cpp", 
-        "used_by": [
-            "src/mongo/client/distlock.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::balancer", 
         "object": "src/mongo/s/balance.cpp", 
         "used_by": [
@@ -1303,13 +1139,25 @@
         ]
     }, 
     {
+        "symbol": "mongo::DBClientMultiCommand::~DBClientMultiCommand()", 
+        "object": "src/mongo/s/dbclient_multi_command.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::DBClientMultiCommand", 
+        "object": "src/mongo/s/dbclient_multi_command.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::versionManager", 
         "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
             "src/mongo/s/commands_public.cpp", 
             "src/mongo/s/write_ops/dbclient_safe_writer.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/s/strategy_single.cpp", 
             "src/mongo/client/parallel.cpp"
         ]
     }, 
@@ -1324,10 +1172,8 @@
         "symbol": "mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string const&)", 
         "object": "src/mongo/s/default_version.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_single.cpp", 
-            "src/mongo/s/strategy_shard.cpp", 
-            "src/mongo/client/parallel.cpp", 
-            "src/mongo/s/commands_public.cpp"
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/client/parallel.cpp"
         ]
     }, 
     {
@@ -1346,24 +1192,19 @@
         ]
     }, 
     {
-        "symbol": "mongo::Strategy::doIndexQuery(mongo::Request&, mongo::Shard const&)", 
+        "symbol": "mongo::Strategy::commandOp(std::string const&, mongo::BSONObj const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult, std::allocator<mongo::Strategy::CommandResult> >*)", 
         "object": "src/mongo/s/strategy.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::Strategy::doWrite(int, mongo::Request&, mongo::Shard const&, bool)", 
+        "symbol": "mongo::STRATEGY", 
         "object": "src/mongo/s/strategy.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Strategy::broadcastWrite(int, mongo::Request&)", 
-        "object": "src/mongo/s/strategy.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
+            "src/mongo/s/commands_public.cpp"
         ]
     }, 
     {
@@ -1535,7 +1376,22 @@
         ]
     }, 
     {
+        "symbol": "mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
+        "object": "src/mongo/s/cluster_write.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/s/commands_admin.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::ClusterWriterStats::hasShardStats() const", 
+        "object": "src/mongo/s/cluster_write.cpp", 
+        "used_by": [
+            "src/mongo/s/commands/cluster_write_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ClusterWriterStats::getShardStats() const", 
         "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
             "src/mongo/s/commands/cluster_write_cmd.cpp"
@@ -1546,6 +1402,14 @@
         "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
             "src/mongo/s/commands/cluster_write_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::clusterCreateIndex(std::string const&, mongo::BSONObj, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
+        "object": "src/mongo/s/cluster_write.cpp", 
+        "used_by": [
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp", 
+            "src/mongo/s/commands_admin.cpp"
         ]
     }, 
     {
@@ -1563,17 +1427,18 @@
         ]
     }, 
     {
-        "symbol": "mongo::ClusterWriterStats::getShardStats() const", 
+        "symbol": "mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
         "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "src/mongo/s/commands/cluster_write_cmd.cpp"
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::WriteBackListener::waitFor(mongo::WriteBackListener::ConnectionIdent const&, mongo::OID const&)", 
-        "object": "src/mongo/s/writeback_listener.cpp", 
+        "symbol": "mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)", 
+        "object": "src/mongo/s/cluster_write.cpp", 
         "used_by": [
-            "src/mongo/s/client_info.cpp"
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/auth/authz_manager_external_state_s.cpp"
         ]
     }, 
     {
@@ -1591,24 +1456,9 @@
         ]
     }, 
     {
-        "symbol": "mongo::ShardKeyPattern::toString() const", 
-        "object": "src/mongo/s/shardkey.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardKeyPattern::hasShardKey(mongo::BSONObj const&) const", 
-        "object": "src/mongo/s/shardkey.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const", 
         "object": "src/mongo/s/shardkey.cpp", 
         "used_by": [
-            "src/mongo/s/strategy_shard.cpp", 
             "src/mongo/s/commands_admin.cpp"
         ]
     }, 
@@ -1620,13 +1470,6 @@
             "src/mongo/s/commands_admin.cpp", 
             "src/mongo/dbtests/sharding.cpp", 
             "src/mongo/dbtests/chunktests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ShardKeyPattern::moveToFront(mongo::BSONObj const&) const", 
-        "object": "src/mongo/s/shardkey.cpp", 
-        "used_by": [
-            "src/mongo/s/strategy_shard.cpp"
         ]
     }, 
     {

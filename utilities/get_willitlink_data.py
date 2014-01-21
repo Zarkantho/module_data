@@ -13,7 +13,9 @@ import re
 import willitlink
 
 willitlink_location = os.path.dirname(willitlink.__file__)
-default_data_file = os.path.join(willitlink_location, os.pardir, 'data', "dep_graph.json")
+#default_data_file = os.path.join(willitlink_location, os.pardir, 'data', "dep_graph.json")
+default_cwd = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
+default_data_file = os.path.join(default_cwd, os.pardir, 'mongodb-willitlink-data', "dep_graph.json")
 
 def dbgprint(my_object):
     print json.dumps(my_object, indent=4)

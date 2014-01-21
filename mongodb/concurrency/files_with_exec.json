@@ -2,14 +2,22 @@
     {
         "name": "src/mongo/util/concurrency/rwlockimpl.cpp", 
         "execs": [
-            "clientTest", 
-            "httpClientTest", 
-            "firstExample", 
-            "rsExample", 
-            "whereExample", 
-            "authTest", 
-            "secondExample", 
-            "tutorial"
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
