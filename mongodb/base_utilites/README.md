@@ -8,7 +8,7 @@
 Use this in a class to explicitly disallow copying of the class. This can prevent bugs where you  were accidentally copying a class that wasn't safe to copy.
 
 # Files
-- src/mongo/base/disallow\_copying.h
+- src/mongo/base/disallow\_copying.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 (not used outside this module)
@@ -22,7 +22,7 @@ Use this in a class to explicitly disallow copying of the class. This can preven
 64 bit atomic counter
 
 # Files
-- src/mongo/base/counter.h
+- src/mongo/base/counter.h   (mongod, tools)
 - src/mongo/base/counter\_test.cpp   ()
 
 # Interface
@@ -126,9 +126,9 @@ Use this in a class to explicitly disallow copying of the class. This can preven
 Vector and map that delete pointers to elements on destruction. "owning" the memory means you are  responsible for deleting it.
 
 # Files
-- src/mongo/base/owned\_pointer\_map.h
+- src/mongo/base/owned\_pointer\_map.h   (mongod, tools, mongos)
 - src/mongo/base/owned\_pointer\_map\_test.cpp   ()
-- src/mongo/base/owned\_pointer\_vector.h
+- src/mongo/base/owned\_pointer\_vector.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/base/owned\_pointer\_vector\_test.cpp   ()
 
 # Interface
@@ -322,13 +322,13 @@ Vector and map that delete pointers to elements on destruction. "owning" the mem
 Status to return errors. StatusWith can return either an error or a value, so we don't have to  use return parameters as arguments to the function.
 
 # Files
-- src/mongo/base/status-inl.h
-- src/mongo/base/status.cpp   (mongod, tools, mongos)
-- src/mongo/base/status.h
+- src/mongo/base/status-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/status.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/status.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/base/status\_test.cpp   ()
-- src/mongo/base/status\_with.h
-- src/mongo/base/error\_codes.err
-- src/mongo/base/generate\_error\_codes.py
+- src/mongo/base/status\_with.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/error\_codes.err   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/generate\_error\_codes.py   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -878,8 +878,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
 Number to string conversion   Why use these: is this somehow fast/safe? somehow JSON-aware?
 
 # Files
-- src/mongo/base/parse\_number.cpp   (cppclientdriver)
-- src/mongo/base/parse\_number.h
+- src/mongo/base/parse\_number.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/parse\_number.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/base/parse\_number\_test.cpp   ()
 
 # Interface
@@ -1178,9 +1178,9 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
 The StringData class is a wrapper around a char* that can be constructed from either std::string  and a char* without copying the buffer. This is because a StringData doesn't free the buffer, so  unlike std::string it doesn't need to have its own copy.   Why: use for speed? is this similar to other classes people might be   familiar with from elsewhere?
 
 # Files
-- src/mongo/base/string\_data-inl.h
-- src/mongo/base/string\_data.cpp   (cppclientdriver)
-- src/mongo/base/string\_data.h
+- src/mongo/base/string\_data-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/string\_data.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/base/string\_data.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/base/string\_data\_test.cpp   ()
 
 # Interface

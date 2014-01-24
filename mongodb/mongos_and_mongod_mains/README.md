@@ -9,7 +9,7 @@ Main for mongod
 
 # Files
 - src/mongo/db/db.cpp   (mongod)
-- src/mongo/db/db.h
+- src/mongo/db/db.h   (mongod, tools, mongos)
 
 # Interface
 (not used outside this module)
@@ -1276,7 +1276,7 @@ Mongod command line options
 
 # Files
 - src/mongo/db/mongod\_options.cpp   (mongod)
-- src/mongo/db/mongod\_options.h
+- src/mongo/db/mongod\_options.h   (mongod, tools)
 - src/mongo/db/mongod\_options\_init.cpp   (mongod)
 - src/mongo/db/mongod\_options\_test.cpp   ()
 
@@ -1922,7 +1922,7 @@ Main for mongos
 
 # Files
 - src/mongo/s/server.cpp   (mongos)
-- src/mongo/s/server.h
+- src/mongo/s/server.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -2756,7 +2756,7 @@ Mongos command line options
 
 # Files
 - src/mongo/s/mongos\_options.cpp   (mongos)
-- src/mongo/s/mongos\_options.h
+- src/mongo/s/mongos\_options.h   (mongod, tools, mongos)
 - src/mongo/s/mongos\_options\_init.cpp   (mongos)
 - src/mongo/s/mongos\_options\_test.cpp   ()
 

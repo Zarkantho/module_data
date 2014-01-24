@@ -4,6 +4,147 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/storage/record.cpp"
+        ], 
+        "symbol": "mongo::Record::touch(bool) const", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::LockMongoFilesShared::mmmutex", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::allowedToThrowPageFaultException() const", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/d_concurrency.cpp"
+        ], 
+        "symbol": "mongo::Lock::isLocked()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/mmap.cpp"
+        ], 
+        "symbol": "mongo::LockMongoFilesShared::era", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp", 
+            "src/mongo/s/s_only.cpp"
+        ], 
+        "symbol": "mongo::currentClient", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/db/pagefault.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
         "object": "src/mongo/db/prefetch.cpp"
     }, 
     {
@@ -237,146 +378,5 @@
         ], 
         "symbol": "mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)", 
         "object": "src/mongo/db/prefetch.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::interruption_point()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/storage/record.cpp"
-        ], 
-        "symbol": "mongo::Record::touch(bool) const", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::LockMongoFilesShared::mmmutex", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::allowedToThrowPageFaultException() const", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/d_concurrency.cpp"
-        ], 
-        "symbol": "mongo::Lock::isLocked()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/mmap.cpp"
-        ], 
-        "symbol": "mongo::LockMongoFilesShared::era", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp", 
-            "src/mongo/s/s_only.cpp"
-        ], 
-        "symbol": "mongo::currentClient", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/pagefault.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_current_thread_data()", 
-        "object": "src/mongo/db/pagefault.cpp"
     }
 ]

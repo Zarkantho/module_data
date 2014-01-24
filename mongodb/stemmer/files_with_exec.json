@@ -21,6 +21,27 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/include/libstemmer.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c", 
         "execs": [
             "mongotop", 
@@ -42,7 +63,70 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/libstemmer/modules_utf8.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/runtime/api.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/runtime/api.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/runtime/header.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -420,7 +504,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -462,7 +588,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_english.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -504,7 +672,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_french.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_german.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -546,7 +756,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -588,7 +840,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -630,7 +924,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -672,7 +1008,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -714,7 +1092,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h", 
         "execs": [
             "mongotop", 
             "mongod", 

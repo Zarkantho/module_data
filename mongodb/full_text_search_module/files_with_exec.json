@@ -21,6 +21,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/fts_command.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/fts_command_mongod.cpp", 
         "execs": [
             "mongotop", 
@@ -89,11 +110,53 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/fts_index_format.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/fts_index_format_test.cpp", 
         "execs": []
     }, 
     {
         "name": "src/mongo/db/fts/fts_language.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/fts_language.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -139,11 +202,53 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/fts_matcher.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/fts_matcher_test.cpp", 
         "execs": []
     }, 
     {
         "name": "src/mongo/db/fts/fts_query.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/fts_query.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -189,6 +294,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/fts_spec.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/fts_spec_test.cpp", 
         "execs": []
     }, 
@@ -214,11 +340,74 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/fts_util.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/fts_util_test.cpp", 
         "execs": []
     }, 
     {
+        "name": "src/mongo/db/fts/generate_stop_words.py", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/stemmer.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stemmer.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -264,11 +453,368 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/fts/stop_words.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_danish.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_dutch.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_english.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_finnish.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_french.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_german.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_hungarian.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_italian.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_norwegian.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_portuguese.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_romanian.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_russian.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_spanish.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/stop_words_swedish.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/stop_words_test.cpp", 
         "execs": []
     }, 
     {
+        "name": "src/mongo/db/fts/stop_words_turkish.txt", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/fts/tokenizer.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/fts/tokenizer.h", 
         "execs": [
             "mongotop", 
             "mongod", 

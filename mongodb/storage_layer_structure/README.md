@@ -8,8 +8,8 @@
 Helper to manage strings that look like "<db>.<collection>"
 
 # Files
-- src/mongo/db/namespace\_string-inl.h
-- src/mongo/db/namespace\_string.h
+- src/mongo/db/namespace\_string-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/db/namespace\_string.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/db/namespace\_string\_test.cpp   ()
 
 # Interface
@@ -139,45 +139,45 @@ Files containing the structural metadata about the databases/data files/collecti
 # Files
 - src/mongo/db/cap.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection.cpp   (mongod, tools)
-- src/mongo/db/catalog/collection.h
+- src/mongo/db/catalog/collection.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/collection\_info\_cache.cpp   (mongod, tools)
-- src/mongo/db/catalog/collection\_info\_cache.h
+- src/mongo/db/catalog/collection\_info\_cache.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/database.cpp   (mongod, tools)
-- src/mongo/db/catalog/database.h
+- src/mongo/db/catalog/database.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/database\_holder.cpp   (mongod, tools)
-- src/mongo/db/catalog/database\_holder.h
+- src/mongo/db/catalog/database\_holder.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/index\_catalog.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_catalog.h
+- src/mongo/db/catalog/index\_catalog.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/index\_catalog\_entry.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_catalog\_entry.h
+- src/mongo/db/catalog/index\_catalog\_entry.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/index\_create.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_create.h
+- src/mongo/db/catalog/index\_create.h   (mongod, tools)
 - src/mongo/db/storage\_options.cpp   (mongod, tools)
-- src/mongo/db/storage\_options.h
+- src/mongo/db/storage\_options.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/db/structure/btree/btree.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btree.h
+- src/mongo/db/structure/btree/btree.h   (mongod, tools)
 - src/mongo/db/structure/btree/btree\_stats.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btree\_stats.h
+- src/mongo/db/structure/btree/btree\_stats.h   (mongod, tools)
 - src/mongo/db/structure/btree/btreebuilder.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btreebuilder.h
+- src/mongo/db/structure/btree/btreebuilder.h   (mongod, tools)
 - src/mongo/db/structure/btree/key.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/key.h
+- src/mongo/db/structure/btree/key.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/index\_details.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/index\_details.h
-- src/mongo/db/structure/catalog/namespace-inl.h
+- src/mongo/db/structure/catalog/index\_details.h   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace-inl.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace.cpp   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace.h
-- src/mongo/db/structure/catalog/namespace\_details-inl.h
+- src/mongo/db/structure/catalog/namespace.h   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace\_details-inl.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace\_details.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/namespace\_details.h
+- src/mongo/db/structure/catalog/namespace\_details.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/namespace\_index.h
+- src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace\_test.cpp   ()
 - src/mongo/db/structure/collection\_compact.cpp   (mongod, tools)
 - src/mongo/db/structure/collection\_iterator.cpp   (mongod, tools)
-- src/mongo/db/structure/collection\_iterator.h
+- src/mongo/db/structure/collection\_iterator.h   (mongod, tools)
 - src/mongo/db/structure/record\_store.cpp   (mongod, tools)
-- src/mongo/db/structure/record\_store.h
+- src/mongo/db/structure/record\_store.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -5380,7 +5380,7 @@ Files containing the structural metadata about the databases/data files/collecti
 A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an  "address" into our database's storage space.
 
 # Files
-- src/mongo/db/diskloc.h
+- src/mongo/db/diskloc.h   (mongod, tools, mongos)
 - src/mongo/db/diskloc\_test.cpp   ()
 
 # Interface
@@ -5484,7 +5484,7 @@ A DiskLoc is simply a file number and offset into the file for a db. You can thi
 Type of a DiskLoc invalidation.
 
 # Files
-- src/mongo/db/invalidation\_type.h
+- src/mongo/db/invalidation\_type.h   (mongod, tools, mongos)
 
 # Interface
 (not used outside this module)
@@ -5499,7 +5499,7 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
 # Files
 - src/mongo/db/storage/record.cpp   (mongod, tools)
-- src/mongo/db/storage/record.h
+- src/mongo/db/storage/record.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -5909,7 +5909,7 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
 # Files
 - src/mongo/db/storage/extent.cpp   (mongod, tools)
-- src/mongo/db/storage/extent.h
+- src/mongo/db/storage/extent.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -6118,7 +6118,7 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
 # Files
 - src/mongo/db/storage/extent\_manager.cpp   (mongod, tools)
-- src/mongo/db/storage/extent\_manager.h
+- src/mongo/db/storage/extent\_manager.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -6437,7 +6437,7 @@ Utilities to clone entire collections and databases
 
 # Files
 - src/mongo/db/cloner.cpp   (mongod, tools)
-- src/mongo/db/cloner.h
+- src/mongo/db/cloner.h   (mongod, tools)
 
 # Interface
 
@@ -7023,7 +7023,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 # Files
 - src/mongo/db/instance.cpp   (mongod, tools)
-- src/mongo/db/instance.h
+- src/mongo/db/instance.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -9027,9 +9027,9 @@ This is another really hairy, really old legacy file. At this point it's easier 
 
 # Files
 - src/mongo/db/pdfile.cpp   (mongod, tools)
-- src/mongo/db/pdfile.h
-- src/mongo/db/pdfile\_private.h
-- src/mongo/db/pdfile\_version.h
+- src/mongo/db/pdfile.h   (mongod, tools, mongos)
+- src/mongo/db/pdfile\_private.h   (mongod, tools)
+- src/mongo/db/pdfile\_version.h   (mongod, tools, mongos)
 
 # Interface
 

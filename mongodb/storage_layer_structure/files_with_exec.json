@@ -1,5 +1,63 @@
 [
     {
+        "name": "src/mongo/db/namespace_string-inl.h", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "test", 
+            "authTest", 
+            "mongostat", 
+            "bsondump", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/namespace_string.h", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "test", 
+            "authTest", 
+            "mongostat", 
+            "bsondump", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/namespace_string_test.cpp", 
         "execs": []
     }, 
@@ -44,6 +102,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/catalog/collection.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/catalog/collection_info_cache.cpp", 
         "execs": [
             "mongotop", 
@@ -56,6 +135,27 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/catalog/collection_info_cache.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
@@ -84,6 +184,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/catalog/database.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/catalog/database_holder.cpp", 
         "execs": [
             "mongotop", 
@@ -96,6 +217,27 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/catalog/database_holder.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
@@ -124,6 +266,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/catalog/index_catalog.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/catalog/index_catalog_entry.cpp", 
         "execs": [
             "mongotop", 
@@ -144,7 +307,48 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/catalog/index_catalog_entry.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/catalog/index_create.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/catalog/index_create.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -184,7 +388,56 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/storage_options.h", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongofiles", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongostat", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/btree/btree.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/btree/btree.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -224,7 +477,47 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/btree/btree_stats.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/btree/btreebuilder.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/btree/btreebuilder.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -264,6 +557,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/btree/key.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/catalog/index_details.cpp", 
         "execs": [
             "mongotop", 
@@ -284,7 +598,91 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/catalog/index_details.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/catalog/namespace-inl.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/catalog/namespace.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/catalog/namespace.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/catalog/namespace_details-inl.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -325,6 +723,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/catalog/namespace_details.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/catalog/namespace_index.cpp", 
         "execs": [
             "mongotop", 
@@ -337,6 +756,27 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/structure/catalog/namespace_index.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
@@ -389,6 +829,26 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/collection_iterator.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/structure/record_store.cpp", 
         "execs": [
             "mongotop", 
@@ -409,8 +869,71 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/structure/record_store.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/diskloc.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/diskloc_test.cpp", 
         "execs": []
+    }, 
+    {
+        "name": "src/mongo/db/invalidation_type.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }, 
     {
         "name": "src/mongo/db/storage/record.cpp", 
@@ -425,6 +948,27 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/storage/record.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
@@ -453,6 +997,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/storage/extent.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/storage/extent_manager.cpp", 
         "execs": [
             "mongotop", 
@@ -473,7 +1038,48 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/storage/extent_manager.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/cloner.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/cloner.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -513,6 +1119,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/instance.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongofiles", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongostat", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/pdfile.cpp", 
         "execs": [
             "mongotop", 
@@ -525,6 +1152,68 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pdfile.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pdfile_private.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pdfile_version.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 

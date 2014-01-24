@@ -1,26 +1,5 @@
 [
     {
-        "symbol": "mongo::dur::getJournalDir()", 
-        "object": "src/mongo/db/dur_journal.cpp", 
-        "used_by": [
-            "src/mongo/db/dbcommands_admin.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dur::haveJournalFiles(bool)", 
-        "object": "src/mongo/db/dur_journal.cpp", 
-        "used_by": [
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dur::journalCleanup(bool)", 
-        "object": "src/mongo/db/dur_journal.cpp", 
-        "used_by": [
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::AlignedBuilder::kill()", 
         "object": "src/mongo/util/alignedbuilder.cpp", 
         "used_by": [
@@ -129,6 +108,27 @@
         "object": "src/mongo/db/dur.cpp", 
         "used_by": [
             "src/mongo/db/d_concurrency.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dur::getJournalDir()", 
+        "object": "src/mongo/db/dur_journal.cpp", 
+        "used_by": [
+            "src/mongo/db/dbcommands_admin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dur::haveJournalFiles(bool)", 
+        "object": "src/mongo/db/dur_journal.cpp", 
+        "used_by": [
+            "src/mongo/db/instance.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dur::journalCleanup(bool)", 
+        "object": "src/mongo/db/dur_journal.cpp", 
+        "used_by": [
+            "src/mongo/db/instance.cpp"
         ]
     }, 
     {

@@ -1,160 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/util/file_allocator.cpp"
-        ], 
-        "symbol": "mongo::FileAllocator::get()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::getcurns", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/file_allocator.cpp"
-        ], 
-        "symbol": "mongo::FileAllocator::allocateAsap(std::string const&, unsigned long long&)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::interruption_point()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_current_thread_data()", 
-        "object": "src/mongo/util/mmap_posix.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/processinfo_darwin.cpp"
         ], 
         "symbol": "mongo::ProcessInfo::supported()", 
@@ -376,5 +222,159 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/mmap.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/file_allocator.cpp"
+        ], 
+        "symbol": "mongo::FileAllocator::get()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/file_allocator.cpp"
+        ], 
+        "symbol": "mongo::FileAllocator::allocateAsap(std::string const&, unsigned long long&)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/mmap_posix.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/mmap_posix.cpp"
     }
 ]

@@ -1,5 +1,26 @@
 [
     {
+        "name": "src/mongo/db/pipeline/accumulator.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/pipeline/accumulator_add_to_set.cpp", 
         "execs": [
             "mongotop", 
@@ -168,7 +189,70 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/pipeline/document.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/document_internal.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/pipeline/document_source.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/document_source.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -503,7 +587,70 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/pipeline/expression.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/expression_context.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/pipeline/field_path.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/field_path.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -545,6 +692,27 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/pipeline/pipeline.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/pipeline/pipeline_d.cpp", 
         "execs": [
             "mongotop", 
@@ -557,6 +725,47 @@
             "mongostat", 
             "bsondump", 
             "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/pipeline_d.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/pipeline_optimizations.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
             "mongooplog", 
             "test", 
             "mongoexport", 
@@ -586,11 +795,135 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/pipeline/value.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/pipeline/value_internal.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/sorter/sorter.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/sorter/sorter.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/sorter/sorter_test.cpp", 
         "execs": []
     }, 
     {
         "name": "src/mongo/db/extsort.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/extsort.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/sort_phase_one.h", 
         "execs": [
             "mongotop", 
             "mongod", 

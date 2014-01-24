@@ -8,41 +8,41 @@
 jesus, i hope this becomes a library :)   can you say a bit about what kind of logging we do? is there any sort of   ordering or atomicity (maybe per-call-to-log, or per log line?) our   logging guarantees? 'log lines are emitted in-order with respect to each   process thread?' maybe?)  Logging system (NOTE: The first two actually aren't part of the "logger" library, but I see no  reason why they should not be)
 
 # Files
-- src/mongo/util/log.cpp   (mongod, tools, mongos)
-- src/mongo/util/log.h
-- src/mongo/logger/appender.h
-- src/mongo/logger/console.cpp   (cppclientdriver)
-- src/mongo/logger/console.h
-- src/mongo/logger/console\_appender.h
-- src/mongo/logger/encoder.h
-- src/mongo/logger/labeled\_level.h
-- src/mongo/logger/log\_domain-impl.h
-- src/mongo/logger/log\_domain.h
-- src/mongo/logger/log\_manager.cpp   (mongod, tools, mongos)
-- src/mongo/logger/log\_manager.h
-- src/mongo/logger/log\_severity-inl.h
-- src/mongo/logger/log\_severity.cpp   (mongod, tools, mongos)
-- src/mongo/logger/log\_severity.h
+- src/mongo/util/log.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/log.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/appender.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/console.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/console.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/console\_appender.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/encoder.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/labeled\_level.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_domain-impl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_domain.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_manager.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_manager.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_severity-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_severity.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/log\_severity.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/logger/log\_test.cpp   ()
-- src/mongo/logger/logger.cpp   (cppclientdriver)
-- src/mongo/logger/logger.h
-- src/mongo/logger/logstream\_builder.cpp   (cppclientdriver)
-- src/mongo/logger/logstream\_builder.h
-- src/mongo/logger/message\_event.h
-- src/mongo/logger/message\_event\_utf8\_encoder.cpp   (mongod, tools, mongos)
-- src/mongo/logger/message\_event\_utf8\_encoder.h
-- src/mongo/logger/message\_log\_domain.cpp   (cppclientdriver)
-- src/mongo/logger/message\_log\_domain.h
-- src/mongo/logger/ramlog.cpp   (mongod, tools, mongos)
-- src/mongo/logger/ramlog.h
-- src/mongo/logger/rotatable\_file\_appender.h
-- src/mongo/logger/rotatable\_file\_manager.cpp   (mongod, tools, mongos)
-- src/mongo/logger/rotatable\_file\_manager.h
-- src/mongo/logger/rotatable\_file\_writer.cpp   (cppclientdriver)
-- src/mongo/logger/rotatable\_file\_writer.h
+- src/mongo/logger/logger.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/logger.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/logstream\_builder.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/logstream\_builder.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/message\_event.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/message\_event\_utf8\_encoder.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/message\_event\_utf8\_encoder.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/message\_log\_domain.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/message\_log\_domain.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/ramlog.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/ramlog.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/rotatable\_file\_appender.h   (mongod, mongos)
+- src/mongo/logger/rotatable\_file\_manager.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/rotatable\_file\_manager.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/rotatable\_file\_writer.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/logger/rotatable\_file\_writer.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/logger/rotatable\_file\_writer\_test.cpp   ()
-- src/mongo/logger/syslog\_appender.h
-- src/mongo/logger/tee.h
+- src/mongo/logger/syslog\_appender.h   (mongod, mongos)
+- src/mongo/logger/tee.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -2176,7 +2176,7 @@ Helpers to dump a bunch of information about the current process   at crash time
 
 # Files
 - src/mongo/db/log\_process\_details.cpp   (mongod, tools, mongos)
-- src/mongo/db/log\_process\_details.h
+- src/mongo/db/log\_process\_details.h   (mongod, tools, mongos)
 
 # Interface
 

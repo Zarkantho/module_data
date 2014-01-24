@@ -1,12 +1,5 @@
 [
     {
-        "symbol": "boost::filesystem3::detail::unique_path(boost::filesystem3::path const&, boost::system::error_code*)", 
-        "object": "src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp", 
-        "used_by": [
-            "src/mongo/unittest/temp_dir.cpp"
-        ]
-    }, 
-    {
         "symbol": "boost::filesystem3::absolute(boost::filesystem3::path const&, boost::filesystem3::path const&)", 
         "object": "src/third_party/boost/libs/filesystem/v3/src/operations.cpp", 
         "used_by": [
@@ -327,6 +320,13 @@
             "src/mongo/shell/shell_utils_extended.cpp", 
             "src/mongo/tools/restore.cpp", 
             "src/mongo/tools/import.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::filesystem3::detail::unique_path(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp", 
+        "used_by": [
+            "src/mongo/unittest/temp_dir.cpp"
         ]
     }
 ]

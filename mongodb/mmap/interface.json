@@ -1,91 +1,5 @@
 [
     {
-        "symbol": "mongo::MemoryMappedFile::prepareFlush()", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::close()", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/dur_recover.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::createPrivateMap()", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for mongo::MemoryMappedFile", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/dur_recover.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::MemoryMappedFile", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::flush(bool)", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/db/storage/data_file.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::remapPrivateView(void*)", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::g_minOSPageSizeBytes", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/util/touch_pages.cpp", 
-            "src/mongo/db/prefetch.cpp", 
-            "src/mongo/util/logfile.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::MemoryMappedFile::MemoryMappedFile()", 
-        "object": "src/mongo/util/mmap_posix.cpp", 
-        "used_by": [
-            "src/mongo/tools/sniffer.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/dur_recover.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::LockMongoFilesShared::mmmutex", 
         "object": "src/mongo/util/mmap.cpp", 
         "used_by": [
@@ -188,6 +102,92 @@
         "object": "src/mongo/util/mmap.cpp", 
         "used_by": [
             "src/mongo/client/examples/mongoperf.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::prepareFlush()", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::close()", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::createPrivateMap()", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::MemoryMappedFile", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::MemoryMappedFile", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::flush(bool)", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/data_file.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::remapPrivateView(void*)", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/durable_mapped_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::g_minOSPageSizeBytes", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/util/touch_pages.cpp", 
+            "src/mongo/db/prefetch.cpp", 
+            "src/mongo/util/logfile.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::MemoryMappedFile::MemoryMappedFile()", 
+        "object": "src/mongo/util/mmap_posix.cpp", 
+        "used_by": [
+            "src/mongo/tools/sniffer.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp"
         ]
     }
 ]

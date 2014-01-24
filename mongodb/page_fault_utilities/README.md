@@ -9,7 +9,7 @@ Contains the PageFaultException and NoPageFaultsAllowed classes.   where are the
 
 # Files
 - src/mongo/db/pagefault.cpp   (mongod, tools)
-- src/mongo/db/pagefault.h
+- src/mongo/db/pagefault.h   (mongod, tools)
 
 # Interface
 
@@ -244,7 +244,7 @@ Code to go in and touch pages so that they are brought into memory.   who calls 
 
 # Files
 - src/mongo/db/prefetch.cpp   (mongod, tools)
-- src/mongo/db/prefetch.h
+- src/mongo/db/prefetch.h   (mongod, tools)
 
 # Interface
 

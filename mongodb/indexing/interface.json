@@ -1,9 +1,274 @@
 [
     {
+        "symbol": "mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/index/2d_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::TwoDAccessMethod::getKeys(mongo::BSONObj const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&) const", 
+        "object": "src/mongo/db/index/2d_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dcommon.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/index/btree_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index/btree_based_access_method.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/extsorttests.cpp", 
+            "src/mongo/dbtests/indexupdatetests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeIndexCursor::seek(std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&)", 
+        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/index_scan.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeIndexCursor::skip(mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&)", 
+        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/index_scan.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeIndexCursor::aboutToDeleteBucket(mongo::DiskLoc const&)", 
+        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
+        "used_by": [
+            "src/mongo/db/structure/btree/btree.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeKeyGeneratorV1::BtreeKeyGeneratorV1(std::vector<char const*, std::allocator<char const*> >, std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> >, bool)", 
+        "object": "src/mongo/db/index/btree_key_generator.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/namespacetests.cpp", 
+            "src/mongo/db/exec/sort.cpp", 
+            "src/mongo/db/queryutil.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BtreeKeyGenerator::getKeys(mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*) const", 
+        "object": "src/mongo/db/index/btree_key_generator.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/namespacetests.cpp", 
+            "src/mongo/db/exec/sort.cpp", 
+            "src/mongo/db/queryutil.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::FTSAccessMethod", 
+        "object": "src/mongo/db/index/fts_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/stagedebug_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FTSAccessMethod::FTSAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/index/fts_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HashAccessMethod::HashAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/index/hash_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HashAccessMethod::makeSingleKey(mongo::BSONElement const&, int, int)", 
+        "object": "src/mongo/db/index/hash_access_method.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/namespacetests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HashAccessMethod::getKeysImpl(mongo::BSONObj const&, std::string const&, int, int, bool, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)", 
+        "object": "src/mongo/db/index/hash_access_method.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/namespacetests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::IndexCatalogEntry*)", 
+        "object": "src/mongo/db/index/haystack_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)", 
+        "object": "src/mongo/db/index/haystack_access_method.cpp", 
+        "used_by": [
+            "src/mongo/db/geo/haystack.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::S2AccessMethod::S2AccessMethod(mongo::IndexCatalogEntry*)", 
         "object": "src/mongo/db/index/s2_access_method.cpp", 
         "used_by": [
             "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexBuilder::IndexBuilder(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_builder.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/oplog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)", 
+        "object": "src/mongo/db/index_builder.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/compact.cpp", 
+            "src/mongo/db/commands/test_commands.cpp", 
+            "src/mongo/db/commands/rename_collection.cpp", 
+            "src/mongo/db/commands/drop_indexes.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/dbtests/replsettests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexBuilder::~IndexBuilder()", 
+        "object": "src/mongo/db/index_builder.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/oplog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_builder.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/compact.cpp", 
+            "src/mongo/db/commands/test_commands.cpp", 
+            "src/mongo/db/commands/rename_collection.cpp", 
+            "src/mongo/db/commands/collection_to_capped.cpp", 
+            "src/mongo/db/commands/drop_indexes.cpp", 
+            "src/mongo/db/dbcommands.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexBuilder::build(mongo::Client::Context&) const", 
+        "object": "src/mongo/db/index_builder.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/oplog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexLegacy::adjustIndexSpecObject(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_legacy.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexLegacy::postBuildHook(mongo::Collection*, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_legacy.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexLegacy::getMissingField(mongo::Collection*, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_legacy.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/namespacetests.cpp", 
+            "src/mongo/s/d_split.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::findPluginName(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::GEO_HAYSTACK", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp", 
+            "src/mongo/db/geo/haystack.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::GEO_2D", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/commands/geonear.cpp", 
+            "src/mongo/db/queryutil.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::GEO_2DSPHERE", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/geonear.cpp", 
+            "src/mongo/db/queryutil.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::TEXT", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexNames::HASHED", 
+        "object": "src/mongo/db/index_names.cpp", 
+        "used_by": [
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::indexRebuilder", 
+        "object": "src/mongo/db/index_rebuilder.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexPathSet::clear()", 
+        "object": "src/mongo/db/index_set.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/collection_info_cache.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexPathSet::addPath(mongo::StringData const&)", 
+        "object": "src/mongo/db/index_set.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/collection_info_cache.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IndexPathSet::mightBeIndexed(mongo::StringData const&) const", 
+        "object": "src/mongo/db/index_set.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/update_driver.cpp"
         ]
     }, 
     {
@@ -71,273 +336,8 @@
         ]
     }, 
     {
-        "symbol": "mongo::BtreeIndexCursor::seek(std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&)", 
-        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/index_scan.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeIndexCursor::skip(mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&)", 
-        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/index_scan.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeIndexCursor::aboutToDeleteBucket(mongo::DiskLoc const&)", 
-        "object": "src/mongo/db/index/btree_index_cursor.cpp", 
-        "used_by": [
-            "src/mongo/db/structure/btree/btree.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::startTTLBackgroundJob()", 
         "object": "src/mongo/db/ttl.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::IndexCatalogEntry*)", 
-        "object": "src/mongo/db/index/btree_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexPathSet::clear()", 
-        "object": "src/mongo/db/index_set.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/collection_info_cache.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexPathSet::addPath(mongo::StringData const&)", 
-        "object": "src/mongo/db/index_set.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/collection_info_cache.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexPathSet::mightBeIndexed(mongo::StringData const&) const", 
-        "object": "src/mongo/db/index_set.cpp", 
-        "used_by": [
-            "src/mongo/db/ops/update_driver.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::findPluginName(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::GEO_HAYSTACK", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp", 
-            "src/mongo/db/geo/haystack.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::GEO_2D", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/commands/geonear.cpp", 
-            "src/mongo/db/queryutil.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::GEO_2DSPHERE", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/geonear.cpp", 
-            "src/mongo/db/queryutil.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::TEXT", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexNames::HASHED", 
-        "object": "src/mongo/db/index_names.cpp", 
-        "used_by": [
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::IndexCatalogEntry*)", 
-        "object": "src/mongo/db/index/haystack_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)", 
-        "object": "src/mongo/db/index/haystack_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/geo/haystack.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexLegacy::adjustIndexSpecObject(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_legacy.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexLegacy::postBuildHook(mongo::Collection*, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_legacy.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexLegacy::getMissingField(mongo::Collection*, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_legacy.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/namespacetests.cpp", 
-            "src/mongo/s/d_split.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HashAccessMethod::HashAccessMethod(mongo::IndexCatalogEntry*)", 
-        "object": "src/mongo/db/index/hash_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HashAccessMethod::makeSingleKey(mongo::BSONElement const&, int, int)", 
-        "object": "src/mongo/db/index/hash_access_method.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/namespacetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HashAccessMethod::getKeysImpl(mongo::BSONObj const&, std::string const&, int, int, bool, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)", 
-        "object": "src/mongo/db/index/hash_access_method.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/namespacetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexBuilder::IndexBuilder(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/oplog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&)", 
-        "object": "src/mongo/db/index_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/compact.cpp", 
-            "src/mongo/db/commands/test_commands.cpp", 
-            "src/mongo/db/commands/rename_collection.cpp", 
-            "src/mongo/db/commands/drop_indexes.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/dbtests/replsettests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexBuilder::~IndexBuilder()", 
-        "object": "src/mongo/db/index_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/oplog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/compact.cpp", 
-            "src/mongo/db/commands/test_commands.cpp", 
-            "src/mongo/db/commands/rename_collection.cpp", 
-            "src/mongo/db/commands/collection_to_capped.cpp", 
-            "src/mongo/db/commands/drop_indexes.cpp", 
-            "src/mongo/db/dbcommands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IndexBuilder::build(mongo::Client::Context&) const", 
-        "object": "src/mongo/db/index_builder.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/oplog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/index/btree_based_access_method.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/extsorttests.cpp", 
-            "src/mongo/dbtests/indexupdatetests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::FTSAccessMethod", 
-        "object": "src/mongo/db/index/fts_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/stagedebug_cmd.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FTSAccessMethod::FTSAccessMethod(mongo::IndexCatalogEntry*)", 
-        "object": "src/mongo/db/index/fts_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)", 
-        "object": "src/mongo/db/index/2d_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TwoDAccessMethod::getKeys(mongo::BSONObj const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&) const", 
-        "object": "src/mongo/db/index/2d_access_method.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dcommon.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeKeyGeneratorV1::BtreeKeyGeneratorV1(std::vector<char const*, std::allocator<char const*> >, std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement> >, bool)", 
-        "object": "src/mongo/db/index/btree_key_generator.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/namespacetests.cpp", 
-            "src/mongo/db/exec/sort.cpp", 
-            "src/mongo/db/queryutil.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BtreeKeyGenerator::getKeys(mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*) const", 
-        "object": "src/mongo/db/index/btree_key_generator.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/namespacetests.cpp", 
-            "src/mongo/db/exec/sort.cpp", 
-            "src/mongo/db/queryutil.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::indexRebuilder", 
-        "object": "src/mongo/db/index_rebuilder.cpp", 
         "used_by": [
             "src/mongo/db/db.cpp"
         ]

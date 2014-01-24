@@ -8,8 +8,8 @@
 Third Party - Non cryptographic hashing library
 
 # Files
-- src/third\_party/murmurhash3/MurmurHash3.cpp   (mongod, tools, mongos)
-- src/third\_party/murmurhash3/MurmurHash3.h
+- src/third\_party/murmurhash3/MurmurHash3.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/third\_party/murmurhash3/MurmurHash3.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 

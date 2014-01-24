@@ -101,11 +101,9 @@ def add_executable_data(graph, module_data):
     for module_name in module_data.keys():
         module_data[module_name]['files_with_exec'] = []
         for source_file in module_data[module_name]['files_flat']:
-            object_file = source_file_to_object_file(graph, source_file)
             executable_list = []
-            if object_file is not None:
-                executable_list = get_executable_list(graph, object_file)
-                module_data[module_name]['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
+            executable_list = get_executable_list(graph, source_file)
+            module_data[module_name]['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
 
 # Builds a map of source files to modules
 def build_file_to_module_map(module_data):

@@ -36,6 +36,48 @@
     }, 
     {
         "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/stacktrace.cpp"
+        ], 
+        "symbol": "mongo::printStackTrace(std::ostream&)", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/tests.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/util/concurrency/spin_lock.cpp"
         ], 
         "symbol": "mongo::SpinLock::SpinLock()", 
@@ -124,47 +166,5 @@
         ], 
         "symbol": "boost::system::generic_category()", 
         "object": "src/mongo/dbtests/histogram_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/tests.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/tests.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/stacktrace.cpp"
-        ], 
-        "symbol": "mongo::printStackTrace(std::ostream&)", 
-        "object": "src/mongo/db/tests.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/tests.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/tests.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/tests.cpp"
     }
 ]

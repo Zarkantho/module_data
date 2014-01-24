@@ -1,489 +1,6 @@
 [
     {
         "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::MayIntersect(S2Cell const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2regionunion.cc"
-        ], 
-        "symbol": "S2RegionUnion::Add(S2Region*)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2cell.cc"
-        ], 
-        "symbol": "vtable for S2Cell", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::S2Polyline()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2cap.cc"
-        ], 
-        "symbol": "vtable for S2Cap", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2cell.cc"
-        ], 
-        "symbol": "S2Cell::MayIntersect(S2Cell const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::Intersects(S2Polygon const*) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::~S2Polyline()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::S2Polygon()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2region.cc"
-        ], 
-        "symbol": "S2Region::~S2Region()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::Contains(S2Polygon const*) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::Contains(Vector3<double> const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*, std::allocator<S2Polyline*> >*) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2regionunion.cc"
-        ], 
-        "symbol": "S2RegionUnion::S2RegionUnion()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::MayIntersect(S2Cell const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/jsobj.cpp"
-        ], 
-        "symbol": "mongo::BSONElement::getGtLtOp(int) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::~S2Polygon()", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::Intersects(S2Polyline const*) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2cap.cc"
-        ], 
-        "symbol": "S2Cap::MayIntersect(S2Cell const&) const", 
-        "object": "src/mongo/db/geo/geoquery.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/geo/shapes.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2cell.cc"
-        ], 
-        "symbol": "vtable for S2Cell", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/json.cpp"
-        ], 
-        "symbol": "mongo::fromjson(std::string const&)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::S2Polyline()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polyline.cc"
-        ], 
-        "symbol": "S2Polyline::~S2Polyline()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::S2Polygon()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2region.cc"
-        ], 
-        "symbol": "S2Region::~S2Region()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::Contains(Vector3<double> const&) const", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/bson/oid.cpp"
-        ], 
-        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/s2/s2polygon.cc"
-        ], 
-        "symbol": "S2Polygon::~S2Polygon()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/json.cpp"
-        ], 
-        "symbol": "mongo::fromjson(char const*, int*)", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/db/geo/geoparser_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/third_party/s2/s2loop.cc"
         ], 
         "symbol": "S2Loop::IsValid() const", 
@@ -754,6 +271,594 @@
         ], 
         "symbol": "S2CellId::FromPoint(Vector3<double> const&)", 
         "object": "src/mongo/db/geo/geoparser.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2cell.cc"
+        ], 
+        "symbol": "vtable for S2Cell", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/json.cpp"
+        ], 
+        "symbol": "mongo::fromjson(std::string const&)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::S2Polyline()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::~S2Polyline()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::S2Polygon()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2region.cc"
+        ], 
+        "symbol": "S2Region::~S2Region()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::Contains(Vector3<double> const&) const", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::~S2Polygon()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/json.cpp"
+        ], 
+        "symbol": "mongo::fromjson(char const*, int*)", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/geo/geoparser_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::MayIntersect(S2Cell const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2regionunion.cc"
+        ], 
+        "symbol": "S2RegionUnion::Add(S2Region*)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2cell.cc"
+        ], 
+        "symbol": "vtable for S2Cell", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::S2Polyline()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2cap.cc"
+        ], 
+        "symbol": "vtable for S2Cap", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2cell.cc"
+        ], 
+        "symbol": "S2Cell::MayIntersect(S2Cell const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::Intersects(S2Polygon const*) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::~S2Polyline()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::S2Polygon()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2region.cc"
+        ], 
+        "symbol": "S2Region::~S2Region()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::Contains(S2Polygon const*) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::Contains(Vector3<double> const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*, std::allocator<S2Polyline*> >*) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2regionunion.cc"
+        ], 
+        "symbol": "S2RegionUnion::S2RegionUnion()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::MayIntersect(S2Cell const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/jsobj.cpp"
+        ], 
+        "symbol": "mongo::BSONElement::getGtLtOp(int) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polygon.cc"
+        ], 
+        "symbol": "S2Polygon::~S2Polygon()", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2polyline.cc"
+        ], 
+        "symbol": "S2Polyline::Intersects(S2Polyline const*) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/s2/s2cap.cc"
+        ], 
+        "symbol": "S2Cap::MayIntersect(S2Cell const&) const", 
+        "object": "src/mongo/db/geo/geoquery.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/geo/hash.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::UserException", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/random.cpp"
+        ], 
+        "symbol": "mongo::PseudoRandom::nextInt32()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/random.cpp"
+        ], 
+        "symbol": "mongo::PseudoRandom::PseudoRandom(int)", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/db/geo/hash_test.cpp"
     }, 
     {
         "sources": [
@@ -1150,170 +1255,65 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::UserException", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/platform/random.cpp"
-        ], 
-        "symbol": "mongo::PseudoRandom::nextInt32()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/platform/random.cpp"
-        ], 
-        "symbol": "mongo::PseudoRandom::PseudoRandom(int)", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/db/geo/hash_test.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrsReady", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/bson/oid.cpp"
         ], 
         "symbol": "mongo::BSONObjBuilder::numStrs", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/geo/hash.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/geo/hash.cpp"
+        "object": "src/mongo/db/geo/shapes.cpp"
     }
 ]

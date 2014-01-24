@@ -1,21 +1,5 @@
 [
     {
-        "symbol": "mongo::ScriptEngine::getInterpreterVersionString()", 
-        "object": "src/mongo/scripting/engine_v8.cpp", 
-        "used_by": [
-            "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ScriptEngine::setup()", 
-        "object": "src/mongo/scripting/engine_v8.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/jstests.cpp", 
-            "src/mongo/shell/dbshell.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::ScriptEngine::_checkInterruptCallback", 
         "object": "src/mongo/scripting/engine.cpp", 
         "used_by": [
@@ -74,6 +58,22 @@
         "object": "src/mongo/scripting/engine.cpp", 
         "used_by": [
             "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ScriptEngine::getInterpreterVersionString()", 
+        "object": "src/mongo/scripting/engine_v8.cpp", 
+        "used_by": [
+            "src/mongo/shell/shell_utils.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ScriptEngine::setup()", 
+        "object": "src/mongo/scripting/engine_v8.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/jstests.cpp", 
+            "src/mongo/shell/dbshell.cpp"
         ]
     }
 ]

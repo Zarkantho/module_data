@@ -1,61 +1,179 @@
 [
     {
-        "symbol": "S2Polyline::MayIntersect(S2Cell const&) const", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "google_base::DateLogger::HumanDate()", 
+        "object": "src/third_party/s2/base/logging.cc", 
         "used_by": [
-            "src/mongo/db/geo/geoquery.cpp"
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/geo/geoparser.cpp", 
+            "src/mongo/db/index/s2_access_method.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::S2Polyline()", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "google_base::DateLogger::DateLogger()", 
+        "object": "src/third_party/s2/base/logging.cc", 
         "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
             "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/geo/geoparser.cpp", 
+            "src/mongo/db/index/s2_access_method.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S1Angle::S1Angle(Vector3<double> const&, Vector3<double> const&)", 
+        "object": "src/third_party/s2/s1angle.cc", 
+        "used_by": [
+            "src/mongo/db/geo/s2common.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2::kAvgEdge", 
+        "object": "src/third_party/s2/s2.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/index/s2_access_method.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2::kMaxCellLevel", 
+        "object": "src/third_party/s2/s2.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/index/s2_access_method.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for S2Cap", 
+        "object": "src/third_party/s2/s2cap.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
             "src/mongo/db/geo/geoparser.cpp", 
             "src/mongo/db/geo/geoquery.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::IsValid(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2Cap::Complement() const", 
+        "object": "src/third_party/s2/s2cap.cc", 
         "used_by": [
+            "src/mongo/db/exec/s2near.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)", 
+        "object": "src/third_party/s2/s2cap.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
             "src/mongo/db/geo/geoparser.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::~S2Polyline()", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2Cap::MayIntersect(S2Cell const&) const", 
+        "object": "src/third_party/s2/s2cap.cc", 
         "used_by": [
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for S2Cell", 
+        "object": "src/third_party/s2/s2cell.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
             "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/query_solution.cpp", 
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/query/planner_access.cpp", 
+            "src/mongo/db/geo/geoparser.cpp", 
+            "src/mongo/db/geo/geoquery.cpp", 
+            "src/mongo/db/matcher/expression_parser_geo.cpp", 
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/matcher/expression_geo.cpp", 
+            "src/mongo/db/query/query_planner.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Cell::MayIntersect(S2Cell const&) const", 
+        "object": "src/third_party/s2/s2cell.cc", 
+        "used_by": [
             "src/mongo/db/geo/geoquery.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2Cell::Init(S2CellId const&)", 
+        "object": "src/third_party/s2/s2cell.cc", 
         "used_by": [
             "src/mongo/db/geo/geoparser.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::Intersects(S2Polyline const*) const", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2CellId::level() const", 
+        "object": "src/third_party/s2/s2cellid.cc", 
         "used_by": [
-            "src/mongo/db/geo/geoquery.cpp"
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2CellId::kNumFaces", 
+        "object": "src/third_party/s2/s2cellid.cc", 
         "used_by": [
-            "src/mongo/db/geo/geoquery.cpp"
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
         ]
     }, 
     {
-        "symbol": "S2Polyline::Project(Vector3<double> const&, int*) const", 
-        "object": "src/third_party/s2/s2polyline.cc", 
+        "symbol": "S2CellId::ToString() const", 
+        "object": "src/third_party/s2/s2cellid.cc", 
         "used_by": [
-            "src/mongo/db/geo/s2common.cpp"
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2CellId::kMaxLevel", 
+        "object": "src/third_party/s2/s2cellid.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2CellId::kPosBits", 
+        "object": "src/third_party/s2/s2cellid.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2CellId::FromPoint(Vector3<double> const&)", 
+        "object": "src/third_party/s2/s2cellid.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2LatLng::Normalized() const", 
+        "object": "src/third_party/s2/s2latlng.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2LatLng::ToPoint() const", 
+        "object": "src/third_party/s2/s2latlng.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
         ]
     }, 
     {
@@ -72,76 +190,6 @@
         "used_by": [
             "src/mongo/db/exec/s2near.cpp", 
             "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)", 
-        "object": "src/third_party/s2/s2regionintersection.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2RegionIntersection::Init(std::vector<S2Region*, std::allocator<S2Region*> >*)", 
-        "object": "src/third_party/s2/s2regionintersection.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2RegionIntersection::~S2RegionIntersection()", 
-        "object": "src/third_party/s2/s2regionintersection.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2RegionIntersection::S2RegionIntersection()", 
-        "object": "src/third_party/s2/s2regionintersection.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions const&)", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilder::~S2PolygonBuilder()", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilder::AddLoop(S2Loop const*)", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilderOptions::set_xor_edges(bool)", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2PolygonBuilderOptions::set_validate(bool)", 
-        "object": "src/third_party/s2/s2polygonbuilder.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
         ]
     }, 
     {
@@ -247,180 +295,122 @@
         ]
     }, 
     {
-        "symbol": "vtable for S2Cap", 
-        "object": "src/third_party/s2/s2cap.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/geoparser.cpp", 
-            "src/mongo/db/geo/geoquery.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2Cap::Complement() const", 
-        "object": "src/third_party/s2/s2cap.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)", 
-        "object": "src/third_party/s2/s2cap.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2Cap::MayIntersect(S2Cell const&) const", 
-        "object": "src/third_party/s2/s2cap.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoquery.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2::kAvgEdge", 
-        "object": "src/third_party/s2/s2.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/index/s2_access_method.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2::kMaxCellLevel", 
-        "object": "src/third_party/s2/s2.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/index/s2_access_method.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for S2Cell", 
-        "object": "src/third_party/s2/s2cell.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/query_solution.cpp", 
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/query/planner_access.cpp", 
-            "src/mongo/db/geo/geoparser.cpp", 
-            "src/mongo/db/geo/geoquery.cpp", 
-            "src/mongo/db/matcher/expression_parser_geo.cpp", 
-            "src/mongo/db/query/stage_builder.cpp", 
-            "src/mongo/db/matcher/expression_geo.cpp", 
-            "src/mongo/db/query/query_planner.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2Cell::MayIntersect(S2Cell const&) const", 
-        "object": "src/third_party/s2/s2cell.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoquery.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2Cell::Init(S2CellId const&)", 
-        "object": "src/third_party/s2/s2cell.cc", 
+        "symbol": "S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions const&)", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
         "used_by": [
             "src/mongo/db/geo/geoparser.cpp"
         ]
     }, 
     {
-        "symbol": "S1Angle::S1Angle(Vector3<double> const&, Vector3<double> const&)", 
-        "object": "src/third_party/s2/s1angle.cc", 
+        "symbol": "S2PolygonBuilder::~S2PolygonBuilder()", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2PolygonBuilder::AddLoop(S2Loop const*)", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2PolygonBuilderOptions::set_xor_edges(bool)", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2PolygonBuilderOptions::set_validate(bool)", 
+        "object": "src/third_party/s2/s2polygonbuilder.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::MayIntersect(S2Cell const&) const", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::S2Polyline()", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/geo/geoparser.cpp", 
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::IsValid(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::~S2Polyline()", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoparser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::Intersects(S2Polyline const*) const", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle const&) const", 
+        "object": "src/third_party/s2/s2polyline.cc", 
+        "used_by": [
+            "src/mongo/db/geo/geoquery.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2Polyline::Project(Vector3<double> const&, int*) const", 
+        "object": "src/third_party/s2/s2polyline.cc", 
         "used_by": [
             "src/mongo/db/geo/s2common.cpp"
         ]
     }, 
     {
-        "symbol": "S2LatLng::Normalized() const", 
-        "object": "src/third_party/s2/s2latlng.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2LatLng::ToPoint() const", 
-        "object": "src/third_party/s2/s2latlng.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::level() const", 
-        "object": "src/third_party/s2/s2cellid.cc", 
+        "symbol": "S2Region::~S2Region()", 
+        "object": "src/third_party/s2/s2region.cc", 
         "used_by": [
             "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::kNumFaces", 
-        "object": "src/third_party/s2/s2cellid.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::ToString() const", 
-        "object": "src/third_party/s2/s2cellid.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::kMaxLevel", 
-        "object": "src/third_party/s2/s2cellid.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::kPosBits", 
-        "object": "src/third_party/s2/s2cellid.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "S2CellId::FromPoint(Vector3<double> const&)", 
-        "object": "src/third_party/s2/s2cellid.cc", 
-        "used_by": [
-            "src/mongo/db/geo/geoparser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "google_base::DateLogger::HumanDate()", 
-        "object": "src/third_party/s2/base/logging.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
+            "src/mongo/db/query/query_solution.cpp", 
+            "src/mongo/db/matcher/expression_geo.cpp", 
+            "src/mongo/db/geo/geoquery.cpp", 
             "src/mongo/db/geo/geoparser.cpp", 
-            "src/mongo/db/index/s2_access_method.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
-        ]
-    }, 
-    {
-        "symbol": "google_base::DateLogger::DateLogger()", 
-        "object": "src/third_party/s2/base/logging.cc", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/query/planner_access.cpp", 
+            "src/mongo/db/matcher/expression_parser_geo.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp", 
             "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/geo/geoparser.cpp", 
-            "src/mongo/db/index/s2_access_method.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp"
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/query/query_planner.cpp"
         ]
     }, 
     {
@@ -476,21 +466,31 @@
         ]
     }, 
     {
-        "symbol": "S2Region::~S2Region()", 
-        "object": "src/third_party/s2/s2region.cc", 
+        "symbol": "S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)", 
+        "object": "src/third_party/s2/s2regionintersection.cc", 
         "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/query/query_solution.cpp", 
-            "src/mongo/db/matcher/expression_geo.cpp", 
-            "src/mongo/db/geo/geoquery.cpp", 
-            "src/mongo/db/geo/geoparser.cpp", 
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/query/planner_access.cpp", 
-            "src/mongo/db/matcher/expression_parser_geo.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp", 
-            "src/mongo/db/geo/s2common.cpp", 
-            "src/mongo/db/query/stage_builder.cpp", 
-            "src/mongo/db/query/query_planner.cpp"
+            "src/mongo/db/exec/s2near.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2RegionIntersection::Init(std::vector<S2Region*, std::allocator<S2Region*> >*)", 
+        "object": "src/third_party/s2/s2regionintersection.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2RegionIntersection::~S2RegionIntersection()", 
+        "object": "src/third_party/s2/s2regionintersection.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp"
+        ]
+    }, 
+    {
+        "symbol": "S2RegionIntersection::S2RegionIntersection()", 
+        "object": "src/third_party/s2/s2regionintersection.cc", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp"
         ]
     }, 
     {

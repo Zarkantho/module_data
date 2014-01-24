@@ -9,41 +9,41 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 # Files
 - src/mongo/db/index/2d\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/2d\_access\_method.h
-- src/mongo/db/index/2d\_common.h
+- src/mongo/db/index/2d\_access\_method.h   (mongod, tools)
+- src/mongo/db/index/2d\_common.h   (mongod, tools)
 - src/mongo/db/index/btree\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_access\_method.h
+- src/mongo/db/index/btree\_access\_method.h   (mongod, tools)
 - src/mongo/db/index/btree\_based\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_based\_access\_method.h
+- src/mongo/db/index/btree\_based\_access\_method.h   (mongod, tools)
 - src/mongo/db/index/btree\_index\_cursor.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_index\_cursor.h
+- src/mongo/db/index/btree\_index\_cursor.h   (mongod, tools)
 - src/mongo/db/index/btree\_interface.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_interface.h
+- src/mongo/db/index/btree\_interface.h   (mongod, tools)
 - src/mongo/db/index/btree\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/btree\_key\_generator.h
-- src/mongo/db/index/expression\_index.h
+- src/mongo/db/index/btree\_key\_generator.h   (mongod, tools, mongos)
+- src/mongo/db/index/expression\_index.h   (mongod, tools, mongos)
 - src/mongo/db/index/fts\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/fts\_access\_method.h
+- src/mongo/db/index/fts\_access\_method.h   (mongod, tools)
 - src/mongo/db/index/hash\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/hash\_access\_method.h
+- src/mongo/db/index/hash\_access\_method.h   (mongod, tools)
 - src/mongo/db/index/haystack\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/haystack\_access\_method.h
-- src/mongo/db/index/haystack\_access\_method\_internal.h
-- src/mongo/db/index/index\_access\_method.h
-- src/mongo/db/index/index\_cursor.h
-- src/mongo/db/index/index\_descriptor.h
+- src/mongo/db/index/haystack\_access\_method.h   (mongod, tools)
+- src/mongo/db/index/haystack\_access\_method\_internal.h   (mongod, tools)
+- src/mongo/db/index/index\_access\_method.h   (mongod, tools)
+- src/mongo/db/index/index\_cursor.h   (mongod, tools)
+- src/mongo/db/index/index\_descriptor.h   (mongod, tools, mongos)
 - src/mongo/db/index/s2\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/s2\_access\_method.h
+- src/mongo/db/index/s2\_access\_method.h   (mongod, tools)
 - src/mongo/db/index\_builder.cpp   (mongod, tools)
-- src/mongo/db/index\_builder.h
+- src/mongo/db/index\_builder.h   (mongod, tools)
 - src/mongo/db/index\_legacy.cpp   (mongod, tools)
-- src/mongo/db/index\_legacy.h
+- src/mongo/db/index\_legacy.h   (mongod, tools)
 - src/mongo/db/index\_names.cpp   (mongod, tools, mongos)
-- src/mongo/db/index\_names.h
+- src/mongo/db/index\_names.h   (mongod, tools, mongos)
 - src/mongo/db/index\_rebuilder.cpp   (mongod, tools)
-- src/mongo/db/index\_rebuilder.h
+- src/mongo/db/index\_rebuilder.h   (mongod, tools)
 - src/mongo/db/index\_set.cpp   (mongod, tools, mongos)
-- src/mongo/db/index\_set.h
+- src/mongo/db/index\_set.h   (mongod, tools, mongos)
 - src/mongo/db/index\_set\_test.cpp   ()
 
 # Interface
@@ -3063,7 +3063,7 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
 # Files
 - src/mongo/db/keypattern.cpp   (mongod, tools, mongos)
-- src/mongo/db/keypattern.h
+- src/mongo/db/keypattern.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -3230,7 +3230,7 @@ Background job that periodically checks a ttl index.
 
 # Files
 - src/mongo/db/ttl.cpp   (mongod, tools)
-- src/mongo/db/ttl.h
+- src/mongo/db/ttl.h   (mongod, tools)
 
 # Interface
 

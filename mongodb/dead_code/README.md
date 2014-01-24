@@ -8,15 +8,15 @@
 
 
 # Files
-- src/mongo/util/trace.cpp   (cppclientdriver)
+- src/mongo/util/trace.cpp   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/db/tests.cpp   (mongod, tools)
 - src/mongo/db/stats/service\_stats.cpp   (mongod, tools, mongos)
-- src/mongo/db/stats/service\_stats.h
-- src/mongo/util/histogram.cpp   (cppclientdriver)
-- src/mongo/util/histogram.h
+- src/mongo/db/stats/service\_stats.h   (mongod, tools, mongos)
+- src/mongo/util/histogram.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/histogram.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/dbtests/histogram\_test.cpp   ()
-- src/mongo/util/lruishmap.h
-- src/mongo/db/taskqueue.h
+- src/mongo/util/lruishmap.h   (mongod, tools, mongos)
+- src/mongo/db/taskqueue.h   (mongod, tools)
 
 # Interface
 (not used outside this module)

@@ -15,11 +15,32 @@
         ]
     }, 
     {
+        "name": "src/mongo/unittest/temp_dir.h", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
+    }, 
+    {
         "name": "src/mongo/unittest/temp_dir_test.cpp", 
         "execs": []
     }, 
     {
+        "name": "src/mongo/unittest/unittest-inl.h", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
+    }, 
+    {
         "name": "src/mongo/unittest/unittest.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
+    }, 
+    {
+        "name": "src/mongo/unittest/unittest.h", 
         "execs": [
             "test", 
             "perftest"
@@ -58,6 +79,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/dbtests/btreetests.inl", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
         "name": "src/mongo/dbtests/chunk_manager_targeter_test.cpp", 
         "execs": [
             "test"
@@ -83,6 +110,12 @@
     }, 
     {
         "name": "src/mongo/dbtests/config_server_fixture.cpp", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/config_server_fixture.h", 
         "execs": [
             "test"
         ]
@@ -115,6 +148,13 @@
         "name": "src/mongo/dbtests/dbtests.cpp", 
         "execs": [
             "test"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/dbtests.h", 
+        "execs": [
+            "test", 
+            "perftest"
         ]
     }, 
     {
@@ -155,7 +195,21 @@
         ]
     }, 
     {
+        "name": "src/mongo/dbtests/framework.h", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
+    }, 
+    {
         "name": "src/mongo/dbtests/framework_options.cpp", 
+        "execs": [
+            "test", 
+            "perftest"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/framework_options.h", 
         "execs": [
             "test", 
             "perftest"
@@ -251,7 +305,19 @@
         ]
     }, 
     {
+        "name": "src/mongo/dbtests/mock/mock_conn_registry.h", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
         "name": "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/mock/mock_dbclient_connection.h", 
         "execs": [
             "test"
         ]
@@ -263,13 +329,31 @@
         ]
     }, 
     {
+        "name": "src/mongo/dbtests/mock/mock_dbclient_cursor.h", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
         "name": "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
         "execs": [
             "test"
         ]
     }, 
     {
+        "name": "src/mongo/dbtests/mock/mock_remote_db_server.h", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
         "name": "src/mongo/dbtests/mock/mock_replica_set.cpp", 
+        "execs": [
+            "test"
+        ]
+    }, 
+    {
+        "name": "src/mongo/dbtests/mock/mock_replica_set.h", 
         "execs": [
             "test"
         ]

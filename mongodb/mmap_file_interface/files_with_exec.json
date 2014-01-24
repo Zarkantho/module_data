@@ -18,5 +18,26 @@
             "mongofiles", 
             "mongorestore"
         ]
+    }, 
+    {
+        "name": "src/mongo/db/storage/data_file.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
     }
 ]

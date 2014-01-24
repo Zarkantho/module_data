@@ -7,7 +7,34 @@
         ]
     }, 
     {
+        "name": "src/mongo/db/dbwebserver.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/db/restapi.cpp", 
+        "execs": [
+            "mongod"
+        ]
+    }, 
+    {
+        "name": "src/mongo/db/restapi.h", 
         "execs": [
             "mongod"
         ]
@@ -20,6 +47,27 @@
     }, 
     {
         "name": "src/mongo/util/net/miniwebserver.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/util/net/miniwebserver.h", 
         "execs": [
             "mongotop", 
             "mongod", 

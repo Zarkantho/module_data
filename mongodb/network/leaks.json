@@ -110,6 +110,321 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/net/message_port.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/net/httpclient.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/net/httpclient.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/net/httpclient.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundJob::wait(unsigned int)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundJob::go()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/fail_point_service.cpp"
+        ], 
+        "symbol": "mongo::getGlobalFailPointRegistry()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundJob::~BackgroundJob()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/spin_lock.cpp"
+        ], 
+        "symbol": "mongo::SpinLock::SpinLock()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/fail_point.cpp"
+        ], 
+        "symbol": "mongo::FailPoint::slowShouldFailOpenBlock()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/global_initializer_registerer.cpp"
+        ], 
+        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/fail_point.cpp"
+        ], 
+        "symbol": "mongo::FailPoint::shouldFailCloseBlock()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/spin_lock.cpp"
+        ], 
+        "symbol": "mongo::SpinLock::~SpinLock()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/fail_point_registry.cpp"
+        ], 
+        "symbol": "mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::curTimeMicros64()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/background.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::BackgroundJob", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/fail_point.cpp"
+        ], 
+        "symbol": "mongo::FailPoint::FailPoint()", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/make_string_vector.cpp"
+        ], 
+        "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/background.cpp"
+        ], 
+        "symbol": "mongo::BackgroundJob::BackgroundJob(bool)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/server_options.cpp"
+        ], 
+        "symbol": "mongo::serverGlobalParams", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/net/sock.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -212,6 +527,132 @@
         ], 
         "symbol": "mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned int, mongo::BSONObj const&)", 
         "object": "src/mongo/util/net/sock_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/global_initializer_registerer.cpp"
+        ], 
+        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::fassertFailed(int)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/make_string_vector.cpp"
+        ], 
+        "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/net/ssl_manager.cpp"
     }, 
     {
         "sources": [
@@ -584,446 +1025,5 @@
         ], 
         "symbol": "mongo::serverGlobalParams", 
         "object": "src/mongo/util/net/message_server_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/util/net/httpclient.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/net/httpclient.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/net/httpclient.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::getcurns", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/net/message_port.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/background.cpp"
-        ], 
-        "symbol": "mongo::BackgroundJob::wait(unsigned int)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/background.cpp"
-        ], 
-        "symbol": "mongo::BackgroundJob::go()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/fail_point_service.cpp"
-        ], 
-        "symbol": "mongo::getGlobalFailPointRegistry()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/background.cpp"
-        ], 
-        "symbol": "mongo::BackgroundJob::~BackgroundJob()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/spin_lock.cpp"
-        ], 
-        "symbol": "mongo::SpinLock::SpinLock()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/fail_point.cpp"
-        ], 
-        "symbol": "mongo::FailPoint::slowShouldFailOpenBlock()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp"
-        ], 
-        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::fassertFailed(int)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/fail_point.cpp"
-        ], 
-        "symbol": "mongo::FailPoint::shouldFailCloseBlock()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/spin_lock.cpp"
-        ], 
-        "symbol": "mongo::SpinLock::~SpinLock()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/fail_point_registry.cpp"
-        ], 
-        "symbol": "mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/background.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::BackgroundJob", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/fail_point.cpp"
-        ], 
-        "symbol": "mongo::FailPoint::FailPoint()", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/make_string_vector.cpp"
-        ], 
-        "symbol": "mongo::_makeStringVector(int, ...)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/background.cpp"
-        ], 
-        "symbol": "mongo::BackgroundJob::BackgroundJob(bool)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/server_options.cpp"
-        ], 
-        "symbol": "mongo::serverGlobalParams", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "src/mongo/util/net/sock.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/global_initializer_registerer.cpp"
-        ], 
-        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::fassertFailed(int)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_tss_data(void const*)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/make_string_vector.cpp"
-        ], 
-        "symbol": "mongo::_makeStringVector(int, ...)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/log.cpp"
-        ], 
-        "symbol": "mongo::errnoWithDescription(int)", 
-        "object": "src/mongo/util/net/ssl_manager.cpp"
     }
 ]

@@ -1,28 +1,14 @@
 [
     {
-        "symbol": "mongo::fts::Stemmer::~Stemmer()", 
-        "object": "src/mongo/db/fts/stemmer.cpp", 
+        "symbol": "mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)", 
+        "object": "src/mongo/db/fts/fts_index_format.cpp", 
         "used_by": [
-            "src/mongo/db/exec/text.cpp"
+            "src/mongo/db/index/fts_access_method.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)", 
-        "object": "src/mongo/db/fts/fts_matcher.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/text.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&) const", 
-        "object": "src/mongo/db/fts/fts_matcher.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/text.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const", 
-        "object": "src/mongo/db/fts/fts_matcher.cpp", 
+        "symbol": "mongo::fts::FTSIndexFormat::getIndexKey(double, std::string const&, mongo::BSONObj const&)", 
+        "object": "src/mongo/db/fts/fts_index_format.cpp", 
         "used_by": [
             "src/mongo/db/exec/text.cpp"
         ]
@@ -79,25 +65,32 @@
         ]
     }, 
     {
+        "symbol": "mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)", 
+        "object": "src/mongo/db/fts/fts_matcher.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/text.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&) const", 
+        "object": "src/mongo/db/fts/fts_matcher.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/text.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const", 
+        "object": "src/mongo/db/fts/fts_matcher.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/text.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::fts::FTSQuery::parse(std::string const&, std::string const&)", 
         "object": "src/mongo/db/fts/fts_query.cpp", 
         "used_by": [
             "src/mongo/db/query/stage_builder.cpp", 
             "src/mongo/db/exec/stagedebug_cmd.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*)", 
-        "object": "src/mongo/db/fts/fts_index_format.cpp", 
-        "used_by": [
-            "src/mongo/db/index/fts_access_method.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::fts::FTSIndexFormat::getIndexKey(double, std::string const&, mongo::BSONObj const&)", 
-        "object": "src/mongo/db/fts/fts_index_format.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/text.cpp"
         ]
     }, 
     {
@@ -127,6 +120,13 @@
         "used_by": [
             "src/mongo/db/query/stage_builder.cpp", 
             "src/mongo/db/exec/stagedebug_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::fts::Stemmer::~Stemmer()", 
+        "object": "src/mongo/db/fts/stemmer.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/text.cpp"
         ]
     }
 ]

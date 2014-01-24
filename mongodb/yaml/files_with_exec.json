@@ -21,7 +21,784 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/anchordict.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/graphbuilder.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/dll.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitfromevents.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitter.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitterdef.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emittermanip.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/eventhandler.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/exceptions.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/mark.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/convert.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/bool_type.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/impl.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator_fwd.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/memory.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_data.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_iterator.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_ref.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/emit.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/impl.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/iterator.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/node.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/parse.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/ptr.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/type.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/noncopyable.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/null.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/ostream_wrapper.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/parser.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/stlemitter.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/traits.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/yaml.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/binary.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/collectionstack.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -64,6 +841,27 @@
     }, 
     {
         "name": "src/third_party/yaml-cpp-0.5.1/src/directives.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/directives.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -168,6 +966,27 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/emitterstate.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp", 
         "execs": [
             "mongotop", 
@@ -189,7 +1008,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/emitterutils.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/exp.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/exp.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -232,6 +1093,48 @@
     }, 
     {
         "name": "src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/indentation.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -336,7 +1239,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/nodebuilder.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/nodeevents.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -441,7 +1386,91 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/ptr_stack.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/ptr_vector.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/regex.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/regex.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/regeximpl.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -483,7 +1512,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/scanner.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/scanscalar.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -525,7 +1596,49 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/scantag.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/setting.h", 
         "execs": [
             "mongotop", 
             "mongod", 
@@ -588,6 +1701,27 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/singledocparser.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/stream.cpp", 
         "execs": [
             "mongotop", 
@@ -609,7 +1743,112 @@
         ]
     }, 
     {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/stream.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/streamcharsource.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/stringsource.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
         "name": "src/third_party/yaml-cpp-0.5.1/src/tag.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/tag.h", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "test", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongosniff"
+        ]
+    }, 
+    {
+        "name": "src/third_party/yaml-cpp-0.5.1/src/token.h", 
         "execs": [
             "mongotop", 
             "mongod", 

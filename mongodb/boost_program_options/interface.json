@@ -1,5 +1,47 @@
 [
     {
+        "symbol": "boost::program_options::detail::cmdline::run()", 
+        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::program_options::detail::cmdline::set_options_description(boost::program_options::options_description const&)", 
+        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::program_options::detail::cmdline::cmdline(std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::program_options::detail::cmdline::style(int)", 
+        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::program_options::detail::cmdline::set_positional_options(boost::program_options::positional_options_description const&)", 
+        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "boost::program_options::to_internal(std::string const&)", 
+        "object": "src/third_party/boost/libs/program_options/src/convert.cpp", 
+        "used_by": [
+            "src/mongo/util/options_parser/options_parser.cpp"
+        ]
+    }, 
+    {
         "symbol": "boost::program_options::options_description::add_options()", 
         "object": "src/third_party/boost/libs/program_options/src/options_description.cpp", 
         "used_by": [
@@ -84,48 +126,6 @@
         "object": "src/third_party/boost/libs/program_options/src/positional_options.cpp", 
         "used_by": [
             "src/mongo/util/options_parser/option_section.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::detail::cmdline::run()", 
-        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::detail::cmdline::set_options_description(boost::program_options::options_description const&)", 
-        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::detail::cmdline::cmdline(std::vector<std::string, std::allocator<std::string> > const&)", 
-        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::detail::cmdline::style(int)", 
-        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::detail::cmdline::set_positional_options(boost::program_options::positional_options_description const&)", 
-        "object": "src/third_party/boost/libs/program_options/src/cmdline.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
-        ]
-    }, 
-    {
-        "symbol": "boost::program_options::to_internal(std::string const&)", 
-        "object": "src/third_party/boost/libs/program_options/src/convert.cpp", 
-        "used_by": [
-            "src/mongo/util/options_parser/options_parser.cpp"
         ]
     }, 
     {

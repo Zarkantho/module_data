@@ -9,7 +9,7 @@ Page aligned buffer builder   what sort of buffer? i don't understand ;(
 
 # Files
 - src/mongo/util/alignedbuilder.cpp   (mongod, tools)
-- src/mongo/util/alignedbuilder.h
+- src/mongo/util/alignedbuilder.h   (mongod, tools)
 
 # Interface
 
@@ -66,22 +66,22 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 # Files
 - src/mongo/db/dur.cpp   (mongod, tools)
-- src/mongo/db/dur.h
+- src/mongo/db/dur.h   (mongod, tools, mongos)
 - src/mongo/db/dur\_commitjob.cpp   (mongod, tools)
-- src/mongo/db/dur\_commitjob.h
+- src/mongo/db/dur\_commitjob.h   (mongod, tools)
 - src/mongo/db/dur\_journal.cpp   (mongod, tools)
-- src/mongo/db/dur\_journal.h
-- src/mongo/db/dur\_journalformat.h
-- src/mongo/db/dur\_journalimpl.h
+- src/mongo/db/dur\_journal.h   (mongod, tools)
+- src/mongo/db/dur\_journalformat.h   (mongod, tools)
+- src/mongo/db/dur\_journalimpl.h   (mongod, tools)
 - src/mongo/db/dur\_preplogbuffer.cpp   (mongod, tools)
 - src/mongo/db/dur\_recover.cpp   (mongod, tools)
-- src/mongo/db/dur\_recover.h
-- src/mongo/db/dur\_stats.h
+- src/mongo/db/dur\_recover.h   (mongod, tools)
+- src/mongo/db/dur\_stats.h   (mongod, tools)
 - src/mongo/db/dur\_writetodatafiles.cpp   (mongod, tools)
 - src/mongo/db/durop.cpp   (mongod, tools)
-- src/mongo/db/durop.h
+- src/mongo/db/durop.h   (mongod, tools)
 - src/mongo/db/storage/durable\_mapped\_file.cpp   (mongod, tools)
-- src/mongo/db/storage/durable\_mapped\_file.h
+- src/mongo/db/storage/durable\_mapped\_file.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -2356,7 +2356,7 @@ This is not actually used in our logging system. Just utilities to create files 
 
 # Files
 - src/mongo/util/logfile.cpp   (mongod, tools)
-- src/mongo/util/logfile.h
+- src/mongo/util/logfile.h   (mongod, tools)
 
 # Interface
 

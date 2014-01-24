@@ -1,393 +1,5 @@
 [
     {
-        "symbol": "mongo::Timer::_countsPerSecond", 
-        "object": "src/mongo/util/timer.cpp", 
-        "used_by": [
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/unittest/unittest.cpp", 
-            "src/mongo/db/exec/oplogstart.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/write_concern.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/scripting/bench.cpp", 
-            "src/mongo/db/range_deleter_db_env.cpp", 
-            "src/mongo/dbtests/mmaptests.cpp", 
-            "src/mongo/db/structure/collection_compact.cpp", 
-            "src/mongo/s/strategy.cpp", 
-            "src/mongo/db/repl/resync.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/s/d_state.cpp", 
-            "src/mongo/db/commands/touch.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/restapi.cpp", 
-            "src/mongo/db/dur_preplogbuffer.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/db/commands.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/dur.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/db/dur_writetodatafiles.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/s/request.cpp", 
-            "src/mongo/db/index/btree_based_access_method.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/db/fts/fts_command_mongos.cpp", 
-            "src/mongo/s/d_split.cpp", 
-            "src/mongo/db/index/haystack_access_method.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
-            "src/mongo/db/storage/record.cpp", 
-            "src/mongo/db/dbcommands_admin.cpp", 
-            "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/dbeval.cpp", 
-            "src/mongo/util/background.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/d_concurrency.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/dbtests/matchertests.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/dbhelpers.cpp", 
-            "src/mongo/db/fts/fts_command_mongod.cpp", 
-            "src/mongo/db/commands/mr.cpp", 
-            "src/mongo/db/commands/distinct.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::IntrusiveCounterUnsigned", 
-        "object": "src/mongo/util/intrusive_counter.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/pipeline/document_source_sort.cpp", 
-            "src/mongo/dbtests/pipelinetests.cpp", 
-            "src/mongo/dbtests/expressiontests.cpp", 
-            "src/mongo/db/pipeline/document_source.cpp", 
-            "src/mongo/db/pipeline/expression.cpp", 
-            "src/mongo/db/pipeline/pipeline.cpp", 
-            "src/mongo/db/pipeline/document_source_project.cpp", 
-            "src/mongo/db/commands/pipeline_command.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IntrusiveCounterUnsigned::addRef() const", 
-        "object": "src/mongo/util/intrusive_counter.cpp", 
-        "used_by": [
-            "src/mongo/db/pipeline/document_source_sort.cpp", 
-            "src/mongo/db/pipeline/document_source_skip.cpp", 
-            "src/mongo/db/pipeline/document_source_match.cpp", 
-            "src/mongo/db/pipeline/document_source_out.cpp", 
-            "src/mongo/dbtests/expressiontests.cpp", 
-            "src/mongo/db/pipeline/document_source_project.cpp", 
-            "src/mongo/db/pipeline/document_source_group.cpp", 
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/db/pipeline/document_source_cursor.cpp", 
-            "src/mongo/db/commands/pipeline_command.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
-            "src/mongo/dbtests/pipelinetests.cpp", 
-            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
-            "src/mongo/db/pipeline/document_source.cpp", 
-            "src/mongo/db/pipeline/document_source_unwind.cpp", 
-            "src/mongo/db/pipeline/document_source_limit.cpp", 
-            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
-            "src/mongo/db/pipeline/document_source_redact.cpp", 
-            "src/mongo/db/pipeline/expression.cpp", 
-            "src/mongo/db/pipeline/pipeline.cpp", 
-            "src/mongo/db/pipeline/document_source_command_shards.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for mongo::IntrusiveCounterUnsigned", 
-        "object": "src/mongo/util/intrusive_counter.cpp", 
-        "used_by": [
-            "src/mongo/db/pipeline/document_source_sort.cpp", 
-            "src/mongo/db/pipeline/document_source_skip.cpp", 
-            "src/mongo/db/pipeline/document_source_match.cpp", 
-            "src/mongo/db/pipeline/document_source_out.cpp", 
-            "src/mongo/dbtests/expressiontests.cpp", 
-            "src/mongo/db/pipeline/document_source_project.cpp", 
-            "src/mongo/db/pipeline/document_source_group.cpp", 
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/db/pipeline/document_source_cursor.cpp", 
-            "src/mongo/db/commands/pipeline_command.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
-            "src/mongo/dbtests/pipelinetests.cpp", 
-            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
-            "src/mongo/db/pipeline/document_source.cpp", 
-            "src/mongo/db/pipeline/document_source_unwind.cpp", 
-            "src/mongo/db/pipeline/document_source_limit.cpp", 
-            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
-            "src/mongo/db/pipeline/document_source_redact.cpp", 
-            "src/mongo/db/pipeline/expression.cpp", 
-            "src/mongo/db/pipeline/pipeline.cpp", 
-            "src/mongo/db/pipeline/document_source_command_shards.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::RCString::create(mongo::StringData)", 
-        "object": "src/mongo/util/intrusive_counter.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documenttests.cpp", 
-            "src/mongo/db/pipeline/value.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::IntrusiveCounterUnsigned::release() const", 
-        "object": "src/mongo/util/intrusive_counter.cpp", 
-        "used_by": [
-            "src/mongo/db/pipeline/document_source_sort.cpp", 
-            "src/mongo/db/pipeline/document_source_skip.cpp", 
-            "src/mongo/db/pipeline/document_source_match.cpp", 
-            "src/mongo/db/pipeline/document_source_out.cpp", 
-            "src/mongo/dbtests/expressiontests.cpp", 
-            "src/mongo/db/pipeline/document_source_project.cpp", 
-            "src/mongo/db/pipeline/document_source_group.cpp", 
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/db/pipeline/document_source_cursor.cpp", 
-            "src/mongo/db/commands/pipeline_command.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
-            "src/mongo/dbtests/pipelinetests.cpp", 
-            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
-            "src/mongo/db/pipeline/document_source.cpp", 
-            "src/mongo/db/pipeline/document_source_unwind.cpp", 
-            "src/mongo/db/pipeline/document_source_limit.cpp", 
-            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
-            "src/mongo/db/pipeline/document_source_redact.cpp", 
-            "src/mongo/db/pipeline/expression.cpp", 
-            "src/mongo/db/pipeline/pipeline.cpp", 
-            "src/mongo/db/pipeline/document_source_command_shards.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::systemInfo", 
-        "object": "src/mongo/util/processinfo.cpp", 
-        "used_by": [
-            "src/mongo/util/processinfo_darwin.cpp", 
-            "src/mongo/db/commands/storage_details.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::writePidFile(std::string const&)", 
-        "object": "src/mongo/util/processinfo.cpp", 
-        "used_by": [
-            "src/mongo/db/initialize_server_global_state.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printSysInfo()", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/dbtests/framework.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::openSSLVersion(std::string const&, std::string const&)", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/s/version_mongos.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::appendBuildInfo(mongo::BSONObjBuilder&)", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp", 
-            "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printAllocator()", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printGitVersion()", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/mongod_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printOpenSSLVersion()", 
-        "object": "src/mongo/util/version_reporting.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/mongod_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FailPoint::slowShouldFailOpenBlock()", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/exec/fetch.cpp", 
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/kill_current_op.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ScopedFailPoint::getData() const", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/kill_current_op.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/kill_current_op.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ScopedFailPoint::~ScopedFailPoint()", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/kill_current_op.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FailPoint::shouldFailCloseBlock()", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/exec/fetch.cpp", 
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FailPoint::toBSON() const", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/fail_point_cmd.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FailPoint::FailPoint()", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/exec/fetch.cpp", 
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/kill_current_op.cpp", 
-            "src/mongo/util/fail_point_service.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/s/grid.cpp", 
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned int, mongo::BSONObj const&)", 
-        "object": "src/mongo/util/fail_point.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/query_stage_fetch.cpp", 
-            "src/mongo/db/commands/fail_point_cmd.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/dbtests/perftests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::operator<<(std::ostream&, mongo::ProcessId)", 
-        "object": "src/mongo/platform/process_id.cpp", 
-        "used_by": [
-            "src/mongo/shell/shell_utils_launcher.cpp", 
-            "src/mongo/s/version_mongos.cpp", 
-            "src/mongo/util/processinfo.cpp", 
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessId::getCurrent()", 
-        "object": "src/mongo/platform/process_id.cpp", 
-        "used_by": [
-            "src/mongo/bson/oid.cpp", 
-            "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/db/structure/btree/btree_stats.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/util/processinfo.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/bson/oid.cpp", 
-            "src/mongo/s/version_mongos.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessId::toString() const", 
-        "object": "src/mongo/platform/process_id.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/shell/shell_utils_launcher.cpp", 
-            "src/mongo/s/version_mongos.cpp", 
-            "src/mongo/db/db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessId::asLongLong() const", 
-        "object": "src/mongo/platform/process_id.cpp", 
-        "used_by": [
-            "src/mongo/shell/shell_utils_launcher.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/commands/server_status.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printStackAndExit(int)", 
-        "object": "src/mongo/util/signal_handlers.cpp", 
-        "used_by": [
-            "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::flushMyDirectory(boost::filesystem3::path const&)", 
         "object": "src/mongo/util/paths.cpp", 
         "used_by": [
@@ -400,57 +12,261 @@
         ]
     }, 
     {
-        "symbol": "_md5_finish", 
-        "object": "src/mongo/util/md5.cpp", 
+        "symbol": "mongo::replOpCounters", 
+        "object": "src/mongo/db/stats/counters.cpp", 
         "used_by": [
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/scripting/utils.cpp", 
-            "src/mongo/client/auth_helpers.cpp", 
-            "src/mongo/shell/shell_utils_extended.cpp", 
-            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/repl/replication_server_status.cpp", 
             "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/util/md5main.cpp"
+            "src/mongo/db/repl/oplog.cpp"
         ]
     }, 
     {
-        "symbol": "_md5_init", 
-        "object": "src/mongo/util/md5.cpp", 
+        "symbol": "mongo::OpCounters::gotOp(int, bool)", 
+        "object": "src/mongo/db/stats/counters.cpp", 
         "used_by": [
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/scripting/utils.cpp", 
-            "src/mongo/client/auth_helpers.cpp", 
-            "src/mongo/shell/shell_utils_extended.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/util/md5main.cpp"
+            "src/mongo/s/request.cpp"
         ]
     }, 
     {
-        "symbol": "_md5_append", 
-        "object": "src/mongo/util/md5.cpp", 
+        "symbol": "mongo::OpCounters::getObj() const", 
+        "object": "src/mongo/db/stats/counters.cpp", 
         "used_by": [
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/scripting/utils.cpp", 
-            "src/mongo/client/auth_helpers.cpp", 
-            "src/mongo/shell/shell_utils_extended.cpp", 
-            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/commands/server_status.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::NetworkCounter::hit(long long, long long)", 
+        "object": "src/mongo/db/stats/counters.cpp", 
+        "used_by": [
+            "src/mongo/util/net/message_server_port.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::globalOpCounters", 
+        "object": "src/mongo/db/stats/counters.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/oplog.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/s/request.cpp", 
             "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/util/md5main.cpp"
+            "src/mongo/db/commands/write_commands/write_commands.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::networkCounter", 
+        "object": "src/mongo/db/stats/counters.cpp", 
+        "used_by": [
+            "src/mongo/util/net/message_server_port.cpp", 
+            "src/mongo/db/commands/server_status.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::NetworkCounter::append(mongo::BSONObjBuilder&)", 
+        "object": "src/mongo/db/stats/counters.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/server_status.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::snapshotThread", 
+        "object": "src/mongo/db/stats/snapshots.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::TimerStats::getReport() const", 
+        "object": "src/mongo/db/stats/timer_stats.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/prefetch.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/s/client_info.cpp", 
+            "src/mongo/db/write_concern.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::TimerHolder::TimerHolder(mongo::TimerStats*)", 
+        "object": "src/mongo/db/stats/timer_stats.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/prefetch.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/write_concern.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::TimerHolder::~TimerHolder()", 
+        "object": "src/mongo/db/stats/timer_stats.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/prefetch.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/write_concern.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::TimerHolder::recordMillis()", 
+        "object": "src/mongo/db/stats/timer_stats.cpp", 
+        "used_by": [
+            "src/mongo/db/write_concern.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Top::global", 
+        "object": "src/mongo/db/stats/top.cpp", 
+        "used_by": [
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/catalog/database.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Top::record(mongo::StringData const&, int, int, long long, bool)", 
+        "object": "src/mongo/db/stats/top.cpp", 
+        "used_by": [
+            "src/mongo/db/curop.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Top::collectionDropped(mongo::StringData const&)", 
+        "object": "src/mongo/db/stats/top.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/database.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BSONElementHasher::hash64(mongo::BSONElement const&, int)", 
+        "object": "src/mongo/db/hasher.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/hashcmd.cpp", 
+            "src/mongo/db/query/index_bounds_builder.cpp", 
+            "src/mongo/db/keypattern.cpp", 
+            "src/mongo/db/index/hash_access_method.cpp", 
+            "src/mongo/s/d_migrate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundOperation::dump(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)", 
+        "object": "src/mongo/db/background.cpp", 
+        "used_by": [
+            "src/mongo/db/restapi.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundOperation::BackgroundOperation(mongo::StringData const&)", 
+        "object": "src/mongo/db/background.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_create.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundOperation::assertNoBgOpInProgForDb(mongo::StringData const&)", 
+        "object": "src/mongo/db/background.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/collection_to_capped.cpp", 
+            "src/mongo/db/pdfile.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)", 
+        "object": "src/mongo/db/background.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/drop_indexes.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
+            "src/mongo/db/commands/compact.cpp", 
+            "src/mongo/db/catalog/index_catalog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)", 
+        "object": "src/mongo/db/background.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/database_holder.cpp", 
+            "src/mongo/db/instance.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ElapsedTracker::resetLastTime()", 
+        "object": "src/mongo/util/elapsed_tracker.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/query/multi_plan_runner.cpp", 
+            "src/mongo/db/query/plan_executor.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ElapsedTracker::intervalHasElapsed()", 
+        "object": "src/mongo/util/elapsed_tracker.cpp", 
+        "used_by": [
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/query/multi_plan_runner.cpp", 
+            "src/mongo/db/query/plan_executor.cpp", 
+            "src/mongo/s/d_migrate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ElapsedTracker::ElapsedTracker(int, int)", 
+        "object": "src/mongo/util/elapsed_tracker.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/update.cpp", 
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/query/multi_plan_runner.cpp", 
+            "src/mongo/db/query/plan_executor.cpp", 
+            "src/mongo/s/d_migrate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProgressMeter::hit(int)", 
+        "object": "src/mongo/util/progress_meter.cpp", 
+        "used_by": [
+            "src/mongo/db/structure/collection_compact.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/tools/dump.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/tools/import.cpp", 
+            "src/mongo/db/commands/touch.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProgressMeter::toString() const", 
+        "object": "src/mongo/util/progress_meter.cpp", 
+        "used_by": [
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/clientlistplugin.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProgressMeter::reset(unsigned long long, int, int)", 
+        "object": "src/mongo/util/progress_meter.cpp", 
+        "used_by": [
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/tools/import.cpp", 
+            "src/mongo/tools/dump.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::mongo_breakpoint()", 
+        "object": "src/mongo/util/debug_util.cpp", 
+        "used_by": [
+            "src/mongo/util/assert_util.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::setupSIGTRAPforGDB()", 
+        "object": "src/mongo/util/debug_util.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }, 
     {
@@ -727,918 +543,6 @@
             "src/mongo/db/commands/storage_details.cpp", 
             "src/mongo/s/request.cpp", 
             "src/mongo/db/auth/security_key.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::~BackgroundJob()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
-            "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/index_builder.cpp", 
-            "src/mongo/db/commands/fsync.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/util/concurrency/task.cpp", 
-            "src/mongo/db/index_rebuilder.cpp", 
-            "src/mongo/util/net/sock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::PeriodicTask", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/s/d_writeback.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/client/connpool.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::running() const", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/client/dbclient_rs.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::cancel()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/client/dbclient_rs.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PeriodicTask::startRunningPeriodicTasks()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/client/init.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PeriodicTask::~PeriodicTask()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/s/d_writeback.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/client/connpool.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::go()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/util/concurrency/task.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/index_builder.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/db/commands/fsync.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/db/repl/oplog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PeriodicTask::stopRunningPeriodicTasks(int)", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/client/init.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::wait(unsigned int)", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/util/net/sock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PeriodicTask::PeriodicTask()", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/s/d_writeback.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/client/connpool.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::BackgroundJob", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
-            "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/index_builder.cpp", 
-            "src/mongo/db/commands/fsync.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/util/concurrency/task.cpp", 
-            "src/mongo/db/index_rebuilder.cpp", 
-            "src/mongo/util/net/sock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundJob::BackgroundJob(bool)", 
-        "object": "src/mongo/util/background.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/db/d_globals.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/index_builder.cpp", 
-            "src/mongo/db/commands/fsync.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/util/concurrency/task.cpp", 
-            "src/mongo/db/index_rebuilder.cpp", 
-            "src/mongo/util/net/sock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::setWindowsUnhandledExceptionFilter()", 
-        "object": "src/mongo/util/exception_filter_win32.cpp", 
-        "used_by": [
-            "src/mongo/unittest/unittest_main.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/dbtests/dbtests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::versionCmp(mongo::StringData, mongo::StringData)", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/s/mongo_version_range.cpp", 
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/tools/restore.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::joinStringDelim(std::vector<std::string, std::allocator<std::string> > const&, std::string*, char)", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/s/config.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LexNumCmp::operator()(mongo::StringData const&, mongo::StringData const&) const", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/db/jsobj.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::splitStringDelim(std::string const&, std::vector<std::string, std::allocator<std::string> >*, char)", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/db/server_parameters.cpp", 
-            "src/mongo/s/config.cpp", 
-            "src/mongo/s/mongos_options.cpp", 
-            "src/mongo/db/auth/action_set.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LexNumCmp::cmp(mongo::StringData const&, mongo::StringData const&) const", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/db/jsobj.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::LexNumCmp::LexNumCmp(bool)", 
-        "object": "src/mongo/util/stringutils.cpp", 
-        "used_by": [
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::versionArray", 
-        "object": "src/mongo/util/version.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::versionString", 
-        "object": "src/mongo/util/version.cpp", 
-        "used_by": [
-            "src/mongo/tools/tool_options.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp", 
-            "src/mongo/s/version_mongos.cpp", 
-            "src/mongo/scripting/utils.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/s/config_upgrade.cpp", 
-            "src/mongo/shell/shell_options.cpp", 
-            "src/mongo/db/startup_warnings.cpp", 
-            "src/mongo/dbtests/perftests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::toVersionArray(char const*)", 
-        "object": "src/mongo/util/version.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::mongodVersion()", 
-        "object": "src/mongo/util/version.cpp", 
-        "used_by": [
-            "src/mongo/db/log_process_details.cpp", 
-            "src/mongo/db/dbwebserver.cpp", 
-            "src/mongo/db/mongod_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::isSameMajorVersion(char const*)", 
-        "object": "src/mongo/util/version.cpp", 
-        "used_by": [
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProgressMeter::hit(int)", 
-        "object": "src/mongo/util/progress_meter.cpp", 
-        "used_by": [
-            "src/mongo/db/structure/collection_compact.cpp", 
-            "src/mongo/db/index/btree_based_access_method.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/tools/dump.cpp", 
-            "src/mongo/db/commands/mr.cpp", 
-            "src/mongo/tools/import.cpp", 
-            "src/mongo/db/commands/touch.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProgressMeter::toString() const", 
-        "object": "src/mongo/util/progress_meter.cpp", 
-        "used_by": [
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/db/clientlistplugin.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProgressMeter::reset(unsigned long long, int, int)", 
-        "object": "src/mongo/util/progress_meter.cpp", 
-        "used_by": [
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/tools/tool.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/tools/import.cpp", 
-            "src/mongo/tools/dump.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Date_t::toString() const", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::jsTime()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/documenttests.cpp", 
-            "src/mongo/s/config.cpp", 
-            "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/ops/modifier_current_date.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp", 
-            "src/mongo/db/introspect.cpp", 
-            "src/mongo/dbtests/config_upgrade_tests.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/client/gridfs.cpp", 
-            "src/mongo/client/gridfs.cpp", 
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/dbtests/perf/perftest.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::sleepmillis(long long)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/range_deleter.cpp", 
-            "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/tools/bridge.cpp", 
-            "src/mongo/db/commands/test_commands.cpp", 
-            "src/mongo/db/write_concern.cpp", 
-            "src/mongo/client/examples/rs.cpp", 
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/s/version_manager.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/scripting/bench.cpp", 
-            "src/mongo/util/fail_point.cpp", 
-            "src/mongo/db/repl/resync.cpp", 
-            "src/mongo/scripting/utils.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/dur.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/dbcommands_admin.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/util/net/message_server_port.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
-            "src/mongo/shell/shell_utils_launcher.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/util/concurrency/task.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Date_t::toTimeT() const", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/jsobjtests.cpp", 
-            "src/mongo/db/commands/storage_details.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Backoff::getNextSleepMillis(int, unsigned long long, unsigned long long) const", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::time_t_to_Struct(long, tm*, bool)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/tools/stat_util.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::currentDate()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/grid.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dateToISOStringLocal(mongo::Date_t)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/server_options_helpers.cpp", 
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/logger/message_event_utf8_encoder.cpp", 
-            "src/mongo/logger/message_event_utf8_encoder.cpp", 
-            "src/mongo/db/jsobj.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dateFromISOString(mongo::StringData const&)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/json.cpp", 
-            "src/mongo/db/json.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::sleepmicros(long long)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/db/dbhelpers.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::toPointInTime(std::string const&, boost::posix_time::ptime*)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/type_settings.cpp", 
-            "src/mongo/s/grid.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::getJSTimeVirtualThreadSkew()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dateToISOStringUTC(mongo::Date_t)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/server_options_helpers.cpp", 
-            "src/mongo/tools/export.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Backoff::nextSleepMillis()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/s/chunk_manager_targeter.cpp", 
-            "src/mongo/client/dbclient.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::time_t_to_String_short(long)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/dbtests/documenttests.cpp", 
-            "src/mongo/db/pipeline/value.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/repl/rs_rollback.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/db/repl/health.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/s/write_ops/batch_downconvert.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/tools/oplog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/unittest/unittest.cpp", 
-            "src/mongo/db/exec/oplogstart.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/write_concern.cpp", 
-            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/db/query/new_find.cpp", 
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/commands/geonear.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/scripting/bench.cpp", 
-            "src/mongo/s/d_writeback.cpp", 
-            "src/mongo/db/commands/touch.cpp", 
-            "src/mongo/dbtests/mmaptests.cpp", 
-            "src/mongo/db/structure/collection_compact.cpp", 
-            "src/mongo/s/strategy.cpp", 
-            "src/mongo/db/repl/resync.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/dbtests/jstests.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/s/d_state.cpp", 
-            "src/mongo/dbtests/matchertests.cpp", 
-            "src/mongo/db/range_deleter_db_env.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/storage/extent_manager.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/db/dur_preplogbuffer.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/db/commands.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/db/dur.cpp", 
-            "src/mongo/db/client.cpp", 
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/db/dur_writetodatafiles.cpp", 
-            "src/mongo/db/clientlistplugin.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/s/request.cpp", 
-            "src/mongo/db/index/btree_based_access_method.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/db/fts/fts_command_mongos.cpp", 
-            "src/mongo/s/d_split.cpp", 
-            "src/mongo/db/index/haystack_access_method.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
-            "src/mongo/dbtests/perf/perftest.cpp", 
-            "src/mongo/db/storage/record.cpp", 
-            "src/mongo/db/dbcommands_admin.cpp", 
-            "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/dbeval.cpp", 
-            "src/mongo/util/background.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/querytests.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/d_concurrency.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/db/restapi.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/dbhelpers.cpp", 
-            "src/mongo/db/fts/fts_command_mongod.cpp", 
-            "src/mongo/db/commands/mr.cpp", 
-            "src/mongo/db/commands/distinct.cpp", 
-            "src/mongo/db/commands/write_commands/batch_executor.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::terseCurrentTime(bool)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/config.cpp", 
-            "src/mongo/util/log.cpp", 
-            "src/mongo/db/initialize_server_global_state.cpp", 
-            "src/mongo/tools/top.cpp", 
-            "src/mongo/db/dbhelpers.cpp", 
-            "src/mongo/s/cluster_client_internal.cpp", 
-            "src/mongo/util/log.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::sleepsecs(int)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/util/net/listen.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/tools/top.cpp", 
-            "src/mongo/db/repl/rs_initialsync.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/client/examples/clientTest.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/db/range_deleter_db_env.cpp", 
-            "src/mongo/s/config.cpp", 
-            "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/repl/rs_rollback.cpp", 
-            "src/mongo/dbtests/jsobjtests.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/db/repl/sync.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/tools/stat.cpp", 
-            "src/mongo/util/net/listen.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/s/config_server_checker_service.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::jsTimeVirtualThreadSkew(long long)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/s/distlock.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::dateToCtimeString(mongo::Date_t)", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/server_options_helpers.cpp", 
-            "src/mongo/db/db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::curTimeMicros()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::curTimeMillis64()", 
-        "object": "src/mongo/util/time_support.cpp", 
-        "used_by": [
-            "src/mongo/scripting/engine_v8.cpp", 
-            "src/mongo/db/ttl.cpp", 
-            "src/mongo/db/repl/replset_commands.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/db/d_concurrency.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/logger/logstream_builder.cpp", 
-            "src/mongo/logger/logstream_builder.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::mongo_breakpoint()", 
-        "object": "src/mongo/util/debug_util.cpp", 
-        "used_by": [
-            "src/mongo/util/assert_util.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::setupSIGTRAPforGDB()", 
-        "object": "src/mongo/util/debug_util.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundOperation::dump(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)", 
-        "object": "src/mongo/db/background.cpp", 
-        "used_by": [
-            "src/mongo/db/restapi.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundOperation::BackgroundOperation(mongo::StringData const&)", 
-        "object": "src/mongo/db/background.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_create.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundOperation::assertNoBgOpInProgForDb(mongo::StringData const&)", 
-        "object": "src/mongo/db/background.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/collection_to_capped.cpp", 
-            "src/mongo/db/pdfile.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundOperation::assertNoBgOpInProgForNs(mongo::StringData const&)", 
-        "object": "src/mongo/db/background.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/drop_indexes.cpp", 
-            "src/mongo/db/catalog/database.cpp", 
-            "src/mongo/db/commands/compact.cpp", 
-            "src/mongo/db/catalog/index_catalog.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)", 
-        "object": "src/mongo/db/background.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/database_holder.cpp", 
-            "src/mongo/db/instance.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::maxCompressedLength(unsigned long)", 
-        "object": "src/mongo/util/compress.cpp", 
-        "used_by": [
-            "src/mongo/db/dur_journal.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::compress(char const*, unsigned long, std::string*)", 
-        "object": "src/mongo/util/compress.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::uncompress(char const*, unsigned long, std::string*)", 
-        "object": "src/mongo/util/compress.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/db/dur_recover.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::rawCompress(char const*, unsigned long, char*, unsigned long*)", 
-        "object": "src/mongo/util/compress.cpp", 
-        "used_by": [
-            "src/mongo/db/dur_journal.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for mongo::task::Task", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::task::Server", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Server::send(boost::function<void ()>)", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/sync_source_feedback.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "vtable for mongo::task::Server", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Task::run()", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Task::Task()", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/s/cursors.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Task::setUp()", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::repeat(mongo::task::Task*, unsigned int)", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/s/cursors.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Task::halt()", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::Server::doWork()", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
-        "symbol": "typeinfo for mongo::task::Task", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/s/cursors.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::task::fork(mongo::task::Task*)", 
-        "object": "src/mongo/util/concurrency/task.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/heartbeat.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::parseLL(char const*)", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/scripting/v8_db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::isValidUTF8(char const*)", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/tools/bsondump.cpp", 
-            "src/mongo/tools/import.cpp", 
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::StringSplitter::split(std::vector<std::string, std::allocator<std::string> >&)", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/tools/mongoimport_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::StringSplitter::next()", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/tools/stat.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::StringSplitter::join(std::vector<std::string, std::allocator<std::string> > const&, std::string const&)", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::StringSplitter::split(std::string const&, std::string const&)", 
-        "object": "src/mongo/util/text.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/basictests.cpp"
         ]
     }, 
     {
@@ -2041,290 +945,183 @@
         ]
     }, 
     {
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/util/util.cpp", 
+        "symbol": "mongo::BackgroundJob::~BackgroundJob()", 
+        "object": "src/mongo/util/background.cpp", 
         "used_by": [
-            "src/mongo/util/net/listen.cpp", 
-            "src/mongo/db/index/btree_index_cursor.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
             "src/mongo/db/repl/write_concern.cpp", 
-            "src/mongo/db/repl/replication_server_status.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
             "src/mongo/util/net/sock.cpp", 
-            "src/mongo/s/balance.cpp", 
-            "src/mongo/db/repl/manager.cpp", 
-            "src/mongo/db/repl/rs.cpp", 
-            "src/mongo/dbtests/framework.cpp", 
-            "src/mongo/db/commands/fsync.cpp", 
-            "src/mongo/util/concurrency/thread_pool.cpp", 
-            "src/mongo/db/range_deleter_mock_env.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/dbtests/dbtests.cpp", 
-            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
-            "src/mongo/client/syncclusterconnection.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
-            "src/mongo/db/range_deleter.cpp", 
-            "src/mongo/db/commands/dbhash.cpp", 
-            "src/mongo/db/storage/durable_mapped_file.cpp", 
-            "src/mongo/db/dur_commitjob.cpp", 
-            "src/mongo/tools/stat.cpp", 
             "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/util/net/ssl_manager.cpp", 
-            "src/mongo/dbtests/documentsourcetests.cpp", 
-            "src/mongo/util/file_allocator.cpp", 
             "src/mongo/s/writeback_listener.cpp", 
-            "src/mongo/db/repl/health.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/scripting/engine_v8.cpp", 
-            "src/mongo/db/catalog/database.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/s/commands_admin.cpp", 
-            "src/mongo/db/repl/rs_config.cpp", 
-            "src/mongo/db/storage/record.cpp", 
-            "src/mongo/db/pdfile.cpp", 
-            "src/mongo/tools/tool.cpp", 
-            "src/mongo/dbtests/counttests.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/index_builder.cpp", 
+            "src/mongo/db/commands/fsync.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/db.cpp", 
             "src/mongo/util/concurrency/task.cpp", 
-            "src/mongo/db/kill_current_op.cpp", 
-            "src/mongo/util/concurrency/spin_lock.cpp", 
+            "src/mongo/db/index_rebuilder.cpp", 
+            "src/mongo/util/net/sock.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::PeriodicTask", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/connpool.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundJob::running() const", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/client/dbclient_rs.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundJob::cancel()", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/client/dbclient_rs.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PeriodicTask::startRunningPeriodicTasks()", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/client/init.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PeriodicTask::~PeriodicTask()", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/connpool.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::BackgroundJob::go()", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
             "src/mongo/db/repl/bgsync.cpp", 
             "src/mongo/db/repl/consensus.cpp", 
-            "src/mongo/util/concurrency/synchronization.cpp", 
-            "src/mongo/db/repl/heartbeat.cpp", 
-            "src/mongo/s/version_manager.cpp", 
-            "src/mongo/dbtests/perftests.cpp", 
-            "src/mongo/s/d_writeback.cpp", 
-            "src/mongo/s/config.cpp", 
-            "src/mongo/s/d_state.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/util/fail_point_service.cpp", 
-            "src/mongo/s/shardconnection.cpp", 
-            "src/mongo/s/commands_public.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/client/syncclusterconnection.cpp", 
-            "src/mongo/shell/shell_utils.cpp", 
-            "src/mongo/s/d_migrate.cpp", 
-            "src/mongo/db/exec/fetch.cpp", 
-            "src/mongo/util/background.cpp", 
-            "src/mongo/db/d_concurrency.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/s/config_server_checker_service.cpp", 
-            "src/mongo/util/net/ssl_manager.cpp", 
-            "src/mongo/util/net/sock.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/tools/bridge.cpp", 
-            "src/mongo/util/concurrency/synchronization.cpp", 
-            "src/mongo/dbtests/mock/mock_conn_registry.cpp", 
-            "src/mongo/scripting/engine.cpp", 
-            "src/mongo/bson/optime.cpp", 
+            "src/mongo/s/writeback_listener.cpp", 
             "src/mongo/s/server.cpp", 
-            "src/mongo/db/dur_recover.cpp", 
-            "src/mongo/dbtests/sharding.cpp", 
-            "src/mongo/util/net/listen.cpp", 
-            "src/mongo/util/concurrency/spin_lock.cpp", 
+            "src/mongo/util/concurrency/task.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
             "src/mongo/client/dbclient_rs.cpp", 
-            "src/mongo/db/commands/isself.cpp", 
-            "src/mongo/db/curop.cpp", 
-            "src/mongo/db/instance.cpp", 
-            "src/mongo/dbtests/chunktests.cpp", 
-            "src/mongo/s/distlock.cpp", 
-            "src/mongo/s/d_split.cpp", 
-            "src/mongo/client/examples/mongoperf.cpp", 
-            "src/mongo/s/shard.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/s/grid.cpp", 
-            "src/mongo/client/connpool.cpp", 
-            "src/mongo/shell/dbshell.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::operator<<(std::ostream&, mongo::ThreadSafeString const&)", 
-        "object": "src/mongo/util/util.cpp", 
-        "used_by": [
-            "src/mongo/db/curop.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::hexdump(char const*, unsigned int)", 
-        "object": "src/mongo/util/util.cpp", 
-        "used_by": [
-            "src/mongo/db/dur_recover.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::threadpool::ThreadPool::ThreadPool(int)", 
-        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/repl/rs.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::threadpool::ThreadPool::~ThreadPool()", 
-        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/db/repl/write_concern.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/index_builder.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/db/commands/fsync.cpp", 
             "src/mongo/dbtests/replsettests.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/repl/rs.cpp"
+            "src/mongo/db/repl/oplog.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::threadpool::ThreadPool::schedule(boost::function<void ()>)", 
-        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "symbol": "mongo::PeriodicTask::stopRunningPeriodicTasks(int)", 
+        "object": "src/mongo/util/background.cpp", 
         "used_by": [
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
+            "src/mongo/client/init.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::threadpool::ThreadPool::join()", 
-        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "symbol": "mongo::BackgroundJob::wait(unsigned int)", 
+        "object": "src/mongo/util/background.cpp", 
         "used_by": [
-            "src/mongo/db/repl/master_slave.cpp", 
-            "src/mongo/dbtests/threadedtests.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp"
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/util/net/sock.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::ProcessInfo::supported()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "symbol": "mongo::PeriodicTask::PeriodicTask()", 
+        "object": "src/mongo/util/background.cpp", 
         "used_by": [
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/client/connpool.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::BackgroundJob", 
+        "object": "src/mongo/util/background.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
+            "src/mongo/db/repl/write_concern.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/s/writeback_listener.cpp", 
             "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/shell/shell_utils.cpp", 
-            "src/mongo/util/mmap.cpp"
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/index_builder.cpp", 
+            "src/mongo/db/commands/fsync.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/util/concurrency/task.cpp", 
+            "src/mongo/db/index_rebuilder.cpp", 
+            "src/mongo/util/net/sock.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::ProcessInfo::blockInMemory(void const*)", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "symbol": "mongo::BackgroundJob::BackgroundJob(bool)", 
+        "object": "src/mongo/util/background.cpp", 
         "used_by": [
-            "src/mongo/db/storage/record.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::getExtraInfo(mongo::BSONObjBuilder&)", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/server_status.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::SystemInfo::collectSystemInfo()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/util/processinfo.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::~ProcessInfo()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/structure/btree/btree_stats.cpp", 
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/db/repl/write_concern.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/s/writeback_listener.cpp", 
+            "src/mongo/db/d_globals.cpp", 
+            "src/mongo/s/server.cpp", 
             "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::getResidentSize()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/shell/shell_utils.cpp", 
-            "src/mongo/util/mmap.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::blockCheckSupported()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/structure/btree/btree_stats.cpp", 
-            "src/mongo/db/storage/record.cpp", 
-            "src/mongo/db/startup_warnings.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::pagesInMemory(void const*, unsigned long, std::vector<char, std::allocator<char> >*)", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/storage_details.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::getVirtualMemorySize()", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/shell/shell_utils.cpp", 
-            "src/mongo/util/mmap.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)", 
-        "object": "src/mongo/util/processinfo_darwin.cpp", 
-        "used_by": [
-            "src/mongo/db/structure/btree/btree_stats.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
-            "src/mongo/db/dbcommands_generic.cpp", 
-            "src/mongo/util/mmap.cpp", 
-            "src/mongo/shell/shell_utils.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PseudoRandom::PseudoRandom(unsigned int)", 
-        "object": "src/mongo/platform/random.cpp", 
-        "used_by": [
-            "src/mongo/s/cursors.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PseudoRandom::PseudoRandom(long long)", 
-        "object": "src/mongo/platform/random.cpp", 
-        "used_by": [
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/db/kill_current_op.cpp", 
-            "src/mongo/s/balancer_policy_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::SecureRandom::create()", 
-        "object": "src/mongo/platform/random.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/authentication_commands.cpp", 
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/db/dur_journal.cpp", 
-            "src/mongo/bson/oid.cpp", 
-            "src/mongo/bson/oid.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PseudoRandom::nextInt32()", 
-        "object": "src/mongo/platform/random.cpp", 
-        "used_by": [
-            "src/mongo/s/cursors.cpp", 
-            "src/mongo/db/clientcursor.cpp", 
-            "src/mongo/s/chunk.cpp", 
-            "src/mongo/s/balancer_policy_tests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::PseudoRandom::nextInt64()", 
-        "object": "src/mongo/platform/random.cpp", 
-        "used_by": [
-            "src/mongo/db/kill_current_op.cpp"
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/index_builder.cpp", 
+            "src/mongo/db/commands/fsync.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/util/concurrency/task.cpp", 
+            "src/mongo/db/index_rebuilder.cpp", 
+            "src/mongo/util/net/sock.cpp"
         ]
     }, 
     {
@@ -5501,214 +4298,97 @@
         ]
     }, 
     {
-        "symbol": "mongo::inConstructorChainSupported()", 
-        "object": "src/mongo/util/stack_introspect.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/stacktests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::snapshotThread", 
-        "object": "src/mongo/db/stats/snapshots.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::base64::chars", 
-        "object": "src/mongo/util/base64.cpp", 
-        "used_by": [
-            "src/mongo/db/json.cpp", 
-            "src/mongo/db/json.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::base64::encode(std::string const&)", 
-        "object": "src/mongo/util/base64.cpp", 
-        "used_by": [
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::base64::encode(char const*, int)", 
-        "object": "src/mongo/util/base64.cpp", 
-        "used_by": [
-            "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/dbtests/basictests.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::base64::decode(std::string const&)", 
-        "object": "src/mongo/util/base64.cpp", 
-        "used_by": [
-            "src/mongo/scripting/engine_v8.cpp", 
-            "src/mongo/db/json.cpp", 
-            "src/mongo/scripting/v8_db.cpp", 
-            "src/mongo/client/sasl_client_authenticate.cpp", 
-            "src/mongo/dbtests/basictests.cpp", 
-            "src/mongo/db/json.cpp", 
-            "src/mongo/client/sasl_client_authenticate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::base64::encode(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, char const*, int)", 
-        "object": "src/mongo/util/base64.cpp", 
-        "used_by": [
-            "src/mongo/db/jsobj.cpp", 
-            "src/mongo/scripting/engine_v8.cpp", 
-            "src/mongo/db/jsobj.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TimerStats::getReport() const", 
-        "object": "src/mongo/db/stats/timer_stats.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/prefetch.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/s/client_info.cpp", 
-            "src/mongo/db/write_concern.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TimerHolder::TimerHolder(mongo::TimerStats*)", 
-        "object": "src/mongo/db/stats/timer_stats.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/prefetch.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/write_concern.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TimerHolder::~TimerHolder()", 
-        "object": "src/mongo/db/stats/timer_stats.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/bgsync.cpp", 
-            "src/mongo/db/prefetch.cpp", 
-            "src/mongo/db/repl/rs_sync.cpp", 
-            "src/mongo/db/write_concern.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::TimerHolder::recordMillis()", 
-        "object": "src/mongo/db/stats/timer_stats.cpp", 
-        "used_by": [
-            "src/mongo/db/write_concern.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::printStackTrace(std::ostream&)", 
-        "object": "src/mongo/util/stacktrace.cpp", 
-        "used_by": [
-            "src/mongo/db/dur.cpp", 
-            "src/mongo/s/server.cpp", 
-            "src/mongo/tools/bridge.cpp", 
-            "src/mongo/db/db.cpp", 
-            "src/mongo/util/assert_util.cpp", 
-            "src/mongo/shell/dbshell.cpp", 
-            "src/mongo/db/dur_commitjob.cpp", 
-            "src/mongo/db/tests.cpp", 
-            "src/mongo/util/log.cpp", 
-            "src/mongo/util/log.cpp", 
-            "src/mongo/db/dur_preplogbuffer.cpp", 
-            "src/mongo/s/shardconnection.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::getGlobalFailPointRegistry()", 
-        "object": "src/mongo/util/fail_point_service.cpp", 
+        "symbol": "mongo::FailPoint::slowShouldFailOpenBlock()", 
+        "object": "src/mongo/util/fail_point.cpp", 
         "used_by": [
             "src/mongo/db/repl/bgsync.cpp", 
             "src/mongo/db/exec/fetch.cpp", 
             "src/mongo/db/curop.cpp", 
             "src/mongo/db/repl/heartbeat.cpp", 
             "src/mongo/db/instance.cpp", 
-            "src/mongo/db/commands/fail_point_cmd.cpp", 
             "src/mongo/db/repl/rs_sync.cpp", 
             "src/mongo/db/kill_current_op.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
             "src/mongo/util/net/sock.cpp", 
-            "src/mongo/dbtests/query_stage_fetch.cpp", 
             "src/mongo/util/net/sock.cpp", 
             "src/mongo/s/grid.cpp", 
             "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::auth::createPasswordDigest(mongo::StringData const&, mongo::StringData const&)", 
-        "object": "src/mongo/client/auth_helpers.cpp", 
+        "symbol": "mongo::ScopedFailPoint::getData() const", 
+        "object": "src/mongo/util/fail_point.cpp", 
         "used_by": [
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/client/dbclient.cpp", 
-            "src/mongo/db/auth/user_management_commands_parser.cpp"
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/kill_current_op.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::replOpCounters", 
-        "object": "src/mongo/db/stats/counters.cpp", 
+        "symbol": "mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)", 
+        "object": "src/mongo/util/fail_point.cpp", 
         "used_by": [
-            "src/mongo/db/repl/replication_server_status.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/repl/oplog.cpp"
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/kill_current_op.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::OpCounters::gotOp(int, bool)", 
-        "object": "src/mongo/db/stats/counters.cpp", 
+        "symbol": "mongo::ScopedFailPoint::~ScopedFailPoint()", 
+        "object": "src/mongo/util/fail_point.cpp", 
         "used_by": [
-            "src/mongo/s/request.cpp"
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/kill_current_op.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::OpCounters::getObj() const", 
-        "object": "src/mongo/db/stats/counters.cpp", 
+        "symbol": "mongo::FailPoint::shouldFailCloseBlock()", 
+        "object": "src/mongo/util/fail_point.cpp", 
         "used_by": [
-            "src/mongo/db/commands/server_status.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::NetworkCounter::hit(long long, long long)", 
-        "object": "src/mongo/db/stats/counters.cpp", 
-        "used_by": [
-            "src/mongo/util/net/message_server_port.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::globalOpCounters", 
-        "object": "src/mongo/db/stats/counters.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/oplog.cpp", 
-            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/exec/fetch.cpp", 
+            "src/mongo/db/curop.cpp", 
             "src/mongo/db/instance.cpp", 
-            "src/mongo/s/request.cpp", 
-            "src/mongo/db/dbcommands.cpp", 
-            "src/mongo/db/commands/write_commands/write_commands.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::networkCounter", 
-        "object": "src/mongo/db/stats/counters.cpp", 
-        "used_by": [
-            "src/mongo/util/net/message_server_port.cpp", 
-            "src/mongo/db/commands/server_status.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::NetworkCounter::append(mongo::BSONObjBuilder&)", 
-        "object": "src/mongo/db/stats/counters.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/server_status.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::BSONElementHasher::hash64(mongo::BSONElement const&, int)", 
-        "object": "src/mongo/db/hasher.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/hashcmd.cpp", 
-            "src/mongo/db/query/index_bounds_builder.cpp", 
-            "src/mongo/db/keypattern.cpp", 
-            "src/mongo/db/index/hash_access_method.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/s/grid.cpp", 
             "src/mongo/s/d_migrate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FailPoint::toBSON() const", 
+        "object": "src/mongo/util/fail_point.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/fail_point_cmd.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FailPoint::FailPoint()", 
+        "object": "src/mongo/util/fail_point.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/exec/fetch.cpp", 
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/kill_current_op.cpp", 
+            "src/mongo/util/fail_point_service.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/s/grid.cpp", 
+            "src/mongo/s/d_migrate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned int, mongo::BSONObj const&)", 
+        "object": "src/mongo/util/fail_point.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/query_stage_fetch.cpp", 
+            "src/mongo/db/commands/fail_point_cmd.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/dbtests/perftests.cpp"
         ]
     }, 
     {
@@ -5753,55 +4433,285 @@
         ]
     }, 
     {
-        "symbol": "mongo::ElapsedTracker::resetLastTime()", 
-        "object": "src/mongo/util/elapsed_tracker.cpp", 
+        "symbol": "mongo::getGlobalFailPointRegistry()", 
+        "object": "src/mongo/util/fail_point_service.cpp", 
         "used_by": [
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/db/query/multi_plan_runner.cpp", 
-            "src/mongo/db/query/plan_executor.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ElapsedTracker::intervalHasElapsed()", 
-        "object": "src/mongo/util/elapsed_tracker.cpp", 
-        "used_by": [
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/db/query/multi_plan_runner.cpp", 
-            "src/mongo/db/query/plan_executor.cpp", 
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::ElapsedTracker::ElapsedTracker(int, int)", 
-        "object": "src/mongo/util/elapsed_tracker.cpp", 
-        "used_by": [
-            "src/mongo/db/ops/update.cpp", 
-            "src/mongo/db/catalog/index_create.cpp", 
-            "src/mongo/db/query/multi_plan_runner.cpp", 
-            "src/mongo/db/query/plan_executor.cpp", 
-            "src/mongo/s/d_migrate.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Top::global", 
-        "object": "src/mongo/db/stats/top.cpp", 
-        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/exec/fetch.cpp", 
             "src/mongo/db/curop.cpp", 
-            "src/mongo/db/catalog/database.cpp"
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/db/commands/fail_point_cmd.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/kill_current_op.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/dbtests/query_stage_fetch.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/s/grid.cpp", 
+            "src/mongo/s/d_migrate.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::Top::record(mongo::StringData const&, int, int, long long, bool)", 
-        "object": "src/mongo/db/stats/top.cpp", 
+        "symbol": "typeinfo for mongo::IntrusiveCounterUnsigned", 
+        "object": "src/mongo/util/intrusive_counter.cpp", 
         "used_by": [
-            "src/mongo/db/curop.cpp"
+            "src/mongo/dbtests/documentsourcetests.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/dbtests/pipelinetests.cpp", 
+            "src/mongo/dbtests/expressiontests.cpp", 
+            "src/mongo/db/pipeline/document_source.cpp", 
+            "src/mongo/db/pipeline/expression.cpp", 
+            "src/mongo/db/pipeline/pipeline.cpp", 
+            "src/mongo/db/pipeline/document_source_project.cpp", 
+            "src/mongo/db/commands/pipeline_command.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::Top::collectionDropped(mongo::StringData const&)", 
-        "object": "src/mongo/db/stats/top.cpp", 
+        "symbol": "mongo::IntrusiveCounterUnsigned::addRef() const", 
+        "object": "src/mongo/util/intrusive_counter.cpp", 
         "used_by": [
-            "src/mongo/db/catalog/database.cpp"
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/pipeline/document_source_skip.cpp", 
+            "src/mongo/db/pipeline/document_source_match.cpp", 
+            "src/mongo/db/pipeline/document_source_out.cpp", 
+            "src/mongo/dbtests/expressiontests.cpp", 
+            "src/mongo/db/pipeline/document_source_project.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp", 
+            "src/mongo/dbtests/documentsourcetests.cpp", 
+            "src/mongo/db/pipeline/document_source_cursor.cpp", 
+            "src/mongo/db/commands/pipeline_command.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
+            "src/mongo/dbtests/pipelinetests.cpp", 
+            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
+            "src/mongo/db/pipeline/document_source.cpp", 
+            "src/mongo/db/pipeline/document_source_unwind.cpp", 
+            "src/mongo/db/pipeline/document_source_limit.cpp", 
+            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
+            "src/mongo/db/pipeline/document_source_redact.cpp", 
+            "src/mongo/db/pipeline/expression.cpp", 
+            "src/mongo/db/pipeline/pipeline.cpp", 
+            "src/mongo/db/pipeline/document_source_command_shards.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::IntrusiveCounterUnsigned", 
+        "object": "src/mongo/util/intrusive_counter.cpp", 
+        "used_by": [
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/pipeline/document_source_skip.cpp", 
+            "src/mongo/db/pipeline/document_source_match.cpp", 
+            "src/mongo/db/pipeline/document_source_out.cpp", 
+            "src/mongo/dbtests/expressiontests.cpp", 
+            "src/mongo/db/pipeline/document_source_project.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp", 
+            "src/mongo/dbtests/documentsourcetests.cpp", 
+            "src/mongo/db/pipeline/document_source_cursor.cpp", 
+            "src/mongo/db/commands/pipeline_command.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
+            "src/mongo/dbtests/pipelinetests.cpp", 
+            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
+            "src/mongo/db/pipeline/document_source.cpp", 
+            "src/mongo/db/pipeline/document_source_unwind.cpp", 
+            "src/mongo/db/pipeline/document_source_limit.cpp", 
+            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
+            "src/mongo/db/pipeline/document_source_redact.cpp", 
+            "src/mongo/db/pipeline/expression.cpp", 
+            "src/mongo/db/pipeline/pipeline.cpp", 
+            "src/mongo/db/pipeline/document_source_command_shards.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::RCString::create(mongo::StringData)", 
+        "object": "src/mongo/util/intrusive_counter.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/documenttests.cpp", 
+            "src/mongo/db/pipeline/value.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::IntrusiveCounterUnsigned::release() const", 
+        "object": "src/mongo/util/intrusive_counter.cpp", 
+        "used_by": [
+            "src/mongo/db/pipeline/document_source_sort.cpp", 
+            "src/mongo/db/pipeline/document_source_skip.cpp", 
+            "src/mongo/db/pipeline/document_source_match.cpp", 
+            "src/mongo/db/pipeline/document_source_out.cpp", 
+            "src/mongo/dbtests/expressiontests.cpp", 
+            "src/mongo/db/pipeline/document_source_project.cpp", 
+            "src/mongo/db/pipeline/document_source_group.cpp", 
+            "src/mongo/dbtests/documentsourcetests.cpp", 
+            "src/mongo/db/pipeline/document_source_cursor.cpp", 
+            "src/mongo/db/commands/pipeline_command.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/pipeline/document_source_bson_array.cpp", 
+            "src/mongo/dbtests/pipelinetests.cpp", 
+            "src/mongo/db/pipeline/document_source_merge_cursors.cpp", 
+            "src/mongo/db/pipeline/document_source.cpp", 
+            "src/mongo/db/pipeline/document_source_unwind.cpp", 
+            "src/mongo/db/pipeline/document_source_limit.cpp", 
+            "src/mongo/db/pipeline/document_source_geo_near.cpp", 
+            "src/mongo/db/pipeline/document_source_redact.cpp", 
+            "src/mongo/db/pipeline/expression.cpp", 
+            "src/mongo/db/pipeline/pipeline.cpp", 
+            "src/mongo/db/pipeline/document_source_command_shards.cpp"
+        ]
+    }, 
+    {
+        "symbol": "_md5_finish", 
+        "object": "src/mongo/util/md5.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/scripting/utils.cpp", 
+            "src/mongo/client/auth_helpers.cpp", 
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/util/md5main.cpp"
+        ]
+    }, 
+    {
+        "symbol": "_md5_init", 
+        "object": "src/mongo/util/md5.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/scripting/utils.cpp", 
+            "src/mongo/client/auth_helpers.cpp", 
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/util/md5main.cpp"
+        ]
+    }, 
+    {
+        "symbol": "_md5_append", 
+        "object": "src/mongo/util/md5.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/scripting/utils.cpp", 
+            "src/mongo/client/auth_helpers.cpp", 
+            "src/mongo/shell/shell_utils_extended.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/util/md5main.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::auth::createPasswordDigest(mongo::StringData const&, mongo::StringData const&)", 
+        "object": "src/mongo/client/auth_helpers.cpp", 
+        "used_by": [
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/db/auth/user_management_commands_parser.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::isIdentical(mongo::SafeNum const&) const", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_bit.cpp", 
+            "src/mongo/db/ops/modifier_inc.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::orInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_bit.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::xorInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_bit.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::andInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_bit.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::debugString() const", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/log_builder.cpp", 
+            "src/mongo/db/ops/modifier_bit.cpp", 
+            "src/mongo/db/ops/modifier_inc.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::mulInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_inc.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::SafeNum(mongo::BSONElement const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_bit.cpp", 
+            "src/mongo/db/ops/modifier_inc.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SafeNum::addInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
+        "object": "src/mongo/util/safe_num.cpp", 
+        "used_by": [
+            "src/mongo/db/ops/modifier_inc.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printStackAndExit(int)", 
+        "object": "src/mongo/util/signal_handlers.cpp", 
+        "used_by": [
+            "src/mongo/s/server.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::inConstructorChainSupported()", 
+        "object": "src/mongo/util/stack_introspect.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/stacktests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printStackTrace(std::ostream&)", 
+        "object": "src/mongo/util/stacktrace.cpp", 
+        "used_by": [
+            "src/mongo/db/dur.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/util/assert_util.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/db/dur_commitjob.cpp", 
+            "src/mongo/db/tests.cpp", 
+            "src/mongo/util/log.cpp", 
+            "src/mongo/util/log.cpp", 
+            "src/mongo/db/dur_preplogbuffer.cpp", 
+            "src/mongo/s/shardconnection.cpp"
         ]
     }, 
     {
@@ -5878,6 +4788,516 @@
         ]
     }, 
     {
+        "symbol": "mongo::versionCmp(mongo::StringData, mongo::StringData)", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/s/mongo_version_range.cpp", 
+            "src/mongo/s/cluster_client_internal.cpp", 
+            "src/mongo/tools/restore.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::joinStringDelim(std::vector<std::string, std::allocator<std::string> > const&, std::string*, char)", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/s/config.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::LexNumCmp::operator()(mongo::StringData const&, mongo::StringData const&) const", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/jsobj.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::splitStringDelim(std::string const&, std::vector<std::string, std::allocator<std::string> >*, char)", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/db/server_parameters.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/db/auth/action_set.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::LexNumCmp::cmp(mongo::StringData const&, mongo::StringData const&) const", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/jsobj.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::LexNumCmp::LexNumCmp(bool)", 
+        "object": "src/mongo/util/stringutils.cpp", 
+        "used_by": [
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/dbtests/jsobjtests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::parseLL(char const*)", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/scripting/v8_db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::isValidUTF8(char const*)", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/tools/bsondump.cpp", 
+            "src/mongo/tools/import.cpp", 
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::StringSplitter::split(std::vector<std::string, std::allocator<std::string> >&)", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/tools/mongoimport_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::StringSplitter::next()", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/tools/stat.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::StringSplitter::join(std::vector<std::string, std::allocator<std::string> > const&, std::string const&)", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::StringSplitter::split(std::string const&, std::string const&)", 
+        "object": "src/mongo/util/text.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Date_t::toString() const", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/distlock.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::jsTime()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/documenttests.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/db/repl/replication_server_status.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/ops/modifier_current_date.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/db/introspect.cpp", 
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/client/gridfs.cpp", 
+            "src/mongo/client/gridfs.cpp", 
+            "src/mongo/s/cluster_client_internal.cpp", 
+            "src/mongo/dbtests/perf/perftest.cpp", 
+            "src/mongo/dbtests/jsobjtests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::sleepmillis(long long)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/range_deleter.cpp", 
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/db/commands/test_commands.cpp", 
+            "src/mongo/db/write_concern.cpp", 
+            "src/mongo/client/examples/rs.cpp", 
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/s/version_manager.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/scripting/bench.cpp", 
+            "src/mongo/util/fail_point.cpp", 
+            "src/mongo/db/repl/resync.cpp", 
+            "src/mongo/scripting/utils.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/dbtests/jsobjtests.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/dbtests/mock/mock_remote_db_server.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/dur.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/dbcommands_admin.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/util/net/message_server_port.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/shell/shell_utils_launcher.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/util/concurrency/task.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Date_t::toTimeT() const", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/jsobjtests.cpp", 
+            "src/mongo/db/commands/storage_details.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Backoff::getNextSleepMillis(int, unsigned long long, unsigned long long) const", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::time_t_to_Struct(long, tm*, bool)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/tools/stat_util.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::currentDate()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/grid.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dateToISOStringLocal(mongo::Date_t)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/server_options_helpers.cpp", 
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/logger/message_event_utf8_encoder.cpp", 
+            "src/mongo/logger/message_event_utf8_encoder.cpp", 
+            "src/mongo/db/jsobj.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dateFromISOString(mongo::StringData const&)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/json.cpp", 
+            "src/mongo/db/json.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::sleepmicros(long long)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::toPointInTime(std::string const&, boost::posix_time::ptime*)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/type_settings.cpp", 
+            "src/mongo/s/grid.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::getJSTimeVirtualThreadSkew()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/distlock.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dateToISOStringUTC(mongo::Date_t)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/server_options_helpers.cpp", 
+            "src/mongo/tools/export.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Backoff::nextSleepMillis()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/s/chunk_manager_targeter.cpp", 
+            "src/mongo/client/dbclient.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::time_t_to_String_short(long)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/dbtests/documenttests.cpp", 
+            "src/mongo/db/pipeline/value.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/db/repl/health.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/s/write_ops/batch_downconvert.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/tools/oplog.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::curTimeMicros64()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/unittest/unittest.cpp", 
+            "src/mongo/db/exec/oplogstart.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/write_concern.cpp", 
+            "src/mongo/dbtests/mock/mock_dbclient_connection.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/query/new_find.cpp", 
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/commands/geonear.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/scripting/bench.cpp", 
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/db/commands/touch.cpp", 
+            "src/mongo/dbtests/mmaptests.cpp", 
+            "src/mongo/db/structure/collection_compact.cpp", 
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/db/repl/resync.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/dbtests/jstests.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/s/d_state.cpp", 
+            "src/mongo/dbtests/matchertests.cpp", 
+            "src/mongo/db/range_deleter_db_env.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/storage/extent_manager.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/db/dur_preplogbuffer.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/db/commands.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/dur.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/dur_writetodatafiles.cpp", 
+            "src/mongo/db/clientlistplugin.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/s/request.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
+            "src/mongo/s/d_split.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/dbtests/perf/perftest.cpp", 
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/dbcommands_admin.cpp", 
+            "src/mongo/db/repl/oplog.cpp", 
+            "src/mongo/db/dbeval.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/querytests.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/d_concurrency.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/db/restapi.cpp", 
+            "src/mongo/dbtests/jsobjtests.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/commands/distinct.cpp", 
+            "src/mongo/db/commands/write_commands/batch_executor.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::terseCurrentTime(bool)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/config.cpp", 
+            "src/mongo/util/log.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/tools/top.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/s/cluster_client_internal.cpp", 
+            "src/mongo/util/log.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::sleepsecs(int)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/util/net/listen.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/auth/user_cache_invalidator_job.cpp", 
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/tools/top.cpp", 
+            "src/mongo/db/repl/rs_initialsync.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/db/repl/write_concern.cpp", 
+            "src/mongo/client/examples/clientTest.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/db/range_deleter_db_env.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/writeback_listener.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/repl/rs_rollback.cpp", 
+            "src/mongo/dbtests/jsobjtests.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/db/repl/sync.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/util/net/listen.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/s/config_server_checker_service.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::jsTimeVirtualThreadSkew(long long)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/s/distlock.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::dateToCtimeString(mongo::Date_t)", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/server_options_helpers.cpp", 
+            "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::curTimeMicros()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::curTimeMillis64()", 
+        "object": "src/mongo/util/time_support.cpp", 
+        "used_by": [
+            "src/mongo/scripting/engine_v8.cpp", 
+            "src/mongo/db/ttl.cpp", 
+            "src/mongo/db/repl/replset_commands.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/d_concurrency.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/logger/logstream_builder.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/instance.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Timer::_countsPerSecond", 
+        "object": "src/mongo/util/timer.cpp", 
+        "used_by": [
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/unittest/unittest.cpp", 
+            "src/mongo/db/exec/oplogstart.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/write_concern.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/catalog/index_create.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/scripting/bench.cpp", 
+            "src/mongo/db/range_deleter_db_env.cpp", 
+            "src/mongo/dbtests/mmaptests.cpp", 
+            "src/mongo/db/structure/collection_compact.cpp", 
+            "src/mongo/s/strategy.cpp", 
+            "src/mongo/db/repl/resync.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/s/d_state.cpp", 
+            "src/mongo/db/commands/touch.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/storage/extent_manager.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/db/restapi.cpp", 
+            "src/mongo/db/dur_preplogbuffer.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/db/commands.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/db/dur.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/db/dur_writetodatafiles.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/s/request.cpp", 
+            "src/mongo/db/index/btree_based_access_method.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/db/fts/fts_command_mongos.cpp", 
+            "src/mongo/s/d_split.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/dbcommands_admin.cpp", 
+            "src/mongo/db/repl/oplog.cpp", 
+            "src/mongo/db/dbeval.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/querytests.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/d_concurrency.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/dbtests/matchertests.cpp", 
+            "src/mongo/db/dbcommands.cpp", 
+            "src/mongo/db/dbhelpers.cpp", 
+            "src/mongo/db/fts/fts_command_mongod.cpp", 
+            "src/mongo/db/commands/mr.cpp", 
+            "src/mongo/db/commands/distinct.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::touch_pages(char const*, unsigned long)", 
         "object": "src/mongo/util/touch_pages.cpp", 
         "used_by": [
@@ -5886,63 +5306,643 @@
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::isIdentical(mongo::SafeNum const&) const", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/util.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_bit.cpp", 
-            "src/mongo/db/ops/modifier_inc.cpp"
+            "src/mongo/util/net/listen.cpp", 
+            "src/mongo/db/index/btree_index_cursor.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/db/repl/write_concern.cpp", 
+            "src/mongo/db/repl/replication_server_status.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/commands/fsync.cpp", 
+            "src/mongo/util/concurrency/thread_pool.cpp", 
+            "src/mongo/db/range_deleter_mock_env.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/dbtests.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp", 
+            "src/mongo/client/syncclusterconnection.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/db/range_deleter.cpp", 
+            "src/mongo/db/commands/dbhash.cpp", 
+            "src/mongo/db/storage/durable_mapped_file.cpp", 
+            "src/mongo/db/dur_commitjob.cpp", 
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/util/net/ssl_manager.cpp", 
+            "src/mongo/dbtests/documentsourcetests.cpp", 
+            "src/mongo/util/file_allocator.cpp", 
+            "src/mongo/s/writeback_listener.cpp", 
+            "src/mongo/db/repl/health.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/scripting/engine_v8.cpp", 
+            "src/mongo/db/catalog/database.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/s/commands_admin.cpp", 
+            "src/mongo/db/repl/rs_config.cpp", 
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/pdfile.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/dbtests/counttests.cpp", 
+            "src/mongo/util/concurrency/task.cpp", 
+            "src/mongo/db/kill_current_op.cpp", 
+            "src/mongo/util/concurrency/spin_lock.cpp", 
+            "src/mongo/db/repl/bgsync.cpp", 
+            "src/mongo/db/repl/consensus.cpp", 
+            "src/mongo/util/concurrency/synchronization.cpp", 
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/s/version_manager.cpp", 
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/s/d_writeback.cpp", 
+            "src/mongo/s/config.cpp", 
+            "src/mongo/s/d_state.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/util/fail_point_service.cpp", 
+            "src/mongo/s/shardconnection.cpp", 
+            "src/mongo/s/commands_public.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/client/syncclusterconnection.cpp", 
+            "src/mongo/shell/shell_utils.cpp", 
+            "src/mongo/s/d_migrate.cpp", 
+            "src/mongo/db/exec/fetch.cpp", 
+            "src/mongo/util/background.cpp", 
+            "src/mongo/db/d_concurrency.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/s/config_server_checker_service.cpp", 
+            "src/mongo/util/net/ssl_manager.cpp", 
+            "src/mongo/util/net/sock.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp", 
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/tools/bridge.cpp", 
+            "src/mongo/util/concurrency/synchronization.cpp", 
+            "src/mongo/dbtests/mock/mock_conn_registry.cpp", 
+            "src/mongo/scripting/engine.cpp", 
+            "src/mongo/bson/optime.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/db/dur_recover.cpp", 
+            "src/mongo/dbtests/sharding.cpp", 
+            "src/mongo/util/net/listen.cpp", 
+            "src/mongo/util/concurrency/spin_lock.cpp", 
+            "src/mongo/client/dbclient_rs.cpp", 
+            "src/mongo/db/commands/isself.cpp", 
+            "src/mongo/db/curop.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/dbtests/chunktests.cpp", 
+            "src/mongo/s/distlock.cpp", 
+            "src/mongo/s/d_split.cpp", 
+            "src/mongo/client/examples/mongoperf.cpp", 
+            "src/mongo/s/shard.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/client/dbclient.cpp", 
+            "src/mongo/s/grid.cpp", 
+            "src/mongo/client/connpool.cpp", 
+            "src/mongo/shell/dbshell.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::orInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ThreadSafeString const&)", 
+        "object": "src/mongo/util/util.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_bit.cpp"
+            "src/mongo/db/curop.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::xorInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::hexdump(char const*, unsigned int)", 
+        "object": "src/mongo/util/util.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_bit.cpp"
+            "src/mongo/db/dur_recover.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::andInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::versionArray", 
+        "object": "src/mongo/util/version.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_bit.cpp"
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::debugString() const", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::versionString", 
+        "object": "src/mongo/util/version.cpp", 
         "used_by": [
-            "src/mongo/db/ops/log_builder.cpp", 
-            "src/mongo/db/ops/modifier_bit.cpp", 
-            "src/mongo/db/ops/modifier_inc.cpp"
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/dbtests/config_upgrade_tests.cpp", 
+            "src/mongo/s/version_mongos.cpp", 
+            "src/mongo/scripting/utils.cpp", 
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/shell/dbshell.cpp", 
+            "src/mongo/s/config_upgrade.cpp", 
+            "src/mongo/shell/shell_options.cpp", 
+            "src/mongo/db/startup_warnings.cpp", 
+            "src/mongo/dbtests/perftests.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::mulInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::toVersionArray(char const*)", 
+        "object": "src/mongo/util/version.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_inc.cpp"
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::SafeNum(mongo::BSONElement const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::mongodVersion()", 
+        "object": "src/mongo/util/version.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_bit.cpp", 
-            "src/mongo/db/ops/modifier_inc.cpp"
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/db/mongod_options.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::SafeNum::addInternal(mongo::SafeNum const&, mongo::SafeNum const&)", 
-        "object": "src/mongo/util/safe_num.cpp", 
+        "symbol": "mongo::isSameMajorVersion(char const*)", 
+        "object": "src/mongo/util/version.cpp", 
         "used_by": [
-            "src/mongo/db/ops/modifier_inc.cpp"
+            "src/mongo/s/balance.cpp", 
+            "src/mongo/db/commands/auth_schema_upgrade_d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printSysInfo()", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/dbtests/framework.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::openSSLVersion(std::string const&, std::string const&)", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/db/dbwebserver.cpp", 
+            "src/mongo/s/version_mongos.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::appendBuildInfo(mongo::BSONObjBuilder&)", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/shell/shell_utils.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printAllocator()", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/db/log_process_details.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printGitVersion()", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/mongod_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::printOpenSSLVersion()", 
+        "object": "src/mongo/util/version_reporting.cpp", 
+        "used_by": [
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/mongod_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::base64::chars", 
+        "object": "src/mongo/util/base64.cpp", 
+        "used_by": [
+            "src/mongo/db/json.cpp", 
+            "src/mongo/db/json.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::base64::encode(std::string const&)", 
+        "object": "src/mongo/util/base64.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::base64::encode(char const*, int)", 
+        "object": "src/mongo/util/base64.cpp", 
+        "used_by": [
+            "src/mongo/scripting/v8_db.cpp", 
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::base64::decode(std::string const&)", 
+        "object": "src/mongo/util/base64.cpp", 
+        "used_by": [
+            "src/mongo/scripting/engine_v8.cpp", 
+            "src/mongo/db/json.cpp", 
+            "src/mongo/scripting/v8_db.cpp", 
+            "src/mongo/client/sasl_client_authenticate.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/db/json.cpp", 
+            "src/mongo/client/sasl_client_authenticate.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::base64::encode(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, char const*, int)", 
+        "object": "src/mongo/util/base64.cpp", 
+        "used_by": [
+            "src/mongo/db/jsobj.cpp", 
+            "src/mongo/scripting/engine_v8.cpp", 
+            "src/mongo/db/jsobj.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::maxCompressedLength(unsigned long)", 
+        "object": "src/mongo/util/compress.cpp", 
+        "used_by": [
+            "src/mongo/db/dur_journal.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::compress(char const*, unsigned long, std::string*)", 
+        "object": "src/mongo/util/compress.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/dbtests/basictests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::uncompress(char const*, unsigned long, std::string*)", 
+        "object": "src/mongo/util/compress.cpp", 
+        "used_by": [
+            "src/mongo/dbtests/perftests.cpp", 
+            "src/mongo/dbtests/basictests.cpp", 
+            "src/mongo/db/dur_recover.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::rawCompress(char const*, unsigned long, char*, unsigned long*)", 
+        "object": "src/mongo/util/compress.cpp", 
+        "used_by": [
+            "src/mongo/db/dur_journal.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::task::Task", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::task::Server", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Server::send(boost::function<void ()>)", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/sync_source_feedback.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "vtable for mongo::task::Server", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Task::run()", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Task::Task()", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/db/repl/rs.cpp", 
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Task::setUp()", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::repeat(mongo::task::Task*, unsigned int)", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Task::halt()", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::Server::doWork()", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/manager.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "typeinfo for mongo::task::Task", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp", 
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::task::fork(mongo::task::Task*)", 
+        "object": "src/mongo/util/concurrency/task.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/heartbeat.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::threadpool::ThreadPool::ThreadPool(int)", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/repl/rs.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::threadpool::ThreadPool::~ThreadPool()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/replsettests.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/repl/rs.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::threadpool::ThreadPool::schedule(boost::function<void ()>)", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::threadpool::ThreadPool::join()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/master_slave.cpp", 
+            "src/mongo/dbtests/threadedtests.cpp", 
+            "src/mongo/db/repl/rs_sync.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::setWindowsUnhandledExceptionFilter()", 
+        "object": "src/mongo/util/exception_filter_win32.cpp", 
+        "used_by": [
+            "src/mongo/unittest/unittest_main.cpp", 
+            "src/mongo/s/server.cpp", 
+            "src/mongo/dbtests/dbtests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ProcessId)", 
+        "object": "src/mongo/platform/process_id.cpp", 
+        "used_by": [
+            "src/mongo/shell/shell_utils_launcher.cpp", 
+            "src/mongo/s/version_mongos.cpp", 
+            "src/mongo/util/processinfo.cpp", 
+            "src/mongo/db/instance.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessId::getCurrent()", 
+        "object": "src/mongo/platform/process_id.cpp", 
+        "used_by": [
+            "src/mongo/bson/oid.cpp", 
+            "src/mongo/db/initialize_server_global_state.cpp", 
+            "src/mongo/db/structure/btree/btree_stats.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/util/processinfo.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/bson/oid.cpp", 
+            "src/mongo/s/version_mongos.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/shell/shell_utils.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessId::toString() const", 
+        "object": "src/mongo/platform/process_id.cpp", 
+        "used_by": [
+            "src/mongo/db/log_process_details.cpp", 
+            "src/mongo/shell/shell_utils_launcher.cpp", 
+            "src/mongo/s/version_mongos.cpp", 
+            "src/mongo/db/db.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessId::asLongLong() const", 
+        "object": "src/mongo/platform/process_id.cpp", 
+        "used_by": [
+            "src/mongo/shell/shell_utils_launcher.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/db/commands/server_status.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PseudoRandom::PseudoRandom(unsigned int)", 
+        "object": "src/mongo/platform/random.cpp", 
+        "used_by": [
+            "src/mongo/s/cursors.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PseudoRandom::PseudoRandom(long long)", 
+        "object": "src/mongo/platform/random.cpp", 
+        "used_by": [
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/db/kill_current_op.cpp", 
+            "src/mongo/s/balancer_policy_tests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::SecureRandom::create()", 
+        "object": "src/mongo/platform/random.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/authentication_commands.cpp", 
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/dur_journal.cpp", 
+            "src/mongo/bson/oid.cpp", 
+            "src/mongo/bson/oid.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PseudoRandom::nextInt32()", 
+        "object": "src/mongo/platform/random.cpp", 
+        "used_by": [
+            "src/mongo/s/cursors.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/s/chunk.cpp", 
+            "src/mongo/s/balancer_policy_tests.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::PseudoRandom::nextInt64()", 
+        "object": "src/mongo/platform/random.cpp", 
+        "used_by": [
+            "src/mongo/db/kill_current_op.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::systemInfo", 
+        "object": "src/mongo/util/processinfo.cpp", 
+        "used_by": [
+            "src/mongo/util/processinfo_darwin.cpp", 
+            "src/mongo/db/commands/storage_details.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::writePidFile(std::string const&)", 
+        "object": "src/mongo/util/processinfo.cpp", 
+        "used_by": [
+            "src/mongo/db/initialize_server_global_state.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::supported()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/shell/shell_utils.cpp", 
+            "src/mongo/util/mmap.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::blockInMemory(void const*)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/record.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::getExtraInfo(mongo::BSONObjBuilder&)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/server_status.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::SystemInfo::collectSystemInfo()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/util/processinfo.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::~ProcessInfo()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/structure/btree/btree_stats.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/shell/shell_utils.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::getResidentSize()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/shell/shell_utils.cpp", 
+            "src/mongo/util/mmap.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::blockCheckSupported()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/structure/btree/btree_stats.cpp", 
+            "src/mongo/db/storage/record.cpp", 
+            "src/mongo/db/startup_warnings.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::pagesInMemory(void const*, unsigned long, std::vector<char, std::allocator<char> >*)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/storage_details.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::getVirtualMemorySize()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/shell/shell_utils.cpp", 
+            "src/mongo/util/mmap.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp", 
+        "used_by": [
+            "src/mongo/db/structure/btree/btree_stats.cpp", 
+            "src/mongo/db/clientcursor.cpp", 
+            "src/mongo/db/commands/server_status.cpp", 
+            "src/mongo/db/dbcommands_generic.cpp", 
+            "src/mongo/util/mmap.cpp", 
+            "src/mongo/shell/shell_utils.cpp"
         ]
     }
 ]

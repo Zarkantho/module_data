@@ -1,485 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<unsigned int>(mongo::StringData const&, int, unsigned int*)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/md5.cpp"
-        ], 
-        "symbol": "_md5_finish", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/md5.cpp"
-        ], 
-        "symbol": "_md5_init", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "mongo::StartupTest::StartupTest()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::StartupTest", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/stringutils.cpp"
-        ], 
-        "symbol": "mongo::LexNumCmp::LexNumCmp(bool)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/stringutils.cpp"
-        ], 
-        "symbol": "mongo::LexNumCmp::cmp(mongo::StringData const&, mongo::StringData const&) const", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/base64.cpp"
-        ], 
-        "symbol": "mongo::base64::encode(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, char const*, int)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/stringutils.cpp"
-        ], 
-        "symbol": "mongo::LexNumCmp::operator()(mongo::StringData const&, mongo::StringData const&) const", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::dateToISOStringLocal(mongo::Date_t)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "mongo::StartupTest::~StartupTest()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/md5.cpp"
-        ], 
-        "symbol": "_md5_append", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
-        "object": "src/mongo/db/jsobj.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/platform/random.cpp"
-        ], 
-        "symbol": "mongo::SecureRandom::create()", 
-        "object": "src/mongo/bson/oid.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/platform/process_id.cpp"
-        ], 
-        "symbol": "mongo::ProcessId::getCurrent()", 
-        "object": "src/mongo/bson/oid.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/oid.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/oid.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/mutable/element.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/mutable/document.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -602,402 +123,119 @@
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "mongo::StartupTest::~StartupTest()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::StartupTest", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::this_thread::interruption_point()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/startup_test.cpp", 
-            "src/mongo/client/clientOnly.cpp"
-        ], 
-        "symbol": "mongo::StartupTest::StartupTest()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/util.cpp"
-        ], 
-        "symbol": "mongo::StaticObserver::_destroyingStatics", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
-        ], 
-        "symbol": "boost::detail::get_current_thread_data()", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
-        "object": "src/mongo/bson/optime.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/bson_obj_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/safe_num.cpp"
-        ], 
-        "symbol": "mongo::SafeNum::isEquivalent(mongo::SafeNum const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/safe_num.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::SafeNum const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::jsTime()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/bson_obj_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/base/status.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+        "object": "src/mongo/bson/bson_obj_test.cpp"
     }, 
     {
         "sources": [
@@ -1054,279 +292,6 @@
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/bson/bson_validate.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::causedBy(std::string const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::MsgAssertionException", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::DBException", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "vtable for mongo::DBException", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/base64.cpp"
-        ], 
-        "symbol": "mongo::base64::chars", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::MsgAssertionException", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::dateFromISOString(mongo::StringData const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
-        ], 
-        "symbol": "mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/base64.cpp"
-        ], 
-        "symbol": "mongo::base64::decode(std::string const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/parse_number.cpp"
-        ], 
-        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData const&, int, long long*)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::DBException::toString() const", 
-        "object": "src/mongo/db/json.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::operator==(mongo::ErrorCodes::Error) const", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/status.cpp"
-        ], 
-        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
-        "object": "src/mongo/bson/util/bson_extract.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
     }, 
     {
         "sources": [
@@ -1540,6 +505,380 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/bsondemo/bsondemo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/bsonobjbuilder_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/random.cpp"
+        ], 
+        "symbol": "mongo::SecureRandom::create()", 
+        "object": "src/mongo/bson/oid.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/platform/process_id.cpp"
+        ], 
+        "symbol": "mongo::ProcessId::getCurrent()", 
+        "object": "src/mongo/bson/oid.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/oid.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/oid.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "mongo::StartupTest::~StartupTest()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::StartupTest", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "mongo::StartupTest::StartupTest()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::toString() const", 
+        "object": "src/mongo/bson/optime.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::ErrorCodes::Error) const", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/bson/util/bson_extract.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -1778,121 +1117,782 @@
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/base/parse_number.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::tearDown()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<unsigned int>(mongo::StringData const&, int, unsigned int*)", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/md5.cpp"
         ], 
-        "symbol": "typeinfo for mongo::unittest::Test", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "_md5_finish", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/md5.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::Test()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "_md5_init", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
         ], 
-        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::~Test()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/unittest/unittest.cpp"
-        ], 
-        "symbol": "mongo::unittest::Test::run()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "mongo::StartupTest::StartupTest()", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/assert_util.cpp"
         ], 
-        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
-            "src/mongo/unittest/unittest.cpp"
+            "src/mongo/util/concurrency/thread_name.cpp"
         ], 
-        "symbol": "mongo::unittest::Test::setUp()", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::StartupTest", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/stringutils.cpp"
+        ], 
+        "symbol": "mongo::LexNumCmp::LexNumCmp(bool)", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/assert_util.cpp"
         ], 
         "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/stringutils.cpp"
+        ], 
+        "symbol": "mongo::LexNumCmp::cmp(mongo::StringData const&, mongo::StringData const&) const", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/base64.cpp"
+        ], 
+        "symbol": "mongo::base64::encode(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, char const*, int)", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/stringutils.cpp"
+        ], 
+        "symbol": "mongo::LexNumCmp::operator()(mongo::StringData const&, mongo::StringData const&) const", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::dateToISOStringLocal(mongo::Date_t)", 
+        "object": "src/mongo/db/jsobj.cpp"
     }, 
     {
         "sources": [
             "src/mongo/util/hex.cpp"
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/bson/bson_obj_test.cpp"
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/startup_test.cpp", 
+            "src/mongo/client/clientOnly.cpp"
+        ], 
+        "symbol": "mongo::StartupTest::~StartupTest()", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/md5.cpp"
+        ], 
+        "symbol": "_md5_append", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/jsobj.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::causedBy(std::string const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::MsgAssertionException", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::traceIfNeeded(mongo::DBException const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "vtable for mongo::DBException", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/base64.cpp"
+        ], 
+        "symbol": "mongo::base64::chars", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::MsgAssertionException", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::dateFromISOString(mongo::StringData const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp"
+        ], 
+        "symbol": "mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/base64.cpp"
+        ], 
+        "symbol": "mongo::base64::decode(std::string const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData const&, int, long long*)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::toString() const", 
+        "object": "src/mongo/db/json.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/mutable/document.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/mutable/element.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_algo_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::~Test()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/safe_num.cpp"
+        ], 
+        "symbol": "mongo::SafeNum::isEquivalent(mongo::SafeNum const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/safe_num.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::SafeNum const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::getSuite(std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::jsTime()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::unittest::Test", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::Test()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::run()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::setUp()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::Test::tearDown()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator==(mongo::Status const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::~TestAssertion()", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/unittest.cpp"
+        ], 
+        "symbol": "mongo::unittest::TestAssertion::fail(std::string const&) const", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/bson/mutable/mutable_bson_test_utils.cpp"
     }
 ]

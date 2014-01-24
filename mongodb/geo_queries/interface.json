@@ -1,5 +1,12 @@
 [
     {
+        "symbol": "mongo::GeoParser::isPoint(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/geo/geoparser.cpp", 
+        "used_by": [
+            "src/mongo/db/commands/geonear.cpp"
+        ]
+    }, 
+    {
         "symbol": "mongo::GeometryContainer::parseFrom(mongo::BSONObj const&)", 
         "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
@@ -46,199 +53,6 @@
         "object": "src/mongo/db/geo/geoquery.cpp", 
         "used_by": [
             "src/mongo/db/matcher/expression_parser_geo.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::Box(mongo::Point, mongo::Point)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dcommon.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Point::Point(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/index/haystack_access_method.cpp", 
-            "src/mongo/db/exec/2dcommon.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::inside(mongo::Point, double) const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Polygon::contains(mongo::Point const&) const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::onBoundary(mongo::Point, double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::Box(double, double, double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::fudge(double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Polygon::Polygon()", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::intersects(mongo::Box const&) const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::center() const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Polygon::bounds()", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::maxDim() const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::checkEarthBounds(mongo::Point const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::distanceWithin(mongo::Point const&, mongo::Point const&, double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::distance(mongo::Point const&, mongo::Point const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/index/haystack_access_method.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::Box()", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/exec/2dcommon.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Polygon::contains(mongo::Point const&, double) const", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Point::Point(mongo::BSONElement const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/index/haystack_access_method.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::spheredist_deg(mongo::Point const&, mongo::Point const&)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Point::Point(double, double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2dcommon.cpp", 
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Box::truncate(double, double)", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/2d.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::Point::Point()", 
-        "object": "src/mongo/db/geo/shapes.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp", 
-            "src/mongo/db/exec/2dnear.cpp", 
-            "src/mongo/db/query/planner_access.cpp", 
-            "src/mongo/db/matcher/expression_parser_geo.cpp", 
-            "src/mongo/db/query/stage_builder.cpp", 
-            "src/mongo/db/matcher/expression_geo.cpp", 
-            "src/mongo/db/exec/2d.cpp", 
-            "src/mongo/db/query/query_planner.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::GeoParser::isPoint(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/geo/geoparser.cpp", 
-        "used_by": [
-            "src/mongo/db/commands/geonear.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::S2SearchUtil::getKeysForObject(mongo::BSONObj const&, mongo::S2IndexingParams const&, std::vector<std::string, std::allocator<std::string> >*)", 
-        "object": "src/mongo/db/geo/s2common.cpp", 
-        "used_by": [
-            "src/mongo/db/index/s2_access_method.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::S2SearchUtil::distanceBetween(Vector3<double> const&, mongo::BSONObj const&, double*)", 
-        "object": "src/mongo/db/geo/s2common.cpp", 
-        "used_by": [
-            "src/mongo/db/exec/s2near.cpp"
         ]
     }, 
     {
@@ -423,6 +237,192 @@
         "object": "src/mongo/db/geo/hash.cpp", 
         "used_by": [
             "src/mongo/db/exec/2dcommon.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::S2SearchUtil::getKeysForObject(mongo::BSONObj const&, mongo::S2IndexingParams const&, std::vector<std::string, std::allocator<std::string> >*)", 
+        "object": "src/mongo/db/geo/s2common.cpp", 
+        "used_by": [
+            "src/mongo/db/index/s2_access_method.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::S2SearchUtil::distanceBetween(Vector3<double> const&, mongo::BSONObj const&, double*)", 
+        "object": "src/mongo/db/geo/s2common.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::Box(mongo::Point, mongo::Point)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dcommon.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Point::Point(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::inside(mongo::Point, double) const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Polygon::contains(mongo::Point const&) const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::onBoundary(mongo::Point, double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::Box(double, double, double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::fudge(double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Polygon::Polygon()", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::intersects(mongo::Box const&) const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::center() const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Polygon::bounds()", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::maxDim() const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::checkEarthBounds(mongo::Point const&)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::distanceWithin(mongo::Point const&, mongo::Point const&, double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::distance(mongo::Point const&, mongo::Point const&)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/index/haystack_access_method.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::Box()", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Polygon::contains(mongo::Point const&, double) const", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Point::Point(mongo::BSONElement const&)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/index/haystack_access_method.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::spheredist_deg(mongo::Point const&, mongo::Point const&)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Point::Point(double, double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2dcommon.cpp", 
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Box::truncate(double, double)", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/2d.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::Point::Point()", 
+        "object": "src/mongo/db/geo/shapes.cpp", 
+        "used_by": [
+            "src/mongo/db/exec/s2near.cpp", 
+            "src/mongo/db/exec/2dnear.cpp", 
+            "src/mongo/db/query/planner_access.cpp", 
+            "src/mongo/db/matcher/expression_parser_geo.cpp", 
+            "src/mongo/db/query/stage_builder.cpp", 
+            "src/mongo/db/matcher/expression_geo.cpp", 
+            "src/mongo/db/exec/2d.cpp", 
+            "src/mongo/db/query/query_planner.cpp"
         ]
     }
 ]

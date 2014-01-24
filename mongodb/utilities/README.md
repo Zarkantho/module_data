@@ -8,8 +8,8 @@
 Code to manage paths to files.  Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
 
 # Files
-- src/mongo/util/paths.cpp   (mongod, tools, mongos)
-- src/mongo/util/paths.h
+- src/mongo/util/paths.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/paths.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -55,14 +55,14 @@ Classes to help in tracking statistics
 
 # Files
 - src/mongo/db/stats/counters.cpp   (mongod, tools, mongos)
-- src/mongo/db/stats/counters.h
+- src/mongo/db/stats/counters.h   (mongod, tools, mongos)
 - src/mongo/db/stats/snapshots.cpp   (mongod, tools)
-- src/mongo/db/stats/snapshots.h
+- src/mongo/db/stats/snapshots.h   (mongod, tools, mongos)
 - src/mongo/db/stats/snapshots\_webplugins.cpp   (mongod)
 - src/mongo/db/stats/timer\_stats.cpp   (mongod, tools, mongos)
-- src/mongo/db/stats/timer\_stats.h
+- src/mongo/db/stats/timer\_stats.h   (mongod, tools, mongos)
 - src/mongo/db/stats/top.cpp   (mongod, tools)
-- src/mongo/db/stats/top.h
+- src/mongo/db/stats/top.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -533,7 +533,7 @@ Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 
 # Files
 - src/mongo/db/hasher.cpp   (mongod, tools, mongos)
-- src/mongo/db/hasher.h
+- src/mongo/db/hasher.h   (mongod, tools, mongos)
 - src/mongo/db/hasher\_test.cpp   ()
 
 # Interface
@@ -707,7 +707,7 @@ Helpers to track in progress operations. The constructor registers itself in an 
 
 # Files
 - src/mongo/db/background.cpp   (mongod, tools)
-- src/mongo/db/background.h
+- src/mongo/db/background.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -768,7 +768,7 @@ Utility to check whether a certain time interval has elapsed. Currently only use
 
 # Files
 - src/mongo/util/elapsed\_tracker.cpp   (mongod, tools)
-- src/mongo/util/elapsed\_tracker.h
+- src/mongo/util/elapsed\_tracker.h   (mongod, tools)
 
 # Interface
 
@@ -826,7 +826,7 @@ Helper classes to accumulate and log progress in a nice format using the  loggin
 
 # Files
 - src/mongo/util/progress\_meter.cpp   (mongod, tools, mongos)
-- src/mongo/util/progress\_meter.h
+- src/mongo/util/progress\_meter.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -915,8 +915,8 @@ Helper classes to accumulate and log progress in a nice format using the  loggin
 Debug macros and gdb server helpers
 
 # Files
-- src/mongo/util/debug\_util.cpp   (cppclientdriver)
-- src/mongo/util/debug\_util.h
+- src/mongo/util/debug\_util.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/debug\_util.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -948,8 +948,8 @@ Debug macros and gdb server helpers
 Library to get and set the name of the current thread. Just uses a boost::thread\_specific\_ptr.
 
 # Files
-- src/mongo/util/concurrency/thread\_name.cpp   (cppclientdriver)
-- src/mongo/util/concurrency/thread\_name.h
+- src/mongo/util/concurrency/thread\_name.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/thread\_name.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -1259,8 +1259,8 @@ Library to get and set the name of the current thread. Just uses a boost::thread
 Utility library to manipulate hex strings
 
 # Files
-- src/mongo/util/hex.cpp   (cppclientdriver)
-- src/mongo/util/hex.h
+- src/mongo/util/hex.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/hex.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -1676,8 +1676,8 @@ Utility library to manipulate hex strings
 Utilities to run jobs (threads) in the "background". You can use this to run tasks periodically.
 
 # Files
-- src/mongo/util/background.cpp   (mongod, tools, mongos)
-- src/mongo/util/background.h
+- src/mongo/util/background.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/background.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/background\_job\_test.cpp   ()
 
 # Interface
@@ -2112,7 +2112,7 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 mapFindWithDefault - looks something up in a map with a default value.
 
 # Files
-- src/mongo/util/map\_util.h
+- src/mongo/util/map\_util.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 (not used outside this module)
@@ -2126,8 +2126,8 @@ mapFindWithDefault - looks something up in a map with a default value.
 I still don't know what this was originally for, but I know we are slowly getting rid of it.
 
 # Files
-- src/mongo/pch.cpp   (cppclientdriver)
-- src/mongo/pch.h
+- src/mongo/pch.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/pch.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 (not used outside this module)
@@ -2141,8 +2141,8 @@ I still don't know what this was originally for, but I know we are slowly gettin
 Assertion library.
 
 # Files
-- src/mongo/util/assert\_util.cpp   (cppclientdriver)
-- src/mongo/util/assert\_util.h
+- src/mongo/util/assert\_util.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/assert\_util.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -5465,12 +5465,12 @@ Assertion library.
 Library for adding fail points into the code for testing purposes
 
 # Files
-- src/mongo/util/fail\_point.cpp   (mongod, tools, mongos)
-- src/mongo/util/fail\_point.h
-- src/mongo/util/fail\_point\_registry.cpp   (cppclientdriver)
-- src/mongo/util/fail\_point\_registry.h
-- src/mongo/util/fail\_point\_service.cpp   (mongod, tools, mongos)
-- src/mongo/util/fail\_point\_service.h
+- src/mongo/util/fail\_point.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/fail\_point.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/fail\_point\_registry.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/fail\_point\_registry.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/fail\_point\_service.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/fail\_point\_service.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/fail\_point\_test.cpp   ()
 
 # Interface
@@ -5944,8 +5944,8 @@ Library for adding fail points into the code for testing purposes
 Helper library that you inherit from to make a class "reference counted"
 
 # Files
-- src/mongo/util/intrusive\_counter.cpp   (mongod, tools, mongos)
-- src/mongo/util/intrusive\_counter.h
+- src/mongo/util/intrusive\_counter.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/intrusive\_counter.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -6073,11 +6073,11 @@ Helper library that you inherit from to make a class "reference counted"
 md5 hash library
 
 # Files
-- src/mongo/util/md5.cpp   (mongod, tools, mongos)
-- src/mongo/util/md5.h
-- src/mongo/util/md5.hpp
+- src/mongo/util/md5.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/md5.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/md5.hpp   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/md5\_test.cpp   ()
-- src/mongo/util/md5main.cpp   ()
+- src/mongo/util/md5main.cpp   (cppclientdriver)
 
 # Interface
 
@@ -6239,7 +6239,7 @@ Windows service
 
 # Files
 - src/mongo/util/ntservice.cpp   (mongod, mongos)
-- src/mongo/util/ntservice.h
+- src/mongo/util/ntservice.h   (mongod, mongos)
 
 # Interface
 (not used outside this module)
@@ -6253,8 +6253,8 @@ Windows service
 Utilities to hash a username + password
 
 # Files
-- src/mongo/client/auth\_helpers.cpp   (cppclientdriver)
-- src/mongo/client/auth\_helpers.h
+- src/mongo/client/auth\_helpers.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/client/auth\_helpers.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -6279,94 +6279,94 @@ Utilities to hash a username + password
 Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why  you would use them.
 
 # Files
-- src/mongo/util/queue.h
-- src/mongo/util/ramlog.h
-- src/mongo/util/safe\_num-inl.h
+- src/mongo/util/queue.h   (mongod, tools)
+- src/mongo/util/ramlog.h   (mongod, tools, mongos)
+- src/mongo/util/safe\_num-inl.h   (mongod, tools, mongos)
 - src/mongo/util/safe\_num.cpp   (mongod, tools, mongos)
-- src/mongo/util/safe\_num.h
+- src/mongo/util/safe\_num.h   (mongod, tools, mongos)
 - src/mongo/util/safe\_num\_test.cpp   ()
-- src/mongo/util/scopeguard.h
-- src/mongo/util/sequence\_util.h
-- src/mongo/util/signal\_handlers.cpp   (cppclientdriver)
-- src/mongo/util/signal\_handlers.h
+- src/mongo/util/scopeguard.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/sequence\_util.h   (mongod, tools, mongos)
+- src/mongo/util/signal\_handlers.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/signal\_handlers.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/signal\_win32.cpp   (mongod, tools, mongos)
-- src/mongo/util/signal\_win32.h
+- src/mongo/util/signal\_win32.h   (mongod, mongos)
 - src/mongo/util/stack\_introspect.cpp   (mongod, tools, mongos)
-- src/mongo/util/stack\_introspect.h
-- src/mongo/util/stacktrace.cpp   (mongod, tools, mongos)
-- src/mongo/util/stacktrace.h
+- src/mongo/util/stack\_introspect.h   (mongod, tools, mongos)
+- src/mongo/util/stacktrace.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/stacktrace.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/startup\_test.cpp   (mongod, tools, mongos)
-- src/mongo/util/startup\_test.h
-- src/mongo/util/string\_map.h
+- src/mongo/util/startup\_test.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/string\_map.h   (mongod, tools, mongos)
 - src/mongo/util/string\_map\_test.cpp   ()
-- src/mongo/util/stringutils.cpp   (mongod, tools, mongos)
-- src/mongo/util/stringutils.h
+- src/mongo/util/stringutils.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/stringutils.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/stringutils\_test.cpp   ()
 - src/mongo/util/tcmalloc\_server\_status\_section.cpp   (mongod, tools, mongos)
-- src/mongo/util/text.cpp   (cppclientdriver)
-- src/mongo/util/text.h
+- src/mongo/util/text.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/text.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/text\_startuptest.cpp   (mongod, tools, mongos)
 - src/mongo/util/text\_test.cpp   ()
-- src/mongo/util/time\_support.cpp   (mongod, tools, mongos)
-- src/mongo/util/time\_support.h
+- src/mongo/util/time\_support.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/time\_support.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/time\_support\_test.cpp   ()
-- src/mongo/util/timer-generic-inl.h
-- src/mongo/util/timer-inl.h
-- src/mongo/util/timer-posixclock-inl.h
-- src/mongo/util/timer-win32-inl.h
-- src/mongo/util/timer.cpp   (mongod, tools, mongos)
-- src/mongo/util/timer.h
+- src/mongo/util/timer-generic-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/timer-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/timer-posixclock-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/timer-win32-inl.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/timer.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/timer.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/touch\_pages.cpp   (mongod, tools)
-- src/mongo/util/touch\_pages.h
-- src/mongo/util/trace.h
-- src/mongo/util/unordered\_fast\_key\_table.h
-- src/mongo/util/unordered\_fast\_key\_table\_internal.h
-- src/mongo/util/util.cpp   (mongod, tools, mongos)
-- src/mongo/util/version.cpp   (cppclientdriver)
-- src/mongo/util/version.h
+- src/mongo/util/touch\_pages.h   (mongod, tools)
+- src/mongo/util/trace.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/unordered\_fast\_key\_table.h   (mongod, tools, mongos)
+- src/mongo/util/unordered\_fast\_key\_table\_internal.h   (mongod, tools, mongos)
+- src/mongo/util/util.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/version.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/version.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/version\_reporting.cpp   (mongod, tools, mongos)
-- src/mongo/util/version\_reporting.h
+- src/mongo/util/version\_reporting.h   (mongod, tools, mongos)
 - src/mongo/util/version\_test.cpp   ()
-- src/mongo/util/winutil.h
-- src/mongo/util/admin\_access.h
-- src/mongo/util/allocator.h
-- src/mongo/util/array.h
-- src/mongo/util/base64.cpp   (cppclientdriver)
-- src/mongo/util/base64.h
-- src/mongo/util/bson\_util.h
-- src/mongo/util/bufreader.h
-- src/mongo/util/checksum.h
+- src/mongo/util/winutil.h   (mongod, mongos)
+- src/mongo/util/admin\_access.h   (mongod, tools, mongos)
+- src/mongo/util/allocator.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/array.h   (mongod, tools)
+- src/mongo/util/base64.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/base64.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/bson\_util.h   (mongod, tools)
+- src/mongo/util/bufreader.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/checksum.h   (mongod, tools)
 - src/mongo/util/compress.cpp   (mongod, tools)
-- src/mongo/util/compress.h
-- src/mongo/util/concurrency/list.h
-- src/mongo/util/concurrency/mapsf.h
-- src/mongo/util/concurrency/msg.h
-- src/mongo/util/concurrency/mutex.h
-- src/mongo/util/concurrency/mutexdebugger.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/mutexdebugger.h
-- src/mongo/util/concurrency/mvar.h
-- src/mongo/util/concurrency/qlock.h
-- src/mongo/util/concurrency/race.h
-- src/mongo/util/concurrency/shared\_mutex\_win.hpp
-- src/mongo/util/concurrency/simplerwlock.h
-- src/mongo/util/concurrency/task.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/task.h
-- src/mongo/util/concurrency/thread\_pool.cpp   (cppclientdriver)
-- src/mongo/util/concurrency/thread\_pool.h
-- src/mongo/util/concurrency/threadlocal.h
-- src/mongo/util/concurrency/ticketholder.h
-- src/mongo/util/concurrency/value.h
-- src/mongo/util/descriptive\_stats-inl.h
-- src/mongo/util/descriptive\_stats.h
+- src/mongo/util/compress.h   (mongod, tools)
+- src/mongo/util/concurrency/list.h   (mongod, tools, mongos)
+- src/mongo/util/concurrency/mapsf.h   (mongod, tools)
+- src/mongo/util/concurrency/msg.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/mutex.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/mutexdebugger.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/mutexdebugger.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/mvar.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/qlock.h   (mongod, tools)
+- src/mongo/util/concurrency/race.h   (mongod, tools, mongos)
+- src/mongo/util/concurrency/shared\_mutex\_win.hpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/simplerwlock.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/task.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/task.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/thread\_pool.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/thread\_pool.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/threadlocal.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/ticketholder.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/concurrency/value.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/descriptive\_stats-inl.h   (mongod, tools)
+- src/mongo/util/descriptive\_stats.h   (mongod, tools)
 - src/mongo/util/descriptive\_stats\_test.cpp   ()
-- src/mongo/util/embedded\_builder.h
+- src/mongo/util/embedded\_builder.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/exception\_filter\_win32.cpp   (mongod, tools, mongos)
-- src/mongo/util/exception\_filter\_win32.h
-- src/mongo/util/exit\_code.h
-- src/mongo/util/gcov.h
-- src/mongo/util/goodies.h
-- src/mongo/util/hashtab.h
-- src/mongo/util/heapcheck.h
+- src/mongo/util/exception\_filter\_win32.h   (mongod, mongos)
+- src/mongo/util/exit\_code.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/gcov.h   (mongod, tools, mongos)
+- src/mongo/util/goodies.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/hashtab.h   (mongod, tools, mongos)
+- src/mongo/util/heapcheck.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -8840,46 +8840,46 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 Platform specific code? TODO: Verify this and document what they are for.
 
 # Files
-- src/mongo/platform/atomic\_intrinsics.h
-- src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h
-- src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h
-- src/mongo/platform/atomic\_intrinsics\_win32.h
-- src/mongo/platform/atomic\_word.h
+- src/mongo/platform/atomic\_intrinsics.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/atomic\_intrinsics\_win32.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/atomic\_word.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/platform/atomic\_word\_test.cpp   ()
-- src/mongo/platform/backtrace.cpp   (cppclientdriver)
-- src/mongo/platform/backtrace.h
-- src/mongo/platform/basic.h
-- src/mongo/platform/bits.h
+- src/mongo/platform/backtrace.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/backtrace.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/basic.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/bits.h   (mongod, tools)
 - src/mongo/platform/bits\_test.cpp   ()
-- src/mongo/platform/compiler.h
-- src/mongo/platform/compiler\_gcc.h
-- src/mongo/platform/compiler\_msvc.h
-- src/mongo/platform/cstdint.h
-- src/mongo/platform/float\_utils.h
-- src/mongo/platform/hash\_namespace.h
-- src/mongo/platform/posix\_fadvise.cpp   (mongod, tools, mongos)
-- src/mongo/platform/posix\_fadvise.h
-- src/mongo/platform/process\_id.cpp   (mongod, tools, mongos)
-- src/mongo/platform/process\_id.h
+- src/mongo/platform/compiler.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/compiler\_gcc.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/compiler\_msvc.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/cstdint.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/float\_utils.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/hash\_namespace.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/posix\_fadvise.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/posix\_fadvise.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/process\_id.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/process\_id.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/platform/process\_id\_test.cpp   ()
-- src/mongo/platform/random.cpp   (cppclientdriver)
-- src/mongo/platform/random.h
+- src/mongo/platform/random.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/random.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/platform/random\_test.cpp   ()
 - src/mongo/platform/strcasestr.cpp   (mongod, tools, mongos)
-- src/mongo/platform/strcasestr.h
-- src/mongo/platform/strtoll.h
-- src/mongo/platform/unordered\_map.h
-- src/mongo/platform/unordered\_set.h
-- src/mongo/platform/windows\_basic.h
+- src/mongo/platform/strcasestr.h   (mongod, tools, mongos)
+- src/mongo/platform/strtoll.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/unordered\_map.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/unordered\_set.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/platform/windows\_basic.h   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/platform\_init.cpp   (mongod, tools, mongos)
-- src/mongo/util/processinfo.cpp   (cppclientdriver)
-- src/mongo/util/processinfo.h
-- src/mongo/util/processinfo\_darwin.cpp   (cppclientdriver)
+- src/mongo/util/processinfo.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/processinfo.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/processinfo\_darwin.cpp   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/util/processinfo\_test.cpp   ()
-- src/mongo/util/mongoutils/checksum.h
-- src/mongo/util/mongoutils/hash.h
-- src/mongo/util/mongoutils/html.h
-- src/mongo/util/mongoutils/str.h
+- src/mongo/util/mongoutils/checksum.h   (mongod, tools)
+- src/mongo/util/mongoutils/hash.h   (mongod, tools)
+- src/mongo/util/mongoutils/html.h   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/mongoutils/str.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 

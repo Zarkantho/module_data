@@ -396,7 +396,7 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 # Files
 - src/mongo/db/client.cpp   (mongod, tools)
-- src/mongo/db/client.h
+- src/mongo/db/client.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -1445,9 +1445,9 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 The current "operation" within the current "Client"
 
 # Files
-- src/mongo/db/curop-inl.h
+- src/mongo/db/curop-inl.h   (mongod, tools, mongos)
 - src/mongo/db/curop.cpp   (mongod, tools)
-- src/mongo/db/curop.h
+- src/mongo/db/curop.h   (mongod, tools, mongos)
 - src/mongo/db/curop\_test.cpp   ()
 
 # Interface
@@ -2101,7 +2101,7 @@ Functions to kill the current "operation"
 
 # Files
 - src/mongo/db/kill\_current\_op.cpp   (mongod, tools)
-- src/mongo/db/kill\_current\_op.h
+- src/mongo/db/kill\_current\_op.h   (mongod, tools)
 
 # Interface
 
@@ -2396,11 +2396,11 @@ Functions to kill the current "operation"
 Helpers to check whether the current operation in the current client has been interrupted.
 
 # Files
-- src/mongo/db/interrupt\_status.h
+- src/mongo/db/interrupt\_status.h   (mongod, tools, mongos)
 - src/mongo/db/interrupt\_status\_mongod.cpp   (mongod, tools)
-- src/mongo/db/interrupt\_status\_mongod.h
+- src/mongo/db/interrupt\_status\_mongod.h   (mongod, tools)
 - src/mongo/s/interrupt\_status\_mongos.cpp   (mongos)
-- src/mongo/s/interrupt\_status\_mongos.h
+- src/mongo/s/interrupt\_status\_mongos.h   (mongos)
 
 # Interface
 
@@ -2461,7 +2461,7 @@ Base class for a Client on mongod and mongos: ClientBasic
 
 # Files
 - src/mongo/db/client\_basic.cpp   (mongod, tools, mongos)
-- src/mongo/db/client\_basic.h
+- src/mongo/db/client\_basic.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 
@@ -2572,7 +2572,7 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 # Files
 - src/mongo/s/client\_info.cpp   (mongos)
-- src/mongo/s/client\_info.h
+- src/mongo/s/client\_info.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -2839,7 +2839,7 @@ The database's internal concept of a cursor from a client
 
 # Files
 - src/mongo/db/clientcursor.cpp   (mongod, tools)
-- src/mongo/db/clientcursor.h
+- src/mongo/db/clientcursor.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -3717,7 +3717,7 @@ Contains helper functions for running common operations against the local server
 
 # Files
 - src/mongo/db/dbhelpers.cpp   (mongod, tools)
-- src/mongo/db/dbhelpers.h
+- src/mongo/db/dbhelpers.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -4417,7 +4417,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 # Files
 - src/mongo/db/introspect.cpp   (mongod, tools)
-- src/mongo/db/introspect.h
+- src/mongo/db/introspect.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -4706,7 +4706,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 Just an enum for different cursor time limit states.
 
 # Files
-- src/mongo/db/max\_time.h
+- src/mongo/db/max\_time.h   (mongos)
 
 # Interface
 (not used outside this module)

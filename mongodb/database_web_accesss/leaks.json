@@ -1,300 +1,6 @@
 [
     {
         "sources": [
-            "src/mongo/util/time_support.cpp"
-        ], 
-        "symbol": "mongo::curTimeMicros64()", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::CachedBSONObj::_tooBig", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/progress_meter.cpp"
-        ], 
-        "symbol": "mongo::ProgressMeter::toString() const", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/curop.cpp"
-        ], 
-        "symbol": "mongo::CurOp::ensureStarted()", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/base/string_data.cpp"
-        ], 
-        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::clients", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/lockstate.cpp"
-        ], 
-        "symbol": "mongo::LockState::reportState()", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/db/client.cpp"
-        ], 
-        "symbol": "mongo::Client::clientsMutex", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::system_category()", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/boost/libs/system/src/error_code.cpp"
-        ], 
-        "symbol": "boost::system::generic_category()", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/db/clientlistplugin.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/listen.cpp"
-        ], 
-        "symbol": "mongo::Listener::Listener(std::string const&, std::string const&, int, bool)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/concurrency/thread_name.cpp"
-        ], 
-        "symbol": "mongo::getThreadName()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/listen.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::Listener", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/listen.cpp"
-        ], 
-        "symbol": "mongo::Listener::~Listener()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/pcre-8.30/pcrecpp.cc"
-        ], 
-        "symbol": "pcrecpp::RE::no_arg", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/pcre-8.30/pcrecpp.cc"
-        ], 
-        "symbol": "pcrecpp::Arg::parse_string(char const*, int, void*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "typeinfo for mongo::SocketException", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, char const*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::Socket::unsafe_recv(char*, int)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::Socket::close()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/pcre-8.30/pcrecpp.cc"
-        ], 
-        "symbol": "pcrecpp::RE::Consume(pcrecpp::StringPiece*, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&) const", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::Socket::setTimeout(double)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logstream_builder.cpp"
-        ], 
-        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, std::string const&)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::Socket::doSSLHandshake(char const*, int)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/pcre-8.30/pcrecpp.cc"
-        ], 
-        "symbol": "pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options const*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/logger/logger.cpp"
-        ], 
-        "symbol": "mongo::logger::globalLogManager()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/sock.cpp"
-        ], 
-        "symbol": "mongo::Socket::send(char const*, int, char const*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/net/listen.cpp"
-        ], 
-        "symbol": "mongo::Listener::acceptedMP(mongo::MessagingPort*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::uasserted(int, std::string const&)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/third_party/pcre-8.30/pcrecpp.cc"
-        ], 
-        "symbol": "pcrecpp::RE::~RE()", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/assert_util.cpp"
-        ], 
-        "symbol": "mongo::msgasserted(int, char const*)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
-            "src/mongo/util/hex.cpp"
-        ], 
-        "symbol": "std::string mongo::integerToHex<int>(int)", 
-        "object": "src/mongo/util/net/miniwebserver.cpp"
-    }, 
-    {
-        "sources": [
             "src/mongo/util/md5.cpp"
         ], 
         "symbol": "_md5_append", 
@@ -885,5 +591,299 @@
         ], 
         "symbol": "mongo::readlocktry::~readlocktry()", 
         "object": "src/mongo/db/restapi.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::curTimeMicros64()", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::CachedBSONObj::_tooBig", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/progress_meter.cpp"
+        ], 
+        "symbol": "mongo::ProgressMeter::toString() const", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/curop.cpp"
+        ], 
+        "symbol": "mongo::CurOp::ensureStarted()", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/string_data.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::StringData const&)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::clients", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/lockstate.cpp"
+        ], 
+        "symbol": "mongo::LockState::reportState()", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/client.cpp"
+        ], 
+        "symbol": "mongo::Client::clientsMutex", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/db/clientlistplugin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/listen.cpp"
+        ], 
+        "symbol": "mongo::Listener::Listener(std::string const&, std::string const&, int, bool)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/listen.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::Listener", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/listen.cpp"
+        ], 
+        "symbol": "mongo::Listener::~Listener()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/pcre-8.30/pcrecpp.cc"
+        ], 
+        "symbol": "pcrecpp::RE::no_arg", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/pcre-8.30/pcrecpp.cc"
+        ], 
+        "symbol": "pcrecpp::Arg::parse_string(char const*, int, void*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::SocketException", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::Socket::unsafe_recv(char*, int)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::Socket::close()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/pcre-8.30/pcrecpp.cc"
+        ], 
+        "symbol": "pcrecpp::RE::Consume(pcrecpp::StringPiece*, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&) const", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::Socket::setTimeout(double)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::Socket::doSSLHandshake(char const*, int)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/pcre-8.30/pcrecpp.cc"
+        ], 
+        "symbol": "pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options const*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/sock.cpp"
+        ], 
+        "symbol": "mongo::Socket::send(char const*, int, char const*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/listen.cpp"
+        ], 
+        "symbol": "mongo::Listener::acceptedMP(mongo::MessagingPort*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/pcre-8.30/pcrecpp.cc"
+        ], 
+        "symbol": "pcrecpp::RE::~RE()", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/hex.cpp"
+        ], 
+        "symbol": "std::string mongo::integerToHex<int>(int)", 
+        "object": "src/mongo/util/net/miniwebserver.cpp"
     }
 ]

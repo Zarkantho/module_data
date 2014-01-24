@@ -1,12 +1,5 @@
 [
     {
-        "symbol": "mongo::prefetchPagesForReplicatedOp(mongo::BSONObj const&)", 
-        "object": "src/mongo/db/prefetch.cpp", 
-        "used_by": [
-            "src/mongo/db/repl/rs_sync.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::PageFaultRetryableSection::~PageFaultRetryableSection()", 
         "object": "src/mongo/db/pagefault.cpp", 
         "used_by": [
@@ -55,6 +48,13 @@
         "object": "src/mongo/db/pagefault.cpp", 
         "used_by": [
             "src/mongo/db/clientcursor.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::prefetchPagesForReplicatedOp(mongo::BSONObj const&)", 
+        "object": "src/mongo/db/prefetch.cpp", 
+        "used_by": [
+            "src/mongo/db/repl/rs_sync.cpp"
         ]
     }
 ]

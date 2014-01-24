@@ -1,26 +1,5 @@
 [
     {
-        "symbol": "mongo::Message::send(mongo::MessagingPort&, char const*)", 
-        "object": "src/mongo/util/net/message.cpp", 
-        "used_by": [
-            "src/mongo/util/net/message_port.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::nextMessageId()", 
-        "object": "src/mongo/util/net/message.cpp", 
-        "used_by": [
-            "src/mongo/util/net/message_port.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::doesOpGetAResponse(int)", 
-        "object": "src/mongo/util/net/message.cpp", 
-        "used_by": [
-            "src/mongo/s/d_logic.cpp"
-        ]
-    }, 
-    {
         "symbol": "mongo::Listener::globalConnectionNumber", 
         "object": "src/mongo/util/net/listen.cpp", 
         "used_by": [
@@ -117,50 +96,24 @@
         ]
     }, 
     {
-        "symbol": "mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)", 
-        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "symbol": "mongo::Message::send(mongo::MessagingPort&, char const*)", 
+        "object": "src/mongo/util/net/message.cpp", 
         "used_by": [
-            "src/mongo/tools/tool_options.cpp", 
-            "src/mongo/shell/shell_options.cpp"
+            "src/mongo/util/net/message_port.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)", 
-        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "symbol": "mongo::nextMessageId()", 
+        "object": "src/mongo/util/net/message.cpp", 
         "used_by": [
-            "src/mongo/db/server_options_helpers.cpp"
+            "src/mongo/util/net/message_port.cpp"
         ]
     }, 
     {
-        "symbol": "mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)", 
-        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "symbol": "mongo::doesOpGetAResponse(int)", 
+        "object": "src/mongo/util/net/message.cpp", 
         "used_by": [
-            "src/mongo/s/mongos_options.cpp", 
-            "src/mongo/db/mongod_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::storeSSLClientOptions(mongo::optionenvironment::Environment const&)", 
-        "object": "src/mongo/util/net/ssl_options.cpp", 
-        "used_by": [
-            "src/mongo/tools/tool_options.cpp", 
-            "src/mongo/shell/shell_options.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::createServer(mongo::MessageServer::Options const&, mongo::MessageHandler*)", 
-        "object": "src/mongo/util/net/message_server_port.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp", 
-            "src/mongo/s/server.cpp"
-        ]
-    }, 
-    {
-        "symbol": "mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)", 
-        "object": "src/mongo/util/net/httpclient.cpp", 
-        "used_by": [
-            "src/mongo/tools/stat.cpp", 
-            "src/mongo/client/examples/httpClientTest.cpp"
+            "src/mongo/s/d_logic.cpp"
         ]
     }, 
     {
@@ -245,6 +198,14 @@
         "object": "src/mongo/util/net/message_port.cpp", 
         "used_by": [
             "src/mongo/util/net/listen.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)", 
+        "object": "src/mongo/util/net/httpclient.cpp", 
+        "used_by": [
+            "src/mongo/tools/stat.cpp", 
+            "src/mongo/client/examples/httpClientTest.cpp"
         ]
     }, 
     {
@@ -624,6 +585,45 @@
         "object": "src/mongo/util/net/ssl_manager.cpp", 
         "used_by": [
             "src/mongo/util/net/sock.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "used_by": [
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/shell/shell_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "used_by": [
+            "src/mongo/db/server_options_helpers.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "used_by": [
+            "src/mongo/s/mongos_options.cpp", 
+            "src/mongo/db/mongod_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::storeSSLClientOptions(mongo::optionenvironment::Environment const&)", 
+        "object": "src/mongo/util/net/ssl_options.cpp", 
+        "used_by": [
+            "src/mongo/tools/tool_options.cpp", 
+            "src/mongo/shell/shell_options.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::createServer(mongo::MessageServer::Options const&, mongo::MessageHandler*)", 
+        "object": "src/mongo/util/net/message_server_port.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/s/server.cpp"
         ]
     }
 ]

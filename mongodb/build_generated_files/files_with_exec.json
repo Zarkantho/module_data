@@ -1,5 +1,34 @@
 [
     {
+        "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/buildinfo.cpp", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
         "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
         "execs": [
             "clientTest", 
@@ -28,27 +57,72 @@
     {
         "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp", 
         "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h", 
+        "execs": [
             "clientTest", 
-            "httpClientTest", 
-            "firstExample", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
             "rsExample", 
-            "whereExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
             "authTest", 
-            "secondExample", 
-            "tutorial"
+            "mongofiles", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongostat", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
         ]
     }, 
     {
         "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
         "execs": [
-            "clientTest", 
-            "httpClientTest", 
-            "firstExample", 
-            "rsExample", 
-            "whereExample", 
-            "authTest", 
-            "secondExample", 
-            "tutorial"
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
         ]
     }, 
     {
@@ -73,7 +147,57 @@
         ]
     }, 
     {
+        "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h", 
+        "execs": [
+            "clientTest", 
+            "perftest", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "rsExample", 
+            "mongoexport", 
+            "tutorial", 
+            "mongotop", 
+            "mongoperf", 
+            "mongoimport", 
+            "bsondump", 
+            "authTest", 
+            "mongostat", 
+            "test", 
+            "whereExample", 
+            "mongooplog", 
+            "mongofiles", 
+            "mongod", 
+            "httpClientTest", 
+            "mongosniff", 
+            "firstExample", 
+            "mongos", 
+            "secondExample"
+        ]
+    }, 
+    {
         "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h", 
         "execs": [
             "mongotop", 
             "mongod", 

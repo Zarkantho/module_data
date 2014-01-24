@@ -1,5 +1,235 @@
 [
     {
+        "name": "src/mongo/shell/assert.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/batch_api.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/collection.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/db.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/mongo.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/mr.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/query.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/replsetbridge.js", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/replsettest.js", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/servers.js", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/servers_misc.js", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/shardingtest.js", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/types.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/utils.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
+        "name": "src/mongo/shell/utils_sh.js", 
+        "execs": [
+            "mongotop", 
+            "mongod", 
+            "perftest", 
+            "mongoperf", 
+            "mongosniff", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "bsondump", 
+            "mongoimport", 
+            "mongos", 
+            "mongooplog", 
+            "test", 
+            "mongoexport", 
+            "mongofiles", 
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/shell/dbshell.cpp", 
         "execs": []
     }, 
@@ -8,7 +238,15 @@
         "execs": []
     }, 
     {
+        "name": "src/mongo/shell/linenoise.h", 
+        "execs": []
+    }, 
+    {
         "name": "src/mongo/shell/linenoise_utf8.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/linenoise_utf8.h", 
         "execs": []
     }, 
     {
@@ -16,7 +254,15 @@
         "execs": []
     }, 
     {
+        "name": "src/mongo/shell/mk_wcwidth.h", 
+        "execs": []
+    }, 
+    {
         "name": "src/mongo/shell/shell_utils.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/shell_utils.h", 
         "execs": []
     }, 
     {
@@ -24,11 +270,23 @@
         "execs": []
     }, 
     {
+        "name": "src/mongo/shell/shell_utils_extended.h", 
+        "execs": []
+    }, 
+    {
         "name": "src/mongo/shell/shell_utils_launcher.cpp", 
         "execs": []
     }, 
     {
+        "name": "src/mongo/shell/shell_utils_launcher.h", 
+        "execs": []
+    }, 
+    {
         "name": "src/mongo/shell/shell_options.cpp", 
+        "execs": []
+    }, 
+    {
+        "name": "src/mongo/shell/shell_options.h", 
         "execs": []
     }, 
     {

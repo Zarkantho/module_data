@@ -8,8 +8,8 @@
 File allocation library
 
 # Files
-- src/mongo/util/file\_allocator.cpp   (cppclientdriver)
-- src/mongo/util/file\_allocator.h
+- src/mongo/util/file\_allocator.cpp   (mongod, cppclientdriver, tools, mongos)
+- src/mongo/util/file\_allocator.h   (mongod, cppclientdriver, tools, mongos)
 
 # Interface
 

@@ -59,13 +59,6 @@
         "sources": [
             "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
         ], 
-        "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()", 
-        "object": "src/third_party/v8/src/heap.cc"
-    }, 
-    {
-        "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
-        ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetIndex(char const*)", 
         "object": "src/third_party/v8/src/debug.cc"
     }, 
@@ -75,6 +68,13 @@
         ], 
         "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)", 
         "object": "src/third_party/v8/src/debug.cc"
+    }, 
+    {
+        "sources": [
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc"
+        ], 
+        "symbol": "v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()", 
+        "object": "src/third_party/v8/src/heap.cc"
     }, 
     {
         "sources": [

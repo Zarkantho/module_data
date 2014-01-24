@@ -18,6 +18,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/bsondump_options.h", 
+        "execs": [
+            "bsondump"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/bsondump_options_init.cpp", 
         "execs": [
             "bsondump"
@@ -58,6 +64,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/mongobridge_options.h", 
+        "execs": [
+            "mongobridge"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/mongobridge_options_init.cpp", 
         "execs": [
             "mongobridge"
@@ -69,6 +81,12 @@
     }, 
     {
         "name": "src/mongo/tools/mongodump_options.cpp", 
+        "execs": [
+            "mongodump"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongodump_options.h", 
         "execs": [
             "mongodump"
         ]
@@ -90,6 +108,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/mongoexport_options.h", 
+        "execs": [
+            "mongoexport"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/mongoexport_options_init.cpp", 
         "execs": [
             "mongoexport"
@@ -101,6 +125,12 @@
     }, 
     {
         "name": "src/mongo/tools/mongofiles_options.cpp", 
+        "execs": [
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongofiles_options.h", 
         "execs": [
             "mongofiles"
         ]
@@ -122,6 +152,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/mongoimport_options.h", 
+        "execs": [
+            "mongoimport"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/mongoimport_options_init.cpp", 
         "execs": [
             "mongoimport"
@@ -133,6 +169,12 @@
     }, 
     {
         "name": "src/mongo/tools/mongooplog_options.cpp", 
+        "execs": [
+            "mongooplog"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongooplog_options.h", 
         "execs": [
             "mongooplog"
         ]
@@ -154,6 +196,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/mongorestore_options.h", 
+        "execs": [
+            "mongorestore"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/mongorestore_options_init.cpp", 
         "execs": [
             "mongorestore"
@@ -170,6 +218,12 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/mongostat_options.h", 
+        "execs": [
+            "mongostat"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/mongostat_options_init.cpp", 
         "execs": [
             "mongostat"
@@ -181,6 +235,12 @@
     }, 
     {
         "name": "src/mongo/tools/mongotop_options.cpp", 
+        "execs": [
+            "mongotop"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/mongotop_options.h", 
         "execs": [
             "mongotop"
         ]
@@ -234,7 +294,35 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/stat_util.h", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/tool.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/tool.h", 
         "execs": [
             "mongotop", 
             "mongorestore", 
@@ -262,7 +350,36 @@
         ]
     }, 
     {
+        "name": "src/mongo/tools/tool_logger.h", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongofiles", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongostat"
+        ]
+    }, 
+    {
         "name": "src/mongo/tools/tool_options.cpp", 
+        "execs": [
+            "mongotop", 
+            "mongorestore", 
+            "mongodump", 
+            "mongobridge", 
+            "mongostat", 
+            "mongoimport", 
+            "mongooplog", 
+            "bsondump", 
+            "mongoexport", 
+            "mongofiles"
+        ]
+    }, 
+    {
+        "name": "src/mongo/tools/tool_options.h", 
         "execs": [
             "mongotop", 
             "mongorestore", 
