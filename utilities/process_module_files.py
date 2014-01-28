@@ -101,11 +101,11 @@ def main():
         with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
             f.write(json.dumps(split_yaml_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
         with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(yaml.dump(split_yaml_version(modules_directory, modules_description_filename), indent=4))
+            f.write(yaml.dump(split_yaml_version(modules_directory, modules_description_filename), indent=4, default_flow_style=False))
     else:
         with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
             f.write(json.dumps(split_txt_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
         with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(yaml.dump(split_txt_version(modules_directory, modules_description_filename), indent=4))
+            f.write(yaml.dump(split_txt_version(modules_directory, modules_description_filename), indent=4, default_flow_style=False))
 
 main()
