@@ -87,6 +87,14 @@ def split_yaml_version(modules_directory, modules_description_filename):
 
     return result_map
 
+def dump_yaml_module_file(modules_directory, result_map):
+    with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
+        f.write(yaml.dump(result_map, indent=4, default_flow_style=False))
+
+def dump_json_module_file(modules_directory, result_map):
+    with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
+        f.write(json.dumps(result_map, indent=4, separators=(',', ': ')))
+
 def main():
 
     if len(sys.argv) != 3:
@@ -96,16 +104,14 @@ def main():
     modules_directory = sys.argv[1]
     modules_description_filename = sys.argv[2]
 
-    # TODO: Actually do some processing before I output the files here
+    result_map = {}
+
     if modules_description_filename.endswith(".yaml"):
-        with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
-            f.write(json.dumps(split_yaml_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
-        with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(yaml.dump(split_yaml_version(modules_directory, modules_description_filename), indent=4, default_flow_style=False))
+        result_map = split_yaml_version(modules_directory, modules_description_filename)
     else:
-        with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
-            f.write(json.dumps(split_txt_version(modules_directory, modules_description_filename), indent=4, separators=(',', ': ')))
-        with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
-            f.write(yaml.dump(split_txt_version(modules_directory, modules_description_filename), indent=4, default_flow_style=False))
+        result_map = split_txt_version(modules_directory, modules_description_filename)
+
+    dump_yaml_module_file(modules_directory, result_map)
+    dump_json_module_file(modules_directory, result_map)
 
 main()
