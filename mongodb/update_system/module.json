@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# libupdate.a (only used by libupdate_driver.a). This is the new code for handling update# operations:## is this stuff only called from update.cpp?",
             "files": [
                 "src/mongo/db/ops/modifier_add_to_set.cpp",
                 "src/mongo/db/ops/modifier_add_to_set.h",
@@ -44,10 +45,10 @@
                 "src/mongo/db/ops/modifier_unset.cpp",
                 "src/mongo/db/ops/modifier_unset.h",
                 "src/mongo/db/ops/modifier_unset_test.cpp"
-            ],
-            "comments": "# libupdate.a (only used by libupdate_driver.a). This is the new code for handling update# operations:## is this stuff only called from update.cpp?"
+            ]
         },
         {
+            "comments": "# libupdate_driver.a. This is the external interface to the new update system:",
             "files": [
                 "src/mongo/db/ops/modifier_table.cpp",
                 "src/mongo/db/ops/modifier_table.h",
@@ -55,10 +56,10 @@
                 "src/mongo/db/ops/update_driver.cpp",
                 "src/mongo/db/ops/update_driver.h",
                 "src/mongo/db/ops/update_driver_test.cpp"
-            ],
-            "comments": "# libupdate_driver.a. This is the external interface to the new update system:"
+            ]
         },
         {
+            "comments": "# Utilities for the new update system (libupdate_common.a)",
             "files": [
                 "src/mongo/db/ops/path_support.cpp",
                 "src/mongo/db/ops/path_support.h",
@@ -69,20 +70,20 @@
                 "src/mongo/db/ops/field_checker.cpp",
                 "src/mongo/db/ops/field_checker.h",
                 "src/mongo/db/ops/field_checker_test.cpp"
-            ],
-            "comments": "# Utilities for the new update system (libupdate_common.a)"
+            ]
         },
         {
+            "comments": "# Other things used by the update system. TODO: figure out what these are for.",
             "files": [
                 "src/mongo/db/ops/update_lifecycle.h",
                 "src/mongo/db/ops/update_lifecycle_impl.cpp",
                 "src/mongo/db/ops/update_lifecycle_impl.h",
                 "src/mongo/db/ops/update_request.h",
                 "src/mongo/db/ops/update_result.h"
-            ],
-            "comments": "# Other things used by the update system. TODO: figure out what these are for."
+            ]
         },
         {
+            "comments": "# Utilites for managing dotted field names such as \"a.b.c\". For example, has things like# \"isPrefixOf\".## is there any relationship between this and bson/ or bson/mutable ?",
             "files": [
                 "src/mongo/db/field_ref.cpp",
                 "src/mongo/db/field_ref.h",
@@ -90,8 +91,7 @@
                 "src/mongo/db/field_ref_set.h",
                 "src/mongo/db/field_ref_set_test.cpp",
                 "src/mongo/db/field_ref_test.cpp"
-            ],
-            "comments": "# Utilites for managing dotted field names such as \"a.b.c\". For example, has things like# \"isPrefixOf\".## is there any relationship between this and bson/ or bson/mutable ?"
+            ]
         }
     ],
     "title": "update_system"

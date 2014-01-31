@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - Stemmer for various languages used in full text search",
             "files": [
                 "src/third_party/shim_stemmer.cpp",
                 "src/third_party/libstemmer_c/include/libstemmer.h",
@@ -57,8 +58,7 @@
                 "src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h",
                 "src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c",
                 "src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h"
-            ],
-            "comments": "# Third Party - Stemmer for various languages used in full text search"
+            ]
         }
     ],
     "title": "stemmer"

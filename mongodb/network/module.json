@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Network library## can you say a few words about:## - what this does## - who uses it## - how to use it?",
             "files": [
                 "src/mongo/util/net/listen.cpp",
                 "src/mongo/util/net/listen.h",
@@ -20,15 +21,14 @@
                 "src/mongo/util/net/ssl_manager.h",
                 "src/mongo/util/net/ssl_options.cpp",
                 "src/mongo/util/net/ssl_options.h"
-            ],
-            "comments": "# Network library## can you say a few words about:## - what this does## - who uses it## - how to use it?"
+            ]
         },
         {
+            "comments": "# Top level (?) of handling incoming network connections on mongod and mongos. Inherits from# Listener (listen.h).",
             "files": [
                 "src/mongo/util/net/message_server.h",
                 "src/mongo/util/net/message_server_port.cpp"
-            ],
-            "comments": "# Top level (?) of handling incoming network connections on mongod and mongos. Inherits from# Listener (listen.h)."
+            ]
         }
     ],
     "title": "network"

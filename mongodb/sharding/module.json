@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Helper classes to delete a range of documents. This is used for example in chunk migrations# when we are cleaning up an old chunk.",
             "files": [
                 "src/mongo/db/range_deleter.cpp",
                 "src/mongo/db/range_deleter.h",
@@ -15,18 +16,18 @@
                 "src/mongo/db/range_deleter_stats.h",
                 "src/mongo/db/range_deleter_test.cpp",
                 "src/mongo/db/range_preserver.h"
-            ],
-            "comments": "# Helper classes to delete a range of documents. This is used for example in chunk migrations# when we are cleaning up an old chunk."
+            ]
         },
         {
+            "comments": "# Utilities for comparing ranges. Useful because our sharding is range based.## okay, but why in s/ ? only used by sharding? seems weird that something## general like range arith is only in s/ but the more specific delete-range## isn't.",
             "files": [
                 "src/mongo/s/range_arithmetic.cpp",
                 "src/mongo/s/range_arithmetic.h",
                 "src/mongo/s/range_arithmetic_test.cpp"
-            ],
-            "comments": "# Utilities for comparing ranges. Useful because our sharding is range based.## okay, but why in s/ ? only used by sharding? seems weird that something## general like range arith is only in s/ but the more specific delete-range## isn't."
+            ]
         },
         {
+            "comments": "# Contains metadata about a collection, particularly for sharding. The MetadataLoader populates new# CollectionMetadata objects from config server data.",
             "files": [
                 "src/mongo/s/collection_metadata.cpp",
                 "src/mongo/s/collection_metadata.h",
@@ -34,10 +35,10 @@
                 "src/mongo/s/metadata_loader.cpp",
                 "src/mongo/s/metadata_loader.h",
                 "src/mongo/s/metadata_loader_test.cpp"
-            ],
-            "comments": "# Contains metadata about a collection, particularly for sharding. The MetadataLoader populates new# CollectionMetadata objects from config server data."
+            ]
         },
         {
+            "comments": "# Code to upgrade config server metadata",
             "files": [
                 "src/mongo/s/config_upgrade.cpp",
                 "src/mongo/s/config_upgrade.h",
@@ -45,27 +46,27 @@
                 "src/mongo/s/config_upgrade_helpers.h",
                 "src/mongo/s/config_upgrade_v0_to_v5.cpp",
                 "src/mongo/s/config_upgrade_v4_to_v5.cpp"
-            ],
-            "comments": "# Code to upgrade config server metadata"
+            ]
         },
         {
+            "comments": "# Distributed lock (lock on the config servers from mongos, i.e. \"balancer lock\")",
             "files": [
                 "src/mongo/s/distlock.cpp",
                 "src/mongo/s/distlock.h",
                 "src/mongo/s/distlock_test.cpp"
-            ],
-            "comments": "# Distributed lock (lock on the config servers from mongos, i.e. \"balancer lock\")"
+            ]
         },
         {
+            "comments": "# Parser for fields in a BSON object. Meant to help enforce a schema on a BSON object.",
             "files": [
                 "src/mongo/db/field_parser-inl.h",
                 "src/mongo/db/field_parser.cpp",
                 "src/mongo/db/field_parser.h",
                 "src/mongo/db/field_parser_test.cpp"
-            ],
-            "comments": "# Parser for fields in a BSON object. Meant to help enforce a schema on a BSON object."
+            ]
         },
         {
+            "comments": "# \"Schema\" for config server metadata. These classes contain structural class definitions for what# we expect to find on the config server. They use the field parser above to convert BSON fields# into C++ members.",
             "files": [
                 "src/mongo/s/type_changelog.cpp",
                 "src/mongo/s/type_changelog.h",
@@ -100,24 +101,24 @@
                 "src/mongo/s/type_tags.cpp",
                 "src/mongo/s/type_tags.h",
                 "src/mongo/s/type_tags_test.cpp"
-            ],
-            "comments": "# \"Schema\" for config server metadata. These classes contain structural class definitions for what# we expect to find on the config server. They use the field parser above to convert BSON fields# into C++ members."
+            ]
         },
         {
+            "comments": "# Bizarre legacy sharding code.## From writeback_listener.h# \"The writeback listener takes back write attempts that were made against a wrong shard.# (Wrong here in the sense that the target chunk moved before this mongos had a chance to# learn so.) It is responsible for reapplying these writes to the correct shard.\"## So basically, the mongos sends an operation to the mongod, and the writeback listener (running on# the mongos) says to the mongod every now and again, \"yo, have I screwed up recently?\". The mongod# is then like \"yeah bro, you screwed up, you wrote all these things to the wrong place and the# writeback listener is like \"thanks man\" and tries to write them to the correct shard. Meanwhile# the user is like \"I'm so glad my data was written\". This should go away because of the new write# commands.## rofl",
             "files": [
                 "src/mongo/s/writeback_listener.cpp",
                 "src/mongo/s/writeback_listener.h"
-            ],
-            "comments": "# Bizarre legacy sharding code.## From writeback_listener.h# \"The writeback listener takes back write attempts that were made against a wrong shard.# (Wrong here in the sense that the target chunk moved before this mongos had a chance to# learn so.) It is responsible for reapplying these writes to the correct shard.\"## So basically, the mongos sends an operation to the mongod, and the writeback listener (running on# the mongos) says to the mongod every now and again, \"yo, have I screwed up recently?\". The mongod# is then like \"yeah bro, you screwed up, you wrote all these things to the wrong place and the# writeback listener is like \"thanks man\" and tries to write them to the correct shard. Meanwhile# the user is like \"I'm so glad my data was written\". This should go away because of the new write# commands.## rofl"
+            ]
         },
         {
+            "comments": "# mongod component of writeback listener",
             "files": [
                 "src/mongo/s/d_writeback.cpp",
                 "src/mongo/s/d_writeback.h"
-            ],
-            "comments": "# mongod component of writeback listener"
+            ]
         },
         {
+            "comments": "# Sharding code? TODO: verify that this is all sharding related and document the architecture.",
             "files": [
                 "src/mongo/s/balance.cpp",
                 "src/mongo/s/balance.h",
@@ -191,8 +192,7 @@
                 "src/mongo/s/version_manager.h",
                 "src/mongo/s/version_mongos.cpp",
                 "src/mongo/s/version_mongos.h"
-            ],
-            "comments": "# Sharding code? TODO: verify that this is all sharding related and document the architecture."
+            ]
         }
     ],
     "title": "sharding"

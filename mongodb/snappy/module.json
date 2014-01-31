@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - Snappy compression library",
             "files": [
                 "src/third_party/shim_snappy.cpp",
                 "src/third_party/snappy/config.h",
@@ -11,8 +12,7 @@
                 "src/third_party/snappy/snappy-stubs-public.h",
                 "src/third_party/snappy/snappy.cc",
                 "src/third_party/snappy/snappy.h"
-            ],
-            "comments": "# Third Party - Snappy compression library"
+            ]
         }
     ],
     "title": "snappy"

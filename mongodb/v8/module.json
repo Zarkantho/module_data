@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - V8 Javascript engine",
             "files": [
                 "src/third_party/shim_v8.cpp",
                 "src/third_party/v8/include/v8-debug.h",
@@ -354,8 +355,7 @@
                 "src/third_party/v8/src/zone-inl.h",
                 "src/third_party/v8/src/zone.cc",
                 "src/third_party/v8/src/zone.h"
-            ],
-            "comments": "# Third Party - V8 Javascript engine"
+            ]
         }
     ],
     "title": "v8"

@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - The boost program_options library",
             "files": [
                 "src/third_party/boost/boost/program_options.hpp",
                 "src/third_party/boost/boost/program_options/cmdline.hpp",
@@ -32,8 +33,7 @@
                 "src/third_party/boost/libs/program_options/src/value_semantic.cpp",
                 "src/third_party/boost/libs/program_options/src/variables_map.cpp",
                 "src/third_party/boost/libs/program_options/src/winmain.cpp"
-            ],
-            "comments": "# Third Party - The boost program_options library"
+            ]
         }
     ],
     "title": "boost_program_options"

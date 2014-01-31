@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - Yaml markup parser.  Used for yaml config files",
             "files": [
                 "src/third_party/shim_yaml.cpp",
                 "src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h",
@@ -91,8 +92,7 @@
                 "src/third_party/yaml-cpp-0.5.1/src/tag.cpp",
                 "src/third_party/yaml-cpp-0.5.1/src/tag.h",
                 "src/third_party/yaml-cpp-0.5.1/src/token.h"
-            ],
-            "comments": "# Third Party - Yaml markup parser.  Used for yaml config files"
+            ]
         }
     ],
     "title": "yaml"

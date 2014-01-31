@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "",
             "files": [
                 "src/mongo/db/fts/fts_command.cpp",
                 "src/mongo/db/fts/fts_command.h",
@@ -50,8 +51,7 @@
                 "src/mongo/db/fts/tokenizer.cpp",
                 "src/mongo/db/fts/tokenizer.h",
                 "src/mongo/db/fts/tokenizer_test.cpp"
-            ],
-            "comments": ""
+            ]
         }
     ],
     "title": "full_text_search_module"

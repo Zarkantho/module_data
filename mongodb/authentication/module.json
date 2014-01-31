@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Authapalooza! TODO: actually separate this logically.",
             "files": [
                 "src/mongo/db/auth/action_set.cpp",
                 "src/mongo/db/auth/action_set.h",
@@ -73,8 +74,7 @@
                 "src/mongo/db/auth/user_set.cpp",
                 "src/mongo/db/auth/user_set.h",
                 "src/mongo/db/auth/user_set_test.cpp"
-            ],
-            "comments": "# Authapalooza! TODO: actually separate this logically."
+            ]
         }
     ],
     "title": "authentication"

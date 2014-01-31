@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - The boost thread library",
             "files": [
                 "src/third_party/boost/boost/thread/barrier.hpp",
                 "src/third_party/boost/boost/thread/condition.hpp",
@@ -47,8 +48,7 @@
                 "src/third_party/boost/libs/thread/src/pthread/once.cpp",
                 "src/third_party/boost/libs/thread/src/pthread/thread.cpp",
                 "src/third_party/boost/libs/thread/src/pthread/timeconv.inl"
-            ],
-            "comments": "# Third Party - The boost thread library"
+            ]
         }
     ],
     "title": "boost_thread"

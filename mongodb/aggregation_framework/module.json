@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "## should be a library ;(## who calls/owns this stuff?",
             "files": [
                 "src/mongo/db/pipeline/accumulator.h",
                 "src/mongo/db/pipeline/accumulator_add_to_set.cpp",
@@ -42,29 +43,28 @@
                 "src/mongo/db/pipeline/value.cpp",
                 "src/mongo/db/pipeline/value.h",
                 "src/mongo/db/pipeline/value_internal.h"
-            ],
-            "comments": "## should be a library ;(## who calls/owns this stuff?"
+            ]
         },
         {
+            "comments": "# Generic interface for getting and merging sorted streams of documents. Only used in aggregation.## +1 \"only used in aggregation\" :)",
             "files": [
                 "src/mongo/db/sorter/sorter.cpp",
                 "src/mongo/db/sorter/sorter.h",
                 "src/mongo/db/sorter/sorter_test.cpp"
-            ],
-            "comments": "# Generic interface for getting and merging sorted streams of documents. Only used in aggregation.## +1 \"only used in aggregation\" :)"
+            ]
         },
         {
+            "comments": "# Code for external sort. This sits inside the sorter, and the sorter \"spills over\" to disk if# external sorting is allowed.## who calls this?",
             "files": [
                 "src/mongo/db/extsort.cpp",
                 "src/mongo/db/extsort.h"
-            ],
-            "comments": "# Code for external sort. This sits inside the sorter, and the sorter \"spills over\" to disk if# external sorting is allowed.## who calls this?"
+            ]
         },
         {
+            "comments": "# I believe this is just used in External Sort, but it's standing on its own here without a# description.",
             "files": [
                 "src/mongo/db/sort_phase_one.h"
-            ],
-            "comments": "# I believe this is just used in External Sort, but it's standing on its own here without a# description."
+            ]
         }
     ],
     "title": "aggregation_framework"

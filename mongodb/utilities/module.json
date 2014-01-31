@@ -1,13 +1,14 @@
 {
     "groups": [
         {
+            "comments": "# Code to manage paths to files.  Conversion from relative to full path within database directory as# well as code to get the current partition (for readahead checks).",
             "files": [
                 "src/mongo/util/paths.cpp",
                 "src/mongo/util/paths.h"
-            ],
-            "comments": "# Code to manage paths to files.  Conversion from relative to full path within database directory as# well as code to get the current partition (for readahead checks)."
+            ]
         },
         {
+            "comments": "# Classes to help in tracking statistics",
             "files": [
                 "src/mongo/db/stats/counters.cpp",
                 "src/mongo/db/stats/counters.h",
@@ -18,88 +19,88 @@
                 "src/mongo/db/stats/timer_stats.h",
                 "src/mongo/db/stats/top.cpp",
                 "src/mongo/db/stats/top.h"
-            ],
-            "comments": "# Classes to help in tracking statistics"
+            ]
         },
         {
+            "comments": "# Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.",
             "files": [
                 "src/mongo/db/hasher.cpp",
                 "src/mongo/db/hasher.h",
                 "src/mongo/db/hasher_test.cpp"
-            ],
-            "comments": "# Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes."
+            ]
         },
         {
+            "comments": "# Helpers to track in progress operations. The constructor registers itself in an \"in progress\"# map, and the destructor removes it.",
             "files": [
                 "src/mongo/db/background.cpp",
                 "src/mongo/db/background.h"
-            ],
-            "comments": "# Helpers to track in progress operations. The constructor registers itself in an \"in progress\"# map, and the destructor removes it."
+            ]
         },
         {
+            "comments": "# Utility to check whether a certain time interval has elapsed. Currently only used in# d_migrate.cpp to check if we should yield.",
             "files": [
                 "src/mongo/util/elapsed_tracker.cpp",
                 "src/mongo/util/elapsed_tracker.h"
-            ],
-            "comments": "# Utility to check whether a certain time interval has elapsed. Currently only used in# d_migrate.cpp to check if we should yield."
+            ]
         },
         {
+            "comments": "# Helper classes to accumulate and log progress in a nice format using the# logging system (so the logging system is only dependency)",
             "files": [
                 "src/mongo/util/progress_meter.cpp",
                 "src/mongo/util/progress_meter.h"
-            ],
-            "comments": "# Helper classes to accumulate and log progress in a nice format using the# logging system (so the logging system is only dependency)"
+            ]
         },
         {
+            "comments": "# Debug macros and gdb server helpers",
             "files": [
                 "src/mongo/util/debug_util.cpp",
                 "src/mongo/util/debug_util.h"
-            ],
-            "comments": "# Debug macros and gdb server helpers"
+            ]
         },
         {
+            "comments": "# Library to get and set the name of the current thread. Just uses a boost::thread_specific_ptr.",
             "files": [
                 "src/mongo/util/concurrency/thread_name.cpp",
                 "src/mongo/util/concurrency/thread_name.h"
-            ],
-            "comments": "# Library to get and set the name of the current thread. Just uses a boost::thread_specific_ptr."
+            ]
         },
         {
+            "comments": "# Utility library to manipulate hex strings",
             "files": [
                 "src/mongo/util/hex.cpp",
                 "src/mongo/util/hex.h"
-            ],
-            "comments": "# Utility library to manipulate hex strings"
+            ]
         },
         {
+            "comments": "# Utilities to run jobs (threads) in the \"background\". You can use this to run tasks periodically.",
             "files": [
                 "src/mongo/util/background.cpp",
                 "src/mongo/util/background.h",
                 "src/mongo/util/background_job_test.cpp"
-            ],
-            "comments": "# Utilities to run jobs (threads) in the \"background\". You can use this to run tasks periodically."
+            ]
         },
         {
+            "comments": "# mapFindWithDefault - looks something up in a map with a default value.",
             "files": [
                 "src/mongo/util/map_util.h"
-            ],
-            "comments": "# mapFindWithDefault - looks something up in a map with a default value."
+            ]
         },
         {
+            "comments": "# I still don't know what this was originally for, but I know we are slowly getting rid of it.",
             "files": [
                 "src/mongo/pch.cpp",
                 "src/mongo/pch.h"
-            ],
-            "comments": "# I still don't know what this was originally for, but I know we are slowly getting rid of it."
+            ]
         },
         {
+            "comments": "# Assertion library.",
             "files": [
                 "src/mongo/util/assert_util.cpp",
                 "src/mongo/util/assert_util.h"
-            ],
-            "comments": "# Assertion library."
+            ]
         },
         {
+            "comments": "# Library for adding fail points into the code for testing purposes",
             "files": [
                 "src/mongo/util/fail_point.cpp",
                 "src/mongo/util/fail_point.h",
@@ -108,41 +109,41 @@
                 "src/mongo/util/fail_point_service.cpp",
                 "src/mongo/util/fail_point_service.h",
                 "src/mongo/util/fail_point_test.cpp"
-            ],
-            "comments": "# Library for adding fail points into the code for testing purposes"
+            ]
         },
         {
+            "comments": "# Helper library that you inherit from to make a class \"reference counted\"",
             "files": [
                 "src/mongo/util/intrusive_counter.cpp",
                 "src/mongo/util/intrusive_counter.h"
-            ],
-            "comments": "# Helper library that you inherit from to make a class \"reference counted\""
+            ]
         },
         {
+            "comments": "# md5 hash library",
             "files": [
                 "src/mongo/util/md5.cpp",
                 "src/mongo/util/md5.h",
                 "src/mongo/util/md5.hpp",
                 "src/mongo/util/md5_test.cpp",
                 "src/mongo/util/md5main.cpp"
-            ],
-            "comments": "# md5 hash library"
+            ]
         },
         {
+            "comments": "# Windows service",
             "files": [
                 "src/mongo/util/ntservice.cpp",
                 "src/mongo/util/ntservice.h"
-            ],
-            "comments": "# Windows service"
+            ]
         },
         {
+            "comments": "# Utilities to hash a username + password",
             "files": [
                 "src/mongo/client/auth_helpers.cpp",
                 "src/mongo/client/auth_helpers.h"
-            ],
-            "comments": "# Utilities to hash a username + password"
+            ]
         },
         {
+            "comments": "# Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why# you would use them.",
             "files": [
                 "src/mongo/util/queue.h",
                 "src/mongo/util/ramlog.h",
@@ -232,10 +233,10 @@
                 "src/mongo/util/goodies.h",
                 "src/mongo/util/hashtab.h",
                 "src/mongo/util/heapcheck.h"
-            ],
-            "comments": "# Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why# you would use them."
+            ]
         },
         {
+            "comments": "# Platform specific code? TODO: Verify this and document what they are for.",
             "files": [
                 "src/mongo/platform/atomic_intrinsics.h",
                 "src/mongo/platform/atomic_intrinsics_gcc_generic.h",
@@ -277,8 +278,7 @@
                 "src/mongo/util/mongoutils/hash.h",
                 "src/mongo/util/mongoutils/html.h",
                 "src/mongo/util/mongoutils/str.h"
-            ],
-            "comments": "# Platform specific code? TODO: Verify this and document what they are for."
+            ]
         }
     ],
     "title": "utilities"

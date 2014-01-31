@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Replication code? TODO: verify that this is all replication related and document the architecture.## a part of this i would like to have documented is threads+locks, e.g.## heartbeats are sent in a unique thread (i think?) and maybe listened for## in a unique thread too? what threads get started if replication is being## used?",
             "files": [
                 "src/mongo/db/repl/bgsync.cpp",
                 "src/mongo/db/repl/bgsync.h",
@@ -42,29 +43,28 @@
                 "src/mongo/db/repl/sync.h",
                 "src/mongo/db/repl/sync_source_feedback.cpp",
                 "src/mongo/db/repl/sync_source_feedback.h"
-            ],
-            "comments": "# Replication code? TODO: verify that this is all replication related and document the architecture.## a part of this i would like to have documented is threads+locks, e.g.## heartbeats are sent in a unique thread (i think?) and maybe listened for## in a unique thread too? what threads get started if replication is being## used?"
+            ]
         },
         {
+            "comments": "# Helpers to wait for the appropriate write concern",
             "files": [
                 "src/mongo/db/write_concern.cpp",
                 "src/mongo/db/write_concern.h"
-            ],
-            "comments": "# Helpers to wait for the appropriate write concern"
+            ]
         },
         {
+            "comments": "# Actual meat of the waiting for write concern code",
             "files": [
                 "src/mongo/db/repl/write_concern.cpp",
                 "src/mongo/db/repl/write_concern.h"
-            ],
-            "comments": "# Actual meat of the waiting for write concern code"
+            ]
         },
         {
+            "comments": "# Helper to parse write concern options out of a BSONObj",
             "files": [
                 "src/mongo/db/write_concern_options.cpp",
                 "src/mongo/db/write_concern_options.h"
-            ],
-            "comments": "# Helper to parse write concern options out of a BSONObj"
+            ]
         }
     ],
     "title": "replication"

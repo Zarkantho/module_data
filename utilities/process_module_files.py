@@ -71,7 +71,7 @@ def split_txt_version(modules_directory, modules_description_filename):
 
     for module_name in result_map.keys():
         module_json_file = open(os.path.join(modules_directory, module_name, 'module.json'), 'w')
-        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': ')))
+        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': '), sort_keys=True))
 
     return result_map
 
@@ -83,7 +83,7 @@ def split_yaml_version(modules_directory, modules_description_filename):
 
     for module_name in result_map.keys():
         module_json_file = open(os.path.join(modules_directory, module_name, 'module.json'), 'w')
-        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': ')))
+        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': '), sort_keys=True))
 
     return result_map
 
@@ -93,7 +93,7 @@ def dump_yaml_module_file(modules_directory, result_map):
 
 def dump_json_module_file(modules_directory, result_map):
     with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
-        f.write(json.dumps(result_map, indent=4, separators=(',', ': ')))
+        f.write(json.dumps(result_map, indent=4, separators=(',', ': '), sort_keys=True))
 
 def main():
 

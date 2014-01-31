@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - The boost shim and the header files in boost core",
             "files": [
                 "src/third_party/shim_boost.cpp",
                 "src/third_party/boost/boost/algorithm/string.hpp",
@@ -972,8 +973,7 @@
                 "src/third_party/boost/boost/version.hpp",
                 "src/third_party/boost/boost/visit_each.hpp",
                 "src/third_party/boost/boost/weak_ptr.hpp"
-            ],
-            "comments": "# Third Party - The boost shim and the header files in boost core"
+            ]
         }
     ],
     "title": "boost_core"

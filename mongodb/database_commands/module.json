@@ -1,19 +1,20 @@
 {
     "groups": [
         {
+            "comments": "# Base class for mongodb commands. Has a big std::map with the keys of the command name and the# values as the Command itself. These are the commands that you run using# \"db.$cmd.findOne({ \"serverStatus\" : true }).",
             "files": [
                 "src/mongo/db/commands.cpp",
                 "src/mongo/db/commands.h"
-            ],
-            "comments": "# Base class for mongodb commands. Has a big std::map with the keys of the command name and the# values as the Command itself. These are the commands that you run using# \"db.$cmd.findOne({ \"serverStatus\" : true })."
+            ]
         },
         {
+            "comments": "# A bunch of commands for mongod. However, this ALSO has the definition of Command::execCommand for# mongod (the function that actually runs commands registered using the Command class, which gets# called whenever a query against the \"$cmd\" collection is made)",
             "files": [
                 "src/mongo/db/dbcommands.cpp"
-            ],
-            "comments": "# A bunch of commands for mongod. However, this ALSO has the definition of Command::execCommand for# mongod (the function that actually runs commands registered using the Command class, which gets# called whenever a query against the \"$cmd\" collection is made)"
+            ]
         },
         {
+            "comments": "# Commands (run using db.$cmd.findOne(...))",
             "files": [
                 "src/mongo/db/commands/apply_ops.cpp",
                 "src/mongo/db/commands/auth_schema_upgrade_d.cpp",
@@ -71,15 +72,14 @@
                 "src/mongo/s/commands_admin.cpp",
                 "src/mongo/s/commands_public.cpp",
                 "src/mongo/db/driverHelpers.cpp"
-            ],
-            "comments": "# Commands (run using db.$cmd.findOne(...))"
+            ]
         },
         {
+            "comments": "# Commands + code for fsync of data files",
             "files": [
                 "src/mongo/db/commands/fsync.cpp",
                 "src/mongo/db/commands/fsync.h"
-            ],
-            "comments": "# Commands + code for fsync of data files"
+            ]
         }
     ],
     "title": "database_commands"

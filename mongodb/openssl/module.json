@@ -1,8 +1,8 @@
 {
     "groups": [
         {
-            "files": [],
-            "comments": "# OpenSSL headers"
+            "comments": "# OpenSSL headers",
+            "files": []
         }
     ],
     "title": "openssl"

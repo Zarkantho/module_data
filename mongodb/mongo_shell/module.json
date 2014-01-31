@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Javascript files that get wrapped in strings and put in cpp files. See the \"env.JSHeader\" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js",
             "files": [
                 "src/mongo/shell/assert.js",
                 "src/mongo/shell/batch_api.js",
@@ -17,10 +18,10 @@
                 "src/mongo/shell/types.js",
                 "src/mongo/shell/utils.js",
                 "src/mongo/shell/utils_sh.js"
-            ],
-            "comments": "# Javascript files that get wrapped in strings and put in cpp files. See the \"env.JSHeader\" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js"
+            ]
         },
         {
+            "comments": "# Files only built into the mongo shell",
             "files": [
                 "src/mongo/shell/dbshell.cpp",
                 "src/mongo/shell/linenoise.cpp",
@@ -35,17 +36,16 @@
                 "src/mongo/shell/shell_utils_extended.h",
                 "src/mongo/shell/shell_utils_launcher.cpp",
                 "src/mongo/shell/shell_utils_launcher.h"
-            ],
-            "comments": "# Files only built into the mongo shell"
+            ]
         },
         {
+            "comments": "# Shell command line options",
             "files": [
                 "src/mongo/shell/shell_options.cpp",
                 "src/mongo/shell/shell_options.h",
                 "src/mongo/shell/shell_options_init.cpp",
                 "src/mongo/shell/shell_options_test.cpp"
-            ],
-            "comments": "# Shell command line options"
+            ]
         }
     ],
     "title": "mongo_shell"

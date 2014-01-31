@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "## jesus, i hope this becomes a library :)## can you say a bit about what kind of logging we do? is there any sort of## ordering or atomicity (maybe per-call-to-log, or per log line?) our## logging guarantees? 'log lines are emitted in-order with respect to each## process thread?' maybe?)# Logging system (NOTE: The first two actually aren't part of the \"logger\" library, but I see no# reason why they should not be)",
             "files": [
                 "src/mongo/util/log.cpp",
                 "src/mongo/util/log.h",
@@ -37,21 +38,20 @@
                 "src/mongo/logger/rotatable_file_writer_test.cpp",
                 "src/mongo/logger/syslog_appender.h",
                 "src/mongo/logger/tee.h"
-            ],
-            "comments": "## jesus, i hope this becomes a library :)## can you say a bit about what kind of logging we do? is there any sort of## ordering or atomicity (maybe per-call-to-log, or per log line?) our## logging guarantees? 'log lines are emitted in-order with respect to each## process thread?' maybe?)# Logging system (NOTE: The first two actually aren't part of the \"logger\" library, but I see no# reason why they should not be)"
+            ]
         },
         {
+            "comments": "# Helpers to dump a bunch of information about the current process## at crash time only? at any time? can you give an example of when## this is used?",
             "files": [
                 "src/mongo/db/log_process_details.cpp",
                 "src/mongo/db/log_process_details.h"
-            ],
-            "comments": "# Helpers to dump a bunch of information about the current process## at crash time only? at any time? can you give an example of when## this is used?"
+            ]
         },
         {
+            "comments": "# MONGO_INITIALIZERs to add extra information to the server logs.",
             "files": [
                 "src/mongo/db/server_extra_log_context.cpp"
-            ],
-            "comments": "# MONGO_INITIALIZERs to add extra information to the server logs."
+            ]
         }
     ],
     "title": "logging_system"

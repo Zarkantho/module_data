@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "",
             "files": [
                 "src/mongo/util/trace.cpp",
                 "src/mongo/db/tests.cpp",
@@ -11,8 +12,7 @@
                 "src/mongo/dbtests/histogram_test.cpp",
                 "src/mongo/util/lruishmap.h",
                 "src/mongo/db/taskqueue.h"
-            ],
-            "comments": ""
+            ]
         }
     ],
     "title": "dead_code"

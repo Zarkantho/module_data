@@ -1,6 +1,7 @@
 {
     "groups": [
         {
+            "comments": "# Third Party - The boost system library",
             "files": [
                 "src/third_party/boost/boost/system/api_config.hpp",
                 "src/third_party/boost/boost/system/config.hpp",
@@ -8,8 +9,7 @@
                 "src/third_party/boost/boost/system/system_error.hpp",
                 "src/third_party/boost/libs/system/src/error_code.cpp",
                 "src/third_party/boost/libs/system/src/local_free_on_destruction.hpp"
-            ],
-            "comments": "# Third Party - The boost system library"
+            ]
         }
     ],
     "title": "boost_system"
