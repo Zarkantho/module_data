@@ -1,8 +1,7 @@
 uncategorized_system:
-    description: 'top level uncategorized system'
+    description: top level uncategorized system
     modules:
-    -   name: 'aggregation_framework'
-        description: 'TODO: aggregation_framework description'
+    -   description: 'TODO: aggregation_framework description'
         groups:
         -   comments: '## should be a library ;(## who calls/owns this stuff?'
             files:
@@ -46,15 +45,16 @@ uncategorized_system:
             - src/mongo/db/pipeline/value.cpp
             - src/mongo/db/pipeline/value.h
             - src/mongo/db/pipeline/value_internal.h
-        -   comments: '# Generic interface for getting and merging sorted streams of documents.
-                Only used in aggregation.## +1 "only used in aggregation" :)'
+        -   comments: '# Generic interface for getting and merging sorted streams
+                of documents. Only used in aggregation.## +1 "only used in aggregation"
+                :)'
             files:
             - src/mongo/db/sorter/sorter.cpp
             - src/mongo/db/sorter/sorter.h
             - src/mongo/db/sorter/sorter_test.cpp
-        -   comments: '# Code for external sort. This sits inside the sorter, and the
-                sorter "spills over" to disk if# external sorting is allowed.## who calls
-                this?'
+        -   comments: '# Code for external sort. This sits inside the sorter, and
+                the sorter "spills over" to disk if# external sorting is allowed.##
+                who calls this?'
             files:
             - src/mongo/db/extsort.cpp
             - src/mongo/db/extsort.h
@@ -62,17 +62,17 @@ uncategorized_system:
                 on its own here without a# description.'
             files:
             - src/mongo/db/sort_phase_one.h
+        name: aggregation_framework
         title: aggregation_framework
-    -   name: 'auditing'
-        description: 'TODO: auditing description'
+    -   description: 'TODO: auditing description'
         groups:
         -   comments: '# Stubs for auditing enterprise module'
             files:
             - src/mongo/db/audit.cpp
             - src/mongo/db/audit.h
+        name: auditing
         title: auditing
-    -   name: 'authentication'
-        description: 'TODO: authentication description'
+    -   description: 'TODO: authentication description'
         groups:
         -   comments: '# Authapalooza! TODO: actually separate this logically.'
             files:
@@ -147,13 +147,13 @@ uncategorized_system:
             - src/mongo/db/auth/user_set.cpp
             - src/mongo/db/auth/user_set.h
             - src/mongo/db/auth/user_set_test.cpp
+        name: authentication
         title: authentication
-    -   name: 'base_utilites'
-        description: 'TODO: base_utilites description'
+    -   description: 'TODO: base_utilites description'
         groups:
-        -   comments: '# Use this in a class to explicitly disallow copying of the class.
-                This can prevent bugs where you# were accidentally copying a class that
-                wasn''t safe to copy.'
+        -   comments: '# Use this in a class to explicitly disallow copying of the
+                class. This can prevent bugs where you# were accidentally copying
+                a class that wasn''t safe to copy.'
             files:
             - src/mongo/base/disallow_copying.h
         -   comments: '# 64 bit atomic counter'
@@ -167,9 +167,9 @@ uncategorized_system:
             - src/mongo/base/owned_pointer_map_test.cpp
             - src/mongo/base/owned_pointer_vector.h
             - src/mongo/base/owned_pointer_vector_test.cpp
-        -   comments: '# Status to return errors. StatusWith can return either an error
-                or a value, so we don''t have to# use return parameters as arguments to
-                the function.'
+        -   comments: '# Status to return errors. StatusWith can return either an
+                error or a value, so we don''t have to# use return parameters as arguments
+                to the function.'
             files:
             - src/mongo/base/status-inl.h
             - src/mongo/base/status.cpp
@@ -184,21 +184,23 @@ uncategorized_system:
             - src/mongo/base/parse_number.cpp
             - src/mongo/base/parse_number.h
             - src/mongo/base/parse_number_test.cpp
-        -   comments: '# The StringData class is a wrapper around a char* that can be
-                constructed from either std::string# and a char* without copying the buffer.
-                This is because a StringData doesn''t free the buffer, so# unlike std::string
-                it doesn''t need to have its own copy.## Why: use for speed? is this similar
-                to other classes people might be## familiar with from elsewhere?'
+        -   comments: '# The StringData class is a wrapper around a char* that can
+                be constructed from either std::string# and a char* without copying
+                the buffer. This is because a StringData doesn''t free the buffer,
+                so# unlike std::string it doesn''t need to have its own copy.## Why:
+                use for speed? is this similar to other classes people might be##
+                familiar with from elsewhere?'
             files:
             - src/mongo/base/string_data-inl.h
             - src/mongo/base/string_data.cpp
             - src/mongo/base/string_data.h
             - src/mongo/base/string_data_test.cpp
+        name: base_utilites
         title: base_utilites
-    -   name: 'boost_core'
-        description: 'TODO: boost_core description'
+    -   description: 'TODO: boost_core description'
         groups:
-        -   comments: '# Third Party - The boost shim and the header files in boost core'
+        -   comments: '# Third Party - The boost shim and the header files in boost
+                core'
             files:
             - src/third_party/shim_boost.cpp
             - src/third_party/boost/boost/algorithm/string.hpp
@@ -1170,9 +1172,9 @@ uncategorized_system:
             - src/third_party/boost/boost/version.hpp
             - src/third_party/boost/boost/visit_each.hpp
             - src/third_party/boost/boost/weak_ptr.hpp
+        name: boost_core
         title: boost_core
-    -   name: 'boost_filesystem'
-        description: 'TODO: boost_filesystem description'
+    -   description: 'TODO: boost_filesystem description'
         groups:
         -   comments: '# Third Party - The boost filesystem library'
             files:
@@ -1204,9 +1206,9 @@ uncategorized_system:
             - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
             - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
             - src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
+        name: boost_filesystem
         title: boost_filesystem
-    -   name: 'boost_program_options'
-        description: 'TODO: boost_program_options description'
+    -   description: 'TODO: boost_program_options description'
         groups:
         -   comments: '# Third Party - The boost program_options library'
             files:
@@ -1240,9 +1242,9 @@ uncategorized_system:
             - src/third_party/boost/libs/program_options/src/value_semantic.cpp
             - src/third_party/boost/libs/program_options/src/variables_map.cpp
             - src/third_party/boost/libs/program_options/src/winmain.cpp
+        name: boost_program_options
         title: boost_program_options
-    -   name: 'boost_system'
-        description: 'TODO: boost_system description'
+    -   description: 'TODO: boost_system description'
         groups:
         -   comments: '# Third Party - The boost system library'
             files:
@@ -1252,9 +1254,9 @@ uncategorized_system:
             - src/third_party/boost/boost/system/system_error.hpp
             - src/third_party/boost/libs/system/src/error_code.cpp
             - src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
+        name: boost_system
         title: boost_system
-    -   name: 'boost_thread'
-        description: 'TODO: boost_thread description'
+    -   description: 'TODO: boost_thread description'
         groups:
         -   comments: '# Third Party - The boost thread library'
             files:
@@ -1303,13 +1305,13 @@ uncategorized_system:
             - src/third_party/boost/libs/thread/src/pthread/once.cpp
             - src/third_party/boost/libs/thread/src/pthread/thread.cpp
             - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+        name: boost_thread
         title: boost_thread
-    -   name: 'bson'
-        description: 'TODO: bson description'
+    -   description: 'TODO: bson description'
         groups:
-        -   comments: '# BSON library## is this library standalone? (lots of third party
-                stuff might want to make## use of BSON) - what does it depend on?## why
-                is some of this stuff in db/ ?'
+        -   comments: '# BSON library## is this library standalone? (lots of third
+                party stuff might want to make## use of BSON) - what does it depend
+                on?## why is some of this stuff in db/ ?'
             files:
             - src/mongo/bson/bson-inl.h
             - src/mongo/bson/bson_builder_base.h
@@ -1346,9 +1348,10 @@ uncategorized_system:
             - src/mongo/db/jsobjmanipulator.h
             - src/mongo/db/json.cpp
             - src/mongo/db/json.h
-        -   comments: '# Mutable BSON is built on top of the BSON library. It has a mutable,
-                consistently sized vector of# the changes that have been made to an object.##
-                is this part of libbson? does this depend on bson/* ?'
+        -   comments: '# Mutable BSON is built on top of the BSON library. It has
+                a mutable, consistently sized vector of# the changes that have been
+                made to an object.## is this part of libbson? does this depend on
+                bson/* ?'
             files:
             - src/mongo/bson/mutable/algorithm.h
             - src/mongo/bson/mutable/const_element-inl.h
@@ -1364,9 +1367,9 @@ uncategorized_system:
             - src/mongo/bson/mutable/mutable_bson_test.cpp
             - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
             - src/mongo/bson/mutable/mutable_bson_test_utils.h
+        name: bson
         title: bson
-    -   name: 'build_generated_files'
-        description: 'TODO: build_generated_files description'
+    -   description: 'TODO: build_generated_files description'
         groups:
         -   comments: '# Files auto generated by the build process'
             files:
@@ -1384,30 +1387,31 @@ uncategorized_system:
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
+        name: build_generated_files
         title: build_generated_files
-    -   name: 'client_and_operation_tracking'
-        description: 'TODO: client_and_operation_tracking description'
+    -   description: 'TODO: client_and_operation_tracking description'
         groups:
-        -   comments: '# mongos''s version of a "Client". This is the big bucket of global
-                state. This ALSO has the# definition of Command::execCommand for mongos
-                (the function that actually runs commands registered# using the Command
-                class, which gets called whenever a query against the "$cmd" collection
-                is made)'
+        -   comments: '# mongos''s version of a "Client". This is the big bucket of
+                global state. This ALSO has the# definition of Command::execCommand
+                for mongos (the function that actually runs commands registered# using
+                the Command class, which gets called whenever a query against the
+                "$cmd" collection is made)'
             files:
             - src/mongo/s/s_only.cpp
-        -   comments: '# mongod''s version of a "Client". This is the big bucket of global
-                state.# There is also the concept of a "Context" that one can take at
-                the beginning of an operation that# holds a subset of the global state.
-                There is also a "ReadContext" and a "WriteContext which# take locks. These
-                are all nested classes in "Client". It''s a bizarre situation because#
-                "client.h" contains the declaration of the class, but there are two different
-                definitions. One in# "s_only.cpp" for mongos, and one in "client.cpp"
-                for mongod. This means that mongos files may# contain "client.h" and pass
-                compile fine when using something in it, but then may fail link# because
-                it happens to be something that''s only defined in "client.cpp". I don''t
-                see any# definitions so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"#
-                (the definition of the WriteContext constructor) only shows up in client.cpp,
-                which is mongod# only.'
+        -   comments: '# mongod''s version of a "Client". This is the big bucket of
+                global state.# There is also the concept of a "Context" that one can
+                take at the beginning of an operation that# holds a subset of the
+                global state. There is also a "ReadContext" and a "WriteContext which#
+                take locks. These are all nested classes in "Client". It''s a bizarre
+                situation because# "client.h" contains the declaration of the class,
+                but there are two different definitions. One in# "s_only.cpp" for
+                mongos, and one in "client.cpp" for mongod. This means that mongos
+                files may# contain "client.h" and pass compile fine when using something
+                in it, but then may fail link# because it happens to be something
+                that''s only defined in "client.cpp". I don''t see any# definitions
+                so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"#
+                (the definition of the WriteContext constructor) only shows up in
+                client.cpp, which is mongod# only.'
             files:
             - src/mongo/db/client.cpp
             - src/mongo/db/client.h
@@ -1443,28 +1447,28 @@ uncategorized_system:
             - src/mongo/db/clientcursor.cpp
             - src/mongo/db/clientcursor.h
         -   comments: '# Contains helper functions for running common operations against
-                the local server. For example,# has findOne, ensureIndex, upsert, etc.
-                which all just run the respective options on the server the# code is running
-                on.'
+                the local server. For example,# has findOne, ensureIndex, upsert,
+                etc. which all just run the respective options on the server the#
+                code is running on.'
             files:
             - src/mongo/db/dbhelpers.cpp
             - src/mongo/db/dbhelpers.h
-        -   comments: '# Code to get a handle to the "system.profile" collection for a
-                given Database'
+        -   comments: '# Code to get a handle to the "system.profile" collection for
+                a given Database'
             files:
             - src/mongo/db/introspect.cpp
             - src/mongo/db/introspect.h
         -   comments: '# Just an enum for different cursor time limit states.'
             files:
             - src/mongo/db/max_time.h
+        name: client_and_operation_tracking
         title: client_and_operation_tracking
-    -   name: 'concurrency'
-        description: 'TODO: concurrency description'
+    -   description: 'TODO: concurrency description'
         groups:
         -   comments: '# Core locks library. Only in mongod.## can you say a bit more?
-                e.g. database locks are RWlocks, but what *are*## they exactly? any sort
-                of fairness or other performance/"how to use" info?# TODO: There are also
-                a bunch of concurrency related helpers in the UTILITIES section.'
+                e.g. database locks are RWlocks, but what *are*## they exactly? any
+                sort of fairness or other performance/"how to use" info?# TODO: There
+                are also a bunch of concurrency related helpers in the UTILITIES section.'
             files:
             - src/mongo/util/concurrency/rwlock.h
             - src/mongo/util/concurrency/rwlockimpl.cpp
@@ -1481,20 +1485,20 @@ uncategorized_system:
             - src/mongo/util/concurrency/spin_lock.cpp
             - src/mongo/util/concurrency/spin_lock.h
             - src/mongo/util/concurrency/spin_lock_test.cpp
-        -   comments: '# Condition Variables## why called ''synchronization'' then? (what
-                are these, really? can you give## an example?)'
+        -   comments: '# Condition Variables## why called ''synchronization'' then?
+                (what are these, really? can you give## an example?)'
             files:
             - src/mongo/util/concurrency/synchronization.cpp
             - src/mongo/util/concurrency/synchronization.h
+        name: concurrency
         title: concurrency
-    -   name: 'cpp_client_driver'
-        description: 'TODO: cpp_client_driver description'
+    -   description: 'TODO: cpp_client_driver description'
         groups:
-        -   comments: '# Stubs so that the client driver can build alone since our deps
-                are screwed up. We have symbols# that are required by shared code that
-                are very internal to the server, so if we didn''t have these# files we''d
-                either need to include the whole server (which we want to avoid) or the
-                build wouldn''t# successfully link.'
+        -   comments: '# Stubs so that the client driver can build alone since our
+                deps are screwed up. We have symbols# that are required by shared
+                code that are very internal to the server, so if we didn''t have these#
+                files we''d either need to include the whole server (which we want
+                to avoid) or the build wouldn''t# successfully link.'
             files:
             - src/mongo/client/clientAndShell.cpp
             - src/mongo/client/clientOnly-private.h
@@ -1504,10 +1508,10 @@ uncategorized_system:
             files:
             - src/mongo/client/init.cpp
             - src/mongo/client/init.h
-        -   comments: '# The Core C++ Client Driver Library## who uses these, and why?
-                maybe this description should be broken up into## some components, e.g.
-                what exactly is a ''dbclient'', a ''dbclientcursor''## and a ''syncclusterconnection''
-                ?'
+        -   comments: '# The Core C++ Client Driver Library## who uses these, and
+                why? maybe this description should be broken up into## some components,
+                e.g. what exactly is a ''dbclient'', a ''dbclientcursor''## and a
+                ''syncclusterconnection'' ?'
             files:
             - src/mongo/client/connpool.cpp
             - src/mongo/client/connpool.h
@@ -1524,8 +1528,8 @@ uncategorized_system:
             - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
-        -   comments: '# Legacy wire protocol in the client driver## what is the new equivalent,
-                and where?'
+        -   comments: '# Legacy wire protocol in the client driver## what is the new
+                equivalent, and where?'
             files:
             - src/mongo/db/dbmessage.cpp
             - src/mongo/db/dbmessage.h
@@ -1534,8 +1538,8 @@ uncategorized_system:
             files:
             - src/mongo/db/lasterror.cpp
             - src/mongo/db/lasterror.h
-        -   comments: '# Examples of how to use the client driver that get built in the
-                server'
+        -   comments: '# Examples of how to use the client driver that get built in
+                the server'
             files:
             - src/mongo/client/examples/authTest.cpp
             - src/mongo/client/examples/clientTest.cpp
@@ -1548,31 +1552,32 @@ uncategorized_system:
         -   comments: '# Old performance testing utility. Builds the "mongoperf" binary.'
             files:
             - src/mongo/client/examples/mongoperf.cpp
-        -   comments: '# Macro hacks! Apparently we pollute the namespace with tons of
-                crazy macros that cause problems# for consumers of the client driver if
-                we leave them in. I guess users don''t like it when we# redefine things
-                like "malloc" and "verify" in their programs.'
+        -   comments: '# Macro hacks! Apparently we pollute the namespace with tons
+                of crazy macros that cause problems# for consumers of the client driver
+                if we leave them in. I guess users don''t like it when we# redefine
+                things like "malloc" and "verify" in their programs.'
             files:
             - src/mongo/client/export_macros.h
             - src/mongo/client/undef_macros.h
             - src/mongo/client/redef_macros.h
-        -   comments: '# More fun macros! MONGO_likely and MONGO_unlikely as well as LOG_SOME,
-                which only logs every once# in a while. w00! Party!'
+        -   comments: '# More fun macros! MONGO_likely and MONGO_unlikely as well
+                as LOG_SOME, which only logs every once# in a while. w00! Party!'
             files:
             - src/mongo/server.h
         -   comments: '# Gridfs wrapper around the client driver.'
             files:
             - src/mongo/client/gridfs.cpp
             - src/mongo/client/gridfs.h
-        -   comments: '# Cursor that represents a connection to a bunch of shards. You
-                would think that this only makes# sense in mongos, but it turns out it''s
-                built into mongod for purposes of map reduce (the final# destination shard
-                of a map reduce job uses this in the "mapreduce.shardedfinish" command).'
+        -   comments: '# Cursor that represents a connection to a bunch of shards.
+                You would think that this only makes# sense in mongos, but it turns
+                out it''s built into mongod for purposes of map reduce (the final#
+                destination shard of a map reduce job uses this in the "mapreduce.shardedfinish"
+                command).'
             files:
             - src/mongo/client/parallel.cpp
             - src/mongo/client/parallel.h
-        -   comments: '# Hookup of client to sasl authentication. Only built in when user
-                passes --use-sasl-client'
+        -   comments: '# Hookup of client to sasl authentication. Only built in when
+                user passes --use-sasl-client'
             files:
             - src/mongo/client/sasl_client_authenticate.cpp
             - src/mongo/client/sasl_client_authenticate.h
@@ -1580,21 +1585,21 @@ uncategorized_system:
             - src/mongo/client/sasl_client_session.cpp
             - src/mongo/client/sasl_client_session.h
             - src/mongo/client/sasl_sspi.cpp
+        name: cpp_client_driver
         title: cpp_client_driver
-    -   name: 'database_commands'
-        description: 'TODO: database_commands description'
+    -   description: 'TODO: database_commands description'
         groups:
-        -   comments: '# Base class for mongodb commands. Has a big std::map with the
-                keys of the command name and the# values as the Command itself. These
-                are the commands that you run using# "db.$cmd.findOne({ "serverStatus"
+        -   comments: '# Base class for mongodb commands. Has a big std::map with
+                the keys of the command name and the# values as the Command itself.
+                These are the commands that you run using# "db.$cmd.findOne({ "serverStatus"
                 : true }).'
             files:
             - src/mongo/db/commands.cpp
             - src/mongo/db/commands.h
-        -   comments: '# A bunch of commands for mongod. However, this ALSO has the definition
-                of Command::execCommand for# mongod (the function that actually runs commands
-                registered using the Command class, which gets# called whenever a query
-                against the "$cmd" collection is made)'
+        -   comments: '# A bunch of commands for mongod. However, this ALSO has the
+                definition of Command::execCommand for# mongod (the function that
+                actually runs commands registered using the Command class, which gets#
+                called whenever a query against the "$cmd" collection is made)'
             files:
             - src/mongo/db/dbcommands.cpp
         -   comments: '# Commands (run using db.$cmd.findOne(...))'
@@ -1659,9 +1664,9 @@ uncategorized_system:
             files:
             - src/mongo/db/commands/fsync.cpp
             - src/mongo/db/commands/fsync.h
+        name: database_commands
         title: database_commands
-    -   name: 'database_web_accesss'
-        description: 'TODO: database_web_accesss description'
+    -   description: 'TODO: database_web_accesss description'
         groups:
         -   comments: '# Web access to the database, including rest, jsonp, and http.'
             files:
@@ -1672,9 +1677,9 @@ uncategorized_system:
             - src/mongo/db/clientlistplugin.cpp
             - src/mongo/util/net/miniwebserver.cpp
             - src/mongo/util/net/miniwebserver.h
+        name: database_web_accesss
         title: database_web_accesss
-    -   name: 'dead_code'
-        description: 'TODO: dead_code description'
+    -   description: 'TODO: dead_code description'
         groups:
         -   comments: ''
             files:
@@ -1687,28 +1692,29 @@ uncategorized_system:
             - src/mongo/dbtests/histogram_test.cpp
             - src/mongo/util/lruishmap.h
             - src/mongo/db/taskqueue.h
+        name: dead_code
         title: dead_code
-    -   name: 'file_allocation'
-        description: 'TODO: file_allocation description'
+    -   description: 'TODO: file_allocation description'
         groups:
         -   comments: '# File allocation library'
             files:
             - src/mongo/util/file_allocator.cpp
             - src/mongo/util/file_allocator.h
+        name: file_allocation
         title: file_allocation
-    -   name: 'file_interface'
-        description: 'TODO: file_interface description'
+    -   description: 'TODO: file_interface description'
         groups:
-        -   comments: '# Abstraction layer for dealing with files. It''s basically the
-                read(2), open(2), and write(2)# interface for posix, and something else
-                for Windows. Not used by mmap code, and does not depend# on file allocator
-                library. Use this if you need a file but not a memory mapped file.'
+        -   comments: '# Abstraction layer for dealing with files. It''s basically
+                the read(2), open(2), and write(2)# interface for posix, and something
+                else for Windows. Not used by mmap code, and does not depend# on file
+                allocator library. Use this if you need a file but not a memory mapped
+                file.'
             files:
             - src/mongo/util/file.cpp
             - src/mongo/util/file.h
+        name: file_interface
         title: file_interface
-    -   name: 'full_text_search_module'
-        description: 'TODO: full_text_search_module description'
+    -   description: 'TODO: full_text_search_module description'
         groups:
         -   comments: ''
             files:
@@ -1760,12 +1766,12 @@ uncategorized_system:
             - src/mongo/db/fts/tokenizer.cpp
             - src/mongo/db/fts/tokenizer.h
             - src/mongo/db/fts/tokenizer_test.cpp
+        name: full_text_search_module
         title: full_text_search_module
-    -   name: 'geo_queries'
-        description: 'TODO: geo_queries description'
+    -   description: 'TODO: geo_queries description'
         groups:
-        -   comments: '# GEO query code. TODO: describe the structure of this and how
-                it interacts with the new index# system.'
+        -   comments: '# GEO query code. TODO: describe the structure of this and
+                how it interacts with the new index# system.'
             files:
             - src/mongo/db/geo/core.h
             - src/mongo/db/geo/geoconstants.h
@@ -1783,9 +1789,9 @@ uncategorized_system:
             - src/mongo/db/geo/s2common.h
             - src/mongo/db/geo/shapes.cpp
             - src/mongo/db/geo/shapes.h
+        name: geo_queries
         title: geo_queries
-    -   name: 'gperftools'
-        description: 'TODO: gperftools description'
+    -   description: 'TODO: gperftools description'
         groups:
         -   comments: '# Third Party - Google performance tools and tcmalloc'
             files:
@@ -1883,17 +1889,18 @@ uncategorized_system:
             - src/third_party/gperftools-2.0/src/thread_cache.h
             - src/third_party/gperftools-2.0/src/windows/mingw.h
             - src/third_party/gperftools-2.0/src/windows/port.h
+        name: gperftools
         title: gperftools
-    -   name: 'indexing'
-        description: 'TODO: indexing description'
+    -   description: 'TODO: indexing description'
         groups:
         -   comments: '# Indexes and index management code. TODO: go into more details
-                about this. The code is new.# The two parts of the interface that are
-                nice entry points are the "index_access_method.h"# (interface for manipulating
-                and accessing the index itself), and "index_cursor.h" (interface for#
-                getting data from an index) files.## can you say a bit more about the
-                structure in here, wrt. a hypothetical## member of the ''open source community''
-                who wants to add a new type of## index to mongodb?'
+                about this. The code is new.# The two parts of the interface that
+                are nice entry points are the "index_access_method.h"# (interface
+                for manipulating and accessing the index itself), and "index_cursor.h"
+                (interface for# getting data from an index) files.## can you say a
+                bit more about the structure in here, wrt. a hypothetical## member
+                of the ''open source community'' who wants to add a new type of##
+                index to mongodb?'
             files:
             - src/mongo/db/index/2d_access_method.cpp
             - src/mongo/db/index/2d_access_method.h
@@ -1932,8 +1939,8 @@ uncategorized_system:
             - src/mongo/db/index_set.cpp
             - src/mongo/db/index_set.h
             - src/mongo/db/index_set_test.cpp
-        -   comments: '# Class representing an index spec, such as { "a" : 1, "b" : -1
-                }'
+        -   comments: '# Class representing an index spec, such as { "a" : 1, "b"
+                : -1 }'
             files:
             - src/mongo/db/keypattern.cpp
             - src/mongo/db/keypattern.h
@@ -1941,9 +1948,9 @@ uncategorized_system:
             files:
             - src/mongo/db/ttl.cpp
             - src/mongo/db/ttl.h
+        name: indexing
         title: indexing
-    -   name: 'javascript_libraries'
-        description: 'TODO: javascript_libraries description'
+    -   description: 'TODO: javascript_libraries description'
         groups:
         -   comments: '# v8 Javascript library files'
             files:
@@ -1967,17 +1974,17 @@ uncategorized_system:
             - src/mongo/scripting/bson_template_evaluator.cpp
             - src/mongo/scripting/bson_template_evaluator.h
             - src/mongo/scripting/bson_template_evaluator_test.cpp
+        name: javascript_libraries
         title: javascript_libraries
-    -   name: 'journaling'
-        description: 'TODO: journaling description'
+    -   description: 'TODO: journaling description'
         groups:
-        -   comments: '# Page aligned buffer builder## what sort of buffer? i don''t understand
-                ;('
+        -   comments: '# Page aligned buffer builder## what sort of buffer? i don''t
+                understand ;('
             files:
             - src/mongo/util/alignedbuilder.cpp
             - src/mongo/util/alignedbuilder.h
-        -   comments: '# Journaling module## who calls/owns stuff in here? only used by
-                mongod, correct?'
+        -   comments: '# Journaling module## who calls/owns stuff in here? only used
+                by mongod, correct?'
             files:
             - src/mongo/db/dur.cpp
             - src/mongo/db/dur.h
@@ -1997,31 +2004,32 @@ uncategorized_system:
             - src/mongo/db/storage/durable_mapped_file.cpp
             - src/mongo/db/storage/durable_mapped_file.h
         -   comments: '# This is not actually used in our logging system. Just utilities
-                to create files that you can# append to. One notable example of a system
-                that uses this is our preallocation of journal files.# In fact, it isn''t
-                used in anything not journaling related right now.'
+                to create files that you can# append to. One notable example of a
+                system that uses this is our preallocation of journal files.# In fact,
+                it isn''t used in anything not journaling related right now.'
             files:
             - src/mongo/util/logfile.cpp
             - src/mongo/util/logfile.h
+        name: journaling
         title: journaling
-    -   name: 'legacy_code'
-        description: 'TODO: legacy_code description'
+    -   description: 'TODO: legacy_code description'
         groups:
-        -   comments: '# Legacy files that should go away. Global class called "d" that
-                used to contain a bunch of mongod# global variables.'
+        -   comments: '# Legacy files that should go away. Global class called "d"
+                that used to contain a bunch of mongod# global variables.'
             files:
             - src/mongo/db/d_globals.cpp
             - src/mongo/db/d_globals.h
+        name: legacy_code
         title: legacy_code
-    -   name: 'logging_system'
-        description: 'TODO: logging_system description'
+    -   description: 'TODO: logging_system description'
         groups:
-        -   comments: '## jesus, i hope this becomes a library :)## can you say a bit
-                about what kind of logging we do? is there any sort of## ordering or atomicity
-                (maybe per-call-to-log, or per log line?) our## logging guarantees? ''log
-                lines are emitted in-order with respect to each## process thread?'' maybe?)#
-                Logging system (NOTE: The first two actually aren''t part of the "logger"
-                library, but I see no# reason why they should not be)'
+        -   comments: '## jesus, i hope this becomes a library :)## can you say a
+                bit about what kind of logging we do? is there any sort of## ordering
+                or atomicity (maybe per-call-to-log, or per log line?) our## logging
+                guarantees? ''log lines are emitted in-order with respect to each##
+                process thread?'' maybe?)# Logging system (NOTE: The first two actually
+                aren''t part of the "logger" library, but I see no# reason why they
+                should not be)'
             files:
             - src/mongo/util/log.cpp
             - src/mongo/util/log.h
@@ -2058,39 +2066,40 @@ uncategorized_system:
             - src/mongo/logger/rotatable_file_writer_test.cpp
             - src/mongo/logger/syslog_appender.h
             - src/mongo/logger/tee.h
-        -   comments: '# Helpers to dump a bunch of information about the current process##
-                at crash time only? at any time? can you give an example of when## this
-                is used?'
+        -   comments: '# Helpers to dump a bunch of information about the current
+                process## at crash time only? at any time? can you give an example
+                of when## this is used?'
             files:
             - src/mongo/db/log_process_details.cpp
             - src/mongo/db/log_process_details.h
-        -   comments: '# MONGO_INITIALIZERs to add extra information to the server logs.'
+        -   comments: '# MONGO_INITIALIZERs to add extra information to the server
+                logs.'
             files:
             - src/mongo/db/server_extra_log_context.cpp
+        name: logging_system
         title: logging_system
-    -   name: 'mmap'
-        description: 'TODO: mmap description'
+    -   description: 'TODO: mmap description'
         groups:
         -   comments: '# mmap library (only depends on file allocation library)'
             files:
             - src/mongo/util/mmap.cpp
             - src/mongo/util/mmap.h
             - src/mongo/util/mmap_posix.cpp
+        name: mmap
         title: mmap
-    -   name: 'mmap_file_interface'
-        description: 'TODO: mmap_file_interface description'
+    -   description: 'TODO: mmap_file_interface description'
         groups:
-        -   comments: '# Interface to data file. Depends on journaling module. These are
-                the actual data files on disk# "<dbname>.#".  Handles file preallocation.'
+        -   comments: '# Interface to data file. Depends on journaling module. These
+                are the actual data files on disk# "<dbname>.#".  Handles file preallocation.'
             files:
             - src/mongo/db/storage/data_file.cpp
             - src/mongo/db/storage/data_file.h
+        name: mmap_file_interface
         title: mmap_file_interface
-    -   name: 'mongo_shell'
-        description: 'TODO: mongo_shell description'
+    -   description: 'TODO: mongo_shell description'
         groups:
-        -   comments: '# Javascript files that get wrapped in strings and put in cpp files.
-                See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js'
+        -   comments: '# Javascript files that get wrapped in strings and put in cpp
+                files. See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js'
             files:
             - src/mongo/shell/assert.js
             - src/mongo/shell/batch_api.js
@@ -2128,9 +2137,9 @@ uncategorized_system:
             - src/mongo/shell/shell_options.h
             - src/mongo/shell/shell_options_init.cpp
             - src/mongo/shell/shell_options_test.cpp
+        name: mongo_shell
         title: mongo_shell
-    -   name: 'mongos_and_mongod_mains'
-        description: 'TODO: mongos_and_mongod_mains description'
+    -   description: 'TODO: mongos_and_mongod_mains description'
         groups:
         -   comments: '# Main for mongod'
             files:
@@ -2152,20 +2161,20 @@ uncategorized_system:
             - src/mongo/s/mongos_options.h
             - src/mongo/s/mongos_options_init.cpp
             - src/mongo/s/mongos_options_test.cpp
+        name: mongos_and_mongod_mains
         title: mongos_and_mongod_mains
-    -   name: 'murmurhash3'
-        description: 'TODO: murmurhash3 description'
+    -   description: 'TODO: murmurhash3 description'
         groups:
         -   comments: '# Third Party - Non cryptographic hashing library'
             files:
             - src/third_party/murmurhash3/MurmurHash3.cpp
             - src/third_party/murmurhash3/MurmurHash3.h
+        name: murmurhash3
         title: murmurhash3
-    -   name: 'network'
-        description: 'TODO: network description'
+    -   description: 'TODO: network description'
         groups:
-        -   comments: '# Network library## can you say a few words about:## - what this
-                does## - who uses it## - how to use it?'
+        -   comments: '# Network library## can you say a few words about:## - what
+                this does## - who uses it## - how to use it?'
             files:
             - src/mongo/util/net/listen.cpp
             - src/mongo/util/net/listen.h
@@ -2185,20 +2194,21 @@ uncategorized_system:
             - src/mongo/util/net/ssl_manager.h
             - src/mongo/util/net/ssl_options.cpp
             - src/mongo/util/net/ssl_options.h
-        -   comments: '# Top level (?) of handling incoming network connections on mongod
-                and mongos. Inherits from# Listener (listen.h).'
+        -   comments: '# Top level (?) of handling incoming network connections on
+                mongod and mongos. Inherits from# Listener (listen.h).'
             files:
             - src/mongo/util/net/message_server.h
             - src/mongo/util/net/message_server_port.cpp
+        name: network
         title: network
-    -   name: 'new_wire_protocol_write_commands'
-        description: 'TODO: new_wire_protocol_write_commands description'
+    -   description: 'TODO: new_wire_protocol_write_commands description'
         groups:
-        -   comments: '# New write commands for new wire protocol. The new "write commands"
-                are all actual Commands run# using "db.$cmd.findOne(...)". The reason
-                for this is that the old wire protocol didn''t have# acknowledgements
-                for anything BUT queries (which include commands), so everything is now
-                a query# so we can get acknowledgements for writes (and not just for queries).'
+        -   comments: '# New write commands for new wire protocol. The new "write
+                commands" are all actual Commands run# using "db.$cmd.findOne(...)".
+                The reason for this is that the old wire protocol didn''t have# acknowledgements
+                for anything BUT queries (which include commands), so everything is
+                now a query# so we can get acknowledgements for writes (and not just
+                for queries).'
             files:
             - src/mongo/db/commands/write_commands/write_commands.cpp
             - src/mongo/db/commands/write_commands/write_commands.h
@@ -2229,7 +2239,8 @@ uncategorized_system:
             - src/mongo/s/write_ops/write_op.cpp
             - src/mongo/s/write_ops/write_op.h
             - src/mongo/s/write_ops/write_op_test.cpp
-        -   comments: '# New wire protocol writes (in mongod)## why are these in s/ ?'
+        -   comments: '# New wire protocol writes (in mongod)## why are these in s/
+                ?'
             files:
             - src/mongo/s/write_ops/batched_command_request.cpp
             - src/mongo/s/write_ops/batched_command_request.h
@@ -2258,34 +2269,34 @@ uncategorized_system:
             - src/mongo/s/write_ops/wc_error_detail.h
             - src/mongo/s/write_ops/write_error_detail.cpp
             - src/mongo/s/write_ops/write_error_detail.h
-        -   comments: '# Header to enumerate the wire protocol version, along with the
-                max and min supported versions## can you say a bit about who exactly cares
-                (which components) about wire protocol version?'
+        -   comments: '# Header to enumerate the wire protocol version, along with
+                the max and min supported versions## can you say a bit about who exactly
+                cares (which components) about wire protocol version?'
             files:
             - src/mongo/db/wire_version.h
+        name: new_wire_protocol_write_commands
         title: new_wire_protocol_write_commands
-    -   name: 'openssl'
-        description: 'TODO: openssl description'
+    -   description: 'TODO: openssl description'
         groups:
         -   comments: '# OpenSSL headers'
             files: []
+        name: openssl
         title: openssl
-    -   name: 'page_fault_utilities'
-        description: 'TODO: page_fault_utilities description'
+    -   description: 'TODO: page_fault_utilities description'
         groups:
         -   comments: '# Contains the PageFaultException and NoPageFaultsAllowed classes.##
                 where are these used?'
             files:
             - src/mongo/db/pagefault.cpp
             - src/mongo/db/pagefault.h
-        -   comments: '# Code to go in and touch pages so that they are brought into memory.##
-                who calls these?'
+        -   comments: '# Code to go in and touch pages so that they are brought into
+                memory.## who calls these?'
             files:
             - src/mongo/db/prefetch.cpp
             - src/mongo/db/prefetch.h
+        name: page_fault_utilities
         title: page_fault_utilities
-    -   name: 'pcrecpp'
-        description: 'TODO: pcrecpp description'
+    -   description: 'TODO: pcrecpp description'
         groups:
         -   comments: '# Third Party - Perl compatible regular expressions'
             files:
@@ -2325,13 +2336,13 @@ uncategorized_system:
             - src/third_party/pcre-8.30/pcreposix.c
             - src/third_party/pcre-8.30/pcreposix.h
             - src/third_party/pcre-8.30/ucp.h
+        name: pcrecpp
         title: pcrecpp
-    -   name: 'query_system'
-        description: 'TODO: query_system description'
+    -   description: 'TODO: query_system description'
         groups:
-        -   comments: '# Matcher expressions. The point of all of this is to take a query
-                string and turn it into a# structured set of classes. If this were a compiler
-                this would be the parse tree for the compiler.'
+        -   comments: '# Matcher expressions. The point of all of this is to take
+                a query string and turn it into a# structured set of classes. If this
+                were a compiler this would be the parse tree for the compiler.'
             files:
             - src/mongo/db/matcher/expression.cpp
             - src/mongo/db/matcher/expression.h
@@ -2378,13 +2389,13 @@ uncategorized_system:
             - src/mongo/db/matcher/matcher.cpp
             - src/mongo/db/matcher/matcher.h
             - src/mongo/db/matcher.h
-        -   comments: '# Helper for requesting more details about what matched our query
-                from the matcher system.'
+        -   comments: '# Helper for requesting more details about what matched our
+                query from the matcher system.'
             files:
             - src/mongo/db/matcher/match_details.cpp
             - src/mongo/db/matcher/match_details.h
-        -   comments: '# Planning/parsing/optimization for new query framework## not execution
-                as well? (what are all these *runner.cpp files?)'
+        -   comments: '# Planning/parsing/optimization for new query framework## not
+                execution as well? (what are all these *runner.cpp files?)'
             files:
             - src/mongo/db/query/cached_plan_runner.cpp
             - src/mongo/db/query/cached_plan_runner.h
@@ -2522,24 +2533,24 @@ uncategorized_system:
             - src/mongo/db/exec/working_set_common.h
             - src/mongo/db/exec/working_set_computed_data.h
             - src/mongo/db/exec/working_set_test.cpp
-        -   comments: '# Legacy utilities for managing queries. Has utilities like range
-                intersection and application of# skip and limit. These are allllmost dead.
-                The functionality should be replaced by the new# matcher, expressions,
+        -   comments: '# Legacy utilities for managing queries. Has utilities like
+                range intersection and application of# skip and limit. These are allllmost
+                dead. The functionality should be replaced by the new# matcher, expressions,
                 and query system.'
             files:
             - src/mongo/db/queryutil-inl.h
             - src/mongo/db/queryutil.cpp
             - src/mongo/db/queryutil.h
-        -   comments: '# Old way of doing document projections. Given a doc and a projection,
-                transforms the document.## what calls it, and where are projections done
-                now?'
+        -   comments: '# Old way of doing document projections. Given a doc and a
+                projection, transforms the document.## what calls it, and where are
+                projections done now?'
             files:
             - src/mongo/db/projection.cpp
             - src/mongo/db/projection.h
         -   comments: '# Entry point for various database operations## locks: we should
                 clarify locking, e.g. everything in update.cpp happens## in the context
-                of a db write lock## should clarify the relationship between these and
-                db/instance.cpp (not built in anywhere)'
+                of a db write lock## should clarify the relationship between these
+                and db/instance.cpp (not built in anywhere)'
             files:
             - src/mongo/db/ops/count.cpp
             - src/mongo/db/ops/count.h
@@ -2549,15 +2560,15 @@ uncategorized_system:
             - src/mongo/db/ops/insert.h
             - src/mongo/db/ops/update.cpp
             - src/mongo/db/ops/update.h
+        name: query_system
         title: query_system
-    -   name: 'replication'
-        description: 'TODO: replication description'
+    -   description: 'TODO: replication description'
         groups:
-        -   comments: '# Replication code? TODO: verify that this is all replication related
-                and document the architecture.## a part of this i would like to have documented
-                is threads+locks, e.g.## heartbeats are sent in a unique thread (i think?)
-                and maybe listened for## in a unique thread too? what threads get started
-                if replication is being## used?'
+        -   comments: '# Replication code? TODO: verify that this is all replication
+                related and document the architecture.## a part of this i would like
+                to have documented is threads+locks, e.g.## heartbeats are sent in
+                a unique thread (i think?) and maybe listened for## in a unique thread
+                too? what threads get started if replication is being## used?'
             files:
             - src/mongo/db/repl/bgsync.cpp
             - src/mongo/db/repl/bgsync.h
@@ -2611,9 +2622,9 @@ uncategorized_system:
             files:
             - src/mongo/db/write_concern_options.cpp
             - src/mongo/db/write_concern_options.h
+        name: replication
         title: replication
-    -   name: 's2'
-        description: 'TODO: s2 description'
+    -   description: 'TODO: s2 description'
         groups:
         -   comments: '# Third Party - Google spherical geometry math library'
             files:
@@ -2703,12 +2714,12 @@ uncategorized_system:
             - src/third_party/s2/util/math/vector3-inl.h
             - src/third_party/s2/util/math/vector3.h
             - src/third_party/s2/util/math/vector4.h
+        name: s2
         title: s2
-    -   name: 'sharding'
-        description: 'TODO: sharding description'
+    -   description: 'TODO: sharding description'
         groups:
-        -   comments: '# Helper classes to delete a range of documents. This is used for
-                example in chunk migrations# when we are cleaning up an old chunk.'
+        -   comments: '# Helper classes to delete a range of documents. This is used
+                for example in chunk migrations# when we are cleaning up an old chunk.'
             files:
             - src/mongo/db/range_deleter.cpp
             - src/mongo/db/range_deleter.h
@@ -2723,17 +2734,17 @@ uncategorized_system:
             - src/mongo/db/range_deleter_stats.h
             - src/mongo/db/range_deleter_test.cpp
             - src/mongo/db/range_preserver.h
-        -   comments: '# Utilities for comparing ranges. Useful because our sharding is
-                range based.## okay, but why in s/ ? only used by sharding? seems weird
-                that something## general like range arith is only in s/ but the more specific
-                delete-range## isn''t.'
+        -   comments: '# Utilities for comparing ranges. Useful because our sharding
+                is range based.## okay, but why in s/ ? only used by sharding? seems
+                weird that something## general like range arith is only in s/ but
+                the more specific delete-range## isn''t.'
             files:
             - src/mongo/s/range_arithmetic.cpp
             - src/mongo/s/range_arithmetic.h
             - src/mongo/s/range_arithmetic_test.cpp
         -   comments: '# Contains metadata about a collection, particularly for sharding.
-                The MetadataLoader populates new# CollectionMetadata objects from config
-                server data.'
+                The MetadataLoader populates new# CollectionMetadata objects from
+                config server data.'
             files:
             - src/mongo/s/collection_metadata.cpp
             - src/mongo/s/collection_metadata.h
@@ -2749,22 +2760,23 @@ uncategorized_system:
             - src/mongo/s/config_upgrade_helpers.h
             - src/mongo/s/config_upgrade_v0_to_v5.cpp
             - src/mongo/s/config_upgrade_v4_to_v5.cpp
-        -   comments: '# Distributed lock (lock on the config servers from mongos, i.e.
-                "balancer lock")'
+        -   comments: '# Distributed lock (lock on the config servers from mongos,
+                i.e. "balancer lock")'
             files:
             - src/mongo/s/distlock.cpp
             - src/mongo/s/distlock.h
             - src/mongo/s/distlock_test.cpp
-        -   comments: '# Parser for fields in a BSON object. Meant to help enforce a schema
-                on a BSON object.'
+        -   comments: '# Parser for fields in a BSON object. Meant to help enforce
+                a schema on a BSON object.'
             files:
             - src/mongo/db/field_parser-inl.h
             - src/mongo/db/field_parser.cpp
             - src/mongo/db/field_parser.h
             - src/mongo/db/field_parser_test.cpp
-        -   comments: '# "Schema" for config server metadata. These classes contain structural
-                class definitions for what# we expect to find on the config server. They
-                use the field parser above to convert BSON fields# into C++ members.'
+        -   comments: '# "Schema" for config server metadata. These classes contain
+                structural class definitions for what# we expect to find on the config
+                server. They use the field parser above to convert BSON fields# into
+                C++ members.'
             files:
             - src/mongo/s/type_changelog.cpp
             - src/mongo/s/type_changelog.h
@@ -2799,18 +2811,19 @@ uncategorized_system:
             - src/mongo/s/type_tags.cpp
             - src/mongo/s/type_tags.h
             - src/mongo/s/type_tags_test.cpp
-        -   comments: '# Bizarre legacy sharding code.## From writeback_listener.h# "The
-                writeback listener takes back write attempts that were made against a
-                wrong shard.# (Wrong here in the sense that the target chunk moved before
-                this mongos had a chance to# learn so.) It is responsible for reapplying
-                these writes to the correct shard."## So basically, the mongos sends an
-                operation to the mongod, and the writeback listener (running on# the mongos)
-                says to the mongod every now and again, "yo, have I screwed up recently?".
-                The mongod# is then like "yeah bro, you screwed up, you wrote all these
-                things to the wrong place and the# writeback listener is like "thanks
-                man" and tries to write them to the correct shard. Meanwhile# the user
-                is like "I''m so glad my data was written". This should go away because
-                of the new write# commands.## rofl'
+        -   comments: '# Bizarre legacy sharding code.## From writeback_listener.h#
+                "The writeback listener takes back write attempts that were made against
+                a wrong shard.# (Wrong here in the sense that the target chunk moved
+                before this mongos had a chance to# learn so.) It is responsible for
+                reapplying these writes to the correct shard."## So basically, the
+                mongos sends an operation to the mongod, and the writeback listener
+                (running on# the mongos) says to the mongod every now and again, "yo,
+                have I screwed up recently?". The mongod# is then like "yeah bro,
+                you screwed up, you wrote all these things to the wrong place and
+                the# writeback listener is like "thanks man" and tries to write them
+                to the correct shard. Meanwhile# the user is like "I''m so glad my
+                data was written". This should go away because of the new write# commands.##
+                rofl'
             files:
             - src/mongo/s/writeback_listener.cpp
             - src/mongo/s/writeback_listener.h
@@ -2893,9 +2906,9 @@ uncategorized_system:
             - src/mongo/s/version_manager.h
             - src/mongo/s/version_mongos.cpp
             - src/mongo/s/version_mongos.h
+        name: sharding
         title: sharding
-    -   name: 'snappy'
-        description: 'TODO: snappy description'
+    -   description: 'TODO: snappy description'
         groups:
         -   comments: '# Third Party - Snappy compression library'
             files:
@@ -2908,18 +2921,18 @@ uncategorized_system:
             - src/third_party/snappy/snappy-stubs-public.h
             - src/third_party/snappy/snappy.cc
             - src/third_party/snappy/snappy.h
+        name: snappy
         title: snappy
-    -   name: 'startup_initialization'
-        description: 'TODO: startup_initialization description'
+    -   description: 'TODO: startup_initialization description'
         groups:
-        -   comments: '# Check various expected startup conditions and log warnings to
-                the user if necessary## what uses these? everything? mongod/mongos only?
-                what sort of checks?'
+        -   comments: '# Check various expected startup conditions and log warnings
+                to the user if necessary## what uses these? everything? mongod/mongos
+                only? what sort of checks?'
             files:
             - src/mongo/db/startup_warnings.cpp
             - src/mongo/db/startup_warnings.h
-        -   comments: '# MONGO_INITIALIZER startup initialization framework.## what should
-                use these? any tool? mongod/mongos only?'
+        -   comments: '# MONGO_INITIALIZER startup initialization framework.## what
+                should use these? any tool? mongod/mongos only?'
             files:
             - src/mongo/base/global_initializer.cpp
             - src/mongo/base/global_initializer.h
@@ -2938,14 +2951,14 @@ uncategorized_system:
             - src/mongo/base/initializer_test.cpp
             - src/mongo/base/make_string_vector.cpp
             - src/mongo/base/make_string_vector.h
-        -   comments: '# Initialize the global state common to mongod and mongos, such
-                as logging.'
+        -   comments: '# Initialize the global state common to mongod and mongos,
+                such as logging.'
             files:
             - src/mongo/db/initialize_server_global_state.cpp
             - src/mongo/db/initialize_server_global_state.h
-        -   comments: '# Options parser library (command line and config files)## where
-                do the options get stored / how can people grab options later?## are they
-                set once and immutable or can they be updated?'
+        -   comments: '# Options parser library (command line and config files)##
+                where do the options get stored / how can people grab options later?##
+                are they set once and immutable or can they be updated?'
             files:
             - src/mongo/util/options_parser/constraints.cpp
             - src/mongo/util/options_parser/constraints.h
@@ -2966,13 +2979,14 @@ uncategorized_system:
             - src/mongo/util/options_parser/startup_options.h
             - src/mongo/util/options_parser/value.cpp
             - src/mongo/util/options_parser/value.h
-        -   comments: '# Command line utilities## can you say a bit more? (give an example?)'
+        -   comments: '# Command line utilities## can you say a bit more? (give an
+                example?)'
             files:
             - src/mongo/util/cmdline_utils/censor_cmdline.cpp
             - src/mongo/util/cmdline_utils/censor_cmdline.h
             - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
-        -   comments: '# Only used to ask user for password at startup. TODO: move into
-                cmdline_utils directory'
+        -   comments: '# Only used to ask user for password at startup. TODO: move
+                into cmdline_utils directory'
             files:
             - src/mongo/util/password.cpp
             - src/mongo/util/password.h
@@ -2991,12 +3005,12 @@ uncategorized_system:
             - src/mongo/db/server_parameters.h
             - src/mongo/db/server_parameters_inline.h
             - src/mongo/db/server_parameters_test.cpp
+        name: startup_initialization
         title: startup_initialization
-    -   name: 'stemmer'
-        description: 'TODO: stemmer description'
+    -   description: 'TODO: stemmer description'
         groups:
-        -   comments: '# Third Party - Stemmer for various languages used in full text
-                search'
+        -   comments: '# Third Party - Stemmer for various languages used in full
+                text search'
             files:
             - src/third_party/shim_stemmer.cpp
             - src/third_party/libstemmer_c/include/libstemmer.h
@@ -3053,9 +3067,9 @@ uncategorized_system:
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
+        name: stemmer
         title: stemmer
-    -   name: 'storage_layer_structure'
-        description: 'TODO: storage_layer_structure description'
+    -   description: 'TODO: storage_layer_structure description'
         groups:
         -   comments: '# Helper to manage strings that look like "<db>.<collection>"'
             files:
@@ -3063,8 +3077,8 @@ uncategorized_system:
             - src/mongo/db/namespace_string.h
             - src/mongo/db/namespace_string_test.cpp
         -   comments: '# Files containing the structural metadata about the databases/data
-                files/collections/indexes.# TODO: Add more details here about the relationships
-                between these files.'
+                files/collections/indexes.# TODO: Add more details here about the
+                relationships between these files.'
             files:
             - src/mongo/db/cap.cpp
             - src/mongo/db/catalog/collection.cpp
@@ -3107,24 +3121,24 @@ uncategorized_system:
             - src/mongo/db/structure/collection_iterator.h
             - src/mongo/db/structure/record_store.cpp
             - src/mongo/db/structure/record_store.h
-        -   comments: '# A DiskLoc is simply a file number and offset into the file for
-                a db. You can think of this as an# "address" into our database''s storage
-                space.'
+        -   comments: '# A DiskLoc is simply a file number and offset into the file
+                for a db. You can think of this as an# "address" into our database''s
+                storage space.'
             files:
             - src/mongo/db/diskloc.h
             - src/mongo/db/diskloc_test.cpp
         -   comments: '# Type of a DiskLoc invalidation.'
             files:
             - src/mongo/db/invalidation_type.h
-        -   comments: '# A record is simply a "node" in a linked list. It contains "prev"
-                and "next" offsets, as well as# the offset of the extent in the current
-                file.'
+        -   comments: '# A record is simply a "node" in a linked list. It contains
+                "prev" and "next" offsets, as well as# the offset of the extent in
+                the current file.'
             files:
             - src/mongo/db/storage/record.cpp
             - src/mongo/db/storage/record.h
-        -   comments: '# An extent is a bucket of records. Extents themselves are in a
-                kind of linked list, except instead# of offsets into a single datafile,
-                their "prev" and "next" members are DiskLocs.'
+        -   comments: '# An extent is a bucket of records. Extents themselves are
+                in a kind of linked list, except instead# of offsets into a single
+                datafile, their "prev" and "next" members are DiskLocs.'
             files:
             - src/mongo/db/storage/extent.cpp
             - src/mongo/db/storage/extent.h
@@ -3143,26 +3157,28 @@ uncategorized_system:
                 as the client driver, except that instead of connecting over the network
                 it is just# doing operations on the local server behind the scenes.##
                 This also has code for the "BSONElementManipulator which is what allows
-                us to do in place# updates in the old code. It appears now that it is
-                only used in updating the "expireAfterSeconds"# field for a document in
-                a TTL index.## Also have random things like "getDatabaseNames" which just
-                iteratest the db directory getting all# the names of the files there.
-                Also has the version of "inShutdown" and "dbexit" for mongod.## clarify
-                relationship between instance.cpp and the various ops/* (insert/update
-                etc)'
+                us to do in place# updates in the old code. It appears now that it
+                is only used in updating the "expireAfterSeconds"# field for a document
+                in a TTL index.## Also have random things like "getDatabaseNames"
+                which just iteratest the db directory getting all# the names of the
+                files there. Also has the version of "inShutdown" and "dbexit" for
+                mongod.## clarify relationship between instance.cpp and the various
+                ops/* (insert/update etc)'
             files:
             - src/mongo/db/instance.cpp
             - src/mongo/db/instance.h
-        -   comments: '# This is another really hairy, really old legacy file. At this
-                point it''s easier to just write out# all the functions in the interface
-                than describe what it does. I believe "pdfile" is short for# "persistent
-                data file". It contains a bunch of old legacy things to manipulate data
-                files and# data file metadata.## Here are all the functions in pdfile.cpp
-                that are currently used in the project.## mongo::inDBRepair# mongo::allocateSpaceForANewRecord(char
-                const*, mongo::NamespaceDetails*, int, bool)# mongo::dbSize(char const*)#
-                mongo::dropDatabase(std::string const&)# mongo::dbHolderUnchecked()# mongo::addRecordToRecListInExtent(mongo::Record*,
-                mongo::DiskLoc)# mongo::userCreateNS(char const*, mongo::BSONObj, std::string&,
-                bool, bool*)# mongo::_deleteDataFiles(char const*)# mongo::dropAllDatabasesExceptLocal()#
+        -   comments: '# This is another really hairy, really old legacy file. At
+                this point it''s easier to just write out# all the functions in the
+                interface than describe what it does. I believe "pdfile" is short
+                for# "persistent data file". It contains a bunch of old legacy things
+                to manipulate data files and# data file metadata.## Here are all the
+                functions in pdfile.cpp that are currently used in the project.##
+                mongo::inDBRepair# mongo::allocateSpaceForANewRecord(char const*,
+                mongo::NamespaceDetails*, int, bool)# mongo::dbSize(char const*)#
+                mongo::dropDatabase(std::string const&)# mongo::dbHolderUnchecked()#
+                mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)#
+                mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool,
+                bool*)# mongo::_deleteDataFiles(char const*)# mongo::dropAllDatabasesExceptLocal()#
                 mongo::isValidNS(mongo::StringData const&)# mongo::repairDatabase(std::string,
                 std::string&, bool, bool)'
             files:
@@ -3170,9 +3186,9 @@ uncategorized_system:
             - src/mongo/db/pdfile.h
             - src/mongo/db/pdfile_private.h
             - src/mongo/db/pdfile_version.h
+        name: storage_layer_structure
         title: storage_layer_structure
-    -   name: 'tools'
-        description: 'TODO: tools description'
+    -   description: 'TODO: tools description'
         groups:
         -   comments: '# Tools and tool options. For most tools, just prepend "mongo"
                 to get the name of the tool the file# is for. For example, "bridge.cpp"
@@ -3237,9 +3253,9 @@ uncategorized_system:
             - src/mongo/tools/tool_options.cpp
             - src/mongo/tools/tool_options.h
             - src/mongo/tools/top.cpp
+        name: tools
         title: tools
-    -   name: 'unit_tests'
-        description: 'TODO: unit_tests description'
+    -   description: 'TODO: unit_tests description'
         groups:
         -   comments: '# Unittest framework (for both old style dbtests and new style
                 tests)'
@@ -3335,13 +3351,13 @@ uncategorized_system:
             - src/mongo/dbtests/stacktests.cpp
             - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/dbtests/updatetests.cpp
+        name: unit_tests
         title: unit_tests
-    -   name: 'update_system'
-        description: 'TODO: update_system description'
+    -   description: 'TODO: update_system description'
         groups:
-        -   comments: '# libupdate.a (only used by libupdate_driver.a). This is the new
-                code for handling update# operations:## is this stuff only called from
-                update.cpp?'
+        -   comments: '# libupdate.a (only used by libupdate_driver.a). This is the
+                new code for handling update# operations:## is this stuff only called
+                from update.cpp?'
             files:
             - src/mongo/db/ops/modifier_add_to_set.cpp
             - src/mongo/db/ops/modifier_add_to_set.h
@@ -3385,8 +3401,8 @@ uncategorized_system:
             - src/mongo/db/ops/modifier_unset.cpp
             - src/mongo/db/ops/modifier_unset.h
             - src/mongo/db/ops/modifier_unset_test.cpp
-        -   comments: '# libupdate_driver.a. This is the external interface to the new
-                update system:'
+        -   comments: '# libupdate_driver.a. This is the external interface to the
+                new update system:'
             files:
             - src/mongo/db/ops/modifier_table.cpp
             - src/mongo/db/ops/modifier_table.h
@@ -3405,17 +3421,17 @@ uncategorized_system:
             - src/mongo/db/ops/field_checker.cpp
             - src/mongo/db/ops/field_checker.h
             - src/mongo/db/ops/field_checker_test.cpp
-        -   comments: '# Other things used by the update system. TODO: figure out what
-                these are for.'
+        -   comments: '# Other things used by the update system. TODO: figure out
+                what these are for.'
             files:
             - src/mongo/db/ops/update_lifecycle.h
             - src/mongo/db/ops/update_lifecycle_impl.cpp
             - src/mongo/db/ops/update_lifecycle_impl.h
             - src/mongo/db/ops/update_request.h
             - src/mongo/db/ops/update_result.h
-        -   comments: '# Utilites for managing dotted field names such as "a.b.c". For
-                example, has things like# "isPrefixOf".## is there any relationship between
-                this and bson/ or bson/mutable ?'
+        -   comments: '# Utilites for managing dotted field names such as "a.b.c".
+                For example, has things like# "isPrefixOf".## is there any relationship
+                between this and bson/ or bson/mutable ?'
             files:
             - src/mongo/db/field_ref.cpp
             - src/mongo/db/field_ref.h
@@ -3423,13 +3439,13 @@ uncategorized_system:
             - src/mongo/db/field_ref_set.h
             - src/mongo/db/field_ref_set_test.cpp
             - src/mongo/db/field_ref_test.cpp
+        name: update_system
         title: update_system
-    -   name: 'utilities'
-        description: 'TODO: utilities description'
+    -   description: 'TODO: utilities description'
         groups:
-        -   comments: '# Code to manage paths to files.  Conversion from relative to full
-                path within database directory as# well as code to get the current partition
-                (for readahead checks).'
+        -   comments: '# Code to manage paths to files.  Conversion from relative
+                to full path within database directory as# well as code to get the
+                current partition (for readahead checks).'
             files:
             - src/mongo/util/paths.cpp
             - src/mongo/util/paths.h
@@ -3444,14 +3460,15 @@ uncategorized_system:
             - src/mongo/db/stats/timer_stats.h
             - src/mongo/db/stats/top.cpp
             - src/mongo/db/stats/top.h
-        -   comments: '# Utilities to hash BSON elements. Used in hashed shard keys and
-                hashed indexes.'
+        -   comments: '# Utilities to hash BSON elements. Used in hashed shard keys
+                and hashed indexes.'
             files:
             - src/mongo/db/hasher.cpp
             - src/mongo/db/hasher.h
             - src/mongo/db/hasher_test.cpp
-        -   comments: '# Helpers to track in progress operations. The constructor registers
-                itself in an "in progress"# map, and the destructor removes it.'
+        -   comments: '# Helpers to track in progress operations. The constructor
+                registers itself in an "in progress"# map, and the destructor removes
+                it.'
             files:
             - src/mongo/db/background.cpp
             - src/mongo/db/background.h
@@ -3469,8 +3486,8 @@ uncategorized_system:
             files:
             - src/mongo/util/debug_util.cpp
             - src/mongo/util/debug_util.h
-        -   comments: '# Library to get and set the name of the current thread. Just uses
-                a boost::thread_specific_ptr.'
+        -   comments: '# Library to get and set the name of the current thread. Just
+                uses a boost::thread_specific_ptr.'
             files:
             - src/mongo/util/concurrency/thread_name.cpp
             - src/mongo/util/concurrency/thread_name.h
@@ -3478,8 +3495,8 @@ uncategorized_system:
             files:
             - src/mongo/util/hex.cpp
             - src/mongo/util/hex.h
-        -   comments: '# Utilities to run jobs (threads) in the "background". You can
-                use this to run tasks periodically.'
+        -   comments: '# Utilities to run jobs (threads) in the "background". You
+                can use this to run tasks periodically.'
             files:
             - src/mongo/util/background.cpp
             - src/mongo/util/background.h
@@ -3497,7 +3514,8 @@ uncategorized_system:
             files:
             - src/mongo/util/assert_util.cpp
             - src/mongo/util/assert_util.h
-        -   comments: '# Library for adding fail points into the code for testing purposes'
+        -   comments: '# Library for adding fail points into the code for testing
+                purposes'
             files:
             - src/mongo/util/fail_point.cpp
             - src/mongo/util/fail_point.h
@@ -3617,8 +3635,8 @@ uncategorized_system:
             - src/mongo/util/goodies.h
             - src/mongo/util/hashtab.h
             - src/mongo/util/heapcheck.h
-        -   comments: '# Platform specific code? TODO: Verify this and document what they
-                are for.'
+        -   comments: '# Platform specific code? TODO: Verify this and document what
+                they are for.'
             files:
             - src/mongo/platform/atomic_intrinsics.h
             - src/mongo/platform/atomic_intrinsics_gcc_generic.h
@@ -3660,9 +3678,9 @@ uncategorized_system:
             - src/mongo/util/mongoutils/hash.h
             - src/mongo/util/mongoutils/html.h
             - src/mongo/util/mongoutils/str.h
+        name: utilities
         title: utilities
-    -   name: 'v8'
-        description: 'TODO: v8 description'
+    -   description: 'TODO: v8 description'
         groups:
         -   comments: '# Third Party - V8 Javascript engine'
             files:
@@ -4018,9 +4036,9 @@ uncategorized_system:
             - src/third_party/v8/src/zone-inl.h
             - src/third_party/v8/src/zone.cc
             - src/third_party/v8/src/zone.h
+        name: v8
         title: v8
-    -   name: 'yaml'
-        description: 'TODO: yaml description'
+    -   description: 'TODO: yaml description'
         groups:
         -   comments: '# Third Party - Yaml markup parser.  Used for yaml config files'
             files:
@@ -4113,4 +4131,5 @@ uncategorized_system:
             - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
             - src/third_party/yaml-cpp-0.5.1/src/tag.h
             - src/third_party/yaml-cpp-0.5.1/src/token.h
+        name: yaml
         title: yaml
