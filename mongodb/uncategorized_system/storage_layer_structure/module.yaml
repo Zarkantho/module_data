@@ -1,3 +1,4 @@
+description: 'TODO: storage_layer_structure description'
 groups:
 -   comments: '# Helper to manage strings that look like "<db>.<collection>"'
     files:
@@ -109,4 +110,5 @@ groups:
     - src/mongo/db/pdfile.h
     - src/mongo/db/pdfile_private.h
     - src/mongo/db/pdfile_version.h
+name: storage_layer_structure
 title: storage_layer_structure

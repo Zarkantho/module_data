@@ -1,3 +1,4 @@
+description: 'TODO: mongo_shell description'
 groups:
 -   comments: '# Javascript files that get wrapped in strings and put in cpp files.
         See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js'
@@ -38,4 +39,5 @@ groups:
     - src/mongo/shell/shell_options.h
     - src/mongo/shell/shell_options_init.cpp
     - src/mongo/shell/shell_options_test.cpp
+name: mongo_shell
 title: mongo_shell

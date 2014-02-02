@@ -1,3 +1,4 @@
+description: 'TODO: authentication description'
 groups:
 -   comments: '# Authapalooza! TODO: actually separate this logically.'
     files:
@@ -72,4 +73,5 @@ groups:
     - src/mongo/db/auth/user_set.cpp
     - src/mongo/db/auth/user_set.h
     - src/mongo/db/auth/user_set_test.cpp
+name: authentication
 title: authentication

@@ -1,6 +1,8 @@
+description: 'TODO: file_allocation description'
 groups:
 -   comments: '# File allocation library'
     files:
     - src/mongo/util/file_allocator.cpp
     - src/mongo/util/file_allocator.h
+name: file_allocation
 title: file_allocation

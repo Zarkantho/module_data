@@ -1,3 +1,4 @@
+description: 'TODO: geo_queries description'
 groups:
 -   comments: '# GEO query code. TODO: describe the structure of this and how it interacts
         with the new index# system.'
@@ -18,4 +19,5 @@ groups:
     - src/mongo/db/geo/s2common.h
     - src/mongo/db/geo/shapes.cpp
     - src/mongo/db/geo/shapes.h
+name: geo_queries
 title: geo_queries

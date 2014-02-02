@@ -1,3 +1,4 @@
+description: 'TODO: new_wire_protocol_write_commands description'
 groups:
 -   comments: '# New write commands for new wire protocol. The new "write commands"
         are all actual Commands run# using "db.$cmd.findOne(...)". The reason for
@@ -68,4 +69,5 @@ groups:
         components) about wire protocol version?'
     files:
     - src/mongo/db/wire_version.h
+name: new_wire_protocol_write_commands
 title: new_wire_protocol_write_commands

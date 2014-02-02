@@ -1,3 +1,4 @@
+description: 'TODO: pcrecpp description'
 groups:
 -   comments: '# Third Party - Perl compatible regular expressions'
     files:
@@ -37,4 +38,5 @@ groups:
     - src/third_party/pcre-8.30/pcreposix.c
     - src/third_party/pcre-8.30/pcreposix.h
     - src/third_party/pcre-8.30/ucp.h
+name: pcrecpp
 title: pcrecpp

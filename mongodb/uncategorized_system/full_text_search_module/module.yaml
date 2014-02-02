@@ -1,3 +1,4 @@
+description: 'TODO: full_text_search_module description'
 groups:
 -   comments: ''
     files:
@@ -49,4 +50,5 @@ groups:
     - src/mongo/db/fts/tokenizer.cpp
     - src/mongo/db/fts/tokenizer.h
     - src/mongo/db/fts/tokenizer_test.cpp
+name: full_text_search_module
 title: full_text_search_module

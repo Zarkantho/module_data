@@ -1,3 +1,4 @@
+description: 'TODO: gperftools description'
 groups:
 -   comments: '# Third Party - Google performance tools and tcmalloc'
     files:
@@ -95,4 +96,5 @@ groups:
     - src/third_party/gperftools-2.0/src/thread_cache.h
     - src/third_party/gperftools-2.0/src/windows/mingw.h
     - src/third_party/gperftools-2.0/src/windows/port.h
+name: gperftools
 title: gperftools

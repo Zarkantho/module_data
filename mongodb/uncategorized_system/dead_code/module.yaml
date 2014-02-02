@@ -1,3 +1,4 @@
+description: 'TODO: dead_code description'
 groups:
 -   comments: ''
     files:
@@ -10,4 +11,5 @@ groups:
     - src/mongo/dbtests/histogram_test.cpp
     - src/mongo/util/lruishmap.h
     - src/mongo/db/taskqueue.h
+name: dead_code
 title: dead_code

@@ -1,3 +1,4 @@
+description: 'TODO: boost_thread description'
 groups:
 -   comments: '# Third Party - The boost thread library'
     files:
@@ -46,4 +47,5 @@ groups:
     - src/third_party/boost/libs/thread/src/pthread/once.cpp
     - src/third_party/boost/libs/thread/src/pthread/thread.cpp
     - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+name: boost_thread
 title: boost_thread

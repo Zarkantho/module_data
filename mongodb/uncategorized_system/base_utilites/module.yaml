@@ -1,3 +1,4 @@
+description: 'TODO: base_utilites description'
 groups:
 -   comments: '# Use this in a class to explicitly disallow copying of the class.
         This can prevent bugs where you# were accidentally copying a class that wasn''t
@@ -41,4 +42,5 @@ groups:
     - src/mongo/base/string_data.cpp
     - src/mongo/base/string_data.h
     - src/mongo/base/string_data_test.cpp
+name: base_utilites
 title: base_utilites

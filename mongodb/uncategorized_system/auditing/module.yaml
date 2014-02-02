@@ -1,6 +1,8 @@
+description: 'TODO: auditing description'
 groups:
 -   comments: '# Stubs for auditing enterprise module'
     files:
     - src/mongo/db/audit.cpp
     - src/mongo/db/audit.h
+name: auditing
 title: auditing

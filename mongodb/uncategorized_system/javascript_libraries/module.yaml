@@ -1,3 +1,4 @@
+description: 'TODO: javascript_libraries description'
 groups:
 -   comments: '# v8 Javascript library files'
     files:
@@ -21,4 +22,5 @@ groups:
     - src/mongo/scripting/bson_template_evaluator.cpp
     - src/mongo/scripting/bson_template_evaluator.h
     - src/mongo/scripting/bson_template_evaluator_test.cpp
+name: javascript_libraries
 title: javascript_libraries

@@ -1,3 +1,4 @@
+description: 'TODO: file_interface description'
 groups:
 -   comments: '# Abstraction layer for dealing with files. It''s basically the read(2),
         open(2), and write(2)# interface for posix, and something else for Windows.
@@ -6,4 +7,5 @@ groups:
     files:
     - src/mongo/util/file.cpp
     - src/mongo/util/file.h
+name: file_interface
 title: file_interface

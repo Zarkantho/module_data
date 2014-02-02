@@ -1,3 +1,4 @@
+description: 'TODO: database_commands description'
 groups:
 -   comments: '# Base class for mongodb commands. Has a big std::map with the keys
         of the command name and the# values as the Command itself. These are the commands
@@ -73,4 +74,5 @@ groups:
     files:
     - src/mongo/db/commands/fsync.cpp
     - src/mongo/db/commands/fsync.h
+name: database_commands
 title: database_commands

@@ -1,3 +1,4 @@
+description: 'TODO: journaling description'
 groups:
 -   comments: '# Page aligned buffer builder## what sort of buffer? i don''t understand
         ;('
@@ -31,4 +32,5 @@ groups:
     files:
     - src/mongo/util/logfile.cpp
     - src/mongo/util/logfile.h
+name: journaling
 title: journaling

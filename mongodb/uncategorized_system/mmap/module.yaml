@@ -1,7 +1,9 @@
+description: 'TODO: mmap description'
 groups:
 -   comments: '# mmap library (only depends on file allocation library)'
     files:
     - src/mongo/util/mmap.cpp
     - src/mongo/util/mmap.h
     - src/mongo/util/mmap_posix.cpp
+name: mmap
 title: mmap

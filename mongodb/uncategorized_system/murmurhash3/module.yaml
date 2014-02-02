@@ -1,6 +1,8 @@
+description: 'TODO: murmurhash3 description'
 groups:
 -   comments: '# Third Party - Non cryptographic hashing library'
     files:
     - src/third_party/murmurhash3/MurmurHash3.cpp
     - src/third_party/murmurhash3/MurmurHash3.h
+name: murmurhash3
 title: murmurhash3

@@ -1,3 +1,4 @@
+description: 'TODO: boost_program_options description'
 groups:
 -   comments: '# Third Party - The boost program_options library'
     files:
@@ -31,4 +32,5 @@ groups:
     - src/third_party/boost/libs/program_options/src/value_semantic.cpp
     - src/third_party/boost/libs/program_options/src/variables_map.cpp
     - src/third_party/boost/libs/program_options/src/winmain.cpp
+name: boost_program_options
 title: boost_program_options

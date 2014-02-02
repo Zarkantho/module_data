@@ -1,3 +1,4 @@
+description: 'TODO: mongos_and_mongod_mains description'
 groups:
 -   comments: '# Main for mongod'
     files:
@@ -19,4 +20,5 @@ groups:
     - src/mongo/s/mongos_options.h
     - src/mongo/s/mongos_options_init.cpp
     - src/mongo/s/mongos_options_test.cpp
+name: mongos_and_mongod_mains
 title: mongos_and_mongod_mains

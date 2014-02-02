@@ -1,3 +1,4 @@
+description: 'TODO: utilities description'
 groups:
 -   comments: '# Code to manage paths to files.  Conversion from relative to full
         path within database directory as# well as code to get the current partition
@@ -230,4 +231,5 @@ groups:
     - src/mongo/util/mongoutils/hash.h
     - src/mongo/util/mongoutils/html.h
     - src/mongo/util/mongoutils/str.h
+name: utilities
 title: utilities

@@ -1,3 +1,4 @@
+description: 'TODO: database_web_accesss description'
 groups:
 -   comments: '# Web access to the database, including rest, jsonp, and http.'
     files:
@@ -8,4 +9,5 @@ groups:
     - src/mongo/db/clientlistplugin.cpp
     - src/mongo/util/net/miniwebserver.cpp
     - src/mongo/util/net/miniwebserver.h
+name: database_web_accesss
 title: database_web_accesss

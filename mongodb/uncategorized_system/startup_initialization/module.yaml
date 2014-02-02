@@ -1,3 +1,4 @@
+description: 'TODO: startup_initialization description'
 groups:
 -   comments: '# Check various expected startup conditions and log warnings to the
         user if necessary## what uses these? everything? mongod/mongos only? what
@@ -78,4 +79,5 @@ groups:
     - src/mongo/db/server_parameters.h
     - src/mongo/db/server_parameters_inline.h
     - src/mongo/db/server_parameters_test.cpp
+name: startup_initialization
 title: startup_initialization

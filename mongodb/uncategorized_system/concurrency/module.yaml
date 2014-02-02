@@ -1,3 +1,4 @@
+description: 'TODO: concurrency description'
 groups:
 -   comments: '# Core locks library. Only in mongod.## can you say a bit more? e.g.
         database locks are RWlocks, but what *are*## they exactly? any sort of fairness
@@ -24,4 +25,5 @@ groups:
     files:
     - src/mongo/util/concurrency/synchronization.cpp
     - src/mongo/util/concurrency/synchronization.h
+name: concurrency
 title: concurrency

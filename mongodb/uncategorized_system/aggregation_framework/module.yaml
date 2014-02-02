@@ -1,3 +1,4 @@
+description: 'TODO: aggregation_framework description'
 groups:
 -   comments: '## should be a library ;(## who calls/owns this stuff?'
     files:
@@ -56,4 +57,5 @@ groups:
         on its own here without a# description.'
     files:
     - src/mongo/db/sort_phase_one.h
+name: aggregation_framework
 title: aggregation_framework

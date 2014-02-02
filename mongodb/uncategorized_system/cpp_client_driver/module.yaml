@@ -1,3 +1,4 @@
+description: 'TODO: cpp_client_driver description'
 groups:
 -   comments: '# Stubs so that the client driver can build alone since our deps are
         screwed up. We have symbols# that are required by shared code that are very
@@ -88,4 +89,5 @@ groups:
     - src/mongo/client/sasl_client_session.cpp
     - src/mongo/client/sasl_client_session.h
     - src/mongo/client/sasl_sspi.cpp
+name: cpp_client_driver
 title: cpp_client_driver

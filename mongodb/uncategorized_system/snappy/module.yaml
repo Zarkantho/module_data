@@ -1,3 +1,4 @@
+description: 'TODO: snappy description'
 groups:
 -   comments: '# Third Party - Snappy compression library'
     files:
@@ -10,4 +11,5 @@ groups:
     - src/third_party/snappy/snappy-stubs-public.h
     - src/third_party/snappy/snappy.cc
     - src/third_party/snappy/snappy.h
+name: snappy
 title: snappy

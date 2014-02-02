@@ -1,3 +1,4 @@
+description: 'TODO: stemmer description'
 groups:
 -   comments: '# Third Party - Stemmer for various languages used in full text search'
     files:
@@ -56,4 +57,5 @@ groups:
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
+name: stemmer
 title: stemmer

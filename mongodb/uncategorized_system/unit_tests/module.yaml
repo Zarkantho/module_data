@@ -1,3 +1,4 @@
+description: 'TODO: unit_tests description'
 groups:
 -   comments: '# Unittest framework (for both old style dbtests and new style tests)'
     files:
@@ -92,4 +93,5 @@ groups:
     - src/mongo/dbtests/stacktests.cpp
     - src/mongo/dbtests/threadedtests.cpp
     - src/mongo/dbtests/updatetests.cpp
+name: unit_tests
 title: unit_tests

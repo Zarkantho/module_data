@@ -1,3 +1,4 @@
+description: 'TODO: yaml description'
 groups:
 -   comments: '# Third Party - Yaml markup parser.  Used for yaml config files'
     files:
@@ -90,4 +91,5 @@ groups:
     - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
     - src/third_party/yaml-cpp-0.5.1/src/tag.h
     - src/third_party/yaml-cpp-0.5.1/src/token.h
+name: yaml
 title: yaml

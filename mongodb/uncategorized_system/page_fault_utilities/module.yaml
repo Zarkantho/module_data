@@ -1,3 +1,4 @@
+description: 'TODO: page_fault_utilities description'
 groups:
 -   comments: '# Contains the PageFaultException and NoPageFaultsAllowed classes.##
         where are these used?'
@@ -9,4 +10,5 @@ groups:
     files:
     - src/mongo/db/prefetch.cpp
     - src/mongo/db/prefetch.h
+name: page_fault_utilities
 title: page_fault_utilities

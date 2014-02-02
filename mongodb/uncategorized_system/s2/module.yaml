@@ -1,3 +1,4 @@
+description: 'TODO: s2 description'
 groups:
 -   comments: '# Third Party - Google spherical geometry math library'
     files:
@@ -87,4 +88,5 @@ groups:
     - src/third_party/s2/util/math/vector3-inl.h
     - src/third_party/s2/util/math/vector3.h
     - src/third_party/s2/util/math/vector4.h
+name: s2
 title: s2

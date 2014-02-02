@@ -1,3 +1,4 @@
+description: 'TODO: sharding description'
 groups:
 -   comments: '# Helper classes to delete a range of documents. This is used for example
         in chunk migrations# when we are cleaning up an old chunk.'
@@ -184,4 +185,5 @@ groups:
     - src/mongo/s/version_manager.h
     - src/mongo/s/version_mongos.cpp
     - src/mongo/s/version_mongos.h
+name: sharding
 title: sharding

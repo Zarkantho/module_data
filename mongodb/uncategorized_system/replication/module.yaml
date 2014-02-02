@@ -1,3 +1,4 @@
+description: 'TODO: replication description'
 groups:
 -   comments: '# Replication code? TODO: verify that this is all replication related
         and document the architecture.## a part of this i would like to have documented
@@ -57,4 +58,5 @@ groups:
     files:
     - src/mongo/db/write_concern_options.cpp
     - src/mongo/db/write_concern_options.h
+name: replication
 title: replication

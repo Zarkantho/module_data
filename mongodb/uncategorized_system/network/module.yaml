@@ -1,3 +1,4 @@
+description: 'TODO: network description'
 groups:
 -   comments: '# Network library## can you say a few words about:## - what this does##
         - who uses it## - how to use it?'
@@ -25,4 +26,5 @@ groups:
     files:
     - src/mongo/util/net/message_server.h
     - src/mongo/util/net/message_server_port.cpp
+name: network
 title: network

@@ -1,3 +1,4 @@
+description: 'TODO: v8 description'
 groups:
 -   comments: '# Third Party - V8 Javascript engine'
     files:
@@ -353,4 +354,5 @@ groups:
     - src/third_party/v8/src/zone-inl.h
     - src/third_party/v8/src/zone.cc
     - src/third_party/v8/src/zone.h
+name: v8
 title: v8

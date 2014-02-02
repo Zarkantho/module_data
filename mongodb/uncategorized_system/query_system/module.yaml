@@ -1,3 +1,4 @@
+description: 'TODO: query_system description'
 groups:
 -   comments: '# Matcher expressions. The point of all of this is to take a query
         string and turn it into a# structured set of classes. If this were a compiler
@@ -217,4 +218,5 @@ groups:
     - src/mongo/db/ops/insert.h
     - src/mongo/db/ops/update.cpp
     - src/mongo/db/ops/update.h
+name: query_system
 title: query_system

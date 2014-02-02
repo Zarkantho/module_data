@@ -1,3 +1,4 @@
+description: 'TODO: tools description'
 groups:
 -   comments: '# Tools and tool options. For most tools, just prepend "mongo" to get
         the name of the tool the file# is for. For example, "bridge.cpp" is the main
@@ -62,4 +63,5 @@ groups:
     - src/mongo/tools/tool_options.cpp
     - src/mongo/tools/tool_options.h
     - src/mongo/tools/top.cpp
+name: tools
 title: tools

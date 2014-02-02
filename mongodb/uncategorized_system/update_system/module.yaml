@@ -1,3 +1,4 @@
+description: 'TODO: update_system description'
 groups:
 -   comments: '# libupdate.a (only used by libupdate_driver.a). This is the new code
         for handling update# operations:## is this stuff only called from update.cpp?'
@@ -82,4 +83,5 @@ groups:
     - src/mongo/db/field_ref_set.h
     - src/mongo/db/field_ref_set_test.cpp
     - src/mongo/db/field_ref_test.cpp
+name: update_system
 title: update_system

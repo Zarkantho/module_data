@@ -1,3 +1,4 @@
+description: 'TODO: indexing description'
 groups:
 -   comments: '# Indexes and index management code. TODO: go into more details about
         this. The code is new.# The two parts of the interface that are nice entry
@@ -52,4 +53,5 @@ groups:
     files:
     - src/mongo/db/ttl.cpp
     - src/mongo/db/ttl.h
+name: indexing
 title: indexing

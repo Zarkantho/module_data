@@ -1,3 +1,4 @@
+description: 'TODO: client_and_operation_tracking description'
 groups:
 -   comments: '# mongos''s version of a "Client". This is the big bucket of global
         state. This ALSO has the# definition of Command::execCommand for mongos (the
@@ -66,4 +67,5 @@ groups:
 -   comments: '# Just an enum for different cursor time limit states.'
     files:
     - src/mongo/db/max_time.h
+name: client_and_operation_tracking
 title: client_and_operation_tracking
