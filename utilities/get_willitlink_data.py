@@ -171,6 +171,38 @@ def get_exec_digest(exec_list):
 
     return list(exec_digest)
 
+# Outputs a README.md file for each system with some useful information
+def output_readme_files_for_systems(project_directory, project_data):
+    for system_name in project_data.keys():
+        system_directory = os.path.join(project_directory, system_name)
+
+        top_level_readme = open(os.path.join(system_directory, "README.md"), 'w')
+        top_level_readme.truncate()
+
+        # Add the header for this system
+        markdown_sanitized_system_name = system_name.replace("_", "\\_")
+        top_level_readme.write("# " + markdown_sanitized_system_name + "\n\n")
+
+        # TODO: add the description for this system
+
+        # Output module information for this system
+        top_level_readme.write("## Modules\n\n")
+        for module_object in project_data[system_name]['modules']:
+            module_path = os.path.join(system_directory, module_object['name'])
+            if os.path.isdir(module_path):
+
+                # Sanitize the module name for this sytem readme
+                markdown_sanitized_module_name = module_object['name'].replace("_", "\\_")
+
+                # Heading for this module
+                top_level_readme.write("### " + markdown_sanitized_module_name + "\n\n")
+
+                # Files in this module
+                for source_file in module_object['files_flat']:
+                    markdown_sanitized_source_file = source_file.replace("_", "\\_")
+                    top_level_readme.write("- [" + markdown_sanitized_source_file + "](" + markdown_sanitized_module_name + ")" + "\n")
+
+
 # Outputs a README.md file for each module with some useful information
 def output_readme_files_for_modules(project_directory, project_data):
     file_to_executables = build_file_to_executables_map(project_data)
@@ -181,18 +213,9 @@ def output_readme_files_for_modules(project_directory, project_data):
     for system_name in project_data.keys():
         modules_directory = os.path.join(project_directory, system_name)
 
-        top_level_readme = open(os.path.join(modules_directory, "README.md"), 'w')
-        top_level_readme.truncate()
-        top_level_readme.write("# Modules\n\n")
-
         for module_object in project_data[system_name]['modules']:
             module_path = os.path.join(modules_directory, module_object['name'])
             if os.path.isdir(module_path):
-
-                # Add this module to the top level README
-                top_level_readme.write("## " + module_object['name'].replace("_", "\\_") + "\n\n")
-                for source_file in module_object['files_flat']:
-                    top_level_readme.write("- [" + source_file.replace("_", "\\_") + "](" + module_object['name'].replace("_", "\\_") + ")" + "\n")
 
                 f = open(os.path.join(module_path, "README.md"), 'w')
                 f.truncate()
@@ -296,6 +319,7 @@ def main():
     add_executable_data(graph, project_data)
 
     output_detailed_module_data(sys.argv[1], project_data)
+    output_readme_files_for_systems(sys.argv[1], project_data)
     output_readme_files_for_modules(sys.argv[1], project_data)
 
 if __name__ == '__main__':

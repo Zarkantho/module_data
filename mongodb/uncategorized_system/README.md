@@ -1,6 +1,8 @@
-# Modules
+# uncategorized\_system
 
-## aggregation\_framework
+## Modules
+
+### aggregation\_framework
 
 - [src/mongo/db/pipeline/accumulator.h](aggregation\_framework)
 - [src/mongo/db/pipeline/accumulator\_add\_to\_set.cpp](aggregation\_framework)
@@ -48,11 +50,11 @@
 - [src/mongo/db/extsort.cpp](aggregation\_framework)
 - [src/mongo/db/extsort.h](aggregation\_framework)
 - [src/mongo/db/sort\_phase\_one.h](aggregation\_framework)
-## auditing
+### auditing
 
 - [src/mongo/db/audit.cpp](auditing)
 - [src/mongo/db/audit.h](auditing)
-## authentication
+### authentication
 
 - [src/mongo/db/auth/action\_set.cpp](authentication)
 - [src/mongo/db/auth/action\_set.h](authentication)
@@ -125,7 +127,7 @@
 - [src/mongo/db/auth/user\_set.cpp](authentication)
 - [src/mongo/db/auth/user\_set.h](authentication)
 - [src/mongo/db/auth/user\_set\_test.cpp](authentication)
-## base\_utilites
+### base\_utilites
 
 - [src/mongo/base/disallow\_copying.h](base\_utilites)
 - [src/mongo/base/counter.h](base\_utilites)
@@ -148,7 +150,7 @@
 - [src/mongo/base/string\_data.cpp](base\_utilites)
 - [src/mongo/base/string\_data.h](base\_utilites)
 - [src/mongo/base/string\_data\_test.cpp](base\_utilites)
-## boost\_core
+### boost\_core
 
 - [src/third\_party/shim\_boost.cpp](boost\_core)
 - [src/third\_party/boost/boost/algorithm/string.hpp](boost\_core)
@@ -1120,7 +1122,7 @@
 - [src/third\_party/boost/boost/version.hpp](boost\_core)
 - [src/third\_party/boost/boost/visit\_each.hpp](boost\_core)
 - [src/third\_party/boost/boost/weak\_ptr.hpp](boost\_core)
-## boost\_filesystem
+### boost\_filesystem
 
 - [src/third\_party/boost/boost/filesystem.hpp](boost\_filesystem)
 - [src/third\_party/boost/boost/filesystem/config.hpp](boost\_filesystem)
@@ -1150,7 +1152,7 @@
 - [src/third\_party/boost/libs/filesystem/v3/src/windows\_file\_codecvt.cpp](boost\_filesystem)
 - [src/third\_party/boost/libs/filesystem/v3/src/windows\_file\_codecvt.hpp](boost\_filesystem)
 - [src/third\_party/boost/libs/detail/utf8\_codecvt\_facet.cpp](boost\_filesystem)
-## boost\_program\_options
+### boost\_program\_options
 
 - [src/third\_party/boost/boost/program\_options.hpp](boost\_program\_options)
 - [src/third\_party/boost/boost/program\_options/cmdline.hpp](boost\_program\_options)
@@ -1182,7 +1184,7 @@
 - [src/third\_party/boost/libs/program\_options/src/value\_semantic.cpp](boost\_program\_options)
 - [src/third\_party/boost/libs/program\_options/src/variables\_map.cpp](boost\_program\_options)
 - [src/third\_party/boost/libs/program\_options/src/winmain.cpp](boost\_program\_options)
-## boost\_system
+### boost\_system
 
 - [src/third\_party/boost/boost/system/api\_config.hpp](boost\_system)
 - [src/third\_party/boost/boost/system/config.hpp](boost\_system)
@@ -1190,7 +1192,7 @@
 - [src/third\_party/boost/boost/system/system\_error.hpp](boost\_system)
 - [src/third\_party/boost/libs/system/src/error\_code.cpp](boost\_system)
 - [src/third\_party/boost/libs/system/src/local\_free\_on\_destruction.hpp](boost\_system)
-## boost\_thread
+### boost\_thread
 
 - [src/third\_party/boost/boost/thread/barrier.hpp](boost\_thread)
 - [src/third\_party/boost/boost/thread/condition.hpp](boost\_thread)
@@ -1237,7 +1239,7 @@
 - [src/third\_party/boost/libs/thread/src/pthread/once.cpp](boost\_thread)
 - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](boost\_thread)
 - [src/third\_party/boost/libs/thread/src/pthread/timeconv.inl](boost\_thread)
-## bson
+### bson
 
 - [src/mongo/bson/bson-inl.h](bson)
 - [src/mongo/bson/bson\_builder\_base.h](bson)
@@ -1288,7 +1290,7 @@
 - [src/mongo/bson/mutable/mutable\_bson\_test.cpp](bson)
 - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](bson)
 - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.h](bson)
-## build\_generated\_files
+### build\_generated\_files
 
 - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/buildinfo.cpp](build\_generated\_files)
 - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/client\_build/mongo/base/error\_codes.cpp](build\_generated\_files)
@@ -1304,7 +1306,7 @@
 - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](build\_generated\_files)
 - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc](build\_generated\_files)
 - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](build\_generated\_files)
-## client\_and\_operation\_tracking
+### client\_and\_operation\_tracking
 
 - [src/mongo/s/s\_only.cpp](client\_and\_operation\_tracking)
 - [src/mongo/db/client.cpp](client\_and\_operation\_tracking)
@@ -1331,7 +1333,7 @@
 - [src/mongo/db/introspect.cpp](client\_and\_operation\_tracking)
 - [src/mongo/db/introspect.h](client\_and\_operation\_tracking)
 - [src/mongo/db/max\_time.h](client\_and\_operation\_tracking)
-## concurrency
+### concurrency
 
 - [src/mongo/util/concurrency/rwlock.h](concurrency)
 - [src/mongo/util/concurrency/rwlockimpl.cpp](concurrency)
@@ -1347,7 +1349,7 @@
 - [src/mongo/util/concurrency/spin\_lock\_test.cpp](concurrency)
 - [src/mongo/util/concurrency/synchronization.cpp](concurrency)
 - [src/mongo/util/concurrency/synchronization.h](concurrency)
-## cpp\_client\_driver
+### cpp\_client\_driver
 
 - [src/mongo/client/clientAndShell.cpp](cpp\_client\_driver)
 - [src/mongo/client/clientOnly-private.h](cpp\_client\_driver)
@@ -1396,7 +1398,7 @@
 - [src/mongo/client/sasl\_client\_session.cpp](cpp\_client\_driver)
 - [src/mongo/client/sasl\_client\_session.h](cpp\_client\_driver)
 - [src/mongo/client/sasl\_sspi.cpp](cpp\_client\_driver)
-## database\_commands
+### database\_commands
 
 - [src/mongo/db/commands.cpp](database\_commands)
 - [src/mongo/db/commands.h](database\_commands)
@@ -1459,7 +1461,7 @@
 - [src/mongo/db/driverHelpers.cpp](database\_commands)
 - [src/mongo/db/commands/fsync.cpp](database\_commands)
 - [src/mongo/db/commands/fsync.h](database\_commands)
-## database\_web\_accesss
+### database\_web\_accesss
 
 - [src/mongo/db/dbwebserver.cpp](database\_web\_accesss)
 - [src/mongo/db/dbwebserver.h](database\_web\_accesss)
@@ -1468,7 +1470,7 @@
 - [src/mongo/db/clientlistplugin.cpp](database\_web\_accesss)
 - [src/mongo/util/net/miniwebserver.cpp](database\_web\_accesss)
 - [src/mongo/util/net/miniwebserver.h](database\_web\_accesss)
-## dead\_code
+### dead\_code
 
 - [src/mongo/util/trace.cpp](dead\_code)
 - [src/mongo/db/tests.cpp](dead\_code)
@@ -1479,15 +1481,15 @@
 - [src/mongo/dbtests/histogram\_test.cpp](dead\_code)
 - [src/mongo/util/lruishmap.h](dead\_code)
 - [src/mongo/db/taskqueue.h](dead\_code)
-## file\_allocation
+### file\_allocation
 
 - [src/mongo/util/file\_allocator.cpp](file\_allocation)
 - [src/mongo/util/file\_allocator.h](file\_allocation)
-## file\_interface
+### file\_interface
 
 - [src/mongo/util/file.cpp](file\_interface)
 - [src/mongo/util/file.h](file\_interface)
-## full\_text\_search\_module
+### full\_text\_search\_module
 
 - [src/mongo/db/fts/fts\_command.cpp](full\_text\_search\_module)
 - [src/mongo/db/fts/fts\_command.h](full\_text\_search\_module)
@@ -1537,7 +1539,7 @@
 - [src/mongo/db/fts/tokenizer.cpp](full\_text\_search\_module)
 - [src/mongo/db/fts/tokenizer.h](full\_text\_search\_module)
 - [src/mongo/db/fts/tokenizer\_test.cpp](full\_text\_search\_module)
-## geo\_queries
+### geo\_queries
 
 - [src/mongo/db/geo/core.h](geo\_queries)
 - [src/mongo/db/geo/geoconstants.h](geo\_queries)
@@ -1555,7 +1557,7 @@
 - [src/mongo/db/geo/s2common.h](geo\_queries)
 - [src/mongo/db/geo/shapes.cpp](geo\_queries)
 - [src/mongo/db/geo/shapes.h](geo\_queries)
-## gperftools
+### gperftools
 
 - [src/third\_party/shim\_allocator.cpp](gperftools)
 - [src/third\_party/gperftools-2.0/src/base/arm\_instruction\_set\_select.h](gperftools)
@@ -1651,7 +1653,7 @@
 - [src/third\_party/gperftools-2.0/src/thread\_cache.h](gperftools)
 - [src/third\_party/gperftools-2.0/src/windows/mingw.h](gperftools)
 - [src/third\_party/gperftools-2.0/src/windows/port.h](gperftools)
-## indexing
+### indexing
 
 - [src/mongo/db/index/2d\_access\_method.cpp](indexing)
 - [src/mongo/db/index/2d\_access\_method.h](indexing)
@@ -1694,7 +1696,7 @@
 - [src/mongo/db/keypattern.h](indexing)
 - [src/mongo/db/ttl.cpp](indexing)
 - [src/mongo/db/ttl.h](indexing)
-## javascript\_libraries
+### javascript\_libraries
 
 - [src/mongo/scripting/engine.cpp](javascript\_libraries)
 - [src/mongo/scripting/engine.h](javascript\_libraries)
@@ -1714,7 +1716,7 @@
 - [src/mongo/scripting/bson\_template\_evaluator.cpp](javascript\_libraries)
 - [src/mongo/scripting/bson\_template\_evaluator.h](javascript\_libraries)
 - [src/mongo/scripting/bson\_template\_evaluator\_test.cpp](javascript\_libraries)
-## journaling
+### journaling
 
 - [src/mongo/util/alignedbuilder.cpp](journaling)
 - [src/mongo/util/alignedbuilder.h](journaling)
@@ -1737,11 +1739,11 @@
 - [src/mongo/db/storage/durable\_mapped\_file.h](journaling)
 - [src/mongo/util/logfile.cpp](journaling)
 - [src/mongo/util/logfile.h](journaling)
-## legacy\_code
+### legacy\_code
 
 - [src/mongo/db/d\_globals.cpp](legacy\_code)
 - [src/mongo/db/d\_globals.h](legacy\_code)
-## logging\_system
+### logging\_system
 
 - [src/mongo/util/log.cpp](logging\_system)
 - [src/mongo/util/log.h](logging\_system)
@@ -1781,16 +1783,16 @@
 - [src/mongo/db/log\_process\_details.cpp](logging\_system)
 - [src/mongo/db/log\_process\_details.h](logging\_system)
 - [src/mongo/db/server\_extra\_log\_context.cpp](logging\_system)
-## mmap
+### mmap
 
 - [src/mongo/util/mmap.cpp](mmap)
 - [src/mongo/util/mmap.h](mmap)
 - [src/mongo/util/mmap\_posix.cpp](mmap)
-## mmap\_file\_interface
+### mmap\_file\_interface
 
 - [src/mongo/db/storage/data\_file.cpp](mmap\_file\_interface)
 - [src/mongo/db/storage/data\_file.h](mmap\_file\_interface)
-## mongo\_shell
+### mongo\_shell
 
 - [src/mongo/shell/assert.js](mongo\_shell)
 - [src/mongo/shell/batch\_api.js](mongo\_shell)
@@ -1824,7 +1826,7 @@
 - [src/mongo/shell/shell\_options.h](mongo\_shell)
 - [src/mongo/shell/shell\_options\_init.cpp](mongo\_shell)
 - [src/mongo/shell/shell\_options\_test.cpp](mongo\_shell)
-## mongos\_and\_mongod\_mains
+### mongos\_and\_mongod\_mains
 
 - [src/mongo/db/db.cpp](mongos\_and\_mongod\_mains)
 - [src/mongo/db/db.h](mongos\_and\_mongod\_mains)
@@ -1838,11 +1840,11 @@
 - [src/mongo/s/mongos\_options.h](mongos\_and\_mongod\_mains)
 - [src/mongo/s/mongos\_options\_init.cpp](mongos\_and\_mongod\_mains)
 - [src/mongo/s/mongos\_options\_test.cpp](mongos\_and\_mongod\_mains)
-## murmurhash3
+### murmurhash3
 
 - [src/third\_party/murmurhash3/MurmurHash3.cpp](murmurhash3)
 - [src/third\_party/murmurhash3/MurmurHash3.h](murmurhash3)
-## network
+### network
 
 - [src/mongo/util/net/listen.cpp](network)
 - [src/mongo/util/net/listen.h](network)
@@ -1864,7 +1866,7 @@
 - [src/mongo/util/net/ssl\_options.h](network)
 - [src/mongo/util/net/message\_server.h](network)
 - [src/mongo/util/net/message\_server\_port.cpp](network)
-## new\_wire\_protocol\_write\_commands
+### new\_wire\_protocol\_write\_commands
 
 - [src/mongo/db/commands/write\_commands/write\_commands.cpp](new\_wire\_protocol\_write\_commands)
 - [src/mongo/db/commands/write\_commands/write\_commands.h](new\_wire\_protocol\_write\_commands)
@@ -1921,15 +1923,15 @@
 - [src/mongo/s/write\_ops/write\_error\_detail.cpp](new\_wire\_protocol\_write\_commands)
 - [src/mongo/s/write\_ops/write\_error\_detail.h](new\_wire\_protocol\_write\_commands)
 - [src/mongo/db/wire\_version.h](new\_wire\_protocol\_write\_commands)
-## openssl
+### openssl
 
-## page\_fault\_utilities
+### page\_fault\_utilities
 
 - [src/mongo/db/pagefault.cpp](page\_fault\_utilities)
 - [src/mongo/db/pagefault.h](page\_fault\_utilities)
 - [src/mongo/db/prefetch.cpp](page\_fault\_utilities)
 - [src/mongo/db/prefetch.h](page\_fault\_utilities)
-## pcrecpp
+### pcrecpp
 
 - [src/third\_party/shim\_pcrecpp.cc](pcrecpp)
 - [src/third\_party/pcre-8.30/config.h](pcrecpp)
@@ -1967,7 +1969,7 @@
 - [src/third\_party/pcre-8.30/pcreposix.c](pcrecpp)
 - [src/third\_party/pcre-8.30/pcreposix.h](pcrecpp)
 - [src/third\_party/pcre-8.30/ucp.h](pcrecpp)
-## query\_system
+### query\_system
 
 - [src/mongo/db/matcher/expression.cpp](query\_system)
 - [src/mongo/db/matcher/expression.h](query\_system)
@@ -2156,7 +2158,7 @@
 - [src/mongo/db/ops/insert.h](query\_system)
 - [src/mongo/db/ops/update.cpp](query\_system)
 - [src/mongo/db/ops/update.h](query\_system)
-## replication
+### replication
 
 - [src/mongo/db/repl/bgsync.cpp](replication)
 - [src/mongo/db/repl/bgsync.h](replication)
@@ -2204,7 +2206,7 @@
 - [src/mongo/db/repl/write\_concern.h](replication)
 - [src/mongo/db/write\_concern\_options.cpp](replication)
 - [src/mongo/db/write\_concern\_options.h](replication)
-## s2
+### s2
 
 - [src/third\_party/s2/base/basictypes.h](s2)
 - [src/third\_party/s2/base/casts.h](s2)
@@ -2292,7 +2294,7 @@
 - [src/third\_party/s2/util/math/vector3-inl.h](s2)
 - [src/third\_party/s2/util/math/vector3.h](s2)
 - [src/third\_party/s2/util/math/vector4.h](s2)
-## sharding
+### sharding
 
 - [src/mongo/db/range\_deleter.cpp](sharding)
 - [src/mongo/db/range\_deleter.h](sharding)
@@ -2438,7 +2440,7 @@
 - [src/mongo/s/version\_manager.h](sharding)
 - [src/mongo/s/version\_mongos.cpp](sharding)
 - [src/mongo/s/version\_mongos.h](sharding)
-## snappy
+### snappy
 
 - [src/third\_party/shim\_snappy.cpp](snappy)
 - [src/third\_party/snappy/config.h](snappy)
@@ -2449,7 +2451,7 @@
 - [src/third\_party/snappy/snappy-stubs-public.h](snappy)
 - [src/third\_party/snappy/snappy.cc](snappy)
 - [src/third\_party/snappy/snappy.h](snappy)
-## startup\_initialization
+### startup\_initialization
 
 - [src/mongo/db/startup\_warnings.cpp](startup\_initialization)
 - [src/mongo/db/startup\_warnings.h](startup\_initialization)
@@ -2505,7 +2507,7 @@
 - [src/mongo/db/server\_parameters.h](startup\_initialization)
 - [src/mongo/db/server\_parameters\_inline.h](startup\_initialization)
 - [src/mongo/db/server\_parameters\_test.cpp](startup\_initialization)
-## stemmer
+### stemmer
 
 - [src/third\_party/shim\_stemmer.cpp](stemmer)
 - [src/third\_party/libstemmer\_c/include/libstemmer.h](stemmer)
@@ -2562,7 +2564,7 @@
 - [src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_swedish.h](stemmer)
 - [src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.c](stemmer)
 - [src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.h](stemmer)
-## storage\_layer\_structure
+### storage\_layer\_structure
 
 - [src/mongo/db/namespace\_string-inl.h](storage\_layer\_structure)
 - [src/mongo/db/namespace\_string.h](storage\_layer\_structure)
@@ -2625,7 +2627,7 @@
 - [src/mongo/db/pdfile.h](storage\_layer\_structure)
 - [src/mongo/db/pdfile\_private.h](storage\_layer\_structure)
 - [src/mongo/db/pdfile\_version.h](storage\_layer\_structure)
-## tools
+### tools
 
 - [src/mongo/tools/bridge.cpp](tools)
 - [src/mongo/tools/bsondump.cpp](tools)
@@ -2686,7 +2688,7 @@
 - [src/mongo/tools/tool\_options.cpp](tools)
 - [src/mongo/tools/tool\_options.h](tools)
 - [src/mongo/tools/top.cpp](tools)
-## unit\_tests
+### unit\_tests
 
 - [src/mongo/unittest/crutch.cpp](unit\_tests)
 - [src/mongo/unittest/fixture\_test.cpp](unit\_tests)
@@ -2777,7 +2779,7 @@
 - [src/mongo/dbtests/stacktests.cpp](unit\_tests)
 - [src/mongo/dbtests/threadedtests.cpp](unit\_tests)
 - [src/mongo/dbtests/updatetests.cpp](unit\_tests)
-## update\_system
+### update\_system
 
 - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](update\_system)
 - [src/mongo/db/ops/modifier\_add\_to\_set.h](update\_system)
@@ -2847,7 +2849,7 @@
 - [src/mongo/db/field\_ref\_set.h](update\_system)
 - [src/mongo/db/field\_ref\_set\_test.cpp](update\_system)
 - [src/mongo/db/field\_ref\_test.cpp](update\_system)
-## utilities
+### utilities
 
 - [src/mongo/util/paths.cpp](utilities)
 - [src/mongo/util/paths.h](utilities)
@@ -3029,7 +3031,7 @@
 - [src/mongo/util/mongoutils/hash.h](utilities)
 - [src/mongo/util/mongoutils/html.h](utilities)
 - [src/mongo/util/mongoutils/str.h](utilities)
-## v8
+### v8
 
 - [src/third\_party/shim\_v8.cpp](v8)
 - [src/third\_party/v8/include/v8-debug.h](v8)
@@ -3383,7 +3385,7 @@
 - [src/third\_party/v8/src/zone-inl.h](v8)
 - [src/third\_party/v8/src/zone.cc](v8)
 - [src/third\_party/v8/src/zone.h](v8)
-## yaml
+### yaml
 
 - [src/third\_party/shim\_yaml.cpp](yaml)
 - [src/third\_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h](yaml)
