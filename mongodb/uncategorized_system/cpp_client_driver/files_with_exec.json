@@ -835,21 +835,5 @@
             "mongos", 
             "secondExample"
         ]
-    }, 
-    {
-        "name": "src/mongo/client/sasl_client_authenticate_impl.cpp", 
-        "execs": []
-    }, 
-    {
-        "name": "src/mongo/client/sasl_client_session.cpp", 
-        "execs": []
-    }, 
-    {
-        "name": "src/mongo/client/sasl_client_session.h", 
-        "execs": []
-    }, 
-    {
-        "name": "src/mongo/client/sasl_sspi.cpp", 
-        "execs": []
     }
 ]

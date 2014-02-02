@@ -1394,10 +1394,6 @@
 - [src/mongo/client/parallel.h](cpp\_client\_driver)
 - [src/mongo/client/sasl\_client\_authenticate.cpp](cpp\_client\_driver)
 - [src/mongo/client/sasl\_client\_authenticate.h](cpp\_client\_driver)
-- [src/mongo/client/sasl\_client\_authenticate\_impl.cpp](cpp\_client\_driver)
-- [src/mongo/client/sasl\_client\_session.cpp](cpp\_client\_driver)
-- [src/mongo/client/sasl\_client\_session.h](cpp\_client\_driver)
-- [src/mongo/client/sasl\_sspi.cpp](cpp\_client\_driver)
 ### database\_commands
 
 - [src/mongo/db/commands.cpp](database\_commands)

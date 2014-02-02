@@ -9983,10 +9983,6 @@ Hookup of client to sasl authentication. Only built in when user passes --use-sa
 # Files
 - src/mongo/client/sasl\_client\_authenticate.cpp   (mongod, cppclientdriver, tools, mongos)
 - src/mongo/client/sasl\_client\_authenticate.h   (mongod, cppclientdriver, tools, mongos)
-- src/mongo/client/sasl\_client\_authenticate\_impl.cpp   ()
-- src/mongo/client/sasl\_client\_session.cpp   ()
-- src/mongo/client/sasl\_client\_session.h   ()
-- src/mongo/client/sasl\_sspi.cpp   ()
 
 # Interface
 
