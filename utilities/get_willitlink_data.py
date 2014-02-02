@@ -22,9 +22,8 @@ default_data_file = os.path.join(default_cwd, os.pardir, 'mongodb-willitlink-dat
 def dbgprint(my_object):
     print json.dumps(my_object, indent=4)
 
-# Returns a hash of all modules
-def get_module_data(modules_directory):
-    return read_modules_file(os.path.join(modules_directory, "modules.yaml"))
+def get_project_data(base_directory):
+    return read_modules_file(os.path.join(base_directory, "modules.yaml"))
 
 # The modules have files listed in "groups".  This returns a list of all files for the module.
 def get_module_files(single_module_data):
@@ -35,9 +34,10 @@ def get_module_files(single_module_data):
 
 # The modules have files listed in "groups".  This adds a 'files_flat' entry to each module that has
 # a list of all files for the module.
-def add_files_list(module_data):
-    for module_name in module_data.keys():
-        module_data[module_name]['files_flat'] = get_module_files(module_data[module_name])
+def add_files_list(project_data):
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            module_object['files_flat'] = get_module_files(module_object)
 
 def load_graph(data_file):
     with Timer('loading graph', False):
@@ -74,65 +74,72 @@ def object_files_to_source_files(graph, object_files):
         source_files.extend(object_file_to_source_file(graph, object_file))
     return source_files
 
-def add_interface_data(graph, module_data):
-    for module_name in module_data.keys():
-        module_data[module_name]['interface'] = find_interface(graph, source_files_to_object_files(graph, module_data[module_name]['files_flat']))
-        for interface_object in module_data[module_name]['interface']:
-            interface_object['object'] = object_files_to_source_files(graph, [interface_object['object']])[0]
-            interface_object['used_by'] = object_files_to_source_files(graph, interface_object['used_by'])
+def add_interface_data(graph, project_data):
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            module_object['interface'] = find_interface(graph, source_files_to_object_files(graph, module_object['files_flat']))
+            for interface_object in module_object['interface']:
+                interface_object['object'] = object_files_to_source_files(graph, [interface_object['object']])[0]
+                interface_object['used_by'] = object_files_to_source_files(graph, interface_object['used_by'])
 
-def add_leak_data(graph, module_data):
-    for module_name in module_data.keys():
-        module_data[module_name]['leaks'] = resolve_leak_info(graph, source_files_to_object_files(graph, module_data[module_name]['files_flat']), 1, None, [])
-        for leak_object in module_data[module_name]['leaks']:
-            leak_object['object'] = object_files_to_source_files(graph, [leak_object['object']])[0]
-            leak_object['sources'] = list(set(object_files_to_source_files(graph, leak_object['sources'].keys())))
+def add_leak_data(graph, project_data):
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            module_object['leaks'] = resolve_leak_info(graph, source_files_to_object_files(graph, module_object['files_flat']), 1, None, [])
+            for leak_object in module_object['leaks']:
+                leak_object['object'] = object_files_to_source_files(graph, [leak_object['object']])[0]
+                leak_object['sources'] = list(set(object_files_to_source_files(graph, leak_object['sources'].keys())))
 
-def add_executable_data(graph, module_data):
-    for module_name in module_data.keys():
-        module_data[module_name]['files_with_exec'] = []
-        for source_file in module_data[module_name]['files_flat']:
-            executable_list = []
-            executable_list = get_executable_list(graph, source_file)
-            module_data[module_name]['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
+def add_executable_data(graph, project_data):
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            module_object['files_with_exec'] = []
+            for source_file in module_object['files_flat']:
+                executable_list = []
+                executable_list = get_executable_list(graph, source_file)
+                module_object['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
 
 # Builds a map of source files to modules
-def build_file_to_module_map(module_data):
+def build_file_to_module_map(project_data):
     file_to_module = {}
-    for module_name in module_data.keys():
-        for module_file in module_data[module_name]['files_flat']:
-            file_to_module[module_file] = module_name
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            for module_file in module_object['files_flat']:
+                file_to_module[module_file] = module_object['name']
     return file_to_module
 
 # Builds a map of source files to executables
-def build_file_to_executables_map(module_data):
+def build_file_to_executables_map(project_data):
     file_to_executables = {}
-    for module_name in module_data.keys():
-        for file_with_exec in module_data[module_name]['files_with_exec']:
-            if (file_with_exec["name"] is not None):
-                file_to_executables[file_with_exec['name']] = file_with_exec['execs']
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            for file_with_exec in module_object['files_with_exec']:
+                if (file_with_exec["name"] is not None):
+                    file_to_executables[file_with_exec['name']] = file_with_exec['execs']
     return file_to_executables
 
 # Builds a map of source files to interface
-def build_file_to_interface_map(module_data):
+def build_file_to_interface_map(project_data):
     file_to_interface = {}
-    for module_name in module_data.keys():
-        for interface_object in module_data[module_name]['interface']:
-            file_name = interface_object['object']
-            if file_name not in file_to_interface:
-                file_to_interface[file_name] = []
-            file_to_interface[file_name].append(interface_object)
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            for interface_object in module_object['interface']:
+                file_name = interface_object['object']
+                if file_name not in file_to_interface:
+                    file_to_interface[file_name] = []
+                file_to_interface[file_name].append(interface_object)
     return file_to_interface
 
 # Builds a map of source files to dependencies
-def build_file_to_dependencies_map(module_data):
+def build_file_to_dependencies_map(project_data):
     file_to_dependencies = {}
-    for module_name in module_data.keys():
-        for dependencies_object in module_data[module_name]['leaks']:
-            file_name = dependencies_object['object']
-            if file_name not in file_to_dependencies:
-                file_to_dependencies[file_name] = []
-            file_to_dependencies[file_name].append(dependencies_object)
+    for system_name in project_data.keys():
+        for module_object in project_data[system_name]['modules']:
+            for dependencies_object in module_object['leaks']:
+                file_name = dependencies_object['object']
+                if file_name not in file_to_dependencies:
+                    file_to_dependencies[file_name] = []
+                file_to_dependencies[file_name].append(dependencies_object)
     return file_to_dependencies
 
 # Simplifies the list of executables into something more readable.
@@ -165,128 +172,131 @@ def get_exec_digest(exec_list):
     return list(exec_digest)
 
 # Outputs a README.md file for each module with some useful information
-def output_readme_files_for_modules(modules_directory, module_data):
-    file_to_executables = build_file_to_executables_map(module_data)
-    file_to_interface = build_file_to_interface_map(module_data)
-    file_to_dependencies = build_file_to_dependencies_map(module_data)
-    file_to_module = build_file_to_module_map(module_data)
-    module_directories = os.listdir(modules_directory)
+def output_readme_files_for_modules(project_directory, project_data):
+    file_to_executables = build_file_to_executables_map(project_data)
+    file_to_interface = build_file_to_interface_map(project_data)
+    file_to_dependencies = build_file_to_dependencies_map(project_data)
+    file_to_module = build_file_to_module_map(project_data)
 
-    top_level_readme = open(os.path.join(modules_directory, "README.md"), 'w')
-    top_level_readme.truncate()
-    top_level_readme.write("# Modules\n\n")
+    for system_name in project_data.keys():
+        modules_directory = os.path.join(project_directory, system_name)
 
-    for module_name in module_directories:
-        module_path = os.path.join(modules_directory, module_name)
-        if os.path.isdir(module_path):
+        top_level_readme = open(os.path.join(modules_directory, "README.md"), 'w')
+        top_level_readme.truncate()
+        top_level_readme.write("# Modules\n\n")
 
-            # Add this module to the top level README
-            top_level_readme.write("## " + module_name.replace("_", "\\_") + "\n\n")
-            for source_file in module_data[module_name]['files_flat']:
-                top_level_readme.write("- [" + source_file.replace("_", "\\_") + "](" + module_name.replace("_", "\\_") + ")" + "\n")
+        for module_object in project_data[system_name]['modules']:
+            module_path = os.path.join(modules_directory, module_object['name'])
+            if os.path.isdir(module_path):
 
-            f = open(os.path.join(module_path, "README.md"), 'w')
-            f.truncate()
-            # First, the title of the module
-            f.write("# " + module_name.replace("_", "\\_") + "\n\n")
+                # Add this module to the top level README
+                top_level_readme.write("## " + module_object['name'].replace("_", "\\_") + "\n\n")
+                for source_file in module_object['files_flat']:
+                    top_level_readme.write("- [" + source_file.replace("_", "\\_") + "](" + module_object['name'].replace("_", "\\_") + ")" + "\n")
 
-            f.write("# Module Groups\n")
+                f = open(os.path.join(module_path, "README.md"), 'w')
+                f.truncate()
+                # First, the title of the module
+                f.write("# " + module_object['name'].replace("_", "\\_") + "\n\n")
 
-            # Do the following analysis for each group separately
-            for module_group in module_data[module_name]['groups']:
+                f.write("# Module Groups\n")
 
-                # Horizontal rule
-                f.write("\n-------------\n\n")
+                # Do the following analysis for each group separately
+                for module_group in module_object['groups']:
 
-                # Comments for this group of files
-                f.write("# Group Description\n")
-                f.write(module_group["comments"].replace("#", " ").replace("_", "\\_").lstrip() + "\n\n")
+                    # Horizontal rule
+                    f.write("\n-------------\n\n")
 
-                # Files in this module group
-                f.write("# Files\n")
-                for file_name in module_group["files"]:
-                    f.write("- " + file_name.replace("_", "\\_"))
-                    if file_name in file_to_executables:
-                        file_to_executables[file_name]
-                        f.write("   (" + ", ".join(get_exec_digest(file_to_executables[file_name])) + ")\n")
-                    else:
-                        f.write("\n")
+                    # Comments for this group of files
+                    f.write("# Group Description\n")
+                    f.write(module_group["comments"].replace("#", " ").replace("_", "\\_").lstrip() + "\n\n")
 
-                # Interface for this module group (symbols used from outside this module)
-                f.write("\n# Interface\n")
-                something_in_interface = False
-                for file_name in module_group["files"]:
-                    if file_name in file_to_interface:
-                        something_in_interface = True
-                        f.write("\n### " + file_name.replace("_", "\\_") + "\n")
-                        for interface_object in file_to_interface[file_name]:
-                            f.write("\n<div></div>\n") # This is a weird markdown idiosyncrasy to
-                                                       # make sure the indented block with the symbol
-                                                       # is interpreted as a literal block
-                            f.write("\n    " + interface_object['symbol'] + "\n\n")
-                            f.write("- Used By:\n\n")
-                            for file_using in interface_object['used_by']:
-                                if file_using in file_to_module:
-                                    f.write("    - [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
-                                else:
-                                    f.write("    - " + file_using.replace("_", "\\_") + "\n")
-                if not something_in_interface:
-                    f.write("(not used outside this module)\n")
+                    # Files in this module group
+                    f.write("# Files\n")
+                    for file_name in module_group["files"]:
+                        f.write("- " + file_name.replace("_", "\\_"))
+                        if file_name in file_to_executables:
+                            file_to_executables[file_name]
+                            f.write("   (" + ", ".join(get_exec_digest(file_to_executables[file_name])) + ")\n")
+                        else:
+                            f.write("\n")
 
-                # Dependencies for this module group (symbols used that are defined outside this module)
-                f.write("\n# Dependencies\n")
-                something_in_dependencies = False
-                for file_name in module_group["files"]:
-                    if file_name in file_to_dependencies:
-                        something_in_dependencies = True
-                        f.write("\n### " + file_name.replace("_", "\\_") + "\n")
-                        for dependencies_object in file_to_dependencies[file_name]:
-                            f.write("\n<div></div>\n") # This is a weird markdown idiosyncrasy to
-                                                       # make sure the indented block with the symbol
-                                                       # is interpreted as a literal block
-                            f.write("\n    " + dependencies_object['symbol'] + "\n\n")
-                            f.write("- Provided By:\n\n")
-                            for file_providing in dependencies_object['sources']:
-                                if file_providing in file_to_module:
-                                    f.write("    - [" + file_providing.replace("_", "\\_") + "](../" + file_to_module[file_providing].replace("_", "\\_") + ")" + "\n")
-                                else:
-                                    f.write("    - " + file_providing.replace("_", "\\_") + "\n")
-                if not something_in_dependencies:
-                    f.write("(no dependencies outside this module)\n")
+                    # Interface for this module group (symbols used from outside this module)
+                    f.write("\n# Interface\n")
+                    something_in_interface = False
+                    for file_name in module_group["files"]:
+                        if file_name in file_to_interface:
+                            something_in_interface = True
+                            f.write("\n### " + file_name.replace("_", "\\_") + "\n")
+                            for interface_object in file_to_interface[file_name]:
+                                f.write("\n<div></div>\n") # This is a weird markdown idiosyncrasy to
+                                                        # make sure the indented block with the symbol
+                                                        # is interpreted as a literal block
+                                f.write("\n    " + interface_object['symbol'] + "\n\n")
+                                f.write("- Used By:\n\n")
+                                for file_using in interface_object['used_by']:
+                                    if file_using in file_to_module:
+                                        f.write("    - [" + file_using.replace("_", "\\_") + "](../" + file_to_module[file_using].replace("_", "\\_") + ")" + "\n")
+                                    else:
+                                        f.write("    - " + file_using.replace("_", "\\_") + "\n")
+                    if not something_in_interface:
+                        f.write("(not used outside this module)\n")
 
-def output_detailed_module_data(modules_directory, module_data):
-    module_directories = os.listdir(modules_directory)
-    for module_directory in module_directories:
-        if os.path.isdir(os.path.join(modules_directory, module_directory)):
-            # Put data about the interface
-            f = open(os.path.join(modules_directory, module_directory, "interface.json"), 'w')
-            f.truncate()
-            f.write(json.dumps(module_data[module_directory]['interface'], indent=4))
-            # Put data about the leaks
-            f = open(os.path.join(modules_directory, module_directory, "leaks.json"), 'w')
-            f.truncate()
-            f.write(json.dumps(module_data[module_directory]['leaks'], indent=4))
-            # Put data about the files_with_exec
-            f = open(os.path.join(modules_directory, module_directory, "files_with_exec.json"), 'w')
-            f.truncate()
-            f.write(json.dumps(module_data[module_directory]['files_with_exec'], indent=4))
+                    # Dependencies for this module group (symbols used that are defined outside this module)
+                    f.write("\n# Dependencies\n")
+                    something_in_dependencies = False
+                    for file_name in module_group["files"]:
+                        if file_name in file_to_dependencies:
+                            something_in_dependencies = True
+                            f.write("\n### " + file_name.replace("_", "\\_") + "\n")
+                            for dependencies_object in file_to_dependencies[file_name]:
+                                f.write("\n<div></div>\n") # This is a weird markdown idiosyncrasy to
+                                                        # make sure the indented block with the symbol
+                                                        # is interpreted as a literal block
+                                f.write("\n    " + dependencies_object['symbol'] + "\n\n")
+                                f.write("- Provided By:\n\n")
+                                for file_providing in dependencies_object['sources']:
+                                    if file_providing in file_to_module:
+                                        f.write("    - [" + file_providing.replace("_", "\\_") + "](../" + file_to_module[file_providing].replace("_", "\\_") + ")" + "\n")
+                                    else:
+                                        f.write("    - " + file_providing.replace("_", "\\_") + "\n")
+                    if not something_in_dependencies:
+                        f.write("(no dependencies outside this module)\n")
+
+def output_detailed_module_data(project_directory, project_data):
+    for system_name in project_data.keys():
+        modules_directory = os.path.join(project_directory, system_name)
+        for module_object in project_data[system_name]['modules']:
+            if os.path.isdir(os.path.join(modules_directory, module_object['name'])):
+                # Put data about the interface
+                f = open(os.path.join(modules_directory, module_object['name'], "interface.json"), 'w')
+                f.truncate()
+                f.write(json.dumps(module_object['interface'], indent=4))
+                # Put data about the leaks
+                f = open(os.path.join(modules_directory, module_object['name'], "leaks.json"), 'w')
+                f.truncate()
+                f.write(json.dumps(module_object['leaks'], indent=4))
+                # Put data about the files_with_exec
+                f = open(os.path.join(modules_directory, module_object['name'], "files_with_exec.json"), 'w')
+                f.truncate()
+                f.write(json.dumps(module_object['files_with_exec'], indent=4))
 
 def main():
 
     if len(sys.argv) != 2:
-        print "Usage: <module_files>"
+        print "Usage: <base_directory>"
         exit(1)
 
-    module_data = get_module_data(sys.argv[1])
-    add_files_list(module_data)
+    project_data = get_project_data(sys.argv[1])
+    add_files_list(project_data)
     graph = load_graph(default_data_file)
 
-    add_interface_data(graph, module_data)
-    add_leak_data(graph, module_data)
-    add_executable_data(graph, module_data)
+    add_interface_data(graph, project_data)
+    add_leak_data(graph, project_data)
+    add_executable_data(graph, project_data)
 
-    output_detailed_module_data(sys.argv[1], module_data)
-    output_readme_files_for_modules(sys.argv[1], module_data)
+    output_detailed_module_data(sys.argv[1], project_data)
+    output_readme_files_for_modules(sys.argv[1], project_data)
 
 if __name__ == '__main__':
     main()
