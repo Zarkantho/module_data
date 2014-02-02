@@ -14,11 +14,6 @@ from process_module_files import read_modules_file
 
 import willitlink
 
-willitlink_location = os.path.dirname(willitlink.__file__)
-#default_data_file = os.path.join(willitlink_location, os.pardir, 'data', "dep_graph.json")
-default_cwd = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
-default_data_file = os.path.join(default_cwd, os.pardir, 'mongodb-willitlink-data', "dep_graph.json")
-
 def dbgprint(my_object):
     print json.dumps(my_object, indent=4)
 
@@ -310,17 +305,19 @@ def main():
         print "Usage: <base_directory>"
         exit(1)
 
-    project_data = get_project_data(sys.argv[1])
+    base_directory = sys.argv[1]
+
+    project_data = get_project_data(base_directory)
     add_files_list(project_data)
-    graph = load_graph(default_data_file)
+    graph = load_graph(os.path.join(base_directory, 'willitlink-data', 'dep_graph.json'))
 
     add_interface_data(graph, project_data)
     add_leak_data(graph, project_data)
     add_executable_data(graph, project_data)
 
-    output_detailed_module_data(sys.argv[1], project_data)
-    output_readme_files_for_systems(sys.argv[1], project_data)
-    output_readme_files_for_modules(sys.argv[1], project_data)
+    output_detailed_module_data(base_directory, project_data)
+    output_readme_files_for_systems(base_directory, project_data)
+    output_readme_files_for_modules(base_directory, project_data)
 
 if __name__ == '__main__':
     main()
