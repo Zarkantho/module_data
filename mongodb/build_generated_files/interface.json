@@ -18,7 +18,7 @@
     }, 
     {
         "symbol": "mongo::gitVersion()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/tools/tool_options.cpp", 
             "src/mongo/util/version_reporting.cpp", 
@@ -29,28 +29,28 @@
     }, 
     {
         "symbol": "mongo::allocator()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::compiledJSEngine()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::loaderFlags()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::sysInfo()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp", 
             "src/mongo/s/version_mongos.cpp", 
@@ -59,14 +59,14 @@
     }, 
     {
         "symbol": "mongo::compilerFlags()", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp", 
         "used_by": [
             "src/mongo/util/version_reporting.cpp"
         ]
     }, 
     {
         "symbol": "mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp", 
         "used_by": [
             "src/mongo/db/json.cpp", 
             "src/mongo/base/status.cpp", 
@@ -76,7 +76,7 @@
     }, 
     {
         "symbol": "mongo::ErrorCodes::fromInt(int)", 
-        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/base/error_codes.cpp", 
+        "object": "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp", 
         "used_by": [
             "src/mongo/db/catalog/index_catalog.cpp"
         ]

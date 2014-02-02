@@ -29,6 +29,34 @@
     }, 
     {
         "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::disable_interruption()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::disable_interruption::~disable_interruption()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/concurrency/rwlockimpl.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/db/commands/server_status.cpp"
         ], 
         "symbol": "mongo::ServerStatusSection::ServerStatusSection(std::string const&)", 
@@ -430,6 +458,20 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/concurrency/spin_lock.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/concurrency/spin_lock.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -588,6 +630,34 @@
         ], 
         "symbol": "mongo::unittest::Test::setUp()", 
         "object": "src/mongo/util/concurrency/spin_lock_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/concurrency/synchronization.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/concurrency/synchronization.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/concurrency/synchronization.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/concurrency/synchronization.cpp"
     }, 
     {
         "sources": [

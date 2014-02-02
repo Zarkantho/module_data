@@ -70,6 +70,54 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
     - [src/mongo/util/trace.cpp](../dead\_code)
 
+<div></div>
+
+    mongo::SimpleRWLock::lock_shared()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
+    mongo::SimpleRWLock::unlock_shared()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
+    mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
+    mongo::SimpleRWLock::unlock()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
+<div></div>
+
+    mongo::SimpleRWLock::lock()
+
+- Used By:
+
+    - [src/mongo/util/trace.cpp](../dead\_code)
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+    - [src/mongo/util/trace.cpp](../dead\_code)
+
 ### src/mongo/db/d\_concurrency.cpp
 
 <div></div>
@@ -701,6 +749,38 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::~disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
 ### src/mongo/db/d\_concurrency.cpp
 
 <div></div>
@@ -1209,9 +1289,71 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/s/shardconnection.cpp](../sharding)
 
+<div></div>
+
+    mongo::SpinLock::SpinLock()
+
+- Used By:
+
+    - [src/mongo/db/repl/bgsync.cpp](../replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/stats/service\_stats.cpp](../dead\_code)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/stats/counters.cpp](../utilities)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    mongo::SpinLock::~SpinLock()
+
+- Used By:
+
+    - [src/mongo/db/repl/bgsync.cpp](../replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/stats/service\_stats.cpp](../dead\_code)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/stats/counters.cpp](../utilities)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
 # Dependencies
 
 ### src/mongo/util/concurrency/spin\_lock.cpp
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -1485,9 +1627,98 @@ Condition Variables   why called 'synchronization' then? (what are these, really
 
     - [src/mongo/db/dur.cpp](../journaling)
 
+<div></div>
+
+    mongo::NotifyAll::now()
+
+- Used By:
+
+    - [src/mongo/db/dur\_commitjob.cpp](../journaling)
+
+<div></div>
+
+    mongo::Notification::notifyOne()
+
+- Used By:
+
+    - [src/mongo/db/range\_deleter.cpp](../sharding)
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NotifyAll::awaitBeyondNow()
+
+- Used By:
+
+    - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
+
+    mongo::Notification::waitToBeNotified()
+
+- Used By:
+
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Notification::Notification()
+
+- Used By:
+
+    - [src/mongo/dbtests/threadedtests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NotifyAll::NotifyAll()
+
+- Used By:
+
+    - [src/mongo/db/dur\_commitjob.cpp](../journaling)
+
+<div></div>
+
+    mongo::NotifyAll::notifyAll(unsigned long long)
+
+- Used By:
+
+    - [src/mongo/db/dur.cpp](../journaling)
+
 # Dependencies
 
 ### src/mongo/util/concurrency/synchronization.cpp
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 

@@ -44,38 +44,34 @@ def load_graph(data_file):
         g = MultiGraph(timers=False).load(data_file)
     return g
 
-# The following four *_file_to_*_file(s) functions convert to/from *.o and *.cpp files.  They are
-# slow, but work.
-# TODO: Precompute source->object and object->source maps
-
+# The following four *_file_to_*_file(s) functions convert to/from *.o and *.cpp files.
+# TODO:  If we use the "client_build" and the server build, this function will return more than one
+# value for what the object file is.  However, the data in this repo is currently generated from
+# both.  We should have only the server objects or only the client objects, since they are
+# essentially two completely independent builds.
 def source_file_to_object_file(graph, source_file):
-    source_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party))\/.+\.)c[pc]?[p]?")
-    source_match = source_match_regex.match(source_file)
-    if source_match is None:
-        return None
-    for i in graph.files:
-        if i.endswith(source_match.group(1) + "o"):
-            return i
+    # TODO: Make this an assertion or something more obvious
+    object_files = graph.get('source_to_file', source_file)
+    if (len(object_files)) > 1:
+        print object_files
+    return object_files
 
 def source_files_to_object_files(graph, source_files):
     object_files = []
     for source_file in source_files:
-        object_file = source_file_to_object_file(graph, source_file)
-        if object_file is not None:
-            object_files.append(object_file)
+        object_files.extend(source_file_to_object_file(graph, source_file))
     return object_files
 
 def object_file_to_source_file(graph, object_file):
-    object_match_regex = re.compile(r"^.*((:?(:?mongo)|(:?client_build)|(:?third_party))\/.+\.)o$")
-    object_match = object_match_regex.match(object_file)
-    for i in graph.files:
-        if i.endswith(object_match.group(1) + "cpp") or i.endswith(object_match.group(1) + "c") or i.endswith(object_match.group(1) + "cc"):
-            return i
+    source_files = graph.get('file_to_source', object_file)
+    if (len(source_files)) > 1:
+        print source_files
+    return source_files
 
 def object_files_to_source_files(graph, object_files):
     source_files = []
     for object_file in object_files:
-        source_files.append(object_file_to_source_file(graph, object_file))
+        source_files.extend(object_file_to_source_file(graph, object_file))
     return source_files
 
 def add_interface_data(graph, module_data):

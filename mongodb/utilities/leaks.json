@@ -15,6 +15,20 @@
     }, 
     {
         "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/util/paths.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/util/paths.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
@@ -458,6 +472,111 @@
         "sources": [
             "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
         ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/util/concurrency/thread_name.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/util/concurrency/thread_name.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "typeinfo for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::start_thread()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::thread_data_base::~thread_data_base()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/net/ssl_manager.cpp"
+        ], 
+        "symbol": "mongo::getSSLManager()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::~thread()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "vtable for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/background.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
         "symbol": "typeinfo for boost::detail::thread_data_base", 
         "object": "src/mongo/util/background.cpp"
     }, 
@@ -743,6 +862,122 @@
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::logContext(char const*)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/crutch.cpp", 
+            "src/mongo/client/clientAndShell.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/client/scoped_db_conn_test.cpp", 
+            "src/mongo/s/server.cpp"
+        ], 
+        "symbol": "mongo::inShutdown()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::tlogLevel", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::getcurns", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::toString() const", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/db/lasterror.cpp"
+        ], 
+        "symbol": "mongo::setLastError(int, char const*)", 
+        "object": "src/mongo/util/assert_util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/fail_point.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/fail_point.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/fail_point.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/fail_point.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
         "object": "src/mongo/util/fail_point.cpp"
     }, 
     {
@@ -779,6 +1014,34 @@
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/util/fail_point_registry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/util/fail_point_registry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/util/fail_point_registry.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/make_string_vector.cpp"
+        ], 
+        "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/util/fail_point_service.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/global_initializer_registerer.cpp"
+        ], 
+        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/util/fail_point_service.cpp"
     }, 
     {
         "sources": [
@@ -1153,6 +1416,13 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/stacktrace.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -1468,6 +1738,41 @@
     }, 
     {
         "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/util/time_support.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>, void*, bool)", 
+        "object": "src/mongo/util/time_support.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)", 
+        "object": "src/mongo/util/time_support.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_tss_data(void const*)", 
+        "object": "src/mongo/util/time_support.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/util/time_support.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/unittest/unittest.cpp"
         ], 
         "symbol": "mongo::unittest::Test::tearDown()", 
@@ -1615,6 +1920,48 @@
     }, 
     {
         "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/util/util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/util/util.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrsReady", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/bson/oid.cpp"
+        ], 
+        "symbol": "mongo::BSONObjBuilder::numStrs", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/parse_number.cpp"
+        ], 
+        "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)", 
+        "object": "src/mongo/util/version.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/base/parse_number.cpp"
         ], 
         "symbol": "mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)", 
@@ -1650,7 +1997,8 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::gitVersion()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -1664,7 +2012,8 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::allocator()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -1678,7 +2027,8 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::compiledJSEngine()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -1699,21 +2049,24 @@
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::loaderFlags()", 
         "object": "src/mongo/util/version_reporting.cpp"
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::sysInfo()", 
         "object": "src/mongo/util/version_reporting.cpp"
     }, 
     {
         "sources": [
-            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp"
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp", 
+            "build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp"
         ], 
         "symbol": "mongo::compilerFlags()", 
         "object": "src/mongo/util/version_reporting.cpp"
@@ -1903,6 +2256,143 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/unittest/crutch.cpp", 
+            "src/mongo/client/clientAndShell.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/client/scoped_db_conn_test.cpp", 
+            "src/mongo/s/server.cpp"
+        ], 
+        "symbol": "mongo::inShutdown()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/concurrency/task.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "typeinfo for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::~thread()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::start_thread()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "vtable for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::join()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::thread_data_base::~thread_data_base()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/concurrency/thread_pool.cpp"
     }, 
     {
         "sources": [
@@ -2449,6 +2939,83 @@
         ], 
         "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
         "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/make_string_vector.cpp"
+        ], 
+        "symbol": "mongo::_makeStringVector(int, ...)", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/global_initializer_registerer.cpp"
+        ], 
+        "symbol": "mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)", 
+        "object": "src/mongo/util/processinfo.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/processinfo_darwin.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/processinfo_darwin.cpp"
     }, 
     {
         "sources": [

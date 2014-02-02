@@ -59,5 +59,66 @@
             "src/mongo/tools/tool.cpp", 
             "src/mongo/dbtests/framework.cpp"
         ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::requestAllocation(std::string const&, long&)", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/storage/data_file.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::ensureParentDirCreated(boost::filesystem3::path const&)", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/durop.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::waitUntilFinished() const", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/pdfile.cpp", 
+            "src/mongo/dbtests/perf/perftest.cpp", 
+            "src/mongo/db/instance.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::allocateAsap(std::string const&, unsigned long long&)", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/util/mmap_posix.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::get()", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/pdfile.cpp", 
+            "src/mongo/db/client.cpp", 
+            "src/mongo/db/db.cpp", 
+            "src/mongo/dbtests/framework.cpp", 
+            "src/mongo/db/instance.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/db/storage/data_file.cpp", 
+            "src/mongo/dbtests/perf/perftest.cpp", 
+            "src/mongo/util/mmap_posix.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::hasFailed() const", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/client.cpp"
+        ]
+    }, 
+    {
+        "symbol": "mongo::FileAllocator::start()", 
+        "object": "src/mongo/util/file_allocator.cpp", 
+        "used_by": [
+            "src/mongo/db/db.cpp", 
+            "src/mongo/tools/tool.cpp", 
+            "src/mongo/dbtests/framework.cpp"
+        ]
     }
 ]

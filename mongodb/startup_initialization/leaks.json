@@ -101,6 +101,20 @@
         "sources": [
             "src/mongo/base/status.cpp"
         ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/base/global_initializer_registerer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/base/global_initializer_registerer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
         "object": "src/mongo/base/initializer.cpp"
     }, 
@@ -138,6 +152,69 @@
         ], 
         "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
         "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::operator<<(std::ostream&, mongo::Status const&)", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "typeinfo for mongo::DBException", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::DBException::convertExceptionCode(int)", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/base/initializer.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)", 
+        "object": "src/mongo/base/initializer_dependency_graph.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::operator!=(mongo::Status const&) const", 
+        "object": "src/mongo/base/initializer_dependency_graph.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/base/status.cpp"
+        ], 
+        "symbol": "mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)", 
+        "object": "src/mongo/base/initializer_dependency_graph.cpp"
     }, 
     {
         "sources": [
@@ -1958,6 +2035,13 @@
         ], 
         "symbol": "std::string mongo::integerToHex<int>(int)", 
         "object": "src/mongo/util/cmdline_utils/censor_cmdline_test.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/password.cpp"
     }, 
     {
         "sources": [

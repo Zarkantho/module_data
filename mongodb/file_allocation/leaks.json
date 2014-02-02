@@ -257,5 +257,264 @@
         ], 
         "symbol": "boost::detail::get_current_thread_data()", 
         "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "typeinfo for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, char const*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/util.cpp"
+        ], 
+        "symbol": "mongo::StaticObserver::_destroyingStatics", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::setThreadName(mongo::StringData)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/paths.cpp"
+        ], 
+        "symbol": "mongo::flushMyDirectory(boost::filesystem3::path const&)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgassertedNoTrace(int, char const*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/timer.cpp"
+        ], 
+        "symbol": "mongo::Timer::_countsPerSecond", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::status(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::remove(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::start_thread()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::uasserted(int, std::string const&)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::thread_data_base::~thread_data_base()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::operator/=(boost::filesystem3::path const&)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::create_directory(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/operations.cpp"
+        ], 
+        "symbol": "boost::filesystem3::detail::file_size(boost::filesystem3::path const&, boost::system::error_code*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::parent_path() const", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::errnoWithPrefix(char const*)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::curTimeMicros64()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::thread::~thread()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::this_thread::interruption_point()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/time_support.cpp"
+        ], 
+        "symbol": "mongo::sleepsecs(int)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::m_erase_redundant_separator(unsigned long)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::m_append_separator_if_needed()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "vtable for boost::detail::thread_data_base", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/filesystem/v3/src/path.cpp"
+        ], 
+        "symbol": "boost::filesystem3::path::wchar_t_codecvt_facet()", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/file_allocator.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/thread/src/pthread/thread.cpp"
+        ], 
+        "symbol": "boost::detail::get_current_thread_data()", 
+        "object": "src/mongo/util/file_allocator.cpp"
     }
 ]

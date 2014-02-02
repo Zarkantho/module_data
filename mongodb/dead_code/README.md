@@ -65,6 +65,46 @@
 
     - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
 
+<div></div>
+
+    mongo::SimpleRWLock::lock_shared()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
+
+<div></div>
+
+    mongo::SimpleRWLock::unlock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
+
+<div></div>
+
+    mongo::SimpleRWLock::unlock_shared()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
+
+<div></div>
+
+    mongo::SimpleRWLock::lock()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
+
+<div></div>
+
+    mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../concurrency)
+
 ### src/mongo/db/tests.cpp
 
 <div></div>

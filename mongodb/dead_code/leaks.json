@@ -36,6 +36,41 @@
     }, 
     {
         "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::lock_shared()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::unlock()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::unlock_shared()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::lock()", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/rwlockimpl.cpp"
+        ], 
+        "symbol": "mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)", 
+        "object": "src/mongo/util/trace.cpp"
+    }, 
+    {
+        "sources": [
             "src/mongo/logger/logstream_builder.cpp"
         ], 
         "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 

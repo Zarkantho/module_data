@@ -75,5 +75,82 @@
         ], 
         "symbol": "mongo::errnoWithDescription(int)", 
         "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::~LogstreamBuilder()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::verifyFailed(char const*, char const*, unsigned int)", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::makeStream()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logstream_builder.cpp"
+        ], 
+        "symbol": "mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, std::string const&)", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/concurrency/thread_name.cpp"
+        ], 
+        "symbol": "mongo::getThreadName()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/logger/logger.cpp"
+        ], 
+        "symbol": "mongo::logger::globalLogManager()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::system_category()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/third_party/boost/libs/system/src/error_code.cpp"
+        ], 
+        "symbol": "boost::system::generic_category()", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/assert_util.cpp"
+        ], 
+        "symbol": "mongo::msgasserted(int, char const*)", 
+        "object": "src/mongo/util/file.cpp"
+    }, 
+    {
+        "sources": [
+            "src/mongo/util/log.cpp"
+        ], 
+        "symbol": "mongo::errnoWithDescription(int)", 
+        "object": "src/mongo/util/file.cpp"
     }
 ]

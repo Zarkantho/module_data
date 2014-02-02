@@ -26,3 +26,5 @@ Example:
 - Remove the local willitlink data when integration is better with the file diff
 
 - Attempt to put the file diff into an SCons plugin, at the same time as the assert code generator
+
+- Remove all the "client_build" stuff from this project, and pin it to a specific version

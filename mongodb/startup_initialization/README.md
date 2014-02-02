@@ -149,17 +149,6 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 # Interface
 
-### src/mongo/base/global\_initializer.cpp
-
-<div></div>
-
-    mongo::getGlobalInitializer()
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
-
 ### src/mongo/base/global\_initializer\_registerer.cpp
 
 <div></div>
@@ -198,7 +187,96 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
     - [src/mongo/util/processinfo.cpp](../utilities)
-    - [src/mongo/base/init.cpp](../startup\_initialization)
+    - [src/mongo/db/range\_deleter\_service.cpp](../sharding)
+    - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+    - [src/mongo/util/net/ssl\_manager.cpp](../network)
+    - [src/mongo/db/mongod\_options\_init.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
+    - [src/mongo/tools/mongoimport\_options\_init.cpp](../tools)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/pipeline/expression.cpp](../aggregation\_framework)
+    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
+    - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+    - [src/mongo/db/repl/bgsync.cpp](../replication)
+    - [src/mongo/tools/mongooplog\_options\_init.cpp](../tools)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/third\_party/s2/s2regioncoverer.cc](../s2)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
+    - [src/mongo/db/commands/hashcmd.cpp](../database\_commands)
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/db/ops/modifier\_table.cpp](../update\_system)
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/tools/mongobridge\_options\_init.cpp](../tools)
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/third\_party/s2/s2cellid.cc](../s2)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/shell/shell\_options\_init.cpp](../mongo\_shell)
+    - [src/mongo/util/net/ssl\_manager.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/fts/stop\_words.cpp](../full\_text\_search\_module)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/dbtests/framework\_options\_init.cpp](../unit\_tests)
+    - [src/mongo/tools/mongodump\_options\_init.cpp](../tools)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongoexport\_options\_init.cpp](../tools)
+    - [src/mongo/tools/mongorestore\_options\_init.cpp](../tools)
+    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/tools/mongostat\_options\_init.cpp](../tools)
+    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
+    - [src/mongo/s/grid.cpp](../sharding)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Used By:
+
+    - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/dur\_journal.cpp](../journaling)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
+    - [src/mongo/s/mongos\_options\_init.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/logger/ramlog.cpp](../logging\_system)
+    - [src/mongo/tools/bsondump\_options\_init.cpp](../tools)
+    - [src/mongo/logger/ramlog.cpp](../logging\_system)
+    - [src/mongo/tools/tool\_logger.cpp](../tools)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/db/fts/fts\_index\_format.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/util/processinfo.cpp](../utilities)
+    - [src/mongo/tools/mongofiles\_options\_init.cpp](../tools)
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/tools/mongotop\_options\_init.cpp](../tools)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
+    - [src/mongo/util/processinfo.cpp](../utilities)
     - [src/mongo/db/range\_deleter\_service.cpp](../sharding)
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
@@ -281,71 +359,27 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 <div></div>
 
-    mongo::Initializer::~Initializer()
+    mongo::runGlobalInitializersOrDie(int, char const* const*, char const* const*)
 
 - Used By:
 
-    - [src/mongo/base/global\_initializer.cpp](../startup\_initialization)
+    - [src/mongo/unittest/unittest\_main.cpp](../unit\_tests)
+    - [src/mongo/tools/bridge.cpp](../tools)
+    - [src/mongo/tools/sniffer.cpp](../tools)
+    - [src/mongo/tools/tool.cpp](../tools)
+    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
 
 <div></div>
 
-    mongo::Initializer::Initializer()
+    mongo::runGlobalInitializers(int, char const* const*, char const* const*)
 
 - Used By:
 
-    - [src/mongo/base/global\_initializer.cpp](../startup\_initialization)
-
-### src/mongo/base/initializer\_context.cpp
-
-<div></div>
-
-    mongo::InitializerContext::InitializerContext(std::vector<std::string, std::allocator<std::string> > const&, std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
-
-### src/mongo/base/initializer\_dependency\_graph.cpp
-
-<div></div>
-
-    mongo::InitializerDependencyGraph::~InitializerDependencyGraph()
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
-
-<div></div>
-
-    mongo::InitializerDependencyGraph::addInitializer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
-
-- Used By:
-
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
-
-<div></div>
-
-    mongo::InitializerDependencyGraph::topSort(std::vector<std::string, std::allocator<std::string> >*) const
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
-
-<div></div>
-
-    mongo::InitializerDependencyGraph::InitializerDependencyGraph()
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
-
-<div></div>
-
-    mongo::InitializerDependencyGraph::getInitializerFunction(std::string const&) const
-
-- Used By:
-
-    - [src/mongo/base/initializer.cpp](../startup\_initialization)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/init.cpp](../cpp\_client\_driver)
 
 ### src/mongo/base/make\_string\_vector.cpp
 
@@ -385,7 +419,96 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
     - [src/mongo/util/processinfo.cpp](../utilities)
-    - [src/mongo/base/init.cpp](../startup\_initialization)
+    - [src/mongo/db/range\_deleter\_service.cpp](../sharding)
+    - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+    - [src/mongo/util/net/ssl\_manager.cpp](../network)
+    - [src/mongo/db/mongod\_options\_init.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
+    - [src/mongo/tools/mongoimport\_options\_init.cpp](../tools)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/pipeline/expression.cpp](../aggregation\_framework)
+    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
+    - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
+    - [src/mongo/db/repl/bgsync.cpp](../replication)
+    - [src/mongo/tools/mongooplog\_options\_init.cpp](../tools)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/third\_party/s2/s2regioncoverer.cc](../s2)
+    - [src/mongo/db/commands/hint\_commands.cpp](../database\_commands)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
+    - [src/mongo/db/commands/hashcmd.cpp](../database\_commands)
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/db/ops/modifier\_table.cpp](../update\_system)
+    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/tools/mongobridge\_options\_init.cpp](../tools)
+    - [src/mongo/s/commands\_public.cpp](../database\_commands)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/third\_party/s2/s2cellid.cc](../s2)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/shell/shell\_options\_init.cpp](../mongo\_shell)
+    - [src/mongo/util/net/ssl\_manager.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/fts/stop\_words.cpp](../full\_text\_search\_module)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/dbtests/framework\_options\_init.cpp](../unit\_tests)
+    - [src/mongo/tools/mongodump\_options\_init.cpp](../tools)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongoexport\_options\_init.cpp](../tools)
+    - [src/mongo/tools/mongorestore\_options\_init.cpp](../tools)
+    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/tools/mongostat\_options\_init.cpp](../tools)
+    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
+    - [src/mongo/s/grid.cpp](../sharding)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Used By:
+
+    - [src/mongo/unittest/temp\_dir.cpp](../unit\_tests)
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/dur\_journal.cpp](../journaling)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../database\_commands)
+    - [src/mongo/s/mongos\_options\_init.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/s/commands/cluster\_hint\_cmd.cpp](../sharding)
+    - [src/mongo/logger/ramlog.cpp](../logging\_system)
+    - [src/mongo/tools/bsondump\_options\_init.cpp](../tools)
+    - [src/mongo/logger/ramlog.cpp](../logging\_system)
+    - [src/mongo/tools/tool\_logger.cpp](../tools)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/db/auth/auth\_index\_d.cpp](../authentication)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/db/fts/fts\_index\_format.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/util/processinfo.cpp](../utilities)
+    - [src/mongo/tools/mongofiles\_options\_init.cpp](../tools)
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/tools/mongotop\_options\_init.cpp](../tools)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
+    - [src/mongo/util/processinfo.cpp](../utilities)
     - [src/mongo/db/range\_deleter\_service.cpp](../sharding)
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/util/net/ssl\_manager.cpp](../network)
@@ -460,6 +583,22 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
 ### src/mongo/base/initializer.cpp
 
 <div></div>
@@ -510,7 +649,79 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
 ### src/mongo/base/initializer\_dependency\_graph.cpp
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -3117,9 +3328,26 @@ Only used to ask user for password at startup. TODO: move into cmdline\_utils di
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
 
+<div></div>
+
+    mongo::askPassword()
+
+- Used By:
+
+    - [src/mongo/tools/tool\_options.cpp](../tools)
+    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+
 # Dependencies
 
 ### src/mongo/util/password.cpp
+
+<div></div>
+
+    mongo::errnoWithDescription(int)
+
+- Provided By:
+
+    - [src/mongo/util/log.cpp](../logging\_system)
 
 <div></div>
 
@@ -3144,6 +3372,72 @@ Command line options shared between mongod and mongos   give an example (--hostn
 # Interface
 
 ### src/mongo/db/server\_options.cpp
+
+<div></div>
+
+    mongo::serverGlobalParams
+
+- Used By:
+
+    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/util/net/listen.cpp](../network)
+    - [src/mongo/db/repl/consensus.cpp](../replication)
+    - [src/mongo/tools/bridge.cpp](../tools)
+    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/sniffer.cpp](../tools)
+    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/db/stats/snapshots.cpp](../utilities)
+    - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
+    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
+    - [src/mongo/s/version\_mongos.cpp](../sharding)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/s/balance.cpp](../sharding)
+    - [src/mongo/db/repl/health.cpp](../replication)
+    - [src/mongo/s/mongos\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/isself.cpp](../database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/util/net/message\_server\_port.cpp](../network)
+    - [src/mongo/s/distlock.cpp](../sharding)
+    - [src/mongo/db/dbeval.cpp](../database\_commands)
+    - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/util/net/ssl\_options.cpp](../network)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/util/net/listen.cpp](../network)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+    - [src/mongo/db/auth/security\_key.cpp](../authentication)
+    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
 <div></div>
 
