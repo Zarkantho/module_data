@@ -34,9 +34,9 @@ def add_files_list(project_data):
         for module_object in project_data[system_name]['modules']:
             module_object['files_flat'] = get_module_files(module_object)
 
-def load_graph(data_file):
+def load_graph(base_directory):
     with Timer('loading graph', False):
-        g = MultiGraph(timers=False).load(data_file)
+        g = MultiGraph(timers=False).load(os.path.join(base_directory, 'willitlink-data', 'dep_graph.json'))
     return g
 
 # The following four *_file_to_*_file(s) functions convert to/from *.o and *.cpp files.
@@ -309,7 +309,7 @@ def main():
 
     project_data = get_project_data(base_directory)
     add_files_list(project_data)
-    graph = load_graph(os.path.join(base_directory, 'willitlink-data', 'dep_graph.json'))
+    graph = load_graph(base_directory)
 
     add_interface_data(graph, project_data)
     add_leak_data(graph, project_data)

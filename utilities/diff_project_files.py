@@ -7,7 +7,7 @@ import json
 import yaml
 
 from process_module_files import read_modules_file, dump_modules_file
-from get_willitlink_data import load_graph, default_data_file
+from get_willitlink_data import load_graph
 
 def get_project_data(base_directory):
     return read_modules_file(os.path.join(base_directory, "modules.yaml"))
@@ -61,12 +61,14 @@ def main():
         print "Usage: <base_directory>"
         exit(1)
 
-    project_data = get_project_data(sys.argv[1])
-    graph = load_graph(default_data_file)
+    base_directory = sys.argv[1]
+
+    project_data = get_project_data(base_directory)
+    graph = load_graph(base_directory)
 
     diff_files(graph, project_data)
 
-    dump_project_data(sys.argv[1], project_data)
+    dump_project_data(base_directory, project_data)
 
 if __name__ == '__main__':
     main()
