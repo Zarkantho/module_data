@@ -30,6 +30,8 @@ def dump_module_files(base_directory, result_map):
 
     return result_map
 
+# TODO: Actually preserve the ordering as I dump the YAML file.  See
+# http://stackoverflow.com/questions/8651095/controlling-yaml-serialization-order-in-python
 def dump_modules_file(base_directory, result_map):
 
     with open(os.path.join(base_directory, 'modules.yaml'), 'w') as f:
