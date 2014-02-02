@@ -34,8 +34,9 @@ def diff_files(graph, project_data):
     # but are in the file list we are comparing against
     all_project_files = get_all_project_files(project_data)
     for file_name in graph.files:
+        file_name = str(file_name)
         # If this file is not in our project and it's a source file
-        if file_name not in all_project_files and len(graph.get('source_to_file', file_name)) > 1:
+        if file_name not in all_project_files and (file_name.endswith('.cc') or file_name.endswith('.cpp') or file_name.endswith('.h') or file_name.endswith('.hpp')):
             if 'uncategorized_system' not in project_data:
                 project_data['uncategorized_system'] = {}
                 project_data['uncategorized_system']['description'] = 'Files that have not yet been categorized into a particular system'
