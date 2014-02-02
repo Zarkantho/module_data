@@ -10,6 +10,8 @@ import json
 import os
 import re
 
+from process_module_files import read_modules_file
+
 import willitlink
 
 willitlink_location = os.path.dirname(willitlink.__file__)
@@ -22,14 +24,7 @@ def dbgprint(my_object):
 
 # Returns a hash of all modules
 def get_module_data(modules_directory):
-    module_directories = os.listdir(modules_directory)
-    module_data = {}
-    for module_directory in module_directories:
-        if os.path.isdir(os.path.join(modules_directory, module_directory)):
-            module_data[module_directory] = json.load(open(os.path.join(modules_directory,
-                                                           module_directory,
-                                                           "module.json")))
-    return module_data
+    return read_modules_file(os.path.join(modules_directory, "modules.yaml"))
 
 # The modules have files listed in "groups".  This returns a list of all files for the module.
 def get_module_files(single_module_data):

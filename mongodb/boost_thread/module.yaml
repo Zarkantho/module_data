@@ -1,0 +1,49 @@
+groups:
+-   comments: '# Third Party - The boost thread library'
+    files:
+    - src/third_party/boost/boost/thread/barrier.hpp
+    - src/third_party/boost/boost/thread/condition.hpp
+    - src/third_party/boost/boost/thread/condition_variable.hpp
+    - src/third_party/boost/boost/thread/detail/config.hpp
+    - src/third_party/boost/boost/thread/detail/move.hpp
+    - src/third_party/boost/boost/thread/detail/platform.hpp
+    - src/third_party/boost/boost/thread/detail/thread.hpp
+    - src/third_party/boost/boost/thread/detail/thread_group.hpp
+    - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
+    - src/third_party/boost/boost/thread/detail/thread_interruption.hpp
+    - src/third_party/boost/boost/thread/exceptions.hpp
+    - src/third_party/boost/boost/thread/future.hpp
+    - src/third_party/boost/boost/thread/locks.hpp
+    - src/third_party/boost/boost/thread/mutex.hpp
+    - src/third_party/boost/boost/thread/once.hpp
+    - src/third_party/boost/boost/thread/pthread/condition_variable.hpp
+    - src/third_party/boost/boost/thread/pthread/condition_variable_fwd.hpp
+    - src/third_party/boost/boost/thread/pthread/mutex.hpp
+    - src/third_party/boost/boost/thread/pthread/once.hpp
+    - src/third_party/boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp
+    - src/third_party/boost/boost/thread/pthread/recursive_mutex.hpp
+    - src/third_party/boost/boost/thread/pthread/shared_mutex.hpp
+    - src/third_party/boost/boost/thread/pthread/thread_data.hpp
+    - src/third_party/boost/boost/thread/pthread/thread_heap_alloc.hpp
+    - src/third_party/boost/boost/thread/pthread/timespec.hpp
+    - src/third_party/boost/boost/thread/recursive_mutex.hpp
+    - src/third_party/boost/boost/thread/shared_mutex.hpp
+    - src/third_party/boost/boost/thread/thread.hpp
+    - src/third_party/boost/boost/thread/thread_time.hpp
+    - src/third_party/boost/boost/thread/tss.hpp
+    - src/third_party/boost/boost/thread/win32/basic_recursive_mutex.hpp
+    - src/third_party/boost/boost/thread/win32/basic_timed_mutex.hpp
+    - src/third_party/boost/boost/thread/win32/condition_variable.hpp
+    - src/third_party/boost/boost/thread/win32/interlocked_read.hpp
+    - src/third_party/boost/boost/thread/win32/mutex.hpp
+    - src/third_party/boost/boost/thread/win32/once.hpp
+    - src/third_party/boost/boost/thread/win32/recursive_mutex.hpp
+    - src/third_party/boost/boost/thread/win32/shared_mutex.hpp
+    - src/third_party/boost/boost/thread/win32/thread_data.hpp
+    - src/third_party/boost/boost/thread/win32/thread_heap_alloc.hpp
+    - src/third_party/boost/boost/thread/win32/thread_primitives.hpp
+    - src/third_party/boost/boost/thread/xtime.hpp
+    - src/third_party/boost/libs/thread/src/pthread/once.cpp
+    - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+    - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+title: boost_thread

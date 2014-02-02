@@ -1,9 +1,0 @@
-{
-    "groups": [
-        {
-            "comments": "# OpenSSL headers",
-            "files": []
-        }
-    ],
-    "title": "openssl"
-}

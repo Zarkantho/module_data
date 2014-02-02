@@ -1,0 +1,34 @@
+groups:
+-   comments: '# Page aligned buffer builder## what sort of buffer? i don''t understand
+        ;('
+    files:
+    - src/mongo/util/alignedbuilder.cpp
+    - src/mongo/util/alignedbuilder.h
+-   comments: '# Journaling module## who calls/owns stuff in here? only used by mongod,
+        correct?'
+    files:
+    - src/mongo/db/dur.cpp
+    - src/mongo/db/dur.h
+    - src/mongo/db/dur_commitjob.cpp
+    - src/mongo/db/dur_commitjob.h
+    - src/mongo/db/dur_journal.cpp
+    - src/mongo/db/dur_journal.h
+    - src/mongo/db/dur_journalformat.h
+    - src/mongo/db/dur_journalimpl.h
+    - src/mongo/db/dur_preplogbuffer.cpp
+    - src/mongo/db/dur_recover.cpp
+    - src/mongo/db/dur_recover.h
+    - src/mongo/db/dur_stats.h
+    - src/mongo/db/dur_writetodatafiles.cpp
+    - src/mongo/db/durop.cpp
+    - src/mongo/db/durop.h
+    - src/mongo/db/storage/durable_mapped_file.cpp
+    - src/mongo/db/storage/durable_mapped_file.h
+-   comments: '# This is not actually used in our logging system. Just utilities to
+        create files that you can# append to. One notable example of a system that
+        uses this is our preallocation of journal files.# In fact, it isn''t used
+        in anything not journaling related right now.'
+    files:
+    - src/mongo/util/logfile.cpp
+    - src/mongo/util/logfile.h
+title: journaling

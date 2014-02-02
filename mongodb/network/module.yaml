@@ -1,0 +1,28 @@
+groups:
+-   comments: '# Network library## can you say a few words about:## - what this does##
+        - who uses it## - how to use it?'
+    files:
+    - src/mongo/util/net/listen.cpp
+    - src/mongo/util/net/listen.h
+    - src/mongo/util/net/hostandport.h
+    - src/mongo/util/net/message.cpp
+    - src/mongo/util/net/message.h
+    - src/mongo/util/net/message_port.cpp
+    - src/mongo/util/net/message_port.h
+    - src/mongo/util/net/httpclient.cpp
+    - src/mongo/util/net/httpclient.h
+    - src/mongo/util/net/sock.cpp
+    - src/mongo/util/net/sock.h
+    - src/mongo/util/net/sock_test.cpp
+    - src/mongo/util/net/socket_poll.cpp
+    - src/mongo/util/net/socket_poll.h
+    - src/mongo/util/net/ssl_manager.cpp
+    - src/mongo/util/net/ssl_manager.h
+    - src/mongo/util/net/ssl_options.cpp
+    - src/mongo/util/net/ssl_options.h
+-   comments: '# Top level (?) of handling incoming network connections on mongod
+        and mongos. Inherits from# Listener (listen.h).'
+    files:
+    - src/mongo/util/net/message_server.h
+    - src/mongo/util/net/message_server_port.cpp
+title: network

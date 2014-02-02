@@ -1,0 +1,22 @@
+groups:
+-   comments: '# Main for mongod'
+    files:
+    - src/mongo/db/db.cpp
+    - src/mongo/db/db.h
+-   comments: '# Mongod command line options'
+    files:
+    - src/mongo/db/mongod_options.cpp
+    - src/mongo/db/mongod_options.h
+    - src/mongo/db/mongod_options_init.cpp
+    - src/mongo/db/mongod_options_test.cpp
+-   comments: '# Main for mongos'
+    files:
+    - src/mongo/s/server.cpp
+    - src/mongo/s/server.h
+-   comments: '# Mongos command line options'
+    files:
+    - src/mongo/s/mongos_options.cpp
+    - src/mongo/s/mongos_options.h
+    - src/mongo/s/mongos_options_init.cpp
+    - src/mongo/s/mongos_options_test.cpp
+title: mongos_and_mongod_mains

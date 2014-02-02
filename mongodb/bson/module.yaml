@@ -1,0 +1,59 @@
+groups:
+-   comments: '# BSON library## is this library standalone? (lots of third party stuff
+        might want to make## use of BSON) - what does it depend on?## why is some
+        of this stuff in db/ ?'
+    files:
+    - src/mongo/bson/bson-inl.h
+    - src/mongo/bson/bson_builder_base.h
+    - src/mongo/bson/bson_db.h
+    - src/mongo/bson/bson_field.h
+    - src/mongo/bson/bson_field_test.cpp
+    - src/mongo/bson/bson_obj_test.cpp
+    - src/mongo/bson/bson_validate.cpp
+    - src/mongo/bson/bson_validate.h
+    - src/mongo/bson/bson_validate_test.cpp
+    - src/mongo/bson/bsondemo/bsondemo.cpp
+    - src/mongo/bson/bsonelement.h
+    - src/mongo/bson/bsonmisc.h
+    - src/mongo/bson/bsonobj.h
+    - src/mongo/bson/bsonobjbuilder.h
+    - src/mongo/bson/bsonobjbuilder_test.cpp
+    - src/mongo/bson/bsonobjiterator.h
+    - src/mongo/bson/bsontypes.h
+    - src/mongo/bson/inline_decls.h
+    - src/mongo/bson/oid.cpp
+    - src/mongo/bson/oid.h
+    - src/mongo/bson/optime.cpp
+    - src/mongo/bson/optime.h
+    - src/mongo/bson/ordering.h
+    - src/mongo/bson/util/atomic_int.h
+    - src/mongo/bson/util/bson_extract.cpp
+    - src/mongo/bson/util/bson_extract.h
+    - src/mongo/bson/util/bson_extract_test.cpp
+    - src/mongo/bson/util/builder.h
+    - src/mongo/bson/util/builder_test.cpp
+    - src/mongo/bson/util/misc.h
+    - src/mongo/db/jsobj.cpp
+    - src/mongo/db/jsobj.h
+    - src/mongo/db/jsobjmanipulator.h
+    - src/mongo/db/json.cpp
+    - src/mongo/db/json.h
+-   comments: '# Mutable BSON is built on top of the BSON library. It has a mutable,
+        consistently sized vector of# the changes that have been made to an object.##
+        is this part of libbson? does this depend on bson/* ?'
+    files:
+    - src/mongo/bson/mutable/algorithm.h
+    - src/mongo/bson/mutable/const_element-inl.h
+    - src/mongo/bson/mutable/const_element.h
+    - src/mongo/bson/mutable/damage_vector.h
+    - src/mongo/bson/mutable/document-inl.h
+    - src/mongo/bson/mutable/document.cpp
+    - src/mongo/bson/mutable/document.h
+    - src/mongo/bson/mutable/element-inl.h
+    - src/mongo/bson/mutable/element.cpp
+    - src/mongo/bson/mutable/element.h
+    - src/mongo/bson/mutable/mutable_bson_algo_test.cpp
+    - src/mongo/bson/mutable/mutable_bson_test.cpp
+    - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+    - src/mongo/bson/mutable/mutable_bson_test_utils.h
+title: bson

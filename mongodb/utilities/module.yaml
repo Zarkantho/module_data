@@ -1,0 +1,233 @@
+groups:
+-   comments: '# Code to manage paths to files.  Conversion from relative to full
+        path within database directory as# well as code to get the current partition
+        (for readahead checks).'
+    files:
+    - src/mongo/util/paths.cpp
+    - src/mongo/util/paths.h
+-   comments: '# Classes to help in tracking statistics'
+    files:
+    - src/mongo/db/stats/counters.cpp
+    - src/mongo/db/stats/counters.h
+    - src/mongo/db/stats/snapshots.cpp
+    - src/mongo/db/stats/snapshots.h
+    - src/mongo/db/stats/snapshots_webplugins.cpp
+    - src/mongo/db/stats/timer_stats.cpp
+    - src/mongo/db/stats/timer_stats.h
+    - src/mongo/db/stats/top.cpp
+    - src/mongo/db/stats/top.h
+-   comments: '# Utilities to hash BSON elements. Used in hashed shard keys and hashed
+        indexes.'
+    files:
+    - src/mongo/db/hasher.cpp
+    - src/mongo/db/hasher.h
+    - src/mongo/db/hasher_test.cpp
+-   comments: '# Helpers to track in progress operations. The constructor registers
+        itself in an "in progress"# map, and the destructor removes it.'
+    files:
+    - src/mongo/db/background.cpp
+    - src/mongo/db/background.h
+-   comments: '# Utility to check whether a certain time interval has elapsed. Currently
+        only used in# d_migrate.cpp to check if we should yield.'
+    files:
+    - src/mongo/util/elapsed_tracker.cpp
+    - src/mongo/util/elapsed_tracker.h
+-   comments: '# Helper classes to accumulate and log progress in a nice format using
+        the# logging system (so the logging system is only dependency)'
+    files:
+    - src/mongo/util/progress_meter.cpp
+    - src/mongo/util/progress_meter.h
+-   comments: '# Debug macros and gdb server helpers'
+    files:
+    - src/mongo/util/debug_util.cpp
+    - src/mongo/util/debug_util.h
+-   comments: '# Library to get and set the name of the current thread. Just uses
+        a boost::thread_specific_ptr.'
+    files:
+    - src/mongo/util/concurrency/thread_name.cpp
+    - src/mongo/util/concurrency/thread_name.h
+-   comments: '# Utility library to manipulate hex strings'
+    files:
+    - src/mongo/util/hex.cpp
+    - src/mongo/util/hex.h
+-   comments: '# Utilities to run jobs (threads) in the "background". You can use
+        this to run tasks periodically.'
+    files:
+    - src/mongo/util/background.cpp
+    - src/mongo/util/background.h
+    - src/mongo/util/background_job_test.cpp
+-   comments: '# mapFindWithDefault - looks something up in a map with a default value.'
+    files:
+    - src/mongo/util/map_util.h
+-   comments: '# I still don''t know what this was originally for, but I know we are
+        slowly getting rid of it.'
+    files:
+    - src/mongo/pch.cpp
+    - src/mongo/pch.h
+-   comments: '# Assertion library.'
+    files:
+    - src/mongo/util/assert_util.cpp
+    - src/mongo/util/assert_util.h
+-   comments: '# Library for adding fail points into the code for testing purposes'
+    files:
+    - src/mongo/util/fail_point.cpp
+    - src/mongo/util/fail_point.h
+    - src/mongo/util/fail_point_registry.cpp
+    - src/mongo/util/fail_point_registry.h
+    - src/mongo/util/fail_point_service.cpp
+    - src/mongo/util/fail_point_service.h
+    - src/mongo/util/fail_point_test.cpp
+-   comments: '# Helper library that you inherit from to make a class "reference counted"'
+    files:
+    - src/mongo/util/intrusive_counter.cpp
+    - src/mongo/util/intrusive_counter.h
+-   comments: '# md5 hash library'
+    files:
+    - src/mongo/util/md5.cpp
+    - src/mongo/util/md5.h
+    - src/mongo/util/md5.hpp
+    - src/mongo/util/md5_test.cpp
+    - src/mongo/util/md5main.cpp
+-   comments: '# Windows service'
+    files:
+    - src/mongo/util/ntservice.cpp
+    - src/mongo/util/ntservice.h
+-   comments: '# Utilities to hash a username + password'
+    files:
+    - src/mongo/client/auth_helpers.cpp
+    - src/mongo/client/auth_helpers.h
+-   comments: '# Giant list of utilities that I haven''t gotten to yet. TODO: document
+        what these are for and why# you would use them.'
+    files:
+    - src/mongo/util/queue.h
+    - src/mongo/util/ramlog.h
+    - src/mongo/util/safe_num-inl.h
+    - src/mongo/util/safe_num.cpp
+    - src/mongo/util/safe_num.h
+    - src/mongo/util/safe_num_test.cpp
+    - src/mongo/util/scopeguard.h
+    - src/mongo/util/sequence_util.h
+    - src/mongo/util/signal_handlers.cpp
+    - src/mongo/util/signal_handlers.h
+    - src/mongo/util/signal_win32.cpp
+    - src/mongo/util/signal_win32.h
+    - src/mongo/util/stack_introspect.cpp
+    - src/mongo/util/stack_introspect.h
+    - src/mongo/util/stacktrace.cpp
+    - src/mongo/util/stacktrace.h
+    - src/mongo/util/startup_test.cpp
+    - src/mongo/util/startup_test.h
+    - src/mongo/util/string_map.h
+    - src/mongo/util/string_map_test.cpp
+    - src/mongo/util/stringutils.cpp
+    - src/mongo/util/stringutils.h
+    - src/mongo/util/stringutils_test.cpp
+    - src/mongo/util/tcmalloc_server_status_section.cpp
+    - src/mongo/util/text.cpp
+    - src/mongo/util/text.h
+    - src/mongo/util/text_startuptest.cpp
+    - src/mongo/util/text_test.cpp
+    - src/mongo/util/time_support.cpp
+    - src/mongo/util/time_support.h
+    - src/mongo/util/time_support_test.cpp
+    - src/mongo/util/timer-generic-inl.h
+    - src/mongo/util/timer-inl.h
+    - src/mongo/util/timer-posixclock-inl.h
+    - src/mongo/util/timer-win32-inl.h
+    - src/mongo/util/timer.cpp
+    - src/mongo/util/timer.h
+    - src/mongo/util/touch_pages.cpp
+    - src/mongo/util/touch_pages.h
+    - src/mongo/util/trace.h
+    - src/mongo/util/unordered_fast_key_table.h
+    - src/mongo/util/unordered_fast_key_table_internal.h
+    - src/mongo/util/util.cpp
+    - src/mongo/util/version.cpp
+    - src/mongo/util/version.h
+    - src/mongo/util/version_reporting.cpp
+    - src/mongo/util/version_reporting.h
+    - src/mongo/util/version_test.cpp
+    - src/mongo/util/winutil.h
+    - src/mongo/util/admin_access.h
+    - src/mongo/util/allocator.h
+    - src/mongo/util/array.h
+    - src/mongo/util/base64.cpp
+    - src/mongo/util/base64.h
+    - src/mongo/util/bson_util.h
+    - src/mongo/util/bufreader.h
+    - src/mongo/util/checksum.h
+    - src/mongo/util/compress.cpp
+    - src/mongo/util/compress.h
+    - src/mongo/util/concurrency/list.h
+    - src/mongo/util/concurrency/mapsf.h
+    - src/mongo/util/concurrency/msg.h
+    - src/mongo/util/concurrency/mutex.h
+    - src/mongo/util/concurrency/mutexdebugger.cpp
+    - src/mongo/util/concurrency/mutexdebugger.h
+    - src/mongo/util/concurrency/mvar.h
+    - src/mongo/util/concurrency/qlock.h
+    - src/mongo/util/concurrency/race.h
+    - src/mongo/util/concurrency/shared_mutex_win.hpp
+    - src/mongo/util/concurrency/simplerwlock.h
+    - src/mongo/util/concurrency/task.cpp
+    - src/mongo/util/concurrency/task.h
+    - src/mongo/util/concurrency/thread_pool.cpp
+    - src/mongo/util/concurrency/thread_pool.h
+    - src/mongo/util/concurrency/threadlocal.h
+    - src/mongo/util/concurrency/ticketholder.h
+    - src/mongo/util/concurrency/value.h
+    - src/mongo/util/descriptive_stats-inl.h
+    - src/mongo/util/descriptive_stats.h
+    - src/mongo/util/descriptive_stats_test.cpp
+    - src/mongo/util/embedded_builder.h
+    - src/mongo/util/exception_filter_win32.cpp
+    - src/mongo/util/exception_filter_win32.h
+    - src/mongo/util/exit_code.h
+    - src/mongo/util/gcov.h
+    - src/mongo/util/goodies.h
+    - src/mongo/util/hashtab.h
+    - src/mongo/util/heapcheck.h
+-   comments: '# Platform specific code? TODO: Verify this and document what they
+        are for.'
+    files:
+    - src/mongo/platform/atomic_intrinsics.h
+    - src/mongo/platform/atomic_intrinsics_gcc_generic.h
+    - src/mongo/platform/atomic_intrinsics_gcc_intel.h
+    - src/mongo/platform/atomic_intrinsics_win32.h
+    - src/mongo/platform/atomic_word.h
+    - src/mongo/platform/atomic_word_test.cpp
+    - src/mongo/platform/backtrace.cpp
+    - src/mongo/platform/backtrace.h
+    - src/mongo/platform/basic.h
+    - src/mongo/platform/bits.h
+    - src/mongo/platform/bits_test.cpp
+    - src/mongo/platform/compiler.h
+    - src/mongo/platform/compiler_gcc.h
+    - src/mongo/platform/compiler_msvc.h
+    - src/mongo/platform/cstdint.h
+    - src/mongo/platform/float_utils.h
+    - src/mongo/platform/hash_namespace.h
+    - src/mongo/platform/posix_fadvise.cpp
+    - src/mongo/platform/posix_fadvise.h
+    - src/mongo/platform/process_id.cpp
+    - src/mongo/platform/process_id.h
+    - src/mongo/platform/process_id_test.cpp
+    - src/mongo/platform/random.cpp
+    - src/mongo/platform/random.h
+    - src/mongo/platform/random_test.cpp
+    - src/mongo/platform/strcasestr.cpp
+    - src/mongo/platform/strcasestr.h
+    - src/mongo/platform/strtoll.h
+    - src/mongo/platform/unordered_map.h
+    - src/mongo/platform/unordered_set.h
+    - src/mongo/platform/windows_basic.h
+    - src/mongo/util/platform_init.cpp
+    - src/mongo/util/processinfo.cpp
+    - src/mongo/util/processinfo.h
+    - src/mongo/util/processinfo_darwin.cpp
+    - src/mongo/util/processinfo_test.cpp
+    - src/mongo/util/mongoutils/checksum.h
+    - src/mongo/util/mongoutils/hash.h
+    - src/mongo/util/mongoutils/html.h
+    - src/mongo/util/mongoutils/str.h
+title: utilities

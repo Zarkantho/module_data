@@ -1,0 +1,81 @@
+groups:
+-   comments: '# Check various expected startup conditions and log warnings to the
+        user if necessary## what uses these? everything? mongod/mongos only? what
+        sort of checks?'
+    files:
+    - src/mongo/db/startup_warnings.cpp
+    - src/mongo/db/startup_warnings.h
+-   comments: '# MONGO_INITIALIZER startup initialization framework.## what should
+        use these? any tool? mongod/mongos only?'
+    files:
+    - src/mongo/base/global_initializer.cpp
+    - src/mongo/base/global_initializer.h
+    - src/mongo/base/global_initializer_registerer.cpp
+    - src/mongo/base/global_initializer_registerer.h
+    - src/mongo/base/init.cpp
+    - src/mongo/base/init.h
+    - src/mongo/base/initializer.cpp
+    - src/mongo/base/initializer.h
+    - src/mongo/base/initializer_context.cpp
+    - src/mongo/base/initializer_context.h
+    - src/mongo/base/initializer_dependency_graph.cpp
+    - src/mongo/base/initializer_dependency_graph.h
+    - src/mongo/base/initializer_dependency_graph_test.cpp
+    - src/mongo/base/initializer_function.h
+    - src/mongo/base/initializer_test.cpp
+    - src/mongo/base/make_string_vector.cpp
+    - src/mongo/base/make_string_vector.h
+-   comments: '# Initialize the global state common to mongod and mongos, such as
+        logging.'
+    files:
+    - src/mongo/db/initialize_server_global_state.cpp
+    - src/mongo/db/initialize_server_global_state.h
+-   comments: '# Options parser library (command line and config files)## where do
+        the options get stored / how can people grab options later?## are they set
+        once and immutable or can they be updated?'
+    files:
+    - src/mongo/util/options_parser/constraints.cpp
+    - src/mongo/util/options_parser/constraints.h
+    - src/mongo/util/options_parser/environment.cpp
+    - src/mongo/util/options_parser/environment.h
+    - src/mongo/util/options_parser/environment_test.cpp
+    - src/mongo/util/options_parser/option_description.cpp
+    - src/mongo/util/options_parser/option_description.h
+    - src/mongo/util/options_parser/option_section.cpp
+    - src/mongo/util/options_parser/option_section.h
+    - src/mongo/util/options_parser/options_parser.cpp
+    - src/mongo/util/options_parser/options_parser.h
+    - src/mongo/util/options_parser/options_parser_init.cpp
+    - src/mongo/util/options_parser/options_parser_test.cpp
+    - src/mongo/util/options_parser/startup_option_init.cpp
+    - src/mongo/util/options_parser/startup_option_init.h
+    - src/mongo/util/options_parser/startup_options.cpp
+    - src/mongo/util/options_parser/startup_options.h
+    - src/mongo/util/options_parser/value.cpp
+    - src/mongo/util/options_parser/value.h
+-   comments: '# Command line utilities## can you say a bit more? (give an example?)'
+    files:
+    - src/mongo/util/cmdline_utils/censor_cmdline.cpp
+    - src/mongo/util/cmdline_utils/censor_cmdline.h
+    - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
+-   comments: '# Only used to ask user for password at startup. TODO: move into cmdline_utils
+        directory'
+    files:
+    - src/mongo/util/password.cpp
+    - src/mongo/util/password.h
+-   comments: '# Command line options shared between mongod and mongos## give an example
+        (--hostname?)'
+    files:
+    - src/mongo/db/server_options.cpp
+    - src/mongo/db/server_options.h
+    - src/mongo/db/server_options_helpers.cpp
+    - src/mongo/db/server_options_helpers.h
+    - src/mongo/db/server_options_test.cpp
+-   comments: '# ServerParameter class used to add new parameters to the "setParameter"
+        command. These can also be# configured to be runtime modifiable.'
+    files:
+    - src/mongo/db/server_parameters.cpp
+    - src/mongo/db/server_parameters.h
+    - src/mongo/db/server_parameters_inline.h
+    - src/mongo/db/server_parameters_test.cpp
+title: startup_initialization

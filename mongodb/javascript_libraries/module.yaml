@@ -1,0 +1,24 @@
+groups:
+-   comments: '# v8 Javascript library files'
+    files:
+    - src/mongo/scripting/engine.cpp
+    - src/mongo/scripting/engine.h
+    - src/mongo/scripting/engine_v8.cpp
+    - src/mongo/scripting/engine_v8.h
+    - src/mongo/scripting/utils.cpp
+    - src/mongo/scripting/v8_db.cpp
+    - src/mongo/scripting/v8_db.h
+    - src/mongo/scripting/v8_deadline_monitor.h
+    - src/mongo/scripting/v8_deadline_monitor_test.cpp
+    - src/mongo/scripting/v8_profiler.cpp
+    - src/mongo/scripting/v8_profiler.h
+    - src/mongo/scripting/v8_utils.cpp
+    - src/mongo/scripting/v8_utils.h
+-   comments: '# Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.'
+    files:
+    - src/mongo/scripting/bench.cpp
+    - src/mongo/scripting/bench.h
+    - src/mongo/scripting/bson_template_evaluator.cpp
+    - src/mongo/scripting/bson_template_evaluator.h
+    - src/mongo/scripting/bson_template_evaluator_test.cpp
+title: javascript_libraries

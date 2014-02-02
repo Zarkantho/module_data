@@ -6,28 +6,30 @@ import re
 import json
 import yaml
 
-def split_yaml_version(modules_directory, modules_description_filename):
+def read_modules_file(modules_description_filename):
 
     modules_description_file = open(modules_description_filename)
-
     result_map = yaml.load(modules_description_file)
+
+    return result_map
+
+def dump_module_files(modules_directory, result_map):
 
     for module_name in result_map.keys():
         module_directory = os.path.join(modules_directory, module_name)
         if not os.path.exists(module_directory):
             os.mkdir(module_directory)
-        module_json_file = open(os.path.join(module_directory, 'module.json'), 'w')
-        module_json_file.write(json.dumps(result_map[module_name], indent=4, separators=(',', ': '), sort_keys=True))
+        module_file = open(os.path.join(module_directory, 'module.yaml'), 'w')
+        module_file.write(yaml.dump(result_map[module_name], indent=4, default_flow_style=False))
 
     return result_map
 
-def dump_yaml_module_file(modules_directory, result_map):
+def dump_modules_file(modules_directory, result_map):
+
     with open(os.path.join(modules_directory, 'modules.yaml'), 'w') as f:
         f.write(yaml.dump(result_map, indent=4, default_flow_style=False))
 
-def dump_json_module_file(modules_directory, result_map):
-    with open(os.path.join(modules_directory, 'modules.json'), 'w') as f:
-        f.write(json.dumps(result_map, indent=4, separators=(',', ': '), sort_keys=True))
+    return result_map
 
 def main():
 
@@ -39,10 +41,9 @@ def main():
     modules_description_filename = sys.argv[2]
 
     result_map = {}
+    result_map = read_modules_file(modules_description_filename)
+    dump_module_files(modules_directory, result_map)
+    dump_modules_file(modules_directory, result_map)
 
-    result_map = split_yaml_version(modules_directory, modules_description_filename)
-
-    dump_yaml_module_file(modules_directory, result_map)
-    dump_json_module_file(modules_directory, result_map)
-
-main()
+if __name__ == '__main__':
+    main()
