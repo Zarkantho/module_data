@@ -1574,8 +1574,9 @@ uncategorized_system:
             files:
             - src/mongo/client/parallel.cpp
             - src/mongo/client/parallel.h
-        -   comments: '# Hookup of client to sasl authentication. Only built in when
-                user passes --use-sasl-client'
+        -   comments: '# Hookup of client to sasl authentication.  The real meat of built in when
+                user passes --use-sasl-client.  TODO: regenerate this data with --use-sasl-client
+                to show the rest of the sasl related client driver files'
             files:
             - src/mongo/client/sasl_client_authenticate.cpp
             - src/mongo/client/sasl_client_authenticate.h
