@@ -1618,6 +1618,7 @@ uncategorized_system:
             - src/mongo/db/commands/connection_status.cpp
             - src/mongo/db/commands/copydb.h
             - src/mongo/db/commands/copydb_common.cpp
+            - src/mongo/db/commands/create_indexes.cpp
             - src/mongo/db/commands/dbhash.cpp
             - src/mongo/db/commands/dbhash.h
             - src/mongo/db/commands/distinct.cpp
@@ -1630,6 +1631,9 @@ uncategorized_system:
             - src/mongo/db/commands/get_last_error.cpp
             - src/mongo/db/commands/group.cpp
             - src/mongo/db/commands/hashcmd.cpp
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/db/commands/index_filter_commands.h
+            - src/mongo/db/commands/index_filter_commands_test.cpp
             - src/mongo/db/commands/index_stats.cpp
             - src/mongo/db/commands/isself.cpp
             - src/mongo/db/commands/merge_chunks_cmd.cpp
@@ -1637,6 +1641,7 @@ uncategorized_system:
             - src/mongo/db/commands/mr.h
             - src/mongo/db/commands/mr_common.cpp
             - src/mongo/db/commands/oplog_note.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
             - src/mongo/db/commands/parameters.cpp
             - src/mongo/db/commands/pipeline_command.cpp
             - src/mongo/db/commands/plan_cache_commands.cpp
@@ -1658,9 +1663,9 @@ uncategorized_system:
             - src/mongo/db/dbcommands_admin.cpp
             - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/dbeval.cpp
+            - src/mongo/db/driverHelpers.cpp
             - src/mongo/s/commands_admin.cpp
             - src/mongo/s/commands_public.cpp
-            - src/mongo/db/driverHelpers.cpp
         -   comments: '# Commands + code for fsync of data files'
             files:
             - src/mongo/db/commands/fsync.cpp
@@ -4172,11 +4177,9 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslconf.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/bio.h
             - src/mongo/db/structure/catalog/hashtab.h
-            - src/mongo/db/commands/index_filter_commands.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509v3.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdh.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/err.h
-            - src/mongo/db/commands/create_indexes.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem.h
             - src/mongo/db/query/lru_key_value.h
             - src/mongo/db/structure/catalog/cap.cpp
@@ -4184,12 +4187,9 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/rsa.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dh.h
-            - src/mongo/db/commands/index_filter_commands.cpp
-            - src/mongo/db/commands/parallel_collection_scan.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/safestack.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
-            - src/mongo/db/commands/index_filter_commands_test.cpp
             - src/mongo/db/fts/fts_element_iterator.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
