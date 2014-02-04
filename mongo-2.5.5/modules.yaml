@@ -1670,8 +1670,6 @@ uncategorized_system:
             - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/dbeval.cpp
             - src/mongo/db/driverHelpers.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/commands_public.cpp
         -   comments: '# Commands + code for fsync of data files'
             files:
             - src/mongo/db/commands/fsync.cpp
@@ -2874,8 +2872,11 @@ uncategorized_system:
             - src/mongo/s/cluster_write.cpp
             - src/mongo/s/cluster_write.h
             - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
             - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/commands_public.cpp
             - src/mongo/s/config.cpp
             - src/mongo/s/config.h
             - src/mongo/s/config_server_checker_service.cpp
@@ -4165,7 +4166,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ec.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
             - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ebcdic.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pkcs7.h
             - src/mongo/db/fts/fts_element_iterator.cpp
