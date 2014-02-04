@@ -3,7 +3,7 @@ uncategorized_system:
     modules:
     -   description: 'TODO: aggregation_framework description'
         groups:
-        -   comments: '## should be a library ;(## who calls/owns this stuff?'
+        -   comments: 'Uncategorized aggregation files'
             files:
             - src/mongo/db/pipeline/accumulator.h
             - src/mongo/db/pipeline/accumulator_add_to_set.cpp
@@ -45,6 +45,12 @@ uncategorized_system:
             - src/mongo/db/pipeline/value.cpp
             - src/mongo/db/pipeline/value.h
             - src/mongo/db/pipeline/value_internal.h
+        -   comments: 'Code to track what information is needed in the aggregation
+                pipeline.  For example, for some queries only certain fields of the
+                document are actually needed'
+            files:
+            - src/mongo/db/pipeline/dependencies.cpp
+            - src/mongo/db/pipeline/dependencies.h
         -   comments: '# Generic interface for getting and merging sorted streams
                 of documents. Only used in aggregation.## +1 "only used in aggregation"
                 :)'
@@ -4163,7 +4169,6 @@ uncategorized_system:
             - src/mongo/db/query/lru_key_value_test.cpp
             - src/mongo/dbtests/query_stage_distinct.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/conf.h
-            - src/mongo/db/pipeline/dependencies.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dtls1.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/symhacks.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pqueue.h
@@ -4171,7 +4176,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/sha.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/comp.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509.h
-            - src/mongo/db/pipeline/dependencies.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/asn1.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/hmac.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslconf.h
