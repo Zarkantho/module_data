@@ -1492,6 +1492,15 @@ uncategorized_system:
         title: concurrency
     -   description: 'TODO: cpp_client_driver description'
         groups:
+        -   comments: '# Code to manage and store the current state of a connection to a
+                replica set.  It is designed to allow the state to be shared across
+                multiple threads so that each thread in our connection pool does not need
+                to make a network call to get the current replica set state'
+            files:
+            - src/mongo/client/replica_set_monitor_internal.h
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/client/replica_set_monitor.h
+            - src/mongo/client/replica_set_monitor_test.cpp
         -   comments: '# Stubs so that the client driver can build alone since our
                 deps are screwed up. We have symbols# that are required by shared
                 code that are very internal to the server, so if we didn''t have these#
@@ -2482,11 +2491,17 @@ uncategorized_system:
             - src/mongo/db/exec/collection_scan.cpp
             - src/mongo/db/exec/collection_scan.h
             - src/mongo/db/exec/collection_scan_common.h
+            - src/mongo/db/exec/count.cpp
+            - src/mongo/db/exec/count.h
+            - src/mongo/db/exec/distinct_scan.cpp
+            - src/mongo/db/exec/distinct_scan.h
             - src/mongo/db/exec/fetch.cpp
             - src/mongo/db/exec/fetch.h
             - src/mongo/db/exec/filter.h
             - src/mongo/db/exec/index_scan.cpp
             - src/mongo/db/exec/index_scan.h
+            - src/mongo/db/exec/keep_mutations.cpp
+            - src/mongo/db/exec/keep_mutations.h
             - src/mongo/db/exec/limit.cpp
             - src/mongo/db/exec/limit.h
             - src/mongo/db/exec/merge_sort.cpp
@@ -4111,11 +4126,9 @@ uncategorized_system:
     -   groups:
         -   comments: uncategorized group
             files:
-            - src/mongo/db/exec/keep_mutations.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/crypto.h
-            - src/mongo/client/replica_set_monitor_internal.h
             - src/mongo/tools/mongoadmin_options.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl3.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/srtp.h
@@ -4134,17 +4147,14 @@ uncategorized_system:
             - src/mongo/tools/mongoadmin_options_init.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
             - src/mongo/tools/admin.cpp
-            - src/mongo/db/exec/count.cpp
             - src/mongo/dbtests/query_stage_keep.cpp
             - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ebcdic.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pkcs7.h
             - src/mongo/db/fts/fts_element_iterator.cpp
-            - src/mongo/client/replica_set_monitor.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/tls1.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/e_os2.h
             - src/mongo/db/query/lru_key_value_test.cpp
-            - src/mongo/db/exec/keep_mutations.h
             - src/mongo/dbtests/query_stage_distinct.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/conf.h
             - src/mongo/db/pipeline/dependencies.cpp
@@ -4155,7 +4165,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/sha.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/comp.h
-            - src/mongo/db/exec/count.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509.h
             - src/mongo/db/pipeline/dependencies.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/asn1.h
@@ -4172,20 +4181,16 @@ uncategorized_system:
             - src/mongo/db/query/lru_key_value.h
             - src/mongo/db/structure/catalog/cap.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/buffer.h
-            - src/mongo/client/replica_set_monitor.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/rsa.h
-            - src/mongo/db/exec/distinct_scan.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dh.h
             - src/mongo/db/commands/index_filter_commands.cpp
             - src/mongo/db/commands/parallel_collection_scan.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/safestack.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
-            - src/mongo/db/exec/distinct_scan.cpp
             - src/mongo/db/commands/index_filter_commands_test.cpp
             - src/mongo/db/fts/fts_element_iterator.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
-            - src/mongo/client/replica_set_monitor_test.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
         name: uncategorized_module
