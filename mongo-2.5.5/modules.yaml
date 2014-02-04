@@ -3196,6 +3196,7 @@ uncategorized_system:
                 to get the name of the tool the file# is for. For example, "bridge.cpp"
                 is the main for "mongobridge".'
             files:
+            - src/mongo/tools/admin.cpp
             - src/mongo/tools/bridge.cpp
             - src/mongo/tools/bsondump.cpp
             - src/mongo/tools/bsondump_options.cpp
@@ -3205,6 +3206,9 @@ uncategorized_system:
             - src/mongo/tools/export.cpp
             - src/mongo/tools/files.cpp
             - src/mongo/tools/import.cpp
+            - src/mongo/tools/mongoadmin_options.cpp
+            - src/mongo/tools/mongoadmin_options.h
+            - src/mongo/tools/mongoadmin_options_init.cpp
             - src/mongo/tools/mongobridge_options.cpp
             - src/mongo/tools/mongobridge_options.h
             - src/mongo/tools/mongobridge_options_init.cpp
@@ -4129,7 +4133,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/crypto.h
-            - src/mongo/tools/mongoadmin_options.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl3.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/srtp.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl23.h
@@ -4144,9 +4147,7 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/kssl.h
             - src/mongo/db/catalog/collection_cursor_cache.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ec.h
-            - src/mongo/tools/mongoadmin_options_init.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
-            - src/mongo/tools/admin.cpp
             - src/mongo/dbtests/query_stage_keep.cpp
             - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ebcdic.h
@@ -4161,7 +4162,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dtls1.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/symhacks.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pqueue.h
-            - src/mongo/tools/mongoadmin_options.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/sha.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/comp.h
