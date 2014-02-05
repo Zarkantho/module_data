@@ -4204,7 +4204,7 @@ uncategorized_system:
         name: yaml
         title: yaml
     -   groups:
-        -   comments: uncategorized group
+        -   comments: 'Headers for the SSL build'
             files:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
@@ -4249,4 +4249,4 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
-        name: uncategorized_module
+        name: ssl_headers
