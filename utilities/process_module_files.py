@@ -41,12 +41,12 @@ def dump_modules_file(base_directory, result_map):
 
 def main():
 
-    if len(sys.argv) != 3:
-        print("Usage: process_module_files.py <modules_directory> <modules_description_file>")
+    if len(sys.argv) != 2:
+        print("Usage: process_module_files.py <modules_directory>")
         sys.exit(1)
 
     modules_directory = sys.argv[1]
-    modules_description_filename = sys.argv[2]
+    modules_description_filename = os.path.join(modules_directory, 'modules.yaml')
 
     result_map = {}
     result_map = read_modules_file(modules_description_filename)
