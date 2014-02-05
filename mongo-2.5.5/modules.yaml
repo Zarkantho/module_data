@@ -3151,6 +3151,8 @@ uncategorized_system:
             files:
             - src/mongo/db/catalog/collection.cpp
             - src/mongo/db/catalog/collection.h
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.h
             - src/mongo/db/catalog/collection_info_cache.cpp
             - src/mongo/db/catalog/collection_info_cache.h
             - src/mongo/db/catalog/database.cpp
@@ -3173,6 +3175,8 @@ uncategorized_system:
             - src/mongo/db/structure/btree/btreebuilder.h
             - src/mongo/db/structure/btree/key.cpp
             - src/mongo/db/structure/btree/key.h
+            - src/mongo/db/structure/catalog/cap.cpp
+            - src/mongo/db/structure/catalog/hashtab.h
             - src/mongo/db/structure/catalog/index_details.cpp
             - src/mongo/db/structure/catalog/index_details.h
             - src/mongo/db/structure/catalog/namespace-inl.h
@@ -4202,7 +4206,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl3.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/srtp.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl23.h
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
             - src/mongo/db/fts/fts_element_iterator_test.cpp
             - src/mongo/db/fts/fts_spec_legacy.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdsa.h
@@ -4211,7 +4214,6 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/obj_mac.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/bn.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/kssl.h
-            - src/mongo/db/catalog/collection_cursor_cache.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ec.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
             - src/mongo/dbtests/query_stage_keep.cpp
@@ -4233,12 +4235,10 @@ uncategorized_system:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/hmac.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslconf.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/bio.h
-            - src/mongo/db/structure/catalog/hashtab.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509v3.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdh.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/err.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem.h
-            - src/mongo/db/structure/catalog/cap.cpp
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/buffer.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl2.h
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/rsa.h
