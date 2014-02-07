@@ -10,7 +10,7 @@ import json
 import os
 import re
 
-from data_access import read_project_structure_file, load_willitlink_graph, output_detailed_module_data
+from data_access import read_project_structure_file, load_willitlink_graph, write_processed_project_structure_file
 from readme_generator import output_readme_files_for_systems, output_readme_files_for_modules
 
 import willitlink
@@ -106,7 +106,7 @@ def main():
 
     add_willitlink_data(graph, project_data)
 
-    output_detailed_module_data(base_directory, project_data)
+    write_processed_project_structure_file(base_directory, project_data)
     output_readme_files_for_systems(base_directory, project_data)
     output_readme_files_for_modules(base_directory, project_data)
 

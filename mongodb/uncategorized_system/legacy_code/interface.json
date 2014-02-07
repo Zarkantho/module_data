@@ -1,9 +1,0 @@
-[
-    {
-        "symbol": "mongo::d", 
-        "object": "src/mongo/db/d_globals.cpp", 
-        "used_by": [
-            "src/mongo/db/db.cpp"
-        ]
-    }
-]

@@ -66,24 +66,3 @@ def dump_module_files(project_directory, result_map):
             module_file.write(yaml.dump(module_object, indent=4, default_flow_style=False))
 
     return result_map
-
-
-
-def output_detailed_module_data(project_directory, project_data):
-    for system_name in project_data.keys():
-        modules_directory = os.path.join(project_directory, system_name)
-        for module_object in project_data[system_name]['modules']:
-            if os.path.isdir(os.path.join(modules_directory, module_object['name'])):
-                # Put data about the interface
-                f = open(os.path.join(modules_directory, module_object['name'], "interface.json"), 'w')
-                f.truncate()
-                f.write(json.dumps(module_object['interface'], indent=4))
-                # Put data about the leaks
-                f = open(os.path.join(modules_directory, module_object['name'], "leaks.json"), 'w')
-                f.truncate()
-                f.write(json.dumps(module_object['leaks'], indent=4))
-                # Put data about the files_with_exec
-                f = open(os.path.join(modules_directory, module_object['name'], "files_with_exec.json"), 'w')
-                f.truncate()
-                f.write(json.dumps(module_object['files_with_exec'], indent=4))
-
