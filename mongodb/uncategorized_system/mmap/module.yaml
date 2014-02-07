@@ -1,9 +1,429 @@
 description: 'TODO: mmap description'
+files_flat:
+- src/mongo/util/mmap.cpp
+- src/mongo/util/mmap.h
+- src/mongo/util/mmap_posix.cpp
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/mmap.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/mmap.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/mmap_posix.cpp
 groups:
 -   comments: '# mmap library (only depends on file allocation library)'
     files:
     - src/mongo/util/mmap.cpp
     - src/mongo/util/mmap.h
     - src/mongo/util/mmap_posix.cpp
+interface:
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::LockMongoFilesShared::mmmutex'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::getAllFiles()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::totalMappedLength()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::LockMongoFilesShared::era'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::flushAll(bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::notifyPostFlush'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::mapWithOptions(char const*,
+        int)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::notifyPreFlush'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFile::closeAllFiles(std::basic_stringstream<char,
+        std::char_traits<char>, std::allocator<char> >&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MongoFileFinder::findByPath(std::string const&)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::map(char const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::prepareFlush()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::close()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::createPrivateMap()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'vtable for mongo::MemoryMappedFile'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::MemoryMappedFile'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::map(char const*, unsigned long
+        long&, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::flush(bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::remapPrivateView(void*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::g_minOSPageSizeBytes'
+    used_by:
+    - !!python/unicode 'src/mongo/util/touch_pages.cpp'
+    - !!python/unicode 'src/mongo/db/prefetch.cpp'
+    - !!python/unicode 'src/mongo/util/logfile.cpp'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    symbol: !!python/unicode 'mongo::MemoryMappedFile::MemoryMappedFile()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::supported()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
+    symbol: !!python/unicode 'mongo::ProgressMeter::reset(unsigned long long, int,
+        int)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::getcurns'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+        void*, bool)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
+    symbol: !!python/unicode 'mongo::ProgressMeter::hit(int)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::~ProcessInfo()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::file_size(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/platform/process_id.cpp'
+    symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
+        const&, boost::filesystem3::path const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::getVirtualMemorySize()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::getResidentSize()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/mmap.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::get()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::getcurns'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+        void*, bool)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::allocateAsap(std::string const&,
+        unsigned long long&)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
 name: mmap
 title: mmap

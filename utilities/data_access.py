@@ -49,20 +49,3 @@ def get_willitlink_data_directory(project_data_directory):
 
 def load_willitlink_graph(project_data_directory):
     return MultiGraph(timers=False).load(get_willitlink_data_directory(project_data_directory))
-
-
-
-def dump_module_files(project_directory, result_map):
-
-    for system_name in result_map.keys():
-        system_directory = os.path.join(project_directory, system_name)
-        if not os.path.exists(system_directory):
-            os.mkdir(system_directory)
-        for module_object in result_map[system_name]['modules']:
-            module_directory = os.path.join(system_directory, module_object['name'])
-            if not os.path.exists(module_directory):
-                os.mkdir(module_directory)
-            module_file = open(os.path.join(module_directory, 'module.yaml'), 'w')
-            module_file.write(yaml.dump(module_object, indent=4, default_flow_style=False))
-
-    return result_map

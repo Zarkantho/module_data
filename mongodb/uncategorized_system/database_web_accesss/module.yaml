@@ -1,4 +1,80 @@
 description: 'TODO: database_web_accesss description'
+files_flat:
+- src/mongo/db/dbwebserver.cpp
+- src/mongo/db/dbwebserver.h
+- src/mongo/db/restapi.cpp
+- src/mongo/db/restapi.h
+- src/mongo/db/clientlistplugin.cpp
+- src/mongo/util/net/miniwebserver.cpp
+- src/mongo/util/net/miniwebserver.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/db/dbwebserver.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/dbwebserver.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/restapi.cpp
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/restapi.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/clientlistplugin.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/miniwebserver.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/miniwebserver.h
 groups:
 -   comments: '# Web access to the database, including rest, jsonp, and http.'
     files:
@@ -9,5 +85,570 @@ groups:
     - src/mongo/db/clientlistplugin.cpp
     - src/mongo/util/net/miniwebserver.cpp
     - src/mongo/util/net/miniwebserver.h
+interface:
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    symbol: !!python/unicode 'mongo::webServerThread(mongo::AdminAccess const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    symbol: !!python/unicode 'mongo::DbWebHandler::DbWebHandler(std::string const&,
+        double, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/replset_web_handler.cpp'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    symbol: !!python/unicode 'mongo::WebStatusPlugin::WebStatusPlugin(std::string
+        const&, double, std::string const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/stats/snapshots_webplugins.cpp'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    symbol: !!python/unicode 'vtable for mongo::RestAdminAccess'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/md5.cpp'
+    symbol: !!python/unicode '_md5_append'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::grantInternalAuthorization()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::Arg::parse_string(char const*, int, void*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/md5.cpp'
+    symbol: !!python/unicode '_md5_finish'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/md5.cpp'
+    symbol: !!python/unicode '_md5_init'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationManager::releaseUser(mongo::User*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::jsonString(mongo::JsonStringFormat,
+        int) const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::shutdown()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::getAuthorizationManager()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp'
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp'
+    symbol: !!python/unicode 'mongo::sysInfo()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::addAndAuthorizeUser(mongo::UserName
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::prettyHostName()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/user.cpp'
+    symbol: !!python/unicode 'mongo::User::getCredentials() const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::_commandsByBestName'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
+    symbol: !!python/unicode 'mongo::openSSLVersion(std::string const&, std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::~Listener()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::no_arg'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    symbol: !!python/unicode 'mongo::RamLog::get(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::initAndListen()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    symbol: !!python/unicode 'mongo::RamLog::toHTML(std::basic_stringstream<char,
+        std::char_traits<char>, std::allocator<char> >&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
+        const*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::acceptedMP(mongo::MessagingPort*)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::setupSockets()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::SockAddr::isLocalHost() const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::htmlHelp(std::basic_stringstream<char,
+        std::char_traits<char>, std::allocator<char> >&) const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version.cpp'
+    symbol: !!python/unicode 'mongo::mongodVersion()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Command::execCommand(mongo::Command*, mongo::Client&,
+        int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp'
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/client_build/mongo/buildinfo.cpp'
+    symbol: !!python/unicode 'mongo::gitVersion()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationManager::acquireUser(mongo::UserName
+        const&, mongo::User**)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::findCommand(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::~RE()'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::Consume(pcrecpp::StringPiece*, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&) const'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::_webCommands'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/user_name.cpp'
+    symbol: !!python/unicode 'mongo::UserName::UserName(mongo::StringData const&,
+        mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+-   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    symbol: !!python/unicode 'mongo::replAllDead'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundOperation::dump(std::basic_stringstream<char,
+        std::char_traits<char>, std::allocator<char> >&)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBClientWithCommands'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::jsonString(mongo::JsonStringFormat,
+        int) const'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::getAuthorizationManager()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBDirectClient'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
+    symbol: !!python/unicode 'mongo::replSettings'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'mongo::DBClientBase::ConnectionIdSequence'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    symbol: !!python/unicode 'mongo::dbHolderUnchecked()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBClientBase'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationManager::hasAnyPrivilegeDocuments()
+        const'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::replSet'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    symbol: !!python/unicode 'mongo::ClientCursor::clientCursorsById'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    symbol: !!python/unicode 'mongo::replInfo'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'mongo::DBDirectClient::query(std::string const&, mongo::Query,
+        int, int, mongo::BSONObj const*, int, int)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::readlocktry::readlocktry(int)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'mongo::DBClientBase::insert(std::string const&, mongo::BSONObj,
+        int)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/json.cpp'
+    symbol: !!python/unicode 'mongo::fromjson(char const*, int*)'
+-   object: !!python/unicode 'src/mongo/db/restapi.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::readlocktry::~readlocktry()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::CachedBSONObj::_tooBig'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
+    symbol: !!python/unicode 'mongo::ProgressMeter::toString() const'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::ensureStarted()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/string_data.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::clients'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::reportState()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::clientsMutex'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::Listener(std::string const&, std::string
+        const&, int, bool)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::Listener'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::~Listener()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::no_arg'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::Arg::parse_string(char const*, int, void*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::SocketException'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::unsafe_recv(char*, int)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::close()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::Consume(pcrecpp::StringPiece*, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&) const'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::setTimeout(double)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::doSSLHandshake(char const*, int)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
+        const*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::send(char const*, int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::acceptedMP(mongo::MessagingPort*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::~RE()'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
 name: database_web_accesss
 title: database_web_accesss

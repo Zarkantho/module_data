@@ -88,6 +88,7 @@ def add_executable_data(graph, project_data):
                 module_object['files_with_exec'].append({ "name" : source_file, "execs" : executable_list })
 
 def add_willitlink_data(graph, project_data):
+    add_files_list(project_data)
     add_interface_data(graph, project_data)
     add_leak_data(graph, project_data)
     add_executable_data(graph, project_data)
@@ -101,7 +102,6 @@ def main():
     base_directory = sys.argv[1]
 
     project_data = read_project_structure_file(base_directory)
-    add_files_list(project_data)
     graph = load_willitlink_graph(base_directory)
 
     add_willitlink_data(graph, project_data)
