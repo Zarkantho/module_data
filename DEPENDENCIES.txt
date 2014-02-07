@@ -1,3 +1,0 @@
-This depends on PyYAML:
-
-wget https://pypi.python.org/packages/source/P/PyYAML/PyYAML-3.10.tar.gz#md5=74c94a383886519e9e7b3dd1ee540247
