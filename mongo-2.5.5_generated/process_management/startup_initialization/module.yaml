@@ -1,0 +1,3235 @@
+description: 'TODO: startup_initialization description'
+files_flat:
+- src/mongo/db/startup_warnings.cpp
+- src/mongo/db/startup_warnings.h
+- src/mongo/base/global_initializer.cpp
+- src/mongo/base/global_initializer.h
+- src/mongo/base/global_initializer_registerer.cpp
+- src/mongo/base/global_initializer_registerer.h
+- src/mongo/base/init.cpp
+- src/mongo/base/init.h
+- src/mongo/base/initializer.cpp
+- src/mongo/base/initializer.h
+- src/mongo/base/initializer_context.cpp
+- src/mongo/base/initializer_context.h
+- src/mongo/base/initializer_dependency_graph.cpp
+- src/mongo/base/initializer_dependency_graph.h
+- src/mongo/base/initializer_dependency_graph_test.cpp
+- src/mongo/base/initializer_function.h
+- src/mongo/base/initializer_test.cpp
+- src/mongo/base/make_string_vector.cpp
+- src/mongo/base/make_string_vector.h
+- src/mongo/db/initialize_server_global_state.cpp
+- src/mongo/db/initialize_server_global_state.h
+- src/mongo/util/options_parser/constraints.cpp
+- src/mongo/util/options_parser/constraints.h
+- src/mongo/util/options_parser/environment.cpp
+- src/mongo/util/options_parser/environment.h
+- src/mongo/util/options_parser/environment_test.cpp
+- src/mongo/util/options_parser/option_description.cpp
+- src/mongo/util/options_parser/option_description.h
+- src/mongo/util/options_parser/option_section.cpp
+- src/mongo/util/options_parser/option_section.h
+- src/mongo/util/options_parser/options_parser.cpp
+- src/mongo/util/options_parser/options_parser.h
+- src/mongo/util/options_parser/options_parser_init.cpp
+- src/mongo/util/options_parser/options_parser_test.cpp
+- src/mongo/util/options_parser/startup_option_init.cpp
+- src/mongo/util/options_parser/startup_option_init.h
+- src/mongo/util/options_parser/startup_options.cpp
+- src/mongo/util/options_parser/startup_options.h
+- src/mongo/util/options_parser/value.cpp
+- src/mongo/util/options_parser/value.h
+- src/mongo/util/cmdline_utils/censor_cmdline.cpp
+- src/mongo/util/cmdline_utils/censor_cmdline.h
+- src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
+- src/mongo/util/password.cpp
+- src/mongo/util/password.h
+- src/mongo/db/server_options.cpp
+- src/mongo/db/server_options.h
+- src/mongo/db/server_options_helpers.cpp
+- src/mongo/db/server_options_helpers.h
+- src/mongo/db/server_options_test.cpp
+- src/mongo/db/server_parameters.cpp
+- src/mongo/db/server_parameters.h
+- src/mongo/db/server_parameters_inline.h
+- src/mongo/db/server_parameters_test.cpp
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/startup_warnings.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/startup_warnings.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/global_initializer.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/base/global_initializer.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/global_initializer_registerer.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/base/global_initializer_registerer.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/init.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/base/init.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer_context.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer_context.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer_dependency_graph.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer_dependency_graph.h
+-   execs: []
+    name: src/mongo/base/initializer_dependency_graph_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/initializer_function.h
+-   execs: []
+    name: src/mongo/base/initializer_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/base/make_string_vector.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/base/make_string_vector.h
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/db/initialize_server_global_state.cpp
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/db/initialize_server_global_state.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/constraints.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/constraints.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/environment.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/environment.h
+-   execs: []
+    name: src/mongo/util/options_parser/environment_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/option_description.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/option_description.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/option_section.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/option_section.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/options_parser.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/options_parser.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/util/options_parser/options_parser_init.cpp
+-   execs: []
+    name: src/mongo/util/options_parser/options_parser_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/startup_option_init.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/startup_option_init.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/startup_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/startup_options.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/value.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/options_parser/value.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/cmdline_utils/censor_cmdline.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/cmdline_utils/censor_cmdline.h
+-   execs: []
+    name: src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/password.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/password.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_options.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_options_helpers.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_options_helpers.h
+-   execs: []
+    name: src/mongo/db/server_options_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_parameters.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_parameters.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/server_parameters_inline.h
+-   execs: []
+    name: src/mongo/db/server_parameters_test.cpp
+groups:
+-   comments: '# Check various expected startup conditions and log warnings to the
+        user if necessary## what uses these? everything? mongod/mongos only? what
+        sort of checks?'
+    files:
+    - src/mongo/db/startup_warnings.cpp
+    - src/mongo/db/startup_warnings.h
+-   comments: '# MONGO_INITIALIZER startup initialization framework.## what should
+        use these? any tool? mongod/mongos only?'
+    files:
+    - src/mongo/base/global_initializer.cpp
+    - src/mongo/base/global_initializer.h
+    - src/mongo/base/global_initializer_registerer.cpp
+    - src/mongo/base/global_initializer_registerer.h
+    - src/mongo/base/init.cpp
+    - src/mongo/base/init.h
+    - src/mongo/base/initializer.cpp
+    - src/mongo/base/initializer.h
+    - src/mongo/base/initializer_context.cpp
+    - src/mongo/base/initializer_context.h
+    - src/mongo/base/initializer_dependency_graph.cpp
+    - src/mongo/base/initializer_dependency_graph.h
+    - src/mongo/base/initializer_dependency_graph_test.cpp
+    - src/mongo/base/initializer_function.h
+    - src/mongo/base/initializer_test.cpp
+    - src/mongo/base/make_string_vector.cpp
+    - src/mongo/base/make_string_vector.h
+-   comments: '# Initialize the global state common to mongod and mongos, such as
+        logging.'
+    files:
+    - src/mongo/db/initialize_server_global_state.cpp
+    - src/mongo/db/initialize_server_global_state.h
+-   comments: '# Options parser library (command line and config files)## where do
+        the options get stored / how can people grab options later?## are they set
+        once and immutable or can they be updated?'
+    files:
+    - src/mongo/util/options_parser/constraints.cpp
+    - src/mongo/util/options_parser/constraints.h
+    - src/mongo/util/options_parser/environment.cpp
+    - src/mongo/util/options_parser/environment.h
+    - src/mongo/util/options_parser/environment_test.cpp
+    - src/mongo/util/options_parser/option_description.cpp
+    - src/mongo/util/options_parser/option_description.h
+    - src/mongo/util/options_parser/option_section.cpp
+    - src/mongo/util/options_parser/option_section.h
+    - src/mongo/util/options_parser/options_parser.cpp
+    - src/mongo/util/options_parser/options_parser.h
+    - src/mongo/util/options_parser/options_parser_init.cpp
+    - src/mongo/util/options_parser/options_parser_test.cpp
+    - src/mongo/util/options_parser/startup_option_init.cpp
+    - src/mongo/util/options_parser/startup_option_init.h
+    - src/mongo/util/options_parser/startup_options.cpp
+    - src/mongo/util/options_parser/startup_options.h
+    - src/mongo/util/options_parser/value.cpp
+    - src/mongo/util/options_parser/value.h
+-   comments: '# Command line utilities## can you say a bit more? (give an example?)'
+    files:
+    - src/mongo/util/cmdline_utils/censor_cmdline.cpp
+    - src/mongo/util/cmdline_utils/censor_cmdline.h
+    - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
+-   comments: '# Only used to ask user for password at startup. TODO: move into cmdline_utils
+        directory'
+    files:
+    - src/mongo/util/password.cpp
+    - src/mongo/util/password.h
+-   comments: '# Command line options shared between mongod and mongos## give an example
+        (--hostname?)'
+    files:
+    - src/mongo/db/server_options.cpp
+    - src/mongo/db/server_options.h
+    - src/mongo/db/server_options_helpers.cpp
+    - src/mongo/db/server_options_helpers.h
+    - src/mongo/db/server_options_test.cpp
+-   comments: '# ServerParameter class used to add new parameters to the "setParameter"
+        command. These can also be# configured to be runtime modifiable.'
+    files:
+    - src/mongo/db/server_parameters.cpp
+    - src/mongo/db/server_parameters.h
+    - src/mongo/db/server_parameters_inline.h
+    - src/mongo/db/server_parameters_test.cpp
+interface:
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    symbol: !!python/unicode 'mongo::logStartupWarnings()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+-   object: !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
+    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
+    - !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
+    - !!python/unicode 'src/mongo/db/commands/index_filter_commands.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    - !!python/unicode 'src/third_party/s2/s2regioncoverer.cc'
+    - !!python/unicode 'src/mongo/db/commands/fail_point_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options_init.cpp'
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    - !!python/unicode 'src/mongo/db/matcher/expression_parser_text.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
+    - !!python/unicode 'src/mongo/tools/tool_logger.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/commands/merge_chunks_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/commands/hashcmd.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options_init.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
+    - !!python/unicode 'src/mongo/util/processinfo.cpp'
+    - !!python/unicode 'src/mongo/util/fail_point_service.cpp'
+    - !!python/unicode 'src/mongo/db/ops/modifier_table.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options_init.cpp'
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    - !!python/unicode 'src/mongo/db/range_deleter_service.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_merge_chunks_cmd.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_index_filter_cmd.cpp'
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/matcher/expression_parser_geo.cpp'
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/cleanup_orphaned_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    - !!python/unicode 'src/mongo/db/exec/fetch.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_conn_registry.cpp'
+    - !!python/unicode 'src/mongo/db/structure/btree/btree_stats.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    - !!python/unicode 'src/third_party/s2/s2cellid.cc'
+    - !!python/unicode 'src/mongo/db/matcher/expression_where.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/expression.cpp'
+    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
+    - !!python/unicode 'src/mongo/s/grid.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options_init.cpp'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    symbol: !!python/unicode 'mongo::runGlobalInitializersOrDie(int, char const* const*,
+        char const* const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/unittest/unittest_main.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/tools/tool.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+    - !!python/unicode 'src/mongo/dbtests/dbtests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perf/perftest.cpp'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    symbol: !!python/unicode 'mongo::runGlobalInitializers(int, char const* const*,
+        char const* const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/index_filter_commands.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fail_point_cmd.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options_init.cpp'
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    - !!python/unicode 'src/mongo/tools/tool_logger.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_merge_chunks_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/commands/cleanup_orphaned_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
+    - !!python/unicode 'src/mongo/db/structure/btree/btree_stats.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/matcher/expression_where.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_index_filter_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/commands/merge_chunks_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
+    - !!python/unicode 'src/mongo/util/processinfo.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/range_deleter_service.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/matcher/expression_parser_geo.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/expression.cpp'
+    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
+    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
+    - !!python/unicode 'src/third_party/s2/s2regioncoverer.cc'
+    - !!python/unicode 'src/mongo/db/matcher/expression_parser_text.cpp'
+    - !!python/unicode 'src/mongo/db/commands/hashcmd.cpp'
+    - !!python/unicode 'src/mongo/util/fail_point_service.cpp'
+    - !!python/unicode 'src/mongo/db/ops/modifier_table.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    - !!python/unicode 'src/third_party/s2/s2cellid.cc'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/exec/fetch.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
+    - !!python/unicode 'src/mongo/s/grid.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_conn_registry.cpp'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    symbol: !!python/unicode 'mongo::signalForkSuccess()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    symbol: !!python/unicode 'mongo::initializeServerGlobalState()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    symbol: !!python/unicode 'mongo::forkServerOrDie()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    symbol: !!python/unicode 'mongo::setupCoreSignals()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
+        const&) const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
+        const&) const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Environment::validate()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongodump_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options_init.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options_init.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options_init.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::hidden()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::requires(std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::format(std::string
+        const&, std::string const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::incompatibleWith(std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::validRange(long,
+        long)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::positional(int,
+        int)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addOptionChaining(std::string
+        const&, std::string const&, mongo::optionenvironment::OptionType, std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::helpString()
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::startupOptionsParsed'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongodump_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options_init.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options_init.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options_init.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options_init.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options_init.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongooplog_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongodump_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoexport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongorestore_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/bsondump_options_init.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongostat_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoadmin_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongotop_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongoimport_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/tools/mongooplog_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
+    - !!python/unicode 'src/mongo/tools/mongofiles_options_init.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::vector<std::string,
+        std::allocator<std::string> >*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(double*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::string*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(unsigned int*)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(long*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(bool*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/mongoexport_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(unsigned long long*)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(int*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
+    - !!python/unicode 'src/mongo/tools/mongobridge_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    symbol: !!python/unicode 'mongo::cmdline_utils::censorArgvArray(int, char**)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/util/password.cpp'
+    symbol: !!python/unicode 'mongo::askPassword()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/authentication_commands.cpp'
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    - !!python/unicode 'src/mongo/db/dbmessage.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/db/introspect.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
+    - !!python/unicode 'src/mongo/db/query/new_find.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/db/stats/snapshots.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/client/dbclient_rs.cpp'
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    - !!python/unicode 'src/mongo/db/commands/validate.cpp'
+    - !!python/unicode 'src/mongo/db/range_deleter_db_env.cpp'
+    - !!python/unicode 'src/mongo/s/version_mongos.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/s/balance.cpp'
+    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
+    - !!python/unicode 'src/mongo/db/repl/health.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/isself.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
+    - !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    - !!python/unicode 'src/mongo/s/distlock.cpp'
+    - !!python/unicode 'src/mongo/db/dbeval.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    - !!python/unicode 'src/mongo/db/auth/security_key.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    symbol: !!python/unicode 'mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    symbol: !!python/unicode 'mongo::storeServerOptions(mongo::optionenvironment::Environment
+        const&, std::vector<std::string, std::allocator<std::string> > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    symbol: !!python/unicode 'mongo::printCommandLineOpts()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    symbol: !!python/unicode 'mongo::isMongos()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/extsort.cpp'
+    - !!python/unicode 'src/mongo/s/grid.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+        std::string const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::~ServerParameter()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    - !!python/unicode 'src/mongo/db/query/qlog.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+        std::string const&, bool, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    - !!python/unicode 'src/mongo/db/query/qlog.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::ServerParameter'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    - !!python/unicode 'src/mongo/db/query/qlog.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ExportedServerParameter<bool>::setFromString(std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    - !!python/unicode 'src/mongo/db/query/qlog.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ExportedServerParameter<int>::setFromString(std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ExportedServerParameter<double>::setFromString(std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameterSet::getGlobal()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
+    - !!python/unicode 'src/mongo/db/auth/auth_server_parameters.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    - !!python/unicode 'src/mongo/db/query/qlog.cpp'
+    - !!python/unicode 'src/mongo/db/server_extra_log_context.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::blockCheckSupported()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version.cpp'
+    symbol: !!python/unicode 'mongo::versionString'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::startupWarningsLog'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/startup_warnings.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::convertExceptionCode(int)'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/base/initializer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::ErrorCodes::Error)
+        const'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_dependency_graph_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::ErrorCodes::Error)
+        const'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/base/initializer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/console.cpp'
+    symbol: !!python/unicode 'mongo::Console::Console()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/sasl_client_authenticate.cpp'
+    symbol: !!python/unicode 'mongo::saslCommandUserFieldName'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/rotatable_file_writer.cpp'
+    symbol: !!python/unicode 'mongo::logger::RotatableFileWriter::Use::Use(mongo::logger::RotatableFileWriter*)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::globalTicketHolder'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/message_log_domain.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::attachAppender(std::auto_ptr<mongo::logger::Appender<mongo::logger::MessageEventEphemeral>
+        >)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo.cpp'
+    symbol: !!python/unicode 'mongo::writePidFile(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    symbol: !!python/unicode 'mongo::RamLogAppender::RamLogAppender(mongo::RamLog*)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/console.cpp'
+    symbol: !!python/unicode 'mongo::Console::out()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/platform/process_id.cpp'
+    symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/ramlog.cpp'
+    symbol: !!python/unicode 'mongo::RamLog::get(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/rotatable_file_manager.cpp'
+    symbol: !!python/unicode 'mongo::logger::RotatableFileManager::openFile(std::string
+        const&, bool)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    symbol: !!python/unicode 'mongo::getSSLManager()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalRotatableFileManager()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/log_manager.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogManager::getNamedDomain(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/security_key.cpp'
+    symbol: !!python/unicode 'mongo::setInternalUserAuthParams(mongo::BSONObj)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/rotatable_file_writer.cpp'
+    symbol: !!python/unicode 'mongo::logger::RotatableFileWriter::Use::status()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::terseCurrentTime(bool)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
+        const&, boost::filesystem3::path const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/message_event_utf8_encoder.cpp'
+    symbol: !!python/unicode 'vtable for mongo::logger::MessageEventWithContextEncoder'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/message_log_domain.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::clearAppenders()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/security_key.cpp'
+    symbol: !!python/unicode 'mongo::setUpSecurityKey(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/sasl_client_authenticate.cpp'
+    symbol: !!python/unicode 'mongo::saslCommandUserDBFieldName'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
+    symbol: !!python/unicode 'mongo::getGlobalAuthorizationManager()'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationManager::setAuthEnabled(bool)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/message_event_utf8_encoder.cpp'
+    symbol: !!python/unicode 'vtable for mongo::logger::MessageEventDetailsEncoder'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/sasl_client_authenticate.cpp'
+    symbol: !!python/unicode 'mongo::saslCommandMechanismFieldName'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::FullMatch(pcrecpp::StringPiece const&,
+        pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+        const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::no_arg'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
+        const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::ErrorCodes::Error)
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
+    symbol: !!python/unicode 'pcrecpp::RE::~RE()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/constraints.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::demangleName(std::type_info const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/environment_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'vtable for boost::program_options::validation_error'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::validation_error::validation_error(boost::program_options::validation_error::kind_t,
+        std::string const&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::add_options()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'typeinfo for boost::program_options::validation_error'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::validate(boost::any&, std::vector<std::string,
+        std::allocator<std::string> > const&, bool*, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::validators::check_first_occurrence(boost::any
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'vtable for boost::program_options::value_semantic_codecvt_helper<char>'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::options_description(std::string
+        const&, unsigned int, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::operator<<(std::ostream&, boost::program_options::options_description
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
+    symbol: !!python/unicode 'boost::program_options::positional_options_description::positional_options_description()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
+    symbol: !!python/unicode 'boost::program_options::positional_options_description::name_for_position(unsigned
+        int) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::validation_error::what() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
+    symbol: !!python/unicode 'boost::program_options::positional_options_description::max_total_count()
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'typeinfo for boost::program_options::value_semantic_codecvt_helper<char>'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::add(boost::program_options::options_description
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description_easy_init::operator()(char
+        const*, boost::program_options::value_semantic const*, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::invalid_option_value::invalid_option_value(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::validate(boost::any&, std::vector<std::string,
+        std::allocator<std::string> > const&, std::string*, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::arg'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::value_semantic_codecvt_helper<char>::parse(boost::any&,
+        std::vector<std::string, std::allocator<std::string> > const&, bool) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::bool_switch()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
+    symbol: !!python/unicode 'boost::program_options::positional_options_description::add(char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::options_description(unsigned
+        int, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::m_default_line_length'
+-   object: !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/convert.cpp'
+    symbol: !!python/unicode 'boost::program_options::to_internal(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::end()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
+    symbol: !!python/unicode 'boost::program_options::variables_map::variables_map()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<unsigned
+        int>(mongo::StringData const&, int, unsigned int*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/parsers.cpp'
+    symbol: !!python/unicode 'boost::program_options::basic_parsed_options<char> boost::program_options::parse_config_file<char>(std::basic_istream<char,
+        std::char_traits<char> >&, boost::program_options::options_description const&,
+        bool)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::ErrorCodes::Error)
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
+    symbol: !!python/unicode 'boost::program_options::detail::cmdline::style(int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData
+        const&, int, int*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
+    symbol: !!python/unicode 'YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::begin()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
+    symbol: !!python/unicode 'boost::program_options::positional_options_description::positional_options_description()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::mark_defined()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
+    symbol: !!python/unicode 'boost::program_options::detail::cmdline::set_options_description(boost::program_options::options_description
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::empty_scalar'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
+    symbol: !!python/unicode 'boost::program_options::multiple_occurrences::get_option_name()
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
+    symbol: !!python/unicode 'boost::program_options::store(boost::program_options::basic_parsed_options<char>
+        const&, boost::program_options::variables_map&, bool)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
+    symbol: !!python/unicode 'boost::program_options::detail::cmdline::cmdline(std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
+    symbol: !!python/unicode 'boost::program_options::abstract_variables_map::operator[](std::string
+        const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
+    symbol: !!python/unicode 'boost::program_options::detail::cmdline::run()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
+    symbol: !!python/unicode 'boost::program_options::detail::cmdline::set_positional_options(boost::program_options::positional_options_description
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
+    symbol: !!python/unicode 'YAML::detail::memory::create_node()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/parse.cpp'
+    symbol: !!python/unicode 'YAML::Load(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::options_description(unsigned
+        int, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<unsigned
+        long long>(mongo::StringData const&, int, unsigned long long*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData
+        const&, int, double*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
+    symbol: !!python/unicode 'boost::program_options::options_description::m_default_line_length'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
+    symbol: !!python/unicode 'vtable for boost::program_options::variables_map'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::set_null()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::toString() const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/util/options_parser/options_parser_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/util/password.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceExceptions'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::dateToCtimeString(mongo::Date_t)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/message_event_utf8_encoder.cpp'
+    symbol: !!python/unicode 'mongo::logger::MessageEventDetailsEncoder::setDateFormatter(std::string
+        (*)(mongo::Date_t))'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::dateToISOStringUTC(mongo::Date_t)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::toString() const'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::dateToISOStringLocal(mongo::Date_t)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    symbol: !!python/unicode 'mongo::storeSSLServerOptions(mongo::optionenvironment::Environment
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
+        const&, boost::filesystem3::path const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/log_severity.cpp'
+    symbol: !!python/unicode 'mongo::logger::operator<<(std::ostream&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/db/server_options_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/stringutils.cpp'
+    symbol: !!python/unicode 'mongo::splitStringDelim(std::string const&, std::vector<std::string,
+        std::allocator<std::string> >*, char)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData
+        const&, int, int*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData
+        const&, int, double*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long
+        long>(mongo::StringData const&, int, long long*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/server_parameters_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+name: startup_initialization
+title: startup_initialization

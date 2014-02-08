@@ -1,0 +1,3766 @@
+description: 'TODO: new_wire_protocol_write_commands description'
+files_flat:
+- src/mongo/db/commands/write_commands/write_commands.cpp
+- src/mongo/db/commands/write_commands/write_commands.h
+- src/mongo/db/commands/write_commands/batch_executor.cpp
+- src/mongo/db/commands/write_commands/batch_executor.h
+- src/mongo/db/commands/write_commands/write_commands_common.cpp
+- src/mongo/db/commands/write_commands/write_commands_common.h
+- src/mongo/s/commands/cluster_write_cmd.cpp
+- src/mongo/s/write_ops/batch_downconvert.cpp
+- src/mongo/s/write_ops/batch_downconvert.h
+- src/mongo/s/write_ops/batch_downconvert_test.cpp
+- src/mongo/s/write_ops/batch_upconvert.cpp
+- src/mongo/s/write_ops/batch_upconvert.h
+- src/mongo/s/write_ops/batch_upconvert_test.cpp
+- src/mongo/s/write_ops/batch_write_exec.cpp
+- src/mongo/s/write_ops/batch_write_exec.h
+- src/mongo/s/write_ops/batch_write_exec_test.cpp
+- src/mongo/s/write_ops/batch_write_op.cpp
+- src/mongo/s/write_ops/batch_write_op.h
+- src/mongo/s/write_ops/batch_write_op_test.cpp
+- src/mongo/s/write_ops/config_coordinator.cpp
+- src/mongo/s/write_ops/config_coordinator.h
+- src/mongo/s/write_ops/config_coordinator_test.cpp
+- src/mongo/s/write_ops/dbclient_safe_writer.cpp
+- src/mongo/s/write_ops/dbclient_safe_writer.h
+- src/mongo/s/write_ops/write_op.cpp
+- src/mongo/s/write_ops/write_op.h
+- src/mongo/s/write_ops/write_op_test.cpp
+- src/mongo/s/write_ops/batched_command_request.cpp
+- src/mongo/s/write_ops/batched_command_request.h
+- src/mongo/s/write_ops/batched_command_response.cpp
+- src/mongo/s/write_ops/batched_command_response.h
+- src/mongo/s/write_ops/batched_command_response_test.cpp
+- src/mongo/s/write_ops/batched_delete_document.cpp
+- src/mongo/s/write_ops/batched_delete_document.h
+- src/mongo/s/write_ops/batched_delete_request.cpp
+- src/mongo/s/write_ops/batched_delete_request.h
+- src/mongo/s/write_ops/batched_delete_request_test.cpp
+- src/mongo/s/write_ops/batched_insert_request.cpp
+- src/mongo/s/write_ops/batched_insert_request.h
+- src/mongo/s/write_ops/batched_insert_request_test.cpp
+- src/mongo/s/write_ops/batched_request_metadata.cpp
+- src/mongo/s/write_ops/batched_request_metadata.h
+- src/mongo/s/write_ops/batched_request_metadata_test.cpp
+- src/mongo/s/write_ops/batched_update_document.cpp
+- src/mongo/s/write_ops/batched_update_document.h
+- src/mongo/s/write_ops/batched_update_request.cpp
+- src/mongo/s/write_ops/batched_update_request.h
+- src/mongo/s/write_ops/batched_update_request_test.cpp
+- src/mongo/s/write_ops/batched_upsert_detail.cpp
+- src/mongo/s/write_ops/batched_upsert_detail.h
+- src/mongo/s/write_ops/wc_error_detail.cpp
+- src/mongo/s/write_ops/wc_error_detail.h
+- src/mongo/s/write_ops/write_error_detail.cpp
+- src/mongo/s/write_ops/write_error_detail.h
+- src/mongo/db/wire_version.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/write_commands.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/write_commands.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/batch_executor.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/batch_executor.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/write_commands_common.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/write_commands/write_commands_common.h
+-   execs:
+    - !!python/unicode 'mongos'
+    name: src/mongo/s/commands/cluster_write_cmd.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_downconvert.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_downconvert.h
+-   execs: []
+    name: src/mongo/s/write_ops/batch_downconvert_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_upconvert.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_upconvert.h
+-   execs: []
+    name: src/mongo/s/write_ops/batch_upconvert_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_write_exec.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_write_exec.h
+-   execs: []
+    name: src/mongo/s/write_ops/batch_write_exec_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_write_op.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batch_write_op.h
+-   execs: []
+    name: src/mongo/s/write_ops/batch_write_op_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/config_coordinator.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/config_coordinator.h
+-   execs: []
+    name: src/mongo/s/write_ops/config_coordinator_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/dbclient_safe_writer.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/dbclient_safe_writer.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/write_op.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/write_op.h
+-   execs: []
+    name: src/mongo/s/write_ops/write_op_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_command_request.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_command_request.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_command_response.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_command_response.h
+-   execs: []
+    name: src/mongo/s/write_ops/batched_command_response_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_delete_document.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_delete_document.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_delete_request.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_delete_request.h
+-   execs: []
+    name: src/mongo/s/write_ops/batched_delete_request_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_insert_request.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_insert_request.h
+-   execs: []
+    name: src/mongo/s/write_ops/batched_insert_request_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_request_metadata.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_request_metadata.h
+-   execs: []
+    name: src/mongo/s/write_ops/batched_request_metadata_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_update_document.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_update_document.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_update_request.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_update_request.h
+-   execs: []
+    name: src/mongo/s/write_ops/batched_update_request_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_upsert_detail.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/batched_upsert_detail.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/wc_error_detail.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/wc_error_detail.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/write_error_detail.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/write_ops/write_error_detail.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/wire_version.h
+groups:
+-   comments: '# New write commands for new wire protocol. The new "write commands"
+        are all actual Commands run# using "db.$cmd.findOne(...)". The reason for
+        this is that the old wire protocol didn''t have# acknowledgements for anything
+        BUT queries (which include commands), so everything is now a query# so we
+        can get acknowledgements for writes (and not just for queries).'
+    files:
+    - src/mongo/db/commands/write_commands/write_commands.cpp
+    - src/mongo/db/commands/write_commands/write_commands.h
+    - src/mongo/db/commands/write_commands/batch_executor.cpp
+    - src/mongo/db/commands/write_commands/batch_executor.h
+    - src/mongo/db/commands/write_commands/write_commands_common.cpp
+    - src/mongo/db/commands/write_commands/write_commands_common.h
+-   comments: '# New wire protocol writes (in mongos)'
+    files:
+    - src/mongo/s/commands/cluster_write_cmd.cpp
+    - src/mongo/s/write_ops/batch_downconvert.cpp
+    - src/mongo/s/write_ops/batch_downconvert.h
+    - src/mongo/s/write_ops/batch_downconvert_test.cpp
+    - src/mongo/s/write_ops/batch_upconvert.cpp
+    - src/mongo/s/write_ops/batch_upconvert.h
+    - src/mongo/s/write_ops/batch_upconvert_test.cpp
+    - src/mongo/s/write_ops/batch_write_exec.cpp
+    - src/mongo/s/write_ops/batch_write_exec.h
+    - src/mongo/s/write_ops/batch_write_exec_test.cpp
+    - src/mongo/s/write_ops/batch_write_op.cpp
+    - src/mongo/s/write_ops/batch_write_op.h
+    - src/mongo/s/write_ops/batch_write_op_test.cpp
+    - src/mongo/s/write_ops/config_coordinator.cpp
+    - src/mongo/s/write_ops/config_coordinator.h
+    - src/mongo/s/write_ops/config_coordinator_test.cpp
+    - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+    - src/mongo/s/write_ops/dbclient_safe_writer.h
+    - src/mongo/s/write_ops/write_op.cpp
+    - src/mongo/s/write_ops/write_op.h
+    - src/mongo/s/write_ops/write_op_test.cpp
+-   comments: '# New wire protocol writes (in mongod)## why are these in s/ ?'
+    files:
+    - src/mongo/s/write_ops/batched_command_request.cpp
+    - src/mongo/s/write_ops/batched_command_request.h
+    - src/mongo/s/write_ops/batched_command_response.cpp
+    - src/mongo/s/write_ops/batched_command_response.h
+    - src/mongo/s/write_ops/batched_command_response_test.cpp
+    - src/mongo/s/write_ops/batched_delete_document.cpp
+    - src/mongo/s/write_ops/batched_delete_document.h
+    - src/mongo/s/write_ops/batched_delete_request.cpp
+    - src/mongo/s/write_ops/batched_delete_request.h
+    - src/mongo/s/write_ops/batched_delete_request_test.cpp
+    - src/mongo/s/write_ops/batched_insert_request.cpp
+    - src/mongo/s/write_ops/batched_insert_request.h
+    - src/mongo/s/write_ops/batched_insert_request_test.cpp
+    - src/mongo/s/write_ops/batched_request_metadata.cpp
+    - src/mongo/s/write_ops/batched_request_metadata.h
+    - src/mongo/s/write_ops/batched_request_metadata_test.cpp
+    - src/mongo/s/write_ops/batched_update_document.cpp
+    - src/mongo/s/write_ops/batched_update_document.h
+    - src/mongo/s/write_ops/batched_update_request.cpp
+    - src/mongo/s/write_ops/batched_update_request.h
+    - src/mongo/s/write_ops/batched_update_request_test.cpp
+    - src/mongo/s/write_ops/batched_upsert_detail.cpp
+    - src/mongo/s/write_ops/batched_upsert_detail.h
+    - src/mongo/s/write_ops/wc_error_detail.cpp
+    - src/mongo/s/write_ops/wc_error_detail.h
+    - src/mongo/s/write_ops/write_error_detail.cpp
+    - src/mongo/s/write_ops/write_error_detail.h
+-   comments: '# Header to enumerate the wire protocol version, along with the max
+        and min supported versions## can you say a bit about who exactly cares (which
+        components) about wire protocol version?'
+    files:
+    - src/mongo/db/wire_version.h
+interface:
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    symbol: !!python/unicode 'mongo::BatchSafeWriter::safeWriteBatch(mongo::DBClientBase*,
+        mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    symbol: !!python/unicode 'mongo::enforceLegacyWriteConcern(mongo::MultiCommandDispatch*,
+        mongo::StringData const&, mongo::BSONObj const&, std::map<mongo::ConnectionString,
+        mongo::HostOpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString
+        const, mongo::HostOpTime> > > const&, std::vector<mongo::LegacyWCResponse,
+        std::allocator<mongo::LegacyWCResponse> >*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    symbol: !!python/unicode 'mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*,
+        std::allocator<mongo::BatchedCommandRequest*> >*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    symbol: !!python/unicode 'mongo::batchErrorToLastError(mongo::BatchedCommandRequest
+        const&, mongo::BatchedCommandResponse const&, mongo::LastError*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    symbol: !!python/unicode 'mongo::BatchWriteExec::executeBatch(mongo::BatchedCommandRequest
+        const&, mongo::BatchedCommandResponse*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    symbol: !!python/unicode 'mongo::BatchWriteExec::BatchWriteExec(mongo::NSTargeter*,
+        mongo::ShardResolver*, mongo::MultiCommandDispatch*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    symbol: !!python/unicode 'mongo::BatchWriteExec::releaseStats()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    symbol: !!python/unicode 'mongo::ConfigCoordinator::executeBatch(mongo::BatchedCommandRequest
+        const&, mongo::BatchedCommandResponse*, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    symbol: !!python/unicode 'mongo::ConfigCoordinator::ConfigCoordinator(mongo::MultiCommandDispatch*,
+        std::vector<mongo::ConnectionString, std::allocator<mongo::ConnectionString>
+        > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBClientSafeWriter'
+    used_by:
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::parseBSON(mongo::BSONObj
+        const&, std::string*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::BatchedCommandRequest(mongo::BatchedCommandRequest::BatchType)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::getNS() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::getTargetingNS() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::isWriteConcernSet() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'vtable for mongo::BatchedCommandRequest'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::isInsertIndexRequest()
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::sizeWriteOps() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::getOrdered() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::getWriteConcern() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::setNS(mongo::StringData
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandRequest::isVerboseWC() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getErrDetails() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::isErrDetailsSet() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::setN(long long)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::setOk(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::BatchedCommandResponse()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_s.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::setErrCode(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::~BatchedCommandResponse()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_s.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getN() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_s.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getErrCode() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::isWriteConcernErrorSet()
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getErrMessage() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::parseBSON(mongo::BSONObj
+        const&, std::string*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getWriteConcernError()
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::setErrMessage(mongo::StringData
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::toBSON() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    symbol: !!python/unicode 'mongo::BatchedCommandResponse::getOk() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteDocument::setLimit(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteDocument::getLimit() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteDocument::BatchedDeleteDocument()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteDocument::getQuery() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteRequest::BatchedDeleteRequest()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteRequest::addToDeletes(mongo::BatchedDeleteDocument*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedDeleteRequest::setWriteConcern(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedInsertRequest::BatchedInsertRequest()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedInsertRequest::addToDocuments(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::getUpdateExpr() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::BatchedUpdateDocument()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::getMulti() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::setUpdateExpr(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::setUpsert(bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::getUpsert() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::getQuery() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateDocument::setMulti(bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateRequest::addToUpdates(mongo::BatchedUpdateDocument*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateRequest::BatchedUpdateRequest()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    symbol: !!python/unicode 'mongo::BatchedUpdateRequest::setWriteConcern(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    symbol: !!python/unicode 'mongo::WCErrorDetail::getErrMessage() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    symbol: !!python/unicode 'mongo::WCErrorDetail::getErrCode() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    symbol: !!python/unicode 'mongo::WriteErrorDetail::getErrMessage() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    symbol: !!python/unicode 'mongo::WriteErrorDetail::getErrCode() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::appendCommandStatus(mongo::BSONObjBuilder&,
+        mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::LastErrorHolder::get(bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'vtable for mongo::Command'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/insert.cpp'
+    symbol: !!python/unicode 'mongo::userAllowedWriteNS(mongo::NamespaceString const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::Command'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
+        std::allocator<char> >&) const'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::Command(mongo::StringData, bool, mongo::StringData)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::lastError'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
+    symbol: !!python/unicode 'mongo::globalOpCounters'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::parseNs(std::string const&, mongo::BSONObj
+        const&) const'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands/get_last_error.cpp'
+    symbol: !!python/unicode 'mongo::getLastErrorDefault'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::redactForLogging(mongo::mutablebson::Document*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::stopIndexBuilds(std::string const&,
+        mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::setLastError(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::OpDebug::recordStats()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::ServerParameter'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
+    symbol: !!python/unicode 'mongo::anyReplEnabled()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/update_lifecycle_impl.cpp'
+    symbol: !!python/unicode 'mongo::UpdateLifecycleImpl::UpdateLifecycleImpl(bool,
+        mongo::NamespaceString const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::~CurOp()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/update_lifecycle_impl.cpp'
+    symbol: !!python/unicode 'vtable for mongo::UpdateLifecycleImpl'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    symbol: !!python/unicode 'mongo::ShardingState::inCriticalMigrateSection()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    symbol: !!python/unicode 'mongo::ShardingState::refreshMetadataIfNeeded(std::string
+        const&, mongo::ChunkVersion const&, mongo::ChunkVersion*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::theReplSet'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::tlogLevel'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    symbol: !!python/unicode 'mongo::PageFaultRetryableSection::~PageFaultRetryableSection()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/update.cpp'
+    symbol: !!python/unicode 'mongo::update(mongo::UpdateRequest const&, mongo::OpDebug*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    symbol: !!python/unicode 'mongo::dur::DurableInterface::_impl'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::convertExceptionCode(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::assertWriteLocked(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
+    symbol: !!python/unicode 'mongo::Collection::insertDocument(mongo::BSONObj const&,
+        bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/shard_key_pattern.cpp'
+    symbol: !!python/unicode 'mongo::isUniqueIndexCompatible(mongo::BSONObj, mongo::BSONObj)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    symbol: !!python/unicode 'mongo::waitForWriteConcern(mongo::WriteConcernOptions
+        const&, mongo::OpTime const&, mongo::WriteConcernResult*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    symbol: !!python/unicode 'mongo::logOp(char const*, char const*, mongo::BSONObj
+        const&, mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::createCollection(mongo::StringData
+        const&, bool, mongo::BSONObj const*, bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::reset(mongo::HostAndPort const&, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    symbol: !!python/unicode 'mongo::PageFaultException::touch()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    symbol: !!python/unicode 'mongo::PageFaultRetryableSection::PageFaultRetryableSection()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    symbol: !!python/unicode 'mongo::shardingState'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    symbol: !!python/unicode 'mongo::ShardingState::waitTillNotInCriticalSection(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::~ServerParameter()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    symbol: !!python/unicode 'mongo::ShardingState::getCollectionMetadata(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+        std::string const&, bool, bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/write_concern_options.cpp'
+    symbol: !!python/unicode 'mongo::WriteConcernOptions::parse(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::ensureStarted()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/insert.cpp'
+    symbol: !!python/unicode 'mongo::fixDocumentForInsert(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::OpDebug::report(mongo::CurOp const&) const'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ExportedServerParameter<bool>::setFromString(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init(mongo::Date_t, bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::valid() const'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::setMessage(char const*, std::string, unsigned
+        long long, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/introspect.cpp'
+    symbol: !!python/unicode 'mongo::profile(mongo::Client const&, int, mongo::CurOp&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    symbol: !!python/unicode 'mongo::validateWriteConcern(mongo::WriteConcernOptions
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    symbol: !!python/unicode 'mongo::ShardingState::setShardName(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::setNS(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::CurOp(mongo::Client*, mongo::CurOp*)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameterSet::getGlobal()'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    symbol: !!python/unicode 'mongo::storageGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/delete.cpp'
+    symbol: !!python/unicode 'mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj,
+        bool, bool, bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::createIndex(mongo::BSONObj, bool,
+        mongo::IndexCatalog::ShutdownBehavior)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::Context::Context(std::string const&,
+        std::string const&, bool)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::createIndex'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::update'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/action_set.cpp'
+    symbol: !!python/unicode 'mongo::ActionSet::addAction(mongo::ActionType const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::insert'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/privilege.cpp'
+    symbol: !!python/unicode 'mongo::Privilege::Privilege(mongo::ResourcePattern const&,
+        mongo::ActionSet const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::isAuthorizedForPrivileges(std::vector<mongo::Privilege,
+        std::allocator<mongo::Privilege> > const&)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::remove'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/privilege.cpp'
+    symbol: !!python/unicode 'mongo::Privilege::Privilege(mongo::ResourcePattern const&,
+        mongo::ActionType const&)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'vtable for mongo::Command'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    symbol: !!python/unicode 'mongo::ClusterWriterStats::hasShardStats() const'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    symbol: !!python/unicode 'mongo::ClusterWriterStats::getShardStats() const'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    symbol: !!python/unicode 'mongo::ClusterWriter::write(mongo::BatchedCommandRequest
+        const&, mongo::BatchedCommandResponse*)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
+        std::allocator<char> >&) const'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::Command'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/client_info.cpp'
+    symbol: !!python/unicode 'mongo::ClientInfo::exists()'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/client_info.cpp'
+    symbol: !!python/unicode 'mongo::ClientInfo::addHostOpTimes(std::map<mongo::ConnectionString,
+        mongo::HostOpTime, mongo::ConnectionStringComp, std::allocator<std::pair<mongo::ConnectionString
+        const, mongo::HostOpTime> > > const&)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    symbol: !!python/unicode 'mongo::ClusterWriter::getStats()'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::parseNs(std::string const&, mongo::BSONObj
+        const&) const'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/client_info.cpp'
+    symbol: !!python/unicode 'mongo::ClientInfo::get(mongo::AbstractMessagingPort*)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::redactForLogging(mongo::mutablebson::Document*)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/cluster_write.cpp'
+    symbol: !!python/unicode 'mongo::ClusterWriter::ClusterWriter(bool, int)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::Command(mongo::StringData, bool, mongo::StringData)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    symbol: !!python/unicode 'mongo::Command::stopIndexBuilds(std::string const&,
+        mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::convertExceptionCode(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::time_t_to_String_short(long)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::time_t_to_String_short(long)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/json.cpp'
+    symbol: !!python/unicode 'mongo::fromjson(char const*, int*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_downconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::valid() const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/bson_validate.cpp'
+    symbol: !!python/unicode 'mongo::validateBSON(char const*, unsigned long long)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_upconvert_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeContains(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'mongo::ConnectionString::parse(std::string const&, std::string&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::LT'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::GTE'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init(mongo::Date_t, bool)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeOverlaps(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_exec_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeContains(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::LT'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::GTE'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init(mongo::Date_t, bool)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeOverlaps(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batch_write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/config_coordinator_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/version_manager.cpp'
+    - !!python/unicode 'src/mongo/s/default_version.cpp'
+    symbol: !!python/unicode 'mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*,
+        std::string const&, bool, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/version_manager.cpp'
+    - !!python/unicode 'src/mongo/s/default_version.cpp'
+    symbol: !!python/unicode 'mongo::versionManager'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::convertExceptionCode(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/dbclient_safe_writer.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init(mongo::Date_t, bool)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeContains(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::LT'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::GTE'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init(mongo::Date_t, bool)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/s/range_arithmetic.cpp'
+    symbol: !!python/unicode 'mongo::rangeOverlaps(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::BSONObj const&, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_op_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long
+        long> const&, long long*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID>
+        const&, mongo::OID*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime>
+        const&, mongo::OpTime*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_command_response_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
+        const&, bool*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_delete_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool>
+        const&, bool*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_insert_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long
+        long> const&, long long*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::OID const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_request_metadata_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
+        const&, bool*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_document.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
+        const&, bool*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::OID::init()'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_update_request_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/batched_upsert_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/wc_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
+        const&, std::string*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+        const&, int*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/field_parser.cpp'
+    symbol: !!python/unicode 'mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+        const&, mongo::BSONObj*, std::string*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/s/write_ops/write_error_detail.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+name: new_wire_protocol_write_commands
+title: new_wire_protocol_write_commands

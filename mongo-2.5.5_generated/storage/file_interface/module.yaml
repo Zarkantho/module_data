@@ -1,0 +1,163 @@
+description: 'TODO: file_interface description'
+files_flat:
+- src/mongo/util/file.cpp
+- src/mongo/util/file.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/file.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/file.h
+groups:
+-   comments: '# Abstraction layer for dealing with files. It''s basically the read(2),
+        open(2), and write(2)# interface for posix, and something else for Windows.
+        Not used by mmap code, and does not depend# on file allocator library. Use
+        this if you need a file but not a memory mapped file.'
+    files:
+    - src/mongo/util/file.cpp
+    - src/mongo/util/file.h
+interface:
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::write(unsigned long long, char const*,
+        unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::File()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::open(char const*, bool, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::truncate(unsigned long long)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::~File()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::is_open() const'
+    used_by:
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::freeSpace(std::string const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::fsync() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::len()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    symbol: !!python/unicode 'mongo::File::read(unsigned long long, char*, unsigned
+        int)'
+    used_by:
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/file.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+name: file_interface
+title: file_interface

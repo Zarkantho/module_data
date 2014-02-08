@@ -1,0 +1,2763 @@
+description: 'TODO: indexing description'
+files_flat:
+- src/mongo/db/index/2d_access_method.cpp
+- src/mongo/db/index/2d_access_method.h
+- src/mongo/db/index/2d_common.h
+- src/mongo/db/index/btree_access_method.cpp
+- src/mongo/db/index/btree_access_method.h
+- src/mongo/db/index/btree_based_access_method.cpp
+- src/mongo/db/index/btree_based_access_method.h
+- src/mongo/db/index/btree_index_cursor.cpp
+- src/mongo/db/index/btree_index_cursor.h
+- src/mongo/db/index/btree_interface.cpp
+- src/mongo/db/index/btree_interface.h
+- src/mongo/db/index/btree_key_generator.cpp
+- src/mongo/db/index/btree_key_generator.h
+- src/mongo/db/index/expression_index.h
+- src/mongo/db/index/fts_access_method.cpp
+- src/mongo/db/index/fts_access_method.h
+- src/mongo/db/index/hash_access_method.cpp
+- src/mongo/db/index/hash_access_method.h
+- src/mongo/db/index/haystack_access_method.cpp
+- src/mongo/db/index/haystack_access_method.h
+- src/mongo/db/index/haystack_access_method_internal.h
+- src/mongo/db/index/index_access_method.h
+- src/mongo/db/index/index_cursor.h
+- src/mongo/db/index/index_descriptor.h
+- src/mongo/db/index/s2_access_method.cpp
+- src/mongo/db/index/s2_access_method.h
+- src/mongo/db/index_builder.cpp
+- src/mongo/db/index_builder.h
+- src/mongo/db/index_legacy.cpp
+- src/mongo/db/index_legacy.h
+- src/mongo/db/index_names.cpp
+- src/mongo/db/index_names.h
+- src/mongo/db/index_rebuilder.cpp
+- src/mongo/db/index_rebuilder.h
+- src/mongo/db/index_set.cpp
+- src/mongo/db/index_set.h
+- src/mongo/db/index_set_test.cpp
+- src/mongo/db/keypattern.cpp
+- src/mongo/db/keypattern.h
+- src/mongo/db/ttl.cpp
+- src/mongo/db/ttl.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/2d_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/2d_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/2d_common.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_based_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_based_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_index_cursor.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_index_cursor.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_interface.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_interface.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_key_generator.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/btree_key_generator.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/expression_index.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/fts_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/fts_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/hash_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/hash_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/haystack_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/haystack_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/haystack_access_method_internal.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/index_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/index_cursor.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/index_descriptor.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/s2_access_method.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index/s2_access_method.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_builder.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_builder.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_legacy.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_legacy.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_names.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_names.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_rebuilder.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_rebuilder.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_set.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/index_set.h
+-   execs: []
+    name: src/mongo/db/index_set_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/keypattern.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/keypattern.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/ttl.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/ttl.h
+groups:
+-   comments: '# Indexes and index management code. TODO: go into more details about
+        this. The code is new.# The two parts of the interface that are nice entry
+        points are the "index_access_method.h"# (interface for manipulating and accessing
+        the index itself), and "index_cursor.h" (interface for# getting data from
+        an index) files.## can you say a bit more about the structure in here, wrt.
+        a hypothetical## member of the ''open source community'' who wants to add
+        a new type of## index to mongodb?'
+    files:
+    - src/mongo/db/index/2d_access_method.cpp
+    - src/mongo/db/index/2d_access_method.h
+    - src/mongo/db/index/2d_common.h
+    - src/mongo/db/index/btree_access_method.cpp
+    - src/mongo/db/index/btree_access_method.h
+    - src/mongo/db/index/btree_based_access_method.cpp
+    - src/mongo/db/index/btree_based_access_method.h
+    - src/mongo/db/index/btree_index_cursor.cpp
+    - src/mongo/db/index/btree_index_cursor.h
+    - src/mongo/db/index/btree_interface.cpp
+    - src/mongo/db/index/btree_interface.h
+    - src/mongo/db/index/btree_key_generator.cpp
+    - src/mongo/db/index/btree_key_generator.h
+    - src/mongo/db/index/expression_index.h
+    - src/mongo/db/index/fts_access_method.cpp
+    - src/mongo/db/index/fts_access_method.h
+    - src/mongo/db/index/hash_access_method.cpp
+    - src/mongo/db/index/hash_access_method.h
+    - src/mongo/db/index/haystack_access_method.cpp
+    - src/mongo/db/index/haystack_access_method.h
+    - src/mongo/db/index/haystack_access_method_internal.h
+    - src/mongo/db/index/index_access_method.h
+    - src/mongo/db/index/index_cursor.h
+    - src/mongo/db/index/index_descriptor.h
+    - src/mongo/db/index/s2_access_method.cpp
+    - src/mongo/db/index/s2_access_method.h
+    - src/mongo/db/index_builder.cpp
+    - src/mongo/db/index_builder.h
+    - src/mongo/db/index_legacy.cpp
+    - src/mongo/db/index_legacy.h
+    - src/mongo/db/index_names.cpp
+    - src/mongo/db/index_names.h
+    - src/mongo/db/index_rebuilder.cpp
+    - src/mongo/db/index_rebuilder.h
+    - src/mongo/db/index_set.cpp
+    - src/mongo/db/index_set.h
+    - src/mongo/db/index_set_test.cpp
+-   comments: '# Class representing an index spec, such as { "a" : 1, "b" : -1 }'
+    files:
+    - src/mongo/db/keypattern.cpp
+    - src/mongo/db/keypattern.h
+-   comments: '# Background job that periodically checks a ttl index.'
+    files:
+    - src/mongo/db/ttl.cpp
+    - src/mongo/db/ttl.h
+interface:
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    symbol: !!python/unicode 'mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    symbol: !!python/unicode 'mongo::TwoDAccessMethod::getKeys(mongo::BSONObj const&,
+        std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&) const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/2dcommon.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    symbol: !!python/unicode 'mongo::BtreeAccessMethod::BtreeAccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBasedAccessMethod::getComparison(int, mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/extsorttests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/indexupdatetests.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    symbol: !!python/unicode 'mongo::BtreeIndexCursor::seek(std::vector<mongo::BSONElement
+        const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool,
+        std::allocator<bool> > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/index_scan.cpp'
+    - !!python/unicode 'src/mongo/db/exec/distinct_scan.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    symbol: !!python/unicode 'mongo::BtreeIndexCursor::seek(mongo::BSONObj const&,
+        bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/count.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    symbol: !!python/unicode 'mongo::BtreeIndexCursor::pointsAt(mongo::BtreeIndexCursor
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/count.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    symbol: !!python/unicode 'mongo::BtreeIndexCursor::skip(mongo::BSONObj const&,
+        int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement
+        const*> > const&, std::vector<bool, std::allocator<bool> > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/index_scan.cpp'
+    - !!python/unicode 'src/mongo/db/exec/distinct_scan.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    symbol: !!python/unicode 'mongo::BtreeIndexCursor::aboutToDeleteBucket(mongo::DiskLoc
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    symbol: !!python/unicode 'mongo::BtreeKeyGeneratorV1::BtreeKeyGeneratorV1(std::vector<char
+        const*, std::allocator<char const*> >, std::vector<mongo::BSONElement, std::allocator<mongo::BSONElement>
+        >, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+    - !!python/unicode 'src/mongo/db/exec/sort.cpp'
+    - !!python/unicode 'src/mongo/db/queryutil.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    symbol: !!python/unicode 'mongo::BtreeKeyGenerator::getKeys(mongo::BSONObj const&,
+        std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj>
+        >*) const'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+    - !!python/unicode 'src/mongo/db/exec/sort.cpp'
+    - !!python/unicode 'src/mongo/db/queryutil.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::FTSAccessMethod'
+    used_by:
+    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    symbol: !!python/unicode 'mongo::FTSAccessMethod::FTSAccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    symbol: !!python/unicode 'mongo::HashAccessMethod::HashAccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    symbol: !!python/unicode 'mongo::HashAccessMethod::makeSingleKey(mongo::BSONElement
+        const&, int, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    symbol: !!python/unicode 'mongo::HashAccessMethod::getKeysImpl(mongo::BSONObj
+        const&, std::string const&, int, int, bool, std::set<mongo::BSONObj, mongo::BSONObjCmp,
+        std::allocator<mongo::BSONObj> >*)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    symbol: !!python/unicode 'mongo::HaystackAccessMethod::HaystackAccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    symbol: !!python/unicode 'mongo::HaystackAccessMethod::searchCommand(mongo::BSONObj
+        const&, double, mongo::BSONObj const&, mongo::BSONObjBuilder*, unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/geo/haystack.cpp'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    symbol: !!python/unicode 'mongo::S2AccessMethod::S2AccessMethod(mongo::IndexCatalogEntry*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    symbol: !!python/unicode 'mongo::IndexBuilder::IndexBuilder(mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    symbol: !!python/unicode 'mongo::IndexBuilder::restoreIndexes(std::vector<mongo::BSONObj,
+        std::allocator<mongo::BSONObj> > const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/rename_collection.cpp'
+    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    symbol: !!python/unicode 'mongo::IndexBuilder::~IndexBuilder()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    symbol: !!python/unicode 'mongo::IndexBuilder::killMatchingIndexBuilds(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/rename_collection.cpp'
+    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
+    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    symbol: !!python/unicode 'mongo::IndexBuilder::build(mongo::Client::Context&)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    symbol: !!python/unicode 'mongo::IndexLegacy::adjustIndexSpecObject(mongo::BSONObj
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    symbol: !!python/unicode 'mongo::IndexLegacy::postBuildHook(mongo::Collection*,
+        mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    symbol: !!python/unicode 'mongo::IndexLegacy::getMissingField(mongo::Collection*,
+        mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::findPluginName(mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::GEO_HAYSTACK'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    - !!python/unicode 'src/mongo/db/geo/haystack.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::GEO_2D'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/commands/geonear.cpp'
+    - !!python/unicode 'src/mongo/db/queryutil.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::GEO_2DSPHERE'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/geonear.cpp'
+    - !!python/unicode 'src/mongo/db/queryutil.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::TEXT'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    symbol: !!python/unicode 'mongo::IndexNames::HASHED'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    symbol: !!python/unicode 'mongo::indexRebuilder'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_set.cpp'
+    symbol: !!python/unicode 'mongo::IndexPathSet::clear()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/collection_info_cache.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_set.cpp'
+    symbol: !!python/unicode 'mongo::IndexPathSet::addPath(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/collection_info_cache.cpp'
+-   object: !!python/unicode 'src/mongo/db/index_set.cpp'
+    symbol: !!python/unicode 'mongo::IndexPathSet::mightBeIndexed(mongo::StringData
+        const&) const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/ops/update_driver.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/s/shardkey.cpp'
+    - !!python/unicode 'src/mongo/dbtests/keypatterntests.cpp'
+    - !!python/unicode 'src/mongo/db/query/idhack_runner.cpp'
+    - !!python/unicode 'src/mongo/db/exec/shard_filter.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::keyBounds(mongo::FieldRangeSet const&)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/chunk.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::extendRangeBound(mongo::BSONObj const&,
+        bool) const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/balance.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+    - !!python/unicode 'src/mongo/dbtests/keypatterntests.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::isSpecial() const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/shardkey.cpp'
+    - !!python/unicode 'src/mongo/s/chunk.cpp'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    symbol: !!python/unicode 'mongo::KeyPattern::extractSingleKey(mongo::BSONObj const&)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/s/shardkey.cpp'
+    - !!python/unicode 'src/mongo/db/query/idhack_runner.cpp'
+    - !!python/unicode 'src/mongo/s/chunk.cpp'
+    - !!python/unicode 'src/mongo/db/exec/shard_filter.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    symbol: !!python/unicode 'mongo::startTTLBackgroundJob()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldsDotted(mongo::StringData const&,
+        std::multiset<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement>
+        >&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/hash.cpp'
+    symbol: !!python/unicode 'mongo::GeoHash::appendToBuilder(mongo::BSONObjBuilder*,
+        char const*) const'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/hash.cpp'
+    symbol: !!python/unicode 'mongo::GeoHashConverter::GeoHashConverter(mongo::GeoHashConverter::Parameters
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldsDotted(mongo::StringData const&,
+        std::set<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement>
+        >&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/hash.cpp'
+    symbol: !!python/unicode 'mongo::GeoHashConverter::hash(mongo::BSONObj const&,
+        mongo::BSONObj const*) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V0>::BtreeBuilder(bool,
+        mongo::IndexCatalogEntry*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::Ordering
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'mongo::killCurrentOp'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V1>::commit(bool)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::asVersion(mongo::Record*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::theReplSet'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::LastErrorHolder::get(bool)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
+    symbol: !!python/unicode 'mongo::Collection::numRecords() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::getcurns'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
+    symbol: !!python/unicode 'mongo::KillCurrentOp::checkForInterrupt(bool)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::findSingle(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::BSONObj const&) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    symbol: !!python/unicode 'mongo::inDBRepair'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
+    symbol: !!python/unicode 'mongo::ProgressMeter::hit(int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::addBucket(mongo::IndexCatalogEntry*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/extsort.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjExternalSorter::BSONObjExternalSorter(mongo::ExternalSortComparison
+        const*, long)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalogEntry::setMultikey()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalogEntry::head() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    symbol: !!python/unicode 'mongo::DiskLoc::obj() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalogEntry::setHead(mongo::DiskLoc)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::lastError'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::findSingle(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::BSONObj const&) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::addBucket(mongo::IndexCatalogEntry*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V0>::addKey(mongo::BSONObj&,
+        mongo::DiskLoc)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V1>::BtreeBuilder(bool,
+        mongo::IndexCatalogEntry*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::setMessage(char const*, std::string, unsigned
+        long long, int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::logContext(char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalogEntry::isReady() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V0>::commit(bool)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/key.cpp'
+    symbol: !!python/unicode 'mongo::oldCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, mongo::Ordering const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::asVersion(mongo::Record*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBuilder<mongo::BtreeData_V1>::addKey(mongo::BSONObj&,
+        mongo::DiskLoc)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::UserException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalogEntry::head() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::convertExceptionCode(int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::unindex(mongo::IndexCatalogEntry*,
+        mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::customLocate(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement
+        const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool,
+        std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::customLocate(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement
+        const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool,
+        std::allocator<bool> > const&, int, std::pair<mongo::DiskLoc, int>&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::jsonString(mongo::JsonStringFormat,
+        int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::asVersion(mongo::Record*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::unindex(mongo::IndexCatalogEntry*,
+        mongo::DiskLoc, mongo::BSONObj const&, mongo::DiskLoc) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::bt_insert(mongo::IndexCatalogEntry*,
+        mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::bt_insert(mongo::IndexCatalogEntry*,
+        mongo::DiskLoc, mongo::DiskLoc, mongo::BSONObj const&, bool, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::advance(mongo::DiskLoc
+        const&, int&, int, char const*) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::UserException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::dupKeyError(mongo::IndexDescriptor
+        const*, mongo::KeyBson const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::dupKeyError(mongo::IndexDescriptor
+        const*, mongo::KeyV1 const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::UserException'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::wouldCreateDup(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::KeyBson const&, mongo::DiskLoc const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/key.cpp'
+    symbol: !!python/unicode 'mongo::KeyV1Owned::KeyV1Owned(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::fullValidate(mongo::DiskLoc
+        const&, mongo::BSONObj const&, long long*, bool, unsigned int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/key.cpp'
+    symbol: !!python/unicode 'mongo::KeyV1::toBson() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::advance(mongo::DiskLoc
+        const&, int&, int, char const*) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::wouldCreateDup(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::KeyV1 const&, mongo::DiskLoc const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::locate(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc
+        const&, int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::locate(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc const&, mongo::BSONObj const&, int&, bool&, mongo::DiskLoc
+        const&, int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::advanceTo(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement
+        const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool,
+        std::allocator<bool> > const&, int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V0>::advanceTo(mongo::IndexCatalogEntry
+        const*, mongo::DiskLoc&, int&, mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement
+        const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool,
+        std::allocator<bool> > const&, int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::asVersion(mongo::Record*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    symbol: !!python/unicode 'mongo::BtreeBucket<mongo::BtreeData_V1>::fullValidate(mongo::DiskLoc
+        const&, mongo::BSONObj const&, long long*, bool, unsigned int) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::toString() const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldDottedOrArray(char const*&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/btree_key_generator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
+    symbol: !!python/unicode 'mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec
+        const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp,
+        std::allocator<mongo::BSONObj> >*)'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
+    symbol: !!python/unicode 'mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/hasher.cpp'
+    symbol: !!python/unicode 'mongo::BSONElementHasher::hash64(mongo::BSONElement
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldDottedOrArray(char const*&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/shapes.cpp'
+    symbol: !!python/unicode 'mongo::Point::Point(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::invariantFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/parse_number.cpp'
+    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+        const&, int, long*)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/exec/fetch.cpp'
+    symbol: !!python/unicode 'mongo::FetchStage::FetchStage(mongo::WorkingSet*, mongo::PlanStage*,
+        mongo::MatchExpression const*)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
+    symbol: !!python/unicode 'mongo::WorkingSet::WorkingSet()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/shapes.cpp'
+    symbol: !!python/unicode 'mongo::distance(mongo::Point const&, mongo::Point const&)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/shapes.cpp'
+    symbol: !!python/unicode 'mongo::Point::Point(mongo::BSONElement const&)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/bson/oid.cpp'
+    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/exec/index_scan.cpp'
+    symbol: !!python/unicode 'mongo::IndexScan::IndexScan(mongo::IndexScanParams const&,
+        mongo::WorkingSet*, mongo::MatchExpression const*)'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldsDotted(mongo::StringData const&,
+        std::set<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement>
+        >&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    symbol: !!python/unicode 'mongo::DiskLoc::obj() const'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/query/internal_runner.cpp'
+    symbol: !!python/unicode 'mongo::InternalRunner::InternalRunner(mongo::Collection
+        const*, mongo::PlanStage*, mongo::WorkingSet*)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/s2/base/logging.cc'
+    symbol: !!python/unicode 'LogMessageFatal::LogMessageFatal(char const*, int)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/s2/s2.cc'
+    symbol: !!python/unicode 'S2::kAvgEdge'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/s2/base/logging.cc'
+    symbol: !!python/unicode 'LogMessageFatal::~LogMessageFatal()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/s2/s2.cc'
+    symbol: !!python/unicode 'S2::kMaxCellLevel'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/geo/s2common.cpp'
+    symbol: !!python/unicode 'mongo::S2SearchUtil::getKeysForObject(mongo::BSONObj
+        const&, mongo::S2IndexingParams const&, std::vector<std::string, std::allocator<std::string>
+        >*)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::getFieldsDotted(mongo::StringData const&,
+        std::set<mongo::BSONElement, mongo::BSONElementCmpWithoutField, std::allocator<mongo::BSONElement>
+        >&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'mongo::killCurrentOp'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::shutdown()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::go()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::CachedBSONObj::_tooBig'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::getOp(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::WriteContext::WriteContext(std::string
+        const&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    symbol: !!python/unicode 'mongo::CurOp::reset(mongo::HostAndPort const&, int)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::somethingWriteLocked()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
+    symbol: !!python/unicode 'mongo::KillCurrentOp::kill(mongo::AtomicUInt)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::getOrCreateCollection(mongo::StringData
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::replLocalAuth()'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::BackgroundJob'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    symbol: !!python/unicode 'mongo::storageGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
+-   object: !!python/unicode 'src/mongo/db/index_builder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::createIndex(mongo::BSONObj, bool,
+        mongo::IndexCatalog::ShutdownBehavior)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
+    symbol: !!python/unicode 'mongo::NamespaceDetails::setUserFlag(int)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
+    symbol: !!python/unicode 'mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
+    symbol: !!python/unicode 'mongo::NamespaceDetails::syncUserFlags(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::_getAccessMethodName(mongo::BSONObj
+        const&) const'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_legacy.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index_names.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::getAndClearUnfinishedIndexes()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::numIndexesTotal() const'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::ReadContext::ReadContext(std::string
+        const&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::grantInternalAuthorization()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::shutdown()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::ReplSetImpl::rss'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::WriteContext::WriteContext(std::string
+        const&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
+    symbol: !!python/unicode 'mongo::NamespaceIndex::getNamespaces(std::list<std::string,
+        std::allocator<std::string> >&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::dropAllIndexes(bool)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::BackgroundJob'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string>
+        >&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    symbol: !!python/unicode 'mongo::storageGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::createIndex(mongo::BSONObj, bool,
+        mongo::IndexCatalog::ShutdownBehavior)'
+-   object: !!python/unicode 'src/mongo/db/index_set.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/index_set_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/hasher.cpp'
+    symbol: !!python/unicode 'mongo::BSONElementHasher::hash64(mongo::BSONElement
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/queryutil.cpp'
+    symbol: !!python/unicode 'mongo::FieldRangeSet::universalRange() const'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::BSONObj::extractFields(mongo::BSONObj const&,
+        bool) const'
+-   object: !!python/unicode 'src/mongo/db/keypattern.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::ServerParameter'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    symbol: !!python/unicode 'mongo::replAllDead'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
+    symbol: !!python/unicode 'mongo::AuthorizationSession::grantInternalAuthorization()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBClientWithCommands'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBRead::DBRead(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
+    symbol: !!python/unicode 'mongo::NamespaceDetails::syncUserFlags(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::theReplSet'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBClientBase'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    symbol: !!python/unicode 'mongo::DBClientBase::ConnectionIdSequence'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBDirectClient'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
+    symbol: !!python/unicode 'mongo::replSettings'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::go()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
+    symbol: !!python/unicode 'mongo::NamespaceDetails::setUserFlag(int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    symbol: !!python/unicode 'mongo::dbHolderUnchecked()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::WriteContext::WriteContext(std::string
+        const&, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+    symbol: !!python/unicode 'mongo::lockedForWriting()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::~ServerParameter()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+        std::string const&, bool, bool)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    symbol: !!python/unicode 'mongo::replSet'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBRead::~DBRead()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+    symbol: !!python/unicode 'mongo::IndexCatalog::findIndexByKeyPattern(mongo::BSONObj
+        const&, bool) const'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ExportedServerParameter<bool>::setFromString(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::BackgroundJob'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client_basic.cpp'
+    symbol: !!python/unicode 'mongo::ClientBasic::getAuthorizationSession() const'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    symbol: !!python/unicode 'mongo::DBDirectClient::query(std::string const&, mongo::Query,
+        int, int, mongo::BSONObj const*, int, int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/jsobj.cpp'
+    symbol: !!python/unicode 'mongo::typeName(mongo::BSONType)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/scoped_db_conn_test.cpp'
+    - !!python/unicode 'src/mongo/unittest/crutch.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    symbol: !!python/unicode 'mongo::inShutdown()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::sleepsecs(int)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMillis64()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
+    symbol: !!python/unicode 'mongo::ServerParameterSet::getGlobal()'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/storage_options.cpp'
+    symbol: !!python/unicode 'mongo::storageGlobalParams'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+    symbol: !!python/unicode 'mongo::ServerStatusMetric::ServerStatusMetric(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/ops/delete.cpp'
+    symbol: !!python/unicode 'mongo::deleteObjects(mongo::StringData const&, mongo::BSONObj,
+        bool, bool, bool)'
+-   object: !!python/unicode 'src/mongo/db/ttl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+name: indexing
+title: indexing

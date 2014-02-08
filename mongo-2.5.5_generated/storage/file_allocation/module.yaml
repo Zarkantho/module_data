@@ -1,0 +1,253 @@
+description: 'TODO: file_allocation description'
+files_flat:
+- src/mongo/util/file_allocator.cpp
+- src/mongo/util/file_allocator.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/file_allocator.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/file_allocator.h
+groups:
+-   comments: '# File allocation library'
+    files:
+    - src/mongo/util/file_allocator.cpp
+    - src/mongo/util/file_allocator.h
+interface:
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::requestAllocation(std::string
+        const&, long&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::ensureParentDirCreated(boost::filesystem3::path
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/durop.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::waitUntilFinished() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perf/perftest.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::allocateAsap(std::string const&,
+        unsigned long long&)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::get()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/tools/tool.cpp'
+    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perf/perftest.cpp'
+    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::hasFailed() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    symbol: !!python/unicode 'mongo::FileAllocator::start()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/tools/tool.cpp'
+    - !!python/unicode 'src/mongo/dbtests/framework.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::setThreadName(mongo::StringData)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/paths.cpp'
+    symbol: !!python/unicode 'mongo::flushMyDirectory(boost::filesystem3::path const&)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgassertedNoTrace(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::remove(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::start_thread()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/processinfo.cpp'
+    symbol: !!python/unicode 'mongo::ProcessInfo::systemInfo'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::path::operator/=(boost::filesystem3::path
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::create_directory(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::file_size(boost::filesystem3::path
+        const&, boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::path::parent_path() const'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithPrefix(char const*)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::~thread()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::sleepsecs(int)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::path::m_erase_redundant_separator(unsigned
+        long)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::path::m_append_separator_if_needed()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::path::wchar_t_codecvt_facet()'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+name: file_allocation
+title: file_allocation

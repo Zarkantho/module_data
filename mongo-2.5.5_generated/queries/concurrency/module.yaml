@@ -1,0 +1,1165 @@
+description: 'TODO: concurrency description'
+files_flat:
+- src/mongo/util/concurrency/rwlock.h
+- src/mongo/util/concurrency/rwlockimpl.cpp
+- src/mongo/util/concurrency/rwlockimpl.h
+- src/mongo/db/d_concurrency.cpp
+- src/mongo/db/d_concurrency.h
+- src/mongo/db/lockstat.cpp
+- src/mongo/db/lockstat.h
+- src/mongo/db/lockstate.cpp
+- src/mongo/db/lockstate.h
+- src/mongo/util/concurrency/spin_lock.cpp
+- src/mongo/util/concurrency/spin_lock.h
+- src/mongo/util/concurrency/spin_lock_test.cpp
+- src/mongo/util/concurrency/synchronization.cpp
+- src/mongo/util/concurrency/synchronization.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/rwlock.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/rwlockimpl.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/rwlockimpl.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/d_concurrency.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/db/d_concurrency.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/lockstat.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/db/lockstat.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/lockstate.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/db/lockstate.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/spin_lock.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/concurrency/spin_lock.h
+-   execs: []
+    name: src/mongo/util/concurrency/spin_lock_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/synchronization.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/concurrency/synchronization.h
+groups:
+-   comments: '# Core locks library. Only in mongod.## can you say a bit more? e.g.
+        database locks are RWlocks, but what *are*## they exactly? any sort of fairness
+        or other performance/"how to use" info?# TODO: There are also a bunch of concurrency
+        related helpers in the UTILITIES section.'
+    files:
+    - src/mongo/util/concurrency/rwlock.h
+    - src/mongo/util/concurrency/rwlockimpl.cpp
+    - src/mongo/util/concurrency/rwlockimpl.h
+    - src/mongo/db/d_concurrency.cpp
+    - src/mongo/db/d_concurrency.h
+    - src/mongo/db/lockstat.cpp
+    - src/mongo/db/lockstat.h
+    - src/mongo/db/lockstate.cpp
+    - src/mongo/db/lockstate.h
+-   comments: '# Spin locks## can you give an example or two of where we tightly spin
+        on locks?'
+    files:
+    - src/mongo/util/concurrency/spin_lock.cpp
+    - src/mongo/util/concurrency/spin_lock.h
+    - src/mongo/util/concurrency/spin_lock_test.cpp
+-   comments: '# Condition Variables## why called ''synchronization'' then? (what
+        are these, really? can you give## an example?)'
+    files:
+    - src/mongo/util/concurrency/synchronization.cpp
+    - src/mongo/util/concurrency/synchronization.h
+interface:
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::lock_shared()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/trace.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock_shared()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/trace.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::SimpleRWLock(mongo::StringData
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/util/trace.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/util/trace.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::lock()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/util/trace.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::isR()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::somethingWriteLocked()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
+    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
+    - !!python/unicode 'src/mongo/db/index_builder.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::downgrade()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBRead::DBRead(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_cursor.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::isLocked()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pagefault.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_d.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::readlocktry::~readlocktry()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/health.cpp'
+    - !!python/unicode 'src/mongo/db/restapi.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalRead::GlobalRead(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_d.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::upgrade()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::dbLevelLockingEnabled()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::atLeastReadLocked(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::writelocktry::~writelocktry()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::isWriteLocked(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
+    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database_holder.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::writelocktry::writelocktry(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::nested()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::ParallelBatchWriterMode::_batchLock'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::assertWriteLocked(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/collection_info_cache.cpp'
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
+    - !!python/unicode 'src/mongo/db/introspect.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/query_stage_keep.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
+    - !!python/unicode 'src/mongo/dbtests/runner_registry.cpp'
+    - !!python/unicode 'src/mongo/db/introspect.cpp'
+    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/s/d_merge.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_distinct.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_merge_sort.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_sort.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_collscan.cpp'
+    - !!python/unicode 'src/mongo/dbtests/clienttests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_multi_plan_runner.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
+    - !!python/unicode 'src/mongo/db/commands/create_indexes.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_tests.cpp'
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/dbtests/indexcatalogtests.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_and.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/dbtests/queryutiltests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
+    - !!python/unicode 'src/mongo/db/index_builder.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_fetch.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_config.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/extsorttests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_single_solution_runner.cpp'
+    - !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/dbtests/indexupdatetests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/tools/dump.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalRead::~GlobalRead()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_d.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::TempRelease::~TempRelease()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/resync.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::assertAtLeastReadLocked(mongo::StringData
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database_holder.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::~GlobalWrite()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/repltests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_collscan.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/oplogstarttests.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/dbtests/pdfiletests.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/dbeval.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/db/introspect.cpp'
+    - !!python/unicode 'src/mongo/s/d_merge.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/clienttests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/dbtests/queryutiltests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::TempRelease::TempRelease()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/resync.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::GlobalWrite(bool, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/repltests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
+    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
+    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/query_stage_collscan.cpp'
+    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/dbtests/oplogstarttests.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/dbtests/pdfiletests.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/pdfile.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/dbeval.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::DBRead::~DBRead()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/ttl.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_cursor.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
+    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::readlocktry::readlocktry(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/health.cpp'
+    - !!python/unicode 'src/mongo/db/restapi.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::isReadLocked()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    symbol: !!python/unicode 'mongo::Lock::isW()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
+    - !!python/unicode 'src/mongo/db/stats/snapshots_webplugins.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+    - !!python/unicode 'src/mongo/db/catalog/database_holder.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    symbol: !!python/unicode 'mongo::LockStat::reset()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    symbol: !!python/unicode 'mongo::LockStat::report() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    symbol: !!python/unicode 'mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::LockState()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::Acquiring::~Acquiring()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::hasAnyReadLock() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::reportState(mongo::BSONObjBuilder&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*,
+        mongo::LockState&)'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::Dump()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::hasAnyWriteLock() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    symbol: !!python/unicode 'mongo::LockState::reportState()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
+    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
+    - !!python/unicode 'src/mongo/s/client_info.cpp'
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    - !!python/unicode 'src/mongo/db/prefetch.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_remote_db_server.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
+    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
+    - !!python/unicode 'src/mongo/s/client_info.cpp'
+    - !!python/unicode 'src/mongo/db/write_concern.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    - !!python/unicode 'src/mongo/db/prefetch.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+    - !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_remote_db_server.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/util/net/sock.cpp'
+    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::NotifyAll::now()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_commitjob.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::Notification::notifyOne()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::NotifyAll::awaitBeyondNow()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::Notification::waitToBeNotified()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::Notification::Notification()'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::NotifyAll::NotifyAll()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur_commitjob.cpp'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    symbol: !!python/unicode 'mongo::NotifyAll::notifyAll(unsigned long long)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+    symbol: !!python/unicode 'mongo::ServerStatusSection::ServerStatusSection(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/string_data.cpp'
+    symbol: !!python/unicode 'mongo::StringData::Hasher::operator()(mongo::StringData
+        const&) const'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+        void*, bool)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    symbol: !!python/unicode 'mongo::dur::DurableInterface::_impl'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::wasserted(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/dur.cpp'
+    symbol: !!python/unicode 'mongo::dur::releasingWriteLock()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::recommendedYieldMicros(int*, int*, bool)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    symbol: !!python/unicode 'mongo::Client::getActiveClientCount(int&, int&)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMillis64()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/string_data.cpp'
+    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::StringData const&)'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
+-   object: !!python/unicode 'src/mongo/db/d_concurrency.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/lockstat.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/s_only.cpp'
+    symbol: !!python/unicode 'mongo::currentClient'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/hex.cpp'
+    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/db/lockstate.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::~thread()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::start_thread()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::log()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::join()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/timer.cpp'
+    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/spin_lock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
+name: concurrency
+title: concurrency

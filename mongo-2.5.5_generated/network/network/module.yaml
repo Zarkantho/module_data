@@ -1,0 +1,1284 @@
+description: 'TODO: network description'
+files_flat:
+- src/mongo/util/net/listen.cpp
+- src/mongo/util/net/listen.h
+- src/mongo/util/net/hostandport.h
+- src/mongo/util/net/message.cpp
+- src/mongo/util/net/message.h
+- src/mongo/util/net/message_port.cpp
+- src/mongo/util/net/message_port.h
+- src/mongo/util/net/httpclient.cpp
+- src/mongo/util/net/httpclient.h
+- src/mongo/util/net/sock.cpp
+- src/mongo/util/net/sock.h
+- src/mongo/util/net/sock_test.cpp
+- src/mongo/util/net/socket_poll.cpp
+- src/mongo/util/net/socket_poll.h
+- src/mongo/util/net/ssl_manager.cpp
+- src/mongo/util/net/ssl_manager.h
+- src/mongo/util/net/ssl_options.cpp
+- src/mongo/util/net/ssl_options.h
+- src/mongo/util/net/message_server.h
+- src/mongo/util/net/message_server_port.cpp
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/listen.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/listen.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/hostandport.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/message.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/message.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/message_port.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/message_port.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/httpclient.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/httpclient.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/sock.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/sock.h
+-   execs: []
+    name: src/mongo/util/net/sock_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/socket_poll.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/socket_poll.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/ssl_manager.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/ssl_manager.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/ssl_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/util/net/ssl_options.h
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/util/net/message_server.h
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/util/net/message_server_port.cpp
+groups:
+-   comments: '# Network library## can you say a few words about:## - what this does##
+        - who uses it## - how to use it?'
+    files:
+    - src/mongo/util/net/listen.cpp
+    - src/mongo/util/net/listen.h
+    - src/mongo/util/net/hostandport.h
+    - src/mongo/util/net/message.cpp
+    - src/mongo/util/net/message.h
+    - src/mongo/util/net/message_port.cpp
+    - src/mongo/util/net/message_port.h
+    - src/mongo/util/net/httpclient.cpp
+    - src/mongo/util/net/httpclient.h
+    - src/mongo/util/net/sock.cpp
+    - src/mongo/util/net/sock.h
+    - src/mongo/util/net/sock_test.cpp
+    - src/mongo/util/net/socket_poll.cpp
+    - src/mongo/util/net/socket_poll.h
+    - src/mongo/util/net/ssl_manager.cpp
+    - src/mongo/util/net/ssl_manager.h
+    - src/mongo/util/net/ssl_options.cpp
+    - src/mongo/util/net/ssl_options.h
+-   comments: '# Top level (?) of handling incoming network connections on mongod
+        and mongos. Inherits from# Listener (listen.h).'
+    files:
+    - src/mongo/util/net/message_server.h
+    - src/mongo/util/net/message_server_port.cpp
+interface:
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::globalConnectionNumber'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::setupSockets()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::globalTicketHolder'
+    used_by:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::Listener(std::string const&, std::string
+        const&, int, bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::accepted(boost::shared_ptr<mongo::Socket>,
+        long long)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::~Listener()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::ListeningSockets::get()'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::_timeTracker'
+    used_by:
+    - !!python/unicode 'src/mongo/db/storage/record.cpp'
+    - !!python/unicode 'src/mongo/db/commands/isself.cpp'
+    - !!python/unicode 'src/mongo/s/cursors.cpp'
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/db/curop.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
+    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
+    - !!python/unicode 'src/mongo/util/elapsed_tracker.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::acceptedMP(mongo::MessagingPort*)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'mongo::Listener::initAndListen()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::Listener'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message.cpp'
+    symbol: !!python/unicode 'mongo::doesOpGetAResponse(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/d_logic.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::MessagingPort(double, mongo::logger::LogSeverity)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::say(mongo::Message&, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::recv(mongo::Message&)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::shutdown()'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::closeAllSockets(unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::piggyBack(mongo::Message&, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::setSocketTimeout(double)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    symbol: !!python/unicode 'mongo::MessagingPort::call(mongo::Message&, mongo::Message&)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/httpclient.cpp'
+    symbol: !!python/unicode 'mongo::HttpClient::get(std::string const&, mongo::HttpClient::Result*)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/stat.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::hostbyname(char const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/dbtests/socktests.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::unsafe_recv(char*, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::SocketException'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    - !!python/unicode 'src/mongo/client/connpool.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_dbclient_connection.cpp'
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_remote_db_server.cpp'
+    - !!python/unicode 'src/mongo/db/repl/sync.cpp'
+    - !!python/unicode 'src/mongo/client/parallel.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::prettyHostName()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/dbhash.cpp'
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
+    - !!python/unicode 'src/mongo/s/d_logic.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_web_handler.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::send(char const*, int, char const*)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::isStillConnected()'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_dbclient_connection.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::unknownAddress'
+    used_by:
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::SockAddr::isLocalHost() const'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::setTimeout(double)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::connect(mongo::SockAddr&)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::getHostNameCached()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/s/version_mongos.cpp'
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/balance.cpp'
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/db/query/new_find.cpp'
+    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
+    - !!python/unicode 'src/mongo/s/cluster_client_internal.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::enableIPv6(bool)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::secure(mongo::SSLManagerInterface*, std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::SockAddr::getAddr() const'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::SockAddr::toString(bool) const'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/bridge.cpp'
+    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::IPv6Enabled()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/isself.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::SockAddr::SockAddr(char const*, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'vtable for mongo::SocketException'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/dbtests/mock/mock_remote_db_server.cpp'
+    - !!python/unicode 'src/mongo/client/connpool.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::close()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::getHostName()'
+    used_by:
+    - !!python/unicode 'src/mongo/s/config.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
+    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
+    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
+    - !!python/unicode 'src/mongo/db/repl/oplogreader.cpp'
+    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
+    - !!python/unicode 'src/mongo/s/distlock.cpp'
+    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
+    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    symbol: !!python/unicode 'mongo::Socket::doSSLHandshake(char const*, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/net/miniwebserver.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    symbol: !!python/unicode 'mongo::sslGlobalParams'
+    used_by:
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    symbol: !!python/unicode 'mongo::isSSLServer'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    symbol: !!python/unicode 'mongo::getSSLVersion(std::string const&, std::string
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    symbol: !!python/unicode 'mongo::getSSLManager()'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/authentication_commands.cpp'
+    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
+    - !!python/unicode 'src/mongo/client/dbclient.cpp'
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    symbol: !!python/unicode 'mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    symbol: !!python/unicode 'mongo::storeSSLServerOptions(mongo::optionenvironment::Environment
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    symbol: !!python/unicode 'mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)'
+    used_by:
+    - !!python/unicode 'src/mongo/s/mongos_options.cpp'
+    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    symbol: !!python/unicode 'mongo::storeSSLClientOptions(mongo::optionenvironment::Environment
+        const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
+    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    symbol: !!python/unicode 'mongo::createServer(mongo::MessageServer::Options const&,
+        mongo::MessageHandler*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::warnings'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/scoped_db_conn_test.cpp'
+    - !!python/unicode 'src/mongo/unittest/crutch.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    symbol: !!python/unicode 'mongo::inShutdown()'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::sleepsecs(int)'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/util/net/listen.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::getcurns'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/message_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/httpclient.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/httpclient.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/httpclient.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::wait(unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::go()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point_service.cpp'
+    symbol: !!python/unicode 'mongo::getGlobalFailPointRegistry()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point.cpp'
+    symbol: !!python/unicode 'mongo::FailPoint::slowShouldFailOpenBlock()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point.cpp'
+    symbol: !!python/unicode 'mongo::FailPoint::shouldFailCloseBlock()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point_registry.cpp'
+    symbol: !!python/unicode 'mongo::FailPointRegistry::addFailPoint(std::string const&,
+        mongo::FailPoint*)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::curTimeMicros64()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::BackgroundJob'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point.cpp'
+    symbol: !!python/unicode 'mongo::FailPoint::FailPoint()'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/util/net/sock.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point_service.cpp'
+    symbol: !!python/unicode 'mongo::getGlobalFailPointRegistry()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point_registry.cpp'
+    symbol: !!python/unicode 'mongo::FailPointRegistry::getFailPoint(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'src/mongo/util/net/sock_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/fail_point.cpp'
+    symbol: !!python/unicode 'mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned
+        int, mongo::BSONObj const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/util.cpp'
+    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+        void*, bool)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
+    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
+        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
+        std::allocator<std::string> > const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::fassertFailed(int)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
+    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/log.cpp'
+    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
+        const&) const'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
+        const*, int)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::string*) const'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
+        const&, boost::filesystem3::path const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
+    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::requires(std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::toString() const'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
+        const&) const'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addOptionChaining(std::string
+        const&, std::string const&, mongo::optionenvironment::OptionType, std::string
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
+        const&)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::toString() const'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
+    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)'
+-   object: !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::setThreadName(mongo::StringData)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::LastErrorHolder::reset(mongo::LastError*)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::DBException'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/time_support.cpp'
+    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::start_thread()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/lasterror.cpp'
+    symbol: !!python/unicode 'mongo::lastError'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/scoped_db_conn_test.cpp'
+    - !!python/unicode 'src/mongo/unittest/crutch.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    symbol: !!python/unicode 'mongo::inShutdown()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'boost::thread::~thread()'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
+    symbol: !!python/unicode 'mongo::networkCounter'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
+    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
+    symbol: !!python/unicode 'mongo::NetworkCounter::hit(long long, long long)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/client/scoped_db_conn_test.cpp'
+    - !!python/unicode 'src/mongo/unittest/crutch.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
+    - !!python/unicode 'src/mongo/s/server.cpp'
+    symbol: !!python/unicode 'mongo::dbexit(mongo::ExitCode, char const*)'
+-   object: !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/server_options.cpp'
+    symbol: !!python/unicode 'mongo::serverGlobalParams'
+name: network
+title: network
