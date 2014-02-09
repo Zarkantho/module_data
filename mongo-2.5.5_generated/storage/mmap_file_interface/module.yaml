@@ -8,173 +8,144 @@ module_groups:
     group_files:
     - src/mongo/db/storage/data_file.cpp
     - src/mongo/db/storage/data_file.h
-interface:
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::openExisting(char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::open(char const*, int, bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::flush(bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::allocExtentArea(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::maxSize()'
-    used_by:
-    - !!python/unicode 'src/mongo/dbtests/pdfiletests.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    symbol: !!python/unicode 'mongo::DataFile::badOfs(int) const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/scoped_db_conn_test.cpp'
-    - !!python/unicode 'src/mongo/unittest/crutch.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::inShutdown()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
-        const*, int)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    symbol: !!python/unicode 'mongo::Lock::somethingWriteLocked()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lockstate.cpp'
-    symbol: !!python/unicode 'mongo::LockState::Dump()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::requestAllocation(std::string
-        const&, long&)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::flush(bool)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::get()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    symbol: !!python/unicode 'mongo::DurableMappedFile::create(std::string const&,
-        unsigned long long&, bool)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage_options.cpp'
-    symbol: !!python/unicode 'mongo::storageGlobalParams'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    symbol: !!python/unicode 'mongo::DurableMappedFile::open(std::string const&, bool)'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    symbol: !!python/unicode 'mongo::dur::DurableInterface::_impl'
--   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/storage/data_file.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/storage/data_file.h
+    group_generated_data:
+    -   file_name: src/mongo/db/storage/data_file.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::DataFile::openExisting(char const*)
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DataFile::open(char const*, int, bool)
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DataFile::flush(bool)
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DataFile::allocExtentArea(int)
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DataFile::maxSize()
+            symbol_uses:
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/db/storage/extent.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DataFile::badOfs(int) const
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::inShutdown()
+            symbol_sources:
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/unittest/crutch.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/clientAndShell.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::Lock::somethingWriteLocked()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::Dump()
+            symbol_sources:
+            - src/mongo/db/lockstate.cpp
+        -   symbol_name: mongo::FileAllocator::requestAllocation(std::string const&,
+                long&)
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::MemoryMappedFile::flush(bool)
+            symbol_sources:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::FileAllocator::get()
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: mongo::DurableMappedFile::create(std::string const&, unsigned
+                long long&, bool)
+            symbol_sources:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DurableMappedFile::open(std::string const&, bool)
+            symbol_sources:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+    -   file_name: src/mongo/db/storage/data_file.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

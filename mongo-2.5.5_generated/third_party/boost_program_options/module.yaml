@@ -35,715 +35,901 @@ module_groups:
     - src/third_party/boost/libs/program_options/src/value_semantic.cpp
     - src/third_party/boost/libs/program_options/src/variables_map.cpp
     - src/third_party/boost/libs/program_options/src/winmain.cpp
-interface:
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
-    symbol: !!python/unicode 'boost::program_options::detail::cmdline::run()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
-    symbol: !!python/unicode 'boost::program_options::detail::cmdline::set_options_description(boost::program_options::options_description
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
-    symbol: !!python/unicode 'boost::program_options::detail::cmdline::cmdline(std::vector<std::string,
-        std::allocator<std::string> > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
-    symbol: !!python/unicode 'boost::program_options::detail::cmdline::style(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/cmdline.cpp'
-    symbol: !!python/unicode 'boost::program_options::detail::cmdline::set_positional_options(boost::program_options::positional_options_description
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/convert.cpp'
-    symbol: !!python/unicode 'boost::program_options::to_internal(std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description::add_options()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description::options_description(std::string
-        const&, unsigned int, unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::operator<<(std::ostream&, boost::program_options::options_description
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description::add(boost::program_options::options_description
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description::m_default_line_length'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description::options_description(unsigned
-        int, unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/options_description.cpp'
-    symbol: !!python/unicode 'boost::program_options::options_description_easy_init::operator()(char
-        const*, boost::program_options::value_semantic const*, char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/parsers.cpp'
-    symbol: !!python/unicode 'boost::program_options::basic_parsed_options<char> boost::program_options::parse_config_file<char>(std::basic_istream<char,
-        std::char_traits<char> >&, boost::program_options::options_description const&,
-        bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
-    symbol: !!python/unicode 'boost::program_options::positional_options_description::max_total_count()
-        const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
-    symbol: !!python/unicode 'boost::program_options::positional_options_description::add(char
-        const*, int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
-    symbol: !!python/unicode 'boost::program_options::positional_options_description::positional_options_description()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/positional_options.cpp'
-    symbol: !!python/unicode 'boost::program_options::positional_options_description::name_for_position(unsigned
-        int) const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'vtable for boost::program_options::validation_error'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::validate(boost::any&, std::vector<std::string,
-        std::allocator<std::string> > const&, bool*, int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::validators::check_first_occurrence(boost::any
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::validation_error::what() const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::arg'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::value_semantic_codecvt_helper<char>::parse(boost::any&,
-        std::vector<std::string, std::allocator<std::string> > const&, bool) const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::validation_error::validation_error(boost::program_options::validation_error::kind_t,
-        std::string const&, std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::program_options::validation_error'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::program_options::value_semantic_codecvt_helper<char>'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::multiple_occurrences::get_option_name()
-        const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::invalid_option_value::invalid_option_value(std::string
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'vtable for boost::program_options::value_semantic_codecvt_helper<char>'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::validate(boost::any&, std::vector<std::string,
-        std::allocator<std::string> > const&, std::string*, int)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/value_semantic.cpp'
-    symbol: !!python/unicode 'boost::program_options::bool_switch()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
-    symbol: !!python/unicode 'boost::program_options::variables_map::variables_map()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
-    symbol: !!python/unicode 'boost::program_options::store(boost::program_options::basic_parsed_options<char>
-        const&, boost::program_options::variables_map&, bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
-    symbol: !!python/unicode 'boost::program_options::abstract_variables_map::operator[](std::string
-        const&) const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/program_options/src/variables_map.cpp'
-    symbol: !!python/unicode 'vtable for boost::program_options::variables_map'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
-leaks: []
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/cmdline.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/detail/cmdline.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/program_options/detail/config_file.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/detail/convert.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/detail/parsers.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/program_options/detail/utf8_codecvt_facet.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/detail/value_semantic.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/program_options/environment_iterator.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/program_options/eof_iterator.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/errors.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/option.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/options_description.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/parsers.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/positional_options.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/value_semantic.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/variables_map.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/program_options/version.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/cmdline.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/config_file.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/convert.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/options_description.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/parsers.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/positional_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/split.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/utf8_codecvt_facet.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/value_semantic.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/variables_map.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/program_options/src/winmain.cpp
+    group_generated_data:
+    -   file_name: src/third_party/boost/boost/program_options.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/cmdline.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/cmdline.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/config_file.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/convert.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/parsers.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/utf8_codecvt_facet.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/detail/value_semantic.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/environment_iterator.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/eof_iterator.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/errors.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/option.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/options_description.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/parsers.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/positional_options.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/value_semantic.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/variables_map.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/program_options/version.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/program_options/src/cmdline.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::invalid_syntax::invalid_syntax(std::string
+                const&, boost::program_options::invalid_syntax::kind_t)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/config_file.cpp
+        -   symbol_name: boost::program_options::detail::cmdline::run()
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::detail::cmdline::set_options_description(boost::program_options::options_description
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::detail::cmdline::cmdline(std::vector<std::string,
+                std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::detail::cmdline::style(int)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::detail::cmdline::set_positional_options(boost::program_options::positional_options_description
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        file_dependencies:
+        -   symbol_name: boost::program_options::option_description::semantic() const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::option_description::key(std::string
+                const&) const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::positional_options_description::max_total_count()
+                const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/positional_options.cpp
+        -   symbol_name: boost::program_options::options_description::find_nothrow(std::string
+                const&, bool, bool, bool) const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::positional_options_description::name_for_position(unsigned
+                int) const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/positional_options.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/config_file.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::common_config_file_iterator(std::set<std::string,
+                std::less<std::string>, std::allocator<std::string> > const&, bool)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::get()
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+        file_dependencies:
+        -   symbol_name: boost::program_options::invalid_syntax::invalid_syntax(std::string
+                const&, boost::program_options::invalid_syntax::kind_t)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/convert.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::to_internal(std::string const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::from_local_8_bit(std::string const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::from_utf8(std::string const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::program_options::to_internal(std::basic_string<wchar_t,
+                std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+        -   symbol_name: boost::to_local_8_bit(std::basic_string<wchar_t, std::char_traits<wchar_t>,
+                std::allocator<wchar_t> > const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        file_dependencies:
+        -   symbol_name: vtable for boost::program_options::detail::utf8_codecvt_facet
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/utf8_codecvt_facet.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/options_description.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::options_description::add_options()
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::options_description::options_description(std::string
+                const&, unsigned int, unsigned int)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::operator<<(std::ostream&, boost::program_options::options_description
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::options_description::find_nothrow(std::string
+                const&, bool, bool, bool) const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+        -   symbol_name: boost::program_options::option_description::key(std::string
+                const&) const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+        -   symbol_name: boost::program_options::options_description::find(std::string
+                const&, bool, bool, bool) const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::options_description::options() const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::options_description::add(boost::program_options::options_description
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::options_description::m_default_line_length
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::option_description::long_name() const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+        -   symbol_name: boost::program_options::options_description::options_description(unsigned
+                int, unsigned int)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::option_description::semantic() const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+        -   symbol_name: boost::program_options::options_description_easy_init::operator()(char
+                const*, boost::program_options::value_semantic const*, char const*)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        file_dependencies:
+        -   symbol_name: vtable for boost::program_options::untyped_value
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/parsers.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::basic_parsed_options<char> boost::program_options::parse_config_file<char>(std::basic_istream<char,
+                std::char_traits<char> >&, boost::program_options::options_description
+                const&, bool)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        file_dependencies:
+        -   symbol_name: boost::program_options::to_internal(std::string const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        -   symbol_name: boost::program_options::options_description::options() const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::option_description::long_name() const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::from_utf8(std::string const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::common_config_file_iterator(std::set<std::string,
+                std::less<std::string>, std::allocator<std::string> > const&, bool)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/config_file.cpp
+        -   symbol_name: boost::program_options::to_internal(std::basic_string<wchar_t,
+                std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::get()
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/config_file.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/positional_options.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::positional_options_description::max_total_count()
+                const
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+        -   symbol_name: boost::program_options::positional_options_description::add(char
+                const*, int)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::positional_options_description::positional_options_description()
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::positional_options_description::name_for_position(unsigned
+                int) const
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/program_options/src/split.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/program_options/src/utf8_codecvt_facet.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: vtable for boost::program_options::detail::utf8_codecvt_facet
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: vtable for boost::program_options::validation_error
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::validate(boost::any&, std::vector<std::string,
+                std::allocator<std::string> > const&, bool*, int)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::validators::check_first_occurrence(boost::any
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::validation_error::what() const
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::multiple_values::set_option_name(std::string
+                const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::arg
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::value_semantic_codecvt_helper<char>::parse(boost::any&,
+                std::vector<std::string, std::allocator<std::string> > const&, bool)
+                const
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::validation_error::validation_error(boost::program_options::validation_error::kind_t,
+                std::string const&, std::string const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: typeinfo for boost::program_options::validation_error
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: typeinfo for boost::program_options::value_semantic_codecvt_helper<char>
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::multiple_occurrences::get_option_name()
+                const
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: vtable for boost::program_options::untyped_value
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::invalid_option_value::invalid_option_value(std::string
+                const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::validation_error::set_option_name(std::string
+                const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: vtable for boost::program_options::value_semantic_codecvt_helper<char>
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::multiple_occurrences::set_option_name(std::string
+                const&)
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::validate(boost::any&, std::vector<std::string,
+                std::allocator<std::string> > const&, std::string*, int)
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::bool_switch()
+            symbol_uses:
+            - src/mongo/util/options_parser/option_section.cpp
+        file_dependencies:
+        -   symbol_name: boost::to_local_8_bit(std::basic_string<wchar_t, std::char_traits<wchar_t>,
+                std::allocator<wchar_t> > const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        -   symbol_name: boost::from_local_8_bit(std::string const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+        -   symbol_name: boost::from_utf8(std::string const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/convert.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/variables_map.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::program_options::variables_map::variables_map()
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::store(boost::program_options::basic_parsed_options<char>
+                const&, boost::program_options::variables_map&, bool)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: boost::program_options::abstract_variables_map::operator[](std::string
+                const&) const
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: vtable for boost::program_options::variables_map
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        file_dependencies:
+        -   symbol_name: boost::program_options::multiple_values::set_option_name(std::string
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::program_options::option_description::key(std::string
+                const&) const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::options_description::options() const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: boost::program_options::options_description::find(std::string
+                const&, bool, bool, bool) const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+        -   symbol_name: typeinfo for boost::program_options::validation_error
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::program_options::validation_error::set_option_name(std::string
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::program_options::multiple_occurrences::set_option_name(std::string
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: boost::program_options::option_description::semantic() const
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+    -   file_name: src/third_party/boost/libs/program_options/src/winmain.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

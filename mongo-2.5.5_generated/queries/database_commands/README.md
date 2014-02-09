@@ -10898,6 +10898,22 @@ Commands (run using db.$cmd.findOne(...))
 
 <div></div>
 
+    mongo::CmdShutdown::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Provided By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdShutdown::run(std::string const&, mongo::BSONObj&, int, std::string&, mongo::BSONObjBuilder&, bool)
+
+- Provided By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
     mongo::ActionType::shutdown
 
 - Provided By:

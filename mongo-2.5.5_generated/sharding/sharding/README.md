@@ -7226,6 +7226,14 @@ Bizarre legacy sharding code.   From writeback\_listener.h  "The writeback liste
 
 <div></div>
 
+    mongo::Shard::isAShardNode(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     std::string mongo::integerToHex<int>(int)
 
 - Provided By:
@@ -8756,6 +8764,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -11005,6 +11021,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+
+<div></div>
+
     vtable for mongo::ScopedDbConnection
 
 - Provided By:
@@ -12410,6 +12434,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+
+<div></div>
+
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -19371,6 +19403,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 <div></div>
 
+    mongo::usingAShardConnection(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
     mongo::ActionType::connPoolStats
 
 - Provided By:
@@ -19472,6 +19512,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -20184,6 +20232,14 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Provided By:
 
     - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard> >&)
+
+- Provided By:
+
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 

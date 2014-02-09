@@ -7,259 +7,223 @@ module_groups:
     group_files:
     - src/mongo/db/audit.cpp
     - src/mongo/db/audit.h
-interface:
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCommandAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, mongo::mutablebson::Document const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
-    - !!python/unicode 'src/mongo/s/cursors.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCreateUser(mongo::ClientBasic*, mongo::UserName
-        const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logInsertAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropUser(mongo::ClientBasic*, mongo::UserName
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logRevokePrivilegesFromRole(mongo::ClientBasic*,
-        mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*,
-        mongo::BSONObj const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropAllUsersFromDatabase(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logRenameCollection(mongo::ClientBasic*,
-        mongo::StringData const&, mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logGrantRolesToRole(mongo::ClientBasic*,
-        mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logShutdown(mongo::ClientBasic*)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logRevokeRolesFromUser(mongo::ClientBasic*,
-        mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCreateCollection(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropCollection(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName
-        const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropRole(mongo::ClientBasic*, mongo::RoleName
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropDatabase(mongo::ClientBasic*, mongo::StringData
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::appendImpersonatedUsers(mongo::BSONObjBuilder*)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/shard.cpp'
-    - !!python/unicode 'src/mongo/s/dbclient_multi_command.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDeleteAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCreateRole(mongo::ClientBasic*, mongo::RoleName
-        const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&,
-        std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj
-        const*, mongo::StringData const&, mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logRevokeRolesFromRole(mongo::ClientBasic*,
-        mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj,
-        mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName>
-        >*, bool*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logGrantRolesToUser(mongo::ClientBasic*,
-        mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logUpdateRole(mongo::ClientBasic*, mongo::RoleName
-        const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const*,
-        std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logCreateDatabase(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logDropIndex(mongo::ClientBasic*, mongo::StringData
-        const&, mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*,
-        mongo::BSONObj const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logEnableSharding(mongo::ClientBasic*,
-        mongo::StringData const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&,
-        bool, bool, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logShardCollection(mongo::ClientBasic*,
-        mongo::StringData const&, mongo::BSONObj const&, bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logRemoveShard(mongo::ClientBasic*, mongo::StringData
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logAddShard(mongo::ClientBasic*, mongo::StringData
-        const&, std::string const&, long long)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logReplSetReconfig(mongo::ClientBasic*,
-        mongo::BSONObj const*, mongo::BSONObj const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logGrantPrivilegesToRole(mongo::ClientBasic*,
-        mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
-        > const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*,
-        mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logFsyncUnlockAuthzCheck(mongo::ClientBasic*,
-        mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logAuthentication(mongo::ClientBasic*,
-        mongo::StringData const&, mongo::UserName const&, mongo::ErrorCodes::Error)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/authentication_commands.cpp'
-leaks: []
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/audit.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/audit.h
+    group_generated_data:
+    -   file_name: src/mongo/db/audit.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::audit::logCommandAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::mutablebson::Document const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*,
+                mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*,
+                mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/s/cursors.cpp
+        -   symbol_name: mongo::audit::logCreateUser(mongo::ClientBasic*, mongo::UserName
+                const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName,
+                std::allocator<mongo::RoleName> > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logInsertAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logDropUser(mongo::ClientBasic*, mongo::UserName
+                const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logRevokePrivilegesFromRole(mongo::ClientBasic*,
+                mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*, mongo::BSONObj
+                const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/s/strategy.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logDropAllUsersFromDatabase(mongo::ClientBasic*,
+                mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::audit::logGrantRolesToRole(mongo::ClientBasic*, mongo::RoleName
+                const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logShutdown(mongo::ClientBasic*)
+            symbol_uses:
+            - src/mongo/s/server.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logRevokeRolesFromUser(mongo::ClientBasic*,
+                mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logCreateCollection(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::audit::logDropCollection(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName
+                const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName,
+                std::allocator<mongo::RoleName> > const*)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logDropRole(mongo::ClientBasic*, mongo::RoleName
+                const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logDropDatabase(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+        -   symbol_name: mongo::audit::appendImpersonatedUsers(mongo::BSONObjBuilder*)
+            symbol_uses:
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+        -   symbol_name: mongo::audit::logDeleteAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logCreateRole(mongo::ClientBasic*, mongo::RoleName
+                const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj
+                const*, mongo::StringData const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/catalog/index_create.cpp
+        -   symbol_name: mongo::audit::logRevokeRolesFromRole(mongo::ClientBasic*,
+                mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj,
+                mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName>
+                >*, bool*)
+            symbol_uses:
+            - src/mongo/db/dbcommands.cpp
+        -   symbol_name: mongo::audit::logGrantRolesToUser(mongo::ClientBasic*, mongo::UserName
+                const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logUpdateRole(mongo::ClientBasic*, mongo::RoleName
+                const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
+                > const*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                > const*)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logCreateDatabase(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/s/strategy.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logDropIndex(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*, mongo::BSONObj
+                const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/s/strategy.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logEnableSharding(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool,
+                mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logShardCollection(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::BSONObj const&, bool)
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::audit::logRemoveShard(mongo::ClientBasic*, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::audit::logAddShard(mongo::ClientBasic*, mongo::StringData
+                const&, std::string const&, long long)
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::audit::logReplSetReconfig(mongo::ClientBasic*, mongo::BSONObj
+                const*, mongo::BSONObj const*)
+            symbol_uses:
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::audit::logGrantPrivilegesToRole(mongo::ClientBasic*,
+                mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                > const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, long long, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/s/strategy.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logFsyncUnlockAuthzCheck(mongo::ClientBasic*,
+                mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::audit::logAuthentication(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::UserName const&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/commands/authentication_commands.cpp
+        file_dependencies: []
+    -   file_name: src/mongo/db/audit.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

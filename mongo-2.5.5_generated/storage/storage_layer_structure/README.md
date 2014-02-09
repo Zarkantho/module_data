@@ -3501,6 +3501,17 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
     mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
 
 - Provided By:
@@ -5377,6 +5388,17 @@ Files containing the structural metadata about the databases/data files/collecti
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::dbexit(mongo::ExitCode, char const*)
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>
 

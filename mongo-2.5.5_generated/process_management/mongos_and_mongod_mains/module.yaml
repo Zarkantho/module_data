@@ -7,1651 +7,1392 @@ module_groups:
     group_files:
     - src/mongo/db/db.cpp
     - src/mongo/db/db.h
+    group_generated_data:
+    -   file_name: src/mongo/db/db.cpp
+        file_executables:
+        - mongod
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
+                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: vtable for mongo::DBClientBase
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/index_names.cpp
+        -   symbol_name: mongo::printStackTrace(std::ostream&)
+            symbol_sources:
+            - src/mongo/util/stacktrace.cpp
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::dateToCtimeString(mongo::Date_t)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::ServerStatusSection::ServerStatusSection(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands/server_status.cpp
+        -   symbol_name: mongo::rotateLogs()
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::FileAllocator::get()
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: mongo::getDeleter()
+            symbol_sources:
+            - src/mongo/db/range_deleter_service.cpp
+        -   symbol_name: mongo::killCurrentOp
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Lock::DBWrite::~DBWrite()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: vtable for mongo::DBClientWithCommands
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::ProcessId::asLongLong() const
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::ScriptEngine::_getCurrentOpIdCallback
+            symbol_sources:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(std::vector<std::string,
+                std::allocator<std::string> >*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::printMongodHelp(mongo::optionenvironment::OptionSection
+                const&)
+            symbol_sources:
+            - src/mongo/db/mongod_options.cpp
+        -   symbol_name: mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::Database::_initExtentFreeList()
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: vtable for mongo::DBDirectClient
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::_diaglog
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::ScriptEngine::_checkInterruptCallback
+            symbol_sources:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::KillCurrentOp::checkForInterruptNoAssert()
+            symbol_sources:
+            - src/mongo/db/kill_current_op.cpp
+        -   symbol_name: mongo::getcurns
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::Database::closeDatabase(std::string const&, std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::startupWarningsLog
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::causedBy(std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DBClientBase::ConnectionIdSequence
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: vtable for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::logStartupWarnings()
+            symbol_sources:
+            - src/mongo/db/startup_warnings.cpp
+        -   symbol_name: mongo::jsTime()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::sleepmillis(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::sleepmicros(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::operator[](std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::replSettings
+            symbol_sources:
+            - src/mongo/db/repl/replication_server_status.cpp
+        -   symbol_name: mongo::BackgroundJob::go()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
+                boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::initializeServerGlobalState()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::Timer::_countsPerSecond
+            symbol_sources:
+            - src/mongo/util/timer.cpp
+        -   symbol_name: mongo::startReplication()
+            symbol_sources:
+            - src/mongo/db/repl/repl_start.cpp
+        -   symbol_name: mongo::DiagLog::flush()
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::dur::startup()
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::curTimeMicros()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Client::WriteContext::WriteContext(std::string const&,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::mongodGlobalParams
+            symbol_sources:
+            - src/mongo/db/mongod_options.cpp
+        -   symbol_name: mongo::NamespaceIndex::getNamespaces(std::list<std::string,
+                std::allocator<std::string> >&, bool) const
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::RangeDeleter::startWorkers()
+            symbol_sources:
+            - src/mongo/db/range_deleter.cpp
+        -   symbol_name: mongo::rawOut(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DBDirectClient::count(std::string const&, mongo::BSONObj
+                const&, int, int, int)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::dbExecCommand
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::exitCleanly(mongo::ExitCode)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::WorkingSet::WorkingSet()
+            symbol_sources:
+            - src/mongo/db/exec/working_set.cpp
+        -   symbol_name: mongo::snapshotThread
+            symbol_sources:
+            - src/mongo/db/stats/snapshots.cpp
+        -   symbol_name: mongo::d
+            symbol_sources:
+            - src/mongo/db/d_globals.cpp
+        -   symbol_name: mongo::PeriodicTask::startRunningPeriodicTasks()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::count(std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::ProcessId::getCurrent()
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::AuthorizationManager::initialize()
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::isSSLServer
+            symbol_sources:
+            - src/mongo/util/net/ssl_manager.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::DBClientWithCommands::runCommand(std::string const&,
+                mongo::BSONObj const&, mongo::BSONObj&, int)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::AuthorizationManager::isAuthEnabled() const
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::DBException::traceIfNeeded(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::IndexNames::HASHED
+            symbol_sources:
+            - src/mongo/db/index_names.cpp
+        -   symbol_name: vtable for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: typeinfo for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::lastError
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::MongoFile::flushAll(bool)
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::Client::shutdown()
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/query/eof_runner.cpp
+        -   symbol_name: mongo::FileAllocator::start()
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptionsParsed
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::appendBuildInfo(mongo::BSONObjBuilder&)
+            symbol_sources:
+            - src/mongo/util/version_reporting.cpp
+        -   symbol_name: mongo::inShutdown()
+            symbol_sources:
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/unittest/crutch.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/clientAndShell.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getCollectionNames(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::startTTLBackgroundJob()
+            symbol_sources:
+            - src/mongo/db/ttl.cpp
+        -   symbol_name: mongo::Database::clearTmpCollections()
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::logProcessDetails()
+            symbol_sources:
+            - src/mongo/db/log_process_details.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::indexRebuilder
+            symbol_sources:
+            - src/mongo/db/index_rebuilder.cpp
+        -   symbol_name: typeinfo for mongo::BackgroundJob
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::Client::Context::~Context()
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: vtable for mongo::RestAdminAccess
+            symbol_sources:
+            - src/mongo/db/restapi.cpp
+        -   symbol_name: mongo::setupSIGTRAPforGDB()
+            symbol_sources:
+            - src/mongo/util/debug_util.cpp
+        -   symbol_name: mongo::ExtentManager::getFile(int, int, bool)
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams
+                const&, mongo::WorkingSet*, mongo::MatchExpression const*)
+            symbol_sources:
+            - src/mongo/db/exec/collection_scan.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::DBClientWithCommands::createCollection(std::string
+                const&, long long, bool, int, mongo::BSONObj*)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::DBException::toString() const
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ProcessId::toString() const
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::webServerThread(mongo::AdminAccess const*)
+            symbol_sources:
+            - src/mongo/db/dbwebserver.cpp
+        -   symbol_name: mongo::getHostNameCached()
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
+                boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::Client::recommendedYieldMicros(int*, int*, bool)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::curTimeMicros64()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()
+            symbol_sources:
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+        -   symbol_name: boost::thread::~thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::forkServerOrDie()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::acquirePathLock(bool)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::BackgroundJob::~BackgroundJob()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::IndexNames::GEO_HAYSTACK
+            symbol_sources:
+            - src/mongo/db/index_names.cpp
+        -   symbol_name: mongo::DBClientBase::insert(std::string const&, mongo::BSONObj,
+                int)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::cmdline_utils::censorArgvArray(int, char**)
+            symbol_sources:
+            - src/mongo/util/cmdline_utils/censor_cmdline.cpp
+        -   symbol_name: mongo::sleepsecs(int)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::Lock::GlobalWrite::~GlobalWrite()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::runGlobalInitializers(int, char const* const*, char
+                const* const*)
+            symbol_sources:
+            - src/mongo/base/initializer.cpp
+        -   symbol_name: mongo::repairDatabase(std::string, std::string&, bool, bool)
+            symbol_sources:
+            - src/mongo/db/pdfile.cpp
+        -   symbol_name: mongo::IndexCatalog::findIdIndex() const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::NamespaceIndex::_init()
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+        -   symbol_name: mongo::assembleResponse(mongo::Message&, mongo::DbResponse&,
+                mongo::HostAndPort const&)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: boost::filesystem3::path::filename() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: mongo::getGlobalAuthorizationManager()
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager_global.cpp
+        -   symbol_name: mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string>
+                >&, std::string const&)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::IndexNames::GEO_2D
+            symbol_sources:
+            - src/mongo/db/index_names.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::curTimeMillis64()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::createServer(mongo::MessageServer::Options const&,
+                mongo::MessageHandler*)
+            symbol_sources:
+            - src/mongo/util/net/message_server_port.cpp
+        -   symbol_name: mongo::MongoFile::totalMappedLength()
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::InternalRunner::InternalRunner(mongo::Collection const*,
+                mongo::PlanStage*, mongo::WorkingSet*)
+            symbol_sources:
+            - src/mongo/db/query/internal_runner.cpp
+        -   symbol_name: mongo::ScriptEngine::setup()
+            symbol_sources:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::signalForkSuccess()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::StartupTest::runTests()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager_global.cpp
+        -   symbol_name: mongo::ServerStatusMetric::ServerStatusMetric(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands/server_status.cpp
+        -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
+            symbol_sources:
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/unittest/crutch.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/clientAndShell.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::BackgroundJob::BackgroundJob(bool)
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::setupCoreSignals()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::logProcessDetailsForLogRotate()
+            symbol_sources:
+            - src/mongo/db/log_process_details.cpp
+        -   symbol_name: mongo::Client::Context::Context(std::string const&, std::string
+                const&, bool)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+    -   file_name: src/mongo/db/db.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Mongod command line options
     group_files:
     - src/mongo/db/mongod_options.cpp
     - src/mongo/db/mongod_options.h
     - src/mongo/db/mongod_options_init.cpp
+    group_generated_data:
+    -   file_name: src/mongo/db/mongod_options.cpp
+        file_executables:
+        - mongod
+        file_interface:
+        -   symbol_name: mongo::handlePreValidationMongodOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/db/mongod_options_init.cpp
+        -   symbol_name: mongo::printMongodHelp(mongo::optionenvironment::OptionSection
+                const&)
+            symbol_uses:
+            - src/mongo/db/db.cpp
+        -   symbol_name: mongo::addMongodOptions(mongo::optionenvironment::OptionSection*)
+            symbol_uses:
+            - src/mongo/db/mongod_options_init.cpp
+        -   symbol_name: mongo::mongodGlobalParams
+            symbol_uses:
+            - src/mongo/db/db.cpp
+        -   symbol_name: mongo::storeMongodOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/db/mongod_options_init.cpp
+        file_dependencies:
+        -   symbol_name: mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/db/server_options_helpers.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::_diaglog
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::DiagLog::setLevel(int)
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::hidden()
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::startupWarningsLog
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::causedBy(std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: vtable for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::operator[](std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::replSettings
+            symbol_sources:
+            - src/mongo/db/repl/replication_server_status.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(std::string*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::positional(int,
+                int)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::count(std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::Record::MemoryTrackingEnabled
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::enableIPv6(bool)
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::mongodVersion()
+            symbol_sources:
+            - src/mongo/util/version.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::addOptionChaining(std::string
+                const&, std::string const&, mongo::optionenvironment::OptionType,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: mongo::DBException::traceIfNeeded(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::helpString() const
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: vtable for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(unsigned int*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/util/net/ssl_options.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(double*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(long*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::format(std::string
+                const&, std::string const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::storeServerOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/db/server_options_helpers.cpp
+        -   symbol_name: mongo::DBException::toString() const
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: typeinfo for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection
+                const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::printGitVersion()
+            symbol_sources:
+            - src/mongo/util/version_reporting.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(bool*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::printOpenSSLVersion()
+            symbol_sources:
+            - src/mongo/util/version_reporting.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::incompatibleWith(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::getGlobalAuthorizationManager()
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager_global.cpp
+        -   symbol_name: mongo::AuthorizationManager::setAuthEnabled(bool)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(int*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/db/mongod_options.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/mongod_options_init.cpp
+        file_executables:
+        - mongod
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::optionenvironment::startupOptionsParsed
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::handlePreValidationMongodOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/db/mongod_options.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::validate()
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::storeMongodOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/db/mongod_options.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: mongo::addMongodOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/db/mongod_options.cpp
 -   group_title: 'TODO: Name this group'
     group_description: Main for mongos
     group_files:
     - src/mongo/s/server.cpp
     - src/mongo/s/server.h
+    group_generated_data:
+    -   file_name: src/mongo/s/server.cpp
+        file_executables:
+        - mongos
+        file_interface:
+        -   symbol_name: mongo::exitCleanly(mongo::ExitCode)
+            symbol_uses:
+            - src/mongo/db/db.cpp
+        -   symbol_name: mongo::createDirectClient()
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/scripting/v8_db.cpp
+        -   symbol_name: mongo::inShutdown()
+            symbol_uses:
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/util/net/listen.cpp
+            - src/mongo/util/assert_util.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/db/stats/snapshots.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/client/connpool.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/storage/data_file.cpp
+        -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
+            symbol_uses:
+            - src/mongo/s/config.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/dbtests/framework.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::dbexitCalled
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::haveLocalShardingInfo(std::string const&)
+            symbol_uses:
+            - src/mongo/scripting/v8_db.cpp
+        file_dependencies:
+        -   symbol_name: mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string>
+                >)
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: vtable for mongo::UserCacheInvalidator
+            symbol_sources:
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+        -   symbol_name: mongo::printStackTrace(std::ostream&)
+            symbol_sources:
+            - src/mongo/util/stacktrace.cpp
+        -   symbol_name: mongo::printStackAndExit(int)
+            symbol_sources:
+            - src/mongo/util/signal_handlers.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::setConfigChangeHook(boost::function<void
+                (std::string const&, std::string const&)>)
+            symbol_sources:
+            - src/mongo/client/replica_set_monitor.cpp
+        -   symbol_name: mongo::rotateLogs()
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::DBConnectionPool::addHook(mongo::DBConnectionHook*)
+            symbol_sources:
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: typeinfo for mongo::SocketException
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::VersionType::VersionType()
+            symbol_sources:
+            - src/mongo/s/type_config_version.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::cursorCache
+            symbol_sources:
+            - src/mongo/s/cursors.cpp
+        -   symbol_name: mongo::LastErrorHolder::startRequest(mongo::Message&, mongo::LastError*)
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::DBClientConnection::_lazyKillCursor
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::setThreadName(mongo::StringData)
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::pool
+            symbol_sources:
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: mongo::ConnectionString::parse(std::string const&, std::string&)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::setWindowsUnhandledExceptionFilter()
+            symbol_sources:
+            - src/mongo/util/exception_filter_win32.cpp
+        -   symbol_name: mongo::causedBy(std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: mongo::ClientBasic::getCurrent()
+            symbol_sources:
+            - src/mongo/s/client_info.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/client/clientAndShell.cpp
+        -   symbol_name: mongo::ConfigServer::ok(bool)
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: vtable for mongo::ShardingConnectionHook
+            symbol_sources:
+            - src/mongo/s/shard.cpp
+        -   symbol_name: mongo::BackgroundJob::go()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::initializeServerGlobalState()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::BackgroundJob::~BackgroundJob()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::signalForkSuccess()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::grid
+            symbol_sources:
+            - src/mongo/s/grid.cpp
+        -   symbol_name: mongo::setupSIGTRAPforGDB()
+            symbol_sources:
+            - src/mongo/util/debug_util.cpp
+        -   symbol_name: mongo::rawOut(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::VersionType::~VersionType()
+            symbol_sources:
+            - src/mongo/s/type_config_version.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::PeriodicTask::startRunningPeriodicTasks()
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::CursorCache::startTimeoutThread()
+            symbol_sources:
+            - src/mongo/s/cursors.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::startConfigServerChecker()
+            symbol_sources:
+            - src/mongo/s/config_server_checker_service.cpp
+        -   symbol_name: mongo::AuthorizationManager::initialize()
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::isSSLServer
+            symbol_sources:
+            - src/mongo/util/net/ssl_manager.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::balancer
+            symbol_sources:
+            - src/mongo/s/balance.cpp
+        -   symbol_name: mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString
+                const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)
+            symbol_sources:
+            - src/mongo/s/config_upgrade.cpp
+        -   symbol_name: mongo::ClientInfo::create(mongo::AbstractMessagingPort*)
+            symbol_sources:
+            - src/mongo/s/client_info.cpp
+        -   symbol_name: mongo::lastError
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::ShardConnection::releaseMyConnections()
+            symbol_sources:
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::configServer
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: mongo::ConfigServer::reloadSettings()
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: mongo::Request::process(int)
+            symbol_sources:
+            - src/mongo/s/request.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::AuthzManagerExternalStateMongos::AuthzManagerExternalStateMongos()
+            symbol_sources:
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+        -   symbol_name: mongo::OID::init()
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::causedBy(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::shardConnectionPool
+            symbol_sources:
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::Request::init()
+            symbol_sources:
+            - src/mongo/s/request.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::webServerThread(mongo::AdminAccess const*)
+            symbol_sources:
+            - src/mongo/db/dbwebserver.cpp
+        -   symbol_name: mongo::Grid::setAllowLocalHost(bool)
+            symbol_sources:
+            - src/mongo/s/grid.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::ConfigServer::replicaSetChange(std::string const&,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::serverID
+            symbol_sources:
+            - src/mongo/s/config.cpp
+        -   symbol_name: boost::thread::~thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::forkServerOrDie()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::audit::logShutdown(mongo::ClientBasic*)
+            symbol_sources:
+            - src/mongo/db/audit.cpp
+        -   symbol_name: mongo::cmdline_utils::censorArgvArray(int, char**)
+            symbol_sources:
+            - src/mongo/util/cmdline_utils/censor_cmdline.cpp
+        -   symbol_name: mongo::Grid::allowLocalHost() const
+            symbol_sources:
+            - src/mongo/s/grid.cpp
+        -   symbol_name: mongo::runGlobalInitializers(int, char const* const*, char
+                const* const*)
+            symbol_sources:
+            - src/mongo/base/initializer.cpp
+        -   symbol_name: mongo::mongosGlobalParams
+            symbol_sources:
+            - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::printShardingVersionInfo(bool)
+            symbol_sources:
+            - src/mongo/s/version_mongos.cpp
+        -   symbol_name: mongo::getGlobalAuthorizationManager()
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager_global.cpp
+        -   symbol_name: mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&,
+                mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/dbmessage.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)
+            symbol_sources:
+            - src/mongo/s/request.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::createServer(mongo::MessageServer::Options const&,
+                mongo::MessageHandler*)
+            symbol_sources:
+            - src/mongo/util/net/message_server_port.cpp
+        -   symbol_name: mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_manager_global.cpp
+        -   symbol_name: mongo::BackgroundJob::BackgroundJob(bool)
+            symbol_sources:
+            - src/mongo/util/background.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::setupCoreSignals()
+            symbol_sources:
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::logProcessDetailsForLogRotate()
+            symbol_sources:
+            - src/mongo/db/log_process_details.cpp
+    -   file_name: src/mongo/s/server.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Mongos command line options
     group_files:
     - src/mongo/s/mongos_options.cpp
     - src/mongo/s/mongos_options.h
     - src/mongo/s/mongos_options_init.cpp
-interface:
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::createDirectClient()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::inShutdown()'
-    used_by:
-    - !!python/unicode 'src/mongo/client/dbclientcursor.cpp'
-    - !!python/unicode 'src/mongo/util/net/listen.cpp'
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/db/repl/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/stats/snapshots.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/task.cpp'
-    - !!python/unicode 'src/mongo/s/writeback_listener.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/s/balance.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/client/connpool.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
-    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::dbexit(mongo::ExitCode, char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/tools/tool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::dbexitCalled'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    symbol: !!python/unicode 'mongo::haveLocalShardingInfo(std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
-        const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBClientBase'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/index_names.cpp'
-    symbol: !!python/unicode 'mongo::IndexNames::findPluginName(mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
-    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::dateToCtimeString(mongo::Date_t)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    symbol: !!python/unicode 'mongo::ServerStatusSection::ServerStatusSection(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::rotateLogs()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::get()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/range_deleter_service.cpp'
-    symbol: !!python/unicode 'mongo::getDeleter()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::killCurrentOp'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    symbol: !!python/unicode 'mongo::Lock::DBWrite::~DBWrite()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBClientWithCommands'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::dir_itr_close(void*&, void*&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::asLongLong() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    symbol: !!python/unicode 'mongo::LastErrorHolder::startRequest(mongo::Message&,
-        mongo::LastError*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::_getCurrentOpIdCallback'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::vector<std::string,
-        std::allocator<std::string> >*) const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    symbol: !!python/unicode 'mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    symbol: !!python/unicode 'mongo::Database::_initExtentFreeList()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBDirectClient'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::_diaglog'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::_checkInterruptCallback'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
-    symbol: !!python/unicode 'mongo::KillCurrentOp::checkForInterruptNoAssert()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::getcurns'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::Database::closeDatabase(std::string const&, std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::startupWarningsLog'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientBase::ConnectionIdSequence'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::GlobalWrite(bool, int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/startup_warnings.cpp'
-    symbol: !!python/unicode 'mongo::logStartupWarnings()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::jsTime()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepmicros(long long)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    symbol: !!python/unicode 'mongo::replSettings'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::go()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
-        boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::initializeServerGlobalState()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/timer.cpp'
-    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    symbol: !!python/unicode 'mongo::startReplication()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::DiagLog::flush()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    symbol: !!python/unicode 'mongo::dur::startup()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::curTimeMicros()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::WriteContext::WriteContext(std::string
-        const&, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    symbol: !!python/unicode 'mongo::NamespaceIndex::getNamespaces(std::list<std::string,
-        std::allocator<std::string> >&, bool) const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    symbol: !!python/unicode 'mongo::RangeDeleter::startWorkers()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::rawOut(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::start_thread()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::DBDirectClient::count(std::string const&, mongo::BSONObj
-        const&, int, int, int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    symbol: !!python/unicode 'mongo::dur::DurableInterface::_impl'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::dbExecCommand'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
-    symbol: !!python/unicode 'mongo::WorkingSet::WorkingSet()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/stats/snapshots.cpp'
-    symbol: !!python/unicode 'mongo::snapshotThread'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_globals.cpp'
-    symbol: !!python/unicode 'mongo::d'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::PeriodicTask::startRunningPeriodicTasks()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::initialize()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::fassertFailed(int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
-    symbol: !!python/unicode 'mongo::isSSLServer'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientWithCommands::runCommand(std::string
-        const&, mongo::BSONObj const&, mongo::BSONObj&, int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::isAuthEnabled() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
-        const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/index_names.cpp'
-    symbol: !!python/unicode 'mongo::IndexNames::HASHED'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBException'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::wchar_t_codecvt_facet()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    symbol: !!python/unicode 'mongo::lastError'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::flushAll(bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    symbol: !!python/unicode 'mongo::Client::shutdown()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/eof_runner.cpp'
-    symbol: !!python/unicode 'mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*,
-        std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::start()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptionsParsed'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::remove_all(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
-    symbol: !!python/unicode 'mongo::appendBuildInfo(mongo::BSONObjBuilder&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientWithCommands::getCollectionNames(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    symbol: !!python/unicode 'mongo::startTTLBackgroundJob()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    symbol: !!python/unicode 'mongo::Database::clearTmpCollections()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
-    symbol: !!python/unicode 'mongo::logProcessDetails()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
-    symbol: !!python/unicode 'mongo::indexRebuilder'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::BackgroundJob'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/restapi.cpp'
-    symbol: !!python/unicode 'vtable for mongo::RestAdminAccess'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/debug_util.cpp'
-    symbol: !!python/unicode 'mongo::setupSIGTRAPforGDB()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    symbol: !!python/unicode 'mongo::ExtentManager::getFile(int, int, bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/exec/collection_scan.cpp'
-    symbol: !!python/unicode 'mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams
-        const&, mongo::WorkingSet*, mongo::MatchExpression const*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    symbol: !!python/unicode 'mongo::currentClient'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientWithCommands::createCollection(std::string
-        const&, long long, bool, int, mongo::BSONObj*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage_options.cpp'
-    symbol: !!python/unicode 'mongo::storageGlobalParams'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::toString() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::toString() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
-    symbol: !!python/unicode 'mongo::webServerThread(mongo::AdminAccess const*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'mongo::getHostNameCached()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
-        boost::filesystem3::path const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::recommendedYieldMicros(int*, int*, bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::curTimeMicros64()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_d.cpp'
-    symbol: !!python/unicode 'mongo::AuthzManagerExternalStateMongod::AuthzManagerExternalStateMongod()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::~thread()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::forkServerOrDie()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::acquirePathLock(bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/index_names.cpp'
-    symbol: !!python/unicode 'mongo::IndexNames::GEO_HAYSTACK'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientBase::insert(std::string const&, mongo::BSONObj,
-        int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
-    symbol: !!python/unicode 'mongo::cmdline_utils::censorArgvArray(int, char**)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepsecs(int)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    symbol: !!python/unicode 'mongo::Lock::GlobalWrite::~GlobalWrite()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/initializer.cpp'
-    symbol: !!python/unicode 'mongo::runGlobalInitializers(int, char const* const*,
-        char const* const*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    symbol: !!python/unicode 'mongo::repairDatabase(std::string, std::string&, bool,
-        bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::findIdIndex() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    symbol: !!python/unicode 'mongo::NamespaceIndex::_init()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::assembleResponse(mongo::Message&, mongo::DbResponse&,
-        mongo::HostAndPort const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::filename() const'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
-    symbol: !!python/unicode 'mongo::getGlobalAuthorizationManager()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::getDatabaseNames(std::vector<std::string, std::allocator<std::string>
-        >&, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/index_names.cpp'
-    symbol: !!python/unicode 'mongo::IndexNames::GEO_2D'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::curTimeMillis64()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    symbol: !!python/unicode 'mongo::createServer(mongo::MessageServer::Options const&,
-        mongo::MessageHandler*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::totalMappedLength()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/internal_runner.cpp'
-    symbol: !!python/unicode 'mongo::InternalRunner::InternalRunner(mongo::Collection
-        const*, mongo::PlanStage*, mongo::WorkingSet*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::setup()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::signalForkSuccess()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::runTests()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
-    symbol: !!python/unicode 'mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    symbol: !!python/unicode 'mongo::ServerStatusMetric::ServerStatusMetric(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::setupCoreSignals()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
-    symbol: !!python/unicode 'mongo::logProcessDetailsForLogRotate()'
--   object: !!python/unicode 'src/mongo/db/db.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::Context::Context(std::string const&,
-        std::string const&, bool)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    symbol: !!python/unicode 'mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::_diaglog'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    symbol: !!python/unicode 'mongo::DiagLog::setLevel(int)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::hidden()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::startupWarningsLog'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    symbol: !!python/unicode 'mongo::replSettings'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
-        const*, int)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::string*) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::positional(int,
-        int)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage/record.cpp'
-    symbol: !!python/unicode 'mongo::Record::MemoryTrackingEnabled'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'mongo::enableIPv6(bool)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::mongodVersion()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addOptionChaining(std::string
-        const&, std::string const&, mongo::optionenvironment::OptionType, std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
-        const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::helpString()
-        const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBException'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(unsigned int*)
-        const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    symbol: !!python/unicode 'mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(double*) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(long*) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::format(std::string
-        const&, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    symbol: !!python/unicode 'mongo::storeServerOptions(mongo::optionenvironment::Environment
-        const&, std::vector<std::string, std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::toString() const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection
-        const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
-    symbol: !!python/unicode 'mongo::printGitVersion()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(bool*) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
-    symbol: !!python/unicode 'mongo::printOpenSSLVersion()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::incompatibleWith(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
-    symbol: !!python/unicode 'mongo::getGlobalAuthorizationManager()'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::setAuthEnabled(bool)'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage_options.cpp'
-    symbol: !!python/unicode 'mongo::storageGlobalParams'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(int*) const'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-        const&, int)'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptionsParsed'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::validate()'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/db/mongod_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::ConfigServer::init(std::vector<std::string, std::allocator<std::string>
-        >)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
-    symbol: !!python/unicode 'vtable for mongo::UserCacheInvalidator'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
-    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/signal_handlers.cpp'
-    symbol: !!python/unicode 'mongo::printStackAndExit(int)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    symbol: !!python/unicode 'mongo::ReplicaSetMonitor::setConfigChangeHook(boost::function<void
-        (std::string const&, std::string const&)>)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::rotateLogs()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/connpool.cpp'
-    symbol: !!python/unicode 'mongo::DBConnectionPool::addHook(mongo::DBConnectionHook*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::SocketException'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/type_config_version.cpp'
-    symbol: !!python/unicode 'mongo::VersionType::VersionType()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/cursors.cpp'
-    symbol: !!python/unicode 'mongo::cursorCache'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    symbol: !!python/unicode 'mongo::LastErrorHolder::startRequest(mongo::Message&,
-        mongo::LastError*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::DBClientConnection::_lazyKillCursor'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::setThreadName(mongo::StringData)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/connpool.cpp'
-    symbol: !!python/unicode 'mongo::pool'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::ConnectionString::parse(std::string const&, std::string&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/exception_filter_win32.cpp'
-    symbol: !!python/unicode 'mongo::setWindowsUnhandledExceptionFilter()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    symbol: !!python/unicode 'mongo::ClientBasic::getCurrent()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::ConfigServer::ok(bool)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/shard.cpp'
-    symbol: !!python/unicode 'vtable for mongo::ShardingConnectionHook'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::go()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::initializeServerGlobalState()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::~BackgroundJob()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::signalForkSuccess()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/grid.cpp'
-    symbol: !!python/unicode 'mongo::grid'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/debug_util.cpp'
-    symbol: !!python/unicode 'mongo::setupSIGTRAPforGDB()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::rawOut(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::start_thread()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/type_config_version.cpp'
-    symbol: !!python/unicode 'mongo::VersionType::~VersionType()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::PeriodicTask::startRunningPeriodicTasks()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/cursors.cpp'
-    symbol: !!python/unicode 'mongo::CursorCache::startTimeoutThread()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
-    symbol: !!python/unicode 'mongo::startConfigServerChecker()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::initialize()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::fassertFailed(int)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
-    symbol: !!python/unicode 'mongo::isSSLServer'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/balance.cpp'
-    symbol: !!python/unicode 'mongo::balancer'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config_upgrade.cpp'
-    symbol: !!python/unicode 'mongo::checkAndUpgradeConfigVersion(mongo::ConnectionString
-        const&, bool, mongo::VersionType*, mongo::VersionType*, std::string*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    symbol: !!python/unicode 'mongo::ClientInfo::create(mongo::AbstractMessagingPort*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    symbol: !!python/unicode 'mongo::lastError'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    symbol: !!python/unicode 'mongo::ShardConnection::releaseMyConnections()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::configServer'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::ConfigServer::reloadSettings()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/request.cpp'
-    symbol: !!python/unicode 'mongo::Request::process(int)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_s.cpp'
-    symbol: !!python/unicode 'mongo::AuthzManagerExternalStateMongos::AuthzManagerExternalStateMongos()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::OID::init()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(mongo::DBException const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    symbol: !!python/unicode 'mongo::shardConnectionPool'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/request.cpp'
-    symbol: !!python/unicode 'mongo::Request::init()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    symbol: !!python/unicode 'mongo::AuthorizationManager::AuthorizationManager(mongo::AuthzManagerExternalState*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
-    symbol: !!python/unicode 'mongo::webServerThread(mongo::AdminAccess const*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/grid.cpp'
-    symbol: !!python/unicode 'mongo::Grid::setAllowLocalHost(bool)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::ConfigServer::replicaSetChange(std::string const&,
-        std::string const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    symbol: !!python/unicode 'mongo::serverID'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::~thread()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::forkServerOrDie()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/audit.cpp'
-    symbol: !!python/unicode 'mongo::audit::logShutdown(mongo::ClientBasic*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/cmdline_utils/censor_cmdline.cpp'
-    symbol: !!python/unicode 'mongo::cmdline_utils::censorArgvArray(int, char**)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/grid.cpp'
-    symbol: !!python/unicode 'mongo::Grid::allowLocalHost() const'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/initializer.cpp'
-    symbol: !!python/unicode 'mongo::runGlobalInitializers(int, char const* const*,
-        char const* const*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/version_mongos.cpp'
-    symbol: !!python/unicode 'mongo::printShardingVersionInfo(bool)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
-    symbol: !!python/unicode 'mongo::getGlobalAuthorizationManager()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dbmessage.cpp'
-    symbol: !!python/unicode 'mongo::replyToQuery(int, mongo::AbstractMessagingPort*,
-        mongo::Message&, mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/request.cpp'
-    symbol: !!python/unicode 'mongo::Request::Request(mongo::Message&, mongo::AbstractMessagingPort*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    symbol: !!python/unicode 'mongo::createServer(mongo::MessageServer::Options const&,
-        mongo::MessageHandler*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager_global.cpp'
-    symbol: !!python/unicode 'mongo::setGlobalAuthorizationManager(mongo::AuthorizationManager*)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    symbol: !!python/unicode 'mongo::setupCoreSignals()'
--   object: !!python/unicode 'src/mongo/s/server.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
-    symbol: !!python/unicode 'mongo::logProcessDetailsForLogRotate()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
-        const*, int)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::string*) const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(bool*) const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    symbol: !!python/unicode 'mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBException'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    symbol: !!python/unicode 'mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stringutils.cpp'
-    symbol: !!python/unicode 'mongo::splitStringDelim(std::string const&, std::vector<std::string,
-        std::allocator<std::string> >*, char)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::helpString()
-        const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/version_mongos.cpp'
-    symbol: !!python/unicode 'mongo::printShardingVersionInfo(bool)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    symbol: !!python/unicode 'mongo::storeServerOptions(mongo::optionenvironment::Environment
-        const&, std::vector<std::string, std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::toString() const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/chunk.cpp'
-    symbol: !!python/unicode 'mongo::Chunk::ShouldAutoSplit'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'mongo::enableIPv6(bool)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::hidden()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::runTests()'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addOptionChaining(std::string
-        const&, std::string const&, mongo::optionenvironment::OptionType, std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(int*) const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/chunk.cpp'
-    symbol: !!python/unicode 'mongo::Chunk::setMaxChunkSizeSizeMB(int)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
-        const&)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/s/mongos_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection
-        const&)'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptionsParsed'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::validate()'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/s/mongos_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/db.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/db.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/mongod_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/mongod_options.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/mongod_options_init.cpp
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/server.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/s/server.h
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/mongos_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/s/mongos_options.h
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/mongos_options_init.cpp
+    group_generated_data:
+    -   file_name: src/mongo/s/mongos_options.cpp
+        file_executables:
+        - mongos
+        file_interface:
+        -   symbol_name: mongo::mongosGlobalParams
+            symbol_uses:
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::handlePreValidationMongosOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/s/mongos_options_init.cpp
+        -   symbol_name: mongo::addMongosOptions(mongo::optionenvironment::OptionSection*)
+            symbol_uses:
+            - src/mongo/s/mongos_options_init.cpp
+        -   symbol_name: mongo::storeMongosOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/s/mongos_options_init.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::operator[](std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::setSources(mongo::optionenvironment::OptionSources)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(std::string*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(bool*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::addGeneralServerOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/db/server_options_helpers.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: vtable for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/util/net/ssl_options.cpp
+        -   symbol_name: mongo::splitStringDelim(std::string const&, std::vector<std::string,
+                std::allocator<std::string> >*, char)
+            symbol_sources:
+            - src/mongo/util/stringutils.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::helpString() const
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: mongo::printShardingVersionInfo(bool)
+            symbol_sources:
+            - src/mongo/s/version_mongos.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::storeServerOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/db/server_options_helpers.cpp
+        -   symbol_name: typeinfo for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DBException::toString() const
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::count(std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::Chunk::ShouldAutoSplit
+            symbol_sources:
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::enableIPv6(bool)
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::hidden()
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::StartupTest::runTests()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::addOptionChaining(std::string
+                const&, std::string const&, mongo::optionenvironment::OptionType,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: mongo::causedBy(std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(int*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::Chunk::setMaxChunkSizeSizeMB(int)
+            symbol_sources:
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::DBException::traceIfNeeded(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: vtable for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::addSection(mongo::optionenvironment::OptionSection
+                const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+    -   file_name: src/mongo/s/mongos_options.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/s/mongos_options_init.cpp
+        file_executables:
+        - mongos
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::optionenvironment::startupOptionsParsed
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::validate()
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::handlePreValidationMongosOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::addMongosOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::storeMongosOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp

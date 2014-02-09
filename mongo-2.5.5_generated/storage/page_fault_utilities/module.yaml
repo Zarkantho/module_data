@@ -8,338 +8,283 @@ module_groups:
     group_files:
     - src/mongo/db/pagefault.cpp
     - src/mongo/db/pagefault.h
+    group_generated_data:
+    -   file_name: src/mongo/db/pagefault.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::PageFaultRetryableSection::~PageFaultRetryableSection()
+            symbol_uses:
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::PageFaultException::touch()
+            symbol_uses:
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::PageFaultRetryableSection::PageFaultRetryableSection()
+            symbol_uses:
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::PageFaultException::PageFaultException(mongo::Record
+                const*)
+            symbol_uses:
+            - src/mongo/db/storage/record.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Record::touch(bool) const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::mmmutex
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::Client::allowedToThrowPageFaultException() const
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Lock::isLocked()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::era
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+                void*, bool)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::get_tss_data(void const*)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+    -   file_name: src/mongo/db/pagefault.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Code to go in and touch pages so that they are brought into
         memory.## who calls these?
     group_files:
     - src/mongo/db/prefetch.cpp
     - src/mongo/db/prefetch.h
-interface:
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    symbol: !!python/unicode 'mongo::PageFaultRetryableSection::~PageFaultRetryableSection()'
-    used_by:
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    symbol: !!python/unicode 'mongo::PageFaultException::touch()'
-    used_by:
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    symbol: !!python/unicode 'mongo::PageFaultRetryableSection::PageFaultRetryableSection()'
-    used_by:
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    symbol: !!python/unicode 'mongo::PageFaultException::PageFaultException(mongo::Record
-        const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/record.cpp'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    symbol: !!python/unicode 'mongo::prefetchPagesForReplicatedOp(mongo::BSONObj const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage/record.cpp'
-    symbol: !!python/unicode 'mongo::Record::touch(bool) const'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::LockMongoFilesShared::mmmutex'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::allowedToThrowPageFaultException() const'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    symbol: !!python/unicode 'mongo::Lock::isLocked()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::LockMongoFilesShared::era'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    symbol: !!python/unicode 'mongo::currentClient'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
-        void*, bool)'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    symbol: !!python/unicode 'mongo::Helpers::findById(mongo::Client&, char const*,
-        mongo::BSONObj, mongo::BSONObj&, bool*, bool*)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::IndexIterator::more()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::ReadContext::ReadContext(std::string
-        const&, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::findIdIndex() const'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/stats/timer_stats.cpp'
-    symbol: !!python/unicode 'mongo::TimerHolder::~TimerHolder()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::IndexIterator::next()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/stats/timer_stats.cpp'
-    symbol: !!python/unicode 'mongo::TimerStats::getReport() const'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    symbol: !!python/unicode 'mongo::Database::getCollection(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog
-        const*, bool)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/stats/timer_stats.cpp'
-    symbol: !!python/unicode 'mongo::TimerHolder::TimerHolder(mongo::TimerStats*)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    symbol: !!python/unicode 'mongo::theReplSet'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    symbol: !!python/unicode 'mongo::Client::Context::~Context()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::g_minOSPageSizeBytes'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::fassertFailed(int)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    symbol: !!python/unicode 'mongo::currentClient'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/storage_options.cpp'
-    symbol: !!python/unicode 'mongo::storageGlobalParams'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    symbol: !!python/unicode 'mongo::ServerStatusMetric::ServerStatusMetric(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/prefetch.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    symbol: !!python/unicode 'mongo::IndexCatalog::getIndex(mongo::IndexDescriptor
-        const*)'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pagefault.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pagefault.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/prefetch.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/prefetch.h
+    group_generated_data:
+    -   file_name: src/mongo/db/prefetch.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::prefetchPagesForReplicatedOp(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/repl/rs_sync.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Helpers::findById(mongo::Client&, char const*, mongo::BSONObj,
+                mongo::BSONObj&, bool*, bool*)
+            symbol_sources:
+            - src/mongo/db/dbhelpers.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::more()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::Client::ReadContext::ReadContext(std::string const&,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::IndexCatalog::findIdIndex() const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::TimerHolder::~TimerHolder()
+            symbol_sources:
+            - src/mongo/db/stats/timer_stats.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::next()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::TimerStats::getReport() const
+            symbol_sources:
+            - src/mongo/db/stats/timer_stats.cpp
+        -   symbol_name: mongo::SpinLock::SpinLock()
+            symbol_sources:
+            - src/mongo/util/concurrency/spin_lock.cpp
+        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog
+                const*, bool)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::TimerHolder::TimerHolder(mongo::TimerStats*)
+            symbol_sources:
+            - src/mongo/db/stats/timer_stats.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::theReplSet
+            symbol_sources:
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::Client::Context::~Context()
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::g_minOSPageSizeBytes
+            symbol_sources:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::ServerStatusMetric::ServerStatusMetric(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands/server_status.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::SpinLock::~SpinLock()
+            symbol_sources:
+            - src/mongo/util/concurrency/spin_lock.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+    -   file_name: src/mongo/db/prefetch.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

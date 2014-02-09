@@ -33,797 +33,916 @@ module_groups:
     - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
     - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
     - src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
-interface:
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
-        const&, boost::filesystem3::path const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
-        boost::filesystem3::path const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::temp_directory_path(boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::rename(boost::filesystem3::path
-        const&, boost::filesystem3::path const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
-        boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::initial_path(boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/tools/import.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/client/gridfs.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
-        const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::create_directory(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::file_size(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/tools/tool.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/tools/import.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::dir_itr_close(void*&, void*&)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::copy_file(boost::filesystem3::path
-        const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type,
-        boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::remove(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::remove_all(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::create_directories(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/tools/export.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::operator/=(char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::wchar_t_codecvt_facet()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::operator/=(boost::filesystem3::path
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::parent_path() const'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::m_erase_redundant_separator(unsigned
-        long)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::m_append_separator_if_needed()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::filename() const'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/tools/import.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::unique_path(boost::filesystem3::path
-        const&, boost::system::error_code*)'
-    used_by:
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-leaks:
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/filesystem.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/filesystem/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/convenience.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/filesystem/detail/utf8_codecvt_facet.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/operations.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/path.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v2/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v2/convenience.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v2/operations.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v2/path.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v3/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v3/convenience.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v3/operations.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v3/path.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/filesystem/v3/path_traits.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v2/src/v2_portability.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/codecvt_error_category.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/operations.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/path.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/portability.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
+    group_generated_data:
+    -   file_name: src/third_party/boost/boost/filesystem.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/convenience.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/detail/utf8_codecvt_facet.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/operations.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/path.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v2/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v2/convenience.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v2/operations.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v2/path.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v3/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v3/convenience.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v3/operations.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v3/path.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/filesystem/v3/path_traits.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: vtable for boost::filesystem::detail::utf8_codecvt_facet
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v2/src/v2_portability.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/codecvt_error_category.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::filesystem3::codecvt_error_category()
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::filesystem3::absolute(boost::filesystem3::path const&,
+                boost::filesystem3::path const&)
+            symbol_uses:
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
+                boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: boost::filesystem3::detail::temp_directory_path(boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/unittest/temp_dir.cpp
+        -   symbol_name: boost::filesystem3::detail::rename(boost::filesystem3::path
+                const&, boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
+                boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: boost::filesystem3::detail::initial_path(boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/client/gridfs.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/dbtests/framework_options.cpp
+        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
+                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: boost::filesystem3::detail::create_directory(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/dbtests/framework_options.cpp
+        -   symbol_name: boost::filesystem3::detail::file_size(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: boost::filesystem3::detail::copy_file(boost::filesystem3::path
+                const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type,
+                boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/pdfile.cpp
+        -   symbol_name: boost::filesystem3::detail::remove(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/dbtests/framework_options.cpp
+        -   symbol_name: boost::filesystem3::detail::create_directories(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/tools/export.cpp
+            - src/mongo/tools/dump.cpp
+        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/util/mmap.cpp
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::path::root_name() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::parent_path() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::filesystem3::path::end() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::operator/=(boost::filesystem3::path
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::relative_path() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::m_path_iterator_increment(boost::filesystem3::path::iterator&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::filesystem3::path::root_directory() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::remove_filename()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::path::begin() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::filesystem3::path::root_name() const
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::end() const
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::operator/=(char const*)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: boost::filesystem3::path::relative_path() const
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/tools/dump.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::operator/=(boost::filesystem3::path
+                const&)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/tools/dump.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::m_path_iterator_increment(boost::filesystem3::path::iterator&)
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::root_directory() const
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::remove_filename()
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::parent_path() const
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/tools/restore.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::m_erase_redundant_separator(unsigned
+                long)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/tools/dump.cpp
+        -   symbol_name: boost::filesystem3::path::m_append_separator_if_needed()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/tools/dump.cpp
+        -   symbol_name: boost::filesystem3::path::begin() const
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::path::filename() const
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/tools/import.cpp
+        file_dependencies:
+        -   symbol_name: vtable for boost::filesystem::detail::utf8_codecvt_facet
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::filesystem3::path_traits::convert(wchar_t const*,
+                wchar_t const*, std::string&, std::codecvt<wchar_t, char, __mbstate_t>
+                const&)
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+        -   symbol_name: boost::filesystem3::path_traits::convert(char const*, char
+                const*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t>
+                >&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::codecvt_error_category()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/codecvt_error_category.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/portability.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::filesystem3::detail::unique_path(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/unittest/temp_dir.cpp
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::path_traits::convert(wchar_t const*,
+                wchar_t const*, std::string&, std::codecvt<wchar_t, char, __mbstate_t>
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::filesystem3::path_traits::convert(char const*, char
+                const*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t>
+                >&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: vtable for boost::filesystem::detail::utf8_codecvt_facet
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+            - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

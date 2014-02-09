@@ -94,1640 +94,2898 @@ module_groups:
     - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
     - src/third_party/yaml-cpp-0.5.1/src/tag.h
     - src/third_party/yaml-cpp-0.5.1/src/token.h
-interface:
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
-    symbol: !!python/unicode 'YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
-    symbol: !!python/unicode 'YAML::detail::memory::create_node()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::end()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::begin()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::mark_defined()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::empty_scalar'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::set_null()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/parse.cpp'
-    symbol: !!python/unicode 'YAML::Load(std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
-leaks: []
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/shim_yaml.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/anchordict.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/graphbuilder.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/dll.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitfromevents.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitter.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitterdef.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emittermanip.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/eventhandler.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/exceptions.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/mark.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/convert.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/bool_type.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/impl.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator_fwd.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/memory.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_data.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_iterator.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_ref.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/emit.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/impl.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/iterator.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/node.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/parse.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/ptr.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/type.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/noncopyable.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/null.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/ostream_wrapper.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/parser.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/stlemitter.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/traits.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/yaml.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/binary.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/collectionstack.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/convert.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/directives.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/directives.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emit.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitterstate.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/emitterutils.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/exp.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/exp.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/graphbuilder.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/indentation.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/memory.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/node.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/nodebuilder.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/nodeevents.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/null.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/parse.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/parser.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/ptr_stack.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/ptr_vector.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/regex.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/regex.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/regeximpl.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scanner.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scanscalar.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scantag.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/setting.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/singledocparser.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/stream.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/stream.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/streamcharsource.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/stringsource.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/tag.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/tag.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/yaml-cpp-0.5.1/src/token.h
+    group_generated_data:
+    -   file_name: src/third_party/shim_yaml.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/anchordict.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/contrib/graphbuilder.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/dll.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitfromevents.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitter.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emitterdef.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/emittermanip.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/eventhandler.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/exceptions.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/mark.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/convert.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/bool_type.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/impl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/iterator_fwd.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/memory.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_data.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_iterator.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/detail/node_ref.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/emit.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/impl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/iterator.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/node.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/parse.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/ptr.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/node/type.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/noncopyable.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/null.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/ostream_wrapper.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/parser.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/stlemitter.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/traits.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/yaml.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/binary.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::EncodeBase64(unsigned char const*, unsigned long)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/collectionstack.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/convert.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: YAML::detail::node_data::empty_scalar
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/directives.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Directives::TranslateTagHandle(std::string const&)
+                const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
+        -   symbol_name: YAML::Directives::Directives()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/directives.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: YAML::Emitter::Emitter()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::NodeEvents::NodeEvents(YAML::Node const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: vtable for YAML::EmitFromEvents
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::~Emitter()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitFromEvents::EmitFromEvents(YAML::Emitter&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::NodeEvents::Emit(YAML::EventHandler&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: YAML::Emitter::Emitter(std::ostream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Emitter::c_str() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: vtable for YAML::EmitFromEvents
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        -   symbol_name: YAML::EmitFromEvents::EmitFromEvents(YAML::Emitter&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Emitter::Write(YAML::_Anchor const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Null const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Emitter::Write(std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Alias const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Tag const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Null
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/null.cpp
+        -   symbol_name: YAML::Emitter::SetLocalValue(YAML::EMITTER_MANIP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Emitter::SetLocalValue(YAML::EMITTER_MANIP)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::~Emitter()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Tag const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Null const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::c_str() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        -   symbol_name: YAML::Emitter::Write(std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::Emitter(std::ostream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        -   symbol_name: YAML::Emitter::Emitter()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Anchor const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        -   symbol_name: YAML::Emitter::Write(YAML::_Alias const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        file_dependencies:
+        -   symbol_name: YAML::EmitterState::StartedGroup(YAML::GroupType::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetOutputCharset(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::Utils::WriteBinary(YAML::ostream_wrapper&, YAML::Binary
+                const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::EmitterState::SetIntFormat(YAML::EMITTER_MANIP, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetMapKeyFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::StartedScalar()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::StartedDoc()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::Utils::WriteLiteralString(YAML::ostream_wrapper&, std::string
+                const&, int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::ostream_wrapper::ostream_wrapper()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::Utils::WriteAnchor(YAML::ostream_wrapper&, std::string
+                const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::EmitterState::SetTag()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupFlowType() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetIndent(unsigned int, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(char const*, unsigned long)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupIndent() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetAnchor()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::EmitterState()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::NextGroupType(YAML::GroupType::value)
+                const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolCaseFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolLengthFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupChildCount() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::ForceFlow()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetNonContent()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::ostream_wrapper::~ostream_wrapper()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::EmitterState::~EmitterState()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::Utils::WriteTag(YAML::ostream_wrapper&, std::string
+                const&, bool)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::Utils::WriteSingleQuotedString(YAML::ostream_wrapper&,
+                std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::Utils::WriteTagWithPrefix(YAML::ostream_wrapper&, std::string
+                const&, std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::EmitterState::SetPostCommentIndent(unsigned int, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolFormat(YAML::EMITTER_MANIP, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::Utils::WriteChar(YAML::ostream_wrapper&, char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::Utils::ComputeStringFormat(std::string const&, YAML::EMITTER_MANIP,
+                YAML::FlowType::value, bool)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::EmitterState::SetLocalValue(YAML::EMITTER_MANIP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::EndedGroup(YAML::GroupType::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetDoublePrecision(int, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetStringFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::ostream_wrapper::ostream_wrapper(std::ostream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::EmitterState::SetFloatPrecision(int, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::Utils::WriteAlias(YAML::ostream_wrapper&, std::string
+                const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::Utils::WriteDoubleQuotedString(YAML::ostream_wrapper&,
+                std::string const&, bool)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::Utils::WriteComment(YAML::ostream_wrapper&, std::string
+                const&, int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupNodeType() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::LastIndent() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupType() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupLongKey() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetFlowType(YAML::GroupType::value, YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetLongKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        -   symbol_name: YAML::EmitterState::SetPreCommentIndent(unsigned int, YAML::FmtScope::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitterstate.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::EmitterState::StartedScalar()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::ForceFlow()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetNonContent()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::EndedGroup(YAML::GroupType::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetStringFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupType() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetLongKey()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::StartedGroup(YAML::GroupType::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetIntFormat(YAML::EMITTER_MANIP, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::StartedDoc()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetAnchor()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolCaseFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolLengthFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupFlowType() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::NextGroupType(YAML::GroupType::value)
+                const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::EmitterState()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetDoublePrecision(int, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetTag()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetFlowType(YAML::GroupType::value, YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetPreCommentIndent(unsigned int, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetIndent(unsigned int, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetMapKeyFormat(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupChildCount() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::~EmitterState()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetPostCommentIndent(unsigned int, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetLocalValue(YAML::EMITTER_MANIP)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetFloatPrecision(int, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetOutputCharset(YAML::EMITTER_MANIP,
+                YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupIndent() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::SetBoolFormat(YAML::EMITTER_MANIP, YAML::FmtScope::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupNodeType() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::LastIndent() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::EmitterState::CurGroupLongKey() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitterstate.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Utils::WriteLiteralString(YAML::ostream_wrapper&, std::string
+                const&, int)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteAnchor(YAML::ostream_wrapper&, std::string
+                const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteChar(YAML::ostream_wrapper&, char)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteBinary(YAML::ostream_wrapper&, YAML::Binary
+                const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteSingleQuotedString(YAML::ostream_wrapper&,
+                std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteTag(YAML::ostream_wrapper&, std::string
+                const&, bool)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteDoubleQuotedString(YAML::ostream_wrapper&,
+                std::string const&, bool)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteAlias(YAML::ostream_wrapper&, std::string
+                const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteComment(YAML::ostream_wrapper&, std::string
+                const&, int)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::WriteTagWithPrefix(YAML::ostream_wrapper&, std::string
+                const&, std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::Utils::ComputeStringFormat(std::string const&, YAML::EMITTER_MANIP,
+                YAML::FlowType::value, bool)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        file_dependencies:
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(char const*, unsigned long)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char, char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::RegEx::RegEx()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::EncodeBase64(unsigned char const*, unsigned long)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/binary.cpp
+        -   symbol_name: YAML::operator!(YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/emitterutils.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/exp.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Exp::Escape(YAML::Stream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Stream::get()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/exp.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/graphbuilder.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: YAML::Parser::HandleNextDocument(YAML::EventHandler&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: vtable for YAML::GraphBuilderAdapter
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: vtable for YAML::GraphBuilderAdapter
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/graphbuilder.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/graphbuilderadapter.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/indentation.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: YAML::detail::memory::create_node()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        file_dependencies:
+        -   symbol_name: YAML::detail::node_data::node_data()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: YAML::NodeBuilder::Root()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::NodeEvents::NodeEvents(YAML::Node const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: YAML::NodeEvents::Emit(YAML::EventHandler&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: YAML::NodeBuilder::NodeBuilder()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::NodeBuilder::~NodeBuilder()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::detail::node_data::insert(YAML::detail::node&, YAML::detail::node&,
+                boost::shared_ptr<YAML::detail::memory_holder>)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::end()
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: YAML::detail::node_data::end() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: YAML::detail::node_data::node_data()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+        -   symbol_name: YAML::detail::node_data::set_type(YAML::NodeType::value)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::set_scalar(std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::begin()
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: YAML::detail::node_data::mark_defined()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: YAML::detail::node_data::empty_scalar
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/convert.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        -   symbol_name: YAML::detail::node_data::begin() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        -   symbol_name: YAML::detail::node_data::set_tag(std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::push_back(YAML::detail::node&, boost::shared_ptr<YAML::detail::memory_holder>)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::set_null()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+        file_dependencies:
+        -   symbol_name: YAML::detail::memory::create_node()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::NodeBuilder::Root()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        -   symbol_name: YAML::NodeBuilder::NodeBuilder()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        -   symbol_name: YAML::NodeBuilder::~NodeBuilder()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        file_dependencies:
+        -   symbol_name: YAML::detail::node_data::push_back(YAML::detail::node&, boost::shared_ptr<YAML::detail::memory_holder>)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::memory::create_node()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+        -   symbol_name: YAML::detail::node_data::set_tag(std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::set_scalar(std::string const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::mark_defined()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::set_type(YAML::NodeType::value)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::set_null()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::insert(YAML::detail::node&, YAML::detail::node&,
+                boost::shared_ptr<YAML::detail::memory_holder>)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/nodebuilder.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/nodeevents.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::NodeEvents::Emit(YAML::EventHandler&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        -   symbol_name: YAML::NodeEvents::NodeEvents(YAML::Node const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emit.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/node.cpp
+        file_dependencies:
+        -   symbol_name: YAML::detail::node_data::begin() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::end() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/nodeevents.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/null.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Null
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitfromevents.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/ostream_wrapper.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::ostream_wrapper::ostream_wrapper()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(std::string const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::ostream_wrapper::ostream_wrapper(std::ostream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        -   symbol_name: YAML::ostream_wrapper::write(char const*, unsigned long)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::ostream_wrapper::~ostream_wrapper()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/emitter.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Load(std::string const&)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Parser::~Parser()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::Parser::Parser(std::istream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+        -   symbol_name: YAML::NodeBuilder::~NodeBuilder()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::memory::create_node()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/memory.cpp
+        -   symbol_name: YAML::NodeBuilder::NodeBuilder()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::Parser::HandleNextDocument(YAML::EventHandler&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::NodeBuilder::Root()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/nodebuilder.cpp
+        -   symbol_name: YAML::detail::node_data::mark_defined()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+        -   symbol_name: YAML::detail::node_data::set_null()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/node_data.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Parser::Parser(std::istream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+        -   symbol_name: YAML::Parser::~Parser()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+        -   symbol_name: YAML::Parser::HandleNextDocument(YAML::EventHandler&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/graphbuilder.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/parse.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Scanner::empty()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::pop()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::SingleDocParser::~SingleDocParser()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Directives::Directives()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/directives.cpp
+        -   symbol_name: YAML::Scanner::Scanner(std::istream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::peek()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::~Scanner()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::SingleDocParser::HandleDocument(YAML::EventHandler&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::SingleDocParser::SingleDocParser(YAML::Scanner&, YAML::Directives
+                const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/ptr_stack.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/ptr_vector.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::operator!(YAML::RegEx const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::operator&&(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char, char)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+        -   symbol_name: YAML::RegEx::RegEx()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/emitterutils.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/regex.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/regeximpl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Scanner::Scanner(std::istream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::Scanner::mark() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Scanner::GetTopIndent() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::empty()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Scanner::PushIndentTo(int, YAML::Scanner::IndentMarker::INDENT_TYPE)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::Scanner::PopAllIndents()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::peek()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Scanner::pop()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Scanner::~Scanner()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Stream::operator bool() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Stream::eat(int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Scanner::ScanAnchorOrAlias()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::_ReadAheadTo(unsigned long) const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Scanner::ScanValue()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanBlockEntry()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanQuotedScalar()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Stream::~Stream()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Stream::Stream(std::istream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Scanner::ScanBlockScalar()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanDocEnd()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowEnd()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::RegEx::RegEx()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::PopAllSimpleKeys()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::Scanner::ScanTag()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanDirective()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanDocStart()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowStart()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::InvalidateSimpleKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowEntry()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Stream::peek() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator!(YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::ScanPlainScalar()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scanner.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::ScanScalar(YAML::Stream&, YAML::ScanScalarParams&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Stream::operator bool() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Stream::eat(int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::_ReadAheadTo(unsigned long) const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::get()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::peek() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Exp::Escape(YAML::Stream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/exp.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scanscalar.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::ScanTagSuffix(YAML::Stream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::ScanVerbatimTag(YAML::Stream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::ScanTagHandle(YAML::Stream&, bool&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Stream::get(int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Stream::operator bool() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::_ReadAheadTo(unsigned long) const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char, char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::get()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::peek() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scantag.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Scanner::ScanQuotedScalar()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanValue()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanDocEnd()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowStart()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanTag()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanDirective()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanBlockScalar()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowEnd()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanFlowEntry()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanAnchorOrAlias()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanKey()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanPlainScalar()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanDocStart()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::ScanBlockEntry()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        file_dependencies:
+        -   symbol_name: YAML::ScanScalar(YAML::Stream&, YAML::ScanScalarParams&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        -   symbol_name: YAML::Stream::operator bool() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Stream::eat(int)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Stream::_ReadAheadTo(unsigned long) const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Scanner::GetTopIndent() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::ScanVerbatimTag(YAML::Stream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+        -   symbol_name: YAML::operator&&(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::PopAllSimpleKeys()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::Scanner::PopAllIndents()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::RegEx::RegEx(char, char)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::RegEx::RegEx()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::ScanTagSuffix(YAML::Stream&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+        -   symbol_name: YAML::Stream::get()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::Scanner::InsertPotentialSimpleKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::ScanTagHandle(YAML::Stream&, bool&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+        -   symbol_name: YAML::operator||(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::InvalidateSimpleKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::Scanner::PushIndentTo(int, YAML::Scanner::IndentMarker::INDENT_TYPE)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Stream::peek() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        -   symbol_name: YAML::RegEx::RegEx(std::string const&, YAML::REGEX_OP)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::Scanner::VerifySimpleKey()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        -   symbol_name: YAML::operator!(YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+        -   symbol_name: YAML::operator+(YAML::RegEx const&, YAML::RegEx const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/regex.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/setting.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/simplekey.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Scanner::VerifySimpleKey()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::InvalidateSimpleKey()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::InsertPotentialSimpleKey()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+        -   symbol_name: YAML::Scanner::PopAllSimpleKeys()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Scanner::PushIndentTo(int, YAML::Scanner::IndentMarker::INDENT_TYPE)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::SingleDocParser::~SingleDocParser()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::SingleDocParser::HandleDocument(YAML::EventHandler&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        -   symbol_name: YAML::SingleDocParser::SingleDocParser(YAML::Scanner&, YAML::Directives
+                const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/parser.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Tag::Tag(YAML::Token const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
+        -   symbol_name: YAML::Scanner::empty()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::pop()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::mark() const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Scanner::peek()
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Tag::Translate(YAML::Directives const&)
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/singledocparser.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/stream.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Stream::get(int)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+        -   symbol_name: YAML::Stream::operator bool() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        -   symbol_name: YAML::Stream::_ReadAheadTo(unsigned long) const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        -   symbol_name: YAML::Stream::~Stream()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Stream::Stream(std::istream&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+        -   symbol_name: YAML::Stream::get()
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/exp.cpp
+        -   symbol_name: YAML::Stream::peek() const
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scantag.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        -   symbol_name: YAML::Stream::eat(int)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/scantoken.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanner.cpp
+            - src/third_party/yaml-cpp-0.5.1/src/scanscalar.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/stream.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/streamcharsource.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/stringsource.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/tag.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface:
+        -   symbol_name: YAML::Tag::Tag(YAML::Token const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        -   symbol_name: YAML::Tag::Translate(YAML::Directives const&)
+            symbol_uses:
+            - src/third_party/yaml-cpp-0.5.1/src/singledocparser.cpp
+        file_dependencies:
+        -   symbol_name: YAML::Directives::TranslateTagHandle(std::string const&)
+                const
+            symbol_sources:
+            - src/third_party/yaml-cpp-0.5.1/src/directives.cpp
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/tag.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/yaml-cpp-0.5.1/src/token.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongostat
+        - test
+        - mongoimport
+        - mongos
+        - mongooplog
+        - bsondump
+        - mongoexport
+        - mongofiles
+        - mongosniff
+        file_interface: []
+        file_dependencies: []

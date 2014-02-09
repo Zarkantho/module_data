@@ -347,6 +347,16 @@ Code to manage and store the current state of a connection to a replica set.  It
 
 <div></div>
 
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
     boost::thread::~thread()
 
 - Provided By:
@@ -2818,6 +2828,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 <div></div>
 
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -3871,6 +3891,16 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
 
 ### src/mongo/client/scoped\_db\_conn\_test.cpp
 

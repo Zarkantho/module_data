@@ -6320,6 +6320,17 @@ Old style unittests ("test" binary)
 
 <div></div>
 
+    mongo::dbexit(mongo::ExitCode, char const*)
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
     mongo::BackgroundJob::BackgroundJob(bool)
 
 - Provided By:

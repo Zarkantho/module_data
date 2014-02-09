@@ -14,253 +14,285 @@ module_groups:
     - src/mongo/dbtests/histogram_test.cpp
     - src/mongo/util/lruishmap.h
     - src/mongo/db/taskqueue.h
-interface: []
-leaks:
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::lock_shared()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock_shared()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::lock()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::SimpleRWLock(mongo::StringData
-        const&)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
-    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::Suite(std::string const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::demangleName(std::type_info const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Suite'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::~Suite()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/trace.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/tests.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/stats/service_stats.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/stats/service_stats.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/histogram.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/histogram.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/histogram_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/lruishmap.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/taskqueue.h
+    group_generated_data:
+    -   file_name: src/mongo/util/trace.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::SimpleRWLock::lock_shared()
+            symbol_sources:
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+        -   symbol_name: mongo::SimpleRWLock::unlock()
+            symbol_sources:
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+        -   symbol_name: mongo::SimpleRWLock::unlock_shared()
+            symbol_sources:
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+        -   symbol_name: mongo::SimpleRWLock::lock()
+            symbol_sources:
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+        -   symbol_name: mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+    -   file_name: src/mongo/db/tests.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::printStackTrace(std::ostream&)
+            symbol_sources:
+            - src/mongo/util/stacktrace.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+    -   file_name: src/mongo/db/stats/service_stats.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::Histogram::insert(unsigned int)
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::SpinLock::SpinLock()
+            symbol_sources:
+            - src/mongo/util/concurrency/spin_lock.cpp
+        -   symbol_name: mongo::SpinLock::~SpinLock()
+            symbol_sources:
+            - src/mongo/util/concurrency/spin_lock.cpp
+        -   symbol_name: mongo::Histogram::toHTML() const
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Histogram::Histogram(mongo::Histogram::Options const&)
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::Histogram::~Histogram()
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+    -   file_name: src/mongo/db/stats/service_stats.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/util/histogram.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::Histogram::insert(unsigned int)
+            symbol_uses:
+            - src/mongo/db/stats/service_stats.cpp
+        -   symbol_name: mongo::Histogram::Histogram(mongo::Histogram::Options const&)
+            symbol_uses:
+            - src/mongo/db/stats/service_stats.cpp
+        -   symbol_name: mongo::Histogram::~Histogram()
+            symbol_uses:
+            - src/mongo/db/stats/service_stats.cpp
+        -   symbol_name: mongo::Histogram::toHTML() const
+            symbol_uses:
+            - src/mongo/db/stats/service_stats.cpp
+        file_dependencies: []
+    -   file_name: src/mongo/util/histogram.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/dbtests/histogram_test.cpp
+        file_executables:
+        - test
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::Histogram::insert(unsigned int)
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::Histogram::~Histogram()
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::Histogram::getCount(unsigned int) const
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::Suite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::Histogram::getBoundary(unsigned int) const
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::demangleName(std::type_info const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Suite
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::Histogram::Histogram(mongo::Histogram::Options const&)
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: mongo::Histogram::getBucketsNum() const
+            symbol_sources:
+            - src/mongo/util/histogram.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::unittest::Suite::~Suite()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+    -   file_name: src/mongo/util/lruishmap.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/taskqueue.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

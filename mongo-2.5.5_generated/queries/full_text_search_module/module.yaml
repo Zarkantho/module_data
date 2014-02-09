@@ -38,6 +38,1844 @@ module_groups:
     - src/mongo/db/fts/tokenizer.cpp
     - src/mongo/db/fts/tokenizer.h
     - src/mongo/db/fts/tokenizer_test.cpp
+    group_generated_data:
+    -   file_name: src/mongo/db/fts/fts_command.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSCommand::run(std::string const&, mongo::BSONObj&,
+                int, std::string&, mongo::BSONObjBuilder&, bool)
+            symbol_uses:
+            - src/mongo/db/fts/fts_command_mongos.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+        -   symbol_name: mongo::fts::FTSCommand::addRequiredPrivileges(std::string
+                const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                >*)
+            symbol_uses:
+            - src/mongo/db/fts/fts_command_mongos.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+        file_dependencies:
+        -   symbol_name: mongo::ActionType::find
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Command::parseResourcePattern(std::string const&,
+                mongo::BSONObj const&) const
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&,
+                int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&,
+                mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_command_mongos.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ActionSet::addAction(mongo::ActionType const&)
+            symbol_sources:
+            - src/mongo/db/auth/action_set.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Privilege::Privilege(mongo::ResourcePattern const&,
+                mongo::ActionSet const&)
+            symbol_sources:
+            - src/mongo/db/auth/privilege.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: vtable for mongo::fts::FTSCommand
+            symbol_sources:
+            - src/mongo/db/fts/fts_command_mongos.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: vtable for mongo::Command
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::startupWarningsLog
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::Command::Command(mongo::StringData, bool, mongo::StringData)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_command.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_command_mongod.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&,
+                int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&,
+                mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: vtable for mongo::fts::FTSCommand
+            symbol_uses:
+            - src/mongo/db/fts/fts_command.cpp
+        file_dependencies:
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+                const&, int, long*)
+            symbol_sources:
+            - src/mongo/base/parse_number.cpp
+        -   symbol_name: vtable for mongo::Command
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::curTimeMicros64()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::fts::FTSCommand::addRequiredPrivileges(std::string
+                const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                >*)
+            symbol_sources:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: mongo::Command::checkAuthForCommand(mongo::ClientBasic*,
+                std::string const&, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::fts::FTSCommand::run(std::string const&, mongo::BSONObj&,
+                int, std::string&, mongo::BSONObjBuilder&, bool)
+            symbol_sources:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
+                std::allocator<char> >&) const
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::TypeExplain::getNScanned() const
+            symbol_sources:
+            - src/mongo/db/query/type_explain.cpp
+        -   symbol_name: typeinfo for mongo::Command
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::Command::parseNs(std::string const&, mongo::BSONObj
+                const&) const
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::getRunner(mongo::CanonicalQuery*, mongo::Runner**,
+                unsigned long)
+            symbol_sources:
+            - src/mongo/db/query/get_runner.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::TypeExplain::getNScannedObjects() const
+            symbol_sources:
+            - src/mongo/db/query/type_explain.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::LiteParsedQuery::metaTextScore
+            symbol_sources:
+            - src/mongo/db/query/lite_parsed_query.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Timer::_countsPerSecond
+            symbol_sources:
+            - src/mongo/util/timer.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::CanonicalQuery::canonicalize(std::string const&, mongo::BSONObj
+                const&, mongo::BSONObj const&, mongo::BSONObj const&, long long, long
+                long, mongo::BSONObj const&, mongo::CanonicalQuery**)
+            symbol_sources:
+            - src/mongo/db/query/canonical_query.cpp
+    -   file_name: src/mongo/db/fts/fts_command_mongos.cpp
+        file_executables:
+        - mongos
+        file_interface:
+        -   symbol_name: vtable for mongo::fts::FTSCommand
+            symbol_uses:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: mongo::fts::FTSCommand::_run(std::string const&, mongo::BSONObj&,
+                int, std::string const&, std::string const&, std::string, int, mongo::BSONObj&,
+                mongo::BSONObj&, std::string&, mongo::BSONObjBuilder&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_command.cpp
+        file_dependencies:
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+                const&, int, long*)
+            symbol_sources:
+            - src/mongo/base/parse_number.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: vtable for mongo::Command
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::curTimeMicros64()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::Strategy::commandOp(std::string const&, mongo::BSONObj
+                const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult,
+                std::allocator<mongo::Strategy::CommandResult> >*)
+            symbol_sources:
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::fts::FTSCommand::addRequiredPrivileges(std::string
+                const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege>
+                >*)
+            symbol_sources:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: mongo::STRATEGY
+            symbol_sources:
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::Command::checkAuthForCommand(mongo::ClientBasic*,
+                std::string const&, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::fts::FTSCommand::run(std::string const&, mongo::BSONObj&,
+                int, std::string&, mongo::BSONObjBuilder&, bool)
+            symbol_sources:
+            - src/mongo/db/fts/fts_command.cpp
+        -   symbol_name: mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
+                std::allocator<char> >&) const
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::Command
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::Command::parseNs(std::string const&, mongo::BSONObj
+                const&) const
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Command::redactForLogging(mongo::mutablebson::Document*)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Timer::_countsPerSecond
+            symbol_sources:
+            - src/mongo/util/timer.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Command::stopIndexBuilds(std::string const&, mongo::BSONObj
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_element_iterator.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSElementIterator::FTSElementIterator(mongo::fts::FTSSpec
+                const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::next()
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::more()
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::DEFAULT_WEIGHT
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSSpec::_getLanguageToUseV2(mongo::BSONObj const&,
+                mongo::fts::FTSLanguage const*) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_element_iterator.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_element_iterator_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::FTSElementIterator(mongo::fts::FTSSpec
+                const&, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fromjson(char const*, int*)
+            symbol_sources:
+            - src/mongo/db/json.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::more()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::next()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+    -   file_name: src/mongo/db/fts/fts_enabled.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: typeinfo for mongo::ServerParameter
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::ServerParameter::~ServerParameter()
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::ServerParameterSet::getGlobal()
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+                std::string const&, bool, bool)
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ExportedServerParameter<bool>::setFromString(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+    -   file_name: src/mongo/db/fts/fts_index_format.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&,
+                mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp,
+                std::allocator<mongo::BSONObj> >*)
+            symbol_uses:
+            - src/mongo/db/index/fts_access_method.cpp
+        -   symbol_name: mongo::fts::FTSIndexFormat::getIndexKey(double, std::string
+                const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/exec/text.cpp
+        file_dependencies:
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSSpec::scoreDocument(mongo::BSONObj const&,
+                std::tr1::unordered_map<std::string, double, std::tr1::hash<std::string>,
+                std::equal_to<std::string>, std::allocator<std::pair<std::string const,
+                double> >, false>*) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+                const&, bool) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::MAX_WEIGHT
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_index_format.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_index_format_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec const&,
+                mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp,
+                std::allocator<mongo::BSONObj> >*)
+            symbol_sources:
+            - src/mongo/db/fts/fts_index_format.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::operator<<(std::ostream&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/base/string_data.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_language.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSLanguage::make(mongo::StringData const&, mongo::fts::TextIndexVersion)
+            symbol_uses:
+            - src/mongo/db/matcher/expression_parser_text.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_uses:
+            - src/mongo/db/fts/tokenizer.cpp
+            - src/mongo/db/fts/stop_words.cpp
+            - src/mongo/db/fts/fts_element_iterator.cpp
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+            - src/mongo/db/fts/stemmer.cpp
+        file_dependencies:
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/db/fts/fts_language.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_language_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::make(mongo::StringData const&, mongo::fts::TextIndexVersion)
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+    -   file_name: src/mongo/db/fts/fts_matcher.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&)
+                const
+            symbol_uses:
+            - src/mongo/db/exec/text.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&,
+                mongo::fts::FTSSpec const&)
+            symbol_uses:
+            - src/mongo/db/exec/text.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&)
+                const
+            symbol_uses:
+            - src/mongo/db/exec/text.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::FTSElementIterator::FTSElementIterator(mongo::fts::FTSSpec
+                const&, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::next()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::more()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+    -   file_name: src/mongo/db/fts/fts_matcher.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_matcher_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+                const&, int, long*)
+            symbol_sources:
+            - src/mongo/base/parse_number.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSQuery::parse(std::string const&, mongo::StringData
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_query.cpp
+        -   symbol_name: mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&,
+                mongo::fts::FTSSpec const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_matcher.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&)
+                const
+            symbol_sources:
+            - src/mongo/db/fts/fts_matcher.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj const&)
+                const
+            symbol_sources:
+            - src/mongo/db/fts/fts_matcher.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSMatcher::phraseMatch(std::string const&, mongo::BSONObj
+                const&) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_matcher.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_query.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSQuery::parse(std::string const&, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::StopWords::getStopWords(mongo::fts::FTSLanguage
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/stop_words.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::make(mongo::StringData const&, mongo::fts::TextIndexVersion)
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+    -   file_name: src/mongo/db/fts/fts_query.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_query_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSQuery::parse(std::string const&, mongo::StringData
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_query.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSQuery::debugString() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_query.cpp
+    -   file_name: src/mongo/db/fts/fts_spec.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSSpec::_getLanguageToUseV2(mongo::BSONObj const&,
+                mongo::fts::FTSLanguage const*) const
+            symbol_uses:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/index_legacy.cpp
+        -   symbol_name: mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/index/fts_access_method.cpp
+        -   symbol_name: mongo::fts::FTSSpec::scoreDocument(mongo::BSONObj const&,
+                std::tr1::unordered_map<std::string, double, std::tr1::hash<std::string>,
+                std::equal_to<std::string>, std::allocator<std::pair<std::string const,
+                double> >, false>*) const
+            symbol_uses:
+            - src/mongo/db/fts/fts_index_format.cpp
+        -   symbol_name: mongo::fts::DEFAULT_WEIGHT
+            symbol_uses:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::MAX_WEIGHT
+            symbol_uses:
+            - src/mongo/db/exec/text.cpp
+            - src/mongo/db/fts/fts_index_format.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+        -   symbol_name: mongo::fts::FTSSpec::getIndexPrefix(mongo::BSONObj const&,
+                mongo::BSONObj*) const
+            symbol_uses:
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+        -   symbol_name: mongo::fts::MAX_WORD_WEIGHT
+            symbol_uses:
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::WILDCARD
+            symbol_sources:
+            - src/mongo/db/fts/fts_util.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONElement::getGtLtOp(int) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::StopWords::getStopWords(mongo::fts::FTSLanguage
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/stop_words.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::FTSElementIterator(mongo::fts::FTSSpec
+                const&, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::more()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::make(mongo::StringData const&, mongo::fts::TextIndexVersion)
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSElementIterator::next()
+            symbol_sources:
+            - src/mongo/db/fts/fts_element_iterator.cpp
+        -   symbol_name: mongo::FieldRef::FieldRef(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/field_ref.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::FTSSpec::_scoreDocumentV1(mongo::BSONObj const&,
+                std::tr1::unordered_map<std::string, double, std::tr1::hash<std::string>,
+                std::equal_to<std::string>, std::allocator<std::pair<std::string const,
+                double> >, false>*) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::fts::FTSSpec::_fixSpecV1(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::INDEX_NAME
+            symbol_sources:
+            - src/mongo/db/fts/fts_util.cpp
+        -   symbol_name: mongo::FieldRef::getPart(unsigned long) const
+            symbol_sources:
+            - src/mongo/db/field_ref.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/db/fts/fts_spec.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_spec_legacy.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::FTSSpec::_scoreDocumentV1(mongo::BSONObj const&,
+                std::tr1::unordered_map<std::string, double, std::tr1::hash<std::string>,
+                std::equal_to<std::string>, std::allocator<std::pair<std::string const,
+                double> >, false>*) const
+            symbol_uses:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSSpec::_fixSpecV1(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_spec.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::WILDCARD
+            symbol_sources:
+            - src/mongo/db/fts/fts_util.cpp
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::MAX_WORD_WEIGHT
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::StopWords::getStopWords(mongo::fts::FTSLanguage
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/stop_words.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONObj::getFieldDottedOrArray(char const*&) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::fts::INDEX_NAME
+            symbol_sources:
+            - src/mongo/db/fts/fts_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::make(mongo::StringData const&, mongo::fts::TextIndexVersion)
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fts::MAX_WEIGHT
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_spec_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fromjson(char const*, int*)
+            symbol_sources:
+            - src/mongo/db/json.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fromjson(std::string const&)
+            symbol_sources:
+            - src/mongo/db/json.cpp
+        -   symbol_name: mongo::fts::FTSSpec::getIndexPrefix(mongo::BSONObj const&,
+                mongo::BSONObj*) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::FTSSpec::scoreDocument(mongo::BSONObj const&,
+                std::tr1::unordered_map<std::string, double, std::tr1::hash<std::string>,
+                std::equal_to<std::string>, std::allocator<std::pair<std::string const,
+                double> >, false>*) const
+            symbol_sources:
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::operator<<(std::ostream&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/base/string_data.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+                const&, bool) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::UserException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/fts_util.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::INDEX_NAME
+            symbol_uses:
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::WILDCARD
+            symbol_uses:
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_util.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/fts_util_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::BSONElementHasher::hash64(mongo::BSONElement const&,
+                int)
+            symbol_sources:
+            - src/mongo/db/hasher.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+                const&, bool) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/fts/stemmer.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_uses:
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+            - src/mongo/db/exec/text.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+        file_dependencies:
+        -   symbol_name: _sb_stemmer_new
+            symbol_sources:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+        -   symbol_name: _sb_stemmer_delete
+            symbol_sources:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: _sb_stemmer_length
+            symbol_sources:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+        -   symbol_name: _sb_stemmer_stem
+            symbol_sources:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+    -   file_name: src/mongo/db/fts/stemmer.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stemmer_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Stemmer::Stemmer(mongo::fts::FTSLanguage const&)
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::languageEnglishV2
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::fts::Stemmer::~Stemmer()
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Stemmer::stem(mongo::StringData const&) const
+            symbol_sources:
+            - src/mongo/db/fts/stemmer.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::languagePorterV1
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+    -   file_name: src/mongo/db/fts/tokenizer.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_matcher.cpp
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+    -   file_name: src/mongo/db/fts/tokenizer.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/tokenizer_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::languageEnglishV2
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Tokenizer::Tokenizer(mongo::fts::FTSLanguage
+                const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::languageFrenchV2
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Tokenizer::more() const
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::Tokenizer::next()
+            symbol_sources:
+            - src/mongo/db/fts/tokenizer.cpp
 -   group_title: Full Text Search Stop Words
     group_description: Stop words are words that get filtered out prior to text searches.  These
         are words like "and" and "the" in English.  The stop words list text files
@@ -64,2086 +1902,497 @@ module_groups:
     - src/mongo/db/fts/stop_words.cpp
     - src/mongo/db/fts/stop_words.h
     - src/mongo/db/fts/stop_words_test.cpp
-interface:
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec
-        const&, mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp,
-        std::allocator<mongo::BSONObj> >*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSIndexFormat::getIndexKey(double, std::string
-        const&, mongo::BSONObj const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSLanguage::make(mongo::StringData const&,
-        mongo::fts::TextIndexVersion)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/matcher/expression_parser_text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSLanguage::str() const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
-    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSMatcher::phrasesMatch(mongo::BSONObj
-        const&) const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery
-        const&, mongo::fts::FTSSpec const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj
-        const&) const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSQuery::parse(std::string const&, mongo::StringData
-        const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
-    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSSpec::fixSpec(mongo::BSONObj const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/index_legacy.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    symbol: !!python/unicode 'mongo::fts::MAX_WEIGHT'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    symbol: !!python/unicode 'mongo::fts::FTSSpec::getIndexPrefix(mongo::BSONObj const&,
-        mongo::BSONObj*) const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
-    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-    symbol: !!python/unicode 'mongo::fts::Stemmer::~Stemmer()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::parseResourcePattern(std::string const&,
-        mongo::BSONObj const&) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    symbol: !!python/unicode 'mongo::ActionSet::addAction(mongo::ActionType const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/auth/privilege.cpp'
-    symbol: !!python/unicode 'mongo::Privilege::Privilege(mongo::ResourcePattern const&,
-        mongo::ActionSet const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'vtable for mongo::Command'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::startupWarningsLog'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::Command(mongo::StringData, bool, mongo::StringData)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
-        const&, int, long*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'vtable for mongo::Command'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::curTimeMicros64()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::checkAuthForCommand(mongo::ClientBasic*,
-        std::string const&, mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
-        std::allocator<char> >&) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/type_explain.cpp'
-    symbol: !!python/unicode 'mongo::TypeExplain::getNScanned() const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::Command'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::parseNs(std::string const&, mongo::BSONObj
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
-    symbol: !!python/unicode 'mongo::getRunner(mongo::CanonicalQuery*, mongo::Runner**,
-        unsigned long)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/type_explain.cpp'
-    symbol: !!python/unicode 'mongo::TypeExplain::getNScannedObjects() const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/lite_parsed_query.cpp'
-    symbol: !!python/unicode 'mongo::LiteParsedQuery::metaTextScore'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::redactForLogging(mongo::mutablebson::Document*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/timer.cpp'
-    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::stopIndexBuilds(std::string const&,
-        mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/query/canonical_query.cpp'
-    symbol: !!python/unicode 'mongo::CanonicalQuery::canonicalize(std::string const&,
-        mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, long
-        long, long long, mongo::BSONObj const&, mongo::CanonicalQuery**)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
-        const&, int, long*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'vtable for mongo::Command'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::curTimeMicros64()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    symbol: !!python/unicode 'mongo::Strategy::commandOp(std::string const&, mongo::BSONObj
-        const&, int, std::string const&, mongo::BSONObj const&, std::vector<mongo::Strategy::CommandResult,
-        std::allocator<mongo::Strategy::CommandResult> >*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    symbol: !!python/unicode 'mongo::STRATEGY'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::checkAuthForCommand(mongo::ClientBasic*,
-        std::string const&, mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::help(std::basic_stringstream<char, std::char_traits<char>,
-        std::allocator<char> >&) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::Command'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::parseNs(std::string const&, mongo::BSONObj
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::redactForLogging(mongo::mutablebson::Document*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/timer.cpp'
-    symbol: !!python/unicode 'mongo::Timer::_countsPerSecond'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    symbol: !!python/unicode 'mongo::Command::stopIndexBuilds(std::string const&,
-        mongo::BSONObj const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_command_mongos.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/json.cpp'
-    symbol: !!python/unicode 'mongo::fromjson(char const*, int*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_element_iterator_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
-        const*, int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::ServerParameter'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
-    symbol: !!python/unicode 'mongo::ServerParameter::~ServerParameter()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
-    symbol: !!python/unicode 'mongo::ServerParameterSet::getGlobal()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
-    symbol: !!python/unicode 'mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
-        std::string const&, bool, bool)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_enabled.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_parameters.cpp'
-    symbol: !!python/unicode 'mongo::ExportedServerParameter<bool>::setFromString(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/jsobj.cpp'
-    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
-        const&, bool) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/string_data.cpp'
-    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_index_format_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-        const&, int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_language_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
-        const&, int, long*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_matcher_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_query_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/jsobj.cpp'
-    symbol: !!python/unicode 'mongo::BSONElement::getGtLtOp(int) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/field_ref.cpp'
-    symbol: !!python/unicode 'mongo::FieldRef::FieldRef(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/field_ref.cpp'
-    symbol: !!python/unicode 'mongo::FieldRef::getPart(unsigned long) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-        const&, int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/jsobj.cpp'
-    symbol: !!python/unicode 'mongo::BSONObj::getFieldDottedOrArray(char const*&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_legacy.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/json.cpp'
-    symbol: !!python/unicode 'mongo::fromjson(char const*, int*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/json.cpp'
-    symbol: !!python/unicode 'mongo::fromjson(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/string_data.cpp'
-    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/jsobj.cpp'
-    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
-        const&, bool) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::UserException'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_spec_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/hasher.cpp'
-    symbol: !!python/unicode 'mongo::BSONElementHasher::hash64(mongo::BSONElement
-        const&, int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/jsobj.cpp'
-    symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
-        const&, bool) const'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/fts_util_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_new'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_delete'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_length'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_stem'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/stemmer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/string_data.cpp'
-    symbol: !!python/unicode 'mongo::StringData::Hasher::operator()(mongo::StringData
-        const&) const'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/string_data.cpp'
-    symbol: !!python/unicode 'mongo::StringData::Hasher::operator()(mongo::StringData
-        const&) const'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_command.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_command.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_command_mongod.cpp
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/db/fts/fts_command_mongos.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_element_iterator.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_element_iterator.h
--   execs: []
-    name: src/mongo/db/fts/fts_element_iterator_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_enabled.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_index_format.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_index_format.h
--   execs: []
-    name: src/mongo/db/fts/fts_index_format_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_language.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_language.h
--   execs: []
-    name: src/mongo/db/fts/fts_language_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_matcher.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_matcher.h
--   execs: []
-    name: src/mongo/db/fts/fts_matcher_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_query.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_query.h
--   execs: []
-    name: src/mongo/db/fts/fts_query_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_spec.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_spec.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_spec_legacy.cpp
--   execs: []
-    name: src/mongo/db/fts/fts_spec_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_util.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/fts_util.h
--   execs: []
-    name: src/mongo/db/fts/fts_util_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stemmer.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stemmer.h
--   execs: []
-    name: src/mongo/db/fts/stemmer_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/tokenizer.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/tokenizer.h
--   execs: []
-    name: src/mongo/db/fts/tokenizer_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/generate_stop_words.py
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_danish.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_dutch.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_english.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_finnish.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_french.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_german.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_hungarian.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_italian.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_norwegian.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_portuguese.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_romanian.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_russian.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_spanish.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_swedish.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words_turkish.txt
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words.h
--   execs: []
-    name: src/mongo/db/fts/stop_words_test.cpp
+    group_generated_data:
+    -   file_name: src/mongo/db/fts/generate_stop_words.py
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::loadStopWordMap(mongo::StringMap<std::set<std::string,
+                std::less<std::string>, std::allocator<std::string> > >*)
+            symbol_uses:
+            - src/mongo/db/fts/stop_words.cpp
+        file_dependencies:
+        -   symbol_name: mongo::StringData::Hasher::operator()(mongo::StringData const&)
+                const
+            symbol_sources:
+            - src/mongo/base/string_data.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+    -   file_name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_danish.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_dutch.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_english.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_finnish.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_french.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_german.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_hungarian.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_italian.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_norwegian.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_portuguese.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_romanian.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_russian.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_spanish.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_swedish.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_turkish.txt
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::fts::StopWords::getStopWords(mongo::fts::FTSLanguage
+                const&)
+            symbol_uses:
+            - src/mongo/db/fts/fts_query.cpp
+            - src/mongo/db/fts/fts_spec_legacy.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+        file_dependencies:
+        -   symbol_name: mongo::fts::loadStopWordMap(mongo::StringMap<std::set<std::string,
+                std::less<std::string>, std::allocator<std::string> > >*)
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+        -   symbol_name: mongo::fts::FTSLanguage::str() const
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::StringData::Hasher::operator()(mongo::StringData const&)
+                const
+            symbol_sources:
+            - src/mongo/base/string_data.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+    -   file_name: src/mongo/db/fts/stop_words.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/fts/stop_words_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::languageEnglishV2
+            symbol_sources:
+            - src/mongo/db/fts/fts_language.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::fts::StopWords::getStopWords(mongo::fts::FTSLanguage
+                const&)
+            symbol_sources:
+            - src/mongo/db/fts/stop_words.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp

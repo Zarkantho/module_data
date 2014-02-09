@@ -980,6 +980,14 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 <div></div>
 
+    mongo::LockState::LockState()
+
+- Provided By:
+
+    - [src/mongo/db/lockstate.cpp](../concurrency)
+
+<div></div>
+
     mongo::Lock::DBRead::DBRead(mongo::StringData const&)
 
 - Provided By:

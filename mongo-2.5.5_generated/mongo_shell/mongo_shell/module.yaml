@@ -11,6 +11,76 @@ module_groups:
     group_files:
     - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
     - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+    group_generated_data:
+    -   file_name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mongo::JSFiles::replsetbridge
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::JSFiles::servers_misc
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::JSFiles::shardingtest
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::JSFiles::replsettest
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::JSFiles::servers
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        file_dependencies: []
+    -   file_name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::JSFiles::utils
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::batch_api
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::mongo
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::query
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::collection
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::utils_sh
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::assert
+            symbol_uses:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::JSFiles::db
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::JSFiles::types
+            symbol_uses:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::JSFiles::mr
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Javascript files that get wrapped in strings and put in cpp
         files. See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
@@ -30,6 +100,227 @@ module_groups:
     - src/mongo/shell/types.js
     - src/mongo/shell/utils.js
     - src/mongo/shell/utils_sh.js
+    group_generated_data:
+    -   file_name: src/mongo/shell/assert.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/batch_api.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/collection.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/db.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/mongo.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/mr.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/query.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/replsetbridge.js
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/replsettest.js
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/servers.js
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/servers_misc.js
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/shardingtest.js
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/types.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/utils.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/utils_sh.js
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Files only built into the mongo shell
     group_files:
@@ -46,1086 +337,959 @@ module_groups:
     - src/mongo/shell/shell_utils_extended.h
     - src/mongo/shell/shell_utils_launcher.cpp
     - src/mongo/shell/shell_utils_launcher.h
+    group_generated_data:
+    -   file_name: src/mongo/shell/dbshell.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::Console::Console()
+            symbol_sources:
+            - src/mongo/logger/console.cpp
+        -   symbol_name: mongo::dbexitCalled
+            symbol_sources:
+            - src/mongo/s/server.cpp
+            - src/mongo/client/clientAndShell.cpp
+        -   symbol_name: mongo::saslCommandUserFieldName
+            symbol_sources:
+            - src/mongo/client/sasl_client_authenticate.cpp
+        -   symbol_name: mongo::saslCommandPasswordFieldName
+            symbol_sources:
+            - src/mongo/client/sasl_client_authenticate.cpp
+        -   symbol_name: mongo::shell_utils::_nokillop
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: linenoisePreloadBuffer(char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::StartupTest::StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::File::File()
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: linenoiseAddCompletion(linenoiseCompletions*, char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::File::open(char const*, bool, bool)
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::shell_utils::ConnectionRegistry::killOperationsOnAllConnections(bool)
+                const
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::printStackTrace(std::ostream&)
+            symbol_sources:
+            - src/mongo/util/stacktrace.cpp
+        -   symbol_name: mongo::shell_utils::onConnect(mongo::DBClientWithCommands&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::ScriptEngine::_connectCallback
+            symbol_sources:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: typeinfo for mongo::StartupTest
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::runGlobalInitializersOrDie(int, char const* const*,
+                char const* const*)
+            symbol_sources:
+            - src/mongo/base/initializer.cpp
+        -   symbol_name: mongo::isShell
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::shell_utils::KillMongoProgramInstances()
+            symbol_sources:
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: linenoiseHistoryAdd(char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::shell_utils::RecordMyLocation(char const*)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::sleepmillis(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::shell_utils::mongoProgramOutputMutex
+            symbol_sources:
+            - src/mongo/client/clientAndShell.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::rawOut(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: vtable for mongo::logger::MessageEventUnadornedEncoder
+            symbol_sources:
+            - src/mongo/logger/message_event_utf8_encoder.cpp
+        -   symbol_name: mongo::Scope::invoke(char const*, mongo::BSONObj const*,
+                mongo::BSONObj const*, int)
+            symbol_sources:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::shell_utils::connectionRegistry
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::attachAppender(std::auto_ptr<mongo::logger::Appender<mongo::logger::MessageEventEphemeral>
+                >)
+            symbol_sources:
+            - src/mongo/logger/message_log_domain.cpp
+        -   symbol_name: mongo::globalScriptEngine
+            symbol_sources:
+            - src/mongo/scripting/engine.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::shell_utils::getUserDir()
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::File::~File()
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: pcrecpp::RE::~RE()
+            symbol_sources:
+            - src/third_party/pcre-8.30/pcrecpp.cc
+        -   symbol_name: mongo::shell_utils::_dbConnect
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: linenoiseClearScreen()
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Console::out()
+            symbol_sources:
+            - src/mongo/logger/console.cpp
+        -   symbol_name: pcrecpp::RE::no_arg
+            symbol_sources:
+            - src/third_party/pcre-8.30/pcrecpp.cc
+        -   symbol_name: linenoiseHistoryFree()
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::shellGlobalParams
+            symbol_sources:
+            - src/mongo/shell/shell_options.cpp
+        -   symbol_name: mongo::versionString
+            symbol_sources:
+            - src/mongo/util/version.cpp
+        -   symbol_name: mongo::shell_utils::initScope(mongo::Scope&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
+                const*)
+            symbol_sources:
+            - src/third_party/pcre-8.30/pcrecpp.cc
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::logger::LogManager::getNamedDomain(std::string const&)
+            symbol_sources:
+            - src/mongo/logger/log_manager.cpp
+        -   symbol_name: mongo::shell_utils::fileExists(std::string const&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::shell_utils::_dbAuth
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::shell_utils::MongoProgramScope::~MongoProgramScope()
+            symbol_sources:
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: mongo::StartupTest::~StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::askPassword()
+            symbol_sources:
+            - src/mongo/util/password.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: linenoiseSetCompletionCallback(void (*)(char const*, linenoiseCompletions*))
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: linenoiseHistorySave(char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: pcrecpp::RE::PartialMatch(pcrecpp::StringPiece const&, pcrecpp::Arg
+                const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&,
+                pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+                const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&,
+                pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
+                const&, pcrecpp::Arg const&) const
+            symbol_sources:
+            - src/third_party/pcre-8.30/pcrecpp.cc
+        -   symbol_name: linenoise(char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoiseHistoryLoad(char const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: mongo::ScriptEngine::setup()
+            symbol_sources:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::StartupTest::runTests()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::errnoWithDescription(int)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+    -   file_name: src/mongo/shell/linenoise.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: linenoiseAddCompletion(linenoiseCompletions*, char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoisePreloadBuffer(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseHistoryAdd(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseClearScreen()
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseHistoryFree()
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseSetCompletionCallback(void (*)(char const*, linenoiseCompletions*))
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseHistorySave(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoise(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: linenoiseHistoryLoad(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        file_dependencies:
+        -   symbol_name: linenoise_utf8::strlen32(unsigned int const*)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: linenoise_utf8::write32(int, unsigned int const*, unsigned
+                int)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: linenoise_utf8::copyString32(unsigned int*, unsigned int
+                const*, unsigned long)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: linenoise_utf8::copyString32to8counted(unsigned char*, unsigned
+                int const*, unsigned long, unsigned long)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: linenoise_utf8::copyString32to8(unsigned char*, unsigned
+                int const*, unsigned long)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: linenoise_utf8::strncmp32(unsigned int*, unsigned int*, unsigned
+                long)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+        -   symbol_name: mk_wcwidth(int)
+            symbol_sources:
+            - src/mongo/shell/mk_wcwidth.cpp
+        -   symbol_name: linenoise_utf8::copyString8to32(unsigned int*, unsigned char
+                const*, unsigned long, unsigned long&, int&)
+            symbol_sources:
+            - src/mongo/shell/linenoise_utf8.cpp
+    -   file_name: src/mongo/shell/linenoise.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/linenoise_utf8.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: linenoise_utf8::write32(int, unsigned int const*, unsigned
+                int)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::strlen32(unsigned int const*)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::strncmp32(unsigned int*, unsigned int*, unsigned
+                long)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::copyString8to32(unsigned int*, unsigned char
+                const*, unsigned long, unsigned long&, int&)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::copyString32(unsigned int*, unsigned int
+                const*, unsigned long)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::copyString32to8counted(unsigned char*, unsigned
+                int const*, unsigned long, unsigned long)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        -   symbol_name: linenoise_utf8::copyString32to8(unsigned char*, unsigned
+                int const*, unsigned long)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        file_dependencies: []
+    -   file_name: src/mongo/shell/linenoise_utf8.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/mk_wcwidth.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mk_wcwidth(int)
+            symbol_uses:
+            - src/mongo/shell/linenoise.cpp
+        file_dependencies: []
+    -   file_name: src/mongo/shell/mk_wcwidth.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/shell_utils.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mongo::shell_utils::undefinedReturn
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: mongo::shell_utils::_dbConnect
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::fileExists(std::string const&)
+            symbol_uses:
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::_nokillop
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::onConnect(mongo::DBClientWithCommands&)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::singleArg(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: mongo::shell_utils::connectionRegistry
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::getUserDir()
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::ConnectionRegistry::killOperationsOnAllConnections(bool)
+                const
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::_dbAuth
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::initScope(mongo::Scope&)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::RecordMyLocation(char const*)
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        file_dependencies:
+        -   symbol_name: mongo::ProcessInfo::supported()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::appendInfo(mongo::BSONObjBuilder&)
+                const
+            symbol_sources:
+            - src/mongo/client/replica_set_monitor.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ConnectionString::parse(std::string const&, std::string&)
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::shell_utils::goingAwaySoon()
+            symbol_sources:
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+                void*, bool)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::get(std::string const&, bool)
+            symbol_sources:
+            - src/mongo/client/replica_set_monitor.cpp
+        -   symbol_name: typeinfo for mongo::DBClientWithCommands
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::ProcessInfo::~ProcessInfo()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::detail::get_tss_data(void const*)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::JSFiles::replsetbridge
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+        -   symbol_name: mongo::ProcessId::getCurrent()
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::shellGlobalParams
+            symbol_sources:
+            - src/mongo/shell/shell_options.cpp
+        -   symbol_name: mongo::appendBuildInfo(mongo::BSONObjBuilder&)
+            symbol_sources:
+            - src/mongo/util/version_reporting.cpp
+        -   symbol_name: mongo::JSFiles::servers
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+        -   symbol_name: typeinfo for mongo::DBClientBase
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::JSFiles::shardingtest
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::ScriptEngine::getInterpreterVersionString()
+            symbol_sources:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::ConnectionString::connect(std::string&, double) const
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: mongo::ProcessInfo::getVirtualMemorySize()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::ProcessInfo::getResidentSize()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::shell_utils::installShellUtilsLauncher(mongo::Scope&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: mongo::shell_utils::installShellUtilsExtended(mongo::Scope&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils_extended.cpp
+        -   symbol_name: mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::JSFiles::replsettest
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+        -   symbol_name: mongo::JSFiles::servers_misc
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+    -   file_name: src/mongo/shell/shell_utils.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/shell_utils_extended.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mongo::shell_utils::installShellUtilsExtended(mongo::Scope&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
+                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::shell_utils::undefinedReturn
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: _md5_finish
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+        -   symbol_name: _md5_init
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::File::File()
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: mongo::File::open(char const*, bool, bool)
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::File::write(unsigned long long, char const*, unsigned
+                int)
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
+                boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
+                const&, int, long*)
+            symbol_sources:
+            - src/mongo/base/parse_number.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
+                boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::shell_utils::singleArg(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::File::~File()
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: mongo::File::is_open() const
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: boost::filesystem3::detail::file_size(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: _md5_append
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+        -   symbol_name: boost::filesystem3::detail::create_directories(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::getHostName()
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::File::read(unsigned long long, char*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/file.cpp
+        -   symbol_name: boost::filesystem3::path::filename() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::errnoWithDescription(int)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+    -   file_name: src/mongo/shell/shell_utils_extended.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/shell_utils_launcher.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mongo::shell_utils::goingAwaySoon()
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::shell_utils::KillMongoProgramInstances()
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::MongoProgramScope::~MongoProgramScope()
+            symbol_uses:
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::shell_utils::installShellUtilsLauncher(mongo::Scope&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+        file_dependencies:
+        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
+                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::operator<<(std::ostream&, mongo::ProcessId)
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::shell_utils::undefinedReturn
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::dbexitCalled
+            symbol_sources:
+            - src/mongo/s/server.cpp
+            - src/mongo/client/clientAndShell.cpp
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::getcurns
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
+                boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+                const&)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::sleepmillis(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
+                boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::shell_utils::mongoProgramOutputMutex
+            symbol_sources:
+            - src/mongo/client/clientAndShell.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::shell_utils::singleArg(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::filesystem3::detail::initial_path(boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::filesystem3::path::operator/=(boost::filesystem3::path
+                const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: boost::filesystem3::detail::create_directory(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::filesystem3::detail::copy_file(boost::filesystem3::path
+                const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type,
+                boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::ProcessId::toString() const
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::thread::~thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::shell_utils::_nokillop
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::ProcessId::asLongLong() const
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: boost::filesystem3::path::filename() const
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+        -   symbol_name: mongo::errnoWithDescription(int)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+    -   file_name: src/mongo/shell/shell_utils_launcher.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
 -   group_title: 'TODO: Name this group'
     group_description: Shell command line options
     group_files:
     - src/mongo/shell/shell_options.cpp
     - src/mongo/shell/shell_options.h
     - src/mongo/shell/shell_options_init.cpp
-interface:
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::utils'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::batch_api'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::mongo'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::query'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::collection'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::utils_sh'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::assert'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::db'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::types'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::mr'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/console.cpp'
-    symbol: !!python/unicode 'mongo::Console::Console()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    symbol: !!python/unicode 'mongo::dbexitCalled'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/sasl_client_authenticate.cpp'
-    symbol: !!python/unicode 'mongo::saslCommandUserFieldName'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/sasl_client_authenticate.cpp'
-    symbol: !!python/unicode 'mongo::saslCommandPasswordFieldName'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::StartupTest()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::File()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::open(char const*, bool, bool)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
-    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::_connectCallback'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::StartupTest'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/initializer.cpp'
-    symbol: !!python/unicode 'mongo::runGlobalInitializersOrDie(int, char const* const*,
-        char const* const*)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    symbol: !!python/unicode 'mongo::isShell'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, char
-        const*, int)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    symbol: !!python/unicode 'mongo::shell_utils::mongoProgramOutputMutex'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::rawOut(mongo::StringData const&)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/message_event_utf8_encoder.cpp'
-    symbol: !!python/unicode 'vtable for mongo::logger::MessageEventUnadornedEncoder'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    symbol: !!python/unicode 'mongo::Scope::invoke(char const*, mongo::BSONObj const*,
-        mongo::BSONObj const*, int)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/message_log_domain.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>::attachAppender(std::auto_ptr<mongo::logger::Appender<mongo::logger::MessageEventEphemeral>
-        >)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    symbol: !!python/unicode 'mongo::globalScriptEngine'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::~File()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
-    symbol: !!python/unicode 'pcrecpp::RE::~RE()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/console.cpp'
-    symbol: !!python/unicode 'mongo::Console::out()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
-    symbol: !!python/unicode 'pcrecpp::RE::no_arg'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::versionString'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
-    symbol: !!python/unicode 'pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
-        const*)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/log_manager.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogManager::getNamedDomain(std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::~StartupTest()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/password.cpp'
-    symbol: !!python/unicode 'mongo::askPassword()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/pcre-8.30/pcrecpp.cc'
-    symbol: !!python/unicode 'pcrecpp::RE::PartialMatch(pcrecpp::StringPiece const&,
-        pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
-        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
-        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
-        const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
-        const&) const'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::setup()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::runTests()'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::supported()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    symbol: !!python/unicode 'mongo::StaticObserver::_destroyingStatics'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    symbol: !!python/unicode 'mongo::ReplicaSetMonitor::appendInfo(mongo::BSONObjBuilder&)
-        const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::ConnectionString::parse(std::string const&, std::string&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
-        void*, bool)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    symbol: !!python/unicode 'mongo::ReplicaSetMonitor::get(std::string const&, bool)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBClientWithCommands'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::~ProcessInfo()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version_reporting.cpp'
-    symbol: !!python/unicode 'mongo::appendBuildInfo(mongo::BSONObjBuilder&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBClientBase'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    symbol: !!python/unicode 'mongo::ScriptEngine::getInterpreterVersionString()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/dbclient.cpp'
-    symbol: !!python/unicode 'mongo::ConnectionString::connect(std::string&, double)
-        const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::getVirtualMemorySize()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::getResidentSize()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
-        const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/md5.cpp'
-    symbol: !!python/unicode '_md5_finish'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/md5.cpp'
-    symbol: !!python/unicode '_md5_init'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::File()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::open(char const*, bool, bool)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::dir_itr_close(void*&, void*&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::write(unsigned long long, char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
-        boost::filesystem3::path const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
-        const&, int, long*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
-        boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::~File()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::wchar_t_codecvt_facet()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::is_open() const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::file_size(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::remove_all(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/md5.cpp'
-    symbol: !!python/unicode '_md5_append'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::create_directories(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'mongo::getHostName()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::read(unsigned long long, char*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::filename() const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
-        const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::ProcessId)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    symbol: !!python/unicode 'mongo::dbexitCalled'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::dir_itr_close(void*&, void*&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::getcurns'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
-        boost::filesystem3::path const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
-        boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/client/clientAndShell.cpp'
-    symbol: !!python/unicode 'mongo::shell_utils::mongoProgramOutputMutex'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::start_thread()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::fassertFailed(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::initial_path(boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::operator/=(boost::filesystem3::path
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::create_directory(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::remove_all(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::copy_file(boost::filesystem3::path
-        const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type,
-        boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::toString() const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/hex.cpp'
-    symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::~thread()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::asLongLong() const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::filename() const'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/path.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::path::wchar_t_codecvt_facet()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::vector<std::string,
-        std::allocator<std::string> >*) const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::hidden()'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::causedBy(std::string const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::DBException'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::operator[](std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/value.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Value::get(std::string*) const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_description.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionDescription::positional(int,
-        int)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::count(std::string
-        const&) const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/sock.cpp'
-    symbol: !!python/unicode 'mongo::enableIPv6(bool)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::addOptionChaining(std::string
-        const&, std::string const&, mongo::optionenvironment::OptionType, std::string
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::traceIfNeeded(mongo::DBException
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/option_section.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::OptionSection::helpString()
-        const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'vtable for mongo::DBException'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::versionString'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::DBException::toString() const'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::MsgAssertionException'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    symbol: !!python/unicode 'mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    symbol: !!python/unicode 'mongo::storeSSLClientOptions(mongo::optionenvironment::Environment
-        const&)'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/db/server_options.cpp'
-    symbol: !!python/unicode 'mongo::serverGlobalParams'
--   object: !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-        const&, int)'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptionsParsed'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/environment.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::Environment::validate()'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
-    symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/options_parser/startup_options.cpp'
-    symbol: !!python/unicode 'mongo::optionenvironment::startupOptions'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/status.cpp'
-    symbol: !!python/unicode 'mongo::Status::toString() const'
--   object: !!python/unicode 'src/mongo/shell/shell_options_init.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
-    symbol: !!python/unicode 'mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
-        const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
-        std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
-        std::allocator<std::string> > const&)'
-files_with_exec:
--   execs: []
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/assert.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/batch_api.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/collection.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/db.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/mongo.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/mr.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/query.js
--   execs: []
-    name: src/mongo/shell/replsetbridge.js
--   execs: []
-    name: src/mongo/shell/replsettest.js
--   execs: []
-    name: src/mongo/shell/servers.js
--   execs: []
-    name: src/mongo/shell/servers_misc.js
--   execs: []
-    name: src/mongo/shell/shardingtest.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/types.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/utils.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/utils_sh.js
--   execs: []
-    name: src/mongo/shell/dbshell.cpp
--   execs: []
-    name: src/mongo/shell/linenoise.cpp
--   execs: []
-    name: src/mongo/shell/linenoise.h
--   execs: []
-    name: src/mongo/shell/linenoise_utf8.cpp
--   execs: []
-    name: src/mongo/shell/linenoise_utf8.h
--   execs: []
-    name: src/mongo/shell/mk_wcwidth.cpp
--   execs: []
-    name: src/mongo/shell/mk_wcwidth.h
--   execs: []
-    name: src/mongo/shell/shell_utils.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils.h
--   execs: []
-    name: src/mongo/shell/shell_utils_extended.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils_extended.h
--   execs: []
-    name: src/mongo/shell/shell_utils_launcher.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils_launcher.h
--   execs: []
-    name: src/mongo/shell/shell_options.cpp
--   execs: []
-    name: src/mongo/shell/shell_options.h
--   execs: []
-    name: src/mongo/shell/shell_options_init.cpp
+    group_generated_data:
+    -   file_name: src/mongo/shell/shell_options.cpp
+        file_executables: []
+        file_interface:
+        -   symbol_name: mongo::addMongoShellOptions(mongo::optionenvironment::OptionSection*)
+            symbol_uses:
+            - src/mongo/shell/shell_options_init.cpp
+        -   symbol_name: mongo::storeMongoShellOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/shell/shell_options_init.cpp
+        -   symbol_name: mongo::shellGlobalParams
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::handlePreValidationMongoShellOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_uses:
+            - src/mongo/shell/shell_options_init.cpp
+        file_dependencies:
+        -   symbol_name: mongo::optionenvironment::OptionDescription::setDefault(mongo::optionenvironment::Value)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(std::vector<std::string,
+                std::allocator<std::string> >*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::hidden()
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::causedBy(std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: vtable for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::setImplicit(mongo::optionenvironment::Value)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::operator[](std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::optionenvironment::Value::get(std::string*) const
+            symbol_sources:
+            - src/mongo/util/options_parser/value.cpp
+        -   symbol_name: mongo::optionenvironment::OptionDescription::positional(int,
+                int)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_description.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::count(std::string
+                const&) const
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::enableIPv6(bool)
+            symbol_sources:
+            - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::addOptionChaining(std::string
+                const&, std::string const&, mongo::optionenvironment::OptionType,
+                std::string const&)
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: mongo::DBException::traceIfNeeded(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::optionenvironment::OptionSection::helpString() const
+            symbol_sources:
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: vtable for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::versionString
+            symbol_sources:
+            - src/mongo/util/version.cpp
+        -   symbol_name: mongo::DBException::toString() const
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: typeinfo for mongo::MsgAssertionException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::addSSLClientOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/util/net/ssl_options.cpp
+        -   symbol_name: mongo::shell_utils::fileExists(std::string const&)
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::storeSSLClientOptions(mongo::optionenvironment::Environment
+                const&)
+            symbol_sources:
+            - src/mongo/util/net/ssl_options.cpp
+        -   symbol_name: mongo::shell_utils::_nokillop
+            symbol_sources:
+            - src/mongo/shell/shell_utils.cpp
+        -   symbol_name: mongo::serverGlobalParams
+            symbol_sources:
+            - src/mongo/db/server_options.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/shell/shell_options.h
+        file_executables: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/shell/shell_options_init.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::addMongoShellOptions(mongo::optionenvironment::OptionSection*)
+            symbol_sources:
+            - src/mongo/shell/shell_options.cpp
+        -   symbol_name: mongo::storeMongoShellOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/shell/shell_options.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptionsParsed
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::optionenvironment::Environment::validate()
+            symbol_sources:
+            - src/mongo/util/options_parser/environment.cpp
+        -   symbol_name: mongo::handlePreValidationMongoShellOptions(mongo::optionenvironment::Environment
+                const&, std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/shell/shell_options.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::optionenvironment::startupOptions
+            symbol_sources:
+            - src/mongo/util/options_parser/startup_options.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp

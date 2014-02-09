@@ -11,674 +11,682 @@ module_groups:
     - src/third_party/boost/boost/system/system_error.hpp
     - src/third_party/boost/libs/system/src/error_code.cpp
     - src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
-interface:
--   object: !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/index_filter_commands.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documenttests.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
-    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
-    - !!python/unicode 'src/mongo/db/write_concern.cpp'
-    - !!python/unicode 'src/mongo/dbtests/runner_registry.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/exec/count.cpp'
-    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/db/stats/snapshots.cpp'
-    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
-    - !!python/unicode 'src/mongo/db/ops/update_lifecycle_impl.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter_db_env.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/btreebuildertests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
-    - !!python/unicode 'src/mongo/util/tcmalloc_server_status_section.cpp'
-    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/db/exec/index_scan.cpp'
-    - !!python/unicode 'src/mongo/db/commands/create_indexes.cpp'
-    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
-    - !!python/unicode 'src/mongo/db/index_legacy.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_multi_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/db/dur_preplogbuffer.cpp'
-    - !!python/unicode 'src/mongo/dbtests/config_server_fixture.cpp'
-    - !!python/unicode 'src/mongo/dbtests/merge_chunk_tests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/record_store.cpp'
-    - !!python/unicode 'src/mongo/dbtests/oplogstarttests.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2dnear.cpp'
-    - !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_d.cpp'
-    - !!python/unicode 'src/mongo/db/dur_writetodatafiles.cpp'
-    - !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
-    - !!python/unicode 'src/mongo/db/driverHelpers.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/dbtests/expressiontests.cpp'
-    - !!python/unicode 'src/mongo/db/startup_warnings.cpp'
-    - !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/index_builder.cpp'
-    - !!python/unicode 'src/mongo/dbtests/accumulatortests.cpp'
-    - !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
-    - !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
-    - !!python/unicode 'src/mongo/dbtests/config_upgrade_tests.cpp'
-    - !!python/unicode 'src/mongo/db/query/plan_executor.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btree_stats.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/dbtests/extsorttests.cpp'
-    - !!python/unicode 'src/mongo/util/paths.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/db/matcher/expression_where.cpp'
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
-    - !!python/unicode 'src/mongo/db/commands/auth_schema_upgrade_d.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
-    - !!python/unicode 'src/mongo/db/exec/collection_scan.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_distinct.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_index_filter_cmd.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2d.cpp'
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_reads_ok.cpp'
-    - !!python/unicode 'src/mongo/db/commands/rename_collection.cpp'
-    - !!python/unicode 'src/mongo/db/query/idhack_runner.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_single_solution_runner.cpp'
-    - !!python/unicode 'src/mongo/db/dur_commitjob.cpp'
-    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
-    - !!python/unicode 'src/mongo/db/cloner.cpp'
-    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/keypatterntests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_sort.cpp'
-    - !!python/unicode 'src/mongo/db/repl/resync.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/writeback_listener.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_cursor.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/geo/haystack.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp'
-    - !!python/unicode 'src/mongo/dbtests/pipelinetests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/index_details.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
-    - !!python/unicode 'src/mongo/util/logfile.cpp'
-    - !!python/unicode 'src/mongo/client/gridfs.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/pipeline_command.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_fetch.cpp'
-    - !!python/unicode 'src/mongo/db/lockstate.cpp'
-    - !!python/unicode 'src/mongo/db/prefetch.cpp'
-    - !!python/unicode 'src/mongo/db/structure/collection_compact.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/db/interrupt_status_mongod.cpp'
-    - !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_config.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perf/perftest.cpp'
-    - !!python/unicode 'src/mongo/db/storage/record.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    - !!python/unicode 'src/mongo/db/ops/delete.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/cap.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
-    - !!python/unicode 'src/mongo/dbtests/updatetests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_limit_skip.cpp'
-    - !!python/unicode 'src/mongo/db/query/cached_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
-    - !!python/unicode 'src/mongo/tools/files.cpp'
-    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
-    - !!python/unicode 'src/mongo/tools/bsondump.cpp'
-    - !!python/unicode 'src/mongo/dbtests/indexupdatetests.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    - !!python/unicode 'src/mongo/db/commands/distinct.cpp'
-    - !!python/unicode 'src/mongo/dbtests/gridfstest.cpp'
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_collscan.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/exec/oplogstart.cpp'
-    - !!python/unicode 'src/mongo/tools/top.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
-    - !!python/unicode 'src/mongo/dbtests/stacktests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
-    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/s/version_manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jsontests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/dbhash.cpp'
-    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/dbtests/clienttests.cpp'
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_tests.cpp'
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/pipeline_d.cpp'
-    - !!python/unicode 'src/mongo/dbtests/queryutiltests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_merge_sort.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework.cpp'
-    - !!python/unicode 'src/mongo/db/commands/group.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/db/commands/get_last_error.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
-    - !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_web_handler.cpp'
-    - !!python/unicode 'src/mongo/db/structure/collection_iterator.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    - !!python/unicode 'src/mongo/s/commands_public.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
-    - !!python/unicode 'src/mongo/dbtests/directclienttests.cpp'
-    - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
-    - !!python/unicode 'src/mongo/dbtests/dbtests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_and.cpp'
-    - !!python/unicode 'src/mongo/db/introspect.cpp'
-    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2dcommon.cpp'
-    - !!python/unicode 'src/mongo/dbtests/commandtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync.cpp'
-    - !!python/unicode 'src/mongo/db/query/new_find.cpp'
-    - !!python/unicode 'src/mongo/db/commands/geonear.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/exec/fetch.cpp'
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/s/d_merge.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    - !!python/unicode 'src/mongo/s/chunk.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jsobjtests.cpp'
-    - !!python/unicode 'src/mongo/db/ops/count.cpp'
-    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection_info_cache.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
-    - !!python/unicode 'src/mongo/dbtests/repltests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
-    - !!python/unicode 'src/mongo/tools/tool.cpp'
-    - !!python/unicode 'src/mongo/db/commands/apply_ops.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp'
-    - !!python/unicode 'src/mongo/db/exec/s2near.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_keep.cpp'
-    - !!python/unicode 'src/mongo/db/exec/working_set_common.cpp'
-    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_d.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
-    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/commands/validate.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/database_holder.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/dbtests/socktests.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/tools/import.cpp'
-    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
-    - !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    - !!python/unicode 'src/mongo/db/query/multi_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/tools/export.cpp'
-    - !!python/unicode 'src/mongo/db/restapi.cpp'
-    - !!python/unicode 'src/mongo/tools/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
-    - !!python/unicode 'src/mongo/db/commands/parallel_collection_scan.cpp'
-    - !!python/unicode 'src/mongo/db/curop.cpp'
-    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
-    - !!python/unicode 'src/mongo/dbtests/indexcatalogtests.cpp'
-    - !!python/unicode 'src/mongo/db/queryutil.cpp'
-    - !!python/unicode 'src/mongo/db/ops/update.cpp'
-    - !!python/unicode 'src/mongo/dbtests/chunktests.cpp'
-    - !!python/unicode 'src/mongo/s/d_logic.cpp'
-    - !!python/unicode 'src/mongo/tools/admin.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/s/d_split.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/exec/distinct_scan.cpp'
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/dbtests/pdfiletests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jstests.cpp'
-    - !!python/unicode 'src/mongo/db/dbeval.cpp'
-    - !!python/unicode 'src/mongo/s/shard.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
-    - !!python/unicode 'src/mongo/dbtests/sharding.cpp'
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplogreader.cpp'
-    - !!python/unicode 'src/mongo/dbtests/matchertests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/s/request.cpp'
-    - !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/index_filter_commands.cpp'
-    - !!python/unicode 'src/mongo/unittest/temp_dir.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documenttests.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btree.cpp'
-    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
-    - !!python/unicode 'src/mongo/dbtests/namespacetests.cpp'
-    - !!python/unicode 'src/mongo/db/write_concern.cpp'
-    - !!python/unicode 'src/mongo/dbtests/runner_registry.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/db/exec/count.cpp'
-    - !!python/unicode 'src/mongo/db/query/get_runner.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/db/stats/snapshots.cpp'
-    - !!python/unicode 'src/mongo/dbtests/dbhelper_tests.cpp'
-    - !!python/unicode 'src/mongo/db/ops/update_lifecycle_impl.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter_db_env.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_index_cursor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/btreebuildertests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btreebuilder.cpp'
-    - !!python/unicode 'src/mongo/util/tcmalloc_server_status_section.cpp'
-    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/db/exec/index_scan.cpp'
-    - !!python/unicode 'src/mongo/db/commands/create_indexes.cpp'
-    - !!python/unicode 'src/mongo/db/auth/user_cache_invalidator_job.cpp'
-    - !!python/unicode 'src/mongo/db/index_legacy.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_multi_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/db/dur_preplogbuffer.cpp'
-    - !!python/unicode 'src/mongo/dbtests/config_server_fixture.cpp'
-    - !!python/unicode 'src/mongo/dbtests/merge_chunk_tests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/record_store.cpp'
-    - !!python/unicode 'src/mongo/dbtests/oplogstarttests.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2dnear.cpp'
-    - !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_manager_external_state_d.cpp'
-    - !!python/unicode 'src/mongo/db/dur_writetodatafiles.cpp'
-    - !!python/unicode 'src/mongo/db/clientlistplugin.cpp'
-    - !!python/unicode 'src/mongo/db/driverHelpers.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/dbtests/expressiontests.cpp'
-    - !!python/unicode 'src/mongo/db/startup_warnings.cpp'
-    - !!python/unicode 'src/mongo/db/index/2d_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/index_builder.cpp'
-    - !!python/unicode 'src/mongo/dbtests/accumulatortests.cpp'
-    - !!python/unicode 'src/mongo/db/index/haystack_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
-    - !!python/unicode 'src/mongo/db/index/fts_access_method.cpp'
-    - !!python/unicode 'src/mongo/dbtests/config_upgrade_tests.cpp'
-    - !!python/unicode 'src/mongo/db/query/plan_executor.cpp'
-    - !!python/unicode 'src/mongo/db/structure/btree/btree_stats.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/dbtests/extsorttests.cpp'
-    - !!python/unicode 'src/mongo/util/paths.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/batch_executor.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/db/matcher/expression_where.cpp'
-    - !!python/unicode 'src/mongo/db/exec/text.cpp'
-    - !!python/unicode 'src/mongo/db/commands/auth_schema_upgrade_d.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
-    - !!python/unicode 'src/mongo/db/exec/collection_scan.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_distinct.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_index_filter_cmd.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2d.cpp'
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/querytests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_reads_ok.cpp'
-    - !!python/unicode 'src/mongo/db/commands/rename_collection.cpp'
-    - !!python/unicode 'src/mongo/db/query/idhack_runner.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_single_solution_runner.cpp'
-    - !!python/unicode 'src/mongo/db/dur_commitjob.cpp'
-    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog_entry.cpp'
-    - !!python/unicode 'src/mongo/db/cloner.cpp'
-    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/keypatterntests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_sort.cpp'
-    - !!python/unicode 'src/mongo/db/repl/resync.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/database.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/writeback_listener.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_cursor.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/geo/haystack.cpp'
-    - !!python/unicode 'src/mongo/dbtests/pipelinetests.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/index_details.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
-    - !!python/unicode 'src/mongo/util/logfile.cpp'
-    - !!python/unicode 'src/mongo/client/gridfs.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/pipeline_command.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_fetch.cpp'
-    - !!python/unicode 'src/mongo/db/lockstate.cpp'
-    - !!python/unicode 'src/mongo/db/prefetch.cpp'
-    - !!python/unicode 'src/mongo/db/structure/collection_compact.cpp'
-    - !!python/unicode 'src/mongo/db/dbhelpers.cpp'
-    - !!python/unicode 'src/mongo/db/interrupt_status_mongod.cpp'
-    - !!python/unicode 'src/mongo/db/index/s2_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_config.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perf/perftest.cpp'
-    - !!python/unicode 'src/mongo/db/storage/record.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/initialize_server_global_state.cpp'
-    - !!python/unicode 'src/mongo/db/ops/delete.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_options.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/cap.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
-    - !!python/unicode 'src/mongo/util/util.cpp'
-    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
-    - !!python/unicode 'src/mongo/dbtests/updatetests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_limit_skip.cpp'
-    - !!python/unicode 'src/mongo/db/query/cached_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
-    - !!python/unicode 'src/mongo/tools/dump.cpp'
-    - !!python/unicode 'src/mongo/tools/files.cpp'
-    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
-    - !!python/unicode 'src/mongo/tools/bsondump.cpp'
-    - !!python/unicode 'src/mongo/dbtests/indexupdatetests.cpp'
-    - !!python/unicode 'src/mongo/s/s_only.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    - !!python/unicode 'src/mongo/db/commands/distinct.cpp'
-    - !!python/unicode 'src/mongo/dbtests/gridfstest.cpp'
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_collscan.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/exec/oplogstart.cpp'
-    - !!python/unicode 'src/mongo/tools/top.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
-    - !!python/unicode 'src/mongo/dbtests/stacktests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/find_and_modify.cpp'
-    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/s/version_manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jsontests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/dbhash.cpp'
-    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
-    - !!python/unicode 'src/mongo/db/dbcommands_admin.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/dbtests/clienttests.cpp'
-    - !!python/unicode 'src/mongo/db/server_options_helpers.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_tests.cpp'
-    - !!python/unicode 'src/mongo/s/config.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/pipeline_d.cpp'
-    - !!python/unicode 'src/mongo/dbtests/queryutiltests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_merge_sort.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework.cpp'
-    - !!python/unicode 'src/mongo/db/commands/group.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/db/commands/get_last_error.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_details.cpp'
-    - !!python/unicode 'src/mongo/db/index/hash_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_web_handler.cpp'
-    - !!python/unicode 'src/mongo/db/structure/collection_iterator.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    - !!python/unicode 'src/mongo/db/commands.cpp'
-    - !!python/unicode 'src/mongo/s/commands_public.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
-    - !!python/unicode 'src/mongo/dbtests/directclienttests.cpp'
-    - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
-    - !!python/unicode 'src/mongo/dbtests/dbtests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_and.cpp'
-    - !!python/unicode 'src/mongo/db/introspect.cpp'
-    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/exec/2dcommon.cpp'
-    - !!python/unicode 'src/mongo/dbtests/commandtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync.cpp'
-    - !!python/unicode 'src/mongo/db/query/new_find.cpp'
-    - !!python/unicode 'src/mongo/db/commands/geonear.cpp'
-    - !!python/unicode 'src/mongo/db/storage/extent_manager.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/exec/fetch.cpp'
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/s/d_merge.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_write_cmd.cpp'
-    - !!python/unicode 'src/mongo/db/structure/catalog/namespace_index.cpp'
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    - !!python/unicode 'src/mongo/s/chunk.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jsobjtests.cpp'
-    - !!python/unicode 'src/mongo/db/ops/count.cpp'
-    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection_info_cache.cpp'
-    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands.cpp'
-    - !!python/unicode 'src/mongo/dbtests/repltests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
-    - !!python/unicode 'src/mongo/tools/tool.cpp'
-    - !!python/unicode 'src/mongo/db/commands/apply_ops.cpp'
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp'
-    - !!python/unicode 'src/mongo/db/exec/s2near.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_interface.cpp'
-    - !!python/unicode 'src/mongo/dbtests/query_stage_keep.cpp'
-    - !!python/unicode 'src/mongo/db/exec/working_set_common.cpp'
-    - !!python/unicode 'src/mongo/db/commands/test_commands.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_server_common.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authz_session_external_state_d.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
-    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/commands/validate.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/database_holder.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/dbtests/socktests.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/tools/import.cpp'
-    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
-    - !!python/unicode 'src/mongo/db/index_rebuilder.cpp'
-    - !!python/unicode 'src/mongo/util/file.cpp'
-    - !!python/unicode 'src/mongo/db/query/multi_plan_runner.cpp'
-    - !!python/unicode 'src/mongo/tools/export.cpp'
-    - !!python/unicode 'src/mongo/db/restapi.cpp'
-    - !!python/unicode 'src/mongo/tools/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
-    - !!python/unicode 'src/mongo/db/commands/parallel_collection_scan.cpp'
-    - !!python/unicode 'src/mongo/db/curop.cpp'
-    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
-    - !!python/unicode 'src/mongo/dbtests/indexcatalogtests.cpp'
-    - !!python/unicode 'src/mongo/db/queryutil.cpp'
-    - !!python/unicode 'src/mongo/db/ops/update.cpp'
-    - !!python/unicode 'src/mongo/dbtests/chunktests.cpp'
-    - !!python/unicode 'src/mongo/s/d_logic.cpp'
-    - !!python/unicode 'src/mongo/tools/admin.cpp'
-    - !!python/unicode 'src/mongo/tools/restore.cpp'
-    - !!python/unicode 'src/mongo/s/d_split.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/exec/distinct_scan.cpp'
-    - !!python/unicode 'src/mongo/s/strategy.cpp'
-    - !!python/unicode 'src/mongo/dbtests/pdfiletests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/jstests.cpp'
-    - !!python/unicode 'src/mongo/db/dbeval.cpp'
-    - !!python/unicode 'src/mongo/s/shard.cpp'
-    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
-    - !!python/unicode 'src/mongo/dbtests/sharding.cpp'
-    - !!python/unicode 'src/mongo/db/client.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplogreader.cpp'
-    - !!python/unicode 'src/mongo/dbtests/matchertests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/framework_options.cpp'
-    - !!python/unicode 'src/mongo/s/request.cpp'
-    - !!python/unicode 'src/mongo/db/fts/fts_command_mongod.cpp'
-    - !!python/unicode 'src/mongo/db/stats/counters.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-leaks: []
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/system/api_config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/system/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/system/error_code.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/boost/system/system_error.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/libs/system/src/error_code.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
+    group_generated_data:
+    -   file_name: src/third_party/boost/boost/system/api_config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/system/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/system/error_code.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/system/system_error.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/system/src/error_code.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface:
+        -   symbol_name: boost::system::system_category()
+            symbol_uses:
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/dbtests/documenttests.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/structure/btree/btree.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/exec/count.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/stats/snapshots.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/db/ops/update_lifecycle_impl.cpp
+            - src/mongo/db/range_deleter_db_env.cpp
+            - src/mongo/db/index/btree_index_cursor.cpp
+            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/db/structure/btree/btreebuilder.cpp
+            - src/mongo/util/tcmalloc_server_status_section.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/exec/index_scan.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/index_legacy.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/dur_preplogbuffer.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/structure/record_store.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/exec/2dnear.cpp
+            - src/mongo/db/auth/auth_index_d.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/dur_writetodatafiles.cpp
+            - src/mongo/db/clientlistplugin.cpp
+            - src/mongo/db/driverHelpers.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/dbtests/expressiontests.cpp
+            - src/mongo/db/startup_warnings.cpp
+            - src/mongo/db/index/2d_access_method.cpp
+            - src/mongo/db/index_builder.cpp
+            - src/mongo/dbtests/accumulatortests.cpp
+            - src/mongo/db/index/haystack_access_method.cpp
+            - src/mongo/db/commands/storage_details.cpp
+            - src/mongo/db/index/fts_access_method.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/query/plan_executor.cpp
+            - src/mongo/db/structure/btree/btree_stats.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/util/paths.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/matcher/expression_where.cpp
+            - src/mongo/db/exec/text.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
+            - src/mongo/db/exec/2d.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/repl/repl_reads_ok.cpp
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/db/query/idhack_runner.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/dur_commitjob.cpp
+            - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/db/catalog/index_catalog_entry.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/keypatterntests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/repl/resync.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/geo/haystack.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+            - src/mongo/dbtests/pipelinetests.cpp
+            - src/mongo/db/structure/catalog/index_details.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/util/logfile.cpp
+            - src/mongo/client/gridfs.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/commands/pipeline_command.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/db/lockstate.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/interrupt_status_mongod.cpp
+            - src/mongo/db/index/s2_access_method.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/storage/record.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/ops/delete.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+            - src/mongo/db/repl/rs_initiate.cpp
+            - src/mongo/util/util.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/query_stage_limit_skip.cpp
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/tools/files.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/tools/bsondump.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/s/s_only.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+            - src/mongo/db/commands/distinct.cpp
+            - src/mongo/dbtests/gridfstest.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/db/index/btree_access_method.cpp
+            - src/mongo/db/exec/oplogstart.cpp
+            - src/mongo/tools/top.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/stacktests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/dbtests/jsontests.cpp
+            - src/mongo/db/commands/dbhash.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/framework.cpp
+            - src/mongo/db/commands/group.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/commands/get_last_error.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+            - src/mongo/db/index/hash_access_method.cpp
+            - src/mongo/db/repl/replset_web_handler.cpp
+            - src/mongo/db/structure/collection_iterator.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/dbtests/directclienttests.cpp
+            - src/mongo/db/exec/working_set.cpp
+            - src/mongo/dbtests/dbtests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/storage/extent.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/exec/2dcommon.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/commands/geonear.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/s/client_info.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/commands/server_status.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/dbtests/jsobjtests.cpp
+            - src/mongo/db/ops/count.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/db/catalog/collection_info_cache.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/index/btree_interface.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/db/exec/working_set_common.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/auth/authz_session_external_state_server_common.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/auth/authz_session_external_state_d.cpp
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/commands/validate.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/dbtests/socktests.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbwebserver.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/db/commands/mr_common.cpp
+            - src/mongo/db/index_rebuilder.cpp
+            - src/mongo/util/file.cpp
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/tools/export.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/tools/oplog.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/commands/index_stats.cpp
+            - src/mongo/dbtests/indexcatalogtests.cpp
+            - src/mongo/db/queryutil.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/dbtests/chunktests.cpp
+            - src/mongo/s/d_logic.cpp
+            - src/mongo/tools/admin.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/exec/distinct_scan.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/shell/dbshell.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/dbtests/matchertests.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/s/request.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+            - src/mongo/db/stats/counters.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_uses:
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/dbtests/documenttests.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/structure/btree/btree.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/exec/count.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/stats/snapshots.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/db/ops/update_lifecycle_impl.cpp
+            - src/mongo/db/range_deleter_db_env.cpp
+            - src/mongo/db/index/btree_index_cursor.cpp
+            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/db/structure/btree/btreebuilder.cpp
+            - src/mongo/util/tcmalloc_server_status_section.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/exec/index_scan.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/index_legacy.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/dur_preplogbuffer.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/structure/record_store.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/exec/2dnear.cpp
+            - src/mongo/db/auth/auth_index_d.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/dur_writetodatafiles.cpp
+            - src/mongo/db/clientlistplugin.cpp
+            - src/mongo/db/driverHelpers.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/dbtests/expressiontests.cpp
+            - src/mongo/db/startup_warnings.cpp
+            - src/mongo/db/index/2d_access_method.cpp
+            - src/mongo/db/index_builder.cpp
+            - src/mongo/dbtests/accumulatortests.cpp
+            - src/mongo/db/index/haystack_access_method.cpp
+            - src/mongo/db/commands/storage_details.cpp
+            - src/mongo/db/index/fts_access_method.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/query/plan_executor.cpp
+            - src/mongo/db/structure/btree/btree_stats.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/util/paths.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/matcher/expression_where.cpp
+            - src/mongo/db/exec/text.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
+            - src/mongo/db/exec/2d.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/repl/repl_reads_ok.cpp
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/db/query/idhack_runner.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/dur_commitjob.cpp
+            - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/db/catalog/index_catalog_entry.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/keypatterntests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/repl/resync.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/geo/haystack.cpp
+            - src/mongo/dbtests/pipelinetests.cpp
+            - src/mongo/db/structure/catalog/index_details.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/util/logfile.cpp
+            - src/mongo/client/gridfs.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/commands/pipeline_command.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/db/lockstate.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/interrupt_status_mongod.cpp
+            - src/mongo/db/index/s2_access_method.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/storage/record.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/ops/delete.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+            - src/mongo/db/repl/rs_initiate.cpp
+            - src/mongo/util/util.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/query_stage_limit_skip.cpp
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/tools/files.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/tools/bsondump.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/s/s_only.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+            - src/mongo/db/commands/distinct.cpp
+            - src/mongo/dbtests/gridfstest.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/db/index/btree_access_method.cpp
+            - src/mongo/db/exec/oplogstart.cpp
+            - src/mongo/tools/top.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/stacktests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/dbtests/jsontests.cpp
+            - src/mongo/db/commands/dbhash.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/framework.cpp
+            - src/mongo/db/commands/group.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/commands/get_last_error.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+            - src/mongo/db/index/hash_access_method.cpp
+            - src/mongo/db/repl/replset_web_handler.cpp
+            - src/mongo/db/structure/collection_iterator.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/dbtests/directclienttests.cpp
+            - src/mongo/db/exec/working_set.cpp
+            - src/mongo/dbtests/dbtests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/storage/extent.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/exec/2dcommon.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/commands/geonear.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/s/client_info.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/commands/server_status.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/dbtests/jsobjtests.cpp
+            - src/mongo/db/ops/count.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/db/catalog/collection_info_cache.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/index/btree_interface.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/db/exec/working_set_common.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/auth/authz_session_external_state_server_common.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/auth/authz_session_external_state_d.cpp
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/commands/validate.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/dbtests/socktests.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbwebserver.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/db/commands/mr_common.cpp
+            - src/mongo/db/index_rebuilder.cpp
+            - src/mongo/util/file.cpp
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/tools/export.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/tools/oplog.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/commands/index_stats.cpp
+            - src/mongo/dbtests/indexcatalogtests.cpp
+            - src/mongo/db/queryutil.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/dbtests/chunktests.cpp
+            - src/mongo/s/d_logic.cpp
+            - src/mongo/tools/admin.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/exec/distinct_scan.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/shell/dbshell.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/dbtests/matchertests.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/s/request.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+            - src/mongo/db/stats/counters.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []

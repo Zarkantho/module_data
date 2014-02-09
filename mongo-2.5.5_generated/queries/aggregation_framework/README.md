@@ -1948,6 +1948,14 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 <div></div>
 
+    mongo::isMongos()
+
+- Provided By:
+
+    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
+
+<div></div>
+
     boost::system::generic_category()
 
 - Provided By:
@@ -2809,6 +2817,14 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 - Provided By:
 
     - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::isMongos()
+
+- Provided By:
+
+    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 
 <div></div>
 
@@ -4445,6 +4461,14 @@ Code for external sort. This sits inside the sorter, and the sorter "spills over
 - Provided By:
 
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::isMongos()
+
+- Provided By:
+
+    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
 
 <div></div>
 

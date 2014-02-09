@@ -50,1240 +50,1337 @@ module_groups:
     - src/third_party/boost/libs/thread/src/pthread/once.cpp
     - src/third_party/boost/libs/thread/src/pthread/thread.cpp
     - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
-interface:
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'typeinfo for boost::detail::thread_data_base'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/tools/bridge.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::thread_data_base::~thread_data_base()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/tools/bridge.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::detach()'
-    used_by:
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::yield()'
-    used_by:
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/task.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/bson/optime.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
-    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter_mock_env.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::start_thread()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/tools/bridge.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_create.cpp'
-    - !!python/unicode 'src/mongo/db/repl/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replication_server_status.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/task.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
-    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/bson/optime.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/health.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/dbtests/basictests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/ttl.cpp'
-    - !!python/unicode 'src/mongo/db/catalog/collection.cpp'
-    - !!python/unicode 'src/mongo/db/index/btree_based_access_method.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/synchronization.cpp'
-    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/db/repl/sync_source_feedback.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter_mock_env.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/db/kill_current_op.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::join()'
-    used_by:
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
-        void*, bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
-    - !!python/unicode 'src/mongo/db/cloner.cpp'
-    - !!python/unicode 'src/mongo/dbtests/replsettests.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_initialsync.cpp'
-    - !!python/unicode 'src/mongo/db/lasterror.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_sync.cpp'
-    - !!python/unicode 'src/mongo/db/cloner.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/s/chunk_manager_targeter.cpp'
-    - !!python/unicode 'src/mongo/s/d_state.cpp'
-    - !!python/unicode 'src/mongo/db/repl/manager.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs.cpp'
-    - !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/s/client_info.cpp'
-    - !!python/unicode 'src/mongo/db/d_concurrency.cpp'
-    - !!python/unicode 'src/mongo/util/mmap.cpp'
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::interrupt()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::thread::~thread()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/tools/bridge.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
--   object: !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'vtable for boost::detail::thread_data_base'
-    used_by:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    - !!python/unicode 'src/mongo/db/range_deleter.cpp'
-    - !!python/unicode 'src/mongo/tools/bridge.cpp'
-    - !!python/unicode 'src/mongo/dbtests/counttests.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/master_slave.cpp'
-    - !!python/unicode 'src/mongo/tools/stat.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/scripting/bench.cpp'
-    - !!python/unicode 'src/mongo/dbtests/documentsourcetests.cpp'
-    - !!python/unicode 'src/mongo/s/server.cpp'
-    - !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
-    - !!python/unicode 'src/mongo/dbtests/threadedtests.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/db/repl/repl_start.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/util/net/message_server_port.cpp'
-    - !!python/unicode 'src/mongo/s/distlock.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/util/concurrency/thread_pool.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_launcher.cpp'
-    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/util/background.cpp'
-    - !!python/unicode 'src/mongo/s/config_server_checker_service.cpp'
-leaks: []
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/barrier.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/condition.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/condition_variable.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/config.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/move.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/platform.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/thread.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/thread_group.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/detail/thread_interruption.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/exceptions.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/future.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/locks.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/once.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/condition_variable.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/condition_variable_fwd.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/once.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/recursive_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/shared_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/thread_data.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/thread_heap_alloc.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/pthread/timespec.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/recursive_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/shared_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/thread.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/thread_time.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/tss.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/basic_recursive_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/basic_timed_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/condition_variable.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/interlocked_read.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/once.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/recursive_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/shared_mutex.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/thread_data.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/thread_heap_alloc.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/win32/thread_primitives.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/boost/thread/xtime.hpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/thread/src/pthread/once.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/thread/src/pthread/thread.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+    group_generated_data:
+    -   file_name: src/third_party/boost/boost/thread/barrier.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/condition.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/condition_variable.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/config.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/move.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/platform.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/thread.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/thread_group.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/detail/thread_interruption.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/exceptions.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/future.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/locks.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/once.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/condition_variable.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/condition_variable_fwd.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/once.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/recursive_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/shared_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/thread_data.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/thread_heap_alloc.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/pthread/timespec.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/recursive_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/shared_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/thread.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/thread_time.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/tss.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/basic_recursive_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/basic_timed_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/condition_variable.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/interlocked_read.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/once.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/recursive_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/shared_mutex.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/thread_data.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/thread_heap_alloc.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/win32/thread_primitives.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/boost/thread/xtime.hpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/thread/src/pthread/once.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: boost::detail::once_global_epoch
+            symbol_uses:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::get_once_per_thread_epoch()
+            symbol_uses:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::once_epoch_cv
+            symbol_uses:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::once_epoch_mutex
+            symbol_uses:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        file_dependencies: []
+    -   file_name: src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+        -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: boost::thread::detach()
+            symbol_uses:
+            - src/mongo/client/replica_set_monitor.cpp
+        -   symbol_name: boost::this_thread::yield()
+            symbol_uses:
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/bson/optime.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/util/concurrency/synchronization.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/range_deleter_mock_env.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/bson/optime.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/util/concurrency/synchronization.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/range_deleter_mock_env.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: boost::thread::join()
+            symbol_uses:
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+        -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+                void*, bool)
+            symbol_uses:
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/lasterror.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/util/concurrency/thread_name.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/util/net/ssl_manager.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/client_info.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: boost::detail::get_tss_data(void const*)
+            symbol_uses:
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/lasterror.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/util/concurrency/thread_name.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/util/net/ssl_manager.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/client_info.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: boost::thread::interrupt()
+            symbol_uses:
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: boost::thread::~thread()
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+        file_dependencies:
+        -   symbol_name: boost::detail::once_epoch_mutex
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/once.cpp
+        -   symbol_name: boost::detail::once_global_epoch
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/once.cpp
+        -   symbol_name: boost::detail::get_once_per_thread_epoch()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/once.cpp
+        -   symbol_name: boost::detail::once_epoch_cv
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/once.cpp
+    -   file_name: src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

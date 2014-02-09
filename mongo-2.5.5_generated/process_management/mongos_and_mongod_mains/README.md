@@ -533,6 +533,14 @@ Main for mongod
 
 <div></div>
 
+    mongo::exitCleanly(mongo::ExitCode)
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
     mongo::WorkingSet::WorkingSet()
 
 - Provided By:
@@ -771,6 +779,17 @@ Main for mongod
 - Provided By:
 
     - [src/mongo/util/version\_reporting.cpp](../utilities)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 
@@ -1228,6 +1247,17 @@ Main for mongod
 - Provided By:
 
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::dbexit(mongo::ExitCode, char const*)
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
 
 <div></div>
 

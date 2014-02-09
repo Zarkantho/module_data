@@ -10,152 +10,131 @@ module_groups:
     group_files:
     - src/mongo/util/file.cpp
     - src/mongo/util/file.h
-interface:
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::write(unsigned long long, char const*,
-        unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::File()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::open(char const*, bool, bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::truncate(unsigned long long)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::~File()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::is_open() const'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::freeSpace(std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::fsync() const'
-    used_by:
-    - !!python/unicode 'src/mongo/db/durop.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::len()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    symbol: !!python/unicode 'mongo::File::read(unsigned long long, char*, unsigned
-        int)'
-    used_by:
-    - !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine.cpp'
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/util/file.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/file.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/file.h
+    group_generated_data:
+    -   file_name: src/mongo/util/file.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::File::write(unsigned long long, char const*, unsigned
+                int)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::File()
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::File::open(char const*, bool, bool)
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::File::truncate(unsigned long long)
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::~File()
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/shell/dbshell.cpp
+        -   symbol_name: mongo::File::is_open() const
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::freeSpace(std::string const&)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::fsync() const
+            symbol_uses:
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::len()
+            symbol_uses:
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::read(unsigned long long, char*, unsigned int)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/dur_journal.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::errnoWithDescription(int)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+    -   file_name: src/mongo/util/file.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []

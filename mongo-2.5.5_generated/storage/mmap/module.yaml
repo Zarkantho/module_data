@@ -8,444 +8,415 @@ module_groups:
     - src/mongo/util/mmap.cpp
     - src/mongo/util/mmap.h
     - src/mongo/util/mmap_posix.cpp
-interface:
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::LockMongoFilesShared::mmmutex'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
-    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::getAllFiles()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::totalMappedLength()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::LockMongoFilesShared::era'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pagefault.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::flushAll(bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur.cpp'
-    - !!python/unicode 'src/mongo/db/repl/oplog.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/write_concern.cpp'
-    - !!python/unicode 'src/mongo/db/db.cpp'
-    - !!python/unicode 'src/mongo/db/repl/rs_rollback.cpp'
-    - !!python/unicode 'src/mongo/db/pdfile.cpp'
-    - !!python/unicode 'src/mongo/db/instance.cpp'
-    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::notifyPostFlush'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::mapWithOptions(char const*,
-        int)'
-    used_by:
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::notifyPreFlush'
-    used_by:
-    - !!python/unicode 'src/mongo/db/dur_journal.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFile::closeAllFiles(std::basic_stringstream<char,
-        std::char_traits<char>, std::allocator<char> >&)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/instance.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MongoFileFinder::findByPath(std::string const&)
-        const'
-    used_by:
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/dbtests/mmaptests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::map(char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::prepareFlush()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::close()'
-    used_by:
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::createPrivateMap()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'vtable for mongo::MemoryMappedFile'
-    used_by:
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/structure/record_store.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::MemoryMappedFile'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MAdvise::~MAdvise()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/structure/record_store.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::map(char const*, unsigned long
-        long&, int)'
-    used_by:
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::flush(bool)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/data_file.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::remapPrivateView(void*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::g_minOSPageSizeBytes'
-    used_by:
-    - !!python/unicode 'src/mongo/util/touch_pages.cpp'
-    - !!python/unicode 'src/mongo/db/prefetch.cpp'
-    - !!python/unicode 'src/mongo/util/logfile.cpp'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    symbol: !!python/unicode 'mongo::MemoryMappedFile::MemoryMappedFile()'
-    used_by:
-    - !!python/unicode 'src/mongo/tools/sniffer.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
-    - !!python/unicode 'src/mongo/db/dur_recover.cpp'
-    - !!python/unicode 'src/mongo/client/examples/mongoperf.cpp'
-    - !!python/unicode 'src/mongo/db/storage/durable_mapped_file.cpp'
-leaks:
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::supported()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
-    symbol: !!python/unicode 'mongo::ProgressMeter::reset(unsigned long long, int,
-        int)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::getcurns'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
-        void*, bool)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
-        const&)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/time_support.cpp'
-    symbol: !!python/unicode 'mongo::sleepmillis(long long)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/progress_meter.cpp'
-    symbol: !!python/unicode 'mongo::ProgressMeter::hit(int)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::current_path(boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::~ProcessInfo()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::fassertFailed(int)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::detail::file_size(boost::filesystem3::path
-        const&, boost::system::error_code*)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/platform/process_id.cpp'
-    symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
-    symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
-        const&, boost::filesystem3::path const&)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::getVirtualMemorySize()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::getResidentSize()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
-    symbol: !!python/unicode 'mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
--   object: !!python/unicode 'src/mongo/util/mmap.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::get()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::StartupTest()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::invariantFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::StartupTest'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::getcurns'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
-        void*, bool)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
-        const&)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::uasserted(int, std::string const&)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::~disable_interruption()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/file_allocator.cpp'
-    symbol: !!python/unicode 'mongo::FileAllocator::allocateAsap(std::string const&,
-        unsigned long long&)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/startup_test.cpp'
-    symbol: !!python/unicode 'mongo::StartupTest::~StartupTest()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::interruption_point()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::this_thread::disable_interruption::disable_interruption()'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/log.cpp'
-    symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
--   object: !!python/unicode 'src/mongo/util/mmap_posix.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
-    symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/mmap.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/mmap.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/mmap_posix.cpp
+    group_generated_data:
+    -   file_name: src/mongo/util/mmap.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::printMemInfo(char const*)
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::dataSyncFailedHandler()
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::mmmutex
+            symbol_uses:
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::MongoFile::getAllFiles()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFile::totalMappedLength()
+            symbol_uses:
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/db.cpp
+        -   symbol_name: mongo::MongoFile::setFilename(std::string const&)
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::era
+            symbol_uses:
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFile::flushAll(bool)
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/commands/fsync.cpp
+        -   symbol_name: mongo::MongoFile::notifyPostFlush
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::MemoryMappedFile::mapWithOptions(char const*, int)
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::minOSPageSizeBytesTest(unsigned long)
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFile::destroyed()
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFile::notifyPreFlush
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::MongoFile::closeAllFiles(std::basic_stringstream<char,
+                std::char_traits<char>, std::allocator<char> >&)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::MongoFile::created()
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFileFinder::findByPath(std::string const&) const
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/dur_recover.cpp
+        -   symbol_name: mongo::MemoryMappedFile::map(char const*)
+            symbol_uses:
+            - src/mongo/client/examples/mongoperf.cpp
+        file_dependencies:
+        -   symbol_name: mongo::ProcessInfo::supported()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::MemoryMappedFile::map(char const*, unsigned long long&,
+                int)
+            symbol_sources:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::ProgressMeter::reset(unsigned long long, int, int)
+            symbol_sources:
+            - src/mongo/util/progress_meter.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::getcurns
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+                void*, bool)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+                const&)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::sleepmillis(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::ProgressMeter::hit(int)
+            symbol_sources:
+            - src/mongo/util/progress_meter.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::ProcessInfo::~ProcessInfo()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::get_tss_data(void const*)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::filesystem3::detail::file_size(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::ProcessId::getCurrent()
+            symbol_sources:
+            - src/mongo/platform/process_id.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::filesystem3::absolute(boost::filesystem3::path const&,
+                boost::filesystem3::path const&)
+            symbol_sources:
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+        -   symbol_name: mongo::ProcessInfo::getVirtualMemorySize()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::ProcessInfo::getResidentSize()
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)
+            symbol_sources:
+            - src/mongo/util/processinfo_darwin.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+    -   file_name: src/mongo/util/mmap.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/util/mmap_posix.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::MemoryMappedFile::prepareFlush()
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::close()
+            symbol_uses:
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::createPrivateMap()
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: vtable for mongo::MemoryMappedFile
+            symbol_uses:
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+            symbol_uses:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: typeinfo for mongo::MemoryMappedFile
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MAdvise::~MAdvise()
+            symbol_uses:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: mongo::MemoryMappedFile::map(char const*, unsigned long long&,
+                int)
+            symbol_uses:
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::flush(bool)
+            symbol_uses:
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::remapPrivateView(void*)
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::g_minOSPageSizeBytes
+            symbol_uses:
+            - src/mongo/util/touch_pages.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/util/logfile.cpp
+        -   symbol_name: mongo::MemoryMappedFile::MemoryMappedFile()
+            symbol_uses:
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        file_dependencies:
+        -   symbol_name: mongo::MongoFile::setFilename(std::string const&)
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::FileAllocator::get()
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: mongo::StartupTest::StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::printMemInfo(char const*)
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::invariantFailed(char const*, char const*, unsigned
+                int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: typeinfo for mongo::StartupTest
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::getcurns
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
+                void*, bool)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder
+                const&)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::dataSyncFailedHandler()
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::era
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::FileAllocator::allocateAsap(std::string const&, unsigned
+                long long&)
+            symbol_sources:
+            - src/mongo/util/file_allocator.cpp
+        -   symbol_name: boost::detail::get_tss_data(void const*)
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::MongoFile::created()
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::minOSPageSizeBytesTest(unsigned long)
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::mmmutex
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::MongoFile::destroyed()
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::MongoFile::getAllFiles()
+            symbol_sources:
+            - src/mongo/util/mmap.cpp
+        -   symbol_name: mongo::StartupTest::~StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::errnoWithDescription(int)
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
