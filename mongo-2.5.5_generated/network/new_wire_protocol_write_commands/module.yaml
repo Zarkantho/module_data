@@ -852,11 +852,11 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/wire_version.h
 groups:
--   comments: '# New write commands for new wire protocol. The new "write commands"
-        are all actual Commands run# using "db.$cmd.findOne(...)". The reason for
-        this is that the old wire protocol didn''t have# acknowledgements for anything
-        BUT queries (which include commands), so everything is now a query# so we
-        can get acknowledgements for writes (and not just for queries).'
+-   comments: New write commands for new wire protocol. The new "write commands" are
+        all actual Commands run# using "db.$cmd.findOne(...)". The reason for this
+        is that the old wire protocol didn't have# acknowledgements for anything BUT
+        queries (which include commands), so everything is now a query# so we can
+        get acknowledgements for writes (and not just for queries).
     files:
     - src/mongo/db/commands/write_commands/write_commands.cpp
     - src/mongo/db/commands/write_commands/write_commands.h
@@ -864,7 +864,7 @@ groups:
     - src/mongo/db/commands/write_commands/batch_executor.h
     - src/mongo/db/commands/write_commands/write_commands_common.cpp
     - src/mongo/db/commands/write_commands/write_commands_common.h
--   comments: '# New wire protocol writes (in mongos)'
+-   comments: New wire protocol writes (in mongos)
     files:
     - src/mongo/s/commands/cluster_write_cmd.cpp
     - src/mongo/s/write_ops/batch_downconvert.cpp
@@ -887,7 +887,7 @@ groups:
     - src/mongo/s/write_ops/write_op.cpp
     - src/mongo/s/write_ops/write_op.h
     - src/mongo/s/write_ops/write_op_test.cpp
--   comments: '# New wire protocol writes (in mongod)## why are these in s/ ?'
+-   comments: New wire protocol writes (in mongod)## why are these in s/ ?
     files:
     - src/mongo/s/write_ops/batched_command_request.cpp
     - src/mongo/s/write_ops/batched_command_request.h
@@ -916,9 +916,9 @@ groups:
     - src/mongo/s/write_ops/wc_error_detail.h
     - src/mongo/s/write_ops/write_error_detail.cpp
     - src/mongo/s/write_ops/write_error_detail.h
--   comments: '# Header to enumerate the wire protocol version, along with the max
-        and min supported versions## can you say a bit about who exactly cares (which
-        components) about wire protocol version?'
+-   comments: Header to enumerate the wire protocol version, along with the max and
+        min supported versions## can you say a bit about who exactly cares (which
+        components) about wire protocol version?
     files:
     - src/mongo/db/wire_version.h
 interface:

@@ -40,7 +40,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/file_allocator.h
 groups:
--   comments: '# File allocation library'
+-   comments: File allocation library
     files:
     - src/mongo/util/file_allocator.cpp
     - src/mongo/util/file_allocator.h

@@ -14,6 +14,8 @@ files_flat:
 - src/mongo/base/status_with.h
 - src/mongo/base/error_codes.err
 - src/mongo/base/generate_error_codes.py
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
 - src/mongo/base/parse_number.cpp
 - src/mongo/base/parse_number.h
 - src/mongo/base/parse_number_test.cpp
@@ -226,6 +228,42 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
     name: src/mongo/base/parse_number.cpp
 -   execs:
     - !!python/unicode 'mongotop'
@@ -304,24 +342,28 @@ files_with_exec:
 -   execs: []
     name: src/mongo/base/string_data_test.cpp
 groups:
--   comments: '# Use this in a class to explicitly disallow copying of the class.
-        This can prevent bugs where you# were accidentally copying a class that wasn''t
-        safe to copy.'
+-   comments: Use this in a class to explicitly disallow copying of the class. This
+        can prevent bugs where you# were accidentally copying a class that wasn't
+        safe to copy.
     files:
     - src/mongo/base/disallow_copying.h
--   comments: '# 64 bit atomic counter'
+-   comments: 64 bit atomic counter
     files:
     - src/mongo/base/counter.h
     - src/mongo/base/counter_test.cpp
--   comments: '# Vector and map that delete pointers to elements on destruction. "owning"
-        the memory means you are# responsible for deleting it.'
+-   comments: Vector and map that delete pointers to elements on destruction. "owning"
+        the memory means you are# responsible for deleting it.
     files:
     - src/mongo/base/owned_pointer_map.h
     - src/mongo/base/owned_pointer_map_test.cpp
     - src/mongo/base/owned_pointer_vector.h
     - src/mongo/base/owned_pointer_vector_test.cpp
--   comments: '# Status to return errors. StatusWith can return either an error or
-        a value, so we don''t have to# use return parameters as arguments to the function.'
+-   comments: These are the general error codes for MongoDB.  Error codes have some
+        semantic meaning associated with them.  A Status is a holder for an error
+        code and extra error information, such as a message.  A StatusWith is an object
+        that can either be an error Status or hold an actual value, which means we
+        can still use return to return data from a function rather than passing in
+        pointers as return parameters.
     files:
     - src/mongo/base/status-inl.h
     - src/mongo/base/status.cpp
@@ -330,13 +372,16 @@ groups:
     - src/mongo/base/status_with.h
     - src/mongo/base/error_codes.err
     - src/mongo/base/generate_error_codes.py
--   comments: '# Number to string conversion## Why use these: is this somehow fast/safe?
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
+    name: Error Handling Utilities
+-   comments: 'Number to string conversion## Why use these: is this somehow fast/safe?
         somehow JSON-aware?'
     files:
     - src/mongo/base/parse_number.cpp
     - src/mongo/base/parse_number.h
     - src/mongo/base/parse_number_test.cpp
--   comments: '# The StringData class is a wrapper around a char* that can be constructed
+-   comments: 'The StringData class is a wrapper around a char* that can be constructed
         from either std::string# and a char* without copying the buffer. This is because
         a StringData doesn''t free the buffer, so# unlike std::string it doesn''t
         need to have its own copy.## Why: use for speed? is this similar to other
@@ -693,6 +738,14 @@ interface:
     - !!python/unicode 'src/mongo/db/ops/insert.cpp'
     - !!python/unicode 'src/mongo/util/time_support.cpp'
     - !!python/unicode 'src/mongo/db/ops/modifier_pull.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp'
+    symbol: !!python/unicode 'mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/json.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp'
+    symbol: !!python/unicode 'mongo::ErrorCodes::fromInt(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
 -   object: !!python/unicode 'src/mongo/base/parse_number.cpp'
     symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<unsigned
         int>(mongo::StringData const&, int, unsigned int*)'
@@ -1019,10 +1072,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/base/status.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp'
-    symbol: !!python/unicode 'mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)'
 -   object: !!python/unicode 'src/mongo/base/status_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
@@ -1035,10 +1084,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/base/status_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp'
-    symbol: !!python/unicode 'mongo::ErrorCodes::fromInt(int)'
 -   object: !!python/unicode 'src/mongo/base/status_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
@@ -1079,10 +1124,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/base/status_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp'
-    symbol: !!python/unicode 'mongo::ErrorCodes::fromString(mongo::StringData const&)'
 -   object: !!python/unicode 'src/mongo/base/parse_number_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'

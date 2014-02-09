@@ -857,7 +857,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/boost/libs/thread/src/pthread/timeconv.inl
 groups:
--   comments: '# Third Party - The boost thread library'
+-   comments: Third Party - The boost thread library
     files:
     - src/third_party/boost/boost/thread/barrier.hpp
     - src/third_party/boost/boost/thread/condition.hpp

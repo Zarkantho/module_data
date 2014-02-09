@@ -1062,19 +1062,19 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/commands/fsync.h
 groups:
--   comments: '# Base class for mongodb commands. Has a big std::map with the keys
-        of the command name and the# values as the Command itself. These are the commands
+-   comments: 'Base class for mongodb commands. Has a big std::map with the keys of
+        the command name and the# values as the Command itself. These are the commands
         that you run using# "db.$cmd.findOne({ "serverStatus" : true }).'
     files:
     - src/mongo/db/commands.cpp
     - src/mongo/db/commands.h
--   comments: '# A bunch of commands for mongod. However, this ALSO has the definition
+-   comments: A bunch of commands for mongod. However, this ALSO has the definition
         of Command::execCommand for# mongod (the function that actually runs commands
         registered using the Command class, which gets# called whenever a query against
-        the "$cmd" collection is made)'
+        the "$cmd" collection is made)
     files:
     - src/mongo/db/dbcommands.cpp
--   comments: '# Commands (run using db.$cmd.findOne(...))'
+-   comments: Commands (run using db.$cmd.findOne(...))
     files:
     - src/mongo/db/commands/apply_ops.cpp
     - src/mongo/db/commands/auth_schema_upgrade_d.cpp
@@ -1131,7 +1131,7 @@ groups:
     - src/mongo/db/dbcommands_generic.cpp
     - src/mongo/db/dbeval.cpp
     - src/mongo/db/driverHelpers.cpp
--   comments: '# Commands + code for fsync of data files'
+-   comments: Commands + code for fsync of data files
     files:
     - src/mongo/db/commands/fsync.cpp
     - src/mongo/db/commands/fsync.h

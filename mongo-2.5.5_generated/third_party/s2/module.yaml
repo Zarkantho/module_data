@@ -1636,7 +1636,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/s2/util/math/vector4.h
 groups:
--   comments: '# Third Party - Google spherical geometry math library'
+-   comments: Third Party - Google spherical geometry math library
     files:
     - src/third_party/s2/base/basictypes.h
     - src/third_party/s2/base/casts.h

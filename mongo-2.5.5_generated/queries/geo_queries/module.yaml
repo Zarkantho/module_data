@@ -272,7 +272,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/geo/shapes.h
 groups:
--   comments: '# GEO query code. TODO: describe the structure of this and how it interacts
+-   comments: 'GEO query code. TODO: describe the structure of this and how it interacts
         with the new index# system.'
     files:
     - src/mongo/db/geo/core.h

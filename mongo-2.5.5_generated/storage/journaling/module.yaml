@@ -382,13 +382,13 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/logfile.h
 groups:
--   comments: '# Page aligned buffer builder## what sort of buffer? i don''t understand
-        ;('
+-   comments: Page aligned buffer builder## what sort of buffer? i don't understand
+        ;(
     files:
     - src/mongo/util/alignedbuilder.cpp
     - src/mongo/util/alignedbuilder.h
--   comments: '# Journaling module## who calls/owns stuff in here? only used by mongod,
-        correct?'
+-   comments: Journaling module## who calls/owns stuff in here? only used by mongod,
+        correct?
     files:
     - src/mongo/db/dur.cpp
     - src/mongo/db/dur.h
@@ -407,10 +407,10 @@ groups:
     - src/mongo/db/durop.h
     - src/mongo/db/storage/durable_mapped_file.cpp
     - src/mongo/db/storage/durable_mapped_file.h
--   comments: '# This is not actually used in our logging system. Just utilities to
-        create files that you can# append to. One notable example of a system that
-        uses this is our preallocation of journal files.# In fact, it isn''t used
-        in anything not journaling related right now.'
+-   comments: This is not actually used in our logging system. Just utilities to create
+        files that you can# append to. One notable example of a system that uses this
+        is our preallocation of journal files.# In fact, it isn't used in anything
+        not journaling related right now.
     files:
     - src/mongo/util/logfile.cpp
     - src/mongo/util/logfile.h

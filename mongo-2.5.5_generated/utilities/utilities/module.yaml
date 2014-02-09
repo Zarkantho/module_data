@@ -95,8 +95,6 @@ files_flat:
 - src/mongo/util/unordered_fast_key_table.h
 - src/mongo/util/unordered_fast_key_table_internal.h
 - src/mongo/util/util.cpp
-- src/mongo/util/version.cpp
-- src/mongo/util/version.h
 - src/mongo/util/version_reporting.cpp
 - src/mongo/util/version_reporting.h
 - src/mongo/util/version_test.cpp
@@ -1682,42 +1680,6 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/util/version.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/version.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
     name: src/mongo/util/version_reporting.cpp
 -   execs:
     - !!python/unicode 'mongotop'
@@ -3022,13 +2984,13 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/mongoutils/str.h
 groups:
--   comments: '# Code to manage paths to files.  Conversion from relative to full
-        path within database directory as# well as code to get the current partition
-        (for readahead checks).'
+-   comments: Code to manage paths to files.  Conversion from relative to full path
+        within database directory as# well as code to get the current partition (for
+        readahead checks).
     files:
     - src/mongo/util/paths.cpp
     - src/mongo/util/paths.h
--   comments: '# Classes to help in tracking statistics'
+-   comments: Classes to help in tracking statistics
     files:
     - src/mongo/db/stats/counters.cpp
     - src/mongo/db/stats/counters.h
@@ -3039,59 +3001,58 @@ groups:
     - src/mongo/db/stats/timer_stats.h
     - src/mongo/db/stats/top.cpp
     - src/mongo/db/stats/top.h
--   comments: '# Utilities to hash BSON elements. Used in hashed shard keys and hashed
-        indexes.'
+-   comments: Utilities to hash BSON elements. Used in hashed shard keys and hashed
+        indexes.
     files:
     - src/mongo/db/hasher.cpp
     - src/mongo/db/hasher.h
     - src/mongo/db/hasher_test.cpp
--   comments: '# Helpers to track in progress operations. The constructor registers
-        itself in an "in progress"# map, and the destructor removes it.'
+-   comments: Helpers to track in progress operations. The constructor registers itself
+        in an "in progress"# map, and the destructor removes it.
     files:
     - src/mongo/db/background.cpp
     - src/mongo/db/background.h
--   comments: '# Utility to check whether a certain time interval has elapsed. Currently
-        only used in# d_migrate.cpp to check if we should yield.'
+-   comments: Utility to check whether a certain time interval has elapsed. Currently
+        only used in# d_migrate.cpp to check if we should yield.
     files:
     - src/mongo/util/elapsed_tracker.cpp
     - src/mongo/util/elapsed_tracker.h
--   comments: '# Helper classes to accumulate and log progress in a nice format using
-        the# logging system (so the logging system is only dependency)'
+-   comments: Helper classes to accumulate and log progress in a nice format using
+        the# logging system (so the logging system is only dependency)
     files:
     - src/mongo/util/progress_meter.cpp
     - src/mongo/util/progress_meter.h
--   comments: '# Debug macros and gdb server helpers'
+-   comments: Debug macros and gdb server helpers
     files:
     - src/mongo/util/debug_util.cpp
     - src/mongo/util/debug_util.h
--   comments: '# Library to get and set the name of the current thread. Just uses
-        a boost::thread_specific_ptr.'
+-   comments: Library to get and set the name of the current thread. Just uses a boost::thread_specific_ptr.
     files:
     - src/mongo/util/concurrency/thread_name.cpp
     - src/mongo/util/concurrency/thread_name.h
--   comments: '# Utility library to manipulate hex strings'
+-   comments: Utility library to manipulate hex strings
     files:
     - src/mongo/util/hex.cpp
     - src/mongo/util/hex.h
--   comments: '# Utilities to run jobs (threads) in the "background". You can use
-        this to run tasks periodically.'
+-   comments: Utilities to run jobs (threads) in the "background". You can use this
+        to run tasks periodically.
     files:
     - src/mongo/util/background.cpp
     - src/mongo/util/background.h
     - src/mongo/util/background_job_test.cpp
--   comments: '# mapFindWithDefault - looks something up in a map with a default value.'
+-   comments: mapFindWithDefault - looks something up in a map with a default value.
     files:
     - src/mongo/util/map_util.h
--   comments: '# I still don''t know what this was originally for, but I know we are
-        slowly getting rid of it.'
+-   comments: I still don't know what this was originally for, but I know we are slowly
+        getting rid of it.
     files:
     - src/mongo/pch.cpp
     - src/mongo/pch.h
--   comments: '# Assertion library.'
+-   comments: Assertion library.
     files:
     - src/mongo/util/assert_util.cpp
     - src/mongo/util/assert_util.h
--   comments: '# Library for adding fail points into the code for testing purposes'
+-   comments: Library for adding fail points into the code for testing purposes
     files:
     - src/mongo/util/fail_point.cpp
     - src/mongo/util/fail_point.h
@@ -3100,26 +3061,26 @@ groups:
     - src/mongo/util/fail_point_service.cpp
     - src/mongo/util/fail_point_service.h
     - src/mongo/util/fail_point_test.cpp
--   comments: '# Helper library that you inherit from to make a class "reference counted"'
+-   comments: Helper library that you inherit from to make a class "reference counted"
     files:
     - src/mongo/util/intrusive_counter.cpp
     - src/mongo/util/intrusive_counter.h
--   comments: '# md5 hash library'
+-   comments: md5 hash library
     files:
     - src/mongo/util/md5.cpp
     - src/mongo/util/md5.h
     - src/mongo/util/md5.hpp
     - src/mongo/util/md5_test.cpp
     - src/mongo/util/md5main.cpp
--   comments: '# Windows service'
+-   comments: Windows service
     files:
     - src/mongo/util/ntservice.cpp
     - src/mongo/util/ntservice.h
--   comments: '# Utilities to hash a username + password'
+-   comments: Utilities to hash a username + password
     files:
     - src/mongo/client/auth_helpers.cpp
     - src/mongo/client/auth_helpers.h
--   comments: '# Giant list of utilities that I haven''t gotten to yet. TODO: document
+-   comments: 'Giant list of utilities that I haven''t gotten to yet. TODO: document
         what these are for and why# you would use them.'
     files:
     - src/mongo/util/queue.h
@@ -3165,8 +3126,6 @@ groups:
     - src/mongo/util/unordered_fast_key_table.h
     - src/mongo/util/unordered_fast_key_table_internal.h
     - src/mongo/util/util.cpp
-    - src/mongo/util/version.cpp
-    - src/mongo/util/version.h
     - src/mongo/util/version_reporting.cpp
     - src/mongo/util/version_reporting.h
     - src/mongo/util/version_test.cpp
@@ -3209,8 +3168,8 @@ groups:
     - src/mongo/util/gcov.h
     - src/mongo/util/goodies.h
     - src/mongo/util/heapcheck.h
--   comments: '# Platform specific code? TODO: Verify this and document what they
-        are for.'
+-   comments: 'Platform specific code? TODO: Verify this and document what they are
+        for.'
     files:
     - src/mongo/platform/atomic_intrinsics.h
     - src/mongo/platform/atomic_intrinsics_gcc_generic.h
@@ -3880,6 +3839,7 @@ interface:
     - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
     - !!python/unicode 'src/mongo/s/mongo_version_range.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/value.cpp'
     - !!python/unicode 'src/mongo/scripting/engine.cpp'
     - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
@@ -4568,6 +4528,7 @@ interface:
     - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
     - !!python/unicode 'src/mongo/db/query/query_planner.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/document_source_match.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
     - !!python/unicode 'src/mongo/db/auth/role_graph_update.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
@@ -4969,6 +4930,7 @@ interface:
     - !!python/unicode 'src/mongo/db/query/stage_builder.cpp'
     - !!python/unicode 'src/mongo/db/query/query_planner.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/document_source_match.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
     - !!python/unicode 'src/mongo/db/auth/role_graph_update.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
@@ -5567,6 +5529,7 @@ interface:
     - !!python/unicode 'src/mongo/db/fts/fts_language.cpp'
     - !!python/unicode 'src/mongo/db/query/query_planner.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/document_source_match.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
     - !!python/unicode 'src/mongo/db/auth/role_graph_update.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
@@ -6240,6 +6203,7 @@ interface:
     - !!python/unicode 'src/mongo/db/query/query_planner.cpp'
     - !!python/unicode 'src/mongo/db/exec/oplogstart.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/document_source_match.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
     - !!python/unicode 'src/mongo/db/auth/role_graph_update.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/batch_write_op.cpp'
@@ -6575,6 +6539,7 @@ interface:
     - !!python/unicode 'src/mongo/db/exec/working_set.cpp'
     - !!python/unicode 'src/mongo/s/mongo_version_range.cpp'
     - !!python/unicode 'src/mongo/s/write_ops/config_coordinator.cpp'
+    - !!python/unicode 'src/mongo/util/version.cpp'
     - !!python/unicode 'src/mongo/db/pipeline/value.cpp'
     - !!python/unicode 'src/mongo/scripting/engine.cpp'
     - !!python/unicode 'src/mongo/db/dur_recover.cpp'
@@ -7989,39 +7954,6 @@ interface:
     symbol: !!python/unicode 'mongo::hexdump(char const*, unsigned int)'
     used_by:
     - !!python/unicode 'src/mongo/db/dur_recover.cpp'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::versionArray'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/auth_schema_upgrade_d.cpp'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::versionString'
-    used_by:
-    - !!python/unicode 'src/mongo/tools/tool_options.cpp'
-    - !!python/unicode 'src/mongo/dbtests/config_upgrade_tests.cpp'
-    - !!python/unicode 'src/mongo/s/version_mongos.cpp'
-    - !!python/unicode 'src/mongo/scripting/utils.cpp'
-    - !!python/unicode 'src/mongo/s/balance.cpp'
-    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
-    - !!python/unicode 'src/mongo/shell/dbshell.cpp'
-    - !!python/unicode 'src/mongo/s/config_upgrade.cpp'
-    - !!python/unicode 'src/mongo/shell/shell_options.cpp'
-    - !!python/unicode 'src/mongo/db/startup_warnings.cpp'
-    - !!python/unicode 'src/mongo/dbtests/perftests.cpp'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::toVersionArray(char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/commands/auth_schema_upgrade_d.cpp'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::mongodVersion()'
-    used_by:
-    - !!python/unicode 'src/mongo/db/log_process_details.cpp'
-    - !!python/unicode 'src/mongo/db/dbwebserver.cpp'
-    - !!python/unicode 'src/mongo/db/mongod_options.cpp'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    symbol: !!python/unicode 'mongo::isSameMajorVersion(char const*)'
-    used_by:
-    - !!python/unicode 'src/mongo/s/balance.cpp'
-    - !!python/unicode 'src/mongo/db/commands/auth_schema_upgrade_d.cpp'
 -   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
     symbol: !!python/unicode 'mongo::printSysInfo()'
     used_by:
@@ -9361,24 +9293,6 @@ leaks:
     sources:
     - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
     symbol: !!python/unicode 'boost::system::generic_category()'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
-        const&, int, long*)'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/bson/oid.cpp'
-    symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrs'
--   object: !!python/unicode 'src/mongo/util/version.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/base/parse_number.cpp'
-    symbol: !!python/unicode 'mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData
-        const&, int, int*)'
 -   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
     sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
@@ -9391,6 +9305,10 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
     symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version.cpp'
+    symbol: !!python/unicode 'mongo::versionString'
 -   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
     sources:
     - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp'
@@ -9413,6 +9331,10 @@ leaks:
     - !!python/unicode 'src/mongo/util/net/ssl_manager.cpp'
     symbol: !!python/unicode 'mongo::getSSLVersion(std::string const&, std::string
         const&)'
+-   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version.cpp'
+    symbol: !!python/unicode 'mongo::versionArray'
 -   object: !!python/unicode 'src/mongo/util/version_reporting.cpp'
     sources:
     - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/buildinfo.cpp'
@@ -9482,6 +9404,10 @@ leaks:
     - !!python/unicode 'src/mongo/db/jsobj.cpp'
     symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
         const&, bool) const'
+-   object: !!python/unicode 'src/mongo/util/version_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/version.cpp'
+    symbol: !!python/unicode 'mongo::toVersionArray(char const*)'
 -   object: !!python/unicode 'src/mongo/util/version_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'

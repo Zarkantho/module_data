@@ -137,7 +137,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -418,7 +418,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2846,7 +2846,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp](../base\_utilites)
 
 <div></div>
 

@@ -5,7 +5,7 @@
 -------------
 
 # Group Description
-
+Uncategorized Full Text Search Code
 
 # Files
 - src/mongo/db/fts/fts\_command.cpp   (mongod, tools, mongos)
@@ -35,28 +35,9 @@
 - src/mongo/db/fts/fts\_util.cpp   (mongod, tools, mongos)
 - src/mongo/db/fts/fts\_util.h   (mongod, tools, mongos)
 - src/mongo/db/fts/fts\_util\_test.cpp   ()
-- src/mongo/db/fts/generate\_stop\_words.py   (mongod, tools, mongos)
 - src/mongo/db/fts/stemmer.cpp   (mongod, tools, mongos)
 - src/mongo/db/fts/stemmer.h   (mongod, tools, mongos)
 - src/mongo/db/fts/stemmer\_test.cpp   ()
-- src/mongo/db/fts/stop\_words.cpp   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words.h   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_danish.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_dutch.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_english.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_finnish.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_french.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_german.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_hungarian.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_italian.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_norwegian.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_portuguese.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_romanian.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_russian.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_spanish.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_swedish.txt   (mongod, tools, mongos)
-- src/mongo/db/fts/stop\_words\_test.cpp   ()
-- src/mongo/db/fts/stop\_words\_turkish.txt   (mongod, tools, mongos)
 - src/mongo/db/fts/tokenizer.cpp   (mongod, tools, mongos)
 - src/mongo/db/fts/tokenizer.h   (mongod, tools, mongos)
 - src/mongo/db/fts/tokenizer\_test.cpp   ()
@@ -192,7 +173,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
 
 <div></div>
 
@@ -2228,15 +2209,164 @@
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
 
-### src/mongo/db/fts/stop\_words.cpp
+### src/mongo/db/fts/tokenizer\_test.cpp
 
 <div></div>
 
-    mongo::fts::loadStopWordMap(mongo::StringMap<std::set<std::string, std::less<std::string>, std::allocator<std::string> > >*)
+    mongo::unittest::Test::tearDown()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../build\_generated\_files)
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+-------------
+
+# Group Description
+Stop words are words that get filtered out prior to text searches.  These are words like "and" and "the" in English.  The stop words list text files get processed by the python script into auto generated C++ files.
+
+# Files
+- src/mongo/db/fts/generate\_stop\_words.py   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.h   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_danish.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_dutch.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_english.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_finnish.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_french.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_german.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_hungarian.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_italian.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_norwegian.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_portuguese.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_romanian.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_russian.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_spanish.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_swedish.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_turkish.txt   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words.cpp   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words.h   (mongod, tools, mongos)
+- src/mongo/db/fts/stop\_words\_test.cpp   ()
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+
+### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp
+
+<div></div>
+
+    mongo::StringData::Hasher::operator()(mongo::StringData const&) const
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+### src/mongo/db/fts/stop\_words.cpp
 
 <div></div>
 
@@ -2315,104 +2445,6 @@
 <div></div>
 
     mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::~TestAssertion()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::fail(std::string const&) const
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::run()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::getSuite(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::setUp()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-### src/mongo/db/fts/tokenizer\_test.cpp
-
-<div></div>
-
-    mongo::unittest::Test::tearDown()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    typeinfo for mongo::unittest::Test
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::~Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
 
 - Provided By:
 

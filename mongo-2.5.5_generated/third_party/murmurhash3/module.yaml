@@ -40,7 +40,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/murmurhash3/MurmurHash3.h
 groups:
--   comments: '# Third Party - Non cryptographic hashing library'
+-   comments: Third Party - Non cryptographic hashing library
     files:
     - src/third_party/murmurhash3/MurmurHash3.cpp
     - src/third_party/murmurhash3/MurmurHash3.h

@@ -360,7 +360,7 @@ files_with_exec:
     - !!python/unicode 'test'
     name: src/mongo/dbtests/updatetests.cpp
 groups:
--   comments: '# Unittest framework (for both old style dbtests and new style tests)'
+-   comments: Unittest framework (for both old style dbtests and new style tests)
     files:
     - src/mongo/unittest/crutch.cpp
     - src/mongo/unittest/fixture_test.cpp
@@ -372,7 +372,7 @@ groups:
     - src/mongo/unittest/unittest.h
     - src/mongo/unittest/unittest_main.cpp
     - src/mongo/unittest/unittest_test.cpp
--   comments: '# Old style unittests ("test" binary)'
+-   comments: Old style unittests ("test" binary)
     files:
     - src/mongo/dbtests/accumulatortests.cpp
     - src/mongo/dbtests/basictests.cpp

@@ -40,7 +40,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/audit.h
 groups:
--   comments: '# Stubs for auditing enterprise module'
+-   comments: Stubs for auditing enterprise module
     files:
     - src/mongo/db/audit.cpp
     - src/mongo/db/audit.h

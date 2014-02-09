@@ -1693,7 +1693,7 @@ files_with_exec:
     - !!python/unicode 'mongosniff'
     name: src/third_party/yaml-cpp-0.5.1/src/token.h
 groups:
--   comments: '# Third Party - Yaml markup parser.  Used for yaml config files'
+-   comments: Third Party - Yaml markup parser.  Used for yaml config files
     files:
     - src/third_party/shim_yaml.cpp
     - src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h

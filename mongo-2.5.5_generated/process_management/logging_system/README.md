@@ -2126,7 +2126,7 @@ Helpers to dump a bunch of information about the current process   at crash time
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
 
 -------------
 

@@ -5,6 +5,102 @@
 -------------
 
 # Group Description
+C++ files that are automatically generated from the Javascript source files. This means that certain Javascript files work in the shell because they are actually compiled in, which means that sometimes the server needs to be recompiled to see changes in Javascript files
+
+# Files
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp   ()
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp   (mongod, tools, mongos)
+
+# Interface
+
+### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp
+
+<div></div>
+
+    mongo::JSFiles::utils
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::batch_api
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::mongo
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::query
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::collection
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::utils_sh
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::assert
+
+- Used By:
+
+    - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::db
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::types
+
+- Used By:
+
+    - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::JSFiles::mr
+
+- Used By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+# Dependencies
+(no dependencies outside this module)
+
+-------------
+
+# Group Description
 Javascript files that get wrapped in strings and put in cpp files. See the "env.JSHeader" calls  in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
 # Files
@@ -344,7 +440,7 @@ Files only built into the mongo shell
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
 
 <div></div>
 
@@ -582,14 +678,6 @@ Files only built into the mongo shell
 
 <div></div>
 
-    mongo::JSFiles::replsetbridge
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::ProcessId::getCurrent()
 
 - Provided By:
@@ -606,14 +694,6 @@ Files only built into the mongo shell
 
 <div></div>
 
-    mongo::JSFiles::servers
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
-
-<div></div>
-
     typeinfo for mongo::DBClientBase
 
 - Provided By:
@@ -627,14 +707,6 @@ Files only built into the mongo shell
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::JSFiles::shardingtest
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -683,22 +755,6 @@ Files only built into the mongo shell
 - Provided By:
 
     - [src/mongo/util/processinfo\_darwin.cpp](../utilities)
-
-<div></div>
-
-    mongo::JSFiles::replsettest
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::JSFiles::servers_misc
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](../build\_generated\_files)
 
 ### src/mongo/shell/shell\_utils\_extended.cpp
 
@@ -1488,7 +1544,7 @@ Shell command line options
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
 
 <div></div>
 

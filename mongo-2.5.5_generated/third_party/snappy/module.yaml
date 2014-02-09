@@ -173,7 +173,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/snappy/snappy.h
 groups:
--   comments: '# Third Party - Snappy compression library'
+-   comments: Third Party - Snappy compression library
     files:
     - src/third_party/shim_snappy.cpp
     - src/third_party/snappy/config.h

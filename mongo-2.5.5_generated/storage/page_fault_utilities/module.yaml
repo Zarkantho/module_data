@@ -74,13 +74,13 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/prefetch.h
 groups:
--   comments: '# Contains the PageFaultException and NoPageFaultsAllowed classes.##
-        where are these used?'
+-   comments: Contains the PageFaultException and NoPageFaultsAllowed classes.## where
+        are these used?
     files:
     - src/mongo/db/pagefault.cpp
     - src/mongo/db/pagefault.h
--   comments: '# Code to go in and touch pages so that they are brought into memory.##
-        who calls these?'
+-   comments: Code to go in and touch pages so that they are brought into memory.##
+        who calls these?
     files:
     - src/mongo/db/prefetch.cpp
     - src/mongo/db/prefetch.h

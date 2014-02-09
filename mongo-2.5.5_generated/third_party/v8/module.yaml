@@ -1,5 +1,7 @@
 description: 'TODO: v8 description'
 files_flat:
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
 - src/third_party/shim_v8.cpp
 - src/third_party/v8/include/v8-debug.h
 - src/third_party/v8/include/v8-profiler.h
@@ -353,6 +355,42 @@ files_flat:
 - src/third_party/v8/src/zone.cc
 - src/third_party/v8/src/zone.h
 files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -6690,7 +6728,11 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/v8/src/zone.h
 groups:
--   comments: '# Third Party - V8 Javascript engine'
+-   comments: Third Party - V8 Javascript engine auto generated files
+    files:
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
+-   comments: Third Party - V8 Javascript engine
     files:
     - src/third_party/shim_v8.cpp
     - src/third_party/v8/include/v8-debug.h
@@ -7701,59 +7743,6 @@ interface:
     used_by:
     - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
     - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-leaks:
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetRawScriptSource(int)'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetDebuggerCount()'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetScriptName(int)'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetDebuggerCount()'
--   object: !!python/unicode 'src/third_party/v8/src/bootstrapper.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetBuiltinsCount()'
--   object: !!python/unicode 'src/third_party/v8/src/debug.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetIndex(char
-        const*)'
--   object: !!python/unicode 'src/third_party/v8/src/debug.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)'
--   object: !!python/unicode 'src/third_party/v8/src/heap.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()'
--   object: !!python/unicode 'src/third_party/v8/src/serialize.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()'
--   object: !!python/unicode 'src/third_party/v8/src/serialize.cc'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc'
-    symbol: !!python/unicode 'v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)'
+leaks: []
 name: v8
 title: v8

@@ -4,6 +4,8 @@
 
 ### mongo\_shell
 
+- [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp](mongo\_shell)
+- [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](mongo\_shell)
 - [src/mongo/shell/assert.js](mongo\_shell)
 - [src/mongo/shell/batch\_api.js](mongo\_shell)
 - [src/mongo/shell/collection.js](mongo\_shell)

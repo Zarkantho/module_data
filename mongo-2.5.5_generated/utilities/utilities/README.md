@@ -419,7 +419,7 @@ Classes to help in tracking statistics
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
 
 <div></div>
 
@@ -1437,6 +1437,7 @@ Utility library to manipulate hex strings
     - [src/mongo/db/exec/working\_set.cpp](../query\_system)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
@@ -2473,6 +2474,7 @@ Assertion library.
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/query/query\_planner.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -2882,6 +2884,7 @@ Assertion library.
     - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
     - [src/mongo/db/query/query\_planner.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -3235,7 +3238,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/plan\_ranker.cpp](../query\_system)
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../full\_text\_search\_module)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
@@ -3343,7 +3346,7 @@ Assertion library.
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
     - [src/mongo/db/auth/auth\_server\_parameters.cpp](../authentication)
     - [src/mongo/db/pipeline/document\_source\_unwind.cpp](../aggregation\_framework)
     - [src/mongo/util/net/message\_server\_port.cpp](../network)
@@ -3498,6 +3501,7 @@ Assertion library.
     - [src/mongo/db/fts/fts\_language.cpp](../full\_text\_search\_module)
     - [src/mongo/db/query/query\_planner.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -3931,7 +3935,7 @@ Assertion library.
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/query/plan\_ranker.cpp](../query\_system)
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../full\_text\_search\_module)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../full\_text\_search\_module)
     - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
@@ -4194,6 +4198,7 @@ Assertion library.
     - [src/mongo/db/query/query\_planner.cpp](../query\_system)
     - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
@@ -4537,6 +4542,7 @@ Assertion library.
     - [src/mongo/db/exec/working\_set.cpp](../query\_system)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
     - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
     - [src/mongo/db/dur\_recover.cpp](../journaling)
@@ -6156,8 +6162,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/unordered\_fast\_key\_table.h   (mongod, tools, mongos)
 - src/mongo/util/unordered\_fast\_key\_table\_internal.h   (mongod, tools, mongos)
 - src/mongo/util/util.cpp   (mongod, tools, mongos)
-- src/mongo/util/version.cpp   (mongod, tools, mongos)
-- src/mongo/util/version.h   (mongod, tools, mongos)
 - src/mongo/util/version\_reporting.cpp   (mongod, tools, mongos)
 - src/mongo/util/version\_reporting.h   (mongod, tools, mongos)
 - src/mongo/util/version\_test.cpp   ()
@@ -7035,61 +7039,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - Used By:
 
     - [src/mongo/db/dur\_recover.cpp](../journaling)
-
-### src/mongo/util/version.cpp
-
-<div></div>
-
-    mongo::versionArray
-
-- Used By:
-
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::versionString
-
-- Used By:
-
-    - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
-    - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/scripting/utils.cpp](../javascript\_libraries)
-    - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
-    - [src/mongo/s/config\_upgrade.cpp](../sharding)
-    - [src/mongo/shell/shell\_options.cpp](../mongo\_shell)
-    - [src/mongo/db/startup\_warnings.cpp](../startup\_initialization)
-    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::toVersionArray(char const*)
-
-- Used By:
-
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::mongodVersion()
-
-- Used By:
-
-    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::isSameMajorVersion(char const*)
-
-- Used By:
-
-    - [src/mongo/s/balance.cpp](../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
 
 ### src/mongo/util/version\_reporting.cpp
 
@@ -8062,40 +8011,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
-### src/mongo/util/version.cpp
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData const&, int, int*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
-
 ### src/mongo/util/version\_reporting.cpp
 
 <div></div>
@@ -8112,7 +8027,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 <div></div>
 
@@ -8124,11 +8039,19 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 <div></div>
 
+    mongo::versionString
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../build\_information)
+
+<div></div>
+
     mongo::allocator()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 <div></div>
 
@@ -8144,7 +8067,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 <div></div>
 
@@ -8164,11 +8087,19 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 <div></div>
 
+    mongo::versionArray
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../build\_information)
+
+<div></div>
+
     mongo::loaderFlags()
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 <div></div>
 
@@ -8176,7 +8107,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 <div></div>
 
@@ -8184,7 +8115,7 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
 
 ### src/mongo/util/version\_test.cpp
 
@@ -8291,6 +8222,14 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::toVersionArray(char const*)
+
+- Provided By:
+
+    - [src/mongo/util/version.cpp](../build\_information)
 
 <div></div>
 

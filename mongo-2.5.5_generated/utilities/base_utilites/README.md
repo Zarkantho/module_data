@@ -319,7 +319,7 @@ Vector and map that delete pointers to elements on destruction. "owning" the mem
 -------------
 
 # Group Description
-Status to return errors. StatusWith can return either an error or a value, so we don't have to  use return parameters as arguments to the function.
+These are the general error codes for MongoDB.  Error codes have some semantic meaning associated with them.  A Status is a holder for an error code and extra error information, such as a message.  A StatusWith is an object that can either be an error Status or hold an actual value, which means we can still use return to return data from a function rather than passing in pointers as return parameters.
 
 # Files
 - src/mongo/base/status-inl.h   (mongod, tools, mongos)
@@ -329,6 +329,8 @@ Status to return errors. StatusWith can return either an error or a value, so we
 - src/mongo/base/status\_with.h   (mongod, tools, mongos)
 - src/mongo/base/error\_codes.err   (mongod, tools, mongos)
 - src/mongo/base/generate\_error\_codes.py   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -622,7 +624,7 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
     - [src/mongo/db/structure/record\_store.cpp](../storage\_layer\_structure)
     - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
@@ -712,17 +714,25 @@ Status to return errors. StatusWith can return either an error or a value, so we
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
 
-# Dependencies
-
-### src/mongo/base/status.cpp
+### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp
 
 <div></div>
 
     mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)
 
-- Provided By:
+- Used By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp](../build\_generated\_files)
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::ErrorCodes::fromInt(int)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+
+# Dependencies
 
 ### src/mongo/base/status\_test.cpp
 
@@ -749,14 +759,6 @@ Status to return errors. StatusWith can return either an error or a value, so we
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ErrorCodes::fromInt(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -829,14 +831,6 @@ Status to return errors. StatusWith can return either an error or a value, so we
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ErrorCodes::fromString(mongo::StringData const&)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/base/error\_codes.cpp](../build\_generated\_files)
 
 -------------
 
@@ -966,7 +960,7 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/s/d\_logic.cpp](../sharding)
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/geo/shapes.cpp](../geo\_queries)
     - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
@@ -1003,7 +997,7 @@ Number to string conversion   Why use these: is this somehow fast/safe? somehow 
 
     - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
     - [src/mongo/util/time\_support.cpp](../utilities)
     - [src/mongo/db/commands/parameters.cpp](../database\_commands)
 
@@ -1186,7 +1180,7 @@ The StringData class is a wrapper around a char* that can be constructed from ei
     - [src/mongo/db/stats/top.cpp](../utilities)
     - [src/mongo/db/projection.cpp](../query\_system)
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../build\_generated\_files)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp](../full\_text\_search\_module)
     - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
     - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
     - [src/mongo/db/pipeline/expression.cpp](../aggregation\_framework)

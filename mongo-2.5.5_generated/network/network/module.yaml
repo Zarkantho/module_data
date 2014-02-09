@@ -338,8 +338,8 @@ files_with_exec:
     - !!python/unicode 'mongos'
     name: src/mongo/util/net/message_server_port.cpp
 groups:
--   comments: '# Network library## can you say a few words about:## - what this does##
-        - who uses it## - how to use it?'
+-   comments: Network library## can you say a few words about:## - what this does##
+        - who uses it## - how to use it?
     files:
     - src/mongo/util/net/listen.cpp
     - src/mongo/util/net/listen.h
@@ -359,8 +359,8 @@ groups:
     - src/mongo/util/net/ssl_manager.h
     - src/mongo/util/net/ssl_options.cpp
     - src/mongo/util/net/ssl_options.h
--   comments: '# Top level (?) of handling incoming network connections on mongod
-        and mongos. Inherits from# Listener (listen.h).'
+-   comments: Top level (?) of handling incoming network connections on mongod and
+        mongos. Inherits from# Listener (listen.h).
     files:
     - src/mongo/util/net/message_server.h
     - src/mongo/util/net/message_server_port.cpp

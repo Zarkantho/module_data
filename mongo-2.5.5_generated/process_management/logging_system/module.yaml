@@ -692,13 +692,12 @@ groups:
     - src/mongo/logger/rotatable_file_writer_test.cpp
     - src/mongo/logger/syslog_appender.h
     - src/mongo/logger/tee.h
--   comments: '# Helpers to dump a bunch of information about the current process##
-        at crash time only? at any time? can you give an example of when## this is
-        used?'
+-   comments: Helpers to dump a bunch of information about the current process## at
+        crash time only? at any time? can you give an example of when## this is used?
     files:
     - src/mongo/db/log_process_details.cpp
     - src/mongo/db/log_process_details.h
--   comments: '# MONGO_INITIALIZERs to add extra information to the server logs.'
+-   comments: MONGO_INITIALIZERs to add extra information to the server logs.
     files:
     - src/mongo/db/server_extra_log_context.cpp
 interface:

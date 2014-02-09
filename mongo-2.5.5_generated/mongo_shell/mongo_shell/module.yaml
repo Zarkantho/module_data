@@ -1,6 +1,8 @@
 description: The mongo shell is a the v8 javascript interpreter with bindings into
     the C++ driver.  This is used to run javascript tests against the server
 files_flat:
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
 - src/mongo/shell/assert.js
 - src/mongo/shell/batch_api.js
 - src/mongo/shell/collection.js
@@ -33,6 +35,26 @@ files_flat:
 - src/mongo/shell/shell_options.h
 - src/mongo/shell/shell_options_init.cpp
 files_with_exec:
+-   execs: []
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -256,8 +278,15 @@ files_with_exec:
 -   execs: []
     name: src/mongo/shell/shell_options_init.cpp
 groups:
--   comments: '# Javascript files that get wrapped in strings and put in cpp files.
-        See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js'
+-   comments: C++ files that are automatically generated from the Javascript source
+        files. This means that certain Javascript files work in the shell because
+        they are actually compiled in, which means that sometimes the server needs
+        to be recompiled to see changes in Javascript files
+    files:
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+-   comments: Javascript files that get wrapped in strings and put in cpp files. See
+        the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
     files:
     - src/mongo/shell/assert.js
     - src/mongo/shell/batch_api.js
@@ -274,7 +303,7 @@ groups:
     - src/mongo/shell/types.js
     - src/mongo/shell/utils.js
     - src/mongo/shell/utils_sh.js
--   comments: '# Files only built into the mongo shell'
+-   comments: Files only built into the mongo shell
     files:
     - src/mongo/shell/dbshell.cpp
     - src/mongo/shell/linenoise.cpp
@@ -289,12 +318,52 @@ groups:
     - src/mongo/shell/shell_utils_extended.h
     - src/mongo/shell/shell_utils_launcher.cpp
     - src/mongo/shell/shell_utils_launcher.h
--   comments: '# Shell command line options'
+-   comments: Shell command line options
     files:
     - src/mongo/shell/shell_options.cpp
     - src/mongo/shell/shell_options.h
     - src/mongo/shell/shell_options_init.cpp
-interface: []
+interface:
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::utils'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::batch_api'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::mongo'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::query'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::collection'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::utils_sh'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::assert'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::db'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::types'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
+    symbol: !!python/unicode 'mongo::JSFiles::mr'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine.cpp'
 leaks:
 -   object: !!python/unicode 'src/mongo/shell/dbshell.cpp'
     sources:
@@ -576,10 +645,6 @@ leaks:
     symbol: !!python/unicode 'boost::detail::get_tss_data(void const*)'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::replsetbridge'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
     - !!python/unicode 'src/mongo/platform/process_id.cpp'
     symbol: !!python/unicode 'mongo::ProcessId::getCurrent()'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
@@ -588,20 +653,12 @@ leaks:
     symbol: !!python/unicode 'mongo::appendBuildInfo(mongo::BSONObjBuilder&)'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::servers'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
     - !!python/unicode 'src/mongo/client/dbclient.cpp'
     symbol: !!python/unicode 'typeinfo for mongo::DBClientBase'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
     sources:
     - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
     symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::shardingtest'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
@@ -627,14 +684,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/processinfo_darwin.cpp'
     symbol: !!python/unicode 'mongo::ProcessInfo::ProcessInfo(mongo::ProcessId)'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::replsettest'
--   object: !!python/unicode 'src/mongo/shell/shell_utils.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp'
-    symbol: !!python/unicode 'mongo::JSFiles::servers_misc'
 -   object: !!python/unicode 'src/mongo/shell/shell_utils_extended.cpp'
     sources:
     - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'

@@ -1,0 +1,61 @@
+description: Legacy code that is still in use but being phased out
+files_flat:
+- src/mongo/db/d_globals.cpp
+- src/mongo/db/d_globals.h
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/d_globals.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/d_globals.h
+groups:
+-   comments: Legacy files that should go away. Global class called "d" that used
+        to contain a bunch of mongod# global variables.
+    files:
+    - src/mongo/db/d_globals.cpp
+    - src/mongo/db/d_globals.h
+interface:
+-   object: !!python/unicode 'src/mongo/db/d_globals.cpp'
+    symbol: !!python/unicode 'mongo::d'
+    used_by:
+    - !!python/unicode 'src/mongo/db/db.cpp'
+leaks:
+-   object: !!python/unicode 'src/mongo/db/d_globals.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/background.cpp'
+    symbol: !!python/unicode 'mongo::BackgroundJob::BackgroundJob(bool)'
+-   object: !!python/unicode 'src/mongo/db/d_globals.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    symbol: !!python/unicode 'vtable for mongo::ClientCursorMonitor'
+name: legacy_code
+title: legacy_code

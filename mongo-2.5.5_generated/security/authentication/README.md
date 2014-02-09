@@ -5,80 +5,16 @@
 -------------
 
 # Group Description
-Authapalooza! TODO: actually separate this logically.
+Action types are things that users are allowed to do to a resource.  For example "shutdown" is an action type.  An action set is a bitmask of action types.
 
 # Files
 - src/mongo/db/auth/action\_set.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/action\_set.h   (mongod, tools, mongos)
 - src/mongo/db/auth/action\_set\_test.cpp   ()
 - src/mongo/db/auth/action\_types.txt   (mongod, tools, mongos)
-- src/mongo/db/auth/auth\_index\_d.cpp   (mongod, tools)
-- src/mongo/db/auth/auth\_index\_d.h   (mongod, tools)
-- src/mongo/db/auth/auth\_server\_parameters.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authentication\_session.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_manager.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_manager.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_manager\_global.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_manager\_global.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_manager\_test.cpp   ()
-- src/mongo/db/auth/authorization\_session.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_session.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authorization\_session\_test.cpp   ()
-- src/mongo/db/auth/authz\_documents\_update\_guard.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_documents\_update\_guard.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp   (mongod, tools)
-- src/mongo/db/auth/authz\_manager\_external\_state\_d.h   (mongod, tools)
-- src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state\_local.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp   (tools)
-- src/mongo/db/auth/authz\_manager\_external\_state\_mock.h   (tools)
-- src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp   (mongos)
-- src/mongo/db/auth/authz\_manager\_external\_state\_s.h   (mongos)
-- src/mongo/db/auth/authz\_session\_external\_state.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_session\_external\_state.h   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_session\_external\_state\_d.cpp   (mongod, tools)
-- src/mongo/db/auth/authz\_session\_external\_state\_d.h   (mongod, tools)
-- src/mongo/db/auth/authz\_session\_external\_state\_mock.h   ()
-- src/mongo/db/auth/authz\_session\_external\_state\_s.cpp   (mongos)
-- src/mongo/db/auth/authz\_session\_external\_state\_s.h   (mongos)
-- src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/authz\_session\_external\_state\_server\_common.h   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.h   (mongod, tools, mongos)
 - src/mongo/db/auth/generate\_action\_types.py   (mongod, tools, mongos)
-- src/mongo/db/auth/mongo\_authentication\_session.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/mongo\_authentication\_session.h   (mongod, tools, mongos)
-- src/mongo/db/auth/privilege.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/privilege.h   (mongod, tools, mongos)
-- src/mongo/db/auth/privilege\_parser.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/privilege\_parser.h   (mongod, tools, mongos)
-- src/mongo/db/auth/privilege\_parser\_test.cpp   ()
-- src/mongo/db/auth/resource\_pattern.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/resource\_pattern.h   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_graph.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_graph.h   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_graph\_builtin\_roles.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_graph\_test.cpp   ()
-- src/mongo/db/auth/role\_graph\_update.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_name.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/role\_name.h   (mongod, tools, mongos)
-- src/mongo/db/auth/security\_key.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/security\_key.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/user.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_cache\_invalidator\_job.cpp   (mongos)
-- src/mongo/db/auth/user\_cache\_invalidator\_job.h   (mongos)
-- src/mongo/db/auth/user\_document\_parser.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_document\_parser.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_document\_parser\_test.cpp   ()
-- src/mongo/db/auth/user\_management\_commands\_parser.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_management\_commands\_parser.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_name.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_name.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_name\_hash.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_set.cpp   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_set.h   (mongod, tools, mongos)
-- src/mongo/db/auth/user\_set\_test.cpp   ()
 
 # Interface
 
@@ -146,6 +82,934 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+
+### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+
+<div></div>
+
+    mongo::ActionType::getShardVersion
+
+- Used By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::addShard
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::update
+
+- Used By:
+
+    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ActionType::collStats
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::insert
+
+- Used By:
+
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ActionType::planCacheRead
+
+- Used By:
+
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::revokeRole
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::logRotate
+
+- Used By:
+
+    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::viewRole
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::netstat
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::removeShard
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::indexStats
+
+- Used By:
+
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dbStats
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::getParameter
+
+- Used By:
+
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::connPoolSync
+
+- Used By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::hostInfo
+
+- Used By:
+
+    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::invalidateUserCache
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::validate
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::resync
+
+- Used By:
+
+    - [src/mongo/db/repl/resync.cpp](../replication)
+
+<div></div>
+
+    mongo::ActionType::planCacheIndexFilter
+
+- Used By:
+
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::dropRole
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::planCacheWrite
+
+- Used By:
+
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dropDatabase
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::repairDatabase
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::splitChunk
+
+- Used By:
+
+    - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::getLog
+
+- Used By:
+
+    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::internal
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/consensus.cpp](../replication)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/d\_state.cpp](../sharding)
+    - [src/mongo/s/d\_writeback.cpp](../sharding)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::touch
+
+- Used By:
+
+    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::createRole
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dropUser
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::inprog
+
+- Used By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::listDatabases
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::unlock
+
+- Used By:
+
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::replSetStateChange
+
+- Used By:
+
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+
+<div></div>
+
+    mongo::ActionType::authSchemaUpgrade
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::shardingState
+
+- Used By:
+
+    - [src/mongo/s/d\_state.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::flushRouterConfig
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::cleanupOrphaned
+
+- Used By:
+
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::createIndex
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/create\_indexes.cpp](../database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ActionType::killop
+
+- Used By:
+
+    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::ActionType::storageDetails
+
+- Used By:
+
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::replSetConfigure
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+
+<div></div>
+
+    mongo::ActionType::collMod
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::fsync
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/db/commands/fsync.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::remove
+
+- Used By:
+
+    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
+
+<div></div>
+
+    mongo::ActionType::enableSharding
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::moveChunk
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::listShards
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::changeCustomData
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::enableProfiler
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::connPoolStats
+
+- Used By:
+
+    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/s/shardconnection.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::viewUser
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::appendOplogNote
+
+- Used By:
+
+    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::changePassword
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::splitVector
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/d\_split.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::setParameter
+
+- Used By:
+
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dbHash
+
+- Used By:
+
+    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::serverStatus
+
+- Used By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::createUser
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::renameCollectionSameDB
+
+- Used By:
+
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::convertToCapped
+
+- Used By:
+
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::cursorInfo
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/cursors.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::getShardMap
+
+- Used By:
+
+    - [src/mongo/s/shard.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::reIndex
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::find
+
+- Used By:
+
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
+    - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
+    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
+    - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dropIndex
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::top
+
+- Used By:
+
+    - [src/mongo/db/stats/top.cpp](../utilities)
+
+<div></div>
+
+    mongo::ActionType::diagLogging
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::closeAllDatabases
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::killCursors
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/cursors.cpp](../sharding)
+
+<div></div>
+
+    mongo::ActionType::compact
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::replSetGetStatus
+
+- Used By:
+
+    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
+
+<div></div>
+
+    mongo::ActionType::createCollection
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::shutdown
+
+- Used By:
+
+    - [src/mongo/db/commands/shutdown.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::dropCollection
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::ActionType::getCmdLineOpts
+
+- Used By:
+
+    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+
+# Dependencies
+
+### src/mongo/db/auth/action\_set.cpp
+
+<div></div>
+
+    mongo::splitStringDelim(std::string const&, std::vector<std::string, std::allocator<std::string> >*, char)
+
+- Provided By:
+
+    - [src/mongo/util/stringutils.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::operator!=(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+### src/mongo/db/auth/action\_set\_test.cpp
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::Status const&)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Status::operator==(mongo::Status const&) const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+-------------
+
+# Group Description
+Authapalooza! TODO: actually separate this logically.
+
+# Files
+- src/mongo/db/auth/auth\_index\_d.cpp   (mongod, tools)
+- src/mongo/db/auth/auth\_index\_d.h   (mongod, tools)
+- src/mongo/db/auth/auth\_server\_parameters.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authentication\_session.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_manager.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_manager.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_manager\_global.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_manager\_global.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_manager\_test.cpp   ()
+- src/mongo/db/auth/authorization\_session.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_session.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authorization\_session\_test.cpp   ()
+- src/mongo/db/auth/authz\_documents\_update\_guard.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_documents\_update\_guard.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp   (mongod, tools)
+- src/mongo/db/auth/authz\_manager\_external\_state\_d.h   (mongod, tools)
+- src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state\_local.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp   (tools)
+- src/mongo/db/auth/authz\_manager\_external\_state\_mock.h   (tools)
+- src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp   (mongos)
+- src/mongo/db/auth/authz\_manager\_external\_state\_s.h   (mongos)
+- src/mongo/db/auth/authz\_session\_external\_state.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_session\_external\_state.h   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_session\_external\_state\_d.cpp   (mongod, tools)
+- src/mongo/db/auth/authz\_session\_external\_state\_d.h   (mongod, tools)
+- src/mongo/db/auth/authz\_session\_external\_state\_mock.h   ()
+- src/mongo/db/auth/authz\_session\_external\_state\_s.cpp   (mongos)
+- src/mongo/db/auth/authz\_session\_external\_state\_s.h   (mongos)
+- src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/authz\_session\_external\_state\_server\_common.h   (mongod, tools, mongos)
+- src/mongo/db/auth/mongo\_authentication\_session.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/mongo\_authentication\_session.h   (mongod, tools, mongos)
+- src/mongo/db/auth/privilege.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/privilege.h   (mongod, tools, mongos)
+- src/mongo/db/auth/privilege\_parser.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/privilege\_parser.h   (mongod, tools, mongos)
+- src/mongo/db/auth/privilege\_parser\_test.cpp   ()
+- src/mongo/db/auth/resource\_pattern.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/resource\_pattern.h   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_graph.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_graph.h   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_graph\_builtin\_roles.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_graph\_test.cpp   ()
+- src/mongo/db/auth/role\_graph\_update.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_name.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/role\_name.h   (mongod, tools, mongos)
+- src/mongo/db/auth/security\_key.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/security\_key.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/user.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_cache\_invalidator\_job.cpp   (mongos)
+- src/mongo/db/auth/user\_cache\_invalidator\_job.h   (mongos)
+- src/mongo/db/auth/user\_document\_parser.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_document\_parser.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_document\_parser\_test.cpp   ()
+- src/mongo/db/auth/user\_management\_commands\_parser.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_management\_commands\_parser.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_name.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_name.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_name\_hash.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_set.cpp   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_set.h   (mongod, tools, mongos)
+- src/mongo/db/auth/user\_set\_test.cpp   ()
+
+# Interface
 
 ### src/mongo/db/auth/auth\_index\_d.cpp
 
@@ -1301,234 +2165,6 @@ Authapalooza! TODO: actually separate this logically.
 
 # Dependencies
 
-### src/mongo/db/auth/action\_set.cpp
-
-<div></div>
-
-    mongo::ActionType::operator==(mongo::ActionType const&) const
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::splitStringDelim(std::string const&, std::vector<std::string, std::allocator<std::string> >*, char)
-
-- Provided By:
-
-    - [src/mongo/util/stringutils.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionType::parseActionFromString(std::string const&, mongo::ActionType*)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::actionToString(mongo::ActionType const&)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::toString() const
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::anyAction
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Status::operator!=(mongo::Status const&) const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-### src/mongo/db/auth/action\_set\_test.cpp
-
-<div></div>
-
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::unittest::Test::tearDown()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    typeinfo for mongo::unittest::Test
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::Status const&)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::ActionType::update
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::unittest::Test::~Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::~TestAssertion()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::fail(std::string const&) const
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::anyAction
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::Status::operator==(mongo::Status const&) const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::unittest::Test::run()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::remove
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::unittest::Suite::getSuite(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::setUp()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
 ### src/mongo/db/auth/auth\_index\_d.cpp
 
 <div></div>
@@ -1737,27 +2373,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::update
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
 
 - Provided By:
 
     - [src/mongo/bson/mutable/element.cpp](../bson)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -1865,14 +2485,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::remove
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::fassertFailed(int)
 
 - Provided By:
@@ -1921,14 +2533,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::createIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::auth::getUpdateToUpgradeUser(mongo::StringData const&, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj*)
 
 - Provided By:
@@ -1953,27 +2557,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ActionType::dropIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2122,14 +2710,6 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2309,14 +2889,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::BSONObjBuilder::numStrsReady
 
 - Provided By:
@@ -2359,35 +2931,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::update
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::revokeRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2439,14 +2987,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::changeOwnCustomData
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -2460,14 +3000,6 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionType::remove
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2487,14 +3019,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::createIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -2511,35 +3035,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ActionType::changeOwnPassword
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::grantRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2574,14 +3074,6 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -2729,14 +3221,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::collMod
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::Status::operator==(mongo::Status const&) const
 
 - Provided By:
@@ -2753,14 +3237,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::BSONObjBuilder::numStrsReady
 
 - Provided By:
@@ -2769,27 +3245,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::dbStats
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::unittest::TestAssertion::~TestAssertion()
 
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::shutdown
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/auth/authz\_documents\_update\_guard.cpp
 
@@ -4248,14 +4708,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -4384,14 +4836,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::BSONObjBuilder::numStrsReady
 
 - Provided By:
@@ -4460,147 +4904,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::collStats
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::cleanupOrphaned
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::getShardVersion
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::addShard
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::applicationMessage
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dropDatabase
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::touch
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::update
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::uasserted(int, char const*)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::planCacheRead
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::reIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::logRotate
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::viewRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::removeShard
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::indexStats
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::getParameter
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::connPoolSync
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -4612,150 +4920,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::invalidateUserCache
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::resync
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::planCacheIndexFilter
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dropRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::planCacheWrite
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::repairDatabase
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::splitChunk
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::getLog
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::getCmdLineOpts
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::killCursors
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::cpuProfiler
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::validate
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::createRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::inprog
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::listDatabases
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::unlock
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::authSchemaUpgrade
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::remove
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::fassertFailed(int)
 
 - Provided By:
@@ -4764,363 +4928,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::renameCollectionSameDB
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::createCollection
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::hostInfo
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dropCollection
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::createIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::killop
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::storageDetails
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::replSetConfigure
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::netstat
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::fsync
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::moveChunk
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::listShards
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::changeCustomData
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::enableProfiler
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::shardingState
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::connPoolStats
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::serverStatus
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::viewUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::appendOplogNote
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::changePassword
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::splitVector
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::setParameter
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dbHash
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::collMod
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::createUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::convertToCapped
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::top
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::cursorInfo
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::getShardMap
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::revokeRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dropUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dropIndex
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::diagLogging
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::flushRouterConfig
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::replSetStateChange
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::dbStats
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::emptycapped
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::grantRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::replSetGetStatus
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::_makeStringVector(int, ...)
 
 - Provided By:
 
     - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
-
-<div></div>
-
-    mongo::ActionType::enableSharding
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::shutdown
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::closeAllDatabases
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
-    mongo::ActionType::compact
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/auth/role\_graph\_test.cpp
 
@@ -5131,14 +4943,6 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::update
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5155,14 +4959,6 @@ Authapalooza! TODO: actually separate this logically.
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::insert
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 <div></div>
 
@@ -5238,14 +5034,6 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::remove
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::Status::operator!=(mongo::Status const&) const
 
 - Provided By:
@@ -5278,27 +5066,11 @@ Authapalooza! TODO: actually separate this logically.
 
 <div></div>
 
-    mongo::ActionType::find
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
-
-<div></div>
-
     mongo::unittest::Test::setUp()
 
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::ActionType::shutdown
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../build\_generated\_files)
 
 ### src/mongo/db/auth/role\_graph\_update.cpp
 

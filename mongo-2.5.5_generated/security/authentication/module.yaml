@@ -4,6 +4,9 @@ files_flat:
 - src/mongo/db/auth/action_set.h
 - src/mongo/db/auth/action_set_test.cpp
 - src/mongo/db/auth/action_types.txt
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
+- src/mongo/db/auth/generate_action_types.py
 - src/mongo/db/auth/auth_index_d.cpp
 - src/mongo/db/auth/auth_index_d.h
 - src/mongo/db/auth/auth_server_parameters.cpp
@@ -37,7 +40,6 @@ files_flat:
 - src/mongo/db/auth/authz_session_external_state_s.h
 - src/mongo/db/auth/authz_session_external_state_server_common.cpp
 - src/mongo/db/auth/authz_session_external_state_server_common.h
-- src/mongo/db/auth/generate_action_types.py
 - src/mongo/db/auth/mongo_authentication_session.cpp
 - src/mongo/db/auth/mongo_authentication_session.h
 - src/mongo/db/auth/privilege.cpp
@@ -128,6 +130,60 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongosniff'
     name: src/mongo/db/auth/action_types.txt
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/db/auth/generate_action_types.py
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -596,24 +652,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/auth/authz_session_external_state_server_common.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongosniff'
-    name: src/mongo/db/auth/generate_action_types.py
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -1115,12 +1153,20 @@ files_with_exec:
 -   execs: []
     name: src/mongo/db/auth/user_set_test.cpp
 groups:
--   comments: '# Authapalooza! TODO: actually separate this logically.'
+-   comments: Action types are things that users are allowed to do to a resource.  For
+        example "shutdown" is an action type.  An action set is a bitmask of action
+        types.
     files:
     - src/mongo/db/auth/action_set.cpp
     - src/mongo/db/auth/action_set.h
     - src/mongo/db/auth/action_set_test.cpp
     - src/mongo/db/auth/action_types.txt
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
+    - src/mongo/db/auth/generate_action_types.py
+    name: Action Types
+-   comments: 'Authapalooza! TODO: actually separate this logically.'
+    files:
     - src/mongo/db/auth/auth_index_d.cpp
     - src/mongo/db/auth/auth_index_d.h
     - src/mongo/db/auth/auth_server_parameters.cpp
@@ -1154,7 +1200,6 @@ groups:
     - src/mongo/db/auth/authz_session_external_state_s.h
     - src/mongo/db/auth/authz_session_external_state_server_common.cpp
     - src/mongo/db/auth/authz_session_external_state_server_common.h
-    - src/mongo/db/auth/generate_action_types.py
     - src/mongo/db/auth/mongo_authentication_session.cpp
     - src/mongo/db/auth/mongo_authentication_session.h
     - src/mongo/db/auth/privilege.cpp
@@ -1244,6 +1289,385 @@ interface:
     used_by:
     - !!python/unicode 'src/mongo/db/commands/copydb_common.cpp'
     - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::getShardVersion'
+    used_by:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::addShard'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::update'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::collStats'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::insert'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
+    - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/copydb_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify_common.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/pipeline.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::planCacheRead'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::revokeRole'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::logRotate'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::viewRole'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::netstat'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::removeShard'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::indexStats'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/index_stats.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dbStats'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::getParameter'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::connPoolSync'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::hostInfo'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::invalidateUserCache'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::validate'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/validate.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::resync'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/resync.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::planCacheIndexFilter'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/index_filter_commands.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_index_filter_cmd.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dropRole'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::planCacheWrite'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands/cluster_plan_cache_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/commands/plan_cache_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dropDatabase'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::repairDatabase'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::splitChunk'
+    used_by:
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+    - !!python/unicode 'src/mongo/db/commands/merge_chunks_cmd.cpp'
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/s/commands/cluster_merge_chunks_cmd.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::getLog'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::internal'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/heartbeat.cpp'
+    - !!python/unicode 'src/mongo/db/repl/consensus.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+    - !!python/unicode 'src/mongo/db/client.cpp'
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+    - !!python/unicode 'src/mongo/s/d_writeback.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::touch'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/touch.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::createRole'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dropUser'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::inprog'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::listDatabases'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::unlock'
+    used_by:
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::replSetStateChange'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::authSchemaUpgrade'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::shardingState'
+    used_by:
+    - !!python/unicode 'src/mongo/s/d_state.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::flushRouterConfig'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::cleanupOrphaned'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/cleanup_orphaned_cmd.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::createIndex'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/create_indexes.cpp'
+    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
+    - !!python/unicode 'src/mongo/db/commands/copydb_common.cpp'
+    - !!python/unicode 'src/mongo/db/cloner.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::killop'
+    used_by:
+    - !!python/unicode 'src/mongo/s/strategy.cpp'
+    - !!python/unicode 'src/mongo/db/instance.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::storageDetails'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/storage_details.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::replSetConfigure'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/rs_initiate.cpp'
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::collMod'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::fsync'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/commands/fsync.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::remove'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify_common.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/pipeline.cpp'
+    - !!python/unicode 'src/mongo/db/commands/write_commands/write_commands_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::enableSharding'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::moveChunk'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/s/d_migrate.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::listShards'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::changeCustomData'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::enableProfiler'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::connPoolStats'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands.cpp'
+    - !!python/unicode 'src/mongo/s/shardconnection.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::viewUser'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::appendOplogNote'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/oplog_note.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::changePassword'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::splitVector'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::setParameter'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/parameters.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dbHash'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/dbhash.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::serverStatus'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/server_status.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::createUser'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/user_management_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::renameCollectionSameDB'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::convertToCapped'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::cursorInfo'
+    used_by:
+    - !!python/unicode 'src/mongo/db/clientcursor.cpp'
+    - !!python/unicode 'src/mongo/s/cursors.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::getShardMap'
+    used_by:
+    - !!python/unicode 'src/mongo/s/shard.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::reIndex'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::find'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+    - !!python/unicode 'src/mongo/db/commands/find_and_modify_common.cpp'
+    - !!python/unicode 'src/mongo/db/exec/stagedebug_cmd.cpp'
+    - !!python/unicode 'src/mongo/db/commands/group.cpp'
+    - !!python/unicode 'src/mongo/db/commands/copydb_common.cpp'
+    - !!python/unicode 'src/mongo/db/geo/haystack.cpp'
+    - !!python/unicode 'src/mongo/db/commands/mr_common.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/parallel_collection_scan.cpp'
+    - !!python/unicode 'src/mongo/db/commands/collection_to_capped.cpp'
+    - !!python/unicode 'src/mongo/s/d_split.cpp'
+    - !!python/unicode 'src/mongo/db/commands/geonear.cpp'
+    - !!python/unicode 'src/mongo/db/fts/fts_command.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/pipeline.cpp'
+    - !!python/unicode 'src/mongo/db/commands/distinct.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dropIndex'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/drop_indexes.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::top'
+    used_by:
+    - !!python/unicode 'src/mongo/db/stats/top.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::diagLogging'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::closeAllDatabases'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_admin.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::killCursors'
+    used_by:
+    - !!python/unicode 'src/mongo/db/catalog/collection_cursor_cache.cpp'
+    - !!python/unicode 'src/mongo/s/cursors.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::compact'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/commands/compact.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::replSetGetStatus'
+    used_by:
+    - !!python/unicode 'src/mongo/db/repl/replset_commands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::createCollection'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::shutdown'
+    used_by:
+    - !!python/unicode 'src/mongo/db/commands/shutdown.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::dropCollection'
+    used_by:
+    - !!python/unicode 'src/mongo/s/commands_public.cpp'
+    - !!python/unicode 'src/mongo/db/dbcommands.cpp'
+    - !!python/unicode 'src/mongo/db/commands/rename_collection_common.cpp'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    symbol: !!python/unicode 'mongo::ActionType::getCmdLineOpts'
+    used_by:
+    - !!python/unicode 'src/mongo/db/dbcommands_generic.cpp'
 -   object: !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
     symbol: !!python/unicode 'mongo::authindex::createSystemIndexes(mongo::NamespaceString
         const&)'
@@ -1956,32 +2380,9 @@ interface:
 leaks:
 -   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::operator==(mongo::ActionType const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/stringutils.cpp'
     symbol: !!python/unicode 'mongo::splitStringDelim(std::string const&, std::vector<std::string,
         std::allocator<std::string> >*, char)'
--   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::parseActionFromString(std::string
-        const&, mongo::ActionType*)'
--   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::actionToString(mongo::ActionType
-        const&)'
--   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::toString() const'
--   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::anyAction'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set.cpp'
     sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
@@ -1990,10 +2391,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
--   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
@@ -2012,16 +2409,8 @@ leaks:
     symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::update'
--   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2052,10 +2441,6 @@ leaks:
         const'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::anyAction'
--   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
@@ -2064,16 +2449,21 @@ leaks:
     symbol: !!python/unicode 'mongo::unittest::Test::run()'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::remove'
--   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/action_set_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/status.cpp'
+    symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+        const&, int)'
 -   object: !!python/unicode 'src/mongo/db/auth/auth_index_d.cpp'
     sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
@@ -2187,16 +2577,8 @@ leaks:
         const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::update'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
     - !!python/unicode 'src/mongo/bson/mutable/element.cpp'
     symbol: !!python/unicode 'mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2261,10 +2643,6 @@ leaks:
         const'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::remove'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::fassertFailed(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
@@ -2291,10 +2669,6 @@ leaks:
         const&, int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createIndex'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
     - !!python/unicode 'src/mongo/client/auth_helpers.cpp'
     symbol: !!python/unicode 'mongo::auth::getUpdateToUpgradeUser(mongo::StringData
         const&, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj*)'
@@ -2309,16 +2683,8 @@ leaks:
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
     symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropIndex'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager.cpp'
     sources:
     - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
@@ -2397,10 +2763,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2498,10 +2860,6 @@ leaks:
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_manager_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/bson/oid.cpp'
     symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_manager_test.cpp'
@@ -2523,20 +2881,8 @@ leaks:
         const'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::update'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::revokeRole'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2565,10 +2911,6 @@ leaks:
         const*, int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::changeOwnCustomData'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
     symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
@@ -2578,20 +2920,12 @@ leaks:
         int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::remove'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::fassertFailed(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
     - !!python/unicode 'src/mongo/logger/logger.cpp'
     symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createIndex'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
@@ -2603,20 +2937,8 @@ leaks:
     symbol: !!python/unicode 'boost::system::system_category()'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
     - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
     symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::changeOwnPassword'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::grantRole'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2634,10 +2956,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
@@ -2720,10 +3038,6 @@ leaks:
     symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::collMod'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
@@ -2732,24 +3046,12 @@ leaks:
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/bson/oid.cpp'
     symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
 -   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dbStats'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/auth/authorization_session_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::shutdown'
 -   object: !!python/unicode 'src/mongo/db/auth/authz_documents_update_guard.cpp'
     sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
@@ -3538,10 +3840,6 @@ leaks:
     symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
 -   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
--   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::msgasserted(int, std::string const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
@@ -3612,10 +3910,6 @@ leaks:
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/bson/oid.cpp'
     symbol: !!python/unicode 'mongo::BSONObjBuilder::numStrsReady'
 -   object: !!python/unicode 'src/mongo/db/auth/privilege_parser_test.cpp'
@@ -3650,76 +3944,8 @@ leaks:
         const&, int)'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::collStats'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::cleanupOrphaned'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::getShardVersion'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::addShard'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::applicationMessage'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropDatabase'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::touch'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::update'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::uasserted(int, char const*)'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::planCacheRead'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::reIndex'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::logRotate'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::viewRole'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::removeShard'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::indexStats'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::getParameter'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::connPoolSync'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/global_initializer_registerer.cpp'
@@ -3729,268 +3955,16 @@ leaks:
         std::allocator<std::string> > const&)'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::invalidateUserCache'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::resync'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::planCacheIndexFilter'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropRole'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::planCacheWrite'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::repairDatabase'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::splitChunk'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::getLog'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::getCmdLineOpts'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::killCursors'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::cpuProfiler'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::validate'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createRole'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::inprog'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::listDatabases'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::unlock'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::authSchemaUpgrade'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::remove'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
     symbol: !!python/unicode 'mongo::fassertFailed(int)'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::renameCollectionSameDB'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createCollection'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::hostInfo'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropCollection'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createIndex'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::killop'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::storageDetails'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::replSetConfigure'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::netstat'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::fsync'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::moveChunk'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::listShards'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::changeCustomData'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::enableProfiler'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::shardingState'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::connPoolStats'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::serverStatus'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::viewUser'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::appendOplogNote'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::changePassword'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::splitVector'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::setParameter'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dbHash'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::collMod'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::createUser'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::convertToCapped'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::top'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::cursorInfo'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::getShardMap'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::revokeRole'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropUser'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dropIndex'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::diagLogging'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::flushRouterConfig'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::replSetStateChange'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::dbStats'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::emptycapped'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::grantRole'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::replSetGetStatus'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
     - !!python/unicode 'src/mongo/base/make_string_vector.cpp'
     symbol: !!python/unicode 'mongo::_makeStringVector(int, ...)'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::enableSharding'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::shutdown'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::closeAllDatabases'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_builtin_roles.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::compact'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::update'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/util/assert_util.cpp'
@@ -3999,10 +3973,6 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::insert'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
@@ -4045,10 +4015,6 @@ leaks:
     symbol: !!python/unicode 'mongo::unittest::Test::run()'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::remove'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::Status::operator!=(mongo::Status const&) const'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
@@ -4065,16 +4031,8 @@ leaks:
     symbol: !!python/unicode 'mongo::Status::operator==(mongo::Status const&) const'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::find'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
-    sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/auth/role_graph_test.cpp'
-    sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp'
-    symbol: !!python/unicode 'mongo::ActionType::shutdown'
 -   object: !!python/unicode 'src/mongo/db/auth/role_graph_update.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/status.cpp'

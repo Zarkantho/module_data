@@ -735,7 +735,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/ttl.h
 groups:
--   comments: '# Indexes and index management code. TODO: go into more details about
+-   comments: 'Indexes and index management code. TODO: go into more details about
         this. The code is new.# The two parts of the interface that are nice entry
         points are the "index_access_method.h"# (interface for manipulating and accessing
         the index itself), and "index_cursor.h" (interface for# getting data from
@@ -780,11 +780,11 @@ groups:
     - src/mongo/db/index_set.cpp
     - src/mongo/db/index_set.h
     - src/mongo/db/index_set_test.cpp
--   comments: '# Class representing an index spec, such as { "a" : 1, "b" : -1 }'
+-   comments: 'Class representing an index spec, such as { "a" : 1, "b" : -1 }'
     files:
     - src/mongo/db/keypattern.cpp
     - src/mongo/db/keypattern.h
--   comments: '# Background job that periodically checks a ttl index.'
+-   comments: Background job that periodically checks a ttl index.
     files:
     - src/mongo/db/ttl.cpp
     - src/mongo/db/ttl.h

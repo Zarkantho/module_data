@@ -1788,7 +1788,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/gperftools-2.0/src/windows/port.h
 groups:
--   comments: '# Third Party - Google performance tools and tcmalloc'
+-   comments: Third Party - Google performance tools and tcmalloc
     files:
     - src/third_party/shim_allocator.cpp
     - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h

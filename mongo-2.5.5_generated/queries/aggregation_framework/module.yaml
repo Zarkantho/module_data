@@ -1012,19 +1012,19 @@ groups:
     files:
     - src/mongo/db/pipeline/dependencies.cpp
     - src/mongo/db/pipeline/dependencies.h
--   comments: '# Generic interface for getting and merging sorted streams of documents.
-        Only used in aggregation'
+-   comments: Generic interface for getting and merging sorted streams of documents.
+        Only used in aggregation
     files:
     - src/mongo/db/sorter/sorter.cpp
     - src/mongo/db/sorter/sorter.h
     - src/mongo/db/sorter/sorter_test.cpp
--   comments: '# Code for external sort. This sits inside the sorter, and the sorter
-        "spills over" to disk if external sorting is allowed'
+-   comments: Code for external sort. This sits inside the sorter, and the sorter
+        "spills over" to disk if external sorting is allowed
     files:
     - src/mongo/db/extsort.cpp
     - src/mongo/db/extsort.h
--   comments: '# I believe this is just used in External Sort, but it''s standing
-        on its own here without a# description.'
+-   comments: I believe this is just used in External Sort, but it's standing on its
+        own here without a# description.
     files:
     - src/mongo/db/sort_phase_one.h
 interface:

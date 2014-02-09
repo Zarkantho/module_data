@@ -5,6 +5,21 @@
 -------------
 
 # Group Description
+Third Party - V8 Javascript engine auto generated files
+
+# Files
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc   (mongod, tools, mongos)
+- build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
+
+-------------
+
+# Group Description
 Third Party - V8 Javascript engine
 
 # Files
@@ -1549,115 +1564,4 @@ Third Party - V8 Javascript engine
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
 
 # Dependencies
-
-### src/third\_party/v8/src/bootstrapper.cc
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetRawScriptSource(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetDebuggerCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetScriptName(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetDebuggerCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)1>::GetBuiltinsCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/experimental-libraries.cc](../build\_generated\_files)
-
-### src/third\_party/v8/src/debug.cc
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetIndex(char const*)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetScriptName(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-### src/third\_party/v8/src/heap.cc
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-### src/third\_party/v8/src/serialize.cc
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetBuiltinsCount()
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
-
-<div></div>
-
-    v8::internal::NativesCollection<(v8::internal::NativeType)0>::GetRawScriptSource(int)
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/third\_party/v8/src/libraries.cc](../build\_generated\_files)
+(no dependencies outside this module)

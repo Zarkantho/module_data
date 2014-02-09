@@ -18412,7 +18412,7 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/third_party/boost/boost/weak_ptr.hpp
 groups:
--   comments: '# Third Party - The boost shim and the header files in boost core'
+-   comments: Third Party - The boost shim and the header files in boost core
     files:
     - src/third_party/shim_boost.cpp
     - src/third_party/boost/boost/algorithm/string.hpp

@@ -884,14 +884,14 @@ files_with_exec:
 -   execs: []
     name: src/mongo/db/server_parameters_test.cpp
 groups:
--   comments: '# Check various expected startup conditions and log warnings to the
-        user if necessary## what uses these? everything? mongod/mongos only? what
-        sort of checks?'
+-   comments: Check various expected startup conditions and log warnings to the user
+        if necessary## what uses these? everything? mongod/mongos only? what sort
+        of checks?
     files:
     - src/mongo/db/startup_warnings.cpp
     - src/mongo/db/startup_warnings.h
--   comments: '# MONGO_INITIALIZER startup initialization framework.## what should
-        use these? any tool? mongod/mongos only?'
+-   comments: MONGO_INITIALIZER startup initialization framework.## what should use
+        these? any tool? mongod/mongos only?
     files:
     - src/mongo/base/global_initializer.cpp
     - src/mongo/base/global_initializer.h
@@ -910,14 +910,13 @@ groups:
     - src/mongo/base/initializer_test.cpp
     - src/mongo/base/make_string_vector.cpp
     - src/mongo/base/make_string_vector.h
--   comments: '# Initialize the global state common to mongod and mongos, such as
-        logging.'
+-   comments: Initialize the global state common to mongod and mongos, such as logging.
     files:
     - src/mongo/db/initialize_server_global_state.cpp
     - src/mongo/db/initialize_server_global_state.h
--   comments: '# Options parser library (command line and config files)## where do
-        the options get stored / how can people grab options later?## are they set
-        once and immutable or can they be updated?'
+-   comments: Options parser library (command line and config files)## where do the
+        options get stored / how can people grab options later?## are they set once
+        and immutable or can they be updated?
     files:
     - src/mongo/util/options_parser/constraints.cpp
     - src/mongo/util/options_parser/constraints.h
@@ -938,26 +937,26 @@ groups:
     - src/mongo/util/options_parser/startup_options.h
     - src/mongo/util/options_parser/value.cpp
     - src/mongo/util/options_parser/value.h
--   comments: '# Command line utilities## can you say a bit more? (give an example?)'
+-   comments: Command line utilities## can you say a bit more? (give an example?)
     files:
     - src/mongo/util/cmdline_utils/censor_cmdline.cpp
     - src/mongo/util/cmdline_utils/censor_cmdline.h
     - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
--   comments: '# Only used to ask user for password at startup. TODO: move into cmdline_utils
+-   comments: 'Only used to ask user for password at startup. TODO: move into cmdline_utils
         directory'
     files:
     - src/mongo/util/password.cpp
     - src/mongo/util/password.h
--   comments: '# Command line options shared between mongod and mongos## give an example
-        (--hostname?)'
+-   comments: Command line options shared between mongod and mongos## give an example
+        (--hostname?)
     files:
     - src/mongo/db/server_options.cpp
     - src/mongo/db/server_options.h
     - src/mongo/db/server_options_helpers.cpp
     - src/mongo/db/server_options_helpers.h
     - src/mongo/db/server_options_test.cpp
--   comments: '# ServerParameter class used to add new parameters to the "setParameter"
-        command. These can also be# configured to be runtime modifiable.'
+-   comments: ServerParameter class used to add new parameters to the "setParameter"
+        command. These can also be# configured to be runtime modifiable.
     files:
     - src/mongo/db/server_parameters.cpp
     - src/mongo/db/server_parameters.h

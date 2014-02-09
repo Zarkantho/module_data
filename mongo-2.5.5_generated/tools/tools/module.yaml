@@ -276,9 +276,9 @@ files_with_exec:
     - !!python/unicode 'mongotop'
     name: src/mongo/tools/top.cpp
 groups:
--   comments: '# Tools and tool options. For most tools, just prepend "mongo" to get
+-   comments: Tools and tool options. For most tools, just prepend "mongo" to get
         the name of the tool the file# is for. For example, "bridge.cpp" is the main
-        for "mongobridge".'
+        for "mongobridge".
     files:
     - src/mongo/tools/admin.cpp
     - src/mongo/tools/bridge.cpp

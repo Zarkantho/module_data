@@ -2,6 +2,12 @@
 
 ## Modules
 
+### build\_information
+
+- [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](build\_information)
+- [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/buildinfo.cpp](build\_information)
+- [src/mongo/util/version.cpp](build\_information)
+- [src/mongo/util/version.h](build\_information)
 ### logging\_system
 
 - [src/mongo/util/log.cpp](logging\_system)

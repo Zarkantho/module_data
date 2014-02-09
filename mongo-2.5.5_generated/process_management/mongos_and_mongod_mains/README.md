@@ -1500,7 +1500,7 @@ Mongod command line options
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../utilities)
+    - [src/mongo/util/version.cpp](../build\_information)
 
 <div></div>
 

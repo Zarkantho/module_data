@@ -27,12 +27,15 @@ files_flat:
 - src/mongo/db/fts/fts_util.cpp
 - src/mongo/db/fts/fts_util.h
 - src/mongo/db/fts/fts_util_test.cpp
-- src/mongo/db/fts/generate_stop_words.py
 - src/mongo/db/fts/stemmer.cpp
 - src/mongo/db/fts/stemmer.h
 - src/mongo/db/fts/stemmer_test.cpp
-- src/mongo/db/fts/stop_words.cpp
-- src/mongo/db/fts/stop_words.h
+- src/mongo/db/fts/tokenizer.cpp
+- src/mongo/db/fts/tokenizer.h
+- src/mongo/db/fts/tokenizer_test.cpp
+- src/mongo/db/fts/generate_stop_words.py
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+- build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
 - src/mongo/db/fts/stop_words_danish.txt
 - src/mongo/db/fts/stop_words_dutch.txt
 - src/mongo/db/fts/stop_words_english.txt
@@ -47,11 +50,10 @@ files_flat:
 - src/mongo/db/fts/stop_words_russian.txt
 - src/mongo/db/fts/stop_words_spanish.txt
 - src/mongo/db/fts/stop_words_swedish.txt
-- src/mongo/db/fts/stop_words_test.cpp
 - src/mongo/db/fts/stop_words_turkish.txt
-- src/mongo/db/fts/tokenizer.cpp
-- src/mongo/db/fts/tokenizer.h
-- src/mongo/db/fts/tokenizer_test.cpp
+- src/mongo/db/fts/stop_words.cpp
+- src/mongo/db/fts/stop_words.h
+- src/mongo/db/fts/stop_words_test.cpp
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'
@@ -428,24 +430,6 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/generate_stop_words.py
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
     name: src/mongo/db/fts/stemmer.cpp
 -   execs:
     - !!python/unicode 'mongotop'
@@ -484,7 +468,7 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words.cpp
+    name: src/mongo/db/fts/tokenizer.cpp
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -502,7 +486,63 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/stop_words.h
+    name: src/mongo/db/fts/tokenizer.h
+-   execs: []
+    name: src/mongo/db/fts/tokenizer_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/fts/generate_stop_words.py
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -755,8 +795,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/fts/stop_words_swedish.txt
--   execs: []
-    name: src/mongo/db/fts/stop_words_test.cpp
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -792,7 +830,7 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/tokenizer.cpp
+    name: src/mongo/db/fts/stop_words.cpp
 -   execs:
     - !!python/unicode 'mongotop'
     - !!python/unicode 'mongod'
@@ -810,11 +848,11 @@ files_with_exec:
     - !!python/unicode 'mongoexport'
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
-    name: src/mongo/db/fts/tokenizer.h
+    name: src/mongo/db/fts/stop_words.h
 -   execs: []
-    name: src/mongo/db/fts/tokenizer_test.cpp
+    name: src/mongo/db/fts/stop_words_test.cpp
 groups:
--   comments: ''
+-   comments: Uncategorized Full Text Search Code
     files:
     - src/mongo/db/fts/fts_command.cpp
     - src/mongo/db/fts/fts_command.h
@@ -843,12 +881,19 @@ groups:
     - src/mongo/db/fts/fts_util.cpp
     - src/mongo/db/fts/fts_util.h
     - src/mongo/db/fts/fts_util_test.cpp
-    - src/mongo/db/fts/generate_stop_words.py
     - src/mongo/db/fts/stemmer.cpp
     - src/mongo/db/fts/stemmer.h
     - src/mongo/db/fts/stemmer_test.cpp
-    - src/mongo/db/fts/stop_words.cpp
-    - src/mongo/db/fts/stop_words.h
+    - src/mongo/db/fts/tokenizer.cpp
+    - src/mongo/db/fts/tokenizer.h
+    - src/mongo/db/fts/tokenizer_test.cpp
+-   comments: Stop words are words that get filtered out prior to text searches.  These
+        are words like "and" and "the" in English.  The stop words list text files
+        get processed by the python script into auto generated C++ files.
+    files:
+    - src/mongo/db/fts/generate_stop_words.py
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
     - src/mongo/db/fts/stop_words_danish.txt
     - src/mongo/db/fts/stop_words_dutch.txt
     - src/mongo/db/fts/stop_words_english.txt
@@ -863,11 +908,11 @@ groups:
     - src/mongo/db/fts/stop_words_russian.txt
     - src/mongo/db/fts/stop_words_spanish.txt
     - src/mongo/db/fts/stop_words_swedish.txt
-    - src/mongo/db/fts/stop_words_test.cpp
     - src/mongo/db/fts/stop_words_turkish.txt
-    - src/mongo/db/fts/tokenizer.cpp
-    - src/mongo/db/fts/tokenizer.h
-    - src/mongo/db/fts/tokenizer_test.cpp
+    - src/mongo/db/fts/stop_words.cpp
+    - src/mongo/db/fts/stop_words.h
+    - src/mongo/db/fts/stop_words_test.cpp
+    name: Full Text Search Stop Words
 interface:
 -   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
     symbol: !!python/unicode 'mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec
@@ -2016,11 +2061,72 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
     sources:
-    - !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
-    symbol: !!python/unicode 'mongo::fts::loadStopWordMap(mongo::StringMap<std::set<std::string,
-        std::less<std::string>, std::allocator<std::string> > >*)'
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
+        unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::run()'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/base/string_data.cpp'
+    symbol: !!python/unicode 'mongo::StringData::Hasher::operator()(mongo::StringData
+        const&) const'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::msgasserted(int, char const*)'
 -   object: !!python/unicode 'src/mongo/db/fts/stop_words.cpp'
     sources:
     - !!python/unicode 'src/mongo/base/string_data.cpp'
@@ -2090,58 +2196,6 @@ leaks:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
 -   object: !!python/unicode 'src/mongo/db/fts/stop_words_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::tearDown()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Test'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::Test()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::~Test()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::TestAssertion(char const*,
-        unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Test::run()'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::getSuite(std::string const&)'
--   object: !!python/unicode 'src/mongo/db/fts/tokenizer_test.cpp'
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'

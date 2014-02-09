@@ -583,33 +583,32 @@ files_with_exec:
     - !!python/unicode 'mongorestore'
     name: src/mongo/client/sasl_client_authenticate.h
 groups:
--   comments: '# Code to manage and store the current state of a connection to a replica
+-   comments: Code to manage and store the current state of a connection to a replica
         set.  It is designed to allow the state to be shared across multiple threads
         so that each thread in our connection pool does not need to make a network
-        call to get the current replica set state'
+        call to get the current replica set state
     files:
     - src/mongo/client/replica_set_monitor_internal.h
     - src/mongo/client/replica_set_monitor.cpp
     - src/mongo/client/replica_set_monitor.h
     - src/mongo/client/replica_set_monitor_test.cpp
--   comments: '# Stubs so that the client driver can build alone since our deps are
-        screwed up. We have symbols# that are required by shared code that are very
-        internal to the server, so if we didn''t have these# files we''d either need
-        to include the whole server (which we want to avoid) or the build wouldn''t#
-        successfully link.'
+-   comments: Stubs so that the client driver can build alone since our deps are screwed
+        up. We have symbols# that are required by shared code that are very internal
+        to the server, so if we didn't have these# files we'd either need to include
+        the whole server (which we want to avoid) or the build wouldn't# successfully
+        link.
     files:
     - src/mongo/client/clientAndShell.cpp
     - src/mongo/client/clientOnly-private.h
     - src/mongo/client/clientOnly.cpp
--   comments: '# Stubs to initialize the client driver when it is used standalone.
-        Calls MONGO_INITIALIZERs among# other things. Not built into the server.'
+-   comments: Stubs to initialize the client driver when it is used standalone. Calls
+        MONGO_INITIALIZERs among# other things. Not built into the server.
     files:
     - src/mongo/client/init.cpp
     - src/mongo/client/init.h
--   comments: '# The Core C++ Client Driver Library## who uses these, and why? maybe
+-   comments: The Core C++ Client Driver Library## who uses these, and why? maybe
         this description should be broken up into## some components, e.g. what exactly
-        is a ''dbclient'', a ''dbclientcursor''## and a ''syncclusterconnection''
-        ?'
+        is a 'dbclient', a 'dbclientcursor'## and a 'syncclusterconnection' ?
     files:
     - src/mongo/client/connpool.cpp
     - src/mongo/client/connpool.h
@@ -626,17 +625,17 @@ groups:
     - src/mongo/client/scoped_db_conn_test.cpp
     - src/mongo/client/syncclusterconnection.cpp
     - src/mongo/client/syncclusterconnection.h
--   comments: '# Legacy wire protocol in the client driver## what is the new equivalent,
-        and where?'
+-   comments: Legacy wire protocol in the client driver## what is the new equivalent,
+        and where?
     files:
     - src/mongo/db/dbmessage.cpp
     - src/mongo/db/dbmessage.h
--   comments: '# Utilities for keeping track of the data needed for getLastError (part
-        of legacy wire protocol).'
+-   comments: Utilities for keeping track of the data needed for getLastError (part
+        of legacy wire protocol).
     files:
     - src/mongo/db/lasterror.cpp
     - src/mongo/db/lasterror.h
--   comments: '# Examples of how to use the client driver that get built in the server'
+-   comments: Examples of how to use the client driver that get built in the server
     files:
     - src/mongo/client/examples/authTest.cpp
     - src/mongo/client/examples/clientTest.cpp
@@ -646,34 +645,34 @@ groups:
     - src/mongo/client/examples/second.cpp
     - src/mongo/client/examples/tutorial.cpp
     - src/mongo/client/examples/whereExample.cpp
--   comments: '# Old performance testing utility. Builds the "mongoperf" binary.'
+-   comments: Old performance testing utility. Builds the "mongoperf" binary.
     files:
     - src/mongo/client/examples/mongoperf.cpp
--   comments: '# Macro hacks! Apparently we pollute the namespace with tons of crazy
+-   comments: Macro hacks! Apparently we pollute the namespace with tons of crazy
         macros that cause problems# for consumers of the client driver if we leave
-        them in. I guess users don''t like it when we# redefine things like "malloc"
-        and "verify" in their programs.'
+        them in. I guess users don't like it when we# redefine things like "malloc"
+        and "verify" in their programs.
     files:
     - src/mongo/client/export_macros.h
     - src/mongo/client/undef_macros.h
     - src/mongo/client/redef_macros.h
--   comments: '# More fun macros! MONGO_likely and MONGO_unlikely as well as LOG_SOME,
-        which only logs every once# in a while. w00! Party!'
+-   comments: More fun macros! MONGO_likely and MONGO_unlikely as well as LOG_SOME,
+        which only logs every once# in a while. w00! Party!
     files:
     - src/mongo/server.h
--   comments: '# Gridfs wrapper around the client driver.'
+-   comments: Gridfs wrapper around the client driver.
     files:
     - src/mongo/client/gridfs.cpp
     - src/mongo/client/gridfs.h
--   comments: '# Cursor that represents a connection to a bunch of shards. You would
-        think that this only makes# sense in mongos, but it turns out it''s built
-        into mongod for purposes of map reduce (the final# destination shard of a
-        map reduce job uses this in the "mapreduce.shardedfinish" command).'
+-   comments: Cursor that represents a connection to a bunch of shards. You would
+        think that this only makes# sense in mongos, but it turns out it's built into
+        mongod for purposes of map reduce (the final# destination shard of a map reduce
+        job uses this in the "mapreduce.shardedfinish" command).
     files:
     - src/mongo/client/parallel.cpp
     - src/mongo/client/parallel.h
--   comments: '# Hookup of client to sasl authentication.  The real meat of built
-        in when user passes --use-sasl-client.  TODO: regenerate this data with --use-sasl-client
+-   comments: 'Hookup of client to sasl authentication.  The real meat of built in
+        when user passes --use-sasl-client.  TODO: regenerate this data with --use-sasl-client
         to show the rest of the sasl related client driver files'
     files:
     - src/mongo/client/sasl_client_authenticate.cpp
