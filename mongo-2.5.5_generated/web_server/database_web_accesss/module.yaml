@@ -1,4 +1,3 @@
-description: 'TODO: database_web_accesss description'
 files_flat:
 - src/mongo/db/dbwebserver.cpp
 - src/mongo/db/dbwebserver.h
@@ -75,16 +74,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/net/miniwebserver.h
-groups:
--   comments: Web access to the database, including rest, jsonp, and http.
-    files:
-    - src/mongo/db/dbwebserver.cpp
-    - src/mongo/db/dbwebserver.h
-    - src/mongo/db/restapi.cpp
-    - src/mongo/db/restapi.h
-    - src/mongo/db/clientlistplugin.cpp
-    - src/mongo/util/net/miniwebserver.cpp
-    - src/mongo/util/net/miniwebserver.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
     symbol: !!python/unicode 'mongo::webServerThread(mongo::AdminAccess const*)'
@@ -648,5 +637,17 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
-name: database_web_accesss
-title: database_web_accesss
+module_description: 'TODO: database_web_accesss description'
+module_groups:
+-   group_description: Web access to the database, including rest, jsonp, and http.
+    group_files:
+    - src/mongo/db/dbwebserver.cpp
+    - src/mongo/db/dbwebserver.h
+    - src/mongo/db/restapi.cpp
+    - src/mongo/db/restapi.h
+    - src/mongo/db/clientlistplugin.cpp
+    - src/mongo/util/net/miniwebserver.cpp
+    - src/mongo/util/net/miniwebserver.h
+    group_title: 'TODO: Name this group'
+module_name: database_web_accesss
+module_title: Database Web Accesss

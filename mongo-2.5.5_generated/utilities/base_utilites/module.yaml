@@ -1,4 +1,3 @@
-description: 'TODO: base_utilites description'
 files_flat:
 - src/mongo/base/disallow_copying.h
 - src/mongo/base/counter.h
@@ -341,56 +340,6 @@ files_with_exec:
     name: src/mongo/base/string_data.h
 -   execs: []
     name: src/mongo/base/string_data_test.cpp
-groups:
--   comments: Use this in a class to explicitly disallow copying of the class. This
-        can prevent bugs where you# were accidentally copying a class that wasn't
-        safe to copy.
-    files:
-    - src/mongo/base/disallow_copying.h
--   comments: 64 bit atomic counter
-    files:
-    - src/mongo/base/counter.h
-    - src/mongo/base/counter_test.cpp
--   comments: Vector and map that delete pointers to elements on destruction. "owning"
-        the memory means you are# responsible for deleting it.
-    files:
-    - src/mongo/base/owned_pointer_map.h
-    - src/mongo/base/owned_pointer_map_test.cpp
-    - src/mongo/base/owned_pointer_vector.h
-    - src/mongo/base/owned_pointer_vector_test.cpp
--   comments: These are the general error codes for MongoDB.  Error codes have some
-        semantic meaning associated with them.  A Status is a holder for an error
-        code and extra error information, such as a message.  A StatusWith is an object
-        that can either be an error Status or hold an actual value, which means we
-        can still use return to return data from a function rather than passing in
-        pointers as return parameters.
-    files:
-    - src/mongo/base/status-inl.h
-    - src/mongo/base/status.cpp
-    - src/mongo/base/status.h
-    - src/mongo/base/status_test.cpp
-    - src/mongo/base/status_with.h
-    - src/mongo/base/error_codes.err
-    - src/mongo/base/generate_error_codes.py
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
-    name: Error Handling Utilities
--   comments: 'Number to string conversion## Why use these: is this somehow fast/safe?
-        somehow JSON-aware?'
-    files:
-    - src/mongo/base/parse_number.cpp
-    - src/mongo/base/parse_number.h
-    - src/mongo/base/parse_number_test.cpp
--   comments: 'The StringData class is a wrapper around a char* that can be constructed
-        from either std::string# and a char* without copying the buffer. This is because
-        a StringData doesn''t free the buffer, so# unlike std::string it doesn''t
-        need to have its own copy.## Why: use for speed? is this similar to other
-        classes people might be## familiar with from elsewhere?'
-    files:
-    - src/mongo/base/string_data-inl.h
-    - src/mongo/base/string_data.cpp
-    - src/mongo/base/string_data.h
-    - src/mongo/base/string_data_test.cpp
 interface:
 -   object: !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::operator<<(std::ostream&, mongo::Status const&)'
@@ -1242,5 +1191,61 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
-name: base_utilites
-title: base_utilites
+module_description: 'TODO: base_utilites description'
+module_groups:
+-   group_description: Use this in a class to explicitly disallow copying of the class.
+        This can prevent bugs where you# were accidentally copying a class that wasn't
+        safe to copy.
+    group_files:
+    - src/mongo/base/disallow_copying.h
+    group_title: 'TODO: Name this group'
+-   group_description: 64 bit atomic counter
+    group_files:
+    - src/mongo/base/counter.h
+    - src/mongo/base/counter_test.cpp
+    group_title: 'TODO: Name this group'
+-   group_description: Vector and map that delete pointers to elements on destruction.
+        "owning" the memory means you are# responsible for deleting it.
+    group_files:
+    - src/mongo/base/owned_pointer_map.h
+    - src/mongo/base/owned_pointer_map_test.cpp
+    - src/mongo/base/owned_pointer_vector.h
+    - src/mongo/base/owned_pointer_vector_test.cpp
+    group_title: 'TODO: Name this group'
+-   group_description: These are the general error codes for MongoDB.  Error codes
+        have some semantic meaning associated with them.  A Status is a holder for
+        an error code and extra error information, such as a message.  A StatusWith
+        is an object that can either be an error Status or hold an actual value, which
+        means we can still use return to return data from a function rather than passing
+        in pointers as return parameters.
+    group_files:
+    - src/mongo/base/status-inl.h
+    - src/mongo/base/status.cpp
+    - src/mongo/base/status.h
+    - src/mongo/base/status_test.cpp
+    - src/mongo/base/status_with.h
+    - src/mongo/base/error_codes.err
+    - src/mongo/base/generate_error_codes.py
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
+    group_title: Error Handling Utilities
+-   group_description: 'Number to string conversion## Why use these: is this somehow
+        fast/safe? somehow JSON-aware?'
+    group_files:
+    - src/mongo/base/parse_number.cpp
+    - src/mongo/base/parse_number.h
+    - src/mongo/base/parse_number_test.cpp
+    group_title: 'TODO: Name this group'
+-   group_description: 'The StringData class is a wrapper around a char* that can
+        be constructed from either std::string# and a char* without copying the buffer.
+        This is because a StringData doesn''t free the buffer, so# unlike std::string
+        it doesn''t need to have its own copy.## Why: use for speed? is this similar
+        to other classes people might be## familiar with from elsewhere?'
+    group_files:
+    - src/mongo/base/string_data-inl.h
+    - src/mongo/base/string_data.cpp
+    - src/mongo/base/string_data.h
+    - src/mongo/base/string_data_test.cpp
+    group_title: 'TODO: Name this group'
+module_name: base_utilites
+module_title: Base Utilites

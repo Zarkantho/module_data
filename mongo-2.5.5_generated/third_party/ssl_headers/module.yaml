@@ -1,4 +1,3 @@
-description: Third Party - SSL Headers
 files_flat:
 - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
 - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
@@ -818,9 +817,12 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
-groups:
--   comments: Headers for the SSL build
-    files:
+interface: []
+leaks: []
+module_description: Third Party - SSL Headers
+module_groups:
+-   group_description: Headers for the SSL build
+    group_files:
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/crypto.h
@@ -864,7 +866,6 @@ groups:
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
-interface: []
-leaks: []
-name: ssl_headers
-title: ssl_headers
+    group_title: 'TODO: Name this group'
+module_name: ssl_headers
+module_title: Ssl Headers

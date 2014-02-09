@@ -1,4 +1,3 @@
-description: Legacy code that is still in use but being phased out
 files_flat:
 - src/mongo/db/d_globals.cpp
 - src/mongo/db/d_globals.h
@@ -37,12 +36,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/d_globals.h
-groups:
--   comments: Legacy files that should go away. Global class called "d" that used
-        to contain a bunch of mongod# global variables.
-    files:
-    - src/mongo/db/d_globals.cpp
-    - src/mongo/db/d_globals.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/d_globals.cpp'
     symbol: !!python/unicode 'mongo::d'
@@ -57,5 +50,13 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/db/clientcursor.cpp'
     symbol: !!python/unicode 'vtable for mongo::ClientCursorMonitor'
-name: legacy_code
-title: legacy_code
+module_description: Legacy code that is still in use but being phased out
+module_groups:
+-   group_description: Legacy files that should go away. Global class called "d" that
+        used to contain a bunch of mongod# global variables.
+    group_files:
+    - src/mongo/db/d_globals.cpp
+    - src/mongo/db/d_globals.h
+    group_title: 'TODO: Name this group'
+module_name: legacy_code
+module_title: Legacy Code

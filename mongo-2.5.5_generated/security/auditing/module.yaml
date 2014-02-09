@@ -1,4 +1,3 @@
-description: 'TODO: auditing description'
 files_flat:
 - src/mongo/db/audit.cpp
 - src/mongo/db/audit.h
@@ -39,11 +38,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/audit.h
-groups:
--   comments: Stubs for auditing enterprise module
-    files:
-    - src/mongo/db/audit.cpp
-    - src/mongo/db/audit.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/audit.cpp'
     symbol: !!python/unicode 'mongo::audit::logCommandAuthzCheck(mongo::ClientBasic*,
@@ -263,5 +257,12 @@ interface:
     used_by:
     - !!python/unicode 'src/mongo/db/commands/authentication_commands.cpp'
 leaks: []
-name: auditing
-title: auditing
+module_description: 'TODO: auditing description'
+module_groups:
+-   group_description: Stubs for auditing enterprise module
+    group_files:
+    - src/mongo/db/audit.cpp
+    - src/mongo/db/audit.h
+    group_title: 'TODO: Name this group'
+module_name: auditing
+module_title: Auditing

@@ -1,4 +1,3 @@
-description: 'TODO: boost_filesystem description'
 files_flat:
 - src/third_party/boost/boost/filesystem.hpp
 - src/third_party/boost/boost/filesystem/config.hpp
@@ -532,37 +531,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
-groups:
--   comments: Third Party - The boost filesystem library
-    files:
-    - src/third_party/boost/boost/filesystem.hpp
-    - src/third_party/boost/boost/filesystem/config.hpp
-    - src/third_party/boost/boost/filesystem/convenience.hpp
-    - src/third_party/boost/boost/filesystem/detail/utf8_codecvt_facet.hpp
-    - src/third_party/boost/boost/filesystem/operations.hpp
-    - src/third_party/boost/boost/filesystem/path.hpp
-    - src/third_party/boost/boost/filesystem/v2/config.hpp
-    - src/third_party/boost/boost/filesystem/v2/convenience.hpp
-    - src/third_party/boost/boost/filesystem/v2/operations.hpp
-    - src/third_party/boost/boost/filesystem/v2/path.hpp
-    - src/third_party/boost/boost/filesystem/v3/config.hpp
-    - src/third_party/boost/boost/filesystem/v3/convenience.hpp
-    - src/third_party/boost/boost/filesystem/v3/operations.hpp
-    - src/third_party/boost/boost/filesystem/v3/path.hpp
-    - src/third_party/boost/boost/filesystem/v3/path_traits.hpp
-    - src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp
-    - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
-    - src/third_party/boost/libs/filesystem/v2/src/v2_portability.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/codecvt_error_category.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/path.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/portability.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
-    - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
-    - src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
 interface:
 -   object: !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
     symbol: !!python/unicode 'boost::filesystem3::absolute(boost::filesystem3::path
@@ -853,5 +821,38 @@ leaks:
     sources:
     - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
     symbol: !!python/unicode 'boost::system::system_category()'
-name: boost_filesystem
-title: boost_filesystem
+module_description: 'TODO: boost_filesystem description'
+module_groups:
+-   group_description: Third Party - The boost filesystem library
+    group_files:
+    - src/third_party/boost/boost/filesystem.hpp
+    - src/third_party/boost/boost/filesystem/config.hpp
+    - src/third_party/boost/boost/filesystem/convenience.hpp
+    - src/third_party/boost/boost/filesystem/detail/utf8_codecvt_facet.hpp
+    - src/third_party/boost/boost/filesystem/operations.hpp
+    - src/third_party/boost/boost/filesystem/path.hpp
+    - src/third_party/boost/boost/filesystem/v2/config.hpp
+    - src/third_party/boost/boost/filesystem/v2/convenience.hpp
+    - src/third_party/boost/boost/filesystem/v2/operations.hpp
+    - src/third_party/boost/boost/filesystem/v2/path.hpp
+    - src/third_party/boost/boost/filesystem/v3/config.hpp
+    - src/third_party/boost/boost/filesystem/v3/convenience.hpp
+    - src/third_party/boost/boost/filesystem/v3/operations.hpp
+    - src/third_party/boost/boost/filesystem/v3/path.hpp
+    - src/third_party/boost/boost/filesystem/v3/path_traits.hpp
+    - src/third_party/boost/libs/filesystem/v2/src/v2_operations.cpp
+    - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+    - src/third_party/boost/libs/filesystem/v2/src/v2_portability.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/codecvt_error_category.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/path.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/path_traits.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/portability.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/utf8_codecvt_facet.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
+    - src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.hpp
+    - src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
+    group_title: 'TODO: Name this group'
+module_name: boost_filesystem
+module_title: Boost Filesystem

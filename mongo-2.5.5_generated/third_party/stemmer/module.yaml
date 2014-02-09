@@ -1,4 +1,3 @@
-description: 'TODO: stemmer description'
 files_flat:
 - src/third_party/shim_stemmer.cpp
 - src/third_party/libstemmer_c/include/libstemmer.h
@@ -1046,9 +1045,29 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
-groups:
--   comments: Third Party - Stemmer for various languages used in full text search
-    files:
+interface:
+-   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
+    symbol: !!python/unicode '_sb_stemmer_length'
+    used_by:
+    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
+-   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
+    symbol: !!python/unicode '_sb_stemmer_delete'
+    used_by:
+    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
+-   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
+    symbol: !!python/unicode '_sb_stemmer_stem'
+    used_by:
+    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
+-   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
+    symbol: !!python/unicode '_sb_stemmer_new'
+    used_by:
+    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
+leaks: []
+module_description: 'TODO: stemmer description'
+module_groups:
+-   group_description: Third Party - Stemmer for various languages used in full text
+        search
+    group_files:
     - src/third_party/shim_stemmer.cpp
     - src/third_party/libstemmer_c/include/libstemmer.h
     - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
@@ -1104,23 +1123,6 @@ groups:
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
     - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
-interface:
--   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_length'
-    used_by:
-    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
--   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_delete'
-    used_by:
-    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
--   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_stem'
-    used_by:
-    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
--   object: !!python/unicode 'src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c'
-    symbol: !!python/unicode '_sb_stemmer_new'
-    used_by:
-    - !!python/unicode 'src/mongo/db/fts/stemmer.cpp'
-leaks: []
-name: stemmer
-title: stemmer
+    group_title: 'TODO: Name this group'
+module_name: stemmer
+module_title: Stemmer

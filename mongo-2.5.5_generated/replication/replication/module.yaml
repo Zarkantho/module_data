@@ -1,4 +1,3 @@
-description: 'TODO: replication description'
 files_flat:
 - src/mongo/db/repl/bgsync.cpp
 - src/mongo/db/repl/bgsync.h
@@ -830,65 +829,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/write_concern_options.h
-groups:
--   comments: 'Replication code? TODO: verify that this is all replication related
-        and document the architecture.## a part of this i would like to have documented
-        is threads+locks, e.g.## heartbeats are sent in a unique thread (i think?)
-        and maybe listened for## in a unique thread too? what threads get started
-        if replication is being## used?'
-    files:
-    - src/mongo/db/repl/bgsync.cpp
-    - src/mongo/db/repl/bgsync.h
-    - src/mongo/db/repl/connections.h
-    - src/mongo/db/repl/consensus.cpp
-    - src/mongo/db/repl/health.cpp
-    - src/mongo/db/repl/health.h
-    - src/mongo/db/repl/heartbeat.cpp
-    - src/mongo/db/repl/is_master.h
-    - src/mongo/db/repl/manager.cpp
-    - src/mongo/db/repl/master_slave.cpp
-    - src/mongo/db/repl/master_slave.h
-    - src/mongo/db/repl/multicmd.h
-    - src/mongo/db/repl/oplog.cpp
-    - src/mongo/db/repl/oplog.h
-    - src/mongo/db/repl/oplogreader.cpp
-    - src/mongo/db/repl/oplogreader.h
-    - src/mongo/db/repl/repl_reads_ok.cpp
-    - src/mongo/db/repl/repl_reads_ok.h
-    - src/mongo/db/repl/repl_start.cpp
-    - src/mongo/db/repl/repl_start.h
-    - src/mongo/db/repl/replication_server_status.cpp
-    - src/mongo/db/repl/replication_server_status.h
-    - src/mongo/db/repl/replset_commands.cpp
-    - src/mongo/db/repl/replset_web_handler.cpp
-    - src/mongo/db/repl/resync.cpp
-    - src/mongo/db/repl/rs.cpp
-    - src/mongo/db/repl/rs.h
-    - src/mongo/db/repl/rs_config.cpp
-    - src/mongo/db/repl/rs_config.h
-    - src/mongo/db/repl/rs_exception.h
-    - src/mongo/db/repl/rs_initialsync.cpp
-    - src/mongo/db/repl/rs_initiate.cpp
-    - src/mongo/db/repl/rs_member.h
-    - src/mongo/db/repl/rs_rollback.cpp
-    - src/mongo/db/repl/rs_sync.cpp
-    - src/mongo/db/repl/rs_sync.h
-    - src/mongo/db/repl/sync.cpp
-    - src/mongo/db/repl/sync.h
-    - src/mongo/db/repl/sync_source_feedback.cpp
-    - src/mongo/db/repl/sync_source_feedback.h
--   comments: Helpers to wait for the appropriate write concern
-    files:
-    - src/mongo/db/write_concern.cpp
-    - src/mongo/db/write_concern.h
--   comments: Actual meat of the waiting for write concern code
-    files:
-    - src/mongo/db/repl/write_concern.cpp
-    - src/mongo/db/repl/write_concern.h
--   comments: Helper to parse write concern options out of a BSONObj
-    files:
-    - src/mongo/db/write_concern_options.cpp
-    - src/mongo/db/write_concern_options.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/repl/bgsync.cpp'
     symbol: !!python/unicode 'mongo::replset::BackgroundSyncInterface::~BackgroundSyncInterface()'
@@ -5709,5 +5649,69 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
-name: replication
-title: replication
+module_description: 'TODO: replication description'
+module_groups:
+-   group_description: 'Replication code? TODO: verify that this is all replication
+        related and document the architecture.## a part of this i would like to have
+        documented is threads+locks, e.g.## heartbeats are sent in a unique thread
+        (i think?) and maybe listened for## in a unique thread too? what threads get
+        started if replication is being## used?'
+    group_files:
+    - src/mongo/db/repl/bgsync.cpp
+    - src/mongo/db/repl/bgsync.h
+    - src/mongo/db/repl/connections.h
+    - src/mongo/db/repl/consensus.cpp
+    - src/mongo/db/repl/health.cpp
+    - src/mongo/db/repl/health.h
+    - src/mongo/db/repl/heartbeat.cpp
+    - src/mongo/db/repl/is_master.h
+    - src/mongo/db/repl/manager.cpp
+    - src/mongo/db/repl/master_slave.cpp
+    - src/mongo/db/repl/master_slave.h
+    - src/mongo/db/repl/multicmd.h
+    - src/mongo/db/repl/oplog.cpp
+    - src/mongo/db/repl/oplog.h
+    - src/mongo/db/repl/oplogreader.cpp
+    - src/mongo/db/repl/oplogreader.h
+    - src/mongo/db/repl/repl_reads_ok.cpp
+    - src/mongo/db/repl/repl_reads_ok.h
+    - src/mongo/db/repl/repl_start.cpp
+    - src/mongo/db/repl/repl_start.h
+    - src/mongo/db/repl/replication_server_status.cpp
+    - src/mongo/db/repl/replication_server_status.h
+    - src/mongo/db/repl/replset_commands.cpp
+    - src/mongo/db/repl/replset_web_handler.cpp
+    - src/mongo/db/repl/resync.cpp
+    - src/mongo/db/repl/rs.cpp
+    - src/mongo/db/repl/rs.h
+    - src/mongo/db/repl/rs_config.cpp
+    - src/mongo/db/repl/rs_config.h
+    - src/mongo/db/repl/rs_exception.h
+    - src/mongo/db/repl/rs_initialsync.cpp
+    - src/mongo/db/repl/rs_initiate.cpp
+    - src/mongo/db/repl/rs_member.h
+    - src/mongo/db/repl/rs_rollback.cpp
+    - src/mongo/db/repl/rs_sync.cpp
+    - src/mongo/db/repl/rs_sync.h
+    - src/mongo/db/repl/sync.cpp
+    - src/mongo/db/repl/sync.h
+    - src/mongo/db/repl/sync_source_feedback.cpp
+    - src/mongo/db/repl/sync_source_feedback.h
+    group_title: 'TODO: Name this group'
+-   group_description: Helpers to wait for the appropriate write concern
+    group_files:
+    - src/mongo/db/write_concern.cpp
+    - src/mongo/db/write_concern.h
+    group_title: 'TODO: Name this group'
+-   group_description: Actual meat of the waiting for write concern code
+    group_files:
+    - src/mongo/db/repl/write_concern.cpp
+    - src/mongo/db/repl/write_concern.h
+    group_title: 'TODO: Name this group'
+-   group_description: Helper to parse write concern options out of a BSONObj
+    group_files:
+    - src/mongo/db/write_concern_options.cpp
+    - src/mongo/db/write_concern_options.h
+    group_title: 'TODO: Name this group'
+module_name: replication
+module_title: Replication

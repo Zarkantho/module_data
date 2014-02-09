@@ -1,4 +1,3 @@
-description: 'TODO: boost_core description'
 files_flat:
 - src/third_party/shim_boost.cpp
 - src/third_party/boost/boost/algorithm/string.hpp
@@ -18411,9 +18410,13 @@ files_with_exec:
     - !!python/unicode 'mongostat'
     - !!python/unicode 'mongorestore'
     name: src/third_party/boost/boost/weak_ptr.hpp
-groups:
--   comments: Third Party - The boost shim and the header files in boost core
-    files:
+interface: []
+leaks: []
+module_description: 'TODO: boost_core description'
+module_groups:
+-   group_description: Third Party - The boost shim and the header files in boost
+        core
+    group_files:
     - src/third_party/shim_boost.cpp
     - src/third_party/boost/boost/algorithm/string.hpp
     - src/third_party/boost/boost/algorithm/string/case_conv.hpp
@@ -19384,7 +19387,6 @@ groups:
     - src/third_party/boost/boost/version.hpp
     - src/third_party/boost/boost/visit_each.hpp
     - src/third_party/boost/boost/weak_ptr.hpp
-interface: []
-leaks: []
-name: boost_core
-title: boost_core
+    group_title: 'TODO: Name this group'
+module_name: boost_core
+module_title: Boost Core

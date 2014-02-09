@@ -1,4 +1,3 @@
-description: 'TODO: full_text_search_module description'
 files_flat:
 - src/mongo/db/fts/fts_command.cpp
 - src/mongo/db/fts/fts_command.h
@@ -851,68 +850,6 @@ files_with_exec:
     name: src/mongo/db/fts/stop_words.h
 -   execs: []
     name: src/mongo/db/fts/stop_words_test.cpp
-groups:
--   comments: Uncategorized Full Text Search Code
-    files:
-    - src/mongo/db/fts/fts_command.cpp
-    - src/mongo/db/fts/fts_command.h
-    - src/mongo/db/fts/fts_command_mongod.cpp
-    - src/mongo/db/fts/fts_command_mongos.cpp
-    - src/mongo/db/fts/fts_element_iterator.cpp
-    - src/mongo/db/fts/fts_element_iterator.h
-    - src/mongo/db/fts/fts_element_iterator_test.cpp
-    - src/mongo/db/fts/fts_enabled.cpp
-    - src/mongo/db/fts/fts_index_format.cpp
-    - src/mongo/db/fts/fts_index_format.h
-    - src/mongo/db/fts/fts_index_format_test.cpp
-    - src/mongo/db/fts/fts_language.cpp
-    - src/mongo/db/fts/fts_language.h
-    - src/mongo/db/fts/fts_language_test.cpp
-    - src/mongo/db/fts/fts_matcher.cpp
-    - src/mongo/db/fts/fts_matcher.h
-    - src/mongo/db/fts/fts_matcher_test.cpp
-    - src/mongo/db/fts/fts_query.cpp
-    - src/mongo/db/fts/fts_query.h
-    - src/mongo/db/fts/fts_query_test.cpp
-    - src/mongo/db/fts/fts_spec.cpp
-    - src/mongo/db/fts/fts_spec.h
-    - src/mongo/db/fts/fts_spec_legacy.cpp
-    - src/mongo/db/fts/fts_spec_test.cpp
-    - src/mongo/db/fts/fts_util.cpp
-    - src/mongo/db/fts/fts_util.h
-    - src/mongo/db/fts/fts_util_test.cpp
-    - src/mongo/db/fts/stemmer.cpp
-    - src/mongo/db/fts/stemmer.h
-    - src/mongo/db/fts/stemmer_test.cpp
-    - src/mongo/db/fts/tokenizer.cpp
-    - src/mongo/db/fts/tokenizer.h
-    - src/mongo/db/fts/tokenizer_test.cpp
--   comments: Stop words are words that get filtered out prior to text searches.  These
-        are words like "and" and "the" in English.  The stop words list text files
-        get processed by the python script into auto generated C++ files.
-    files:
-    - src/mongo/db/fts/generate_stop_words.py
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
-    - src/mongo/db/fts/stop_words_danish.txt
-    - src/mongo/db/fts/stop_words_dutch.txt
-    - src/mongo/db/fts/stop_words_english.txt
-    - src/mongo/db/fts/stop_words_finnish.txt
-    - src/mongo/db/fts/stop_words_french.txt
-    - src/mongo/db/fts/stop_words_german.txt
-    - src/mongo/db/fts/stop_words_hungarian.txt
-    - src/mongo/db/fts/stop_words_italian.txt
-    - src/mongo/db/fts/stop_words_norwegian.txt
-    - src/mongo/db/fts/stop_words_portuguese.txt
-    - src/mongo/db/fts/stop_words_romanian.txt
-    - src/mongo/db/fts/stop_words_russian.txt
-    - src/mongo/db/fts/stop_words_spanish.txt
-    - src/mongo/db/fts/stop_words_swedish.txt
-    - src/mongo/db/fts/stop_words_turkish.txt
-    - src/mongo/db/fts/stop_words.cpp
-    - src/mongo/db/fts/stop_words.h
-    - src/mongo/db/fts/stop_words_test.cpp
-    name: Full Text Search Stop Words
 interface:
 -   object: !!python/unicode 'src/mongo/db/fts/fts_index_format.cpp'
     symbol: !!python/unicode 'mongo::fts::FTSIndexFormat::getKeys(mongo::fts::FTSSpec
@@ -2199,5 +2136,69 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/unittest/unittest.cpp'
     symbol: !!python/unicode 'mongo::unittest::Test::setUp()'
-name: full_text_search_module
-title: full_text_search_module
+module_description: 'TODO: full_text_search_module description'
+module_groups:
+-   group_description: Uncategorized Full Text Search Code
+    group_files:
+    - src/mongo/db/fts/fts_command.cpp
+    - src/mongo/db/fts/fts_command.h
+    - src/mongo/db/fts/fts_command_mongod.cpp
+    - src/mongo/db/fts/fts_command_mongos.cpp
+    - src/mongo/db/fts/fts_element_iterator.cpp
+    - src/mongo/db/fts/fts_element_iterator.h
+    - src/mongo/db/fts/fts_element_iterator_test.cpp
+    - src/mongo/db/fts/fts_enabled.cpp
+    - src/mongo/db/fts/fts_index_format.cpp
+    - src/mongo/db/fts/fts_index_format.h
+    - src/mongo/db/fts/fts_index_format_test.cpp
+    - src/mongo/db/fts/fts_language.cpp
+    - src/mongo/db/fts/fts_language.h
+    - src/mongo/db/fts/fts_language_test.cpp
+    - src/mongo/db/fts/fts_matcher.cpp
+    - src/mongo/db/fts/fts_matcher.h
+    - src/mongo/db/fts/fts_matcher_test.cpp
+    - src/mongo/db/fts/fts_query.cpp
+    - src/mongo/db/fts/fts_query.h
+    - src/mongo/db/fts/fts_query_test.cpp
+    - src/mongo/db/fts/fts_spec.cpp
+    - src/mongo/db/fts/fts_spec.h
+    - src/mongo/db/fts/fts_spec_legacy.cpp
+    - src/mongo/db/fts/fts_spec_test.cpp
+    - src/mongo/db/fts/fts_util.cpp
+    - src/mongo/db/fts/fts_util.h
+    - src/mongo/db/fts/fts_util_test.cpp
+    - src/mongo/db/fts/stemmer.cpp
+    - src/mongo/db/fts/stemmer.h
+    - src/mongo/db/fts/stemmer_test.cpp
+    - src/mongo/db/fts/tokenizer.cpp
+    - src/mongo/db/fts/tokenizer.h
+    - src/mongo/db/fts/tokenizer_test.cpp
+    group_title: 'TODO: Name this group'
+-   group_description: Stop words are words that get filtered out prior to text searches.  These
+        are words like "and" and "the" in English.  The stop words list text files
+        get processed by the python script into auto generated C++ files.
+    group_files:
+    - src/mongo/db/fts/generate_stop_words.py
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/fts/stop_words_list.h
+    - src/mongo/db/fts/stop_words_danish.txt
+    - src/mongo/db/fts/stop_words_dutch.txt
+    - src/mongo/db/fts/stop_words_english.txt
+    - src/mongo/db/fts/stop_words_finnish.txt
+    - src/mongo/db/fts/stop_words_french.txt
+    - src/mongo/db/fts/stop_words_german.txt
+    - src/mongo/db/fts/stop_words_hungarian.txt
+    - src/mongo/db/fts/stop_words_italian.txt
+    - src/mongo/db/fts/stop_words_norwegian.txt
+    - src/mongo/db/fts/stop_words_portuguese.txt
+    - src/mongo/db/fts/stop_words_romanian.txt
+    - src/mongo/db/fts/stop_words_russian.txt
+    - src/mongo/db/fts/stop_words_spanish.txt
+    - src/mongo/db/fts/stop_words_swedish.txt
+    - src/mongo/db/fts/stop_words_turkish.txt
+    - src/mongo/db/fts/stop_words.cpp
+    - src/mongo/db/fts/stop_words.h
+    - src/mongo/db/fts/stop_words_test.cpp
+    group_title: Full Text Search Stop Words
+module_name: full_text_search_module
+module_title: Full Text Search Module

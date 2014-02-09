@@ -1,4 +1,3 @@
-description: 'TODO: gperftools description'
 files_flat:
 - src/third_party/shim_allocator.cpp
 - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
@@ -1787,9 +1786,16 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/third_party/gperftools-2.0/src/windows/port.h
-groups:
--   comments: Third Party - Google performance tools and tcmalloc
-    files:
+interface:
+-   object: !!python/unicode 'src/third_party/gperftools-2.0/src/malloc_extension.cc'
+    symbol: !!python/unicode 'MallocExtension::instance()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/tcmalloc_server_status_section.cpp'
+leaks: []
+module_description: 'TODO: gperftools description'
+module_groups:
+-   group_description: Third Party - Google performance tools and tcmalloc
+    group_files:
     - src/third_party/shim_allocator.cpp
     - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
     - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
@@ -1884,11 +1890,6 @@ groups:
     - src/third_party/gperftools-2.0/src/thread_cache.h
     - src/third_party/gperftools-2.0/src/windows/mingw.h
     - src/third_party/gperftools-2.0/src/windows/port.h
-interface:
--   object: !!python/unicode 'src/third_party/gperftools-2.0/src/malloc_extension.cc'
-    symbol: !!python/unicode 'MallocExtension::instance()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/tcmalloc_server_status_section.cpp'
-leaks: []
-name: gperftools
-title: gperftools
+    group_title: 'TODO: Name this group'
+module_name: gperftools
+module_title: Gperftools

@@ -1,4 +1,3 @@
-description: 'TODO: javascript_libraries description'
 files_flat:
 - src/mongo/scripting/engine.cpp
 - src/mongo/scripting/engine.h
@@ -311,29 +310,6 @@ files_with_exec:
     name: src/mongo/scripting/bson_template_evaluator.h
 -   execs: []
     name: src/mongo/scripting/bson_template_evaluator_test.cpp
-groups:
--   comments: v8 Javascript library files
-    files:
-    - src/mongo/scripting/engine.cpp
-    - src/mongo/scripting/engine.h
-    - src/mongo/scripting/engine_v8.cpp
-    - src/mongo/scripting/engine_v8.h
-    - src/mongo/scripting/utils.cpp
-    - src/mongo/scripting/v8_db.cpp
-    - src/mongo/scripting/v8_db.h
-    - src/mongo/scripting/v8_deadline_monitor.h
-    - src/mongo/scripting/v8_deadline_monitor_test.cpp
-    - src/mongo/scripting/v8_profiler.cpp
-    - src/mongo/scripting/v8_profiler.h
-    - src/mongo/scripting/v8_utils.cpp
-    - src/mongo/scripting/v8_utils.h
--   comments: Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
-    files:
-    - src/mongo/scripting/bench.cpp
-    - src/mongo/scripting/bench.h
-    - src/mongo/scripting/bson_template_evaluator.cpp
-    - src/mongo/scripting/bson_template_evaluator.h
-    - src/mongo/scripting/bson_template_evaluator_test.cpp
 interface:
 -   object: !!python/unicode 'src/mongo/scripting/engine.cpp'
     symbol: !!python/unicode 'mongo::ScriptEngine::_checkInterruptCallback'
@@ -2310,5 +2286,31 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
-name: javascript_libraries
-title: javascript_libraries
+module_description: 'TODO: javascript_libraries description'
+module_groups:
+-   group_description: v8 Javascript library files
+    group_files:
+    - src/mongo/scripting/engine.cpp
+    - src/mongo/scripting/engine.h
+    - src/mongo/scripting/engine_v8.cpp
+    - src/mongo/scripting/engine_v8.h
+    - src/mongo/scripting/utils.cpp
+    - src/mongo/scripting/v8_db.cpp
+    - src/mongo/scripting/v8_db.h
+    - src/mongo/scripting/v8_deadline_monitor.h
+    - src/mongo/scripting/v8_deadline_monitor_test.cpp
+    - src/mongo/scripting/v8_profiler.cpp
+    - src/mongo/scripting/v8_profiler.h
+    - src/mongo/scripting/v8_utils.cpp
+    - src/mongo/scripting/v8_utils.h
+    group_title: 'TODO: Name this group'
+-   group_description: Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
+    group_files:
+    - src/mongo/scripting/bench.cpp
+    - src/mongo/scripting/bench.h
+    - src/mongo/scripting/bson_template_evaluator.cpp
+    - src/mongo/scripting/bson_template_evaluator.h
+    - src/mongo/scripting/bson_template_evaluator_test.cpp
+    group_title: 'TODO: Name this group'
+module_name: javascript_libraries
+module_title: Javascript Libraries

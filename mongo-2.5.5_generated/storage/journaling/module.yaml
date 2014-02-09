@@ -1,4 +1,3 @@
-description: 'TODO: journaling description'
 files_flat:
 - src/mongo/util/alignedbuilder.cpp
 - src/mongo/util/alignedbuilder.h
@@ -381,39 +380,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/logfile.h
-groups:
--   comments: Page aligned buffer builder## what sort of buffer? i don't understand
-        ;(
-    files:
-    - src/mongo/util/alignedbuilder.cpp
-    - src/mongo/util/alignedbuilder.h
--   comments: Journaling module## who calls/owns stuff in here? only used by mongod,
-        correct?
-    files:
-    - src/mongo/db/dur.cpp
-    - src/mongo/db/dur.h
-    - src/mongo/db/dur_commitjob.cpp
-    - src/mongo/db/dur_commitjob.h
-    - src/mongo/db/dur_journal.cpp
-    - src/mongo/db/dur_journal.h
-    - src/mongo/db/dur_journalformat.h
-    - src/mongo/db/dur_journalimpl.h
-    - src/mongo/db/dur_preplogbuffer.cpp
-    - src/mongo/db/dur_recover.cpp
-    - src/mongo/db/dur_recover.h
-    - src/mongo/db/dur_stats.h
-    - src/mongo/db/dur_writetodatafiles.cpp
-    - src/mongo/db/durop.cpp
-    - src/mongo/db/durop.h
-    - src/mongo/db/storage/durable_mapped_file.cpp
-    - src/mongo/db/storage/durable_mapped_file.h
--   comments: This is not actually used in our logging system. Just utilities to create
-        files that you can# append to. One notable example of a system that uses this
-        is our preallocation of journal files.# In fact, it isn't used in anything
-        not journaling related right now.
-    files:
-    - src/mongo/util/logfile.cpp
-    - src/mongo/util/logfile.h
 interface:
 -   object: !!python/unicode 'src/mongo/util/alignedbuilder.cpp'
     symbol: !!python/unicode 'mongo::AlignedBuilder::kill()'
@@ -1743,5 +1709,42 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/log.cpp'
     symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
-name: journaling
-title: journaling
+module_description: 'TODO: journaling description'
+module_groups:
+-   group_description: Page aligned buffer builder## what sort of buffer? i don't
+        understand ;(
+    group_files:
+    - src/mongo/util/alignedbuilder.cpp
+    - src/mongo/util/alignedbuilder.h
+    group_title: 'TODO: Name this group'
+-   group_description: Journaling module## who calls/owns stuff in here? only used
+        by mongod, correct?
+    group_files:
+    - src/mongo/db/dur.cpp
+    - src/mongo/db/dur.h
+    - src/mongo/db/dur_commitjob.cpp
+    - src/mongo/db/dur_commitjob.h
+    - src/mongo/db/dur_journal.cpp
+    - src/mongo/db/dur_journal.h
+    - src/mongo/db/dur_journalformat.h
+    - src/mongo/db/dur_journalimpl.h
+    - src/mongo/db/dur_preplogbuffer.cpp
+    - src/mongo/db/dur_recover.cpp
+    - src/mongo/db/dur_recover.h
+    - src/mongo/db/dur_stats.h
+    - src/mongo/db/dur_writetodatafiles.cpp
+    - src/mongo/db/durop.cpp
+    - src/mongo/db/durop.h
+    - src/mongo/db/storage/durable_mapped_file.cpp
+    - src/mongo/db/storage/durable_mapped_file.h
+    group_title: 'TODO: Name this group'
+-   group_description: This is not actually used in our logging system. Just utilities
+        to create files that you can# append to. One notable example of a system that
+        uses this is our preallocation of journal files.# In fact, it isn't used in
+        anything not journaling related right now.
+    group_files:
+    - src/mongo/util/logfile.cpp
+    - src/mongo/util/logfile.h
+    group_title: 'TODO: Name this group'
+module_name: journaling
+module_title: Journaling

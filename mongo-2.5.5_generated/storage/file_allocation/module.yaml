@@ -1,4 +1,3 @@
-description: 'TODO: file_allocation description'
 files_flat:
 - src/mongo/util/file_allocator.cpp
 - src/mongo/util/file_allocator.h
@@ -39,11 +38,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/file_allocator.h
-groups:
--   comments: File allocation library
-    files:
-    - src/mongo/util/file_allocator.cpp
-    - src/mongo/util/file_allocator.h
 interface:
 -   object: !!python/unicode 'src/mongo/util/file_allocator.cpp'
     symbol: !!python/unicode 'mongo::FileAllocator::requestAllocation(std::string
@@ -249,5 +243,12 @@ leaks:
     sources:
     - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
     symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
-name: file_allocation
-title: file_allocation
+module_description: 'TODO: file_allocation description'
+module_groups:
+-   group_description: File allocation library
+    group_files:
+    - src/mongo/util/file_allocator.cpp
+    - src/mongo/util/file_allocator.h
+    group_title: 'TODO: Name this group'
+module_name: file_allocation
+module_title: File Allocation

@@ -1,4 +1,3 @@
-description: 'TODO: file_interface description'
 files_flat:
 - src/mongo/util/file.cpp
 - src/mongo/util/file.h
@@ -39,14 +38,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/file.h
-groups:
--   comments: Abstraction layer for dealing with files. It's basically the read(2),
-        open(2), and write(2)# interface for posix, and something else for Windows.
-        Not used by mmap code, and does not depend# on file allocator library. Use
-        this if you need a file but not a memory mapped file.
-    files:
-    - src/mongo/util/file.cpp
-    - src/mongo/util/file.h
 interface:
 -   object: !!python/unicode 'src/mongo/util/file.cpp'
     symbol: !!python/unicode 'mongo::File::write(unsigned long long, char const*,
@@ -159,5 +150,15 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/log.cpp'
     symbol: !!python/unicode 'mongo::errnoWithDescription(int)'
-name: file_interface
-title: file_interface
+module_description: 'TODO: file_interface description'
+module_groups:
+-   group_description: Abstraction layer for dealing with files. It's basically the
+        read(2), open(2), and write(2)# interface for posix, and something else for
+        Windows. Not used by mmap code, and does not depend# on file allocator library.
+        Use this if you need a file but not a memory mapped file.
+    group_files:
+    - src/mongo/util/file.cpp
+    - src/mongo/util/file.h
+    group_title: 'TODO: Name this group'
+module_name: file_interface
+module_title: File Interface

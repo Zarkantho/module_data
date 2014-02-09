@@ -1,4 +1,3 @@
-description: 'TODO: page_fault_utilities description'
 files_flat:
 - src/mongo/db/pagefault.cpp
 - src/mongo/db/pagefault.h
@@ -73,17 +72,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/prefetch.h
-groups:
--   comments: Contains the PageFaultException and NoPageFaultsAllowed classes.## where
-        are these used?
-    files:
-    - src/mongo/db/pagefault.cpp
-    - src/mongo/db/pagefault.h
--   comments: Code to go in and touch pages so that they are brought into memory.##
-        who calls these?
-    files:
-    - src/mongo/db/prefetch.cpp
-    - src/mongo/db/prefetch.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/pagefault.cpp'
     symbol: !!python/unicode 'mongo::PageFaultRetryableSection::~PageFaultRetryableSection()'
@@ -344,5 +332,19 @@ leaks:
     - !!python/unicode 'src/mongo/db/catalog/index_catalog.cpp'
     symbol: !!python/unicode 'mongo::IndexCatalog::getIndex(mongo::IndexDescriptor
         const*)'
-name: page_fault_utilities
-title: page_fault_utilities
+module_description: 'TODO: page_fault_utilities description'
+module_groups:
+-   group_description: Contains the PageFaultException and NoPageFaultsAllowed classes.##
+        where are these used?
+    group_files:
+    - src/mongo/db/pagefault.cpp
+    - src/mongo/db/pagefault.h
+    group_title: 'TODO: Name this group'
+-   group_description: Code to go in and touch pages so that they are brought into
+        memory.## who calls these?
+    group_files:
+    - src/mongo/db/prefetch.cpp
+    - src/mongo/db/prefetch.h
+    group_title: 'TODO: Name this group'
+module_name: page_fault_utilities
+module_title: Page Fault Utilities

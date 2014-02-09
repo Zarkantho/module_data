@@ -1,4 +1,3 @@
-description: 'TODO: mmap description'
 files_flat:
 - src/mongo/util/mmap.cpp
 - src/mongo/util/mmap.h
@@ -56,12 +55,6 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/util/mmap_posix.cpp
-groups:
--   comments: mmap library (only depends on file allocation library)
-    files:
-    - src/mongo/util/mmap.cpp
-    - src/mongo/util/mmap.h
-    - src/mongo/util/mmap_posix.cpp
 interface:
 -   object: !!python/unicode 'src/mongo/util/mmap.cpp'
     symbol: !!python/unicode 'mongo::LockMongoFilesShared::mmmutex'
@@ -450,5 +443,13 @@ leaks:
     sources:
     - !!python/unicode 'src/third_party/boost/libs/thread/src/pthread/thread.cpp'
     symbol: !!python/unicode 'boost::detail::get_current_thread_data()'
-name: mmap
-title: mmap
+module_description: 'TODO: mmap description'
+module_groups:
+-   group_description: mmap library (only depends on file allocation library)
+    group_files:
+    - src/mongo/util/mmap.cpp
+    - src/mongo/util/mmap.h
+    - src/mongo/util/mmap_posix.cpp
+    group_title: 'TODO: Name this group'
+module_name: mmap
+module_title: Mmap

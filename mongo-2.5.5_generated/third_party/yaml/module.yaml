@@ -1,4 +1,3 @@
-description: 'TODO: yaml description'
 files_flat:
 - src/third_party/shim_yaml.cpp
 - src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h
@@ -1692,9 +1691,44 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongosniff'
     name: src/third_party/yaml-cpp-0.5.1/src/token.h
-groups:
--   comments: Third Party - Yaml markup parser.  Used for yaml config files
-    files:
+interface:
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
+    symbol: !!python/unicode 'YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
+    symbol: !!python/unicode 'YAML::detail::memory::create_node()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::end()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::begin()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::mark_defined()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::empty_scalar'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
+    symbol: !!python/unicode 'YAML::detail::node_data::set_null()'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+-   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/parse.cpp'
+    symbol: !!python/unicode 'YAML::Load(std::string const&)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
+leaks: []
+module_description: 'TODO: yaml description'
+module_groups:
+-   group_description: Third Party - Yaml markup parser.  Used for yaml config files
+    group_files:
     - src/third_party/shim_yaml.cpp
     - src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h
     - src/third_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h
@@ -1784,39 +1818,6 @@ groups:
     - src/third_party/yaml-cpp-0.5.1/src/tag.cpp
     - src/third_party/yaml-cpp-0.5.1/src/tag.h
     - src/third_party/yaml-cpp-0.5.1/src/token.h
-interface:
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
-    symbol: !!python/unicode 'YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/memory.cpp'
-    symbol: !!python/unicode 'YAML::detail::memory::create_node()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::end()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::begin()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::mark_defined()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::empty_scalar'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/node_data.cpp'
-    symbol: !!python/unicode 'YAML::detail::node_data::set_null()'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
--   object: !!python/unicode 'src/third_party/yaml-cpp-0.5.1/src/parse.cpp'
-    symbol: !!python/unicode 'YAML::Load(std::string const&)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/options_parser/options_parser.cpp'
-leaks: []
-name: yaml
-title: yaml
+    group_title: 'TODO: Name this group'
+module_name: yaml
+module_title: Yaml
