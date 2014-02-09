@@ -1,39 +1,13 @@
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/storage/data_file.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/storage/data_file.h
+module_title: Mmap File Interface
+module_name: mmap_file_interface
+module_description: 'TODO: mmap_file_interface description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Interface to data file. Depends on journaling module. These
+        are the actual data files on disk# "<dbname>.#".  Handles file preallocation.
+    group_files:
+    - src/mongo/db/storage/data_file.cpp
+    - src/mongo/db/storage/data_file.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/storage/data_file.cpp'
     symbol: !!python/unicode 'mongo::DataFile::openExisting(char const*)'
@@ -168,13 +142,39 @@ leaks:
     - !!python/unicode 'src/third_party/boost/libs/filesystem/v3/src/operations.cpp'
     symbol: !!python/unicode 'boost::filesystem3::detail::status(boost::filesystem3::path
         const&, boost::system::error_code*)'
-module_description: 'TODO: mmap_file_interface description'
-module_groups:
--   group_description: Interface to data file. Depends on journaling module. These
-        are the actual data files on disk# "<dbname>.#".  Handles file preallocation.
-    group_files:
-    - src/mongo/db/storage/data_file.cpp
-    - src/mongo/db/storage/data_file.h
-    group_title: 'TODO: Name this group'
-module_name: mmap_file_interface
-module_title: Mmap File Interface
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/storage/data_file.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/storage/data_file.h

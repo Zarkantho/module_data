@@ -1,3 +1,54 @@
+module_title: Snappy
+module_name: snappy
+module_description: 'TODO: snappy description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Third Party - Snappy compression library
+    group_files:
+    - src/third_party/shim_snappy.cpp
+    - src/third_party/snappy/config.h
+    - src/third_party/snappy/snappy-internal.h
+    - src/third_party/snappy/snappy-sinksource.cc
+    - src/third_party/snappy/snappy-sinksource.h
+    - src/third_party/snappy/snappy-stubs-internal.h
+    - src/third_party/snappy/snappy-stubs-public.h
+    - src/third_party/snappy/snappy.cc
+    - src/third_party/snappy/snappy.h
+interface:
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::MaxCompressedLength(unsigned long)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/compress.cpp'
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::Compress(char const*, unsigned long, std::string*)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/compress.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
+    - !!python/unicode 'src/mongo/db/extsort.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::RawCompress(char const*, unsigned long, char*,
+        unsigned long*)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/compress.cpp'
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::GetUncompressedLength(char const*, unsigned
+        long, unsigned long*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
+    - !!python/unicode 'src/mongo/db/extsort.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::Uncompress(char const*, unsigned long, std::string*)'
+    used_by:
+    - !!python/unicode 'src/mongo/util/compress.cpp'
+-   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
+    symbol: !!python/unicode 'snappy::RawUncompress(char const*, unsigned long, char*)'
+    used_by:
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
+    - !!python/unicode 'src/mongo/db/extsort.cpp'
+    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
+leaks: []
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'
@@ -161,54 +212,3 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/third_party/snappy/snappy.h
-interface:
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::MaxCompressedLength(unsigned long)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/compress.cpp'
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::Compress(char const*, unsigned long, std::string*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/compress.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::RawCompress(char const*, unsigned long, char*,
-        unsigned long*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/compress.cpp'
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::GetUncompressedLength(char const*, unsigned
-        long, unsigned long*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::Uncompress(char const*, unsigned long, std::string*)'
-    used_by:
-    - !!python/unicode 'src/mongo/util/compress.cpp'
--   object: !!python/unicode 'src/third_party/snappy/snappy.cc'
-    symbol: !!python/unicode 'snappy::RawUncompress(char const*, unsigned long, char*)'
-    used_by:
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_sort.cpp'
-    - !!python/unicode 'src/mongo/db/extsort.cpp'
-    - !!python/unicode 'src/mongo/db/pipeline/document_source_group.cpp'
-leaks: []
-module_description: 'TODO: snappy description'
-module_groups:
--   group_description: Third Party - Snappy compression library
-    group_files:
-    - src/third_party/shim_snappy.cpp
-    - src/third_party/snappy/config.h
-    - src/third_party/snappy/snappy-internal.h
-    - src/third_party/snappy/snappy-sinksource.cc
-    - src/third_party/snappy/snappy-sinksource.h
-    - src/third_party/snappy/snappy-stubs-internal.h
-    - src/third_party/snappy/snappy-stubs-public.h
-    - src/third_party/snappy/snappy.cc
-    - src/third_party/snappy/snappy.h
-    group_title: 'TODO: Name this group'
-module_name: snappy
-module_title: Snappy

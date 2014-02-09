@@ -1,863 +1,139 @@
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/commands/pipeline_command.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_add_to_set.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_avg.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_first.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_last.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_min_max.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_push.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/accumulator_sum.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/value.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/value.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/value_internal.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_internal.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_bson_array.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_command_shards.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_cursor.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_geo_near.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_group.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_limit.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_match.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_merge_cursors.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_out.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_project.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_redact.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_skip.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_sort.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/document_source_unwind.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/expression.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/expression.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/expression_context.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/field_path.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/field_path.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/pipeline.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/pipeline.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/pipeline_d.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/pipeline_d.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/pipeline_optimizations.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/dependencies.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/pipeline/dependencies.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/sorter/sorter.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/sorter/sorter.h
--   execs: []
-    name: src/mongo/db/sorter/sorter_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/extsort.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/extsort.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/sort_phase_one.h
+module_title: Aggregation Framework
+module_name: aggregation_framework
+module_description: 'This is the aggregation framework for MongoDB.  It handles code
+    to perform aggregation on a single instance as well as on a sharded cluster.
+
+    The basic operation for sharded aggregation is that the mongos does the coordination
+    of the aggregation and makes decisions on what can be done distributed (mapped)
+    and what must be done centralized (reduced/merged).  It then sends out the necessary
+    aggregation commands to the appropriate places.  The distributed step is handled
+    by the source shards that have the inital data, and the merger step is handled
+    by the primary shard for that database.
+
+    There are various optimizations that are done as part of this process.  They are
+    split into two categories:  Local, which rewrites the pipeline for more optimal
+    performance on a single node, and Sharded, which rewrites and spits the pipeline
+    for more optimal performance on the level of the whole cluster.  To see these
+    optimizations in action, you can run "db.foo.aggregate([...], { explain : true
+    }) from the mongo shell.  This will show how the pipeline was rewritten throughout
+    the course of the operation.'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Entry point into aggregation for mongod.  These are all database
+        Commands run using db.$cmd.findOne(...)
+    group_files:
+    - src/mongo/db/commands/pipeline_command.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: An accumulator represents a stateful operation.  For example,
+        in an operation such as $sum, you can feed in values until there is no more
+        data, then extract the final result
+    group_files:
+    - src/mongo/db/pipeline/accumulator.h
+    - src/mongo/db/pipeline/accumulator_add_to_set.cpp
+    - src/mongo/db/pipeline/accumulator_avg.cpp
+    - src/mongo/db/pipeline/accumulator_first.cpp
+    - src/mongo/db/pipeline/accumulator_last.cpp
+    - src/mongo/db/pipeline/accumulator_min_max.cpp
+    - src/mongo/db/pipeline/accumulator_push.cpp
+    - src/mongo/db/pipeline/accumulator_sum.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: In memory representation of BSON for aggregation.  Similar
+        to a the BSONElement/BSONObj interface except the Value class does not contain
+        its key like a BSONElement, and the Document class is just a map of keys to
+        values
+    group_files:
+    - src/mongo/db/pipeline/value.cpp
+    - src/mongo/db/pipeline/value.h
+    - src/mongo/db/pipeline/value_internal.h
+    - src/mongo/db/pipeline/document.cpp
+    - src/mongo/db/pipeline/document.h
+    - src/mongo/db/pipeline/document_internal.h
+-   group_title: 'TODO: Name this group'
+    group_description: Files containing the pipeline stages.  Document Source is the
+        name for a pipeline stage in our code
+    group_files:
+    - src/mongo/db/pipeline/document_source.cpp
+    - src/mongo/db/pipeline/document_source.h
+    - src/mongo/db/pipeline/document_source_bson_array.cpp
+    - src/mongo/db/pipeline/document_source_command_shards.cpp
+    - src/mongo/db/pipeline/document_source_cursor.cpp
+    - src/mongo/db/pipeline/document_source_geo_near.cpp
+    - src/mongo/db/pipeline/document_source_group.cpp
+    - src/mongo/db/pipeline/document_source_limit.cpp
+    - src/mongo/db/pipeline/document_source_match.cpp
+    - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+    - src/mongo/db/pipeline/document_source_out.cpp
+    - src/mongo/db/pipeline/document_source_project.cpp
+    - src/mongo/db/pipeline/document_source_redact.cpp
+    - src/mongo/db/pipeline/document_source_skip.cpp
+    - src/mongo/db/pipeline/document_source_sort.cpp
+    - src/mongo/db/pipeline/document_source_unwind.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: An expression represents a stateless operation.  For example,
+        in an operation such as $add, you provide a set of values, and immediately
+        recieve a result
+    group_files:
+    - src/mongo/db/pipeline/expression.cpp
+    - src/mongo/db/pipeline/expression.h
+-   group_title: 'TODO: Name this group'
+    group_description: This file is currently misnamed.  The context for a pipeline
+        stage, such as whether its being run on a Source (source shard) or a Merger
+        (primary shard responsible for merging results), whether there has been an
+        interrupt, and other global information.
+    group_files:
+    - src/mongo/db/pipeline/expression_context.h
+-   group_title: 'TODO: Name this group'
+    group_description: Wrapper classes for parsed and validate dotted field names
+    group_files:
+    - src/mongo/db/pipeline/field_path.cpp
+    - src/mongo/db/pipeline/field_path.h
+-   group_title: 'TODO: Name this group'
+    group_description: These files contain the central entry point for aggregation.  While
+        the initial entry points for mongos and mongod differ, most of the aggregation
+        code is shared between them.  This holds the two paths together, and also
+        contains the optimization code
+    group_files:
+    - src/mongo/db/pipeline/pipeline.cpp
+    - src/mongo/db/pipeline/pipeline.h
+-   group_title: 'TODO: Name this group'
+    group_description: Mongod specific extensions to aggregation
+    group_files:
+    - src/mongo/db/pipeline/pipeline_d.cpp
+    - src/mongo/db/pipeline/pipeline_d.h
+-   group_title: 'TODO: Name this group'
+    group_description: Optimizations that are done as part of the aggregation process.  There
+        are two optimization types, local and sharded.  In a sharded cluster, first
+        the local optimizations are done which rewrites the pipeline stages, then
+        the sharded optimizations are done, which controls exactly what gets farmed
+        out to the source shards, then each source shard runs the local optimization
+        again
+    group_files:
+    - src/mongo/db/pipeline/pipeline_optimizations.h
+-   group_title: 'TODO: Name this group'
+    group_description: Code to track what information is needed in the aggregation
+        pipeline.  For example, for some queries only certain fields of the document
+        are actually needed
+    group_files:
+    - src/mongo/db/pipeline/dependencies.cpp
+    - src/mongo/db/pipeline/dependencies.h
+-   group_title: 'TODO: Name this group'
+    group_description: Generic interface for getting and merging sorted streams of
+        documents. Only used in aggregation
+    group_files:
+    - src/mongo/db/sorter/sorter.cpp
+    - src/mongo/db/sorter/sorter.h
+    - src/mongo/db/sorter/sorter_test.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Code for external sort. This sits inside the sorter, and the
+        sorter "spills over" to disk if external sorting is allowed
+    group_files:
+    - src/mongo/db/extsort.cpp
+    - src/mongo/db/extsort.h
+-   group_title: 'TODO: Name this group'
+    group_description: I believe this is just used in External Sort, but it's standing
+        on its own here without a# description.
+    group_files:
+    - src/mongo/db/sort_phase_one.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/pipeline/accumulator_avg.cpp'
     symbol: !!python/unicode 'mongo::AccumulatorAvg::create()'
@@ -3160,139 +2436,863 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/db/storage_options.cpp'
     symbol: !!python/unicode 'mongo::storageGlobalParams'
-module_description: 'This is the aggregation framework for MongoDB.  It handles code
-    to perform aggregation on a single instance as well as on a sharded cluster.
-
-    The basic operation for sharded aggregation is that the mongos does the coordination
-    of the aggregation and makes decisions on what can be done distributed (mapped)
-    and what must be done centralized (reduced/merged).  It then sends out the necessary
-    aggregation commands to the appropriate places.  The distributed step is handled
-    by the source shards that have the inital data, and the merger step is handled
-    by the primary shard for that database.
-
-    There are various optimizations that are done as part of this process.  They are
-    split into two categories:  Local, which rewrites the pipeline for more optimal
-    performance on a single node, and Sharded, which rewrites and spits the pipeline
-    for more optimal performance on the level of the whole cluster.  To see these
-    optimizations in action, you can run "db.foo.aggregate([...], { explain : true
-    }) from the mongo shell.  This will show how the pipeline was rewritten throughout
-    the course of the operation.'
-module_groups:
--   group_description: Entry point into aggregation for mongod.  These are all database
-        Commands run using db.$cmd.findOne(...)
-    group_files:
-    - src/mongo/db/commands/pipeline_command.cpp
-    group_title: 'TODO: Name this group'
--   group_description: An accumulator represents a stateful operation.  For example,
-        in an operation such as $sum, you can feed in values until there is no more
-        data, then extract the final result
-    group_files:
-    - src/mongo/db/pipeline/accumulator.h
-    - src/mongo/db/pipeline/accumulator_add_to_set.cpp
-    - src/mongo/db/pipeline/accumulator_avg.cpp
-    - src/mongo/db/pipeline/accumulator_first.cpp
-    - src/mongo/db/pipeline/accumulator_last.cpp
-    - src/mongo/db/pipeline/accumulator_min_max.cpp
-    - src/mongo/db/pipeline/accumulator_push.cpp
-    - src/mongo/db/pipeline/accumulator_sum.cpp
-    group_title: 'TODO: Name this group'
--   group_description: In memory representation of BSON for aggregation.  Similar
-        to a the BSONElement/BSONObj interface except the Value class does not contain
-        its key like a BSONElement, and the Document class is just a map of keys to
-        values
-    group_files:
-    - src/mongo/db/pipeline/value.cpp
-    - src/mongo/db/pipeline/value.h
-    - src/mongo/db/pipeline/value_internal.h
-    - src/mongo/db/pipeline/document.cpp
-    - src/mongo/db/pipeline/document.h
-    - src/mongo/db/pipeline/document_internal.h
-    group_title: 'TODO: Name this group'
--   group_description: Files containing the pipeline stages.  Document Source is the
-        name for a pipeline stage in our code
-    group_files:
-    - src/mongo/db/pipeline/document_source.cpp
-    - src/mongo/db/pipeline/document_source.h
-    - src/mongo/db/pipeline/document_source_bson_array.cpp
-    - src/mongo/db/pipeline/document_source_command_shards.cpp
-    - src/mongo/db/pipeline/document_source_cursor.cpp
-    - src/mongo/db/pipeline/document_source_geo_near.cpp
-    - src/mongo/db/pipeline/document_source_group.cpp
-    - src/mongo/db/pipeline/document_source_limit.cpp
-    - src/mongo/db/pipeline/document_source_match.cpp
-    - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-    - src/mongo/db/pipeline/document_source_out.cpp
-    - src/mongo/db/pipeline/document_source_project.cpp
-    - src/mongo/db/pipeline/document_source_redact.cpp
-    - src/mongo/db/pipeline/document_source_skip.cpp
-    - src/mongo/db/pipeline/document_source_sort.cpp
-    - src/mongo/db/pipeline/document_source_unwind.cpp
-    group_title: 'TODO: Name this group'
--   group_description: An expression represents a stateless operation.  For example,
-        in an operation such as $add, you provide a set of values, and immediately
-        recieve a result
-    group_files:
-    - src/mongo/db/pipeline/expression.cpp
-    - src/mongo/db/pipeline/expression.h
-    group_title: 'TODO: Name this group'
--   group_description: This file is currently misnamed.  The context for a pipeline
-        stage, such as whether its being run on a Source (source shard) or a Merger
-        (primary shard responsible for merging results), whether there has been an
-        interrupt, and other global information.
-    group_files:
-    - src/mongo/db/pipeline/expression_context.h
-    group_title: 'TODO: Name this group'
--   group_description: Wrapper classes for parsed and validate dotted field names
-    group_files:
-    - src/mongo/db/pipeline/field_path.cpp
-    - src/mongo/db/pipeline/field_path.h
-    group_title: 'TODO: Name this group'
--   group_description: These files contain the central entry point for aggregation.  While
-        the initial entry points for mongos and mongod differ, most of the aggregation
-        code is shared between them.  This holds the two paths together, and also
-        contains the optimization code
-    group_files:
-    - src/mongo/db/pipeline/pipeline.cpp
-    - src/mongo/db/pipeline/pipeline.h
-    group_title: 'TODO: Name this group'
--   group_description: Mongod specific extensions to aggregation
-    group_files:
-    - src/mongo/db/pipeline/pipeline_d.cpp
-    - src/mongo/db/pipeline/pipeline_d.h
-    group_title: 'TODO: Name this group'
--   group_description: Optimizations that are done as part of the aggregation process.  There
-        are two optimization types, local and sharded.  In a sharded cluster, first
-        the local optimizations are done which rewrites the pipeline stages, then
-        the sharded optimizations are done, which controls exactly what gets farmed
-        out to the source shards, then each source shard runs the local optimization
-        again
-    group_files:
-    - src/mongo/db/pipeline/pipeline_optimizations.h
-    group_title: 'TODO: Name this group'
--   group_description: Code to track what information is needed in the aggregation
-        pipeline.  For example, for some queries only certain fields of the document
-        are actually needed
-    group_files:
-    - src/mongo/db/pipeline/dependencies.cpp
-    - src/mongo/db/pipeline/dependencies.h
-    group_title: 'TODO: Name this group'
--   group_description: Generic interface for getting and merging sorted streams of
-        documents. Only used in aggregation
-    group_files:
-    - src/mongo/db/sorter/sorter.cpp
-    - src/mongo/db/sorter/sorter.h
-    - src/mongo/db/sorter/sorter_test.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Code for external sort. This sits inside the sorter, and the
-        sorter "spills over" to disk if external sorting is allowed
-    group_files:
-    - src/mongo/db/extsort.cpp
-    - src/mongo/db/extsort.h
-    group_title: 'TODO: Name this group'
--   group_description: I believe this is just used in External Sort, but it's standing
-        on its own here without a# description.
-    group_files:
-    - src/mongo/db/sort_phase_one.h
-    group_title: 'TODO: Name this group'
-module_name: aggregation_framework
-module_title: Aggregation Framework
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/commands/pipeline_command.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_add_to_set.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_avg.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_first.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_last.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_min_max.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_push.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/accumulator_sum.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/value.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/value.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/value_internal.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_internal.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_bson_array.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_command_shards.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_cursor.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_geo_near.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_group.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_limit.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_match.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_merge_cursors.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_out.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_project.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_redact.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_skip.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_sort.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/document_source_unwind.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/expression.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/expression.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/expression_context.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/field_path.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/field_path.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/pipeline.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/pipeline.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/pipeline_d.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/pipeline_d.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/pipeline_optimizations.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/dependencies.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/pipeline/dependencies.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/sorter/sorter.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/sorter/sorter.h
+-   execs: []
+    name: src/mongo/db/sorter/sorter_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/extsort.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/extsort.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/sort_phase_one.h

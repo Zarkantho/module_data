@@ -1,93 +1,29 @@
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/db.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/db.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/mongod_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/mongod_options.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/mongod_options_init.cpp
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/server.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/s/server.h
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/mongos_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/s/mongos_options.h
--   execs:
-    - !!python/unicode 'mongos'
-    name: src/mongo/s/mongos_options_init.cpp
+module_title: Mongos And Mongod Mains
+module_name: mongos_and_mongod_mains
+module_description: 'TODO: mongos_and_mongod_mains description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Main for mongod
+    group_files:
+    - src/mongo/db/db.cpp
+    - src/mongo/db/db.h
+-   group_title: 'TODO: Name this group'
+    group_description: Mongod command line options
+    group_files:
+    - src/mongo/db/mongod_options.cpp
+    - src/mongo/db/mongod_options.h
+    - src/mongo/db/mongod_options_init.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Main for mongos
+    group_files:
+    - src/mongo/s/server.cpp
+    - src/mongo/s/server.h
+-   group_title: 'TODO: Name this group'
+    group_description: Mongos command line options
+    group_files:
+    - src/mongo/s/mongos_options.cpp
+    - src/mongo/s/mongos_options.h
+    - src/mongo/s/mongos_options_init.cpp
 interface:
 -   object: !!python/unicode 'src/mongo/s/server.cpp'
     symbol: !!python/unicode 'mongo::createDirectClient()'
@@ -1629,29 +1565,93 @@ leaks:
         const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
         std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
         std::allocator<std::string> > const&)'
-module_description: 'TODO: mongos_and_mongod_mains description'
-module_groups:
--   group_description: Main for mongod
-    group_files:
-    - src/mongo/db/db.cpp
-    - src/mongo/db/db.h
-    group_title: 'TODO: Name this group'
--   group_description: Mongod command line options
-    group_files:
-    - src/mongo/db/mongod_options.cpp
-    - src/mongo/db/mongod_options.h
-    - src/mongo/db/mongod_options_init.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Main for mongos
-    group_files:
-    - src/mongo/s/server.cpp
-    - src/mongo/s/server.h
-    group_title: 'TODO: Name this group'
--   group_description: Mongos command line options
-    group_files:
-    - src/mongo/s/mongos_options.cpp
-    - src/mongo/s/mongos_options.h
-    - src/mongo/s/mongos_options_init.cpp
-    group_title: 'TODO: Name this group'
-module_name: mongos_and_mongod_mains
-module_title: Mongos And Mongod Mains
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/db.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/db.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/mongod_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/mongod_options.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/mongod_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongos'
+    name: src/mongo/s/server.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/server.h
+-   execs:
+    - !!python/unicode 'mongos'
+    name: src/mongo/s/mongos_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/s/mongos_options.h
+-   execs:
+    - !!python/unicode 'mongos'
+    name: src/mongo/s/mongos_options_init.cpp

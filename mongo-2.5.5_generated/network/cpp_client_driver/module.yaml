@@ -1,538 +1,116 @@
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/replica_set_monitor_internal.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/replica_set_monitor.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/replica_set_monitor.h
--   execs: []
-    name: src/mongo/client/replica_set_monitor_test.cpp
--   execs: []
-    name: src/mongo/client/clientAndShell.cpp
--   execs: []
-    name: src/mongo/client/clientOnly-private.h
--   execs: []
-    name: src/mongo/client/clientOnly.cpp
--   execs: []
-    name: src/mongo/client/init.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/client/init.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/connpool.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/connpool.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/constants.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclient.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/client/dbclient.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclient_rs.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclient_rs.h
--   execs: []
-    name: src/mongo/client/dbclient_rs_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclientcursor.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclientcursor.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclientinterface.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/dbclientmockcursor.h
--   execs: []
-    name: src/mongo/client/scoped_db_conn_test.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/syncclusterconnection.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/syncclusterconnection.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/dbmessage.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/dbmessage.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/lasterror.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongosniff'
-    name: src/mongo/db/lasterror.h
--   execs: []
-    name: src/mongo/client/examples/authTest.cpp
--   execs: []
-    name: src/mongo/client/examples/clientTest.cpp
--   execs: []
-    name: src/mongo/client/examples/first.cpp
--   execs: []
-    name: src/mongo/client/examples/httpClientTest.cpp
--   execs: []
-    name: src/mongo/client/examples/rs.cpp
--   execs: []
-    name: src/mongo/client/examples/second.cpp
--   execs: []
-    name: src/mongo/client/examples/tutorial.cpp
--   execs: []
-    name: src/mongo/client/examples/whereExample.cpp
--   execs:
-    - !!python/unicode 'mongoperf'
-    name: src/mongo/client/examples/mongoperf.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/export_macros.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/undef_macros.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/redef_macros.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/server.h
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/client/gridfs.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/client/gridfs.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/parallel.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/parallel.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/sasl_client_authenticate.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/client/sasl_client_authenticate.h
+module_title: Cpp Client Driver
+module_name: cpp_client_driver
+module_description: 'TODO: cpp_client_driver description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Code to manage and store the current state of a connection
+        to a replica set.  It is designed to allow the state to be shared across multiple
+        threads so that each thread in our connection pool does not need to make a
+        network call to get the current replica set state
+    group_files:
+    - src/mongo/client/replica_set_monitor_internal.h
+    - src/mongo/client/replica_set_monitor.cpp
+    - src/mongo/client/replica_set_monitor.h
+    - src/mongo/client/replica_set_monitor_test.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Stubs so that the client driver can build alone since our deps
+        are screwed up. We have symbols# that are required by shared code that are
+        very internal to the server, so if we didn't have these# files we'd either
+        need to include the whole server (which we want to avoid) or the build wouldn't#
+        successfully link.
+    group_files:
+    - src/mongo/client/clientAndShell.cpp
+    - src/mongo/client/clientOnly-private.h
+    - src/mongo/client/clientOnly.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Stubs to initialize the client driver when it is used standalone.
+        Calls MONGO_INITIALIZERs among# other things. Not built into the server.
+    group_files:
+    - src/mongo/client/init.cpp
+    - src/mongo/client/init.h
+-   group_title: 'TODO: Name this group'
+    group_description: The Core C++ Client Driver Library## who uses these, and why?
+        maybe this description should be broken up into## some components, e.g. what
+        exactly is a 'dbclient', a 'dbclientcursor'## and a 'syncclusterconnection'
+        ?
+    group_files:
+    - src/mongo/client/connpool.cpp
+    - src/mongo/client/connpool.h
+    - src/mongo/client/constants.h
+    - src/mongo/client/dbclient.cpp
+    - src/mongo/client/dbclient.h
+    - src/mongo/client/dbclient_rs.cpp
+    - src/mongo/client/dbclient_rs.h
+    - src/mongo/client/dbclient_rs_test.cpp
+    - src/mongo/client/dbclientcursor.cpp
+    - src/mongo/client/dbclientcursor.h
+    - src/mongo/client/dbclientinterface.h
+    - src/mongo/client/dbclientmockcursor.h
+    - src/mongo/client/scoped_db_conn_test.cpp
+    - src/mongo/client/syncclusterconnection.cpp
+    - src/mongo/client/syncclusterconnection.h
+-   group_title: 'TODO: Name this group'
+    group_description: Legacy wire protocol in the client driver## what is the new
+        equivalent, and where?
+    group_files:
+    - src/mongo/db/dbmessage.cpp
+    - src/mongo/db/dbmessage.h
+-   group_title: 'TODO: Name this group'
+    group_description: Utilities for keeping track of the data needed for getLastError
+        (part of legacy wire protocol).
+    group_files:
+    - src/mongo/db/lasterror.cpp
+    - src/mongo/db/lasterror.h
+-   group_title: 'TODO: Name this group'
+    group_description: Examples of how to use the client driver that get built in
+        the server
+    group_files:
+    - src/mongo/client/examples/authTest.cpp
+    - src/mongo/client/examples/clientTest.cpp
+    - src/mongo/client/examples/first.cpp
+    - src/mongo/client/examples/httpClientTest.cpp
+    - src/mongo/client/examples/rs.cpp
+    - src/mongo/client/examples/second.cpp
+    - src/mongo/client/examples/tutorial.cpp
+    - src/mongo/client/examples/whereExample.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Old performance testing utility. Builds the "mongoperf" binary.
+    group_files:
+    - src/mongo/client/examples/mongoperf.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Macro hacks! Apparently we pollute the namespace with tons
+        of crazy macros that cause problems# for consumers of the client driver if
+        we leave them in. I guess users don't like it when we# redefine things like
+        "malloc" and "verify" in their programs.
+    group_files:
+    - src/mongo/client/export_macros.h
+    - src/mongo/client/undef_macros.h
+    - src/mongo/client/redef_macros.h
+-   group_title: 'TODO: Name this group'
+    group_description: More fun macros! MONGO_likely and MONGO_unlikely as well as
+        LOG_SOME, which only logs every once# in a while. w00! Party!
+    group_files:
+    - src/mongo/server.h
+-   group_title: 'TODO: Name this group'
+    group_description: Gridfs wrapper around the client driver.
+    group_files:
+    - src/mongo/client/gridfs.cpp
+    - src/mongo/client/gridfs.h
+-   group_title: 'TODO: Name this group'
+    group_description: Cursor that represents a connection to a bunch of shards. You
+        would think that this only makes# sense in mongos, but it turns out it's built
+        into mongod for purposes of map reduce (the final# destination shard of a
+        map reduce job uses this in the "mapreduce.shardedfinish" command).
+    group_files:
+    - src/mongo/client/parallel.cpp
+    - src/mongo/client/parallel.h
+-   group_title: 'TODO: Name this group'
+    group_description: 'Hookup of client to sasl authentication.  The real meat of
+        built in when user passes --use-sasl-client.  TODO: regenerate this data with
+        --use-sasl-client to show the rest of the sasl related client driver files'
+    group_files:
+    - src/mongo/client/sasl_client_authenticate.cpp
+    - src/mongo/client/sasl_client_authenticate.h
 interface:
 -   object: !!python/unicode 'src/mongo/client/replica_set_monitor.cpp'
     symbol: !!python/unicode 'mongo::ReplicaSetMonitor::contains(mongo::HostAndPort
@@ -4050,116 +3628,538 @@ leaks:
     - !!python/unicode 'src/mongo/base/status.cpp'
     symbol: !!python/unicode 'mongo::Status::Status(mongo::ErrorCodes::Error, std::string
         const&, int)'
-module_description: 'TODO: cpp_client_driver description'
-module_groups:
--   group_description: Code to manage and store the current state of a connection
-        to a replica set.  It is designed to allow the state to be shared across multiple
-        threads so that each thread in our connection pool does not need to make a
-        network call to get the current replica set state
-    group_files:
-    - src/mongo/client/replica_set_monitor_internal.h
-    - src/mongo/client/replica_set_monitor.cpp
-    - src/mongo/client/replica_set_monitor.h
-    - src/mongo/client/replica_set_monitor_test.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Stubs so that the client driver can build alone since our deps
-        are screwed up. We have symbols# that are required by shared code that are
-        very internal to the server, so if we didn't have these# files we'd either
-        need to include the whole server (which we want to avoid) or the build wouldn't#
-        successfully link.
-    group_files:
-    - src/mongo/client/clientAndShell.cpp
-    - src/mongo/client/clientOnly-private.h
-    - src/mongo/client/clientOnly.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Stubs to initialize the client driver when it is used standalone.
-        Calls MONGO_INITIALIZERs among# other things. Not built into the server.
-    group_files:
-    - src/mongo/client/init.cpp
-    - src/mongo/client/init.h
-    group_title: 'TODO: Name this group'
--   group_description: The Core C++ Client Driver Library## who uses these, and why?
-        maybe this description should be broken up into## some components, e.g. what
-        exactly is a 'dbclient', a 'dbclientcursor'## and a 'syncclusterconnection'
-        ?
-    group_files:
-    - src/mongo/client/connpool.cpp
-    - src/mongo/client/connpool.h
-    - src/mongo/client/constants.h
-    - src/mongo/client/dbclient.cpp
-    - src/mongo/client/dbclient.h
-    - src/mongo/client/dbclient_rs.cpp
-    - src/mongo/client/dbclient_rs.h
-    - src/mongo/client/dbclient_rs_test.cpp
-    - src/mongo/client/dbclientcursor.cpp
-    - src/mongo/client/dbclientcursor.h
-    - src/mongo/client/dbclientinterface.h
-    - src/mongo/client/dbclientmockcursor.h
-    - src/mongo/client/scoped_db_conn_test.cpp
-    - src/mongo/client/syncclusterconnection.cpp
-    - src/mongo/client/syncclusterconnection.h
-    group_title: 'TODO: Name this group'
--   group_description: Legacy wire protocol in the client driver## what is the new
-        equivalent, and where?
-    group_files:
-    - src/mongo/db/dbmessage.cpp
-    - src/mongo/db/dbmessage.h
-    group_title: 'TODO: Name this group'
--   group_description: Utilities for keeping track of the data needed for getLastError
-        (part of legacy wire protocol).
-    group_files:
-    - src/mongo/db/lasterror.cpp
-    - src/mongo/db/lasterror.h
-    group_title: 'TODO: Name this group'
--   group_description: Examples of how to use the client driver that get built in
-        the server
-    group_files:
-    - src/mongo/client/examples/authTest.cpp
-    - src/mongo/client/examples/clientTest.cpp
-    - src/mongo/client/examples/first.cpp
-    - src/mongo/client/examples/httpClientTest.cpp
-    - src/mongo/client/examples/rs.cpp
-    - src/mongo/client/examples/second.cpp
-    - src/mongo/client/examples/tutorial.cpp
-    - src/mongo/client/examples/whereExample.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Old performance testing utility. Builds the "mongoperf" binary.
-    group_files:
-    - src/mongo/client/examples/mongoperf.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Macro hacks! Apparently we pollute the namespace with tons
-        of crazy macros that cause problems# for consumers of the client driver if
-        we leave them in. I guess users don't like it when we# redefine things like
-        "malloc" and "verify" in their programs.
-    group_files:
-    - src/mongo/client/export_macros.h
-    - src/mongo/client/undef_macros.h
-    - src/mongo/client/redef_macros.h
-    group_title: 'TODO: Name this group'
--   group_description: More fun macros! MONGO_likely and MONGO_unlikely as well as
-        LOG_SOME, which only logs every once# in a while. w00! Party!
-    group_files:
-    - src/mongo/server.h
-    group_title: 'TODO: Name this group'
--   group_description: Gridfs wrapper around the client driver.
-    group_files:
-    - src/mongo/client/gridfs.cpp
-    - src/mongo/client/gridfs.h
-    group_title: 'TODO: Name this group'
--   group_description: Cursor that represents a connection to a bunch of shards. You
-        would think that this only makes# sense in mongos, but it turns out it's built
-        into mongod for purposes of map reduce (the final# destination shard of a
-        map reduce job uses this in the "mapreduce.shardedfinish" command).
-    group_files:
-    - src/mongo/client/parallel.cpp
-    - src/mongo/client/parallel.h
-    group_title: 'TODO: Name this group'
--   group_description: 'Hookup of client to sasl authentication.  The real meat of
-        built in when user passes --use-sasl-client.  TODO: regenerate this data with
-        --use-sasl-client to show the rest of the sasl related client driver files'
-    group_files:
-    - src/mongo/client/sasl_client_authenticate.cpp
-    - src/mongo/client/sasl_client_authenticate.h
-    group_title: 'TODO: Name this group'
-module_name: cpp_client_driver
-module_title: Cpp Client Driver
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/replica_set_monitor_internal.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/replica_set_monitor.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/replica_set_monitor.h
+-   execs: []
+    name: src/mongo/client/replica_set_monitor_test.cpp
+-   execs: []
+    name: src/mongo/client/clientAndShell.cpp
+-   execs: []
+    name: src/mongo/client/clientOnly-private.h
+-   execs: []
+    name: src/mongo/client/clientOnly.cpp
+-   execs: []
+    name: src/mongo/client/init.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/client/init.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/connpool.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/connpool.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/constants.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclient.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/client/dbclient.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclient_rs.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclient_rs.h
+-   execs: []
+    name: src/mongo/client/dbclient_rs_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclientcursor.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclientcursor.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclientinterface.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/dbclientmockcursor.h
+-   execs: []
+    name: src/mongo/client/scoped_db_conn_test.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/syncclusterconnection.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/syncclusterconnection.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/dbmessage.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/dbmessage.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/lasterror.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/db/lasterror.h
+-   execs: []
+    name: src/mongo/client/examples/authTest.cpp
+-   execs: []
+    name: src/mongo/client/examples/clientTest.cpp
+-   execs: []
+    name: src/mongo/client/examples/first.cpp
+-   execs: []
+    name: src/mongo/client/examples/httpClientTest.cpp
+-   execs: []
+    name: src/mongo/client/examples/rs.cpp
+-   execs: []
+    name: src/mongo/client/examples/second.cpp
+-   execs: []
+    name: src/mongo/client/examples/tutorial.cpp
+-   execs: []
+    name: src/mongo/client/examples/whereExample.cpp
+-   execs:
+    - !!python/unicode 'mongoperf'
+    name: src/mongo/client/examples/mongoperf.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/export_macros.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/undef_macros.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/redef_macros.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/server.h
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/client/gridfs.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/client/gridfs.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/parallel.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/parallel.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/sasl_client_authenticate.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/client/sasl_client_authenticate.h

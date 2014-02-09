@@ -1,225 +1,65 @@
-files_with_exec:
--   execs: []
-    name: src/mongo/tools/admin.cpp
--   execs:
-    - !!python/unicode 'mongobridge'
-    name: src/mongo/tools/bridge.cpp
--   execs:
-    - !!python/unicode 'bsondump'
-    name: src/mongo/tools/bsondump.cpp
--   execs:
-    - !!python/unicode 'bsondump'
-    name: src/mongo/tools/bsondump_options.cpp
--   execs:
-    - !!python/unicode 'bsondump'
-    name: src/mongo/tools/bsondump_options.h
--   execs:
-    - !!python/unicode 'bsondump'
-    name: src/mongo/tools/bsondump_options_init.cpp
--   execs:
-    - !!python/unicode 'mongodump'
-    name: src/mongo/tools/dump.cpp
--   execs:
-    - !!python/unicode 'mongoexport'
-    name: src/mongo/tools/export.cpp
--   execs:
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/files.cpp
--   execs:
-    - !!python/unicode 'mongoimport'
-    name: src/mongo/tools/import.cpp
--   execs: []
-    name: src/mongo/tools/mongoadmin_options.cpp
--   execs: []
-    name: src/mongo/tools/mongoadmin_options.h
--   execs: []
-    name: src/mongo/tools/mongoadmin_options_init.cpp
--   execs:
-    - !!python/unicode 'mongobridge'
-    name: src/mongo/tools/mongobridge_options.cpp
--   execs:
-    - !!python/unicode 'mongobridge'
-    name: src/mongo/tools/mongobridge_options.h
--   execs:
-    - !!python/unicode 'mongobridge'
-    name: src/mongo/tools/mongobridge_options_init.cpp
--   execs:
-    - !!python/unicode 'mongodump'
-    name: src/mongo/tools/mongodump_options.cpp
--   execs:
-    - !!python/unicode 'mongodump'
-    name: src/mongo/tools/mongodump_options.h
--   execs:
-    - !!python/unicode 'mongodump'
-    name: src/mongo/tools/mongodump_options_init.cpp
--   execs:
-    - !!python/unicode 'mongoexport'
-    name: src/mongo/tools/mongoexport_options.cpp
--   execs:
-    - !!python/unicode 'mongoexport'
-    name: src/mongo/tools/mongoexport_options.h
--   execs:
-    - !!python/unicode 'mongoexport'
-    name: src/mongo/tools/mongoexport_options_init.cpp
--   execs:
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/mongofiles_options.cpp
--   execs:
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/mongofiles_options.h
--   execs:
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/mongofiles_options_init.cpp
--   execs:
-    - !!python/unicode 'mongoimport'
-    name: src/mongo/tools/mongoimport_options.cpp
--   execs:
-    - !!python/unicode 'mongoimport'
-    name: src/mongo/tools/mongoimport_options.h
--   execs:
-    - !!python/unicode 'mongoimport'
-    name: src/mongo/tools/mongoimport_options_init.cpp
--   execs:
-    - !!python/unicode 'mongooplog'
-    name: src/mongo/tools/mongooplog_options.cpp
--   execs:
-    - !!python/unicode 'mongooplog'
-    name: src/mongo/tools/mongooplog_options.h
--   execs:
-    - !!python/unicode 'mongooplog'
-    name: src/mongo/tools/mongooplog_options_init.cpp
--   execs:
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/tools/mongorestore_options.cpp
--   execs:
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/tools/mongorestore_options.h
--   execs:
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/tools/mongorestore_options_init.cpp
--   execs:
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/mongostat_options.cpp
--   execs:
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/mongostat_options.h
--   execs:
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/mongostat_options_init.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    name: src/mongo/tools/mongotop_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    name: src/mongo/tools/mongotop_options.h
--   execs:
-    - !!python/unicode 'mongotop'
-    name: src/mongo/tools/mongotop_options_init.cpp
--   execs:
-    - !!python/unicode 'mongooplog'
-    name: src/mongo/tools/oplog.cpp
--   execs:
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/tools/restore.cpp
--   execs:
-    - !!python/unicode 'mongosniff'
-    name: src/mongo/tools/sniffer.cpp
--   execs:
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/stat.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/stat_util.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/stat_util.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/tool.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/tool.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/tool_logger.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongostat'
-    name: src/mongo/tools/tool_logger.h
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/tool_options.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongorestore'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    name: src/mongo/tools/tool_options.h
--   execs:
-    - !!python/unicode 'mongotop'
-    name: src/mongo/tools/top.cpp
+module_title: Tools
+module_name: tools
+module_description: 'TODO: tools description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Tools and tool options. For most tools, just prepend "mongo"
+        to get the name of the tool the file# is for. For example, "bridge.cpp" is
+        the main for "mongobridge".
+    group_files:
+    - src/mongo/tools/admin.cpp
+    - src/mongo/tools/bridge.cpp
+    - src/mongo/tools/bsondump.cpp
+    - src/mongo/tools/bsondump_options.cpp
+    - src/mongo/tools/bsondump_options.h
+    - src/mongo/tools/bsondump_options_init.cpp
+    - src/mongo/tools/dump.cpp
+    - src/mongo/tools/export.cpp
+    - src/mongo/tools/files.cpp
+    - src/mongo/tools/import.cpp
+    - src/mongo/tools/mongoadmin_options.cpp
+    - src/mongo/tools/mongoadmin_options.h
+    - src/mongo/tools/mongoadmin_options_init.cpp
+    - src/mongo/tools/mongobridge_options.cpp
+    - src/mongo/tools/mongobridge_options.h
+    - src/mongo/tools/mongobridge_options_init.cpp
+    - src/mongo/tools/mongodump_options.cpp
+    - src/mongo/tools/mongodump_options.h
+    - src/mongo/tools/mongodump_options_init.cpp
+    - src/mongo/tools/mongoexport_options.cpp
+    - src/mongo/tools/mongoexport_options.h
+    - src/mongo/tools/mongoexport_options_init.cpp
+    - src/mongo/tools/mongofiles_options.cpp
+    - src/mongo/tools/mongofiles_options.h
+    - src/mongo/tools/mongofiles_options_init.cpp
+    - src/mongo/tools/mongoimport_options.cpp
+    - src/mongo/tools/mongoimport_options.h
+    - src/mongo/tools/mongoimport_options_init.cpp
+    - src/mongo/tools/mongooplog_options.cpp
+    - src/mongo/tools/mongooplog_options.h
+    - src/mongo/tools/mongooplog_options_init.cpp
+    - src/mongo/tools/mongorestore_options.cpp
+    - src/mongo/tools/mongorestore_options.h
+    - src/mongo/tools/mongorestore_options_init.cpp
+    - src/mongo/tools/mongostat_options.cpp
+    - src/mongo/tools/mongostat_options.h
+    - src/mongo/tools/mongostat_options_init.cpp
+    - src/mongo/tools/mongotop_options.cpp
+    - src/mongo/tools/mongotop_options.h
+    - src/mongo/tools/mongotop_options_init.cpp
+    - src/mongo/tools/oplog.cpp
+    - src/mongo/tools/restore.cpp
+    - src/mongo/tools/sniffer.cpp
+    - src/mongo/tools/stat.cpp
+    - src/mongo/tools/stat_util.cpp
+    - src/mongo/tools/stat_util.h
+    - src/mongo/tools/tool.cpp
+    - src/mongo/tools/tool.h
+    - src/mongo/tools/tool_logger.cpp
+    - src/mongo/tools/tool_logger.h
+    - src/mongo/tools/tool_options.cpp
+    - src/mongo/tools/tool_options.h
+    - src/mongo/tools/top.cpp
 interface: []
 leaks:
 -   object: !!python/unicode 'src/mongo/tools/admin.cpp'
@@ -2869,65 +2709,225 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
-module_description: 'TODO: tools description'
-module_groups:
--   group_description: Tools and tool options. For most tools, just prepend "mongo"
-        to get the name of the tool the file# is for. For example, "bridge.cpp" is
-        the main for "mongobridge".
-    group_files:
-    - src/mongo/tools/admin.cpp
-    - src/mongo/tools/bridge.cpp
-    - src/mongo/tools/bsondump.cpp
-    - src/mongo/tools/bsondump_options.cpp
-    - src/mongo/tools/bsondump_options.h
-    - src/mongo/tools/bsondump_options_init.cpp
-    - src/mongo/tools/dump.cpp
-    - src/mongo/tools/export.cpp
-    - src/mongo/tools/files.cpp
-    - src/mongo/tools/import.cpp
-    - src/mongo/tools/mongoadmin_options.cpp
-    - src/mongo/tools/mongoadmin_options.h
-    - src/mongo/tools/mongoadmin_options_init.cpp
-    - src/mongo/tools/mongobridge_options.cpp
-    - src/mongo/tools/mongobridge_options.h
-    - src/mongo/tools/mongobridge_options_init.cpp
-    - src/mongo/tools/mongodump_options.cpp
-    - src/mongo/tools/mongodump_options.h
-    - src/mongo/tools/mongodump_options_init.cpp
-    - src/mongo/tools/mongoexport_options.cpp
-    - src/mongo/tools/mongoexport_options.h
-    - src/mongo/tools/mongoexport_options_init.cpp
-    - src/mongo/tools/mongofiles_options.cpp
-    - src/mongo/tools/mongofiles_options.h
-    - src/mongo/tools/mongofiles_options_init.cpp
-    - src/mongo/tools/mongoimport_options.cpp
-    - src/mongo/tools/mongoimport_options.h
-    - src/mongo/tools/mongoimport_options_init.cpp
-    - src/mongo/tools/mongooplog_options.cpp
-    - src/mongo/tools/mongooplog_options.h
-    - src/mongo/tools/mongooplog_options_init.cpp
-    - src/mongo/tools/mongorestore_options.cpp
-    - src/mongo/tools/mongorestore_options.h
-    - src/mongo/tools/mongorestore_options_init.cpp
-    - src/mongo/tools/mongostat_options.cpp
-    - src/mongo/tools/mongostat_options.h
-    - src/mongo/tools/mongostat_options_init.cpp
-    - src/mongo/tools/mongotop_options.cpp
-    - src/mongo/tools/mongotop_options.h
-    - src/mongo/tools/mongotop_options_init.cpp
-    - src/mongo/tools/oplog.cpp
-    - src/mongo/tools/restore.cpp
-    - src/mongo/tools/sniffer.cpp
-    - src/mongo/tools/stat.cpp
-    - src/mongo/tools/stat_util.cpp
-    - src/mongo/tools/stat_util.h
-    - src/mongo/tools/tool.cpp
-    - src/mongo/tools/tool.h
-    - src/mongo/tools/tool_logger.cpp
-    - src/mongo/tools/tool_logger.h
-    - src/mongo/tools/tool_options.cpp
-    - src/mongo/tools/tool_options.h
-    - src/mongo/tools/top.cpp
-    group_title: 'TODO: Name this group'
-module_name: tools
-module_title: Tools
+files_with_exec:
+-   execs: []
+    name: src/mongo/tools/admin.cpp
+-   execs:
+    - !!python/unicode 'mongobridge'
+    name: src/mongo/tools/bridge.cpp
+-   execs:
+    - !!python/unicode 'bsondump'
+    name: src/mongo/tools/bsondump.cpp
+-   execs:
+    - !!python/unicode 'bsondump'
+    name: src/mongo/tools/bsondump_options.cpp
+-   execs:
+    - !!python/unicode 'bsondump'
+    name: src/mongo/tools/bsondump_options.h
+-   execs:
+    - !!python/unicode 'bsondump'
+    name: src/mongo/tools/bsondump_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongodump'
+    name: src/mongo/tools/dump.cpp
+-   execs:
+    - !!python/unicode 'mongoexport'
+    name: src/mongo/tools/export.cpp
+-   execs:
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/files.cpp
+-   execs:
+    - !!python/unicode 'mongoimport'
+    name: src/mongo/tools/import.cpp
+-   execs: []
+    name: src/mongo/tools/mongoadmin_options.cpp
+-   execs: []
+    name: src/mongo/tools/mongoadmin_options.h
+-   execs: []
+    name: src/mongo/tools/mongoadmin_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongobridge'
+    name: src/mongo/tools/mongobridge_options.cpp
+-   execs:
+    - !!python/unicode 'mongobridge'
+    name: src/mongo/tools/mongobridge_options.h
+-   execs:
+    - !!python/unicode 'mongobridge'
+    name: src/mongo/tools/mongobridge_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongodump'
+    name: src/mongo/tools/mongodump_options.cpp
+-   execs:
+    - !!python/unicode 'mongodump'
+    name: src/mongo/tools/mongodump_options.h
+-   execs:
+    - !!python/unicode 'mongodump'
+    name: src/mongo/tools/mongodump_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongoexport'
+    name: src/mongo/tools/mongoexport_options.cpp
+-   execs:
+    - !!python/unicode 'mongoexport'
+    name: src/mongo/tools/mongoexport_options.h
+-   execs:
+    - !!python/unicode 'mongoexport'
+    name: src/mongo/tools/mongoexport_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/mongofiles_options.cpp
+-   execs:
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/mongofiles_options.h
+-   execs:
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/mongofiles_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongoimport'
+    name: src/mongo/tools/mongoimport_options.cpp
+-   execs:
+    - !!python/unicode 'mongoimport'
+    name: src/mongo/tools/mongoimport_options.h
+-   execs:
+    - !!python/unicode 'mongoimport'
+    name: src/mongo/tools/mongoimport_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongooplog'
+    name: src/mongo/tools/mongooplog_options.cpp
+-   execs:
+    - !!python/unicode 'mongooplog'
+    name: src/mongo/tools/mongooplog_options.h
+-   execs:
+    - !!python/unicode 'mongooplog'
+    name: src/mongo/tools/mongooplog_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/tools/mongorestore_options.cpp
+-   execs:
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/tools/mongorestore_options.h
+-   execs:
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/tools/mongorestore_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/mongostat_options.cpp
+-   execs:
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/mongostat_options.h
+-   execs:
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/mongostat_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    name: src/mongo/tools/mongotop_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    name: src/mongo/tools/mongotop_options.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    name: src/mongo/tools/mongotop_options_init.cpp
+-   execs:
+    - !!python/unicode 'mongooplog'
+    name: src/mongo/tools/oplog.cpp
+-   execs:
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/tools/restore.cpp
+-   execs:
+    - !!python/unicode 'mongosniff'
+    name: src/mongo/tools/sniffer.cpp
+-   execs:
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/stat.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/stat_util.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/stat_util.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/tool.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/tool.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/tool_logger.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongostat'
+    name: src/mongo/tools/tool_logger.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/tool_options.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongorestore'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    name: src/mongo/tools/tool_options.h
+-   execs:
+    - !!python/unicode 'mongotop'
+    name: src/mongo/tools/top.cpp

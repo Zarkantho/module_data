@@ -1,246 +1,57 @@
-files_with_exec:
--   execs: []
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/assert.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/batch_api.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/collection.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/db.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/mongo.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/mr.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/query.js
--   execs: []
-    name: src/mongo/shell/replsetbridge.js
--   execs: []
-    name: src/mongo/shell/replsettest.js
--   execs: []
-    name: src/mongo/shell/servers.js
--   execs: []
-    name: src/mongo/shell/servers_misc.js
--   execs: []
-    name: src/mongo/shell/shardingtest.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/types.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/utils.js
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/shell/utils_sh.js
--   execs: []
-    name: src/mongo/shell/dbshell.cpp
--   execs: []
-    name: src/mongo/shell/linenoise.cpp
--   execs: []
-    name: src/mongo/shell/linenoise.h
--   execs: []
-    name: src/mongo/shell/linenoise_utf8.cpp
--   execs: []
-    name: src/mongo/shell/linenoise_utf8.h
--   execs: []
-    name: src/mongo/shell/mk_wcwidth.cpp
--   execs: []
-    name: src/mongo/shell/mk_wcwidth.h
--   execs: []
-    name: src/mongo/shell/shell_utils.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils.h
--   execs: []
-    name: src/mongo/shell/shell_utils_extended.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils_extended.h
--   execs: []
-    name: src/mongo/shell/shell_utils_launcher.cpp
--   execs: []
-    name: src/mongo/shell/shell_utils_launcher.h
--   execs: []
-    name: src/mongo/shell/shell_options.cpp
--   execs: []
-    name: src/mongo/shell/shell_options.h
--   execs: []
-    name: src/mongo/shell/shell_options_init.cpp
+module_title: Mongo Shell
+module_name: mongo_shell
+module_description: The mongo shell is a the v8 javascript interpreter with bindings
+    into the C++ driver.  This is used to run javascript tests against the server
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: C++ files that are automatically generated from the Javascript
+        source files. This means that certain Javascript files work in the shell because
+        they are actually compiled in, which means that sometimes the server needs
+        to be recompiled to see changes in Javascript files
+    group_files:
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Javascript files that get wrapped in strings and put in cpp
+        files. See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
+    group_files:
+    - src/mongo/shell/assert.js
+    - src/mongo/shell/batch_api.js
+    - src/mongo/shell/collection.js
+    - src/mongo/shell/db.js
+    - src/mongo/shell/mongo.js
+    - src/mongo/shell/mr.js
+    - src/mongo/shell/query.js
+    - src/mongo/shell/replsetbridge.js
+    - src/mongo/shell/replsettest.js
+    - src/mongo/shell/servers.js
+    - src/mongo/shell/servers_misc.js
+    - src/mongo/shell/shardingtest.js
+    - src/mongo/shell/types.js
+    - src/mongo/shell/utils.js
+    - src/mongo/shell/utils_sh.js
+-   group_title: 'TODO: Name this group'
+    group_description: Files only built into the mongo shell
+    group_files:
+    - src/mongo/shell/dbshell.cpp
+    - src/mongo/shell/linenoise.cpp
+    - src/mongo/shell/linenoise.h
+    - src/mongo/shell/linenoise_utf8.cpp
+    - src/mongo/shell/linenoise_utf8.h
+    - src/mongo/shell/mk_wcwidth.cpp
+    - src/mongo/shell/mk_wcwidth.h
+    - src/mongo/shell/shell_utils.cpp
+    - src/mongo/shell/shell_utils.h
+    - src/mongo/shell/shell_utils_extended.cpp
+    - src/mongo/shell/shell_utils_extended.h
+    - src/mongo/shell/shell_utils_launcher.cpp
+    - src/mongo/shell/shell_utils_launcher.h
+-   group_title: 'TODO: Name this group'
+    group_description: Shell command line options
+    group_files:
+    - src/mongo/shell/shell_options.cpp
+    - src/mongo/shell/shell_options.h
+    - src/mongo/shell/shell_options_init.cpp
 interface:
 -   object: !!python/unicode 'build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp'
     symbol: !!python/unicode 'mongo::JSFiles::utils'
@@ -1075,57 +886,246 @@ leaks:
         const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&,
         std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string,
         std::allocator<std::string> > const&)'
-module_description: The mongo shell is a the v8 javascript interpreter with bindings
-    into the C++ driver.  This is used to run javascript tests against the server
-module_groups:
--   group_description: C++ files that are automatically generated from the Javascript
-        source files. This means that certain Javascript files work in the shell because
-        they are actually compiled in, which means that sometimes the server needs
-        to be recompiled to see changes in Javascript files
-    group_files:
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Javascript files that get wrapped in strings and put in cpp
-        files. See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
-    group_files:
-    - src/mongo/shell/assert.js
-    - src/mongo/shell/batch_api.js
-    - src/mongo/shell/collection.js
-    - src/mongo/shell/db.js
-    - src/mongo/shell/mongo.js
-    - src/mongo/shell/mr.js
-    - src/mongo/shell/query.js
-    - src/mongo/shell/replsetbridge.js
-    - src/mongo/shell/replsettest.js
-    - src/mongo/shell/servers.js
-    - src/mongo/shell/servers_misc.js
-    - src/mongo/shell/shardingtest.js
-    - src/mongo/shell/types.js
-    - src/mongo/shell/utils.js
-    - src/mongo/shell/utils_sh.js
-    group_title: 'TODO: Name this group'
--   group_description: Files only built into the mongo shell
-    group_files:
-    - src/mongo/shell/dbshell.cpp
-    - src/mongo/shell/linenoise.cpp
-    - src/mongo/shell/linenoise.h
-    - src/mongo/shell/linenoise_utf8.cpp
-    - src/mongo/shell/linenoise_utf8.h
-    - src/mongo/shell/mk_wcwidth.cpp
-    - src/mongo/shell/mk_wcwidth.h
-    - src/mongo/shell/shell_utils.cpp
-    - src/mongo/shell/shell_utils.h
-    - src/mongo/shell/shell_utils_extended.cpp
-    - src/mongo/shell/shell_utils_extended.h
-    - src/mongo/shell/shell_utils_launcher.cpp
-    - src/mongo/shell/shell_utils_launcher.h
-    group_title: 'TODO: Name this group'
--   group_description: Shell command line options
-    group_files:
-    - src/mongo/shell/shell_options.cpp
-    - src/mongo/shell/shell_options.h
-    - src/mongo/shell/shell_options_init.cpp
-    group_title: 'TODO: Name this group'
-module_name: mongo_shell
-module_title: Mongo Shell
+files_with_exec:
+-   execs: []
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/assert.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/batch_api.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/collection.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/db.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/mongo.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/mr.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/query.js
+-   execs: []
+    name: src/mongo/shell/replsetbridge.js
+-   execs: []
+    name: src/mongo/shell/replsettest.js
+-   execs: []
+    name: src/mongo/shell/servers.js
+-   execs: []
+    name: src/mongo/shell/servers_misc.js
+-   execs: []
+    name: src/mongo/shell/shardingtest.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/types.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/utils.js
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/shell/utils_sh.js
+-   execs: []
+    name: src/mongo/shell/dbshell.cpp
+-   execs: []
+    name: src/mongo/shell/linenoise.cpp
+-   execs: []
+    name: src/mongo/shell/linenoise.h
+-   execs: []
+    name: src/mongo/shell/linenoise_utf8.cpp
+-   execs: []
+    name: src/mongo/shell/linenoise_utf8.h
+-   execs: []
+    name: src/mongo/shell/mk_wcwidth.cpp
+-   execs: []
+    name: src/mongo/shell/mk_wcwidth.h
+-   execs: []
+    name: src/mongo/shell/shell_utils.cpp
+-   execs: []
+    name: src/mongo/shell/shell_utils.h
+-   execs: []
+    name: src/mongo/shell/shell_utils_extended.cpp
+-   execs: []
+    name: src/mongo/shell/shell_utils_extended.h
+-   execs: []
+    name: src/mongo/shell/shell_utils_launcher.cpp
+-   execs: []
+    name: src/mongo/shell/shell_utils_launcher.h
+-   execs: []
+    name: src/mongo/shell/shell_options.cpp
+-   execs: []
+    name: src/mongo/shell/shell_options.h
+-   execs: []
+    name: src/mongo/shell/shell_options_init.cpp

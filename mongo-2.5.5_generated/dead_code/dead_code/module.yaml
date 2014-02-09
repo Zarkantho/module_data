@@ -1,3 +1,123 @@
+module_title: Dead Code
+module_name: dead_code
+module_description: 'TODO: dead_code description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: ''
+    group_files:
+    - src/mongo/util/trace.cpp
+    - src/mongo/db/tests.cpp
+    - src/mongo/db/stats/service_stats.cpp
+    - src/mongo/db/stats/service_stats.h
+    - src/mongo/util/histogram.cpp
+    - src/mongo/util/histogram.h
+    - src/mongo/dbtests/histogram_test.cpp
+    - src/mongo/util/lruishmap.h
+    - src/mongo/db/taskqueue.h
+interface: []
+leaks:
+-   object: !!python/unicode 'src/mongo/util/trace.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::lock_shared()'
+-   object: !!python/unicode 'src/mongo/util/trace.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock()'
+-   object: !!python/unicode 'src/mongo/util/trace.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock_shared()'
+-   object: !!python/unicode 'src/mongo/util/trace.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::lock()'
+-   object: !!python/unicode 'src/mongo/util/trace.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
+    symbol: !!python/unicode 'mongo::SimpleRWLock::SimpleRWLock(mongo::StringData
+        const&)'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+        std::string const&, mongo::logger::LogSeverity)'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
+    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
+    symbol: !!python/unicode 'mongo::getThreadName()'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
+    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
+-   object: !!python/unicode 'src/mongo/db/tests.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/logger/logger.cpp'
+    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
+-   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
+-   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
+    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
+-   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
+        int)'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+        const*, char const*, char const*, unsigned int)'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::Suite(std::string const&)'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/util/assert_util.cpp'
+    symbol: !!python/unicode 'mongo::demangleName(std::type_info const&)'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
+        ()> const&)'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
+        const'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'typeinfo for mongo::unittest::Suite'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::system_category()'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
+    symbol: !!python/unicode 'mongo::unittest::Suite::~Suite()'
+-   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
+    sources:
+    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
+    symbol: !!python/unicode 'boost::system::generic_category()'
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'
@@ -144,123 +264,3 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/mongo/db/taskqueue.h
-interface: []
-leaks:
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::lock_shared()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::unlock_shared()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::lock()'
--   object: !!python/unicode 'src/mongo/util/trace.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/rwlockimpl.cpp'
-    symbol: !!python/unicode 'mongo::SimpleRWLock::SimpleRWLock(mongo::StringData
-        const&)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::~LogstreamBuilder()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-        std::string const&, mongo::logger::LogSeverity)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/stacktrace.cpp'
-    symbol: !!python/unicode 'mongo::printStackTrace(std::ostream&)'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/thread_name.cpp'
-    symbol: !!python/unicode 'mongo::getThreadName()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logstream_builder.cpp'
-    symbol: !!python/unicode 'mongo::logger::LogstreamBuilder::makeStream()'
--   object: !!python/unicode 'src/mongo/db/tests.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/logger/logger.cpp'
-    symbol: !!python/unicode 'mongo::logger::globalLogManager()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::SpinLock()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/concurrency/spin_lock.cpp'
-    symbol: !!python/unicode 'mongo::SpinLock::~SpinLock()'
--   object: !!python/unicode 'src/mongo/db/stats/service_stats.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::verifyFailed(char const*, char const*, unsigned
-        int)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-        const*, char const*, char const*, unsigned int)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::Suite(std::string const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::~TestAssertion()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/util/assert_util.cpp'
-    symbol: !!python/unicode 'mongo::demangleName(std::type_info const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::add(std::string const&, boost::function<void
-        ()> const&)'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::TestAssertion::fail(std::string const&)
-        const'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'typeinfo for mongo::unittest::Suite'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::system_category()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/mongo/unittest/unittest.cpp'
-    symbol: !!python/unicode 'mongo::unittest::Suite::~Suite()'
--   object: !!python/unicode 'src/mongo/dbtests/histogram_test.cpp'
-    sources:
-    - !!python/unicode 'src/third_party/boost/libs/system/src/error_code.cpp'
-    symbol: !!python/unicode 'boost::system::generic_category()'
-module_description: 'TODO: dead_code description'
-module_groups:
--   group_description: ''
-    group_files:
-    - src/mongo/util/trace.cpp
-    - src/mongo/db/tests.cpp
-    - src/mongo/db/stats/service_stats.cpp
-    - src/mongo/db/stats/service_stats.h
-    - src/mongo/util/histogram.cpp
-    - src/mongo/util/histogram.h
-    - src/mongo/dbtests/histogram_test.cpp
-    - src/mongo/util/lruishmap.h
-    - src/mongo/db/taskqueue.h
-    group_title: 'TODO: Name this group'
-module_name: dead_code
-module_title: Dead Code

@@ -1,71 +1,17 @@
-files_with_exec:
--   execs:
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'mongos'
-    name: src/mongo/db/dbwebserver.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/db/dbwebserver.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/restapi.cpp
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/restapi.h
--   execs:
-    - !!python/unicode 'mongod'
-    name: src/mongo/db/clientlistplugin.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/net/miniwebserver.cpp
--   execs:
-    - !!python/unicode 'mongotop'
-    - !!python/unicode 'mongod'
-    - !!python/unicode 'perftest'
-    - !!python/unicode 'mongoperf'
-    - !!python/unicode 'mongosniff'
-    - !!python/unicode 'mongodump'
-    - !!python/unicode 'mongobridge'
-    - !!python/unicode 'mongostat'
-    - !!python/unicode 'bsondump'
-    - !!python/unicode 'mongoimport'
-    - !!python/unicode 'mongos'
-    - !!python/unicode 'mongooplog'
-    - !!python/unicode 'test'
-    - !!python/unicode 'mongoexport'
-    - !!python/unicode 'mongofiles'
-    - !!python/unicode 'mongorestore'
-    name: src/mongo/util/net/miniwebserver.h
+module_title: Database Web Accesss
+module_name: database_web_accesss
+module_description: 'TODO: database_web_accesss description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Web access to the database, including rest, jsonp, and http.
+    group_files:
+    - src/mongo/db/dbwebserver.cpp
+    - src/mongo/db/dbwebserver.h
+    - src/mongo/db/restapi.cpp
+    - src/mongo/db/restapi.h
+    - src/mongo/db/clientlistplugin.cpp
+    - src/mongo/util/net/miniwebserver.cpp
+    - src/mongo/util/net/miniwebserver.h
 interface:
 -   object: !!python/unicode 'src/mongo/db/dbwebserver.cpp'
     symbol: !!python/unicode 'mongo::webServerThread(mongo::AdminAccess const*)'
@@ -629,17 +575,71 @@ leaks:
     sources:
     - !!python/unicode 'src/mongo/util/hex.cpp'
     symbol: !!python/unicode 'std::string mongo::integerToHex<int>(int)'
-module_description: 'TODO: database_web_accesss description'
-module_groups:
--   group_description: Web access to the database, including rest, jsonp, and http.
-    group_files:
-    - src/mongo/db/dbwebserver.cpp
-    - src/mongo/db/dbwebserver.h
-    - src/mongo/db/restapi.cpp
-    - src/mongo/db/restapi.h
-    - src/mongo/db/clientlistplugin.cpp
-    - src/mongo/util/net/miniwebserver.cpp
-    - src/mongo/util/net/miniwebserver.h
-    group_title: 'TODO: Name this group'
-module_name: database_web_accesss
-module_title: Database Web Accesss
+files_with_exec:
+-   execs:
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'mongos'
+    name: src/mongo/db/dbwebserver.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/db/dbwebserver.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/restapi.cpp
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/restapi.h
+-   execs:
+    - !!python/unicode 'mongod'
+    name: src/mongo/db/clientlistplugin.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/miniwebserver.cpp
+-   execs:
+    - !!python/unicode 'mongotop'
+    - !!python/unicode 'mongod'
+    - !!python/unicode 'perftest'
+    - !!python/unicode 'mongoperf'
+    - !!python/unicode 'mongosniff'
+    - !!python/unicode 'mongodump'
+    - !!python/unicode 'mongobridge'
+    - !!python/unicode 'mongostat'
+    - !!python/unicode 'bsondump'
+    - !!python/unicode 'mongoimport'
+    - !!python/unicode 'mongos'
+    - !!python/unicode 'mongooplog'
+    - !!python/unicode 'test'
+    - !!python/unicode 'mongoexport'
+    - !!python/unicode 'mongofiles'
+    - !!python/unicode 'mongorestore'
+    name: src/mongo/util/net/miniwebserver.h

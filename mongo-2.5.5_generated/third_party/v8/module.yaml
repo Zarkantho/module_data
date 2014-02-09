@@ -1,3 +1,1025 @@
+module_title: V8
+module_name: v8
+module_description: 'TODO: v8 description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Third Party - V8 Javascript engine auto generated files
+    group_files:
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
+    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
+-   group_title: 'TODO: Name this group'
+    group_description: Third Party - V8 Javascript engine
+    group_files:
+    - src/third_party/shim_v8.cpp
+    - src/third_party/v8/include/v8-debug.h
+    - src/third_party/v8/include/v8-profiler.h
+    - src/third_party/v8/include/v8-testing.h
+    - src/third_party/v8/include/v8.h
+    - src/third_party/v8/include/v8stdint.h
+    - src/third_party/v8/src/accessors.cc
+    - src/third_party/v8/src/accessors.h
+    - src/third_party/v8/src/allocation-inl.h
+    - src/third_party/v8/src/allocation.cc
+    - src/third_party/v8/src/allocation.h
+    - src/third_party/v8/src/api.cc
+    - src/third_party/v8/src/api.h
+    - src/third_party/v8/src/apinatives.js
+    - src/third_party/v8/src/apiutils.h
+    - src/third_party/v8/src/arguments.h
+    - src/third_party/v8/src/array.js
+    - src/third_party/v8/src/assembler.cc
+    - src/third_party/v8/src/assembler.h
+    - src/third_party/v8/src/ast.cc
+    - src/third_party/v8/src/ast.h
+    - src/third_party/v8/src/atomicops.h
+    - src/third_party/v8/src/atomicops_internals_arm_gcc.h
+    - src/third_party/v8/src/atomicops_internals_mips_gcc.h
+    - src/third_party/v8/src/atomicops_internals_x86_gcc.cc
+    - src/third_party/v8/src/atomicops_internals_x86_gcc.h
+    - src/third_party/v8/src/atomicops_internals_x86_macosx.h
+    - src/third_party/v8/src/atomicops_internals_x86_msvc.h
+    - src/third_party/v8/src/bignum-dtoa.cc
+    - src/third_party/v8/src/bignum-dtoa.h
+    - src/third_party/v8/src/bignum.cc
+    - src/third_party/v8/src/bignum.h
+    - src/third_party/v8/src/bootstrapper.cc
+    - src/third_party/v8/src/bootstrapper.h
+    - src/third_party/v8/src/builtins.cc
+    - src/third_party/v8/src/builtins.h
+    - src/third_party/v8/src/bytecodes-irregexp.h
+    - src/third_party/v8/src/cached-powers.cc
+    - src/third_party/v8/src/cached-powers.h
+    - src/third_party/v8/src/char-predicates-inl.h
+    - src/third_party/v8/src/char-predicates.h
+    - src/third_party/v8/src/checks.cc
+    - src/third_party/v8/src/checks.h
+    - src/third_party/v8/src/circular-queue-inl.h
+    - src/third_party/v8/src/circular-queue.cc
+    - src/third_party/v8/src/circular-queue.h
+    - src/third_party/v8/src/code-stubs.cc
+    - src/third_party/v8/src/code-stubs.h
+    - src/third_party/v8/src/code.h
+    - src/third_party/v8/src/codegen.cc
+    - src/third_party/v8/src/codegen.h
+    - src/third_party/v8/src/collection.js
+    - src/third_party/v8/src/compilation-cache.cc
+    - src/third_party/v8/src/compilation-cache.h
+    - src/third_party/v8/src/compiler-intrinsics.h
+    - src/third_party/v8/src/compiler.cc
+    - src/third_party/v8/src/compiler.h
+    - src/third_party/v8/src/contexts.cc
+    - src/third_party/v8/src/contexts.h
+    - src/third_party/v8/src/conversions-inl.h
+    - src/third_party/v8/src/conversions.cc
+    - src/third_party/v8/src/conversions.h
+    - src/third_party/v8/src/counters.cc
+    - src/third_party/v8/src/counters.h
+    - src/third_party/v8/src/cpu-profiler-inl.h
+    - src/third_party/v8/src/cpu-profiler.cc
+    - src/third_party/v8/src/cpu-profiler.h
+    - src/third_party/v8/src/cpu.h
+    - src/third_party/v8/src/data-flow.cc
+    - src/third_party/v8/src/data-flow.h
+    - src/third_party/v8/src/date.cc
+    - src/third_party/v8/src/date.h
+    - src/third_party/v8/src/date.js
+    - src/third_party/v8/src/dateparser-inl.h
+    - src/third_party/v8/src/dateparser.cc
+    - src/third_party/v8/src/dateparser.h
+    - src/third_party/v8/src/debug-agent.cc
+    - src/third_party/v8/src/debug-agent.h
+    - src/third_party/v8/src/debug-debugger.js
+    - src/third_party/v8/src/debug.cc
+    - src/third_party/v8/src/debug.h
+    - src/third_party/v8/src/deoptimizer.cc
+    - src/third_party/v8/src/deoptimizer.h
+    - src/third_party/v8/src/disasm.h
+    - src/third_party/v8/src/disassembler.cc
+    - src/third_party/v8/src/disassembler.h
+    - src/third_party/v8/src/diy-fp.cc
+    - src/third_party/v8/src/diy-fp.h
+    - src/third_party/v8/src/double.h
+    - src/third_party/v8/src/dtoa.cc
+    - src/third_party/v8/src/dtoa.h
+    - src/third_party/v8/src/elements-kind.cc
+    - src/third_party/v8/src/elements-kind.h
+    - src/third_party/v8/src/elements.cc
+    - src/third_party/v8/src/elements.h
+    - src/third_party/v8/src/execution.cc
+    - src/third_party/v8/src/execution.h
+    - src/third_party/v8/src/extensions/externalize-string-extension.cc
+    - src/third_party/v8/src/extensions/externalize-string-extension.h
+    - src/third_party/v8/src/extensions/gc-extension.cc
+    - src/third_party/v8/src/extensions/gc-extension.h
+    - src/third_party/v8/src/extensions/statistics-extension.cc
+    - src/third_party/v8/src/extensions/statistics-extension.h
+    - src/third_party/v8/src/factory.cc
+    - src/third_party/v8/src/factory.h
+    - src/third_party/v8/src/fast-dtoa.cc
+    - src/third_party/v8/src/fast-dtoa.h
+    - src/third_party/v8/src/fixed-dtoa.cc
+    - src/third_party/v8/src/fixed-dtoa.h
+    - src/third_party/v8/src/flag-definitions.h
+    - src/third_party/v8/src/flags.cc
+    - src/third_party/v8/src/flags.h
+    - src/third_party/v8/src/frames-inl.h
+    - src/third_party/v8/src/frames.cc
+    - src/third_party/v8/src/frames.h
+    - src/third_party/v8/src/full-codegen.cc
+    - src/third_party/v8/src/full-codegen.h
+    - src/third_party/v8/src/func-name-inferrer.cc
+    - src/third_party/v8/src/func-name-inferrer.h
+    - src/third_party/v8/src/gdb-jit.cc
+    - src/third_party/v8/src/gdb-jit.h
+    - src/third_party/v8/src/global-handles.cc
+    - src/third_party/v8/src/global-handles.h
+    - src/third_party/v8/src/globals.h
+    - src/third_party/v8/src/handles-inl.h
+    - src/third_party/v8/src/handles.cc
+    - src/third_party/v8/src/handles.h
+    - src/third_party/v8/src/hashmap.h
+    - src/third_party/v8/src/heap-inl.h
+    - src/third_party/v8/src/heap-profiler.cc
+    - src/third_party/v8/src/heap-profiler.h
+    - src/third_party/v8/src/heap.cc
+    - src/third_party/v8/src/heap.h
+    - src/third_party/v8/src/hydrogen-instructions.cc
+    - src/third_party/v8/src/hydrogen-instructions.h
+    - src/third_party/v8/src/hydrogen.cc
+    - src/third_party/v8/src/hydrogen.h
+    - src/third_party/v8/src/ia32/assembler-ia32-inl.h
+    - src/third_party/v8/src/ia32/assembler-ia32.h
+    - src/third_party/v8/src/ia32/code-stubs-ia32.h
+    - src/third_party/v8/src/ia32/codegen-ia32.h
+    - src/third_party/v8/src/ia32/frames-ia32.h
+    - src/third_party/v8/src/ia32/lithium-codegen-ia32.h
+    - src/third_party/v8/src/ia32/lithium-gap-resolver-ia32.h
+    - src/third_party/v8/src/ia32/lithium-ia32.h
+    - src/third_party/v8/src/ia32/macro-assembler-ia32.h
+    - src/third_party/v8/src/ia32/regexp-macro-assembler-ia32.h
+    - src/third_party/v8/src/ia32/simulator-ia32.h
+    - src/third_party/v8/src/ic-inl.h
+    - src/third_party/v8/src/ic.cc
+    - src/third_party/v8/src/ic.h
+    - src/third_party/v8/src/incremental-marking-inl.h
+    - src/third_party/v8/src/incremental-marking.cc
+    - src/third_party/v8/src/incremental-marking.h
+    - src/third_party/v8/src/inspector.cc
+    - src/third_party/v8/src/inspector.h
+    - src/third_party/v8/src/interface.cc
+    - src/third_party/v8/src/interface.h
+    - src/third_party/v8/src/interpreter-irregexp.cc
+    - src/third_party/v8/src/interpreter-irregexp.h
+    - src/third_party/v8/src/isolate-inl.h
+    - src/third_party/v8/src/isolate.cc
+    - src/third_party/v8/src/isolate.h
+    - src/third_party/v8/src/json-parser.h
+    - src/third_party/v8/src/json.js
+    - src/third_party/v8/src/jsregexp.cc
+    - src/third_party/v8/src/jsregexp.h
+    - src/third_party/v8/src/lazy-instance.h
+    - src/third_party/v8/src/list-inl.h
+    - src/third_party/v8/src/list.h
+    - src/third_party/v8/src/lithium-allocator-inl.h
+    - src/third_party/v8/src/lithium-allocator.cc
+    - src/third_party/v8/src/lithium-allocator.h
+    - src/third_party/v8/src/lithium.cc
+    - src/third_party/v8/src/lithium.h
+    - src/third_party/v8/src/liveedit-debugger.js
+    - src/third_party/v8/src/liveedit.cc
+    - src/third_party/v8/src/liveedit.h
+    - src/third_party/v8/src/liveobjectlist-inl.h
+    - src/third_party/v8/src/liveobjectlist.cc
+    - src/third_party/v8/src/liveobjectlist.h
+    - src/third_party/v8/src/log-inl.h
+    - src/third_party/v8/src/log-utils.cc
+    - src/third_party/v8/src/log-utils.h
+    - src/third_party/v8/src/log.cc
+    - src/third_party/v8/src/log.h
+    - src/third_party/v8/src/macro-assembler.h
+    - src/third_party/v8/src/macros.py
+    - src/third_party/v8/src/mark-compact-inl.h
+    - src/third_party/v8/src/mark-compact.cc
+    - src/third_party/v8/src/mark-compact.h
+    - src/third_party/v8/src/math.js
+    - src/third_party/v8/src/messages.cc
+    - src/third_party/v8/src/messages.h
+    - src/third_party/v8/src/messages.js
+    - src/third_party/v8/src/mirror-debugger.js
+    - src/third_party/v8/src/misc-intrinsics.h
+    - src/third_party/v8/src/natives.h
+    - src/third_party/v8/src/objects-inl.h
+    - src/third_party/v8/src/objects-printer.cc
+    - src/third_party/v8/src/objects-visiting-inl.h
+    - src/third_party/v8/src/objects-visiting.cc
+    - src/third_party/v8/src/objects-visiting.h
+    - src/third_party/v8/src/objects.cc
+    - src/third_party/v8/src/objects.h
+    - src/third_party/v8/src/once.cc
+    - src/third_party/v8/src/once.h
+    - src/third_party/v8/src/optimizing-compiler-thread.cc
+    - src/third_party/v8/src/optimizing-compiler-thread.h
+    - src/third_party/v8/src/parser.cc
+    - src/third_party/v8/src/parser.h
+    - src/third_party/v8/src/platform-macos.cc
+    - src/third_party/v8/src/platform-posix.cc
+    - src/third_party/v8/src/platform-posix.h
+    - src/third_party/v8/src/platform-tls-mac.h
+    - src/third_party/v8/src/platform-tls-win32.h
+    - src/third_party/v8/src/platform-tls.h
+    - src/third_party/v8/src/platform.h
+    - src/third_party/v8/src/preparse-data-format.h
+    - src/third_party/v8/src/preparse-data.cc
+    - src/third_party/v8/src/preparse-data.h
+    - src/third_party/v8/src/preparser.cc
+    - src/third_party/v8/src/preparser.h
+    - src/third_party/v8/src/prettyprinter.h
+    - src/third_party/v8/src/profile-generator-inl.h
+    - src/third_party/v8/src/profile-generator.cc
+    - src/third_party/v8/src/profile-generator.h
+    - src/third_party/v8/src/property-details.h
+    - src/third_party/v8/src/property.cc
+    - src/third_party/v8/src/property.h
+    - src/third_party/v8/src/proxy.js
+    - src/third_party/v8/src/regexp-macro-assembler-irregexp-inl.h
+    - src/third_party/v8/src/regexp-macro-assembler-irregexp.cc
+    - src/third_party/v8/src/regexp-macro-assembler-irregexp.h
+    - src/third_party/v8/src/regexp-macro-assembler-tracer.h
+    - src/third_party/v8/src/regexp-macro-assembler.cc
+    - src/third_party/v8/src/regexp-macro-assembler.h
+    - src/third_party/v8/src/regexp-stack.cc
+    - src/third_party/v8/src/regexp-stack.h
+    - src/third_party/v8/src/regexp.js
+    - src/third_party/v8/src/rewriter.cc
+    - src/third_party/v8/src/rewriter.h
+    - src/third_party/v8/src/runtime-profiler.cc
+    - src/third_party/v8/src/runtime-profiler.h
+    - src/third_party/v8/src/runtime.cc
+    - src/third_party/v8/src/runtime.h
+    - src/third_party/v8/src/runtime.js
+    - src/third_party/v8/src/safepoint-table.cc
+    - src/third_party/v8/src/safepoint-table.h
+    - src/third_party/v8/src/scanner-character-streams.cc
+    - src/third_party/v8/src/scanner-character-streams.h
+    - src/third_party/v8/src/scanner.cc
+    - src/third_party/v8/src/scanner.h
+    - src/third_party/v8/src/scopeinfo.cc
+    - src/third_party/v8/src/scopeinfo.h
+    - src/third_party/v8/src/scopes.cc
+    - src/third_party/v8/src/scopes.h
+    - src/third_party/v8/src/serialize.cc
+    - src/third_party/v8/src/serialize.h
+    - src/third_party/v8/src/simulator.h
+    - src/third_party/v8/src/small-pointer-list.h
+    - src/third_party/v8/src/smart-pointers.h
+    - src/third_party/v8/src/snapshot-common.cc
+    - src/third_party/v8/src/snapshot-empty.cc
+    - src/third_party/v8/src/snapshot.h
+    - src/third_party/v8/src/spaces-inl.h
+    - src/third_party/v8/src/spaces.cc
+    - src/third_party/v8/src/spaces.h
+    - src/third_party/v8/src/splay-tree-inl.h
+    - src/third_party/v8/src/splay-tree.h
+    - src/third_party/v8/src/store-buffer-inl.h
+    - src/third_party/v8/src/store-buffer.cc
+    - src/third_party/v8/src/store-buffer.h
+    - src/third_party/v8/src/string-search.cc
+    - src/third_party/v8/src/string-search.h
+    - src/third_party/v8/src/string-stream.cc
+    - src/third_party/v8/src/string-stream.h
+    - src/third_party/v8/src/string.js
+    - src/third_party/v8/src/strtod.cc
+    - src/third_party/v8/src/strtod.h
+    - src/third_party/v8/src/stub-cache.cc
+    - src/third_party/v8/src/stub-cache.h
+    - src/third_party/v8/src/third_party/valgrind/valgrind.h
+    - src/third_party/v8/src/token.cc
+    - src/third_party/v8/src/token.h
+    - src/third_party/v8/src/transitions-inl.h
+    - src/third_party/v8/src/transitions.cc
+    - src/third_party/v8/src/transitions.h
+    - src/third_party/v8/src/type-info.cc
+    - src/third_party/v8/src/type-info.h
+    - src/third_party/v8/src/unbound-queue-inl.h
+    - src/third_party/v8/src/unbound-queue.h
+    - src/third_party/v8/src/unicode-inl.h
+    - src/third_party/v8/src/unicode.cc
+    - src/third_party/v8/src/unicode.h
+    - src/third_party/v8/src/uri.js
+    - src/third_party/v8/src/utils-inl.h
+    - src/third_party/v8/src/utils.cc
+    - src/third_party/v8/src/utils.h
+    - src/third_party/v8/src/v8-counters.cc
+    - src/third_party/v8/src/v8-counters.h
+    - src/third_party/v8/src/v8.cc
+    - src/third_party/v8/src/v8.h
+    - src/third_party/v8/src/v8checks.h
+    - src/third_party/v8/src/v8conversions.cc
+    - src/third_party/v8/src/v8conversions.h
+    - src/third_party/v8/src/v8globals.h
+    - src/third_party/v8/src/v8memory.h
+    - src/third_party/v8/src/v8natives.js
+    - src/third_party/v8/src/v8threads.cc
+    - src/third_party/v8/src/v8threads.h
+    - src/third_party/v8/src/v8utils.cc
+    - src/third_party/v8/src/v8utils.h
+    - src/third_party/v8/src/variables.cc
+    - src/third_party/v8/src/variables.h
+    - src/third_party/v8/src/version.cc
+    - src/third_party/v8/src/version.h
+    - src/third_party/v8/src/vm-state-inl.h
+    - src/third_party/v8/src/vm-state.h
+    - src/third_party/v8/src/win32-headers.h
+    - src/third_party/v8/src/win32-math.h
+    - src/third_party/v8/src/x64/assembler-x64-inl.h
+    - src/third_party/v8/src/x64/assembler-x64.cc
+    - src/third_party/v8/src/x64/assembler-x64.h
+    - src/third_party/v8/src/x64/builtins-x64.cc
+    - src/third_party/v8/src/x64/code-stubs-x64.cc
+    - src/third_party/v8/src/x64/code-stubs-x64.h
+    - src/third_party/v8/src/x64/codegen-x64.cc
+    - src/third_party/v8/src/x64/codegen-x64.h
+    - src/third_party/v8/src/x64/cpu-x64.cc
+    - src/third_party/v8/src/x64/debug-x64.cc
+    - src/third_party/v8/src/x64/deoptimizer-x64.cc
+    - src/third_party/v8/src/x64/disasm-x64.cc
+    - src/third_party/v8/src/x64/frames-x64.cc
+    - src/third_party/v8/src/x64/frames-x64.h
+    - src/third_party/v8/src/x64/full-codegen-x64.cc
+    - src/third_party/v8/src/x64/ic-x64.cc
+    - src/third_party/v8/src/x64/lithium-codegen-x64.cc
+    - src/third_party/v8/src/x64/lithium-codegen-x64.h
+    - src/third_party/v8/src/x64/lithium-gap-resolver-x64.cc
+    - src/third_party/v8/src/x64/lithium-gap-resolver-x64.h
+    - src/third_party/v8/src/x64/lithium-x64.cc
+    - src/third_party/v8/src/x64/lithium-x64.h
+    - src/third_party/v8/src/x64/macro-assembler-x64.cc
+    - src/third_party/v8/src/x64/macro-assembler-x64.h
+    - src/third_party/v8/src/x64/regexp-macro-assembler-x64.cc
+    - src/third_party/v8/src/x64/regexp-macro-assembler-x64.h
+    - src/third_party/v8/src/x64/simulator-x64.h
+    - src/third_party/v8/src/x64/stub-cache-x64.cc
+    - src/third_party/v8/src/zone-inl.h
+    - src/third_party/v8/src/zone.cc
+    - src/third_party/v8/src/zone.h
+interface:
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetSourceLine() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Set(unsigned int, v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::False()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::True()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Array::CloneElementAt(unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::ThrowException(v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToString() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::DisposeGlobal(v8::internal::Object**)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IntegerValue() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetEndPosition() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::GetHiddenValue(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::HandleScope::~HandleScope()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Boolean::Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::InstanceTemplate()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::BooleanValue() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Date::New(double)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::CanContinue() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetTotalTime() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Delete(unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::HasOwnProperty(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfile::GetTopDownRoot() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Function::Call(v8::Handle<v8::Object>, int, v8::Handle<v8::Value>*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Array::New(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::IgnoreOutOfMemoryException()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Isolate::Exit()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::IsExecutionTerminating(v8::Isolate*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::GetRealNamedProperty(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Set(v8::Handle<v8::Value>, v8::Handle<v8::Value>,
+        v8::PropertyAttribute)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::ObjectTemplate::SetNamedPropertyHandler(v8::Handle<v8::Value>
+        (*)(v8::Local<v8::String>, v8::AccessorInfo const&), v8::Handle<v8::Value>
+        (*)(v8::Local<v8::String>, v8::Local<v8::Value>, v8::AccessorInfo const&),
+        v8::Handle<v8::Integer> (*)(v8::Local<v8::String>, v8::AccessorInfo const&),
+        v8::Handle<v8::Boolean> (*)(v8::Local<v8::String>, v8::AccessorInfo const&),
+        v8::Handle<v8::Array> (*)(v8::AccessorInfo const&), v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::CheckedGetInternalField(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsExternal() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Get(unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::HeapStatistics::HeapStatistics()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Array::Length() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::Exception() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Context::Exit()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetStartColumn() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetScriptResourceName() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetScriptResourceName() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetEndColumn() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::GetVersion()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::LowMemoryNotification()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsFunction() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Script::Compile(v8::Handle<v8::String>, v8::Handle<v8::Value>,
+        v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Context::Global()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::GetOwnPropertyNames()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::GetPrototype()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::Inherit(v8::Handle<v8::FunctionTemplate>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::String::Utf8Length() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::Uint32Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Integer::Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::AddGCPrologueCallback(void (*)(v8::GCType, v8::GCCallbackFlags),
+        v8::GCType)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::ForceSet(v8::Handle<v8::Value>, v8::Handle<v8::Value>,
+        v8::PropertyAttribute)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Context::New(v8::ExtensionConfiguration*, v8::Handle<v8::ObjectTemplate>,
+        v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetFunctionName() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Function::NewInstance() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetChildrenCount() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::String::New(char const*, int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Isolate::Dispose()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Has(unsigned int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfiler::StopProfiling(v8::Handle<v8::String>,
+        v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetChild(int) const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::GetHeapStatistics(v8::HeapStatistics*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::SetClassName(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsObject() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Template::Set(v8::Handle<v8::String>, v8::Handle<v8::Data>,
+        v8::PropertyAttribute)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::String::Utf8Value::~Utf8Value()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsRegExp() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Number::Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::New()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::GetPropertyNames()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Integer::New(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Get(v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Date::NumberValue() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::AddGCEpilogueCallback(void (*)(v8::GCType, v8::GCCallbackFlags),
+        v8::GCType)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::TerminateExecution(v8::Isolate*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Exception::Error(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsBoolean() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::TryCatch()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::GlobalizeReference(v8::internal::Object**)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToInteger() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::HasInstance(v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::HandleScope::CreateHandle(v8::internal::Object*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToObject() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToNumber() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::New(v8::Handle<v8::Value> (*)(v8::Arguments
+        const&), v8::Handle<v8::Value>, v8::Handle<v8::Signature>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::~TryCatch()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToUint32() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Has(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Int32::Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToBoolean() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::HandleScope::HandleScope()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::MakeWeak(v8::internal::Object**, void*, void
+        (*)(v8::Persistent<v8::Value>, void*))'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::V8::AdjustAmountOfExternalAllocatedMemory(long)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::ToInt32() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::ObjectTemplate::SetInternalFieldCount(int)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsArray() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Function::SetName(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::GetFunction()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Context::HasOutOfMemoryException()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetLineNumber() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetLineNumber() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::ObjectTemplate::SetIndexedPropertyHandler(v8::Handle<v8::Value>
+        (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Value> (*)(unsigned
+        int, v8::Local<v8::Value>, v8::AccessorInfo const&), v8::Handle<v8::Integer>
+        (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Boolean> (*)(unsigned
+        int, v8::AccessorInfo const&), v8::Handle<v8::Array> (*)(v8::AccessorInfo
+        const&), v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfileNode::GetSelfTime() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Isolate::Enter()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::External::New(void*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Function::NewInstance(int, v8::Handle<v8::Value>*)
+        const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::Message() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::External::Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Number::New(double)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::HasCaught() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Message::GetStartPosition() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsDate() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::FunctionTemplate::PrototypeTemplate()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::ObjectTemplate::SetCallAsFunctionHandler(v8::Handle<v8::Value>
+        (*)(v8::Arguments const&), v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::HasRealNamedProperty(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Isolate::New()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Null()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::SetInternalField(int, v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Script::Run()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::CpuProfiler::StartProfiling(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::Int32Value() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::TryCatch::ReThrow()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::Delete(v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Script::New(v8::Handle<v8::String>, v8::ScriptOrigin*,
+        v8::ScriptData*, v8::Handle<v8::String>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Context::Enter()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::NumberValue() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::String::Utf8Value::Utf8Value(v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::String::WriteAscii(char*, int, int, int) const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::InternalFieldCount()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::StrictEquals(v8::Handle<v8::Value>) const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::HandleScope::RawClose(v8::internal::Object**)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Value::IsNumber() const'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Undefined()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/api.cc'
+    symbol: !!python/unicode 'v8::Object::SetHiddenValue(v8::Handle<v8::String>, v8::Handle<v8::Value>)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/v8threads.cc'
+    symbol: !!python/unicode 'v8::Locker::Locker(v8::Isolate*)'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+-   object: !!python/unicode 'src/third_party/v8/src/v8threads.cc'
+    symbol: !!python/unicode 'v8::Locker::~Locker()'
+    used_by:
+    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
+    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
+leaks: []
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'
@@ -6371,1025 +7393,3 @@ files_with_exec:
     - !!python/unicode 'mongofiles'
     - !!python/unicode 'mongorestore'
     name: src/third_party/v8/src/zone.h
-interface:
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetSourceLine() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Set(unsigned int, v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::False()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::True()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Array::CloneElementAt(unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::ThrowException(v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToString() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::DisposeGlobal(v8::internal::Object**)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IntegerValue() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetEndPosition() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::GetHiddenValue(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::HandleScope::~HandleScope()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Boolean::Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::InstanceTemplate()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::BooleanValue() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Date::New(double)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::CanContinue() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetTotalTime() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Delete(unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::HasOwnProperty(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfile::GetTopDownRoot() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Function::Call(v8::Handle<v8::Object>, int, v8::Handle<v8::Value>*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Array::New(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::IgnoreOutOfMemoryException()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Isolate::Exit()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::IsExecutionTerminating(v8::Isolate*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::GetRealNamedProperty(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Set(v8::Handle<v8::Value>, v8::Handle<v8::Value>,
-        v8::PropertyAttribute)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::ObjectTemplate::SetNamedPropertyHandler(v8::Handle<v8::Value>
-        (*)(v8::Local<v8::String>, v8::AccessorInfo const&), v8::Handle<v8::Value>
-        (*)(v8::Local<v8::String>, v8::Local<v8::Value>, v8::AccessorInfo const&),
-        v8::Handle<v8::Integer> (*)(v8::Local<v8::String>, v8::AccessorInfo const&),
-        v8::Handle<v8::Boolean> (*)(v8::Local<v8::String>, v8::AccessorInfo const&),
-        v8::Handle<v8::Array> (*)(v8::AccessorInfo const&), v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::CheckedGetInternalField(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsExternal() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Get(unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::HeapStatistics::HeapStatistics()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Array::Length() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::Exception() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Context::Exit()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetStartColumn() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetScriptResourceName() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetScriptResourceName() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetEndColumn() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::GetVersion()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::LowMemoryNotification()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsFunction() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Script::Compile(v8::Handle<v8::String>, v8::Handle<v8::Value>,
-        v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Context::Global()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::GetOwnPropertyNames()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::GetPrototype()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::Inherit(v8::Handle<v8::FunctionTemplate>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::String::Utf8Length() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::Uint32Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Integer::Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::AddGCPrologueCallback(void (*)(v8::GCType, v8::GCCallbackFlags),
-        v8::GCType)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::ForceSet(v8::Handle<v8::Value>, v8::Handle<v8::Value>,
-        v8::PropertyAttribute)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Context::New(v8::ExtensionConfiguration*, v8::Handle<v8::ObjectTemplate>,
-        v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetFunctionName() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Function::NewInstance() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetChildrenCount() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::String::New(char const*, int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Isolate::Dispose()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Has(unsigned int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfiler::StopProfiling(v8::Handle<v8::String>,
-        v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetChild(int) const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::GetHeapStatistics(v8::HeapStatistics*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::SetClassName(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsObject() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Template::Set(v8::Handle<v8::String>, v8::Handle<v8::Data>,
-        v8::PropertyAttribute)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::String::Utf8Value::~Utf8Value()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsRegExp() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Number::Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::New()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::GetPropertyNames()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Integer::New(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Get(v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Date::NumberValue() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::AddGCEpilogueCallback(void (*)(v8::GCType, v8::GCCallbackFlags),
-        v8::GCType)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::TerminateExecution(v8::Isolate*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Exception::Error(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsBoolean() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::TryCatch()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::GlobalizeReference(v8::internal::Object**)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToInteger() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::HasInstance(v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::HandleScope::CreateHandle(v8::internal::Object*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToObject() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToNumber() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::New(v8::Handle<v8::Value> (*)(v8::Arguments
-        const&), v8::Handle<v8::Value>, v8::Handle<v8::Signature>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::~TryCatch()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToUint32() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Has(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Int32::Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToBoolean() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::HandleScope::HandleScope()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::MakeWeak(v8::internal::Object**, void*, void
-        (*)(v8::Persistent<v8::Value>, void*))'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::V8::AdjustAmountOfExternalAllocatedMemory(long)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::ToInt32() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::ObjectTemplate::SetInternalFieldCount(int)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsArray() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Function::SetName(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::GetFunction()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Context::HasOutOfMemoryException()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetLineNumber() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetLineNumber() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::ObjectTemplate::SetIndexedPropertyHandler(v8::Handle<v8::Value>
-        (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Value> (*)(unsigned
-        int, v8::Local<v8::Value>, v8::AccessorInfo const&), v8::Handle<v8::Integer>
-        (*)(unsigned int, v8::AccessorInfo const&), v8::Handle<v8::Boolean> (*)(unsigned
-        int, v8::AccessorInfo const&), v8::Handle<v8::Array> (*)(v8::AccessorInfo
-        const&), v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfileNode::GetSelfTime() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Isolate::Enter()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::External::New(void*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Function::NewInstance(int, v8::Handle<v8::Value>*)
-        const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::Message() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::External::Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Number::New(double)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::HasCaught() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Message::GetStartPosition() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsDate() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::FunctionTemplate::PrototypeTemplate()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::ObjectTemplate::SetCallAsFunctionHandler(v8::Handle<v8::Value>
-        (*)(v8::Arguments const&), v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::HasRealNamedProperty(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Isolate::New()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Null()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::SetInternalField(int, v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Script::Run()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::CpuProfiler::StartProfiling(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::Int32Value() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::TryCatch::ReThrow()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::Delete(v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Script::New(v8::Handle<v8::String>, v8::ScriptOrigin*,
-        v8::ScriptData*, v8::Handle<v8::String>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Context::Enter()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::NumberValue() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::String::Utf8Value::Utf8Value(v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_profiler.cpp'
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::String::WriteAscii(char*, int, int, int) const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::InternalFieldCount()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::StrictEquals(v8::Handle<v8::Value>) const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::HandleScope::RawClose(v8::internal::Object**)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Value::IsNumber() const'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Undefined()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/api.cc'
-    symbol: !!python/unicode 'v8::Object::SetHiddenValue(v8::Handle<v8::String>, v8::Handle<v8::Value>)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_db.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/v8threads.cc'
-    symbol: !!python/unicode 'v8::Locker::Locker(v8::Isolate*)'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
--   object: !!python/unicode 'src/third_party/v8/src/v8threads.cc'
-    symbol: !!python/unicode 'v8::Locker::~Locker()'
-    used_by:
-    - !!python/unicode 'src/mongo/scripting/engine_v8.cpp'
-    - !!python/unicode 'src/mongo/scripting/v8_utils.cpp'
-leaks: []
-module_description: 'TODO: v8 description'
-module_groups:
--   group_description: Third Party - V8 Javascript engine auto generated files
-    group_files:
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
-    - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
-    group_title: 'TODO: Name this group'
--   group_description: Third Party - V8 Javascript engine
-    group_files:
-    - src/third_party/shim_v8.cpp
-    - src/third_party/v8/include/v8-debug.h
-    - src/third_party/v8/include/v8-profiler.h
-    - src/third_party/v8/include/v8-testing.h
-    - src/third_party/v8/include/v8.h
-    - src/third_party/v8/include/v8stdint.h
-    - src/third_party/v8/src/accessors.cc
-    - src/third_party/v8/src/accessors.h
-    - src/third_party/v8/src/allocation-inl.h
-    - src/third_party/v8/src/allocation.cc
-    - src/third_party/v8/src/allocation.h
-    - src/third_party/v8/src/api.cc
-    - src/third_party/v8/src/api.h
-    - src/third_party/v8/src/apinatives.js
-    - src/third_party/v8/src/apiutils.h
-    - src/third_party/v8/src/arguments.h
-    - src/third_party/v8/src/array.js
-    - src/third_party/v8/src/assembler.cc
-    - src/third_party/v8/src/assembler.h
-    - src/third_party/v8/src/ast.cc
-    - src/third_party/v8/src/ast.h
-    - src/third_party/v8/src/atomicops.h
-    - src/third_party/v8/src/atomicops_internals_arm_gcc.h
-    - src/third_party/v8/src/atomicops_internals_mips_gcc.h
-    - src/third_party/v8/src/atomicops_internals_x86_gcc.cc
-    - src/third_party/v8/src/atomicops_internals_x86_gcc.h
-    - src/third_party/v8/src/atomicops_internals_x86_macosx.h
-    - src/third_party/v8/src/atomicops_internals_x86_msvc.h
-    - src/third_party/v8/src/bignum-dtoa.cc
-    - src/third_party/v8/src/bignum-dtoa.h
-    - src/third_party/v8/src/bignum.cc
-    - src/third_party/v8/src/bignum.h
-    - src/third_party/v8/src/bootstrapper.cc
-    - src/third_party/v8/src/bootstrapper.h
-    - src/third_party/v8/src/builtins.cc
-    - src/third_party/v8/src/builtins.h
-    - src/third_party/v8/src/bytecodes-irregexp.h
-    - src/third_party/v8/src/cached-powers.cc
-    - src/third_party/v8/src/cached-powers.h
-    - src/third_party/v8/src/char-predicates-inl.h
-    - src/third_party/v8/src/char-predicates.h
-    - src/third_party/v8/src/checks.cc
-    - src/third_party/v8/src/checks.h
-    - src/third_party/v8/src/circular-queue-inl.h
-    - src/third_party/v8/src/circular-queue.cc
-    - src/third_party/v8/src/circular-queue.h
-    - src/third_party/v8/src/code-stubs.cc
-    - src/third_party/v8/src/code-stubs.h
-    - src/third_party/v8/src/code.h
-    - src/third_party/v8/src/codegen.cc
-    - src/third_party/v8/src/codegen.h
-    - src/third_party/v8/src/collection.js
-    - src/third_party/v8/src/compilation-cache.cc
-    - src/third_party/v8/src/compilation-cache.h
-    - src/third_party/v8/src/compiler-intrinsics.h
-    - src/third_party/v8/src/compiler.cc
-    - src/third_party/v8/src/compiler.h
-    - src/third_party/v8/src/contexts.cc
-    - src/third_party/v8/src/contexts.h
-    - src/third_party/v8/src/conversions-inl.h
-    - src/third_party/v8/src/conversions.cc
-    - src/third_party/v8/src/conversions.h
-    - src/third_party/v8/src/counters.cc
-    - src/third_party/v8/src/counters.h
-    - src/third_party/v8/src/cpu-profiler-inl.h
-    - src/third_party/v8/src/cpu-profiler.cc
-    - src/third_party/v8/src/cpu-profiler.h
-    - src/third_party/v8/src/cpu.h
-    - src/third_party/v8/src/data-flow.cc
-    - src/third_party/v8/src/data-flow.h
-    - src/third_party/v8/src/date.cc
-    - src/third_party/v8/src/date.h
-    - src/third_party/v8/src/date.js
-    - src/third_party/v8/src/dateparser-inl.h
-    - src/third_party/v8/src/dateparser.cc
-    - src/third_party/v8/src/dateparser.h
-    - src/third_party/v8/src/debug-agent.cc
-    - src/third_party/v8/src/debug-agent.h
-    - src/third_party/v8/src/debug-debugger.js
-    - src/third_party/v8/src/debug.cc
-    - src/third_party/v8/src/debug.h
-    - src/third_party/v8/src/deoptimizer.cc
-    - src/third_party/v8/src/deoptimizer.h
-    - src/third_party/v8/src/disasm.h
-    - src/third_party/v8/src/disassembler.cc
-    - src/third_party/v8/src/disassembler.h
-    - src/third_party/v8/src/diy-fp.cc
-    - src/third_party/v8/src/diy-fp.h
-    - src/third_party/v8/src/double.h
-    - src/third_party/v8/src/dtoa.cc
-    - src/third_party/v8/src/dtoa.h
-    - src/third_party/v8/src/elements-kind.cc
-    - src/third_party/v8/src/elements-kind.h
-    - src/third_party/v8/src/elements.cc
-    - src/third_party/v8/src/elements.h
-    - src/third_party/v8/src/execution.cc
-    - src/third_party/v8/src/execution.h
-    - src/third_party/v8/src/extensions/externalize-string-extension.cc
-    - src/third_party/v8/src/extensions/externalize-string-extension.h
-    - src/third_party/v8/src/extensions/gc-extension.cc
-    - src/third_party/v8/src/extensions/gc-extension.h
-    - src/third_party/v8/src/extensions/statistics-extension.cc
-    - src/third_party/v8/src/extensions/statistics-extension.h
-    - src/third_party/v8/src/factory.cc
-    - src/third_party/v8/src/factory.h
-    - src/third_party/v8/src/fast-dtoa.cc
-    - src/third_party/v8/src/fast-dtoa.h
-    - src/third_party/v8/src/fixed-dtoa.cc
-    - src/third_party/v8/src/fixed-dtoa.h
-    - src/third_party/v8/src/flag-definitions.h
-    - src/third_party/v8/src/flags.cc
-    - src/third_party/v8/src/flags.h
-    - src/third_party/v8/src/frames-inl.h
-    - src/third_party/v8/src/frames.cc
-    - src/third_party/v8/src/frames.h
-    - src/third_party/v8/src/full-codegen.cc
-    - src/third_party/v8/src/full-codegen.h
-    - src/third_party/v8/src/func-name-inferrer.cc
-    - src/third_party/v8/src/func-name-inferrer.h
-    - src/third_party/v8/src/gdb-jit.cc
-    - src/third_party/v8/src/gdb-jit.h
-    - src/third_party/v8/src/global-handles.cc
-    - src/third_party/v8/src/global-handles.h
-    - src/third_party/v8/src/globals.h
-    - src/third_party/v8/src/handles-inl.h
-    - src/third_party/v8/src/handles.cc
-    - src/third_party/v8/src/handles.h
-    - src/third_party/v8/src/hashmap.h
-    - src/third_party/v8/src/heap-inl.h
-    - src/third_party/v8/src/heap-profiler.cc
-    - src/third_party/v8/src/heap-profiler.h
-    - src/third_party/v8/src/heap.cc
-    - src/third_party/v8/src/heap.h
-    - src/third_party/v8/src/hydrogen-instructions.cc
-    - src/third_party/v8/src/hydrogen-instructions.h
-    - src/third_party/v8/src/hydrogen.cc
-    - src/third_party/v8/src/hydrogen.h
-    - src/third_party/v8/src/ia32/assembler-ia32-inl.h
-    - src/third_party/v8/src/ia32/assembler-ia32.h
-    - src/third_party/v8/src/ia32/code-stubs-ia32.h
-    - src/third_party/v8/src/ia32/codegen-ia32.h
-    - src/third_party/v8/src/ia32/frames-ia32.h
-    - src/third_party/v8/src/ia32/lithium-codegen-ia32.h
-    - src/third_party/v8/src/ia32/lithium-gap-resolver-ia32.h
-    - src/third_party/v8/src/ia32/lithium-ia32.h
-    - src/third_party/v8/src/ia32/macro-assembler-ia32.h
-    - src/third_party/v8/src/ia32/regexp-macro-assembler-ia32.h
-    - src/third_party/v8/src/ia32/simulator-ia32.h
-    - src/third_party/v8/src/ic-inl.h
-    - src/third_party/v8/src/ic.cc
-    - src/third_party/v8/src/ic.h
-    - src/third_party/v8/src/incremental-marking-inl.h
-    - src/third_party/v8/src/incremental-marking.cc
-    - src/third_party/v8/src/incremental-marking.h
-    - src/third_party/v8/src/inspector.cc
-    - src/third_party/v8/src/inspector.h
-    - src/third_party/v8/src/interface.cc
-    - src/third_party/v8/src/interface.h
-    - src/third_party/v8/src/interpreter-irregexp.cc
-    - src/third_party/v8/src/interpreter-irregexp.h
-    - src/third_party/v8/src/isolate-inl.h
-    - src/third_party/v8/src/isolate.cc
-    - src/third_party/v8/src/isolate.h
-    - src/third_party/v8/src/json-parser.h
-    - src/third_party/v8/src/json.js
-    - src/third_party/v8/src/jsregexp.cc
-    - src/third_party/v8/src/jsregexp.h
-    - src/third_party/v8/src/lazy-instance.h
-    - src/third_party/v8/src/list-inl.h
-    - src/third_party/v8/src/list.h
-    - src/third_party/v8/src/lithium-allocator-inl.h
-    - src/third_party/v8/src/lithium-allocator.cc
-    - src/third_party/v8/src/lithium-allocator.h
-    - src/third_party/v8/src/lithium.cc
-    - src/third_party/v8/src/lithium.h
-    - src/third_party/v8/src/liveedit-debugger.js
-    - src/third_party/v8/src/liveedit.cc
-    - src/third_party/v8/src/liveedit.h
-    - src/third_party/v8/src/liveobjectlist-inl.h
-    - src/third_party/v8/src/liveobjectlist.cc
-    - src/third_party/v8/src/liveobjectlist.h
-    - src/third_party/v8/src/log-inl.h
-    - src/third_party/v8/src/log-utils.cc
-    - src/third_party/v8/src/log-utils.h
-    - src/third_party/v8/src/log.cc
-    - src/third_party/v8/src/log.h
-    - src/third_party/v8/src/macro-assembler.h
-    - src/third_party/v8/src/macros.py
-    - src/third_party/v8/src/mark-compact-inl.h
-    - src/third_party/v8/src/mark-compact.cc
-    - src/third_party/v8/src/mark-compact.h
-    - src/third_party/v8/src/math.js
-    - src/third_party/v8/src/messages.cc
-    - src/third_party/v8/src/messages.h
-    - src/third_party/v8/src/messages.js
-    - src/third_party/v8/src/mirror-debugger.js
-    - src/third_party/v8/src/misc-intrinsics.h
-    - src/third_party/v8/src/natives.h
-    - src/third_party/v8/src/objects-inl.h
-    - src/third_party/v8/src/objects-printer.cc
-    - src/third_party/v8/src/objects-visiting-inl.h
-    - src/third_party/v8/src/objects-visiting.cc
-    - src/third_party/v8/src/objects-visiting.h
-    - src/third_party/v8/src/objects.cc
-    - src/third_party/v8/src/objects.h
-    - src/third_party/v8/src/once.cc
-    - src/third_party/v8/src/once.h
-    - src/third_party/v8/src/optimizing-compiler-thread.cc
-    - src/third_party/v8/src/optimizing-compiler-thread.h
-    - src/third_party/v8/src/parser.cc
-    - src/third_party/v8/src/parser.h
-    - src/third_party/v8/src/platform-macos.cc
-    - src/third_party/v8/src/platform-posix.cc
-    - src/third_party/v8/src/platform-posix.h
-    - src/third_party/v8/src/platform-tls-mac.h
-    - src/third_party/v8/src/platform-tls-win32.h
-    - src/third_party/v8/src/platform-tls.h
-    - src/third_party/v8/src/platform.h
-    - src/third_party/v8/src/preparse-data-format.h
-    - src/third_party/v8/src/preparse-data.cc
-    - src/third_party/v8/src/preparse-data.h
-    - src/third_party/v8/src/preparser.cc
-    - src/third_party/v8/src/preparser.h
-    - src/third_party/v8/src/prettyprinter.h
-    - src/third_party/v8/src/profile-generator-inl.h
-    - src/third_party/v8/src/profile-generator.cc
-    - src/third_party/v8/src/profile-generator.h
-    - src/third_party/v8/src/property-details.h
-    - src/third_party/v8/src/property.cc
-    - src/third_party/v8/src/property.h
-    - src/third_party/v8/src/proxy.js
-    - src/third_party/v8/src/regexp-macro-assembler-irregexp-inl.h
-    - src/third_party/v8/src/regexp-macro-assembler-irregexp.cc
-    - src/third_party/v8/src/regexp-macro-assembler-irregexp.h
-    - src/third_party/v8/src/regexp-macro-assembler-tracer.h
-    - src/third_party/v8/src/regexp-macro-assembler.cc
-    - src/third_party/v8/src/regexp-macro-assembler.h
-    - src/third_party/v8/src/regexp-stack.cc
-    - src/third_party/v8/src/regexp-stack.h
-    - src/third_party/v8/src/regexp.js
-    - src/third_party/v8/src/rewriter.cc
-    - src/third_party/v8/src/rewriter.h
-    - src/third_party/v8/src/runtime-profiler.cc
-    - src/third_party/v8/src/runtime-profiler.h
-    - src/third_party/v8/src/runtime.cc
-    - src/third_party/v8/src/runtime.h
-    - src/third_party/v8/src/runtime.js
-    - src/third_party/v8/src/safepoint-table.cc
-    - src/third_party/v8/src/safepoint-table.h
-    - src/third_party/v8/src/scanner-character-streams.cc
-    - src/third_party/v8/src/scanner-character-streams.h
-    - src/third_party/v8/src/scanner.cc
-    - src/third_party/v8/src/scanner.h
-    - src/third_party/v8/src/scopeinfo.cc
-    - src/third_party/v8/src/scopeinfo.h
-    - src/third_party/v8/src/scopes.cc
-    - src/third_party/v8/src/scopes.h
-    - src/third_party/v8/src/serialize.cc
-    - src/third_party/v8/src/serialize.h
-    - src/third_party/v8/src/simulator.h
-    - src/third_party/v8/src/small-pointer-list.h
-    - src/third_party/v8/src/smart-pointers.h
-    - src/third_party/v8/src/snapshot-common.cc
-    - src/third_party/v8/src/snapshot-empty.cc
-    - src/third_party/v8/src/snapshot.h
-    - src/third_party/v8/src/spaces-inl.h
-    - src/third_party/v8/src/spaces.cc
-    - src/third_party/v8/src/spaces.h
-    - src/third_party/v8/src/splay-tree-inl.h
-    - src/third_party/v8/src/splay-tree.h
-    - src/third_party/v8/src/store-buffer-inl.h
-    - src/third_party/v8/src/store-buffer.cc
-    - src/third_party/v8/src/store-buffer.h
-    - src/third_party/v8/src/string-search.cc
-    - src/third_party/v8/src/string-search.h
-    - src/third_party/v8/src/string-stream.cc
-    - src/third_party/v8/src/string-stream.h
-    - src/third_party/v8/src/string.js
-    - src/third_party/v8/src/strtod.cc
-    - src/third_party/v8/src/strtod.h
-    - src/third_party/v8/src/stub-cache.cc
-    - src/third_party/v8/src/stub-cache.h
-    - src/third_party/v8/src/third_party/valgrind/valgrind.h
-    - src/third_party/v8/src/token.cc
-    - src/third_party/v8/src/token.h
-    - src/third_party/v8/src/transitions-inl.h
-    - src/third_party/v8/src/transitions.cc
-    - src/third_party/v8/src/transitions.h
-    - src/third_party/v8/src/type-info.cc
-    - src/third_party/v8/src/type-info.h
-    - src/third_party/v8/src/unbound-queue-inl.h
-    - src/third_party/v8/src/unbound-queue.h
-    - src/third_party/v8/src/unicode-inl.h
-    - src/third_party/v8/src/unicode.cc
-    - src/third_party/v8/src/unicode.h
-    - src/third_party/v8/src/uri.js
-    - src/third_party/v8/src/utils-inl.h
-    - src/third_party/v8/src/utils.cc
-    - src/third_party/v8/src/utils.h
-    - src/third_party/v8/src/v8-counters.cc
-    - src/third_party/v8/src/v8-counters.h
-    - src/third_party/v8/src/v8.cc
-    - src/third_party/v8/src/v8.h
-    - src/third_party/v8/src/v8checks.h
-    - src/third_party/v8/src/v8conversions.cc
-    - src/third_party/v8/src/v8conversions.h
-    - src/third_party/v8/src/v8globals.h
-    - src/third_party/v8/src/v8memory.h
-    - src/third_party/v8/src/v8natives.js
-    - src/third_party/v8/src/v8threads.cc
-    - src/third_party/v8/src/v8threads.h
-    - src/third_party/v8/src/v8utils.cc
-    - src/third_party/v8/src/v8utils.h
-    - src/third_party/v8/src/variables.cc
-    - src/third_party/v8/src/variables.h
-    - src/third_party/v8/src/version.cc
-    - src/third_party/v8/src/version.h
-    - src/third_party/v8/src/vm-state-inl.h
-    - src/third_party/v8/src/vm-state.h
-    - src/third_party/v8/src/win32-headers.h
-    - src/third_party/v8/src/win32-math.h
-    - src/third_party/v8/src/x64/assembler-x64-inl.h
-    - src/third_party/v8/src/x64/assembler-x64.cc
-    - src/third_party/v8/src/x64/assembler-x64.h
-    - src/third_party/v8/src/x64/builtins-x64.cc
-    - src/third_party/v8/src/x64/code-stubs-x64.cc
-    - src/third_party/v8/src/x64/code-stubs-x64.h
-    - src/third_party/v8/src/x64/codegen-x64.cc
-    - src/third_party/v8/src/x64/codegen-x64.h
-    - src/third_party/v8/src/x64/cpu-x64.cc
-    - src/third_party/v8/src/x64/debug-x64.cc
-    - src/third_party/v8/src/x64/deoptimizer-x64.cc
-    - src/third_party/v8/src/x64/disasm-x64.cc
-    - src/third_party/v8/src/x64/frames-x64.cc
-    - src/third_party/v8/src/x64/frames-x64.h
-    - src/third_party/v8/src/x64/full-codegen-x64.cc
-    - src/third_party/v8/src/x64/ic-x64.cc
-    - src/third_party/v8/src/x64/lithium-codegen-x64.cc
-    - src/third_party/v8/src/x64/lithium-codegen-x64.h
-    - src/third_party/v8/src/x64/lithium-gap-resolver-x64.cc
-    - src/third_party/v8/src/x64/lithium-gap-resolver-x64.h
-    - src/third_party/v8/src/x64/lithium-x64.cc
-    - src/third_party/v8/src/x64/lithium-x64.h
-    - src/third_party/v8/src/x64/macro-assembler-x64.cc
-    - src/third_party/v8/src/x64/macro-assembler-x64.h
-    - src/third_party/v8/src/x64/regexp-macro-assembler-x64.cc
-    - src/third_party/v8/src/x64/regexp-macro-assembler-x64.h
-    - src/third_party/v8/src/x64/simulator-x64.h
-    - src/third_party/v8/src/x64/stub-cache-x64.cc
-    - src/third_party/v8/src/zone-inl.h
-    - src/third_party/v8/src/zone.cc
-    - src/third_party/v8/src/zone.h
-    group_title: 'TODO: Name this group'
-module_name: v8
-module_title: V8

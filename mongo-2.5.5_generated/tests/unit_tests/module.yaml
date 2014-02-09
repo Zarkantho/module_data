@@ -1,274 +1,102 @@
-files_with_exec:
--   execs: []
-    name: src/mongo/unittest/crutch.cpp
--   execs: []
-    name: src/mongo/unittest/fixture_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/unittest/temp_dir.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/unittest/temp_dir.h
--   execs: []
-    name: src/mongo/unittest/temp_dir_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/unittest/unittest-inl.h
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/unittest/unittest.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/unittest/unittest.h
--   execs: []
-    name: src/mongo/unittest/unittest_main.cpp
--   execs: []
-    name: src/mongo/unittest/unittest_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/accumulatortests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/basictests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/btreebuildertests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/btreetests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/btreetests.inl
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/chunk_manager_targeter_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/chunktests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/clienttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/commandtests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/config_server_fixture.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/config_server_fixture.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/config_upgrade_tests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/counttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/dbclient_multi_command_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/dbhelper_tests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/dbtests.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/dbtests.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/directclienttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/documentsourcetests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/documenttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/expressiontests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/extsorttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/framework.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/framework.h
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/framework_options.cpp
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/framework_options.h
--   execs:
-    - !!python/unicode 'test'
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/framework_options_init.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/gle_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/gridfstest.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/indexcatalogtests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/indexupdatetests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/jsobjtests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/jsontests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/jstests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/keypatterntests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/macrotests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/matchertests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/merge_chunk_tests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mmaptests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_conn_registry.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_conn_registry.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_dbclient_connection.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_dbclient_connection.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_dbclient_cursor.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_remote_db_server.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_remote_db_server.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_replica_set.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock/mock_replica_set.h
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock_dbclient_conn_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/mock_replica_set_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/namespacetests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/oplogstarttests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/pdfiletests.cpp
--   execs:
-    - !!python/unicode 'perftest'
-    name: src/mongo/dbtests/perf/perftest.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/perftests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/pipelinetests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/profile_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_multi_plan_runner.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_single_solution_runner.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_and.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_collscan.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_fetch.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_limit_skip.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_merge_sort.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_sort.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/query_stage_tests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/querytests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/queryutiltests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/replica_set_monitor_test.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/replsettests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/repltests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/runner_registry.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/sharding.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/socktests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/stacktests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/threadedtests.cpp
--   execs:
-    - !!python/unicode 'test'
-    name: src/mongo/dbtests/updatetests.cpp
+module_title: Unit Tests
+module_name: unit_tests
+module_description: 'TODO: unit_tests description'
+module_groups:
+-   group_title: 'TODO: Name this group'
+    group_description: Unittest framework (for both old style dbtests and new style
+        tests)
+    group_files:
+    - src/mongo/unittest/crutch.cpp
+    - src/mongo/unittest/fixture_test.cpp
+    - src/mongo/unittest/temp_dir.cpp
+    - src/mongo/unittest/temp_dir.h
+    - src/mongo/unittest/temp_dir_test.cpp
+    - src/mongo/unittest/unittest-inl.h
+    - src/mongo/unittest/unittest.cpp
+    - src/mongo/unittest/unittest.h
+    - src/mongo/unittest/unittest_main.cpp
+    - src/mongo/unittest/unittest_test.cpp
+-   group_title: 'TODO: Name this group'
+    group_description: Old style unittests ("test" binary)
+    group_files:
+    - src/mongo/dbtests/accumulatortests.cpp
+    - src/mongo/dbtests/basictests.cpp
+    - src/mongo/dbtests/btreebuildertests.cpp
+    - src/mongo/dbtests/btreetests.cpp
+    - src/mongo/dbtests/btreetests.inl
+    - src/mongo/dbtests/chunk_manager_targeter_test.cpp
+    - src/mongo/dbtests/chunktests.cpp
+    - src/mongo/dbtests/clienttests.cpp
+    - src/mongo/dbtests/commandtests.cpp
+    - src/mongo/dbtests/config_server_fixture.cpp
+    - src/mongo/dbtests/config_server_fixture.h
+    - src/mongo/dbtests/config_upgrade_tests.cpp
+    - src/mongo/dbtests/counttests.cpp
+    - src/mongo/dbtests/dbclient_multi_command_test.cpp
+    - src/mongo/dbtests/dbhelper_tests.cpp
+    - src/mongo/dbtests/dbtests.cpp
+    - src/mongo/dbtests/dbtests.h
+    - src/mongo/dbtests/directclienttests.cpp
+    - src/mongo/dbtests/documentsourcetests.cpp
+    - src/mongo/dbtests/documenttests.cpp
+    - src/mongo/dbtests/expressiontests.cpp
+    - src/mongo/dbtests/extsorttests.cpp
+    - src/mongo/dbtests/framework.cpp
+    - src/mongo/dbtests/framework.h
+    - src/mongo/dbtests/framework_options.cpp
+    - src/mongo/dbtests/framework_options.h
+    - src/mongo/dbtests/framework_options_init.cpp
+    - src/mongo/dbtests/gle_test.cpp
+    - src/mongo/dbtests/gridfstest.cpp
+    - src/mongo/dbtests/indexcatalogtests.cpp
+    - src/mongo/dbtests/indexupdatetests.cpp
+    - src/mongo/dbtests/jsobjtests.cpp
+    - src/mongo/dbtests/jsontests.cpp
+    - src/mongo/dbtests/jstests.cpp
+    - src/mongo/dbtests/keypatterntests.cpp
+    - src/mongo/dbtests/macrotests.cpp
+    - src/mongo/dbtests/matchertests.cpp
+    - src/mongo/dbtests/merge_chunk_tests.cpp
+    - src/mongo/dbtests/mmaptests.cpp
+    - src/mongo/dbtests/mock/mock_conn_registry.cpp
+    - src/mongo/dbtests/mock/mock_conn_registry.h
+    - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+    - src/mongo/dbtests/mock/mock_dbclient_connection.h
+    - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
+    - src/mongo/dbtests/mock/mock_dbclient_cursor.h
+    - src/mongo/dbtests/mock/mock_remote_db_server.cpp
+    - src/mongo/dbtests/mock/mock_remote_db_server.h
+    - src/mongo/dbtests/mock/mock_replica_set.cpp
+    - src/mongo/dbtests/mock/mock_replica_set.h
+    - src/mongo/dbtests/mock_dbclient_conn_test.cpp
+    - src/mongo/dbtests/mock_replica_set_test.cpp
+    - src/mongo/dbtests/namespacetests.cpp
+    - src/mongo/dbtests/oplogstarttests.cpp
+    - src/mongo/dbtests/pdfiletests.cpp
+    - src/mongo/dbtests/perf/perftest.cpp
+    - src/mongo/dbtests/perftests.cpp
+    - src/mongo/dbtests/pipelinetests.cpp
+    - src/mongo/dbtests/profile_test.cpp
+    - src/mongo/dbtests/query_multi_plan_runner.cpp
+    - src/mongo/dbtests/query_single_solution_runner.cpp
+    - src/mongo/dbtests/query_stage_and.cpp
+    - src/mongo/dbtests/query_stage_collscan.cpp
+    - src/mongo/dbtests/query_stage_fetch.cpp
+    - src/mongo/dbtests/query_stage_limit_skip.cpp
+    - src/mongo/dbtests/query_stage_merge_sort.cpp
+    - src/mongo/dbtests/query_stage_sort.cpp
+    - src/mongo/dbtests/query_stage_tests.cpp
+    - src/mongo/dbtests/querytests.cpp
+    - src/mongo/dbtests/queryutiltests.cpp
+    - src/mongo/dbtests/replica_set_monitor_test.cpp
+    - src/mongo/dbtests/replsettests.cpp
+    - src/mongo/dbtests/repltests.cpp
+    - src/mongo/dbtests/runner_registry.cpp
+    - src/mongo/dbtests/sharding.cpp
+    - src/mongo/dbtests/socktests.cpp
+    - src/mongo/dbtests/stacktests.cpp
+    - src/mongo/dbtests/threadedtests.cpp
+    - src/mongo/dbtests/updatetests.cpp
 interface:
 -   object: !!python/unicode 'src/mongo/unittest/crutch.cpp'
     symbol: !!python/unicode 'mongo::dbexit(mongo::ExitCode, char const*)'
@@ -10776,102 +10604,274 @@ leaks:
     - !!python/unicode 'src/mongo/db/jsobj.cpp'
     symbol: !!python/unicode 'mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
         const&, bool) const'
-module_description: 'TODO: unit_tests description'
-module_groups:
--   group_description: Unittest framework (for both old style dbtests and new style
-        tests)
-    group_files:
-    - src/mongo/unittest/crutch.cpp
-    - src/mongo/unittest/fixture_test.cpp
-    - src/mongo/unittest/temp_dir.cpp
-    - src/mongo/unittest/temp_dir.h
-    - src/mongo/unittest/temp_dir_test.cpp
-    - src/mongo/unittest/unittest-inl.h
-    - src/mongo/unittest/unittest.cpp
-    - src/mongo/unittest/unittest.h
-    - src/mongo/unittest/unittest_main.cpp
-    - src/mongo/unittest/unittest_test.cpp
-    group_title: 'TODO: Name this group'
--   group_description: Old style unittests ("test" binary)
-    group_files:
-    - src/mongo/dbtests/accumulatortests.cpp
-    - src/mongo/dbtests/basictests.cpp
-    - src/mongo/dbtests/btreebuildertests.cpp
-    - src/mongo/dbtests/btreetests.cpp
-    - src/mongo/dbtests/btreetests.inl
-    - src/mongo/dbtests/chunk_manager_targeter_test.cpp
-    - src/mongo/dbtests/chunktests.cpp
-    - src/mongo/dbtests/clienttests.cpp
-    - src/mongo/dbtests/commandtests.cpp
-    - src/mongo/dbtests/config_server_fixture.cpp
-    - src/mongo/dbtests/config_server_fixture.h
-    - src/mongo/dbtests/config_upgrade_tests.cpp
-    - src/mongo/dbtests/counttests.cpp
-    - src/mongo/dbtests/dbclient_multi_command_test.cpp
-    - src/mongo/dbtests/dbhelper_tests.cpp
-    - src/mongo/dbtests/dbtests.cpp
-    - src/mongo/dbtests/dbtests.h
-    - src/mongo/dbtests/directclienttests.cpp
-    - src/mongo/dbtests/documentsourcetests.cpp
-    - src/mongo/dbtests/documenttests.cpp
-    - src/mongo/dbtests/expressiontests.cpp
-    - src/mongo/dbtests/extsorttests.cpp
-    - src/mongo/dbtests/framework.cpp
-    - src/mongo/dbtests/framework.h
-    - src/mongo/dbtests/framework_options.cpp
-    - src/mongo/dbtests/framework_options.h
-    - src/mongo/dbtests/framework_options_init.cpp
-    - src/mongo/dbtests/gle_test.cpp
-    - src/mongo/dbtests/gridfstest.cpp
-    - src/mongo/dbtests/indexcatalogtests.cpp
-    - src/mongo/dbtests/indexupdatetests.cpp
-    - src/mongo/dbtests/jsobjtests.cpp
-    - src/mongo/dbtests/jsontests.cpp
-    - src/mongo/dbtests/jstests.cpp
-    - src/mongo/dbtests/keypatterntests.cpp
-    - src/mongo/dbtests/macrotests.cpp
-    - src/mongo/dbtests/matchertests.cpp
-    - src/mongo/dbtests/merge_chunk_tests.cpp
-    - src/mongo/dbtests/mmaptests.cpp
-    - src/mongo/dbtests/mock/mock_conn_registry.cpp
-    - src/mongo/dbtests/mock/mock_conn_registry.h
-    - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-    - src/mongo/dbtests/mock/mock_dbclient_connection.h
-    - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
-    - src/mongo/dbtests/mock/mock_dbclient_cursor.h
-    - src/mongo/dbtests/mock/mock_remote_db_server.cpp
-    - src/mongo/dbtests/mock/mock_remote_db_server.h
-    - src/mongo/dbtests/mock/mock_replica_set.cpp
-    - src/mongo/dbtests/mock/mock_replica_set.h
-    - src/mongo/dbtests/mock_dbclient_conn_test.cpp
-    - src/mongo/dbtests/mock_replica_set_test.cpp
-    - src/mongo/dbtests/namespacetests.cpp
-    - src/mongo/dbtests/oplogstarttests.cpp
-    - src/mongo/dbtests/pdfiletests.cpp
-    - src/mongo/dbtests/perf/perftest.cpp
-    - src/mongo/dbtests/perftests.cpp
-    - src/mongo/dbtests/pipelinetests.cpp
-    - src/mongo/dbtests/profile_test.cpp
-    - src/mongo/dbtests/query_multi_plan_runner.cpp
-    - src/mongo/dbtests/query_single_solution_runner.cpp
-    - src/mongo/dbtests/query_stage_and.cpp
-    - src/mongo/dbtests/query_stage_collscan.cpp
-    - src/mongo/dbtests/query_stage_fetch.cpp
-    - src/mongo/dbtests/query_stage_limit_skip.cpp
-    - src/mongo/dbtests/query_stage_merge_sort.cpp
-    - src/mongo/dbtests/query_stage_sort.cpp
-    - src/mongo/dbtests/query_stage_tests.cpp
-    - src/mongo/dbtests/querytests.cpp
-    - src/mongo/dbtests/queryutiltests.cpp
-    - src/mongo/dbtests/replica_set_monitor_test.cpp
-    - src/mongo/dbtests/replsettests.cpp
-    - src/mongo/dbtests/repltests.cpp
-    - src/mongo/dbtests/runner_registry.cpp
-    - src/mongo/dbtests/sharding.cpp
-    - src/mongo/dbtests/socktests.cpp
-    - src/mongo/dbtests/stacktests.cpp
-    - src/mongo/dbtests/threadedtests.cpp
-    - src/mongo/dbtests/updatetests.cpp
-    group_title: 'TODO: Name this group'
-module_name: unit_tests
-module_title: Unit Tests
+files_with_exec:
+-   execs: []
+    name: src/mongo/unittest/crutch.cpp
+-   execs: []
+    name: src/mongo/unittest/fixture_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/unittest/temp_dir.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/unittest/temp_dir.h
+-   execs: []
+    name: src/mongo/unittest/temp_dir_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/unittest/unittest-inl.h
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/unittest/unittest.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/unittest/unittest.h
+-   execs: []
+    name: src/mongo/unittest/unittest_main.cpp
+-   execs: []
+    name: src/mongo/unittest/unittest_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/accumulatortests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/basictests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/btreebuildertests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/btreetests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/btreetests.inl
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/chunk_manager_targeter_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/chunktests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/clienttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/commandtests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/config_server_fixture.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/config_server_fixture.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/config_upgrade_tests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/counttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/dbclient_multi_command_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/dbhelper_tests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/dbtests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/dbtests.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/directclienttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/documentsourcetests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/documenttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/expressiontests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/extsorttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/framework.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/framework.h
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/framework_options.cpp
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/framework_options.h
+-   execs:
+    - !!python/unicode 'test'
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/framework_options_init.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/gle_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/gridfstest.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/indexcatalogtests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/indexupdatetests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/jsobjtests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/jsontests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/jstests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/keypatterntests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/macrotests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/matchertests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/merge_chunk_tests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mmaptests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_conn_registry.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_conn_registry.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_dbclient_connection.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_dbclient_cursor.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_remote_db_server.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_remote_db_server.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_replica_set.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock/mock_replica_set.h
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock_dbclient_conn_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/mock_replica_set_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/namespacetests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/oplogstarttests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/pdfiletests.cpp
+-   execs:
+    - !!python/unicode 'perftest'
+    name: src/mongo/dbtests/perf/perftest.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/perftests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/pipelinetests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/profile_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_multi_plan_runner.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_single_solution_runner.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_and.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_collscan.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_fetch.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_limit_skip.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_merge_sort.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_sort.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/query_stage_tests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/querytests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/queryutiltests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/replica_set_monitor_test.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/replsettests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/repltests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/runner_registry.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/sharding.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/socktests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/stacktests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/threadedtests.cpp
+-   execs:
+    - !!python/unicode 'test'
+    name: src/mongo/dbtests/updatetests.cpp
