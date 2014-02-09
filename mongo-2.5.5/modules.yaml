@@ -74,6 +74,21 @@ dead_code:
             - src/mongo/db/d_globals.h
         name: legacy_code
         title: legacy_code
+    -   description: 'TODO: dead_code description'
+        groups:
+        -   comments: ''
+            files:
+            - src/mongo/util/trace.cpp
+            - src/mongo/db/tests.cpp
+            - src/mongo/db/stats/service_stats.cpp
+            - src/mongo/db/stats/service_stats.h
+            - src/mongo/util/histogram.cpp
+            - src/mongo/util/histogram.h
+            - src/mongo/dbtests/histogram_test.cpp
+            - src/mongo/util/lruishmap.h
+            - src/mongo/db/taskqueue.h
+        name: dead_code
+        title: dead_code
 javascript:
     description: MongoDB Javascript support
     modules:
@@ -1690,21 +1705,6 @@ storage:
     description: Storage layer for MongoDB.  Includes structural metadata as well
         as code to access data files, metadata files, and the journal on disk
     modules:
-    -   description: 'TODO: dead_code description'
-        groups:
-        -   comments: ''
-            files:
-            - src/mongo/util/trace.cpp
-            - src/mongo/db/tests.cpp
-            - src/mongo/db/stats/service_stats.cpp
-            - src/mongo/db/stats/service_stats.h
-            - src/mongo/util/histogram.cpp
-            - src/mongo/util/histogram.h
-            - src/mongo/dbtests/histogram_test.cpp
-            - src/mongo/util/lruishmap.h
-            - src/mongo/db/taskqueue.h
-        name: dead_code
-        title: dead_code
     -   description: 'TODO: file_allocation description'
         groups:
         -   comments: File allocation library
