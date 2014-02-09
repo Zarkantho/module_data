@@ -1,8 +1,3 @@
-files_flat:
-- src/mongo/db/pagefault.cpp
-- src/mongo/db/pagefault.h
-- src/mongo/db/prefetch.cpp
-- src/mongo/db/prefetch.h
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'

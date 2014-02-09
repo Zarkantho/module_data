@@ -1,6 +1,3 @@
-files_flat:
-- src/mongo/db/d_globals.cpp
-- src/mongo/db/d_globals.h
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'

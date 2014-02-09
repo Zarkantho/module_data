@@ -1,6 +1,3 @@
-files_flat:
-- src/mongo/db/storage/data_file.cpp
-- src/mongo/db/storage/data_file.h
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongotop'

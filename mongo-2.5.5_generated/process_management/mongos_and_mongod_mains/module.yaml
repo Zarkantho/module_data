@@ -1,14 +1,3 @@
-files_flat:
-- src/mongo/db/db.cpp
-- src/mongo/db/db.h
-- src/mongo/db/mongod_options.cpp
-- src/mongo/db/mongod_options.h
-- src/mongo/db/mongod_options_init.cpp
-- src/mongo/s/server.cpp
-- src/mongo/s/server.h
-- src/mongo/s/mongos_options.cpp
-- src/mongo/s/mongos_options.h
-- src/mongo/s/mongos_options_init.cpp
 files_with_exec:
 -   execs:
     - !!python/unicode 'mongod'
