@@ -134,6 +134,136 @@ Helper to manage strings that look like "<db>.<collection>"
 -------------
 
 # Group Description
+Class to hold namespace strings that look like "<db>.<collection>" in a fixed width form
+
+# Files
+- src/mongo/db/structure/catalog/namespace.cpp   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace.h   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace-inl.h   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace\_test.cpp   ()
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+
+### src/mongo/db/structure/catalog/namespace\_test.cpp
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::unittest::Test
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::~TestAssertion()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::run()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::getSuite(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Test::setUp()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+-------------
+
+# Group Description
 Files containing the btree datastructure code.  Currently this is the only index datastructure we use.  While this is intended to be a low level datastructure, it currently has a few fingers into replication and other parts of the server, including calling isMaster
 
 # Files
@@ -2202,324 +2332,239 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 -------------
 
 # Group Description
-Files containing the structural metadata about the databases/data files/collections/indexes.  TODO: Add more details here about the relationships between these files.
+Top level class to keep track of databases.  Essentially a map of path + dbname to a Database object with extra logic to optionally create the database if it does not exist.
 
 # Files
-- src/mongo/db/catalog/collection.cpp   (mongod, tools)
-- src/mongo/db/catalog/collection.h   (mongod, tools, mongos)
-- src/mongo/db/catalog/collection\_cursor\_cache.cpp   (mongod, tools)
-- src/mongo/db/catalog/collection\_cursor\_cache.h   (mongod, tools, mongos)
-- src/mongo/db/catalog/collection\_info\_cache.cpp   (mongod, tools)
-- src/mongo/db/catalog/collection\_info\_cache.h   (mongod, tools, mongos)
-- src/mongo/db/catalog/database.cpp   (mongod, tools)
-- src/mongo/db/catalog/database.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/database\_holder.cpp   (mongod, tools)
 - src/mongo/db/catalog/database\_holder.h   (mongod, tools, mongos)
-- src/mongo/db/catalog/index\_create.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_create.h   (mongod, tools)
-- src/mongo/db/storage\_options.cpp   (mongod, tools)
-- src/mongo/db/storage\_options.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/cap.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/hashtab.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/index\_details.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/index\_details.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace-inl.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace.cpp   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace\_details-inl.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace\_details.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/namespace\_details.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
-- src/mongo/db/structure/catalog/namespace\_test.cpp   ()
-- src/mongo/db/structure/collection\_compact.cpp   (mongod, tools)
-- src/mongo/db/structure/collection\_iterator.cpp   (mongod, tools)
-- src/mongo/db/structure/collection\_iterator.h   (mongod, tools)
-- src/mongo/db/structure/record\_store.cpp   (mongod, tools)
-- src/mongo/db/structure/record\_store.h   (mongod, tools, mongos)
 
 # Interface
 
-### src/mongo/db/catalog/collection.cpp
+### src/mongo/db/catalog/database\_holder.cpp
 
 <div></div>
 
-    mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
+    mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&, bool)
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
 
 <div></div>
 
-    mongo::Collection::docFor(mongo::DiskLoc const&)
+    mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+# Dependencies
+
+### src/mongo/db/catalog/database\_holder.cpp
 
 <div></div>
 
-    mongo::Collection::dataSize() const
+    mongo::uasserted(int, char const*)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
+    mongo::msgasserted(int, std::string const&)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::CompactOptions::toString() const
+    mongo::currentClient
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::Collection::requiresIdIndex() const
-
-- Used By:
-
-    - [src/mongo/tools/admin.cpp](../tools)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
 
 <div></div>
 
-    mongo::Collection::isCapped() const
+    mongo::getThreadName()
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/repl/sync.cpp](../replication)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
 
 <div></div>
 
-    mongo::Collection::insertDocument(mongo::DocWriter const*, bool)
+    boost::system::generic_category()
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/repl/oplog.cpp](../replication)
-
-<div></div>
-
-    mongo::Collection::numRecords() const
-
-- Used By:
-
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
 <div></div>
 
-    mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
+    mongo::msgasserted(int, char const*)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - [src/mongo/db/repl/sync.cpp](../replication)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::Collection::updateDocument(mongo::DiskLoc const&, mongo::BSONObj const&, bool, mongo::OpDebug*)
+    mongo::dur::DurableInterface::_impl
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-
-<div></div>
-
-    mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)
-
-- Used By:
-
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-
-### src/mongo/db/catalog/collection\_cursor\_cache.cpp
+    - [src/mongo/db/dur.cpp](../journaling)
 
 <div></div>
 
-    mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
+    mongo::logger::LogstreamBuilder::makeStream()
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
 
 <div></div>
 
-    mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc const&, mongo::InvalidationType)
+    mongo::wasserted(char const*, char const*, unsigned int)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-
-<div></div>
-
-    mongo::CollectionCursorCache::deregisterCursor(mongo::ClientCursor*)
-
-- Used By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::CollectionCursorCache::find(long long)
+    mongo::BSONObjBuilder::numStrs
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+    - [src/mongo/bson/oid.cpp](../bson)
 
 <div></div>
 
-    mongo::CollectionCursorCache::getCursorIds(std::set<long long, std::less<long long>, std::allocator<long long> >*)
+    mongo::verifyFailed(char const*, char const*, unsigned int)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
-
-<div></div>
-
-    mongo::CollectionCursorCache::numCursors()
-
-- Used By:
-
-    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
+    mongo::logger::globalLogManager()
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
-    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/logger/logger.cpp](../logging\_system)
 
 <div></div>
 
-    mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
+    mongo::uasserted(int, std::string const&)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::CollectionCursorCache::eraseCursorGlobal(long long)
-
-- Used By:
-
-    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
-    mongo::CollectionCursorCache::invalidateAll(bool)
+    mongo::Lock::isWriteLocked(mongo::StringData const&)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::CollectionCursorCache::timeoutCursorsGlobal(unsigned int)
-
-- Used By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-
-### src/mongo/db/catalog/collection\_info\_cache.cpp
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
-    mongo::CollectionInfoCache::computeIndexKeys()
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
-
-<div></div>
-
-    mongo::CollectionInfoCache::getQuerySettings() const
-
-- Used By:
-
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
-    mongo::CollectionInfoCache::getPlanCache() const
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
-- Used By:
+- Provided By:
 
-    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Lock::isW()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../bson)
+
+<div></div>
+
+    mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/background.cpp](../utilities)
+
+<div></div>
+
+    mongo::Client::Context::Context(std::string const&, std::string const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+-------------
+
+# Group Description
+Class to manage a single database.  This currently contains the code to manage data files and collections and provides mechanisms to access other database information, such as indexes.
+
+# Files
+- src/mongo/db/catalog/database.cpp   (mongod, tools)
+- src/mongo/db/catalog/database.h   (mongod, tools, mongos)
+
+# Interface
 
 ### src/mongo/db/catalog/database.cpp
 
@@ -2714,1011 +2759,7 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
 
-### src/mongo/db/catalog/database\_holder.cpp
-
-<div></div>
-
-    mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&, bool)
-
-- Used By:
-
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::DatabaseHolder::getOrCreate(std::string const&, std::string const&, bool&)
-
-- Used By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-### src/mongo/db/storage\_options.cpp
-
-<div></div>
-
-    mongo::getJournalCommitInterval()
-
-- Used By:
-
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::setJournalCommitInterval(unsigned int)
-
-- Used By:
-
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::storageGlobalParams
-
-- Used By:
-
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
-    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/dur\_journal.cpp](../journaling)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/commands/create\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
-    - [src/mongo/tools/admin.cpp](../tools)
-    - [src/mongo/db/index\_builder.cpp](../indexing)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/repl/master\_slave.cpp](../replication)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
-    - [src/mongo/db/durop.cpp](../journaling)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../aggregation\_framework)
-    - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/db/dur.cpp](../journaling)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/repl/rs\_config.cpp](../replication)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/tools/tool.cpp](../tools)
-    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
-    - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/repl/sync.cpp](../replication)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
-    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
-    - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
-    - [src/mongo/db/dur\_recover.cpp](../journaling)
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
-    - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::isJournalingEnabled()
-
-- Used By:
-
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
-
-### src/mongo/db/structure/catalog/cap.cpp
-
-<div></div>
-
-    mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::emptyCappedCollection(char const*)
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-
-### src/mongo/db/structure/catalog/namespace\_details.cpp
-
-<div></div>
-
-    mongo::bucketSizes
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::quantizeAllocationSpace(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::maxCappedDocs() const
-
-- Used By:
-
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::syncUserFlags(std::string const&)
-
-- Used By:
-
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
-
-<div></div>
-
-    mongo::NamespaceDetails::getRecordAllocationSize(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::setUserFlag(int)
-
-- Used By:
-
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
-
-<div></div>
-
-    mongo::NamespaceDetails::idx(int, bool)
-
-- Used By:
-
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::writingWithExtra()
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData const&, int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::setPaddingFactor(double)
-
-- Used By:
-
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::clearUserFlag(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::legalClientSystemNS(mongo::StringData const&, bool)
-
-- Used By:
-
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-
-### src/mongo/db/structure/catalog/namespace\_index.cpp
-
-<div></div>
-
-    mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const
-
-- Used By:
-
-    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/admin.cpp](../tools)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
-    - [src/mongo/tools/dump.cpp](../tools)
-
-<div></div>
-
-    mongo::NamespaceIndex::details(mongo::StringData const&)
-
-- Used By:
-
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
-    - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceIndex::_init()
-
-- Used By:
-
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-
-### src/mongo/db/structure/collection\_compact.cpp
-
-<div></div>
-
-    mongo::Collection::compact(mongo::CompactOptions const*)
-
-- Used By:
-
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-
 # Dependencies
-
-### src/mongo/db/catalog/collection.cpp
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::theReplSet
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../replication)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/keypattern.cpp](../indexing)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::PlanCache::~PlanCache()
-
-- Provided By:
-
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::dur::DurableInterface::_impl
-
-- Provided By:
-
-    - [src/mongo/db/dur.cpp](../journaling)
-
-<div></div>
-
-    mongo::DBException::convertExceptionCode(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::QuerySettings::~QuerySettings()
-
-- Provided By:
-
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::causedBy(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    boost::this_thread::disable_interruption::~disable_interruption()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../bson)
-
-<div></div>
-
-    boost::this_thread::interruption_point()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    boost::this_thread::disable_interruption::disable_interruption()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../bson)
-
-<div></div>
-
-    mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_document\_parser.cpp](../authentication)
-
-<div></div>
-
-    boost::detail::get_current_thread_data()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-### src/mongo/db/catalog/collection\_cursor\_cache.cpp
-
-<div></div>
-
-    mongo::PseudoRandom::PseudoRandom(long long)
-
-- Provided By:
-
-    - [src/mongo/platform/random.cpp](../utilities)
-
-<div></div>
-
-    mongo::ClientCursor::kill()
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::StartupTest::StartupTest()
-
-- Provided By:
-
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../auditing)
-
-<div></div>
-
-    mongo::StaticObserver::_destroyingStatics
-
-- Provided By:
-
-    - [src/mongo/util/util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::invariantFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::StartupTest
-
-- Provided By:
-
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::PseudoRandom::nextInt32()
-
-- Provided By:
-
-    - [src/mongo/platform/random.cpp](../utilities)
-
-<div></div>
-
-    mongo::ActionType::killCursors
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::Lock::DBRead::~DBRead()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::ClientCursor::~ClientCursor()
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Lock::DBRead::DBRead(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::Client::Context::~Context()
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::currentClient
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::StartupTest::~StartupTest()
-
-- Provided By:
-
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    mongo::inShutdown()
-
-- Provided By:
-
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
-
-<div></div>
-
-    mongo::SecureRandom::create()
-
-- Provided By:
-
-    - [src/mongo/platform/random.cpp](../utilities)
-
-<div></div>
-
-    mongo::Client::Context::Context(std::string const&, mongo::Database*)
-
-- Provided By:
-
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::ClientCursor::shouldTimeout(unsigned int)
-
-- Provided By:
-
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-### src/mongo/db/catalog/collection\_info\_cache.cpp
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::IndexPathSet::clear()
-
-- Provided By:
-
-    - [src/mongo/db/index\_set.cpp](../indexing)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::QuerySettings::QuerySettings()
-
-- Provided By:
-
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::PlanCache::notifyOfWriteOp()
-
-- Provided By:
-
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::IndexPathSet::addPath(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/index\_set.cpp](../indexing)
-
-<div></div>
-
-    mongo::PlanCache::PlanCache(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::PlanCache::~PlanCache()
-
-- Provided By:
-
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::PlanCache::clear()
-
-- Provided By:
-
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
-
-<div></div>
-
-    mongo::Lock::assertWriteLocked(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 ### src/mongo/db/catalog/database.cpp
 
@@ -4155,19 +3196,160 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
 
-### src/mongo/db/catalog/database\_holder.cpp
+-------------
+
+# Group Description
+Class to manage the disk format of the ".ns" files
+
+# Files
+- src/mongo/db/structure/catalog/namespace\_details-inl.h   (mongod, tools, mongos)
+- src/mongo/db/structure/catalog/namespace\_details.cpp   (mongod, tools)
+- src/mongo/db/structure/catalog/namespace\_details.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/structure/catalog/namespace\_details.cpp
+
+<div></div>
+
+    mongo::bucketSizes
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::quantizeAllocationSpace(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::quantizePowerOf2AllocationSpace(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::maxCappedDocs() const
+
+- Used By:
+
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::syncUserFlags(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../indexing)
+
+<div></div>
+
+    mongo::NamespaceDetails::getRecordAllocationSize(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::setUserFlag(int)
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../indexing)
+
+<div></div>
+
+    mongo::NamespaceDetails::idx(int, bool)
+
+- Used By:
+
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::writingWithExtra()
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData const&, int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::setPaddingFactor(double)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::clearUserFlag(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::legalClientSystemNS(mongo::StringData const&, bool)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../query\_system)
+
+# Dependencies
+
+### src/mongo/db/structure/catalog/namespace\_details.cpp
+
+<div></div>
+
+    mongo::StartupTest::StartupTest()
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
 
 <div></div>
 
     mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
 
 - Provided By:
 
@@ -4184,11 +3366,75 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::MsgAssertionException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
     mongo::getThreadName()
 
 - Provided By:
 
     - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::StartupTest
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
+
+<div></div>
+
+    mongo::getcurns
+
+- Provided By:
+
+    - [src/mongo/util/log.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::applyUpdateOperators(mongo::BSONObj const&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Status::toString() const
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
+
+<div></div>
+
+    vtable for mongo::MsgAssertionException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -4208,11 +3454,43 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
-    mongo::dur::DurableInterface::_impl
+    typeinfo for mongo::DBException
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::causedBy(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Scope::storedFuncMod()
+
+- Provided By:
+
+    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
+
+<div></div>
+
+    mongo::Lock::assertWriteLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
 <div></div>
 
@@ -4224,11 +3502,401 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
-    mongo::wasserted(char const*, char const*, unsigned int)
+    mongo::dur::DurableInterface::_impl
+
+- Provided By:
+
+    - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::DBException::traceIfNeeded(mongo::DBException const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    vtable for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::DBException::toString() const
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::StartupTest::~StartupTest()
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
+
+<div></div>
+
+    mongo::fromjson(char const*, int*)
+
+- Provided By:
+
+    - [src/mongo/db/json.cpp](../bson)
+
+<div></div>
+
+    mongo::operator<<(std::ostream&, mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+
+<div></div>
+
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+-------------
+
+# Group Description
+Class to manage a single collection, including collection data and collection metadata.
+
+# Files
+- src/mongo/db/catalog/collection.cpp   (mongod, tools)
+- src/mongo/db/catalog/collection.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/catalog/collection.cpp
+
+<div></div>
+
+    mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*) const
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Collection::docFor(mongo::DiskLoc const&)
+
+- Used By:
+
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Collection::dataSize() const
+
+- Used By:
+
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
+
+- Used By:
+
+    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
+    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::CompactOptions::toString() const
+
+- Used By:
+
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Collection::requiresIdIndex() const
+
+- Used By:
+
+    - [src/mongo/tools/admin.cpp](../tools)
+
+<div></div>
+
+    mongo::Collection::isCapped() const
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/repl/sync.cpp](../replication)
+    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::Collection::insertDocument(mongo::DocWriter const*, bool)
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+
+<div></div>
+
+    mongo::Collection::numRecords() const
+
+- Used By:
+
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::Collection::insertDocument(mongo::BSONObj const&, bool)
+
+- Used By:
+
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
+    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/sync.cpp](../replication)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::Collection::updateDocument(mongo::DiskLoc const&, mongo::BSONObj const&, bool, mongo::OpDebug*)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Collection::deleteDocument(mongo::DiskLoc const&, bool, bool, mongo::BSONObj*)
+
+- Used By:
+
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+    - [src/mongo/db/ops/delete.cpp](../query\_system)
+
+# Dependencies
+
+### src/mongo/db/catalog/collection.cpp
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::theReplSet
+
+- Provided By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/keypattern.cpp](../indexing)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::PlanCache::~PlanCache()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::DBException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::dur::DurableInterface::_impl
+
+- Provided By:
+
+    - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
+
+    mongo::DBException::convertExceptionCode(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::QuerySettings::~QuerySettings()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
 
 <div></div>
 
@@ -4264,19 +3932,11 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
-    mongo::Lock::isWriteLocked(mongo::StringData const&)
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 <div></div>
 
@@ -4288,19 +3948,11 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
-    mongo::Client::Context::~Context()
+    mongo::causedBy(mongo::DBException const&)
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Lock::isW()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/util/assert\_util.cpp](../utilities)
 
 <div></div>
 
@@ -4309,6 +3961,14 @@ Files containing the structural metadata about the databases/data files/collecti
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    boost::this_thread::disable_interruption::~disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
@@ -4328,6 +3988,14 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+
+<div></div>
+
     mongo::BSONObjBuilder::numStrsReady
 
 - Provided By:
@@ -4336,19 +4004,637 @@ Files containing the structural metadata about the databases/data files/collecti
 
 <div></div>
 
-    mongo::BackgroundOperation::inProgForDb(mongo::StringData const&)
+    boost::this_thread::interruption_point()
 
 - Provided By:
 
-    - [src/mongo/db/background.cpp](../utilities)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 <div></div>
 
-    mongo::Client::Context::Context(std::string const&, std::string const&, bool)
+    boost::this_thread::disable_interruption::disable_interruption()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../bson)
+
+<div></div>
+
+    mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const
+
+- Provided By:
+
+    - [src/mongo/db/auth/user\_document\_parser.cpp](../authentication)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+-------------
+
+# Group Description
+Contains methods to update and access non persistent collection state, such as the current query plan cache
+
+# Files
+- src/mongo/db/catalog/collection\_info\_cache.cpp   (mongod, tools)
+- src/mongo/db/catalog/collection\_info\_cache.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/catalog/collection\_info\_cache.cpp
+
+<div></div>
+
+    mongo::CollectionInfoCache::computeIndexKeys()
+
+- Used By:
+
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getQuerySettings() const
+
+- Used By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Used By:
+
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+
+# Dependencies
+
+### src/mongo/db/catalog/collection\_info\_cache.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::IndexPathSet::clear()
+
+- Provided By:
+
+    - [src/mongo/db/index\_set.cpp](../indexing)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::QuerySettings::QuerySettings()
+
+- Provided By:
+
+    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::PlanCache::notifyOfWriteOp()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::IndexPathSet::addPath(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/index\_set.cpp](../indexing)
+
+<div></div>
+
+    mongo::PlanCache::PlanCache(std::string const&)
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    std::string mongo::integerToHex<int>(int)
+
+- Provided By:
+
+    - [src/mongo/util/hex.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::PlanCache::~PlanCache()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::PlanCache::clear()
+
+- Provided By:
+
+    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+
+<div></div>
+
+    mongo::Lock::assertWriteLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+-------------
+
+# Group Description
+Keeps track of cursors and query runners for timeout and invalidation purposes.  The pattern is that the relevant objects must be registered here so that this code can essentially call back to do the invalidation when necessary
+
+# Files
+- src/mongo/db/catalog/collection\_cursor\_cache.cpp   (mongod, tools)
+- src/mongo/db/catalog/collection\_cursor\_cache.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/catalog/collection\_cursor\_cache.cpp
+
+<div></div>
+
+    mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
+
+- Used By:
+
+    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc const&, mongo::InvalidationType)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+
+<div></div>
+
+    mongo::CollectionCursorCache::deregisterCursor(mongo::ClientCursor*)
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
+    mongo::CollectionCursorCache::find(long long)
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+
+<div></div>
+
+    mongo::CollectionCursorCache::getCursorIds(std::set<long long, std::less<long long>, std::allocator<long long> >*)
+
+- Used By:
+
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
+
+<div></div>
+
+    mongo::CollectionCursorCache::numCursors()
+
+- Used By:
+
+    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+
+<div></div>
+
+    mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::CollectionCursorCache::eraseCursorGlobal(long long)
+
+- Used By:
+
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::CollectionCursorCache::invalidateAll(bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::CollectionCursorCache::timeoutCursorsGlobal(unsigned int)
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+
+# Dependencies
+
+### src/mongo/db/catalog/collection\_cursor\_cache.cpp
+
+<div></div>
+
+    mongo::PseudoRandom::PseudoRandom(long long)
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ClientCursor::kill()
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::StartupTest::StartupTest()
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
+
+- Provided By:
+
+    - [src/mongo/db/audit.cpp](../auditing)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    typeinfo for mongo::StartupTest
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::PseudoRandom::nextInt32()
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::ActionType::killCursors
+
+- Provided By:
+
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::uasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::Lock::DBRead::~DBRead()
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::ClientCursor::~ClientCursor()
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Lock::DBRead::DBRead(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
 
 - Provided By:
 
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::currentClient
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::ClientBasic::getAuthorizationSession() const
+
+- Provided By:
+
+    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::StartupTest::~StartupTest()
+
+- Provided By:
+
+    - [src/mongo/util/startup\_test.cpp](../utilities)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
+
+- Provided By:
+
+    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+
+<div></div>
+
+    mongo::SecureRandom::create()
+
+- Provided By:
+
+    - [src/mongo/platform/random.cpp](../utilities)
+
+<div></div>
+
+    mongo::Client::Context::Context(std::string const&, mongo::Database*)
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::ClientCursor::shouldTimeout(unsigned int)
+
+- Provided By:
+
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+
+-------------
+
+# Group Description
+Free function to create an index in the foreground.  TODO: Find all the ways an index can be created and put them in the same section
+
+# Files
+- src/mongo/db/catalog/index\_create.cpp   (mongod, tools)
+- src/mongo/db/catalog/index\_create.h   (mongod, tools)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
 
 ### src/mongo/db/catalog/index\_create.cpp
 
@@ -4737,6 +5023,139 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
+-------------
+
+# Group Description
+Command line options for the storage system.  This should only be in binaries that have a storaage layer.
+
+# Files
+- src/mongo/db/storage\_options.cpp   (mongod, tools)
+- src/mongo/db/storage\_options.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/storage\_options.cpp
+
+<div></div>
+
+    mongo::getJournalCommitInterval()
+
+- Used By:
+
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::setJournalCommitInterval(unsigned int)
+
+- Used By:
+
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Used By:
+
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
+    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
+    - [src/mongo/db/dur\_journal.cpp](../journaling)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
+    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/db/commands/create\_indexes.cpp](../database\_commands)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/dur\_preplogbuffer.cpp](../journaling)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
+    - [src/mongo/tools/admin.cpp](../tools)
+    - [src/mongo/db/index\_builder.cpp](../indexing)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/db/durop.cpp](../journaling)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../aggregation\_framework)
+    - [src/mongo/tools/tool\_options.cpp](../tools)
+    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/repl/rs\_config.cpp](../replication)
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/tools/tool.cpp](../tools)
+    - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
+    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
+    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+    - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/basictests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/sync.cpp](../replication)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
+    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
+    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+    - [src/mongo/db/commands/mr.cpp](../database\_commands)
+    - [src/mongo/tools/dump.cpp](../tools)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/storage/data\_file.cpp](../mmap\_file\_interface)
+    - [src/mongo/db/dur\_recover.cpp](../journaling)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
+    - [src/mongo/s/d\_split.cpp](../sharding)
+    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/db/dbeval.cpp](../database\_commands)
+    - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/matchertests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/framework\_options.cpp](../unit\_tests)
+
+<div></div>
+
+    mongo::isJournalingEnabled()
+
+- Used By:
+
+    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+
+# Dependencies
+
 ### src/mongo/db/storage\_options.cpp
 
 <div></div>
@@ -4802,6 +5221,40 @@ Files containing the structural metadata about the databases/data files/collecti
 - Provided By:
 
     - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+
+-------------
+
+# Group Description
+Contains code to do low level storage management of a capped collection, such as allocation of new records
+
+# Files
+- src/mongo/db/structure/catalog/cap.cpp   (mongod, tools)
+
+# Interface
+
+### src/mongo/db/structure/catalog/cap.cpp
+
+<div></div>
+
+    mongo::NamespaceDetails::cappedTruncateAfter(char const*, mongo::DiskLoc, bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::emptyCappedCollection(char const*)
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+
+# Dependencies
 
 ### src/mongo/db/structure/catalog/cap.cpp
 
@@ -4902,6 +5355,34 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/util/hex.cpp](../utilities)
 
+-------------
+
+# Group Description
+Fixed size hash table that is appropriate for managing memory that is persisted to disk
+
+# Files
+- src/mongo/db/structure/catalog/hashtab.h   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
+
+-------------
+
+# Group Description
+On disk format of index metadata
+
+# Files
+- src/mongo/db/structure/catalog/index\_details.cpp   (mongod, tools)
+- src/mongo/db/structure/catalog/index\_details.h   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+
 ### src/mongo/db/structure/catalog/index\_details.cpp
 
 <div></div>
@@ -4976,304 +5457,59 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/util/hex.cpp](../utilities)
 
-### src/mongo/db/structure/catalog/namespace\_details.cpp
+-------------
+
+# Group Description
+Manages the ".ns" files, including adding the metadata for a new namespace or removing metadata for a deleted namespace
+
+# Files
+- src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
+- src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
+
+# Interface
+
+### src/mongo/db/structure/catalog/namespace\_index.cpp
 
 <div></div>
 
-    mongo::StartupTest::StartupTest()
+    mongo::NamespaceIndex::getNamespaces(std::list<std::string, std::allocator<std::string> >&, bool) const
 
-- Provided By:
+- Used By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/admin.cpp](../tools)
+    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
+    - [src/mongo/tools/dump.cpp](../tools)
 
 <div></div>
 
-    mongo::currentClient
+    mongo::NamespaceIndex::details(mongo::StringData const&)
 
-- Provided By:
+- Used By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
+    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
+    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
+    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
+    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+    - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
 <div></div>
 
-    mongo::invariantFailed(char const*, char const*, unsigned int)
+    mongo::NamespaceIndex::_init()
 
-- Provided By:
+- Used By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
 
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::StartupTest
-
-- Provided By:
-
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    mongo::getcurns
-
-- Provided By:
-
-    - [src/mongo/util/log.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::applyUpdateOperators(mongo::BSONObj const&, mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-
-<div></div>
-
-    mongo::Status::toString() const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
-<div></div>
-
-    vtable for mongo::MsgAssertionException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogstreamBuilder const&)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::Scope::storedFuncMod()
-
-- Provided By:
-
-    - [src/mongo/scripting/engine.cpp](../javascript\_libraries)
-
-<div></div>
-
-    mongo::Lock::assertWriteLocked(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::dur::DurableInterface::_impl
-
-- Provided By:
-
-    - [src/mongo/db/dur.cpp](../journaling)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::Helpers::findOne(mongo::StringData const&, mongo::BSONObj const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../utilities)
-
-<div></div>
-
-    mongo::StartupTest::~StartupTest()
-
-- Provided By:
-
-    - [src/mongo/util/startup\_test.cpp](../utilities)
-
-<div></div>
-
-    mongo::fromjson(char const*, int*)
-
-- Provided By:
-
-    - [src/mongo/db/json.cpp](../bson)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/base/string\_data.cpp](../base\_utilites)
-
-<div></div>
-
-    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+# Dependencies
 
 ### src/mongo/db/structure/catalog/namespace\_index.cpp
 
@@ -5456,119 +5692,27 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/db/d\_concurrency.cpp](../concurrency)
 
-### src/mongo/db/structure/catalog/namespace\_test.cpp
+-------------
+
+# Group Description
+Contains the code that actually does the work of compacting a collection.  TODO: put this near the actual compact command
+
+# Files
+- src/mongo/db/structure/collection\_compact.cpp   (mongod, tools)
+
+# Interface
+
+### src/mongo/db/structure/collection\_compact.cpp
 
 <div></div>
 
-    mongo::unittest::Test::tearDown()
+    mongo::Collection::compact(mongo::CompactOptions const*)
 
-- Provided By:
+- Used By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/db/commands/compact.cpp](../database\_commands)
 
-<div></div>
-
-    typeinfo for mongo::unittest::Test
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::unittest::Test::~Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::~TestAssertion()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::fail(std::string const&) const
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::run()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Suite::getSuite(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::unittest::Test::setUp()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+# Dependencies
 
 ### src/mongo/db/structure/collection\_compact.cpp
 
@@ -5765,6 +5909,20 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/mongo/base/status.cpp](../base\_utilites)
 
+-------------
+
+# Group Description
+Contains code that essentially does a table scan of a collection. Has iterators for both capped and non capped collections.
+
+# Files
+- src/mongo/db/structure/collection\_iterator.cpp   (mongod, tools)
+- src/mongo/db/structure/collection\_iterator.h   (mongod, tools)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+
 ### src/mongo/db/structure/collection\_iterator.cpp
 
 <div></div>
@@ -5791,108 +5949,10 @@ Files containing the structural metadata about the databases/data files/collecti
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
 
-### src/mongo/db/structure/record\_store.cpp
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
-
-- Provided By:
-
-    - [src/mongo/util/mmap\_posix.cpp](../mmap)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::MAdvise::~MAdvise()
-
-- Provided By:
-
-    - [src/mongo/util/mmap\_posix.cpp](../mmap)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
-
-<div></div>
-
-    mongo::dur::DurableInterface::_impl
-
-- Provided By:
-
-    - [src/mongo/db/dur.cpp](../journaling)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../base\_utilites)
-
 -------------
 
 # Group Description
-A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an  "address" into our database's storage space.
+A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an  "address" into our database storage space.
 
 # Files
 - src/mongo/db/diskloc.h   (mongod, tools, mongos)
@@ -6417,6 +6477,118 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 - Provided By:
 
     - [src/mongo/util/net/listen.cpp](../network)
+
+-------------
+
+# Group Description
+Manages Records.  Contains code to delete and insert records, as well as helpers to construct a Record object from a DiscLoc.  Also handles allocating new extents if the current extent does not have room for another record.
+
+# Files
+- src/mongo/db/structure/record\_store.cpp   (mongod, tools)
+- src/mongo/db/structure/record\_store.h   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+
+### src/mongo/db/structure/record\_store.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+
+- Provided By:
+
+    - [src/mongo/util/mmap\_posix.cpp](../mmap)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+
+<div></div>
+
+    mongo::fassertFailed(int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::MAdvise::~MAdvise()
+
+- Provided By:
+
+    - [src/mongo/util/mmap\_posix.cpp](../mmap)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+
+<div></div>
+
+    mongo::dur::DurableInterface::_impl
+
+- Provided By:
+
+    - [src/mongo/db/dur.cpp](../journaling)
+
+<div></div>
+
+    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../base\_utilites)
 
 -------------
 

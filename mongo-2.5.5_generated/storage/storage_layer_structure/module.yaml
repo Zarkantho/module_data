@@ -1,8 +1,11 @@
 module_title: Storage Layer Structure
 module_name: storage_layer_structure
-module_description: 'TODO: storage_layer_structure description'
+module_description: 'Structure of the storage layer.  Some of these files are for
+    the persistent on disk representation, whereas some are for the in memory representation.
+    TODO: Come up with better sections.  Split up btree info, persistent structure,
+    and in memory structure into separate modules'
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Namespace String
     group_description: Helper to manage strings that look like "<db>.<collection>"
     group_files:
     - src/mongo/db/namespace_string-inl.h
@@ -99,7 +102,126 @@ module_groups:
         -   symbol_name: mongo::msgasserted(int, char const*)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Namespace Holder
+    group_description: Class to hold namespace strings that look like "<db>.<collection>"
+        in a fixed width form
+    group_files:
+    - src/mongo/db/structure/catalog/namespace.cpp
+    - src/mongo/db/structure/catalog/namespace.h
+    - src/mongo/db/structure/catalog/namespace-inl.h
+    - src/mongo/db/structure/catalog/namespace_test.cpp
+    group_generated_data:
+    -   file_name: src/mongo/db/structure/catalog/namespace.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/structure/catalog/namespace.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/structure/catalog/namespace-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/db/structure/catalog/namespace_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+-   group_title: Btree Datastructure
     group_description: Files containing the btree datastructure code.  Currently this
         is the only index datastructure we use.  While this is intended to be a low
         level datastructure, it currently has a few fingers into replication and other
@@ -891,7 +1013,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Index Catalog
     group_description: Classes to manage and iterate indexes.  There should only be
         one index catalog per collection.  Contains some subset of the metadata about
         an index as well as an index descriptor containing the rest of the data
@@ -1674,45 +1796,15 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: 'Files containing the structural metadata about the databases/data
-        files/collections/indexes.# TODO: Add more details here about the relationships
-        between these files.'
+-   group_title: Database Holder
+    group_description: Top level class to keep track of databases.  Essentially a
+        map of path + dbname to a Database object with extra logic to optionally create
+        the database if it does not exist.
     group_files:
-    - src/mongo/db/catalog/collection.cpp
-    - src/mongo/db/catalog/collection.h
-    - src/mongo/db/catalog/collection_cursor_cache.cpp
-    - src/mongo/db/catalog/collection_cursor_cache.h
-    - src/mongo/db/catalog/collection_info_cache.cpp
-    - src/mongo/db/catalog/collection_info_cache.h
-    - src/mongo/db/catalog/database.cpp
-    - src/mongo/db/catalog/database.h
     - src/mongo/db/catalog/database_holder.cpp
     - src/mongo/db/catalog/database_holder.h
-    - src/mongo/db/catalog/index_create.cpp
-    - src/mongo/db/catalog/index_create.h
-    - src/mongo/db/storage_options.cpp
-    - src/mongo/db/storage_options.h
-    - src/mongo/db/structure/catalog/cap.cpp
-    - src/mongo/db/structure/catalog/hashtab.h
-    - src/mongo/db/structure/catalog/index_details.cpp
-    - src/mongo/db/structure/catalog/index_details.h
-    - src/mongo/db/structure/catalog/namespace-inl.h
-    - src/mongo/db/structure/catalog/namespace.cpp
-    - src/mongo/db/structure/catalog/namespace.h
-    - src/mongo/db/structure/catalog/namespace_details-inl.h
-    - src/mongo/db/structure/catalog/namespace_details.cpp
-    - src/mongo/db/structure/catalog/namespace_details.h
-    - src/mongo/db/structure/catalog/namespace_index.cpp
-    - src/mongo/db/structure/catalog/namespace_index.h
-    - src/mongo/db/structure/catalog/namespace_test.cpp
-    - src/mongo/db/structure/collection_compact.cpp
-    - src/mongo/db/structure/collection_iterator.cpp
-    - src/mongo/db/structure/collection_iterator.h
-    - src/mongo/db/structure/record_store.cpp
-    - src/mongo/db/structure/record_store.h
     group_generated_data:
-    -   file_name: src/mongo/db/catalog/collection.cpp
+    -   file_name: src/mongo/db/catalog/database_holder.cpp
         file_executables:
         - mongotop
         - mongod
@@ -1730,209 +1822,47 @@ module_groups:
         - mongofiles
         - mongorestore
         file_interface:
-        -   symbol_name: mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*)
-                const
-            symbol_uses:
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/commands/storage_details.cpp
-            - src/mongo/db/structure/catalog/cap.cpp
-        -   symbol_name: mongo::Collection::docFor(mongo::DiskLoc const&)
-            symbol_uses:
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/commands/parallel_collection_scan.cpp
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::Collection::dataSize() const
-            symbol_uses:
-            - src/mongo/db/commands/collection_to_capped.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/s/d_migrate.cpp
-        -   symbol_name: mongo::Collection::increaseStorageSize(int, bool)
-            symbol_uses:
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/db/structure/collection_compact.cpp
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::Collection::getExtentManager()
-            symbol_uses:
-            - src/mongo/db/structure/collection_compact.cpp
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::Collection::getIterator(mongo::DiskLoc const&, bool,
-                mongo::CollectionScanParams::Direction const&) const
-            symbol_uses:
-            - src/mongo/db/commands/rename_collection.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/db/exec/collection_scan.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-        -   symbol_name: mongo::CompactOptions::toString() const
-            symbol_uses:
-            - src/mongo/db/commands/compact.cpp
-        -   symbol_name: mongo::Collection::requiresIdIndex() const
-            symbol_uses:
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/tools/admin.cpp
-        -   symbol_name: mongo::Collection::~Collection()
-            symbol_uses:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::Collection::isCapped() const
-            symbol_uses:
-            - src/mongo/db/structure/collection_compact.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
-            - src/mongo/db/commands/compact.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/db/ops/delete.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/repl/sync.cpp
-            - src/mongo/db/commands/validate.cpp
-        -   symbol_name: mongo::Collection::countTableScan(mongo::MatchExpression
-                const*)
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::Collection::insertDocument(mongo::DocWriter const*,
+        -   symbol_name: mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&,
                 bool)
             symbol_uses:
-            - src/mongo/db/repl/oplog.cpp
-        -   symbol_name: mongo::Collection::numRecords() const
-            symbol_uses:
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/catalog/index_create.cpp
             - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/ops/count.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/s/d_migrate.cpp
-        -   symbol_name: mongo::Collection::getExtentManager() const
+        -   symbol_name: mongo::DatabaseHolder::getOrCreate(std::string const&, std::string
+                const&, bool&)
             symbol_uses:
-            - src/mongo/db/structure/collection_iterator.cpp
-        -   symbol_name: mongo::Collection::Collection(mongo::StringData const&, mongo::NamespaceDetails*,
-                mongo::Database*)
-            symbol_uses:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::Collection::insertDocument(mongo::BSONObj const&,
-                bool)
-            symbol_uses:
-            - src/mongo/db/commands/collection_to_capped.cpp
-            - src/mongo/dbtests/pdfiletests.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/dbtests/namespacetests.cpp
-            - src/mongo/db/commands/rename_collection.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/db/repl/sync.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/dbtests/repltests.cpp
-        -   symbol_name: mongo::Collection::updateDocument(mongo::DiskLoc const&,
-                mongo::BSONObj const&, bool, mongo::OpDebug*)
-            symbol_uses:
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
-                bool, bool, mongo::BSONObj*)
-            symbol_uses:
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/db/ops/delete.cpp
-            - src/mongo/db/structure/catalog/cap.cpp
+            - src/mongo/db/client.cpp
         file_dependencies:
-        -   symbol_name: mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool)
-                const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc
-                const&, mongo::InvalidationType)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-        -   symbol_name: mongo::NamespaceDetails::setPaddingFactor(double)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::IndexCatalog::numIndexesTotal() const
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalog::IndexIterator::next()
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalog::~IndexCatalog()
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
         -   symbol_name: mongo::msgasserted(int, std::string const&)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Record::accessed()
+        -   symbol_name: mongo::currentClient
             symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::theReplSet
-            symbol_sources:
-            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
         -   symbol_name: mongo::getThreadName()
             symbol_sources:
             - src/mongo/util/concurrency/thread_name.cpp
-        -   symbol_name: mongo::Record::_accessing() const
+        -   symbol_name: mongo::Database::closeDatabase(std::string const&, std::string
+                const&)
             symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
-            symbol_sources:
-            - src/mongo/db/keypattern.cpp
-        -   symbol_name: mongo::CollectionCursorCache::~CollectionCursorCache()
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/instance.cpp
         -   symbol_name: boost::system::generic_category()
             symbol_sources:
             - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::PlanCache::~PlanCache()
-            symbol_sources:
-            - src/mongo/db/query/plan_cache.cpp
         -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: typeinfo for mongo::DBException
             symbol_sources:
             - src/mongo/util/assert_util.cpp
         -   symbol_name: mongo::dur::DurableInterface::_impl
             symbol_sources:
             - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::CappedRecordStoreV1::CappedRecordStoreV1(mongo::Collection*,
-                mongo::StringData const&, mongo::NamespaceDetails*, mongo::ExtentManager*,
-                bool)
-            symbol_sources:
-            - src/mongo/db/structure/record_store.cpp
-        -   symbol_name: mongo::DBException::convertExceptionCode(int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::IndexCatalog::IndexCatalog(mongo::Collection*, mongo::NamespaceDetails*)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
             symbol_sources:
             - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::QuerySettings::~QuerySettings()
+        -   symbol_name: mongo::wasserted(char const*, char const*, unsigned int)
             symbol_sources:
-            - src/mongo/db/query/query_settings.cpp
-        -   symbol_name: mongo::ExtentManager::recordFor(mongo::DiskLoc const&) const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/util/assert_util.cpp
         -   symbol_name: mongo::BSONObjBuilder::numStrs
             symbol_sources:
             - src/mongo/bson/oid.cpp
@@ -1945,469 +1875,50 @@ module_groups:
         -   symbol_name: mongo::uasserted(int, std::string const&)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-                const&, int)
-            symbol_sources:
-            - src/mongo/base/status.cpp
-        -   symbol_name: mongo::CollectionCursorCache::CollectionCursorCache(mongo::StringData
-                const&)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-                std::string const&, mongo::logger::LogSeverity)
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::CappedIterator::CappedIterator(mongo::Collection const*,
-                mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction
-                const&)
-            symbol_sources:
-            - src/mongo/db/structure/collection_iterator.cpp
-        -   symbol_name: mongo::causedBy(mongo::DBException const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::SimpleRecordStoreV1::SimpleRecordStoreV1(mongo::StringData
-                const&, mongo::NamespaceDetails*, mongo::ExtentManager*, bool)
-            symbol_sources:
-            - src/mongo/db/structure/record_store.cpp
-        -   symbol_name: std::string mongo::integerToHex<int>(int)
-            symbol_sources:
-            - src/mongo/util/hex.cpp
-        -   symbol_name: mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::ServerStatusMetric::ServerStatusMetric(std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/commands/server_status.cpp
-        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
-            symbol_sources:
-            - src/mongo/bson/oid.cpp
-        -   symbol_name: mongo::CollectionInfoCache::CollectionInfoCache(mongo::Collection*)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_info_cache.cpp
-        -   symbol_name: mongo::IndexCatalog::IndexIterator::more()
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalog::findIdIndex() const
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: boost::this_thread::interruption_point()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::ExtentManager::increaseStorageSize(std::string const&,
-                mongo::NamespaceDetails*, int, int)
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::IndexCatalog::indexRecord(mongo::BSONObj const&, mongo::DiskLoc
-                const&)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::CollectionInfoCache::notifyOfWriteOp()
-            symbol_sources:
-            - src/mongo/db/catalog/collection_info_cache.cpp
-        -   symbol_name: mongo::IndexCatalog::checkNoIndexConflicts(mongo::BSONObj
-                const&)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog
-                const*, bool)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalog::unindexRecord(mongo::BSONObj const&,
-                mongo::DiskLoc const&, bool)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::FlatIterator::FlatIterator(mongo::Collection const*,
-                mongo::DiskLoc const&, mongo::CollectionScanParams::Direction const&)
-            symbol_sources:
-            - src/mongo/db/structure/collection_iterator.cpp
-        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
-                const&, bool) const
-            symbol_sources:
-            - src/mongo/db/jsobj.cpp
-        -   symbol_name: mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj
-                const&) const
-            symbol_sources:
-            - src/mongo/db/auth/user_document_parser.cpp
-        -   symbol_name: mongo::storageGlobalParams
-            symbol_sources:
-            - src/mongo/db/storage_options.cpp
-        -   symbol_name: mongo::ExtentManager::getNextExtent(mongo::Extent*) const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::IndexCatalog::init()
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: boost::detail::get_current_thread_data()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-    -   file_name: src/mongo/db/catalog/collection.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/catalog/collection_cursor_cache.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
-            symbol_uses:
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/query/internal_runner.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/s/d_migrate.cpp
-        -   symbol_name: mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc
-                const&, mongo::InvalidationType)
-            symbol_uses:
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionCursorCache::deregisterCursor(mongo::ClientCursor*)
-            symbol_uses:
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-        -   symbol_name: mongo::CollectionCursorCache::find(long long)
-            symbol_uses:
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-        -   symbol_name: mongo::CollectionCursorCache::~CollectionCursorCache()
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionCursorCache::getCursorIds(std::set<long
-                long, std::less<long long>, std::allocator<long long> >*)
-            symbol_uses:
-            - src/mongo/db/range_deleter_db_env.cpp
-        -   symbol_name: mongo::CollectionCursorCache::eraseCursorGlobalIfAuthorized(int,
-                long long*)
-            symbol_uses:
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::CollectionCursorCache::CollectionCursorCache(mongo::StringData
-                const&)
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionCursorCache::numCursors()
-            symbol_uses:
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-        -   symbol_name: mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
-            symbol_uses:
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/query/plan_executor.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/query/multi_plan_runner.cpp
-            - src/mongo/db/query/internal_runner.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/s/d_migrate.cpp
-        -   symbol_name: mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
-            symbol_uses:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::CollectionCursorCache::eraseCursorGlobal(long long)
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::CollectionCursorCache::invalidateAll(bool)
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/db/structure/catalog/cap.cpp
-        -   symbol_name: mongo::CollectionCursorCache::timeoutCursorsGlobal(unsigned
-                int)
-            symbol_uses:
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-        file_dependencies:
-        -   symbol_name: mongo::PseudoRandom::PseudoRandom(long long)
-            symbol_sources:
-            - src/mongo/platform/random.cpp
-        -   symbol_name: mongo::ClientCursor::kill()
-            symbol_sources:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::StartupTest::StartupTest()
-            symbol_sources:
-            - src/mongo/util/startup_test.cpp
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*,
-                mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
-            symbol_sources:
-            - src/mongo/db/audit.cpp
-        -   symbol_name: mongo::StaticObserver::_destroyingStatics
-            symbol_sources:
-            - src/mongo/util/util.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::invariantFailed(char const*, char const*, unsigned
-                int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: typeinfo for mongo::StartupTest
-            symbol_sources:
-            - src/mongo/util/startup_test.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::dbHolderUnchecked()
-            symbol_sources:
-            - src/mongo/db/pdfile.cpp
-        -   symbol_name: mongo::PseudoRandom::nextInt32()
-            symbol_sources:
-            - src/mongo/platform/random.cpp
-        -   symbol_name: mongo::ActionType::killCursors
-            symbol_sources:
-            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::fassertFailed(int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Lock::DBRead::~DBRead()
+        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
             symbol_sources:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::ClientCursor::~ClientCursor()
-            symbol_sources:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::Lock::DBRead::DBRead(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::Client::Context::~Context()
-            symbol_sources:
-            - src/mongo/db/client.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::currentClient
-            symbol_sources:
-            - src/mongo/db/client.cpp
-            - src/mongo/s/s_only.cpp
-        -   symbol_name: mongo::ClientBasic::getAuthorizationSession() const
-            symbol_sources:
-            - src/mongo/db/client_basic.cpp
-        -   symbol_name: mongo::StartupTest::~StartupTest()
-            symbol_sources:
-            - src/mongo/util/startup_test.cpp
-        -   symbol_name: mongo::inShutdown()
-            symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
-            - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/client/clientAndShell.cpp
-            - src/mongo/s/server.cpp
-        -   symbol_name: mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString
-                const&, mongo::ActionType)
-            symbol_sources:
-            - src/mongo/db/auth/authorization_session.cpp
-        -   symbol_name: mongo::SecureRandom::create()
-            symbol_sources:
-            - src/mongo/platform/random.cpp
-        -   symbol_name: mongo::Client::Context::Context(std::string const&, mongo::Database*)
-            symbol_sources:
-            - src/mongo/db/client.cpp
-        -   symbol_name: mongo::ClientCursor::shouldTimeout(unsigned int)
-            symbol_sources:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::storageGlobalParams
-            symbol_sources:
-            - src/mongo/db/storage_options.cpp
         -   symbol_name: mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
             symbol_sources:
             - src/mongo/db/d_concurrency.cpp
-    -   file_name: src/mongo/db/catalog/collection_cursor_cache.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/catalog/collection_info_cache.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::CollectionInfoCache::notifyOfWriteOp()
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionInfoCache::computeIndexKeys()
-            symbol_uses:
-            - src/mongo/db/ops/update_lifecycle_impl.cpp
-        -   symbol_name: mongo::CollectionInfoCache::clearQueryCache()
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog_entry.cpp
-        -   symbol_name: mongo::CollectionInfoCache::getQuerySettings() const
-            symbol_uses:
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/commands/index_filter_commands.cpp
-        -   symbol_name: mongo::CollectionInfoCache::reset()
-            symbol_uses:
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/structure/collection_compact.cpp
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/structure/catalog/cap.cpp
-        -   symbol_name: mongo::CollectionInfoCache::CollectionInfoCache(mongo::Collection*)
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionInfoCache::getPlanCache() const
-            symbol_uses:
-            - src/mongo/db/query/cached_plan_runner.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/query/multi_plan_runner.cpp
-            - src/mongo/db/commands/plan_cache_commands.cpp
-            - src/mongo/db/commands/index_filter_commands.cpp
-        file_dependencies:
-        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::IndexPathSet::clear()
-            symbol_sources:
-            - src/mongo/db/index_set.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::QuerySettings::QuerySettings()
-            symbol_sources:
-            - src/mongo/db/query/query_settings.cpp
-        -   symbol_name: mongo::NamespaceDetails::idx(int, bool)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
                 std::string const&, mongo::logger::LogSeverity)
             symbol_sources:
             - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
+        -   symbol_name: mongo::Client::Context::~Context()
             symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::PlanCache::notifyOfWriteOp()
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::Lock::isW()
             symbol_sources:
-            - src/mongo/db/query/plan_cache.cpp
-        -   symbol_name: mongo::getThreadName()
-            symbol_sources:
-            - src/mongo/util/concurrency/thread_name.cpp
-        -   symbol_name: mongo::DiskLoc::obj() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::logger::globalLogManager()
-            symbol_sources:
-            - src/mongo/logger/logger.cpp
+            - src/mongo/db/d_concurrency.cpp
         -   symbol_name: boost::system::system_category()
             symbol_sources:
             - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::IndexPathSet::addPath(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/index_set.cpp
-        -   symbol_name: mongo::PlanCache::PlanCache(std::string const&)
-            symbol_sources:
-            - src/mongo/db/query/plan_cache.cpp
         -   symbol_name: std::string mongo::integerToHex<int>(int)
             symbol_sources:
             - src/mongo/util/hex.cpp
-        -   symbol_name: mongo::uasserted(int, char const*)
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
             symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: boost::system::generic_category()
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
             symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::PlanCache::~PlanCache()
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::Database::Database(char const*, bool&, std::string
+                const&)
             symbol_sources:
-            - src/mongo/db/query/plan_cache.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::storageGlobalParams
             symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::PlanCache::clear()
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::BackgroundOperation::inProgForDb(mongo::StringData
+                const&)
             symbol_sources:
-            - src/mongo/db/query/plan_cache.cpp
-        -   symbol_name: mongo::Lock::assertWriteLocked(mongo::StringData const&)
+            - src/mongo/db/background.cpp
+        -   symbol_name: mongo::Client::Context::Context(std::string const&, std::string
+                const&, bool)
             symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-    -   file_name: src/mongo/db/catalog/collection_info_cache.h
+            - src/mongo/db/client.cpp
+    -   file_name: src/mongo/db/catalog/database_holder.h
         file_executables:
         - mongotop
         - mongod
@@ -2427,6 +1938,14 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
+-   group_title: Database Class
+    group_description: Class to manage a single database.  This currently contains
+        the code to manage data files and collections and provides mechanisms to access
+        other database information, such as indexes.
+    group_files:
+    - src/mongo/db/catalog/database.cpp
+    - src/mongo/db/catalog/database.h
+    group_generated_data:
     -   file_name: src/mongo/db/catalog/database.cpp
         file_executables:
         - mongotop
@@ -2923,821 +2442,13 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
-    -   file_name: src/mongo/db/catalog/database_holder.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::DatabaseHolder::closeAll(std::string const&, mongo::BSONObjBuilder&,
-                bool)
-            symbol_uses:
-            - src/mongo/db/dbcommands.cpp
-        -   symbol_name: mongo::DatabaseHolder::getOrCreate(std::string const&, std::string
-                const&, bool&)
-            symbol_uses:
-            - src/mongo/db/client.cpp
-        file_dependencies:
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::currentClient
-            symbol_sources:
-            - src/mongo/db/client.cpp
-            - src/mongo/s/s_only.cpp
-        -   symbol_name: mongo::getThreadName()
-            symbol_sources:
-            - src/mongo/util/concurrency/thread_name.cpp
-        -   symbol_name: mongo::Database::closeDatabase(std::string const&, std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/instance.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::dur::DurableInterface::_impl
-            symbol_sources:
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::wasserted(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::BSONObjBuilder::numStrs
-            symbol_sources:
-            - src/mongo/bson/oid.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::logger::globalLogManager()
-            symbol_sources:
-            - src/mongo/logger/logger.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-                std::string const&, mongo::logger::LogSeverity)
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::Client::Context::~Context()
-            symbol_sources:
-            - src/mongo/db/client.cpp
-        -   symbol_name: mongo::Lock::isW()
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: std::string mongo::integerToHex<int>(int)
-            symbol_sources:
-            - src/mongo/util/hex.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
-            symbol_sources:
-            - src/mongo/bson/oid.cpp
-        -   symbol_name: mongo::Database::Database(char const*, bool&, std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::storageGlobalParams
-            symbol_sources:
-            - src/mongo/db/storage_options.cpp
-        -   symbol_name: mongo::BackgroundOperation::inProgForDb(mongo::StringData
-                const&)
-            symbol_sources:
-            - src/mongo/db/background.cpp
-        -   symbol_name: mongo::Client::Context::Context(std::string const&, std::string
-                const&, bool)
-            symbol_sources:
-            - src/mongo/db/client.cpp
-    -   file_name: src/mongo/db/catalog/database_holder.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/catalog/index_create.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::buildAnIndex(mongo::Collection*, mongo::IndexCatalogEntry*,
-                bool)
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-        file_dependencies:
-        -   symbol_name: mongo::replAllDead
-            symbol_sources:
-            - src/mongo/db/repl/master_slave.cpp
-        -   symbol_name: mongo::LastErrorHolder::get(bool)
-            symbol_sources:
-            - src/mongo/db/lasterror.cpp
-        -   symbol_name: mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-        -   symbol_name: mongo::killCurrentOp
-            symbol_sources:
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::BackgroundOperation::BackgroundOperation(mongo::StringData
-                const&)
-            symbol_sources:
-            - src/mongo/db/background.cpp
-        -   symbol_name: mongo::theReplSet
-            symbol_sources:
-            - src/mongo/db/repl/rs.cpp
-        -   symbol_name: mongo::invariantFailed(char const*, char const*, unsigned
-                int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::getThreadName()
-            symbol_sources:
-            - src/mongo/util/concurrency/thread_name.cpp
-        -   symbol_name: mongo::tlogLevel
-            symbol_sources:
-            - src/mongo/util/log.cpp
-        -   symbol_name: mongo::Collection::numRecords() const
-            symbol_sources:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::ElapsedTracker::ElapsedTracker(int, int)
-            symbol_sources:
-            - src/mongo/util/elapsed_tracker.cpp
-        -   symbol_name: mongo::KillCurrentOp::checkForInterrupt(bool)
-            symbol_sources:
-            - src/mongo/db/kill_current_op.cpp
-        -   symbol_name: mongo::Status::toString() const
-            symbol_sources:
-            - src/mongo/base/status.cpp
-        -   symbol_name: mongo::Timer::_countsPerSecond
-            symbol_sources:
-            - src/mongo/util/timer.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: typeinfo for mongo::DBException
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::dur::DurableInterface::_impl
-            symbol_sources:
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::inDBRepair
-            symbol_sources:
-            - src/mongo/db/pdfile.cpp
-        -   symbol_name: mongo::ElapsedTracker::intervalHasElapsed()
-            symbol_sources:
-            - src/mongo/util/elapsed_tracker.cpp
-        -   symbol_name: mongo::replSettings
-            symbol_sources:
-            - src/mongo/db/repl/replication_server_status.cpp
-        -   symbol_name: mongo::ProgressMeter::hit(int)
-            symbol_sources:
-            - src/mongo/util/progress_meter.cpp
-        -   symbol_name: mongo::WorkingSet::WorkingSet()
-            symbol_sources:
-            - src/mongo/db/exec/working_set.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::logOp(char const*, char const*, mongo::BSONObj const&,
-                mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)
-            symbol_sources:
-            - src/mongo/db/repl/oplog.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::logger::globalLogManager()
-            symbol_sources:
-            - src/mongo/logger/logger.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::replSet
-            symbol_sources:
-            - src/mongo/db/repl/rs.cpp
-        -   symbol_name: mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj
-                const*, mongo::StringData const&, mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/audit.cpp
-        -   symbol_name: mongo::lastError
-            symbol_sources:
-            - src/mongo/db/lasterror.cpp
-        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/query/eof_runner.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-                std::string const&, mongo::logger::LogSeverity)
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::Lock::nested()
-            symbol_sources:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::ClientCursor::suggestYieldMicros()
-            symbol_sources:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams
-                const&, mongo::WorkingSet*, mongo::MatchExpression const*)
-            symbol_sources:
-            - src/mongo/db/exec/collection_scan.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::currentClient
-            symbol_sources:
-            - src/mongo/db/client.cpp
-            - src/mongo/s/s_only.cpp
-        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::CollectionInfoCache::reset()
-            symbol_sources:
-            - src/mongo/db/catalog/collection_info_cache.cpp
-        -   symbol_name: std::string mongo::integerToHex<int>(int)
-            symbol_sources:
-            - src/mongo/util/hex.cpp
-        -   symbol_name: mongo::CurOp::setMessage(char const*, std::string, unsigned
-                long long, int)
-            symbol_sources:
-            - src/mongo/db/curop.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-        -   symbol_name: mongo::curTimeMicros64()
-            symbol_sources:
-            - src/mongo/util/time_support.cpp
-        -   symbol_name: boost::this_thread::interruption_point()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
-                bool, bool, mongo::BSONObj*)
-            symbol_sources:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::ElapsedTracker::resetLastTime()
-            symbol_sources:
-            - src/mongo/util/elapsed_tracker.cpp
-        -   symbol_name: mongo::IndexCatalog::findIndexByName(mongo::StringData const&,
-                bool) const
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::IndexCatalogEntry::head() const
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog_entry.cpp
-        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-        -   symbol_name: mongo::InternalRunner::InternalRunner(mongo::Collection const*,
-                mongo::PlanStage*, mongo::WorkingSet*)
-            symbol_sources:
-            - src/mongo/db/query/internal_runner.cpp
-        -   symbol_name: mongo::ClientCursor::staticYield(int, mongo::StringData const&,
-                mongo::Record const*)
-            symbol_sources:
-            - src/mongo/db/clientcursor.cpp
-        -   symbol_name: boost::detail::get_current_thread_data()
-            symbol_sources:
-            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
-    -   file_name: src/mongo/db/catalog/index_create.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/storage_options.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::getJournalCommitInterval()
-            symbol_uses:
-            - src/mongo/db/commands/parameters.cpp
-        -   symbol_name: mongo::setJournalCommitInterval(unsigned int)
-            symbol_uses:
-            - src/mongo/db/commands/parameters.cpp
-        -   symbol_name: mongo::storageGlobalParams
-            symbol_uses:
-            - src/mongo/db/commands/index_filter_commands.cpp
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/dbtests/namespacetests.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/db/range_deleter_db_env.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/commands/create_indexes.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/dur_preplogbuffer.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/tools/admin.cpp
-            - src/mongo/db/index_builder.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/commands/rename_collection.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/db/commands/pipeline_command.cpp
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/prefetch.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/db/storage/record.cpp
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/db/commands/plan_cache_commands.cpp
-            - src/mongo/db/extsort.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/dbtests/basictests.cpp
-            - src/mongo/dbtests/indexcatalogtests.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/db/commands/collection_to_capped.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/db/repl/sync.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/dbcommands_admin.cpp
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-            - src/mongo/db/ops/count.cpp
-            - src/mongo/db/index_rebuilder.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-            - src/mongo/db/catalog/database_holder.cpp
-            - src/mongo/db/storage/data_file.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/db/commands/compact.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/dbtests/pdfiletests.cpp
-            - src/mongo/db/dbeval.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/matchertests.cpp
-            - src/mongo/dbtests/framework_options.cpp
-        -   symbol_name: mongo::isJournalingEnabled()
-            symbol_uses:
-            - src/mongo/db/commands/parameters.cpp
-        file_dependencies:
-        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
-                int)
-            symbol_sources:
-            - src/mongo/base/status.cpp
-        -   symbol_name: typeinfo for mongo::ServerParameter
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::ExportedServerParameter<double>::setFromString(std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::ServerParameter::~ServerParameter()
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::ServerParameterSet::getGlobal()
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
-                std::string const&, bool, bool)
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::ExportedServerParameter<bool>::setFromString(std::string
-                const&)
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-    -   file_name: src/mongo/db/storage_options.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongorestore
-        - mongodump
-        - mongobridge
-        - mongofiles
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongostat
-        - mongosniff
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/cap.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::NamespaceDetails::cappedTruncateAfter(char const*,
-                mongo::DiskLoc, bool)
-            symbol_uses:
-            - src/mongo/dbtests/namespacetests.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/commands/test_commands.cpp
-        -   symbol_name: mongo::NamespaceDetails::emptyCappedCollection(char const*)
-            symbol_uses:
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/commands/test_commands.cpp
-        -   symbol_name: mongo::NamespaceDetails::cappedCheckMigrate()
-            symbol_uses:
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-        -   symbol_name: mongo::NamespaceDetails::cappedAlloc(mongo::Collection*,
-                mongo::StringData const&, int)
-            symbol_uses:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::NamespaceDetails::cappedFirstDeletedInCurExtent()
-            symbol_uses:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        file_dependencies:
-        -   symbol_name: mongo::DiskLoc::drec() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::NamespaceDetails::maybeComplain(mongo::StringData
-                const&, int) const
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
-                bool, bool, mongo::BSONObj*)
-            symbol_sources:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::NamespaceDetails::maxCappedDocs() const
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
-            symbol_sources:
-            - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*,
-                mongo::DiskLoc)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::Extent::reuse(mongo::StringData const&, bool)
-            symbol_sources:
-            - src/mongo/db/storage/extent.cpp
-        -   symbol_name: mongo::Helpers::findAll(std::string const&, mongo::BSONObj
-                const&)
-            symbol_sources:
-            - src/mongo/db/dbhelpers.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::IndexCatalog::dropAllIndexes(bool)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*)
-                const
-            symbol_sources:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::CollectionCursorCache::invalidateAll(bool)
-            symbol_sources:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::currentClient
-            symbol_sources:
-            - src/mongo/db/client.cpp
-            - src/mongo/s/s_only.cpp
-        -   symbol_name: mongo::DeletedRecord::_accessing() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::Status::toString() const
-            symbol_sources:
-            - src/mongo/base/status.cpp
-        -   symbol_name: mongo::DiskLoc::ext() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::CollectionInfoCache::reset()
-            symbol_sources:
-            - src/mongo/db/catalog/collection_info_cache.cpp
-        -   symbol_name: mongo::dur::DurableInterface::_impl
-            symbol_sources:
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
-            symbol_sources:
-            - src/mongo/db/catalog/index_catalog.cpp
-        -   symbol_name: std::string mongo::integerToHex<int>(int)
-            symbol_sources:
-            - src/mongo/util/hex.cpp
-    -   file_name: src/mongo/db/structure/catalog/hashtab.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/index_details.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::IndexDetails::areIndexOptionsEquivalent(mongo::BSONObj
-                const&) const
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-        file_dependencies:
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::msgasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
-                const&, bool) const
-            symbol_sources:
-            - src/mongo/db/jsobj.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::uasserted(int, std::string const&)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::DiskLoc::obj() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: std::string mongo::integerToHex<int>(int)
-            symbol_sources:
-            - src/mongo/util/hex.cpp
-    -   file_name: src/mongo/db/structure/catalog/index_details.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/namespace-inl.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongorestore
-        - mongodump
-        - mongobridge
-        - mongofiles
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongostat
-        - mongosniff
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/namespace.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/namespace.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongorestore
-        - mongodump
-        - mongobridge
-        - mongofiles
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongostat
-        - mongosniff
-        file_interface: []
-        file_dependencies: []
+-   group_title: Namespace Details
+    group_description: Class to manage the disk format of the ".ns" files
+    group_files:
+    - src/mongo/db/structure/catalog/namespace_details-inl.h
+    - src/mongo/db/structure/catalog/namespace_details.cpp
+    - src/mongo/db/structure/catalog/namespace_details.h
+    group_generated_data:
     -   file_name: src/mongo/db/structure/catalog/namespace_details-inl.h
         file_executables:
         - mongotop
@@ -4100,6 +2811,1403 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
+-   group_title: Collection Class
+    group_description: Class to manage a single collection, including collection data
+        and collection metadata.
+    group_files:
+    - src/mongo/db/catalog/collection.cpp
+    - src/mongo/db/catalog/collection.h
+    group_generated_data:
+    -   file_name: src/mongo/db/catalog/collection.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*)
+                const
+            symbol_uses:
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/commands/storage_details.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+        -   symbol_name: mongo::Collection::docFor(mongo::DiskLoc const&)
+            symbol_uses:
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::Collection::dataSize() const
+            symbol_uses:
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::Collection::increaseStorageSize(int, bool)
+            symbol_uses:
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::Collection::getExtentManager()
+            symbol_uses:
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::Collection::getIterator(mongo::DiskLoc const&, bool,
+                mongo::CollectionScanParams::Direction const&) const
+            symbol_uses:
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+        -   symbol_name: mongo::CompactOptions::toString() const
+            symbol_uses:
+            - src/mongo/db/commands/compact.cpp
+        -   symbol_name: mongo::Collection::requiresIdIndex() const
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/tools/admin.cpp
+        -   symbol_name: mongo::Collection::~Collection()
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::Collection::isCapped() const
+            symbol_uses:
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/ops/delete.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/commands/validate.cpp
+        -   symbol_name: mongo::Collection::countTableScan(mongo::MatchExpression
+                const*)
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::Collection::insertDocument(mongo::DocWriter const*,
+                bool)
+            symbol_uses:
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Collection::numRecords() const
+            symbol_uses:
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/ops/count.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::Collection::getExtentManager() const
+            symbol_uses:
+            - src/mongo/db/structure/collection_iterator.cpp
+        -   symbol_name: mongo::Collection::Collection(mongo::StringData const&, mongo::NamespaceDetails*,
+                mongo::Database*)
+            symbol_uses:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::Collection::insertDocument(mongo::BSONObj const&,
+                bool)
+            symbol_uses:
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/repltests.cpp
+        -   symbol_name: mongo::Collection::updateDocument(mongo::DiskLoc const&,
+                mongo::BSONObj const&, bool, mongo::OpDebug*)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
+                bool, bool, mongo::BSONObj*)
+            symbol_uses:
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/ops/delete.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+        file_dependencies:
+        -   symbol_name: mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool)
+                const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc
+                const&, mongo::InvalidationType)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: mongo::NamespaceDetails::setPaddingFactor(double)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::IndexCatalog::numIndexesTotal() const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::next()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalog::~IndexCatalog()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Record::accessed()
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::theReplSet
+            symbol_sources:
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::Record::_accessing() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::KeyPattern::isIdKeyPattern(mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/db/keypattern.cpp
+        -   symbol_name: mongo::CollectionCursorCache::~CollectionCursorCache()
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::PlanCache::~PlanCache()
+            symbol_sources:
+            - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::CappedRecordStoreV1::CappedRecordStoreV1(mongo::Collection*,
+                mongo::StringData const&, mongo::NamespaceDetails*, mongo::ExtentManager*,
+                bool)
+            symbol_sources:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: mongo::DBException::convertExceptionCode(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexCatalog(mongo::Collection*, mongo::NamespaceDetails*)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::QuerySettings::~QuerySettings()
+            symbol_sources:
+            - src/mongo/db/query/query_settings.cpp
+        -   symbol_name: mongo::ExtentManager::recordFor(mongo::DiskLoc const&) const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrs
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::CollectionCursorCache::CollectionCursorCache(mongo::StringData
+                const&)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::CappedIterator::CappedIterator(mongo::Collection const*,
+                mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction
+                const&)
+            symbol_sources:
+            - src/mongo/db/structure/collection_iterator.cpp
+        -   symbol_name: mongo::causedBy(mongo::DBException const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::SimpleRecordStoreV1::SimpleRecordStoreV1(mongo::StringData
+                const&, mongo::NamespaceDetails*, mongo::ExtentManager*, bool)
+            symbol_sources:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::IndexCatalog::getIndex(mongo::IndexDescriptor const*)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::ServerStatusMetric::ServerStatusMetric(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/commands/server_status.cpp
+        -   symbol_name: mongo::BSONObjBuilder::numStrsReady
+            symbol_sources:
+            - src/mongo/bson/oid.cpp
+        -   symbol_name: mongo::CollectionInfoCache::CollectionInfoCache(mongo::Collection*)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_info_cache.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::more()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalog::findIdIndex() const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::ExtentManager::increaseStorageSize(std::string const&,
+                mongo::NamespaceDetails*, int, int)
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::IndexCatalog::indexRecord(mongo::BSONObj const&, mongo::DiskLoc
+                const&)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::CollectionInfoCache::notifyOfWriteOp()
+            symbol_sources:
+            - src/mongo/db/catalog/collection_info_cache.cpp
+        -   symbol_name: mongo::IndexCatalog::checkNoIndexConflicts(mongo::BSONObj
+                const&)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalog::IndexIterator::IndexIterator(mongo::IndexCatalog
+                const*, bool)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalog::unindexRecord(mongo::BSONObj const&,
+                mongo::DiskLoc const&, bool)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::FlatIterator::FlatIterator(mongo::Collection const*,
+                mongo::DiskLoc const&, mongo::CollectionScanParams::Direction const&)
+            symbol_sources:
+            - src/mongo/db/structure/collection_iterator.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+                const&, bool) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj
+                const&) const
+            symbol_sources:
+            - src/mongo/db/auth/user_document_parser.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::ExtentManager::getNextExtent(mongo::Extent*) const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::IndexCatalog::init()
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+    -   file_name: src/mongo/db/catalog/collection.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Collection Info Cache
+    group_description: Contains methods to update and access non persistent collection
+        state, such as the current query plan cache
+    group_files:
+    - src/mongo/db/catalog/collection_info_cache.cpp
+    - src/mongo/db/catalog/collection_info_cache.h
+    group_generated_data:
+    -   file_name: src/mongo/db/catalog/collection_info_cache.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::CollectionInfoCache::notifyOfWriteOp()
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionInfoCache::computeIndexKeys()
+            symbol_uses:
+            - src/mongo/db/ops/update_lifecycle_impl.cpp
+        -   symbol_name: mongo::CollectionInfoCache::clearQueryCache()
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog_entry.cpp
+        -   symbol_name: mongo::CollectionInfoCache::getQuerySettings() const
+            symbol_uses:
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/commands/index_filter_commands.cpp
+        -   symbol_name: mongo::CollectionInfoCache::reset()
+            symbol_uses:
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+        -   symbol_name: mongo::CollectionInfoCache::CollectionInfoCache(mongo::Collection*)
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionInfoCache::getPlanCache() const
+            symbol_uses:
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/commands/index_filter_commands.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::IndexPathSet::clear()
+            symbol_sources:
+            - src/mongo/db/index_set.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::QuerySettings::QuerySettings()
+            symbol_sources:
+            - src/mongo/db/query/query_settings.cpp
+        -   symbol_name: mongo::NamespaceDetails::idx(int, bool)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::PlanCache::notifyOfWriteOp()
+            symbol_sources:
+            - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::DiskLoc::obj() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::IndexPathSet::addPath(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/index_set.cpp
+        -   symbol_name: mongo::PlanCache::PlanCache(std::string const&)
+            symbol_sources:
+            - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::PlanCache::~PlanCache()
+            symbol_sources:
+            - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::PlanCache::clear()
+            symbol_sources:
+            - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: mongo::Lock::assertWriteLocked(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+    -   file_name: src/mongo/db/catalog/collection_info_cache.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Collection Cursor Cache
+    group_description: Keeps track of cursors and query runners for timeout and invalidation
+        purposes.  The pattern is that the relevant objects must be registered here
+        so that this code can essentially call back to do the invalidation when necessary
+    group_files:
+    - src/mongo/db/catalog/collection_cursor_cache.cpp
+    - src/mongo/db/catalog/collection_cursor_cache.h
+    group_generated_data:
+    -   file_name: src/mongo/db/catalog/collection_cursor_cache.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
+            symbol_uses:
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/query/internal_runner.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc
+                const&, mongo::InvalidationType)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionCursorCache::deregisterCursor(mongo::ClientCursor*)
+            symbol_uses:
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+        -   symbol_name: mongo::CollectionCursorCache::find(long long)
+            symbol_uses:
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+        -   symbol_name: mongo::CollectionCursorCache::~CollectionCursorCache()
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionCursorCache::getCursorIds(std::set<long
+                long, std::less<long long>, std::allocator<long long> >*)
+            symbol_uses:
+            - src/mongo/db/range_deleter_db_env.cpp
+        -   symbol_name: mongo::CollectionCursorCache::eraseCursorGlobalIfAuthorized(int,
+                long long*)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::CollectionCursorCache::CollectionCursorCache(mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionCursorCache::numCursors()
+            symbol_uses:
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        -   symbol_name: mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/query/plan_executor.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/db/query/internal_runner.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
+            symbol_uses:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::CollectionCursorCache::eraseCursorGlobal(long long)
+            symbol_uses:
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::CollectionCursorCache::invalidateAll(bool)
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+        -   symbol_name: mongo::CollectionCursorCache::timeoutCursorsGlobal(unsigned
+                int)
+            symbol_uses:
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        file_dependencies:
+        -   symbol_name: mongo::PseudoRandom::PseudoRandom(long long)
+            symbol_sources:
+            - src/mongo/platform/random.cpp
+        -   symbol_name: mongo::ClientCursor::kill()
+            symbol_sources:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::StartupTest::StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*,
+                mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
+            symbol_sources:
+            - src/mongo/db/audit.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::invariantFailed(char const*, char const*, unsigned
+                int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::StartupTest
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::dbHolderUnchecked()
+            symbol_sources:
+            - src/mongo/db/pdfile.cpp
+        -   symbol_name: mongo::PseudoRandom::nextInt32()
+            symbol_sources:
+            - src/mongo/platform/random.cpp
+        -   symbol_name: mongo::ActionType::killCursors
+            symbol_sources:
+            - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Lock::DBRead::~DBRead()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::ClientCursor::~ClientCursor()
+            symbol_sources:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::Lock::DBRead::DBRead(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::Client::Context::~Context()
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::ClientBasic::getAuthorizationSession() const
+            symbol_sources:
+            - src/mongo/db/client_basic.cpp
+        -   symbol_name: mongo::StartupTest::~StartupTest()
+            symbol_sources:
+            - src/mongo/util/startup_test.cpp
+        -   symbol_name: mongo::inShutdown()
+            symbol_sources:
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/unittest/crutch.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/clientAndShell.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString
+                const&, mongo::ActionType)
+            symbol_sources:
+            - src/mongo/db/auth/authorization_session.cpp
+        -   symbol_name: mongo::SecureRandom::create()
+            symbol_sources:
+            - src/mongo/platform/random.cpp
+        -   symbol_name: mongo::Client::Context::Context(std::string const&, mongo::Database*)
+            symbol_sources:
+            - src/mongo/db/client.cpp
+        -   symbol_name: mongo::ClientCursor::shouldTimeout(unsigned int)
+            symbol_sources:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_sources:
+            - src/mongo/db/storage_options.cpp
+        -   symbol_name: mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+    -   file_name: src/mongo/db/catalog/collection_cursor_cache.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Foreground Index Creation
+    group_description: 'Free function to create an index in the foreground.  TODO:
+        Find all the ways an index can be created and put them in the same section'
+    group_files:
+    - src/mongo/db/catalog/index_create.cpp
+    - src/mongo/db/catalog/index_create.h
+    group_generated_data:
+    -   file_name: src/mongo/db/catalog/index_create.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::buildAnIndex(mongo::Collection*, mongo::IndexCatalogEntry*,
+                bool)
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog.cpp
+        file_dependencies:
+        -   symbol_name: mongo::replAllDead
+            symbol_sources:
+            - src/mongo/db/repl/master_slave.cpp
+        -   symbol_name: mongo::LastErrorHolder::get(bool)
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: mongo::killCurrentOp
+            symbol_sources:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BackgroundOperation::BackgroundOperation(mongo::StringData
+                const&)
+            symbol_sources:
+            - src/mongo/db/background.cpp
+        -   symbol_name: mongo::theReplSet
+            symbol_sources:
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::invariantFailed(char const*, char const*, unsigned
+                int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::tlogLevel
+            symbol_sources:
+            - src/mongo/util/log.cpp
+        -   symbol_name: mongo::Collection::numRecords() const
+            symbol_sources:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::ElapsedTracker::ElapsedTracker(int, int)
+            symbol_sources:
+            - src/mongo/util/elapsed_tracker.cpp
+        -   symbol_name: mongo::KillCurrentOp::checkForInterrupt(bool)
+            symbol_sources:
+            - src/mongo/db/kill_current_op.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::Timer::_countsPerSecond
+            symbol_sources:
+            - src/mongo/util/timer.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::DBException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::inDBRepair
+            symbol_sources:
+            - src/mongo/db/pdfile.cpp
+        -   symbol_name: mongo::ElapsedTracker::intervalHasElapsed()
+            symbol_sources:
+            - src/mongo/util/elapsed_tracker.cpp
+        -   symbol_name: mongo::replSettings
+            symbol_sources:
+            - src/mongo/db/repl/replication_server_status.cpp
+        -   symbol_name: mongo::ProgressMeter::hit(int)
+            symbol_sources:
+            - src/mongo/util/progress_meter.cpp
+        -   symbol_name: mongo::WorkingSet::WorkingSet()
+            symbol_sources:
+            - src/mongo/db/exec/working_set.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logOp(char const*, char const*, mongo::BSONObj const&,
+                mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)
+            symbol_sources:
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::replSet
+            symbol_sources:
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj
+                const*, mongo::StringData const&, mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/audit.cpp
+        -   symbol_name: mongo::lastError
+            symbol_sources:
+            - src/mongo/db/lasterror.cpp
+        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/query/eof_runner.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::Lock::nested()
+            symbol_sources:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::ClientCursor::suggestYieldMicros()
+            symbol_sources:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams
+                const&, mongo::WorkingSet*, mongo::MatchExpression const*)
+            symbol_sources:
+            - src/mongo/db/exec/collection_scan.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::CollectionInfoCache::reset()
+            symbol_sources:
+            - src/mongo/db/catalog/collection_info_cache.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::CurOp::setMessage(char const*, std::string, unsigned
+                long long, int)
+            symbol_sources:
+            - src/mongo/db/curop.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: mongo::curTimeMicros64()
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
+                bool, bool, mongo::BSONObj*)
+            symbol_sources:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::ElapsedTracker::resetLastTime()
+            symbol_sources:
+            - src/mongo/util/elapsed_tracker.cpp
+        -   symbol_name: mongo::IndexCatalog::findIndexByName(mongo::StringData const&,
+                bool) const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::IndexCatalogEntry::head() const
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog_entry.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::InternalRunner::InternalRunner(mongo::Collection const*,
+                mongo::PlanStage*, mongo::WorkingSet*)
+            symbol_sources:
+            - src/mongo/db/query/internal_runner.cpp
+        -   symbol_name: mongo::ClientCursor::staticYield(int, mongo::StringData const&,
+                mongo::Record const*)
+            symbol_sources:
+            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+    -   file_name: src/mongo/db/catalog/index_create.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Storage Options
+    group_description: Command line options for the storage system.  This should only
+        be in binaries that have a storaage layer.
+    group_files:
+    - src/mongo/db/storage_options.cpp
+    - src/mongo/db/storage_options.h
+    group_generated_data:
+    -   file_name: src/mongo/db/storage_options.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::getJournalCommitInterval()
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        -   symbol_name: mongo::setJournalCommitInterval(unsigned int)
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        -   symbol_name: mongo::storageGlobalParams
+            symbol_uses:
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/db/range_deleter_db_env.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/dur_preplogbuffer.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/tools/admin.cpp
+            - src/mongo/db/index_builder.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/commands/pipeline_command.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/storage/record.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/dbtests/indexcatalogtests.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/ops/count.cpp
+            - src/mongo/db/index_rebuilder.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/dbtests/matchertests.cpp
+            - src/mongo/dbtests/framework_options.cpp
+        -   symbol_name: mongo::isJournalingEnabled()
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        file_dependencies:
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: typeinfo for mongo::ServerParameter
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ExportedServerParameter<double>::setFromString(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ServerParameter::~ServerParameter()
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ServerParameterSet::getGlobal()
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+                std::string const&, bool, bool)
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ExportedServerParameter<bool>::setFromString(std::string
+                const&)
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+    -   file_name: src/mongo/db/storage_options.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongorestore
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongosniff
+        file_interface: []
+        file_dependencies: []
+-   group_title: Capped Collection Management
+    group_description: Contains code to do low level storage management of a capped
+        collection, such as allocation of new records
+    group_files:
+    - src/mongo/db/structure/catalog/cap.cpp
+    group_generated_data:
+    -   file_name: src/mongo/db/structure/catalog/cap.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::NamespaceDetails::cappedTruncateAfter(char const*,
+                mongo::DiskLoc, bool)
+            symbol_uses:
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/commands/test_commands.cpp
+        -   symbol_name: mongo::NamespaceDetails::emptyCappedCollection(char const*)
+            symbol_uses:
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/commands/test_commands.cpp
+        -   symbol_name: mongo::NamespaceDetails::cappedCheckMigrate()
+            symbol_uses:
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+        -   symbol_name: mongo::NamespaceDetails::cappedAlloc(mongo::Collection*,
+                mongo::StringData const&, int)
+            symbol_uses:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::NamespaceDetails::cappedFirstDeletedInCurExtent()
+            symbol_uses:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        file_dependencies:
+        -   symbol_name: mongo::DiskLoc::drec() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::NamespaceDetails::maybeComplain(mongo::StringData
+                const&, int) const
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::Collection::deleteDocument(mongo::DiskLoc const&,
+                bool, bool, mongo::BSONObj*)
+            symbol_sources:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::NamespaceDetails::maxCappedDocs() const
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::Database::getCollection(mongo::StringData const&)
+            symbol_sources:
+            - src/mongo/db/catalog/database.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*,
+                mongo::DiskLoc)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::Extent::reuse(mongo::StringData const&, bool)
+            symbol_sources:
+            - src/mongo/db/storage/extent.cpp
+        -   symbol_name: mongo::Helpers::findAll(std::string const&, mongo::BSONObj
+                const&)
+            symbol_sources:
+            - src/mongo/db/dbhelpers.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::IndexCatalog::dropAllIndexes(bool)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: mongo::Collection::storageSize(int*, mongo::BSONArrayBuilder*)
+                const
+            symbol_sources:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::CollectionCursorCache::invalidateAll(bool)
+            symbol_sources:
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::currentClient
+            symbol_sources:
+            - src/mongo/db/client.cpp
+            - src/mongo/s/s_only.cpp
+        -   symbol_name: mongo::DeletedRecord::_accessing() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::DiskLoc::ext() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::CollectionInfoCache::reset()
+            symbol_sources:
+            - src/mongo/db/catalog/collection_info_cache.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::IndexCatalog::createIndex(mongo::BSONObj, bool, mongo::IndexCatalog::ShutdownBehavior)
+            symbol_sources:
+            - src/mongo/db/catalog/index_catalog.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+-   group_title: Persistent Hash Table
+    group_description: Fixed size hash table that is appropriate for managing memory
+        that is persisted to disk
+    group_files:
+    - src/mongo/db/structure/catalog/hashtab.h
+    group_generated_data:
+    -   file_name: src/mongo/db/structure/catalog/hashtab.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Index Details
+    group_description: On disk format of index metadata
+    group_files:
+    - src/mongo/db/structure/catalog/index_details.cpp
+    - src/mongo/db/structure/catalog/index_details.h
+    group_generated_data:
+    -   file_name: src/mongo/db/structure/catalog/index_details.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::IndexDetails::areIndexOptionsEquivalent(mongo::BSONObj
+                const&) const
+            symbol_uses:
+            - src/mongo/db/catalog/index_catalog.cpp
+        file_dependencies:
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj
+                const&, bool) const
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DiskLoc::obj() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/db/structure/catalog/index_details.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Namespace Index
+    group_description: Manages the ".ns" files, including adding the metadata for
+        a new namespace or removing metadata for a deleted namespace
+    group_files:
+    - src/mongo/db/structure/catalog/namespace_index.cpp
+    - src/mongo/db/structure/catalog/namespace_index.h
+    group_generated_data:
     -   file_name: src/mongo/db/structure/catalog/namespace_index.cpp
         file_executables:
         - mongotop
@@ -4276,56 +4384,12 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
-    -   file_name: src/mongo/db/structure/catalog/namespace_test.cpp
-        file_executables: []
-        file_interface: []
-        file_dependencies:
-        -   symbol_name: mongo::unittest::Test::tearDown()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: typeinfo for mongo::unittest::Test
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::Test::Test()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::uasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::unittest::Test::~Test()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
-                unsigned int)
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
-                const*, char const*, char const*, unsigned int)
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
-                ()> const&)
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
-                const
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::Test::run()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::unittest::Test::setUp()
-            symbol_sources:
-            - src/mongo/unittest/unittest.cpp
-        -   symbol_name: mongo::msgasserted(int, char const*)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
+-   group_title: Collection Compact
+    group_description: 'Contains the code that actually does the work of compacting
+        a collection.  TODO: put this near the actual compact command'
+    group_files:
+    - src/mongo/db/structure/collection_compact.cpp
+    group_generated_data:
     -   file_name: src/mongo/db/structure/collection_compact.cpp
         file_executables:
         - mongotop
@@ -4508,6 +4572,13 @@ module_groups:
                 const&, int)
             symbol_sources:
             - src/mongo/base/status.cpp
+-   group_title: Collection Iterator
+    group_description: Contains code that essentially does a table scan of a collection.
+        Has iterators for both capped and non capped collections.
+    group_files:
+    - src/mongo/db/structure/collection_iterator.cpp
+    - src/mongo/db/structure/collection_iterator.h
+    group_generated_data:
     -   file_name: src/mongo/db/structure/collection_iterator.cpp
         file_executables:
         - mongotop
@@ -4593,141 +4664,9 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
-    -   file_name: src/mongo/db/structure/record_store.cpp
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface:
-        -   symbol_name: mongo::CappedRecordStoreV1::CappedRecordStoreV1(mongo::Collection*,
-                mongo::StringData const&, mongo::NamespaceDetails*, mongo::ExtentManager*,
-                bool)
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-        -   symbol_name: mongo::SimpleRecordStoreV1::SimpleRecordStoreV1(mongo::StringData
-                const&, mongo::NamespaceDetails*, mongo::ExtentManager*, bool)
-            symbol_uses:
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/db/catalog/index_catalog.cpp
-        file_dependencies:
-        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool)
-                const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::ExtentManager::getPrevRecordInExtent(mongo::DiskLoc
-                const&) const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::ExtentManager::recordFor(mongo::DiskLoc const&) const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::ExtentManager::getNextRecord(mongo::DiskLoc const&)
-                const
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::DiskLoc::rec() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::Extent::followupSize(int, int)
-            symbol_sources:
-            - src/mongo/db/storage/extent.cpp
-        -   symbol_name: mongo::ExtentManager::increaseStorageSize(std::string const&,
-                mongo::NamespaceDetails*, int, int)
-            symbol_sources:
-            - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*,
-                mongo::DiskLoc)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
-                std::string const&, mongo::logger::LogSeverity)
-            symbol_sources:
-            - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
-            symbol_sources:
-            - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData
-                const&, int)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::getThreadName()
-            symbol_sources:
-            - src/mongo/util/concurrency/thread_name.cpp
-        -   symbol_name: mongo::fassertFailed(int)
-            symbol_sources:
-            - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::Record::_accessing() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: mongo::logger::globalLogManager()
-            symbol_sources:
-            - src/mongo/logger/logger.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::NamespaceDetails::getRecordAllocationSize(int)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::MAdvise::~MAdvise()
-            symbol_sources:
-            - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::DiskLoc::ext() const
-            symbol_sources:
-            - src/mongo/db/storage/record.cpp
-        -   symbol_name: boost::system::generic_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
-        -   symbol_name: mongo::NamespaceDetails::incrementStats(long long, long long)
-            symbol_sources:
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-        -   symbol_name: mongo::dur::DurableInterface::_impl
-            symbol_sources:
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
-                const&, int)
-            symbol_sources:
-            - src/mongo/base/status.cpp
-    -   file_name: src/mongo/db/structure/record_store.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_interface: []
-        file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: DiskLoc Class
     group_description: A DiskLoc is simply a file number and offset into the file
-        for a db. You can think of this as an# "address" into our database's storage
+        for a db. You can think of this as an# "address" into our database storage
         space.
     group_files:
     - src/mongo/db/diskloc.h
@@ -4793,7 +4732,7 @@ module_groups:
         -   symbol_name: mongo::unittest::Test::setUp()
             symbol_sources:
             - src/mongo/unittest/unittest.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: DiskLoc Invalidation Type
     group_description: Type of a DiskLoc invalidation.
     group_files:
     - src/mongo/db/invalidation_type.h
@@ -4818,7 +4757,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Record Class
     group_description: A record is simply a "node" in a linked list. It contains "prev"
         and "next" offsets, as well as# the offset of the extent in the current file.
     group_files:
@@ -5102,7 +5041,148 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Record Store
+    group_description: Manages Records.  Contains code to delete and insert records,
+        as well as helpers to construct a Record object from a DiscLoc.  Also handles
+        allocating new extents if the current extent does not have room for another
+        record.
+    group_files:
+    - src/mongo/db/structure/record_store.cpp
+    - src/mongo/db/structure/record_store.h
+    group_generated_data:
+    -   file_name: src/mongo/db/structure/record_store.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::CappedRecordStoreV1::CappedRecordStoreV1(mongo::Collection*,
+                mongo::StringData const&, mongo::NamespaceDetails*, mongo::ExtentManager*,
+                bool)
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+        -   symbol_name: mongo::SimpleRecordStoreV1::SimpleRecordStoreV1(mongo::StringData
+                const&, mongo::NamespaceDetails*, mongo::ExtentManager*, bool)
+            symbol_uses:
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+        file_dependencies:
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::ExtentManager::getExtent(mongo::DiskLoc const&, bool)
+                const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::ExtentManager::getPrevRecordInExtent(mongo::DiskLoc
+                const&) const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::ExtentManager::recordFor(mongo::DiskLoc const&) const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::ExtentManager::getNextRecord(mongo::DiskLoc const&)
+                const
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::DiskLoc::rec() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::Extent::followupSize(int, int)
+            symbol_sources:
+            - src/mongo/db/storage/extent.cpp
+        -   symbol_name: mongo::ExtentManager::increaseStorageSize(std::string const&,
+                mongo::NamespaceDetails*, int, int)
+            symbol_sources:
+            - src/mongo/db/storage/extent_manager.cpp
+        -   symbol_name: mongo::NamespaceDetails::addDeletedRec(mongo::DeletedRecord*,
+                mongo::DiskLoc)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+            symbol_sources:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData
+                const&, int)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Record::_accessing() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::NamespaceDetails::getRecordAllocationSize(int)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::MAdvise::~MAdvise()
+            symbol_sources:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::DiskLoc::ext() const
+            symbol_sources:
+            - src/mongo/db/storage/record.cpp
+        -   symbol_name: boost::system::generic_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
+        -   symbol_name: mongo::NamespaceDetails::incrementStats(long long, long long)
+            symbol_sources:
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+        -   symbol_name: mongo::dur::DurableInterface::_impl
+            symbol_sources:
+            - src/mongo/db/dur.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/db/structure/record_store.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+-   group_title: Extent Class
     group_description: An extent is a bucket of records. Extents themselves are in
         a kind of linked list, except instead# of offsets into a single datafile,
         their "prev" and "next" members are DiskLocs.
@@ -5244,7 +5324,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Extent Manager
     group_description: Sits above an extent and has helper functions to manage them
         as a whole. This is the new way to# iterate extents.
     group_files:
