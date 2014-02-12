@@ -6,7 +6,7 @@
         module_name: ssl_headers
         module_description: Third Party - SSL Headers
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'SSL Headers'
             group_description: Headers for the SSL build
             group_files:
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
@@ -54,9 +54,9 @@
             - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
     -   module_title: Snappy
         module_name: snappy
-        module_description: 'TODO: snappy description'
+        module_description: Third Party - Snappy compression library
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Snappy Compression Library'
             group_description: Third Party - Snappy compression library
             group_files:
             - src/third_party/shim_snappy.cpp
@@ -70,18 +70,18 @@
             - src/third_party/snappy/snappy.h
     -   module_title: Murmurhash3
         module_name: murmurhash3
-        module_description: 'TODO: murmurhash3 description'
+        module_description: Third Party - Non cryptographic hashing library
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Murmurhash3'
             group_description: Third Party - Non cryptographic hashing library
             group_files:
             - src/third_party/murmurhash3/MurmurHash3.cpp
             - src/third_party/murmurhash3/MurmurHash3.h
     -   module_title: Pcrecpp
         module_name: pcrecpp
-        module_description: 'TODO: pcrecpp description'
+        module_description: Third Party - Perl compatible regular expressions
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Regular Expression Library'
             group_description: Third Party - Perl compatible regular expressions
             group_files:
             - src/third_party/shim_pcrecpp.cc
@@ -122,9 +122,9 @@
             - src/third_party/pcre-8.30/ucp.h
     -   module_title: S2
         module_name: s2
-        module_description: 'TODO: s2 description'
+        module_description: Third Party - Google spherical geometry math library
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'S2 Library'
             group_description: Third Party - Google spherical geometry math library
             group_files:
             - src/third_party/s2/base/basictypes.h
@@ -215,11 +215,10 @@
             - src/third_party/s2/util/math/vector4.h
     -   module_title: Stemmer
         module_name: stemmer
-        module_description: 'TODO: stemmer description'
+        module_description: Third Party - Stemmer for various languages used in full text search
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Third Party - Stemmer for various languages used in
-                full text search
+        -   group_title: 'Stemmer'
+            group_description: Third Party - Stemmer for various languages used in full text search
             group_files:
             - src/third_party/shim_stemmer.cpp
             - src/third_party/libstemmer_c/include/libstemmer.h
@@ -278,14 +277,15 @@
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
     -   module_title: V8
         module_name: v8
-        module_description: 'TODO: v8 description'
+        module_description: 'V8 Javascript interpreter by Google.  The basis of the mongo shell and
+            the interpreter used when Javascript is evaluated on the server'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Auto Generated Files'
             group_description: Third Party - V8 Javascript engine auto generated files
             group_files:
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/libraries.cc
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'V8 Javascript Engine'
             group_description: Third Party - V8 Javascript engine
             group_files:
             - src/third_party/shim_v8.cpp
@@ -642,9 +642,9 @@
             - src/third_party/v8/src/zone.h
     -   module_title: Yaml
         module_name: yaml
-        module_description: 'TODO: yaml description'
+        module_description: 'YAML parser.  Used to parse YAML config files'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'YAML Parser'
             group_description: Third Party - Yaml markup parser.  Used for yaml config
                 files
             group_files:
@@ -739,9 +739,9 @@
             - src/third_party/yaml-cpp-0.5.1/src/token.h
     -   module_title: Boost Core
         module_name: boost_core
-        module_description: 'TODO: boost_core description'
+        module_description: 'Uncategorized boost files used by the server code'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Boost Core'
             group_description: Third Party - The boost shim and the header files in
                 boost core
             group_files:
@@ -1717,9 +1717,10 @@
             - src/third_party/boost/boost/weak_ptr.hpp
     -   module_title: Boost Filesystem
         module_name: boost_filesystem
-        module_description: 'TODO: boost_filesystem description'
+        module_description: Third Party - The boost filesystem library for doing filesystem
+            operations in a cross platform way
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Boost Filesystem'
             group_description: Third Party - The boost filesystem library
             group_files:
             - src/third_party/boost/boost/filesystem.hpp
@@ -1752,9 +1753,10 @@
             - src/third_party/boost/libs/detail/utf8_codecvt_facet.cpp
     -   module_title: Boost Program Options
         module_name: boost_program_options
-        module_description: 'TODO: boost_program_options description'
+        module_description: 'Boost library for parsing the command line and our legacy INI config
+            files'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Boost Program Options'
             group_description: Third Party - The boost program_options library
             group_files:
             - src/third_party/boost/boost/program_options.hpp
@@ -1789,9 +1791,9 @@
             - src/third_party/boost/libs/program_options/src/winmain.cpp
     -   module_title: Boost System
         module_name: boost_system
-        module_description: 'TODO: boost_system description'
+        module_description: Third Party - The boost system library
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Boost System'
             group_description: Third Party - The boost system library
             group_files:
             - src/third_party/boost/boost/system/api_config.hpp
@@ -1802,9 +1804,9 @@
             - src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
     -   module_title: Boost Thread
         module_name: boost_thread
-        module_description: 'TODO: boost_thread description'
+        module_description: Third Party - The boost thread library
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Boost Thread'
             group_description: Third Party - The boost thread library
             group_files:
             - src/third_party/boost/boost/thread/barrier.hpp
@@ -1854,9 +1856,9 @@
             - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
     -   module_title: Gperftools
         module_name: gperftools
-        module_description: 'TODO: gperftools description'
+        module_description: Third Party - Google performance tools and tcmalloc
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Gperftools'
             group_description: Third Party - Google performance tools and tcmalloc
             group_files:
             - src/third_party/shim_allocator.cpp
@@ -1959,9 +1961,9 @@
     system_modules:
     -   module_title: Unit Tests
         module_name: unit_tests
-        module_description: 'TODO: unit_tests description'
+        module_description: 'Uncategorized unit tests and the unit test framework'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Unittest Framework'
             group_description: Unittest framework (for both old style dbtests and
                 new style tests)
             group_files:
@@ -1975,7 +1977,7 @@
             - src/mongo/unittest/unittest.h
             - src/mongo/unittest/unittest_main.cpp
             - src/mongo/unittest/unittest_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Dbtests'
             group_description: Old style unittests ("test" binary)
             group_files:
             - src/mongo/dbtests/accumulatortests.cpp
@@ -2056,6 +2058,21 @@
             - src/mongo/dbtests/stacktests.cpp
             - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/dbtests/updatetests.cpp
+    -   module_title: Fail Points
+        module_name: fail_points
+        module_description: Library for adding fail points into the code for testing
+        module_groups:
+        -   group_title: 'Fail Points'
+            group_description: Library for adding fail points into the code for testing
+                purposes
+            group_files:
+            - src/mongo/util/fail_point.cpp
+            - src/mongo/util/fail_point.h
+            - src/mongo/util/fail_point_registry.cpp
+            - src/mongo/util/fail_point_registry.h
+            - src/mongo/util/fail_point_service.cpp
+            - src/mongo/util/fail_point_service.h
+            - src/mongo/util/fail_point_test.cpp
 -   system_title: Mongo Shell
     system_name: mongo_shell
     system_description: The mongo shell
@@ -2066,7 +2083,7 @@
             bindings into the C++ driver.  This is used to run javascript tests against
             the server
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Javascript Helper Generated Bindings'
             group_description: C++ files that are automatically generated from the
                 Javascript source files. This means that certain Javascript files
                 work in the shell because they are actually compiled in, which means
@@ -2075,7 +2092,7 @@
             group_files:
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo-server.cpp
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/shell/mongo.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Javascript Helpers'
             group_description: Javascript files that get wrapped in strings and put
                 in cpp files. See the "env.JSHeader" calls# in src/mongo/SConscript
                 and shell/createCPPfromJavaScriptFiles.js
@@ -2095,7 +2112,7 @@
             - src/mongo/shell/types.js
             - src/mongo/shell/utils.js
             - src/mongo/shell/utils_sh.js
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Shell Core'
             group_description: Files only built into the mongo shell
             group_files:
             - src/mongo/shell/dbshell.cpp
@@ -2111,7 +2128,7 @@
             - src/mongo/shell/shell_utils_extended.h
             - src/mongo/shell/shell_utils_launcher.cpp
             - src/mongo/shell/shell_utils_launcher.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Shell Command Line Options'
             group_description: Shell command line options
             group_files:
             - src/mongo/shell/shell_options.cpp
@@ -2123,9 +2140,9 @@
     system_modules:
     -   module_title: Javascript Libraries
         module_name: javascript_libraries
-        module_description: 'TODO: javascript_libraries description'
+        module_description: Code related to Javascript execution
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'V8 Bindings'
             group_description: v8 Javascript library files
             group_files:
             - src/mongo/scripting/engine.cpp
@@ -2141,7 +2158,7 @@
             - src/mongo/scripting/v8_profiler.h
             - src/mongo/scripting/v8_utils.cpp
             - src/mongo/scripting/v8_utils.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Benchrun'
             group_description: Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
             group_files:
             - src/mongo/scripting/bench.cpp
@@ -2156,20 +2173,22 @@
     system_modules:
     -   module_title: Base Utilites
         module_name: base_utilites
-        module_description: 'TODO: base_utilites description'
+        module_description: Core server utilities that can be safely used everywhere without pulling
+            in other dependencies.  These are things like cross platform counters and string to
+            number conversion.
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Disallow Copying'
             group_description: Use this in a class to explicitly disallow copying
                 of the class. This can prevent bugs where you# were accidentally copying
-                a class that wasn't safe to copy.
+                a class that was not safe to copy.
             group_files:
             - src/mongo/base/disallow_copying.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Atomic Counter'
             group_description: 64 bit atomic counter
             group_files:
             - src/mongo/base/counter.h
             - src/mongo/base/counter_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Owned Vector'
             group_description: Vector and map that delete pointers to elements on
                 destruction. "owning" the memory means you are# responsible for deleting
                 it.
@@ -2195,20 +2214,18 @@
             - src/mongo/base/generate_error_codes.py
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.cpp
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/base/error_codes.h
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Number to string conversion## Why use these: is this
-                somehow fast/safe? somehow JSON-aware?'
+        -   group_title: 'Number To String Conversion'
+            group_description: 'Cross platform utilities to convert numbers to strings'
             group_files:
             - src/mongo/base/parse_number.cpp
             - src/mongo/base/parse_number.h
             - src/mongo/base/parse_number_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: 'The StringData class is a wrapper around a char* that
-                can be constructed from either std::string# and a char* without copying
-                the buffer. This is because a StringData doesn''t free the buffer,
-                so# unlike std::string it doesn''t need to have its own copy.## Why:
-                use for speed? is this similar to other classes people might be##
-                familiar with from elsewhere?'
+        -   group_title: 'StringData'
+            group_description: 'The StringData class is a wrapper around a char* that can be
+                constructed from either std::string or a char* without copying the buffer.  This is
+                because a StringData doesn''t free the buffer, so unlike std::string it doesn''t
+                need to have its own copy.  Is this in function arguments to avoid making an
+                implicit copy when that is not intended.'
             group_files:
             - src/mongo/base/string_data-inl.h
             - src/mongo/base/string_data.cpp
@@ -2216,16 +2233,17 @@
             - src/mongo/base/string_data_test.cpp
     -   module_title: Utilities
         module_name: utilities
-        module_description: 'TODO: utilities description'
+        module_description: 'General Utilities.  Not all of this is new or usable without pulling in
+            more dependencies.  See Base Utilities.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'File Paths'
             group_description: Code to manage paths to files.  Conversion from relative
                 to full path within database directory as# well as code to get the
                 current partition (for readahead checks).
             group_files:
             - src/mongo/util/paths.cpp
             - src/mongo/util/paths.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Statistics Tracking'
             group_description: Classes to help in tracking statistics
             group_files:
             - src/mongo/db/stats/counters.cpp
@@ -2237,84 +2255,74 @@
             - src/mongo/db/stats/timer_stats.h
             - src/mongo/db/stats/top.cpp
             - src/mongo/db/stats/top.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'BSON Element Hasher'
             group_description: Utilities to hash BSON elements. Used in hashed shard
                 keys and hashed indexes.
             group_files:
             - src/mongo/db/hasher.cpp
             - src/mongo/db/hasher.h
             - src/mongo/db/hasher_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Helpers to track in progress operations. The constructor
-                registers itself in an "in progress"# map, and the destructor removes
+        -   group_title: 'Operation Tracker'
+            group_description: Helpers to track in progress operations.  This works by inheriting
+                from it when you make a class that represents an operation that should be tracked.
+                The constructor registers itself in an "in progress" map, and the destructor removes
                 it.
             group_files:
             - src/mongo/db/background.cpp
             - src/mongo/db/background.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Elapsed Time'
             group_description: Utility to check whether a certain time interval has
                 elapsed. Currently only used in# d_migrate.cpp to check if we should
                 yield.
             group_files:
             - src/mongo/util/elapsed_tracker.cpp
             - src/mongo/util/elapsed_tracker.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Progress Meter'
             group_description: Helper classes to accumulate and log progress in a
-                nice format using the# logging system (so the logging system is only
+                nice format using the logging system (so the logging system is only
                 dependency)
             group_files:
             - src/mongo/util/progress_meter.cpp
             - src/mongo/util/progress_meter.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Debug Utilities'
             group_description: Debug macros and gdb server helpers
             group_files:
             - src/mongo/util/debug_util.cpp
             - src/mongo/util/debug_util.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Thread Name'
             group_description: Library to get and set the name of the current thread.
                 Just uses a boost::thread_specific_ptr.
             group_files:
             - src/mongo/util/concurrency/thread_name.cpp
             - src/mongo/util/concurrency/thread_name.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Hex Utils'
             group_description: Utility library to manipulate hex strings
             group_files:
             - src/mongo/util/hex.cpp
             - src/mongo/util/hex.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Background Jobs'
             group_description: Utilities to run jobs (threads) in the "background".
                 You can use this to run tasks periodically.
             group_files:
             - src/mongo/util/background.cpp
             - src/mongo/util/background.h
             - src/mongo/util/background_job_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Map Utilities'
             group_description: mapFindWithDefault - looks something up in a map with
                 a default value.
             group_files:
             - src/mongo/util/map_util.h
-        -   group_title: 'TODO: Name this group'
-            group_description: I still don't know what this was originally for, but
-                I know we are slowly getting rid of it.
+        -   group_title: 'Pch'
+            group_description: I still do not know what this was originally for, but I know we are
+                slowly getting rid of it.
             group_files:
             - src/mongo/pch.cpp
             - src/mongo/pch.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Assertions'
             group_description: Assertion library.
             group_files:
             - src/mongo/util/assert_util.cpp
             - src/mongo/util/assert_util.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Library for adding fail points into the code for testing
-                purposes
-            group_files:
-            - src/mongo/util/fail_point.cpp
-            - src/mongo/util/fail_point.h
-            - src/mongo/util/fail_point_registry.cpp
-            - src/mongo/util/fail_point_registry.h
-            - src/mongo/util/fail_point_service.cpp
-            - src/mongo/util/fail_point_service.h
-            - src/mongo/util/fail_point_test.cpp
         -   group_title: 'TODO: Name this group'
             group_description: Helper library that you inherit from to make a class
                 "reference counted"
