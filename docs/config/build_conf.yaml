@@ -1,0 +1,27 @@
+git:
+  remote:
+    upstream: 'Zarkantho/module_data'
+    tools: 'mongodb/docs-tools'
+project:
+  name: 'kernel-modules'
+  tag: 'kernel-modules'
+  url: 'http://docs.10gen.cc/kernel-modules'
+  title: "Kernel Modules"
+version: 
+  release: 2.5.5
+  branch: 2.5
+system:
+  make:
+    generated:
+      - sphinx
+    static: []
+paths:
+  output: 'build'
+  source: 'source'
+  includes: 'source/includes'
+  images: 'source/images'
+  tools: 'bin'
+  buildsystem: 'build/docs-tools'
+  builddata: 'config'
+  locale: 'locale'
+...

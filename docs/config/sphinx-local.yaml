@@ -1,0 +1,17 @@
+project: 'mongodb-manual'
+master_doc: 'index'
+logo: ".static/logo-mongodb.png"
+paths:
+  static: ['source/.static']
+theme:
+  name: 'ecosystem'
+  project: 'kernel'
+  google_analytics: ''
+  book_path_base: 'MongoDB-kernel'
+  repo: 'module-browser'
+  jira: 'DOCS'
+sidebars:
+  '**':
+    - 'pagenav.html'
+    - 'formats.html'
+...

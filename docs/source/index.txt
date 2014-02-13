@@ -1,0 +1,10 @@
+===========================
+MongoDB Kernel Module Guide
+===========================
+
+This site provides a view onto the source code of |version| of the
+MongoDB Server code base.
+
+.. toctree:: 
+   :titlesonly:
+   :glob:   

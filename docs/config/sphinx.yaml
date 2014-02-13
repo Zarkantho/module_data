@@ -1,0 +1,22 @@
+# The items in the ``sphinx`` list are the name of Sphinx builders
+# supported by ``sphinx-build``.
+web-base:
+  tags:
+    - web
+    - website
+print-base:
+  tags:
+    - print
+dirhtml:
+  inherit: web-base
+html:
+  inherit: web-base
+singlehtml:
+  inherit: web-base
+epub:
+  inherit: print-base
+latex:
+  inherit: print-base
+json:
+  inherit: web-base
+...
