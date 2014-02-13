@@ -2,7 +2,7 @@ module_title: Ssl Headers
 module_name: ssl_headers
 module_description: Third Party - SSL Headers
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: SSL Headers
     group_description: Headers for the SSL build
     group_files:
     - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h

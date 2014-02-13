@@ -1,8 +1,8 @@
 module_title: S2
 module_name: s2
-module_description: 'TODO: s2 description'
+module_description: Third Party - Google spherical geometry math library
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: S2 Library
     group_description: Third Party - Google spherical geometry math library
     group_files:
     - src/third_party/s2/base/basictypes.h

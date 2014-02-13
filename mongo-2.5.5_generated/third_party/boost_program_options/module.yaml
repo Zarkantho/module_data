@@ -1,8 +1,9 @@
 module_title: Boost Program Options
 module_name: boost_program_options
-module_description: 'TODO: boost_program_options description'
+module_description: Boost library for parsing the command line and our legacy INI
+    config files
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Boost Program Options
     group_description: Third Party - The boost program_options library
     group_files:
     - src/third_party/boost/boost/program_options.hpp

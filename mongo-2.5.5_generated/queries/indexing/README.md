@@ -64,7 +64,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 ### src/mongo/db/index/btree\_access\_method.cpp
 
@@ -95,8 +95,8 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -104,7 +104,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/count.cpp](../query\_system)
+    - [src/mongo/db/exec/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -112,7 +112,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/count.cpp](../query\_system)
+    - [src/mongo/db/exec/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -120,8 +120,8 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -140,8 +140,8 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/sort.cpp](../query\_system)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/exec/sort.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -150,8 +150,8 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/sort.cpp](../query\_system)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/exec/sort.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 ### src/mongo/db/index/fts\_access\_method.cpp
 
@@ -161,7 +161,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Used By:
 
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -334,7 +334,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -344,7 +344,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 - Used By:
 
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -1924,7 +1924,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1940,7 +1940,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2036,7 +2036,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2068,7 +2068,7 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 ### src/mongo/db/index/s2\_access\_method.cpp
 
@@ -3072,8 +3072,8 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
     - [src/mongo/s/commands\_admin.cpp](../sharding)
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
-    - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/shard\_filter.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -3126,9 +3126,9 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 - Used By:
 
     - [src/mongo/s/shardkey.cpp](../sharding)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/s/chunk.cpp](../sharding)
-    - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
+    - [src/mongo/db/exec/shard\_filter.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
@@ -3159,7 +3159,7 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3702,7 +3702,7 @@ Background job that periodically checks a ttl index.
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 

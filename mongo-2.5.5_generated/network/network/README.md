@@ -45,7 +45,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/tools/bridge.cpp](../tools)
 
 <div></div>
@@ -64,7 +64,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
     - [src/mongo/tools/bridge.cpp](../tools)
 
 <div></div>
@@ -81,8 +81,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/tools/bridge.cpp](../tools)
 
 <div></div>
@@ -117,8 +117,8 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -126,7 +126,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/tools/bridge.cpp](../tools)
 
 <div></div>
@@ -135,7 +135,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
     - [src/mongo/tools/bridge.cpp](../tools)
 
 ### src/mongo/util/net/message.cpp
@@ -248,7 +248,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -261,7 +261,7 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
@@ -273,7 +273,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 - Used By:
 
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
@@ -286,7 +286,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -311,7 +311,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -319,7 +319,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -340,7 +340,7 @@ Network library   can you say a few words about:   - what this does   - who uses
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/s/config.cpp](../sharding)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
     - [src/mongo/s/cluster\_client\_internal.cpp](../sharding)
 
@@ -412,7 +412,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -436,7 +436,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/util/net/miniwebserver.cpp](../web\_server)
 
 ### src/mongo/util/net/ssl\_manager.cpp
 
@@ -831,7 +831,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -863,7 +863,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -927,7 +927,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -943,7 +943,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -975,7 +975,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -1033,7 +1033,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -1049,7 +1049,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -1129,7 +1129,7 @@ Network library   can you say a few words about:   - what this does   - who uses
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 ### src/mongo/util/net/ssl\_manager.cpp
 

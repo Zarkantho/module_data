@@ -1,8 +1,8 @@
 module_title: Unit Tests
 module_name: unit_tests
-module_description: 'TODO: unit_tests description'
+module_description: Uncategorized unit tests and the unit test framework
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Unittest Framework
     group_description: Unittest framework (for both old style dbtests and new style
         tests)
     group_files:
@@ -936,7 +936,7 @@ module_groups:
         -   symbol_name: mongo::msgasserted(int, char const*)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Dbtests
     group_description: Old style unittests ("test" binary)
     group_files:
     - src/mongo/dbtests/accumulatortests.cpp

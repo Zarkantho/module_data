@@ -33,7 +33,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -78,7 +78,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/s/commands\_public.cpp](../sharding)
@@ -97,7 +97,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/s/commands\_public.cpp](../sharding)
     - [src/mongo/s/d\_split.cpp](../sharding)
@@ -116,7 +116,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -162,7 +162,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -198,7 +198,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -235,7 +235,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -267,7 +267,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -275,7 +275,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -285,7 +285,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
     - [src/mongo/db/repl/heartbeat.cpp](../replication)
     - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
@@ -314,7 +314,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -326,7 +326,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
     - [src/mongo/db/repl/consensus.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/repl/resync.cpp](../replication)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
@@ -370,7 +370,7 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
     - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../sharding)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/strategy.cpp](../sharding)
@@ -764,7 +764,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -773,7 +773,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 - Used By:
 
     - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 # Dependencies
 
@@ -969,7 +969,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1281,7 +1281,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1377,7 +1377,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1393,7 +1393,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1481,7 +1481,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1513,7 +1513,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1601,7 +1601,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1633,7 +1633,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1713,7 +1713,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1842,7 +1842,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1906,7 +1906,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1930,7 +1930,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2002,7 +2002,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2018,7 +2018,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2344,7 +2344,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2504,7 +2504,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3698,7 +3698,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3746,7 +3746,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3778,7 +3778,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3843,7 +3843,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4445,7 +4445,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4647,7 +4647,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4679,7 +4679,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4727,7 +4727,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4751,7 +4751,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4816,7 +4816,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4824,7 +4824,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4850,7 +4850,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4922,7 +4922,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4954,7 +4954,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4962,7 +4962,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4978,7 +4978,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4986,7 +4986,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4994,7 +4994,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5011,7 +5011,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5368,7 +5368,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -5376,7 +5376,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -5408,7 +5408,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -5432,7 +5432,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -5555,7 +5555,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5699,7 +5699,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/projection.cpp](../query\_system)
+    - [src/mongo/db/projection.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5803,7 +5803,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/projection.cpp](../query\_system)
+    - [src/mongo/db/projection.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5811,7 +5811,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5819,7 +5819,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5927,7 +5927,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5943,7 +5943,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6008,7 +6008,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6048,7 +6048,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6072,7 +6072,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6168,7 +6168,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 ### src/mongo/db/commands/get\_last\_error.cpp
 
@@ -6509,7 +6509,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6557,7 +6557,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6656,7 +6656,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6672,7 +6672,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 ### src/mongo/db/commands/hashcmd.cpp
 
@@ -6740,7 +6740,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6756,7 +6756,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6820,7 +6820,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6868,7 +6868,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6916,7 +6916,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6924,7 +6924,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6964,7 +6964,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7022,7 +7022,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7030,7 +7030,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7054,7 +7054,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7070,7 +7070,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7078,7 +7078,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7086,7 +7086,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7110,7 +7110,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7142,7 +7142,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7246,7 +7246,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 ### src/mongo/db/commands/index\_stats.cpp
 
@@ -8055,7 +8055,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8407,7 +8407,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8479,7 +8479,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8706,7 +8706,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9577,7 +9577,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9601,7 +9601,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9649,7 +9649,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9689,7 +9689,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/explain\_plan.cpp](../query\_system)
+    - [src/mongo/db/query/explain\_plan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9737,7 +9737,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9745,7 +9745,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9833,7 +9833,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9857,7 +9857,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 ### src/mongo/db/commands/plan\_cache\_commands\_test.cpp
 
@@ -9883,7 +9883,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9979,7 +9979,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10011,7 +10011,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10019,7 +10019,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10067,7 +10067,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11388,7 +11388,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11436,7 +11436,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11476,7 +11476,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11548,7 +11548,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13013,7 +13013,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13069,7 +13069,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13101,7 +13101,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13206,7 +13206,7 @@ Commands (run using db.$cmd.findOne(...))
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 

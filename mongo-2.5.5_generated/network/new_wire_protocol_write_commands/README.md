@@ -92,7 +92,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -375,7 +375,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -615,7 +615,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -824,7 +824,7 @@ New write commands for new wire protocol. The new "write commands" are all actua
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 

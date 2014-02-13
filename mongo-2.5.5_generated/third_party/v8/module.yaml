@@ -1,8 +1,9 @@
 module_title: V8
 module_name: v8
-module_description: 'TODO: v8 description'
+module_description: V8 Javascript interpreter by Google.  The basis of the mongo shell
+    and the interpreter used when Javascript is evaluated on the server
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Auto Generated Files
     group_description: Third Party - V8 Javascript engine auto generated files
     group_files:
     - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/third_party/v8/src/experimental-libraries.cc
@@ -80,7 +81,7 @@ module_groups:
             symbol_uses:
             - src/third_party/v8/src/bootstrapper.cc
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: V8 Javascript Engine
     group_description: Third Party - V8 Javascript engine
     group_files:
     - src/third_party/shim_v8.cpp

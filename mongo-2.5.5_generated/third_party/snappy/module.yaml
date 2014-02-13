@@ -1,8 +1,8 @@
 module_title: Snappy
 module_name: snappy
-module_description: 'TODO: snappy description'
+module_description: Third Party - Snappy compression library
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Snappy Compression Library
     group_description: Third Party - Snappy compression library
     group_files:
     - src/third_party/shim_snappy.cpp

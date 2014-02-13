@@ -1,11 +1,13 @@
 module_title: Base Utilites
 module_name: base_utilites
-module_description: 'TODO: base_utilites description'
+module_description: Core server utilities that can be safely used everywhere without
+    pulling in other dependencies.  These are things like cross platform counters
+    and string to number conversion.
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Disallow Copying
     group_description: Use this in a class to explicitly disallow copying of the class.
-        This can prevent bugs where you# were accidentally copying a class that wasn't
-        safe to copy.
+        This can prevent bugs where you# were accidentally copying a class that was
+        not safe to copy.
     group_files:
     - src/mongo/base/disallow_copying.h
     group_generated_data:
@@ -29,7 +31,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Atomic Counter
     group_description: 64 bit atomic counter
     group_files:
     - src/mongo/base/counter.h
@@ -94,7 +96,7 @@ module_groups:
         -   symbol_name: mongo::unittest::Test::setUp()
             symbol_sources:
             - src/mongo/unittest/unittest.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Owned Vector
     group_description: Vector and map that delete pointers to elements on destruction.
         "owning" the memory means you are# responsible for deleting it.
     group_files:
@@ -807,9 +809,8 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: 'Number to string conversion## Why use these: is this somehow
-        fast/safe? somehow JSON-aware?'
+-   group_title: Number To String Conversion
+    group_description: Cross platform utilities to convert numbers to strings
     group_files:
     - src/mongo/base/parse_number.cpp
     - src/mongo/base/parse_number.h
@@ -1105,12 +1106,12 @@ module_groups:
                 const&, int, long long*)
             symbol_sources:
             - src/mongo/base/parse_number.cpp
--   group_title: 'TODO: Name this group'
-    group_description: 'The StringData class is a wrapper around a char* that can
-        be constructed from either std::string# and a char* without copying the buffer.
-        This is because a StringData doesn''t free the buffer, so# unlike std::string
-        it doesn''t need to have its own copy.## Why: use for speed? is this similar
-        to other classes people might be## familiar with from elsewhere?'
+-   group_title: StringData
+    group_description: The StringData class is a wrapper around a char* that can be
+        constructed from either std::string or a char* without copying the buffer.  This
+        is because a StringData doesn't free the buffer, so unlike std::string it
+        doesn't need to have its own copy.  Is this in function arguments to avoid
+        making an implicit copy when that is not intended.
     group_files:
     - src/mongo/base/string_data-inl.h
     - src/mongo/base/string_data.cpp

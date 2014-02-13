@@ -60,7 +60,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_language.cpp
 
@@ -70,7 +70,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -78,8 +78,8 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_matcher.cpp
 
@@ -89,7 +89,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -97,7 +97,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -105,7 +105,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_query.cpp
 
@@ -115,8 +115,8 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_spec.cpp
 
@@ -142,7 +142,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -150,8 +150,8 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/stemmer.cpp
 
@@ -161,7 +161,7 @@ Uncategorized Full Text Search Code
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
 
 # Dependencies
 
@@ -383,7 +383,7 @@ Uncategorized Full Text Search Code
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -407,7 +407,7 @@ Uncategorized Full Text Search Code
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -423,7 +423,7 @@ Uncategorized Full Text Search Code
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -439,7 +439,7 @@ Uncategorized Full Text Search Code
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -519,7 +519,7 @@ Uncategorized Full Text Search Code
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_command\_mongos.cpp
 

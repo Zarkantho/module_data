@@ -3,7 +3,7 @@ module_name: mongo_shell
 module_description: The mongo shell is a the v8 javascript interpreter with bindings
     into the C++ driver.  This is used to run javascript tests against the server
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Javascript Helper Generated Bindings
     group_description: C++ files that are automatically generated from the Javascript
         source files. This means that certain Javascript files work in the shell because
         they are actually compiled in, which means that sometimes the server needs
@@ -81,7 +81,7 @@ module_groups:
             symbol_uses:
             - src/mongo/scripting/engine.cpp
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Javascript Helpers
     group_description: Javascript files that get wrapped in strings and put in cpp
         files. See the "env.JSHeader" calls# in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
     group_files:
@@ -321,7 +321,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Shell Core
     group_description: Files only built into the mongo shell
     group_files:
     - src/mongo/shell/dbshell.cpp
@@ -1126,7 +1126,7 @@ module_groups:
         file_executables: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Shell Command Line Options
     group_description: Shell command line options
     group_files:
     - src/mongo/shell/shell_options.cpp

@@ -92,3 +92,12 @@
 - [src/mongo/dbtests/stacktests.cpp](unit\_tests)
 - [src/mongo/dbtests/threadedtests.cpp](unit\_tests)
 - [src/mongo/dbtests/updatetests.cpp](unit\_tests)
+### fail\_points
+
+- [src/mongo/util/fail\_point.cpp](fail\_points)
+- [src/mongo/util/fail\_point.h](fail\_points)
+- [src/mongo/util/fail\_point\_registry.cpp](fail\_points)
+- [src/mongo/util/fail\_point\_registry.h](fail\_points)
+- [src/mongo/util/fail\_point\_service.cpp](fail\_points)
+- [src/mongo/util/fail\_point\_service.h](fail\_points)
+- [src/mongo/util/fail\_point\_test.cpp](fail\_points)

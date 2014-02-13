@@ -2812,7 +2812,7 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5301,7 +5301,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5309,7 +5309,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5317,7 +5317,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5326,7 +5326,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 - Used By:
 
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -5336,7 +5336,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5344,7 +5344,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
 <div></div>
@@ -5353,7 +5353,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5361,7 +5361,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5370,7 +5370,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 - Used By:
 
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -5381,7 +5381,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 - Used By:
 
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
@@ -5391,7 +5391,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5409,7 +5409,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 - Used By:
 
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
 # Dependencies
@@ -5610,7 +5610,7 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7100,16 +7100,16 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/matcher/path.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_text.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/path.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_text.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/matcher/expression\_array.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_array.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7118,7 +7118,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 - Used By:
 
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/matcher/path.cpp](../query\_system)
+    - [src/mongo/db/matcher/path.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7127,7 +7127,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 - Used By:
 
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -7136,11 +7136,11 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/matcher/path\_internal.cpp](../query\_system)
+    - [src/mongo/db/matcher/path\_internal.cpp](../core\_query\_system)
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/matcher/path.cpp](../query\_system)
+    - [src/mongo/db/matcher/path.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7148,15 +7148,15 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/matcher/path.cpp](../query\_system)
-    - [src/mongo/db/exec/keep\_mutations.cpp](../query\_system)
-    - [src/mongo/db/exec/and\_sorted.cpp](../query\_system)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/or.cpp](../query\_system)
-    - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/matcher/path.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/keep\_mutations.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/or.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7164,15 +7164,15 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
-    - [src/mongo/db/exec/keep\_mutations.cpp](../query\_system)
-    - [src/mongo/db/exec/and\_sorted.cpp](../query\_system)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/text.cpp](../query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/or.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/keep\_mutations.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/or.cpp](../core\_query\_system)
 
 ### src/mongo/db/field\_ref\_set.cpp
 
@@ -7182,7 +7182,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7190,7 +7190,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7198,7 +7198,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7206,7 +7206,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7214,7 +7214,7 @@ Utilites for managing dotted field names such as "a.b.c". For example, has thing
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 # Dependencies
 

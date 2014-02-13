@@ -1,8 +1,8 @@
 module_title: Yaml
 module_name: yaml
-module_description: 'TODO: yaml description'
+module_description: YAML parser.  Used to parse YAML config files
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: YAML Parser
     group_description: Third Party - Yaml markup parser.  Used for yaml config files
     group_files:
     - src/third_party/shim_yaml.cpp

@@ -1,8 +1,8 @@
 module_title: Boost System
 module_name: boost_system
-module_description: 'TODO: boost_system description'
+module_description: Third Party - The boost system library
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Boost System
     group_description: Third Party - The boost system library
     group_files:
     - src/third_party/boost/boost/system/api_config.hpp

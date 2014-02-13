@@ -1,11 +1,11 @@
-# query\_system
+# core\_query\_system
 
 # Module Groups
 
 -------------
 
 # Group Description
-Matcher expressions. The point of all of this is to take a query string and turn it into a  structured set of classes. If this were a compiler this would be the parse tree for the compiler.
+Matcher expressions. The point of all of this is to take a query string and turn it into a structured set of classes.
 
 # Files
 - src/mongo/db/matcher/expression.cpp   (mongod, tools, mongos)
@@ -2825,11 +2825,24 @@ Matcher expressions. The point of all of this is to take a query string and turn
 -------------
 
 # Group Description
-This is the code to say "does this document match the expression"? This is built on the  expressions above.  Helper classes for managing document matching. Related to the expressions above.
+Class that holds a BSONObj and provides an interface that the parsed expressions use when determining whether a BSONObj matches.
 
 # Files
 - src/mongo/db/matcher/matchable.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/matchable.h   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
+
+-------------
+
+# Group Description
+This contains code to help with iterating arrays and nested documents
+
+# Files
 - src/mongo/db/matcher/path.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/path.h   (mongod, tools, mongos)
 - src/mongo/db/matcher/path\_internal.cpp   (mongod, tools, mongos)
@@ -3170,7 +3183,7 @@ This is the code to say "does this document match the expression"? This is built
 -------------
 
 # Group Description
-Interface to actually test if a document matches.
+Interface to actually test if a document matches.  Wraps a match expression generated from the expression parsing system.
 
 # Files
 - src/mongo/db/matcher/matcher.cpp   (mongod, tools, mongos)
@@ -10935,7 +10948,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -10967,7 +10980,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -10983,7 +10996,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -10999,7 +11012,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -11063,7 +11076,7 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 

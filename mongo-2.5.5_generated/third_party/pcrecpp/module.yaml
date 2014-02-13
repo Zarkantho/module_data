@@ -1,8 +1,8 @@
 module_title: Pcrecpp
 module_name: pcrecpp
-module_description: 'TODO: pcrecpp description'
+module_description: Third Party - Perl compatible regular expressions
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Regular Expression Library
     group_description: Third Party - Perl compatible regular expressions
     group_files:
     - src/third_party/shim_pcrecpp.cc

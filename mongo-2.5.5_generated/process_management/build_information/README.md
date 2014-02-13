@@ -24,7 +24,7 @@ Source files that get automatically generated in each compile.  Contains functio
     - [src/mongo/tools/tool\_options.cpp](../tools)
     - [src/mongo/util/version\_reporting.cpp](../utilities)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
 
 <div></div>
@@ -59,7 +59,7 @@ Source files that get automatically generated in each compile.  Contains functio
 
     - [src/mongo/util/version\_reporting.cpp](../utilities)
     - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -128,7 +128,7 @@ Contains the string for the current server version that gets bumped when we rele
 - Used By:
 
     - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
 
 <div></div>

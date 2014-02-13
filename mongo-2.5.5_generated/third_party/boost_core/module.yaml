@@ -1,8 +1,8 @@
 module_title: Boost Core
 module_name: boost_core
-module_description: 'TODO: boost_core description'
+module_description: Uncategorized boost files used by the server code
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Boost Core
     group_description: Third Party - The boost shim and the header files in boost
         core
     group_files:

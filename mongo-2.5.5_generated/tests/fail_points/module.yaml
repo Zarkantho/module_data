@@ -1,0 +1,453 @@
+module_title: Fail Points
+module_name: fail_points
+module_description: Library for adding fail points into the code for testing
+module_groups:
+-   group_title: Fail Points
+    group_description: Library for adding fail points into the code for testing purposes
+    group_files:
+    - src/mongo/util/fail_point.cpp
+    - src/mongo/util/fail_point.h
+    - src/mongo/util/fail_point_registry.cpp
+    - src/mongo/util/fail_point_registry.h
+    - src/mongo/util/fail_point_service.cpp
+    - src/mongo/util/fail_point_service.h
+    - src/mongo/util/fail_point_test.cpp
+    group_generated_data:
+    -   file_name: src/mongo/util/fail_point.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::FailPoint::slowShouldFailOpenBlock()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::ScopedFailPoint::getData() const
+            symbol_uses:
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/kill_current_op.cpp
+        -   symbol_name: mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)
+            symbol_uses:
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/kill_current_op.cpp
+        -   symbol_name: mongo::ScopedFailPoint::~ScopedFailPoint()
+            symbol_uses:
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/kill_current_op.cpp
+        -   symbol_name: mongo::FailPoint::shouldFailCloseBlock()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::FailPoint::toBSON() const
+            symbol_uses:
+            - src/mongo/db/commands/fail_point_cmd.cpp
+        -   symbol_name: mongo::FailPoint::FailPoint()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/util/fail_point_service.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned
+                int, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/db/commands/fail_point_cmd.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/dbtests/perftests.cpp
+        file_dependencies:
+        -   symbol_name: mongo::sleepmillis(long long)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::fassertFailed(int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+    -   file_name: src/mongo/util/fail_point.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/util/fail_point_registry.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::FailPointRegistry::FailPointRegistry()
+            symbol_uses:
+            - src/mongo/util/fail_point_service.cpp
+        -   symbol_name: mongo::FailPointRegistry::getFailPoint(std::string const&)
+                const
+            symbol_uses:
+            - src/mongo/db/commands/fail_point_cmd.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+        -   symbol_name: mongo::FailPointRegistry::freeze()
+            symbol_uses:
+            - src/mongo/util/fail_point_service.cpp
+        -   symbol_name: mongo::FailPointRegistry::addFailPoint(std::string const&,
+                mongo::FailPoint*)
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/util/fail_point_service.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_migrate.cpp
+        file_dependencies:
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
+                const&, int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
+    -   file_name: src/mongo/util/fail_point_registry.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/util/fail_point_service.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface:
+        -   symbol_name: mongo::getGlobalFailPointRegistry()
+            symbol_uses:
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/commands/fail_point_cmd.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_migrate.cpp
+        file_dependencies:
+        -   symbol_name: mongo::FailPointRegistry::FailPointRegistry()
+            symbol_sources:
+            - src/mongo/util/fail_point_registry.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::FailPoint::FailPoint()
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: mongo::_makeStringVector(int, ...)
+            symbol_sources:
+            - src/mongo/base/make_string_vector.cpp
+        -   symbol_name: mongo::FailPointRegistry::freeze()
+            symbol_sources:
+            - src/mongo/util/fail_point_registry.cpp
+        -   symbol_name: mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string
+                const&, boost::function<mongo::Status (mongo::InitializerContext*)>
+                const&, std::vector<std::string, std::allocator<std::string> > const&,
+                std::vector<std::string, std::allocator<std::string> > const&)
+            symbol_sources:
+            - src/mongo/base/global_initializer_registerer.cpp
+        -   symbol_name: mongo::FailPointRegistry::addFailPoint(std::string const&,
+                mongo::FailPoint*)
+            symbol_sources:
+            - src/mongo/util/fail_point_registry.cpp
+    -   file_name: src/mongo/util/fail_point_service.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/util/fail_point_test.cpp
+        file_executables: []
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::unittest::Test::Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::uasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::unittest::Test::~Test()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::StaticObserver::_destroyingStatics
+            symbol_sources:
+            - src/mongo/util/util.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::TestAssertion(char const*,
+                unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::getThreadName()
+            symbol_sources:
+            - src/mongo/util/concurrency/thread_name.cpp
+        -   symbol_name: mongo::unittest::Suite::getSuite(std::string const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::msgasserted(int, char const*)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: typeinfo for mongo::unittest::Test
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::unittest::ComparisonAssertion::ComparisonAssertion(char
+                const*, char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::FailPoint::slowShouldFailOpenBlock()
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
+                ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::ScopedFailPoint::getData() const
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: mongo::unittest::Test::run()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::logger::globalLogManager()
+            symbol_sources:
+            - src/mongo/logger/logger.cpp
+        -   symbol_name: mongo::uasserted(int, std::string const&)
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::unittest::Test::setUp()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned
+                int, mongo::BSONObj const&)
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: mongo::unittest::Test::tearDown()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: typeinfo for mongo::UserException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::ScopedFailPoint::~ScopedFailPoint()
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: boost::thread::interrupt()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
+                std::string const&, mongo::logger::LogSeverity)
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: mongo::FailPoint::shouldFailCloseBlock()
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: boost::thread::join()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: std::string mongo::integerToHex<int>(int)
+            symbol_sources:
+            - src/mongo/util/hex.cpp
+        -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+            symbol_sources:
+            - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: boost::thread::~thread()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::this_thread::interruption_point()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::sleepsecs(int)
+            symbol_sources:
+            - src/mongo/util/time_support.cpp
+        -   symbol_name: mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::~TestAssertion()
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: mongo::FailPoint::FailPoint()
+            symbol_sources:
+            - src/mongo/util/fail_point.cpp
+        -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp
+        -   symbol_name: boost::detail::get_current_thread_data()
+            symbol_sources:
+            - src/third_party/boost/libs/thread/src/pthread/thread.cpp

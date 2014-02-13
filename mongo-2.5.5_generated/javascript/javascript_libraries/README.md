@@ -43,7 +43,7 @@ v8 Javascript library files
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
     - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
     - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
@@ -82,7 +82,7 @@ v8 Javascript library files
 - Used By:
 
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
 

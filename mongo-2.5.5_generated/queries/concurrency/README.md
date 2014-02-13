@@ -156,7 +156,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 - Used By:
 
     - [src/mongo/db/repl/health.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -281,7 +281,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
@@ -289,7 +289,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/s/d\_merge.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
@@ -537,7 +537,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 - Used By:
 
     - [src/mongo/db/repl/health.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
 
 <div></div>
@@ -661,7 +661,7 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 - Used By:
 
-    - [src/mongo/db/clientlistplugin.cpp](../database\_web\_accesss)
+    - [src/mongo/db/clientlistplugin.cpp](../web\_server)
 
 # Dependencies
 

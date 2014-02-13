@@ -130,3 +130,12 @@
 - [src/mongo/s/write\_ops/write\_error\_detail.cpp](new\_wire\_protocol\_write\_commands)
 - [src/mongo/s/write\_ops/write\_error\_detail.h](new\_wire\_protocol\_write\_commands)
 - [src/mongo/db/wire\_version.h](new\_wire\_protocol\_write\_commands)
+### web\_server
+
+- [src/mongo/db/dbwebserver.cpp](web\_server)
+- [src/mongo/db/dbwebserver.h](web\_server)
+- [src/mongo/db/restapi.cpp](web\_server)
+- [src/mongo/db/restapi.h](web\_server)
+- [src/mongo/db/clientlistplugin.cpp](web\_server)
+- [src/mongo/util/net/miniwebserver.cpp](web\_server)
+- [src/mongo/util/net/miniwebserver.h](web\_server)

@@ -3322,7 +3322,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3386,7 +3386,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4325,7 +4325,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4397,7 +4397,7 @@ Tools and tool options. For most tools, just prepend "mongo" to get the name of 
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 

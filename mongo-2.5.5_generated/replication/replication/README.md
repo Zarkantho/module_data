@@ -127,7 +127,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/s/d\_state.cpp](../sharding)
 
 <div></div>
@@ -144,7 +144,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
 
 <div></div>
 
@@ -198,9 +198,9 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
     - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
@@ -277,7 +277,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 ### src/mongo/db/repl/repl\_start.cpp
 
@@ -302,7 +302,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
@@ -428,7 +428,7 @@ Replication code? TODO: verify that this is all replication related and document
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
 
 <div></div>
@@ -702,7 +702,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -742,7 +742,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -822,7 +822,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -863,7 +863,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -915,7 +915,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -1769,7 +1769,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -1857,7 +1857,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -1873,7 +1873,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -2009,7 +2009,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -2066,7 +2066,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -2138,7 +2138,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -2170,7 +2170,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -2664,7 +2664,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2824,7 +2824,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3000,7 +3000,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3056,7 +3056,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3217,7 +3217,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3351,7 +3351,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3928,7 +3928,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4401,7 +4401,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4505,7 +4505,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4537,7 +4537,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4634,7 +4634,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5055,7 +5055,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -6908,7 +6908,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7020,7 +7020,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7140,7 +7140,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7220,7 +7220,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7365,7 +7365,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7381,7 +7381,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -7568,7 +7568,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -7648,7 +7648,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -7728,7 +7728,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -7882,7 +7882,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -7914,7 +7914,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -7980,7 +7980,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -7988,7 +7988,7 @@ Replication code? TODO: verify that this is all replication related and document
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 

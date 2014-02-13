@@ -45,7 +45,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -53,7 +53,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -61,7 +61,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -69,7 +69,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -77,7 +77,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_ixselect.cpp](../query\_system)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -85,7 +85,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_ixselect.cpp](../query\_system)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -93,7 +93,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
 
 ### src/mongo/db/geo/hash.cpp
 
@@ -103,7 +103,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -111,7 +111,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -119,7 +119,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -127,8 +127,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -136,7 +136,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -144,7 +144,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -152,9 +152,9 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -162,7 +162,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -178,8 +178,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -187,7 +187,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -195,7 +195,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -203,8 +203,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -212,7 +212,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -220,7 +220,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -228,8 +228,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -237,7 +237,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -245,7 +245,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -253,8 +253,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -262,7 +262,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -271,7 +271,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - Used By:
 
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/planner\_ixselect.cpp](../query\_system)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -280,7 +280,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - Used By:
 
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -288,7 +288,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -296,7 +296,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -304,7 +304,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 ### src/mongo/db/geo/s2common.cpp
 
@@ -322,7 +322,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 ### src/mongo/db/geo/shapes.cpp
 
@@ -332,7 +332,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -340,9 +340,9 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -350,7 +350,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -358,7 +358,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -366,7 +366,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -374,7 +374,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -382,7 +382,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -390,7 +390,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -398,8 +398,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -407,7 +407,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -415,7 +415,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -423,7 +423,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -431,8 +431,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -440,8 +440,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -449,9 +449,9 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -459,9 +459,9 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -469,7 +469,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -485,8 +485,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -494,8 +494,8 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -503,7 +503,7 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -511,14 +511,14 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../core\_query\_system)
 
 # Dependencies
 

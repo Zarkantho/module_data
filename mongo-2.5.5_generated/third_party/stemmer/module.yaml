@@ -1,8 +1,9 @@
 module_title: Stemmer
 module_name: stemmer
-module_description: 'TODO: stemmer description'
+module_description: Third Party - Stemmer for various languages used in full text
+    search
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Stemmer
     group_description: Third Party - Stemmer for various languages used in full text
         search
     group_files:

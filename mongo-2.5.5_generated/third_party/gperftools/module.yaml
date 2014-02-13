@@ -1,8 +1,8 @@
 module_title: Gperftools
 module_name: gperftools
-module_description: 'TODO: gperftools description'
+module_description: Third Party - Google performance tools and tcmalloc
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Gperftools
     group_description: Third Party - Google performance tools and tcmalloc
     group_files:
     - src/third_party/shim_allocator.cpp

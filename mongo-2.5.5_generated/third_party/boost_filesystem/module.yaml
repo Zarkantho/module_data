@@ -1,8 +1,9 @@
 module_title: Boost Filesystem
 module_name: boost_filesystem
-module_description: 'TODO: boost_filesystem description'
+module_description: Third Party - The boost filesystem library for doing filesystem
+    operations in a cross platform way
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Boost Filesystem
     group_description: Third Party - The boost filesystem library
     group_files:
     - src/third_party/boost/boost/filesystem.hpp

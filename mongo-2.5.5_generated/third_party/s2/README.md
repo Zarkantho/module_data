@@ -105,11 +105,11 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -117,11 +117,11 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s1angle.cc
 
@@ -141,10 +141,10 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -152,10 +152,10 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s2cap.cc
 
@@ -165,7 +165,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
 
@@ -175,7 +175,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -183,7 +183,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
 
 <div></div>
@@ -210,17 +210,17 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/query\_solution.cpp](../query\_system)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../query\_system)
+    - [src/mongo/db/query/query\_solution.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../core\_query\_system)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -238,9 +238,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -248,9 +248,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -258,9 +258,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -268,9 +268,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -278,9 +278,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -316,8 +316,8 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -325,8 +325,8 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s2loop.cc
 
@@ -575,18 +575,18 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
-    - [src/mongo/db/query/query\_solution.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
+    - [src/mongo/db/query/query\_solution.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../core\_query\_system)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
     - [src/mongo/db/geo/geoparser.cpp](../geo\_queries)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s2regioncoverer.cc
 
@@ -596,9 +596,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -614,9 +614,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -624,9 +624,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -634,9 +634,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -644,9 +644,9 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/geo/s2common.cpp](../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s2regionintersection.cc
 
@@ -656,7 +656,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -664,7 +664,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -672,7 +672,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -680,7 +680,7 @@ Third Party - Google spherical geometry math library
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
 
 ### src/third\_party/s2/s2regionunion.cc
 

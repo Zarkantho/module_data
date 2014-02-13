@@ -727,7 +727,7 @@ Stubs so that the client driver can build alone since our deps are screwed up. W
     - [src/mongo/s/cursors.cpp](../sharding)
     - [src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp](../authentication)
     - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
     - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
@@ -1182,14 +1182,14 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -1208,7 +1208,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
@@ -1331,10 +1331,10 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
@@ -1343,7 +1343,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../authentication)
@@ -1522,7 +1522,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
@@ -1559,13 +1559,13 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -1584,7 +1584,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
@@ -1660,14 +1660,14 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/tools/stat.cpp](../tools)
     - [src/mongo/tools/sniffer.cpp](../tools)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -1686,7 +1686,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/manager.cpp](../replication)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/ttl.cpp](../indexing)
@@ -1775,10 +1775,10 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/s/version\_manager.cpp](../sharding)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
@@ -2021,11 +2021,11 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
@@ -4038,7 +4038,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -4142,7 +4142,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -4214,7 +4214,7 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -5715,7 +5715,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5835,7 +5835,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5867,7 +5867,7 @@ Cursor that represents a connection to a bunch of shards. You would think that t
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 

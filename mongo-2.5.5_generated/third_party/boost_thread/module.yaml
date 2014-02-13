@@ -1,8 +1,8 @@
 module_title: Boost Thread
 module_name: boost_thread
-module_description: 'TODO: boost_thread description'
+module_description: Third Party - The boost thread library
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Boost Thread
     group_description: Third Party - The boost thread library
     group_files:
     - src/third_party/boost/boost/thread/barrier.hpp

@@ -1,8 +1,8 @@
 module_title: Murmurhash3
 module_name: murmurhash3
-module_description: 'TODO: murmurhash3 description'
+module_description: Third Party - Non cryptographic hashing library
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Murmurhash3
     group_description: Third Party - Non cryptographic hashing library
     group_files:
     - src/third_party/murmurhash3/MurmurHash3.cpp

@@ -1,8 +1,8 @@
 module_title: Javascript Libraries
 module_name: javascript_libraries
-module_description: 'TODO: javascript_libraries description'
+module_description: Code related to Javascript execution
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: V8 Bindings
     group_description: v8 Javascript library files
     group_files:
     - src/mongo/scripting/engine.cpp
@@ -1972,7 +1972,7 @@ module_groups:
         - mongorestore
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Benchrun
     group_description: Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
     group_files:
     - src/mongo/scripting/bench.cpp

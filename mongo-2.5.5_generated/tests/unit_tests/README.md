@@ -106,8 +106,8 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -115,8 +115,8 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -144,7 +144,7 @@ Unittest framework (for both old style dbtests and new style tests)
 
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -152,9 +152,9 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
 <div></div>
@@ -163,9 +163,9 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
 <div></div>
@@ -174,10 +174,10 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
 <div></div>
@@ -222,10 +222,10 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../bson)
     - [src/mongo/s/config\_server\_tests.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../sharding)
 
 <div></div>
@@ -234,8 +234,8 @@ Unittest framework (for both old style dbtests and new style tests)
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
 
 # Dependencies
 
@@ -3450,7 +3450,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4615,7 +4615,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4824,7 +4824,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8750,7 +8750,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/match\_details.cpp](../query\_system)
+    - [src/mongo/db/matcher/match\_details.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8814,7 +8814,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/match\_details.cpp](../query\_system)
+    - [src/mongo/db/matcher/match\_details.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8830,7 +8830,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8854,7 +8854,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/match\_details.cpp](../query\_system)
+    - [src/mongo/db/matcher/match\_details.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8886,7 +8886,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10730,7 +10730,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10794,7 +10794,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10826,7 +10826,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -10971,7 +10971,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11013,7 +11013,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11101,7 +11101,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11117,7 +11117,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11133,7 +11133,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11221,7 +11221,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11287,7 +11287,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -11982,7 +11982,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -12070,7 +12070,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -12311,7 +12311,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -12327,7 +12327,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -12709,7 +12709,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12790,7 +12790,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12806,7 +12806,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12830,7 +12830,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12838,7 +12838,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12878,7 +12878,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12894,7 +12894,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12902,7 +12902,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12918,7 +12918,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12950,7 +12950,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12958,7 +12958,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12982,7 +12982,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13105,7 +13105,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13121,7 +13121,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13145,7 +13145,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13201,7 +13201,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13225,7 +13225,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13273,7 +13273,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13289,7 +13289,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/single\_solution\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/single\_solution\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13329,7 +13329,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13363,7 +13363,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/and\_sorted.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13435,7 +13435,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/and\_sorted.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13443,7 +13443,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13475,7 +13475,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13531,7 +13531,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13547,7 +13547,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13571,7 +13571,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13595,7 +13595,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13603,7 +13603,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13619,7 +13619,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13798,7 +13798,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13822,7 +13822,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13870,7 +13870,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13878,7 +13878,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13894,7 +13894,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13942,7 +13942,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13974,7 +13974,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13982,7 +13982,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14024,7 +14024,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14032,7 +14032,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14104,7 +14104,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -14112,7 +14112,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14120,7 +14120,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14136,7 +14136,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14160,7 +14160,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14208,7 +14208,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14216,7 +14216,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14232,7 +14232,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14256,7 +14256,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -14272,7 +14272,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -14328,7 +14328,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 ### src/mongo/dbtests/query\_stage\_limit\_skip.cpp
 
@@ -14338,7 +14338,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14346,7 +14346,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14354,7 +14354,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14362,7 +14362,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14370,7 +14370,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/limit.cpp](../query\_system)
+    - [src/mongo/db/exec/limit.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14378,7 +14378,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14402,7 +14402,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/skip.cpp](../query\_system)
+    - [src/mongo/db/exec/skip.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14410,7 +14410,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14426,7 +14426,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14548,7 +14548,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14564,7 +14564,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14572,7 +14572,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
+    - [src/mongo/db/exec/merge\_sort.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14596,7 +14596,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14644,7 +14644,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14660,7 +14660,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14676,7 +14676,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
+    - [src/mongo/db/exec/merge\_sort.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14700,7 +14700,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14716,7 +14716,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14732,7 +14732,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14766,7 +14766,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14774,7 +14774,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14846,7 +14846,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/sort.cpp](../query\_system)
+    - [src/mongo/db/exec/sort.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14854,7 +14854,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14862,7 +14862,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14870,7 +14870,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14886,7 +14886,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14950,7 +14950,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/mock\_stage.cpp](../query\_system)
+    - [src/mongo/db/exec/mock\_stage.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14958,7 +14958,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -14998,7 +14998,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15014,7 +15014,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15022,7 +15022,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15062,7 +15062,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 ### src/mongo/dbtests/query\_stage\_tests.cpp
 
@@ -15168,7 +15168,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15224,7 +15224,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15232,7 +15232,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15264,7 +15264,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15280,7 +15280,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15296,7 +15296,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15931,7 +15931,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15965,7 +15965,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15973,7 +15973,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16005,7 +16005,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16013,7 +16013,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16037,7 +16037,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16061,7 +16061,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16069,7 +16069,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16077,7 +16077,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16125,7 +16125,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16165,7 +16165,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16197,7 +16197,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16205,7 +16205,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16229,7 +16229,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16237,7 +16237,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16253,7 +16253,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16269,7 +16269,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16277,7 +16277,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16285,7 +16285,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16301,7 +16301,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16317,7 +16317,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16325,7 +16325,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16333,7 +16333,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16341,7 +16341,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16349,7 +16349,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16357,7 +16357,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16365,7 +16365,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16462,7 +16462,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16470,7 +16470,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16486,7 +16486,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16510,7 +16510,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16534,7 +16534,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16550,7 +16550,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16558,7 +16558,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16566,7 +16566,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16574,7 +16574,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -18105,7 +18105,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -18137,7 +18137,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -18201,7 +18201,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -18241,7 +18241,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/single\_solution\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/single\_solution\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -18265,7 +18265,7 @@ Old style unittests ("test" binary)
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 

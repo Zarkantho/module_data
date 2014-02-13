@@ -39,7 +39,7 @@ Entry point into aggregation for mongod.  These are all database Commands run us
 
 - Provided By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1467,7 +1467,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1475,7 +1475,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1499,7 +1499,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1515,7 +1515,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1531,7 +1531,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1539,7 +1539,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1555,7 +1555,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1563,7 +1563,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1627,7 +1627,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1635,7 +1635,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1659,7 +1659,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1675,7 +1675,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1683,7 +1683,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1691,7 +1691,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1707,7 +1707,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1715,7 +1715,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1723,7 +1723,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1764,7 +1764,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1772,7 +1772,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1780,7 +1780,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1796,7 +1796,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2164,7 +2164,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2252,7 +2252,7 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 ### src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp
 
@@ -3640,7 +3640,7 @@ These files contain the central entry point for aggregation.  While the initial 
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3792,7 +3792,7 @@ Mongod specific extensions to aggregation
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3952,7 +3952,7 @@ Mongod specific extensions to aggregation
 
 - Provided By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
 
 <div></div>
 

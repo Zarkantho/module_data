@@ -545,7 +545,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -746,7 +746,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -861,7 +861,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
 
 <div></div>
 
@@ -885,7 +885,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -950,7 +950,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -1206,7 +1206,7 @@ Main for mongod
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2433,7 +2433,7 @@ Main for mongos
 
 - Provided By:
 
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 

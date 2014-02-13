@@ -1,6 +1,7 @@
-module_title: Database Web Accesss
-module_name: database_web_accesss
-module_description: 'TODO: database_web_accesss description'
+module_title: Web Server
+module_name: web_server
+module_description: Database web server.  Handles various types of requests, such
+    as rest and jsonp.  This is completely orthogonal to our wire protocol
 module_groups:
 -   group_title: 'TODO: Name this group'
     group_description: Web access to the database, including rest, jsonp, and http.

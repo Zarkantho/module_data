@@ -1,11 +1,10 @@
-module_title: Query System
-module_name: query_system
-module_description: 'TODO: query_system description'
+module_title: Core Query System
+module_name: core_query_system
+module_description: ''
 module_groups:
--   group_title: 'TODO: Name this group'
+-   group_title: Query Expression Parser
     group_description: Matcher expressions. The point of all of this is to take a
-        query string and turn it into a# structured set of classes. If this were a
-        compiler this would be the parse tree for the compiler.
+        query string and turn it into a structured set of classes.
     group_files:
     - src/mongo/db/matcher/expression.cpp
     - src/mongo/db/matcher/expression.h
@@ -2583,18 +2582,12 @@ module_groups:
                 const&, int)
             symbol_sources:
             - src/mongo/base/status.cpp
--   group_title: 'TODO: Name this group'
-    group_description: This is the code to say "does this document match the expression"?
-        This is built on the# expressions above.# Helper classes for managing document
-        matching. Related to the expressions above.
+-   group_title: Matchable Document
+    group_description: Class that holds a BSONObj and provides an interface that the
+        parsed expressions use when determining whether a BSONObj matches.
     group_files:
     - src/mongo/db/matcher/matchable.cpp
     - src/mongo/db/matcher/matchable.h
-    - src/mongo/db/matcher/path.cpp
-    - src/mongo/db/matcher/path.h
-    - src/mongo/db/matcher/path_internal.cpp
-    - src/mongo/db/matcher/path_internal.h
-    - src/mongo/db/matcher/path_test.cpp
     group_generated_data:
     -   file_name: src/mongo/db/matcher/matchable.cpp
         file_executables:
@@ -2657,6 +2650,16 @@ module_groups:
         - mongosniff
         file_interface: []
         file_dependencies: []
+-   group_title: Document Iterators
+    group_description: This contains code to help with iterating arrays and nested
+        documents
+    group_files:
+    - src/mongo/db/matcher/path.cpp
+    - src/mongo/db/matcher/path.h
+    - src/mongo/db/matcher/path_internal.cpp
+    - src/mongo/db/matcher/path_internal.h
+    - src/mongo/db/matcher/path_test.cpp
+    group_generated_data:
     -   file_name: src/mongo/db/matcher/path.cpp
         file_executables:
         - mongotop
@@ -2993,8 +2996,9 @@ module_groups:
         -   symbol_name: std::string mongo::integerToHex<int>(int)
             symbol_sources:
             - src/mongo/util/hex.cpp
--   group_title: 'TODO: Name this group'
-    group_description: Interface to actually test if a document matches.
+-   group_title: Document Matcher
+    group_description: Interface to actually test if a document matches.  Wraps a
+        match expression generated from the expression parsing system.
     group_files:
     - src/mongo/db/matcher/matcher.cpp
     - src/mongo/db/matcher/matcher.h

@@ -1349,10 +1349,10 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 - Used By:
 
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/exec/text.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1380,8 +1380,8 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -1459,17 +1459,17 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/count.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/count.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1488,7 +1488,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -1502,7 +1502,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -1516,7 +1516,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
@@ -1555,21 +1555,21 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1587,7 +1587,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1603,7 +1603,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Used By:
 
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1611,9 +1611,9 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Used By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
-    - [src/mongo/db/exec/count.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/count.cpp](../core\_query\_system)
 
 ### src/mongo/db/catalog/index\_catalog\_entry.cpp
 
@@ -1700,7 +1700,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1756,7 +1756,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1844,7 +1844,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1852,7 +1852,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1860,7 +1860,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1940,7 +1940,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1948,7 +1948,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1972,7 +1972,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1980,7 +1980,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1988,7 +1988,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2012,7 +2012,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2036,7 +2036,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2069,7 +2069,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2165,7 +2165,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2181,7 +2181,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2197,7 +2197,7 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2595,7 +2595,7 @@ Class to manage a single database.  This currently contains the code to manage d
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
@@ -2603,7 +2603,7 @@ Class to manage a single database.  This currently contains the code to manage d
     - [src/mongo/dbtests/indexcatalogtests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
@@ -2639,7 +2639,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
     - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
@@ -2647,17 +2647,17 @@ Class to manage a single database.  This currently contains the code to manage d
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
     - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../aggregation\_framework)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
@@ -2673,15 +2673,15 @@ Class to manage a single database.  This currently contains the code to manage d
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/pipeline\_command.cpp](../aggregation\_framework)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
     - [src/mongo/tools/admin.cpp](../tools)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
@@ -2700,18 +2700,18 @@ Class to manage a single database.  This currently contains the code to manage d
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/exec/text.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -2929,7 +2929,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3009,7 +3009,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3065,7 +3065,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3162,7 +3162,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3186,7 +3186,7 @@ Class to manage a single database.  This currently contains the code to manage d
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3306,7 +3306,7 @@ Class to manage the disk format of the ".ns" files
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
 
 <div></div>
@@ -3332,8 +3332,8 @@ Class to manage the disk format of the ".ns" files
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 # Dependencies
 
@@ -3418,7 +3418,7 @@ Class to manage the disk format of the ".ns" files
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3688,7 +3688,7 @@ Class to manage a single collection, including collection data and collection me
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
 
@@ -3719,8 +3719,8 @@ Class to manage a single collection, including collection data and collection me
     - [src/mongo/db/commands/compact.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/repl/sync.cpp](../replication)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
@@ -3742,9 +3742,9 @@ Class to manage a single collection, including collection data and collection me
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
@@ -3764,7 +3764,7 @@ Class to manage a single collection, including collection data and collection me
     - [src/mongo/dbtests/counttests.cpp](../unit\_tests)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync.cpp](../replication)
@@ -3778,7 +3778,7 @@ Class to manage a single collection, including collection data and collection me
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3788,7 +3788,7 @@ Class to manage a single collection, including collection data and collection me
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 # Dependencies
 
@@ -3848,7 +3848,7 @@ Class to manage a single collection, including collection data and collection me
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3896,7 +3896,7 @@ Class to manage a single collection, including collection data and collection me
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4069,7 +4069,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Used By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
 
 <div></div>
@@ -4078,9 +4078,9 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Used By:
 
-    - [src/mongo/db/query/cached\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
 
@@ -4134,7 +4134,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Provided By:
 
-    - [src/mongo/db/query/query\_settings.cpp](../query\_system)
+    - [src/mongo/db/query/query\_settings.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4158,7 +4158,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4198,7 +4198,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4230,7 +4230,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4246,7 +4246,7 @@ Contains methods to update and access non persistent collection state, such as t
 
 - Provided By:
 
-    - [src/mongo/db/query/plan\_cache.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_cache.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4276,8 +4276,8 @@ Keeps track of cursors and query runners for timeout and invalidation purposes. 
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
@@ -4287,7 +4287,7 @@ Keeps track of cursors and query runners for timeout and invalidation purposes. 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4332,12 +4332,12 @@ Keeps track of cursors and query runners for timeout and invalidation purposes. 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
@@ -4804,7 +4804,7 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4884,7 +4884,7 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4916,7 +4916,7 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5005,7 +5005,7 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -5064,9 +5064,9 @@ Command line options for the storage system.  This should only be in binaries th
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/dur\_journal.cpp](../journaling)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
@@ -5084,7 +5084,7 @@ Command line options for the storage system.  This should only be in binaries th
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -5123,11 +5123,11 @@ Command line options for the storage system.  This should only be in binaries th
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../journaling)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/dbtests/mmaptests.cpp](../unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../database\_commands)
     - [src/mongo/db/repl/rs\_sync.cpp](../replication)
@@ -5491,7 +5491,7 @@ Manages the ".ns" files, including adding the metadata for a new namespace or re
 
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
@@ -6088,31 +6088,31 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/working\_set\_common.cpp](../query\_system)
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set\_common.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/2dnear.cpp](../query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
-    - [src/mongo/db/exec/collection\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../core\_query\_system)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
     - [src/mongo/s/d\_split.cpp](../sharding)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
     - [src/mongo/dbtests/querytests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/text.cpp](../query\_system)
+    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/db/exec/2d.cpp](../query\_system)
+    - [src/mongo/db/exec/2d.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6121,10 +6121,10 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 - Used By:
 
     - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
     - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
 
 <div></div>
@@ -6142,16 +6142,16 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 - Used By:
 
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/tools/dump.cpp](../tools)
@@ -6165,7 +6165,7 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -6196,10 +6196,10 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
 - Used By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -6207,7 +6207,7 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
 - Used By:
 
-    - [src/mongo/db/exec/oplogstart.cpp](../query\_system)
+    - [src/mongo/db/exec/oplogstart.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
@@ -7808,13 +7808,13 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../core\_query\_system)
     - [src/mongo/dbtests/runner\_registry.cpp](../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/s/d\_merge.cpp](../sharding)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../query\_system)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../core\_query\_system)
     - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_sort.cpp](../unit\_tests)
@@ -7830,7 +7830,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/ttl.cpp](../indexing)
     - [src/mongo/dbtests/directclienttests.cpp](../unit\_tests)
@@ -7991,7 +7991,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/dbtests/clienttests.cpp](../unit\_tests)
 
 <div></div>
@@ -8028,7 +8028,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
     - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
     - [src/mongo/db/write\_concern.cpp](../replication)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/extsort.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
@@ -8286,7 +8286,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8518,7 +8518,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -8598,7 +8598,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -8654,7 +8654,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8710,7 +8710,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -8718,7 +8718,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8878,7 +8878,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9046,7 +9046,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9134,7 +9134,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -9240,7 +9240,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9264,7 +9264,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9296,7 +9296,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -9360,7 +9360,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9544,7 +9544,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9584,7 +9584,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/query/canonical\_query.cpp](../query\_system)
+    - [src/mongo/db/query/canonical\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9664,7 +9664,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9688,7 +9688,7 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 - Provided By:
 
-    - [src/mongo/db/ops/delete.cpp](../query\_system)
+    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9757,7 +9757,7 @@ This is another really hairy, really old legacy file. At this point it's easier 
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/repl/master\_slave.cpp](../replication)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
 
 <div></div>
 

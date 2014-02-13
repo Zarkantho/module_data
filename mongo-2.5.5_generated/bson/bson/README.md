@@ -92,7 +92,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/dbtests/mock/mock\_replica\_set.cpp](../unit\_tests)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
@@ -106,12 +106,12 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
-    - [src/mongo/db/query/index\_bounds.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds.cpp](../core\_query\_system)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/query/explain\_plan.cpp](../query\_system)
+    - [src/mongo/db/query/explain\_plan.cpp](../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
@@ -159,12 +159,12 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../sharding)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/projection.cpp](../query\_system)
+    - [src/mongo/db/projection.cpp](../core\_query\_system)
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
@@ -174,8 +174,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/db/geo/hash.cpp](../geo\_queries)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
-    - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/projection\_exec.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
@@ -252,7 +252,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
 
 <div></div>
@@ -274,7 +274,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/commands\_public.cpp](../sharding)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
@@ -373,7 +373,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/dbtests/mock/mock\_replica\_set.cpp](../unit\_tests)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
@@ -387,12 +387,12 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/range\_deleter.cpp](../sharding)
-    - [src/mongo/db/query/index\_bounds.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds.cpp](../core\_query\_system)
     - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/query/explain\_plan.cpp](../query\_system)
+    - [src/mongo/db/query/explain\_plan.cpp](../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
@@ -440,12 +440,12 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/scripting/v8\_utils.cpp](../javascript\_libraries)
     - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
     - [src/mongo/db/commands/geonear.cpp](../database\_commands)
     - [src/mongo/s/d\_migrate.cpp](../sharding)
     - [src/mongo/s/commands\_admin.cpp](../sharding)
     - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/projection.cpp](../query\_system)
+    - [src/mongo/db/projection.cpp](../core\_query\_system)
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
@@ -455,8 +455,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
     - [src/mongo/db/geo/hash.cpp](../geo\_queries)
     - [src/mongo/s/mongo\_version\_range.cpp](../sharding)
-    - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/projection\_exec.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
@@ -520,7 +520,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/repl/oplog.cpp](../replication)
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
 
@@ -544,7 +544,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ops/insert.cpp](../query\_system)
+    - [src/mongo/db/ops/insert.cpp](../core\_query\_system)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
 
@@ -656,9 +656,9 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
 
 <div></div>
@@ -678,8 +678,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/db/query/index\_bounds.cpp](../query\_system)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -696,7 +696,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/exec/projection\_exec.cpp](../query\_system)
+    - [src/mongo/db/exec/projection\_exec.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -718,7 +718,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
     - [src/mongo/db/ops/modifier\_current\_date.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/pipeline/document\_source\_unwind.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
     - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
@@ -778,8 +778,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/db/pipeline/document\_source\_match.cpp](../aggregation\_framework)
     - [src/mongo/db/geo/geoquery.cpp](../geo\_queries)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/fts/fts\_spec.cpp](../full\_text\_search\_module)
 
@@ -790,7 +790,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -834,7 +834,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -843,7 +843,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/s/shard\_key\_pattern.cpp](../sharding)
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
 
 <div></div>
@@ -891,7 +891,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/s/chunk.cpp](../sharding)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
 
@@ -987,7 +987,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../core\_query\_system)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
@@ -1001,37 +1001,37 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/dbtests/documenttests.cpp](../unit\_tests)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/exec/2dcommon.cpp](../query\_system)
-    - [src/mongo/db/query/query\_solution.cpp](../query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../core\_query\_system)
+    - [src/mongo/db/query/query\_solution.cpp](../core\_query\_system)
     - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
     - [src/mongo/s/balancer\_policy.cpp](../sharding)
-    - [src/mongo/db/query/plan\_enumerator.cpp](../query\_system)
-    - [src/mongo/db/exec/count.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/plan\_enumerator.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/count.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
     - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
     - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
     - [src/mongo/db/keypattern.cpp](../indexing)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
-    - [src/mongo/db/exec/and\_sorted.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../core\_query\_system)
     - [src/mongo/scripting/v8\_db.cpp](../javascript\_libraries)
     - [src/mongo/s/balance.cpp](../sharding)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
     - [src/mongo/s/chunk\_manager\_targeter.cpp](../sharding)
     - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
     - [src/mongo/s/range\_arithmetic.cpp](../sharding)
-    - [src/mongo/db/query/interval.cpp](../query\_system)
+    - [src/mongo/db/query/interval.cpp](../core\_query\_system)
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/dbtests/expressiontests.cpp](../unit\_tests)
     - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../indexing)
     - [src/mongo/db/fts/fts\_index\_format.cpp](../full\_text\_search\_module)
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../query\_system)
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
-    - [src/mongo/db/exec/sort.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/sort.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/query/index\_bounds.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds.cpp](../core\_query\_system)
     - [src/mongo/s/d\_merge.cpp](../sharding)
     - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
     - [src/mongo/dbtests/keypatterntests.cpp](../unit\_tests)
@@ -1042,13 +1042,13 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
     - [src/mongo/db/index/2d\_access\_method.cpp](../indexing)
     - [src/mongo/db/index/s2\_access\_method.cpp](../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/query/planner\_analysis.cpp](../query\_system)
+    - [src/mongo/db/query/planner\_analysis.cpp](../core\_query\_system)
     - [src/mongo/s/shardkey.cpp](../sharding)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
     - [src/mongo/db/commands/distinct.cpp](../database\_commands)
-    - [src/mongo/db/query/query\_planner.cpp](../query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../core\_query\_system)
     - [src/mongo/tools/restore.cpp](../tools)
     - [src/mongo/dbtests/mock/mock\_replica\_set.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsontests.cpp](../unit\_tests)
@@ -1058,7 +1058,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/s/commands\_public.cpp](../sharding)
     - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
     - [src/mongo/s/type\_tags.cpp](../sharding)
-    - [src/mongo/db/query/planner\_access.cpp](../query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../core\_query\_system)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../unit\_tests)
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
@@ -1069,11 +1069,11 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/s/collection\_metadata.cpp](../sharding)
-    - [src/mongo/db/query/query\_planner\_test\_lib.cpp](../query\_system)
+    - [src/mongo/db/query/query\_planner\_test\_lib.cpp](../core\_query\_system)
     - [src/mongo/db/index/btree\_key\_generator.cpp](../indexing)
     - [src/mongo/dbtests/sharding.cpp](../unit\_tests)
     - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/exec/and\_hash.cpp](../query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../core\_query\_system)
     - [src/mongo/dbtests/chunktests.cpp](../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../unit\_tests)
     - [src/mongo/s/distlock.cpp](../sharding)
@@ -1083,7 +1083,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/s/type\_chunk.cpp](../sharding)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/db/exec/merge\_sort.cpp](../query\_system)
+    - [src/mongo/db/exec/merge\_sort.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1112,9 +1112,9 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/perf/perftest.cpp](../unit\_tests)
     - [src/mongo/scripting/engine\_v8.cpp](../javascript\_libraries)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/tools/restore.cpp](../tools)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
     - [src/mongo/dbtests/jsontests.cpp](../unit\_tests)
     - [src/mongo/tools/dump.cpp](../tools)
     - [src/mongo/db/structure/btree/btree.cpp](../storage\_layer\_structure)
@@ -1122,7 +1122,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/tools/bsondump.cpp](../tools)
     - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
     - [src/mongo/tools/export.cpp](../tools)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/index/btree\_interface.cpp](../indexing)
     - [src/mongo/client/syncclusterconnection.cpp](../cpp\_client\_driver)
 
@@ -1182,7 +1182,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
 - Used By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1200,8 +1200,8 @@ BSON library   is this library standalone? (lots of third party stuff might want
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1210,7 +1210,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - Used By:
 
     - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -1259,7 +1259,7 @@ BSON library   is this library standalone? (lots of third party stuff might want
     - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
     - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
     - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/jsobjtests.cpp](../unit\_tests)
     - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
@@ -2962,7 +2962,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
 
 <div></div>
@@ -2979,7 +2979,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
 <div></div>
@@ -3062,7 +3062,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_unset.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
@@ -3087,7 +3087,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
@@ -3100,7 +3100,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3110,7 +3110,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
@@ -3138,7 +3138,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/db/auth/role\_graph\_update.cpp](../authentication)
@@ -3153,7 +3153,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
@@ -3183,7 +3183,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_set.cpp](../update\_system)
     - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
@@ -3221,7 +3221,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - [src/mongo/dbtests/repltests.cpp](../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../unit\_tests)
@@ -3241,7 +3241,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
 
 <div></div>
@@ -3283,7 +3283,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_compare.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
@@ -3304,7 +3304,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
     - [src/mongo/db/ops/modifier\_pull.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pop.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)
@@ -3317,7 +3317,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -3342,7 +3342,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_unset.cpp](../update\_system)
 
@@ -3375,7 +3375,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/commands.cpp](../database\_commands)
     - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../authentication)
@@ -3398,7 +3398,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/ops/log\_builder.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
@@ -3438,7 +3438,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_object\_replace.cpp](../update\_system)
     - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
@@ -3475,7 +3475,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/update\_driver.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_push.cpp](../update\_system)
 
@@ -3496,7 +3496,7 @@ Mutable BSON is built on top of the BSON library. It has a mutable, consistently
     - [src/mongo/db/ops/modifier\_bit.cpp](../update\_system)
     - [src/mongo/db/ops/path\_support.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_rename.cpp](../update\_system)
-    - [src/mongo/db/ops/update.cpp](../query\_system)
+    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
     - [src/mongo/db/ops/modifier\_inc.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../update\_system)
     - [src/mongo/db/ops/modifier\_pull\_all.cpp](../update\_system)

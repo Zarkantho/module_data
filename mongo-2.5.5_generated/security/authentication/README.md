@@ -35,7 +35,7 @@ Action types are things that users are allowed to do to a resource.  For example
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
@@ -658,7 +658,7 @@ Action types are things that users are allowed to do to a resource.  For example
 
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
     - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
     - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
@@ -1096,7 +1096,7 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -1170,7 +1170,7 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -1221,7 +1221,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/restapi.cpp](../web\_server)
 
 <div></div>
 
@@ -1417,7 +1417,7 @@ Authapalooza! TODO: actually separate this logically.
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
     - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/db/repl/write\_concern.cpp](../replication)
     - [src/mongo/db/index\_rebuilder.cpp](../indexing)
     - [src/mongo/db/repl/rs.cpp](../replication)
@@ -1466,8 +1466,8 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
-    - [src/mongo/db/restapi.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/db/restapi.cpp](../web\_server)
 
 <div></div>
 
@@ -1510,7 +1510,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_where.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
     - [src/mongo/db/dbeval.cpp](../database\_commands)
     - [src/mongo/db/commands/group.cpp](../database\_commands)
@@ -1673,7 +1673,7 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -1808,7 +1808,7 @@ Authapalooza! TODO: actually separate this logically.
     - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
     - [src/mongo/db/commands/validate.cpp](../database\_commands)
     - [src/mongo/s/d\_writeback.cpp](../sharding)
     - [src/mongo/db/commands/touch.cpp](../database\_commands)
@@ -2012,7 +2012,7 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
 
 <div></div>
 
@@ -2159,7 +2159,7 @@ Authapalooza! TODO: actually separate this logically.
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../database\_web\_accesss)
+    - [src/mongo/db/dbwebserver.cpp](../web\_server)
     - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
     - [src/mongo/tools/restore.cpp](../tools)
 
@@ -3971,7 +3971,7 @@ Authapalooza! TODO: actually separate this logically.
 
 - Provided By:
 
-    - [src/mongo/db/matcher/expression\_parser.cpp](../query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../core\_query\_system)
 
 <div></div>
 

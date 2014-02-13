@@ -1407,9 +1407,9 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 - Used By:
 
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/exec/shard\_filter.cpp](../query\_system)
+    - [src/mongo/db/exec/shard\_filter.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -4002,7 +4002,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
@@ -4019,7 +4019,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
     - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
     - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
 
@@ -4039,7 +4039,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 - Used By:
 
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
     - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/db/auth/privilege\_parser.cpp](../authentication)
     - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
@@ -4062,7 +4062,7 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
     - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../new\_wire\_protocol\_write\_commands)
     - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/query/type\_explain.cpp](../query\_system)
+    - [src/mongo/db/query/type\_explain.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8129,11 +8129,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
     - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
@@ -8157,11 +8157,11 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
@@ -8198,10 +8198,10 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - Used By:
 
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../update\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -8211,7 +8211,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
     - [src/mongo/db/dbcommands.cpp](../database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../aggregation\_framework)
-    - [src/mongo/db/query/new\_find.cpp](../query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9221,7 +9221,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9309,7 +9309,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9421,7 +9421,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9509,7 +9509,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9605,7 +9605,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9629,7 +9629,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -9669,7 +9669,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -12273,7 +12273,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13029,7 +13029,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -13437,8 +13437,8 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../query\_system)
-    - [src/mongo/db/ops/count.cpp](../query\_system)
+    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15436,7 +15436,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -15492,7 +15492,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15532,7 +15532,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -15580,7 +15580,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -15612,7 +15612,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -15913,7 +15913,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -16025,7 +16025,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16097,7 +16097,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -16145,7 +16145,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16427,7 +16427,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16475,7 +16475,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16675,7 +16675,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -16739,7 +16739,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
 
 <div></div>
 
@@ -17670,7 +17670,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
 
 <div></div>
 
@@ -17718,7 +17718,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -17790,7 +17790,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../utilities)
+    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
 
 <div></div>
 
@@ -17814,7 +17814,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -17822,7 +17822,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../utilities)
+    - [src/mongo/util/fail\_point.cpp](../fail\_points)
 
 <div></div>
 
@@ -19847,7 +19847,7 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
 
 <div></div>
 
