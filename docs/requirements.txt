@@ -3,3 +3,4 @@ Sphinx
 fabric
 droopy
 rstcloth
+growl
