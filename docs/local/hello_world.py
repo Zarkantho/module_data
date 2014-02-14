@@ -35,7 +35,7 @@ extensions is:
 
 import json
 
-stage = 'pre'
+stage = 'deactivated'
    
 def hello_world():
     return 'generic hello world message'
