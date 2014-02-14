@@ -8,3 +8,5 @@ MongoDB Server code base.
 .. toctree:: 
    :titlesonly:
    :glob:   
+
+   /*
