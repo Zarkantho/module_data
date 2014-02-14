@@ -2488,15 +2488,51 @@
         module_name: replication
         module_description: 'TODO: replication description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Replication code? TODO: verify that this is all replication
-                related and document the architecture.## a part of this i would like
-                to have documented is threads+locks, e.g.## heartbeats are sent in
-                a unique thread (i think?) and maybe listened for## in a unique thread
-                too? what threads get started if replication is being## used?'
+        -   group_title: 'resync Command'
+            group_description: 'Implementation of "resync" command'
+            group_files:
+            - src/mongo/db/repl/resync.cpp
+        -   group_title: 'Master Slave'
+            group_description: 'Legacy Master/Slave implementation'
+            group_files:
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/master_slave.h
+        -   group_title: 'Replica Set Sync and Initial Sync'
+            group_description: 'Code to do sync and inital sync.  Note that this is a complex class
+                heirarchy, and the files do not map one to one with class definitions and
+                implementation.  The sync thread is started and run in "rs_sync.cpp".  It handles
+                doing the initial sync if applicable, then tailing the oplog.'
+            group_files:
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/repl/rs_sync.h
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/db/repl/sync.h
+        -   group_title: 'Replica Set Background Sync Threads'
+            group_description: 'Threads that actually handle syncing the oplog from the sync source.
+                This includes the thread that actually reads the data from the source as well as the
+                thread that notifies the source of how far it read'
             group_files:
             - src/mongo/db/repl/bgsync.cpp
             - src/mongo/db/repl/bgsync.h
+        -   group_title: 'Sync Source Feedback'
+            group_description: 'Code to tell the sync source how far we have progressed in the
+                oplog.  For new versions this is the "replSetUpdatePosition command, but for old
+                versions this was a "ghost cursor" which would only be advanced when the batch had
+                been processed'
+            group_files:
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/db/repl/sync_source_feedback.h
+        -   group_title: 'Oplog Reader'
+            group_description: 'Class to handle the details of how we are querying the oplog.  The
+                interface is something like the interface for a cursor.'
+            group_files:
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/db/repl/oplogreader.h
+        -   group_title: 'Uncategorized Replication Code'
+            group_description: 'TODO: Split this up and document the architecture.  Make note of
+                what threads are created and what locks are taken.'
+            group_files:
             - src/mongo/db/repl/connections.h
             - src/mongo/db/repl/consensus.cpp
             - src/mongo/db/repl/health.cpp
@@ -2504,13 +2540,9 @@
             - src/mongo/db/repl/heartbeat.cpp
             - src/mongo/db/repl/is_master.h
             - src/mongo/db/repl/manager.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/repl/master_slave.h
             - src/mongo/db/repl/multicmd.h
             - src/mongo/db/repl/oplog.cpp
             - src/mongo/db/repl/oplog.h
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/db/repl/oplogreader.h
             - src/mongo/db/repl/repl_reads_ok.cpp
             - src/mongo/db/repl/repl_reads_ok.h
             - src/mongo/db/repl/repl_start.cpp
@@ -2519,22 +2551,14 @@
             - src/mongo/db/repl/replication_server_status.h
             - src/mongo/db/repl/replset_commands.cpp
             - src/mongo/db/repl/replset_web_handler.cpp
-            - src/mongo/db/repl/resync.cpp
             - src/mongo/db/repl/rs.cpp
             - src/mongo/db/repl/rs.h
             - src/mongo/db/repl/rs_config.cpp
             - src/mongo/db/repl/rs_config.h
             - src/mongo/db/repl/rs_exception.h
-            - src/mongo/db/repl/rs_initialsync.cpp
             - src/mongo/db/repl/rs_initiate.cpp
             - src/mongo/db/repl/rs_member.h
             - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-            - src/mongo/db/repl/rs_sync.h
-            - src/mongo/db/repl/sync.cpp
-            - src/mongo/db/repl/sync.h
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/repl/sync_source_feedback.h
         -   group_title: 'TODO: Name this group'
             group_description: Helpers to wait for the appropriate write concern
             group_files:
