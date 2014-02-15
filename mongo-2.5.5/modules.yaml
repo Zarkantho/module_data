@@ -2529,16 +2529,62 @@
             group_files:
             - src/mongo/db/repl/oplogreader.cpp
             - src/mongo/db/repl/oplogreader.h
+        -   group_title: 'One Per Host Connection Pool'
+            group_description: 'Class to manage remote connections.  Contains only one connection
+                per remote host, protected by a mutex.  Note that this also means only one thread
+                can be contacting a given host at a time using this class.'
+            group_files:
+            - src/mongo/db/repl/connections.h
+        -   group_title: 'Elections'
+            group_description: 'Commands that are sent and recieved during election as well as
+                implementation of some class methods related to elections.  Note that there is not a
+                clear class separation between things related to elections and things not related to
+                elections, so the method implementations in this file span multiple classes.'
+            group_files:
+            - src/mongo/db/repl/consensus.cpp
+        -   group_title: 'Member State Information'
+            group_description: 'Contains class holding all possible states of a replica set member.
+                Also contains class defining the heartbeat information.'
+            group_files:
+            - src/mongo/db/repl/rs_member.h
+        -   group_title: 'Top Level Replica Set Classes'
+            group_description: 'The top level classes for replcation.  Contains the class
+                representing an entire replica set as well as the class representing information
+                about a node of a replica set.  Note that the header contains a mix of different
+                classes.'
+            group_files:
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/repl/rs.h
+        -   group_title: 'Master Check Helpers'
+            group_description: 'Helpers to check in code whether this node is a "master", since
+                there are things that we can only do if we are a master (primary).  Note that this
+                is not the "isMaster" command.  That lives in replication_server_status.cpp'
+            group_files:
+            - src/mongo/db/repl/is_master.h
+        -   group_title: 'Replication Command Line Options'
+            group_description: 'Global configuration options for replication from the command line.'
+            group_files:
+            - src/mongo/db/repl/replication_server_status.h
+        -   group_title: 'Replication Server Status Section'
+            group_description: 'Code to add replication information to the server status results.
+                Also currently has the implementation of the "isMaster" command'
+            group_files:
+            - src/mongo/db/repl/replication_server_status.cpp
+        -   group_title: 'Dead Code'
+            group_description: 'HealthOptions class is not really used anywhere'
+            group_files:
+            - src/mongo/db/repl/health.h
+        -   group_title: 'Heath Status Helpers'
+            group_description: 'Grab bag of miscellaneous helpers that report the status of a
+                replica set or replica set node.  Most of this could be pushed into other files more
+                connected with the classes they come from'
+            group_files:
+            - src/mongo/db/repl/health.cpp
         -   group_title: 'Uncategorized Replication Code'
             group_description: 'TODO: Split this up and document the architecture.  Make note of
                 what threads are created and what locks are taken.'
             group_files:
-            - src/mongo/db/repl/connections.h
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/db/repl/health.cpp
-            - src/mongo/db/repl/health.h
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/repl/is_master.h
             - src/mongo/db/repl/manager.cpp
             - src/mongo/db/repl/multicmd.h
             - src/mongo/db/repl/oplog.cpp
@@ -2547,17 +2593,12 @@
             - src/mongo/db/repl/repl_reads_ok.h
             - src/mongo/db/repl/repl_start.cpp
             - src/mongo/db/repl/repl_start.h
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/db/repl/replication_server_status.h
             - src/mongo/db/repl/replset_commands.cpp
             - src/mongo/db/repl/replset_web_handler.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/rs.h
             - src/mongo/db/repl/rs_config.cpp
             - src/mongo/db/repl/rs_config.h
             - src/mongo/db/repl/rs_exception.h
             - src/mongo/db/repl/rs_initiate.cpp
-            - src/mongo/db/repl/rs_member.h
             - src/mongo/db/repl/rs_rollback.cpp
         -   group_title: 'TODO: Name this group'
             group_description: Helpers to wait for the appropriate write concern
