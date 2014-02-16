@@ -7,7 +7,7 @@
 # Group Description
 Third Party - Yaml markup parser.  Used for yaml config files
 
-# Files
+## Files
 - src/third\_party/shim\_yaml.cpp   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h   (mongod, tools, mongos)
@@ -98,77 +98,6 @@ Third Party - Yaml markup parser.  Used for yaml config files
 - src/third\_party/yaml-cpp-0.5.1/src/tag.h   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/src/token.h   (mongod, tools, mongos)
 
-# Interface
+## [Interface](interface/0)
 
-### src/third\_party/yaml-cpp-0.5.1/src/memory.cpp
-
-<div></div>
-
-    YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-<div></div>
-
-    YAML::detail::memory::create_node()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-### src/third\_party/yaml-cpp-0.5.1/src/node\_data.cpp
-
-<div></div>
-
-    YAML::detail::node_data::end()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-<div></div>
-
-    YAML::detail::node_data::begin()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-<div></div>
-
-    YAML::detail::node_data::mark_defined()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-<div></div>
-
-    YAML::detail::node_data::empty_scalar
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-<div></div>
-
-    YAML::detail::node_data::set_null()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-### src/third\_party/yaml-cpp-0.5.1/src/parse.cpp
-
-<div></div>
-
-    YAML::Load(std::string const&)
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
-
-# Dependencies
-(no dependencies outside this module)
+## [Dependencies](dependencies/0)

@@ -7,7 +7,7 @@
 # Group Description
 Third Party - Snappy compression library
 
-# Files
+## Files
 - src/third\_party/shim\_snappy.cpp   (mongod, tools, mongos)
 - src/third\_party/snappy/config.h   (mongod, tools, mongos)
 - src/third\_party/snappy/snappy-internal.h   (mongod, tools, mongos)
@@ -18,64 +18,6 @@ Third Party - Snappy compression library
 - src/third\_party/snappy/snappy.cc   (mongod, tools, mongos)
 - src/third\_party/snappy/snappy.h   (mongod, tools, mongos)
 
-# Interface
+## [Interface](interface/0)
 
-### src/third\_party/snappy/snappy.cc
-
-<div></div>
-
-    snappy::MaxCompressedLength(unsigned long)
-
-- Used By:
-
-    - [src/mongo/util/compress.cpp](../utilities)
-
-<div></div>
-
-    snappy::Compress(char const*, unsigned long, std::string*)
-
-- Used By:
-
-    - [src/mongo/util/compress.cpp](../utilities)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
-
-<div></div>
-
-    snappy::RawCompress(char const*, unsigned long, char*, unsigned long*)
-
-- Used By:
-
-    - [src/mongo/util/compress.cpp](../utilities)
-
-<div></div>
-
-    snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
-
-<div></div>
-
-    snappy::Uncompress(char const*, unsigned long, std::string*)
-
-- Used By:
-
-    - [src/mongo/util/compress.cpp](../utilities)
-
-<div></div>
-
-    snappy::RawUncompress(char const*, unsigned long, char*)
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
-
-# Dependencies
-(no dependencies outside this module)
+## [Dependencies](dependencies/0)

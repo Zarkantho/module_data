@@ -1,0 +1,220 @@
+
+# Interface
+
+### src/mongo/db/commands/copydb\_common.cpp
+
+<div></div>
+
+    mongo::copydb::checkAuthForCopydbCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+
+### src/mongo/db/commands/dbhash.cpp
+
+<div></div>
+
+    mongo::logOpForDbHash(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, mongo::BSONObj const*, bool)
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../replication)
+
+### src/mongo/db/commands/find\_and\_modify\_common.cpp
+
+<div></div>
+
+    mongo::find_and_modify::addPrivilegesRequiredForFindAndModify(mongo::Command*, std::string const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+
+### src/mongo/db/commands/get\_last\_error.cpp
+
+<div></div>
+
+    mongo::getLastErrorDefault
+
+- Used By:
+
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+### src/mongo/db/commands/isself.cpp
+
+<div></div>
+
+    mongo::HostAndPort::isSelf() const
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_config.cpp](../replication)
+    - [src/mongo/dbtests/socktests.cpp](../unit\_tests)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+
+### src/mongo/db/commands/mr\_common.cpp
+
+<div></div>
+
+    mongo::mr::addPrivilegesRequiredForMapReduce(mongo::Command*, std::string const&, mongo::BSONObj const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+
+### src/mongo/db/commands/rename\_collection\_common.cpp
+
+<div></div>
+
+    mongo::rename_collection::checkAuthForRenameCollectionCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../sharding)
+
+### src/mongo/db/commands/server\_status.cpp
+
+<div></div>
+
+    mongo::ServerStatusSection::ServerStatusSection(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../storage\_layer\_structure)
+
+<div></div>
+
+    mongo::OpCounterServerStatusSection::OpCounterServerStatusSection(std::string const&, mongo::OpCounters*)
+
+- Used By:
+
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+
+<div></div>
+
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/repl/bgsync.cpp](../replication)
+    - [src/mongo/db/ttl.cpp](../indexing)
+    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/prefetch.cpp](../page\_fault\_utilities)
+    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/oplogreader.cpp](../replication)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/write\_concern.cpp](../replication)
+    - [src/mongo/s/d\_writeback.cpp](../sharding)
+    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+
+### src/mongo/db/commands/shutdown.cpp
+
+<div></div>
+
+    vtable for mongo::CmdShutdown
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+### src/mongo/db/commands/user\_management\_commands.cpp
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::CmdAuthSchemaUpgrade()
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::~CmdAuthSchemaUpgrade()
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::locktype() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::adminOnly() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    typeinfo for mongo::CmdAuthSchemaUpgrade
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::slaveOk() const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+<div></div>
+
+    mongo::CmdAuthSchemaUpgrade::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
+
+- Used By:
+
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
+
+### src/mongo/db/dbcommands\_generic.cpp
+
+<div></div>
+
+    mongo::CmdShutdown::shutdownHelper()
+
+- Used By:
+
+    - [src/mongo/s/commands\_admin.cpp](../sharding)
+
+### src/mongo/db/dbeval.cpp
+
+<div></div>
+
+    mongo::dbEval(std::string const&, mongo::BSONObj&, mongo::BSONObjBuilder&, std::string&)
+
+- Used By:
+
+    - [src/mongo/dbtests/jstests.cpp](../unit\_tests)

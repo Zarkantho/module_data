@@ -7,7 +7,7 @@
 # Group Description
 Third Party - Google performance tools and tcmalloc
 
-# Files
+## Files
 - src/third\_party/shim\_allocator.cpp   (mongod, tools, mongos)
 - src/third\_party/gperftools-2.0/src/base/arm\_instruction\_set\_select.h   (mongod, tools, mongos)
 - src/third\_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h   (mongod, tools, mongos)
@@ -103,17 +103,6 @@ Third Party - Google performance tools and tcmalloc
 - src/third\_party/gperftools-2.0/src/windows/mingw.h   (mongod, tools, mongos)
 - src/third\_party/gperftools-2.0/src/windows/port.h   (mongod, tools, mongos)
 
-# Interface
+## [Interface](interface/0)
 
-### src/third\_party/gperftools-2.0/src/malloc\_extension.cc
-
-<div></div>
-
-    MallocExtension::instance()
-
-- Used By:
-
-    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
-
-# Dependencies
-(no dependencies outside this module)
+## [Dependencies](dependencies/0)
