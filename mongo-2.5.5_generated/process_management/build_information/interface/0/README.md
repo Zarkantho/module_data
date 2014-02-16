@@ -9,11 +9,11 @@
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
-    - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/dbtests/perftests.cpp](../unit\_tests)
+    - [src/mongo/tools/tool\_options.cpp](../../../tools)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -21,7 +21,7 @@
 
 - Used By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -29,7 +29,7 @@
 
 - Used By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -37,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -45,9 +45,9 @@
 
 - Used By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
-    - [src/mongo/s/version\_mongos.cpp](../sharding)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
 
 <div></div>
 
@@ -55,4 +55,4 @@
 
 - Used By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)

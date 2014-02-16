@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -25,8 +25,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/dbtests/pipelinetests.cpp](../../../unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -34,8 +34,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/dbtests/pipelinetests.cpp](../../../unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -43,7 +43,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -51,8 +51,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/dbtests/pipelinetests.cpp](../../../unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -60,7 +60,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -68,7 +68,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -76,7 +76,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -84,7 +84,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
 
 <div></div>
 
@@ -92,4 +92,4 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)

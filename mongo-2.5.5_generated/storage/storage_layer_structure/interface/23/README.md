@@ -9,10 +9,10 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
-    - [src/mongo/tools/dump.cpp](../tools)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
+    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -20,7 +20,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
 
 <div></div>
 
@@ -28,7 +28,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -36,8 +36,8 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -45,8 +45,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -54,7 +54,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -62,5 +62,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)

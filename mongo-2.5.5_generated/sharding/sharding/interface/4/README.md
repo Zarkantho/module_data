@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -25,4 +25,4 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)

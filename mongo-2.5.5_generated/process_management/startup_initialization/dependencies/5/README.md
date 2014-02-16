@@ -9,4 +9,4 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../logging\_system)
+    - [src/mongo/util/log.cpp](../../../logging\_system)

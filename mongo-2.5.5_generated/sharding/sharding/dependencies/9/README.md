@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../build\_information)
+    - [src/mongo/util/version.cpp](../../../build\_information)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -57,7 +57,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -65,7 +65,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -73,7 +73,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -81,7 +81,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -89,7 +89,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -97,7 +97,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities)
 
 <div></div>
 
@@ -105,7 +105,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -113,7 +113,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -121,7 +121,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -129,7 +129,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -137,7 +137,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -145,7 +145,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -153,7 +153,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -161,7 +161,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../build\_information)
+    - [src/mongo/util/version.cpp](../../../build\_information)
 
 <div></div>
 
@@ -169,7 +169,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -177,7 +177,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -185,7 +185,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -193,7 +193,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -201,7 +201,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -209,7 +209,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -217,7 +217,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -225,11 +225,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -237,7 +237,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -245,7 +245,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities)
 
 <div></div>
 
@@ -253,7 +253,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -261,7 +261,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -269,7 +269,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities)
 
 <div></div>
 
@@ -277,7 +277,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -285,7 +285,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -293,7 +293,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -301,7 +301,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -309,7 +309,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -317,7 +317,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -325,7 +325,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 ### src/mongo/s/balancer\_policy.cpp
 
@@ -335,7 +335,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -343,7 +343,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -351,7 +351,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -359,7 +359,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -367,7 +367,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -375,7 +375,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -383,7 +383,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -391,7 +391,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -399,7 +399,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -407,7 +407,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -415,7 +415,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -423,7 +423,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 ### src/mongo/s/balancer\_policy\_tests.cpp
 
@@ -433,7 +433,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -441,7 +441,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -449,7 +449,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -457,7 +457,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -465,7 +465,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -473,7 +473,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -481,7 +481,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -489,7 +489,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -497,7 +497,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -505,7 +505,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -513,7 +513,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -521,7 +521,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -529,7 +529,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -537,7 +537,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -545,7 +545,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -553,7 +553,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -561,7 +561,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -569,7 +569,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -577,7 +577,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -585,7 +585,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -593,7 +593,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -601,7 +601,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -609,7 +609,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -617,7 +617,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -625,7 +625,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -633,7 +633,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 ### src/mongo/s/chunk.cpp
 
@@ -643,7 +643,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -651,7 +651,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -659,7 +659,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -667,7 +667,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -675,7 +675,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -683,7 +683,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -691,7 +691,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -699,7 +699,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -707,7 +707,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -715,7 +715,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -723,7 +723,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -731,7 +731,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -739,7 +739,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -747,7 +747,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -755,7 +755,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -763,7 +763,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -771,7 +771,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -779,7 +779,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -787,7 +787,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -795,7 +795,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -803,7 +803,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -811,7 +811,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -819,7 +819,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -827,7 +827,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -835,7 +835,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -843,7 +843,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -851,7 +851,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -859,7 +859,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -867,7 +867,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -875,7 +875,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -883,7 +883,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -891,7 +891,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -899,7 +899,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -907,7 +907,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -915,7 +915,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -923,7 +923,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -931,7 +931,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -939,7 +939,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -947,7 +947,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -955,7 +955,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -963,7 +963,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -971,7 +971,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -979,7 +979,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -987,7 +987,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -995,7 +995,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1003,7 +1003,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1011,7 +1011,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -1019,7 +1019,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -1027,7 +1027,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1035,7 +1035,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -1043,7 +1043,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1051,7 +1051,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -1059,7 +1059,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1067,7 +1067,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1075,7 +1075,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -1083,7 +1083,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1091,7 +1091,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1099,7 +1099,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -1107,7 +1107,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1115,7 +1115,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -1123,7 +1123,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1131,7 +1131,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1139,7 +1139,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 ### src/mongo/s/chunk\_diff\_test.cpp
 
@@ -1149,7 +1149,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1157,7 +1157,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1165,7 +1165,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1173,7 +1173,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1181,7 +1181,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1189,7 +1189,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1197,7 +1197,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1205,7 +1205,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1213,7 +1213,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1221,7 +1221,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1229,7 +1229,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 ### src/mongo/s/chunk\_manager\_targeter.cpp
 
@@ -1239,7 +1239,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1247,7 +1247,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1255,7 +1255,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -1263,7 +1263,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1271,7 +1271,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -1279,7 +1279,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -1287,7 +1287,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1295,7 +1295,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1303,7 +1303,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -1311,7 +1311,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1319,7 +1319,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1327,7 +1327,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1335,7 +1335,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1343,7 +1343,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1351,7 +1351,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1359,7 +1359,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1367,7 +1367,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1375,7 +1375,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -1383,7 +1383,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1391,7 +1391,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1399,7 +1399,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1407,7 +1407,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -1415,7 +1415,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1423,7 +1423,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1431,7 +1431,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -1439,7 +1439,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1447,7 +1447,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1455,7 +1455,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -1463,7 +1463,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/chunk\_version\_test.cpp
 
@@ -1473,7 +1473,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -1481,7 +1481,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1489,7 +1489,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1497,7 +1497,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1505,7 +1505,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1513,7 +1513,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1521,7 +1521,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1529,7 +1529,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1537,7 +1537,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1545,7 +1545,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1553,7 +1553,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1561,7 +1561,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1569,7 +1569,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1577,7 +1577,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1585,7 +1585,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1593,7 +1593,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1601,7 +1601,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1609,7 +1609,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1617,7 +1617,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1625,7 +1625,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -1633,7 +1633,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1641,7 +1641,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 ### src/mongo/s/cluster\_client\_internal.cpp
 
@@ -1651,7 +1651,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1659,7 +1659,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1667,7 +1667,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1675,7 +1675,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1683,7 +1683,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1691,7 +1691,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -1699,7 +1699,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1707,7 +1707,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1715,7 +1715,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1723,7 +1723,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1731,7 +1731,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1739,7 +1739,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -1747,7 +1747,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stringutils.cpp](../utilities)
+    - [src/mongo/util/stringutils.cpp](../../../utilities)
 
 <div></div>
 
@@ -1755,7 +1755,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -1763,7 +1763,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1771,7 +1771,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1779,7 +1779,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -1787,7 +1787,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1795,7 +1795,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1803,7 +1803,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1811,7 +1811,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1819,7 +1819,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -1827,7 +1827,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1835,7 +1835,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1843,7 +1843,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -1851,7 +1851,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -1859,7 +1859,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -1867,7 +1867,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1875,7 +1875,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1883,7 +1883,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1891,7 +1891,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -1899,7 +1899,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -1907,7 +1907,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/cluster\_write.cpp
 
@@ -1917,7 +1917,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1925,7 +1925,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1933,7 +1933,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1941,7 +1941,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1949,7 +1949,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1957,7 +1957,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1965,7 +1965,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1973,7 +1973,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -1981,7 +1981,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -1989,7 +1989,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -1997,7 +1997,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2005,7 +2005,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2013,7 +2013,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2021,7 +2021,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2029,7 +2029,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2037,7 +2037,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2045,7 +2045,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2053,7 +2053,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2061,7 +2061,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2069,7 +2069,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -2077,7 +2077,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2085,7 +2085,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2093,7 +2093,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2101,7 +2101,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2109,7 +2109,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2117,7 +2117,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2125,7 +2125,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2133,7 +2133,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -2141,7 +2141,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2149,7 +2149,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2157,7 +2157,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2165,7 +2165,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2173,7 +2173,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -2181,7 +2181,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2189,7 +2189,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2197,7 +2197,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -2205,7 +2205,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2213,7 +2213,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2221,7 +2221,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2229,7 +2229,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2237,7 +2237,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2245,7 +2245,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2253,7 +2253,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2261,7 +2261,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2269,7 +2269,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2277,7 +2277,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2285,7 +2285,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -2293,7 +2293,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2301,7 +2301,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2309,7 +2309,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2317,7 +2317,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2325,7 +2325,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -2333,7 +2333,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2341,7 +2341,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -2349,7 +2349,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -2357,7 +2357,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -2365,7 +2365,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2373,7 +2373,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2381,7 +2381,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2389,7 +2389,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2397,7 +2397,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2405,7 +2405,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2413,7 +2413,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2421,7 +2421,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2429,7 +2429,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2437,7 +2437,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2445,7 +2445,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -2453,7 +2453,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp
 
@@ -2463,7 +2463,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2471,7 +2471,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2479,7 +2479,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2487,7 +2487,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2495,7 +2495,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2503,7 +2503,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2511,7 +2511,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2519,7 +2519,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2527,7 +2527,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2535,7 +2535,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2543,7 +2543,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2551,7 +2551,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
 
 <div></div>
 
@@ -2559,7 +2559,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
 
 <div></div>
 
@@ -2567,7 +2567,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2575,7 +2575,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -2583,7 +2583,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2591,7 +2591,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2599,7 +2599,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
 
 <div></div>
 
@@ -2607,7 +2607,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2615,7 +2615,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2623,7 +2623,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2631,7 +2631,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2639,7 +2639,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
 
 <div></div>
 
@@ -2647,7 +2647,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2655,7 +2655,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2663,7 +2663,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2671,7 +2671,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2679,7 +2679,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
 
 <div></div>
 
@@ -2687,7 +2687,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2695,7 +2695,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2703,7 +2703,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2711,7 +2711,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2719,7 +2719,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2727,7 +2727,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../authentication)
+    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
 
 <div></div>
 
@@ -2735,7 +2735,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2743,7 +2743,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2751,7 +2751,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2759,7 +2759,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2767,7 +2767,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -2775,7 +2775,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp
 
@@ -2785,7 +2785,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -2793,7 +2793,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -2801,7 +2801,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2809,7 +2809,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2817,7 +2817,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2825,7 +2825,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2833,7 +2833,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2841,7 +2841,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -2849,7 +2849,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2857,7 +2857,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2865,7 +2865,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -2873,7 +2873,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -2881,7 +2881,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -2889,7 +2889,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2897,7 +2897,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -2905,7 +2905,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2913,7 +2913,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2921,7 +2921,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 ### src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp
 
@@ -2931,7 +2931,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2939,7 +2939,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2947,7 +2947,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -2955,7 +2955,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2963,7 +2963,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2971,7 +2971,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2979,7 +2979,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -2987,7 +2987,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -2995,7 +2995,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -3003,7 +3003,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -3011,7 +3011,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3019,7 +3019,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3027,7 +3027,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3035,7 +3035,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3043,7 +3043,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3051,7 +3051,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3059,7 +3059,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3067,7 +3067,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -3075,7 +3075,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3083,7 +3083,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -3091,7 +3091,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3099,7 +3099,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3107,7 +3107,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -3115,7 +3115,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3123,7 +3123,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3131,7 +3131,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3139,7 +3139,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 ### src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp
 
@@ -3149,7 +3149,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3157,7 +3157,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -3165,7 +3165,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3173,7 +3173,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3181,7 +3181,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3189,7 +3189,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3197,7 +3197,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3205,7 +3205,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -3213,7 +3213,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3221,7 +3221,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3229,7 +3229,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -3237,7 +3237,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -3245,7 +3245,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3253,7 +3253,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3261,7 +3261,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3269,7 +3269,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -3277,7 +3277,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3285,7 +3285,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3293,7 +3293,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 ### src/mongo/s/commands\_admin.cpp
 
@@ -3303,7 +3303,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3311,7 +3311,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -3319,7 +3319,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../indexing)
 
 <div></div>
 
@@ -3327,7 +3327,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -3335,7 +3335,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3343,7 +3343,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../logging\_system)
+    - [src/mongo/util/log.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -3351,7 +3351,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3359,7 +3359,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3367,7 +3367,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3375,7 +3375,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -3383,7 +3383,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3391,7 +3391,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3399,7 +3399,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -3407,7 +3407,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3415,7 +3415,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3423,7 +3423,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3431,7 +3431,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3439,7 +3439,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3447,7 +3447,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3455,7 +3455,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -3463,7 +3463,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3471,7 +3471,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3479,7 +3479,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3487,7 +3487,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -3495,7 +3495,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -3503,7 +3503,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3511,7 +3511,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3519,7 +3519,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3527,7 +3527,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3535,7 +3535,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -3543,7 +3543,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -3551,7 +3551,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -3559,7 +3559,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -3567,7 +3567,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3575,7 +3575,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3583,7 +3583,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/shutdown.cpp](../database\_commands)
+    - [src/mongo/db/commands/shutdown.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3591,7 +3591,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -3599,7 +3599,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -3607,7 +3607,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3615,7 +3615,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3623,7 +3623,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3631,7 +3631,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3639,7 +3639,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -3647,7 +3647,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3655,7 +3655,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3663,7 +3663,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3671,7 +3671,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3679,7 +3679,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3687,7 +3687,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -3695,7 +3695,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3703,7 +3703,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../indexing)
 
 <div></div>
 
@@ -3711,7 +3711,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3719,7 +3719,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -3727,7 +3727,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3735,7 +3735,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -3743,7 +3743,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3751,7 +3751,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3759,7 +3759,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -3767,7 +3767,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3775,7 +3775,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3783,7 +3783,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -3791,7 +3791,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -3799,7 +3799,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -3807,7 +3807,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -3815,7 +3815,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -3823,7 +3823,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -3831,7 +3831,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -3839,7 +3839,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -3847,7 +3847,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -3855,7 +3855,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -3863,7 +3863,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -3871,7 +3871,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -3879,7 +3879,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3887,7 +3887,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3895,7 +3895,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -3903,7 +3903,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3911,7 +3911,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -3919,7 +3919,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3927,7 +3927,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -3935,7 +3935,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3943,7 +3943,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3951,7 +3951,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -3959,9 +3959,9 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3969,7 +3969,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -3977,7 +3977,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -3985,7 +3985,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -3993,7 +3993,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4001,7 +4001,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4009,7 +4009,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4017,7 +4017,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4025,7 +4025,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4033,7 +4033,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 ### src/mongo/s/commands\_public.cpp
 
@@ -4043,7 +4043,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4051,7 +4051,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document\_source.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4059,7 +4059,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4067,7 +4067,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4075,7 +4075,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../utilities)
+    - [src/mongo/util/intrusive\_counter.cpp](../../../utilities)
 
 <div></div>
 
@@ -4083,7 +4083,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4091,7 +4091,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4099,7 +4099,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4107,7 +4107,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4115,7 +4115,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -4123,7 +4123,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4131,7 +4131,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/value.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4139,7 +4139,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4147,7 +4147,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4155,7 +4155,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4163,7 +4163,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4171,7 +4171,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4179,7 +4179,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4187,7 +4187,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -4195,7 +4195,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4203,7 +4203,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4211,7 +4211,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4219,7 +4219,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_command\_shards.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4227,7 +4227,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4235,7 +4235,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -4243,7 +4243,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4251,7 +4251,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4259,7 +4259,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4267,7 +4267,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4275,7 +4275,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -4283,7 +4283,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4291,7 +4291,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -4299,7 +4299,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4307,7 +4307,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4315,7 +4315,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4323,7 +4323,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -4331,7 +4331,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -4339,7 +4339,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/value.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4347,7 +4347,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -4355,7 +4355,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../utilities)
+    - [src/mongo/util/intrusive\_counter.cpp](../../../utilities)
 
 <div></div>
 
@@ -4363,7 +4363,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -4371,7 +4371,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4379,7 +4379,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -4387,7 +4387,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -4395,7 +4395,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4403,7 +4403,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -4411,7 +4411,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../utilities)
+    - [src/mongo/util/intrusive\_counter.cpp](../../../utilities)
 
 <div></div>
 
@@ -4419,7 +4419,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4427,7 +4427,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -4435,7 +4435,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4443,7 +4443,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4451,7 +4451,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4459,7 +4459,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -4467,7 +4467,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -4475,7 +4475,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -4483,7 +4483,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -4491,7 +4491,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4499,7 +4499,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4507,7 +4507,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4515,7 +4515,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4523,7 +4523,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -4531,7 +4531,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4539,7 +4539,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4547,7 +4547,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4555,7 +4555,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4563,7 +4563,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4571,7 +4571,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4579,7 +4579,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4587,7 +4587,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4595,7 +4595,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4603,7 +4603,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -4611,7 +4611,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4619,7 +4619,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4627,7 +4627,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4635,7 +4635,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4643,7 +4643,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4651,7 +4651,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4659,7 +4659,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4667,7 +4667,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4675,7 +4675,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4683,7 +4683,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4691,7 +4691,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -4699,7 +4699,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4707,7 +4707,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4715,7 +4715,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4723,7 +4723,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/value.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4731,7 +4731,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4739,7 +4739,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -4747,7 +4747,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4755,7 +4755,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -4763,7 +4763,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -4771,7 +4771,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4779,7 +4779,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -4787,7 +4787,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -4795,7 +4795,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -4803,7 +4803,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4811,7 +4811,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../utilities)
+    - [src/mongo/util/intrusive\_counter.cpp](../../../utilities)
 
 <div></div>
 
@@ -4819,7 +4819,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4827,7 +4827,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4835,7 +4835,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4843,7 +4843,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4851,7 +4851,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4859,7 +4859,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/interrupt\_status\_mongos.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/interrupt\_status\_mongos.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -4867,7 +4867,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4875,7 +4875,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../authentication)
+    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authentication)
 
 <div></div>
 
@@ -4883,8 +4883,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/queryutil.cpp](../core\_query\_system)
-    - [src/mongo/db/ops/count.cpp](../core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/count.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -4892,7 +4892,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -4900,7 +4900,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4908,7 +4908,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4916,7 +4916,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4924,7 +4924,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -4932,7 +4932,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4940,7 +4940,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -4948,7 +4948,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4956,7 +4956,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/document\_source\_out.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_out.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -4964,7 +4964,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4972,7 +4972,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -4980,7 +4980,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -4988,7 +4988,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -4996,7 +4996,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 ### src/mongo/s/config.cpp
 
@@ -5006,7 +5006,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5014,7 +5014,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -5022,8 +5022,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5031,7 +5031,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5039,7 +5039,7 @@
 
 - Provided By:
 
-    - [src/third\_party/pcre-8.30/pcrecpp.cc](../pcrecpp)
+    - [src/third\_party/pcre-8.30/pcrecpp.cc](../../../pcrecpp)
 
 <div></div>
 
@@ -5047,7 +5047,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5055,7 +5055,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5063,7 +5063,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5071,7 +5071,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5079,8 +5079,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5088,7 +5088,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5096,7 +5096,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5104,7 +5104,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -5112,7 +5112,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5120,7 +5120,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5128,7 +5128,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5136,7 +5136,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -5144,7 +5144,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5152,7 +5152,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5160,7 +5160,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -5168,7 +5168,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stringutils.cpp](../utilities)
+    - [src/mongo/util/stringutils.cpp](../../../utilities)
 
 <div></div>
 
@@ -5176,7 +5176,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5184,7 +5184,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5192,7 +5192,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stringutils.cpp](../utilities)
+    - [src/mongo/util/stringutils.cpp](../../../utilities)
 
 <div></div>
 
@@ -5200,7 +5200,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -5208,7 +5208,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5216,7 +5216,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -5224,7 +5224,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -5232,7 +5232,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -5240,7 +5240,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5248,7 +5248,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5256,7 +5256,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5264,7 +5264,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -5272,7 +5272,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -5280,7 +5280,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5288,7 +5288,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../logging\_system)
+    - [src/mongo/util/log.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5296,7 +5296,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5304,7 +5304,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5312,7 +5312,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -5320,8 +5320,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5329,7 +5329,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -5337,7 +5337,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -5345,7 +5345,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -5353,7 +5353,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -5361,7 +5361,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5369,7 +5369,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -5377,7 +5377,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5385,7 +5385,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5393,7 +5393,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -5401,7 +5401,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -5409,7 +5409,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5417,7 +5417,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5425,7 +5425,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -5433,7 +5433,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5441,11 +5441,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -5453,7 +5453,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5461,7 +5461,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 ### src/mongo/s/config\_server\_checker\_service.cpp
 
@@ -5471,7 +5471,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -5479,11 +5479,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -5491,7 +5491,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -5499,7 +5499,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -5507,7 +5507,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5515,7 +5515,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -5523,7 +5523,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -5531,7 +5531,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 ### src/mongo/s/config\_server\_tests.cpp
 
@@ -5541,7 +5541,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5549,7 +5549,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5557,7 +5557,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5565,7 +5565,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5573,7 +5573,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5581,7 +5581,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5589,7 +5589,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5597,7 +5597,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5605,7 +5605,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5613,7 +5613,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -5621,7 +5621,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 ### src/mongo/s/cursors.cpp
 
@@ -5631,7 +5631,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -5639,7 +5639,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5647,7 +5647,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5655,7 +5655,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5663,7 +5663,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5671,7 +5671,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbmessage.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5679,7 +5679,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -5687,7 +5687,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -5695,7 +5695,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5703,7 +5703,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5711,7 +5711,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -5719,7 +5719,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5727,7 +5727,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5735,7 +5735,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5743,7 +5743,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5751,7 +5751,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities)
 
 <div></div>
 
@@ -5759,7 +5759,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -5767,7 +5767,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -5775,7 +5775,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -5783,7 +5783,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5791,7 +5791,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5799,7 +5799,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5807,7 +5807,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5815,7 +5815,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -5823,7 +5823,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5831,7 +5831,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5839,7 +5839,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5847,7 +5847,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5855,7 +5855,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5863,7 +5863,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5871,7 +5871,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5879,7 +5879,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/task.cpp](../utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../utilities)
 
 <div></div>
 
@@ -5887,7 +5887,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../network)
+    - [src/mongo/util/net/listen.cpp](../../../network)
 
 <div></div>
 
@@ -5895,7 +5895,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -5903,7 +5903,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5911,7 +5911,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5919,7 +5919,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -5927,7 +5927,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities)
 
 <div></div>
 
@@ -5935,7 +5935,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5943,7 +5943,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -5951,7 +5951,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5959,9 +5959,9 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5969,7 +5969,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5977,7 +5977,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -5985,7 +5985,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -5993,7 +5993,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6001,7 +6001,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 ### src/mongo/s/d\_logic.cpp
 
@@ -6011,7 +6011,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -6019,7 +6019,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6027,7 +6027,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6035,7 +6035,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6043,7 +6043,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6051,7 +6051,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbmessage.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6059,7 +6059,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6067,7 +6067,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6075,7 +6075,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message.cpp](../network)
+    - [src/mongo/util/net/message.cpp](../../../network)
 
 <div></div>
 
@@ -6083,7 +6083,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -6091,7 +6091,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6099,7 +6099,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6107,7 +6107,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6115,7 +6115,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6123,7 +6123,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -6131,7 +6131,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6139,7 +6139,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6147,7 +6147,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -6155,8 +6155,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6164,7 +6164,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6172,7 +6172,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -6180,7 +6180,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6188,7 +6188,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 ### src/mongo/s/d\_merge.cpp
 
@@ -6198,7 +6198,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6206,7 +6206,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6214,7 +6214,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6222,7 +6222,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6230,7 +6230,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6238,7 +6238,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6246,7 +6246,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -6254,7 +6254,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6262,7 +6262,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6270,7 +6270,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -6278,7 +6278,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6286,7 +6286,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6294,7 +6294,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6302,7 +6302,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6310,7 +6310,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6318,7 +6318,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6326,7 +6326,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -6334,7 +6334,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -6342,7 +6342,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6350,7 +6350,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -6358,7 +6358,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6366,7 +6366,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6374,7 +6374,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6382,7 +6382,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6390,7 +6390,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6398,7 +6398,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6406,7 +6406,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6414,7 +6414,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6422,7 +6422,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6430,7 +6430,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6438,7 +6438,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -6446,7 +6446,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6454,7 +6454,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -6462,7 +6462,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6470,7 +6470,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6478,7 +6478,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6486,7 +6486,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -6494,7 +6494,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6502,7 +6502,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 ### src/mongo/s/d\_migrate.cpp
 
@@ -6512,7 +6512,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -6520,7 +6520,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6528,7 +6528,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6536,7 +6536,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/elapsed\_tracker.cpp](../utilities)
+    - [src/mongo/util/elapsed\_tracker.cpp](../../../utilities)
 
 <div></div>
 
@@ -6544,7 +6544,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6552,7 +6552,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -6560,7 +6560,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -6568,7 +6568,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6576,7 +6576,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -6584,7 +6584,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6592,7 +6592,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -6600,7 +6600,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6608,7 +6608,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6616,7 +6616,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -6624,7 +6624,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6632,8 +6632,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6641,7 +6641,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -6649,7 +6649,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6657,7 +6657,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6665,8 +6665,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6674,7 +6674,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -6682,7 +6682,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6690,7 +6690,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication)
 
 <div></div>
 
@@ -6698,7 +6698,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/pagefault.cpp](../../../page\_fault\_utilities)
 
 <div></div>
 
@@ -6706,7 +6706,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6714,7 +6714,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -6722,7 +6722,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -6730,7 +6730,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/pagefault.cpp](../../../page\_fault\_utilities)
 
 <div></div>
 
@@ -6738,7 +6738,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -6746,7 +6746,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/write\_concern.cpp](../replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
 
 <div></div>
 
@@ -6754,7 +6754,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -6762,7 +6762,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -6770,7 +6770,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6778,7 +6778,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6786,7 +6786,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
 
 <div></div>
 
@@ -6794,7 +6794,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6802,7 +6802,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6810,7 +6810,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -6818,7 +6818,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6826,7 +6826,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6834,7 +6834,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -6842,7 +6842,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -6850,7 +6850,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -6858,7 +6858,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -6866,7 +6866,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -6874,7 +6874,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -6882,7 +6882,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point\_service.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -6890,7 +6890,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -6898,7 +6898,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6906,7 +6906,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6914,7 +6914,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6922,7 +6922,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
 
 <div></div>
 
@@ -6930,7 +6930,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -6938,7 +6938,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -6946,7 +6946,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -6954,7 +6954,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -6962,7 +6962,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -6970,7 +6970,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -6978,7 +6978,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -6986,7 +6986,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -6994,7 +6994,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -7002,7 +7002,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7010,7 +7010,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7018,7 +7018,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pagefault.cpp](../page\_fault\_utilities)
+    - [src/mongo/db/pagefault.cpp](../../../page\_fault\_utilities)
 
 <div></div>
 
@@ -7026,7 +7026,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -7034,7 +7034,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7042,7 +7042,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../journaling)
+    - [src/mongo/db/dur.cpp](../../../journaling)
 
 <div></div>
 
@@ -7050,7 +7050,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -7058,7 +7058,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -7066,7 +7066,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7074,7 +7074,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7082,7 +7082,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/mmap.cpp](../mmap)
+    - [src/mongo/util/mmap.cpp](../../../mmap)
 
 <div></div>
 
@@ -7090,7 +7090,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7098,7 +7098,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7106,7 +7106,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7114,7 +7114,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7122,7 +7122,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
 
 <div></div>
 
@@ -7130,7 +7130,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7138,7 +7138,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7146,7 +7146,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -7154,7 +7154,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7162,7 +7162,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -7170,7 +7170,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/hasher.cpp](../utilities)
+    - [src/mongo/db/hasher.cpp](../../../utilities)
 
 <div></div>
 
@@ -7178,7 +7178,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7186,11 +7186,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -7198,7 +7198,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7206,7 +7206,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7214,7 +7214,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7222,7 +7222,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -7230,7 +7230,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -7238,7 +7238,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7246,7 +7246,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7254,7 +7254,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/ramlog.cpp](../logging\_system)
+    - [src/mongo/logger/ramlog.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7262,7 +7262,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7270,7 +7270,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/write\_concern.cpp](../replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
 
 <div></div>
 
@@ -7278,7 +7278,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7286,7 +7286,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7294,7 +7294,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7302,7 +7302,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -7310,7 +7310,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -7318,8 +7318,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7327,7 +7327,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -7335,7 +7335,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7343,7 +7343,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -7351,7 +7351,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
 
 <div></div>
 
@@ -7359,7 +7359,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point\_registry.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -7367,7 +7367,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -7375,7 +7375,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/curop.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7383,7 +7383,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -7391,7 +7391,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -7399,7 +7399,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7407,7 +7407,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -7415,7 +7415,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7423,7 +7423,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7431,7 +7431,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7439,7 +7439,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs\_config.cpp](../replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
 
 <div></div>
 
@@ -7447,7 +7447,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7455,7 +7455,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -7463,7 +7463,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -7471,7 +7471,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -7479,7 +7479,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -7487,7 +7487,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7495,7 +7495,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7503,7 +7503,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7511,7 +7511,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -7519,7 +7519,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
 
 <div></div>
 
@@ -7527,7 +7527,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7535,7 +7535,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7543,7 +7543,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -7551,7 +7551,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7559,7 +7559,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7567,7 +7567,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7575,7 +7575,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -7583,7 +7583,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7591,7 +7591,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -7599,7 +7599,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/elapsed\_tracker.cpp](../utilities)
+    - [src/mongo/util/elapsed\_tracker.cpp](../../../utilities)
 
 <div></div>
 
@@ -7607,7 +7607,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage\_options.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7615,7 +7615,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7623,7 +7623,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -7631,7 +7631,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication)
 
 <div></div>
 
@@ -7639,7 +7639,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7647,7 +7647,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7655,7 +7655,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7663,7 +7663,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 ### src/mongo/s/d\_split.cpp
 
@@ -7673,7 +7673,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7681,7 +7681,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7689,7 +7689,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7697,7 +7697,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -7705,7 +7705,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7713,7 +7713,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
 
 <div></div>
 
@@ -7721,7 +7721,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -7729,7 +7729,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7737,7 +7737,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7745,7 +7745,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7753,7 +7753,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7761,7 +7761,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7769,7 +7769,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -7777,7 +7777,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7785,7 +7785,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7793,7 +7793,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -7801,7 +7801,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7809,7 +7809,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7817,7 +7817,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7825,7 +7825,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -7833,7 +7833,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -7841,7 +7841,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -7849,7 +7849,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7857,7 +7857,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -7865,7 +7865,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -7873,7 +7873,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/fetch.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -7881,7 +7881,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -7889,7 +7889,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -7897,7 +7897,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7905,7 +7905,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -7913,7 +7913,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -7921,7 +7921,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -7929,7 +7929,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7937,7 +7937,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -7945,7 +7945,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -7953,7 +7953,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7961,7 +7961,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/record.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -7969,7 +7969,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7977,7 +7977,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7985,7 +7985,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -7993,7 +7993,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -8001,7 +8001,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8009,7 +8009,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8017,7 +8017,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8025,7 +8025,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8033,7 +8033,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8041,7 +8041,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -8049,7 +8049,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -8057,7 +8057,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -8065,7 +8065,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -8073,7 +8073,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -8081,7 +8081,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -8089,7 +8089,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8097,7 +8097,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -8105,7 +8105,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -8113,7 +8113,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8121,7 +8121,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -8129,7 +8129,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8137,7 +8137,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -8145,7 +8145,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8153,7 +8153,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -8161,7 +8161,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8169,7 +8169,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8177,7 +8177,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -8185,7 +8185,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -8193,7 +8193,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage\_options.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/storage\_options.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -8201,7 +8201,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8209,7 +8209,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -8217,7 +8217,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -8225,7 +8225,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8233,7 +8233,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 ### src/mongo/s/d\_state.cpp
 
@@ -8243,7 +8243,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -8251,7 +8251,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
 
 <div></div>
 
@@ -8259,7 +8259,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8267,8 +8267,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8276,7 +8276,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8284,7 +8284,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -8292,7 +8292,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -8300,7 +8300,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8308,7 +8308,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8316,7 +8316,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8324,7 +8324,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8332,7 +8332,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication)
 
 <div></div>
 
@@ -8340,7 +8340,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8348,7 +8348,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -8356,7 +8356,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8364,7 +8364,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -8372,7 +8372,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8380,7 +8380,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -8388,7 +8388,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -8396,7 +8396,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -8404,7 +8404,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8412,7 +8412,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8420,7 +8420,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -8428,7 +8428,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
 
 <div></div>
 
@@ -8436,7 +8436,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -8444,7 +8444,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8452,7 +8452,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8460,7 +8460,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -8468,7 +8468,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8476,7 +8476,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -8484,7 +8484,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8492,7 +8492,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8500,7 +8500,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8508,7 +8508,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8516,7 +8516,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8524,7 +8524,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -8532,7 +8532,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8540,7 +8540,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication)
 
 <div></div>
 
@@ -8548,7 +8548,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -8556,7 +8556,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -8564,7 +8564,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8572,7 +8572,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8580,7 +8580,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -8588,7 +8588,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8596,7 +8596,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -8604,8 +8604,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -8613,7 +8613,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -8621,7 +8621,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -8629,7 +8629,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -8637,7 +8637,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -8645,7 +8645,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -8653,7 +8653,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -8661,7 +8661,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -8669,7 +8669,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -8677,7 +8677,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8685,7 +8685,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
 
 <div></div>
 
@@ -8693,7 +8693,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8701,7 +8701,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -8709,7 +8709,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 ### src/mongo/s/dbclient\_multi\_command.cpp
 
@@ -8719,7 +8719,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -8727,7 +8727,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8735,7 +8735,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8743,7 +8743,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8751,7 +8751,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8759,7 +8759,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8767,7 +8767,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8775,7 +8775,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8783,7 +8783,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8791,7 +8791,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8799,7 +8799,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8807,7 +8807,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8815,7 +8815,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8823,7 +8823,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8831,7 +8831,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8839,7 +8839,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8847,7 +8847,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -8855,7 +8855,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8863,7 +8863,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8871,7 +8871,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -8879,7 +8879,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8887,7 +8887,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -8895,7 +8895,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/dbclient\_shard\_resolver.cpp
 
@@ -8905,7 +8905,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8913,7 +8913,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8921,7 +8921,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8929,7 +8929,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8937,7 +8937,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8945,7 +8945,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8953,7 +8953,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8961,7 +8961,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 ### src/mongo/s/grid.cpp
 
@@ -8971,7 +8971,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -8979,7 +8979,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -8987,7 +8987,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -8995,7 +8995,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9003,7 +9003,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9011,7 +9011,7 @@
 
 - Provided By:
 
-    - [src/third\_party/pcre-8.30/pcrecpp.cc](../pcrecpp)
+    - [src/third\_party/pcre-8.30/pcrecpp.cc](../../../pcrecpp)
 
 <div></div>
 
@@ -9019,7 +9019,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9027,7 +9027,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9035,7 +9035,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/json.cpp](../bson)
+    - [src/mongo/db/json.cpp](../../../bson)
 
 <div></div>
 
@@ -9043,7 +9043,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -9051,7 +9051,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -9059,7 +9059,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9067,8 +9067,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
-    - [src/mongo/db/sorter/sorter\_test.cpp](../aggregation\_framework)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
+    - [src/mongo/db/sorter/sorter\_test.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -9076,7 +9076,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9084,7 +9084,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9092,7 +9092,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -9100,7 +9100,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9108,7 +9108,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9116,7 +9116,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_service.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point\_service.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -9124,7 +9124,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -9132,7 +9132,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9140,7 +9140,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9148,7 +9148,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9156,7 +9156,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/write\_concern\_options.cpp](../replication)
+    - [src/mongo/db/write\_concern\_options.cpp](../../../replication)
 
 <div></div>
 
@@ -9164,7 +9164,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -9172,7 +9172,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9180,7 +9180,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9188,7 +9188,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9196,7 +9196,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9204,7 +9204,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9212,7 +9212,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -9220,7 +9220,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9228,7 +9228,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9236,7 +9236,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point\_registry.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point\_registry.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -9244,7 +9244,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -9252,7 +9252,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -9260,7 +9260,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -9268,7 +9268,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/fail\_point.cpp](../fail\_points)
+    - [src/mongo/util/fail\_point.cpp](../../../fail\_points)
 
 <div></div>
 
@@ -9276,7 +9276,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9284,7 +9284,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9292,7 +9292,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -9300,7 +9300,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9308,7 +9308,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 ### src/mongo/s/mongo\_version\_range.cpp
 
@@ -9318,7 +9318,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -9326,7 +9326,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stringutils.cpp](../utilities)
+    - [src/mongo/util/stringutils.cpp](../../../utilities)
 
 <div></div>
 
@@ -9334,7 +9334,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -9342,7 +9342,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9350,7 +9350,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9358,7 +9358,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -9366,7 +9366,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9374,7 +9374,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9382,7 +9382,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9390,7 +9390,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 ### src/mongo/s/mongo\_version\_range\_test.cpp
 
@@ -9400,7 +9400,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -9408,7 +9408,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -9416,7 +9416,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9424,7 +9424,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9432,7 +9432,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9440,7 +9440,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9448,7 +9448,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9456,7 +9456,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9464,7 +9464,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9472,7 +9472,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9480,7 +9480,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9488,7 +9488,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9496,7 +9496,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -9504,7 +9504,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9512,7 +9512,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9520,7 +9520,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9528,7 +9528,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9536,7 +9536,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9544,7 +9544,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -9552,7 +9552,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9560,7 +9560,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 ### src/mongo/s/request.cpp
 
@@ -9570,7 +9570,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9578,7 +9578,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -9586,7 +9586,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -9594,7 +9594,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9602,7 +9602,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -9610,7 +9610,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -9618,7 +9618,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9626,7 +9626,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9634,7 +9634,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9642,7 +9642,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -9650,7 +9650,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/stats/counters.cpp](../utilities)
+    - [src/mongo/db/stats/counters.cpp](../../../utilities)
 
 <div></div>
 
@@ -9658,7 +9658,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9666,7 +9666,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9674,7 +9674,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9682,7 +9682,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9690,7 +9690,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9698,7 +9698,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9706,7 +9706,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/stats/counters.cpp](../utilities)
+    - [src/mongo/db/stats/counters.cpp](../../../utilities)
 
 <div></div>
 
@@ -9714,7 +9714,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9722,7 +9722,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9730,7 +9730,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -9738,7 +9738,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9746,7 +9746,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -9754,7 +9754,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9762,7 +9762,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -9770,7 +9770,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -9778,7 +9778,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
 
 ### src/mongo/s/shard.cpp
 
@@ -9788,7 +9788,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9796,7 +9796,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9804,7 +9804,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -9812,7 +9812,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9820,7 +9820,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9828,7 +9828,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9836,7 +9836,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9844,7 +9844,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -9852,7 +9852,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -9860,7 +9860,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9868,7 +9868,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9876,7 +9876,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -9884,7 +9884,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9892,7 +9892,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9900,7 +9900,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9908,7 +9908,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9916,7 +9916,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9924,7 +9924,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -9932,7 +9932,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -9940,7 +9940,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -9948,7 +9948,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -9956,7 +9956,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9964,7 +9964,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -9972,7 +9972,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -9980,7 +9980,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -9988,7 +9988,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
 
 <div></div>
 
@@ -9996,7 +9996,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10004,7 +10004,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10012,7 +10012,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10020,7 +10020,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10028,7 +10028,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10036,7 +10036,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10044,7 +10044,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10052,8 +10052,8 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -10061,7 +10061,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10069,7 +10069,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -10077,7 +10077,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -10085,7 +10085,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -10093,7 +10093,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/security\_key.cpp](../authentication)
+    - [src/mongo/db/auth/security\_key.cpp](../../../authentication)
 
 <div></div>
 
@@ -10101,7 +10101,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10109,7 +10109,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10117,7 +10117,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10125,7 +10125,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10133,7 +10133,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
 
 <div></div>
 
@@ -10141,7 +10141,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10149,7 +10149,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10157,7 +10157,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10165,7 +10165,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10173,7 +10173,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 ### src/mongo/s/shard\_conn\_test.cpp
 
@@ -10183,7 +10183,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10191,7 +10191,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10199,7 +10199,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -10207,7 +10207,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10215,7 +10215,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10223,7 +10223,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10231,7 +10231,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10239,7 +10239,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -10247,7 +10247,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10255,7 +10255,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10263,7 +10263,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10271,7 +10271,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10279,7 +10279,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10287,7 +10287,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10295,7 +10295,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10303,7 +10303,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10311,7 +10311,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10319,7 +10319,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10327,7 +10327,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10335,7 +10335,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
 
 <div></div>
 
@@ -10343,7 +10343,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
 
 <div></div>
 
@@ -10351,7 +10351,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10359,7 +10359,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10367,7 +10367,7 @@
 
 - Provided By:
 
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10375,7 +10375,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
 
 <div></div>
 
@@ -10383,7 +10383,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
 
 <div></div>
 
@@ -10391,7 +10391,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 ### src/mongo/s/shard\_key\_pattern.cpp
 
@@ -10401,7 +10401,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 ### src/mongo/s/shard\_test.cpp
 
@@ -10411,7 +10411,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10419,7 +10419,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10427,7 +10427,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10435,7 +10435,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10443,7 +10443,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10451,7 +10451,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10459,7 +10459,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10467,7 +10467,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10475,7 +10475,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10483,7 +10483,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10491,7 +10491,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10499,7 +10499,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10507,7 +10507,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10515,7 +10515,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10523,7 +10523,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -10531,7 +10531,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 ### src/mongo/s/shardconnection.cpp
 
@@ -10541,7 +10541,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10549,7 +10549,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stacktrace.cpp](../utilities)
+    - [src/mongo/util/stacktrace.cpp](../../../utilities)
 
 <div></div>
 
@@ -10557,7 +10557,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10565,7 +10565,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10573,7 +10573,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
 
 <div></div>
 
@@ -10581,7 +10581,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10589,7 +10589,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10597,7 +10597,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -10605,7 +10605,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -10613,7 +10613,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10621,7 +10621,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10629,7 +10629,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -10637,7 +10637,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10645,7 +10645,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10653,7 +10653,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -10661,7 +10661,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10669,7 +10669,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10677,7 +10677,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -10685,7 +10685,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10693,7 +10693,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -10701,7 +10701,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10709,7 +10709,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
 
 <div></div>
 
@@ -10717,7 +10717,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10725,7 +10725,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
 
 <div></div>
 
@@ -10733,7 +10733,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10741,7 +10741,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10749,7 +10749,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -10757,7 +10757,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10765,7 +10765,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -10773,7 +10773,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10781,7 +10781,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10789,7 +10789,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
 <div></div>
 
@@ -10797,7 +10797,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10805,7 +10805,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10813,7 +10813,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -10821,7 +10821,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10829,7 +10829,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10837,7 +10837,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10845,7 +10845,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -10853,7 +10853,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -10861,7 +10861,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -10869,7 +10869,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -10877,7 +10877,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10885,7 +10885,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10893,7 +10893,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10901,7 +10901,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -10909,7 +10909,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -10917,7 +10917,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10925,7 +10925,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -10933,7 +10933,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
 
 <div></div>
 
@@ -10941,7 +10941,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -10949,7 +10949,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -10957,7 +10957,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -10965,7 +10965,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10973,11 +10973,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -10985,7 +10985,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -10993,7 +10993,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11001,7 +11001,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -11009,7 +11009,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -11017,7 +11017,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -11025,7 +11025,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11033,7 +11033,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11041,7 +11041,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 ### src/mongo/s/shardkey.cpp
 
@@ -11051,7 +11051,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -11059,7 +11059,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11067,7 +11067,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11075,7 +11075,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -11083,7 +11083,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11091,7 +11091,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -11099,7 +11099,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11107,7 +11107,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -11115,7 +11115,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 <div></div>
 
@@ -11123,7 +11123,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11131,7 +11131,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11139,7 +11139,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -11147,7 +11147,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -11155,7 +11155,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -11163,7 +11163,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
 
 <div></div>
 
@@ -11171,7 +11171,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11179,7 +11179,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11187,7 +11187,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/json.cpp](../bson)
+    - [src/mongo/db/json.cpp](../../../bson)
 
 <div></div>
 
@@ -11195,7 +11195,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11203,7 +11203,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -11211,7 +11211,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/keypattern.cpp](../indexing)
+    - [src/mongo/db/keypattern.cpp](../../../indexing)
 
 ### src/mongo/s/strategy.cpp
 
@@ -11221,7 +11221,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11229,7 +11229,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbmessage.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11237,7 +11237,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11245,7 +11245,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11253,7 +11253,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11261,7 +11261,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11269,7 +11269,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11277,7 +11277,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -11285,7 +11285,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11293,7 +11293,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../core\_query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -11301,7 +11301,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11309,7 +11309,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities)
 
 <div></div>
 
@@ -11317,7 +11317,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11325,7 +11325,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -11333,7 +11333,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11341,7 +11341,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11349,7 +11349,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11357,7 +11357,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11365,7 +11365,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -11373,7 +11373,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11381,7 +11381,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -11389,7 +11389,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -11397,7 +11397,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11405,7 +11405,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11413,7 +11413,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11421,7 +11421,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -11429,7 +11429,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -11437,7 +11437,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11445,7 +11445,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11453,7 +11453,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11461,7 +11461,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11469,7 +11469,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11477,7 +11477,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11485,7 +11485,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11493,7 +11493,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11501,7 +11501,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11509,7 +11509,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
 
 <div></div>
 
@@ -11517,7 +11517,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11525,7 +11525,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11533,7 +11533,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11541,7 +11541,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclientcursor.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclientcursor.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11549,7 +11549,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11557,7 +11557,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11565,7 +11565,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -11573,7 +11573,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -11581,7 +11581,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11589,7 +11589,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -11597,7 +11597,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -11605,7 +11605,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -11613,7 +11613,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -11621,7 +11621,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -11629,7 +11629,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11637,7 +11637,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11645,7 +11645,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -11653,7 +11653,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11661,7 +11661,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11669,7 +11669,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -11677,7 +11677,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11685,7 +11685,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11693,7 +11693,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -11701,7 +11701,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11709,7 +11709,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11717,7 +11717,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11725,9 +11725,9 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11735,7 +11735,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11743,7 +11743,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11751,7 +11751,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -11759,7 +11759,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -11767,7 +11767,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11775,7 +11775,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 <div></div>
 
@@ -11783,7 +11783,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/bson\_validate.cpp](../bson)
+    - [src/mongo/bson/bson\_validate.cpp](../../../bson)
 
 <div></div>
 
@@ -11791,7 +11791,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11799,7 +11799,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11807,7 +11807,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -11815,7 +11815,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11823,7 +11823,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbmessage.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbmessage.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11831,7 +11831,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/audit.cpp](../auditing)
+    - [src/mongo/db/audit.cpp](../../../auditing)
 
 ### src/mongo/s/version\_manager.cpp
 
@@ -11841,7 +11841,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11849,7 +11849,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11857,7 +11857,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11865,7 +11865,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -11873,7 +11873,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11881,7 +11881,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -11889,7 +11889,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11897,7 +11897,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11905,7 +11905,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -11913,7 +11913,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities)
 
 <div></div>
 
@@ -11921,7 +11921,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11929,7 +11929,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -11937,7 +11937,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11945,7 +11945,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient\_rs.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient\_rs.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11953,7 +11953,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -11961,7 +11961,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11969,7 +11969,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -11977,7 +11977,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11985,7 +11985,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -11993,7 +11993,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12001,7 +12001,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -12009,7 +12009,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
 
 <div></div>
 
@@ -12017,7 +12017,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -12025,7 +12025,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)
 
 <div></div>
 
@@ -12033,7 +12033,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12041,7 +12041,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -12049,7 +12049,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 ### src/mongo/s/version\_mongos.cpp
 
@@ -12059,7 +12059,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12067,7 +12067,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities)
 
 <div></div>
 
@@ -12075,7 +12075,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../../../build\_information)
 
 <div></div>
 
@@ -12083,7 +12083,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12091,7 +12091,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities)
 
 <div></div>
 
@@ -12099,7 +12099,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../build\_information)
+    - [src/mongo/util/version.cpp](../../../build\_information)
 
 <div></div>
 
@@ -12107,7 +12107,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../logging\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12115,7 +12115,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12123,7 +12123,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -12131,7 +12131,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -12139,7 +12139,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -12147,7 +12147,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -12155,7 +12155,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities)
 
 <div></div>
 
@@ -12163,7 +12163,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -12171,4 +12171,4 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../build\_information)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/buildinfo.cpp](../../../build\_information)

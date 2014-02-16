@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -57,7 +57,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -65,7 +65,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -73,7 +73,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -81,7 +81,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
 
 <div></div>
 
@@ -89,7 +89,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stringutils.cpp](../utilities)
+    - [src/mongo/util/stringutils.cpp](../../../utilities)
 
 <div></div>
 
@@ -97,7 +97,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -105,7 +105,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/version\_mongos.cpp](../sharding)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
 
 <div></div>
 
@@ -113,7 +113,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -121,7 +121,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -129,7 +129,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -137,7 +137,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -145,7 +145,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -153,7 +153,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -161,7 +161,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding)
 
 <div></div>
 
@@ -169,7 +169,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../logging\_system)
 
 <div></div>
 
@@ -177,7 +177,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -185,7 +185,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -193,7 +193,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -201,7 +201,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities)
 
 <div></div>
 
@@ -209,7 +209,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -217,7 +217,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -225,7 +225,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -233,7 +233,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding)
 
 <div></div>
 
@@ -241,7 +241,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -249,7 +249,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -257,7 +257,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -265,7 +265,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -273,7 +273,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -281,7 +281,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -289,7 +289,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../startup\_initialization)
 
 ### src/mongo/s/mongos\_options\_init.cpp
 
@@ -299,7 +299,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -307,7 +307,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -315,7 +315,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -323,7 +323,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -331,7 +331,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -339,4 +339,4 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)

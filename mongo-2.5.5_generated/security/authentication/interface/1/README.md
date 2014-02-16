@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
 
 ### src/mongo/db/auth/authorization\_manager.cpp
 
@@ -19,7 +19,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -27,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -35,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -43,7 +43,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -51,8 +51,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/tools/restore.cpp](../tools)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/tools/restore.cpp](../../../tools)
 
 <div></div>
 
@@ -60,7 +60,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -68,7 +68,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication)
 
 <div></div>
 
@@ -76,7 +76,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -84,9 +84,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
 
 <div></div>
 
@@ -94,7 +94,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/restore.cpp](../tools)
+    - [src/mongo/tools/restore.cpp](../../../tools)
 
 <div></div>
 
@@ -102,7 +102,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -110,7 +110,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -118,7 +118,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -126,7 +126,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -134,7 +134,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -142,7 +142,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -150,7 +150,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -158,9 +158,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
 
 <div></div>
 
@@ -168,7 +168,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -176,10 +176,10 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/tool.cpp](../tools)
-    - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/tool.cpp](../../../tools)
+    - [src/mongo/dbtests/dbtests.cpp](../../../unit\_tests)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -187,7 +187,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -195,7 +195,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -203,7 +203,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -211,7 +211,7 @@
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../web\_server)
+    - [src/mongo/db/restapi.cpp](../../../web\_server)
 
 <div></div>
 
@@ -219,8 +219,8 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -228,18 +228,18 @@
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/commands/isself.cpp](../database\_commands)
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../replication)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication)
+    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
+    - [src/mongo/s/shard.cpp](../../../sharding)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/manager.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -247,7 +247,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -255,7 +255,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -263,7 +263,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -271,8 +271,8 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
-    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -280,7 +280,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/restore.cpp](../tools)
+    - [src/mongo/tools/restore.cpp](../../../tools)
 
 <div></div>
 
@@ -288,7 +288,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -296,10 +296,10 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
 
 <div></div>
 
@@ -307,7 +307,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -315,9 +315,9 @@
 
 - Used By:
 
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
+    - [src/mongo/db/introspect.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/connection\_status.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -325,7 +325,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -333,7 +333,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -341,9 +341,9 @@
 
 - Used By:
 
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
+    - [src/mongo/db/introspect.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/connection\_status.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/authorization\_manager\_global.cpp
 
@@ -353,29 +353,29 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/mongod\_options.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/commands/isself.cpp](../database\_commands)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../replication)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/oplogreader.cpp](../replication)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication)
+    - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
+    - [src/mongo/db/repl/manager.cpp](../../../replication)
+    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/s/shard.cpp](../../../sharding)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
 
 <div></div>
 
@@ -383,10 +383,10 @@
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../tools)
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
+    - [src/mongo/tools/tool.cpp](../../../tools)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/dbtests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/auth/authorization\_session.cpp
 
@@ -396,8 +396,8 @@
 
 - Used By:
 
-    - [src/mongo/s/request.cpp](../sharding)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/request.cpp](../../../sharding)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -405,13 +405,13 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/db/repl/write\_concern.cpp](../replication)
-    - [src/mongo/db/index\_rebuilder.cpp](../indexing)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/ttl.cpp](../../../indexing)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
+    - [src/mongo/db/index\_rebuilder.cpp](../../../indexing)
+    - [src/mongo/db/repl/rs.cpp](../../../replication)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -419,7 +419,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -427,7 +427,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -435,9 +435,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
-    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../../../database\_commands)
+    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -445,9 +445,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -455,9 +455,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/db/restapi.cpp](../web\_server)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/restapi.cpp](../../../web\_server)
 
 <div></div>
 
@@ -465,7 +465,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -473,7 +473,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -481,9 +481,9 @@
 
 - Used By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -491,8 +491,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
-    - [src/mongo/db/commands/create\_indexes.cpp](../database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/create\_indexes.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -500,10 +500,10 @@
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/db/matcher/expression\_where.cpp](../../../core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/dbeval.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -511,7 +511,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -519,9 +519,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/connection\_status.cpp](../database\_commands)
-    - [src/mongo/db/server\_extra\_log\_context.cpp](../logging\_system)
-    - [src/mongo/db/introspect.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/connection\_status.cpp](../../../database\_commands)
+    - [src/mongo/db/server\_extra\_log\_context.cpp](../../../logging\_system)
+    - [src/mongo/db/introspect.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -529,7 +529,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -537,8 +537,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -546,7 +546,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -554,8 +554,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -563,7 +563,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -571,7 +571,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -579,24 +579,24 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../database\_commands)
-    - [src/mongo/s/commands\_admin.cpp](../sharding)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../database\_commands)
-    - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/db/commands/rename\_collection\_common.cpp](../database\_commands)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../sharding)
-    - [src/mongo/s/commands\_public.cpp](../sharding)
-    - [src/mongo/db/commands/oplog\_note.cpp](../database\_commands)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../database\_commands)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../sharding)
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
-    - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/db/commands/rename\_collection\_common.cpp](../../../database\_commands)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/db/commands/oplog\_note.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/d\_state.cpp](../../../sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../sharding)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -604,7 +604,7 @@
 
 - Used By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -612,7 +612,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/copydb\_common.cpp](../database\_commands)
+    - [src/mongo/db/commands/copydb\_common.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -620,7 +620,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -628,7 +628,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -636,7 +636,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -644,9 +644,9 @@
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/s/cursors.cpp](../../../sharding)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -654,7 +654,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -662,8 +662,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
 
 <div></div>
 
@@ -671,7 +671,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -679,7 +679,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/authz\_documents\_update\_guard.cpp
 
@@ -689,9 +689,9 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -699,9 +699,9 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -709,9 +709,9 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp
 
@@ -721,7 +721,7 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp
 
@@ -731,8 +731,8 @@
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../tools)
-    - [src/mongo/dbtests/dbtests.cpp](../unit\_tests)
+    - [src/mongo/tools/tool.cpp](../../../tools)
+    - [src/mongo/dbtests/dbtests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp
 
@@ -742,7 +742,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_d.cpp
 
@@ -752,7 +752,7 @@
 
 - Used By:
 
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_s.cpp
 
@@ -762,8 +762,8 @@
 
 - Used By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
 ### src/mongo/db/auth/mongo\_authentication\_session.cpp
 
@@ -773,7 +773,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/privilege.cpp
 
@@ -783,7 +783,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -791,50 +791,50 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
-    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
-    - [src/mongo/s/d\_writeback.cpp](../sharding)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
-    - [src/mongo/db/commands/fsync.cpp](../database\_commands)
-    - [src/mongo/db/repl/resync.cpp](../replication)
-    - [src/mongo/db/geo/haystack.cpp](../geo\_queries)
-    - [src/mongo/db/commands/create\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
-    - [src/mongo/s/d\_state.cpp](../sharding)
-    - [src/mongo/db/commands/storage\_details.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
-    - [src/mongo/s/shardconnection.cpp](../sharding)
-    - [src/mongo/db/commands.cpp](../database\_commands)
-    - [src/mongo/s/commands\_public.cpp](../sharding)
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../database\_commands)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/s/d\_split.cpp](../sharding)
-    - [src/mongo/db/commands/geonear.cpp](../database\_commands)
-    - [src/mongo/db/repl/replset\_commands.cpp](../replication)
-    - [src/mongo/s/commands\_admin.cpp](../sharding)
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/stats/top.cpp](../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../replication)
-    - [src/mongo/db/commands/server\_status.cpp](../database\_commands)
-    - [src/mongo/db/commands/shutdown.cpp](../database\_commands)
-    - [src/mongo/db/fts/fts\_command.cpp](../full\_text\_search\_module)
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/commands/distinct.cpp](../database\_commands)
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+    - [src/mongo/db/commands/index\_stats.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication)
+    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../database\_commands)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding)
+    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/fsync.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/resync.cpp](../../../replication)
+    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
+    - [src/mongo/db/commands/create\_indexes.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
+    - [src/mongo/s/d\_state.cpp](../../../sharding)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding)
+    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/db/commands/compact.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../sharding)
+    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/shard.cpp](../../../sharding)
+    - [src/mongo/s/cursors.cpp](../../../sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
+    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/shutdown.cpp](../../../database\_commands)
+    - [src/mongo/db/fts/fts\_command.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -842,7 +842,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -850,11 +850,11 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
-    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../new\_wire\_protocol\_write\_commands)
 
 ### src/mongo/db/auth/privilege\_parser.cpp
 
@@ -864,7 +864,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -872,7 +872,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -880,7 +880,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -888,7 +888,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -896,7 +896,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/resource\_pattern.cpp
 
@@ -906,9 +906,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr\_common.cpp](../database\_commands)
-    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../database\_commands)
-    - [src/mongo/db/pipeline/pipeline.cpp](../aggregation\_framework)
+    - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
 
 ### src/mongo/db/auth/role\_graph\_builtin\_roles.cpp
 
@@ -918,7 +918,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -926,9 +926,9 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/db/commands/apply\_ops.cpp](../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/db/dbeval.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/role\_name.cpp
 
@@ -938,8 +938,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/tools/restore.cpp](../tools)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/tools/restore.cpp](../../../tools)
 
 ### src/mongo/db/auth/security\_key.cpp
 
@@ -949,9 +949,9 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/oplogreader.cpp](../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/db/commands/isself.cpp](../database\_commands)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -959,15 +959,15 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/consensus.cpp](../replication)
-    - [src/mongo/db/commands/isself.cpp](../database\_commands)
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication)
+    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
+    - [src/mongo/s/shard.cpp](../../../sharding)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/manager.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
 
 <div></div>
 
@@ -975,7 +975,7 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -983,7 +983,7 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
 
 ### src/mongo/db/auth/user.cpp
 
@@ -993,7 +993,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1001,8 +1001,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
 
 <div></div>
 
@@ -1010,7 +1010,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/user\_cache\_invalidator\_job.cpp
 
@@ -1020,7 +1020,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/auth/user\_document\_parser.cpp
 
@@ -1030,8 +1030,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/db/catalog/collection.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/catalog/collection.cpp](../../../storage\_layer\_structure)
 
 ### src/mongo/db/auth/user\_management\_commands\_parser.cpp
 
@@ -1041,7 +1041,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1049,7 +1049,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1057,8 +1057,8 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1066,7 +1066,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1074,7 +1074,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1082,7 +1082,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1090,7 +1090,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1098,7 +1098,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1106,7 +1106,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1114,7 +1114,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1122,7 +1122,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1130,7 +1130,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -1138,7 +1138,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
 
 ### src/mongo/db/auth/user\_name.cpp
 
@@ -1148,7 +1148,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../database\_commands)
-    - [src/mongo/tools/restore.cpp](../tools)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/tools/restore.cpp](../../../tools)

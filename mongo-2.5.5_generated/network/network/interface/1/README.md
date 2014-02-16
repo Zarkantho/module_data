@@ -9,5 +9,5 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)

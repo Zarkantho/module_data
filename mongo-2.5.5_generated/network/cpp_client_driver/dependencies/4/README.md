@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/bson\_validate.cpp](../bson)
+    - [src/mongo/bson/bson\_validate.cpp](../../../bson)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -57,7 +57,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -65,4 +65,4 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities)

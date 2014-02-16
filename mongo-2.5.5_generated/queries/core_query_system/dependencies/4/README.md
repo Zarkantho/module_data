@@ -9,4 +9,4 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)

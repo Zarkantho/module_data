@@ -9,8 +9,8 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -18,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/replset\_web\_handler.cpp](../replication)
+    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../replication)
 
 <div></div>
 
@@ -26,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/db/stats/snapshots\_webplugins.cpp](../utilities)
+    - [src/mongo/db/stats/snapshots\_webplugins.cpp](../../../utilities)
 
 ### src/mongo/db/restapi.cpp
 
@@ -36,4 +36,4 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)

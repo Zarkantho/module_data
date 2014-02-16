@@ -9,8 +9,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -18,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)

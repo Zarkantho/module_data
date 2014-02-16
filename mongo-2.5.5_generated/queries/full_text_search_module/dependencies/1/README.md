@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 ### src/mongo/db/fts/stop\_words.cpp
 
@@ -35,7 +35,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -43,7 +43,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -51,7 +51,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -59,7 +59,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -67,7 +67,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 ### src/mongo/db/fts/stop\_words\_test.cpp
 
@@ -77,7 +77,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -85,7 +85,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -93,7 +93,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -101,7 +101,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -109,7 +109,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -117,7 +117,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -125,7 +125,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -133,7 +133,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -141,7 +141,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -149,7 +149,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -157,4 +157,4 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)

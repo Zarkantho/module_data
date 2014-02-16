@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities)
 
 <div></div>
 
@@ -17,10 +17,10 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../utilities)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
+    - [src/mongo/util/compress.cpp](../../../utilities)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -28,7 +28,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities)
 
 <div></div>
 
@@ -36,9 +36,9 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
 
 <div></div>
 
@@ -46,7 +46,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities)
 
 <div></div>
 
@@ -54,6 +54,6 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)

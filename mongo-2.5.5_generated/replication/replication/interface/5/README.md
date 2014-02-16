@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/cloner.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools)
 
 <div></div>
 
@@ -33,4 +33,4 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools)

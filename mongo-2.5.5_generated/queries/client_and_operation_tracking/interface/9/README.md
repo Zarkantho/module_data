@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -17,5 +17,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)

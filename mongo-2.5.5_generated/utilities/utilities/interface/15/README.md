@@ -9,14 +9,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -24,14 +24,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -39,11 +39,11 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../database\_commands)
-    - [src/mongo/db/jsobj.cpp](../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../web\_server)
-    - [src/mongo/client/dbclient.cpp](../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)

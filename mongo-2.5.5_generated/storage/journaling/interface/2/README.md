@@ -9,8 +9,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -18,8 +18,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -27,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -35,8 +35,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -44,4 +44,4 @@
 
 - Used By:
 
-    - [src/mongo/client/examples/mongoperf.cpp](../cpp\_client\_driver)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)

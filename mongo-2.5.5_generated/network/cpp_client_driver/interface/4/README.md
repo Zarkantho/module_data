@@ -9,8 +9,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../sharding)
-    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/s/cursors.cpp](../../../sharding)
 
 <div></div>
 
@@ -18,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -26,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_logic.cpp](../sharding)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding)
 
 <div></div>
 
@@ -34,5 +34,5 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy.cpp](../sharding)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/strategy.cpp](../../../sharding)

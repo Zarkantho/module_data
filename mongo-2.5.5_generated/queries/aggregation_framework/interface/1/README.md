@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_first.cpp
 
@@ -19,7 +19,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_last.cpp
 
@@ -29,7 +29,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_min\_max.cpp
 
@@ -39,7 +39,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -47,7 +47,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_sum.cpp
 
@@ -57,4 +57,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)

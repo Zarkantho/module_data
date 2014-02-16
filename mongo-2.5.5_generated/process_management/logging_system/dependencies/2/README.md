@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -57,9 +57,9 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
 
 <div></div>
 
@@ -67,7 +67,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -75,7 +75,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -83,7 +83,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities)
 
 <div></div>
 
@@ -91,7 +91,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -99,4 +99,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)

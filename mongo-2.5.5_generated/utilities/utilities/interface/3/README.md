@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../web\_server)
+    - [src/mongo/db/restapi.cpp](../../../web\_server)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_create.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -25,8 +25,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../database\_commands)
-    - [src/mongo/db/pdfile.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
+    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -34,10 +34,10 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/drop\_indexes.cpp](../database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/commands/compact.cpp](../../../database\_commands)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
 
 <div></div>
 
@@ -45,5 +45,5 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database\_holder.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database\_holder.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)

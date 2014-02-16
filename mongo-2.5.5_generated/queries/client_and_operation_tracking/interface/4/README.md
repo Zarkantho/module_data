@@ -9,9 +9,9 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/pipelinetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../aggregation\_framework)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/pipelinetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
 
 ### src/mongo/s/interrupt\_status\_mongos.cpp
 
@@ -21,4 +21,4 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding)

@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -33,10 +33,10 @@
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/idhack\_runner.cpp](../core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/exec/shard\_filter.cpp](../core\_query\_system)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/exec/shard\_filter.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -44,7 +44,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -52,4 +52,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)

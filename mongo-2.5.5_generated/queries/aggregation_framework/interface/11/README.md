@@ -9,5 +9,5 @@
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../sharding)
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+    - [src/mongo/s/grid.cpp](../../../sharding)
+    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)

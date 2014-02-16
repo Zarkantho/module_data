@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -17,14 +17,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../database\_commands)
-    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
-    - [src/mongo/db/kill\_current\_op.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
-    - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/dbeval.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
+    - [src/mongo/db/matcher/expression\_where.cpp](../../../core\_query\_system)
+    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/jstests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -32,7 +32,7 @@
 
 - Used By:
 
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell)
 
 <div></div>
 
@@ -40,8 +40,8 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../replication)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication)
 
 <div></div>
 
@@ -49,8 +49,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/dbtests/jstests.cpp](../../../unit\_tests)
+    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell)
 
 <div></div>
 
@@ -58,10 +58,10 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../database\_commands)
-    - [src/mongo/db/matcher/expression\_where.cpp](../core\_query\_system)
-    - [src/mongo/db/dbeval.cpp](../database\_commands)
-    - [src/mongo/db/commands/group.cpp](../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/matcher/expression\_where.cpp](../../../core\_query\_system)
+    - [src/mongo/db/dbeval.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -69,7 +69,7 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
 
 ### src/mongo/scripting/engine\_v8.cpp
 
@@ -79,7 +79,7 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
 
 <div></div>
 
@@ -87,6 +87,6 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/jstests.cpp](../unit\_tests)
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/jstests.cpp](../../../unit\_tests)
+    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell)

@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -57,8 +57,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../unit\_tests)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -66,8 +66,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../unit\_tests)
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../unit\_tests)
+    - [src/mongo/tools/files.cpp](../../../tools)
 
 <div></div>
 
@@ -75,4 +75,4 @@
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../tools)
+    - [src/mongo/tools/files.cpp](../../../tools)

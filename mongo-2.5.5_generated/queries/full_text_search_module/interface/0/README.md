@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/index/fts\_access\_method.cpp](../indexing)
+    - [src/mongo/db/index/fts\_access\_method.cpp](../../../indexing)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_language.cpp
 
@@ -27,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -35,8 +35,8 @@
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_matcher.cpp
 
@@ -46,7 +46,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -54,7 +54,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -62,7 +62,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_query.cpp
 
@@ -72,8 +72,8 @@
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
 
 ### src/mongo/db/fts/fts\_spec.cpp
 
@@ -83,7 +83,7 @@
 
 - Used By:
 
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
 
 <div></div>
 
@@ -91,7 +91,7 @@
 
 - Used By:
 
-    - [src/mongo/db/index/fts\_access\_method.cpp](../indexing)
+    - [src/mongo/db/index/fts\_access\_method.cpp](../../../indexing)
 
 <div></div>
 
@@ -99,7 +99,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
 
 <div></div>
 
@@ -107,8 +107,8 @@
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../core\_query\_system)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
 
 ### src/mongo/db/fts/stemmer.cpp
 
@@ -118,4 +118,4 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/text.cpp](../core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)

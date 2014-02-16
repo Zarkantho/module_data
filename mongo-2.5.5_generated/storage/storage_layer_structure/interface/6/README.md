@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -17,8 +17,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -26,8 +26,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -35,8 +35,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -44,9 +44,9 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/ttl.cpp](../../../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
 
 <div></div>
 
@@ -54,7 +54,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -62,9 +62,9 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
-    - [src/mongo/db/ttl.cpp](../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/ttl.cpp](../../../indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
 
 <div></div>
 
@@ -72,9 +72,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_stats.cpp](../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../unit\_tests)
-    - [src/mongo/db/commands/touch.cpp](../database\_commands)
+    - [src/mongo/db/commands/index\_stats.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -82,8 +82,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -91,7 +91,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -99,8 +99,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -108,8 +108,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -117,7 +117,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -125,5 +125,5 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../core\_query\_system)
-    - [src/mongo/db/ops/delete.cpp](../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/delete.cpp](../../../core\_query\_system)

@@ -9,8 +9,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -18,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -26,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -34,7 +34,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -42,4 +42,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)

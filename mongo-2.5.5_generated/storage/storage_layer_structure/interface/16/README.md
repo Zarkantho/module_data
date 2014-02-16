@@ -9,4 +9,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/compact.cpp](../database\_commands)
+    - [src/mongo/db/commands/compact.cpp](../../../database\_commands)

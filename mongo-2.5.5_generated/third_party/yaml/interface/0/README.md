@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/node\_data.cpp
 
@@ -27,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -35,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -43,7 +43,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -51,7 +51,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -59,7 +59,7 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/parse.cpp
 
@@ -69,4 +69,4 @@
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../startup\_initialization)

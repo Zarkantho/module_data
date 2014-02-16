@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/util/bson\_extract.cpp](../bson)
+    - [src/mongo/bson/util/bson\_extract.cpp](../../../bson)
 
 <div></div>
 
@@ -49,4 +49,4 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../base\_utilites)

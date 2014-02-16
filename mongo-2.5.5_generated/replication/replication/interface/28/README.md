@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -25,8 +25,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../client\_and\_operation\_tracking)
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -34,4 +34,4 @@
 
 - Used By:
 
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../sharding)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)

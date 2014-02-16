@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -17,4 +17,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)

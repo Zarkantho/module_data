@@ -9,4 +9,4 @@
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../core\_query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)

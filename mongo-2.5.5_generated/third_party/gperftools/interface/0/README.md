@@ -9,4 +9,4 @@
 
 - Used By:
 
-    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../utilities)
+    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../../../utilities)

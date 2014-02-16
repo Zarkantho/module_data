@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -17,4 +17,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)

@@ -9,4 +9,4 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)

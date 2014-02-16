@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../sharding)
+    - [src/mongo/s/shard.cpp](../../../sharding)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../sharding)
+    - [src/mongo/s/grid.cpp](../../../sharding)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -57,8 +57,8 @@
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../sharding)
-    - [src/mongo/s/commands\_admin.cpp](../sharding)
+    - [src/mongo/s/grid.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
 
 <div></div>
 
@@ -66,10 +66,10 @@
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../sharding)
-    - [src/mongo/s/grid.cpp](../sharding)
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../sharding)
-    - [src/mongo/shell/shell\_utils.cpp](../mongo\_shell)
+    - [src/mongo/s/shard.cpp](../../../sharding)
+    - [src/mongo/s/grid.cpp](../../../sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
 
 <div></div>
 
@@ -77,4 +77,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parameters.cpp](../database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)

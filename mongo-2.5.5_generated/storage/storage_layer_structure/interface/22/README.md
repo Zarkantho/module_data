@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -41,4 +41,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)

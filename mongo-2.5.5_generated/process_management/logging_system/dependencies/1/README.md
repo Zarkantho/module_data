@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities)
 
 <div></div>
 
@@ -33,7 +33,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -41,7 +41,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
 
 <div></div>
 
@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
 
 <div></div>
 
@@ -57,7 +57,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -65,7 +65,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities)
 
 <div></div>
 
@@ -73,7 +73,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
 
 <div></div>
 
@@ -81,7 +81,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../network)
+    - [src/mongo/util/net/sock.cpp](../../../network)
 
 <div></div>
 
@@ -89,4 +89,4 @@
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../build\_information)
+    - [src/mongo/util/version.cpp](../../../build\_information)

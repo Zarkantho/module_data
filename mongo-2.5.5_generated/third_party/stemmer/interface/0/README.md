@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../full\_text\_search\_module)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../full\_text\_search\_module)
 
 <div></div>
 
@@ -25,7 +25,7 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../full\_text\_search\_module)
 
 <div></div>
 
@@ -33,4 +33,4 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../full\_text\_search\_module)

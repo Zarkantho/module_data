@@ -9,5 +9,5 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/extsorttests.cpp](../unit\_tests)
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../indexing)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../indexing)

@@ -9,5 +9,5 @@
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../tools)
-    - [src/mongo/shell/dbshell.cpp](../mongo\_shell)
+    - [src/mongo/tools/tool\_options.cpp](../../../tools)
+    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell)

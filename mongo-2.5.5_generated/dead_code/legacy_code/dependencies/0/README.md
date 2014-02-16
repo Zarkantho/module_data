@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities)
 
 <div></div>
 
@@ -17,4 +17,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/clientcursor.cpp](../client\_and\_operation\_tracking)
+    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)

@@ -9,9 +9,9 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document.cpp](../aggregation\_framework)
-    - [src/mongo/db/pipeline/value.cpp](../aggregation\_framework)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/value.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
 
 <div></div>
 
@@ -19,4 +19,4 @@
 
 - Used By:
 
-    - [src/mongo/base/string\_data.cpp](../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)

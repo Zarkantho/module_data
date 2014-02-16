@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
 
 <div></div>
 
@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
 
 <div></div>
 
@@ -25,4 +25,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
