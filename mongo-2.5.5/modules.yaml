@@ -3582,12 +3582,12 @@
             { explain : true }) from the mongo shell.  This will show how the pipeline
             was rewritten throughout the course of the operation.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Mongod Aggregation Commands'
             group_description: Entry point into aggregation for mongod.  These are
                 all database Commands run using db.$cmd.findOne(...)
             group_files:
             - src/mongo/db/commands/pipeline_command.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Accumulators'
             group_description: An accumulator represents a stateful operation.  For
                 example, in an operation such as $sum, you can feed in values until
                 there is no more data, then extract the final result
@@ -3600,7 +3600,7 @@
             - src/mongo/db/pipeline/accumulator_min_max.cpp
             - src/mongo/db/pipeline/accumulator_push.cpp
             - src/mongo/db/pipeline/accumulator_sum.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'BSON Representation'
             group_description: In memory representation of BSON for aggregation.  Similar
                 to a the BSONElement/BSONObj interface except the Value class does
                 not contain its key like a BSONElement, and the Document class is
@@ -3612,7 +3612,7 @@
             - src/mongo/db/pipeline/document.cpp
             - src/mongo/db/pipeline/document.h
             - src/mongo/db/pipeline/document_internal.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Pipeline Stages'
             group_description: Files containing the pipeline stages.  Document Source
                 is the name for a pipeline stage in our code
             group_files:
@@ -3632,27 +3632,26 @@
             - src/mongo/db/pipeline/document_source_skip.cpp
             - src/mongo/db/pipeline/document_source_sort.cpp
             - src/mongo/db/pipeline/document_source_unwind.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Expressions'
             group_description: An expression represents a stateless operation.  For
                 example, in an operation such as $add, you provide a set of values,
                 and immediately recieve a result
             group_files:
             - src/mongo/db/pipeline/expression.cpp
             - src/mongo/db/pipeline/expression.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Pipeline Stage Context'
             group_description: This file is currently misnamed.  The context for a
                 pipeline stage, such as whether its being run on a Source (source
                 shard) or a Merger (primary shard responsible for merging results),
                 whether there has been an interrupt, and other global information.
             group_files:
             - src/mongo/db/pipeline/expression_context.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Wrapper classes for parsed and validate dotted field
-                names
+        -   group_title: 'Dotted Field Utilities'
+            group_description: Wrapper classes for parsed and validated dotted field names
             group_files:
             - src/mongo/db/pipeline/field_path.cpp
             - src/mongo/db/pipeline/field_path.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Aggregation Common Entry Point'
             group_description: These files contain the central entry point for aggregation.  While
                 the initial entry points for mongos and mongod differ, most of the
                 aggregation code is shared between them.  This holds the two paths
@@ -3660,12 +3659,12 @@
             group_files:
             - src/mongo/db/pipeline/pipeline.cpp
             - src/mongo/db/pipeline/pipeline.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Mongod Specific Aggregation Extensions'
             group_description: Mongod specific extensions to aggregation
             group_files:
             - src/mongo/db/pipeline/pipeline_d.cpp
             - src/mongo/db/pipeline/pipeline_d.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Pipeline Optimizations'
             group_description: Optimizations that are done as part of the aggregation
                 process.  There are two optimization types, local and sharded.  In
                 a sharded cluster, first the local optimizations are done which rewrites
@@ -3674,29 +3673,29 @@
                 source shard runs the local optimization again
             group_files:
             - src/mongo/db/pipeline/pipeline_optimizations.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Data Dependency Tracking'
             group_description: Code to track what information is needed in the aggregation
                 pipeline.  For example, for some queries only certain fields of the
                 document are actually needed
             group_files:
             - src/mongo/db/pipeline/dependencies.cpp
             - src/mongo/db/pipeline/dependencies.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Sorter'
             group_description: Generic interface for getting and merging sorted streams
                 of documents. Only used in aggregation
             group_files:
             - src/mongo/db/sorter/sorter.cpp
             - src/mongo/db/sorter/sorter.h
             - src/mongo/db/sorter/sorter_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'External Sorter'
             group_description: Code for external sort. This sits inside the sorter,
                 and the sorter "spills over" to disk if external sorting is allowed
             group_files:
             - src/mongo/db/extsort.cpp
             - src/mongo/db/extsort.h
-        -   group_title: 'TODO: Name this group'
-            group_description: I believe this is just used in External Sort, but it's
-                standing on its own here without a# description.
+        -   group_title: 'Index Key Sorter'
+            group_description: Wrapper around the External Sorter specialized for index keys.  Used
+                in bottom up fast index builds where keys are pre sorted.
             group_files:
             - src/mongo/db/sort_phase_one.h
     -   module_title: Full Text Search Module
