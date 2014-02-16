@@ -2640,7 +2640,7 @@
             - src/mongo/db/repl/replset_commands.cpp
         -   group_title: 'Replica Set Web Information'
             group_description: 'Code to handle the web page that reports replica set information.
-                TODO:  Move this to be near the other web server code?'
+                See the database web server code for more details.'
             group_files:
             - src/mongo/db/repl/replset_web_handler.cpp
         -   group_title: 'Reads Allowed'
