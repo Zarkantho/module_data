@@ -81,6 +81,8 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - /usr/bin/g++
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/include/libstemmer.h
@@ -101,6 +103,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
@@ -121,6 +124,27 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.h
+        - src/third_party/libstemmer_c/libstemmer/modules_utf8.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.h
+        - src/third_party/libstemmer_c/include/libstemmer.h
+        - /usr/bin/gcc
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.h
+        - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.h
         file_interface:
         -   symbol_name: _sb_stemmer_length
             symbol_uses:
@@ -300,6 +324,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/runtime/api.c
@@ -320,6 +345,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _SN_set_current
             symbol_uses:
@@ -418,6 +447,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/runtime/header.h
@@ -438,6 +468,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/runtime/utilities.c
@@ -458,6 +489,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _in_grouping
             symbol_uses:
@@ -799,6 +834,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -855,6 +894,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -908,6 +951,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -967,6 +1014,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1023,6 +1074,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1079,6 +1134,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1132,6 +1191,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1176,6 +1239,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1229,6 +1296,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1279,6 +1350,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1335,6 +1410,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1382,6 +1461,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1429,6 +1512,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1473,6 +1560,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1526,6 +1617,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface: []
         file_dependencies:
         -   symbol_name: _out_grouping
@@ -1567,6 +1662,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _danish_UTF_8_close_env
             symbol_uses:
@@ -1635,6 +1734,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
@@ -1655,6 +1755,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _dutch_UTF_8_create_env
             symbol_uses:
@@ -1720,6 +1824,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
@@ -1740,6 +1845,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _english_UTF_8_close_env
             symbol_uses:
@@ -1811,6 +1920,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
@@ -1831,6 +1941,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _finnish_UTF_8_close_env
             symbol_uses:
@@ -1899,6 +2013,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
@@ -1919,6 +2034,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _french_UTF_8_close_env
             symbol_uses:
@@ -1987,6 +2106,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
@@ -2007,6 +2127,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _german_UTF_8_stem
             symbol_uses:
@@ -2072,6 +2196,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
@@ -2092,6 +2217,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _hungarian_UTF_8_stem
             symbol_uses:
@@ -2148,6 +2277,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
@@ -2168,6 +2298,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _italian_UTF_8_stem
             symbol_uses:
@@ -2233,6 +2367,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
@@ -2253,6 +2388,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _norwegian_UTF_8_stem
             symbol_uses:
@@ -2315,6 +2454,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
@@ -2335,6 +2475,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _porter_UTF_8_close_env
             symbol_uses:
@@ -2403,6 +2547,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
@@ -2423,6 +2568,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _portuguese_UTF_8_stem
             symbol_uses:
@@ -2482,6 +2631,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
@@ -2502,6 +2652,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _romanian_UTF_8_close_env
             symbol_uses:
@@ -2567,6 +2721,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
@@ -2587,6 +2742,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _russian_UTF_8_stem
             symbol_uses:
@@ -2637,6 +2796,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
@@ -2657,6 +2817,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _spanish_UTF_8_stem
             symbol_uses:
@@ -2716,6 +2880,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
@@ -2736,6 +2901,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _swedish_UTF_8_create_env
             symbol_uses:
@@ -2792,6 +2961,7 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
@@ -2812,6 +2982,10 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - src/third_party/libstemmer_c/runtime/header.h
+        - src/third_party/libstemmer_c/runtime/api.h
+        - /usr/bin/gcc
         file_interface:
         -   symbol_name: _turkish_UTF_8_close_env
             symbol_uses:
@@ -2877,5 +3051,6 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []

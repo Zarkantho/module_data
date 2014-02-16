@@ -26,6 +26,9 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers:
+        - /usr/bin/g++
+        - src/third_party/murmurhash3/MurmurHash3.h
         file_interface:
         -   symbol_name: MurmurHash3_x86_32(void const*, int, unsigned int, void*)
             symbol_uses:
@@ -54,5 +57,6 @@ module_groups:
         - mongoexport
         - mongofiles
         - mongorestore
+        file_headers: []
         file_interface: []
         file_dependencies: []

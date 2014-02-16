@@ -1640,12 +1640,14 @@ Utility library to manipulate hex strings
 -------------
 
 # Group Description
-Utilities to run jobs (threads) in the "background". You can use this to run tasks periodically.
+Utilities to run jobs (threads) in the "background".  You can use this to run tasks periodically.  Note that there are two different classes here. One is a Task and one is a BackgroundJob.  They are both used in the code in various places.  Task is just a wrapper around BackgroundJob with a slightly simpler interface.  They both effectively serve the same purpose.
 
 # Files
 - src/mongo/util/background.cpp   (mongod, tools, mongos)
 - src/mongo/util/background.h   (mongod, tools, mongos)
 - src/mongo/util/background\_job\_test.cpp   ()
+- src/mongo/util/concurrency/task.cpp   (mongod, tools, mongos)
+- src/mongo/util/concurrency/task.h   (mongod, tools, mongos)
 
 # Interface
 
@@ -1814,6 +1816,124 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
     - [src/mongo/s/writeback\_listener.cpp](../sharding)
     - [src/mongo/db/repl/rs.cpp](../replication)
     - [src/mongo/dbtests/replsettests.cpp](../unit\_tests)
+
+### src/mongo/util/concurrency/task.cpp
+
+<div></div>
+
+    vtable for mongo::task::Task
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    typeinfo for mongo::task::Server
+
+- Used By:
+
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    mongo::task::Server::send(boost::function<void ()>)
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    vtable for mongo::task::Server
+
+- Used By:
+
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    mongo::task::Task::run()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    mongo::task::Task::Task()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/db/repl/rs.cpp](../replication)
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+
+<div></div>
+
+    mongo::task::Task::setUp()
+
+- Used By:
+
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    mongo::task::repeat(mongo::task::Task*, unsigned int)
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+
+<div></div>
+
+    mongo::task::Task::halt()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+
+<div></div>
+
+    mongo::task::Server::doWork()
+
+- Used By:
+
+    - [src/mongo/db/repl/manager.cpp](../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
+
+<div></div>
+
+    typeinfo for mongo::task::Task
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
+    - [src/mongo/s/cursors.cpp](../sharding)
+
+<div></div>
+
+    mongo::task::fork(mongo::task::Task*)
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../replication)
 
 # Dependencies
 
@@ -2044,6 +2164,82 @@ Utilities to run jobs (threads) in the "background". You can use this to run tas
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../unit\_tests)
+
+### src/mongo/util/concurrency/task.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::inShutdown()
+
+- Provided By:
+
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
+    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    boost::this_thread::interruption_point()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../logging\_system)
+
+<div></div>
+
+    boost::detail::get_current_thread_data()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
+
+-------------
+
+# Group Description
+Wrapper around a background task that creates an object with a "server" interface.  What this means is that "messages" (in the form of lambdas) can be registered with this class to be called sometime in the future by the event loop in this task.  Some functions just register the function and return, and others will block until the function is executed.
+
+# Files
+- src/mongo/util/concurrency/msg.h   (mongod, tools, mongos)
+
+# Interface
+(not used outside this module)
+
+# Dependencies
+(no dependencies outside this module)
 
 -------------
 
@@ -5731,7 +5927,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/compress.h   (mongod, tools)
 - src/mongo/util/concurrency/list.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/mapsf.h   (mongod, tools)
-- src/mongo/util/concurrency/msg.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/mutex.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/mutexdebugger.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/mutexdebugger.h   (mongod, tools, mongos)
@@ -5740,8 +5935,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/concurrency/race.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/shared\_mutex\_win.hpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/simplerwlock.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/task.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/task.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/thread\_pool.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/thread\_pool.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/threadlocal.h   (mongod, tools, mongos)
@@ -6739,124 +6932,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
     - [src/mongo/db/dur\_journal.cpp](../journaling)
 
-### src/mongo/util/concurrency/task.cpp
-
-<div></div>
-
-    vtable for mongo::task::Task
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    typeinfo for mongo::task::Server
-
-- Used By:
-
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    mongo::task::Server::send(boost::function<void ()>)
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    vtable for mongo::task::Server
-
-- Used By:
-
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    mongo::task::Task::run()
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    mongo::task::Task::Task()
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/db/repl/rs.cpp](../replication)
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-
-<div></div>
-
-    mongo::task::Task::setUp()
-
-- Used By:
-
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    mongo::task::repeat(mongo::task::Task*, unsigned int)
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-
-<div></div>
-
-    mongo::task::Task::halt()
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-
-<div></div>
-
-    mongo::task::Server::doWork()
-
-- Used By:
-
-    - [src/mongo/db/repl/manager.cpp](../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../replication)
-
-<div></div>
-
-    typeinfo for mongo::task::Task
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-    - [src/mongo/s/cursors.cpp](../sharding)
-
-<div></div>
-
-    mongo::task::fork(mongo::task::Task*)
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../replication)
-
 ### src/mongo/util/concurrency/thread\_pool.cpp
 
 <div></div>
@@ -7835,68 +7910,6 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - Provided By:
 
     - [src/third\_party/snappy/snappy.cc](../snappy)
-
-### src/mongo/util/concurrency/task.cpp
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::inShutdown()
-
-- Provided By:
-
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../unit\_tests)
-    - [src/mongo/db/instance.cpp](../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../mongos\_and\_mongod\_mains)
-
-<div></div>
-
-    boost::this_thread::interruption_point()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../logging\_system)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../logging\_system)
-
-<div></div>
-
-    boost::detail::get_current_thread_data()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../boost\_thread)
 
 ### src/mongo/util/concurrency/thread\_pool.cpp
 
