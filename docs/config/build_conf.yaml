@@ -2,6 +2,9 @@ git:
   remote:
     upstream: 'Zarkantho/module_data'
     tools: 'mongodb/docs-tools'
+  branches:
+    current: master
+    published: master
 project:
   name: 'kernel-modules'
   tag: 'kernel-modules'
@@ -14,6 +17,7 @@ system:
   make:
     generated:
       - sphinx
+      - meta
     static: []
 paths:
   output: 'build'
