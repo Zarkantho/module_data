@@ -4338,9 +4338,8 @@
         module_name: journaling
         module_description: 'TODO: journaling description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Page aligned buffer builder## what sort of buffer?
-                i don't understand ;(
+        -   group_title: 'Page Aligned Buffer'
+            group_description: Page aligned buffer builder
             group_files:
             - src/mongo/util/alignedbuilder.cpp
             - src/mongo/util/alignedbuilder.h
