@@ -4066,7 +4066,7 @@
         module_name: cpp_client_driver
         module_description: 'TODO: cpp_client_driver description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Replica Set Monitor'
             group_description: Code to manage and store the current state of a connection
                 to a replica set.  It is designed to allow the state to be shared
                 across multiple threads so that each thread in our connection pool
@@ -4087,7 +4087,7 @@
             - src/mongo/client/clientAndShell.cpp
             - src/mongo/client/clientOnly-private.h
             - src/mongo/client/clientOnly.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Client Driver Initializers'
             group_description: Stubs to initialize the client driver when it is used
                 standalone. Calls MONGO_INITIALIZERs among# other things. Not built
                 into the server.
@@ -4113,6 +4113,9 @@
             - src/mongo/client/dbclientinterface.h
             - src/mongo/client/dbclientmockcursor.h
             - src/mongo/client/scoped_db_conn_test.cpp
+        -   group_title: 'Config Servers Connection'
+            group_description: Class to manage the connections to our config servers in a sharded
+                setup.
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
         -   group_title: 'TODO: Name this group'
