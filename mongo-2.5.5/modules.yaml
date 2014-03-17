@@ -2804,6 +2804,15 @@
             group_files:
             - src/mongo/s/d_writeback.cpp
             - src/mongo/s/d_writeback.h
+        -   group_title: 'mongos Networking'
+            group_description: 'TODO: Describe this better.  I think this is duplicated between
+                mongos and mongod.  It looks suspicious.  I think it handles the old wire protocol
+                on mongos.'
+            group_files:
+            - src/mongo/s/request.cpp
+            - src/mongo/s/request.h
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/strategy.h
         -   group_title: 'TODO: Name this group'
             group_description: 'Sharding code? TODO: verify that this is all sharding
                 related and document the architecture.'
@@ -2863,8 +2872,6 @@
             - src/mongo/s/mongos_persistence_stubs.cpp
             - src/mongo/s/multi_command_dispatch.h
             - src/mongo/s/ns_targeter.h
-            - src/mongo/s/request.cpp
-            - src/mongo/s/request.h
             - src/mongo/s/shard.cpp
             - src/mongo/s/shard.h
             - src/mongo/s/shard_conn_test.cpp
@@ -2876,24 +2883,30 @@
             - src/mongo/s/shardkey.cpp
             - src/mongo/s/shardkey.h
             - src/mongo/s/stale_exception.h
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/strategy.h
             - src/mongo/s/version_manager.cpp
             - src/mongo/s/version_manager.h
             - src/mongo/s/version_mongos.cpp
             - src/mongo/s/version_mongos.h
--   system_title: Bson
+-   system_title: BSON
     system_name: bson
     system_description: MongoDB BSON support
     system_modules:
-    -   module_title: Bson
+    -   module_title: BSON
         module_name: bson
-        module_description: 'TODO: bson description'
+        module_description: 'This is the core class for managing BSON objects.  Mutable BSON and
+            other in memory BSON management methods in the server are all built on this library'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: BSON library## is this library standalone? (lots of
-                third party stuff might want to make## use of BSON) - what does it
-                depend on?## why is some of this stuff in db/ ?
+        -   group_title: 'JSON to BSON parser'
+            group_description: 'Parser that can convert a JSON string into a binary BSON object.
+                This has extra features that are not in a standard JSON parser to make sure we can
+                represent specific BSON types that are not in strict JSON.  See
+                http://docs.mongodb.org/manual/reference/mongodb-extended-json/ for more details.
+                The JSON parser should be able to parse anything on that page.'
+            group_files:
+            - src/mongo/db/json.cpp
+            - src/mongo/db/json.h
+        -   group_title: 'Uncategorized BSON code'
+            group_description: 'TODO: organize this into real sections'
             group_files:
             - src/mongo/bson/bson-inl.h
             - src/mongo/bson/bson_builder_base.h
@@ -2928,13 +2941,15 @@
             - src/mongo/db/jsobj.cpp
             - src/mongo/db/jsobj.h
             - src/mongo/db/jsobjmanipulator.h
-            - src/mongo/db/json.cpp
-            - src/mongo/db/json.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Mutable BSON is built on top of the BSON library. It
-                has a mutable, consistently sized vector of# the changes that have
-                been made to an object.## is this part of libbson? does this depend
-                on bson/* ?
+    -   module_title: Mutable BSON
+        module_name: mutable_bson
+        module_description: 'Mutable BSON is built on top of the BSON library, and provides an
+            interface for logically a BSON object.  It lazily unpacks a BSON object into a vector of
+            elements as changes are made, and can reserialize into a new BSON object with all the
+            changes.'
+        module_groups:
+        -   group_title: 'Uncategorized Mutable BSON code'
+            group_description: 'TODO: organize this into real sections'
             group_files:
             - src/mongo/bson/mutable/algorithm.h
             - src/mongo/bson/mutable/const_element-inl.h
@@ -4215,57 +4230,39 @@
             group_files:
             - src/mongo/util/net/message_server.h
             - src/mongo/util/net/message_server_port.cpp
-    -   module_title: New Wire Protocol Write Commands
-        module_name: new_wire_protocol_write_commands
-        module_description: 'TODO: new_wire_protocol_write_commands description'
+    -   module_title: Wire Protocol Write Command Schema
+        module_name: wire_protocol_write_command_schema
+        module_description: 'This module contains the code for interacting with the format for the
+            requests and responses sent over the wire in the write commands wire protocol.  Note
+            that because the write commands are actually build on top of the command operation in
+            the old wire protocol, this format is actually not working with raw buffers and binary
+            offsets, but is instead dealing with the BSON objects that are sent as the payload of
+            the command and the command response.  For this we have a library to convert to and from
+            C++ objects to BSON objects using a specified schema.
+
+            See https://github.com/10gen/specifications/blob/master/source/write-commands.rst for
+            the complete specification.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: New write commands for new wire protocol. The new "write
-                commands" are all actual Commands run# using "db.$cmd.findOne(...)".
-                The reason for this is that the old wire protocol didn't have# acknowledgements
-                for anything BUT queries (which include commands), so everything is
-                now a query# so we can get acknowledgements for writes (and not just
-                for queries).
+        -   group_title: 'Write Commands Response Schema'
+            group_description: 'Schema for the responses to write commands.'
             group_files:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/db/commands/write_commands/write_commands.h
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.h
-            - src/mongo/db/commands/write_commands/write_commands_common.cpp
-            - src/mongo/db/commands/write_commands/write_commands_common.h
-        -   group_title: 'TODO: Name this group'
-            group_description: New wire protocol writes (in mongos)
-            group_files:
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/batch_downconvert.h
-            - src/mongo/s/write_ops/batch_downconvert_test.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_upconvert.h
-            - src/mongo/s/write_ops/batch_upconvert_test.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/write_ops/batch_write_exec.h
-            - src/mongo/s/write_ops/batch_write_exec_test.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_write_op.h
-            - src/mongo/s/write_ops/batch_write_op_test.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/config_coordinator.h
-            - src/mongo/s/write_ops/config_coordinator_test.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.h
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/write_ops/write_op.h
-            - src/mongo/s/write_ops/write_op_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: New wire protocol writes (in mongod)## why are these
-                in s/ ?
-            group_files:
-            - src/mongo/s/write_ops/batched_command_request.cpp
-            - src/mongo/s/write_ops/batched_command_request.h
             - src/mongo/s/write_ops/batched_command_response.cpp
             - src/mongo/s/write_ops/batched_command_response.h
             - src/mongo/s/write_ops/batched_command_response_test.cpp
+        -   group_title: 'Write Commands Request Schema Interface'
+            group_description: 'This contains the interface for dealing with the schema of the
+                various write commands.  Note that this class does not actually contain the schema,
+                but instead just multiplexes between the various write command types, calling
+                straight through to the classes for each type when appropriate.'
+            group_files:
+            - src/mongo/s/write_ops/batched_command_request.cpp
+            - src/mongo/s/write_ops/batched_command_request.h
+        -   group_title: 'Write Commands Request Schema'
+            group_description: 'These files contain the schema for the various write commands.  Some
+                of the classes are for schema restrictions that we have on nested objects.  For
+                example, an update command has an overall schema, but the update objects that we
+                send with the command have a schema of their own.'
+            group_files:
             - src/mongo/s/write_ops/batched_delete_document.cpp
             - src/mongo/s/write_ops/batched_delete_document.h
             - src/mongo/s/write_ops/batched_delete_request.cpp
@@ -4274,9 +4271,6 @@
             - src/mongo/s/write_ops/batched_insert_request.cpp
             - src/mongo/s/write_ops/batched_insert_request.h
             - src/mongo/s/write_ops/batched_insert_request_test.cpp
-            - src/mongo/s/write_ops/batched_request_metadata.cpp
-            - src/mongo/s/write_ops/batched_request_metadata.h
-            - src/mongo/s/write_ops/batched_request_metadata_test.cpp
             - src/mongo/s/write_ops/batched_update_document.cpp
             - src/mongo/s/write_ops/batched_update_document.h
             - src/mongo/s/write_ops/batched_update_request.cpp
@@ -4284,14 +4278,91 @@
             - src/mongo/s/write_ops/batched_update_request_test.cpp
             - src/mongo/s/write_ops/batched_upsert_detail.cpp
             - src/mongo/s/write_ops/batched_upsert_detail.h
+        -   group_title: 'Write Commands Operation Metadata'
+            group_description: 'Metadata passed in the request object that does not have to do with
+                the contents of the write command itself.  Currently used to check the shard version
+                in a sharded cluster.'
+            group_files:
+            - src/mongo/s/write_ops/batched_request_metadata.cpp
+            - src/mongo/s/write_ops/batched_request_metadata.h
+            - src/mongo/s/write_ops/batched_request_metadata_test.cpp
+        -   group_title: 'Write Commands Errors Schema'
+            group_description: 'Schema for the errors that can be returned from write commands.  The
+                two types are write errors and write concern errors.'
+            group_files:
             - src/mongo/s/write_ops/wc_error_detail.cpp
             - src/mongo/s/write_ops/wc_error_detail.h
             - src/mongo/s/write_ops/write_error_detail.cpp
             - src/mongo/s/write_ops/write_error_detail.h
+    -   module_title: Wire Protocol Write Commands
+        module_name: wire_protocol_write_commands
+        module_description: 'TODO: wire_protocol_write_commands description'
+        module_groups:
         -   group_title: 'TODO: Name this group'
-            group_description: Header to enumerate the wire protocol version, along
-                with the max and min supported versions## can you say a bit about
-                who exactly cares (which components) about wire protocol version?
+            group_description: New write commands for new wire protocol. The new "write
+                commands" are all actual Commands run# using "db.$cmd.findOne(...)".
+                The reason for this is that the old wire protocol didn't have# acknowledgements
+                for anything BUT queries (which include commands), so everything is
+                now a query# so we can get acknowledgements for writes (and not just
+                for queries).
+
+                TODO: Split this up in more detail.  Note that this code is not for dealing with the
+                wire protocol component, but is instead is the glue between the write command system
+                and the new update system.
+            group_files:
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/db/commands/write_commands/write_commands.h
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.h
+            - src/mongo/db/commands/write_commands/write_commands_common.cpp
+            - src/mongo/db/commands/write_commands/write_commands_common.h
+        -   group_title: Config Coordinator
+            group_description: 'Core config server write management.  Sends a batch of the new write
+                commands to the config servers.'
+            group_files:
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/write_ops/config_coordinator.h
+            - src/mongo/s/write_ops/config_coordinator_test.cpp
+        -   group_title: 'Write Commands mongos Execution'
+            group_description: New wire protocol writes (in mongos)
+                TODO: Separate this into smaller groups and reorganize this section.  There are
+                different parts to it.  The cluster_write_cmd file has the actual "Command" classes,
+                the batch_write_exec files have the actually "runner" of the batch, while the
+                batch_write_op and write_op files are classes that are used to track the lifecycle
+                of batch write and single write operations respectively
+            group_files:
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/s/write_ops/batch_write_exec.h
+            - src/mongo/s/write_ops/batch_write_exec_test.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_write_op.h
+            - src/mongo/s/write_ops/batch_write_op_test.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+            - src/mongo/s/write_ops/write_op.h
+            - src/mongo/s/write_ops/write_op_test.cpp
+        -   group_title: 'Write Commands Upconvert'
+            group_description: 'Code to convert incoming writes on a mongos from a legacy client
+                into a write command for talking to new mongods and convert write command responses
+                into legacy getLastError responses.'
+            group_files:
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/batch_upconvert.h
+            - src/mongo/s/write_ops/batch_upconvert_test.cpp
+        -   group_title: 'Write Commands Downconvert'
+            group_description: 'Code to convert the new style write commands into legacy operations
+                using getLastError, hidden behind the same interface.  This should all be removed in
+                the next major release.'
+            group_files:
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_downconvert.h
+            - src/mongo/s/write_ops/batch_downconvert_test.cpp
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/s/write_ops/dbclient_safe_writer.h
+        -   group_title: 'Wire Version'
+            group_description: Header to enumerate the wire protocol version, along with the max and
+                min supported versions.  The versions so far carry semantic information such as
+                whether aggregation can return cursors or whether write commands are supported.
             group_files:
             - src/mongo/db/wire_version.h
     -   module_title: Web Server
@@ -4299,7 +4370,7 @@
         module_description: 'Database web server.  Handles various types of requests, such as rest
             and jsonp.  This is completely orthogonal to our wire protocol'
         module_groups:
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Web Server'
             group_description: Web access to the database, including rest, jsonp,
                 and http.
             group_files:
