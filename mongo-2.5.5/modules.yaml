@@ -2677,6 +2677,90 @@
     system_name: sharding
     system_description: Sharding code
     system_modules:
+    -   module_title: Writeback Listener
+        module_name: writeback_listener
+        module_description: 'The Writeback listener is a legacy class to handle the case where
+        unacknowledged writes went to the wrong shard.
+
+        Well, in the dark ages before 2.6, none of our writes would get a direct response.  This
+        means that we have to call getLastError to figure out what happened to the write.
+
+        Now consider the case of a mongos sending a write to a shard.  What can go wrong?  Well, the
+        mongos may send the write to a chunk that has already moved.  At that point there are two
+        options:
+
+        1.  The mongos must keep the write around, so that next time it calls getLastError it can
+            see that something went wrong and send the write to the correct shard.
+        2.  The mongod must queue the incorrect writes, and the mongos must ask: "dude, have I
+            screwed up recently"
+
+        We took option 2.
+
+
+
+        What the mongoD has to do:
+
+        When a mongod recieves any operation, it calls the "handlePossibleShardedMessage" function.
+        This does a couple things:
+
+        1.  Checks whether the operation had the correct shard version
+        2.  Checks whether the operation is one that recieves a response
+            a. If it does, it just puts the appropriate error status in the response
+            b. If it does not, it puts it in a "writeback queue" specific to that mongos
+
+        This function is in the ironically named "d_logic.cpp".
+
+        The writeback queue where these actually get stored is in d_writeback.cpp.
+
+
+
+        What the mongoS has to do:
+
+        So now the writes are sitting in this queue on the wrong mongod.  How do we get them to the
+        right place?  This is the job of the WriteBackListener thread.  Each mongos spawns one
+        WriteBackListener for every shard.  This is the thing that runs in the background and runs
+        the "writebacklisten" command to poll the shards for writebacks.  When a writeback gets
+        queued on that shard because of a write from that mongos, the "writebacklisten" command
+        returns the writes that need to be reapplied, and the WriteBackListener tries to send them
+        to the correct shard.
+
+        When the mongos calls "getLastError", it gets an ID for the operation that needs to be
+        reapplied.  The mongos then will wait to reply to a "getLastError" from the user until the
+        WriteBackListener thread has applied up to the operation corresponding to that ID (note the
+        IDs are strictly increasing per writeback queue).
+
+        The writeback listener thread is here in "writeback_listener.cpp".
+
+        So how do write commands help?  Well, now that every write recieves a response, we get an
+        error back immediately when we send a write to the wrong shard, rather than having to queue
+        the writes.
+
+        The even better news is that when a 2.6 mongos is connecting to a 2.4 shard, the write
+        commands are emulated by a block of code that does a safe write using the legacy
+        "getLastError" call.  This means it gets handled just as if we sent a command and got a
+        response immediately (and thus can retry our write), which means that in 2.6 the
+        WriteBackListener does nothing but log!
+
+        TODO: Clean this up and move this to a wiki page'
+        module_groups:
+        -   group_title: 'Mongos Writeback Listener Thread'
+            group_description: 'Thread on mongos that polls the shards for writebacks and sends any
+            queued writebacks to the correct shard'
+            group_files:
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/writeback_listener.h
+        -   group_title: 'Mongod WriteBack Queue and writebacklisten Command'
+            group_description: 'Queue where mongod stores writebacks and command that the
+            writebacklistener on mongos calls to poll the shard'
+            group_files:
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/s/d_writeback.h
+        -   group_title: 'Mongod WriteBack Checks'
+            group_description: 'Code to check if an operation should result in a writeback being
+            queued on the shard'
+            group_files:
+            - src/mongo/s/d_logic.cpp
+            - src/mongo/s/d_logic.h
     -   module_title: Sharding
         module_name: sharding
         module_description: 'TODO: sharding description'
@@ -2782,28 +2866,6 @@
             - src/mongo/s/type_tags.cpp
             - src/mongo/s/type_tags.h
             - src/mongo/s/type_tags_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Bizarre legacy sharding code.## From writeback_listener.h#
-                "The writeback listener takes back write attempts that were made against
-                a wrong shard.# (Wrong here in the sense that the target chunk moved
-                before this mongos had a chance to# learn so.) It is responsible for
-                reapplying these writes to the correct shard."## So basically, the
-                mongos sends an operation to the mongod, and the writeback listener
-                (running on# the mongos) says to the mongod every now and again, "yo,
-                have I screwed up recently?". The mongod# is then like "yeah bro,
-                you screwed up, you wrote all these things to the wrong place and
-                the# writeback listener is like "thanks man" and tries to write them
-                to the correct shard. Meanwhile# the user is like "I'm so glad my
-                data was written". This should go away because of the new write# commands.##
-                rofl
-            group_files:
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/writeback_listener.h
-        -   group_title: 'TODO: Name this group'
-            group_description: mongod component of writeback listener
-            group_files:
-            - src/mongo/s/d_writeback.cpp
-            - src/mongo/s/d_writeback.h
         -   group_title: 'mongos Networking'
             group_description: 'TODO: Describe this better.  I think this is duplicated between
                 mongos and mongod.  It looks suspicious.  I think it handles the old wire protocol
@@ -2849,8 +2911,6 @@
             - src/mongo/s/config_server_tests.cpp
             - src/mongo/s/cursors.cpp
             - src/mongo/s/cursors.h
-            - src/mongo/s/d_logic.cpp
-            - src/mongo/s/d_logic.h
             - src/mongo/s/d_merge.cpp
             - src/mongo/s/d_merge.h
             - src/mongo/s/d_migrate.cpp
@@ -4131,6 +4191,7 @@
         -   group_title: 'Config Servers Connection'
             group_description: Class to manage the connections to our config servers in a sharded
                 setup.
+            group_files:
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
         -   group_title: 'TODO: Name this group'
@@ -4299,16 +4360,16 @@
         module_description: 'TODO: wire_protocol_write_commands description'
         module_groups:
         -   group_title: 'TODO: Name this group'
-            group_description: New write commands for new wire protocol. The new "write
+            group_description: 'New write commands for new wire protocol. The new "write
                 commands" are all actual Commands run# using "db.$cmd.findOne(...)".
-                The reason for this is that the old wire protocol didn't have# acknowledgements
+                The reason for this is that the old wire protocol did not have# acknowledgements
                 for anything BUT queries (which include commands), so everything is
                 now a query# so we can get acknowledgements for writes (and not just
                 for queries).
 
                 TODO: Split this up in more detail.  Note that this code is not for dealing with the
                 wire protocol component, but is instead is the glue between the write command system
-                and the new update system.
+                and the new update system.'
             group_files:
             - src/mongo/db/commands/write_commands/write_commands.cpp
             - src/mongo/db/commands/write_commands/write_commands.h
@@ -4324,12 +4385,12 @@
             - src/mongo/s/write_ops/config_coordinator.h
             - src/mongo/s/write_ops/config_coordinator_test.cpp
         -   group_title: 'Write Commands mongos Execution'
-            group_description: New wire protocol writes (in mongos)
+            group_description: 'New wire protocol writes (in mongos)
                 TODO: Separate this into smaller groups and reorganize this section.  There are
                 different parts to it.  The cluster_write_cmd file has the actual "Command" classes,
                 the batch_write_exec files have the actually "runner" of the batch, while the
                 batch_write_op and write_op files are classes that are used to track the lifecycle
-                of batch write and single write operations respectively
+                of batch write and single write operations respectively'
             group_files:
             - src/mongo/s/commands/cluster_write_cmd.cpp
             - src/mongo/s/write_ops/batch_write_exec.cpp
