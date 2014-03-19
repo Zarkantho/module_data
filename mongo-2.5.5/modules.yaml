@@ -4195,12 +4195,6 @@
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
         -   group_title: 'TODO: Name this group'
-            group_description: Legacy wire protocol in the client driver## what is
-                the new equivalent, and where?
-            group_files:
-            - src/mongo/db/dbmessage.cpp
-            - src/mongo/db/dbmessage.h
-        -   group_title: 'TODO: Name this group'
             group_description: Utilities for keeping track of the data needed for
                 getLastError (part of legacy wire protocol).
             group_files:
@@ -4259,9 +4253,40 @@
             group_files:
             - src/mongo/client/sasl_client_authenticate.cpp
             - src/mongo/client/sasl_client_authenticate.h
+    -   module_title: SSL
+        module_name: ssl
+        module_description: 'Support for SSL connections'
+        module_groups:
+            - src/mongo/util/net/ssl_manager.cpp
+            - src/mongo/util/net/ssl_manager.h
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/util/net/ssl_options.h
+    -   module_title: REST Client
+        module_name: rest_client
+        module_description: 'Client for accessing the mongodb rest api.  Only used by mongostat when
+        run with the "--http" option.'
+        module_groups:
+            - src/mongo/util/net/httpclient.cpp
+            - src/mongo/util/net/httpclient.h
+    -   module_title: Base Wire Protocol Format
+        module_name: base_wire_protocol_format
+        module_description: 'The format of the packets in our wire protocol upon which everything
+        else is built.  See http://docs.mongodb.org/meta-driver/latest/legacy/mongodb-wire-protocol/
+        for the concepts behind it.  WARNING: The names in the server code do not match the names in
+        the documentation.'
+        module_groups:
+        -   group_title: 'Base Wire Protocol Format'
+            group_description: 'Format of packets in the base wire protocol.  Message has the lowest
+            level buffer management, while DbMessage is a wrapper on top of it that helps for
+            dealing with the different types of operations.'
+            group_files:
+            - src/mongo/db/dbmessage.cpp
+            - src/mongo/db/dbmessage.h
+            - src/mongo/util/net/message.cpp
+            - src/mongo/util/net/message.h
     -   module_title: Network
         module_name: network
-        module_description: 'TODO: network description'
+        module_description: 'TODO: network description.  TODO: Split this up.'
         module_groups:
         -   group_title: 'TODO: Name this group'
             group_description: Network library## can you say a few words about:##
@@ -4270,21 +4295,13 @@
             - src/mongo/util/net/listen.cpp
             - src/mongo/util/net/listen.h
             - src/mongo/util/net/hostandport.h
-            - src/mongo/util/net/message.cpp
-            - src/mongo/util/net/message.h
             - src/mongo/util/net/message_port.cpp
             - src/mongo/util/net/message_port.h
-            - src/mongo/util/net/httpclient.cpp
-            - src/mongo/util/net/httpclient.h
             - src/mongo/util/net/sock.cpp
             - src/mongo/util/net/sock.h
             - src/mongo/util/net/sock_test.cpp
             - src/mongo/util/net/socket_poll.cpp
             - src/mongo/util/net/socket_poll.h
-            - src/mongo/util/net/ssl_manager.cpp
-            - src/mongo/util/net/ssl_manager.h
-            - src/mongo/util/net/ssl_options.cpp
-            - src/mongo/util/net/ssl_options.h
         -   group_title: 'TODO: Name this group'
             group_description: Top level (?) of handling incoming network connections
                 on mongod and mongos. Inherits from# Listener (listen.h).
