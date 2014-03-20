@@ -2017,7 +2017,6 @@
             - src/mongo/dbtests/keypatterntests.cpp
             - src/mongo/dbtests/macrotests.cpp
             - src/mongo/dbtests/matchertests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
             - src/mongo/dbtests/mmaptests.cpp
             - src/mongo/dbtests/mock/mock_conn_registry.cpp
             - src/mongo/dbtests/mock/mock_conn_registry.h
@@ -2765,6 +2764,15 @@
         module_name: sharding
         module_description: 'TODO: sharding description'
         module_groups:
+        -   group_title: 'Merge Chunks Command'
+            group_description: 'Command to merge two chunks in a sharded cluster.  See
+            https://jira.mongodb.org/browse/SERVER-8869'
+            group_files:
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/d_merge.h
+            - src/mongo/db/commands/merge_chunks_cmd.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
         -   group_title: 'TODO: Name this group'
             group_description: Helper classes to delete a range of documents. This
                 is used for example in chunk migrations# when we are cleaning up an
@@ -2900,7 +2908,6 @@
             - src/mongo/s/cluster_write.h
             - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/commands/cluster_index_filter_cmd.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
             - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
             - src/mongo/s/commands_admin.cpp
             - src/mongo/s/commands_public.cpp
@@ -2911,8 +2918,6 @@
             - src/mongo/s/config_server_tests.cpp
             - src/mongo/s/cursors.cpp
             - src/mongo/s/cursors.h
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/d_merge.h
             - src/mongo/s/d_migrate.cpp
             - src/mongo/s/d_split.cpp
             - src/mongo/s/d_state.cpp
@@ -3200,7 +3205,6 @@
             - src/mongo/db/commands/index_filter_commands_test.cpp
             - src/mongo/db/commands/index_stats.cpp
             - src/mongo/db/commands/isself.cpp
-            - src/mongo/db/commands/merge_chunks_cmd.cpp
             - src/mongo/db/commands/mr.cpp
             - src/mongo/db/commands/mr.h
             - src/mongo/db/commands/mr_common.cpp
