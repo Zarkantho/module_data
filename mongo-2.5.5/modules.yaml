@@ -4268,46 +4268,86 @@
         module_groups:
             - src/mongo/util/net/httpclient.cpp
             - src/mongo/util/net/httpclient.h
-    -   module_title: Base Wire Protocol Format
-        module_name: base_wire_protocol_format
-        module_description: 'The format of the packets in our wire protocol upon which everything
-        else is built.  See http://docs.mongodb.org/meta-driver/latest/legacy/mongodb-wire-protocol/
-        for the concepts behind it.  WARNING: The names in the server code do not match the names in
-        the documentation.'
+    -   module_title: Network Core
+        module_name: network_core
+        module_description: 'The core network stack upon which everything that interacts with the
+        network in MongoDB is built.'
         module_groups:
         -   group_title: 'Base Wire Protocol Format'
-            group_description: 'Format of packets in the base wire protocol.  Message has the lowest
-            level buffer management, while DbMessage is a wrapper on top of it that helps for
-            dealing with the different types of operations.'
+            group_description: 'The format of the packets in our wire protocol upon which everything
+            else is built.  See
+            http://docs.mongodb.org/meta-driver/latest/legacy/mongodb-wire-protocol/ for the
+            concepts behind it.  WARNING: The names in the server code do not match the names in the
+            documentation.
+
+            The Message class has the lowest level buffer management, while the DbMessage class is a
+            wrapper on top of it that helps for dealing with the different types of operations.'
             group_files:
             - src/mongo/db/dbmessage.cpp
             - src/mongo/db/dbmessage.h
             - src/mongo/util/net/message.cpp
             - src/mongo/util/net/message.h
-    -   module_title: Network
-        module_name: network
-        module_description: 'TODO: network description.  TODO: Split this up.'
-        module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Network library## can you say a few words about:##
-                - what this does## - who uses it## - how to use it?
+        -   group_title: 'Socket'
+            group_description: 'Class providing an abstraction around a network socket.  Also
+            contains the socket exception class.'
             group_files:
-            - src/mongo/util/net/listen.cpp
-            - src/mongo/util/net/listen.h
-            - src/mongo/util/net/hostandport.h
-            - src/mongo/util/net/message_port.cpp
-            - src/mongo/util/net/message_port.h
             - src/mongo/util/net/sock.cpp
             - src/mongo/util/net/sock.h
             - src/mongo/util/net/sock_test.cpp
+        -   group_title: 'Listener Interface'
+            group_description: 'Interface for a class that listens on a port and accepts incoming
+            connections.  This does not look like a C++ interface because it does not seem to have
+            pure virtual functions, but using this class on its own will eventually cause assertion
+            to fail when a connection is accepted.  This unfortunately turns a compile time check
+            into a runtime check, and makes it harder to tell that this is an interface, but despite
+            that this class is logically an interface and never used on its own.'
+            group_files:
+            - src/mongo/util/net/listen.cpp
+            - src/mongo/util/net/listen.h
+        -   group_title: 'Message Port'
+            group_description: 'Wrapper around a single socket providing an interface that works
+            with the MongoDB wire protocol classes rather than raw buffers.  Also has methods to run
+            the SSL handshake on the connection, and automatically handles piggybacking data to
+            reduce the total number of network operations.'
+            group_files:
+            - src/mongo/util/net/message_port.cpp
+            - src/mongo/util/net/message_port.h
+        -   group_title: 'HostAndPort String'
+            group_description: 'Helper class for storing and checking strings of the form
+            "host:port"'
+            group_files:
+            - src/mongo/util/net/hostandport.h
+        -   group_title: 'Socket Poll'
+            group_description: 'Code to poll a socket to check if it is still alive.  Useful for
+            connection pooling to check if a connection we are getting from the pool is still good.'
+            group_files:
             - src/mongo/util/net/socket_poll.cpp
             - src/mongo/util/net/socket_poll.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Top level (?) of handling incoming network connections
-                on mongod and mongos. Inherits from# Listener (listen.h).
+        -   group_title: 'Message Server'
+            group_description: 'Main entry point into the MongoDB network stack.  The responsibility
+            of this class is to listen on a port and interface, and make callbacks to a "handler"
+            object.  The port, interface, and "handler" object are all passed into the constructor.
+
+            Note that mongod and mongos have different "handler" classes.  Currently these are
+            defined in db.cpp and server.cpp, the same files that have the "main()" functions for
+            mongod and mongos.
+
+            Note also that the classes that this is built on work with "Message" objects, which is
+            the basic unit in the wire protocol, and what the name of this class is based on.'
             group_files:
             - src/mongo/util/net/message_server.h
+        -   group_title: 'Thread Based Message Server'
+            group_description: 'Thread based implementation of a message server, and helpers.
+            Listens on the provided port and spawns a thread for every new connection.  The thread
+            reads all data from a connection and makes callbacks to the "handler" object that was
+            registered for this message server.'
+            group_files:
             - src/mongo/util/net/message_server_port.cpp
+        -   group_title: 'Async Message Server'
+            group_description: 'Experimental async implementation of a message server.  This is
+            experimental and will probably be deleted before it gets used for real.'
+            group_files:
+            - src/mongo/util/net/message_server_asio.cpp
     -   module_title: Wire Protocol Write Command Schema
         module_name: wire_protocol_write_command_schema
         module_description: 'This module contains the code for interacting with the format for the
