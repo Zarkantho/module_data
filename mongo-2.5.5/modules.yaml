@@ -2906,7 +2906,6 @@
             - src/mongo/s/cluster_client_internal.h
             - src/mongo/s/cluster_write.cpp
             - src/mongo/s/cluster_write.h
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
             - src/mongo/s/commands_admin.cpp
@@ -3178,9 +3177,6 @@
             group_description: Commands (run using db.$cmd.findOne(...))
             group_files:
             - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/commands/authentication_commands.h
             - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
             - src/mongo/db/commands/collection_to_capped.cpp
             - src/mongo/db/commands/compact.cpp
@@ -3224,8 +3220,6 @@
             - src/mongo/db/commands/storage_details.cpp
             - src/mongo/db/commands/test_commands.cpp
             - src/mongo/db/commands/touch.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/commands/user_management_commands.h
             - src/mongo/db/commands/validate.cpp
             - src/mongo/db/dbcommands_admin.cpp
             - src/mongo/db/dbcommands_generic.cpp
@@ -4856,9 +4850,9 @@
             group_files:
             - src/mongo/db/audit.cpp
             - src/mongo/db/audit.h
-    -   module_title: Authentication
-        module_name: authentication
-        module_description: 'TODO: authentication description'
+    -   module_title: Authorization
+        module_name: authorization
+        module_description: 'TODO: authorization description'
         module_groups:
         -   group_title: Action Types
             group_description: Action types are things that users are allowed to do
@@ -4872,23 +4866,82 @@
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.cpp
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
             - src/mongo/db/auth/generate_action_types.py
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Authapalooza! TODO: actually separate this logically.'
+        -   group_title: Privileges
+            group_description: 'A privilege represents a set of actions that can be performed on a given resource.'
+            group_files:
+            - src/mongo/db/auth/privilege.cpp
+            - src/mongo/db/auth/privilege.h
+            - src/mongo/db/auth/privilege_parser.cpp
+            - src/mongo/db/auth/privilege_parser.h
+            - src/mongo/db/auth/privilege_parser_test.cpp
+        -   group_title: Resource Pattern
+            group_description: 'A resource is something that the database contains or provides that
+            a user can perform actions on.  A Resource Pattern is a representation of a specific
+            resource or a class of resources.'
+            group_files:
+            - src/mongo/db/auth/resource_pattern.cpp
+            - src/mongo/db/auth/resource_pattern.h
+        -   group_title: 'User Roles'
+            group_description: 'A role is a set of privileges that a user with that role is allowed
+            to perform.  Roles can contain other roles, and should be organized in a directed
+            acyclic graph.  The role graph is the in memory representation of our persistent role
+            data, so this code has the logic to pull the role documents and convert to the in memory
+            graph representation.'
+            group_files:
+            - src/mongo/db/auth/role_graph.cpp
+            - src/mongo/db/auth/role_graph.h
+            - src/mongo/db/auth/role_graph_builtin_roles.cpp
+            - src/mongo/db/auth/role_graph_test.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
+            - src/mongo/db/auth/role_name.cpp
+            - src/mongo/db/auth/role_name.h
+        -   group_title: 'Users'
+            group_description: 'A representation of a user.  This contains the user credentials as
+            well as the roles and privileges of the user.  Because it contains both the credentials
+            and the privileges, this is used by both Authentication and Authorization.'
+            group_files:
+            - src/mongo/db/auth/user.cpp
+            - src/mongo/db/auth/user.h
+            - src/mongo/db/auth/user_document_parser.cpp
+            - src/mongo/db/auth/user_document_parser.h
+            - src/mongo/db/auth/user_document_parser_test.cpp
+            - src/mongo/db/auth/user_name.cpp
+            - src/mongo/db/auth/user_name.h
+            - src/mongo/db/auth/user_name_hash.h
+        -   group_title: 'User Management Commands'
+            group_description: 'Commands to manage user and role definitions.'
+            group_files:
+            - src/mongo/db/auth/user_management_commands_parser.cpp
+            - src/mongo/db/auth/user_management_commands_parser.h
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/commands/user_management_commands.h
+        -   group_title: 'User Cache Invalidator'
+            group_description: 'Background Job that periodically invalidates user data cached on the
+            mongos.'
+            group_files:
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.h
+        -   group_title: 'Authorization Data Indexes'
+            group_description: 'Indexes on mongod for collections containing authorization data.'
             group_files:
             - src/mongo/db/auth/auth_index_d.cpp
             - src/mongo/db/auth/auth_index_d.h
-            - src/mongo/db/auth/auth_server_parameters.cpp
-            - src/mongo/db/auth/authentication_session.h
+        -   group_title: 'Authorization Manager'
+            group_description: 'Abstraction around the persistent authorization data, such as users
+            and roles.  Also handles upgrade of the authorization data, and ensures that concurrent
+            access is handled correctly.'
+            group_files:
             - src/mongo/db/auth/authorization_manager.cpp
             - src/mongo/db/auth/authorization_manager.h
             - src/mongo/db/auth/authorization_manager_global.cpp
             - src/mongo/db/auth/authorization_manager_global.h
             - src/mongo/db/auth/authorization_manager_test.cpp
-            - src/mongo/db/auth/authorization_session.cpp
-            - src/mongo/db/auth/authorization_session.h
-            - src/mongo/db/auth/authorization_session_test.cpp
             - src/mongo/db/auth/authz_documents_update_guard.cpp
             - src/mongo/db/auth/authz_documents_update_guard.h
+        -   group_title: 'Authorization Manager Specialization'
+            group_description: 'Abstraction around the component of the Authorization Manager
+            implementation that must be specialized for mongos or mongod.'
+            group_files:
             - src/mongo/db/auth/authz_manager_external_state.cpp
             - src/mongo/db/auth/authz_manager_external_state.h
             - src/mongo/db/auth/authz_manager_external_state_d.cpp
@@ -4899,6 +4952,27 @@
             - src/mongo/db/auth/authz_manager_external_state_mock.h
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/db/auth/authz_manager_external_state_s.h
+        -   group_title: 'Authorization Data Upgrade Commands'
+            group_description: 'Commands that are the entry point to upgrade the authentication
+            data.  Calls into the Authorization Manager to actually do the upgrade.'
+            group_files:
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+        -   group_title: 'Authorization Session'
+            group_description: 'Handles authorization of actions in a session, which in this case is
+            a session/thread/connection.  This state is all thread local, and keeps track of what
+            users we have authenticated as for this session/thread/connection.'
+            group_files:
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/mongo/db/auth/authorization_session.h
+            - src/mongo/db/auth/authorization_session_test.cpp
+            - src/mongo/db/auth/user_set.cpp
+            - src/mongo/db/auth/user_set.h
+            - src/mongo/db/auth/user_set_test.cpp
+        -   group_title: 'Authorization Session Specialization'
+            group_description: 'Abstraction around the component of the Authorization Session
+            implementation that must be specialized for mongos or mongod.'
+            group_files:
             - src/mongo/db/auth/authz_session_external_state.cpp
             - src/mongo/db/auth/authz_session_external_state.h
             - src/mongo/db/auth/authz_session_external_state_d.cpp
@@ -4908,36 +4982,32 @@
             - src/mongo/db/auth/authz_session_external_state_s.h
             - src/mongo/db/auth/authz_session_external_state_server_common.cpp
             - src/mongo/db/auth/authz_session_external_state_server_common.h
+    -   module_title: Authentication
+        module_name: authentication
+        module_description: 'TODO: authentication description'
+        module_groups:
+        -   group_title: 'Authentication Session'
+            group_description: 'Thread local storage for any transient state needed for
+            authentication mechanisms that are implemented by MongoDB.'
+            group_files:
             - src/mongo/db/auth/mongo_authentication_session.cpp
             - src/mongo/db/auth/mongo_authentication_session.h
-            - src/mongo/db/auth/privilege.cpp
-            - src/mongo/db/auth/privilege.h
-            - src/mongo/db/auth/privilege_parser.cpp
-            - src/mongo/db/auth/privilege_parser.h
-            - src/mongo/db/auth/privilege_parser_test.cpp
-            - src/mongo/db/auth/resource_pattern.cpp
-            - src/mongo/db/auth/resource_pattern.h
-            - src/mongo/db/auth/role_graph.cpp
-            - src/mongo/db/auth/role_graph.h
-            - src/mongo/db/auth/role_graph_builtin_roles.cpp
-            - src/mongo/db/auth/role_graph_test.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-            - src/mongo/db/auth/role_name.cpp
-            - src/mongo/db/auth/role_name.h
+            - src/mongo/db/auth/authentication_session.h
+        -   group_title: 'Authentication Commands'
+            group_description: 'Command entry point to authentication.'
+            group_files:
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/commands/authentication_commands.h
+        -   group_title: 'Internal Cluster Authentication'
+            group_description: 'Handles authentication between nodes in a cluster.'
+            group_files:
             - src/mongo/db/auth/security_key.cpp
             - src/mongo/db/auth/security_key.h
-            - src/mongo/db/auth/user.cpp
-            - src/mongo/db/auth/user.h
-            - src/mongo/db/auth/user_cache_invalidator_job.cpp
-            - src/mongo/db/auth/user_cache_invalidator_job.h
-            - src/mongo/db/auth/user_document_parser.cpp
-            - src/mongo/db/auth/user_document_parser.h
-            - src/mongo/db/auth/user_document_parser_test.cpp
-            - src/mongo/db/auth/user_management_commands_parser.cpp
-            - src/mongo/db/auth/user_management_commands_parser.h
-            - src/mongo/db/auth/user_name.cpp
-            - src/mongo/db/auth/user_name.h
-            - src/mongo/db/auth/user_name_hash.h
-            - src/mongo/db/auth/user_set.cpp
-            - src/mongo/db/auth/user_set.h
-            - src/mongo/db/auth/user_set_test.cpp
+    -   module_title: Legacy Code
+        module_name: legacy_code
+        module_description: 'Legacy Auth Code'
+        module_groups:
+        -   group_title: 'Legacy Server Parameters'
+            group_description: 'Legacy parameters set via setParameter.'
+            group_files:
+            - src/mongo/db/auth/auth_server_parameters.cpp
