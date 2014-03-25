@@ -4852,7 +4852,20 @@
             - src/mongo/db/audit.h
     -   module_title: Authorization
         module_name: authorization
-        module_description: 'TODO: authorization description'
+        module_description: 'Authorization is the process of determining what a user is allowed to
+        do in the system.  The five main entities in our authorization system are Users, Resources,
+        Actions, Privileges, and Roles.
+
+        1. A User is the basic entity that operates on the system.
+        2. A Resource is something that the system provides that can be acted on by a User.
+        3. An Action is something that a User can do to a Resource.
+        4. A Privilege is a set of Actions that can performed on a given Resource.
+        5. A Role is a set of Priviliges.
+
+        Users can be assigned Roles and Privileges, which describe what the user is allowed to do.
+
+        Note that some of this code, such as the code to access the User data, is shared by the
+        Authentication module.'
         module_groups:
         -   group_title: Action Types
             group_description: Action types are things that users are allowed to do
@@ -4867,7 +4880,8 @@
             - build/darwin/cpppath__usr_local_Cellar_openssl_1.0.1e_include/libpath__usr_local_Cellar_openssl_1.0.1e_lib/ssl/mongo/db/auth/action_type.h
             - src/mongo/db/auth/generate_action_types.py
         -   group_title: Privileges
-            group_description: 'A privilege represents a set of actions that can be performed on a given resource.'
+            group_description: 'A privilege represents a set of actions that can be performed on a
+            given resource.'
             group_files:
             - src/mongo/db/auth/privilege.cpp
             - src/mongo/db/auth/privilege.h
@@ -4984,7 +4998,11 @@
             - src/mongo/db/auth/authz_session_external_state_server_common.h
     -   module_title: Authentication
         module_name: authentication
-        module_description: 'TODO: authentication description'
+        module_description: 'Authentication is the way to securely verify the identity of a user.
+        This is distinct from Authorization, which is what actually determines what each user is
+        allowed to do once authenticated.  There are different mechanisms and protocols to perform
+        authentication.  MongoDB has a challenge response protocol built in, but SASL and Kerberos
+        authentication support requires the enterprise module.'
         module_groups:
         -   group_title: 'Authentication Session'
             group_description: 'Thread local storage for any transient state needed for
