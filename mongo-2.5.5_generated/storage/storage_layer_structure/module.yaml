@@ -30694,8 +30694,10 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: Utilities to clone entire collections and databases
+-   group_title: Cloner And Copy Commands
+    group_description: Contains various commands to copy entire collections and databases,
+        as well as the Cloner class, which contains the actual implementation of the
+        copy logic and can be used directly in other code.
     group_files:
     - src/mongo/db/cloner.cpp
     - src/mongo/db/cloner.h

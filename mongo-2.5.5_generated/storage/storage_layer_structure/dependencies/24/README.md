@@ -1,5 +1,5 @@
 
-# Interface for TODO: Name this group
+# Interface for Cloner And Copy Commands
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/cloner.cpp

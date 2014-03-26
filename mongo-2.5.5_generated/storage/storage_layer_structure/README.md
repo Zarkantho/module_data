@@ -324,8 +324,8 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
 -------------
 
-## TODO: Name this group
-Utilities to clone entire collections and databases
+## Cloner And Copy Commands
+Contains various commands to copy entire collections and databases, as well as the Cloner class, which contains the actual implementation of the copy logic and can be used directly in other code.
 
 #### Files
 - src/mongo/db/cloner.cpp   (mongod, tools)
