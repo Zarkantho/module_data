@@ -2335,13 +2335,13 @@
             group_files:
             - src/mongo/util/assert_util.cpp
             - src/mongo/util/assert_util.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Reference Count Helper'
             group_description: Helper library that you inherit from to make a class
                 "reference counted"
             group_files:
             - src/mongo/util/intrusive_counter.cpp
             - src/mongo/util/intrusive_counter.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'MD5 Hasher'
             group_description: md5 hash library
             group_files:
             - src/mongo/util/md5.cpp
@@ -2349,12 +2349,12 @@
             - src/mongo/util/md5.hpp
             - src/mongo/util/md5_test.cpp
             - src/mongo/util/md5main.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Windows Service Management'
             group_description: Windows service
             group_files:
             - src/mongo/util/ntservice.cpp
             - src/mongo/util/ntservice.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Auth Utils'
             group_description: Utilities to hash a username + password
             group_files:
             - src/mongo/client/auth_helpers.cpp
@@ -2781,10 +2781,9 @@
             - src/mongo/db/commands/merge_chunks_cmd.cpp
             - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Helper classes to delete a range of documents. This
-                is used for example in chunk migrations# when we are cleaning up an
-                old chunk.
+        -   group_title: 'Range Deleter'
+            group_description: 'Helper classes to delete a range of documents. This is used for
+            example in chunk migrations when we are cleaning up an old chunk.'
             group_files:
             - src/mongo/db/range_deleter.cpp
             - src/mongo/db/range_deleter.h
@@ -2799,19 +2798,16 @@
             - src/mongo/db/range_deleter_stats.h
             - src/mongo/db/range_deleter_test.cpp
             - src/mongo/db/range_preserver.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Utilities for comparing ranges. Useful because our
-                sharding is range based.## okay, but why in s/ ? only used by sharding?
-                seems weird that something## general like range arith is only in s/
-                but the more specific delete-range## isn't.
+        -   group_title: 'Range Comparison'
+            group_description: 'Utilities for comparing ranges. Useful because our sharding is range
+            based.'
             group_files:
             - src/mongo/s/range_arithmetic.cpp
             - src/mongo/s/range_arithmetic.h
             - src/mongo/s/range_arithmetic_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Contains metadata about a collection, particularly
-                for sharding. The MetadataLoader populates new# CollectionMetadata
-                objects from config server data.
+        -   group_title: 'Collection Metadata'
+            group_description: 'Contains metadata about a collection, particularly for sharding. The
+            MetadataLoader populates new CollectionMetadata objects from config server data.'
             group_files:
             - src/mongo/s/collection_metadata.cpp
             - src/mongo/s/collection_metadata.h
@@ -2819,7 +2815,7 @@
             - src/mongo/s/metadata_loader.cpp
             - src/mongo/s/metadata_loader.h
             - src/mongo/s/metadata_loader_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Config Upgrade'
             group_description: Code to upgrade config server metadata
             group_files:
             - src/mongo/s/config_upgrade.cpp
@@ -2828,14 +2824,14 @@
             - src/mongo/s/config_upgrade_helpers.h
             - src/mongo/s/config_upgrade_v0_to_v5.cpp
             - src/mongo/s/config_upgrade_v4_to_v5.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Distributed Lock'
             group_description: Distributed lock (lock on the config servers from mongos,
                 i.e. "balancer lock")
             group_files:
             - src/mongo/s/distlock.cpp
             - src/mongo/s/distlock.h
             - src/mongo/s/distlock_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'BSON Field Parser'
             group_description: Parser for fields in a BSON object. Meant to help enforce
                 a schema on a BSON object.
             group_files:
@@ -2843,7 +2839,7 @@
             - src/mongo/db/field_parser.cpp
             - src/mongo/db/field_parser.h
             - src/mongo/db/field_parser_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Config Server Schema'
             group_description: '"Schema" for config server metadata. These classes
                 contain structural class definitions for what# we expect to find on
                 the config server. They use the field parser above to convert BSON
@@ -3045,47 +3041,53 @@
     system_modules:
     -   module_title: Client And Operation Tracking
         module_name: client_and_operation_tracking
-        module_description: 'TODO: client_and_operation_tracking description'
+        module_description: 'This module contains the code to track and manage the state of clients
+        and database operations.
+
+        MongoDB conflates "threads", "operations", and "connections".  This means everything gets
+        wrapped together into a blobs of global thread local state.  Many things that will
+        eventually have control blocks of their own are just thread local state.  For example, all
+        the operation state and connection state is thread local, which means there is currently no
+        good way to have multiple connections or operations handled by a single thread.
+
+        See https://wiki.mongodb.com/pages/viewpage.action?pageId=78086492 for an introduction to
+        more specific implementation details.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: mongos's version of a "Client". This is the big bucket
-                of global state. This ALSO has the# definition of Command::execCommand
-                for mongos (the function that actually runs commands registered# using
-                the Command class, which gets called whenever a query against the
-                "$cmd" collection is made)
+        -   group_title: 'Mongos Specific Client State'
+            group_description: 'mongos version of a "Client". This is the big bucket of global
+            state.  This ALSO has the definition of "Command::execCommand" for mongos (the function
+            that actually runs commands registered using the Command class, which gets called
+            whenever a query against the "$cmd" collection is made)'
             group_files:
             - src/mongo/s/s_only.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: mongod's version of a "Client". This is the big bucket
-                of global state.# There is also the concept of a "Context" that one
-                can take at the beginning of an operation that# holds a subset of
-                the global state. There is also a "ReadContext" and a "WriteContext
-                which# take locks. These are all nested classes in "Client". It's
-                a bizarre situation because# "client.h" contains the declaration of
-                the class, but there are two different definitions. One in# "s_only.cpp"
-                for mongos, and one in "client.cpp" for mongod. This means that mongos
-                files may# contain "client.h" and pass compile fine when using something
-                in it, but then may fail link# because it happens to be something
-                that's only defined in "client.cpp". I don't see any# definitions
-                so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"#
-                (the definition of the WriteContext constructor) only shows up in
-                client.cpp, which is mongod# only.
+        -   group_title: 'Mongod Client State Implementation'
+            group_description: 'mongod version of a "Client". This is the big bucket of global
+            state.  There is also the concept of a "Context" that one can take at the beginning of
+            an operation that holds a subset of the global state. There is also a "ReadContext" and
+            a "WriteContext" which take locks. These are all nested classes in "Client". It is a
+            bizarre situation because "client.h" contains the declaration of the class, but there
+            are two different definitions. One in "s_only.cpp" for mongos, and one in "client.cpp"
+            for mongod. This means that mongos files may contain "client.h" and pass compile fine
+            when using something in it, but then may fail link because it happens to be something
+            that is only defined in "client.cpp". I do not see any definitions so far for "Context"
+            in mongos, and a grep for "Client::WriteContext::WriteContext" (the definition of the
+            WriteContext constructor) only shows up in client.cpp, which is mongod only.'
             group_files:
             - src/mongo/db/client.cpp
             - src/mongo/db/client.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Current Operation'
             group_description: The current "operation" within the current "Client"
             group_files:
             - src/mongo/db/curop-inl.h
             - src/mongo/db/curop.cpp
             - src/mongo/db/curop.h
             - src/mongo/db/curop_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Kill Current Operation'
             group_description: Functions to kill the current "operation"
             group_files:
             - src/mongo/db/kill_current_op.cpp
             - src/mongo/db/kill_current_op.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Interupt Status Checks'
             group_description: Helpers to check whether the current operation in the
                 current client has been interrupted.
             group_files:
@@ -3094,51 +3096,51 @@
             - src/mongo/db/interrupt_status_mongod.h
             - src/mongo/s/interrupt_status_mongos.cpp
             - src/mongo/s/interrupt_status_mongos.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Shared Client State Interface'
             group_description: 'Base class for a Client on mongod and mongos: ClientBasic'
             group_files:
             - src/mongo/db/client_basic.cpp
             - src/mongo/db/client_basic.h
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Seems to be the "mongos only" version of the "Client"
-                class: ClientInfo Also inherits from ClientBasic'
+        -   group_title: 'Mongos Client State Implementation'
+            group_description: 'Seems to be the "mongos version" of the "Client" class which
+            inherits from "ClientBasic".  see ClientInfo in s_only.cpp for more "mongos only" client
+            state.  That class also inherits from ClientBasic'
             group_files:
             - src/mongo/s/client_info.cpp
             - src/mongo/s/client_info.h
-        -   group_title: 'TODO: Name this group'
-            group_description: The database's internal concept of a cursor from a
-                client
+        -   group_title: 'Client Cursor'
+            group_description: 'The internal representation of a cursor from a client'
             group_files:
             - src/mongo/db/clientcursor.cpp
             - src/mongo/db/clientcursor.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Contains helper functions for running common operations
-                against the local server. For example,# has findOne, ensureIndex,
-                upsert, etc. which all just run the respective options on the server
-                the# code is running on.
+        -   group_title: 'Legacy Local Access Helpers'
+            group_description: 'Contains helper functions for running common operations against the
+            local server. For example, has findOne, ensureIndex, upsert, etc. which all just run the
+            respective operations on the server the code is running on.'
             group_files:
             - src/mongo/db/dbhelpers.cpp
             - src/mongo/db/dbhelpers.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Code to get a handle to the "system.profile" collection
-                for a given Database
+        -   group_title: 'System Profiler'
+            group_description: 'Code to get a handle to the "system.profile" collection for a given
+            Database'
             group_files:
             - src/mongo/db/introspect.cpp
             - src/mongo/db/introspect.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Just an enum for different cursor time limit states.
+        -   group_title: 'Cursor Time Limit Special States'
+            group_description: 'Just an enum for different cursor time limit values that have a
+            special meaning, such as "-1" for "no timeout".'
             group_files:
             - src/mongo/db/max_time.h
     -   module_title: Concurrency
         module_name: concurrency
         module_description: 'TODO: concurrency description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Core locks library. Only in mongod.## can you say
-                a bit more? e.g. database locks are RWlocks, but what *are*## they
-                exactly? any sort of fairness or other performance/"how to use" info?#
-                TODO: There are also a bunch of concurrency related helpers in the
-                UTILITIES section.'
+        -   group_title: 'Core Database Locks'
+            group_description: 'Core locks library. Only in mongod.
+
+            TODO: Split up this section and go into more detail about the types of locks used here.
+
+            TODO: There are also a bunch of concurrency related helpers in the UTILITIES section.'
             group_files:
             - src/mongo/util/concurrency/rwlock.h
             - src/mongo/util/concurrency/rwlockimpl.cpp
@@ -3149,40 +3151,51 @@
             - src/mongo/db/lockstat.h
             - src/mongo/db/lockstate.cpp
             - src/mongo/db/lockstate.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Spin locks## can you give an example or two of where
-                we tightly spin on locks?
+        -   group_title: 'Spin Locks'
+            group_description: Spin locks
             group_files:
             - src/mongo/util/concurrency/spin_lock.cpp
             - src/mongo/util/concurrency/spin_lock.h
             - src/mongo/util/concurrency/spin_lock_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Condition Variables## why called 'synchronization'
-                then? (what are these, really? can you give## an example?)
+        -   group_title: 'Condition Variables'
+            group_description: Condition Variables
             group_files:
             - src/mongo/util/concurrency/synchronization.cpp
             - src/mongo/util/concurrency/synchronization.h
     -   module_title: Database Commands
         module_name: database_commands
-        module_description: 'TODO: database_commands description'
+        module_description: 'In the base MongoDB wire protocol, each packet has an "opCode" field
+        that specifies what kind of operation it is.  These are things like "OP_GET_MORE",
+        "OP_QUERY", "OP_INSERT", etc.
+
+        However, there is no "OP_COMMAND" or anything that looks like it.  What are "Commands" then?
+        What happens when you run "db.serverStatus()"?
+
+        Well, it turns out that commands are simply queries against the special reserved "$cmd"
+        collection.  What this means is that "db.serverStatus()" calls
+        "db.runCommand({serverStatus:1})" which then calls "db.$cmd.findOne({serverStatus:1})".
+
+        See https://wiki.mongodb.com/display/10GEN/Commands for more details.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Base class for mongodb commands. Has a big std::map
-                with the keys of the command name and the# values as the Command itself.
-                These are the commands that you run using# "db.$cmd.findOne({ "serverStatus"
-                : true }).'
+        -   group_title: 'Commands Registration Class'
+            group_description: 'Base class for mongodb commands. Has a static global std::map of
+            Command objects keyed by the command name.  The way the registration works is by
+            inheritance, since the Constructor of this class "registers itself" in the global
+            command map when it gets executed.'
             group_files:
             - src/mongo/db/commands.cpp
             - src/mongo/db/commands.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'General Mongod Commands'
             group_description: A bunch of commands for mongod. However, this ALSO
                 has the definition of Command::execCommand for# mongod (the function
                 that actually runs commands registered using the Command class, which
                 gets# called whenever a query against the "$cmd" collection is made)
             group_files:
             - src/mongo/db/dbcommands.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Commands (run using db.$cmd.findOne(...))
+        -   group_title: 'Uncategorized Commands'
+            group_description: 'Commands (run using db.$cmd.findOne(...))
+
+            TODO: Categorize and document these separately'
             group_files:
             - src/mongo/db/commands/apply_ops.cpp
             - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
@@ -3233,7 +3246,7 @@
             - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/dbeval.cpp
             - src/mongo/db/driverHelpers.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Fsync Command'
             group_description: Commands + code for fsync of data files
             group_files:
             - src/mongo/db/commands/fsync.cpp
@@ -3295,14 +3308,14 @@
             group_files:
             - src/mongo/db/keypattern.cpp
             - src/mongo/db/keypattern.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'TTL Background Job'
             group_description: Background job that periodically checks a ttl index.
             group_files:
             - src/mongo/db/ttl.cpp
             - src/mongo/db/ttl.h
     -   module_title: Core Query System
         module_name: core_query_system
-        module_description: ''
+        module_description: 'TODO: core query system description'
         module_groups:
         -   group_title: 'Query Expression Parser'
             group_description: Matcher expressions. The point of all of this is to
@@ -3358,7 +3371,7 @@
             - src/mongo/db/matcher/matcher.cpp
             - src/mongo/db/matcher/matcher.h
             - src/mongo/db/matcher.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Match Details'
             group_description: Helper for requesting more details about what matched
                 our query from the matcher system.
             group_files:
@@ -3447,7 +3460,7 @@
             - src/mongo/db/query/stage_types.h
             - src/mongo/db/query/type_explain.cpp
             - src/mongo/db/query/type_explain.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'LRU Key Value Cache'
             group_description: Key value store utility class with limited size and
                 an LRU replacement policy.
             group_files:
@@ -3965,13 +3978,7 @@
         module_description: 'TODO: logging_system description'
         module_groups:
         -   group_title: 'TODO: Name this group'
-            group_description: '## jesus, i hope this becomes a library :)## can you
-                say a bit about what kind of logging we do? is there any sort of##
-                ordering or atomicity (maybe per-call-to-log, or per log line?) our##
-                logging guarantees? ''log lines are emitted in-order with respect
-                to each## process thread?'' maybe?)# Logging system (NOTE: The first
-                two actually aren''t part of the "logger" library, but I see no# reason
-                why they should not be)'
+            group_description: 'TODO: Divide this into sections and document'
             group_files:
             - src/mongo/util/log.cpp
             - src/mongo/util/log.h
@@ -4009,9 +4016,9 @@
             - src/mongo/logger/syslog_appender.h
             - src/mongo/logger/tee.h
         -   group_title: 'TODO: Name this group'
-            group_description: Helpers to dump a bunch of information about the current
-                process## at crash time only? at any time? can you give an example
-                of when## this is used?
+            group_description: 'Helpers to dump a bunch of information about the current process
+
+            TODO: at crash time only? at any time? can you give an example of when this is used?'
             group_files:
             - src/mongo/db/log_process_details.cpp
             - src/mongo/db/log_process_details.h
