@@ -88,7 +88,7 @@
     - [src/mongo/db/ops/delete.cpp](../../../core\_query\_system)
     - [src/mongo/db/storage/data\_file.cpp](../../../mmap\_file\_interface)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
 
 <div></div>

@@ -586,7 +586,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -602,7 +602,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
 
 <div></div>
 
@@ -642,7 +642,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -903,7 +903,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -943,7 +943,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -991,7 +991,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
 
 <div></div>
 
@@ -1127,7 +1127,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 
@@ -1175,7 +1175,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -1223,7 +1223,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 

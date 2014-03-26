@@ -33,9 +33,9 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -53,7 +53,7 @@
 - Used By:
 
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
 
 <div></div>
 
@@ -77,9 +77,9 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -88,9 +88,9 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -107,8 +107,8 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authentication)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
 
 <div></div>
 
@@ -116,6 +116,6 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)

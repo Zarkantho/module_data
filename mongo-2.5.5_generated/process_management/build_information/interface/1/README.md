@@ -10,7 +10,7 @@
 - Used By:
 
     - [src/mongo/util/version\_reporting.cpp](../../../utilities)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
 
 <div></div>
 
@@ -37,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
 
 <div></div>
 
@@ -56,4 +56,4 @@
 - Used By:
 
     - [src/mongo/s/balance.cpp](../../../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)

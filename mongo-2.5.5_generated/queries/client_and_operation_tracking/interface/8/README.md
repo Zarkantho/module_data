@@ -20,7 +20,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/indexupdatetests.cpp](../../../unit\_tests)
 
 <div></div>
@@ -143,7 +143,7 @@
 
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)

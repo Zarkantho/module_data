@@ -226,7 +226,7 @@
     - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
     - [src/mongo/s/config.cpp](../../../sharding)
     - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -337,7 +337,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/repl/bgsync.cpp](../../../replication)
     - [src/mongo/db/range\_deleter.cpp](../../../sharding)
     - [src/mongo/db/repl/consensus.cpp](../../../replication)
@@ -361,7 +361,7 @@
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
     - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
@@ -484,7 +484,7 @@
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/repl/health.cpp](../../../replication)
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/tools/oplog.cpp](../../../tools)
 
@@ -508,9 +508,9 @@
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
     - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
     - [src/mongo/scripting/bench.cpp](../../../javascript\_libraries)
-    - [src/mongo/s/d\_writeback.cpp](../../../sharding)
+    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
     - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
     - [src/mongo/dbtests/mmaptests.cpp](../../../unit\_tests)
     - [src/mongo/db/structure/collection\_compact.cpp](../../../storage\_layer\_structure)
@@ -559,7 +559,7 @@
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
     - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -581,9 +581,9 @@
 - Used By:
 
     - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
     - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../authentication)
+    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../authorization)
     - [src/mongo/db/repl/bgsync.cpp](../../../replication)
     - [src/mongo/tools/top.cpp](../../../tools)
     - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
@@ -594,7 +594,7 @@
     - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
@@ -738,12 +738,12 @@
 
 - Used By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
     - [src/mongo/db/index/btree\_index\_cursor.cpp](../../../indexing)
     - [src/mongo/db/dur\_journal.cpp](../../../journaling)
     - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
     - [src/mongo/db/repl/manager.cpp](../../../replication)
@@ -753,7 +753,7 @@
     - [src/mongo/db/range\_deleter\_mock\_env.cpp](../../../sharding)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/dbtests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/client/syncclusterconnection.cpp](../../../cpp\_client\_driver)
     - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
     - [src/mongo/db/range\_deleter.cpp](../../../sharding)
@@ -762,9 +762,9 @@
     - [src/mongo/db/dur\_commitjob.cpp](../../../journaling)
     - [src/mongo/tools/stat.cpp](../../../tools)
     - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/db/repl/health.cpp](../../../replication)
     - [src/mongo/dbtests/threadedtests.cpp](../../../unit\_tests)
     - [src/mongo/scripting/engine\_v8.cpp](../../../javascript\_libraries)
@@ -783,7 +783,7 @@
     - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
     - [src/mongo/s/version\_manager.cpp](../../../sharding)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/s/d\_writeback.cpp](../../../sharding)
+    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
     - [src/mongo/s/config.cpp](../../../sharding)
     - [src/mongo/util/fail\_point\_service.cpp](../../../fail\_points)
     - [src/mongo/s/d\_state.cpp](../../../sharding)
@@ -798,7 +798,7 @@
     - [src/mongo/s/chunk.cpp](../../../sharding)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../../../sharding)
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/tools/bridge.cpp](../../../tools)
     - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
     - [src/mongo/bson/optime.cpp](../../../bson)

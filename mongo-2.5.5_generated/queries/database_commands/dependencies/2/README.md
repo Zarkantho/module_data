@@ -49,7 +49,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authorization)
 
 <div></div>
 
@@ -195,772 +195,6 @@
 
     - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
 
-### src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp
-
-<div></div>
-
-    mongo::rsLog
-
-- Provided By:
-
-    - [src/mongo/db/repl/health.cpp](../../../replication)
-
-<div></div>
-
-    mongo::ScopedConn::keepOpen
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-
-<div></div>
-
-    mongo::isSameMajorVersion(char const*)
-
-- Provided By:
-
-    - [src/mongo/util/version.cpp](../../../build\_information)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::StaticObserver::_destroyingStatics
-
-- Provided By:
-
-    - [src/mongo/util/util.cpp](../../../utilities)
-
-<div></div>
-
-    vtable for mongo::DBClientWithCommands
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::theReplSet
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::BackgroundJob::wait(unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::versionArray
-
-- Provided By:
-
-    - [src/mongo/util/version.cpp](../../../build\_information)
-
-<div></div>
-
-    mongo::DBClientBase::ConnectionIdSequence
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::DBException::convertExceptionCode(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::BackgroundJob::go()
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::BackgroundJob::~BackgroundJob()
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::ScopedConn::mapMutex
-
-- Provided By:
-
-    - [src/mongo/db/repl/health.cpp](../../../replication)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::operator<<(mongo::logger::Tee*)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::authenticateInternalUser(mongo::DBClientWithCommands*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/security\_key.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::AuthorizationManager::upgradeSchema(int, mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ReplSetImpl::findById(unsigned int) const
-
-- Provided By:
-
-    - [src/mongo/db/repl/health.cpp](../../../replication)
-
-<div></div>
-
-    mongo::AuthorizationManager::isAuthEnabled() const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseAuthSchemaUpgradeStepCommand(mongo::BSONObj const&, std::string const&, int*, bool*, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    vtable for mongo::DBClientConnection
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    typeinfo for mongo::BackgroundJob
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::DBClientConnection::_numConnections
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
-
-<div></div>
-
-    mongo::ScopedConn::_map
-
-- Provided By:
-
-    - [src/mongo/db/repl/health.cpp](../../../replication)
-
-<div></div>
-
-    mongo::ReplSetConfig::DEFAULT_HB_TIMEOUT
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::getGlobalAuthorizationManager()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::toVersionArray(char const*)
-
-- Provided By:
-
-    - [src/mongo/util/version.cpp](../../../build\_information)
-
-<div></div>
-
-    mongo::BackgroundJob::BackgroundJob(bool)
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-### src/mongo/db/commands/authentication\_commands.cpp
-
-<div></div>
-
-    mongo::AuthorizationSession::grantInternalAuthorization()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::MongoAuthenticationSession::MongoAuthenticationSession(unsigned long long)
-
-- Provided By:
-
-    - [src/mongo/db/auth/mongo\_authentication\_session.cpp](../../../authentication)
-
-<div></div>
-
-    _md5_finish
-
-- Provided By:
-
-    - [src/mongo/util/md5.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ClientBasic::resetAuthenticationSession(mongo::AuthenticationSession*)
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::AuthorizationManager::releaseUser(mongo::User*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::StaticObserver::_destroyingStatics
-
-- Provided By:
-
-    - [src/mongo/util/util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ClientBasic::swapAuthenticationSession(boost::scoped_ptr<mongo::AuthenticationSession>&)
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Status::toString() const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::mutablebson::Element::rightSibling(unsigned long) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::sleepmillis(long long)
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::mutablebson::Element::setValueString(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::mutablebson::Document::~Document()
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::User::getCredentials() const
-
-- Provided By:
-
-    - [src/mongo/db/auth/user.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    _md5_init
-
-- Provided By:
-
-    - [src/mongo/util/md5.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::AuthorizationSession::logoutDatabase(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::mutablebson::Element::findElementNamed(mongo::StringData const&) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::mutablebson::Document::Document(mongo::BSONObj const&, mongo::mutablebson::Document::InPlaceMode)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::internalSecurity
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::getSSLManager()
-
-- Provided By:
-
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::User::getName() const
-
-- Provided By:
-
-    - [src/mongo/db/auth/user.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::AuthorizationManager::acquireUser(mongo::UserName const&, mongo::User**)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    _md5_append
-
-- Provided By:
-
-    - [src/mongo/util/md5.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::SecureRandom::create()
-
-- Provided By:
-
-    - [src/mongo/platform/random.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ClientBasic::getCurrent()
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::getGlobalAuthorizationManager()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::addAndAuthorizeUser(mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::findFirstChildNamed(mongo::StringData const&) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::UserName::UserName(mongo::StringData const&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_name.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::serverGlobalParams
-
-- Provided By:
-
-    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
-
-<div></div>
-
-    mongo::audit::logAuthentication(mongo::ClientBasic*, mongo::StringData const&, mongo::UserName const&, mongo::ErrorCodes::Error)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
 ### src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp
 
 <div></div>
@@ -969,7 +203,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1161,7 +395,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -1259,7 +493,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1267,7 +501,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -1283,7 +517,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1371,7 +605,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -1411,7 +645,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1500,7 +734,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1582,7 +816,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -1630,7 +864,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -1774,7 +1008,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1808,7 +1042,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -1816,7 +1050,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -1824,7 +1058,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -1908,7 +1142,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1916,7 +1150,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1940,7 +1174,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -1948,7 +1182,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -1956,7 +1190,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -1964,7 +1198,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -1988,7 +1222,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -2054,7 +1288,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -2118,7 +1352,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -2158,7 +1392,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -2166,7 +1400,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -2248,7 +1482,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -2336,7 +1570,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -2344,7 +1578,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -2424,7 +1658,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -2539,7 +1773,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -2595,7 +1829,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -2708,7 +1942,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -2766,7 +2000,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -2782,7 +2016,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -2854,7 +2088,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -2998,7 +2232,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -3518,7 +2752,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -3526,7 +2760,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -3534,7 +2768,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -3542,7 +2776,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -3550,7 +2784,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -3566,7 +2800,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/resource\_pattern.cpp](../../../authentication)
+    - [src/mongo/db/auth/resource\_pattern.cpp](../../../authorization)
 
 <div></div>
 
@@ -3574,7 +2808,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -3640,7 +2874,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -3713,7 +2947,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -3817,7 +3051,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -4214,7 +3448,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -4295,7 +3529,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -4311,7 +3545,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -4485,7 +3719,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -4589,7 +3823,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -4953,7 +4187,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -5010,7 +4244,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -5066,7 +4300,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -5308,7 +4542,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -5316,7 +4550,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -5380,7 +4614,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 
@@ -5412,177 +4646,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
-
-### src/mongo/db/commands/merge\_chunks\_cmd.cpp
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string> const&, std::string*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::_makeStringVector(int, ...)
-
-- Provided By:
-
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
-
-<div></div>
-
-    mongo::ActionType::splitChunk
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ShardingState::gotShardName(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/s/d\_merge.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::shardingState
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj> const&, mongo::BSONObj*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::ShardingState::initialize(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID> const&, mongo::OID*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/field\_parser.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
-
-- Provided By:
-
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 ### src/mongo/db/commands/mr.cpp
 
@@ -5680,7 +4744,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -5928,7 +4992,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -6120,7 +5184,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -6443,7 +5507,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6485,7 +5549,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6493,7 +5557,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6509,7 +5573,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -6517,7 +5581,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6525,7 +5589,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -6549,7 +5613,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/resource\_pattern.cpp](../../../authentication)
+    - [src/mongo/db/auth/resource\_pattern.cpp](../../../authorization)
 
 <div></div>
 
@@ -6557,7 +5621,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6605,7 +5669,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 ### src/mongo/db/commands/oplog\_note.cpp
 
@@ -6647,7 +5711,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6695,7 +5759,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -6745,7 +5809,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -6817,7 +5881,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -6865,7 +5929,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -6906,7 +5970,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -6964,7 +6028,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -7005,7 +6069,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -7054,7 +6118,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
 
 <div></div>
 
@@ -7070,7 +6134,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -7150,7 +6214,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -7266,7 +6330,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -7354,7 +6418,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -7466,7 +6530,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -8065,7 +7129,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -8073,7 +7137,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -8097,7 +7161,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -8105,7 +7169,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -8113,7 +7177,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -8121,7 +7185,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -8137,7 +7201,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -8145,7 +7209,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -8169,7 +7233,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 ### src/mongo/db/commands/server\_status.cpp
 
@@ -8195,7 +7259,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -8211,7 +7275,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -8259,7 +7323,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -8291,7 +7355,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -8299,7 +7363,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -8307,7 +7371,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -8419,7 +7483,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -8435,7 +7499,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -8567,7 +7631,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -8575,7 +7639,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -8599,7 +7663,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 ### src/mongo/db/commands/storage\_details.cpp
 
@@ -8641,7 +7705,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -8746,7 +7810,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -8810,7 +7874,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -9271,7 +8335,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -9295,7 +8359,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -9400,7 +8464,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -9570,938 +8634,6 @@
 
     - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
 
-### src/mongo/db/commands/user\_management\_commands.cpp
-
-<div></div>
-
-    mongo::AuthorizationManager::usersAltCollectionNamespace
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ParsedPrivilege::toBSON() const
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::invalidateUsersFromDB(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::viewRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseCreateOrUpdateUserCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateUserArgs*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logRevokeRolesFromRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::AuthorizationManager::updateAuthzDocuments(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, int*) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseAndValidateDropAllUsersFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/element.cpp](../../../bson)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::AuthorizationManager::releaseUser(mongo::User*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::AuthzDocumentsUpdateGuard(mongo::AuthorizationManager*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logCreateUser(mongo::ClientBasic*, mongo::UserName const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::ActionType::revokeRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::AuthorizationSession::lookupUser(mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::rolesCollectionNamespace
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::getBSONForPrivileges(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&, mongo::mutablebson::Element)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseDropRoleCommand(mongo::BSONObj const&, std::string const&, mongo::RoleName*, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseRoleNamesFromBSONArray(mongo::BSONArray const&, mongo::StringData const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logDropUser(mongo::ClientBasic*, mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::Privilege::addPrivilegeToPrivilegeVector(std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::Privilege const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logRevokePrivilegesFromRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::AuthorizationManager::getUserDescription(mongo::UserName const&, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::ROLE_SOURCE_FIELD_NAME
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ActionType::invalidateUserCache
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::rightSibling(unsigned long) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::AuthorizationSession::checkAuthorizedToRevokePrivilege(mongo::Privilege const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::removeRoleDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::dropRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::setValueString(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::AuthorizationSession::checkAuthorizedToGrantPrivilege(mongo::Privilege const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseDropAllRolesFromDatabaseCommand(mongo::BSONObj const&, std::string const&, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::invalidateUserCache()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Document::~Document()
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::audit::logRevokeRolesFromUser(mongo::ClientBasic*, mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::mutablebson::Document::makeElementObject(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::AuthorizationManager::invalidateUserByName(mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::RoleGraph::isBuiltinRole(mongo::RoleName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::auth::parseAndValidateDropUserCommand(mongo::BSONObj const&, std::string const&, mongo::UserName*, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthenticatedAsUserWithRole(mongo::RoleName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::createRole
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::updatePrivilegeDocument(mongo::UserName const&, mongo::BSONObj const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::audit::logDropRole(mongo::ClientBasic*, mongo::RoleName const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ActionType::authSchemaUpgrade
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedToChangeOwnCustomDataAsUser(mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::fassertFailed(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::auth::parseUsersInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::UsersInfoArgs*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseAndValidateRolePrivilegeManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::RoleName*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ParsedPrivilege::ParsedPrivilege()
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logCreateRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, std::string const&, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::audit::logDropAllUsersFromDatabase(mongo::ClientBasic*, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::ParsedPrivilege::privilegeToParsedPrivilege(mongo::Privilege const&, mongo::ParsedPrivilege*, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedToChangeOwnPasswordAsUser(mongo::UserName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::writeAuthSchemaVersionIfNeeded()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::Status::operator==(mongo::ErrorCodes::Error) const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::AuthorizationManager::insertPrivilegeDocument(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::findElementNamed(mongo::StringData const&) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::AuthorizationManager::USER_DB_FIELD_NAME
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::User::getRoles() const
-
-- Provided By:
-
-    - [src/mongo/db/auth/user.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::usersCollectionNamespace
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::changeCustomData
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::ROLE_NAME_FIELD_NAME
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logGrantRolesToUser(mongo::ClientBasic*, mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::audit::logUpdateRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const*, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const*)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::getSSLManager()
-
-- Provided By:
-
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
-
-<div></div>
-
-    mongo::AuthorizationManager::schemaVersion26Upgrade
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::viewUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseRolePossessionManipulationCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, std::string*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> >*, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::changePassword
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ParsedPrivilege::isValid(std::string*) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::getRoleDescriptionsForDB(std::string, bool, bool, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedToRevokeRole(mongo::RoleName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ActionType::createUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedToGrantRole(mongo::RoleName const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationSession::isAuthorizedForActionsOnResource(mongo::ResourcePattern const&, mongo::ActionType)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseCreateOrUpdateRoleCommands(mongo::BSONObj const&, mongo::StringData const&, std::string const&, mongo::auth::CreateOrUpdateRoleArgs*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ClientBasic::getAuthorizationSession() const
-
-- Provided By:
-
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Privilege::removeActions(mongo::ActionSet const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::removePrivilegeDocuments(mongo::BSONObj const&, mongo::BSONObj const&, int*) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const*)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::ActionType::dropUser
-
-- Provided By:
-
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::AuthorizationManager::USER_NAME_FIELD_NAME
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logGrantRolesToRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::AuthorizationManager::queryAuthzDocument(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, boost::function<void (mongo::BSONObj const&)> const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::acquireUser(mongo::UserName const&, mongo::User**)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::insertRoleDocument(mongo::BSONObj const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::schemaVersion26Final
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseAndValidatePrivilegeArray(mongo::BSONArray const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Document::makeElementArray(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::AuthorizationManager::getRoleDescription(mongo::RoleName const&, bool, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::tryLock(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::audit::logGrantPrivilegesToRole(mongo::ClientBasic*, mongo::RoleName const&, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> > const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../auditing)
-
-<div></div>
-
-    mongo::mutablebson::Document::Document()
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::ClientBasic::getCurrent()
-
-- Provided By:
-
-    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::RoleName::RoleName(mongo::StringData const&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/role\_name.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::getGlobalAuthorizationManager()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::updateRoleDocument(mongo::RoleName const&, mongo::BSONObj const&, mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::mutablebson::Element::findFirstChildNamed(mongo::StringData const&) const
-
-- Provided By:
-
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
-
-<div></div>
-
-    mongo::UserName::UserName(mongo::StringData const&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_name.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthzDocumentsUpdateGuard::~AuthzDocumentsUpdateGuard()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authz\_documents\_update\_guard.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::AuthorizationManager::getAuthorizationVersion()
-
-- Provided By:
-
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::V2UserDocumentParser::checkValidUserDocument(mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_document\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::auth::parseRolesInfoCommand(mongo::BSONObj const&, mongo::StringData const&, mongo::auth::RolesInfoArgs*)
-
-- Provided By:
-
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authentication)
-
-<div></div>
-
-    mongo::ParsedPrivilege::~ParsedPrivilege()
-
-- Provided By:
-
-    - [src/mongo/db/auth/privilege\_parser.cpp](../../../authentication)
-
 ### src/mongo/db/commands/validate.cpp
 
 <div></div>
@@ -10542,7 +8674,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -10670,7 +8802,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -10678,7 +8810,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -11115,7 +9247,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authentication)
+    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
 
 <div></div>
 
@@ -11140,7 +9272,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -11196,7 +9328,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -11204,7 +9336,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -11212,7 +9344,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -11220,7 +9352,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authentication)
+    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
 
 <div></div>
 
@@ -11292,7 +9424,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authentication)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
 
 <div></div>
 
@@ -11475,7 +9607,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -11541,7 +9673,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_graph\_builtin\_roles.cpp](../../../authorization)
 
 <div></div>
 

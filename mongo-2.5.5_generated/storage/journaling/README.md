@@ -5,7 +5,7 @@
 -------------
 
 # Group Description
-Page aligned buffer builder   what sort of buffer? i don't understand ;(
+Page aligned buffer builder
 
 ## Files
 - src/mongo/util/alignedbuilder.cpp   (mongod, tools)

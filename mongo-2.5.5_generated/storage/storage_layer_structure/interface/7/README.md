@@ -117,7 +117,7 @@
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../../../unit\_tests)
     - [src/mongo/db/introspect.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
     - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/indexupdatetests.cpp](../../../unit\_tests)

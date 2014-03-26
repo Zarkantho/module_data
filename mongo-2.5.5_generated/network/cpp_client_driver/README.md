@@ -63,8 +63,6 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 - src/mongo/client/dbclientinterface.h   (mongod, tools, mongos)
 - src/mongo/client/dbclientmockcursor.h   (mongod, tools)
 - src/mongo/client/scoped\_db\_conn\_test.cpp   ()
-- src/mongo/client/syncclusterconnection.cpp   (mongod, tools, mongos)
-- src/mongo/client/syncclusterconnection.h   (mongod, tools, mongos)
 
 ## [Interface](interface/3)
 
@@ -73,11 +71,11 @@ The Core C++ Client Driver Library   who uses these, and why? maybe this descrip
 -------------
 
 # Group Description
-Legacy wire protocol in the client driver   what is the new equivalent, and where?
+Class to manage the connections to our config servers in a sharded setup.
 
 ## Files
-- src/mongo/db/dbmessage.cpp   (mongod, tools, mongos)
-- src/mongo/db/dbmessage.h   (mongod, tools, mongos)
+- src/mongo/client/syncclusterconnection.cpp   (mongod, tools, mongos)
+- src/mongo/client/syncclusterconnection.h   (mongod, tools, mongos)
 
 ## [Interface](interface/4)
 

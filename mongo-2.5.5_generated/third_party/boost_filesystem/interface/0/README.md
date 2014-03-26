@@ -11,7 +11,7 @@
 
     - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/util/mmap.cpp](../../../mmap)
 
 <div></div>
@@ -230,7 +230,7 @@
     - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
     - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/util/mmap.cpp](../../../mmap)
 
 ### src/third\_party/boost/libs/filesystem/v3/src/path.cpp

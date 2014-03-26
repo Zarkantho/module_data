@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 

@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
 
 <div></div>
 

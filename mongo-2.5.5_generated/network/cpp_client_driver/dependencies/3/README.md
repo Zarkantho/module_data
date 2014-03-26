@@ -9,7 +9,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -137,7 +137,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -189,7 +189,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -197,7 +197,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -205,7 +205,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -245,7 +245,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -285,7 +285,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
 
 <div></div>
 
@@ -309,7 +309,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -341,7 +341,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -397,7 +397,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -421,7 +421,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -429,7 +429,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -445,7 +445,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -453,7 +453,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
 
 <div></div>
 
@@ -477,7 +477,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -509,7 +509,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -565,7 +565,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -573,7 +573,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 ### src/mongo/client/dbclient\_rs.cpp
 
@@ -1239,6 +1239,14 @@
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
 
+<div></div>
+
+    mongo::replyToQuery(int, mongo::Message&, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/dbmessage.cpp](../../../network\_core)
+
 ### src/mongo/client/scoped\_db\_conn\_test.cpp
 
 <div></div>
@@ -1263,7 +1271,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -1359,7 +1367,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -1495,7 +1503,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -1583,177 +1591,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
-
-<div></div>
-
-    mongo::UserException::appendPrefix(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-### src/mongo/client/syncclusterconnection.cpp
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::StaticObserver::_destroyingStatics
-
-- Provided By:
-
-    - [src/mongo/util/util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../../../bson)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::causedBy(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::DBException::traceIfNeeded(mongo::DBException const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    vtable for mongo::DBException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    typeinfo for mongo::UserException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
-
-<div></div>
-
-    mongo::DBException::toString() const
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    vtable for mongo::UserException
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
 
 <div></div>
 

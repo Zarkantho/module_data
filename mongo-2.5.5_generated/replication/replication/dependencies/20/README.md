@@ -586,7 +586,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 
@@ -594,7 +594,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 

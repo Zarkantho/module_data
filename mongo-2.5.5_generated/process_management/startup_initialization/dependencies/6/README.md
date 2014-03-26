@@ -257,7 +257,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
 
 <div></div>
 

@@ -40,7 +40,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
 
 ### src/mongo/db/commands/isself.cpp
@@ -120,7 +120,7 @@
     - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
     - [src/mongo/db/write\_concern.cpp](../../../replication)
-    - [src/mongo/s/d\_writeback.cpp](../../../sharding)
+    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
     - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
 
 ### src/mongo/db/commands/shutdown.cpp
@@ -132,72 +132,6 @@
 - Used By:
 
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-
-### src/mongo/db/commands/user\_management\_commands.cpp
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::checkAuthForCommand(mongo::ClientBasic*, std::string const&, mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::CmdAuthSchemaUpgrade()
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::~CmdAuthSchemaUpgrade()
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::locktype() const
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::adminOnly() const
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    typeinfo for mongo::CmdAuthSchemaUpgrade
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::slaveOk() const
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::CmdAuthSchemaUpgrade::help(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&) const
-
-- Used By:
-
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
 
 ### src/mongo/db/dbcommands\_generic.cpp
 

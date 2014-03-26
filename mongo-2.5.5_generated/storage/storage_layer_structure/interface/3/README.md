@@ -201,7 +201,7 @@
     - [src/mongo/db/commands/rename\_collection.cpp](../../../database\_commands)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/drop\_indexes.cpp](../../../database\_commands)
     - [src/mongo/dbtests/indexupdatetests.cpp](../../../unit\_tests)
     - [src/mongo/db/index\_rebuilder.cpp](../../../indexing)

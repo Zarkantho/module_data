@@ -15,14 +15,14 @@
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../../../sharding)
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -31,7 +31,7 @@
     - [src/mongo/s/cursors.cpp](../../../sharding)
     - [src/mongo/s/grid.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -63,7 +63,7 @@
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/d\_state.cpp](../../../sharding)
@@ -73,7 +73,7 @@
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/strategy.cpp](../../../sharding)
@@ -82,7 +82,7 @@
     - [src/mongo/s/cursors.cpp](../../../sharding)
     - [src/mongo/s/grid.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -94,7 +94,7 @@
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/d\_merge.cpp](../../../sharding)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
@@ -128,14 +128,14 @@
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../../../sharding)
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -144,7 +144,7 @@
     - [src/mongo/s/cursors.cpp](../../../sharding)
     - [src/mongo/s/grid.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -157,7 +157,7 @@
     - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding)
@@ -166,7 +166,7 @@
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -200,8 +200,8 @@
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -252,7 +252,7 @@
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../../../sharding)
@@ -261,7 +261,7 @@
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -270,7 +270,7 @@
     - [src/mongo/s/cursors.cpp](../../../sharding)
     - [src/mongo/s/grid.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -291,14 +291,14 @@
     - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/metadata\_loader.cpp](../../../sharding)
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
     - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -317,7 +317,7 @@
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
@@ -354,7 +354,7 @@
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
@@ -376,12 +376,12 @@
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/db/restapi.cpp](../../../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/db/ttl.cpp](../../../indexing)
     - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/directclienttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
@@ -413,7 +413,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -439,7 +439,7 @@
 
     - [src/mongo/s/shardconnection.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
@@ -450,7 +450,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -472,7 +472,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -510,9 +510,9 @@
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
     - [src/mongo/db/restapi.cpp](../../../web\_server)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/queryutiltests.cpp](../../../unit\_tests)
@@ -567,10 +567,10 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
 
@@ -596,7 +596,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -618,7 +618,7 @@
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/s/d\_state.cpp](../../../sharding)
     - [src/mongo/s/d\_merge.cpp](../../../sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/scripting/bench.cpp](../../../javascript\_libraries)
     - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding)
@@ -641,11 +641,11 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
     - [src/mongo/dbtests/jstests.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
@@ -661,8 +661,8 @@
 - Used By:
 
     - [src/mongo/db/pipeline/document\_source\_out.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
     - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
@@ -675,13 +675,13 @@
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/commandtests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
@@ -699,7 +699,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
@@ -730,7 +730,7 @@
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
@@ -752,12 +752,12 @@
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/db/restapi.cpp](../../../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/db/ttl.cpp](../../../indexing)
     - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/directclienttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
@@ -789,7 +789,7 @@
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -832,7 +832,7 @@
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../core\_query\_system)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
@@ -854,12 +854,12 @@
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/db/restapi.cpp](../../../web\_server)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/db/ttl.cpp](../../../indexing)
     - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/directclienttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
@@ -911,7 +911,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
@@ -954,7 +954,7 @@
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
@@ -973,7 +973,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1015,7 +1015,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
     - [src/mongo/dbtests/clienttests.cpp](../../../unit\_tests)
     - [src/mongo/s/config.cpp](../../../sharding)
@@ -1023,7 +1023,7 @@
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -1032,7 +1032,7 @@
     - [src/mongo/s/shard.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
     - [src/mongo/s/cluster\_write.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -1040,7 +1040,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
@@ -1054,13 +1054,13 @@
 
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
     - [src/mongo/s/shard.cpp](../../../sharding)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
     - [src/mongo/s/chunk.cpp](../../../sharding)
     - [src/mongo/s/cluster\_write.cpp](../../../sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/dbtests/clienttests.cpp](../../../unit\_tests)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -1082,7 +1082,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1111,7 +1111,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1135,7 +1135,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1157,12 +1157,12 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/commandtests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/clienttests.cpp](../../../unit\_tests)
@@ -1175,7 +1175,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
@@ -1200,7 +1200,7 @@
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
@@ -1228,7 +1228,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/db/repl/oplog.cpp](../../../replication)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
@@ -1282,7 +1282,7 @@
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
     - [src/mongo/tools/stat.cpp](../../../tools)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/db/repl/manager.cpp](../../../replication)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
@@ -1294,7 +1294,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1326,7 +1326,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1390,7 +1390,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
@@ -1405,10 +1405,10 @@
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
@@ -1421,10 +1421,10 @@
 - Used By:
 
     - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
@@ -1533,7 +1533,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
@@ -1570,7 +1570,7 @@
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
     - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
     - [src/mongo/tools/stat.cpp](../../../tools)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/db/repl/manager.cpp](../../../replication)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
@@ -1614,7 +1614,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
@@ -1767,7 +1767,7 @@
     - [src/mongo/dbtests/framework.cpp](../../../unit\_tests)
     - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/tools/tool.cpp](../../../tools)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
@@ -1778,9 +1778,9 @@
 
 - Used By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
     - [src/mongo/util/assert\_util.cpp](../../../utilities)
-    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../authentication)
+    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../authorization)
     - [src/mongo/db/repl/bgsync.cpp](../../../replication)
     - [src/mongo/db/range\_deleter.cpp](../../../sharding)
     - [src/mongo/db/dur\_journal.cpp](../../../journaling)
@@ -1788,7 +1788,7 @@
     - [src/mongo/db/repl/write\_concern.cpp](../../../replication)
     - [src/mongo/db/stats/snapshots.cpp](../../../utilities)
     - [src/mongo/util/concurrency/task.cpp](../../../utilities)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
     - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../../../sharding)
     - [src/mongo/s/shardconnection.cpp](../../../sharding)
@@ -1796,7 +1796,7 @@
     - [src/mongo/db/ttl.cpp](../../../indexing)
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/s/config\_server\_checker\_service.cpp](../../../sharding)
@@ -1809,21 +1809,3 @@
 - Used By:
 
     - [src/mongo/scripting/v8\_db.cpp](../../../javascript\_libraries)
-
-### src/mongo/client/syncclusterconnection.cpp
-
-<div></div>
-
-    mongo::SyncClusterConnection::prepare(std::string&)
-
-- Used By:
-
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
-
-<div></div>
-
-    typeinfo for mongo::SyncClusterConnection
-
-- Used By:
-
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding)

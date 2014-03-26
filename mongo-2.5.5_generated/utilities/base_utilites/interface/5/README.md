@@ -9,9 +9,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/json.cpp](../../../bson)
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
     - [src/mongo/logger/message\_event\_utf8\_encoder.cpp](../../../logging\_system)
     - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
     - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
@@ -20,7 +20,7 @@
     - [src/mongo/db/commands.cpp](../../../database\_commands)
     - [src/mongo/scripting/engine\_v8.cpp](../../../javascript\_libraries)
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
     - [src/mongo/logger/log\_severity.cpp](../../../logging\_system)
     - [src/mongo/db/clientlistplugin.cpp](../../../web\_server)
     - [src/mongo/db/storage/extent.cpp](../../../storage\_layer\_structure)

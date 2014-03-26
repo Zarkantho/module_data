@@ -1065,7 +1065,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 ### src/mongo/db/dur\_preplogbuffer.cpp
 

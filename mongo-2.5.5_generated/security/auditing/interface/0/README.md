@@ -17,7 +17,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -34,7 +34,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -50,7 +50,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -58,7 +58,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -75,7 +75,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -91,7 +91,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -108,7 +108,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -132,7 +132,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -140,7 +140,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -173,7 +173,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -189,7 +189,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -205,7 +205,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -213,7 +213,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -303,7 +303,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
 
 <div></div>
 
@@ -328,4 +328,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)

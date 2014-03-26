@@ -141,7 +141,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -181,7 +181,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -253,7 +253,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -317,7 +317,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -325,7 +325,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -333,7 +333,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -341,7 +341,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -349,7 +349,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -365,7 +365,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -389,7 +389,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -421,7 +421,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network)
+    - [src/mongo/util/net/listen.cpp](../../../network\_core)
 
 <div></div>
 
@@ -445,7 +445,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -3192,7 +3192,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/role\_name.cpp](../../../authentication)
+    - [src/mongo/db/auth/role\_name.cpp](../../../authorization)
 
 <div></div>
 
@@ -3280,7 +3280,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -3328,7 +3328,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -3360,7 +3360,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/user\_name.cpp](../../../authentication)
+    - [src/mongo/db/auth/user\_name.cpp](../../../authorization)
 
 <div></div>
 
@@ -3384,7 +3384,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 ### src/mongo/tools/sniffer.cpp
 
@@ -3570,7 +3570,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -3618,7 +3618,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -3948,7 +3948,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/httpclient.cpp](../../../network)
+    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
 
 <div></div>
 
@@ -4123,7 +4123,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
 
 <div></div>
 
@@ -4307,7 +4307,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -4387,7 +4387,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 
@@ -4675,7 +4675,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -4755,7 +4755,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
 
 <div></div>
 
@@ -4771,7 +4771,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
 
 <div></div>
 

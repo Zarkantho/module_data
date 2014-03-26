@@ -5,7 +5,20 @@
 -------------
 
 # Group Description
-BSON library   is this library standalone? (lots of third party stuff might want to make   use of BSON) - what does it depend on?   why is some of this stuff in db/ ?
+Parser that can convert a JSON string into a binary BSON object. This has extra features that are not in a standard JSON parser to make sure we can represent specific BSON types that are not in strict JSON.  See http://docs.mongodb.org/manual/reference/mongodb-extended-json/ for more details. The JSON parser should be able to parse anything on that page.
+
+## Files
+- src/mongo/db/json.cpp   (mongod, tools, mongos)
+- src/mongo/db/json.h   (mongod, tools, mongos)
+
+## [Interface](interface/0)
+
+## [Dependencies](dependencies/0)
+
+-------------
+
+# Group Description
+TODO: organize this into real sections
 
 ## Files
 - src/mongo/bson/bson-inl.h   (mongod, tools, mongos)
@@ -41,33 +54,6 @@ BSON library   is this library standalone? (lots of third party stuff might want
 - src/mongo/db/jsobj.cpp   (mongod, tools, mongos)
 - src/mongo/db/jsobj.h   (mongod, tools, mongos)
 - src/mongo/db/jsobjmanipulator.h   (mongod, tools, mongos)
-- src/mongo/db/json.cpp   (mongod, tools, mongos)
-- src/mongo/db/json.h   (mongod, tools, mongos)
-
-## [Interface](interface/0)
-
-## [Dependencies](dependencies/0)
-
--------------
-
-# Group Description
-Mutable BSON is built on top of the BSON library. It has a mutable, consistently sized vector of  the changes that have been made to an object.   is this part of libbson? does this depend on bson/* ?
-
-## Files
-- src/mongo/bson/mutable/algorithm.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/const\_element-inl.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/const\_element.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/damage\_vector.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/document-inl.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/document.cpp   (mongod, tools, mongos)
-- src/mongo/bson/mutable/document.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/element-inl.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/element.cpp   (mongod, tools, mongos)
-- src/mongo/bson/mutable/element.h   (mongod, tools, mongos)
-- src/mongo/bson/mutable/mutable\_bson\_algo\_test.cpp   ()
-- src/mongo/bson/mutable/mutable\_bson\_test.cpp   ()
-- src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp   ()
-- src/mongo/bson/mutable/mutable\_bson\_test\_utils.h   ()
 
 ## [Interface](interface/1)
 

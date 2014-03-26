@@ -13,7 +13,7 @@
     - [src/mongo/db/clientlistplugin.cpp](../../../web\_server)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
     - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
 
@@ -60,7 +60,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -80,7 +80,7 @@
 
     - [src/mongo/db/index\_builder.cpp](../../../indexing)
     - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -97,7 +97,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -108,7 +108,7 @@
 
     - [src/mongo/db/structure/collection\_compact.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../indexing)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
@@ -130,7 +130,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -138,5 +138,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)

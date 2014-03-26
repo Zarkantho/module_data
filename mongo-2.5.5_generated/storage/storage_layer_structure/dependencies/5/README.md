@@ -354,7 +354,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../authentication)
+    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../authorization)
 
 <div></div>
 

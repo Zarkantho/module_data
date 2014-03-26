@@ -12,7 +12,7 @@
     - [src/mongo/tools/tool\_options.cpp](../../../tools)
     - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
     - [src/mongo/tools/mongoexport\_options.cpp](../../../tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
@@ -31,7 +31,7 @@
     - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../../../tools)
     - [src/mongo/tools/mongoimport\_options.cpp](../../../tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/mongofiles\_options.cpp](../../../tools)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
@@ -114,7 +114,7 @@
 
     - [src/mongo/tools/tool\_options.cpp](../../../tools)
     - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
 
 <div></div>
 
@@ -124,7 +124,7 @@
 
     - [src/mongo/tools/mongorestore\_options.cpp](../../../tools)
     - [src/mongo/tools/mongodump\_options.cpp](../../../tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
 
 <div></div>
 
@@ -141,7 +141,7 @@
 - Used By:
 
     - [src/mongo/tools/bsondump\_options.cpp](../../../tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/mongofiles\_options.cpp](../../../tools)
     - [src/mongo/tools/mongotop\_options.cpp](../../../tools)
@@ -195,7 +195,7 @@
     - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools)
     - [src/mongo/tools/mongoexport\_options.cpp](../../../tools)
     - [src/mongo/tools/mongoimport\_options.cpp](../../../tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/mongofiles\_options.cpp](../../../tools)
     - [src/mongo/tools/mongotop\_options.cpp](../../../tools)
@@ -333,7 +333,7 @@
 - Used By:
 
     - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
     - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/tools/tool\_options.cpp](../../../tools)
     - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)

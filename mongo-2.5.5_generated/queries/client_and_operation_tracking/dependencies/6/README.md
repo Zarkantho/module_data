@@ -105,7 +105,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 
@@ -169,7 +169,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../../../authorization)
 
 <div></div>
 
@@ -225,7 +225,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 

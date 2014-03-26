@@ -105,7 +105,7 @@ This file is currently misnamed.  The context for a pipeline stage, such as whet
 -------------
 
 # Group Description
-Wrapper classes for parsed and validate dotted field names
+Wrapper classes for parsed and validated dotted field names
 
 ## Files
 - src/mongo/db/pipeline/field\_path.cpp   (mongod, tools, mongos)
@@ -196,7 +196,7 @@ Code for external sort. This sits inside the sorter, and the sorter "spills over
 -------------
 
 # Group Description
-I believe this is just used in External Sort, but it's standing on its own here without a  description.
+Wrapper around the External Sorter specialized for index keys.  Used in bottom up fast index builds where keys are pre sorted.
 
 ## Files
 - src/mongo/db/sort\_phase\_one.h   (mongod, tools)

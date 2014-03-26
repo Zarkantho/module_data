@@ -28,8 +28,8 @@
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_logic.cpp](../../../sharding)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/s/shardconnection.cpp](../../../sharding)
 
 <div></div>
@@ -50,7 +50,7 @@
     - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
     - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
 
@@ -90,8 +90,8 @@
     - [src/mongo/dbtests/directclienttests.cpp](../../../unit\_tests)
     - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
-    - [src/mongo/s/d\_logic.cpp](../../../sharding)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
+    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
     - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/s/strategy.cpp](../../../sharding)
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
@@ -101,7 +101,7 @@
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/tools/tool.cpp](../../../tools)
 
 <div></div>
@@ -152,5 +152,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/util/assert\_util.cpp](../../../utilities)

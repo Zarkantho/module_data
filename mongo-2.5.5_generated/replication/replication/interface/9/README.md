@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
 
 <div></div>
 
@@ -39,8 +39,8 @@
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../indexing)
     - [src/mongo/db/structure/btree/btree.cpp](../../../storage\_layer\_structure)
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
     - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)

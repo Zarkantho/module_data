@@ -3157,7 +3157,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
 
 <div></div>
 
@@ -3189,7 +3189,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
 
 <div></div>
 
@@ -3213,7 +3213,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
 
 <div></div>
 
@@ -8092,640 +8092,6 @@
 
     - [src/mongo/db/storage\_options.cpp](../../../storage\_layer\_structure)
 
-### src/mongo/dbtests/merge\_chunk\_tests.cpp
-
-<div></div>
-
-    mongo::DBClientWithCommands::simpleCommand(std::string const&, mongo::BSONObj*, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientBase::update(std::string const&, mongo::Query, mongo::BSONObj, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::setRunCommandHook(boost::function<void (mongo::BSONObjBuilder*)>)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientBase::update(std::string const&, mongo::Query, mongo::BSONObj, bool, bool)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::DBClientWithCommands::reIndex(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    vtable for mongo::DBClientWithCommands
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ChunkType::max
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::ChunkType::toBSON() const
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::ChunkType::min
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::CollectionType::toBSON() const
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
-<div></div>
-
-    non-virtual thunk to mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DBClientBase::ConnectionIdSequence
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBDirectClient::killCursor(long long)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::DBClientBase::remove(std::string const&, mongo::Query, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
-
-<div></div>
-
-    mongo::DBClientWithCommands::getLastErrorDetailed(std::string const&, bool, bool, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::resetIndexCache()
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
-
-<div></div>
-
-    mongo::DBClientBase::insert(std::string const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> > const&, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientBase::INVALID_SOCK_CREATION_TIME
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::nsGetDB(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ShardingState::gotShardName(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBDirectClient::count(std::string const&, mongo::BSONObj const&, int, int, int)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::shardingState
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrs
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::ShardingState::resetMetadata(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ShardingState::getCollectionMetadata(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::runCommand(std::string const&, mongo::BSONObj const&, mongo::BSONObj&, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
-
-<div></div>
-
-    typeinfo for mongo::DBDirectClient
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ShardingState::resetShardingState()
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::nsGetCollection(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::dropIndex(std::string const&, mongo::BSONObj)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientInterface::findOne(std::string const&, mongo::Query const&, mongo::BSONObj const*, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::setPostRunCommandHook(boost::function<void (mongo::BSONObj const&, std::string const&)>)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const
-
-- Provided By:
-
-    - [src/mongo/s/collection\_metadata.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::logout(std::string const&, mongo::BSONObj&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::ShardingState::refreshMetadataNow(std::string const&, mongo::ChunkVersion*)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBDirectClient::_lookupAvailableOptions()
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DBClientBase::remove(std::string const&, mongo::Query, bool)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::BSONObj::woCompare(mongo::BSONObj const&, mongo::BSONObj const&, bool) const
-
-- Provided By:
-
-    - [src/mongo/db/jsobj.cpp](../../../bson)
-
-<div></div>
-
-    mongo::CollectionType::ns
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::ChunkType::~ChunkType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::ShardingState::initialize(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientBase::getMore(std::string const&, long long, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
-
-<div></div>
-
-    mongo::ChunkType::ChunkType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::operator<<(std::ostream&, mongo::OID const&)
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::DBClientWithCommands::dropIndex(std::string const&, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::dropIndexes(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBDirectClient::query(std::string const&, mongo::Query, int, int, mongo::BSONObj const*, int, int)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../utilities)
-
-<div></div>
-
-    mongo::ChunkType::shard
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::ConnectionString::_finishInit()
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientBase::query(boost::function<void (mongo::BSONObj const&)>, std::string const&, mongo::Query, mongo::BSONObj const*, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::CollectionType::ConfigNS
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::Chunk::genID(std::string const&, mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/s/chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientBase::insert(std::string const&, mongo::BSONObj, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientBase::query(boost::function<void (mongo::DBClientCursorBatchIterator&)>, std::string const&, mongo::Query, mongo::BSONObj const*, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::ChunkType::ConfigNS
-
-- Provided By:
-
-    - [src/mongo/s/type\_chunk.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::ensureIndex(std::string const&, mongo::BSONObj, bool, std::string const&, bool, bool, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::CollectionType::isValid(std::string*) const
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::_auth(mongo::BSONObj const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBClientWithCommands::getIndexes(std::string const&)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::DBDirectClient::say(mongo::Message&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::mergeChunks(mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::OID const&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/s/d\_merge.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::DBClientWithCommands::isMaster(bool&, mongo::BSONObj*)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    mongo::CollectionType::~CollectionType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
-<div></div>
-
-    mongo::OID::init()
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../bson)
-
-<div></div>
-
-    mongo::DBClientWithCommands::getLastErrorDetailed(bool, bool, int, int)
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-
-<div></div>
-
-    non-virtual thunk to mongo::DBDirectClient::call(mongo::Message&, mongo::Message&, bool, std::string*)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-
-<div></div>
-
-    mongo::CollectionType::CollectionType()
-
-- Provided By:
-
-    - [src/mongo/s/type\_collection.cpp](../../../sharding)
-
 ### src/mongo/dbtests/mmaptests.cpp
 
 <div></div>
@@ -9002,7 +8368,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -9058,7 +8424,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -9446,7 +8812,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -9454,7 +8820,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -9602,7 +8968,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -11451,7 +10817,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -14686,7 +14052,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -14854,7 +14220,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -16633,7 +15999,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -16859,7 +16225,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../bson)
+    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -16907,7 +16273,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
+    - [src/mongo/bson/mutable/document.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -16963,7 +16329,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
+    - [src/mongo/bson/mutable/document.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -17131,7 +16497,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../bson)
+    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -18105,7 +17471,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network)
+    - [src/mongo/util/net/sock.cpp](../../../network\_core)
 
 <div></div>
 
@@ -18834,7 +18200,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../bson)
+    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -18842,7 +18208,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
+    - [src/mongo/bson/mutable/document.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -18906,7 +18272,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/document.cpp](../../../bson)
+    - [src/mongo/bson/mutable/document.cpp](../../../mutable\_bson)
 
 <div></div>
 
@@ -18978,7 +18344,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../bson)
+    - [src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp](../../../mutable\_bson)
 
 <div></div>
 

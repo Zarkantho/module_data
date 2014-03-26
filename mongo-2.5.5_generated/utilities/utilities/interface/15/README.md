@@ -9,7 +9,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/jsobj.cpp](../../../bson)
     - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
@@ -24,7 +24,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/jsobj.cpp](../../../bson)
     - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
@@ -39,7 +39,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/jsobj.cpp](../../../bson)
     - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
     - [src/mongo/db/dbwebserver.cpp](../../../web\_server)

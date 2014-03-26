@@ -241,7 +241,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/user\_document\_parser.cpp](../../../authentication)
+    - [src/mongo/db/auth/user\_document\_parser.cpp](../../../authorization)
 
 <div></div>
 

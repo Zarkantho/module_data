@@ -81,7 +81,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
     - [src/mongo/s/cursors.cpp](../../../sharding)
     - [src/mongo/db/dur\_journal.cpp](../../../journaling)

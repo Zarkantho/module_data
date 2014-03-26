@@ -51,7 +51,6 @@
 - [src/mongo/dbtests/keypatterntests.cpp](unit\_tests)
 - [src/mongo/dbtests/macrotests.cpp](unit\_tests)
 - [src/mongo/dbtests/matchertests.cpp](unit\_tests)
-- [src/mongo/dbtests/merge\_chunk\_tests.cpp](unit\_tests)
 - [src/mongo/dbtests/mmaptests.cpp](unit\_tests)
 - [src/mongo/dbtests/mock/mock\_conn\_registry.cpp](unit\_tests)
 - [src/mongo/dbtests/mock/mock\_conn\_registry.h](unit\_tests)

@@ -1,19 +1,11 @@
 
 # Interface
 
-### src/mongo/s/collection\_metadata.cpp
+### src/mongo/db/range\_deleter.cpp
 
 <div></div>
 
-    mongo::CollectionMetadata::getNextChunk(mongo::BSONObj const&, mongo::ChunkType*) const
-
-- Used By:
-
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../unit\_tests)
-
-<div></div>
-
-    mongo::CollectionMetadata::getMinKey() const
+    mongo::RangeDeleter::deleteNow(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, std::string*)
 
 - Used By:
 
@@ -21,35 +13,19 @@
 
 <div></div>
 
-    mongo::CollectionMetadata::getNextOrphanRange(mongo::BSONObj const&, mongo::KeyRange*) const
+    mongo::RangeDeleter::startWorkers()
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+
+### src/mongo/db/range\_deleter\_service.cpp
 
 <div></div>
 
-    mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const
+    mongo::getDeleter()
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/exec/shard\_filter.cpp](../../../core\_query\_system)
-
-<div></div>
-
-    mongo::CollectionMetadata::keyIsPending(mongo::BSONObj const&) const
-
-- Used By:
-
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::CollectionMetadata::isValidKey(mongo::BSONObj const&) const
-
-- Used By:
-
+    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)

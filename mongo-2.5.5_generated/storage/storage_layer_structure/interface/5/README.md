@@ -43,7 +43,7 @@
     - [src/mongo/s/d\_migrate.cpp](../../../sharding)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
 
 <div></div>
@@ -144,7 +144,7 @@
     - [src/mongo/db/exec/collection\_scan.cpp](../../../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
     - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
     - [src/mongo/tools/dump.cpp](../../../tools)
     - [src/mongo/db/exec/2d.cpp](../../../core\_query\_system)
 

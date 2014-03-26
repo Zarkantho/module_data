@@ -35,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
 
 <div></div>
 
@@ -48,7 +48,7 @@
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/s/request.cpp](../../../sharding)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -56,7 +56,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
 
 <div></div>

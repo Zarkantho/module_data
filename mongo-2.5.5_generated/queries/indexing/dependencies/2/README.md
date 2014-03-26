@@ -25,7 +25,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authentication)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
 
 <div></div>
 

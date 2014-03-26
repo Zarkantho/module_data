@@ -18,7 +18,7 @@
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
 
 <div></div>
 
@@ -27,4 +27,4 @@
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../new\_wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
