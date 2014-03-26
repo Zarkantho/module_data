@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/sasl\_client\_authenticate.cpp
 
@@ -10,12 +10,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/shell/dbshell.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -23,11 +23,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/shell/dbshell.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/shell/dbshell.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -35,7 +35,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
 
 <div></div>
 
@@ -43,11 +43,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -55,8 +55,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)

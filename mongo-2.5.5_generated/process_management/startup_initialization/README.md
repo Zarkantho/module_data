@@ -1,4 +1,5 @@
 # Startup Initialization
+TODO: startup\_initialization description
 
 
 -------------

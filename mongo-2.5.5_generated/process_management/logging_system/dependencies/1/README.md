@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/log\_process\_details.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -82,7 +82,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -90,4 +90,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../../../process\_management/build\_information)
+    - [src/mongo/util/version.cpp](../../../../process\_management/build\_information)

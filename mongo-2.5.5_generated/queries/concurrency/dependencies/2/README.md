@@ -1,6 +1,6 @@
 
 # Interface for Condition Variables
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/util/concurrency/synchronization.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -34,4 +34,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)

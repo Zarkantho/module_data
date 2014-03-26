@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/parallel.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -50,8 +50,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -59,8 +59,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -68,9 +68,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -78,7 +78,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -86,7 +86,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -94,7 +94,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -102,7 +102,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -110,8 +110,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -119,4 +119,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)

@@ -1,6 +1,6 @@
 
 # Interface for Write Commands Errors Schema
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/write\_ops/wc\_error\_detail.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
+    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)
 
 ### src/mongo/s/write\_ops/write\_error\_detail.cpp
 
@@ -84,7 +84,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -92,7 +92,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -100,7 +100,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -108,7 +108,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -116,7 +116,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../sharding/sharding)
+    - [src/mongo/db/field\_parser.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -124,7 +124,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -132,7 +132,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -140,7 +140,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -148,4 +148,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
+    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)

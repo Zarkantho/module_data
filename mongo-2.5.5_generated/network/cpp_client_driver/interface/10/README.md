@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/gridfs.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -58,8 +58,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -67,8 +67,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -76,4 +76,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)

@@ -1,6 +1,6 @@
 
 # Interface for Operation Tracker
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/background.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -26,8 +26,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -35,10 +35,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/compact.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/compact.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -46,5 +46,5 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/database\_holder.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database\_holder.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)

@@ -1,6 +1,6 @@
 
 # Interface for Auth Utils
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/client/auth\_helpers.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson/bson)
+    - [src/mongo/bson/oid.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson/bson)
+    - [src/mongo/bson/oid.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/bson/util/bson\_extract.cpp](../../../bson/bson)
+    - [src/mongo/bson/util/bson\_extract.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -50,4 +50,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)

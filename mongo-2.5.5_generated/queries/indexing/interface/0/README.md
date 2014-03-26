@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/index/2d\_access\_method.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/index/btree\_access\_method.cpp
 
@@ -28,7 +28,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/index/btree\_based\_access\_method.cpp
 
@@ -38,8 +38,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/extsorttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/index/btree\_index\_cursor.cpp
 
@@ -49,8 +49,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/count.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/count.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/count.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/count.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -74,8 +74,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/index\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -83,7 +83,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/btree/btree.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/btree/btree.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/index/btree\_key\_generator.cpp
 
@@ -93,9 +93,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/exec/sort.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/queryutil.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/exec/sort.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -103,9 +103,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/exec/sort.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/queryutil.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/exec/sort.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/queryutil.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/index/fts\_access\_method.cpp
 
@@ -115,7 +115,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -123,7 +123,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/index/hash\_access\_method.cpp
 
@@ -133,7 +133,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -141,7 +141,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -149,7 +149,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/index/haystack\_access\_method.cpp
 
@@ -159,7 +159,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -167,7 +167,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/haystack.cpp](../../../../queries/geo\_queries)
 
 ### src/mongo/db/index/s2\_access\_method.cpp
 
@@ -177,7 +177,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/index\_builder.cpp
 
@@ -187,7 +187,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -195,12 +195,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/compact.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/rename\_collection.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/compact.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/rename\_collection.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -208,7 +208,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -216,12 +216,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/compact.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/rename\_collection.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/compact.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/rename\_collection.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -229,7 +229,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
 
 ### src/mongo/db/index\_legacy.cpp
 
@@ -239,7 +239,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -247,7 +247,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -255,8 +255,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/index\_names.cpp
 
@@ -266,9 +266,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -276,9 +276,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/geo/haystack.cpp](../../../../queries/geo\_queries)
 
 <div></div>
 
@@ -286,10 +286,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/queryutil.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/commands/geonear.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/queryutil.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -297,9 +297,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/queryutil.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/geonear.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/queryutil.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -307,7 +307,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -315,9 +315,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/index\_rebuilder.cpp
 
@@ -327,7 +327,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/index\_set.cpp
 
@@ -337,7 +337,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -345,7 +345,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -353,4 +353,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../../queries/update\_system)

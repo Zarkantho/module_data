@@ -1,4 +1,5 @@
 # Boost Program Options
+Boost library for parsing the command line and our legacy INI config files
 
 
 -------------

@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/db.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_names.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/stacktrace.cpp](../../../utilities/utilities)
+    - [src/mongo/util/stacktrace.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/util/log.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/util/file\_allocator.cpp](../../../../storage/file\_allocation)
 
 <div></div>
 
@@ -82,7 +82,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter\_service.cpp](../../../sharding/sharding)
+    - [src/mongo/db/range\_deleter\_service.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -90,7 +90,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -98,7 +98,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -106,7 +106,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../queries/concurrency)
 
 <div></div>
 
@@ -114,7 +114,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -122,7 +122,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -130,7 +130,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -138,7 +138,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -146,7 +146,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -154,7 +154,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -162,7 +162,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -170,8 +170,8 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -179,7 +179,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -187,7 +187,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -195,7 +195,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -203,7 +203,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -211,7 +211,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -219,7 +219,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -227,7 +227,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/util/log.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -235,7 +235,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -243,7 +243,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/util/log.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -251,7 +251,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -259,7 +259,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -267,7 +267,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -275,7 +275,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -283,7 +283,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../queries/concurrency)
 
 <div></div>
 
@@ -291,7 +291,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -299,7 +299,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -307,7 +307,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -315,7 +315,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -323,7 +323,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/startup\_warnings.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/startup\_warnings.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -331,7 +331,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -339,7 +339,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -347,7 +347,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -355,7 +355,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -363,7 +363,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -371,7 +371,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -379,7 +379,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -387,7 +387,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -395,7 +395,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../../../utilities/utilities)
+    - [src/mongo/util/timer.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -403,7 +403,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/repl/repl\_start.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/repl\_start.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -411,7 +411,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -419,7 +419,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -427,7 +427,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -435,7 +435,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -443,7 +443,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -451,7 +451,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -459,7 +459,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -467,7 +467,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter.cpp](../../../sharding/sharding)
+    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -475,7 +475,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/util/log.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -483,7 +483,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -491,7 +491,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -499,7 +499,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -507,7 +507,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -515,7 +515,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -523,7 +523,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -531,7 +531,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -539,7 +539,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/stats/snapshots.cpp](../../../utilities/utilities)
+    - [src/mongo/db/stats/snapshots.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -547,7 +547,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/d\_globals.cpp](../../../dead\_code/legacy\_code)
+    - [src/mongo/db/d\_globals.cpp](../../../../dead\_code/legacy\_code)
 
 <div></div>
 
@@ -555,7 +555,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -563,7 +563,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -571,7 +571,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -579,7 +579,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -587,7 +587,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -595,7 +595,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -603,7 +603,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../../network/ssl)
 
 <div></div>
 
@@ -611,7 +611,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -619,7 +619,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -627,7 +627,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -635,7 +635,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -643,7 +643,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -651,7 +651,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -659,7 +659,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_names.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -667,7 +667,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -675,7 +675,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -683,7 +683,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -691,7 +691,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -699,7 +699,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -707,7 +707,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/util/mmap.cpp](../../../../storage/mmap)
 
 <div></div>
 
@@ -715,8 +715,8 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -724,7 +724,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -732,7 +732,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -740,7 +740,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/util/file\_allocator.cpp](../../../../storage/file\_allocation)
 
 <div></div>
 
@@ -748,7 +748,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -756,7 +756,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -764,7 +764,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -772,10 +772,10 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -783,7 +783,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -791,7 +791,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -799,7 +799,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -807,7 +807,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -815,7 +815,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -823,7 +823,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/index\_rebuilder.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_rebuilder.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -831,7 +831,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -839,7 +839,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -847,7 +847,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
 
 <div></div>
 
@@ -855,7 +855,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/debug\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/debug\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -863,7 +863,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -871,7 +871,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -879,7 +879,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -887,8 +887,8 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -896,7 +896,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -904,7 +904,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -912,7 +912,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/storage\_options.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -920,7 +920,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -928,7 +928,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -936,7 +936,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
 
 <div></div>
 
@@ -944,7 +944,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -952,7 +952,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
+    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -960,7 +960,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -968,7 +968,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -976,7 +976,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -984,7 +984,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -992,7 +992,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1000,7 +1000,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1008,7 +1008,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1016,7 +1016,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1024,7 +1024,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1032,7 +1032,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_names.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -1040,7 +1040,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1048,7 +1048,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/cmdline\_utils/censor\_cmdline.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/cmdline\_utils/censor\_cmdline.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1056,7 +1056,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1064,7 +1064,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../queries/concurrency)
 
 <div></div>
 
@@ -1072,7 +1072,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1080,7 +1080,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/initializer.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/base/initializer.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1088,7 +1088,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1096,7 +1096,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1104,7 +1104,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1112,7 +1112,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1120,7 +1120,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../third\_party/boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -1128,7 +1128,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1136,7 +1136,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1144,7 +1144,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_names.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -1152,7 +1152,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1160,7 +1160,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1168,7 +1168,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1176,7 +1176,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -1184,7 +1184,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/util/mmap.cpp](../../../../storage/mmap)
 
 <div></div>
 
@@ -1192,7 +1192,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -1200,7 +1200,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -1208,7 +1208,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1216,7 +1216,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../../../utilities/utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1224,7 +1224,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1232,7 +1232,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -1240,10 +1240,10 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1251,7 +1251,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -1259,7 +1259,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1267,7 +1267,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1275,7 +1275,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1283,4 +1283,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)

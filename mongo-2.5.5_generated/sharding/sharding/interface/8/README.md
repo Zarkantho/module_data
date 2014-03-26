@@ -1,6 +1,6 @@
 
 # Interface for Config Server Schema
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/s/type\_changelog.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_chunk.cpp
 
@@ -20,7 +20,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -28,8 +28,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -37,7 +37,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -45,8 +45,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -54,8 +54,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -63,7 +63,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_collection.cpp
 
@@ -73,7 +73,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_config\_version.cpp
 
@@ -83,8 +83,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -92,7 +92,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -100,8 +100,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -109,8 +109,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -118,7 +118,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_database.cpp
 
@@ -128,7 +128,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -136,7 +136,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -144,7 +144,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -152,8 +152,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -161,7 +161,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 ### src/mongo/s/type\_mongos.cpp
 
@@ -171,7 +171,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -179,8 +179,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -188,7 +188,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -196,7 +196,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_settings.cpp
 
@@ -206,7 +206,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -214,7 +214,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -222,7 +222,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_shard.cpp
 
@@ -232,7 +232,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -240,9 +240,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -250,7 +250,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -258,4 +258,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)

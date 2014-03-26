@@ -1,6 +1,6 @@
 
 # Interface for Storage Options
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/storage\_options.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -66,4 +66,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)

@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/geo/geoparser.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/geonear.cpp](../../../../queries/database\_commands)
 
 ### src/mongo/db/geo/geoquery.cpp
 
@@ -20,7 +20,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -28,7 +28,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -36,7 +36,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -44,7 +44,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -52,7 +52,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_ixselect.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -60,7 +60,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_ixselect.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -68,7 +68,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/geo/hash.cpp
 
@@ -78,7 +78,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -86,7 +86,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -94,7 +94,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -102,8 +102,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -111,7 +111,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -119,7 +119,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -127,9 +127,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -137,7 +137,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -145,7 +145,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/2d\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/2d\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -153,8 +153,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -162,7 +162,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -170,7 +170,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -178,8 +178,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -187,7 +187,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -195,7 +195,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -203,8 +203,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -212,7 +212,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -220,7 +220,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -228,8 +228,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -237,7 +237,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -245,8 +245,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/2d\_access\_method.cpp](../../../queries/indexing)
-    - [src/mongo/db/query/planner\_ixselect.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/index/2d\_access\_method.cpp](../../../../queries/indexing)
+    - [src/mongo/db/query/planner\_ixselect.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -254,8 +254,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/2d\_access\_method.cpp](../../../queries/indexing)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/index/2d\_access\_method.cpp](../../../../queries/indexing)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -263,7 +263,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -271,7 +271,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -279,7 +279,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/geo/s2common.cpp
 
@@ -289,7 +289,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -297,7 +297,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/geo/shapes.cpp
 
@@ -307,7 +307,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -315,9 +315,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../queries/indexing)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -325,7 +325,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -333,7 +333,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -341,7 +341,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -349,7 +349,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -357,7 +357,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -365,7 +365,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -373,8 +373,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -382,7 +382,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -390,7 +390,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -398,7 +398,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -406,8 +406,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -415,8 +415,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -424,9 +424,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../queries/indexing)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -434,9 +434,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -444,7 +444,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -452,7 +452,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -460,8 +460,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -469,8 +469,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -478,7 +478,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -486,11 +486,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2d.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2d.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../../../../queries/core\_query\_system)

@@ -1,5 +1,7 @@
 # Storage
 
+Storage layer for MongoDB.  Includes structural metadata as well as code to access data files, metadata files, and the journal on disk
+
 ## Modules
 
 ### file\_allocation

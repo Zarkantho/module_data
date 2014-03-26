@@ -1,6 +1,6 @@
 
 # Interface for Replica Set Config
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/rs\_config.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -26,4 +26,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)

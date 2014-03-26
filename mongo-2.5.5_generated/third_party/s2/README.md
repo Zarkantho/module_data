@@ -1,4 +1,5 @@
 # S2
+Third Party - Google spherical geometry math library
 
 
 -------------

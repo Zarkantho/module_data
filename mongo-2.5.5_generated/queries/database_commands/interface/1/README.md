@@ -1,6 +1,6 @@
 
 # Interface for General Mongod Commands
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/dbcommands.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
 
 <div></div>
 
@@ -18,5 +18,5 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)

@@ -1,6 +1,6 @@
 
 # Interface for Reads Allowed
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/repl\_reads\_ok.cpp
 
@@ -10,4 +10,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)

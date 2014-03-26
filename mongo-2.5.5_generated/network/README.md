@@ -1,5 +1,7 @@
 # Network
 
+The MongoDB network stack
+
 ## Modules
 
 ### cpp\_client\_driver
@@ -78,6 +80,10 @@
 - [src/mongo/util/net/message\_server.h](network\_core)
 - [src/mongo/util/net/message\_server\_port.cpp](network\_core)
 - [src/mongo/util/net/message\_server\_asio.cpp](network\_core)
+- [src/mongo/s/request.cpp](network\_core)
+- [src/mongo/s/request.h](network\_core)
+- [src/mongo/s/strategy.cpp](network\_core)
+- [src/mongo/s/strategy.h](network\_core)
 ### write\_command\_schema
 
 - [src/mongo/s/write\_ops/batched\_command\_response.cpp](write\_command\_schema)

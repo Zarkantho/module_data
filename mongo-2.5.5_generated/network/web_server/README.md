@@ -1,4 +1,5 @@
 # Web Server
+Database web server.  Handles various types of requests, such as rest and jsonp.  This is completely orthogonal to our wire protocol
 
 
 -------------

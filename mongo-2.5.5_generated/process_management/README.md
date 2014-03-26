@@ -1,5 +1,7 @@
 # Process Management
 
+Process management code.  Handles shutdown, startup, and configuration of a MongoDB process
+
 ## Modules
 
 ### build\_information

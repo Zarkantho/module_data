@@ -1,4 +1,7 @@
 # Client And Operation Tracking
+This module contains the code to track and manage the state of clients and database operations.
+MongoDB conflates "threads", "operations", and "connections".  This means everything gets wrapped together into a blobs of global thread local state.  Many things that will eventually have control blocks of their own are just thread local state.  For example, all the operation state and connection state is thread local, which means there is currently no good way to have multiple connections or operations handled by a single thread.
+See https://wiki.mongodb.com/pages/viewpage.action?pageId=78086492 for an introduction to more specific implementation details.
 
 
 -------------

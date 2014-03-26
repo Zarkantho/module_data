@@ -1,6 +1,6 @@
 
 # Interface for Pipeline Stages
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/pipeline/document\_source.cpp
 
@@ -10,8 +10,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_bson\_array.cpp
 
@@ -21,7 +21,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_command\_shards.cpp
 
@@ -31,7 +31,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_cursor.cpp
 
@@ -41,7 +41,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -49,7 +49,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_geo\_near.cpp
 
@@ -59,7 +59,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_group.cpp
 
@@ -69,7 +69,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_limit.cpp
 
@@ -79,7 +79,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -87,7 +87,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_match.cpp
 
@@ -97,7 +97,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -105,7 +105,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -113,7 +113,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -121,7 +121,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp
 
@@ -131,7 +131,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_out.cpp
 
@@ -141,7 +141,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_project.cpp
 
@@ -151,7 +151,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_sort.cpp
 
@@ -161,7 +161,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -169,7 +169,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_unwind.cpp
 
@@ -179,4 +179,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)

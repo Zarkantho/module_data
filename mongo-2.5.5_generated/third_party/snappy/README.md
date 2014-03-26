@@ -1,4 +1,5 @@
 # Snappy
+Third Party - Snappy compression library
 
 
 -------------

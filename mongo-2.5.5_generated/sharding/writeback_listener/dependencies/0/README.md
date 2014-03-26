@@ -1,6 +1,6 @@
 
 # Interface for Mongos Writeback Listener Thread
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/writeback\_listener.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -82,7 +82,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -90,7 +90,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -98,7 +98,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -106,7 +106,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -114,7 +114,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -122,7 +122,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -130,7 +130,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -138,7 +138,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -146,7 +146,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -154,7 +154,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -162,8 +162,8 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -171,7 +171,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
+    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -179,7 +179,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -187,11 +187,11 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -199,7 +199,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -207,7 +207,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -215,7 +215,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -223,7 +223,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities/utilities)
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -231,7 +231,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -239,7 +239,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson/bson)
+    - [src/mongo/bson/oid.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -247,7 +247,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -255,4 +255,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)

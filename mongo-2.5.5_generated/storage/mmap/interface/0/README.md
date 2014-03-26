@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/util/mmap.cpp
 
@@ -10,17 +10,17 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pagefault.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/db/commands/touch.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/pagefault.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/commands/touch.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -28,7 +28,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -36,8 +36,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -45,12 +45,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pagefault.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/pagefault.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -58,15 +58,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/fsync.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/fsync.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -82,9 +82,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -92,7 +92,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -100,7 +100,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -108,9 +108,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -118,7 +118,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
 
 ### src/mongo/util/mmap\_posix.cpp
 
@@ -128,7 +128,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -136,11 +136,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -148,7 +148,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -156,11 +156,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -168,7 +168,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/record\_store.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/record\_store.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -176,7 +176,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -184,7 +184,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/record\_store.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/record\_store.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -192,8 +192,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -201,8 +201,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -210,7 +210,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -218,9 +218,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/touch\_pages.cpp](../../../utilities/utilities)
-    - [src/mongo/db/prefetch.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/util/logfile.cpp](../../../storage/journaling)
+    - [src/mongo/util/touch\_pages.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/util/logfile.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -228,8 +228,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)

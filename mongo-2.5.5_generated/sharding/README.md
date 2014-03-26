@@ -1,5 +1,7 @@
 # Sharding
 
+Sharding code
+
 ## Modules
 
 ### writeback\_listener
@@ -85,10 +87,6 @@
 - [src/mongo/s/type\_tags.cpp](sharding)
 - [src/mongo/s/type\_tags.h](sharding)
 - [src/mongo/s/type\_tags\_test.cpp](sharding)
-- [src/mongo/s/request.cpp](sharding)
-- [src/mongo/s/request.h](sharding)
-- [src/mongo/s/strategy.cpp](sharding)
-- [src/mongo/s/strategy.h](sharding)
 - [src/mongo/s/balance.cpp](sharding)
 - [src/mongo/s/balance.h](sharding)
 - [src/mongo/s/balancer\_policy.cpp](sharding)

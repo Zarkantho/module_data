@@ -1,6 +1,6 @@
 
 # Interface for Snappy Compression Library
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/third\_party/snappy/snappy.cc
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -18,10 +18,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -29,7 +29,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -37,9 +37,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -47,7 +47,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -55,6 +55,6 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../queries/aggregation\_framework)

@@ -1,6 +1,6 @@
 
 # Interface for Client Cursor
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/clientcursor.cpp
 
@@ -10,12 +10,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -23,7 +23,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -31,11 +31,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -43,9 +43,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -53,10 +53,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -64,12 +64,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -77,10 +77,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -88,10 +88,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -99,7 +99,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -107,7 +107,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/d\_globals.cpp](../../../dead\_code/legacy\_code)
+    - [src/mongo/db/d\_globals.cpp](../../../../dead\_code/legacy\_code)
 
 <div></div>
 
@@ -115,7 +115,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -123,12 +123,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -136,8 +136,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -145,7 +145,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -153,4 +153,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)

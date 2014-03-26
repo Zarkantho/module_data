@@ -1,6 +1,6 @@
 
 # Interface for Btree Datastructure
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/structure/btree/btree.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -42,8 +42,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -51,7 +51,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -59,7 +59,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -67,7 +67,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -75,7 +75,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -83,7 +83,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -91,7 +91,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -99,7 +99,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -107,7 +107,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -115,7 +115,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -123,8 +123,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -132,7 +132,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -140,7 +140,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -148,7 +148,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -156,7 +156,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -164,7 +164,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -172,7 +172,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -180,7 +180,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -188,7 +188,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -196,7 +196,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
 
 ### src/mongo/db/structure/btree/btreebuilder.cpp
 
@@ -206,7 +206,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -214,7 +214,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -222,7 +222,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -230,7 +230,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -238,7 +238,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 <div></div>
 
@@ -246,7 +246,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
 
 ### src/mongo/db/structure/btree/key.cpp
 
@@ -256,7 +256,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -264,7 +264,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -272,8 +272,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -281,9 +281,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_stats.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/index\_stats.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -291,9 +291,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/index/btree\_interface.cpp](../../../queries/indexing)
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/index/btree\_interface.cpp](../../../../queries/indexing)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -301,7 +301,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/jsobjtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -309,4 +309,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)

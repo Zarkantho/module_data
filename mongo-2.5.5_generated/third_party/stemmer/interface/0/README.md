@@ -1,6 +1,6 @@
 
 # Interface for Stemmer
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/third\_party/libstemmer\_c/libstemmer/libstemmer\_utf8.c
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -34,4 +34,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/fts/stemmer.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/fts/stemmer.cpp](../../../../queries/full\_text\_search\_module)

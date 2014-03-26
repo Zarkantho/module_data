@@ -1,6 +1,6 @@
 
 # Interface for Shell Command Line Options
-This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
+This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/shell/shell\_options.cpp
 
@@ -10,7 +10,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -82,7 +82,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -90,7 +90,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -98,7 +98,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -106,7 +106,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -114,7 +114,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_description.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_description.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -122,7 +122,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -130,7 +130,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -138,7 +138,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -146,7 +146,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -154,7 +154,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -162,7 +162,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -170,7 +170,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -178,7 +178,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../../../process\_management/build\_information)
+    - [src/mongo/util/version.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -186,7 +186,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -194,7 +194,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -202,7 +202,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -210,7 +210,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
 
 <div></div>
 
@@ -218,7 +218,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
 
 <div></div>
 
@@ -226,7 +226,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -234,7 +234,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 ### src/mongo/shell/shell\_options\_init.cpp
 
@@ -244,7 +244,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -252,7 +252,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -260,7 +260,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -268,7 +268,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -276,7 +276,7 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -284,4 +284,4 @@ This dependency information represents symbolsthat are used in this group but de
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../../process\_management/startup\_initialization)

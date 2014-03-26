@@ -1,5 +1,7 @@
 # Utilities
 
+General utilities that don not necessarily represent a specific layer of the database
+
 ## Modules
 
 ### base\_utilites

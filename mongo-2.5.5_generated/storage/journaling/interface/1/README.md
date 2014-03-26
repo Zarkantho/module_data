@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/dur.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -58,39 +58,39 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/btree/btreebuilder.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
-    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/catalog/database\_holder.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/structure/collection\_compact.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/structure/record\_store.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/collection.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/storage/extent.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/structure/btree/btree.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/fsync.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/structure/catalog/cap.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
-    - [src/mongo/db/ops/delete.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/btree/btreebuilder.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/catalog/index\_catalog\_entry.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/database\_holder.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/collection\_compact.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/record\_store.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/storage/extent.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/btree/btree.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/fsync.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/cap.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../queries/concurrency)
+    - [src/mongo/db/ops/delete.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -98,9 +98,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -108,7 +108,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../queries/concurrency)
 
 ### src/mongo/db/dur\_journal.cpp
 
@@ -118,7 +118,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -126,7 +126,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -134,7 +134,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/storage/durable\_mapped\_file.cpp
 
@@ -144,10 +144,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
 
 <div></div>
 
@@ -155,9 +155,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
 
 <div></div>
 
@@ -165,10 +165,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -176,7 +176,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)

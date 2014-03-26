@@ -1,5 +1,7 @@
 # Mongo Shell
 
+The mongo shell
+
 ## Modules
 
 ### mongo\_shell

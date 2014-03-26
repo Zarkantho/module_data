@@ -1,4 +1,5 @@
 # Write Commands
+New write commands for new wire protocol. The new "write commands" are all implemented as server Commands run using "db.$cmd.findOne(...)".  The legacy write operations did not recieve responses, but commands do recieve responses, so sending writes as "commands" ensures that all writes get a response.  Note that this means the "write commands" are layered on top of the legacy wire protocol, rather than replacing it.
 
 
 -------------

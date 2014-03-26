@@ -1,6 +1,6 @@
 
 # Interface for Sorter
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/sorter/sorter\_test.cpp
 
@@ -10,5 +10,5 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/db/commands/parameters.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)

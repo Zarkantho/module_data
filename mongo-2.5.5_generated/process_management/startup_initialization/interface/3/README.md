@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/util/options\_parser/environment.cpp
 
@@ -10,16 +10,16 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -27,25 +27,25 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongooplog\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongoadmin\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -53,21 +53,21 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_options\_init.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../tools/tools)
+    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_options\_init.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../../tools/tools)
 
 ### src/mongo/util/options\_parser/option\_description.cpp
 
@@ -77,17 +77,17 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -95,17 +95,17 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongooplog\_options.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongooplog\_options.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -113,9 +113,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
 
 <div></div>
 
@@ -123,9 +123,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
 
 <div></div>
 
@@ -133,7 +133,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -141,13 +141,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -155,9 +155,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -165,7 +165,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -173,15 +173,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 ### src/mongo/util/options\_parser/option\_section.cpp
 
@@ -191,24 +191,24 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongooplog\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongoadmin\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -216,8 +216,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -225,21 +225,21 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongooplog\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/mongoadmin\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
 
 ### src/mongo/util/options\_parser/startup\_options.cpp
 
@@ -249,24 +249,24 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/mongod\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_options\_init.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../tools/tools)
+    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/mongod\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_options\_init.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -274,38 +274,38 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/s/mongos\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongodump\_options.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongostat\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoadmin\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options\_init.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongotop\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
-    - [src/mongo/tools/mongofiles\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/mongooplog\_options.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/shell/shell\_options\_init.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../tools/tools)
+    - [src/mongo/tools/mongooplog\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/s/mongos\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongodump\_options.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework\_options\_init.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongodump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoexport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongorestore\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoadmin\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bsondump\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongobridge\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongostat\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoadmin\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options\_init.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongotop\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongoimport\_options\_init.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
+    - [src/mongo/tools/mongofiles\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongooplog\_options.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/shell/shell\_options\_init.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/mongofiles\_options\_init.cpp](../../../../tools/tools)
 
 ### src/mongo/util/options\_parser/value.cpp
 
@@ -315,9 +315,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -325,7 +325,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -333,14 +333,14 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../../network/ssl)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -348,8 +348,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -357,7 +357,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -365,9 +365,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/mongoexport\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/mongoexport\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -375,7 +375,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -383,8 +383,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
-    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/mongobridge\_options.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/mongobridge\_options.cpp](../../../../tools/tools)

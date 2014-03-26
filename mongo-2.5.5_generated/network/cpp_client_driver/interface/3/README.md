@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/connpool.cpp
 
@@ -10,29 +10,29 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -40,8 +40,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -49,8 +49,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -58,32 +58,32 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -91,15 +91,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -107,7 +107,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -115,7 +115,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -123,29 +123,29 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -153,29 +153,29 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -183,7 +183,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -191,23 +191,23 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -215,7 +215,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -223,7 +223,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -231,7 +231,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -239,7 +239,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -247,31 +247,31 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
-    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -279,7 +279,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -287,27 +287,27 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
 
 ### src/mongo/client/dbclient.cpp
 
@@ -317,25 +317,25 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
-    - [src/mongo/tools/top.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/tools/restore.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/scripting/bench.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/tools/dump.cpp](../../../tools/tools)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication)
+    - [src/mongo/tools/top.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/scripting/bench.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/tools/dump.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -343,70 +343,70 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/btreebuildertests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/directclienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/extsorttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/btreebuildertests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/directclienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -414,13 +414,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -428,9 +428,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -438,12 +438,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -451,12 +451,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -464,8 +464,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -473,7 +473,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -481,8 +481,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -490,7 +490,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -498,34 +498,34 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -533,7 +533,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -541,7 +541,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -549,10 +549,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -560,7 +560,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -568,12 +568,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -581,7 +581,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -589,7 +589,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -597,12 +597,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -610,22 +610,22 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/client\_info.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/scripting/bench.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding/sharding)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/client\_info.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/scripting/bench.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -633,8 +633,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -642,18 +642,18 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -661,13 +661,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_out.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_out.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -675,24 +675,24 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -700,11 +700,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -712,7 +712,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -720,68 +720,68 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/btreebuildertests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/directclienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/extsorttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/btreebuildertests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/directclienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -789,14 +789,14 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -804,8 +804,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -813,7 +813,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -821,70 +821,70 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/btreebuildertests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/directclienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/extsorttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/gridfstest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/btreebuildertests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/directclienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -892,19 +892,19 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/directclienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/files.cpp](../../../tools/tools)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/scripting/bench.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/tools/import.cpp](../../../tools/tools)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/directclienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/scripting/bench.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/import.cpp](../../../../tools/tools)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -912,12 +912,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -925,7 +925,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -933,8 +933,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -942,31 +942,31 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -974,12 +974,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -987,11 +987,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -999,7 +999,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1007,8 +1007,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/scripting/bench.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/scripting/bench.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -1016,24 +1016,24 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1041,11 +1041,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1053,18 +1053,18 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -1072,10 +1072,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -1083,12 +1083,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1096,7 +1096,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1104,7 +1104,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1112,13 +1112,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1126,9 +1126,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/dump.cpp](../../../tools/tools)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/dump.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1136,12 +1136,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1149,8 +1149,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1158,17 +1158,17 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1176,11 +1176,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1188,30 +1188,30 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/commandtests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_keep.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/commandtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1219,9 +1219,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1229,19 +1229,19 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../queries/database\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -1249,7 +1249,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1257,7 +1257,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -1265,7 +1265,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -1273,21 +1273,21 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
-    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
+    - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -1295,12 +1295,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1308,8 +1308,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1317,9 +1317,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1327,13 +1327,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1341,7 +1341,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/export.cpp](../../../tools/tools)
+    - [src/mongo/tools/export.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1349,9 +1349,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/export.cpp](../../../tools/tools)
-    - [src/mongo/tools/dump.cpp](../../../tools/tools)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/export.cpp](../../../../tools/tools)
+    - [src/mongo/tools/dump.cpp](../../../../tools/tools)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1359,15 +1359,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/directclienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/extsorttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/directclienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1375,7 +1375,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -1383,7 +1383,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/security\_key.cpp](../../../security/authentication)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
 
 <div></div>
 
@@ -1391,13 +1391,13 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1405,15 +1405,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1421,17 +1421,17 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../../security/authorization)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1439,8 +1439,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1448,8 +1448,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1457,8 +1457,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/d\_merge.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1466,7 +1466,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1474,8 +1474,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1483,34 +1483,34 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/clienttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/health.cpp](../../../replication/replication)
-    - [src/mongo/tools/export.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools/tools)
-    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/s/metadata\_loader.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/dump.cpp](../../../tools/tools)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/clienttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replication)
+    - [src/mongo/tools/export.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/s/metadata\_loader.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/dump.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1518,7 +1518,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1526,7 +1526,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1534,11 +1534,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1546,7 +1546,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1554,7 +1554,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1562,20 +1562,20 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
-    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
-    - [src/mongo/tools/sniffer.cpp](../../../tools/tools)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
-    - [src/mongo/tools/stat.cpp](../../../tools/tools)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
-    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/tools/stat.cpp](../../../../tools/tools)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -1583,7 +1583,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/jstests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/jstests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1591,11 +1591,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/scripting/bench.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/scripting/bench.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1603,11 +1603,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/config\_upgrade.cpp](../../../../sharding/sharding)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1615,12 +1615,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../sharding/sharding)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/sharding)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1628,8 +1628,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1637,7 +1637,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/client/dbclient\_rs.cpp
 
@@ -1647,7 +1647,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -1655,7 +1655,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding)
 
 ### src/mongo/client/dbclientcursor.cpp
 
@@ -1665,7 +1665,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -1673,7 +1673,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -1681,7 +1681,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -1689,7 +1689,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -1697,7 +1697,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -1705,9 +1705,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../tests/unit\_tests)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1715,7 +1715,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -1723,9 +1723,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../tests/unit\_tests)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1733,8 +1733,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../tests/unit\_tests)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1742,8 +1742,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../queries/aggregation\_framework)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp](../../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_cursor.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/client/scoped\_db\_conn\_test.cpp
 
@@ -1753,8 +1753,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -1762,16 +1762,16 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding/sharding)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/framework.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
-    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -1779,29 +1779,29 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/net/listen.cpp](../../../network/network\_core)
-    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
-    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../security/authorization)
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
-    - [src/mongo/db/range\_deleter.cpp](../../../sharding/sharding)
-    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../storage/journaling)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../replication/replication)
-    - [src/mongo/db/stats/snapshots.cpp](../../../utilities/utilities)
-    - [src/mongo/util/concurrency/task.cpp](../../../utilities/utilities)
-    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
-    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
-    - [src/mongo/db/dur.cpp](../../../storage/journaling)
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
-    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/config\_server\_checker\_service.cpp](../../../sharding/sharding)
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
+    - [src/mongo/util/net/listen.cpp](../../../../network/network\_core)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../../security/authorization)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/stats/snapshots.cpp](../../../../utilities/utilities)
+    - [src/mongo/util/concurrency/task.cpp](../../../../utilities/utilities)
+    - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/balance.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/config\_server\_checker\_service.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
 
 <div></div>
 
@@ -1809,4 +1809,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/v8\_db.cpp](../../../../javascript/javascript\_libraries)

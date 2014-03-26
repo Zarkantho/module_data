@@ -1,4 +1,5 @@
 # Build Information
+Information about this server build, including server version, compile information, and javascript version.  Some files are automatically generated as part of the build process
 
 
 -------------

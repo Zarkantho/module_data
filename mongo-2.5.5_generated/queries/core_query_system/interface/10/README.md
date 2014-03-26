@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/ops/count.cpp
 
@@ -10,9 +10,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/counttests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/counttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -20,7 +20,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding)
 
 ### src/mongo/db/ops/delete.cpp
 
@@ -30,15 +30,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 ### src/mongo/db/ops/insert.cpp
 
@@ -48,9 +48,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -58,9 +58,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
-    - [src/mongo/db/commands/create\_indexes.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/commands/create\_indexes.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -68,7 +68,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -76,7 +76,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
 
 ### src/mongo/db/ops/update.cpp
 
@@ -86,12 +86,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
-    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -99,7 +99,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -107,4 +107,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)

@@ -1,5 +1,7 @@
 # Queries
 
+System for handling the processing of various queries, such as full text search, geo queries, aggregation, and normal find queries.  This layer also includes the update, remove, and insert systems
+
 ## Modules
 
 ### client\_and\_operation\_tracking

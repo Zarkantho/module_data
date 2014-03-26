@@ -1,6 +1,6 @@
 
 # Interface for Replica Set Monitor
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/replica\_set\_monitor.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -58,8 +58,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding)
 
 <div></div>
 
@@ -67,10 +67,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
-    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../sharding/sharding)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/s/shard.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/grid.cpp](../../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding)
+    - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -78,4 +78,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/parameters.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)

@@ -1,4 +1,5 @@
 # Authentication
+Authentication is the way to securely verify the identity of a user. This is distinct from Authorization, which is what actually determines what each user is allowed to do once authenticated.  There are different mechanisms and protocols to perform authentication.  MongoDB has a challenge response protocol built in, but SASL and Kerberos authentication support requires the enterprise module.
 
 
 -------------

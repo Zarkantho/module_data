@@ -1,4 +1,5 @@
 # Stemmer
+Third Party - Stemmer for various languages used in full text search
 
 
 -------------

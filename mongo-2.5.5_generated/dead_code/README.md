@@ -1,5 +1,7 @@
 # Dead Code
 
+Code to ignore.  Either dead or going away.
+
 ## Modules
 
 ### legacy\_code

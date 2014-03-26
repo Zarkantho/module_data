@@ -1,4 +1,5 @@
 # Mutable BSON
+Mutable BSON is built on top of the BSON library, and provides an interface for logically a BSON object.  It lazily unpacks a BSON object into a vector of elements as changes are made, and can reserialize into a new BSON object with all the changes.
 
 
 -------------

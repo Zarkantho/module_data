@@ -1,4 +1,4 @@
 
 # Interface for Index Key Sorter
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 (not used outside this module)

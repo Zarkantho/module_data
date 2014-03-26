@@ -1,4 +1,5 @@
 # BSON
+This is the core class for managing BSON objects.  Mutable BSON and other in memory BSON management methods in the server are all built on this library
 
 
 -------------

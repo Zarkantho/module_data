@@ -1,6 +1,6 @@
 
 # Interface for Web Server
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/dbwebserver.cpp
 
@@ -10,8 +10,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -19,7 +19,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -27,7 +27,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/stats/snapshots\_webplugins.cpp](../../../utilities/utilities)
+    - [src/mongo/db/stats/snapshots\_webplugins.cpp](../../../../utilities/utilities)
 
 ### src/mongo/db/restapi.cpp
 
@@ -37,4 +37,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)

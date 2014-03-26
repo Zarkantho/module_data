@@ -1,4 +1,5 @@
 # Storage Layer Structure
+Structure of the storage layer.  Some of these files are for the persistent on disk representation, whereas some are for the in memory representation. TODO: Come up with better sections.  Split up btree info, persistent structure, and in memory structure into separate modules
 
 
 -------------
@@ -336,8 +337,11 @@ Utilities to clone entire collections and databases
 
 -------------
 
-## TODO: Name this group
-One of the very hairy, very old parts of the server. Contains code for the DBDirectClient, which  is an implementation of the "DBClientBase" class in the client driver. The DBDirectClient has the  same interface as the client driver, except that instead of connecting over the network it is just  doing operations on the local server behind the scenes.   This also has code for the "BSONElementManipulator which is what allows us to do in place  updates in the old code. It appears now that it is only used in updating the "expireAfterSeconds"  field for a document in a TTL index.   Also have random things like "getDatabaseNames" which just iteratest the db directory getting all  the names of the files there. Also has the version of "inShutdown" and "dbexit" for mongod.   clarify relationship between instance.cpp and the various ops/* (insert/update etc)
+## Legacy Instance File
+One of the very hairy, very old parts of the server.  Contains code for the DBDirectClient, which is an implementation of the "DBClientBase" class in the client driver. The DBDirectClient has the same interface as the client driver, except that instead of connecting over the network it is just doing operations on the local server behind the scenes.
+This also has code for the "BSONElementManipulator which is what allows us to do in place updates in the old code. It appears now that it is only used in updating the "expireAfterSeconds" field for a document in a TTL index.
+Also have random things like "getDatabaseNames" which just iteratest the db directory getting all the names of the files there. Also has the version of "inShutdown" and "dbexit" for mongod.
+Unfortunately, it also has the code to handle decoding incoming network requests on mongod.
 
 #### Files
 - src/mongo/db/instance.cpp   (mongod, tools)
@@ -349,8 +353,9 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 -------------
 
-## TODO: Name this group
-This is another really hairy, really old legacy file. At this point it's easier to just write out  all the functions in the interface than describe what it does. I believe "pdfile" is short for  "persistent data file". It contains a bunch of old legacy things to manipulate data files and  data file metadata.   Here are all the functions in pdfile.cpp that are currently used in the project.   mongo::inDBRepair  mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)  mongo::dbSize(char const*)  mongo::dropDatabase(std::string const&)  mongo::dbHolderUnchecked()  mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)  mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)  mongo::\_deleteDataFiles(char const*)  mongo::dropAllDatabasesExceptLocal()  mongo::isValidNS(mongo::StringData const&)  mongo::repairDatabase(std::string, std::string&, bool, bool)
+## Legacy Pdfile File
+This is another really hairy, really old legacy file.
+A long time ago, in a galaxy far far away, when MongoDB was 10gen and providing a platform as a service, the persistence layer was called "p".  I have heard that the way to start the database in those days was to just type "p" on the command line.  While I cannot confirm this, it is an amusing story and fits with our past naming convention. That also explains why this is "pdfile" for "P Data File".  It contains various old functions for interacting directly with the storage layer that should soon die a horrible death.
 
 #### Files
 - src/mongo/db/pdfile.cpp   (mongod, tools)

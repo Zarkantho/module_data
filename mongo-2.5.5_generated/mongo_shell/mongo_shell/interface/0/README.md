@@ -1,6 +1,6 @@
 
 # Interface for Javascript Helper Generated Bindings
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -82,4 +82,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../../javascript/javascript\_libraries)

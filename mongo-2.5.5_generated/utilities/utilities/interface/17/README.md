@@ -1,6 +1,6 @@
 
 # Interface for Auth Utils
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/client/auth\_helpers.cpp
 
@@ -10,8 +10,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../security/authorization)
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -19,9 +19,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
-    - [src/mongo/tools/dump.cpp](../../../tools/tools)
-    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/tools/dump.cpp](../../../../tools/tools)
+    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -29,7 +29,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -37,4 +37,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../../security/authorization)

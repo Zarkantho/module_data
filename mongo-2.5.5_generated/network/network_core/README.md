@@ -1,4 +1,5 @@
 # Network Core
+The core network stack upon which everything that interacts with the network in MongoDB is built.
 
 
 -------------
@@ -119,3 +120,18 @@ Experimental async implementation of a message server.  This is experimental and
 #### [Interface](interface/8)
 
 #### [Dependencies](dependencies/8)
+
+-------------
+
+## Mongos Request Handling Implementation
+Implementation of the logic to handle incoming messages on mongos. The Request class is the entry point that decodes the operation type and calls to the STRATEGY object to do the work of handling the specific operation.
+
+#### Files
+- src/mongo/s/request.cpp   (mongos)
+- src/mongo/s/request.h   (mongod, tools, mongos)
+- src/mongo/s/strategy.cpp   (mongos)
+- src/mongo/s/strategy.h   (mongod, tools, mongos)
+
+#### [Interface](interface/9)
+
+#### [Dependencies](dependencies/9)

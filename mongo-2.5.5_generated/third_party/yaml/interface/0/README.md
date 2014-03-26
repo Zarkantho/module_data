@@ -1,6 +1,6 @@
 
 # Interface for YAML Parser
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/third\_party/yaml-cpp-0.5.1/src/memory.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/node\_data.cpp
 
@@ -28,7 +28,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -36,7 +36,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -44,7 +44,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -52,7 +52,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -60,7 +60,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 ### src/third\_party/yaml-cpp-0.5.1/src/parse.cpp
 
@@ -70,4 +70,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)

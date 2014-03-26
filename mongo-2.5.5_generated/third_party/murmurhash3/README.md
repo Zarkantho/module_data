@@ -1,4 +1,5 @@
 # Murmurhash3
+Third Party - Non cryptographic hashing library
 
 
 -------------

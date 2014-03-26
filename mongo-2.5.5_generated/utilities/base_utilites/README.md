@@ -1,4 +1,5 @@
 # Base Utilites
+Core server utilities that can be safely used everywhere without pulling in other dependencies.  These are things like cross platform counters and string to number conversion.
 
 
 -------------

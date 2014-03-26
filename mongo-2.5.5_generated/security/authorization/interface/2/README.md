@@ -1,6 +1,6 @@
 
 # Interface for Resource Pattern
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/auth/resource\_pattern.cpp
 
@@ -10,6 +10,6 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/mr\_common.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/pipeline/pipeline.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/mr\_common.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../../queries/aggregation\_framework)

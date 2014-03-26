@@ -1,4 +1,6 @@
 # Write Command Schema
+This module contains the code for interacting with the format for the requests and responses sent over the wire in the write commands wire protocol.  Note that because the write commands are actually build on top of the command operation in the old wire protocol, this format is actually not working with raw buffers and binary offsets, but is instead dealing with the BSON objects that are sent as the payload of the command and the command response.  For this we have a library to convert to and from C++ objects to BSON objects using a specified schema.
+See https://github.com/10gen/specifications/blob/master/source/write-commands.rst for the complete specification.
 
 
 -------------

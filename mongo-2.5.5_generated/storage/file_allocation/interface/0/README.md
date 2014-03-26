@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/util/file\_allocator.cpp
 
@@ -10,7 +10,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/durop.cpp](../../../../storage/journaling)
 
 <div></div>
 
@@ -26,9 +26,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -36,7 +36,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/mmap\_posix.cpp](../../../storage/mmap)
+    - [src/mongo/util/mmap\_posix.cpp](../../../../storage/mmap)
 
 <div></div>
 
@@ -44,15 +44,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/dbtests/framework.cpp](../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../tests/unit\_tests)
-    - [src/mongo/util/mmap\_posix.cpp](../../../storage/mmap)
+    - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/mmap\_file\_interface)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/util/mmap\_posix.cpp](../../../../storage/mmap)
 
 <div></div>
 
@@ -60,7 +60,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -68,6 +68,6 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/tools/tool.cpp](../../../tools/tools)
-    - [src/mongo/dbtests/framework.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)

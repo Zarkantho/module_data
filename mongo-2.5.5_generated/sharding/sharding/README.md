@@ -1,4 +1,5 @@
 # Sharding
+TODO: sharding description
 
 
 -------------
@@ -176,21 +177,6 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 -------------
 
-## mongos Networking
-TODO: Describe this better.  I think this is duplicated between mongos and mongod.  It looks suspicious.  I think it handles the old wire protocol on mongos.
-
-#### Files
-- src/mongo/s/request.cpp   (mongos)
-- src/mongo/s/request.h   (mongod, tools, mongos)
-- src/mongo/s/strategy.cpp   (mongos)
-- src/mongo/s/strategy.h   (mongod, tools, mongos)
-
-#### [Interface](interface/9)
-
-#### [Dependencies](dependencies/9)
-
--------------
-
 ## TODO: Name this group
 Sharding code? TODO: verify that this is all sharding related and document the architecture.
 
@@ -260,6 +246,6 @@ Sharding code? TODO: verify that this is all sharding related and document the a
 - src/mongo/s/version\_mongos.cpp   (mongos)
 - src/mongo/s/version\_mongos.h   (mongos)
 
-#### [Interface](interface/10)
+#### [Interface](interface/9)
 
-#### [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/9)

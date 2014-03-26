@@ -1,5 +1,7 @@
 # BSON
 
+MongoDB BSON support
+
 ## Modules
 
 ### bson

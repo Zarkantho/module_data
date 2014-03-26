@@ -1,6 +1,6 @@
 
 # Interface for TODO: Name this group
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/field\_ref.cpp
 
@@ -10,16 +10,16 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/matcher/path.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_text.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_parser.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/matcher/expression\_leaf.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/s/collection\_metadata.cpp](../../../sharding/sharding)
-    - [src/mongo/db/matcher/expression\_array.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/matcher/path.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_text.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_text.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/s/collection\_metadata.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/matcher/expression\_array.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -27,8 +27,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/collection\_metadata.cpp](../../../sharding/sharding)
-    - [src/mongo/db/matcher/path.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/collection\_metadata.cpp](../../../../sharding/sharding)
+    - [src/mongo/db/matcher/path.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -36,9 +36,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/fts/fts\_spec.cpp](../../../queries/full\_text\_search\_module)
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/fts/fts\_spec.cpp](../../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -46,11 +46,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/path\_internal.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/fts/fts\_spec.cpp](../../../queries/full\_text\_search\_module)
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/matcher/path.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/path\_internal.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/fts/fts\_spec.cpp](../../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/matcher/path.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -58,15 +58,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/matcher/path.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/keep\_mutations.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/and\_sorted.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/index\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/or.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/and\_hash.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/collection\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/path.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/keep\_mutations.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/or.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -74,15 +74,15 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/exec/and\_hash.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/keep\_mutations.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/and\_sorted.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/index\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/text.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/collection\_scan.cpp](../../../queries/core\_query\_system)
-    - [src/mongo/db/exec/or.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/and\_hash.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/fetch.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/keep\_mutations.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/and\_sorted.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/text.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/or.cpp](../../../../queries/core\_query\_system)
 
 ### src/mongo/db/field\_ref\_set.cpp
 
@@ -92,7 +92,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -100,7 +100,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -108,7 +108,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -116,7 +116,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -124,4 +124,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../../queries/core\_query\_system)

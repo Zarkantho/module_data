@@ -1,4 +1,5 @@
 # REST Client
+Client for accessing the mongodb rest api.  Only used by mongostat when run with the "--http" option.
 
 
 -------------

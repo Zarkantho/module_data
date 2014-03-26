@@ -1,6 +1,6 @@
 
 # Interface for Statistics Tracking
-This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
+This interface information represents symbols that are defined in this group but used in other modules.  Does not include symbols defined in this group that are used inside this module.
 
 ### src/mongo/db/stats/counters.cpp
 
@@ -10,9 +10,9 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -20,7 +20,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/s/request.cpp](../../../sharding/sharding)
+    - [src/mongo/s/request.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -28,7 +28,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -36,7 +36,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -44,12 +44,12 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/request.cpp](../../../sharding/sharding)
-    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/request.cpp](../../../../network/network\_core)
+    - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -57,8 +57,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
 
 <div></div>
 
@@ -66,7 +66,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
 
 ### src/mongo/db/stats/snapshots.cpp
 
@@ -76,7 +76,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/db/stats/timer\_stats.cpp
 
@@ -86,11 +86,11 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
-    - [src/mongo/db/prefetch.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
-    - [src/mongo/s/client\_info.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/s/client\_info.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -98,10 +98,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
-    - [src/mongo/db/prefetch.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -109,10 +109,10 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
-    - [src/mongo/db/prefetch.cpp](../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
 
 <div></div>
 
@@ -120,7 +120,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/write\_concern.cpp](../../../replication/replication)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
 
 ### src/mongo/db/stats/top.cpp
 
@@ -130,8 +130,8 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/curop.cpp](../../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -139,7 +139,7 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/curop.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -147,4 +147,4 @@ This interface information represents symbols thatare defined in this group but 
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
