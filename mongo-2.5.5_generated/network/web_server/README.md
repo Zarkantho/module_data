@@ -1,10 +1,10 @@
-# web\_server
+# Web Server
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Web Server
 Web access to the database, including rest, jsonp, and http.
 
 ## Files
@@ -16,6 +16,6 @@ Web access to the database, including rest, jsonp, and http.
 - src/mongo/util/net/miniwebserver.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/miniwebserver.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

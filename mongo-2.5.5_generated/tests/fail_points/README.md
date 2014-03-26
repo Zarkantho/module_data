@@ -1,10 +1,10 @@
-# fail\_points
+# Fail Points
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Fail Points
 Library for adding fail points into the code for testing purposes
 
 ## Files
@@ -16,6 +16,6 @@ Library for adding fail points into the code for testing purposes
 - src/mongo/util/fail\_point\_service.h   (mongod, tools, mongos)
 - src/mongo/util/fail\_point\_test.cpp   ()
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

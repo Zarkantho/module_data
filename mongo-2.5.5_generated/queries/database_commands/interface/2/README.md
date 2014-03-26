@@ -40,7 +40,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
 
 ### src/mongo/db/commands/isself.cpp

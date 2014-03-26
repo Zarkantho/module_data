@@ -39,7 +39,7 @@
     - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
     - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
     - [src/mongo/s/d\_split.cpp](../../../sharding)
     - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
     - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
@@ -93,7 +93,7 @@
 
     - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -119,7 +119,7 @@
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
     - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -360,7 +360,7 @@
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
     - [src/mongo/db/commands/copydb\_common.cpp](../../../database\_commands)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -415,7 +415,7 @@
     - [src/mongo/db/commands/mr\_common.cpp](../../../database\_commands)
     - [src/mongo/db/commands/find\_and\_modify\_common.cpp](../../../database\_commands)
     - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
 
 <div></div>
 

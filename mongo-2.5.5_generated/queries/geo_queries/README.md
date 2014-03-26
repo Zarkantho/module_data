@@ -1,10 +1,10 @@
-# geo\_queries
+# Geo Queries
 
 # Module Groups
 
 -------------
 
-# Group Description
+# TODO: Name this group
 GEO query code. TODO: describe the structure of this and how it interacts with the new index  system.
 
 ## Files
@@ -25,6 +25,6 @@ GEO query code. TODO: describe the structure of this and how it interacts with t
 - src/mongo/db/geo/shapes.cpp   (mongod, tools, mongos)
 - src/mongo/db/geo/shapes.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

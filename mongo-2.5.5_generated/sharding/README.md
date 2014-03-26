@@ -1,4 +1,4 @@
-# sharding
+# Sharding
 
 ## Modules
 

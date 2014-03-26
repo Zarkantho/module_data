@@ -33,7 +33,7 @@
     - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/repl/oplog.cpp](../../../replication)
     - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
@@ -48,7 +48,7 @@
 - Used By:
 
     - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -57,7 +57,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/db/commands/create\_indexes.cpp](../../../database\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
@@ -88,7 +88,7 @@
     - [src/mongo/db/repl/oplog.cpp](../../../replication)
     - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
 

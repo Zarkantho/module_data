@@ -1,10 +1,10 @@
-# ssl\_headers
+# Ssl Headers
 
 # Module Groups
 
 -------------
 
-# Group Description
+# SSL Headers
 Headers for the SSL build
 
 ## Files
@@ -52,6 +52,6 @@ Headers for the SSL build
 - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h   (mongod, tools, mongos)
 - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

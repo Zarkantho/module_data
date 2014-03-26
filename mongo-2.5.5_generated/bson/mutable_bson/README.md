@@ -1,10 +1,10 @@
-# mutable\_bson
+# Mutable BSON
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Uncategorized Mutable BSON code
 TODO: organize this into real sections
 
 ## Files
@@ -23,6 +23,6 @@ TODO: organize this into real sections
 - src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp   ()
 - src/mongo/bson/mutable/mutable\_bson\_test\_utils.h   ()
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

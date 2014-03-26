@@ -1,10 +1,10 @@
-# pcrecpp
+# Pcrecpp
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Regular Expression Library
 Third Party - Perl compatible regular expressions
 
 ## Files
@@ -45,6 +45,6 @@ Third Party - Perl compatible regular expressions
 - src/third\_party/pcre-8.30/pcreposix.h   (mongod, tools, mongos)
 - src/third\_party/pcre-8.30/ucp.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

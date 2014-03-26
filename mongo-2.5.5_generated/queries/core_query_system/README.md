@@ -1,10 +1,10 @@
-# core\_query\_system
+# Core Query System
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Query Expression Parser
 Matcher expressions. The point of all of this is to take a query string and turn it into a structured set of classes.
 
 ## Files
@@ -38,26 +38,26 @@ Matcher expressions. The point of all of this is to take a query string and turn
 - src/mongo/db/matcher/expression\_tree\_test.cpp   ()
 - src/mongo/db/matcher/expression\_where.cpp   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Matchable Document
 Class that holds a BSONObj and provides an interface that the parsed expressions use when determining whether a BSONObj matches.
 
 ## Files
 - src/mongo/db/matcher/matchable.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/matchable.h   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# Document Iterators
 This contains code to help with iterating arrays and nested documents
 
 ## Files
@@ -67,13 +67,13 @@ This contains code to help with iterating arrays and nested documents
 - src/mongo/db/matcher/path\_internal.h   (mongod, tools, mongos)
 - src/mongo/db/matcher/path\_test.cpp   ()
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# Document Matcher
 Interface to actually test if a document matches.  Wraps a match expression generated from the expression parsing system.
 
 ## Files
@@ -81,26 +81,26 @@ Interface to actually test if a document matches.  Wraps a match expression gene
 - src/mongo/db/matcher/matcher.h   (mongod, tools, mongos)
 - src/mongo/db/matcher.h   (mongod, tools, mongos)
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Helper for requesting more details about what matched our query from the matcher system.
 
 ## Files
 - src/mongo/db/matcher/match\_details.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/match\_details.h   (mongod, tools, mongos)
 
-## [Interface](interface/4)
+#### [Interface](interface/4)
 
-## [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/4)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Planning/parsing/optimization for new query framework   not execution as well? (what are all these *runner.cpp files?)
 
 ## Files
@@ -184,26 +184,26 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 - src/mongo/db/query/type\_explain.cpp   (mongod, tools)
 - src/mongo/db/query/type\_explain.h   (mongod, tools)
 
-## [Interface](interface/5)
+#### [Interface](interface/5)
 
-## [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/5)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Key value store utility class with limited size and an LRU replacement policy.
 
 ## Files
 - src/mongo/db/query/lru\_key\_value.h   (mongod, tools, mongos)
 - src/mongo/db/query/lru\_key\_value\_test.cpp   ()
 
-## [Interface](interface/6)
+#### [Interface](interface/6)
 
-## [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/6)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Executor for new query framework   oh. what is the relationship between 'runners' and e.g. 'index\_scan'   here?
 
 ## Files
@@ -270,13 +270,13 @@ Executor for new query framework   oh. what is the relationship between 'runners
 - src/mongo/dbtests/query\_stage\_distinct.cpp   ()
 - src/mongo/dbtests/query\_stage\_keep.cpp   ()
 
-## [Interface](interface/7)
+#### [Interface](interface/7)
 
-## [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/7)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Legacy utilities for managing queries. Has utilities like range intersection and application of  skip and limit. These are allllmost dead. The functionality should be replaced by the new  matcher, expressions, and query system.
 
 ## Files
@@ -284,26 +284,26 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 - src/mongo/db/queryutil.cpp   (mongod, tools, mongos)
 - src/mongo/db/queryutil.h   (mongod, tools, mongos)
 
-## [Interface](interface/8)
+#### [Interface](interface/8)
 
-## [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/8)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Old way of doing document projections. Given a doc and a projection, transforms the document.   what calls it, and where are projections done now?
 
 ## Files
 - src/mongo/db/projection.cpp   (mongod, tools, mongos)
 - src/mongo/db/projection.h   (mongod, tools, mongos)
 
-## [Interface](interface/9)
+#### [Interface](interface/9)
 
-## [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/9)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Entry point for various database operations   locks: we should clarify locking, e.g. everything in update.cpp happens   in the context of a db write lock   should clarify the relationship between these and db/instance.cpp (not built in anywhere)
 
 ## Files
@@ -316,6 +316,6 @@ Entry point for various database operations   locks: we should clarify locking, 
 - src/mongo/db/ops/update.cpp   (mongod, tools)
 - src/mongo/db/ops/update.h   (mongod, tools)
 
-## [Interface](interface/10)
+#### [Interface](interface/10)
 
-## [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/10)

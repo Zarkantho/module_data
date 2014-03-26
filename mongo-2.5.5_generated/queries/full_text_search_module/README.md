@@ -1,10 +1,10 @@
-# full\_text\_search\_module
+# Full Text Search Module
 
 # Module Groups
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Uncategorized Full Text Search Code
 
 ## Files
@@ -42,13 +42,13 @@ Uncategorized Full Text Search Code
 - src/mongo/db/fts/tokenizer.h   (mongod, tools, mongos)
 - src/mongo/db/fts/tokenizer\_test.cpp   ()
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Full Text Search Stop Words
 Stop words are words that get filtered out prior to text searches.  These are words like "and" and "the" in English.  The stop words list text files get processed by the python script into auto generated C++ files.
 
 ## Files
@@ -74,6 +74,6 @@ Stop words are words that get filtered out prior to text searches.  These are wo
 - src/mongo/db/fts/stop\_words.h   (mongod, tools, mongos)
 - src/mongo/db/fts/stop\_words\_test.cpp   ()
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)

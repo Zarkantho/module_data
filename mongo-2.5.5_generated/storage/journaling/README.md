@@ -1,23 +1,23 @@
-# journaling
+# Journaling
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Page Aligned Buffer
 Page aligned buffer builder
 
 ## Files
 - src/mongo/util/alignedbuilder.cpp   (mongod, tools)
 - src/mongo/util/alignedbuilder.h   (mongod, tools)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 ## Files
@@ -39,19 +39,19 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 - src/mongo/db/storage/durable\_mapped\_file.cpp   (mongod, tools)
 - src/mongo/db/storage/durable\_mapped\_file.h   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 This is not actually used in our logging system. Just utilities to create files that you can  append to. One notable example of a system that uses this is our preallocation of journal files.  In fact, it isn't used in anything not journaling related right now.
 
 ## Files
 - src/mongo/util/logfile.cpp   (mongod, tools)
 - src/mongo/util/logfile.h   (mongod, tools)
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)

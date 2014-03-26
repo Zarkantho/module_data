@@ -1,4 +1,4 @@
-# third\_party
+# Third Party
 
 ## Modules
 

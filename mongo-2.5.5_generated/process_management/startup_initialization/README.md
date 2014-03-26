@@ -1,23 +1,23 @@
-# startup\_initialization
+# Startup Initialization
 
 # Module Groups
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Check various expected startup conditions and log warnings to the user if necessary   what uses these? everything? mongod/mongos only? what sort of checks?
 
 ## Files
 - src/mongo/db/startup\_warnings.cpp   (mongod, tools)
 - src/mongo/db/startup\_warnings.h   (mongod, tools)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 MONGO\_INITIALIZER startup initialization framework.   what should use these? any tool? mongod/mongos only?
 
 ## Files
@@ -39,26 +39,26 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 - src/mongo/base/make\_string\_vector.cpp   (mongod, tools, mongos)
 - src/mongo/base/make\_string\_vector.h   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Initialize the global state common to mongod and mongos, such as logging.
 
 ## Files
 - src/mongo/db/initialize\_server\_global\_state.cpp   (mongod, mongos)
 - src/mongo/db/initialize\_server\_global\_state.h   (mongod, mongos)
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Options parser library (command line and config files)   where do the options get stored / how can people grab options later?   are they set once and immutable or can they be updated?
 
 ## Files
@@ -82,13 +82,13 @@ Options parser library (command line and config files)   where do the options ge
 - src/mongo/util/options\_parser/value.cpp   (mongod, tools, mongos)
 - src/mongo/util/options\_parser/value.h   (mongod, tools, mongos)
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Command line utilities   can you say a bit more? (give an example?)
 
 ## Files
@@ -96,26 +96,26 @@ Command line utilities   can you say a bit more? (give an example?)
 - src/mongo/util/cmdline\_utils/censor\_cmdline.h   (mongod, tools, mongos)
 - src/mongo/util/cmdline\_utils/censor\_cmdline\_test.cpp   ()
 
-## [Interface](interface/4)
+#### [Interface](interface/4)
 
-## [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/4)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Only used to ask user for password at startup. TODO: move into cmdline\_utils directory
 
 ## Files
 - src/mongo/util/password.cpp   (mongod, tools, mongos)
 - src/mongo/util/password.h   (mongod, tools, mongos)
 
-## [Interface](interface/5)
+#### [Interface](interface/5)
 
-## [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/5)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Command line options shared between mongod and mongos   give an example (--hostname?)
 
 ## Files
@@ -125,13 +125,13 @@ Command line options shared between mongod and mongos   give an example (--hostn
 - src/mongo/db/server\_options\_helpers.h   (mongod, tools, mongos)
 - src/mongo/db/server\_options\_test.cpp   ()
 
-## [Interface](interface/6)
+#### [Interface](interface/6)
 
-## [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/6)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 ServerParameter class used to add new parameters to the "setParameter" command. These can also be  configured to be runtime modifiable.
 
 ## Files
@@ -140,6 +140,6 @@ ServerParameter class used to add new parameters to the "setParameter" command. 
 - src/mongo/db/server\_parameters\_inline.h   (mongod, tools, mongos)
 - src/mongo/db/server\_parameters\_test.cpp   ()
 
-## [Interface](interface/7)
+#### [Interface](interface/7)
 
-## [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/7)

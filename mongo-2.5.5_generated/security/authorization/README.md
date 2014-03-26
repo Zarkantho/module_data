@@ -1,10 +1,10 @@
-# authorization
+# Authorization
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Action Types
 Action types are things that users are allowed to do to a resource.  For example "shutdown" is an action type.  An action set is a bitmask of action types.
 
 ## Files
@@ -16,13 +16,13 @@ Action types are things that users are allowed to do to a resource.  For example
 - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.h   (mongod, tools, mongos)
 - src/mongo/db/auth/generate\_action\_types.py   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Privileges
 A privilege represents a set of actions that can be performed on a given resource.
 
 ## Files
@@ -32,26 +32,26 @@ A privilege represents a set of actions that can be performed on a given resourc
 - src/mongo/db/auth/privilege\_parser.h   (mongod, tools, mongos)
 - src/mongo/db/auth/privilege\_parser\_test.cpp   ()
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# Resource Pattern
 A resource is something that the database contains or provides that a user can perform actions on.  A Resource Pattern is a representation of a specific resource or a class of resources.
 
 ## Files
 - src/mongo/db/auth/resource\_pattern.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/resource\_pattern.h   (mongod, tools, mongos)
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# User Roles
 A role is a set of privileges that a user with that role is allowed to perform.  Roles can contain other roles, and should be organized in a directed acyclic graph.  The role graph is the in memory representation of our persistent role data, so this code has the logic to pull the role documents and convert to the in memory graph representation.
 
 ## Files
@@ -63,13 +63,13 @@ A role is a set of privileges that a user with that role is allowed to perform. 
 - src/mongo/db/auth/role\_name.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/role\_name.h   (mongod, tools, mongos)
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)
 
 -------------
 
-# Group Description
+# Users
 A representation of a user.  This contains the user credentials as well as the roles and privileges of the user.  Because it contains both the credentials and the privileges, this is used by both Authentication and Authorization.
 
 ## Files
@@ -82,13 +82,13 @@ A representation of a user.  This contains the user credentials as well as the r
 - src/mongo/db/auth/user\_name.h   (mongod, tools, mongos)
 - src/mongo/db/auth/user\_name\_hash.h   (mongod, tools, mongos)
 
-## [Interface](interface/4)
+#### [Interface](interface/4)
 
-## [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/4)
 
 -------------
 
-# Group Description
+# User Management Commands
 Commands to manage user and role definitions.
 
 ## Files
@@ -97,39 +97,39 @@ Commands to manage user and role definitions.
 - src/mongo/db/commands/user\_management\_commands.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/user\_management\_commands.h   (mongod, tools, mongos)
 
-## [Interface](interface/5)
+#### [Interface](interface/5)
 
-## [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/5)
 
 -------------
 
-# Group Description
+# User Cache Invalidator
 Background Job that periodically invalidates user data cached on the mongos.
 
 ## Files
 - src/mongo/db/auth/user\_cache\_invalidator\_job.cpp   (mongos)
 - src/mongo/db/auth/user\_cache\_invalidator\_job.h   (mongos)
 
-## [Interface](interface/6)
+#### [Interface](interface/6)
 
-## [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/6)
 
 -------------
 
-# Group Description
+# Authorization Data Indexes
 Indexes on mongod for collections containing authorization data.
 
 ## Files
 - src/mongo/db/auth/auth\_index\_d.cpp   (mongod, tools)
 - src/mongo/db/auth/auth\_index\_d.h   (mongod, tools)
 
-## [Interface](interface/7)
+#### [Interface](interface/7)
 
-## [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/7)
 
 -------------
 
-# Group Description
+# Authorization Manager
 Abstraction around the persistent authorization data, such as users and roles.  Also handles upgrade of the authorization data, and ensures that concurrent access is handled correctly.
 
 ## Files
@@ -141,13 +141,13 @@ Abstraction around the persistent authorization data, such as users and roles.  
 - src/mongo/db/auth/authz\_documents\_update\_guard.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/authz\_documents\_update\_guard.h   (mongod, tools, mongos)
 
-## [Interface](interface/8)
+#### [Interface](interface/8)
 
-## [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/8)
 
 -------------
 
-# Group Description
+# Authorization Manager Specialization
 Abstraction around the component of the Authorization Manager implementation that must be specialized for mongos or mongod.
 
 ## Files
@@ -162,26 +162,26 @@ Abstraction around the component of the Authorization Manager implementation tha
 - src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp   (mongos)
 - src/mongo/db/auth/authz\_manager\_external\_state\_s.h   (mongos)
 
-## [Interface](interface/9)
+#### [Interface](interface/9)
 
-## [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/9)
 
 -------------
 
-# Group Description
+# Authorization Data Upgrade Commands
 Commands that are the entry point to upgrade the authentication data.  Calls into the Authorization Manager to actually do the upgrade.
 
 ## Files
 - src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp   (mongod, tools)
 - src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp   (mongos)
 
-## [Interface](interface/10)
+#### [Interface](interface/10)
 
-## [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/10)
 
 -------------
 
-# Group Description
+# Authorization Session
 Handles authorization of actions in a session, which in this case is a session/thread/connection.  This state is all thread local, and keeps track of what users we have authenticated as for this session/thread/connection.
 
 ## Files
@@ -192,13 +192,13 @@ Handles authorization of actions in a session, which in this case is a session/t
 - src/mongo/db/auth/user\_set.h   (mongod, tools, mongos)
 - src/mongo/db/auth/user\_set\_test.cpp   ()
 
-## [Interface](interface/11)
+#### [Interface](interface/11)
 
-## [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/11)
 
 -------------
 
-# Group Description
+# Authorization Session Specialization
 Abstraction around the component of the Authorization Session implementation that must be specialized for mongos or mongod.
 
 ## Files
@@ -212,6 +212,6 @@ Abstraction around the component of the Authorization Session implementation tha
 - src/mongo/db/auth/authz\_session\_external\_state\_server\_common.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/authz\_session\_external\_state\_server\_common.h   (mongod, tools, mongos)
 
-## [Interface](interface/12)
+#### [Interface](interface/12)
 
-## [Dependencies](dependencies/12)
+#### [Dependencies](dependencies/12)

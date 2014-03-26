@@ -1,23 +1,23 @@
-# utilities
+# Utilities
 
 # Module Groups
 
 -------------
 
-# Group Description
+# File Paths
 Code to manage paths to files.  Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
 
 ## Files
 - src/mongo/util/paths.cpp   (mongod, tools, mongos)
 - src/mongo/util/paths.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Statistics Tracking
 Classes to help in tracking statistics
 
 ## Files
@@ -31,13 +31,13 @@ Classes to help in tracking statistics
 - src/mongo/db/stats/top.cpp   (mongod, tools)
 - src/mongo/db/stats/top.h   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# BSON Element Hasher
 Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 
 ## Files
@@ -45,91 +45,91 @@ Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 - src/mongo/db/hasher.h   (mongod, tools, mongos)
 - src/mongo/db/hasher\_test.cpp   ()
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# Operation Tracker
 Helpers to track in progress operations.  This works by inheriting from it when you make a class that represents an operation that should be tracked. The constructor registers itself in an "in progress" map, and the destructor removes it.
 
 ## Files
 - src/mongo/db/background.cpp   (mongod, tools)
 - src/mongo/db/background.h   (mongod, tools, mongos)
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)
 
 -------------
 
-# Group Description
+# Elapsed Time
 Utility to check whether a certain time interval has elapsed. Currently only used in  d\_migrate.cpp to check if we should yield.
 
 ## Files
 - src/mongo/util/elapsed\_tracker.cpp   (mongod, tools)
 - src/mongo/util/elapsed\_tracker.h   (mongod, tools)
 
-## [Interface](interface/4)
+#### [Interface](interface/4)
 
-## [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/4)
 
 -------------
 
-# Group Description
+# Progress Meter
 Helper classes to accumulate and log progress in a nice format using the logging system (so the logging system is only dependency)
 
 ## Files
 - src/mongo/util/progress\_meter.cpp   (mongod, tools, mongos)
 - src/mongo/util/progress\_meter.h   (mongod, tools, mongos)
 
-## [Interface](interface/5)
+#### [Interface](interface/5)
 
-## [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/5)
 
 -------------
 
-# Group Description
+# Debug Utilities
 Debug macros and gdb server helpers
 
 ## Files
 - src/mongo/util/debug\_util.cpp   (mongod, tools, mongos)
 - src/mongo/util/debug\_util.h   (mongod, tools, mongos)
 
-## [Interface](interface/6)
+#### [Interface](interface/6)
 
-## [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/6)
 
 -------------
 
-# Group Description
+# Thread Name
 Library to get and set the name of the current thread. Just uses a boost::thread\_specific\_ptr.
 
 ## Files
 - src/mongo/util/concurrency/thread\_name.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/thread\_name.h   (mongod, tools, mongos)
 
-## [Interface](interface/7)
+#### [Interface](interface/7)
 
-## [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/7)
 
 -------------
 
-# Group Description
+# Hex Utils
 Utility library to manipulate hex strings
 
 ## Files
 - src/mongo/util/hex.cpp   (mongod, tools, mongos)
 - src/mongo/util/hex.h   (mongod, tools, mongos)
 
-## [Interface](interface/8)
+#### [Interface](interface/8)
 
-## [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/8)
 
 -------------
 
-# Group Description
+# Background Operations
 Utilities to run jobs (threads) in the "background".  You can use this to run tasks periodically.  Note that there are two different classes here. One is a Task and one is a BackgroundJob.  They are both used in the code in various places.  Task is just a wrapper around BackgroundJob with a slightly simpler interface.  They both effectively serve the same purpose.
 
 ## Files
@@ -139,76 +139,76 @@ Utilities to run jobs (threads) in the "background".  You can use this to run ta
 - src/mongo/util/concurrency/task.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/task.h   (mongod, tools, mongos)
 
-## [Interface](interface/9)
+#### [Interface](interface/9)
 
-## [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/9)
 
 -------------
 
-# Group Description
+# Asynchronous Background Operation Queue
 Wrapper around a background task that creates an object with a "server" interface.  What this means is that "messages" (in the form of lambdas) can be registered with this class to be called sometime in the future by the event loop in this task.  Some functions just register the function and return, and others will block until the function is executed.
 
 ## Files
 - src/mongo/util/concurrency/msg.h   (mongod, tools, mongos)
 
-## [Interface](interface/10)
+#### [Interface](interface/10)
 
-## [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/10)
 
 -------------
 
-# Group Description
+# Map Utilities
 mapFindWithDefault - looks something up in a map with a default value.
 
 ## Files
 - src/mongo/util/map\_util.h   (mongod, tools, mongos)
 
-## [Interface](interface/11)
+#### [Interface](interface/11)
 
-## [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/11)
 
 -------------
 
-# Group Description
+# Pch
 I still do not know what this was originally for, but I know we are slowly getting rid of it.
 
 ## Files
 - src/mongo/pch.cpp   (mongod, tools, mongos)
 - src/mongo/pch.h   (mongod, tools, mongos)
 
-## [Interface](interface/12)
+#### [Interface](interface/12)
 
-## [Dependencies](dependencies/12)
+#### [Dependencies](dependencies/12)
 
 -------------
 
-# Group Description
+# Assertions
 Assertion library.
 
 ## Files
 - src/mongo/util/assert\_util.cpp   (mongod, tools, mongos)
 - src/mongo/util/assert\_util.h   (mongod, tools, mongos)
 
-## [Interface](interface/13)
+#### [Interface](interface/13)
 
-## [Dependencies](dependencies/13)
+#### [Dependencies](dependencies/13)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Helper library that you inherit from to make a class "reference counted"
 
 ## Files
 - src/mongo/util/intrusive\_counter.cpp   (mongod, tools, mongos)
 - src/mongo/util/intrusive\_counter.h   (mongod, tools, mongos)
 
-## [Interface](interface/14)
+#### [Interface](interface/14)
 
-## [Dependencies](dependencies/14)
+#### [Dependencies](dependencies/14)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 md5 hash library
 
 ## Files
@@ -218,39 +218,39 @@ md5 hash library
 - src/mongo/util/md5\_test.cpp   ()
 - src/mongo/util/md5main.cpp   ()
 
-## [Interface](interface/15)
+#### [Interface](interface/15)
 
-## [Dependencies](dependencies/15)
+#### [Dependencies](dependencies/15)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Windows service
 
 ## Files
 - src/mongo/util/ntservice.cpp   (mongod, mongos)
 - src/mongo/util/ntservice.h   (mongod, mongos)
 
-## [Interface](interface/16)
+#### [Interface](interface/16)
 
-## [Dependencies](dependencies/16)
+#### [Dependencies](dependencies/16)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Utilities to hash a username + password
 
 ## Files
 - src/mongo/client/auth\_helpers.cpp   (mongod, tools, mongos)
 - src/mongo/client/auth\_helpers.h   (mongod, tools, mongos)
 
-## [Interface](interface/17)
+#### [Interface](interface/17)
 
-## [Dependencies](dependencies/17)
+#### [Dependencies](dependencies/17)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why  you would use them.
 
 ## Files
@@ -337,13 +337,13 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 - src/mongo/util/goodies.h   (mongod, tools, mongos)
 - src/mongo/util/heapcheck.h   (mongod, tools, mongos)
 
-## [Interface](interface/18)
+#### [Interface](interface/18)
 
-## [Dependencies](dependencies/18)
+#### [Dependencies](dependencies/18)
 
 -------------
 
-# Group Description
+# TODO: Name this group
 Platform specific code? TODO: Verify this and document what they are for.
 
 ## Files
@@ -388,6 +388,6 @@ Platform specific code? TODO: Verify this and document what they are for.
 - src/mongo/util/mongoutils/html.h   (mongod, tools, mongos)
 - src/mongo/util/mongoutils/str.h   (mongod, tools, mongos)
 
-## [Interface](interface/19)
+#### [Interface](interface/19)
 
-## [Dependencies](dependencies/19)
+#### [Dependencies](dependencies/19)

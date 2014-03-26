@@ -1,10 +1,10 @@
-# gperftools
+# Gperftools
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Gperftools
 Third Party - Google performance tools and tcmalloc
 
 ## Files
@@ -103,6 +103,6 @@ Third Party - Google performance tools and tcmalloc
 - src/third\_party/gperftools-2.0/src/windows/mingw.h   (mongod, tools, mongos)
 - src/third\_party/gperftools-2.0/src/windows/port.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

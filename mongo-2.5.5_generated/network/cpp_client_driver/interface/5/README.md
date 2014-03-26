@@ -29,7 +29,7 @@
     - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
     - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/s/shardconnection.cpp](../../../sharding)
 
 <div></div>
@@ -101,7 +101,7 @@
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
     - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/tools/tool.cpp](../../../tools)
 
 <div></div>
@@ -152,5 +152,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/util/assert\_util.cpp](../../../utilities)

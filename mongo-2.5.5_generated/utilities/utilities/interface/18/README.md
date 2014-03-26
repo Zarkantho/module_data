@@ -484,7 +484,7 @@
     - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
     - [src/mongo/db/repl/health.cpp](../../../replication)
     - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../replication)
     - [src/mongo/tools/oplog.cpp](../../../tools)
 
@@ -559,7 +559,7 @@
     - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
     - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
 
 <div></div>
 

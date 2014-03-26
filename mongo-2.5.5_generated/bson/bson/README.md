@@ -1,23 +1,23 @@
-# bson
+# BSON
 
 # Module Groups
 
 -------------
 
-# Group Description
+# JSON to BSON parser
 Parser that can convert a JSON string into a binary BSON object. This has extra features that are not in a standard JSON parser to make sure we can represent specific BSON types that are not in strict JSON.  See http://docs.mongodb.org/manual/reference/mongodb-extended-json/ for more details. The JSON parser should be able to parse anything on that page.
 
 ## Files
 - src/mongo/db/json.cpp   (mongod, tools, mongos)
 - src/mongo/db/json.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Uncategorized BSON code
 TODO: organize this into real sections
 
 ## Files
@@ -55,6 +55,6 @@ TODO: organize this into real sections
 - src/mongo/db/jsobj.h   (mongod, tools, mongos)
 - src/mongo/db/jsobjmanipulator.h   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)

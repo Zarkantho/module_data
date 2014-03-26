@@ -33,7 +33,7 @@
 - Used By:
 
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
 
 <div></div>
 

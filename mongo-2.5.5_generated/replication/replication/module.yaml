@@ -34281,8 +34281,9 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: Helper to parse write concern options out of a BSONObj
+-   group_title: Write Concern Object Parser
+    group_description: Helper to parse write concern options out of a BSONObj representing
+        a "write concern object"
     group_files:
     - src/mongo/db/write_concern_options.cpp
     - src/mongo/db/write_concern_options.h

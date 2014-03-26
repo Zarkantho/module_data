@@ -1,10 +1,10 @@
-# unit\_tests
+# Unit Tests
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Unittest Framework
 Unittest framework (for both old style dbtests and new style tests)
 
 ## Files
@@ -19,13 +19,13 @@ Unittest framework (for both old style dbtests and new style tests)
 - src/mongo/unittest/unittest\_main.cpp   ()
 - src/mongo/unittest/unittest\_test.cpp   ()
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Dbtests
 Old style unittests ("test" binary)
 
 ## Files
@@ -107,6 +107,6 @@ Old style unittests ("test" binary)
 - src/mongo/dbtests/threadedtests.cpp   ()
 - src/mongo/dbtests/updatetests.cpp   ()
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)

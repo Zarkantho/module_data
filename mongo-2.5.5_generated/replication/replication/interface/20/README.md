@@ -34,7 +34,7 @@
     - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/db/commands/create\_indexes.cpp](../../../database\_commands)

@@ -45,7 +45,7 @@
     - [src/mongo/tools/admin.cpp](../../../tools)
     - [src/mongo/db/index\_builder.cpp](../../../indexing)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)

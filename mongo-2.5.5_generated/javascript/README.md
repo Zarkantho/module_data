@@ -1,4 +1,4 @@
-# javascript
+# Javascript
 
 ## Modules
 

@@ -28,7 +28,7 @@
     - [src/mongo/s/request.cpp](../../../sharding)
     - [src/mongo/s/commands\_public.cpp](../../../sharding)
     - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -60,7 +60,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -68,7 +68,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
 
 <div></div>
 

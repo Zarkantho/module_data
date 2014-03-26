@@ -379,7 +379,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -419,7 +419,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -555,7 +555,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
 
 <div></div>
 
@@ -635,7 +635,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -643,7 +643,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -683,7 +683,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -707,7 +707,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -723,7 +723,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
 
 <div></div>
 
@@ -757,7 +757,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../wire\_protocol\_write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
 
 <div></div>
 

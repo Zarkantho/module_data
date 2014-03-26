@@ -1,10 +1,10 @@
-# stemmer
+# Stemmer
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Stemmer
 Third Party - Stemmer for various languages used in full text search
 
 ## Files
@@ -64,6 +64,6 @@ Third Party - Stemmer for various languages used in full text search
 - src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.c   (mongod, tools, mongos)
 - src/third\_party/libstemmer\_c/src\_c/stem\_UTF\_8\_turkish.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

@@ -43,7 +43,7 @@
 - Used By:
 
     - [src/mongo/db/commands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands\_common.cpp](../../../write\_commands)
     - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
 
 <div></div>

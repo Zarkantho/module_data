@@ -1,22 +1,22 @@
-# aggregation\_framework
+# Aggregation Framework
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Mongod Aggregation Commands
 Entry point into aggregation for mongod.  These are all database Commands run using db.$cmd.findOne(...)
 
 ## Files
 - src/mongo/db/commands/pipeline\_command.cpp   (mongod, tools)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Accumulators
 An accumulator represents a stateful operation.  For example, in an operation such as $sum, you can feed in values until there is no more data, then extract the final result
 
 ## Files
@@ -29,13 +29,13 @@ An accumulator represents a stateful operation.  For example, in an operation su
 - src/mongo/db/pipeline/accumulator\_push.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/accumulator\_sum.cpp   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# BSON Representation
 In memory representation of BSON for aggregation.  Similar to a the BSONElement/BSONObj interface except the Value class does not contain its key like a BSONElement, and the Document class is just a map of keys to values
 
 ## Files
@@ -46,13 +46,13 @@ In memory representation of BSON for aggregation.  Similar to a the BSONElement/
 - src/mongo/db/pipeline/document.h   (mongod, tools, mongos)
 - src/mongo/db/pipeline/document\_internal.h   (mongod, tools, mongos)
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# Pipeline Stages
 Files containing the pipeline stages.  Document Source is the name for a pipeline stage in our code
 
 ## Files
@@ -73,102 +73,102 @@ Files containing the pipeline stages.  Document Source is the name for a pipelin
 - src/mongo/db/pipeline/document\_source\_sort.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/document\_source\_unwind.cpp   (mongod, tools, mongos)
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)
 
 -------------
 
-# Group Description
+# Expressions
 An expression represents a stateless operation.  For example, in an operation such as $add, you provide a set of values, and immediately recieve a result
 
 ## Files
 - src/mongo/db/pipeline/expression.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/expression.h   (mongod, tools, mongos)
 
-## [Interface](interface/4)
+#### [Interface](interface/4)
 
-## [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/4)
 
 -------------
 
-# Group Description
+# Pipeline Stage Context
 This file is currently misnamed.  The context for a pipeline stage, such as whether its being run on a Source (source shard) or a Merger (primary shard responsible for merging results), whether there has been an interrupt, and other global information.
 
 ## Files
 - src/mongo/db/pipeline/expression\_context.h   (mongod, tools, mongos)
 
-## [Interface](interface/5)
+#### [Interface](interface/5)
 
-## [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/5)
 
 -------------
 
-# Group Description
+# Dotted Field Utilities
 Wrapper classes for parsed and validated dotted field names
 
 ## Files
 - src/mongo/db/pipeline/field\_path.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/field\_path.h   (mongod, tools, mongos)
 
-## [Interface](interface/6)
+#### [Interface](interface/6)
 
-## [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/6)
 
 -------------
 
-# Group Description
+# Aggregation Common Entry Point
 These files contain the central entry point for aggregation.  While the initial entry points for mongos and mongod differ, most of the aggregation code is shared between them.  This holds the two paths together, and also contains the optimization code
 
 ## Files
 - src/mongo/db/pipeline/pipeline.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/pipeline.h   (mongod, tools, mongos)
 
-## [Interface](interface/7)
+#### [Interface](interface/7)
 
-## [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/7)
 
 -------------
 
-# Group Description
+# Mongod Specific Aggregation Extensions
 Mongod specific extensions to aggregation
 
 ## Files
 - src/mongo/db/pipeline/pipeline\_d.cpp   (mongod, tools)
 - src/mongo/db/pipeline/pipeline\_d.h   (mongod, tools)
 
-## [Interface](interface/8)
+#### [Interface](interface/8)
 
-## [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/8)
 
 -------------
 
-# Group Description
+# Pipeline Optimizations
 Optimizations that are done as part of the aggregation process.  There are two optimization types, local and sharded.  In a sharded cluster, first the local optimizations are done which rewrites the pipeline stages, then the sharded optimizations are done, which controls exactly what gets farmed out to the source shards, then each source shard runs the local optimization again
 
 ## Files
 - src/mongo/db/pipeline/pipeline\_optimizations.h   (mongod, tools, mongos)
 
-## [Interface](interface/9)
+#### [Interface](interface/9)
 
-## [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/9)
 
 -------------
 
-# Group Description
+# Data Dependency Tracking
 Code to track what information is needed in the aggregation pipeline.  For example, for some queries only certain fields of the document are actually needed
 
 ## Files
 - src/mongo/db/pipeline/dependencies.cpp   (mongod, tools, mongos)
 - src/mongo/db/pipeline/dependencies.h   (mongod, tools, mongos)
 
-## [Interface](interface/10)
+#### [Interface](interface/10)
 
-## [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/10)
 
 -------------
 
-# Group Description
+# Sorter
 Generic interface for getting and merging sorted streams of documents. Only used in aggregation
 
 ## Files
@@ -176,31 +176,31 @@ Generic interface for getting and merging sorted streams of documents. Only used
 - src/mongo/db/sorter/sorter.h   (mongod, tools, mongos)
 - src/mongo/db/sorter/sorter\_test.cpp   ()
 
-## [Interface](interface/11)
+#### [Interface](interface/11)
 
-## [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/11)
 
 -------------
 
-# Group Description
+# External Sorter
 Code for external sort. This sits inside the sorter, and the sorter "spills over" to disk if external sorting is allowed
 
 ## Files
 - src/mongo/db/extsort.cpp   (mongod, tools)
 - src/mongo/db/extsort.h   (mongod, tools)
 
-## [Interface](interface/12)
+#### [Interface](interface/12)
 
-## [Dependencies](dependencies/12)
+#### [Dependencies](dependencies/12)
 
 -------------
 
-# Group Description
+# Index Key Sorter
 Wrapper around the External Sorter specialized for index keys.  Used in bottom up fast index builds where keys are pre sorted.
 
 ## Files
 - src/mongo/db/sort\_phase\_one.h   (mongod, tools)
 
-## [Interface](interface/13)
+#### [Interface](interface/13)
 
-## [Dependencies](dependencies/13)
+#### [Dependencies](dependencies/13)

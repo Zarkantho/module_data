@@ -46,7 +46,7 @@
     - [src/mongo/db/commands/index\_stats.cpp](../../../database\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
     - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
     - [src/mongo/s/distlock.cpp](../../../sharding)
     - [src/mongo/db/dbeval.cpp](../../../database\_commands)
@@ -63,7 +63,7 @@
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
     - [src/mongo/db/index\_rebuilder.cpp](../../../indexing)
     - [src/mongo/db/auth/security\_key.cpp](../../../authentication)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)
 
 ### src/mongo/db/server\_options\_helpers.cpp

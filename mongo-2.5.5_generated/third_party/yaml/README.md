@@ -1,10 +1,10 @@
-# yaml
+# Yaml
 
 # Module Groups
 
 -------------
 
-# Group Description
+# YAML Parser
 Third Party - Yaml markup parser.  Used for yaml config files
 
 ## Files
@@ -98,6 +98,6 @@ Third Party - Yaml markup parser.  Used for yaml config files
 - src/third\_party/yaml-cpp-0.5.1/src/tag.h   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/src/token.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

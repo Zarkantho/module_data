@@ -1,23 +1,23 @@
-# mongo\_shell
+# Mongo Shell
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Javascript Helper Generated Bindings
 C++ files that are automatically generated from the Javascript source files. This means that certain Javascript files work in the shell because they are actually compiled in, which means that sometimes the server needs to be recompiled to see changes in Javascript files
 
 ## Files
 - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp   ()
 - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)
 
 -------------
 
-# Group Description
+# Javascript Helpers
 Javascript files that get wrapped in strings and put in cpp files. See the "env.JSHeader" calls  in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
 ## Files
@@ -37,13 +37,13 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 - src/mongo/shell/utils.js   (mongod, tools, mongos)
 - src/mongo/shell/utils\_sh.js   (mongod, tools, mongos)
 
-## [Interface](interface/1)
+#### [Interface](interface/1)
 
-## [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/1)
 
 -------------
 
-# Group Description
+# Shell Core
 Files only built into the mongo shell
 
 ## Files
@@ -61,13 +61,13 @@ Files only built into the mongo shell
 - src/mongo/shell/shell\_utils\_launcher.cpp   ()
 - src/mongo/shell/shell\_utils\_launcher.h   ()
 
-## [Interface](interface/2)
+#### [Interface](interface/2)
 
-## [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/2)
 
 -------------
 
-# Group Description
+# Shell Command Line Options
 Shell command line options
 
 ## Files
@@ -75,6 +75,6 @@ Shell command line options
 - src/mongo/shell/shell\_options.h   ()
 - src/mongo/shell/shell\_options\_init.cpp   ()
 
-## [Interface](interface/3)
+#### [Interface](interface/3)
 
-## [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/3)

@@ -1,10 +1,10 @@
-# dead\_code
+# Dead Code
 
 # Module Groups
 
 -------------
 
-# Group Description
+# TODO: Name this group
 
 
 ## Files
@@ -18,6 +18,6 @@
 - src/mongo/util/lruishmap.h   (mongod, tools, mongos)
 - src/mongo/db/taskqueue.h   (mongod, tools)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

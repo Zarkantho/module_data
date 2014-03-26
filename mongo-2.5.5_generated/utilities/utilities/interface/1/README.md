@@ -48,7 +48,7 @@
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
     - [src/mongo/s/request.cpp](../../../sharding)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
 
 <div></div>
 

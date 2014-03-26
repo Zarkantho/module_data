@@ -1,10 +1,10 @@
-# boost\_thread
+# Boost Thread
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Boost Thread
 Third Party - The boost thread library
 
 ## Files
@@ -54,6 +54,6 @@ Third Party - The boost thread library
 - src/third\_party/boost/libs/thread/src/pthread/thread.cpp   (mongod, tools, mongos)
 - src/third\_party/boost/libs/thread/src/pthread/timeconv.inl   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

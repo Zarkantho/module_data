@@ -1,4 +1,4 @@
-# queries
+# Queries
 
 ## Modules
 

@@ -218,7 +218,7 @@
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../core\_query\_system)
     - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/matchertests.cpp](../../../unit\_tests)
@@ -307,7 +307,7 @@
     - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/extsorttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/matcher/expression\_where.cpp](../../../core\_query\_system)
     - [src/mongo/db/exec/text.cpp](../../../core\_query\_system)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
@@ -372,7 +372,7 @@
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
     - [src/mongo/db/index\_rebuilder.cpp](../../../indexing)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
     - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
@@ -487,7 +487,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
 
 <div></div>
@@ -525,7 +525,7 @@
     - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
     - [src/mongo/dbtests/counttests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../wire\_protocol\_write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
     - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
     - [src/mongo/db/ops/count.cpp](../../../core\_query\_system)
     - [src/mongo/db/commands/mr.cpp](../../../database\_commands)

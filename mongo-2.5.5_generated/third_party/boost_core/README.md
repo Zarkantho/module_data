@@ -1,10 +1,10 @@
-# boost\_core
+# Boost Core
 
 # Module Groups
 
 -------------
 
-# Group Description
+# Boost Core
 Third Party - The boost shim and the header files in boost core
 
 ## Files
@@ -979,6 +979,6 @@ Third Party - The boost shim and the header files in boost core
 - src/third\_party/boost/boost/visit\_each.hpp   (mongod, tools, mongos)
 - src/third\_party/boost/boost/weak\_ptr.hpp   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

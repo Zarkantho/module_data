@@ -1,10 +1,10 @@
-# s2
+# S2
 
 # Module Groups
 
 -------------
 
-# Group Description
+# S2 Library
 Third Party - Google spherical geometry math library
 
 ## Files
@@ -95,6 +95,6 @@ Third Party - Google spherical geometry math library
 - src/third\_party/s2/util/math/vector3.h   (mongod, tools, mongos)
 - src/third\_party/s2/util/math/vector4.h   (mongod, tools, mongos)
 
-## [Interface](interface/0)
+#### [Interface](interface/0)
 
-## [Dependencies](dependencies/0)
+#### [Dependencies](dependencies/0)

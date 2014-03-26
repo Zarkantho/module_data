@@ -1,4 +1,4 @@
-# mongo\_shell
+# Mongo Shell
 
 ## Modules
 
