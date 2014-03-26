@@ -1,13 +1,14 @@
 # Concurrency
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
-Core locks library. Only in mongod.   can you say a bit more? e.g. database locks are RWlocks, but what *are*   they exactly? any sort of fairness or other performance/"how to use" info?  TODO: There are also a bunch of concurrency related helpers in the UTILITIES section.
+## Core Database Locks
+Core locks library. Only in mongod.
+TODO: Split up this section and go into more detail about the types of locks used here.
+TODO: There are also a bunch of concurrency related helpers in the UTILITIES section.
 
-## Files
+#### Files
 - src/mongo/util/concurrency/rwlock.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/rwlockimpl.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/rwlockimpl.h   (mongod, tools, mongos)
@@ -24,10 +25,10 @@ Core locks library. Only in mongod.   can you say a bit more? e.g. database lock
 
 -------------
 
-# TODO: Name this group
-Spin locks   can you give an example or two of where we tightly spin on locks?
+## Spin Locks
+Spin locks
 
-## Files
+#### Files
 - src/mongo/util/concurrency/spin\_lock.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/spin\_lock.h   (mongod, tools, mongos)
 - src/mongo/util/concurrency/spin\_lock\_test.cpp   ()
@@ -38,10 +39,10 @@ Spin locks   can you give an example or two of where we tightly spin on locks?
 
 -------------
 
-# TODO: Name this group
-Condition Variables   why called 'synchronization' then? (what are these, really? can you give   an example?)
+## Condition Variables
+Condition Variables
 
-## Files
+#### Files
 - src/mongo/util/concurrency/synchronization.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/synchronization.h   (mongod, tools, mongos)
 

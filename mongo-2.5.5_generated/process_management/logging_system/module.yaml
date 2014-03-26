@@ -3,12 +3,7 @@ module_name: logging_system
 module_description: 'TODO: logging_system description'
 module_groups:
 -   group_title: 'TODO: Name this group'
-    group_description: '## jesus, i hope this becomes a library :)## can you say a
-        bit about what kind of logging we do? is there any sort of## ordering or atomicity
-        (maybe per-call-to-log, or per log line?) our## logging guarantees? ''log
-        lines are emitted in-order with respect to each## process thread?'' maybe?)#
-        Logging system (NOTE: The first two actually aren''t part of the "logger"
-        library, but I see no# reason why they should not be)'
+    group_description: 'TODO: Divide this into sections and document'
     group_files:
     - src/mongo/util/log.cpp
     - src/mongo/util/log.h
@@ -7217,9 +7212,10 @@ module_groups:
         file_interface: []
         file_dependencies: []
 -   group_title: 'TODO: Name this group'
-    group_description: Helpers to dump a bunch of information about the current process##
-        at crash time only? at any time? can you give an example of when## this is
-        used?
+    group_description: 'Helpers to dump a bunch of information about the current process
+
+        TODO: at crash time only? at any time? can you give an example of when this
+        is used?'
     group_files:
     - src/mongo/db/log_process_details.cpp
     - src/mongo/db/log_process_details.h

@@ -1,13 +1,12 @@
 # Fail Points
 
-# Module Groups
 
 -------------
 
-# Fail Points
+## Fail Points
 Library for adding fail points into the code for testing purposes
 
-## Files
+#### Files
 - src/mongo/util/fail\_point.cpp   (mongod, tools, mongos)
 - src/mongo/util/fail\_point.h   (mongod, tools, mongos)
 - src/mongo/util/fail\_point\_registry.cpp   (mongod, tools, mongos)

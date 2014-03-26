@@ -1,13 +1,12 @@
 # Tools
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Tools and tool options. For most tools, just prepend "mongo" to get the name of the tool the file  is for. For example, "bridge.cpp" is the main for "mongobridge".
 
-## Files
+#### Files
 - src/mongo/tools/admin.cpp   ()
 - src/mongo/tools/bridge.cpp   (tools)
 - src/mongo/tools/bsondump.cpp   (tools)

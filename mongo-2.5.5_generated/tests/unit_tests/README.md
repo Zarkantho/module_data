@@ -1,13 +1,12 @@
 # Unit Tests
 
-# Module Groups
 
 -------------
 
-# Unittest Framework
+## Unittest Framework
 Unittest framework (for both old style dbtests and new style tests)
 
-## Files
+#### Files
 - src/mongo/unittest/crutch.cpp   ()
 - src/mongo/unittest/fixture\_test.cpp   ()
 - src/mongo/unittest/temp\_dir.cpp   ()
@@ -25,10 +24,10 @@ Unittest framework (for both old style dbtests and new style tests)
 
 -------------
 
-# Dbtests
+## Dbtests
 Old style unittests ("test" binary)
 
-## Files
+#### Files
 - src/mongo/dbtests/accumulatortests.cpp   ()
 - src/mongo/dbtests/basictests.cpp   ()
 - src/mongo/dbtests/btreebuildertests.cpp   ()

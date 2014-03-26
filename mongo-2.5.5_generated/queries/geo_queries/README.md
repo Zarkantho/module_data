@@ -1,13 +1,12 @@
 # Geo Queries
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 GEO query code. TODO: describe the structure of this and how it interacts with the new index  system.
 
-## Files
+#### Files
 - src/mongo/db/geo/core.h   (mongod, tools, mongos)
 - src/mongo/db/geo/geoconstants.h   (mongod, tools, mongos)
 - src/mongo/db/geo/geoparser.cpp   (mongod, tools, mongos)

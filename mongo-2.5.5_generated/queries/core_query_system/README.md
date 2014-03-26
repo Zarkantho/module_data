@@ -1,13 +1,12 @@
 # Core Query System
 
-# Module Groups
 
 -------------
 
-# Query Expression Parser
+## Query Expression Parser
 Matcher expressions. The point of all of this is to take a query string and turn it into a structured set of classes.
 
-## Files
+#### Files
 - src/mongo/db/matcher/expression.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/expression.h   (mongod, tools, mongos)
 - src/mongo/db/matcher/expression\_array.cpp   (mongod, tools, mongos)
@@ -44,10 +43,10 @@ Matcher expressions. The point of all of this is to take a query string and turn
 
 -------------
 
-# Matchable Document
+## Matchable Document
 Class that holds a BSONObj and provides an interface that the parsed expressions use when determining whether a BSONObj matches.
 
-## Files
+#### Files
 - src/mongo/db/matcher/matchable.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/matchable.h   (mongod, tools, mongos)
 
@@ -57,10 +56,10 @@ Class that holds a BSONObj and provides an interface that the parsed expressions
 
 -------------
 
-# Document Iterators
+## Document Iterators
 This contains code to help with iterating arrays and nested documents
 
-## Files
+#### Files
 - src/mongo/db/matcher/path.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/path.h   (mongod, tools, mongos)
 - src/mongo/db/matcher/path\_internal.cpp   (mongod, tools, mongos)
@@ -73,10 +72,10 @@ This contains code to help with iterating arrays and nested documents
 
 -------------
 
-# Document Matcher
+## Document Matcher
 Interface to actually test if a document matches.  Wraps a match expression generated from the expression parsing system.
 
-## Files
+#### Files
 - src/mongo/db/matcher/matcher.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/matcher.h   (mongod, tools, mongos)
 - src/mongo/db/matcher.h   (mongod, tools, mongos)
@@ -87,10 +86,10 @@ Interface to actually test if a document matches.  Wraps a match expression gene
 
 -------------
 
-# TODO: Name this group
+## Match Details
 Helper for requesting more details about what matched our query from the matcher system.
 
-## Files
+#### Files
 - src/mongo/db/matcher/match\_details.cpp   (mongod, tools, mongos)
 - src/mongo/db/matcher/match\_details.h   (mongod, tools, mongos)
 
@@ -100,10 +99,10 @@ Helper for requesting more details about what matched our query from the matcher
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Planning/parsing/optimization for new query framework   not execution as well? (what are all these *runner.cpp files?)
 
-## Files
+#### Files
 - src/mongo/db/query/cached\_plan\_runner.cpp   (mongod, tools)
 - src/mongo/db/query/cached\_plan\_runner.h   (mongod, tools)
 - src/mongo/db/query/canonical\_query.cpp   (mongod, tools, mongos)
@@ -190,10 +189,10 @@ Planning/parsing/optimization for new query framework   not execution as well? (
 
 -------------
 
-# TODO: Name this group
+## LRU Key Value Cache
 Key value store utility class with limited size and an LRU replacement policy.
 
-## Files
+#### Files
 - src/mongo/db/query/lru\_key\_value.h   (mongod, tools, mongos)
 - src/mongo/db/query/lru\_key\_value\_test.cpp   ()
 
@@ -203,10 +202,10 @@ Key value store utility class with limited size and an LRU replacement policy.
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Executor for new query framework   oh. what is the relationship between 'runners' and e.g. 'index\_scan'   here?
 
-## Files
+#### Files
 - src/mongo/db/exec/2d.cpp   (mongod, tools)
 - src/mongo/db/exec/2d.h   (mongod, tools)
 - src/mongo/db/exec/2dcommon.cpp   (mongod, tools)
@@ -276,10 +275,10 @@ Executor for new query framework   oh. what is the relationship between 'runners
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Legacy utilities for managing queries. Has utilities like range intersection and application of  skip and limit. These are allllmost dead. The functionality should be replaced by the new  matcher, expressions, and query system.
 
-## Files
+#### Files
 - src/mongo/db/queryutil-inl.h   (mongod, tools, mongos)
 - src/mongo/db/queryutil.cpp   (mongod, tools, mongos)
 - src/mongo/db/queryutil.h   (mongod, tools, mongos)
@@ -290,10 +289,10 @@ Legacy utilities for managing queries. Has utilities like range intersection and
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Old way of doing document projections. Given a doc and a projection, transforms the document.   what calls it, and where are projections done now?
 
-## Files
+#### Files
 - src/mongo/db/projection.cpp   (mongod, tools, mongos)
 - src/mongo/db/projection.h   (mongod, tools, mongos)
 
@@ -303,10 +302,10 @@ Old way of doing document projections. Given a doc and a projection, transforms 
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Entry point for various database operations   locks: we should clarify locking, e.g. everything in update.cpp happens   in the context of a db write lock   should clarify the relationship between these and db/instance.cpp (not built in anywhere)
 
-## Files
+#### Files
 - src/mongo/db/ops/count.cpp   (mongod, tools)
 - src/mongo/db/ops/count.h   (mongod, tools)
 - src/mongo/db/ops/delete.cpp   (mongod, tools)

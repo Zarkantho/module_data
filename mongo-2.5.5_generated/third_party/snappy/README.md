@@ -1,13 +1,12 @@
 # Snappy
 
-# Module Groups
 
 -------------
 
-# Snappy Compression Library
+## Snappy Compression Library
 Third Party - Snappy compression library
 
-## Files
+#### Files
 - src/third\_party/shim\_snappy.cpp   (mongod, tools, mongos)
 - src/third\_party/snappy/config.h   (mongod, tools, mongos)
 - src/third\_party/snappy/snappy-internal.h   (mongod, tools, mongos)

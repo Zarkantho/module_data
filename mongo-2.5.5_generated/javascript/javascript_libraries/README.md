@@ -1,13 +1,12 @@
 # Javascript Libraries
 
-# Module Groups
 
 -------------
 
-# V8 Bindings
+## V8 Bindings
 v8 Javascript library files
 
-## Files
+#### Files
 - src/mongo/scripting/engine.cpp   (mongod, tools, mongos)
 - src/mongo/scripting/engine.h   (mongod, tools, mongos)
 - src/mongo/scripting/engine\_v8.cpp   (mongod, tools, mongos)
@@ -28,10 +27,10 @@ v8 Javascript library files
 
 -------------
 
-# Benchrun
+## Benchrun
 Benchrunner suite. See  https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
 
-## Files
+#### Files
 - src/mongo/scripting/bench.cpp   (mongod, tools, mongos)
 - src/mongo/scripting/bench.h   (mongod, tools, mongos)
 - src/mongo/scripting/bson\_template\_evaluator.cpp   (mongod, tools, mongos)

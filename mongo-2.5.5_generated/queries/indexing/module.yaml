@@ -17567,7 +17567,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: TTL Background Job
     group_description: Background job that periodically checks a ttl index.
     group_files:
     - src/mongo/db/ttl.cpp

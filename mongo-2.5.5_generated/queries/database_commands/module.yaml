@@ -1,12 +1,23 @@
 module_title: Database Commands
 module_name: database_commands
-module_description: 'TODO: database_commands description'
+module_description: 'In the base MongoDB wire protocol, each packet has an "opCode"
+    field that specifies what kind of operation it is.  These are things like "OP_GET_MORE",
+    "OP_QUERY", "OP_INSERT", etc.
+
+    However, there is no "OP_COMMAND" or anything that looks like it.  What are "Commands"
+    then? What happens when you run "db.serverStatus()"?
+
+    Well, it turns out that commands are simply queries against the special reserved
+    "$cmd" collection.  What this means is that "db.serverStatus()" calls "db.runCommand({serverStatus:1})"
+    which then calls "db.$cmd.findOne({serverStatus:1})".
+
+    See https://wiki.mongodb.com/display/10GEN/Commands for more details.'
 module_groups:
--   group_title: 'TODO: Name this group'
-    group_description: 'Base class for mongodb commands. Has a big std::map with the
-        keys of the command name and the# values as the Command itself. These are
-        the commands that you run using# "db.$cmd.findOne({ "serverStatus" : true
-        }).'
+-   group_title: Commands Registration Class
+    group_description: Base class for mongodb commands. Has a static global std::map
+        of Command objects keyed by the command name.  The way the registration works
+        is by inheritance, since the Constructor of this class "registers itself"
+        in the global command map when it gets executed.
     group_files:
     - src/mongo/db/commands.cpp
     - src/mongo/db/commands.h
@@ -1725,7 +1736,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: General Mongod Commands
     group_description: A bunch of commands for mongod. However, this ALSO has the
         definition of Command::execCommand for# mongod (the function that actually
         runs commands registered using the Command class, which gets# called whenever
@@ -3617,8 +3628,10 @@ module_groups:
                 const&, bool)
             symbol_sources:
             - src/mongo/db/client.cpp
--   group_title: 'TODO: Name this group'
-    group_description: Commands (run using db.$cmd.findOne(...))
+-   group_title: Uncategorized Commands
+    group_description: 'Commands (run using db.$cmd.findOne(...))
+
+        TODO: Categorize and document these separately'
     group_files:
     - src/mongo/db/commands/apply_ops.cpp
     - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
@@ -47973,7 +47986,7 @@ module_groups:
                 const&)
             symbol_sources:
             - src/mongo/db/commands.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Fsync Command
     group_description: Commands + code for fsync of data files
     group_files:
     - src/mongo/db/commands/fsync.cpp

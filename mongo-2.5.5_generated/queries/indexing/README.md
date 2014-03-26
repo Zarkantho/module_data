@@ -1,13 +1,12 @@
 # Indexing
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Indexes and index management code. TODO: go into more details about this. The code is new.  The two parts of the interface that are nice entry points are the "index\_access\_method.h"  (interface for manipulating and accessing the index itself), and "index\_cursor.h" (interface for  getting data from an index) files.   can you say a bit more about the structure in here, wrt. a hypothetical   member of the 'open source community' who wants to add a new type of   index to mongodb?
 
-## Files
+#### Files
 - src/mongo/db/index/2d\_access\_method.cpp   (mongod, tools)
 - src/mongo/db/index/2d\_access\_method.h   (mongod, tools)
 - src/mongo/db/index/2d\_common.h   (mongod, tools)
@@ -52,10 +51,10 @@ Indexes and index management code. TODO: go into more details about this. The co
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
-## Files
+#### Files
 - src/mongo/db/keypattern.cpp   (mongod, tools, mongos)
 - src/mongo/db/keypattern.h   (mongod, tools, mongos)
 
@@ -65,10 +64,10 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
 -------------
 
-# TODO: Name this group
+## TTL Background Job
 Background job that periodically checks a ttl index.
 
-## Files
+#### Files
 - src/mongo/db/ttl.cpp   (mongod, tools)
 - src/mongo/db/ttl.h   (mongod, tools)
 

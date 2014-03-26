@@ -1,13 +1,12 @@
 # REST Client
 
-# Module Groups
 
 -------------
 
-# REST Client
+## REST Client
 Files containing the implementation of the mongodb rest api.
 
-## Files
+#### Files
 - src/mongo/util/net/httpclient.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/httpclient.h   (mongod, tools, mongos)
 

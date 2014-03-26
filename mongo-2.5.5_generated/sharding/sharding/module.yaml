@@ -4172,9 +4172,9 @@ module_groups:
         -   symbol_name: mongo::ConfigServerFixture::tearDown()
             symbol_sources:
             - src/mongo/dbtests/config_server_fixture.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Range Deleter
     group_description: Helper classes to delete a range of documents. This is used
-        for example in chunk migrations# when we are cleaning up an old chunk.
+        for example in chunk migrations when we are cleaning up an old chunk.
     group_files:
     - src/mongo/db/range_deleter.cpp
     - src/mongo/db/range_deleter.h
@@ -9898,11 +9898,9 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Range Comparison
     group_description: Utilities for comparing ranges. Useful because our sharding
-        is range based.## okay, but why in s/ ? only used by sharding? seems weird
-        that something## general like range arith is only in s/ but the more specific
-        delete-range## isn't.
+        is range based.
     group_files:
     - src/mongo/s/range_arithmetic.cpp
     - src/mongo/s/range_arithmetic.h
@@ -11125,9 +11123,9 @@ module_groups:
         -   symbol_name: std::string mongo::integerToHex<int>(int)
             symbol_sources:
             - src/mongo/util/hex.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Collection Metadata
     group_description: Contains metadata about a collection, particularly for sharding.
-        The MetadataLoader populates new# CollectionMetadata objects from config server
+        The MetadataLoader populates new CollectionMetadata objects from config server
         data.
     group_files:
     - src/mongo/s/collection_metadata.cpp
@@ -14186,7 +14184,7 @@ module_groups:
         -   symbol_name: mongo::CollectionType::CollectionType()
             symbol_sources:
             - src/mongo/s/type_collection.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Config Upgrade
     group_description: Code to upgrade config server metadata
     group_files:
     - src/mongo/s/config_upgrade.cpp
@@ -16851,7 +16849,7 @@ module_groups:
                 int)
             symbol_sources:
             - src/mongo/s/config_upgrade_helpers.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Distributed Lock
     group_description: Distributed lock (lock on the config servers from mongos, i.e.
         "balancer lock")
     group_files:
@@ -18495,7 +18493,7 @@ module_groups:
                 const&)
             symbol_sources:
             - src/mongo/db/commands.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: BSON Field Parser
     group_description: Parser for fields in a BSON object. Meant to help enforce a
         schema on a BSON object.
     group_files:
@@ -19859,7 +19857,7 @@ module_groups:
                 const&, mongo::OID*, std::string*)
             symbol_sources:
             - src/mongo/db/field_parser.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Config Server Schema
     group_description: '"Schema" for config server metadata. These classes contain
         structural class definitions for what# we expect to find on the config server.
         They use the field parser above to convert BSON fields# into C++ members.'

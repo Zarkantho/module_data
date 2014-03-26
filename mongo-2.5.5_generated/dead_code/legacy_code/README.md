@@ -1,13 +1,12 @@
 # Legacy Code
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Legacy files that should go away. Global class called "d" that used to contain a bunch of mongod  global variables.
 
-## Files
+#### Files
 - src/mongo/db/d\_globals.cpp   (mongod, tools)
 - src/mongo/db/d\_globals.h   (mongod, tools)
 

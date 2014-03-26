@@ -1,13 +1,12 @@
 # Dead Code
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 
 
-## Files
+#### Files
 - src/mongo/util/trace.cpp   (mongod, tools, mongos)
 - src/mongo/db/tests.cpp   (mongod, tools)
 - src/mongo/db/stats/service\_stats.cpp   (mongod, tools, mongos)

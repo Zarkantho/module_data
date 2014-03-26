@@ -1,13 +1,12 @@
 # Database Commands
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
-Base class for mongodb commands. Has a big std::map with the keys of the command name and the  values as the Command itself. These are the commands that you run using  "db.$cmd.findOne({ "serverStatus" : true }).
+## Commands Registration Class
+Base class for mongodb commands. Has a static global std::map of Command objects keyed by the command name.  The way the registration works is by inheritance, since the Constructor of this class "registers itself" in the global command map when it gets executed.
 
-## Files
+#### Files
 - src/mongo/db/commands.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands.h   (mongod, tools, mongos)
 
@@ -17,10 +16,10 @@ Base class for mongodb commands. Has a big std::map with the keys of the command
 
 -------------
 
-# TODO: Name this group
+## General Mongod Commands
 A bunch of commands for mongod. However, this ALSO has the definition of Command::execCommand for  mongod (the function that actually runs commands registered using the Command class, which gets  called whenever a query against the "$cmd" collection is made)
 
-## Files
+#### Files
 - src/mongo/db/dbcommands.cpp   (mongod, tools)
 
 #### [Interface](interface/1)
@@ -29,10 +28,11 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 -------------
 
-# TODO: Name this group
+## Uncategorized Commands
 Commands (run using db.$cmd.findOne(...))
+TODO: Categorize and document these separately
 
-## Files
+#### Files
 - src/mongo/db/commands/apply\_ops.cpp   (mongod, tools)
 - src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp   (mongod, tools)
 - src/mongo/db/commands/collection\_to\_capped.cpp   (mongod, tools)
@@ -89,10 +89,10 @@ Commands (run using db.$cmd.findOne(...))
 
 -------------
 
-# TODO: Name this group
+## Fsync Command
 Commands + code for fsync of data files
 
-## Files
+#### Files
 - src/mongo/db/commands/fsync.cpp   (mongod, tools)
 - src/mongo/db/commands/fsync.h   (mongod, tools)
 

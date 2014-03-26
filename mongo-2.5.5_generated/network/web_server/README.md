@@ -1,13 +1,12 @@
 # Web Server
 
-# Module Groups
 
 -------------
 
-# Web Server
+## Web Server
 Web access to the database, including rest, jsonp, and http.
 
-## Files
+#### Files
 - src/mongo/db/dbwebserver.cpp   (mongod, mongos)
 - src/mongo/db/dbwebserver.h   (mongod, tools, mongos)
 - src/mongo/db/restapi.cpp   (mongod)

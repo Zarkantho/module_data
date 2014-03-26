@@ -1,13 +1,12 @@
 # Writeback Listener
 
-# Module Groups
 
 -------------
 
-# Mongos Writeback Listener Thread
+## Mongos Writeback Listener Thread
 Thread on mongos that polls the shards for writebacks and sends any queued writebacks to the correct shard
 
-## Files
+#### Files
 - src/mongo/s/writeback\_listener.cpp   (mongos)
 - src/mongo/s/writeback\_listener.h   (mongod, tools, mongos)
 
@@ -17,10 +16,10 @@ Thread on mongos that polls the shards for writebacks and sends any queued write
 
 -------------
 
-# Mongod WriteBack Queue and writebacklisten Command
+## Mongod WriteBack Queue and writebacklisten Command
 Queue where mongod stores writebacks and command that the writebacklistener on mongos calls to poll the shard
 
-## Files
+#### Files
 - src/mongo/s/d\_writeback.cpp   (mongod, tools)
 - src/mongo/s/d\_writeback.h   (mongod, tools)
 
@@ -30,10 +29,10 @@ Queue where mongod stores writebacks and command that the writebacklistener on m
 
 -------------
 
-# Mongod WriteBack Checks
+## Mongod WriteBack Checks
 Code to check if an operation should result in a writeback being queued on the shard
 
-## Files
+#### Files
 - src/mongo/s/d\_logic.cpp   (mongod, tools)
 
 #### [Interface](interface/2)

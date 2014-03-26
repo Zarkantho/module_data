@@ -1,14 +1,13 @@
 # Network Core
 
-# Module Groups
 
 -------------
 
-# Base Wire Protocol Format
+## Base Wire Protocol Format
 The format of the packets in our wire protocol upon which everything else is built.  See http://docs.mongodb.org/meta-driver/latest/legacy/mongodb-wire-protocol/ for the concepts behind it.  WARNING: The names in the server code do not match the names in the documentation.
 The Message class has the lowest level buffer management, while the DbMessage class is a wrapper on top of it that helps for dealing with the different types of operations.
 
-## Files
+#### Files
 - src/mongo/db/dbmessage.cpp   (mongod, tools, mongos)
 - src/mongo/db/dbmessage.h   (mongod, tools, mongos)
 - src/mongo/util/net/message.cpp   (mongod, tools, mongos)
@@ -20,10 +19,10 @@ The Message class has the lowest level buffer management, while the DbMessage cl
 
 -------------
 
-# Socket
+## Socket
 Class providing an abstraction around a network socket.  Also contains the socket exception class.
 
-## Files
+#### Files
 - src/mongo/util/net/sock.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/sock.h   (mongod, tools, mongos)
 - src/mongo/util/net/sock\_test.cpp   ()
@@ -34,10 +33,10 @@ Class providing an abstraction around a network socket.  Also contains the socke
 
 -------------
 
-# Listener Interface
+## Listener Interface
 Interface for a class that listens on a port and accepts incoming connections.  This does not look like a C++ interface because it does not seem to have pure virtual functions, but using this class on its own will eventually cause assertion to fail when a connection is accepted.  This unfortunately turns a compile time check into a runtime check, and makes it harder to tell that this is an interface, but despite that this class is logically an interface and never used on its own.
 
-## Files
+#### Files
 - src/mongo/util/net/listen.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/listen.h   (mongod, tools, mongos)
 
@@ -47,10 +46,10 @@ Interface for a class that listens on a port and accepts incoming connections.  
 
 -------------
 
-# Message Port
+## Message Port
 Wrapper around a single socket providing an interface that works with the MongoDB wire protocol classes rather than raw buffers.  Also has methods to run the SSL handshake on the connection, and automatically handles piggybacking data to reduce the total number of network operations.
 
-## Files
+#### Files
 - src/mongo/util/net/message\_port.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/message\_port.h   (mongod, tools, mongos)
 
@@ -60,10 +59,10 @@ Wrapper around a single socket providing an interface that works with the MongoD
 
 -------------
 
-# HostAndPort String
+## HostAndPort String
 Helper class for storing and checking strings of the form "host:port"
 
-## Files
+#### Files
 - src/mongo/util/net/hostandport.h   (mongod, tools, mongos)
 
 #### [Interface](interface/4)
@@ -72,10 +71,10 @@ Helper class for storing and checking strings of the form "host:port"
 
 -------------
 
-# Socket Poll
+## Socket Poll
 Code to poll a socket to check if it is still alive.  Useful for connection pooling to check if a connection we are getting from the pool is still good.
 
-## Files
+#### Files
 - src/mongo/util/net/socket\_poll.cpp   (mongod, tools, mongos)
 - src/mongo/util/net/socket\_poll.h   (mongod, tools, mongos)
 
@@ -85,12 +84,12 @@ Code to poll a socket to check if it is still alive.  Useful for connection pool
 
 -------------
 
-# Message Server
+## Message Server
 Main entry point into the MongoDB network stack.  The responsibility of this class is to listen on a port and interface, and make callbacks to a "handler" object.  The port, interface, and "handler" object are all passed into the constructor.
 Note that mongod and mongos have different "handler" classes.  Currently these are defined in db.cpp and server.cpp, the same files that have the "main()" functions for mongod and mongos.
 Note also that the classes that this is built on work with "Message" objects, which is the basic unit in the wire protocol, and what the name of this class is based on.
 
-## Files
+#### Files
 - src/mongo/util/net/message\_server.h   (mongod, mongos)
 
 #### [Interface](interface/6)
@@ -99,10 +98,10 @@ Note also that the classes that this is built on work with "Message" objects, wh
 
 -------------
 
-# Thread Based Message Server
+## Thread Based Message Server
 Thread based implementation of a message server, and helpers. Listens on the provided port and spawns a thread for every new connection.  The thread reads all data from a connection and makes callbacks to the "handler" object that was registered for this message server.
 
-## Files
+#### Files
 - src/mongo/util/net/message\_server\_port.cpp   (mongod, mongos)
 
 #### [Interface](interface/7)
@@ -111,10 +110,10 @@ Thread based implementation of a message server, and helpers. Listens on the pro
 
 -------------
 
-# Async Message Server
+## Async Message Server
 Experimental async implementation of a message server.  This is experimental and will probably be deleted before it gets used for real.
 
-## Files
+#### Files
 - src/mongo/util/net/message\_server\_asio.cpp   ()
 
 #### [Interface](interface/8)

@@ -1,11 +1,22 @@
 module_title: Client And Operation Tracking
 module_name: client_and_operation_tracking
-module_description: 'TODO: client_and_operation_tracking description'
+module_description: 'This module contains the code to track and manage the state of
+    clients and database operations.
+
+    MongoDB conflates "threads", "operations", and "connections".  This means everything
+    gets wrapped together into a blobs of global thread local state.  Many things
+    that will eventually have control blocks of their own are just thread local state.  For
+    example, all the operation state and connection state is thread local, which means
+    there is currently no good way to have multiple connections or operations handled
+    by a single thread.
+
+    See https://wiki.mongodb.com/pages/viewpage.action?pageId=78086492 for an introduction
+    to more specific implementation details.'
 module_groups:
--   group_title: 'TODO: Name this group'
-    group_description: mongos's version of a "Client". This is the big bucket of global
-        state. This ALSO has the# definition of Command::execCommand for mongos (the
-        function that actually runs commands registered# using the Command class,
+-   group_title: Mongos Specific Client State
+    group_description: mongos version of a "Client". This is the big bucket of global
+        state.  This ALSO has the definition of "Command::execCommand" for mongos
+        (the function that actually runs commands registered using the Command class,
         which gets called whenever a query against the "$cmd" collection is made)
     group_files:
     - src/mongo/s/s_only.cpp
@@ -1276,20 +1287,20 @@ module_groups:
         -   symbol_name: mongo::LastErrorHolder::initThread()
             symbol_sources:
             - src/mongo/db/lasterror.cpp
--   group_title: 'TODO: Name this group'
-    group_description: mongod's version of a "Client". This is the big bucket of global
-        state.# There is also the concept of a "Context" that one can take at the
-        beginning of an operation that# holds a subset of the global state. There
-        is also a "ReadContext" and a "WriteContext which# take locks. These are all
-        nested classes in "Client". It's a bizarre situation because# "client.h" contains
+-   group_title: Mongod Client State Implementation
+    group_description: mongod version of a "Client". This is the big bucket of global
+        state.  There is also the concept of a "Context" that one can take at the
+        beginning of an operation that holds a subset of the global state. There is
+        also a "ReadContext" and a "WriteContext" which take locks. These are all
+        nested classes in "Client". It is a bizarre situation because "client.h" contains
         the declaration of the class, but there are two different definitions. One
-        in# "s_only.cpp" for mongos, and one in "client.cpp" for mongod. This means
-        that mongos files may# contain "client.h" and pass compile fine when using
-        something in it, but then may fail link# because it happens to be something
-        that's only defined in "client.cpp". I don't see any# definitions so far for
-        "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"#
+        in "s_only.cpp" for mongos, and one in "client.cpp" for mongod. This means
+        that mongos files may contain "client.h" and pass compile fine when using
+        something in it, but then may fail link because it happens to be something
+        that is only defined in "client.cpp". I do not see any definitions so far
+        for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"
         (the definition of the WriteContext constructor) only shows up in client.cpp,
-        which is mongod# only.
+        which is mongod only.
     group_files:
     - src/mongo/db/client.cpp
     - src/mongo/db/client.h
@@ -3225,7 +3236,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Current Operation
     group_description: The current "operation" within the current "Client"
     group_files:
     - src/mongo/db/curop-inl.h
@@ -5481,7 +5492,7 @@ module_groups:
                 std::vector<std::string, std::allocator<std::string> > const&)
             symbol_sources:
             - src/mongo/base/global_initializer_registerer.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Kill Current Operation
     group_description: Functions to kill the current "operation"
     group_files:
     - src/mongo/db/kill_current_op.cpp
@@ -6587,7 +6598,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Interupt Status Checks
     group_description: Helpers to check whether the current operation in the current
         client has been interrupted.
     group_files:
@@ -8004,7 +8015,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Shared Client State Interface
     group_description: 'Base class for a Client on mongod and mongos: ClientBasic'
     group_files:
     - src/mongo/db/client_basic.cpp
@@ -8689,9 +8700,10 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: 'Seems to be the "mongos only" version of the "Client" class:
-        ClientInfo Also inherits from ClientBasic'
+-   group_title: Mongos Client State Implementation
+    group_description: Seems to be the "mongos version" of the "Client" class which
+        inherits from "ClientBasic".  see ClientInfo in s_only.cpp for more "mongos
+        only" client state.  That class also inherits from ClientBasic
     group_files:
     - src/mongo/s/client_info.cpp
     - src/mongo/s/client_info.h
@@ -9883,8 +9895,8 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: The database's internal concept of a cursor from a client
+-   group_title: Client Cursor
+    group_description: The internal representation of a cursor from a client
     group_files:
     - src/mongo/db/clientcursor.cpp
     - src/mongo/db/clientcursor.h
@@ -11455,10 +11467,10 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Legacy Local Access Helpers
     group_description: Contains helper functions for running common operations against
-        the local server. For example,# has findOne, ensureIndex, upsert, etc. which
-        all just run the respective options on the server the# code is running on.
+        the local server. For example, has findOne, ensureIndex, upsert, etc. which
+        all just run the respective operations on the server the code is running on.
     group_files:
     - src/mongo/db/dbhelpers.cpp
     - src/mongo/db/dbhelpers.h
@@ -13075,7 +13087,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: System Profiler
     group_description: Code to get a handle to the "system.profile" collection for
         a given Database
     group_files:
@@ -14406,8 +14418,9 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: Just an enum for different cursor time limit states.
+-   group_title: Cursor Time Limit Special States
+    group_description: Just an enum for different cursor time limit values that have
+        a special meaning, such as "-1" for "no timeout".
     group_files:
     - src/mongo/db/max_time.h
     group_generated_data:

@@ -31560,8 +31560,9 @@ module_groups:
         -   symbol_name: mongo::Listener::_timeTracker
             symbol_sources:
             - src/mongo/util/net/listen.cpp
--   group_title: 'TODO: Name this group'
-    group_description: Helpers to wait for the appropriate write concern
+-   group_title: Write Concern Checks
+    group_description: Main entry point to write concern checking.  Contains code
+        to wait for the appropriate write concern to be satisfied.
     group_files:
     - src/mongo/db/write_concern.cpp
     - src/mongo/db/write_concern.h
@@ -32895,8 +32896,11 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: Actual meat of the waiting for write concern code
+-   group_title: Write Concern Replication Checks
+    group_description: Implementation of replication specific write concern checks.
+        Contains code for making sure an operation has been replicated to a certain
+        number of nodes, but does not contain code for dealing with disk related write
+        concern values.
     group_files:
     - src/mongo/db/repl/write_concern.cpp
     - src/mongo/db/repl/write_concern.h

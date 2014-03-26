@@ -1,13 +1,12 @@
 # Base Utilites
 
-# Module Groups
 
 -------------
 
-# Disallow Copying
+## Disallow Copying
 Use this in a class to explicitly disallow copying of the class. This can prevent bugs where you  were accidentally copying a class that was not safe to copy.
 
-## Files
+#### Files
 - src/mongo/base/disallow\_copying.h   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
@@ -16,10 +15,10 @@ Use this in a class to explicitly disallow copying of the class. This can preven
 
 -------------
 
-# Atomic Counter
+## Atomic Counter
 64 bit atomic counter
 
-## Files
+#### Files
 - src/mongo/base/counter.h   (mongod, tools)
 - src/mongo/base/counter\_test.cpp   ()
 
@@ -29,10 +28,10 @@ Use this in a class to explicitly disallow copying of the class. This can preven
 
 -------------
 
-# Owned Vector
+## Owned Vector
 Vector and map that delete pointers to elements on destruction. "owning" the memory means you are  responsible for deleting it.
 
-## Files
+#### Files
 - src/mongo/base/owned\_pointer\_map.h   (mongod, tools, mongos)
 - src/mongo/base/owned\_pointer\_map\_test.cpp   ()
 - src/mongo/base/owned\_pointer\_vector.h   (mongod, tools, mongos)
@@ -44,10 +43,10 @@ Vector and map that delete pointers to elements on destruction. "owning" the mem
 
 -------------
 
-# Error Handling Utilities
+## Error Handling Utilities
 These are the general error codes for MongoDB.  Error codes have some semantic meaning associated with them.  A Status is a holder for an error code and extra error information, such as a message.  A StatusWith is an object that can either be an error Status or hold an actual value, which means we can still use return to return data from a function rather than passing in pointers as return parameters.
 
-## Files
+#### Files
 - src/mongo/base/status-inl.h   (mongod, tools, mongos)
 - src/mongo/base/status.cpp   (mongod, tools, mongos)
 - src/mongo/base/status.h   (mongod, tools, mongos)
@@ -64,10 +63,10 @@ These are the general error codes for MongoDB.  Error codes have some semantic m
 
 -------------
 
-# Number To String Conversion
+## Number To String Conversion
 Cross platform utilities to convert numbers to strings
 
-## Files
+#### Files
 - src/mongo/base/parse\_number.cpp   (mongod, tools, mongos)
 - src/mongo/base/parse\_number.h   (mongod, tools, mongos)
 - src/mongo/base/parse\_number\_test.cpp   ()
@@ -78,10 +77,10 @@ Cross platform utilities to convert numbers to strings
 
 -------------
 
-# StringData
+## StringData
 The StringData class is a wrapper around a char* that can be constructed from either std::string or a char* without copying the buffer.  This is because a StringData doesn't free the buffer, so unlike std::string it doesn't need to have its own copy.  Is this in function arguments to avoid making an implicit copy when that is not intended.
 
-## Files
+#### Files
 - src/mongo/base/string\_data-inl.h   (mongod, tools, mongos)
 - src/mongo/base/string\_data.cpp   (mongod, tools, mongos)
 - src/mongo/base/string\_data.h   (mongod, tools, mongos)

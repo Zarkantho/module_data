@@ -1,13 +1,12 @@
 # Client And Operation Tracking
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
-mongos's version of a "Client". This is the big bucket of global state. This ALSO has the  definition of Command::execCommand for mongos (the function that actually runs commands registered  using the Command class, which gets called whenever a query against the "$cmd" collection is made)
+## Mongos Specific Client State
+mongos version of a "Client". This is the big bucket of global state.  This ALSO has the definition of "Command::execCommand" for mongos (the function that actually runs commands registered using the Command class, which gets called whenever a query against the "$cmd" collection is made)
 
-## Files
+#### Files
 - src/mongo/s/s\_only.cpp   (mongos)
 
 #### [Interface](interface/0)
@@ -16,10 +15,10 @@ mongos's version of a "Client". This is the big bucket of global state. This ALS
 
 -------------
 
-# TODO: Name this group
-mongod's version of a "Client". This is the big bucket of global state.  There is also the concept of a "Context" that one can take at the beginning of an operation that  holds a subset of the global state. There is also a "ReadContext" and a "WriteContext which  take locks. These are all nested classes in "Client". It's a bizarre situation because  "client.h" contains the declaration of the class, but there are two different definitions. One in  "s\_only.cpp" for mongos, and one in "client.cpp" for mongod. This means that mongos files may  contain "client.h" and pass compile fine when using something in it, but then may fail link  because it happens to be something that's only defined in "client.cpp". I don't see any  definitions so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext"  (the definition of the WriteContext constructor) only shows up in client.cpp, which is mongod  only.
+## Mongod Client State Implementation
+mongod version of a "Client". This is the big bucket of global state.  There is also the concept of a "Context" that one can take at the beginning of an operation that holds a subset of the global state. There is also a "ReadContext" and a "WriteContext" which take locks. These are all nested classes in "Client". It is a bizarre situation because "client.h" contains the declaration of the class, but there are two different definitions. One in "s\_only.cpp" for mongos, and one in "client.cpp" for mongod. This means that mongos files may contain "client.h" and pass compile fine when using something in it, but then may fail link because it happens to be something that is only defined in "client.cpp". I do not see any definitions so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext" (the definition of the WriteContext constructor) only shows up in client.cpp, which is mongod only.
 
-## Files
+#### Files
 - src/mongo/db/client.cpp   (mongod, tools)
 - src/mongo/db/client.h   (mongod, tools, mongos)
 
@@ -29,10 +28,10 @@ mongod's version of a "Client". This is the big bucket of global state.  There i
 
 -------------
 
-# TODO: Name this group
+## Current Operation
 The current "operation" within the current "Client"
 
-## Files
+#### Files
 - src/mongo/db/curop-inl.h   (mongod, tools, mongos)
 - src/mongo/db/curop.cpp   (mongod, tools)
 - src/mongo/db/curop.h   (mongod, tools, mongos)
@@ -44,10 +43,10 @@ The current "operation" within the current "Client"
 
 -------------
 
-# TODO: Name this group
+## Kill Current Operation
 Functions to kill the current "operation"
 
-## Files
+#### Files
 - src/mongo/db/kill\_current\_op.cpp   (mongod, tools)
 - src/mongo/db/kill\_current\_op.h   (mongod, tools)
 
@@ -57,10 +56,10 @@ Functions to kill the current "operation"
 
 -------------
 
-# TODO: Name this group
+## Interupt Status Checks
 Helpers to check whether the current operation in the current client has been interrupted.
 
-## Files
+#### Files
 - src/mongo/db/interrupt\_status.h   (mongod, tools, mongos)
 - src/mongo/db/interrupt\_status\_mongod.cpp   (mongod, tools)
 - src/mongo/db/interrupt\_status\_mongod.h   (mongod, tools)
@@ -73,10 +72,10 @@ Helpers to check whether the current operation in the current client has been in
 
 -------------
 
-# TODO: Name this group
+## Shared Client State Interface
 Base class for a Client on mongod and mongos: ClientBasic
 
-## Files
+#### Files
 - src/mongo/db/client\_basic.cpp   (mongod, tools, mongos)
 - src/mongo/db/client\_basic.h   (mongod, tools, mongos)
 
@@ -86,10 +85,10 @@ Base class for a Client on mongod and mongos: ClientBasic
 
 -------------
 
-# TODO: Name this group
-Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inherits from ClientBasic
+## Mongos Client State Implementation
+Seems to be the "mongos version" of the "Client" class which inherits from "ClientBasic".  see ClientInfo in s\_only.cpp for more "mongos only" client state.  That class also inherits from ClientBasic
 
-## Files
+#### Files
 - src/mongo/s/client\_info.cpp   (mongos)
 - src/mongo/s/client\_info.h   (mongod, tools, mongos)
 
@@ -99,10 +98,10 @@ Seems to be the "mongos only" version of the "Client" class: ClientInfo Also inh
 
 -------------
 
-# TODO: Name this group
-The database's internal concept of a cursor from a client
+## Client Cursor
+The internal representation of a cursor from a client
 
-## Files
+#### Files
 - src/mongo/db/clientcursor.cpp   (mongod, tools)
 - src/mongo/db/clientcursor.h   (mongod, tools, mongos)
 
@@ -112,10 +111,10 @@ The database's internal concept of a cursor from a client
 
 -------------
 
-# TODO: Name this group
-Contains helper functions for running common operations against the local server. For example,  has findOne, ensureIndex, upsert, etc. which all just run the respective options on the server the  code is running on.
+## Legacy Local Access Helpers
+Contains helper functions for running common operations against the local server. For example, has findOne, ensureIndex, upsert, etc. which all just run the respective operations on the server the code is running on.
 
-## Files
+#### Files
 - src/mongo/db/dbhelpers.cpp   (mongod, tools)
 - src/mongo/db/dbhelpers.h   (mongod, tools, mongos)
 
@@ -125,10 +124,10 @@ Contains helper functions for running common operations against the local server
 
 -------------
 
-# TODO: Name this group
+## System Profiler
 Code to get a handle to the "system.profile" collection for a given Database
 
-## Files
+#### Files
 - src/mongo/db/introspect.cpp   (mongod, tools)
 - src/mongo/db/introspect.h   (mongod, tools, mongos)
 
@@ -138,10 +137,10 @@ Code to get a handle to the "system.profile" collection for a given Database
 
 -------------
 
-# TODO: Name this group
-Just an enum for different cursor time limit states.
+## Cursor Time Limit Special States
+Just an enum for different cursor time limit values that have a special meaning, such as "-1" for "no timeout".
 
-## Files
+#### Files
 - src/mongo/db/max\_time.h   (mongos)
 
 #### [Interface](interface/10)

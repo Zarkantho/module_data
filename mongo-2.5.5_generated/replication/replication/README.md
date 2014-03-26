@@ -1,13 +1,12 @@
 # Replication
 
-# Module Groups
 
 -------------
 
-# resync Command
+## resync Command
 Implementation of "resync" command
 
-## Files
+#### Files
 - src/mongo/db/repl/resync.cpp   (mongod, tools)
 
 #### [Interface](interface/0)
@@ -16,10 +15,10 @@ Implementation of "resync" command
 
 -------------
 
-# Master Slave
+## Master Slave
 Legacy Master/Slave implementation
 
-## Files
+#### Files
 - src/mongo/db/repl/master\_slave.cpp   (mongod, tools)
 - src/mongo/db/repl/master\_slave.h   (mongod, tools)
 
@@ -29,10 +28,10 @@ Legacy Master/Slave implementation
 
 -------------
 
-# Replica Set Sync and Initial Sync
+## Replica Set Sync and Initial Sync
 Code to do sync and inital sync.  Note that this is a complex class heirarchy, and the files do not map one to one with class definitions and implementation.  The sync thread is started and run in "rs\_sync.cpp".  It handles doing the initial sync if applicable, then tailing the oplog.
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_initialsync.cpp   (mongod, tools)
 - src/mongo/db/repl/rs\_sync.cpp   (mongod, tools)
 - src/mongo/db/repl/rs\_sync.h   (mongod, tools, mongos)
@@ -45,10 +44,10 @@ Code to do sync and inital sync.  Note that this is a complex class heirarchy, a
 
 -------------
 
-# Replica Set Background Sync Threads
+## Replica Set Background Sync Threads
 Threads that actually handle syncing the oplog from the sync source. This includes the thread that actually reads the data from the source as well as the thread that notifies the source of how far it read
 
-## Files
+#### Files
 - src/mongo/db/repl/bgsync.cpp   (mongod, tools)
 - src/mongo/db/repl/bgsync.h   (mongod, tools)
 
@@ -58,10 +57,10 @@ Threads that actually handle syncing the oplog from the sync source. This includ
 
 -------------
 
-# Sync Source Feedback
+## Sync Source Feedback
 Code to tell the sync source how far we have progressed in the oplog.  For new versions this is the "replSetUpdatePosition command, but for old versions this was a "ghost cursor" which would only be advanced when the batch had been processed
 
-## Files
+#### Files
 - src/mongo/db/repl/sync\_source\_feedback.cpp   (mongod, tools)
 - src/mongo/db/repl/sync\_source\_feedback.h   (mongod, tools, mongos)
 
@@ -71,10 +70,10 @@ Code to tell the sync source how far we have progressed in the oplog.  For new v
 
 -------------
 
-# Oplog Reader
+## Oplog Reader
 Class to handle the details of how we are querying the oplog.  The interface is something like the interface for a cursor.
 
-## Files
+#### Files
 - src/mongo/db/repl/oplogreader.cpp   (mongod, tools)
 - src/mongo/db/repl/oplogreader.h   (mongod, tools, mongos)
 
@@ -84,10 +83,10 @@ Class to handle the details of how we are querying the oplog.  The interface is 
 
 -------------
 
-# One Per Host Connection Pool
+## One Per Host Connection Pool
 Class to manage remote connections.  Contains only one connection per remote host, protected by a mutex.  Note that this also means only one thread can be contacting a given host at a time using this class.
 
-## Files
+#### Files
 - src/mongo/db/repl/connections.h   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
@@ -96,10 +95,10 @@ Class to manage remote connections.  Contains only one connection per remote hos
 
 -------------
 
-# Elections
+## Elections
 Commands that are sent and recieved during election as well as implementation of some class methods related to elections.  Note that there is not a clear class separation between things related to elections and things not related to elections, so the method implementations in this file span multiple classes.
 
-## Files
+#### Files
 - src/mongo/db/repl/consensus.cpp   (mongod, tools)
 
 #### [Interface](interface/7)
@@ -108,10 +107,10 @@ Commands that are sent and recieved during election as well as implementation of
 
 -------------
 
-# Member State Information
+## Member State Information
 Contains class holding all possible states of a replica set member. Also contains class defining the heartbeat information.
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_member.h   (mongod, tools, mongos)
 
 #### [Interface](interface/8)
@@ -120,10 +119,10 @@ Contains class holding all possible states of a replica set member. Also contain
 
 -------------
 
-# Top Level Replica Set Classes
+## Top Level Replica Set Classes
 The top level classes for replcation.  Contains the class representing an entire replica set as well as the class representing information about a node of a replica set.  Note that the header contains a mix of different classes.
 
-## Files
+#### Files
 - src/mongo/db/repl/rs.cpp   (mongod, tools)
 - src/mongo/db/repl/rs.h   (mongod, tools, mongos)
 
@@ -133,10 +132,10 @@ The top level classes for replcation.  Contains the class representing an entire
 
 -------------
 
-# Master Check Helpers
+## Master Check Helpers
 Helpers to check in code whether this node is a "master", since there are things that we can only do if we are a master (primary).  Note that this is not the "isMaster" command.  That lives in replication\_server\_status.cpp
 
-## Files
+#### Files
 - src/mongo/db/repl/is\_master.h   (mongod, tools)
 
 #### [Interface](interface/10)
@@ -145,10 +144,10 @@ Helpers to check in code whether this node is a "master", since there are things
 
 -------------
 
-# Replication Command Line Options
+## Replication Command Line Options
 Global configuration options for replication from the command line.
 
-## Files
+#### Files
 - src/mongo/db/repl/replication\_server\_status.h   (mongod, tools)
 
 #### [Interface](interface/11)
@@ -157,10 +156,10 @@ Global configuration options for replication from the command line.
 
 -------------
 
-# Replication Server Status Section
+## Replication Server Status Section
 Code to add replication information to the server status results. Also currently has the implementation of the "isMaster" command
 
-## Files
+#### Files
 - src/mongo/db/repl/replication\_server\_status.cpp   (mongod, tools)
 
 #### [Interface](interface/12)
@@ -169,10 +168,10 @@ Code to add replication information to the server status results. Also currently
 
 -------------
 
-# Dead Code
+## Dead Code
 HealthOptions class is not really used anywhere
 
-## Files
+#### Files
 - src/mongo/db/repl/health.h   (mongod, tools, mongos)
 
 #### [Interface](interface/13)
@@ -181,10 +180,10 @@ HealthOptions class is not really used anywhere
 
 -------------
 
-# Heath Status Helpers
+## Heath Status Helpers
 Grab bag of miscellaneous helpers that report the status of a replica set or replica set node.  Most of this could be pushed into other files more connected with the classes they come from
 
-## Files
+#### Files
 - src/mongo/db/repl/health.cpp   (mongod, tools)
 
 #### [Interface](interface/14)
@@ -193,10 +192,10 @@ Grab bag of miscellaneous helpers that report the status of a replica set or rep
 
 -------------
 
-# Parallel Command Dispatching
+## Parallel Command Dispatching
 Helpers to send a command to multiple servers in parallel and collect the results.  Used in the election process.
 
-## Files
+#### Files
 - src/mongo/db/repl/multicmd.h   (mongod, tools, mongos)
 
 #### [Interface](interface/15)
@@ -205,10 +204,10 @@ Helpers to send a command to multiple servers in parallel and collect the result
 
 -------------
 
-# State Transition Manager
+## State Transition Manager
 Thin layer on top of the main replica set class.  Seems to be intended to manage state transitions in a replica set.  It does things like look at the current state of our set to determine if the node should step down or try to elect ourself as primary.  This gets called by the heartbeat thread when a state change is detected.
 
-## Files
+#### Files
 - src/mongo/db/repl/manager.cpp   (mongod, tools)
 
 #### [Interface](interface/16)
@@ -217,10 +216,10 @@ Thin layer on top of the main replica set class.  Seems to be intended to manage
 
 -------------
 
-# Replica Set Heartbeats
+## Replica Set Heartbeats
 Contains the replica set heartbeat command implementation as well as the task that actually sends the heartbeat commands to check the health of other nodes in the set.
 
-## Files
+#### Files
 - src/mongo/db/repl/heartbeat.cpp   (mongod, tools)
 
 #### [Interface](interface/17)
@@ -229,10 +228,10 @@ Contains the replica set heartbeat command implementation as well as the task th
 
 -------------
 
-# Replication Startup Entry Point
+## Replication Startup Entry Point
 Entry point for starting up replication when we are initializing the server.  Will check whether we are using replication or master/slave and do the proper initialization
 
-## Files
+#### Files
 - src/mongo/db/repl/repl\_start.cpp   (mongod, tools)
 - src/mongo/db/repl/repl\_start.h   (mongod, tools)
 
@@ -242,10 +241,10 @@ Entry point for starting up replication when we are initializing the server.  Wi
 
 -------------
 
-# Replica Set Config
+## Replica Set Config
 Class that manages the configuration of a replica set.  This is the static configuration in which changes are only really triggered by the user.  See the output of rs.conf(), which queries the current replica set configuration from the local database.
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_config.cpp   (mongod, tools)
 - src/mongo/db/repl/rs\_config.h   (mongod, tools, mongos)
 
@@ -255,10 +254,10 @@ Class that manages the configuration of a replica set.  This is the static confi
 
 -------------
 
-# Oplog
+## Oplog
 Free helper functions to create the oplog, log operations into the oplog and apply operations from the oplog.
 
-## Files
+#### Files
 - src/mongo/db/repl/oplog.cpp   (mongod, tools)
 - src/mongo/db/repl/oplog.h   (mongod, tools)
 
@@ -268,10 +267,10 @@ Free helper functions to create the oplog, log operations into the oplog and app
 
 -------------
 
-# Replication Exceptions
+## Replication Exceptions
 Exceptions that can be thrown from replication code
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_exception.h   (mongod, tools, mongos)
 
 #### [Interface](interface/21)
@@ -280,10 +279,10 @@ Exceptions that can be thrown from replication code
 
 -------------
 
-# Replica Set Commands
+## Replica Set Commands
 Commands related to replica sets
 
-## Files
+#### Files
 - src/mongo/db/repl/replset\_commands.cpp   (mongod, tools)
 
 #### [Interface](interface/22)
@@ -292,10 +291,10 @@ Commands related to replica sets
 
 -------------
 
-# Replica Set Web Information
+## Replica Set Web Information
 Code to handle the web page that reports replica set information. See the database web server code for more details.
 
-## Files
+#### Files
 - src/mongo/db/repl/replset\_web\_handler.cpp   (mongod)
 
 #### [Interface](interface/23)
@@ -304,10 +303,10 @@ Code to handle the web page that reports replica set information. See the databa
 
 -------------
 
-# Reads Allowed
+## Reads Allowed
 Code to check if we can read from this node.  Checks if we are the primary or slaveOk is true.
 
-## Files
+#### Files
 - src/mongo/db/repl/repl\_reads\_ok.cpp   (mongod, tools)
 - src/mongo/db/repl/repl\_reads\_ok.h   (mongod, tools)
 
@@ -317,10 +316,10 @@ Code to check if we can read from this node.  Checks if we are the primary or sl
 
 -------------
 
-# Replica Set Initiate
+## Replica Set Initiate
 rs.initiate() (replSetInitiate) command
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_initiate.cpp   (mongod, tools)
 
 #### [Interface](interface/25)
@@ -329,10 +328,10 @@ rs.initiate() (replSetInitiate) command
 
 -------------
 
-# Replica Set Rollback
+## Replica Set Rollback
 Code to handle rollbacks when two nodes got different writes (in the case where two nodes thought they were primary for some period of time).
 
-## Files
+#### Files
 - src/mongo/db/repl/rs\_rollback.cpp   (mongod, tools)
 
 #### [Interface](interface/26)
@@ -341,10 +340,10 @@ Code to handle rollbacks when two nodes got different writes (in the case where 
 
 -------------
 
-# TODO: Name this group
-Helpers to wait for the appropriate write concern
+## Write Concern Checks
+Main entry point to write concern checking.  Contains code to wait for the appropriate write concern to be satisfied.
 
-## Files
+#### Files
 - src/mongo/db/write\_concern.cpp   (mongod, tools)
 - src/mongo/db/write\_concern.h   (mongod, tools, mongos)
 
@@ -354,10 +353,10 @@ Helpers to wait for the appropriate write concern
 
 -------------
 
-# TODO: Name this group
-Actual meat of the waiting for write concern code
+## Write Concern Replication Checks
+Implementation of replication specific write concern checks. Contains code for making sure an operation has been replicated to a certain number of nodes, but does not contain code for dealing with disk related write concern values.
 
-## Files
+#### Files
 - src/mongo/db/repl/write\_concern.cpp   (mongod, tools)
 - src/mongo/db/repl/write\_concern.h   (mongod, tools, mongos)
 
@@ -367,10 +366,10 @@ Actual meat of the waiting for write concern code
 
 -------------
 
-# Write Concern Object Parser
+## Write Concern Object Parser
 Helper to parse write concern options out of a BSONObj representing a "write concern object"
 
-## Files
+#### Files
 - src/mongo/db/write\_concern\_options.cpp   (mongod, tools, mongos)
 - src/mongo/db/write\_concern\_options.h   (mongod, tools, mongos)
 

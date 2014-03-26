@@ -1,13 +1,12 @@
 # Stemmer
 
-# Module Groups
 
 -------------
 
-# Stemmer
+## Stemmer
 Third Party - Stemmer for various languages used in full text search
 
-## Files
+#### Files
 - src/third\_party/shim\_stemmer.cpp   (mongod, tools, mongos)
 - src/third\_party/libstemmer\_c/include/libstemmer.h   (mongod, tools, mongos)
 - src/third\_party/libstemmer\_c/libstemmer/libstemmer\_utf8.c   (mongod, tools, mongos)

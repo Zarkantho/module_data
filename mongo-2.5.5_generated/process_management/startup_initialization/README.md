@@ -1,13 +1,12 @@
 # Startup Initialization
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Check various expected startup conditions and log warnings to the user if necessary   what uses these? everything? mongod/mongos only? what sort of checks?
 
-## Files
+#### Files
 - src/mongo/db/startup\_warnings.cpp   (mongod, tools)
 - src/mongo/db/startup\_warnings.h   (mongod, tools)
 
@@ -17,10 +16,10 @@ Check various expected startup conditions and log warnings to the user if necess
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 MONGO\_INITIALIZER startup initialization framework.   what should use these? any tool? mongod/mongos only?
 
-## Files
+#### Files
 - src/mongo/base/global\_initializer.cpp   (mongod, tools, mongos)
 - src/mongo/base/global\_initializer.h   (mongod, tools, mongos)
 - src/mongo/base/global\_initializer\_registerer.cpp   (mongod, tools, mongos)
@@ -45,10 +44,10 @@ MONGO\_INITIALIZER startup initialization framework.   what should use these? an
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Initialize the global state common to mongod and mongos, such as logging.
 
-## Files
+#### Files
 - src/mongo/db/initialize\_server\_global\_state.cpp   (mongod, mongos)
 - src/mongo/db/initialize\_server\_global\_state.h   (mongod, mongos)
 
@@ -58,10 +57,10 @@ Initialize the global state common to mongod and mongos, such as logging.
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Options parser library (command line and config files)   where do the options get stored / how can people grab options later?   are they set once and immutable or can they be updated?
 
-## Files
+#### Files
 - src/mongo/util/options\_parser/constraints.cpp   (mongod, tools, mongos)
 - src/mongo/util/options\_parser/constraints.h   (mongod, tools, mongos)
 - src/mongo/util/options\_parser/environment.cpp   (mongod, tools, mongos)
@@ -88,10 +87,10 @@ Options parser library (command line and config files)   where do the options ge
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Command line utilities   can you say a bit more? (give an example?)
 
-## Files
+#### Files
 - src/mongo/util/cmdline\_utils/censor\_cmdline.cpp   (mongod, tools, mongos)
 - src/mongo/util/cmdline\_utils/censor\_cmdline.h   (mongod, tools, mongos)
 - src/mongo/util/cmdline\_utils/censor\_cmdline\_test.cpp   ()
@@ -102,10 +101,10 @@ Command line utilities   can you say a bit more? (give an example?)
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Only used to ask user for password at startup. TODO: move into cmdline\_utils directory
 
-## Files
+#### Files
 - src/mongo/util/password.cpp   (mongod, tools, mongos)
 - src/mongo/util/password.h   (mongod, tools, mongos)
 
@@ -115,10 +114,10 @@ Only used to ask user for password at startup. TODO: move into cmdline\_utils di
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Command line options shared between mongod and mongos   give an example (--hostname?)
 
-## Files
+#### Files
 - src/mongo/db/server\_options.cpp   (mongod, tools, mongos)
 - src/mongo/db/server\_options.h   (mongod, tools, mongos)
 - src/mongo/db/server\_options\_helpers.cpp   (mongod, tools, mongos)
@@ -131,10 +130,10 @@ Command line options shared between mongod and mongos   give an example (--hostn
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 ServerParameter class used to add new parameters to the "setParameter" command. These can also be  configured to be runtime modifiable.
 
-## Files
+#### Files
 - src/mongo/db/server\_parameters.cpp   (mongod, tools, mongos)
 - src/mongo/db/server\_parameters.h   (mongod, tools, mongos)
 - src/mongo/db/server\_parameters\_inline.h   (mongod, tools, mongos)

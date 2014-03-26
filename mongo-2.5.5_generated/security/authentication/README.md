@@ -1,13 +1,12 @@
 # Authentication
 
-# Module Groups
 
 -------------
 
-# Authentication Session
+## Authentication Session
 Thread local storage for any transient state needed for authentication mechanisms that are implemented by MongoDB.
 
-## Files
+#### Files
 - src/mongo/db/auth/mongo\_authentication\_session.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/mongo\_authentication\_session.h   (mongod, tools, mongos)
 - src/mongo/db/auth/authentication\_session.h   (mongod, tools, mongos)
@@ -18,10 +17,10 @@ Thread local storage for any transient state needed for authentication mechanism
 
 -------------
 
-# Authentication Commands
+## Authentication Commands
 Command entry point to authentication.
 
-## Files
+#### Files
 - src/mongo/db/commands/authentication\_commands.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/authentication\_commands.h   (mongod, tools, mongos)
 
@@ -31,10 +30,10 @@ Command entry point to authentication.
 
 -------------
 
-# Internal Cluster Authentication
+## Internal Cluster Authentication
 Handles authentication between nodes in a cluster.
 
-## Files
+#### Files
 - src/mongo/db/auth/security\_key.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/security\_key.h   (mongod, tools, mongos)
 

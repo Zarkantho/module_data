@@ -15689,7 +15689,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Reference Count Helper
     group_description: Helper library that you inherit from to make a class "reference
         counted"
     group_files:
@@ -16268,7 +16268,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: MD5 Hasher
     group_description: md5 hash library
     group_files:
     - src/mongo/util/md5.cpp
@@ -17277,7 +17277,7 @@ module_groups:
         -   symbol_name: _md5_append
             symbol_sources:
             - src/mongo/util/md5.cpp
--   group_title: 'TODO: Name this group'
+-   group_title: Windows Service Management
     group_description: Windows service
     group_files:
     - src/mongo/util/ntservice.cpp
@@ -18207,7 +18207,7 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
+-   group_title: Auth Utils
     group_description: Utilities to hash a username + password
     group_files:
     - src/mongo/client/auth_helpers.cpp

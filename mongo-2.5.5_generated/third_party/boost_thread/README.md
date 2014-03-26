@@ -1,13 +1,12 @@
 # Boost Thread
 
-# Module Groups
 
 -------------
 
-# Boost Thread
+## Boost Thread
 Third Party - The boost thread library
 
-## Files
+#### Files
 - src/third\_party/boost/boost/thread/barrier.hpp   (mongod, tools, mongos)
 - src/third\_party/boost/boost/thread/condition.hpp   (mongod, tools, mongos)
 - src/third\_party/boost/boost/thread/condition\_variable.hpp   (mongod, tools, mongos)

@@ -1,13 +1,12 @@
 # Storage Layer Structure
 
-# Module Groups
 
 -------------
 
-# Namespace String
+## Namespace String
 Helper to manage strings that look like "<db>.<collection>"
 
-## Files
+#### Files
 - src/mongo/db/namespace\_string-inl.h   (mongod, tools, mongos)
 - src/mongo/db/namespace\_string.h   (mongod, tools, mongos)
 - src/mongo/db/namespace\_string\_test.cpp   ()
@@ -18,10 +17,10 @@ Helper to manage strings that look like "<db>.<collection>"
 
 -------------
 
-# Namespace Holder
+## Namespace Holder
 Class to hold namespace strings that look like "<db>.<collection>" in a fixed width form
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/namespace.cpp   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace-inl.h   (mongod, tools, mongos)
@@ -33,10 +32,10 @@ Class to hold namespace strings that look like "<db>.<collection>" in a fixed wi
 
 -------------
 
-# Btree Datastructure
+## Btree Datastructure
 Files containing the btree datastructure code.  Currently this is the only index datastructure we use.  While this is intended to be a low level datastructure, it currently has a few fingers into replication and other parts of the server, including calling isMaster
 
-## Files
+#### Files
 - src/mongo/db/structure/btree/btree.cpp   (mongod, tools)
 - src/mongo/db/structure/btree/btree.h   (mongod, tools)
 - src/mongo/db/structure/btree/btree\_stats.cpp   (mongod, tools)
@@ -52,10 +51,10 @@ Files containing the btree datastructure code.  Currently this is the only index
 
 -------------
 
-# Index Catalog
+## Index Catalog
 Classes to manage and iterate indexes.  There should only be one index catalog per collection.  Contains some subset of the metadata about an index as well as an index descriptor containing the rest of the data
 
-## Files
+#### Files
 - src/mongo/db/catalog/index\_catalog.cpp   (mongod, tools)
 - src/mongo/db/catalog/index\_catalog.h   (mongod, tools, mongos)
 - src/mongo/db/catalog/index\_catalog\_entry.cpp   (mongod, tools)
@@ -67,10 +66,10 @@ Classes to manage and iterate indexes.  There should only be one index catalog p
 
 -------------
 
-# Database Holder
+## Database Holder
 Top level class to keep track of databases.  Essentially a map of path + dbname to a Database object with extra logic to optionally create the database if it does not exist.
 
-## Files
+#### Files
 - src/mongo/db/catalog/database\_holder.cpp   (mongod, tools)
 - src/mongo/db/catalog/database\_holder.h   (mongod, tools, mongos)
 
@@ -80,10 +79,10 @@ Top level class to keep track of databases.  Essentially a map of path + dbname 
 
 -------------
 
-# Database Class
+## Database Class
 Class to manage a single database.  This currently contains the code to manage data files and collections and provides mechanisms to access other database information, such as indexes.
 
-## Files
+#### Files
 - src/mongo/db/catalog/database.cpp   (mongod, tools)
 - src/mongo/db/catalog/database.h   (mongod, tools, mongos)
 
@@ -93,10 +92,10 @@ Class to manage a single database.  This currently contains the code to manage d
 
 -------------
 
-# Namespace Details
+## Namespace Details
 Class to manage the disk format of the ".ns" files
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/namespace\_details-inl.h   (mongod, tools, mongos)
 - src/mongo/db/structure/catalog/namespace\_details.cpp   (mongod, tools)
 - src/mongo/db/structure/catalog/namespace\_details.h   (mongod, tools, mongos)
@@ -107,10 +106,10 @@ Class to manage the disk format of the ".ns" files
 
 -------------
 
-# Collection Class
+## Collection Class
 Class to manage a single collection, including collection data and collection metadata.
 
-## Files
+#### Files
 - src/mongo/db/catalog/collection.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection.h   (mongod, tools, mongos)
 
@@ -120,10 +119,10 @@ Class to manage a single collection, including collection data and collection me
 
 -------------
 
-# Collection Info Cache
+## Collection Info Cache
 Contains methods to update and access non persistent collection state, such as the current query plan cache
 
-## Files
+#### Files
 - src/mongo/db/catalog/collection\_info\_cache.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection\_info\_cache.h   (mongod, tools, mongos)
 
@@ -133,10 +132,10 @@ Contains methods to update and access non persistent collection state, such as t
 
 -------------
 
-# Collection Cursor Cache
+## Collection Cursor Cache
 Keeps track of cursors and query runners for timeout and invalidation purposes.  The pattern is that the relevant objects must be registered here so that this code can essentially call back to do the invalidation when necessary
 
-## Files
+#### Files
 - src/mongo/db/catalog/collection\_cursor\_cache.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection\_cursor\_cache.h   (mongod, tools, mongos)
 
@@ -146,10 +145,10 @@ Keeps track of cursors and query runners for timeout and invalidation purposes. 
 
 -------------
 
-# Foreground Index Creation
+## Foreground Index Creation
 Free function to create an index in the foreground.  TODO: Find all the ways an index can be created and put them in the same section
 
-## Files
+#### Files
 - src/mongo/db/catalog/index\_create.cpp   (mongod, tools)
 - src/mongo/db/catalog/index\_create.h   (mongod, tools)
 
@@ -159,10 +158,10 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 
 -------------
 
-# Storage Options
+## Storage Options
 Command line options for the storage system.  This should only be in binaries that have a storaage layer.
 
-## Files
+#### Files
 - src/mongo/db/storage\_options.cpp   (mongod, tools)
 - src/mongo/db/storage\_options.h   (mongod, tools, mongos)
 
@@ -172,10 +171,10 @@ Command line options for the storage system.  This should only be in binaries th
 
 -------------
 
-# Capped Collection Management
+## Capped Collection Management
 Contains code to do low level storage management of a capped collection, such as allocation of new records
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/cap.cpp   (mongod, tools)
 
 #### [Interface](interface/12)
@@ -184,10 +183,10 @@ Contains code to do low level storage management of a capped collection, such as
 
 -------------
 
-# Persistent Hash Table
+## Persistent Hash Table
 Fixed size hash table that is appropriate for managing memory that is persisted to disk
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/hashtab.h   (mongod, tools, mongos)
 
 #### [Interface](interface/13)
@@ -196,10 +195,10 @@ Fixed size hash table that is appropriate for managing memory that is persisted 
 
 -------------
 
-# Index Details
+## Index Details
 On disk format of index metadata
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/index\_details.cpp   (mongod, tools)
 - src/mongo/db/structure/catalog/index\_details.h   (mongod, tools, mongos)
 
@@ -209,10 +208,10 @@ On disk format of index metadata
 
 -------------
 
-# Namespace Index
+## Namespace Index
 Manages the ".ns" files, including adding the metadata for a new namespace or removing metadata for a deleted namespace
 
-## Files
+#### Files
 - src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
 - src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
 
@@ -222,10 +221,10 @@ Manages the ".ns" files, including adding the metadata for a new namespace or re
 
 -------------
 
-# Collection Compact
+## Collection Compact
 Contains the code that actually does the work of compacting a collection.  TODO: put this near the actual compact command
 
-## Files
+#### Files
 - src/mongo/db/structure/collection\_compact.cpp   (mongod, tools)
 
 #### [Interface](interface/16)
@@ -234,10 +233,10 @@ Contains the code that actually does the work of compacting a collection.  TODO:
 
 -------------
 
-# Collection Iterator
+## Collection Iterator
 Contains code that essentially does a table scan of a collection. Has iterators for both capped and non capped collections.
 
-## Files
+#### Files
 - src/mongo/db/structure/collection\_iterator.cpp   (mongod, tools)
 - src/mongo/db/structure/collection\_iterator.h   (mongod, tools)
 
@@ -247,10 +246,10 @@ Contains code that essentially does a table scan of a collection. Has iterators 
 
 -------------
 
-# DiskLoc Class
+## DiskLoc Class
 A DiskLoc is simply a file number and offset into the file for a db. You can think of this as an  "address" into our database storage space.
 
-## Files
+#### Files
 - src/mongo/db/diskloc.h   (mongod, tools, mongos)
 - src/mongo/db/diskloc\_test.cpp   ()
 
@@ -260,10 +259,10 @@ A DiskLoc is simply a file number and offset into the file for a db. You can thi
 
 -------------
 
-# DiskLoc Invalidation Type
+## DiskLoc Invalidation Type
 Type of a DiskLoc invalidation.
 
-## Files
+#### Files
 - src/mongo/db/invalidation\_type.h   (mongod, tools, mongos)
 
 #### [Interface](interface/19)
@@ -272,10 +271,10 @@ Type of a DiskLoc invalidation.
 
 -------------
 
-# Record Class
+## Record Class
 A record is simply a "node" in a linked list. It contains "prev" and "next" offsets, as well as  the offset of the extent in the current file.
 
-## Files
+#### Files
 - src/mongo/db/storage/record.cpp   (mongod, tools)
 - src/mongo/db/storage/record.h   (mongod, tools, mongos)
 
@@ -285,10 +284,10 @@ A record is simply a "node" in a linked list. It contains "prev" and "next" offs
 
 -------------
 
-# Record Store
+## Record Store
 Manages Records.  Contains code to delete and insert records, as well as helpers to construct a Record object from a DiscLoc.  Also handles allocating new extents if the current extent does not have room for another record.
 
-## Files
+#### Files
 - src/mongo/db/structure/record\_store.cpp   (mongod, tools)
 - src/mongo/db/structure/record\_store.h   (mongod, tools, mongos)
 
@@ -298,10 +297,10 @@ Manages Records.  Contains code to delete and insert records, as well as helpers
 
 -------------
 
-# Extent Class
+## Extent Class
 An extent is a bucket of records. Extents themselves are in a kind of linked list, except instead  of offsets into a single datafile, their "prev" and "next" members are DiskLocs.
 
-## Files
+#### Files
 - src/mongo/db/storage/extent.cpp   (mongod, tools)
 - src/mongo/db/storage/extent.h   (mongod, tools, mongos)
 
@@ -311,10 +310,10 @@ An extent is a bucket of records. Extents themselves are in a kind of linked lis
 
 -------------
 
-# Extent Manager
+## Extent Manager
 Sits above an extent and has helper functions to manage them as a whole. This is the new way to  iterate extents.
 
-## Files
+#### Files
 - src/mongo/db/storage/extent\_manager.cpp   (mongod, tools)
 - src/mongo/db/storage/extent\_manager.h   (mongod, tools, mongos)
 
@@ -324,10 +323,10 @@ Sits above an extent and has helper functions to manage them as a whole. This is
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Utilities to clone entire collections and databases
 
-## Files
+#### Files
 - src/mongo/db/cloner.cpp   (mongod, tools)
 - src/mongo/db/cloner.h   (mongod, tools)
 
@@ -337,10 +336,10 @@ Utilities to clone entire collections and databases
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 One of the very hairy, very old parts of the server. Contains code for the DBDirectClient, which  is an implementation of the "DBClientBase" class in the client driver. The DBDirectClient has the  same interface as the client driver, except that instead of connecting over the network it is just  doing operations on the local server behind the scenes.   This also has code for the "BSONElementManipulator which is what allows us to do in place  updates in the old code. It appears now that it is only used in updating the "expireAfterSeconds"  field for a document in a TTL index.   Also have random things like "getDatabaseNames" which just iteratest the db directory getting all  the names of the files there. Also has the version of "inShutdown" and "dbexit" for mongod.   clarify relationship between instance.cpp and the various ops/* (insert/update etc)
 
-## Files
+#### Files
 - src/mongo/db/instance.cpp   (mongod, tools)
 - src/mongo/db/instance.h   (mongod, tools, mongos)
 
@@ -350,10 +349,10 @@ One of the very hairy, very old parts of the server. Contains code for the DBDir
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 This is another really hairy, really old legacy file. At this point it's easier to just write out  all the functions in the interface than describe what it does. I believe "pdfile" is short for  "persistent data file". It contains a bunch of old legacy things to manipulate data files and  data file metadata.   Here are all the functions in pdfile.cpp that are currently used in the project.   mongo::inDBRepair  mongo::allocateSpaceForANewRecord(char const*, mongo::NamespaceDetails*, int, bool)  mongo::dbSize(char const*)  mongo::dropDatabase(std::string const&)  mongo::dbHolderUnchecked()  mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)  mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool, bool*)  mongo::\_deleteDataFiles(char const*)  mongo::dropAllDatabasesExceptLocal()  mongo::isValidNS(mongo::StringData const&)  mongo::repairDatabase(std::string, std::string&, bool, bool)
 
-## Files
+#### Files
 - src/mongo/db/pdfile.cpp   (mongod, tools)
 - src/mongo/db/pdfile.h   (mongod, tools, mongos)
 - src/mongo/db/pdfile\_private.h   (mongod, tools)

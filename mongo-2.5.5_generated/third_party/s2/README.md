@@ -1,13 +1,12 @@
 # S2
 
-# Module Groups
 
 -------------
 
-# S2 Library
+## S2 Library
 Third Party - Google spherical geometry math library
 
-## Files
+#### Files
 - src/third\_party/s2/base/basictypes.h   (mongod, tools, mongos)
 - src/third\_party/s2/base/casts.h   (mongod, tools, mongos)
 - src/third\_party/s2/base/definer.h   (mongod, tools, mongos)

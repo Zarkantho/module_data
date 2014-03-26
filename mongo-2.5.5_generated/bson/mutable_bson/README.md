@@ -1,13 +1,12 @@
 # Mutable BSON
 
-# Module Groups
 
 -------------
 
-# Uncategorized Mutable BSON code
+## Uncategorized Mutable BSON code
 TODO: organize this into real sections
 
-## Files
+#### Files
 - src/mongo/bson/mutable/algorithm.h   (mongod, tools, mongos)
 - src/mongo/bson/mutable/const\_element-inl.h   (mongod, tools, mongos)
 - src/mongo/bson/mutable/const\_element.h   (mongod, tools, mongos)

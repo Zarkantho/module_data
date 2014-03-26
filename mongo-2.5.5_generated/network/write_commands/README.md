@@ -1,13 +1,12 @@
 # Write Commands
 
-# Module Groups
 
 -------------
 
-# Write Commands Declarations
+## Write Commands Declarations
 Classes registering the write commands into the command system. When a write command is recieved by a mongod, this is the entry point.
 
-## Files
+#### Files
 - src/mongo/db/commands/write\_commands/write\_commands.cpp   (mongod, tools)
 - src/mongo/db/commands/write\_commands/write\_commands.h   (mongod, tools)
 
@@ -17,10 +16,10 @@ Classes registering the write commands into the command system. When a write com
 
 -------------
 
-# Batch Executor
+## Batch Executor
 Class that actually does the work of executing a batch of writes on a mongod.
 
-## Files
+#### Files
 - src/mongo/db/commands/write\_commands/batch\_executor.cpp   (mongod, tools)
 - src/mongo/db/commands/write\_commands/batch\_executor.h   (mongod, tools)
 
@@ -30,10 +29,10 @@ Class that actually does the work of executing a batch of writes on a mongod.
 
 -------------
 
-# Write Commands Utilities
+## Write Commands Utilities
 Common utilities that are shared by the write commands, such as authorization checks.
 
-## Files
+#### Files
 - src/mongo/db/commands/write\_commands/write\_commands\_common.cpp   (mongod, tools, mongos)
 - src/mongo/db/commands/write\_commands/write\_commands\_common.h   (mongod, tools, mongos)
 
@@ -43,10 +42,10 @@ Common utilities that are shared by the write commands, such as authorization ch
 
 -------------
 
-# Config Coordinator
+## Config Coordinator
 Core config server write management.  Sends a batch of the new write commands to the config servers.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/config\_coordinator.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/config\_coordinator.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/config\_coordinator\_test.cpp   ()
@@ -57,10 +56,10 @@ Core config server write management.  Sends a batch of the new write commands to
 
 -------------
 
-# Write Commands mongos Execution
+## Write Commands mongos Execution
 New wire protocol writes (in mongos) TODO: Separate this into smaller groups and reorganize this section.  There are different parts to it.  The cluster\_write\_cmd file has the actual "Command" classes, the batch\_write\_exec files have the actually "runner" of the batch, while the batch\_write\_op and write\_op files are classes that are used to track the lifecycle of batch write and single write operations respectively
 
-## Files
+#### Files
 - src/mongo/s/commands/cluster\_write\_cmd.cpp   (mongos)
 - src/mongo/s/write\_ops/batch\_write\_exec.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batch\_write\_exec.h   (mongod, tools, mongos)
@@ -78,10 +77,10 @@ New wire protocol writes (in mongos) TODO: Separate this into smaller groups and
 
 -------------
 
-# Write Commands Upconvert
+## Write Commands Upconvert
 Code to convert incoming writes on a mongos from a legacy client into a write command for talking to new mongods and convert write command responses into legacy getLastError responses.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batch\_upconvert.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batch\_upconvert.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batch\_upconvert\_test.cpp   ()
@@ -92,10 +91,10 @@ Code to convert incoming writes on a mongos from a legacy client into a write co
 
 -------------
 
-# Write Commands Downconvert
+## Write Commands Downconvert
 Code to convert the new style write commands into legacy operations using getLastError, hidden behind the same interface.  This should all be removed in the next major release.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batch\_downconvert.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batch\_downconvert.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batch\_downconvert\_test.cpp   ()
@@ -108,10 +107,10 @@ Code to convert the new style write commands into legacy operations using getLas
 
 -------------
 
-# Wire Version
+## Wire Version
 Header to enumerate the wire protocol version, along with the max and min supported versions.  The versions so far carry semantic information such as whether aggregation can return cursors or whether write commands are supported.
 
-## Files
+#### Files
 - src/mongo/db/wire\_version.h   (mongod, tools, mongos)
 
 #### [Interface](interface/7)

@@ -1,13 +1,12 @@
 # Journaling
 
-# Module Groups
 
 -------------
 
-# Page Aligned Buffer
+## Page Aligned Buffer
 Page aligned buffer builder
 
-## Files
+#### Files
 - src/mongo/util/alignedbuilder.cpp   (mongod, tools)
 - src/mongo/util/alignedbuilder.h   (mongod, tools)
 
@@ -17,10 +16,10 @@ Page aligned buffer builder
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
-## Files
+#### Files
 - src/mongo/db/dur.cpp   (mongod, tools)
 - src/mongo/db/dur.h   (mongod, tools, mongos)
 - src/mongo/db/dur\_commitjob.cpp   (mongod, tools)
@@ -45,10 +44,10 @@ Journaling module   who calls/owns stuff in here? only used by mongod, correct?
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 This is not actually used in our logging system. Just utilities to create files that you can  append to. One notable example of a system that uses this is our preallocation of journal files.  In fact, it isn't used in anything not journaling related right now.
 
-## Files
+#### Files
 - src/mongo/util/logfile.cpp   (mongod, tools)
 - src/mongo/util/logfile.h   (mongod, tools)
 

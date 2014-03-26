@@ -1,13 +1,12 @@
 # Utilities
 
-# Module Groups
 
 -------------
 
-# File Paths
+## File Paths
 Code to manage paths to files.  Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
 
-## Files
+#### Files
 - src/mongo/util/paths.cpp   (mongod, tools, mongos)
 - src/mongo/util/paths.h   (mongod, tools, mongos)
 
@@ -17,10 +16,10 @@ Code to manage paths to files.  Conversion from relative to full path within dat
 
 -------------
 
-# Statistics Tracking
+## Statistics Tracking
 Classes to help in tracking statistics
 
-## Files
+#### Files
 - src/mongo/db/stats/counters.cpp   (mongod, tools, mongos)
 - src/mongo/db/stats/counters.h   (mongod, tools, mongos)
 - src/mongo/db/stats/snapshots.cpp   (mongod, tools)
@@ -37,10 +36,10 @@ Classes to help in tracking statistics
 
 -------------
 
-# BSON Element Hasher
+## BSON Element Hasher
 Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 
-## Files
+#### Files
 - src/mongo/db/hasher.cpp   (mongod, tools, mongos)
 - src/mongo/db/hasher.h   (mongod, tools, mongos)
 - src/mongo/db/hasher\_test.cpp   ()
@@ -51,10 +50,10 @@ Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 
 -------------
 
-# Operation Tracker
+## Operation Tracker
 Helpers to track in progress operations.  This works by inheriting from it when you make a class that represents an operation that should be tracked. The constructor registers itself in an "in progress" map, and the destructor removes it.
 
-## Files
+#### Files
 - src/mongo/db/background.cpp   (mongod, tools)
 - src/mongo/db/background.h   (mongod, tools, mongos)
 
@@ -64,10 +63,10 @@ Helpers to track in progress operations.  This works by inheriting from it when 
 
 -------------
 
-# Elapsed Time
+## Elapsed Time
 Utility to check whether a certain time interval has elapsed. Currently only used in  d\_migrate.cpp to check if we should yield.
 
-## Files
+#### Files
 - src/mongo/util/elapsed\_tracker.cpp   (mongod, tools)
 - src/mongo/util/elapsed\_tracker.h   (mongod, tools)
 
@@ -77,10 +76,10 @@ Utility to check whether a certain time interval has elapsed. Currently only use
 
 -------------
 
-# Progress Meter
+## Progress Meter
 Helper classes to accumulate and log progress in a nice format using the logging system (so the logging system is only dependency)
 
-## Files
+#### Files
 - src/mongo/util/progress\_meter.cpp   (mongod, tools, mongos)
 - src/mongo/util/progress\_meter.h   (mongod, tools, mongos)
 
@@ -90,10 +89,10 @@ Helper classes to accumulate and log progress in a nice format using the logging
 
 -------------
 
-# Debug Utilities
+## Debug Utilities
 Debug macros and gdb server helpers
 
-## Files
+#### Files
 - src/mongo/util/debug\_util.cpp   (mongod, tools, mongos)
 - src/mongo/util/debug\_util.h   (mongod, tools, mongos)
 
@@ -103,10 +102,10 @@ Debug macros and gdb server helpers
 
 -------------
 
-# Thread Name
+## Thread Name
 Library to get and set the name of the current thread. Just uses a boost::thread\_specific\_ptr.
 
-## Files
+#### Files
 - src/mongo/util/concurrency/thread\_name.cpp   (mongod, tools, mongos)
 - src/mongo/util/concurrency/thread\_name.h   (mongod, tools, mongos)
 
@@ -116,10 +115,10 @@ Library to get and set the name of the current thread. Just uses a boost::thread
 
 -------------
 
-# Hex Utils
+## Hex Utils
 Utility library to manipulate hex strings
 
-## Files
+#### Files
 - src/mongo/util/hex.cpp   (mongod, tools, mongos)
 - src/mongo/util/hex.h   (mongod, tools, mongos)
 
@@ -129,10 +128,10 @@ Utility library to manipulate hex strings
 
 -------------
 
-# Background Operations
+## Background Operations
 Utilities to run jobs (threads) in the "background".  You can use this to run tasks periodically.  Note that there are two different classes here. One is a Task and one is a BackgroundJob.  They are both used in the code in various places.  Task is just a wrapper around BackgroundJob with a slightly simpler interface.  They both effectively serve the same purpose.
 
-## Files
+#### Files
 - src/mongo/util/background.cpp   (mongod, tools, mongos)
 - src/mongo/util/background.h   (mongod, tools, mongos)
 - src/mongo/util/background\_job\_test.cpp   ()
@@ -145,10 +144,10 @@ Utilities to run jobs (threads) in the "background".  You can use this to run ta
 
 -------------
 
-# Asynchronous Background Operation Queue
+## Asynchronous Background Operation Queue
 Wrapper around a background task that creates an object with a "server" interface.  What this means is that "messages" (in the form of lambdas) can be registered with this class to be called sometime in the future by the event loop in this task.  Some functions just register the function and return, and others will block until the function is executed.
 
-## Files
+#### Files
 - src/mongo/util/concurrency/msg.h   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
@@ -157,10 +156,10 @@ Wrapper around a background task that creates an object with a "server" interfac
 
 -------------
 
-# Map Utilities
+## Map Utilities
 mapFindWithDefault - looks something up in a map with a default value.
 
-## Files
+#### Files
 - src/mongo/util/map\_util.h   (mongod, tools, mongos)
 
 #### [Interface](interface/11)
@@ -169,10 +168,10 @@ mapFindWithDefault - looks something up in a map with a default value.
 
 -------------
 
-# Pch
+## Pch
 I still do not know what this was originally for, but I know we are slowly getting rid of it.
 
-## Files
+#### Files
 - src/mongo/pch.cpp   (mongod, tools, mongos)
 - src/mongo/pch.h   (mongod, tools, mongos)
 
@@ -182,10 +181,10 @@ I still do not know what this was originally for, but I know we are slowly getti
 
 -------------
 
-# Assertions
+## Assertions
 Assertion library.
 
-## Files
+#### Files
 - src/mongo/util/assert\_util.cpp   (mongod, tools, mongos)
 - src/mongo/util/assert\_util.h   (mongod, tools, mongos)
 
@@ -195,10 +194,10 @@ Assertion library.
 
 -------------
 
-# TODO: Name this group
+## Reference Count Helper
 Helper library that you inherit from to make a class "reference counted"
 
-## Files
+#### Files
 - src/mongo/util/intrusive\_counter.cpp   (mongod, tools, mongos)
 - src/mongo/util/intrusive\_counter.h   (mongod, tools, mongos)
 
@@ -208,10 +207,10 @@ Helper library that you inherit from to make a class "reference counted"
 
 -------------
 
-# TODO: Name this group
+## MD5 Hasher
 md5 hash library
 
-## Files
+#### Files
 - src/mongo/util/md5.cpp   (mongod, tools, mongos)
 - src/mongo/util/md5.h   (mongod, tools, mongos)
 - src/mongo/util/md5.hpp   (mongod, tools, mongos)
@@ -224,10 +223,10 @@ md5 hash library
 
 -------------
 
-# TODO: Name this group
+## Windows Service Management
 Windows service
 
-## Files
+#### Files
 - src/mongo/util/ntservice.cpp   (mongod, mongos)
 - src/mongo/util/ntservice.h   (mongod, mongos)
 
@@ -237,10 +236,10 @@ Windows service
 
 -------------
 
-# TODO: Name this group
+## Auth Utils
 Utilities to hash a username + password
 
-## Files
+#### Files
 - src/mongo/client/auth\_helpers.cpp   (mongod, tools, mongos)
 - src/mongo/client/auth\_helpers.h   (mongod, tools, mongos)
 
@@ -250,10 +249,10 @@ Utilities to hash a username + password
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why  you would use them.
 
-## Files
+#### Files
 - src/mongo/util/queue.h   (mongod, tools)
 - src/mongo/util/ramlog.h   (mongod, tools, mongos)
 - src/mongo/util/safe\_num-inl.h   (mongod, tools, mongos)
@@ -343,10 +342,10 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Platform specific code? TODO: Verify this and document what they are for.
 
-## Files
+#### Files
 - src/mongo/platform/atomic\_intrinsics.h   (mongod, tools, mongos)
 - src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h   (mongod, tools, mongos)
 - src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h   (mongod, tools, mongos)

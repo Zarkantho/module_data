@@ -1,13 +1,12 @@
 # Write Command Schema
 
-# Module Groups
 
 -------------
 
-# Write Commands Response Schema
+## Write Commands Response Schema
 Schema for the responses to write commands.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batched\_command\_response.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_command\_response.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_command\_response\_test.cpp   ()
@@ -18,10 +17,10 @@ Schema for the responses to write commands.
 
 -------------
 
-# Write Commands Request Schema Interface
+## Write Commands Request Schema Interface
 This contains the interface for dealing with the schema of the various write commands.  Note that this class does not actually contain the schema, but instead just multiplexes between the various write command types, calling straight through to the classes for each type when appropriate.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batched\_command\_request.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_command\_request.h   (mongod, tools, mongos)
 
@@ -31,10 +30,10 @@ This contains the interface for dealing with the schema of the various write com
 
 -------------
 
-# Write Commands Request Schema
+## Write Commands Request Schema
 These files contain the schema for the various write commands.  Some of the classes are for schema restrictions that we have on nested objects.  For example, an update command has an overall schema, but the update objects that we send with the command have a schema of their own.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batched\_delete\_document.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_delete\_document.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_delete\_request.cpp   (mongod, tools, mongos)
@@ -57,10 +56,10 @@ These files contain the schema for the various write commands.  Some of the clas
 
 -------------
 
-# Write Commands Operation Metadata
+## Write Commands Operation Metadata
 Metadata passed in the request object that does not have to do with the contents of the write command itself.  Currently used to check the shard version in a sharded cluster.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/batched\_request\_metadata.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_request\_metadata.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/batched\_request\_metadata\_test.cpp   ()
@@ -71,10 +70,10 @@ Metadata passed in the request object that does not have to do with the contents
 
 -------------
 
-# Write Commands Errors Schema
+## Write Commands Errors Schema
 Schema for the errors that can be returned from write commands.  The two types are write errors and write concern errors.
 
-## Files
+#### Files
 - src/mongo/s/write\_ops/wc\_error\_detail.cpp   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/wc\_error\_detail.h   (mongod, tools, mongos)
 - src/mongo/s/write\_ops/write\_error\_detail.cpp   (mongod, tools, mongos)

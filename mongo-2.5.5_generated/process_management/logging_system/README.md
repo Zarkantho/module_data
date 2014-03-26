@@ -1,13 +1,12 @@
 # Logging System
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
-jesus, i hope this becomes a library :)   can you say a bit about what kind of logging we do? is there any sort of   ordering or atomicity (maybe per-call-to-log, or per log line?) our   logging guarantees? 'log lines are emitted in-order with respect to each   process thread?' maybe?)  Logging system (NOTE: The first two actually aren't part of the "logger" library, but I see no  reason why they should not be)
+## TODO: Name this group
+TODO: Divide this into sections and document
 
-## Files
+#### Files
 - src/mongo/util/log.cpp   (mongod, tools, mongos)
 - src/mongo/util/log.h   (mongod, tools, mongos)
 - src/mongo/logger/appender.h   (mongod, tools, mongos)
@@ -50,10 +49,11 @@ jesus, i hope this becomes a library :)   can you say a bit about what kind of l
 
 -------------
 
-# TODO: Name this group
-Helpers to dump a bunch of information about the current process   at crash time only? at any time? can you give an example of when   this is used?
+## TODO: Name this group
+Helpers to dump a bunch of information about the current process
+TODO: at crash time only? at any time? can you give an example of when this is used?
 
-## Files
+#### Files
 - src/mongo/db/log\_process\_details.cpp   (mongod, tools, mongos)
 - src/mongo/db/log\_process\_details.h   (mongod, tools, mongos)
 
@@ -63,10 +63,10 @@ Helpers to dump a bunch of information about the current process   at crash time
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 MONGO\_INITIALIZERs to add extra information to the server logs.
 
-## Files
+#### Files
 - src/mongo/db/server\_extra\_log\_context.cpp   (mongod, mongos)
 
 #### [Interface](interface/2)

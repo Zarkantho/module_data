@@ -1,13 +1,12 @@
 # Update System
 
-# Module Groups
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 libupdate.a (only used by libupdate\_driver.a). This is the new code for handling update  operations:   is this stuff only called from update.cpp?
 
-## Files
+#### Files
 - src/mongo/db/ops/modifier\_add\_to\_set.cpp   (mongod, tools, mongos)
 - src/mongo/db/ops/modifier\_add\_to\_set.h   (mongod, tools, mongos)
 - src/mongo/db/ops/modifier\_add\_to\_set\_test.cpp   ()
@@ -57,10 +56,10 @@ libupdate.a (only used by libupdate\_driver.a). This is the new code for handlin
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 libupdate\_driver.a. This is the external interface to the new update system:
 
-## Files
+#### Files
 - src/mongo/db/ops/modifier\_table.cpp   (mongod, tools, mongos)
 - src/mongo/db/ops/modifier\_table.h   (mongod, tools, mongos)
 - src/mongo/db/ops/modifier\_table\_test.cpp   ()
@@ -74,10 +73,10 @@ libupdate\_driver.a. This is the external interface to the new update system:
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Utilities for the new update system (libupdate\_common.a)
 
-## Files
+#### Files
 - src/mongo/db/ops/path\_support.cpp   (mongod, tools, mongos)
 - src/mongo/db/ops/path\_support.h   (mongod, tools, mongos)
 - src/mongo/db/ops/path\_support\_test.cpp   ()
@@ -94,10 +93,10 @@ Utilities for the new update system (libupdate\_common.a)
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Other things used by the update system. TODO: figure out what these are for.
 
-## Files
+#### Files
 - src/mongo/db/ops/update\_lifecycle.h   (mongod, tools)
 - src/mongo/db/ops/update\_lifecycle\_impl.cpp   (mongod, tools)
 - src/mongo/db/ops/update\_lifecycle\_impl.h   (mongod, tools)
@@ -110,10 +109,10 @@ Other things used by the update system. TODO: figure out what these are for.
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Utilites for managing dotted field names such as "a.b.c". For example, has things like  "isPrefixOf".   is there any relationship between this and bson/ or bson/mutable ?
 
-## Files
+#### Files
 - src/mongo/db/field\_ref.cpp   (mongod, tools, mongos)
 - src/mongo/db/field\_ref.h   (mongod, tools, mongos)
 - src/mongo/db/field\_ref\_set.cpp   (mongod, tools, mongos)

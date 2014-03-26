@@ -2,11 +2,14 @@ module_title: Concurrency
 module_name: concurrency
 module_description: 'TODO: concurrency description'
 module_groups:
--   group_title: 'TODO: Name this group'
-    group_description: 'Core locks library. Only in mongod.## can you say a bit more?
-        e.g. database locks are RWlocks, but what *are*## they exactly? any sort of
-        fairness or other performance/"how to use" info?# TODO: There are also a bunch
-        of concurrency related helpers in the UTILITIES section.'
+-   group_title: Core Database Locks
+    group_description: 'Core locks library. Only in mongod.
+
+        TODO: Split up this section and go into more detail about the types of locks
+        used here.
+
+        TODO: There are also a bunch of concurrency related helpers in the UTILITIES
+        section.'
     group_files:
     - src/mongo/util/concurrency/rwlock.h
     - src/mongo/util/concurrency/rwlockimpl.cpp
@@ -3687,9 +3690,8 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
--   group_title: 'TODO: Name this group'
-    group_description: Spin locks## can you give an example or two of where we tightly
-        spin on locks?
+-   group_title: Spin Locks
+    group_description: Spin locks
     group_files:
     - src/mongo/util/concurrency/spin_lock.cpp
     - src/mongo/util/concurrency/spin_lock.h
@@ -4782,9 +4784,8 @@ module_groups:
         -   symbol_name: mongo::unittest::Test::setUp()
             symbol_sources:
             - src/mongo/unittest/unittest.cpp
--   group_title: 'TODO: Name this group'
-    group_description: Condition Variables## why called 'synchronization' then? (what
-        are these, really? can you give## an example?)
+-   group_title: Condition Variables
+    group_description: Condition Variables
     group_files:
     - src/mongo/util/concurrency/synchronization.cpp
     - src/mongo/util/concurrency/synchronization.h

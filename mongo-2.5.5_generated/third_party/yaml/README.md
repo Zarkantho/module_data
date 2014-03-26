@@ -1,13 +1,12 @@
 # Yaml
 
-# Module Groups
 
 -------------
 
-# YAML Parser
+## YAML Parser
 Third Party - Yaml markup parser.  Used for yaml config files
 
-## Files
+#### Files
 - src/third\_party/shim\_yaml.cpp   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/include/yaml-cpp/anchor.h   (mongod, tools, mongos)
 - src/third\_party/yaml-cpp-0.5.1/include/yaml-cpp/binary.h   (mongod, tools, mongos)

@@ -1,13 +1,12 @@
 # Mongo Shell
 
-# Module Groups
 
 -------------
 
-# Javascript Helper Generated Bindings
+## Javascript Helper Generated Bindings
 C++ files that are automatically generated from the Javascript source files. This means that certain Javascript files work in the shell because they are actually compiled in, which means that sometimes the server needs to be recompiled to see changes in Javascript files
 
-## Files
+#### Files
 - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo-server.cpp   ()
 - build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp   (mongod, tools, mongos)
 
@@ -17,10 +16,10 @@ C++ files that are automatically generated from the Javascript source files. Thi
 
 -------------
 
-# Javascript Helpers
+## Javascript Helpers
 Javascript files that get wrapped in strings and put in cpp files. See the "env.JSHeader" calls  in src/mongo/SConscript and shell/createCPPfromJavaScriptFiles.js
 
-## Files
+#### Files
 - src/mongo/shell/assert.js   (mongod, tools, mongos)
 - src/mongo/shell/batch\_api.js   (mongod, tools, mongos)
 - src/mongo/shell/collection.js   (mongod, tools, mongos)
@@ -43,10 +42,10 @@ Javascript files that get wrapped in strings and put in cpp files. See the "env.
 
 -------------
 
-# Shell Core
+## Shell Core
 Files only built into the mongo shell
 
-## Files
+#### Files
 - src/mongo/shell/dbshell.cpp   ()
 - src/mongo/shell/linenoise.cpp   ()
 - src/mongo/shell/linenoise.h   ()
@@ -67,10 +66,10 @@ Files only built into the mongo shell
 
 -------------
 
-# Shell Command Line Options
+## Shell Command Line Options
 Shell command line options
 
-## Files
+#### Files
 - src/mongo/shell/shell\_options.cpp   ()
 - src/mongo/shell/shell\_options.h   ()
 - src/mongo/shell/shell\_options\_init.cpp   ()

@@ -1,13 +1,12 @@
 # Sharding
 
-# Module Groups
 
 -------------
 
-# Mongod Sharding Globals
+## Mongod Sharding Globals
 Declarations for a bunch of globals used in sharding.  The actual definitions are unfortunately scatterned between d\_logic.cpp, d\_state.cpp, and others.
 
-## Files
+#### Files
 - src/mongo/s/d\_logic.h   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
@@ -16,10 +15,10 @@ Declarations for a bunch of globals used in sharding.  The actual definitions ar
 
 -------------
 
-# Merge Chunks Command
+## Merge Chunks Command
 Command to merge two chunks in a sharded cluster.  See https://jira.mongodb.org/browse/SERVER-8869
 
-## Files
+#### Files
 - src/mongo/s/d\_merge.cpp   (mongod, tools)
 - src/mongo/s/d\_merge.h   (mongod, tools)
 - src/mongo/db/commands/merge\_chunks\_cmd.cpp   (mongod, tools)
@@ -32,10 +31,10 @@ Command to merge two chunks in a sharded cluster.  See https://jira.mongodb.org/
 
 -------------
 
-# TODO: Name this group
-Helper classes to delete a range of documents. This is used for example in chunk migrations  when we are cleaning up an old chunk.
+## Range Deleter
+Helper classes to delete a range of documents. This is used for example in chunk migrations when we are cleaning up an old chunk.
 
-## Files
+#### Files
 - src/mongo/db/range\_deleter.cpp   (mongod, tools)
 - src/mongo/db/range\_deleter.h   (mongod, tools)
 - src/mongo/db/range\_deleter\_db\_env.cpp   (mongod, tools)
@@ -56,10 +55,10 @@ Helper classes to delete a range of documents. This is used for example in chunk
 
 -------------
 
-# TODO: Name this group
-Utilities for comparing ranges. Useful because our sharding is range based.   okay, but why in s/ ? only used by sharding? seems weird that something   general like range arith is only in s/ but the more specific delete-range   isn't.
+## Range Comparison
+Utilities for comparing ranges. Useful because our sharding is range based.
 
-## Files
+#### Files
 - src/mongo/s/range\_arithmetic.cpp   (mongod, tools, mongos)
 - src/mongo/s/range\_arithmetic.h   (mongod, tools, mongos)
 - src/mongo/s/range\_arithmetic\_test.cpp   ()
@@ -70,10 +69,10 @@ Utilities for comparing ranges. Useful because our sharding is range based.   ok
 
 -------------
 
-# TODO: Name this group
-Contains metadata about a collection, particularly for sharding. The MetadataLoader populates new  CollectionMetadata objects from config server data.
+## Collection Metadata
+Contains metadata about a collection, particularly for sharding. The MetadataLoader populates new CollectionMetadata objects from config server data.
 
-## Files
+#### Files
 - src/mongo/s/collection\_metadata.cpp   (mongod, tools)
 - src/mongo/s/collection\_metadata.h   (mongod, tools, mongos)
 - src/mongo/s/collection\_metadata\_test.cpp   ()
@@ -87,10 +86,10 @@ Contains metadata about a collection, particularly for sharding. The MetadataLoa
 
 -------------
 
-# TODO: Name this group
+## Config Upgrade
 Code to upgrade config server metadata
 
-## Files
+#### Files
 - src/mongo/s/config\_upgrade.cpp   (mongos)
 - src/mongo/s/config\_upgrade.h   (mongos)
 - src/mongo/s/config\_upgrade\_helpers.cpp   (mongos)
@@ -104,10 +103,10 @@ Code to upgrade config server metadata
 
 -------------
 
-# TODO: Name this group
+## Distributed Lock
 Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
-## Files
+#### Files
 - src/mongo/s/distlock.cpp   (mongod, tools, mongos)
 - src/mongo/s/distlock.h   (mongod, tools, mongos)
 - src/mongo/s/distlock\_test.cpp   (mongod, tools)
@@ -118,10 +117,10 @@ Distributed lock (lock on the config servers from mongos, i.e. "balancer lock")
 
 -------------
 
-# TODO: Name this group
+## BSON Field Parser
 Parser for fields in a BSON object. Meant to help enforce a schema on a BSON object.
 
-## Files
+#### Files
 - src/mongo/db/field\_parser-inl.h   (mongod, tools, mongos)
 - src/mongo/db/field\_parser.cpp   (mongod, tools, mongos)
 - src/mongo/db/field\_parser.h   (mongod, tools, mongos)
@@ -133,10 +132,10 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 -------------
 
-# TODO: Name this group
+## Config Server Schema
 "Schema" for config server metadata. These classes contain structural class definitions for what  we expect to find on the config server. They use the field parser above to convert BSON fields  into C++ members.
 
-## Files
+#### Files
 - src/mongo/s/type\_changelog.cpp   (mongod, tools, mongos)
 - src/mongo/s/type\_changelog.h   (mongod, tools, mongos)
 - src/mongo/s/type\_changelog\_test.cpp   ()
@@ -177,10 +176,10 @@ Parser for fields in a BSON object. Meant to help enforce a schema on a BSON obj
 
 -------------
 
-# mongos Networking
+## mongos Networking
 TODO: Describe this better.  I think this is duplicated between mongos and mongod.  It looks suspicious.  I think it handles the old wire protocol on mongos.
 
-## Files
+#### Files
 - src/mongo/s/request.cpp   (mongos)
 - src/mongo/s/request.h   (mongod, tools, mongos)
 - src/mongo/s/strategy.cpp   (mongos)
@@ -192,10 +191,10 @@ TODO: Describe this better.  I think this is duplicated between mongos and mongo
 
 -------------
 
-# TODO: Name this group
+## TODO: Name this group
 Sharding code? TODO: verify that this is all sharding related and document the architecture.
 
-## Files
+#### Files
 - src/mongo/s/balance.cpp   (mongos)
 - src/mongo/s/balance.h   (mongos)
 - src/mongo/s/balancer\_policy.cpp   (mongos)
