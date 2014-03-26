@@ -2878,15 +2878,6 @@
             - src/mongo/s/type_tags.cpp
             - src/mongo/s/type_tags.h
             - src/mongo/s/type_tags_test.cpp
-        -   group_title: 'mongos Networking'
-            group_description: 'TODO: Describe this better.  I think this is duplicated between
-                mongos and mongod.  It looks suspicious.  I think it handles the old wire protocol
-                on mongos.'
-            group_files:
-            - src/mongo/s/request.cpp
-            - src/mongo/s/request.h
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/strategy.h
         -   group_title: 'TODO: Name this group'
             group_description: 'Sharding code? TODO: verify that this is all sharding
                 related and document the architecture.'
@@ -4371,6 +4362,15 @@
             experimental and will probably be deleted before it gets used for real.'
             group_files:
             - src/mongo/util/net/message_server_asio.cpp
+        -   group_title: 'Mongos Request Handling Implementation'
+            group_description: 'Implementation of the logic to handle incoming messages on mongos.
+            The Request class is the entry point that decodes the operation type and calls to the
+            STRATEGY object to do the work of handling the specific operation.'
+            group_files:
+            - src/mongo/s/request.cpp
+            - src/mongo/s/request.h
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/strategy.h
     -   module_title: Write Command Schema
         module_name: write_command_schema
         module_description: 'This module contains the code for interacting with the format for the
@@ -4799,38 +4799,36 @@
             group_files:
             - src/mongo/db/cloner.cpp
             - src/mongo/db/cloner.h
-        -   group_title: 'TODO: Name this group'
-            group_description: One of the very hairy, very old parts of the server.
-                Contains code for the DBDirectClient, which# is an implementation
-                of the "DBClientBase" class in the client driver. The DBDirectClient
-                has the# same interface as the client driver, except that instead
-                of connecting over the network it is just# doing operations on the
-                local server behind the scenes.## This also has code for the "BSONElementManipulator
-                which is what allows us to do in place# updates in the old code. It
-                appears now that it is only used in updating the "expireAfterSeconds"#
-                field for a document in a TTL index.## Also have random things like
-                "getDatabaseNames" which just iteratest the db directory getting all#
-                the names of the files there. Also has the version of "inShutdown"
-                and "dbexit" for mongod.## clarify relationship between instance.cpp
-                and the various ops/* (insert/update etc)
+        -   group_title: 'Legacy Instance File'
+            group_description: 'One of the very hairy, very old parts of the server.  Contains code
+            for the DBDirectClient, which is an implementation of the "DBClientBase" class in the
+            client driver. The DBDirectClient has the same interface as the client driver, except
+            that instead of connecting over the network it is just doing operations on the local
+            server behind the scenes.
+
+            This also has code for the "BSONElementManipulator which is what allows us to do in
+            place updates in the old code. It appears now that it is only used in updating the
+            "expireAfterSeconds" field for a document in a TTL index.
+
+            Also have random things like "getDatabaseNames" which just iteratest the db directory
+            getting all the names of the files there. Also has the version of "inShutdown" and
+            "dbexit" for mongod.
+
+            Unfortunately, it also has the code to handle decoding incoming network requests on
+            mongod.'
             group_files:
             - src/mongo/db/instance.cpp
             - src/mongo/db/instance.h
-        -   group_title: 'TODO: Name this group'
-            group_description: This is another really hairy, really old legacy file.
-                At this point it's easier to just write out# all the functions in
-                the interface than describe what it does. I believe "pdfile" is short
-                for# "persistent data file". It contains a bunch of old legacy things
-                to manipulate data files and# data file metadata.## Here are all the
-                functions in pdfile.cpp that are currently used in the project.##
-                mongo::inDBRepair# mongo::allocateSpaceForANewRecord(char const*,
-                mongo::NamespaceDetails*, int, bool)# mongo::dbSize(char const*)#
-                mongo::dropDatabase(std::string const&)# mongo::dbHolderUnchecked()#
-                mongo::addRecordToRecListInExtent(mongo::Record*, mongo::DiskLoc)#
-                mongo::userCreateNS(char const*, mongo::BSONObj, std::string&, bool,
-                bool*)# mongo::_deleteDataFiles(char const*)# mongo::dropAllDatabasesExceptLocal()#
-                mongo::isValidNS(mongo::StringData const&)# mongo::repairDatabase(std::string,
-                std::string&, bool, bool)
+        -   group_title: 'Legacy Pdfile File'
+            group_description: 'This is another really hairy, really old legacy file.
+
+            A long time ago, in a galaxy far far away, when MongoDB was 10gen and providing a
+            platform as a service, the persistence layer was called "p".  I have heard that the way
+            to start the database in those days was to just type "p" on the command line.  While I
+            cannot confirm this, it is an amusing story and fits with our past naming convention.
+            That also explains why this is "pdfile" for "P Data File".  It contains various old
+            functions for interacting directly with the storage layer that should soon die a
+            horrible death.'
             group_files:
             - src/mongo/db/pdfile.cpp
             - src/mongo/db/pdfile.h
