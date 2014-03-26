@@ -4259,8 +4259,15 @@
         module_name: ssl
         module_description: 'Support for SSL connections'
         module_groups:
+        -   group_title: 'SSL Manager'
+            group_description: 'Library for establishing SSL connections.  Shared by both clients
+            and servers that want to use SSL'
+            group_files:
             - src/mongo/util/net/ssl_manager.cpp
             - src/mongo/util/net/ssl_manager.h
+        -   group_title: 'SSL Command Line Options'
+            group_description: 'Command line options for both clients and servers using SSL'
+            group_files:
             - src/mongo/util/net/ssl_options.cpp
             - src/mongo/util/net/ssl_options.h
     -   module_title: REST Client
@@ -4268,6 +4275,9 @@
         module_description: 'Client for accessing the mongodb rest api.  Only used by mongostat when
         run with the "--http" option.'
         module_groups:
+        -   group_title: 'REST Client'
+            group_description: 'Files containing the implementation of the mongodb rest api.'
+            group_files:
             - src/mongo/util/net/httpclient.cpp
             - src/mongo/util/net/httpclient.h
     -   module_title: Network Core
