@@ -4360,8 +4360,8 @@
             experimental and will probably be deleted before it gets used for real.'
             group_files:
             - src/mongo/util/net/message_server_asio.cpp
-    -   module_title: Wire Protocol Write Command Schema
-        module_name: wire_protocol_write_command_schema
+    -   module_title: Write Command Schema
+        module_name: write_command_schema
         module_description: 'This module contains the code for interacting with the format for the
             requests and responses sent over the wire in the write commands wire protocol.  Note
             that because the write commands are actually build on top of the command operation in
@@ -4424,26 +4424,30 @@
             - src/mongo/s/write_ops/wc_error_detail.h
             - src/mongo/s/write_ops/write_error_detail.cpp
             - src/mongo/s/write_ops/write_error_detail.h
-    -   module_title: Wire Protocol Write Commands
-        module_name: wire_protocol_write_commands
-        module_description: 'TODO: wire_protocol_write_commands description'
+    -   module_title: Write Commands
+        module_name: write_commands
+        module_description: 'New write commands for new wire protocol. The new "write commands" are
+        all implemented as server Commands run using "db.$cmd.findOne(...)".  The legacy write
+        operations did not recieve responses, but commands do recieve responses, so sending writes
+        as "commands" ensures that all writes get a response.  Note that this means the "write
+        commands" are layered on top of the legacy wire protocol, rather than replacing it.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: 'New write commands for new wire protocol. The new "write
-                commands" are all actual Commands run# using "db.$cmd.findOne(...)".
-                The reason for this is that the old wire protocol did not have# acknowledgements
-                for anything BUT queries (which include commands), so everything is
-                now a query# so we can get acknowledgements for writes (and not just
-                for queries).
-
-                TODO: Split this up in more detail.  Note that this code is not for dealing with the
-                wire protocol component, but is instead is the glue between the write command system
-                and the new update system.'
+        -   group_title: 'Write Commands Declarations'
+            group_description: 'Classes registering the write commands into the command system.
+            When a write command is recieved by a mongod, this is the entry point.'
             group_files:
             - src/mongo/db/commands/write_commands/write_commands.cpp
             - src/mongo/db/commands/write_commands/write_commands.h
+        -   group_title: 'Batch Executor'
+            group_description: 'Class that actually does the work of executing a batch of writes on
+            a mongod.'
+            group_files:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/db/commands/write_commands/batch_executor.h
+        -   group_title: 'Write Commands Utilities'
+            group_description: 'Common utilities that are shared by the write commands, such as
+            authorization checks.'
+            group_files:
             - src/mongo/db/commands/write_commands/write_commands_common.cpp
             - src/mongo/db/commands/write_commands/write_commands_common.h
         -   group_title: Config Coordinator
