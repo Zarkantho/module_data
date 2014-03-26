@@ -2657,18 +2657,22 @@
                 case where two nodes thought they were primary for some period of time).'
             group_files:
             - src/mongo/db/repl/rs_rollback.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Helpers to wait for the appropriate write concern
+        -   group_title: 'Write Concern Checks'
+            group_description: 'Main entry point to write concern checking.  Contains code to wait
+            for the appropriate write concern to be satisfied.'
             group_files:
             - src/mongo/db/write_concern.cpp
             - src/mongo/db/write_concern.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Actual meat of the waiting for write concern code
+        -   group_title: 'Write Concern Replication Checks'
+            group_description: 'Implementation of replication specific write concern checks.
+            Contains code for making sure an operation has been replicated to a certain number of
+            nodes, but does not contain code for dealing with disk related write concern values.'
             group_files:
             - src/mongo/db/repl/write_concern.cpp
             - src/mongo/db/repl/write_concern.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Helper to parse write concern options out of a BSONObj
+        -   group_title: 'Write Concern Object Parser'
+            group_description: 'Helper to parse write concern options out of a BSONObj representing
+            a "write concern object"'
             group_files:
             - src/mongo/db/write_concern_options.cpp
             - src/mongo/db/write_concern_options.h
