@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for mongos Networking
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/request.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/strategy.cpp
 
@@ -35,7 +36,7 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -43,4 +44,4 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)

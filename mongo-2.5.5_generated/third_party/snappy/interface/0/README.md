@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Snappy Compression Library
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/third\_party/snappy/snappy.cc
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -17,10 +18,10 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
+    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -28,7 +29,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -36,9 +37,9 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -46,7 +47,7 @@
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../utilities)
+    - [src/mongo/util/compress.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -54,6 +55,6 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)

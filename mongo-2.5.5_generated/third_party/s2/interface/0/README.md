@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for S2 Library
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/third\_party/s2/base/logging.cc
 
@@ -9,11 +10,11 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -21,11 +22,11 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s1angle.cc
 
@@ -35,7 +36,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2.cc
 
@@ -45,10 +46,10 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -56,10 +57,10 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s2cap.cc
 
@@ -69,9 +70,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -79,7 +80,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -87,8 +88,8 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -96,7 +97,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2cell.cc
 
@@ -106,7 +107,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -114,17 +115,17 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/query\_solution.cpp](../../../core\_query\_system)
-    - [src/mongo/db/exec/2dnear.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/query\_solution.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -132,7 +133,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2cellid.cc
 
@@ -142,9 +143,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -152,9 +153,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -162,9 +163,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -172,9 +173,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -182,9 +183,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -192,7 +193,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2latlng.cc
 
@@ -202,7 +203,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -210,7 +211,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2latlngrect.cc
 
@@ -220,8 +221,8 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -229,8 +230,8 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s2loop.cc
 
@@ -240,7 +241,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -248,7 +249,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -256,7 +257,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -264,7 +265,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -272,7 +273,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -280,7 +281,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2polygon.cc
 
@@ -290,9 +291,9 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -300,7 +301,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -308,7 +309,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -316,7 +317,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -324,9 +325,9 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -334,7 +335,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -342,7 +343,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -350,7 +351,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2polygonbuilder.cc
 
@@ -360,7 +361,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -368,7 +369,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -376,7 +377,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -384,7 +385,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -392,7 +393,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -400,7 +401,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2polyline.cc
 
@@ -410,7 +411,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -418,9 +419,9 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -428,7 +429,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -436,8 +437,8 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -445,7 +446,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -453,7 +454,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -461,7 +462,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -469,7 +470,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
 
 ### src/third\_party/s2/s2region.cc
 
@@ -479,18 +480,18 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/query\_solution.cpp](../../../core\_query\_system)
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
-    - [src/mongo/db/geo/geoparser.cpp](../../../geo\_queries)
-    - [src/mongo/db/exec/2dnear.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/planner\_access.cpp](../../../core\_query\_system)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/query\_planner.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/query\_solution.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/exec/2dnear.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/planner\_access.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/query\_planner.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s2regioncoverer.cc
 
@@ -500,9 +501,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -510,7 +511,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -518,9 +519,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -528,9 +529,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -538,9 +539,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -548,9 +549,9 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/s2common.cpp](../../../geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/s2common.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s2regionintersection.cc
 
@@ -560,7 +561,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -568,7 +569,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -576,7 +577,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -584,7 +585,7 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/s2near.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/s2near.cpp](../../../queries/core\_query\_system)
 
 ### src/third\_party/s2/s2regionunion.cc
 
@@ -594,7 +595,7 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)
 
 <div></div>
 
@@ -602,4 +603,4 @@
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../queries/geo\_queries)

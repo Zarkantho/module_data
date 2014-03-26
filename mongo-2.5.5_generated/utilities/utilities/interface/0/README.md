@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for File Paths
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/paths.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/util/logfile.cpp](../../../journaling)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/util/logfile.cpp](../../../storage/journaling)

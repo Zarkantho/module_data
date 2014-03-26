@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Extent Manager
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/storage/extent\_manager.cpp
 
@@ -9,10 +10,10 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
-    - [src/mongo/tools/dump.cpp](../../../tools)
-    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../queries/database\_commands)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
+    - [src/mongo/db/commands/touch.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -20,7 +21,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -28,7 +29,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -36,8 +37,8 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -45,8 +46,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/touch.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -54,7 +55,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -62,5 +63,5 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../queries/database\_commands)

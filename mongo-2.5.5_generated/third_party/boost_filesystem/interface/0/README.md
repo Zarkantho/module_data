@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Boost Filesystem
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/third\_party/boost/libs/filesystem/v3/src/operations.cpp
 
@@ -9,10 +10,10 @@
 
 - Used By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -20,15 +21,15 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -36,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -44,8 +45,8 @@
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
 
 <div></div>
 
@@ -53,15 +54,15 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -69,7 +70,7 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -77,29 +78,29 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
-    - [src/mongo/tools/import.cpp](../../../tools)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/client/gridfs.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/tools/tool\_options.cpp](../../../tools)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/storage/data\_file.cpp](../../../mmap\_file\_interface)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/tools/import.cpp](../../../tools/tools)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/client/gridfs.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/storage/data\_file.cpp](../../../storage/mmap\_file\_interface)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -107,15 +108,15 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -123,13 +124,13 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -137,20 +138,20 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/tools/tool.cpp](../../../tools)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
-    - [src/mongo/tools/import.cpp](../../../tools)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/tools/tool.cpp](../../../tools/tools)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/tools/import.cpp](../../../tools/tools)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -158,15 +159,15 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -174,8 +175,8 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -183,16 +184,16 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../unit\_tests)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -200,12 +201,12 @@
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -213,13 +214,13 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../aggregation\_framework)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/tools/export.cpp](../../../tools)
-    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/tools/export.cpp](../../../tools/tools)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -227,11 +228,11 @@
 
 - Used By:
 
-    - [src/mongo/db/server\_options\_helpers.cpp](../../../startup\_initialization)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/util/net/ssl\_options.cpp](../../../ssl)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/util/net/ssl\_options.cpp](../../../network/ssl)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 ### src/third\_party/boost/libs/filesystem/v3/src/path.cpp
 
@@ -241,9 +242,9 @@
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
 
 <div></div>
 
@@ -251,22 +252,22 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/framework\_options.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/framework\_options.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -274,15 +275,15 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/dbtests/mmaptests.cpp](../../../unit\_tests)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/dbtests/mmaptests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -290,8 +291,8 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/tools/restore.cpp](../../../tools)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -299,15 +300,15 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -315,15 +316,15 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/durop.cpp](../../../journaling)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/tools/dump.cpp](../../../tools)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/durop.cpp](../../../storage/journaling)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -331,15 +332,15 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dur\_recover.cpp](../../../journaling)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/tools/restore.cpp](../../../tools)
-    - [src/mongo/tools/import.cpp](../../../tools)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dur\_recover.cpp](../../../storage/journaling)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
+    - [src/mongo/tools/import.cpp](../../../tools/tools)
 
 ### src/third\_party/boost/libs/filesystem/v3/src/unique\_path.cpp
 
@@ -349,4 +350,4 @@
 
 - Used By:
 
-    - [src/mongo/unittest/temp\_dir.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/temp\_dir.cpp](../../../tests/unit\_tests)

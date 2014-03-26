@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Config Servers Connection
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/client/syncclusterconnection.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/s/config\_upgrade.cpp](../../../sharding)
+    - [src/mongo/s/config\_upgrade.cpp](../../../sharding/sharding)

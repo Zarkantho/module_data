@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Config Server Schema
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/type\_changelog.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_chunk.cpp
 
@@ -19,7 +20,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -27,8 +28,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -36,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -44,8 +45,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -53,8 +54,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -62,7 +63,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_collection.cpp
 
@@ -72,7 +73,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_config\_version.cpp
 
@@ -82,8 +83,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -91,7 +92,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -99,8 +100,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -108,8 +109,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -117,7 +118,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_database.cpp
 
@@ -127,7 +128,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -135,7 +136,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -143,7 +144,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -151,8 +152,8 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -160,7 +161,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 ### src/mongo/s/type\_mongos.cpp
 
@@ -170,7 +171,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -178,8 +179,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -187,7 +188,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -195,7 +196,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_settings.cpp
 
@@ -205,7 +206,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -213,7 +214,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -221,7 +222,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/type\_shard.cpp
 
@@ -231,7 +232,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -239,9 +240,9 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/tools/stat.cpp](../../../tools)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/tools/stat.cpp](../../../tools/tools)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -249,7 +250,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -257,4 +258,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)

@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for Mongos Specific Client State
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/s/s\_only.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_session.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_session\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -153,7 +154,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -161,7 +162,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -169,4 +170,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)

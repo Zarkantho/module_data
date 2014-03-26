@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for File Paths
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/util/paths.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)

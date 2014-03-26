@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for V8 Bindings
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/scripting/engine.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -153,7 +154,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -161,7 +162,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -169,7 +170,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -177,7 +178,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -185,7 +186,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -193,7 +194,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -201,7 +202,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -209,11 +210,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -221,7 +222,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -229,7 +230,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -237,7 +238,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -245,7 +246,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -253,7 +254,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -261,7 +262,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -269,7 +270,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -277,7 +278,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file.cpp](../../../file\_interface)
+    - [src/mongo/util/file.cpp](../../../storage/file\_interface)
 
 <div></div>
 
@@ -285,7 +286,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -293,7 +294,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../third\_party/boost\_filesystem)
 
 ### src/mongo/scripting/engine\_v8.cpp
 
@@ -303,7 +304,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -311,7 +312,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -319,7 +320,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -327,7 +328,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -335,7 +336,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -343,7 +344,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -351,7 +352,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -359,7 +360,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -367,7 +368,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -375,7 +376,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -383,7 +384,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -391,7 +392,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/v8threads.cc](../../../v8)
+    - [src/third\_party/v8/src/v8threads.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -399,7 +400,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -407,7 +408,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -415,7 +416,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -423,7 +424,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -431,7 +432,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -439,7 +440,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -447,7 +448,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -455,7 +456,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -463,7 +464,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -471,7 +472,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -479,7 +480,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -487,7 +488,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -495,7 +496,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -503,7 +504,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -511,7 +512,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -519,7 +520,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -527,7 +528,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -535,7 +536,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -543,7 +544,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -551,7 +552,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -559,7 +560,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/base64.cpp](../../../utilities)
+    - [src/mongo/util/base64.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -567,7 +568,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -575,7 +576,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -583,7 +584,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -591,7 +592,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -599,7 +600,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -607,7 +608,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -615,7 +616,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -623,7 +624,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -631,7 +632,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -639,7 +640,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -647,7 +648,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -655,7 +656,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -663,7 +664,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -671,7 +672,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -679,7 +680,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -687,7 +688,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -695,7 +696,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -703,7 +704,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -711,7 +712,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -719,7 +720,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -727,7 +728,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -735,7 +736,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -743,7 +744,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -751,7 +752,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -759,7 +760,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -767,7 +768,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -775,7 +776,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -783,7 +784,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -791,7 +792,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -799,7 +800,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -807,7 +808,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -815,7 +816,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -823,7 +824,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -831,7 +832,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -839,7 +840,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -847,7 +848,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -855,7 +856,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -863,7 +864,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -871,7 +872,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -879,7 +880,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -887,7 +888,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -895,7 +896,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -903,7 +904,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -911,7 +912,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -919,7 +920,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -927,7 +928,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -935,7 +936,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -943,7 +944,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -951,7 +952,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -959,7 +960,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -967,7 +968,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -975,7 +976,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -983,7 +984,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/v8threads.cc](../../../v8)
+    - [src/third\_party/v8/src/v8threads.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -991,7 +992,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -999,7 +1000,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1007,7 +1008,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1015,7 +1016,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1023,7 +1024,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1031,7 +1032,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -1039,7 +1040,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1047,7 +1048,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1055,7 +1056,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1063,7 +1064,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1071,7 +1072,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1079,7 +1080,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1087,7 +1088,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1095,7 +1096,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1103,7 +1104,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1111,7 +1112,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1119,7 +1120,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1127,7 +1128,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/log\_manager.cpp](../../../logging\_system)
+    - [src/mongo/logger/log\_manager.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1135,7 +1136,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1143,7 +1144,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1151,7 +1152,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1159,7 +1160,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1167,7 +1168,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1175,7 +1176,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1183,7 +1184,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1191,7 +1192,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1199,7 +1200,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1207,7 +1208,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1215,7 +1216,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1223,7 +1224,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1231,7 +1232,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1239,7 +1240,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1247,7 +1248,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1255,7 +1256,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1263,7 +1264,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1271,7 +1272,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1279,7 +1280,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1287,7 +1288,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1295,7 +1296,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1303,7 +1304,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1311,7 +1312,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1319,7 +1320,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/base64.cpp](../../../utilities)
+    - [src/mongo/util/base64.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1327,7 +1328,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1335,7 +1336,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1343,7 +1344,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1351,7 +1352,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1359,7 +1360,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1367,7 +1368,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1375,7 +1376,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1383,7 +1384,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1391,7 +1392,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1399,7 +1400,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1407,7 +1408,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/shell/mongo.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1415,7 +1416,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1423,7 +1424,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1431,7 +1432,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1439,7 +1440,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1447,7 +1448,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1455,7 +1456,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclientcursor.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclientcursor.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1463,7 +1464,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1471,7 +1472,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1479,7 +1480,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1487,7 +1488,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 ### src/mongo/scripting/utils.cpp
 
@@ -1497,7 +1498,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1505,7 +1506,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/md5.cpp](../../../utilities)
+    - [src/mongo/util/md5.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1513,7 +1514,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/md5.cpp](../../../utilities)
+    - [src/mongo/util/md5.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1521,7 +1522,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/md5.cpp](../../../utilities)
+    - [src/mongo/util/md5.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1529,7 +1530,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1537,7 +1538,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version.cpp](../../../build\_information)
+    - [src/mongo/util/version.cpp](../../../process\_management/build\_information)
 
 <div></div>
 
@@ -1545,7 +1546,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1553,7 +1554,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1561,7 +1562,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1569,7 +1570,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1577,7 +1578,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 ### src/mongo/scripting/v8\_db.cpp
 
@@ -1587,7 +1588,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1595,7 +1596,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1603,7 +1604,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1611,7 +1612,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1619,7 +1620,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1627,7 +1628,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1635,7 +1636,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1643,7 +1644,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1651,7 +1652,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1659,7 +1660,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1667,7 +1668,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1675,7 +1676,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1683,7 +1684,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1691,7 +1692,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1699,7 +1700,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclientcursor.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclientcursor.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1707,7 +1708,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1715,7 +1716,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1723,7 +1724,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1731,7 +1732,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1739,7 +1740,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1747,7 +1748,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1755,7 +1756,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1763,7 +1764,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1771,7 +1772,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1779,7 +1780,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1787,7 +1788,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1795,7 +1796,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1803,7 +1804,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1811,7 +1812,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1819,7 +1820,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/text.cpp](../../../utilities)
+    - [src/mongo/util/text.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1827,7 +1828,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1835,7 +1836,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1843,7 +1844,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1851,7 +1852,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1859,7 +1860,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1867,7 +1868,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1875,7 +1876,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1883,7 +1884,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1891,7 +1892,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1899,7 +1900,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1907,7 +1908,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclientcursor.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclientcursor.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1915,7 +1916,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1923,7 +1924,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1931,7 +1932,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1939,11 +1940,11 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -1951,7 +1952,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1959,7 +1960,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1967,7 +1968,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1975,7 +1976,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1983,7 +1984,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1991,7 +1992,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -1999,7 +2000,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2007,7 +2008,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2015,7 +2016,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2023,7 +2024,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2031,7 +2032,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2039,11 +2040,11 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -2051,7 +2052,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2059,7 +2060,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2067,7 +2068,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2075,7 +2076,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2083,7 +2084,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2091,7 +2092,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2099,7 +2100,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2107,7 +2108,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2115,7 +2116,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2123,7 +2124,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/base64.cpp](../../../utilities)
+    - [src/mongo/util/base64.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2131,7 +2132,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2139,7 +2140,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2147,7 +2148,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -2155,7 +2156,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2163,7 +2164,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2171,7 +2172,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2179,7 +2180,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2187,7 +2188,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -2195,7 +2196,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/base64.cpp](../../../utilities)
+    - [src/mongo/util/base64.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2203,7 +2204,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2211,7 +2212,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2219,7 +2220,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/optime.cpp](../../../bson)
+    - [src/mongo/bson/optime.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2227,7 +2228,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2235,7 +2236,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2243,7 +2244,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2251,7 +2252,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -2259,7 +2260,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2267,7 +2268,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2275,7 +2276,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2283,7 +2284,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2291,7 +2292,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2299,7 +2300,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2307,7 +2308,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/sasl\_client\_authenticate.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -2315,7 +2316,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -2323,7 +2324,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2331,7 +2332,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 ### src/mongo/scripting/v8\_deadline\_monitor\_test.cpp
 
@@ -2341,7 +2342,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2349,7 +2350,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2357,7 +2358,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2365,7 +2366,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2373,7 +2374,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2381,7 +2382,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2389,7 +2390,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2397,7 +2398,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2405,7 +2406,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2413,7 +2414,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2421,7 +2422,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2429,7 +2430,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2437,7 +2438,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2445,7 +2446,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2453,7 +2454,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2461,7 +2462,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2469,7 +2470,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2477,7 +2478,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2485,7 +2486,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2493,7 +2494,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2501,7 +2502,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2509,7 +2510,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 ### src/mongo/scripting/v8\_profiler.cpp
 
@@ -2519,7 +2520,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2527,7 +2528,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2535,7 +2536,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2543,7 +2544,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2551,7 +2552,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2559,7 +2560,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2567,7 +2568,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2575,7 +2576,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2583,7 +2584,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2591,7 +2592,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2599,7 +2600,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2607,7 +2608,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2615,7 +2616,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2623,7 +2624,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2631,7 +2632,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2639,7 +2640,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2647,7 +2648,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2655,7 +2656,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2663,7 +2664,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2671,7 +2672,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2679,7 +2680,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2687,7 +2688,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 ### src/mongo/scripting/v8\_utils.cpp
 
@@ -2697,7 +2698,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2705,7 +2706,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2713,7 +2714,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2721,7 +2722,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2729,7 +2730,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2737,7 +2738,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/v8threads.cc](../../../v8)
+    - [src/third\_party/v8/src/v8threads.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2745,7 +2746,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2753,7 +2754,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2761,7 +2762,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2769,7 +2770,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2777,7 +2778,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2785,7 +2786,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2793,7 +2794,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2801,7 +2802,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2809,7 +2810,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2817,7 +2818,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2825,7 +2826,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2833,7 +2834,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2841,7 +2842,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -2849,7 +2850,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2857,7 +2858,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2865,7 +2866,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2873,7 +2874,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2881,7 +2882,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2889,7 +2890,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2897,7 +2898,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2905,7 +2906,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -2913,7 +2914,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2921,7 +2922,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2929,7 +2930,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -2937,7 +2938,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2945,7 +2946,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2953,7 +2954,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2961,7 +2962,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/v8threads.cc](../../../v8)
+    - [src/third\_party/v8/src/v8threads.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2969,7 +2970,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2977,7 +2978,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -2985,7 +2986,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -2993,7 +2994,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -3001,7 +3002,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3009,7 +3010,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3017,7 +3018,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -3025,7 +3026,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -3033,7 +3034,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -3041,7 +3042,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -3049,7 +3050,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3057,7 +3058,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3065,7 +3066,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3073,7 +3074,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3081,7 +3082,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3089,7 +3090,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -3097,7 +3098,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3105,7 +3106,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3113,7 +3114,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3121,7 +3122,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3129,7 +3130,7 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)
 
 <div></div>
 
@@ -3137,4 +3138,4 @@
 
 - Provided By:
 
-    - [src/third\_party/v8/src/api.cc](../../../v8)
+    - [src/third\_party/v8/src/api.cc](../../../third\_party/v8)

@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/balance.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/chunk.cpp
 
@@ -19,7 +20,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -27,7 +28,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -35,7 +36,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -43,7 +44,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -51,7 +52,7 @@
 
 - Used By:
 
-    - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -59,8 +60,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -68,7 +69,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -76,7 +77,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -84,7 +85,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -92,7 +93,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -100,7 +101,7 @@
 
 - Used By:
 
-    - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -108,8 +109,8 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/cluster\_client\_internal.cpp
 
@@ -119,8 +120,8 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/cluster\_write.cpp
 
@@ -130,7 +131,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -138,7 +139,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -146,7 +147,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -154,7 +155,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -162,7 +163,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -170,7 +171,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -178,7 +179,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -186,7 +187,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -194,7 +195,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 ### src/mongo/s/commands\_admin.cpp
 
@@ -204,7 +205,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/shutdown.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/shutdown.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -212,7 +213,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/shutdown.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/shutdown.cpp](../../../queries/database\_commands)
 
 ### src/mongo/s/config.cpp
 
@@ -222,7 +223,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -230,10 +231,10 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -241,7 +242,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -249,8 +250,8 @@
 
 - Used By:
 
-    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -258,7 +259,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -266,7 +267,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -274,7 +275,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -282,7 +283,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -290,7 +291,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -298,7 +299,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -306,7 +307,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -314,7 +315,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -322,7 +323,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/config\_server\_checker\_service.cpp
 
@@ -332,7 +333,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/cursors.cpp
 
@@ -342,7 +343,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -350,7 +351,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/d\_migrate.cpp
 
@@ -360,7 +361,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -368,7 +369,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -376,7 +377,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
 
 ### src/mongo/s/d\_state.cpp
 
@@ -386,8 +387,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -395,19 +396,19 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../update\_system)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../queries/update\_system)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -415,15 +416,15 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/get\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../update\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/get\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -431,7 +432,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -439,7 +440,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -447,11 +448,11 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../update\_system)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../queries/update\_system)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -459,9 +460,9 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -469,8 +470,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding/writeback\_listener)
 
 <div></div>
 
@@ -478,7 +479,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -486,7 +487,7 @@
 
 - Used By:
 
-    - [src/mongo/scripting/v8\_db.cpp](../../../javascript\_libraries)
+    - [src/mongo/scripting/v8\_db.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -494,8 +495,8 @@
 
 - Used By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding/writeback\_listener)
 
 <div></div>
 
@@ -503,7 +504,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
 
 ### src/mongo/s/default\_version.cpp
 
@@ -513,8 +514,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../write\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../network/write\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -522,7 +523,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -530,7 +531,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -538,8 +539,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../write\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../network/write\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 ### src/mongo/s/grid.cpp
 
@@ -549,9 +550,9 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -559,7 +560,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -567,10 +568,10 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -578,7 +579,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/s/mongos\_persistence\_stubs.cpp
 
@@ -588,7 +589,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -596,7 +597,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -604,7 +605,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/parameters.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/parameters.cpp](../../../queries/database\_commands)
 
 ### src/mongo/s/shard.cpp
 
@@ -614,7 +615,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -622,7 +623,7 @@
 
 - Used By:
 
-    - [src/mongo/s/writeback\_listener.cpp](../../../writeback\_listener)
+    - [src/mongo/s/writeback\_listener.cpp](../../../sharding/writeback\_listener)
 
 <div></div>
 
@@ -630,7 +631,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -638,8 +639,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -647,7 +648,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
 
 ### src/mongo/s/shard\_key\_pattern.cpp
 
@@ -657,7 +658,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 ### src/mongo/s/shardconnection.cpp
 
@@ -667,7 +668,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -675,7 +676,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -683,7 +684,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -691,7 +692,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -699,7 +700,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -707,7 +708,7 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -715,7 +716,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 ### src/mongo/s/shardkey.cpp
 
@@ -725,8 +726,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/sharding.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/chunktests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/sharding.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/chunktests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/s/version\_manager.cpp
 
@@ -736,7 +737,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -744,8 +745,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../write\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../network/write\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -753,8 +754,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../write\_commands)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../network/write\_commands)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -762,7 +763,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 ### src/mongo/s/version\_mongos.cpp
 
@@ -772,5 +773,5 @@
 
 - Used By:
 
-    - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)

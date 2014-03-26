@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Write Commands Errors Schema
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/write\_ops/wc\_error\_detail.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -17,9 +18,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -27,9 +28,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -37,9 +38,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -47,8 +48,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -56,7 +57,7 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -64,8 +65,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -73,9 +74,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 ### src/mongo/s/write\_ops/write\_error\_detail.cpp
 
@@ -85,11 +86,11 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -97,12 +98,12 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -110,12 +111,12 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -123,12 +124,12 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -136,12 +137,12 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -149,8 +150,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -158,9 +159,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -168,8 +169,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -177,9 +178,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -187,9 +188,9 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/write\_op.cpp](../../../write\_commands)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -197,8 +198,8 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)
 
 <div></div>
 
@@ -206,5 +207,5 @@
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../network/write\_commands)

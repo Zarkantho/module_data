@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for TODO: Name this group
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/db/geo/geoparser.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2latlng.cc](../../../s2)
+    - [src/third\_party/s2/s2latlng.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/base/logging.cc](../../../s2)
+    - [src/third\_party/s2/base/logging.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cap.cc](../../../s2)
+    - [src/third\_party/s2/s2cap.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/base/logging.cc](../../../s2)
+    - [src/third\_party/s2/base/logging.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -153,7 +154,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -161,7 +162,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -169,7 +170,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -177,7 +178,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -185,7 +186,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -193,7 +194,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -201,7 +202,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2latlng.cc](../../../s2)
+    - [src/third\_party/s2/s2latlng.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -209,7 +210,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -217,7 +218,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -225,7 +226,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -233,7 +234,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cap.cc](../../../s2)
+    - [src/third\_party/s2/s2cap.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -241,7 +242,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2region.cc](../../../s2)
+    - [src/third\_party/s2/s2region.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -249,7 +250,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2loop.cc](../../../s2)
+    - [src/third\_party/s2/s2loop.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -257,7 +258,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -265,7 +266,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -273,7 +274,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -281,7 +282,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -289,7 +290,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -297,7 +298,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygonbuilder.cc](../../../s2)
+    - [src/third\_party/s2/s2polygonbuilder.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -305,7 +306,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -313,7 +314,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 ### src/mongo/db/geo/geoparser\_test.cpp
 
@@ -323,7 +324,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -331,7 +332,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -339,7 +340,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -347,7 +348,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -355,7 +356,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/json.cpp](../../../bson)
+    - [src/mongo/db/json.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -363,7 +364,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -371,7 +372,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -379,7 +380,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -387,7 +388,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -395,7 +396,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -403,7 +404,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -411,7 +412,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -419,7 +420,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -427,7 +428,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -435,7 +436,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -443,7 +444,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -451,7 +452,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -459,7 +460,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -467,7 +468,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -475,7 +476,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -483,7 +484,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -491,7 +492,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2region.cc](../../../s2)
+    - [src/third\_party/s2/s2region.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -499,7 +500,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -507,7 +508,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -515,7 +516,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -523,7 +524,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -531,7 +532,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/json.cpp](../../../bson)
+    - [src/mongo/db/json.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -539,7 +540,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -547,7 +548,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/geo/geoquery.cpp
 
@@ -557,7 +558,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -565,7 +566,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regionunion.cc](../../../s2)
+    - [src/third\_party/s2/s2regionunion.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -573,7 +574,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -581,7 +582,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -589,7 +590,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -597,7 +598,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -605,7 +606,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -613,7 +614,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cap.cc](../../../s2)
+    - [src/third\_party/s2/s2cap.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -621,7 +622,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -629,7 +630,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -637,7 +638,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -645,7 +646,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -653,7 +654,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -661,7 +662,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -669,7 +670,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -677,7 +678,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -685,7 +686,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -693,7 +694,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2region.cc](../../../s2)
+    - [src/third\_party/s2/s2region.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -701,7 +702,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -709,7 +710,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -717,7 +718,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -725,7 +726,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -733,7 +734,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -741,7 +742,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regionunion.cc](../../../s2)
+    - [src/third\_party/s2/s2regionunion.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -749,7 +750,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -757,7 +758,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -765,7 +766,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -773,7 +774,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -781,7 +782,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -789,7 +790,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -797,7 +798,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cap.cc](../../../s2)
+    - [src/third\_party/s2/s2cap.cc](../../../third\_party/s2)
 
 ### src/mongo/db/geo/hash.cpp
 
@@ -807,7 +808,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -815,7 +816,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -823,7 +824,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -831,7 +832,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -839,7 +840,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -847,7 +848,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -855,7 +856,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -863,7 +864,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -871,7 +872,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -879,7 +880,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 ### src/mongo/db/geo/hash\_test.cpp
 
@@ -889,7 +890,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -897,7 +898,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -905,7 +906,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -913,7 +914,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -921,7 +922,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../../../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -929,7 +930,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/random.cpp](../../../utilities)
+    - [src/mongo/platform/random.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -937,7 +938,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -945,7 +946,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -953,7 +954,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -961,7 +962,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -969,7 +970,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -977,7 +978,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -985,7 +986,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -993,7 +994,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/geo/haystack.cpp
 
@@ -1003,7 +1004,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -1011,7 +1012,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1019,7 +1020,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1027,7 +1028,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1035,7 +1036,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../indexing)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -1043,7 +1044,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1051,7 +1052,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -1059,7 +1060,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1067,7 +1068,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1075,7 +1076,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
+    - [src/mongo/db/auth/action\_set.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -1083,7 +1084,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
+    - [src/mongo/db/auth/privilege.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -1091,7 +1092,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1099,7 +1100,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1107,7 +1108,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1115,7 +1116,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1123,7 +1124,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1131,7 +1132,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1139,7 +1140,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -1147,8 +1148,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -1156,7 +1157,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1164,7 +1165,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1172,7 +1173,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -1180,7 +1181,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1188,7 +1189,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1196,7 +1197,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1204,7 +1205,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/geo/s2common.cpp
 
@@ -1214,7 +1215,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1222,7 +1223,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1230,7 +1231,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1238,7 +1239,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1246,7 +1247,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cell.cc](../../../s2)
+    - [src/third\_party/s2/s2cell.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1254,7 +1255,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/base/logging.cc](../../../s2)
+    - [src/third\_party/s2/base/logging.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1262,7 +1263,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2.cc](../../../s2)
+    - [src/third\_party/s2/s2.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1270,7 +1271,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1278,7 +1279,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1286,7 +1287,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1294,7 +1295,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/base/logging.cc](../../../s2)
+    - [src/third\_party/s2/base/logging.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1302,7 +1303,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1310,7 +1311,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1318,7 +1319,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1326,7 +1327,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2.cc](../../../s2)
+    - [src/third\_party/s2/s2.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1334,7 +1335,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1342,7 +1343,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1350,7 +1351,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1358,7 +1359,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1366,7 +1367,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1374,7 +1375,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2region.cc](../../../s2)
+    - [src/third\_party/s2/s2region.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1382,7 +1383,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1390,7 +1391,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1398,7 +1399,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1406,7 +1407,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s1angle.cc](../../../s2)
+    - [src/third\_party/s2/s1angle.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1414,7 +1415,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1422,7 +1423,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1430,7 +1431,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polyline.cc](../../../s2)
+    - [src/third\_party/s2/s2polyline.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1438,7 +1439,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2cellid.cc](../../../s2)
+    - [src/third\_party/s2/s2cellid.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1446,7 +1447,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2polygon.cc](../../../s2)
+    - [src/third\_party/s2/s2polygon.cc](../../../third\_party/s2)
 
 <div></div>
 
@@ -1454,7 +1455,7 @@
 
 - Provided By:
 
-    - [src/third\_party/s2/s2regioncoverer.cc](../../../s2)
+    - [src/third\_party/s2/s2regioncoverer.cc](../../../third\_party/s2)
 
 ### src/mongo/db/geo/shapes.cpp
 
@@ -1464,7 +1465,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -1472,7 +1473,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1480,7 +1481,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1488,7 +1489,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1496,7 +1497,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1504,7 +1505,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1512,7 +1513,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1520,7 +1521,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1528,4 +1529,4 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)

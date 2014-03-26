@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for TODO: Name this group
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/util/trace.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/rwlockimpl.cpp](../../../queries/concurrency)
 
 ### src/mongo/db/tests.cpp
 
@@ -51,7 +52,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -59,7 +60,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -67,7 +68,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stacktrace.cpp](../../../utilities)
+    - [src/mongo/util/stacktrace.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -75,7 +76,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -83,7 +84,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -91,7 +92,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 ### src/mongo/db/stats/service\_stats.cpp
 
@@ -101,7 +102,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -109,7 +110,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../concurrency)
+    - [src/mongo/util/concurrency/spin\_lock.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -117,7 +118,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 ### src/mongo/dbtests/histogram\_test.cpp
 
@@ -127,7 +128,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -135,7 +136,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -143,7 +144,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -151,7 +152,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -159,7 +160,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -167,7 +168,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -175,7 +176,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -183,7 +184,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -191,7 +192,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -199,4 +200,4 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)

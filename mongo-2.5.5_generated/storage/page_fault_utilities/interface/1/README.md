@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/prefetch.cpp
 
@@ -9,4 +10,4 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)

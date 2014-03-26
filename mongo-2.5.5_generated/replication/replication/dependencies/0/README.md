@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for resync Command
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/db/repl/resync.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../authorization)
+    - [build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/auth/action\_type.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/action\_set.cpp](../../../authorization)
+    - [src/mongo/db/auth/action\_set.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/privilege.cpp](../../../authorization)
+    - [src/mongo/db/auth/privilege.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../../../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -153,4 +154,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)

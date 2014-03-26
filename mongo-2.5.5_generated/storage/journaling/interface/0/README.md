@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Page Aligned Buffer
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/alignedbuilder.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)

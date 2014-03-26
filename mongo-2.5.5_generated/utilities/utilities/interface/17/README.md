@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Auth Utils
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/client/auth\_helpers.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../authorization)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -18,9 +19,9 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
-    - [src/mongo/tools/dump.cpp](../../../tools)
-    - [src/mongo/tools/restore.cpp](../../../tools)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
+    - [src/mongo/tools/dump.cpp](../../../tools/tools)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -28,7 +29,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -36,4 +37,4 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)

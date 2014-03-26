@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for User Cache Invalidator
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/auth/user\_cache\_invalidator\_job.cpp
 
@@ -9,4 +10,4 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)

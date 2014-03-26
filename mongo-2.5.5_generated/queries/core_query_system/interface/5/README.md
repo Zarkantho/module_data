@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/query/canonical\_query.cpp
 
@@ -9,11 +10,11 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -21,8 +22,8 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -30,15 +31,15 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/oplogstarttests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/oplogstarttests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/group.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -46,7 +47,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/query/eof\_runner.cpp
 
@@ -56,20 +57,20 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/query/explain\_plan.cpp
 
@@ -79,7 +80,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/query/get\_runner.cpp
 
@@ -89,10 +90,10 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/group.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -100,14 +101,14 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/group.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -115,10 +116,10 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/group.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/group.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -126,7 +127,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/query/internal\_runner.cpp
 
@@ -136,23 +137,23 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../database\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../indexing)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../queries/indexing)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 ### src/mongo/db/query/lite\_parsed\_query.cpp
 
@@ -162,7 +163,7 @@
 
 - Used By:
 
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -170,7 +171,7 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -178,10 +179,10 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -189,7 +190,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -197,7 +198,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -205,8 +206,8 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -214,7 +215,7 @@
 
 - Used By:
 
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
 
 ### src/mongo/db/query/multi\_plan\_runner.cpp
 
@@ -224,7 +225,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -232,7 +233,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -240,7 +241,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -248,7 +249,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -256,7 +257,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/query/new\_find.cpp
 
@@ -266,8 +267,8 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -275,7 +276,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -283,8 +284,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/query/plan\_cache.cpp
 
@@ -294,7 +295,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -302,8 +303,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -311,7 +312,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -319,8 +320,8 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/catalog/collection.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -328,8 +329,8 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -337,7 +338,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -345,7 +346,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -353,7 +354,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -361,7 +362,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/query/plan\_executor.cpp
 
@@ -371,10 +372,10 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -382,10 +383,10 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -393,10 +394,10 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_merge\_sort.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/query/query\_settings.cpp
 
@@ -406,7 +407,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -414,7 +415,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -422,7 +423,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -430,7 +431,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -438,7 +439,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -446,7 +447,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -454,7 +455,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/query/single\_solution\_runner.cpp
 
@@ -464,8 +465,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/query/type\_explain.cpp
 
@@ -475,7 +476,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -483,7 +484,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -491,7 +492,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -499,7 +500,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -507,7 +508,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -515,7 +516,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -523,7 +524,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -531,8 +532,8 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -540,7 +541,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -548,9 +549,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -558,7 +559,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -566,9 +567,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/commands/geonear.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -576,7 +577,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -584,7 +585,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -592,7 +593,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -600,7 +601,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -608,7 +609,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -616,7 +617,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -624,7 +625,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -632,8 +633,8 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/commands/distinct.cpp](../../../database\_commands)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/commands/distinct.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -641,7 +642,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -649,7 +650,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -657,4 +658,4 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)

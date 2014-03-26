@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Config Coordinator
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/write\_ops/config\_coordinator.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)

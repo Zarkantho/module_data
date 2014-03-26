@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Uncategorized Mutable BSON code
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/bson/mutable/document.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -18,7 +19,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -26,9 +27,9 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -36,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -44,8 +45,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -53,7 +54,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -61,8 +62,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -70,8 +71,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -79,7 +80,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -87,7 +88,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -95,12 +96,12 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -108,12 +109,12 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -121,8 +122,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -130,10 +131,10 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -141,15 +142,15 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_unset.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_unset.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -157,8 +158,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -166,15 +167,15 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -182,7 +183,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -190,14 +191,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -205,11 +206,11 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -217,16 +218,16 @@
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -234,13 +235,13 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -248,10 +249,10 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -259,19 +260,19 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_unset.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_unset.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -279,7 +280,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -287,12 +288,12 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -300,13 +301,13 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -314,8 +315,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -323,8 +324,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -332,8 +333,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -341,7 +342,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -349,13 +350,13 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_compare.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_compare.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -363,12 +364,12 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_compare.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_compare.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -376,7 +377,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_current\_date.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -384,14 +385,14 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -399,7 +400,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -407,7 +408,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_set.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_set.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -415,8 +416,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -424,9 +425,9 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_unset.cpp](../../../update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_unset.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -434,8 +435,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_compare.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_compare.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -443,7 +444,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_unset.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_unset.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -451,18 +452,18 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../authorization)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/auth/role\_graph\_update.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -470,7 +471,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -478,15 +479,15 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -494,8 +495,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 ### src/mongo/bson/mutable/element.cpp
 
@@ -505,14 +506,14 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/ops/log\_builder.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/log\_builder.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -520,10 +521,10 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -531,7 +532,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -539,8 +540,8 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -548,8 +549,8 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_local.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -557,9 +558,9 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/update\_driver.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/update\_driver.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -567,7 +568,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
 
 <div></div>
 
@@ -575,16 +576,16 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/modifier\_bit.cpp](../../../update\_system)
-    - [src/mongo/db/ops/path\_support.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_rename.cpp](../../../update\_system)
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/modifier\_inc.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_pop.cpp](../../../update\_system)
-    - [src/mongo/db/ops/modifier\_push.cpp](../../../update\_system)
+    - [src/mongo/db/ops/modifier\_bit.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/path\_support.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_rename.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/modifier\_inc.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_add\_to\_set.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pull\_all.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_object\_replace.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_pop.cpp](../../../queries/update\_system)
+    - [src/mongo/db/ops/modifier\_push.cpp](../../../queries/update\_system)
 
 ### src/mongo/bson/mutable/mutable\_bson\_test\_utils.cpp
 
@@ -594,8 +595,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -603,5 +604,5 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/updatetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/updatetests.cpp](../../../tests/unit\_tests)

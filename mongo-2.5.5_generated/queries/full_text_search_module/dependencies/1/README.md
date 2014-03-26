@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for Full Text Search Stop Words
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### build/darwin/cpppath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_include/libpath\_\_usr\_local\_Cellar\_openssl\_1.0.1e\_lib/ssl/mongo/db/fts/stop\_words\_list.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 ### src/mongo/db/fts/stop\_words.cpp
 
@@ -35,7 +36,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -43,7 +44,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -51,7 +52,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -59,7 +60,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -67,7 +68,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 ### src/mongo/db/fts/stop\_words\_test.cpp
 
@@ -77,7 +78,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -85,7 +86,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -93,7 +94,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -101,7 +102,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -109,7 +110,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -117,7 +118,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -125,7 +126,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -133,7 +134,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -141,7 +142,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -149,7 +150,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -157,4 +158,4 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)

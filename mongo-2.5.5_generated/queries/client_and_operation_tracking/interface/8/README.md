@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Legacy Local Access Helpers
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/dbhelpers.cpp
 
@@ -9,10 +10,10 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/prefetch.cpp](../../../page\_fault\_utilities)
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/prefetch.cpp](../../../storage/page\_fault\_utilities)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -20,8 +21,8 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../authorization)
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/auth/auth\_index\_d.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -29,7 +30,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -37,7 +38,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -45,9 +46,9 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -55,9 +56,9 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -65,9 +66,9 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -75,9 +76,9 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -85,11 +86,11 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication)
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/catalog/cap.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/cap.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -105,8 +106,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -114,7 +115,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -122,9 +123,9 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -132,8 +133,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -141,12 +142,12 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/find\_and\_modify.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -154,13 +155,13 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/repl/health.cpp](../../../replication)
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -168,7 +169,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -176,8 +177,8 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -185,10 +186,10 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/oplog.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -196,4 +197,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/dbhelper\_tests.cpp](../../../tests/unit\_tests)

@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Murmurhash3
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/third\_party/murmurhash3/MurmurHash3.cpp
 
@@ -9,9 +10,9 @@
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/pipeline/value.cpp](../../../aggregation\_framework)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
+    - [src/mongo/db/pipeline/document.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/pipeline/value.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -19,4 +20,4 @@
 
 - Used By:
 
-    - [src/mongo/base/string\_data.cpp](../../../base\_utilites)
+    - [src/mongo/base/string\_data.cpp](../../../utilities/base\_utilites)

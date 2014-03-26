@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for TODO: Name this group
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/db/db.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/stacktrace.cpp](../../../utilities)
+    - [src/mongo/util/stacktrace.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../logging\_system)
+    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter\_service.cpp](../../../sharding)
+    - [src/mongo/db/range\_deleter\_service.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/util.cpp](../../../utilities)
+    - [src/mongo/util/util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -153,7 +154,7 @@
 
 - Provided By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -161,7 +162,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/value.cpp](../../../startup\_initialization)
+    - [src/mongo/util/options\_parser/value.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -169,8 +170,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -178,7 +179,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -186,7 +187,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -194,7 +195,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -202,7 +203,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -210,7 +211,7 @@
 
 - Provided By:
 
-    - [src/mongo/scripting/engine.cpp](../../../javascript\_libraries)
+    - [src/mongo/scripting/engine.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -218,7 +219,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -226,7 +227,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../logging\_system)
+    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -234,7 +235,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -242,7 +243,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../logging\_system)
+    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -250,7 +251,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -258,7 +259,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -266,7 +267,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -274,7 +275,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -282,7 +283,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -290,7 +291,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -298,7 +299,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -306,7 +307,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -314,7 +315,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -322,7 +323,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/startup\_warnings.cpp](../../../startup\_initialization)
+    - [src/mongo/db/startup\_warnings.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -330,7 +331,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -338,7 +339,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -346,7 +347,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -354,7 +355,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -362,7 +363,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -370,7 +371,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -378,7 +379,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -386,7 +387,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -394,7 +395,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/timer.cpp](../../../utilities)
+    - [src/mongo/util/timer.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -402,7 +403,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/repl/repl\_start.cpp](../../../replication)
+    - [src/mongo/db/repl/repl\_start.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -410,7 +411,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -418,7 +419,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../../../journaling)
+    - [src/mongo/db/dur.cpp](../../../storage/journaling)
 
 <div></div>
 
@@ -426,7 +427,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -434,7 +435,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -442,7 +443,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -450,7 +451,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -458,7 +459,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -466,7 +467,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter.cpp](../../../sharding)
+    - [src/mongo/db/range\_deleter.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -474,7 +475,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/log.cpp](../../../logging\_system)
+    - [src/mongo/util/log.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -482,7 +483,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -490,7 +491,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -498,7 +499,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -506,7 +507,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../../../journaling)
+    - [src/mongo/db/dur.cpp](../../../storage/journaling)
 
 <div></div>
 
@@ -514,7 +515,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -522,7 +523,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -530,7 +531,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/working\_set.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/working\_set.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -538,7 +539,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/stats/snapshots.cpp](../../../utilities)
+    - [src/mongo/db/stats/snapshots.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -546,7 +547,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_globals.cpp](../../../legacy\_code)
+    - [src/mongo/db/d\_globals.cpp](../../../dead\_code/legacy\_code)
 
 <div></div>
 
@@ -554,7 +555,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -562,7 +563,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -570,7 +571,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/environment.cpp](../../../startup\_initialization)
+    - [src/mongo/util/options\_parser/environment.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -578,7 +579,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -586,7 +587,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -594,7 +595,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -602,7 +603,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -610,7 +611,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -618,7 +619,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -626,7 +627,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -634,7 +635,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -642,7 +643,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -650,7 +651,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -658,7 +659,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -666,7 +667,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -674,7 +675,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -682,7 +683,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -690,7 +691,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -698,7 +699,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -706,7 +707,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -714,8 +715,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -723,7 +724,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -731,7 +732,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../core\_query\_system)
+    - [src/mongo/db/query/eof\_runner.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -739,7 +740,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
 
 <div></div>
 
@@ -747,7 +748,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../startup\_initialization)
+    - [src/mongo/util/options\_parser/startup\_options.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -755,7 +756,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -763,7 +764,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/version\_reporting.cpp](../../../utilities)
+    - [src/mongo/util/version\_reporting.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -771,10 +772,10 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -782,7 +783,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -790,7 +791,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/ttl.cpp](../../../indexing)
+    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -798,7 +799,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -806,7 +807,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -814,7 +815,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -822,7 +823,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_rebuilder.cpp](../../../indexing)
+    - [src/mongo/db/index\_rebuilder.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -830,7 +831,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -838,7 +839,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -846,7 +847,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/restapi.cpp](../../../web\_server)
+    - [src/mongo/db/restapi.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -854,7 +855,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/debug\_util.cpp](../../../utilities)
+    - [src/mongo/util/debug\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -862,7 +863,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -870,7 +871,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../../../core\_query\_system)
+    - [src/mongo/db/exec/collection\_scan.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -878,7 +879,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -886,8 +887,8 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -895,7 +896,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -903,7 +904,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -911,7 +912,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/storage\_options.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/storage\_options.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -919,7 +920,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -927,7 +928,7 @@
 
 - Provided By:
 
-    - [src/mongo/platform/process\_id.cpp](../../../utilities)
+    - [src/mongo/platform/process\_id.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -935,7 +936,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -943,7 +944,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
 
 <div></div>
 
@@ -951,7 +952,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -959,7 +960,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/operations.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -967,7 +968,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -975,7 +976,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -983,7 +984,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -991,7 +992,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_d.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -999,7 +1000,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1007,7 +1008,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1015,7 +1016,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1023,7 +1024,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1031,7 +1032,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -1039,7 +1040,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1047,7 +1048,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/cmdline\_utils/censor\_cmdline.cpp](../../../startup\_initialization)
+    - [src/mongo/util/cmdline\_utils/censor\_cmdline.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1055,7 +1056,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1063,7 +1064,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../concurrency)
+    - [src/mongo/db/d\_concurrency.cpp](../../../queries/concurrency)
 
 <div></div>
 
@@ -1071,7 +1072,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1079,7 +1080,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/initializer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/initializer.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1087,7 +1088,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1095,7 +1096,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1103,7 +1104,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/structure/catalog/namespace\_index.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1111,7 +1112,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1119,7 +1120,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../boost\_filesystem)
+    - [src/third\_party/boost/libs/filesystem/v3/src/path.cpp](../../../third\_party/boost\_filesystem)
 
 <div></div>
 
@@ -1127,7 +1128,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -1135,7 +1136,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1143,7 +1144,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../indexing)
+    - [src/mongo/db/index\_names.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -1151,7 +1152,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../boost\_thread)
+    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../third\_party/boost\_thread)
 
 <div></div>
 
@@ -1159,7 +1160,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../utilities)
+    - [src/mongo/util/time\_support.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1167,7 +1168,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1175,7 +1176,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../network\_core)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../network/network\_core)
 
 <div></div>
 
@@ -1183,7 +1184,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -1191,7 +1192,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/internal\_runner.cpp](../../../core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -1199,7 +1200,7 @@
 
 - Provided By:
 
-    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript\_libraries)
+    - [src/mongo/scripting/engine\_v8.cpp](../../../javascript/javascript\_libraries)
 
 <div></div>
 
@@ -1207,7 +1208,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1215,7 +1216,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/startup\_test.cpp](../../../utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1223,7 +1224,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -1231,7 +1232,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -1239,10 +1240,10 @@
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/unittest/crutch.cpp](../../../unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/client/clientAndShell.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/clientAndShell.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1250,7 +1251,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../utilities)
+    - [src/mongo/util/background.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1258,7 +1259,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_options.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_options.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1266,7 +1267,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -1274,7 +1275,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -1282,4 +1283,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)

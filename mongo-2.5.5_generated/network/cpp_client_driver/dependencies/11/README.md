@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for TODO: Name this group
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/client/parallel.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/grid.cpp](../../../sharding)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -17,8 +18,8 @@
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../sharding)
-    - [src/mongo/s/default\_version.cpp](../../../sharding)
+    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
+    - [src/mongo/s/default\_version.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -26,7 +27,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
 
 <div></div>
 
@@ -34,7 +35,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -42,7 +43,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -50,7 +51,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -58,7 +59,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -66,7 +67,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../sharding)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -74,8 +75,8 @@
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../sharding)
-    - [src/mongo/s/default\_version.cpp](../../../sharding)
+    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
+    - [src/mongo/s/default\_version.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -83,7 +84,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -91,8 +92,8 @@
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../sharding)
-    - [src/mongo/s/default\_version.cpp](../../../sharding)
+    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
+    - [src/mongo/s/default\_version.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -100,7 +101,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -108,7 +109,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -116,7 +117,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -124,7 +125,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -132,8 +133,8 @@
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../sharding)
-    - [src/mongo/s/default\_version.cpp](../../../sharding)
+    - [src/mongo/s/version\_manager.cpp](../../../sharding/sharding)
+    - [src/mongo/s/default\_version.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -141,7 +142,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -149,7 +150,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/grid.cpp](../../../sharding)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -157,7 +158,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -165,7 +166,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -173,7 +174,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -181,7 +182,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -189,7 +190,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -197,7 +198,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -205,7 +206,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -213,7 +214,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../../../core\_query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -221,7 +222,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../../../sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -229,7 +230,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -237,7 +238,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../sharding)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -245,7 +246,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -253,7 +254,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -261,7 +262,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -269,7 +270,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -277,7 +278,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../../../sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -285,7 +286,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -293,7 +294,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -301,7 +302,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -309,7 +310,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -317,7 +318,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -325,7 +326,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -333,7 +334,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/matcher/matcher.cpp](../../../core\_query\_system)
+    - [src/mongo/db/matcher/matcher.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -341,7 +342,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -349,7 +350,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../../../sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -357,7 +358,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -365,7 +366,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../core\_query\_system)
+    - [src/mongo/db/query/lite\_parsed\_query.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -373,7 +374,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../sharding)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -381,4 +382,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)

@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Replica Set Background Sync Threads
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/bgsync.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)

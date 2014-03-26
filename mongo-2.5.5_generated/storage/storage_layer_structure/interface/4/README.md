@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Database Holder
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/catalog/database\_holder.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)

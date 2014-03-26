@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for Atomic Counter
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/base/counter\_test.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -89,4 +90,4 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)

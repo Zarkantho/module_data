@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for Legacy Server Parameters
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/db/auth/auth\_server\_parameters.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/auth/authorization\_manager.cpp](../../../authorization)
+    - [src/mongo/db/auth/authorization\_manager.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -73,4 +74,4 @@
 
 - Provided By:
 
-    - [src/mongo/db/server\_parameters.cpp](../../../startup\_initialization)
+    - [src/mongo/db/server\_parameters.cpp](../../../process\_management/startup\_initialization)

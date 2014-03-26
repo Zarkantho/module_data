@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Fail Points
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/fail\_point.cpp
 
@@ -9,17 +10,17 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
-    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
-    - [src/mongo/s/grid.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -27,8 +28,8 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -36,8 +37,8 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -45,8 +46,8 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -54,15 +55,15 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
-    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
-    - [src/mongo/s/grid.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -70,7 +71,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -78,17 +79,17 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
-    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/grid.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -96,10 +97,10 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../database\_commands)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/util/fail\_point\_registry.cpp
 
@@ -109,9 +110,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../database\_commands)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -119,16 +120,16 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
-    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/grid.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 ### src/mongo/util/fail\_point\_service.cpp
 
@@ -138,15 +139,15 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../replication)
-    - [src/mongo/db/exec/fetch.cpp](../../../core\_query\_system)
-    - [src/mongo/db/curop.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../database\_commands)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/util/net/sock.cpp](../../../network\_core)
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
-    - [src/mongo/s/grid.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/repl/bgsync.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/fetch.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/curop.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/fail\_point\_cmd.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../replication/replication)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/util/net/sock.cpp](../../../network/network\_core)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/grid.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)

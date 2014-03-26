@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Mongod WriteBack Checks
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/d\_logic.cpp
 
@@ -9,4 +10,4 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)

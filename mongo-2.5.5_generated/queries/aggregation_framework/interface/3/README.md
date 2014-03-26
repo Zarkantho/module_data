@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Pipeline Stages
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/pipeline/document\_source.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_bson\_array.cpp
 
@@ -20,7 +21,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_command\_shards.cpp
 
@@ -30,7 +31,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_cursor.cpp
 
@@ -40,7 +41,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -48,7 +49,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_geo\_near.cpp
 
@@ -58,7 +59,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_group.cpp
 
@@ -68,7 +69,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_limit.cpp
 
@@ -78,7 +79,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -86,7 +87,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_match.cpp
 
@@ -96,7 +97,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -104,7 +105,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -112,7 +113,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -120,7 +121,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_merge\_cursors.cpp
 
@@ -130,7 +131,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_out.cpp
 
@@ -140,7 +141,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 ### src/mongo/db/pipeline/document\_source\_project.cpp
 
@@ -150,7 +151,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_sort.cpp
 
@@ -160,7 +161,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -168,7 +169,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/document\_source\_unwind.cpp
 
@@ -178,4 +179,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)

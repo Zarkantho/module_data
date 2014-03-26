@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/logfile.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -18,8 +19,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -27,7 +28,7 @@
 
 - Used By:
 
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -35,8 +36,8 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_admin.cpp](../../../database\_commands)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/db/dbcommands\_admin.cpp](../../../queries/database\_commands)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -44,4 +45,4 @@
 
 - Used By:
 
-    - [src/mongo/client/examples/mongoperf.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../network/cpp\_client\_driver)

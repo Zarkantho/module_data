@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Internal Cluster Authentication
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/auth/security\_key.cpp
 
@@ -9,9 +10,9 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
-    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -19,15 +20,15 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/db/repl/manager.cpp](../../../replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/manager.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -35,7 +36,7 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -43,4 +44,4 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)

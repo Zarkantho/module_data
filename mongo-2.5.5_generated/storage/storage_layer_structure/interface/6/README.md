@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Namespace Details
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/structure/catalog/namespace\_details.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -17,8 +18,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -26,8 +27,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -35,8 +36,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -44,9 +45,9 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/ttl.cpp](../../../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -54,7 +55,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -62,9 +63,9 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
-    - [src/mongo/db/ttl.cpp](../../../indexing)
-    - [src/mongo/db/index\_legacy.cpp](../../../indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/ttl.cpp](../../../queries/indexing)
+    - [src/mongo/db/index\_legacy.cpp](../../../queries/indexing)
 
 <div></div>
 
@@ -72,9 +73,9 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_stats.cpp](../../../database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../unit\_tests)
-    - [src/mongo/db/commands/touch.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/index\_stats.cpp](../../../queries/database\_commands)
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/commands/touch.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -82,8 +83,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -91,7 +92,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -99,8 +100,8 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -108,8 +109,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -117,7 +118,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/namespacetests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -125,5 +126,5 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/ops/delete.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/ops/delete.cpp](../../../queries/core\_query\_system)

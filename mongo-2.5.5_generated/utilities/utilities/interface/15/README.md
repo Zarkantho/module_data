@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for MD5 Hasher
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/md5.cpp
 
@@ -9,14 +10,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/jsobj.cpp](../../../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -24,14 +25,14 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/jsobj.cpp](../../../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -39,11 +40,11 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/jsobj.cpp](../../../bson)
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/scripting/utils.cpp](../../../javascript\_libraries)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/scripting/utils.cpp](../../../javascript/javascript\_libraries)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)

@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Heath Status Helpers
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/health.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -18,7 +19,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -26,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -34,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -42,4 +43,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)

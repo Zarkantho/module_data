@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Replica Set Sync and Initial Sync
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/rs\_sync.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/repl/sync.cpp
 
@@ -75,8 +76,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -84,7 +85,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -92,8 +93,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -101,5 +102,5 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/repltests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../tests/unit\_tests)

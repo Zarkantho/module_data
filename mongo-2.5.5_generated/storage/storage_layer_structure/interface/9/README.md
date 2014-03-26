@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Collection Cursor Cache
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/catalog/collection\_cursor\_cache.cpp
 
@@ -9,11 +10,11 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/query/get\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -21,7 +22,7 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -29,8 +30,8 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -38,9 +39,9 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../aggregation\_framework)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../queries/aggregation\_framework)
 
 <div></div>
 
@@ -48,7 +49,7 @@
 
 - Used By:
 
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -56,9 +57,9 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/documentsourcetests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/documentsourcetests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -66,14 +67,14 @@
 
 - Used By:
 
-    - [src/mongo/db/ops/update.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/plan\_executor.cpp](../../../core\_query\_system)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/query/internal\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/db/ops/update.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/query/get\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -105,5 +106,5 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)

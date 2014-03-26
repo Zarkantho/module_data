@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Query Expression Parser
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/matcher/expression.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/matcher/expression\_leaf.cpp
 
@@ -43,7 +44,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -51,7 +52,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -59,7 +60,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -67,7 +68,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -75,7 +76,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -83,7 +84,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -91,7 +92,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/matcher/expression\_parser.cpp
 
@@ -101,11 +102,11 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../unit\_tests)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../authorization)
-    - [src/mongo/db/ops/modifier\_pull.cpp](../../../update\_system)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/query\_stage\_and.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp](../../../security/authorization)
+    - [src/mongo/db/ops/modifier\_pull.cpp](../../../queries/update\_system)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../tests/unit\_tests)

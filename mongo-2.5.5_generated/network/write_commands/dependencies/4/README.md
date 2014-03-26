@@ -1,5 +1,6 @@
 
-# Dependencies
+# Interface for Write Commands mongos Execution
+This dependency information represents symbolsthat are used in this group but defined in other modules.  Does not includesymbols used in this group that are defined inside this module.
 
 ### src/mongo/s/commands/cluster\_write\_cmd.cpp
 
@@ -9,7 +10,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -41,7 +42,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -49,7 +50,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -57,7 +58,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -65,7 +66,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -73,7 +74,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -89,7 +90,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -97,7 +98,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -105,7 +106,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -113,7 +114,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -121,7 +122,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -129,7 +130,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -137,7 +138,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -145,7 +146,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -153,7 +154,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -161,7 +162,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -169,7 +170,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -177,7 +178,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -185,7 +186,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/client\_info.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/client\_info.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -193,7 +194,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/make\_string\_vector.cpp](../../../startup\_initialization)
+    - [src/mongo/base/make\_string\_vector.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -201,7 +202,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -209,7 +210,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -217,7 +218,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -225,7 +226,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../sharding)
+    - [src/mongo/s/cluster\_write.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -233,7 +234,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/client\_basic.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/client\_basic.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -241,7 +242,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -249,7 +250,7 @@
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../boost\_system)
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -257,7 +258,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -265,7 +266,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -273,7 +274,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -281,7 +282,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../startup\_initialization)
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../process\_management/startup\_initialization)
 
 ### src/mongo/s/write\_ops/batch\_write\_exec.cpp
 
@@ -291,7 +292,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -299,7 +300,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -307,7 +308,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -315,7 +316,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -323,7 +324,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -331,7 +332,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities)
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -339,7 +340,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -347,7 +348,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -355,7 +356,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -363,7 +364,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -371,7 +372,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -379,7 +380,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -387,7 +388,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -395,7 +396,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -403,7 +404,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -411,7 +412,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../logging\_system)
+    - [src/mongo/logger/logger.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -419,7 +420,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -427,7 +428,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -435,7 +436,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -443,7 +444,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -451,7 +452,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -459,7 +460,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -467,7 +468,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -475,7 +476,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -483,7 +484,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -491,7 +492,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -499,7 +500,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -507,7 +508,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -515,7 +516,7 @@
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../logging\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -523,7 +524,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -531,7 +532,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -539,7 +540,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -547,7 +548,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -555,7 +556,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 ### src/mongo/s/write\_ops/batch\_write\_exec\_test.cpp
 
@@ -565,7 +566,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -573,7 +574,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -581,7 +582,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -589,7 +590,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -597,7 +598,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -605,7 +606,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -613,7 +614,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -621,7 +622,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -629,7 +630,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -637,7 +638,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -645,7 +646,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -653,7 +654,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -661,7 +662,7 @@
 
 - Provided By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -669,7 +670,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -677,7 +678,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -685,7 +686,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -693,7 +694,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -701,7 +702,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -709,7 +710,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -717,7 +718,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -725,7 +726,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -733,7 +734,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -741,7 +742,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -749,7 +750,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -757,7 +758,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -765,7 +766,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -773,7 +774,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -781,7 +782,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -789,7 +790,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -797,7 +798,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -805,7 +806,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -813,7 +814,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -821,7 +822,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -829,7 +830,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -837,7 +838,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -845,7 +846,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -853,7 +854,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -861,7 +862,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -869,7 +870,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -877,7 +878,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -885,7 +886,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -893,7 +894,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -901,7 +902,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -909,7 +910,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -917,7 +918,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -925,7 +926,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -933,7 +934,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -941,7 +942,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -949,7 +950,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -957,7 +958,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -965,7 +966,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -973,7 +974,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -981,7 +982,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -989,7 +990,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -997,7 +998,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1005,7 +1006,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1013,7 +1014,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 ### src/mongo/s/write\_ops/batch\_write\_op.cpp
 
@@ -1023,7 +1024,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1031,7 +1032,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1039,7 +1040,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1047,7 +1048,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1055,7 +1056,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1063,7 +1064,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1071,7 +1072,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1079,7 +1080,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1087,7 +1088,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1095,7 +1096,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1103,7 +1104,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1111,7 +1112,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1119,7 +1120,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1127,7 +1128,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1135,7 +1136,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1143,7 +1144,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1151,7 +1152,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1159,7 +1160,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1167,7 +1168,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1175,7 +1176,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1183,7 +1184,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1191,7 +1192,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1199,7 +1200,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1207,7 +1208,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1215,7 +1216,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1223,7 +1224,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1231,7 +1232,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1239,7 +1240,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1247,7 +1248,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1255,7 +1256,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1263,7 +1264,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1271,7 +1272,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1279,7 +1280,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1287,7 +1288,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1295,7 +1296,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1303,7 +1304,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1311,7 +1312,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1319,7 +1320,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1327,7 +1328,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1335,7 +1336,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1343,7 +1344,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1351,7 +1352,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1359,7 +1360,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1367,7 +1368,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1375,7 +1376,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1383,7 +1384,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -1391,7 +1392,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1399,7 +1400,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1407,7 +1408,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1415,7 +1416,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1423,7 +1424,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1431,7 +1432,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1439,7 +1440,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1447,7 +1448,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1455,7 +1456,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1463,7 +1464,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1471,7 +1472,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1479,7 +1480,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1487,7 +1488,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1495,7 +1496,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1503,7 +1504,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1511,7 +1512,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1519,7 +1520,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1527,7 +1528,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1535,7 +1536,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1543,7 +1544,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1551,7 +1552,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1559,7 +1560,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1567,7 +1568,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1575,7 +1576,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1583,7 +1584,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1591,7 +1592,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1599,7 +1600,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1607,7 +1608,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1615,7 +1616,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1623,7 +1624,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1631,7 +1632,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1639,7 +1640,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1647,7 +1648,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1655,7 +1656,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1663,7 +1664,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](../../../network/write\_command\_schema)
 
 ### src/mongo/s/write\_ops/batch\_write\_op\_test.cpp
 
@@ -1673,7 +1674,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1681,7 +1682,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1689,7 +1690,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1697,7 +1698,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1705,7 +1706,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1713,7 +1714,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1721,7 +1722,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -1729,7 +1730,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1737,7 +1738,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -1745,7 +1746,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1753,7 +1754,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1761,7 +1762,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1769,7 +1770,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1777,7 +1778,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1785,7 +1786,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1793,7 +1794,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1801,7 +1802,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1809,7 +1810,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1817,7 +1818,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1825,7 +1826,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1833,7 +1834,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1841,7 +1842,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -1849,7 +1850,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1857,7 +1858,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1865,7 +1866,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1873,7 +1874,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1881,7 +1882,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1889,7 +1890,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1897,7 +1898,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1905,7 +1906,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1913,7 +1914,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1921,7 +1922,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1929,7 +1930,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1937,7 +1938,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1945,7 +1946,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1953,7 +1954,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -1961,7 +1962,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1969,7 +1970,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -1977,7 +1978,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1985,7 +1986,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -1993,7 +1994,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2001,7 +2002,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2009,7 +2010,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2017,7 +2018,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2025,7 +2026,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2033,7 +2034,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2041,7 +2042,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2049,7 +2050,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2057,7 +2058,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2065,7 +2066,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -2073,7 +2074,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2081,7 +2082,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2089,7 +2090,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2097,7 +2098,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2105,7 +2106,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2113,7 +2114,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2121,7 +2122,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2129,7 +2130,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2137,7 +2138,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2145,7 +2146,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2153,7 +2154,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2161,7 +2162,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/wc\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2169,7 +2170,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2177,7 +2178,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2185,7 +2186,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2193,7 +2194,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2201,7 +2202,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_response.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2209,7 +2210,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 ### src/mongo/s/write\_ops/write\_op.cpp
 
@@ -2219,7 +2220,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2227,7 +2228,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2235,7 +2236,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2243,7 +2244,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2251,7 +2252,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2259,7 +2260,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2267,7 +2268,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2275,7 +2276,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2283,7 +2284,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2291,7 +2292,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2299,7 +2300,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2307,7 +2308,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2315,7 +2316,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2323,7 +2324,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2331,7 +2332,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2339,7 +2340,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2347,7 +2348,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2355,7 +2356,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2363,7 +2364,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2371,7 +2372,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2379,7 +2380,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2387,7 +2388,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2395,7 +2396,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2403,7 +2404,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2411,7 +2412,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2419,7 +2420,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2427,7 +2428,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 ### src/mongo/s/write\_ops/write\_op\_test.cpp
 
@@ -2437,7 +2438,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2445,7 +2446,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2453,7 +2454,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2461,7 +2462,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -2469,7 +2470,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2477,7 +2478,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2485,7 +2486,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2493,7 +2494,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2501,7 +2502,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2509,7 +2510,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2517,7 +2518,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2525,7 +2526,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2533,7 +2534,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2541,7 +2542,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/parse\_number.cpp](../../../base\_utilites)
+    - [src/mongo/base/parse\_number.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2549,7 +2550,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2557,7 +2558,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2565,7 +2566,7 @@
 
 - Provided By:
 
-    - [src/mongo/base/status.cpp](../../../base\_utilites)
+    - [src/mongo/base/status.cpp](../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2573,7 +2574,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2581,7 +2582,7 @@
 
 - Provided By:
 
-    - [src/mongo/db/jsobj.cpp](../../../bson)
+    - [src/mongo/db/jsobj.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2589,7 +2590,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2597,7 +2598,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2605,7 +2606,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2613,7 +2614,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2621,7 +2622,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2629,7 +2630,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2637,7 +2638,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2645,7 +2646,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2653,7 +2654,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2661,7 +2662,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2669,7 +2670,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../utilities)
+    - [src/mongo/util/assert\_util.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2677,7 +2678,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2685,7 +2686,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/write\_error\_detail.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2693,7 +2694,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_delete\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2701,7 +2702,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2709,7 +2710,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -2717,7 +2718,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2725,7 +2726,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2733,7 +2734,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2741,7 +2742,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_update\_document.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2749,7 +2750,7 @@
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../utilities)
+    - [src/mongo/util/hex.cpp](../../../utilities/utilities)
 
 <div></div>
 
@@ -2757,7 +2758,7 @@
 
 - Provided By:
 
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -2765,7 +2766,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2773,7 +2774,7 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_insert\_request.cpp](../../../network/write\_command\_schema)
 
 <div></div>
 
@@ -2781,7 +2782,7 @@
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../unit\_tests)
+    - [src/mongo/unittest/unittest.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -2789,4 +2790,4 @@
 
 - Provided By:
 
-    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../write\_command\_schema)
+    - [src/mongo/s/write\_ops/batched\_command\_request.cpp](../../../network/write\_command\_schema)

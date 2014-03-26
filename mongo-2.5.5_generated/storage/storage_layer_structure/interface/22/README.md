@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Extent Class
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/storage/extent.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -33,7 +34,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/validate.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -41,4 +42,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../tests/unit\_tests)

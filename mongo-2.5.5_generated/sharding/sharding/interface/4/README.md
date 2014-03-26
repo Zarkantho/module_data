@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Collection Metadata
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/collection\_metadata.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -25,10 +26,10 @@
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/mr.cpp](../../../database\_commands)
-    - [src/mongo/db/exec/shard\_filter.cpp](../../../core\_query\_system)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/mr.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/exec/shard\_filter.cpp](../../../queries/core\_query\_system)
 
 <div></div>
 
@@ -36,7 +37,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbhelpers.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/db/dbhelpers.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -44,4 +45,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../queries/database\_commands)

@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Match Details
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/matcher/match\_details.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/matchertests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/matchertests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/matchertests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/matchertests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -25,4 +26,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/matchertests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/matchertests.cpp](../../../tests/unit\_tests)

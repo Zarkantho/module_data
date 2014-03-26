@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Distributed Lock
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/distlock.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/config\_server\_fixture.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -25,4 +26,4 @@
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../authorization)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../security/authorization)

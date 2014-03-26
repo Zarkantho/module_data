@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Socket
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/util/net/sock.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/dbtests/socktests.cpp](../../../unit\_tests)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
+    - [src/mongo/dbtests/socktests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -18,8 +19,8 @@
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -27,17 +28,17 @@
 
 - Used By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
-    - [src/mongo/db/repl/sync.cpp](../../../replication)
-    - [src/mongo/client/parallel.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/repl/sync.cpp](../../../replication/replication)
+    - [src/mongo/client/parallel.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -45,7 +46,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -53,13 +54,13 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/dbhash.cpp](../../../database\_commands)
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
-    - [src/mongo/db/lasterror.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
-    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
-    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../replication)
+    - [src/mongo/db/commands/dbhash.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/db/lasterror.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -67,8 +68,8 @@
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -76,7 +77,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -84,8 +85,8 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../unit\_tests)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -93,7 +94,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -101,7 +102,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -109,7 +110,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -117,7 +118,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -125,7 +126,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -133,8 +134,8 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -142,14 +143,14 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/balance.cpp](../../../sharding)
-    - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
-    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/balance.cpp](../../../sharding/sharding)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -157,10 +158,10 @@
 
 - Used By:
 
-    - [src/mongo/tools/tool\_options.cpp](../../../tools)
-    - [src/mongo/s/mongos\_options.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell)
-    - [src/mongo/db/mongod\_options.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/tool\_options.cpp](../../../tools/tools)
+    - [src/mongo/s/mongos\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/shell/shell\_options.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/mongod\_options.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -168,8 +169,8 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -177,7 +178,7 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -185,9 +186,9 @@
 
 - Used By:
 
-    - [src/mongo/tools/bridge.cpp](../../../tools)
-    - [src/mongo/dbtests/querytests.cpp](../../../unit\_tests)
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/tools/bridge.cpp](../../../tools/tools)
+    - [src/mongo/dbtests/querytests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -195,7 +196,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/isself.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/isself.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -203,8 +204,8 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/util/net/httpclient.cpp](../../../rest\_client)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/util/net/httpclient.cpp](../../../network/rest\_client)
 
 <div></div>
 
@@ -212,10 +213,10 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclient.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../unit\_tests)
-    - [src/mongo/client/connpool.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/client/dbclient.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../tests/unit\_tests)
+    - [src/mongo/client/connpool.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -223,7 +224,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -231,7 +232,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/ssl\_manager.cpp](../../../ssl)
+    - [src/mongo/util/net/ssl\_manager.cpp](../../../network/ssl)
 
 <div></div>
 
@@ -239,7 +240,7 @@
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -247,15 +248,15 @@
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../sharding)
-    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../replication)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../replication)
-    - [src/mongo/s/distlock.cpp](../../../sharding)
-    - [src/mongo/dbtests/perftests.cpp](../../../unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
+    - [src/mongo/s/config.cpp](../../../sharding/sharding)
+    - [src/mongo/shell/shell\_utils\_extended.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../replication/replication)
+    - [src/mongo/s/distlock.cpp](../../../sharding/sharding)
+    - [src/mongo/dbtests/perftests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -263,4 +264,4 @@
 
 - Used By:
 
-    - [src/mongo/util/net/miniwebserver.cpp](../../../web\_server)
+    - [src/mongo/util/net/miniwebserver.cpp](../../../network/web\_server)

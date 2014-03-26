@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Commands Registration Class
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/commands.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -17,37 +18,37 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/fts/fts\_command.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/fts/fts\_command.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -55,14 +56,14 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -70,10 +71,10 @@
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication)
-    - [src/mongo/dbtests/replsettests.cpp](../../../unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../replication/replication)
+    - [src/mongo/dbtests/replsettests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -81,7 +82,7 @@
 
 - Used By:
 
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -89,14 +90,14 @@
 
 - Used By:
 
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/fts/fts\_command.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/pipeline/pipeline.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/fts/fts\_command.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -104,39 +105,39 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/fts/fts\_command.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/fts/fts\_command.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -144,8 +145,8 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/dbtests.cpp](../../../unit\_tests)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
+    - [src/mongo/dbtests/dbtests.cpp](../../../tests/unit\_tests)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -153,38 +154,38 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -192,40 +193,40 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -233,38 +234,38 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -272,7 +273,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -280,7 +281,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -288,31 +289,31 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
 
 <div></div>
 
@@ -320,7 +321,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbwebserver.cpp](../../../web\_server)
+    - [src/mongo/db/dbwebserver.cpp](../../../network/web\_server)
 
 <div></div>
 
@@ -328,40 +329,40 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../replication)
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication)
-    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../core\_query\_system)
-    - [src/mongo/s/d\_writeback.cpp](../../../writeback\_listener)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/repl/resync.cpp](../../../replication)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/s/d\_migrate.cpp](../../../sharding)
-    - [src/mongo/db/commands/pipeline\_command.cpp](../../../aggregation\_framework)
-    - [src/mongo/s/shardconnection.cpp](../../../sharding)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/client.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/d\_split.cpp](../../../sharding)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/stats/top.cpp](../../../utilities)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication)
-    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../replication/replication)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../replication/replication)
+    - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/s/d\_writeback.cpp](../../../sharding/writeback\_listener)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/repl/resync.cpp](../../../replication/replication)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_migrate.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/pipeline\_command.cpp](../../../queries/aggregation\_framework)
+    - [src/mongo/s/shardconnection.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/client.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_split.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../replication/replication)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/stats/top.cpp](../../../utilities/utilities)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../replication/replication)
+    - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../sharding/sharding)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -369,8 +370,8 @@
 
 - Used By:
 
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -378,15 +379,15 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../authorization)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/db/query/new\_find.cpp](../../../core\_query\_system)
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
-    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../authorization)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/s/s\_only.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../security/authorization)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/db/query/new\_find.cpp](../../../queries/core\_query\_system)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../security/authorization)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/s/s\_only.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -394,11 +395,11 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
-    - [src/mongo/s/d\_state.cpp](../../../sharding)
-    - [src/mongo/db/geo/haystack.cpp](../../../geo\_queries)
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../write\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../full\_text\_search\_module)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../write\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
+    - [src/mongo/s/d\_state.cpp](../../../sharding/sharding)
+    - [src/mongo/db/geo/haystack.cpp](../../../queries/geo\_queries)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../network/write\_commands)
+    - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../queries/full\_text\_search\_module)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../network/write\_commands)

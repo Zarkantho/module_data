@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/platform/process\_id.cpp
 
@@ -9,9 +10,9 @@
 
 - Used By:
 
-    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding/sharding)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -19,18 +20,18 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
-    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
-    - [src/mongo/bson/oid.cpp](../../../bson)
-    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding/sharding)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -38,10 +39,10 @@
 
 - Used By:
 
-    - [src/mongo/db/log\_process\_details.cpp](../../../logging\_system)
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
+    - [src/mongo/db/log\_process\_details.cpp](../../../process\_management/logging\_system)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding/sharding)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -49,9 +50,9 @@
 
 - Used By:
 
-    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell)
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
+    - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
 
 ### src/mongo/platform/random.cpp
 
@@ -61,7 +62,7 @@
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../../../sharding)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -69,11 +70,11 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/s/balancer\_policy\_tests.cpp](../../../sharding)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/s/balancer\_policy\_tests.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -81,11 +82,11 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/db/dur\_journal.cpp](../../../journaling)
-    - [src/mongo/bson/oid.cpp](../../../bson)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/db/dur\_journal.cpp](../../../storage/journaling)
+    - [src/mongo/bson/oid.cpp](../../../bson/bson)
 
 <div></div>
 
@@ -93,11 +94,11 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
-    - [src/mongo/s/chunk.cpp](../../../sharding)
-    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/s/balancer\_policy\_tests.cpp](../../../sharding)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
+    - [src/mongo/s/chunk.cpp](../../../sharding/sharding)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/s/balancer\_policy\_tests.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -105,8 +106,8 @@
 
 - Used By:
 
-    - [src/mongo/client/replica\_set\_monitor.cpp](../../../cpp\_client\_driver)
-    - [src/mongo/db/kill\_current\_op.cpp](../../../client\_and\_operation\_tracking)
+    - [src/mongo/client/replica\_set\_monitor.cpp](../../../network/cpp\_client\_driver)
+    - [src/mongo/db/kill\_current\_op.cpp](../../../queries/client\_and\_operation\_tracking)
 
 ### src/mongo/util/processinfo.cpp
 
@@ -116,9 +117,9 @@
 
 - Used By:
 
-    - [src/mongo/util/file\_allocator.cpp](../../../file\_allocation)
-    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
+    - [src/mongo/util/file\_allocator.cpp](../../../storage/file\_allocation)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -126,7 +127,7 @@
 
 - Used By:
 
-    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../startup\_initialization)
+    - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../process\_management/startup\_initialization)
 
 ### src/mongo/util/processinfo\_darwin.cpp
 
@@ -136,10 +137,10 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -147,7 +148,7 @@
 
 - Used By:
 
-    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -155,7 +156,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -163,12 +164,12 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -176,10 +177,10 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -187,9 +188,9 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/storage/record.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/startup\_warnings.cpp](../../../startup\_initialization)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/storage/record.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/startup\_warnings.cpp](../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -197,7 +198,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../../../database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -205,10 +206,10 @@
 
 - Used By:
 
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
 
 <div></div>
 
@@ -216,9 +217,9 @@
 
 - Used By:
 
-    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/db/clientcursor.cpp](../../../client\_and\_operation\_tracking)
-    - [src/mongo/db/commands/server\_status.cpp](../../../database\_commands)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
-    - [src/mongo/util/mmap.cpp](../../../mmap)
-    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell)
+    - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/clientcursor.cpp](../../../queries/client\_and\_operation\_tracking)
+    - [src/mongo/db/commands/server\_status.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)
+    - [src/mongo/util/mmap.cpp](../../../storage/mmap)
+    - [src/mongo/shell/shell\_utils.cpp](../../../mongo\_shell/mongo\_shell)

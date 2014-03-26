@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Write Commands Downconvert
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/write\_ops/batch\_downconvert.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
 
 ### src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp
 
@@ -27,4 +28,4 @@
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding/sharding)

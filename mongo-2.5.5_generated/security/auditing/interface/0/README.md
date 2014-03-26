@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/audit.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands.cpp](../../../database\_commands)
+    - [src/mongo/db/commands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -25,8 +26,8 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage\_layer\_structure)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
+    - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -34,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -42,7 +43,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -50,7 +51,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -58,7 +59,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -66,8 +67,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -75,7 +76,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -83,7 +84,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -91,7 +92,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -99,8 +100,8 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -108,7 +109,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -116,7 +117,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -124,7 +125,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -132,7 +133,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -140,7 +141,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -148,7 +149,7 @@
 
 - Used By:
 
-    - [src/mongo/db/pdfile.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/pdfile.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -156,8 +157,8 @@
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../../../sharding)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding)
+    - [src/mongo/s/shard.cpp](../../../sharding/sharding)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -165,7 +166,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -173,7 +174,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -181,7 +182,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_create.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_create.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -189,7 +190,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -197,7 +198,7 @@
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../queries/database\_commands)
 
 <div></div>
 
@@ -205,7 +206,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -213,7 +214,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -221,7 +222,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/database.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -229,8 +230,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -238,7 +239,7 @@
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -246,8 +247,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -255,7 +256,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -263,7 +264,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -271,7 +272,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -279,7 +280,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -287,7 +288,7 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../sharding)
+    - [src/mongo/s/commands\_admin.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -295,7 +296,7 @@
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../replication)
+    - [src/mongo/db/repl/rs.cpp](../../../replication/replication)
 
 <div></div>
 
@@ -303,7 +304,7 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../authorization)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../security/authorization)
 
 <div></div>
 
@@ -311,8 +312,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -320,7 +321,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -328,4 +329,4 @@
 
 - Used By:
 
-    - [src/mongo/db/commands/authentication\_commands.cpp](../../../authentication)
+    - [src/mongo/db/commands/authentication\_commands.cpp](../../../security/authentication)

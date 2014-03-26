@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Base Wire Protocol Format
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/dbmessage.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
-    - [src/mongo/s/cursors.cpp](../../../sharding)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
+    - [src/mongo/s/cursors.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -18,7 +19,7 @@
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -26,7 +27,7 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding/writeback\_listener)
 
 <div></div>
 
@@ -34,7 +35,7 @@
 
 - Used By:
 
-    - [src/mongo/client/dbclientcursor.cpp](../../../cpp\_client\_driver)
+    - [src/mongo/client/dbclientcursor.cpp](../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -42,8 +43,8 @@
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
 
 ### src/mongo/util/net/message.cpp
 
@@ -53,4 +54,4 @@
 
 - Used By:
 
-    - [src/mongo/s/d\_logic.cpp](../../../writeback\_listener)
+    - [src/mongo/s/d\_logic.cpp](../../../sharding/writeback\_listener)

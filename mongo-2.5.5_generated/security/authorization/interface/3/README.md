@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for User Roles
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/auth/role\_graph\_builtin\_roles.cpp
 
@@ -9,9 +10,9 @@
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../sharding)
-    - [src/mongo/db/dbeval.cpp](../../../database\_commands)
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../database\_commands)
+    - [src/mongo/s/commands\_public.cpp](../../../sharding/sharding)
+    - [src/mongo/db/dbeval.cpp](../../../queries/database\_commands)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../queries/database\_commands)
 
 ### src/mongo/db/auth/role\_name.cpp
 
@@ -21,4 +22,4 @@
 
 - Used By:
 
-    - [src/mongo/tools/restore.cpp](../../../tools)
+    - [src/mongo/tools/restore.cpp](../../../tools/tools)

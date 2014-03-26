@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Accumulators
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/pipeline/accumulator\_avg.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_first.cpp
 
@@ -19,7 +20,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_last.cpp
 
@@ -29,7 +30,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_min\_max.cpp
 
@@ -39,7 +40,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)
 
 <div></div>
 
@@ -47,7 +48,7 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)
 
 ### src/mongo/db/pipeline/accumulator\_sum.cpp
 
@@ -57,4 +58,4 @@
 
 - Used By:
 
-    - [src/mongo/dbtests/accumulatortests.cpp](../../../unit\_tests)
+    - [src/mongo/dbtests/accumulatortests.cpp](../../../tests/unit\_tests)

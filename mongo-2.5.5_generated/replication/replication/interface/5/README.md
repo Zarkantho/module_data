@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Oplog Reader
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/repl/oplogreader.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/db/cloner.cpp](../../../storage\_layer\_structure)
+    - [src/mongo/db/cloner.cpp](../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -17,7 +18,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../../../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -25,7 +26,7 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../../../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools/tools)
 
 <div></div>
 
@@ -33,4 +34,4 @@
 
 - Used By:
 
-    - [src/mongo/tools/oplog.cpp](../../../tools)
+    - [src/mongo/tools/oplog.cpp](../../../tools/tools)

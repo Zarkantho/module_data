@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for TODO: Name this group
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/db/log\_process\_details.cpp
 
@@ -9,8 +10,8 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/version\_mongos.cpp](../../../sharding)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/version\_mongos.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -18,6 +19,6 @@
 
 - Used By:
 
-    - [src/mongo/db/db.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/s/server.cpp](../../../mongos\_and\_mongod\_mains)
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../database\_commands)
+    - [src/mongo/db/db.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../queries/database\_commands)

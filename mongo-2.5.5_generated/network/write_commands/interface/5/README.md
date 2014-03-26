@@ -1,5 +1,6 @@
 
-# Interface
+# Interface for Write Commands Upconvert
+This interface information represents symbols thatare defined in this group but used in other modules.  Does not includesymbols defined in this group that are used inside this module.
 
 ### src/mongo/s/write\_ops/batch\_upconvert.cpp
 
@@ -9,7 +10,7 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
 
 <div></div>
 
@@ -17,4 +18,4 @@
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../sharding)
+    - [src/mongo/s/strategy.cpp](../../../sharding/sharding)
