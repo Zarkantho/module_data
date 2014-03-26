@@ -2759,11 +2759,15 @@
             queued on the shard'
             group_files:
             - src/mongo/s/d_logic.cpp
-            - src/mongo/s/d_logic.h
     -   module_title: Sharding
         module_name: sharding
         module_description: 'TODO: sharding description'
         module_groups:
+        -   group_title: 'Mongod Sharding Globals'
+            group_description: 'Declarations for a bunch of globals used in sharding.  The actual
+            definitions are unfortunately scatterned between d_logic.cpp, d_state.cpp, and others.'
+            group_files:
+            - src/mongo/s/d_logic.h
         -   group_title: 'Merge Chunks Command'
             group_description: 'Command to merge two chunks in a sharded cluster.  See
             https://jira.mongodb.org/browse/SERVER-8869'
