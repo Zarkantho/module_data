@@ -2495,7 +2495,8 @@
     system_modules:
     -   module_title: Replication
         module_name: replication
-        module_description: 'TODO: replication description'
+        module_description: 'TODO: replication description.  TODO: split this into more granular
+        modules'
         module_groups:
         -   group_title: 'resync Command'
             group_description: 'Implementation of "resync" command'
