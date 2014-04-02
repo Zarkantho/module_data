@@ -1985,7 +1985,6 @@
             - src/mongo/dbtests/btreebuildertests.cpp
             - src/mongo/dbtests/btreetests.cpp
             - src/mongo/dbtests/btreetests.inl
-            - src/mongo/dbtests/chunk_manager_targeter_test.cpp
             - src/mongo/dbtests/chunktests.cpp
             - src/mongo/dbtests/clienttests.cpp
             - src/mongo/dbtests/commandtests.cpp
@@ -1993,7 +1992,6 @@
             - src/mongo/dbtests/config_server_fixture.h
             - src/mongo/dbtests/config_upgrade_tests.cpp
             - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/dbclient_multi_command_test.cpp
             - src/mongo/dbtests/dbhelper_tests.cpp
             - src/mongo/dbtests/dbtests.cpp
             - src/mongo/dbtests/dbtests.h
@@ -2679,7 +2677,7 @@
             - src/mongo/db/write_concern_options.h
 -   system_title: Sharding
     system_name: sharding
-    system_description: Sharding code
+    system_description: 'Sharding code TODO: high level description of sharding protocol'
     system_modules:
     -   module_title: Writeback Listener
         module_name: writeback_listener
@@ -2978,62 +2976,136 @@
             group_files:
             - src/mongo/s/config.cpp
             - src/mongo/s/config.h
+            - src/mongo/s/config_server_tests.cpp
         -   group_title: 'Chunk Version'
             group_description: 'Class that represents a version.  Used to version shards as well as
             chunks.'
             group_files:
             - src/mongo/s/chunk_version.h
             - src/mongo/s/chunk_version_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Sharding code? TODO: verify that this is all sharding
-                related and document the architecture.'
+        -   group_title: 'Storage Layer Stubs'
+            group_description: 'Some code that is shared between mongos and mongod references
+            symbols in the storage layer, which should not be built into mongos.  You should not
+            care about this file unless you are trying to fix our build dependencies.'
+            group_files:
+            - src/mongo/s/mongos_persistence_stubs.cpp
+        -   group_title: 'Operation Targeter'
+            group_description: 'Classes to facilitate finding the target shard or shards for an
+            operation.  Currently only used for write operations.  Built on the ChunkManager'
+            group_files:
+            - src/mongo/dbtests/chunk_manager_targeter_test.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/s/chunk_manager_targeter.h
+            - src/mongo/s/ns_targeter.h
+            - src/mongo/s/mock_ns_targeter.h
+        -   group_title: 'Shard Host Resolver'
+            group_description: 'Class that allows conversion from a shard name to an actual
+            connection object for the shard'
+            group_files:
+            - src/mongo/s/dbclient_shard_resolver.cpp
+            - src/mongo/s/dbclient_shard_resolver.h
+            - src/mongo/s/mock_shard_resolver.h
+            - src/mongo/s/shard_resolver.h
+        -   group_title: 'Cluster Write'
+            group_description: 'Top level entry point for doing any kind of write to a sharded
+            cluster.  Writes against "admin" and "config" databases will be sent to the config
+            servers, while Writes against any other database will go through the targeting and batch
+            write command execution process.'
+            group_files:
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/cluster_write.h
+        -   group_title: 'Chunk Management'
+            group_description: 'Code for managing chunks.  Contains the ChunkManger, which is
+            responsible for loading and storing chunk information on mongos, as well as a Chunk
+            class, which is an abstraction for a chunk that is too smart for its own good, and knows
+            how to do things like split itself.  All this code is older and should eventually be
+            factored out.'
             group_files:
             - src/mongo/s/chunk.cpp
             - src/mongo/s/chunk.h
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/chunk_manager_targeter.h
+        -   group_title: 'Cluster Management Utilities'
+            group_description: 'Helpers for accessing the current state of a cluster.  Has helpers
+            to get config metadata as well as helpers to check the versions of all nodes in the
+            cluster.  Used by the config metadata upgrade system as well as the auth schema upgrade
+            system.'
+            group_files:
             - src/mongo/s/cluster_client_internal.cpp
             - src/mongo/s/cluster_client_internal.h
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/cluster_write.h
-            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
-            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/commands_public.cpp
+        -   group_title: 'Config Server Consistency Check Job'
+            group_description: 'Thread periodically checks to make sure the config servers are in
+            sync.'
+            group_files:
             - src/mongo/s/config_server_checker_service.cpp
             - src/mongo/s/config_server_checker_service.h
-            - src/mongo/s/config_server_tests.cpp
+        -   group_title: 'Stale Config Exeptions'
+            group_description: 'Definitions of the exceptions that get thrown when a mongos tries to
+            write to a mongod, but the mongos has an outdated config metadata version and should
+            refresh.'
+            group_files:
+            - src/mongo/s/stale_exception.h
+        -   group_title: 'Sharded Cursor'
+            group_description: 'Client cursor for the results of a query on a sharded cluster.
+            Built on top of ParallelSortClusteredCursor which keeps track of the cursors on the
+            shards.  Currently only used for queries and getMore operations.'
+            group_files:
             - src/mongo/s/cursors.cpp
             - src/mongo/s/cursors.h
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/dbclient_multi_command.h
-            - src/mongo/s/dbclient_shard_resolver.cpp
-            - src/mongo/s/dbclient_shard_resolver.h
-            - src/mongo/s/default_version.cpp
-            - src/mongo/s/mock_multi_write_command.h
-            - src/mongo/s/mock_ns_targeter.h
-            - src/mongo/s/mock_shard_resolver.h
+        -   group_title: 'Mongos Admin Commands'
+            group_description: 'Mongos commands that can only be run against the admin database.'
+            group_files:
+            - src/mongo/s/commands_admin.cpp
+        -   group_title: 'Mongos Public Commands'
+            group_description: 'Assorted mongos commands that do not need to be run against the
+            admin database.  Many commands just pass through to the shards or config servers.'
+            group_files:
+            - src/mongo/s/commands_public.cpp
+        -   group_title: 'Version Validity Checker'
+            group_description: 'Helpers to check whether a version is within a range of versions.
+            It is used by the config metadata upgrade system to determine if the version being
+            upgraded to is in an invalid range.'
+            group_files:
             - src/mongo/s/mongo_version_range.cpp
             - src/mongo/s/mongo_version_range.h
             - src/mongo/s/mongo_version_range_test.cpp
-            - src/mongo/s/mongos_persistence_stubs.cpp
-            - src/mongo/s/multi_command_dispatch.h
-            - src/mongo/s/ns_targeter.h
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/shard.h
-            - src/mongo/s/shard_conn_test.cpp
-            - src/mongo/s/shard_key_pattern.cpp
-            - src/mongo/s/shard_key_pattern.h
-            - src/mongo/s/shard_resolver.h
-            - src/mongo/s/shard_test.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/shardkey.cpp
-            - src/mongo/s/shardkey.h
-            - src/mongo/s/stale_exception.h
+        -   group_title: 'Shard Version Manager'
+            group_description: 'Code for managing shard versions from mongos.  This is the code that
+            throws the stale config exceptions if the mongos metadata is out of date.'
+            group_files:
             - src/mongo/s/version_manager.cpp
             - src/mongo/s/version_manager.h
+        -   group_title: 'Shard Connection'
+            group_description: 'Abstraction around a connection to a shard.  Uses its own private
+            connection pool that is independent of the one in the C++ client driver.'
+            group_files:
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/shard_conn_test.cpp
+        -   group_title: 'Shard Configuration'
+            group_description: 'Abstraction around a shard.  Contains all the information needed to
+            connect to the shard as well as helpers to run commands.  Also stores the shard tags.'
+            group_files:
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/shard.h
+            - src/mongo/s/shard_test.cpp
+        -   group_title: 'Print Mongos Version'
+            group_description: 'Helper to print version information about the running mongos'
+            group_files:
             - src/mongo/s/version_mongos.cpp
             - src/mongo/s/version_mongos.h
+        -   group_title: 'Shard Version Stubs'
+            group_description: 'Stubs for code shared between mongos and mongod that references
+            functions to set the shard version of connections.  You should not have to care about
+            this unless you are fixing build dependencies.'
+            group_files:
+            - src/mongo/s/default_version.cpp
+        -   group_title: 'Shard Key Management'
+            group_description: 'Helpers for managing and storing shard keys.  Does things like
+            checking if a shard key is compatible with a particular unique index and checking if a
+            document contains the shard key.'
+            group_files:
+            - src/mongo/s/shard_key_pattern.cpp
+            - src/mongo/s/shard_key_pattern.h
+            - src/mongo/s/shardkey.cpp
+            - src/mongo/s/shardkey.h
 -   system_title: BSON
     system_name: bson
     system_description: MongoDB BSON support
@@ -3396,6 +3468,12 @@
         module_name: core_query_system
         module_description: 'TODO: core query system description'
         module_groups:
+        -   group_title: 'Mongos Query System Commands Passthrough'
+            group_description: 'Query system commands for mongos.  These just pass the operations
+            through to the shards and aggregate the results.'
+            group_files:
+            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
+            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
         -   group_title: 'Query Expression Parser'
             group_description: Matcher expressions. The point of all of this is to
                 take a query string and turn it into a structured set of classes.
@@ -4534,6 +4612,15 @@
         as "commands" ensures that all writes get a response.  Note that this means the "write
         commands" are layered on top of the legacy wire protocol, rather than replacing it.'
         module_groups:
+        -   group_title: 'Multi Command Dispatcher'
+            group_description: 'The classes that actually handle the networking component of
+            dispatching commands to multiple shards in parallel.'
+            group_files:
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/dbclient_multi_command.h
+            - src/mongo/s/mock_multi_write_command.h
+            - src/mongo/s/multi_command_dispatch.h
+            - src/mongo/dbtests/dbclient_multi_command_test.cpp
         -   group_title: 'Write Commands Declarations'
             group_description: 'Classes registering the write commands into the command system.
             When a write command is recieved by a mongod, this is the entry point.'
@@ -4559,18 +4646,25 @@
             - src/mongo/s/write_ops/config_coordinator.cpp
             - src/mongo/s/write_ops/config_coordinator.h
             - src/mongo/s/write_ops/config_coordinator_test.cpp
-        -   group_title: 'Write Commands mongos Execution'
-            group_description: 'New wire protocol writes (in mongos)
-                TODO: Separate this into smaller groups and reorganize this section.  There are
-                different parts to it.  The cluster_write_cmd file has the actual "Command" classes,
-                the batch_write_exec files have the actually "runner" of the batch, while the
-                batch_write_op and write_op files are classes that are used to track the lifecycle
-                of batch write and single write operations respectively'
+        -   group_title: 'Mongos Write Commands Entry Point'
+            group_description: 'Command definition for the write commands.  The bulk of the work is
+            done elsewhere, but this is where execution of the write commands begins.'
             group_files:
             - src/mongo/s/commands/cluster_write_cmd.cpp
+        -   group_title: 'Mongos Write Commands Runner'
+            group_description: 'Entry point to the actual write command execution.  This is the top
+            level class that the mongos calls to run the write commands and aggregate the results
+            for returning to the client.  It is responsible for moving write command execution
+            forward.'
+            group_files:
             - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/write_ops/batch_write_exec.h
             - src/mongo/s/write_ops/batch_write_exec_test.cpp
+        -   group_title: 'Mongos Write Commands Lifecycle Tracking'
+            group_description: 'Code to track the life cycle of a single write operation or batch of
+            operations that are being dispatched by a mongos.  The batched life cycle tracking is
+            built on top of the single operation lifecycle tracking.'
+            group_files:
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_write_op.h
             - src/mongo/s/write_ops/batch_write_op_test.cpp
