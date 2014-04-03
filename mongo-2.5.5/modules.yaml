@@ -2890,7 +2890,8 @@
             - src/mongo/s/metadata_loader_test.cpp
     -   module_title: Sharding Uncategorized
         module_name: sharding_uncategorized
-        module_description: 'TODO: Uncategorized sharding code'
+        module_description: 'TODO: Uncategorized sharding code TODO: Figure out what should go here
+        and what should go in the write commands network section'
         module_groups:
         -   group_title: 'Mongod Sharding Globals'
             group_description: 'Declarations for a bunch of globals used in sharding.  The actual
