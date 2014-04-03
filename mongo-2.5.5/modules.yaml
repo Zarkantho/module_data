@@ -3202,8 +3202,7 @@
         the operation state and connection state is thread local, which means there is currently no
         good way to have multiple connections or operations handled by a single thread.
 
-        See https://wiki.mongodb.com/pages/viewpage.action?pageId=78086492 for an introduction to
-        more specific implementation details.'
+        See TODO: wiki on Contexts for an introduction to more specific implementation details.'
         module_groups:
         -   group_title: 'Mongos Specific Client State'
             group_description: 'mongos version of a "Client". This is the big bucket of global
@@ -3327,7 +3326,7 @@
         collection.  What this means is that "db.serverStatus()" calls
         "db.runCommand({serverStatus:1})" which then calls "db.$cmd.findOne({serverStatus:1})".
 
-        See https://wiki.mongodb.com/display/10GEN/Commands for more details.'
+        See TODO: wiki on Commands for more details.'
         module_groups:
         -   group_title: 'Commands Registration Class'
             group_description: 'Base class for mongodb commands. Has a static global std::map of
