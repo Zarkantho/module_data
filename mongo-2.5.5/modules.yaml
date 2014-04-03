@@ -2859,20 +2859,6 @@
             - src/mongo/s/type_tags.cpp
             - src/mongo/s/type_tags.h
             - src/mongo/s/type_tags_test.cpp
-        -   group_title: 'BSON Field Parser'
-            group_description: 'Parser for fields in a BSON object. Meant to help enforce a schema
-            on a BSON object.'
-            group_files:
-            - src/mongo/db/field_parser-inl.h
-            - src/mongo/db/field_parser.cpp
-            - src/mongo/db/field_parser.h
-            - src/mongo/db/field_parser_test.cpp
-        -   group_title: 'BSON Serializable Interface'
-            group_description: 'Interface for a C++ class that is serializable to BSON and
-            deserializable from BSON.  Each C++ object that implements this interface effectively
-            will enforce a "schema" on the BSON objects it is meant to parse and represent.'
-            group_files:
-            - src/mongo/s/bson_serializable.h
     -   module_title: Balancer
         module_name: balancer
         module_description: 'The balancer is a background job that runs on each mongos and is
@@ -3140,6 +3126,41 @@
     system_name: bson
     system_description: MongoDB BSON support
     system_modules:
+    -   module_title: BSON Schema
+        module_name: bson_schema
+        module_description: 'Utilities and interfaces for converting BSON objects and BSON types to
+        and from C++ objects and C++ types.'
+        module_groups:
+        -   group_title: 'BSON Field Schema'
+            group_description: 'Classes that represent a schema for a particular field in BSON.  For
+            a field, having schema just means that the field must have a particular type.  The class
+            itself does type validation at compile time and can be used with a BSONObjBuilder.'
+            group_files:
+            - src/mongo/bson/bson_field.h
+            - src/mongo/bson/bson_field_test.cpp
+        -   group_title: 'BSON Field Parser'
+            group_description: 'Given a field schema description and a BSON object, attempts to
+            parse the field out of the BSON object with the expected type.  It is an error if the
+            field is in the BSON object with the wrong type.'
+            group_files:
+            - src/mongo/db/field_parser-inl.h
+            - src/mongo/db/field_parser.cpp
+            - src/mongo/db/field_parser.h
+            - src/mongo/db/field_parser_test.cpp
+        -   group_title: 'BSON Value Extraction'
+            group_description: 'Helpers to extract specific typed values out of BSON objects.  This
+            provides the same functionality as the field schema with a slightly different
+            interface.'
+            group_files:
+            - src/mongo/bson/util/bson_extract.cpp
+            - src/mongo/bson/util/bson_extract.h
+            - src/mongo/bson/util/bson_extract_test.cpp
+        -   group_title: 'BSON Serializable Interface'
+            group_description: 'Interface for a C++ class that is serializable to BSON and
+            deserializable from BSON.  Each C++ object that implements this interface effectively
+            will enforce a "schema" on the BSON objects it is meant to parse and represent.'
+            group_files:
+            - src/mongo/s/bson_serializable.h
     -   module_title: BSON
         module_name: bson
         module_description: 'This is the core class for managing BSON objects.  Mutable BSON and
@@ -3154,42 +3175,96 @@
             group_files:
             - src/mongo/db/json.cpp
             - src/mongo/db/json.h
-        -   group_title: 'Uncategorized BSON code'
-            group_description: 'TODO: organize this into real sections'
+        -   group_title: 'BSON Validator'
+            group_description: 'Helper to check if a BSON object is valid'
             group_files:
-            - src/mongo/bson/bson-inl.h
-            - src/mongo/bson/bson_builder_base.h
-            - src/mongo/bson/bson_db.h
-            - src/mongo/bson/bson_field.h
-            - src/mongo/bson/bson_field_test.cpp
-            - src/mongo/bson/bson_obj_test.cpp
             - src/mongo/bson/bson_validate.cpp
             - src/mongo/bson/bson_validate.h
             - src/mongo/bson/bson_validate_test.cpp
+        -   group_title: 'Old BSON Example'
+            group_description: 'Old example of how to use BSON that should be updated with the
+            current recommended methods.'
+            group_files:
             - src/mongo/bson/bsondemo/bsondemo.cpp
-            - src/mongo/bson/bsonelement.h
-            - src/mongo/bson/bsonmisc.h
-            - src/mongo/bson/bsonobj.h
+        -   group_title: 'BSON Builder'
+            group_description: 'Class to build a BSON object.  Note that the low level BSON object
+            construction is append only since BSON is a packed binary format.'
+            group_files:
+            - src/mongo/bson/bson_builder_base.h
             - src/mongo/bson/bsonobjbuilder.h
             - src/mongo/bson/bsonobjbuilder_test.cpp
-            - src/mongo/bson/bsonobjiterator.h
-            - src/mongo/bson/bsontypes.h
-            - src/mongo/bson/inline_decls.h
-            - src/mongo/bson/oid.cpp
-            - src/mongo/bson/oid.h
-            - src/mongo/bson/optime.cpp
-            - src/mongo/bson/optime.h
-            - src/mongo/bson/ordering.h
-            - src/mongo/bson/util/atomic_int.h
-            - src/mongo/bson/util/bson_extract.cpp
-            - src/mongo/bson/util/bson_extract.h
-            - src/mongo/bson/util/bson_extract_test.cpp
+        -   group_title: 'Raw Builder'
+            group_description: 'Class that provides an append interface to an automatically growing
+            buffer.  Used by the BSON Builder internally.'
+            group_files:
             - src/mongo/bson/util/builder.h
             - src/mongo/bson/util/builder_test.cpp
+        -   group_title: 'BSON Iterator'
+            group_description: 'Class to iterate a BSON object.'
+            group_files:
+            - src/mongo/bson/bsonobjiterator.h
+        -   group_title: 'BSON Object'
+            group_description: 'Class wrapper for a BSON object that can optionally handle the
+            memory management of the raw buffer containing the BSON object'
+            group_files:
+            - src/mongo/bson/bsonobj.h
+            - src/mongo/bson/bson_obj_test.cpp
+        -   group_title: 'BSON Element'
+            group_description: 'Representation of a single element in a BSON object.  Note that a
+            BSONElement does not own any memory.  Instead, it represents a pointer into some parent
+            BSONObj.  This means that a BSONElement should never outlive its parent BSONObj.'
+            group_files:
+            - src/mongo/bson/bsonelement.h
+        -   group_title: 'BSON Library Header'
+            group_description: 'Top level header to include to pull in the entire BSON library.'
+            group_files:
+            - src/mongo/db/jsobj.h
+        -   group_title: 'Legacy Key Pattern'
+            group_description: 'Legacy compact representation for a key pattern or a sort
+            specification, such as { a : 1, b : -1 }.'
+            group_files:
+            - src/mongo/bson/ordering.h
+        -   group_title: 'BSON ObjectId'
+            group_description: 'C++ representation of the BSON ObjectId type.'
+            group_files:
+            - src/mongo/bson/oid.cpp
+            - src/mongo/bson/oid.h
+        -   group_title: 'BSON Timestamp'
+            group_description: 'C++ representation of the BSON Timestamp type.
+
+            Note that the relationship between this class, the BSON Timestamp, the BSON Date and the
+            Date_t class, which is supposed to be the C++ equivalent of a BSON date, is rather
+            convoluted and incestuous, so be aware that things you change here may affect how dates
+            are handled, and vice versa.'
+            group_files:
+            - src/mongo/bson/optime.cpp
+            - src/mongo/bson/optime.h
+        -   group_title: 'BSON Types'
+            group_description: 'List of all the native BSON types used in the BSON code.'
+            group_files:
+            - src/mongo/bson/bsontypes.h
+        -   group_title: 'BSON Element Manipulator'
+            group_description: 'Wrapper around a BSONElement that allows for modification of BSON
+            types that can be altered in place, such as number values.'
+            group_files:
+            - src/mongo/db/jsobjmanipulator.h
+        -   group_title: 'Atomic Integer'
+            group_description: 'Class representing an integer that supports atomic read modify write
+            operations.  Also used outside the BSON library.'
+            group_files:
+            - src/mongo/bson/util/atomic_int.h
+        -   group_title: 'Miscellaneous BSON Code'
+            group_description: 'BSON code that is not organized in any specific way.  Most of this
+            code is either implementing random parts of the various BSON related classes and should
+            go with those sections, is a general utility that should not be with the BSON code, or
+            is legacy code that should be removed.'
+            group_files:
+            - src/mongo/bson/bson-inl.h
+            - src/mongo/bson/bson_db.h
+            - src/mongo/bson/bsonmisc.h
+            - src/mongo/bson/inline_decls.h
             - src/mongo/bson/util/misc.h
             - src/mongo/db/jsobj.cpp
-            - src/mongo/db/jsobj.h
-            - src/mongo/db/jsobjmanipulator.h
     -   module_title: Mutable BSON
         module_name: mutable_bson
         module_description: 'Mutable BSON is built on top of the BSON library, and provides an
