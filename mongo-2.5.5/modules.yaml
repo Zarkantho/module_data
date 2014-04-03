@@ -2741,9 +2741,7 @@
         commands are emulated by a block of code that does a safe write using the legacy
         "getLastError" call.  This means it gets handled just as if we sent a command and got a
         response immediately (and thus can retry our write), which means that in 2.6 the
-        WriteBackListener does nothing but log!
-
-        TODO: Clean this up and move this to a wiki page'
+        WriteBackListener does nothing but log!'
         module_groups:
         -   group_title: 'Mongos Writeback Listener Thread'
             group_description: 'Thread on mongos that polls the shards for writebacks and sends any
@@ -2762,17 +2760,17 @@
             queued on the shard'
             group_files:
             - src/mongo/s/d_logic.cpp
-    -   module_title: Mongod Commands
-        module_name: mongod_commands
-        module_description: 'Core sharding commands on mongod'
+    -   module_title: Chunk Management
+        module_name: chunk_management
+        module_description: 'Commands and utilities to manage chunks in a sharded cluster'
         module_groups:
-        -   group_title: 'Migration Commands'
+        -   group_title: 'Mongod Migration Commands'
             group_description: 'Commands to move chunks between nodes in a cluster.  Has the command
             to signal to a mongod that it should move a chunk, and the command to tell a mongod that
             it should start receiving a chunk.'
             group_files:
             - src/mongo/s/d_migrate.cpp
-        -   group_title: 'Split Commands'
+        -   group_title: 'Mongod Split Commands'
             group_description: 'Commands to split chunks on mongod'
             group_files:
             - src/mongo/s/d_split.cpp
@@ -2785,6 +2783,39 @@
             - src/mongo/db/commands/merge_chunks_cmd.cpp
             - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
+        -   group_title: 'Range Deleter'
+            group_description: 'Helper classes to delete a range of documents. This is used for
+            example in chunk migrations when we are cleaning up an old chunk.'
+            group_files:
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/range_deleter.h
+            - src/mongo/db/range_deleter_db_env.cpp
+            - src/mongo/db/range_deleter_db_env.h
+            - src/mongo/db/range_deleter_mock_env.cpp
+            - src/mongo/db/range_deleter_mock_env.h
+            - src/mongo/db/range_deleter_service.cpp
+            - src/mongo/db/range_deleter_service.h
+            - src/mongo/db/range_deleter_stat_test.cpp
+            - src/mongo/db/range_deleter_stats.cpp
+            - src/mongo/db/range_deleter_stats.h
+            - src/mongo/db/range_deleter_test.cpp
+            - src/mongo/db/range_preserver.h
+        -   group_title: 'Range Comparison'
+            group_description: 'Utilities for comparing ranges. Useful because our sharding is range
+            based.'
+            group_files:
+            - src/mongo/s/range_arithmetic.cpp
+            - src/mongo/s/range_arithmetic.h
+            - src/mongo/s/range_arithmetic_test.cpp
+        -   group_title: 'Chunk Management'
+            group_description: 'Code for managing chunks.  Contains the ChunkManger, which is
+            responsible for loading and storing chunk information on mongos, as well as a Chunk
+            class, which is an abstraction for a chunk that is too smart for its own good, and knows
+            how to do things like split itself.  All this code is older and should eventually be
+            factored out.'
+            group_files:
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/chunk.h
     -   module_title: Config Server Schema
         module_name: config_server_schema
         module_description: 'Schema for all sharding related collections on the config server.  All
@@ -2888,40 +2919,28 @@
             - src/mongo/s/metadata_loader.cpp
             - src/mongo/s/metadata_loader.h
             - src/mongo/s/metadata_loader_test.cpp
-    -   module_title: Sharding Uncategorized
-        module_name: sharding_uncategorized
-        module_description: 'TODO: Uncategorized sharding code TODO: Figure out what should go here
-        and what should go in the write commands network section'
-        module_groups:
         -   group_title: 'Mongod Sharding Globals'
             group_description: 'Declarations for a bunch of globals used in sharding.  The actual
             definitions are unfortunately scatterned between d_logic.cpp, d_state.cpp, and others.'
             group_files:
             - src/mongo/s/d_logic.h
-        -   group_title: 'Range Deleter'
-            group_description: 'Helper classes to delete a range of documents. This is used for
-            example in chunk migrations when we are cleaning up an old chunk.'
+    -   module_title: Cluster Locking
+        module_name: cluster_locking
+        module_description: 'Locking that is specific to a sharded cluster'
+        module_groups:
+        -   group_title: 'Distributed Lock'
+            group_description: 'A distributed locking mechanism to allow nodes to correctly and
+            safely take a lock on a specific resource in the entire cluster.  For example, a mongos
+            could take a "balancer" lock, or a mongod could take out a lock for a specific chunk'
             group_files:
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/db/range_deleter.h
-            - src/mongo/db/range_deleter_db_env.cpp
-            - src/mongo/db/range_deleter_db_env.h
-            - src/mongo/db/range_deleter_mock_env.cpp
-            - src/mongo/db/range_deleter_mock_env.h
-            - src/mongo/db/range_deleter_service.cpp
-            - src/mongo/db/range_deleter_service.h
-            - src/mongo/db/range_deleter_stat_test.cpp
-            - src/mongo/db/range_deleter_stats.cpp
-            - src/mongo/db/range_deleter_stats.h
-            - src/mongo/db/range_deleter_test.cpp
-            - src/mongo/db/range_preserver.h
-        -   group_title: 'Range Comparison'
-            group_description: 'Utilities for comparing ranges. Useful because our sharding is range
-            based.'
-            group_files:
-            - src/mongo/s/range_arithmetic.cpp
-            - src/mongo/s/range_arithmetic.h
-            - src/mongo/s/range_arithmetic_test.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/distlock.h
+            - src/mongo/s/distlock_test.cpp
+    -   module_title: Config Metadata Upgrade
+        module_name: config_metadata_upgrade
+        module_description: 'Code to handle the versioning and upgrading of metadata on the config
+        servers'
+        module_groups:
         -   group_title: 'Config Upgrade'
             group_description: Code to upgrade config server metadata
             group_files:
@@ -2931,65 +2950,26 @@
             - src/mongo/s/config_upgrade_helpers.h
             - src/mongo/s/config_upgrade_v0_to_v5.cpp
             - src/mongo/s/config_upgrade_v4_to_v5.cpp
-        -   group_title: 'Distributed Lock'
-            group_description: Distributed lock (lock on the config servers from mongos,
-                i.e. "balancer lock")
+        -   group_title: 'Version Validity Checker'
+            group_description: 'Helpers to check whether a version is within a range of versions.
+            It is used by the config metadata upgrade system to determine if the version being
+            upgraded to is in an invalid range.'
             group_files:
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/distlock.h
-            - src/mongo/s/distlock_test.cpp
-        -   group_title: 'Chunk Diff'
-            group_description: 'Helper class that takes the current state of the configuration
-            matadata for the chunks in a cluster and uses that to determine what query should be
-            used to get only what has changed rather than releading all the chunk data.
-
-            It does this by using the latest version that has been seen and makes a query that does
-            not return anything lower than that version.'
+            - src/mongo/s/mongo_version_range.cpp
+            - src/mongo/s/mongo_version_range.h
+            - src/mongo/s/mongo_version_range_test.cpp
+        -   group_title: 'Cluster Management Utilities'
+            group_description: 'Helpers for accessing the current state of a cluster.  Has helpers
+            to get config metadata as well as helpers to check the versions of all nodes in the
+            cluster.  Used by the config metadata upgrade system as well as the auth schema upgrade
+            system.'
             group_files:
-            - src/mongo/s/chunk_diff-inl.cpp
-            - src/mongo/s/chunk_diff.h
-            - src/mongo/s/chunk_diff_test.cpp
-        -   group_title: 'Top Level Cluster Configuration'
-            group_description: 'Global class that is a point of contact for top level cluster
-            configurations and config server interaction.  For example, has helpers to get the
-            configuration of a database and its classes, add shards, and enable sharding on
-            databases and collections.'
-            group_files:
-            - src/mongo/s/grid.cpp
-            - src/mongo/s/grid.h
-        -   group_title: 'Database And Collection Configuration'
-            group_description: 'Contains the sharded configuration of a database and its
-            collections, such as whether sharding is enabled and what the shard key is
-
-            This file also has a class for interacting with the config servers, which bizarrely
-            inherits from the class that stores all the metadata for a database.  I am not sure why
-            the inheritance works this way, but it seems like a mistake, especially since the config
-            server connection string gets stored in "_primary", which is an instance of the "Shard"
-            class.  The separation of work between this class and other classes that interact with
-            the config server does not seem well defined, but the difference between this and the
-            database class is that it manipulates metadata that is relevant to the cluster rather
-            than database specific metadata.
-
-            TODO: Clean up this description.  The basic idea behind this is that there is one global
-            ConfigServer object that has things to interact with the changelog and the settings
-            collections, while the DBConfig class has things to interact with collections that have
-            database specific information.'
-            group_files:
-            - src/mongo/s/config.cpp
-            - src/mongo/s/config.h
-            - src/mongo/s/config_server_tests.cpp
-        -   group_title: 'Chunk Version'
-            group_description: 'Class that represents a version.  Used to version shards as well as
-            chunks.'
-            group_files:
-            - src/mongo/s/chunk_version.h
-            - src/mongo/s/chunk_version_test.cpp
-        -   group_title: 'Storage Layer Stubs'
-            group_description: 'Some code that is shared between mongos and mongod references
-            symbols in the storage layer, which should not be built into mongos.  You should not
-            care about this file unless you are trying to fix our build dependencies.'
-            group_files:
-            - src/mongo/s/mongos_persistence_stubs.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/s/cluster_client_internal.h
+    -   module_title: Routing
+        module_name: routing
+        module_description: 'Code to deal with routing operations in a sharded cluster'
+        module_groups:
         -   group_title: 'Operation Targeter'
             group_description: 'Classes to facilitate finding the target shard or shards for an
             operation.  Currently only used for write operations.  Built on the ChunkManager'
@@ -3015,35 +2995,6 @@
             group_files:
             - src/mongo/s/cluster_write.cpp
             - src/mongo/s/cluster_write.h
-        -   group_title: 'Chunk Management'
-            group_description: 'Code for managing chunks.  Contains the ChunkManger, which is
-            responsible for loading and storing chunk information on mongos, as well as a Chunk
-            class, which is an abstraction for a chunk that is too smart for its own good, and knows
-            how to do things like split itself.  All this code is older and should eventually be
-            factored out.'
-            group_files:
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/chunk.h
-        -   group_title: 'Cluster Management Utilities'
-            group_description: 'Helpers for accessing the current state of a cluster.  Has helpers
-            to get config metadata as well as helpers to check the versions of all nodes in the
-            cluster.  Used by the config metadata upgrade system as well as the auth schema upgrade
-            system.'
-            group_files:
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/cluster_client_internal.h
-        -   group_title: 'Config Server Consistency Check Job'
-            group_description: 'Thread periodically checks to make sure the config servers are in
-            sync.'
-            group_files:
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/s/config_server_checker_service.h
-        -   group_title: 'Stale Config Exeptions'
-            group_description: 'Definitions of the exceptions that get thrown when a mongos tries to
-            write to a mongod, but the mongos has an outdated config metadata version and should
-            refresh.'
-            group_files:
-            - src/mongo/s/stale_exception.h
         -   group_title: 'Sharded Cursor'
             group_description: 'Client cursor for the results of a query on a sharded cluster.
             Built on top of ParallelSortClusteredCursor which keeps track of the cursors on the
@@ -3051,6 +3002,104 @@
             group_files:
             - src/mongo/s/cursors.cpp
             - src/mongo/s/cursors.h
+        -   group_title: 'Parallel Cursor'
+            group_description: 'Cursor that represents a connection to a bunch of shards.  You would
+            think that this only makes sense in mongos, but it turns out it is built into mongod for
+            purposes of map reduce (the final destination shard of a map reduce job uses this in the
+            "mapreduce.shardedfinish" command).'
+            group_files:
+            - src/mongo/client/parallel.cpp
+            - src/mongo/client/parallel.h
+        -   group_title: 'Shard Key Management'
+            group_description: 'Helpers for managing and storing shard keys.  Does things like
+            checking if a shard key is compatible with a particular unique index and checking if a
+            document contains the shard key.'
+            group_files:
+            - src/mongo/s/shard_key_pattern.cpp
+            - src/mongo/s/shard_key_pattern.h
+            - src/mongo/s/shardkey.cpp
+            - src/mongo/s/shardkey.h
+    -   module_title: Cluster Metadata Management
+        module_name: cluster_metadata_management
+        module_description: 'Helpers and wrappers to manage cluster metadata.  These exist so that
+        operations requiring cluster metadata do not have to have code to directly query the config
+        servers.'
+        module_groups:
+        -   group_title: 'Top Level Cluster Configuration'
+            group_description: 'Global class that is a point of contact for top level cluster
+            configurations and config server interaction.  For example, has helpers to get the
+            configuration of a database and its classes, add shards, and enable sharding on
+            databases and collections.'
+            group_files:
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/grid.h
+        -   group_title: 'Database And Collection Configuration'
+            group_description: 'Contains the sharded configuration of a database and its
+            collections, such as whether sharding is enabled and what the shard key is
+
+            This file also has a class for interacting with the config servers, which bizarrely
+            inherits from the class that stores all the metadata for a database.  I am not sure why
+            the inheritance works this way, but it seems like a mistake, especially since the config
+            server connection string gets stored in "_primary", which is an instance of the "Shard"
+            class.  The separation of work between this class and other classes that interact with
+            the config server does not seem well defined, but the difference between this and the
+            database class is that it manipulates metadata that is relevant to the cluster rather
+            than database specific metadata.'
+            group_files:
+            - src/mongo/s/config.cpp
+            - src/mongo/s/config.h
+            - src/mongo/s/config_server_tests.cpp
+        -   group_title: 'Config Server Consistency Check Job'
+            group_description: 'Thread periodically checks to make sure the config servers are in
+            sync.'
+            group_files:
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/s/config_server_checker_service.h
+    -   module_title: Metadata Versioniong
+        module_name: metadata_versioning
+        module_description: 'Since a sharded cluster is distributed, mongos and mongod both have to
+        cache metadata from the config servers.  Because of this, there is a need to keep track of
+        metadata version information and make decisions based on the last version that was seen.'
+        module_groups:
+        -   group_title: 'Chunk Diff'
+            group_description: 'Helper class that takes the current state of the configuration
+            matadata for the chunks in a cluster and uses that to determine what query should be
+            used to get only what has changed rather than releading all the chunk data.
+
+            It does this by using the latest version that has been seen and makes a query that does
+            not return anything lower than that version.'
+            group_files:
+            - src/mongo/s/chunk_diff-inl.cpp
+            - src/mongo/s/chunk_diff.h
+            - src/mongo/s/chunk_diff_test.cpp
+        -   group_title: 'Chunk Version'
+            group_description: 'Class that represents a version.  Used to version shards as well as
+            chunks.'
+            group_files:
+            - src/mongo/s/chunk_version.h
+            - src/mongo/s/chunk_version_test.cpp
+        -   group_title: 'Stale Config Exeptions'
+            group_description: 'Definitions of the exceptions that get thrown when a mongos tries to
+            write to a mongod, but the mongos has an outdated config metadata version and should
+            refresh.'
+            group_files:
+            - src/mongo/s/stale_exception.h
+        -   group_title: 'Shard Version Manager'
+            group_description: 'Code for managing shard versions on a mongos.  This is the code that
+            throws the stale config exceptions if the mongos metadata is out of date.'
+            group_files:
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/s/version_manager.h
+        -   group_title: 'Shard Version Stubs'
+            group_description: 'Stubs for code shared between mongos and mongod that references
+            functions to set the shard version of connections.  You should not have to care about
+            this unless you are fixing build dependencies.'
+            group_files:
+            - src/mongo/s/default_version.cpp
+    -   module_title: Mongos Commands
+        module_name: mongos_commands
+        module_description: 'General commands available on mongos, run using db.$cmd.findOne(...)'
+        module_groups:
         -   group_title: 'Mongos Admin Commands'
             group_description: 'Mongos commands that can only be run against the admin database.'
             group_files:
@@ -3060,20 +3109,10 @@
             admin database.  Many commands just pass through to the shards or config servers.'
             group_files:
             - src/mongo/s/commands_public.cpp
-        -   group_title: 'Version Validity Checker'
-            group_description: 'Helpers to check whether a version is within a range of versions.
-            It is used by the config metadata upgrade system to determine if the version being
-            upgraded to is in an invalid range.'
-            group_files:
-            - src/mongo/s/mongo_version_range.cpp
-            - src/mongo/s/mongo_version_range.h
-            - src/mongo/s/mongo_version_range_test.cpp
-        -   group_title: 'Shard Version Manager'
-            group_description: 'Code for managing shard versions from mongos.  This is the code that
-            throws the stale config exceptions if the mongos metadata is out of date.'
-            group_files:
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/s/version_manager.h
+    -   module_title: Shard Abstraction
+        module_name: shard_abstraction
+        module_description: 'Classes abstracting the idea of a shard in a sharded cluster'
+        module_groups:
         -   group_title: 'Shard Connection'
             group_description: 'Abstraction around a connection to a shard.  Uses its own private
             connection pool that is independent of the one in the C++ client driver.'
@@ -3087,26 +3126,16 @@
             - src/mongo/s/shard.cpp
             - src/mongo/s/shard.h
             - src/mongo/s/shard_test.cpp
-        -   group_title: 'Print Mongos Version'
-            group_description: 'Helper to print version information about the running mongos'
+    -   module_title: Build Stubs
+        module_name: build_stubs
+        module_description: 'Stubs not related to sharding but needed to make mongos link'
+        module_groups:
+        -   group_title: 'Storage Layer Stubs'
+            group_description: 'Some code that is shared between mongos and mongod references
+            symbols in the storage layer, which should not be built into mongos.  You should not
+            care about this file unless you are trying to fix our build dependencies.'
             group_files:
-            - src/mongo/s/version_mongos.cpp
-            - src/mongo/s/version_mongos.h
-        -   group_title: 'Shard Version Stubs'
-            group_description: 'Stubs for code shared between mongos and mongod that references
-            functions to set the shard version of connections.  You should not have to care about
-            this unless you are fixing build dependencies.'
-            group_files:
-            - src/mongo/s/default_version.cpp
-        -   group_title: 'Shard Key Management'
-            group_description: 'Helpers for managing and storing shard keys.  Does things like
-            checking if a shard key is compatible with a particular unique index and checking if a
-            document contains the shard key.'
-            group_files:
-            - src/mongo/s/shard_key_pattern.cpp
-            - src/mongo/s/shard_key_pattern.h
-            - src/mongo/s/shardkey.cpp
-            - src/mongo/s/shardkey.h
+            - src/mongo/s/mongos_persistence_stubs.cpp
 -   system_title: BSON
     system_name: bson
     system_description: MongoDB BSON support
@@ -4130,6 +4159,11 @@
             group_files:
             - src/mongo/util/version.cpp
             - src/mongo/util/version.h
+        -   group_title: 'Mongos Version Information'
+            group_description: 'Helper to print version information about the running mongos'
+            group_files:
+            - src/mongo/s/version_mongos.cpp
+            - src/mongo/s/version_mongos.h
     -   module_title: Logging System
         module_name: logging_system
         module_description: 'TODO: logging_system description'
@@ -4401,15 +4435,6 @@
             group_files:
             - src/mongo/client/gridfs.cpp
             - src/mongo/client/gridfs.h
-        -   group_title: 'Parallel Cursor'
-            group_description: Cursor that represents a connection to a bunch of shards.
-                You would think that this only makes# sense in mongos, but it turns
-                out it's built into mongod for purposes of map reduce (the final#
-                destination shard of a map reduce job uses this in the "mapreduce.shardedfinish"
-                command).
-            group_files:
-            - src/mongo/client/parallel.cpp
-            - src/mongo/client/parallel.h
         -   group_title: 'Sasl Client Authentication'
             group_description: 'Hookup of client to sasl authentication.  The real
                 meat of built in when user passes --use-sasl-client.  TODO: regenerate
