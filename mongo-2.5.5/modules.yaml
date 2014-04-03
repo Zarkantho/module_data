@@ -2489,22 +2489,45 @@
             - src/mongo/util/mongoutils/str.h
 -   system_title: Replication
     system_name: replication
-    system_description: Replication code
+    system_description: 'TODO: High level description of Replication'
     system_modules:
-    -   module_title: Replication
-        module_name: replication
-        module_description: 'TODO: replication description.  TODO: split this into more granular
-        modules'
+    -   module_title: Master Slave
+        module_name: master_slave
+        module_description: 'Legacy Master/Slave implementation'
         module_groups:
-        -   group_title: 'resync Command'
-            group_description: 'Implementation of "resync" command'
-            group_files:
-            - src/mongo/db/repl/resync.cpp
         -   group_title: 'Master Slave'
             group_description: 'Legacy Master/Slave implementation'
             group_files:
             - src/mongo/db/repl/master_slave.cpp
             - src/mongo/db/repl/master_slave.h
+    -   module_title: Consensus
+        module_name: consensus
+        module_description: 'Module for handling consensus between nodes of a replica set to ensure
+        that one and only one node is the primary node.'
+        module_groups:
+        -   group_title: 'Elections'
+            group_description: 'Commands that are sent and recieved during election as well as
+                implementation of some class methods related to elections.  Note that there is not a
+                clear class separation between things related to elections and things not related to
+                elections, so the method implementations in this file span multiple classes.'
+            group_files:
+            - src/mongo/db/repl/consensus.cpp
+        -   group_title: 'Parallel Command Dispatching'
+            group_description: 'Helpers to send a command to multiple servers in parallel and
+                collect the results.  Used in the election process.'
+            group_files:
+            - src/mongo/db/repl/multicmd.h
+    -   module_title: Data Sync
+        module_name: data_sync
+        module_description: 'This module contains the code that replica sets use to keep the data
+        synced between nodes.  Note that there are multiple phases.  The first stage is the initial
+        sync, where all the data must be copied over, and the second is the stage where the node
+        syncing the data reads the oplog and applies all operations to its local copy of the data.'
+        module_groups:
+        -   group_title: 'resync Command'
+            group_description: 'Implementation of "resync" command'
+            group_files:
+            - src/mongo/db/repl/resync.cpp
         -   group_title: 'Replica Set Sync and Initial Sync'
             group_description: 'Code to do sync and inital sync.  Note that this is a complex class
                 heirarchy, and the files do not map one to one with class definitions and
@@ -2537,24 +2560,57 @@
             group_files:
             - src/mongo/db/repl/oplogreader.cpp
             - src/mongo/db/repl/oplogreader.h
-        -   group_title: 'One Per Host Connection Pool'
-            group_description: 'Class to manage remote connections.  Contains only one connection
-                per remote host, protected by a mutex.  Note that this also means only one thread
-                can be contacting a given host at a time using this class.'
+        -   group_title: 'Oplog'
+            group_description: 'Free helper functions to create the oplog, log operations into the
+                oplog and apply operations from the oplog.'
             group_files:
-            - src/mongo/db/repl/connections.h
-        -   group_title: 'Elections'
-            group_description: 'Commands that are sent and recieved during election as well as
-                implementation of some class methods related to elections.  Note that there is not a
-                clear class separation between things related to elections and things not related to
-                elections, so the method implementations in this file span multiple classes.'
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/repl/oplog.h
+        -   group_title: 'Replica Set Rollback'
+            group_description: 'Code to handle rollbacks when two nodes got different writes (in the
+                case where two nodes thought they were primary for some period of time).'
             group_files:
-            - src/mongo/db/repl/consensus.cpp
-        -   group_title: 'Member State Information'
-            group_description: 'Contains class holding all possible states of a replica set member.
-                Also contains class defining the heartbeat information.'
+            - src/mongo/db/repl/rs_rollback.cpp
+    -   module_title: Replica Set Configuration
+        module_name: replica_set_configuration
+        module_description: 'Persistent confiruation of a replica set.'
+        module_groups:
+        -   group_title: 'Replica Set Initiate'
+            group_description: 'rs.initiate() (replSetInitiate) command'
             group_files:
-            - src/mongo/db/repl/rs_member.h
+            - src/mongo/db/repl/rs_initiate.cpp
+        -   group_title: 'Replica Set Config'
+            group_description: 'Class that manages the configuration of a replica set.  This is the
+                static configuration in which changes are only really triggered by the user.  See
+                the output of rs.conf(), which queries the current replica set configuration from
+                the local database.'
+            group_files:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/repl/rs_config.h
+        -   group_title: 'Replication Command Line Options'
+            group_description: 'Global configuration options for replication from the command line.'
+            group_files:
+            - src/mongo/db/repl/replication_server_status.h
+    -   module_title: Replica Set State
+        module_name: replica_set_state
+        module_description: 'Non persistent runtime state of a replica set.'
+        module_groups:
+        -   group_title: 'Replica Set Heartbeats'
+            group_description: 'Contains the replica set heartbeat command implementation as well as
+                the task that actually sends the heartbeat commands to check the health of other
+                nodes in the set.'
+            group_files:
+            - src/mongo/db/repl/heartbeat.cpp
+        -   group_title: 'Heath Status Helpers'
+            group_description: 'Grab bag of miscellaneous helpers that report the status of a
+                replica set or replica set node.  Most of this could be pushed into other files more
+                connected with the classes they come from'
+            group_files:
+            - src/mongo/db/repl/health.cpp
+        -   group_title: 'Dead Code'
+            group_description: 'HealthOptions class is not really used anywhere'
+            group_files:
+            - src/mongo/db/repl/health.h
         -   group_title: 'Top Level Replica Set Classes'
             group_description: 'The top level classes for replcation.  Contains the class
                 representing an entire replica set as well as the class representing information
@@ -2569,30 +2625,11 @@
                 is not the "isMaster" command.  That lives in replication_server_status.cpp'
             group_files:
             - src/mongo/db/repl/is_master.h
-        -   group_title: 'Replication Command Line Options'
-            group_description: 'Global configuration options for replication from the command line.'
-            group_files:
-            - src/mongo/db/repl/replication_server_status.h
         -   group_title: 'Replication Server Status Section'
             group_description: 'Code to add replication information to the server status results.
                 Also currently has the implementation of the "isMaster" command'
             group_files:
             - src/mongo/db/repl/replication_server_status.cpp
-        -   group_title: 'Dead Code'
-            group_description: 'HealthOptions class is not really used anywhere'
-            group_files:
-            - src/mongo/db/repl/health.h
-        -   group_title: 'Heath Status Helpers'
-            group_description: 'Grab bag of miscellaneous helpers that report the status of a
-                replica set or replica set node.  Most of this could be pushed into other files more
-                connected with the classes they come from'
-            group_files:
-            - src/mongo/db/repl/health.cpp
-        -   group_title: 'Parallel Command Dispatching'
-            group_description: 'Helpers to send a command to multiple servers in parallel and
-                collect the results.  Used in the election process.'
-            group_files:
-            - src/mongo/db/repl/multicmd.h
         -   group_title: 'State Transition Manager'
             group_description: 'Thin layer on top of the main replica set class.  Seems to be
                 intended to manage state transitions in a replica set.  It does things like look at
@@ -2601,12 +2638,32 @@
                 change is detected.'
             group_files:
             - src/mongo/db/repl/manager.cpp
-        -   group_title: 'Replica Set Heartbeats'
-            group_description: 'Contains the replica set heartbeat command implementation as well as
-                the task that actually sends the heartbeat commands to check the health of other
-                nodes in the set.'
+        -   group_title: 'Reads Allowed'
+            group_description: 'Code to check if we can read from this node.  Checks if we are the
+                primary or slaveOk is true.'
             group_files:
-            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/repl_reads_ok.cpp
+            - src/mongo/db/repl/repl_reads_ok.h
+        -   group_title: 'Member State Information'
+            group_description: 'Contains class holding all possible states of a replica set member.
+                Also contains class defining the heartbeat information.'
+            group_files:
+            - src/mongo/db/repl/rs_member.h
+    -   module_title: Networking
+        module_name: networking
+        module_description: 'Replication specific networking layer.  Reimplements some of the
+        functionality in the network stack in a more specialized way.'
+        module_groups:
+        -   group_title: 'One Per Host Connection Pool'
+            group_description: 'Class to manage remote connections.  Contains only one connection
+                per remote host, protected by a mutex.  Note that this also means only one thread
+                can be contacting a given host at a time using this class.'
+            group_files:
+            - src/mongo/db/repl/connections.h
+    -   module_title: Replication Initialization
+        module_name: replication_initialization
+        module_description: 'Code to initialize the replication subsystem'
+        module_groups:
         -   group_title: 'Replication Startup Entry Point'
             group_description: 'Entry point for starting up replication when we are initializing the
                 server.  Will check whether we are using replication or master/slave and do the
@@ -2614,48 +2671,36 @@
             group_files:
             - src/mongo/db/repl/repl_start.cpp
             - src/mongo/db/repl/repl_start.h
-        -   group_title: 'Replica Set Config'
-            group_description: 'Class that manages the configuration of a replica set.  This is the
-                static configuration in which changes are only really triggered by the user.  See
-                the output of rs.conf(), which queries the current replica set configuration from
-                the local database.'
-            group_files:
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/db/repl/rs_config.h
-        -   group_title: 'Oplog'
-            group_description: 'Free helper functions to create the oplog, log operations into the
-                oplog and apply operations from the oplog.'
-            group_files:
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/repl/oplog.h
-        -   group_title: 'Replication Exceptions'
-            group_description: 'Exceptions that can be thrown from replication code'
-            group_files:
-            - src/mongo/db/repl/rs_exception.h
+    -   module_title: Replication Commands
+        module_name: replication_commands
+        module_description: 'Commands specifically related to replication'
+        module_groups:
         -   group_title: 'Replica Set Commands'
             group_description: 'Commands related to replica sets'
             group_files:
             - src/mongo/db/repl/replset_commands.cpp
+    -   module_title: Replication Error Handling
+        module_name: replication_error_handling
+        module_description: 'Replication code specific error handling mechanisms'
+        module_groups:
+        -   group_title: 'Replication Exceptions'
+            group_description: 'Exceptions that can be thrown from replication code'
+            group_files:
+            - src/mongo/db/repl/rs_exception.h
+    -   module_title: Replication Web Interface
+        module_name: replication_web_interface
+        module_description: 'Web interface to a replica set'
+        module_groups:
         -   group_title: 'Replica Set Web Information'
             group_description: 'Code to handle the web page that reports replica set information.
                 See the database web server code for more details.'
             group_files:
             - src/mongo/db/repl/replset_web_handler.cpp
-        -   group_title: 'Reads Allowed'
-            group_description: 'Code to check if we can read from this node.  Checks if we are the
-                primary or slaveOk is true.'
-            group_files:
-            - src/mongo/db/repl/repl_reads_ok.cpp
-            - src/mongo/db/repl/repl_reads_ok.h
-        -   group_title: 'Replica Set Initiate'
-            group_description: 'rs.initiate() (replSetInitiate) command'
-            group_files:
-            - src/mongo/db/repl/rs_initiate.cpp
-        -   group_title: 'Replica Set Rollback'
-            group_description: 'Code to handle rollbacks when two nodes got different writes (in the
-                case where two nodes thought they were primary for some period of time).'
-            group_files:
-            - src/mongo/db/repl/rs_rollback.cpp
+    -   module_title: Write Concern
+        module_name: write_concern
+        module_description: 'Code where we ask the user how "concerned" they are about their writes,
+        and make sure that we only reply if their concerns have been addressed.'
+        module_groups:
         -   group_title: 'Write Concern Checks'
             group_description: 'Main entry point to write concern checking.  Contains code to wait
             for the appropriate write concern to be satisfied.'
@@ -3292,12 +3337,12 @@
             group_description: 'Representation of an element in a mutable BSON object.  These are
             effectively nodes in a DOM structured heirarchy.  Much like a BSONElement in the core
             BSON implementation, the memory backing these elements is owned by the parent document.'
+            group_files:
             - src/mongo/bson/mutable/const_element-inl.h
             - src/mongo/bson/mutable/const_element.h
             - src/mongo/bson/mutable/element-inl.h
             - src/mongo/bson/mutable/element.cpp
             - src/mongo/bson/mutable/element.h
-            group_files:
         -   group_title: 'Mutable BSON Utilities'
             group_description: 'Useful utilities and algorithms for use with the mutable BSON
             library'
