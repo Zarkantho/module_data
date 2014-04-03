@@ -154,19 +154,6 @@ Gridfs wrapper around the client driver.
 
 -------------
 
-## Parallel Cursor
-Cursor that represents a connection to a bunch of shards. You would think that this only makes  sense in mongos, but it turns out it's built into mongod for purposes of map reduce (the final  destination shard of a map reduce job uses this in the "mapreduce.shardedfinish" command).
-
-#### Files
-- src/mongo/client/parallel.cpp   (mongod, tools, mongos)
-- src/mongo/client/parallel.h   (mongod, tools, mongos)
-
-#### [Interface](interface/10)
-
-#### [Dependencies](dependencies/10)
-
--------------
-
 ## Sasl Client Authentication
 Hookup of client to sasl authentication.  The real meat of built in when user passes --use-sasl-client.  TODO: regenerate this data with --use-sasl-client to show the rest of the sasl related client driver files
 
@@ -174,6 +161,6 @@ Hookup of client to sasl authentication.  The real meat of built in when user pa
 - src/mongo/client/sasl\_client\_authenticate.cpp   (mongod, tools, mongos)
 - src/mongo/client/sasl\_client\_authenticate.h   (mongod, tools, mongos)
 
-#### [Interface](interface/11)
+#### [Interface](interface/10)
 
-#### [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/10)

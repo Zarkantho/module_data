@@ -10,9 +10,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -20,7 +20,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)
 
 <div></div>
@@ -56,5 +56,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)

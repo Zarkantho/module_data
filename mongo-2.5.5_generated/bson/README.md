@@ -4,6 +4,9 @@ MongoDB BSON support
 
 ## Modules
 
+### [BSON Schema](bson\_schema)
+Utilities and interfaces for converting BSON objects and BSON types to and from C++ objects and C++ types.
+
 ### [BSON](bson)
 This is the core class for managing BSON objects.  Mutable BSON and other in memory BSON management methods in the server are all built on this library
 

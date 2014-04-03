@@ -46,7 +46,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>

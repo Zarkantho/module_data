@@ -36,7 +36,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/structure/btree/btreebuilder.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
     - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
@@ -46,7 +46,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/validate.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/touch.cpp](../../../../queries/database\_commands)
-    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
 
 <div></div>
 

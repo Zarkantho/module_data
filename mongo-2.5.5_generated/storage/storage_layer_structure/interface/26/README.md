@@ -26,7 +26,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
 
 <div></div>
@@ -38,7 +38,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
     - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/introspect.cpp](../../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/restapi.cpp](../../../../network/web\_server)
 
@@ -48,7 +48,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/rename\_collection.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
@@ -58,7 +58,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 

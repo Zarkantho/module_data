@@ -18,5 +18,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)

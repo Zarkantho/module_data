@@ -10,7 +10,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -170,7 +170,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -242,7 +242,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -290,7 +290,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -298,7 +298,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
 
 <div></div>
 
@@ -372,7 +372,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
@@ -445,7 +445,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -525,7 +525,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/config\_metadata\_upgrade)
 
 <div></div>
 

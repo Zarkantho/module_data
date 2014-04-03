@@ -19,7 +19,6 @@ When the mongos calls "getLastError", it gets an ID for the operation that needs
 The writeback listener thread is here in "writeback\_listener.cpp".
 So how do write commands help?  Well, now that every write recieves a response, we get an error back immediately when we send a write to the wrong shard, rather than having to queue the writes.
 The even better news is that when a 2.6 mongos is connecting to a 2.4 shard, the write commands are emulated by a block of code that does a safe write using the legacy "getLastError" call.  This means it gets handled just as if we sent a command and got a response immediately (and thus can retry our write), which means that in 2.6 the WriteBackListener does nothing but log!
-TODO: Clean this up and move this to a wiki page
 
 
 -------------

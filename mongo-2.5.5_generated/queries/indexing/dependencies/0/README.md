@@ -326,7 +326,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -2082,7 +2082,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -2355,7 +2355,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 

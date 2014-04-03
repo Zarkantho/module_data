@@ -20,7 +20,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 ### src/mongo/db/ops/delete.cpp
 
@@ -32,11 +32,11 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
 
@@ -86,11 +86,11 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/commands/find\_and\_modify.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
 
 <div></div>

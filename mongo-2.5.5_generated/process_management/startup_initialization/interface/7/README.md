@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
 
 <div></div>
@@ -30,13 +30,13 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../../../../process\_management/logging\_system)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -58,7 +58,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/qlog.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../../../../process\_management/logging\_system)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -76,13 +76,13 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../../../../process\_management/logging\_system)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -101,7 +101,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/qlog.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../../../../process\_management/logging\_system)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -136,10 +136,10 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/auth/authorization\_manager\_global.cpp](../../../../security/authorization)
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/qlog.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/server\_extra\_log\_context.cpp](../../../../process\_management/logging\_system)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)

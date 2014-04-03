@@ -18,7 +18,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
 
 <div></div>
 
@@ -75,7 +75,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -107,7 +107,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -203,7 +203,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -211,7 +211,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -323,7 +323,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -371,7 +371,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -395,7 +395,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -492,7 +492,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -516,7 +516,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

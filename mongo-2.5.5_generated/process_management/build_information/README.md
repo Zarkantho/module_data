@@ -27,3 +27,16 @@ Contains the string for the current server version that gets bumped when we rele
 #### [Interface](interface/1)
 
 #### [Dependencies](dependencies/1)
+
+-------------
+
+## Mongos Version Information
+Helper to print version information about the running mongos
+
+#### Files
+- src/mongo/s/version\_mongos.cpp   (mongos)
+- src/mongo/s/version\_mongos.h   (mongos)
+
+#### [Interface](interface/2)
+
+#### [Dependencies](dependencies/2)

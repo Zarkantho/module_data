@@ -21,7 +21,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 

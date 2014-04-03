@@ -2926,7 +2926,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -2958,7 +2958,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -2974,7 +2974,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -3121,7 +3121,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/bson/util/bson\_extract.cpp](../../../../bson/bson)
+    - [src/mongo/bson/util/bson\_extract.cpp](../../../../bson/bson\_schema)
 
 <div></div>
 
@@ -3137,7 +3137,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/bson/util/bson\_extract.cpp](../../../../bson/bson)
+    - [src/mongo/bson/util/bson\_extract.cpp](../../../../bson/bson\_schema)
 
 <div></div>
 

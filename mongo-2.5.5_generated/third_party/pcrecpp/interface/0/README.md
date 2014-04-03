@@ -29,9 +29,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>

@@ -27,9 +27,9 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/exec/collection\_scan.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/index/btree\_based\_access\_method.cpp](../../../../queries/indexing)
     - [src/mongo/db/commands/storage\_details.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
@@ -49,7 +49,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -57,7 +57,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -76,7 +76,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/exec/2dcommon.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/validate.cpp](../../../../queries/database\_commands)
     - [src/mongo/tools/dump.cpp](../../../../tools/tools)
     - [src/mongo/db/commands/storage\_details.cpp](../../../../queries/database\_commands)

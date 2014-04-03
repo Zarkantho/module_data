@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 

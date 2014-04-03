@@ -862,8 +862,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/default\_version.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/metadata\_versioning)
+    - [src/mongo/s/default\_version.cpp](../../../../sharding/metadata\_versioning)
 
 <div></div>
 
@@ -959,8 +959,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/default\_version.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/metadata\_versioning)
+    - [src/mongo/s/default\_version.cpp](../../../../sharding/metadata\_versioning)
 
 <div></div>
 

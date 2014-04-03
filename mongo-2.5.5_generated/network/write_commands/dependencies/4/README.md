@@ -34,7 +34,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../../sharding/config\_server\_schema)
+    - [src/mongo/db/field\_parser.cpp](../../../../bson/bson\_schema)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../../sharding/config\_server\_schema)
+    - [src/mongo/db/field\_parser.cpp](../../../../bson/bson\_schema)
 
 <div></div>
 
@@ -162,7 +162,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/field\_parser.cpp](../../../../sharding/config\_server\_schema)
+    - [src/mongo/db/field\_parser.cpp](../../../../bson/bson\_schema)
 
 <div></div>
 

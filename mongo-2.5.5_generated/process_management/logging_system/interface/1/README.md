@@ -11,7 +11,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 

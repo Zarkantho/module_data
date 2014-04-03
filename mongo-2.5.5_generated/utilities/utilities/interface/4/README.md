@@ -23,7 +23,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -35,4 +35,4 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/plan\_executor.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)

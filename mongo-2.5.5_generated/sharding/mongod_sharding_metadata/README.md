@@ -41,3 +41,15 @@ Helper to load the current metadata for a collection from the config servers.  D
 #### [Interface](interface/2)
 
 #### [Dependencies](dependencies/2)
+
+-------------
+
+## Mongod Sharding Globals
+Declarations for a bunch of globals used in sharding.  The actual definitions are unfortunately scatterned between d\_logic.cpp, d\_state.cpp, and others.
+
+#### Files
+- src/mongo/s/d\_logic.h   (mongod, tools, mongos)
+
+#### [Interface](interface/3)
+
+#### [Dependencies](dependencies/3)

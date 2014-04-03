@@ -20,7 +20,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/db/commands/touch.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -59,11 +59,11 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/dur.cpp](../../../../storage/journaling)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
-    - [src/mongo/db/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/fsync.cpp](../../../../queries/database\_commands)

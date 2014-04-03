@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../../mongo\_shell/mongo\_shell)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
@@ -29,7 +29,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
     - [src/mongo/bson/oid.cpp](../../../../bson/bson)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
     - [src/mongo/util/mmap.cpp](../../../../storage/mmap)
     - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
@@ -41,7 +41,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
     - [src/mongo/shell/shell\_utils\_launcher.cpp](../../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
@@ -62,7 +62,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -71,7 +71,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/db/kill\_current\_op.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../../../../sharding/balancer)
@@ -84,7 +84,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../../../../security/authentication)
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
     - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
     - [src/mongo/bson/oid.cpp](../../../../bson/bson)
 
@@ -95,8 +95,8 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/s/balancer\_policy\_tests.cpp](../../../../sharding/balancer)
 

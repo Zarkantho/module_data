@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -18,4 +18,4 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)

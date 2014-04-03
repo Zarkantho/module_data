@@ -64,7 +64,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
@@ -175,7 +175,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/pipelinetests.cpp](../../../../tests/unit\_tests)
@@ -232,7 +232,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
 
@@ -270,7 +270,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
 
@@ -281,7 +281,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 <div></div>
 
@@ -306,7 +306,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
 
@@ -327,7 +327,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/pipelinetests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
 
@@ -338,7 +338,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
@@ -350,7 +350,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documenttests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/accumulatortests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
 

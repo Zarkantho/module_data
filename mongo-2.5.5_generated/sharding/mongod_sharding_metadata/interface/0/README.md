@@ -12,7 +12,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -20,10 +20,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -31,24 +31,24 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../../queries/update\_system)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
     - [src/mongo/db/query/idhack\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/query/stage\_builder.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -56,7 +56,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -64,18 +64,18 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/query/idhack\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/query/stage\_builder.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/ops/update\_lifecycle\_impl.cpp](../../../../queries/update\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -83,7 +83,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -91,10 +91,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -130,7 +130,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -138,7 +138,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -146,8 +146,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/pipeline/pipeline\_d.cpp](../../../../queries/aggregation\_framework)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
@@ -158,7 +158,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -166,7 +166,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -176,7 +176,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
     - [src/mongo/s/d\_logic.cpp](../../../../sharding/writeback\_listener)
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -184,10 +184,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/s/d\_merge.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/d\_merge.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)
 
 <div></div>
@@ -196,7 +196,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -221,8 +221,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -230,4 +230,4 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)

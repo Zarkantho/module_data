@@ -46,7 +46,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/dbhash.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
@@ -56,11 +56,11 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../queries/database\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
@@ -80,10 +80,10 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 ### src/mongo/db/exec/index\_scan.cpp
 
@@ -100,10 +100,10 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 ### src/mongo/db/exec/limit.cpp
 
@@ -246,7 +246,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/dbhash.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
@@ -259,17 +259,17 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/dbtests/query\_stage\_collscan.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/oplogstarttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/dbtests/query\_stage\_tests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/dbtests/query\_stage\_and.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/dbtests/query\_stage\_fetch.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../queries/indexing)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/query\_stage\_limit\_skip.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/dbhelpers.cpp](../../../../queries/client\_and\_operation\_tracking)

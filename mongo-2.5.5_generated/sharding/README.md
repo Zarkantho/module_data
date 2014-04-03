@@ -25,10 +25,9 @@ When the mongos calls "getLastError", it gets an ID for the operation that needs
 The writeback listener thread is here in "writeback\_listener.cpp".
 So how do write commands help?  Well, now that every write recieves a response, we get an error back immediately when we send a write to the wrong shard, rather than having to queue the writes.
 The even better news is that when a 2.6 mongos is connecting to a 2.4 shard, the write commands are emulated by a block of code that does a safe write using the legacy "getLastError" call.  This means it gets handled just as if we sent a command and got a response immediately (and thus can retry our write), which means that in 2.6 the WriteBackListener does nothing but log!
-TODO: Clean this up and move this to a wiki page
 
-### [Mongod Commands](mongod\_commands)
-Core sharding commands on mongod
+### [Chunk Management](chunk\_management)
+Commands and utilities to manage chunks in a sharded cluster
 
 ### [Config Server Schema](config\_server\_schema)
 Schema for all sharding related collections on the config server.  All direct config server access should use these classes.
@@ -39,6 +38,27 @@ The balancer is a background job that runs on each mongos and is responsible for
 ### [Mongod Sharding Metadata](mongod\_sharding\_metadata)
 Classes to manage and store sharding related metadata on mongod
 
-### [Sharding Uncategorized](sharding\_uncategorized)
-TODO: Uncategorized sharding code TODO: Figure out what should go here and what should go in the write commands network section
+### [Cluster Locking](cluster\_locking)
+Locking that is specific to a sharded cluster
+
+### [Config Metadata Upgrade](config\_metadata\_upgrade)
+Code to handle the versioning and upgrading of metadata on the config servers
+
+### [Routing](routing)
+Code to deal with routing operations in a sharded cluster
+
+### [Cluster Metadata Management](cluster\_metadata\_management)
+Helpers and wrappers to manage cluster metadata.  These exist so that operations requiring cluster metadata do not have to have code to directly query the config servers.
+
+### [Metadata Versioniong](metadata\_versioning)
+Since a sharded cluster is distributed, mongos and mongod both have to cache metadata from the config servers.  Because of this, there is a need to keep track of metadata version information and make decisions based on the last version that was seen.
+
+### [Mongos Commands](mongos\_commands)
+General commands available on mongos, run using db.$cmd.findOne(...)
+
+### [Shard Abstraction](shard\_abstraction)
+Classes abstracting the idea of a shard in a sharded cluster
+
+### [Build Stubs](build\_stubs)
+Stubs not related to sharding but needed to make mongos link
 

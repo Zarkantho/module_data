@@ -11,7 +11,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 ### src/mongo/db/pipeline/document\_source\_bson\_array.cpp
 
@@ -31,7 +31,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 ### src/mongo/db/pipeline/document\_source\_cursor.cpp
 
@@ -131,7 +131,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 ### src/mongo/db/pipeline/document\_source\_out.cpp
 
@@ -141,7 +141,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 ### src/mongo/db/pipeline/document\_source\_project.cpp
 

@@ -42,7 +42,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -50,7 +50,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -82,7 +82,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -90,7 +90,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -170,7 +170,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -186,7 +186,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

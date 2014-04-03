@@ -11,7 +11,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)
 
 <div></div>
@@ -20,6 +20,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/commands/test\_commands.cpp](../../../../queries/database\_commands)

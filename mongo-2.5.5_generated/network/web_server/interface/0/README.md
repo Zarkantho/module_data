@@ -19,7 +19,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../../replication/replication\_web\_interface)
 
 <div></div>
 

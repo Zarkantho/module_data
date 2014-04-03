@@ -5,87 +5,14 @@ module_description: Mutable BSON is built on top of the BSON library, and provid
     a vector of elements as changes are made, and can reserialize into a new BSON
     object with all the changes.
 module_groups:
--   group_title: Uncategorized Mutable BSON code
-    group_description: 'TODO: organize this into real sections'
+-   group_title: In Place Modification Tracker
+    group_description: What's the damage?  Class to record what has changed for an
+        in place update for the purpose of notifying the journal what has changed.  This
+        is an artifact of how the journaling system works, not a core part of the
+        mutable BSON library.
     group_files:
-    - src/mongo/bson/mutable/algorithm.h
-    - src/mongo/bson/mutable/const_element-inl.h
-    - src/mongo/bson/mutable/const_element.h
     - src/mongo/bson/mutable/damage_vector.h
-    - src/mongo/bson/mutable/document-inl.h
-    - src/mongo/bson/mutable/document.cpp
-    - src/mongo/bson/mutable/document.h
-    - src/mongo/bson/mutable/element-inl.h
-    - src/mongo/bson/mutable/element.cpp
-    - src/mongo/bson/mutable/element.h
-    - src/mongo/bson/mutable/mutable_bson_algo_test.cpp
-    - src/mongo/bson/mutable/mutable_bson_test.cpp
-    - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-    - src/mongo/bson/mutable/mutable_bson_test_utils.h
     group_generated_data:
-    -   file_name: src/mongo/bson/mutable/algorithm.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_headers: []
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/bson/mutable/const_element-inl.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_headers: []
-        file_interface: []
-        file_dependencies: []
-    -   file_name: src/mongo/bson/mutable/const_element.h
-        file_executables:
-        - mongotop
-        - mongod
-        - perftest
-        - mongoperf
-        - mongosniff
-        - mongodump
-        - mongobridge
-        - mongostat
-        - bsondump
-        - mongoimport
-        - mongos
-        - mongooplog
-        - test
-        - mongoexport
-        - mongofiles
-        - mongorestore
-        file_headers: []
-        file_interface: []
-        file_dependencies: []
     -   file_name: src/mongo/bson/mutable/damage_vector.h
         file_executables:
         - mongotop
@@ -107,6 +34,16 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
+-   group_title: Mutable BSON Document
+    group_description: Representation of a mutable BSON object.  Can be constructed
+        from a BSON object and reserialzed into a BSON object.  When constructed from
+        an existing BSON object, it can lazily unpack the object into the mutable
+        representation lazily as modifications are made to the object.
+    group_files:
+    - src/mongo/bson/mutable/document-inl.h
+    - src/mongo/bson/mutable/document.cpp
+    - src/mongo/bson/mutable/document.h
+    group_generated_data:
     -   file_name: src/mongo/bson/mutable/document-inl.h
         file_executables:
         - mongotop
@@ -1108,6 +1045,60 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
+-   group_title: Mutable BSON Element
+    group_description: Representation of an element in a mutable BSON object.  These
+        are effectively nodes in a DOM structured heirarchy.  Much like a BSONElement
+        in the core BSON implementation, the memory backing these elements is owned
+        by the parent document.
+    group_files:
+    - src/mongo/bson/mutable/const_element-inl.h
+    - src/mongo/bson/mutable/const_element.h
+    - src/mongo/bson/mutable/element-inl.h
+    - src/mongo/bson/mutable/element.cpp
+    - src/mongo/bson/mutable/element.h
+    group_generated_data:
+    -   file_name: src/mongo/bson/mutable/const_element-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/mongo/bson/mutable/const_element.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
     -   file_name: src/mongo/bson/mutable/element-inl.h
         file_executables:
         - mongotop
@@ -1880,6 +1871,41 @@ module_groups:
         file_headers: []
         file_interface: []
         file_dependencies: []
+-   group_title: Mutable BSON Utilities
+    group_description: Useful utilities and algorithms for use with the mutable BSON
+        library
+    group_files:
+    - src/mongo/bson/mutable/algorithm.h
+    group_generated_data:
+    -   file_name: src/mongo/bson/mutable/algorithm.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+-   group_title: Mutable BSON Tests
+    group_description: Unit tests for the mutable BSON library
+    group_files:
+    - src/mongo/bson/mutable/mutable_bson_algo_test.cpp
+    - src/mongo/bson/mutable/mutable_bson_test.cpp
+    - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+    - src/mongo/bson/mutable/mutable_bson_test_utils.h
+    group_generated_data:
     -   file_name: src/mongo/bson/mutable/mutable_bson_algo_test.cpp
         file_executables: []
         file_headers:

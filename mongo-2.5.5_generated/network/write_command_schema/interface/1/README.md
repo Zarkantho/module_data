@@ -51,7 +51,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../../network/write\_commands)
     - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
@@ -114,7 +114,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/s/write\_ops/dbclient\_safe\_writer.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -125,7 +125,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -145,7 +145,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
@@ -172,7 +172,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/s/write\_ops/write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -222,7 +222,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
@@ -255,7 +255,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -264,7 +264,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
@@ -296,4 +296,4 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)

@@ -14,4 +14,4 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/keypattern.cpp](../../../../queries/indexing)
     - [src/mongo/db/index/hash\_access\_method.cpp](../../../../queries/indexing)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)

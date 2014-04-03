@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/dbtests/socktests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
@@ -32,12 +32,12 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/connpool.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
     - [src/mongo/dbtests/mock/mock\_dbclient\_connection.cpp](../../../../tests/unit\_tests)
     - [src/mongo/util/net/miniwebserver.cpp](../../../../network/web\_server)
     - [src/mongo/dbtests/mock/mock\_remote\_db\_server.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/sync.cpp](../../../../replication/replication)
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/repl/sync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
     - [src/mongo/util/net/httpclient.cpp](../../../../network/rest\_client)
 
 <div></div>
@@ -59,7 +59,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/dbcommands\_generic.cpp](../../../../queries/database\_commands)
     - [src/mongo/s/d\_logic.cpp](../../../../sharding/writeback\_listener)
-    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replset\_web\_handler.cpp](../../../../replication/replication\_web\_interface)
 
 <div></div>
 
@@ -142,14 +142,14 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/db/query/new\_find.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/config\_metadata\_upgrade)
 
 <div></div>
 
@@ -247,13 +247,13 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/shell/shell\_utils\_extended.cpp](../../../../mongo\_shell/mongo\_shell)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
-    - [src/mongo/s/distlock.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../../replication/replica\_set\_configuration)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
+    - [src/mongo/s/distlock.cpp](../../../../sharding/cluster\_locking)
     - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
 

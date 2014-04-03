@@ -35,7 +35,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -89,16 +89,16 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/commands.cpp](../../../../queries/database\_commands)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -124,9 +124,9 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -155,25 +155,25 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/commands/authentication\_commands.cpp](../../../../security/authentication)
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
     - [src/mongo/s/s\_only.cpp](../../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/client.cpp](../../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replication)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/s/client\_info.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
 
 <div></div>
 

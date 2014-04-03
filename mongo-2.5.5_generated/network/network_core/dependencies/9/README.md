@@ -10,7 +10,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -42,7 +42,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -106,7 +106,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -130,7 +130,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -186,7 +186,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -266,7 +266,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -282,7 +282,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -298,7 +298,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 ### src/mongo/s/strategy.cpp
 
@@ -308,7 +308,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -316,8 +316,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/default\_version.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/metadata\_versioning)
+    - [src/mongo/s/default\_version.cpp](../../../../sharding/metadata\_versioning)
 
 <div></div>
 
@@ -333,7 +333,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -341,7 +341,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -357,7 +357,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -389,7 +389,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/chunk.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -397,7 +397,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -405,8 +405,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/version\_manager.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/default\_version.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/version\_manager.cpp](../../../../sharding/metadata\_versioning)
+    - [src/mongo/s/default\_version.cpp](../../../../sharding/metadata\_versioning)
 
 <div></div>
 
@@ -422,7 +422,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -430,7 +430,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -510,7 +510,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -542,7 +542,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -574,7 +574,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -630,7 +630,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -654,7 +654,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -686,7 +686,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -702,7 +702,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 <div></div>
 
@@ -710,7 +710,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -718,7 +718,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -742,7 +742,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -766,7 +766,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -822,7 +822,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -830,7 +830,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -870,7 +870,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -902,7 +902,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
@@ -927,7 +927,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -935,7 +935,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -943,7 +943,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -951,7 +951,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -977,7 +977,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -985,7 +985,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -993,7 +993,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -1041,7 +1041,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/parallel.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -1073,7 +1073,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/config.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -1089,4 +1089,4 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/s/shardconnection.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shardconnection.cpp](../../../../sharding/shard\_abstraction)

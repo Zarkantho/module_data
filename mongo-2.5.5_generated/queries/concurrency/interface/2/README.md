@@ -18,7 +18,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>

@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/get\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -49,7 +49,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -74,7 +74,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

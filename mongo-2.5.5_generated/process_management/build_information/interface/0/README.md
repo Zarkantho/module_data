@@ -12,7 +12,6 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/tools/tool\_options.cpp](../../../../tools/tools)
     - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
     - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
     - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
@@ -47,7 +46,6 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
-    - [src/mongo/s/version\_mongos.cpp](../../../../sharding/sharding\_uncategorized)
     - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
 
 <div></div>

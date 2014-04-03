@@ -32,9 +32,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -114,7 +114,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/mr.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/touch.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

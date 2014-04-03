@@ -82,7 +82,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter\_service.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/range\_deleter\_service.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -363,7 +363,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -403,7 +403,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/repl/repl\_start.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/repl\_start.cpp](../../../../replication/replication\_initialization)
 
 <div></div>
 
@@ -467,7 +467,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/range\_deleter.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

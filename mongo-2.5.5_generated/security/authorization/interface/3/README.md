@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/db/dbeval.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/apply\_ops.cpp](../../../../queries/database\_commands)
 

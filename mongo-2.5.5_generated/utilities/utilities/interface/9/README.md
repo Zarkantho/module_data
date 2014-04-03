@@ -10,27 +10,27 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/db/auth/user\_cache\_invalidator\_job.cpp](../../../../security/authorization)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
     - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
     - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/index\_builder.cpp](../../../../queries/indexing)
     - [src/mongo/db/commands/fsync.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/index\_rebuilder.cpp](../../../../queries/indexing)
 
@@ -83,17 +83,17 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/index\_builder.cpp](../../../../queries/indexing)
     - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
     - [src/mongo/db/commands/fsync.cpp](../../../../queries/database\_commands)
@@ -107,7 +107,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
 
 <div></div>
@@ -131,12 +131,12 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/db/index\_rebuilder.cpp](../../../../queries/indexing)
     - [src/mongo/db/index\_builder.cpp](../../../../queries/indexing)
     - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
@@ -156,16 +156,16 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/auth\_schema\_upgrade\_d.cpp](../../../../security/authorization)
     - [src/mongo/client/replica\_set\_monitor.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/repl/consensus.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/consensus.cpp](../../../../replication/consensus)
     - [src/mongo/db/index\_rebuilder.cpp](../../../../queries/indexing)
     - [src/mongo/db/index\_builder.cpp](../../../../queries/indexing)
     - [src/mongo/util/net/sock.cpp](../../../../network/network\_core)
     - [src/mongo/s/writeback\_listener.cpp](../../../../sharding/writeback\_listener)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/util/concurrency/task.cpp
@@ -176,11 +176,11 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -188,8 +188,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -197,9 +197,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/sync\_source\_feedback.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -207,9 +207,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -217,10 +217,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -228,10 +228,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -239,9 +239,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -249,8 +249,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -258,7 +258,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -266,8 +266,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replication)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -275,8 +275,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -284,4 +284,4 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)

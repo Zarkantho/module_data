@@ -22,10 +22,10 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/commands/authentication\_commands.cpp](../../../../security/authentication)
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
     - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/db/index\_rebuilder.cpp](../../../../queries/indexing)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replication)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -146,22 +146,22 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/db/commands/merge\_chunks\_cmd.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/db/commands/rename\_collection\_common.cpp](../../../../queries/database\_commands)
     - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/db/commands/oplog\_note.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
     - [src/mongo/db/dbcommands.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/commands/cluster\_merge\_chunks\_cmd.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/commands/cleanup\_orphaned\_cmd.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/d\_split.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_split.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/mongod\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -209,7 +209,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
     - [src/mongo/db/catalog/collection\_cursor\_cache.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/group.cpp](../../../../queries/database\_commands)
 

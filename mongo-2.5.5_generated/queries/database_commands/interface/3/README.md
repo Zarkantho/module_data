@@ -18,7 +18,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
     - [src/mongo/db/ttl.cpp](../../../../queries/indexing)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
@@ -29,4 +29,4 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/dur.cpp](../../../../storage/journaling)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)

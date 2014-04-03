@@ -60,9 +60,7 @@ module_description: 'The Writeback listener is a legacy class to handle the case
     write commands are emulated by a block of code that does a safe write using the
     legacy "getLastError" call.  This means it gets handled just as if we sent a command
     and got a response immediately (and thus can retry our write), which means that
-    in 2.6 the WriteBackListener does nothing but log!
-
-    TODO: Clean this up and move this to a wiki page'
+    in 2.6 the WriteBackListener does nothing but log!'
 module_groups:
 -   group_title: Mongos Writeback Listener Thread
     group_description: Thread on mongos that polls the shards for writebacks and sends

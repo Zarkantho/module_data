@@ -42,7 +42,7 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
 
 <div></div>
 

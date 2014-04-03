@@ -10,5 +10,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/db/commands/parameters.cpp](../../../../queries/database\_commands)

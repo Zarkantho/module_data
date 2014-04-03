@@ -75,10 +75,10 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/isself.cpp](../../../../queries/database\_commands)
-    - [src/mongo/s/cursors.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/cursors.cpp](../../../../sharding/routing)
     - [src/mongo/db/clientcursor.cpp](../../../../queries/client\_and\_operation\_tracking)
     - [src/mongo/db/curop.cpp](../../../../queries/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/commands/server\_status.cpp](../../../../queries/database\_commands)
     - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
     - [src/mongo/s/d\_writeback.cpp](../../../../sharding/writeback\_listener)

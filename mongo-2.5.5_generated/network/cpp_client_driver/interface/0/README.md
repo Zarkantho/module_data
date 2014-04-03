@@ -10,7 +10,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
 
 <div></div>
 
@@ -18,7 +18,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -26,7 +26,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -34,7 +34,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -58,8 +58,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
 
 <div></div>
 
@@ -67,9 +67,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/shard.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/grid.cpp](../../../../sharding/sharding\_uncategorized)
-    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/shard.cpp](../../../../sharding/shard\_abstraction)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/s/dbclient\_shard\_resolver.cpp](../../../../sharding/routing)
     - [src/mongo/shell/shell\_utils.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>

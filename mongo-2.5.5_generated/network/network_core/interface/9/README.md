@@ -39,7 +39,7 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../../queries/full\_text\_search\_module)
     - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
 
 <div></div>
 
@@ -50,4 +50,4 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/s/commands/cluster\_plan\_cache\_cmd.cpp](../../../../queries/core\_query\_system)
     - [src/mongo/db/fts/fts\_command\_mongos.cpp](../../../../queries/full\_text\_search\_module)
     - [src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp](../../../../queries/core\_query\_system)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/sharding\_uncategorized)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)

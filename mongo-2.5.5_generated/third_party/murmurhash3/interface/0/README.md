@@ -12,7 +12,7 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/pipeline/document.cpp](../../../../queries/aggregation\_framework)
     - [src/mongo/db/pipeline/value.cpp](../../../../queries/aggregation\_framework)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/replication)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 

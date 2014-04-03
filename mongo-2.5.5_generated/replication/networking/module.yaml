@@ -1,0 +1,33 @@
+module_title: Networking
+module_name: networking
+module_description: Replication specific networking layer.  Reimplements some of the
+    functionality in the network stack in a more specialized way.
+module_groups:
+-   group_title: One Per Host Connection Pool
+    group_description: Class to manage remote connections.  Contains only one connection
+        per remote host, protected by a mutex.  Note that this also means only one
+        thread can be contacting a given host at a time using this class.
+    group_files:
+    - src/mongo/db/repl/connections.h
+    group_generated_data:
+    -   file_name: src/mongo/db/repl/connections.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongostat
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongofiles
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
