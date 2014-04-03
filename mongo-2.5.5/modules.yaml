@@ -3887,16 +3887,19 @@
             - src/mongo/db/ops/delete.h
             - src/mongo/db/ops/insert.cpp
             - src/mongo/db/ops/insert.h
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/update.h
     -   module_title: Update System
         module_name: update_system
-        module_description: 'TODO: update_system description'
+        module_description: 'System for handling update operations against the database.  See
+        http://docs.mongodb.org/manual/core/write-operations-introduction/#update for details about
+        the suppported update operations.'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: libupdate.a (only used by libupdate_driver.a). This
-                is the new code for handling update# operations:## is this stuff only
-                called from update.cpp?
+        -   group_title: 'Modifier Interface'
+            group_description: 'Interface that the various update modifiers implement.  Note that
+            this includes update operators as well as document replacement.'
+            group_files:
+            - src/mongo/db/ops/modifier_interface.h
+        -   group_title: 'Update Modifiers'
+            group_description: 'Transformations that can be applied to a document during an update'
             group_files:
             - src/mongo/db/ops/modifier_add_to_set.cpp
             - src/mongo/db/ops/modifier_add_to_set.h
@@ -3913,7 +3916,6 @@
             - src/mongo/db/ops/modifier_inc.cpp
             - src/mongo/db/ops/modifier_inc.h
             - src/mongo/db/ops/modifier_inc_test.cpp
-            - src/mongo/db/ops/modifier_interface.h
             - src/mongo/db/ops/modifier_object_replace.cpp
             - src/mongo/db/ops/modifier_object_replace.h
             - src/mongo/db/ops/modifier_object_replace_test.cpp
@@ -3940,48 +3942,67 @@
             - src/mongo/db/ops/modifier_unset.cpp
             - src/mongo/db/ops/modifier_unset.h
             - src/mongo/db/ops/modifier_unset_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: 'libupdate_driver.a. This is the external interface
-                to the new update system:'
+        -   group_title: 'Modifier Table'
+            group_description: 'Table of all update operations that can be performed on a document,
+            not including document replacement.  Has utilities for converting from the "$" string
+            representation to the internal modifier classes.'
             group_files:
             - src/mongo/db/ops/modifier_table.cpp
             - src/mongo/db/ops/modifier_table.h
             - src/mongo/db/ops/modifier_table_test.cpp
+        -   group_title: 'Update Driver'
+            group_description: 'Main entry to the portion of the update module responsible for
+            updating individual documents based on the update expression.'
+            group_files:
             - src/mongo/db/ops/update_driver.cpp
             - src/mongo/db/ops/update_driver.h
             - src/mongo/db/ops/update_driver_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Utilities for the new update system (libupdate_common.a)
+        -   group_title: 'Update Execution'
+            group_description: 'Code that actually handles the execution of update operations.  Main
+            entry point to the full update system.'
             group_files:
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/ops/path_support.h
-            - src/mongo/db/ops/path_support_test.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/update.h
+        -   group_title: 'Update Oplog Entry Builder'
+            group_description: 'Utility for creating properly constructed oplog entries.  This is
+            important because update operations must be converted to an equivalent combination of
+            idempotent operations for replication, since secondaries might apply the same oplog
+            entry more than once.'
+            group_files:
             - src/mongo/db/ops/log_builder.cpp
             - src/mongo/db/ops/log_builder.h
             - src/mongo/db/ops/log_builder_test.cpp
-            - src/mongo/db/ops/field_checker.cpp
-            - src/mongo/db/ops/field_checker.h
-            - src/mongo/db/ops/field_checker_test.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Other things used by the update system. TODO: figure
-                out what these are for.'
+        -   group_title: 'Update Lifecycle'
+            group_description: 'Interface to keep tabs on the state of the database that might be
+            relevent to the operation throughout the lifetime of an update.'
             group_files:
             - src/mongo/db/ops/update_lifecycle.h
             - src/mongo/db/ops/update_lifecycle_impl.cpp
             - src/mongo/db/ops/update_lifecycle_impl.h
-            - src/mongo/db/ops/update_request.h
-            - src/mongo/db/ops/update_result.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Utilites for managing dotted field names such as "a.b.c".
-                For example, has things like# "isPrefixOf".## is there any relationship
-                between this and bson/ or bson/mutable ?
+        -   group_title: 'Dotted Field Utilities'
+            group_description: 'Utilites for managing dotted field names such as "a.b.c"'
             group_files:
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/path_support.h
+            - src/mongo/db/ops/path_support_test.cpp
             - src/mongo/db/field_ref.cpp
             - src/mongo/db/field_ref.h
             - src/mongo/db/field_ref_set.cpp
             - src/mongo/db/field_ref_set.h
             - src/mongo/db/field_ref_set_test.cpp
             - src/mongo/db/field_ref_test.cpp
+            - src/mongo/db/ops/field_checker.cpp
+            - src/mongo/db/ops/field_checker.h
+            - src/mongo/db/ops/field_checker_test.cpp
+        -   group_title: 'Update Request'
+            group_description: 'Container for all information needed to execute an update operation'
+            group_files:
+            - src/mongo/db/ops/update_request.h
+        -   group_title: 'Update Result'
+            group_description: 'Container for all information about the results of an update
+            operation'
+            group_files:
+            - src/mongo/db/ops/update_result.h
     -   module_title: Aggregation Framework
         module_name: aggregation_framework
         module_description: 'This is the aggregation framework for MongoDB.  It handles
