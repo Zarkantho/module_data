@@ -4927,39 +4927,124 @@
             - src/mongo/util/file.h
     -   module_title: Journaling
         module_name: journaling
-        module_description: 'TODO: journaling description'
+        module_description: 'System to ensure that our writes are durable even in the event of
+        unexpected crashes.
+
+        Before we start writing an operation to disk, we write a persistent log entry to the journal
+        with what we are about to do.  Then, if a crash occurs in the the middle of our operation
+        when our state is corrupt, we can replay all the operations in the journal to ensure we are
+        back to a valid state on restart.
+
+        Our storage system is based on memory mapped files, which means that we write to memory that
+        is mapped using MAP_SHARED and the changes get persisted back to disk by the OS.
+
+        However, just one map is not sufficient.  This is because the journal entry has to be
+        written before we start writing to the actual data files but we also do not want the time
+        before we see the results of the operation to be gated by the time it takes to write the
+        journal to disk.  To solve this problem, we map the file a second time using MAP_PRIVATE,
+        which signals that changes to that range should not get persisted back to disk.
+
+        From the perspective of a client operation using the journal, the sequence of actions is as
+        follows.
+
+        First the operation uses the private view to serve the part of the operation that does not
+        require a write.  Clients operations exclusively interact with the private view throughout
+        the entire lifetime of the operation.
+
+        Next, the operation notifies the journal of intent to write, including where and how much.
+        This gets put into the in memory representation of the journal operations that need to be
+        applied.
+
+        Finally, the operation applies its changes to the private view and is now free to return to
+        the client as soon as the appropriate write concern is satisfied.
+
+        The other component of this system is the journaling thread.  This thread is responsible for
+        actually writing the changes back to disk.  It has the following stages.
+
+        PREPLOGBUFFER - Convert from the in memory datastructures into the actual buffer that will
+        be written out to the journal.
+
+        WRITETOJOURNAL - Write the prepared buffer sequentially to the journal.
+
+        WRITETODATAFILES - Write to the data files in the shared view, which means they could get
+        written back to disk automatically or after an fsync.
+
+        REMAPPRIVATEVIEW - Remap the private view of the data files.  This is to ensure that any
+        pages that were copied on write and are not backed by any files or needed any more can get
+        reclaimed by the OS.
+
+        Here is a visual representation of the work done by the journal thread.
+        https://docs.google.com/a/10gen.com/drawings/d/1TklsmZzm7ohIZkwgeK6rMvsdaR13KjtJYMsfLr175Zc'
         module_groups:
         -   group_title: 'Page Aligned Buffer'
             group_description: Page aligned buffer builder
             group_files:
             - src/mongo/util/alignedbuilder.cpp
             - src/mongo/util/alignedbuilder.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Journaling module## who calls/owns stuff in here? only
-                used by mongod, correct?
+        -   group_title: 'Write Intents'
+            group_description: 'In memory classes that store operations from clients that need to be
+            journaled that have not yet been serialized into journal entries.'
+            group_files:
+            - src/mongo/db/dur_commitjob.cpp
+            - src/mongo/db/dur_commitjob.h
+        -   group_title: 'Journal Entry Serialization'
+            group_description: 'Stage of journaling that takes the in memory representation of
+            operations that need to be journaled and processes them to create the actual buffers
+            that get written back to the journal files.  Also handles merging of overlapping
+            entries.'
+            group_files:
+            - src/mongo/db/dur_preplogbuffer.cpp
+        -   group_title: 'Journal File Management'
+            group_description: 'Used to manage the journal files, including allocation and appending
+            data.  Actually writes the data to the on disk journal files.'
+            group_files:
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dur_journal.h
+            - src/mongo/db/dur_journalimpl.h
+        -   group_title: 'Persistent Data File Writes'
+            group_description: 'Stage of journaling that actully applies the journal operations to
+            the shared view of the data files, logically writing the changes back to disk.  Journal
+            files only get deleted when the changes have actually been written to disk.'
+            group_files:
+            - src/mongo/db/dur_writetodatafiles.cpp
+        -   group_title: 'Journaled Non Write Operations'
+            group_description: 'Operations that need to be journaled that are not writes, such as
+            data file creation.'
+            group_files:
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/durop.h
+        -   group_title: 'Journaling Main'
+            group_description: 'Top level interface to the journaling system as well as the journal
+            commit thread.  This interface can be transparently swapped out with a class that does
+            not actually do the journaling in the case where journaling is disabled.'
             group_files:
             - src/mongo/db/dur.cpp
             - src/mongo/db/dur.h
-            - src/mongo/db/dur_commitjob.cpp
-            - src/mongo/db/dur_commitjob.h
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/db/dur_journal.h
+        -   group_title: 'Journal Format'
+            group_description: 'On disk format of all journaling related objects.'
+            group_files:
             - src/mongo/db/dur_journalformat.h
-            - src/mongo/db/dur_journalimpl.h
-            - src/mongo/db/dur_preplogbuffer.cpp
+        -   group_title: 'Journal Recovery'
+            group_description: 'Code to actually apply the journal operations when the system is
+            recovering.  Note that currently this is also used during normal operation when writing
+            to the persistent representation of the datafiles.'
+            group_files:
             - src/mongo/db/dur_recover.cpp
             - src/mongo/db/dur_recover.h
+        -   group_title: 'Journal Stats'
+            group_description: 'Statistics about our journal operation.'
+            group_files:
             - src/mongo/db/dur_stats.h
-            - src/mongo/db/dur_writetodatafiles.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/durop.h
+        -   group_title: 'Journaling Memory Map Management'
+            group_description: 'Classes to make it easier to manage and keep track of the private
+            and shared "views" of a file needed by the journaling system.  This also handles
+            remapping the private view to allow the OS to free the pages that are no longer needed.'
+            group_files:
             - src/mongo/db/storage/durable_mapped_file.cpp
             - src/mongo/db/storage/durable_mapped_file.h
-        -   group_title: 'TODO: Name this group'
-            group_description: This is not actually used in our logging system. Just
-                utilities to create files that you can# append to. One notable example
-                of a system that uses this is our preallocation of journal files.#
-                In fact, it isn't used in anything not journaling related right now.
+        -   group_title: 'Append Only File'
+            group_description: 'Used by journaling system to write our prepared buffers to the
+            journal files.'
             group_files:
             - src/mongo/util/logfile.cpp
             - src/mongo/util/logfile.h
