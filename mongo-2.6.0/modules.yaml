@@ -285,7 +285,9 @@
         module_groups:
         -   group_title: Auto Generated Files
             group_description: Third Party - V8 Javascript engine auto generated files
-            group_files: []
+            group_files:
+            - build/darwin/ssl/third_party/v8/src/experimental-libraries.cc
+            - build/darwin/ssl/third_party/v8/src/libraries.cc
         -   group_title: V8 Javascript Engine
             group_description: Third Party - V8 Javascript engine
             group_files:
@@ -2087,7 +2089,9 @@
                 work in the shell because they are actually compiled in, which means
                 that sometimes the server needs to be recompiled to see changes in
                 Javascript files
-            group_files: []
+            group_files:
+            - build/darwin/ssl/mongo/shell/mongo-server.cpp
+            - build/darwin/ssl/mongo/shell/mongo.cpp
         -   group_title: Javascript Helpers
             group_description: Javascript files that get wrapped in strings and put
                 in cpp files. See the "env.JSHeader" calls# in src/mongo/SConscript
@@ -2207,6 +2211,8 @@
             - src/mongo/base/status_with.h
             - src/mongo/base/error_codes.err
             - src/mongo/base/generate_error_codes.py
+            - build/darwin/ssl/mongo/base/error_codes.h
+            - build/darwin/ssl/mongo/base/error_codes.cpp
         -   group_title: Number To String Conversion
             group_description: Cross platform utilities to convert numbers to strings
             group_files:
@@ -4254,6 +4260,8 @@
                 auto generated C++ files.
             group_files:
             - src/mongo/db/fts/generate_stop_words.py
+            - build/darwin/ssl/mongo/db/fts/stop_words_list.cpp
+            - build/darwin/ssl/mongo/db/fts/stop_words_list.h
             - src/mongo/db/fts/stop_words_danish.txt
             - src/mongo/db/fts/stop_words_dutch.txt
             - src/mongo/db/fts/stop_words_english.txt
@@ -4373,7 +4381,9 @@
             group_description: Source files that get automatically generated in each
                 compile.  Contains functions to get things like compile flags and
                 the Javascript interpreter version
-            group_files: []
+            group_files:
+            - build/darwin/ssl/buildinfo.cpp
+            - build/darwin/ssl/mongo/buildinfo.cpp
         -   group_title: Server Version Information
             group_description: Contains the string for the current server version
                 that gets bumped when we release, as well as code to parse it
@@ -5453,6 +5463,8 @@
             - src/mongo/db/auth/action_set.h
             - src/mongo/db/auth/action_set_test.cpp
             - src/mongo/db/auth/action_types.txt
+            - build/darwin/ssl/mongo/db/auth/action_type.h
+            - build/darwin/ssl/mongo/db/auth/action_type.cpp
             - src/mongo/db/auth/generate_action_types.py
         -   group_title: Privileges
             group_description: A privilege represents a set of actions that can be
@@ -5626,49 +5638,37 @@
         module_groups:
         -   group_description: Uncategorized Group
             group_files:
-            - build/darwin/ssl/mongo/db/fts/stop_words_list.cpp
             - src/mongo/db/ops/delete_request.h
             - src/mongo/db/index/key_generator.cpp
             - src/mongo/db/ops/update_executor.h
             - src/mongo/db/index/key_generator.h
             - src/mongo/util/password_digest.cpp
-            - build/darwin/ssl/buildinfo.cpp
-            - build/darwin/ssl/mongo/db/auth/action_type.h
             - src/mongo/db/query/query_planner_text_test.cpp
             - src/mongo/db/index/fts_key_generator.h
             - src/mongo/db/ops/delete_executor.h
             - src/mongo/db/index/haystack_key_generator.cpp
-            - build/darwin/ssl/mongo/db/auth/action_type.cpp
             - src/mongo/db/catalog/index_pregen.cpp
-            - build/darwin/ssl/third_party/v8/src/experimental-libraries.cc
             - src/mongo/db/index/index_descriptor.cpp
             - src/mongo/db/index/2d_key_generator.cpp
-            - build/darwin/ssl/mongo/shell/mongo-server.cpp
             - src/mongo/db/index/hash_key_generator.h
-            - build/darwin/ssl/third_party/v8/src/libraries.cc
             - src/mongo/db/query/query_knobs.cpp
             - src/mongo/dbtests/plan_ranking.cpp
             - src/mongo/db/ops/update_executor.cpp
             - src/mongo/db/index/hash_key_generator.cpp
-            - build/darwin/ssl/mongo/base/error_codes.h
             - src/mongo/shell/bulk_api.js
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/ops/delete_executor.cpp
             - src/mongo/db/catalog/index_key_validate.cpp
             - src/mongo/db/index/external_key_generator.h
-            - build/darwin/ssl/mongo/shell/mongo.cpp
             - src/mongo/db/query/subplan_runner.cpp
             - src/mongo/db/index/s2_key_generator.cpp
-            - build/darwin/ssl/mongo/buildinfo.cpp
             - src/mongo/shell/upgrade_check.js
             - src/mongo/util/password_digest.h
-            - build/darwin/ssl/mongo/base/error_codes.cpp
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
             - src/mongo/db/index/expression_params.h
             - src/mongo/db/catalog/index_key_validate.h
             - src/mongo/dbtests/query_stage_count.cpp
-            - build/darwin/ssl/mongo/db/fts/stop_words_list.h
             - src/mongo/db/index/fts_key_generator.cpp
             - src/mongo/db/index/external_key_generator.cpp
             - src/mongo/db/repair_database.h
