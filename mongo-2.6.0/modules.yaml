@@ -2092,6 +2092,19 @@
             group_files:
             - build/darwin/ssl/mongo/shell/mongo-server.cpp
             - build/darwin/ssl/mongo/shell/mongo.cpp
+        -   group_title: Shell Bulk API
+            group_description: 'Helpers for using write command bulk operations from the shell.  If
+            write commands are not supported, it emulates the bulk operation by executing the
+            commands one at a time using old style write operations and returns the whole result
+            batch to the user.'
+            group_files:
+            - src/mongo/shell/bulk_api.js
+        -   group_title: Shell Upgrade Checker
+            group_description: 'Helper to check whether the mongod version that this shell is
+            connected to has invalid databases somehow, likely because we now disallow some bad data
+            that we once allowed.  See http://dochub.mongodb.org/core/upgrade_checker_help'
+            group_files:
+            - src/mongo/shell/upgrade_check.js
         -   group_title: Javascript Helpers
             group_description: Javascript files that get wrapped in strings and put
                 in cpp files. See the "env.JSHeader" calls# in src/mongo/SConscript
@@ -5698,11 +5711,9 @@
             - src/mongo/db/catalog/index_pregen.cpp
             - src/mongo/db/query/query_knobs.cpp
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/shell/bulk_api.js
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/catalog/index_key_validate.cpp
             - src/mongo/db/query/subplan_runner.cpp
-            - src/mongo/shell/upgrade_check.js
             - src/mongo/util/password_digest.h
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
