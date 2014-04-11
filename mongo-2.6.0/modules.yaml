@@ -3690,6 +3690,22 @@
             - src/mongo/db/index_set.cpp
             - src/mongo/db/index_set.h
             - src/mongo/db/index_set_test.cpp
+            - src/mongo/db/index/2d_key_generator.cpp
+            - src/mongo/db/index/2d_key_generator.h
+            - src/mongo/db/index/expression_params.h
+            - src/mongo/db/index/external_key_generator.cpp
+            - src/mongo/db/index/external_key_generator.h
+            - src/mongo/db/index/fts_key_generator.cpp
+            - src/mongo/db/index/fts_key_generator.h
+            - src/mongo/db/index/hash_key_generator.cpp
+            - src/mongo/db/index/hash_key_generator.h
+            - src/mongo/db/index/haystack_key_generator.cpp
+            - src/mongo/db/index/haystack_key_generator.h
+            - src/mongo/db/index/index_descriptor.cpp
+            - src/mongo/db/index/key_generator.cpp
+            - src/mongo/db/index/key_generator.h
+            - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/index/s2_key_generator.h
         -   group_title: 'TODO: Name this group'
             group_description: 'Class representing an index spec, such as { "a" :
                 1, "b" : -1 }'
@@ -5677,41 +5693,25 @@
         module_groups:
         -   group_description: Uncategorized Group
             group_files:
-            - src/mongo/db/index/key_generator.cpp
-            - src/mongo/db/index/key_generator.h
             - src/mongo/util/password_digest.cpp
             - src/mongo/db/query/query_planner_text_test.cpp
-            - src/mongo/db/index/fts_key_generator.h
-            - src/mongo/db/index/haystack_key_generator.cpp
             - src/mongo/db/catalog/index_pregen.cpp
-            - src/mongo/db/index/index_descriptor.cpp
-            - src/mongo/db/index/2d_key_generator.cpp
-            - src/mongo/db/index/hash_key_generator.h
             - src/mongo/db/query/query_knobs.cpp
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/index/hash_key_generator.cpp
             - src/mongo/shell/bulk_api.js
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/catalog/index_key_validate.cpp
-            - src/mongo/db/index/external_key_generator.h
             - src/mongo/db/query/subplan_runner.cpp
-            - src/mongo/db/index/s2_key_generator.cpp
             - src/mongo/shell/upgrade_check.js
             - src/mongo/util/password_digest.h
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
-            - src/mongo/db/index/expression_params.h
             - src/mongo/db/catalog/index_key_validate.h
             - src/mongo/dbtests/query_stage_count.cpp
-            - src/mongo/db/index/fts_key_generator.cpp
-            - src/mongo/db/index/external_key_generator.cpp
             - src/mongo/db/repair_database.h
-            - src/mongo/db/index/haystack_key_generator.h
-            - src/mongo/db/index/2d_key_generator.h
             - src/mongo/db/query/query_knobs.h
             - src/mongo/db/conn_pool_options.cpp
             - src/mongo/db/query/subplan_runner.h
-            - src/mongo/db/index/s2_key_generator.h
             group_title: Uncategorized Group
         module_name: uncategorized_module
         module_title: Uncategorized Module
