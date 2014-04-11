@@ -4706,10 +4706,11 @@
             group_files:
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
-        -   group_title: Client Driver Examples
-            group_description: Examples of how to use the client driver that get built
-                in the server
-            group_files: []
+        -   group_title: Connection Pool Options
+            group_description: 'Startup configuration for client side connection pools.'
+            group_files:
+            - src/mongo/db/conn_pool_options.h
+            - src/mongo/db/conn_pool_options.cpp
         -   group_title: Mongoperf
             group_description: Old performance testing utility. Builds the "mongoperf"
                 binary.  Not to be confused with mongo-perf.
@@ -5724,13 +5725,11 @@
         -   group_description: Uncategorized Group
             group_files:
             - src/mongo/db/catalog/index_pregen.cpp
-            - src/mongo/db/conn_pool_options.h
             - src/mongo/db/catalog/index_key_validate.cpp
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
             - src/mongo/db/catalog/index_key_validate.h
             - src/mongo/db/repair_database.h
-            - src/mongo/db/conn_pool_options.cpp
             group_title: Uncategorized Group
         module_name: uncategorized_module
         module_title: Uncategorized Module
