@@ -3937,25 +3937,54 @@
             - src/mongo/db/queryutil-inl.h
             - src/mongo/db/queryutil.cpp
             - src/mongo/db/queryutil.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Old way of doing document projections. Given a doc
-                and a projection, transforms the document.## what calls it, and where
-                are projections done now?
+        -   group_title: 'Projection Helper'
+            group_description: 'TODO: Description.  This does not seem to be used in the core query
+            system'
             group_files:
             - src/mongo/db/projection.cpp
             - src/mongo/db/projection.h
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Entry point for various database operations## locks:
-                we should clarify locking, e.g. everything in update.cpp happens##
-                in the context of a db write lock## should clarify the relationship
-                between these and db/instance.cpp (not built in anywhere)'
+        -   group_title: 'Count Command'
+            group_description: 'Implementation of the count command to count all documents in a
+            collection.'
             group_files:
             - src/mongo/db/ops/count.cpp
             - src/mongo/db/ops/count.h
-            - src/mongo/db/ops/delete.cpp
-            - src/mongo/db/ops/delete.h
+    -   module_title: Insert Operations
+        module_name: insert_operations
+        module_description: 'Code that is specific to insert operations'
+        module_groups:
+        -   group_title: 'Insert Utilities'
+            group_description: 'Utilities that are used for insert operations.  Includes the code
+            that automatically fills in zero timestamps and adds the "_id" field if it was not
+            present.  Since inserts can happen on two different code paths, there is code that uses
+            this in the legacy insert request handling as well as the insert write command request
+            handling.'
+            group_files:
             - src/mongo/db/ops/insert.cpp
             - src/mongo/db/ops/insert.h
+    -   module_title: Delete Operations
+        module_name: delete_operations
+        module_description: 'Code that is specific to deletion operations'
+        module_groups:
+        -   group_title: 'Legacy Delete Function'
+            group_description: 'Standalone function to perform a delete operation.  Nothing more
+            than a thin shim around the core deletion functionality.'
+            group_files:
+            - src/mongo/db/ops/delete.cpp
+            - src/mongo/db/ops/delete.h
+        -   group_title: 'Delete Request'
+            group_description: 'Parsed representation of a delete request that contains all
+            information needed to execute a delete operation.'
+            group_files:
+            - src/mongo/db/ops/delete_request.h
+        -   group_title: 'Delete Executor'
+            group_description: 'Class for parsing and executing a delete operation.  This exists to
+            centralize all the delete execution code as well as to separate the processing and
+            actual execution of a delete request so that as much is done outside a write lock as
+            possible.'
+            group_files:
+            - src/mongo/db/ops/delete_executor.h
+            - src/mongo/db/ops/delete_executor.cpp
     -   module_title: Update System
         module_name: update_system
         module_description: System for handling update operations against the database.  See
@@ -4066,11 +4095,19 @@
             - src/mongo/db/ops/field_checker.cpp
             - src/mongo/db/ops/field_checker.h
             - src/mongo/db/ops/field_checker_test.cpp
-        -   group_title: Update Request
-            group_description: Container for all information needed to execute an
-                update operation
+        -   group_title: 'Update Request'
+            group_description: 'Parsed representation of an update request that contains all
+            information needed to execute an update operation.'
             group_files:
             - src/mongo/db/ops/update_request.h
+        -   group_title: 'Update Executor'
+            group_description: 'Class for parsing and executing an update operation.  This exists to
+            centralize all the update execution code as well as to separate the processing and
+            actual execution of an update request so that as much is done outside a write lock as
+            possible.'
+            group_files:
+            - src/mongo/db/ops/update_executor.h
+            - src/mongo/db/ops/update_executor.cpp
         -   group_title: Update Result
             group_description: Container for all information about the results of
                 an update operation
@@ -5640,14 +5677,11 @@
         module_groups:
         -   group_description: Uncategorized Group
             group_files:
-            - src/mongo/db/ops/delete_request.h
             - src/mongo/db/index/key_generator.cpp
-            - src/mongo/db/ops/update_executor.h
             - src/mongo/db/index/key_generator.h
             - src/mongo/util/password_digest.cpp
             - src/mongo/db/query/query_planner_text_test.cpp
             - src/mongo/db/index/fts_key_generator.h
-            - src/mongo/db/ops/delete_executor.h
             - src/mongo/db/index/haystack_key_generator.cpp
             - src/mongo/db/catalog/index_pregen.cpp
             - src/mongo/db/index/index_descriptor.cpp
@@ -5655,11 +5689,9 @@
             - src/mongo/db/index/hash_key_generator.h
             - src/mongo/db/query/query_knobs.cpp
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/ops/update_executor.cpp
             - src/mongo/db/index/hash_key_generator.cpp
             - src/mongo/shell/bulk_api.js
             - src/mongo/db/conn_pool_options.h
-            - src/mongo/db/ops/delete_executor.cpp
             - src/mongo/db/catalog/index_key_validate.cpp
             - src/mongo/db/index/external_key_generator.h
             - src/mongo/db/query/subplan_runner.cpp
