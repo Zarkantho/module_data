@@ -5070,6 +5070,15 @@
     system_description: Storage layer for MongoDB.  Includes structural metadata as
         well as code to access data files, metadata files, and the journal on disk
     system_modules:
+    -   module_title: Repair Database
+        module_name: repair_database
+        module_description: 'Implementation of the repair database command.'
+        module_groups:
+        -   group_title: 'Repair Database'
+            group_description: 'Implementation of the repair database command.'
+            group_files:
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/repair_database.h
     -   module_title: File Allocation
         module_name: file_allocation
         module_description: 'TODO: file_allocation description'
@@ -5718,27 +5727,3 @@
             group_description: Legacy parameters set via setParameter.
             group_files:
             - src/mongo/db/auth/auth_server_parameters.cpp
--   system_description: Uncategorized System
-    system_modules:
-    -   module_description: Uncategorized Module
-        module_groups:
-        -   group_description: Uncategorized Group
-            group_files: []
-            group_title: Uncategorized Group
-        module_name: uncategorized_module
-        module_title: Uncategorized Module
-    system_name: uncategorized_system
-    system_title: Uncategorized System
--   system_description: Uncategorized System
-    system_modules:
-    -   module_description: Uncategorized Module
-        module_groups:
-        -   group_description: Uncategorized Group
-            group_files:
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/repair_database.h
-            group_title: Uncategorized Group
-        module_name: uncategorized_module
-        module_title: Uncategorized Module
-    system_name: uncategorized_system
-    system_title: Uncategorized System
