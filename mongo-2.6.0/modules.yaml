@@ -2494,7 +2494,8 @@
             - src/mongo/util/mongoutils/str.h
 -   system_title: Replication
     system_name: replication
-    system_description: 'TODO: High level description of Replication'
+    system_description: 'Code related specifically to replication support in MongoDB.  See
+        http://docs.mongodb.org/manual/replication/ for a high level description.'
     system_modules:
     -   module_title: Master Slave
         module_name: master_slave
@@ -2736,7 +2737,8 @@
             - src/mongo/db/write_concern_options.h
 -   system_title: Sharding
     system_name: sharding
-    system_description: 'Sharding code TODO: high level description of sharding protocol'
+    system_description: 'Code related specifically to sharding support in MongoDB.  See
+        http://docs.mongodb.org/manual/sharding/ for a high level description.'
     system_modules:
     -   module_title: Writeback Listener
         module_name: writeback_listener
