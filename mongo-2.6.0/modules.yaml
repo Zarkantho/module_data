@@ -5688,6 +5688,16 @@
             group_files:
             - src/mongo/db/auth/security_key.cpp
             - src/mongo/db/auth/security_key.h
+    -   module_title: Authentication Utilities
+        module_name: authentication_utilities
+        module_description: 'Utilities used for authentication'
+        module_groups:
+        -   group_title: 'Password Digest'
+            group_description: 'Securely hash the password so that it is not sent or stored in
+            plaintext'
+            group_files:
+            - src/mongo/util/password_digest.cpp
+            - src/mongo/util/password_digest.h
     -   module_title: Legacy Code
         module_name: legacy_code
         module_description: Legacy Auth Code
@@ -5713,11 +5723,9 @@
         module_groups:
         -   group_description: Uncategorized Group
             group_files:
-            - src/mongo/util/password_digest.cpp
             - src/mongo/db/catalog/index_pregen.cpp
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/catalog/index_key_validate.cpp
-            - src/mongo/util/password_digest.h
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
             - src/mongo/db/catalog/index_key_validate.h
