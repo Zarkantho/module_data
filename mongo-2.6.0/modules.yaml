@@ -2037,11 +2037,13 @@
             - src/mongo/dbtests/perf/perftest.cpp
             - src/mongo/dbtests/perftests.cpp
             - src/mongo/dbtests/pipelinetests.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
             - src/mongo/dbtests/profile_test.cpp
             - src/mongo/dbtests/query_multi_plan_runner.cpp
             - src/mongo/dbtests/query_single_solution_runner.cpp
             - src/mongo/dbtests/query_stage_and.cpp
             - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
             - src/mongo/dbtests/query_stage_fetch.cpp
             - src/mongo/dbtests/query_stage_limit_skip.cpp
             - src/mongo/dbtests/query_stage_merge_sort.cpp
@@ -3802,7 +3804,7 @@
             group_files:
             - src/mongo/db/matcher/match_details.cpp
             - src/mongo/db/matcher/match_details.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Uncategorized Core Query System'
             group_description: Planning/parsing/optimization for new query framework##
                 not execution as well? (what are all these *runner.cpp files?)
             group_files:
@@ -3865,6 +3867,8 @@
             - src/mongo/db/query/planner_ixselect_test.cpp
             - src/mongo/db/query/qlog.cpp
             - src/mongo/db/query/qlog.h
+            - src/mongo/db/query/query_knobs.cpp
+            - src/mongo/db/query/query_knobs.h
             - src/mongo/db/query/query_planner.cpp
             - src/mongo/db/query/query_planner.h
             - src/mongo/db/query/query_planner_common.h
@@ -3872,6 +3876,7 @@
             - src/mongo/db/query/query_planner_test.cpp
             - src/mongo/db/query/query_planner_test_lib.cpp
             - src/mongo/db/query/query_planner_test_lib.h
+            - src/mongo/db/query/query_planner_text_test.cpp
             - src/mongo/db/query/query_settings.cpp
             - src/mongo/db/query/query_settings.h
             - src/mongo/db/query/query_solution.cpp
@@ -3883,6 +3888,8 @@
             - src/mongo/db/query/stage_builder.cpp
             - src/mongo/db/query/stage_builder.h
             - src/mongo/db/query/stage_types.h
+            - src/mongo/db/query/subplan_runner.cpp
+            - src/mongo/db/query/subplan_runner.h
             - src/mongo/db/query/type_explain.cpp
             - src/mongo/db/query/type_explain.h
         -   group_title: LRU Key Value Cache
@@ -5707,22 +5714,15 @@
         -   group_description: Uncategorized Group
             group_files:
             - src/mongo/util/password_digest.cpp
-            - src/mongo/db/query/query_planner_text_test.cpp
             - src/mongo/db/catalog/index_pregen.cpp
-            - src/mongo/db/query/query_knobs.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/catalog/index_key_validate.cpp
-            - src/mongo/db/query/subplan_runner.cpp
             - src/mongo/util/password_digest.h
             - src/mongo/db/catalog/index_pregen.h
             - src/mongo/db/repair_database.cpp
             - src/mongo/db/catalog/index_key_validate.h
-            - src/mongo/dbtests/query_stage_count.cpp
             - src/mongo/db/repair_database.h
-            - src/mongo/db/query/query_knobs.h
             - src/mongo/db/conn_pool_options.cpp
-            - src/mongo/db/query/subplan_runner.h
             group_title: Uncategorized Group
         module_name: uncategorized_module
         module_title: Uncategorized Module
