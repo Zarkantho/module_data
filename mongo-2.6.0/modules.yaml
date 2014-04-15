@@ -3658,69 +3658,135 @@
         module_name: indexing
         module_description: 'TODO: indexing description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: 'Indexes and index management code. TODO: go into more
-                details about this. The code is new.# The two parts of the interface
-                that are nice entry points are the "index_access_method.h"# (interface
-                for manipulating and accessing the index itself), and "index_cursor.h"
-                (interface for# getting data from an index) files.## can you say a
-                bit more about the structure in here, wrt. a hypothetical## member
-                of the ''open source community'' who wants to add a new type of##
-                index to mongodb?'
+        -   group_title: 'Index Interface'
+            group_description: 'Top level interface for all indexes.'
+            group_files:
+            - src/mongo/db/index/index_access_method.h
+        -   group_title: 'Btree Backed Index Interface'
+            group_description: 'Top level interface for indexes that are backed by a btree.'
+            group_files:
+            - src/mongo/db/index/btree_based_access_method.h
+            - src/mongo/db/index/btree_based_access_method.cpp
+        -   group_title: 'Index Key Generation Interface'
+            group_description: 'Interface for a class that is responsible for generating the index
+            keys for a given document.'
+            group_files:
+            - src/mongo/db/index/key_generator.cpp
+            - src/mongo/db/index/key_generator.h
+        -   group_title: 'Index Cursor Interface'
+            group_description: 'Top level interface for iterating elements in an index.'
+            group_files:
+            - src/mongo/db/index/index_cursor.h
+        -   group_title: 'Btree Index Cursor'
+            group_description: 'Cursor to iterate the elements in a btree based index.'
+            group_files:
+            - src/mongo/db/index/btree_index_cursor.cpp
+            - src/mongo/db/index/btree_index_cursor.h
+        -   group_title: 'Btree Interface'
+            group_description: 'Interface to interact with the underlying btree datastructure.
+            Abstracts away the difference between our different index formats.'
+            group_files:
+            - src/mongo/db/index/btree_interface.cpp
+            - src/mongo/db/index/btree_interface.h
+        -   group_title: 'Btree Indexes'
+            group_description: 'Btree based index implementation'
+            group_files:
+            - src/mongo/db/index/btree_access_method.cpp
+            - src/mongo/db/index/btree_access_method.h
+            - src/mongo/db/index/btree_key_generator.cpp
+            - src/mongo/db/index/btree_key_generator.h
+        -   group_title: '2d Indexes'
+            group_description: '2d index implementation'
             group_files:
             - src/mongo/db/index/2d_access_method.cpp
             - src/mongo/db/index/2d_access_method.h
             - src/mongo/db/index/2d_common.h
-            - src/mongo/db/index/btree_access_method.cpp
-            - src/mongo/db/index/btree_access_method.h
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/index/btree_based_access_method.h
-            - src/mongo/db/index/btree_index_cursor.cpp
-            - src/mongo/db/index/btree_index_cursor.h
-            - src/mongo/db/index/btree_interface.cpp
-            - src/mongo/db/index/btree_interface.h
-            - src/mongo/db/index/btree_key_generator.cpp
-            - src/mongo/db/index/btree_key_generator.h
-            - src/mongo/db/index/expression_index.h
+            - src/mongo/db/index/2d_key_generator.cpp
+            - src/mongo/db/index/2d_key_generator.h
+        -   group_title: 'S2 Indexes'
+            group_description: 'S2 index implementation'
+            group_files:
+            - src/mongo/db/index/s2_access_method.cpp
+            - src/mongo/db/index/s2_access_method.h
+            - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/index/s2_key_generator.h
+        -   group_title: 'Fts Indexes'
+            group_description: 'Fts index implementation'
+            group_files:
             - src/mongo/db/index/fts_access_method.cpp
             - src/mongo/db/index/fts_access_method.h
+            - src/mongo/db/index/fts_key_generator.cpp
+            - src/mongo/db/index/fts_key_generator.h
+        -   group_title: 'Hashed Indexes'
+            group_description: 'Hashed index implementation'
+            group_files:
             - src/mongo/db/index/hash_access_method.cpp
             - src/mongo/db/index/hash_access_method.h
+            - src/mongo/db/index/hash_key_generator.cpp
+            - src/mongo/db/index/hash_key_generator.h
+        -   group_title: 'Haystack Indexes'
+            group_description: 'Haystack index implementation'
+            group_files:
             - src/mongo/db/index/haystack_access_method.cpp
             - src/mongo/db/index/haystack_access_method.h
             - src/mongo/db/index/haystack_access_method_internal.h
-            - src/mongo/db/index/index_access_method.h
-            - src/mongo/db/index/index_cursor.h
+            - src/mongo/db/index/haystack_key_generator.cpp
+            - src/mongo/db/index/haystack_key_generator.h
+        -   group_title: 'Index Descriptor'
+            group_description: 'In memory datastructure containing all information about a single
+            index.'
+            group_files:
+            - src/mongo/db/index/index_descriptor.cpp
             - src/mongo/db/index/index_descriptor.h
-            - src/mongo/db/index/s2_access_method.cpp
-            - src/mongo/db/index/s2_access_method.h
+        -   group_title: 'Index Expression Helpers'
+            group_description: 'Helpers for indexes where the index entries are some function of the
+            index, including s2 indexes and hashed indexes.'
+            group_files:
+            - src/mongo/db/index/expression_index.h
+        -   group_title: 'Index Spec Parsing'
+            group_description: 'Helpers to parse index specifications, like the ones that come from
+            users when they run the ensureIndex command'
+            group_files:
+            - src/mongo/db/index/expression_params.h
+        -   group_title: 'Index Key Check'
+            group_description: 'Seems to be just a utility to check if a key is too large.  Used
+            from things external to the indexing system to test the validity of index keys.'
+            group_files:
+            - src/mongo/db/index/external_key_generator.cpp
+            - src/mongo/db/index/external_key_generator.h
+        -   group_title: 'Background Index Build'
+            group_description: 'Code for building an index.  Also can handle spawing a thread to
+            build an index in the background.'
+            group_files:
             - src/mongo/db/index_builder.cpp
             - src/mongo/db/index_builder.h
+        -   group_title: 'Index Legacy Exceptions'
+            group_description: 'Behavior that the current implementation of the code and that some
+            indexes require that does not fit in with the model for the main index interface.'
+            group_files:
             - src/mongo/db/index_legacy.cpp
             - src/mongo/db/index_legacy.h
+        -   group_title: 'Index Names'
+            group_description: 'Enum of all the index types we currently support as well as
+            utilities to manage index strings and check whether we support a given index type.'
+            group_files:
             - src/mongo/db/index_names.cpp
             - src/mongo/db/index_names.h
+        -   group_title: 'Index Rebuilder'
+            group_description: 'Background job that removes and potentially rebuilds incomplete
+            indexes.  Whether we actually rebuild after removing the indexes is configurable at
+            server startup time using a command line or config file option.'
+            group_files:
             - src/mongo/db/index_rebuilder.cpp
             - src/mongo/db/index_rebuilder.h
+        -   group_title: 'Index Path Set'
+            group_description: 'Set of all field references (dotted field names) that have been
+            indexed in this collection.  Used to check whether an in place update will change a
+            field that is indexed and thus cannot be done in place.'
+            group_files:
             - src/mongo/db/index_set.cpp
             - src/mongo/db/index_set.h
             - src/mongo/db/index_set_test.cpp
-            - src/mongo/db/index/2d_key_generator.cpp
-            - src/mongo/db/index/2d_key_generator.h
-            - src/mongo/db/index/expression_params.h
-            - src/mongo/db/index/external_key_generator.cpp
-            - src/mongo/db/index/external_key_generator.h
-            - src/mongo/db/index/fts_key_generator.cpp
-            - src/mongo/db/index/fts_key_generator.h
-            - src/mongo/db/index/hash_key_generator.cpp
-            - src/mongo/db/index/hash_key_generator.h
-            - src/mongo/db/index/haystack_key_generator.cpp
-            - src/mongo/db/index/haystack_key_generator.h
-            - src/mongo/db/index/index_descriptor.cpp
-            - src/mongo/db/index/key_generator.cpp
-            - src/mongo/db/index/key_generator.h
-            - src/mongo/db/index/s2_key_generator.cpp
-            - src/mongo/db/index/s2_key_generator.h
         -   group_title: 'Index Key Pregeneration'
             group_description: 'Helpers to pregenerate a bunch of index keys outside a lock.'
             group_files:
