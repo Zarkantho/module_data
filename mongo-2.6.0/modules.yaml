@@ -4608,23 +4608,25 @@
         module_name: mongos_and_mongod_mains
         module_description: 'TODO: mongos_and_mongod_mains description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Main for mongod
+        -   group_title: 'Mongod Main'
+            group_description: 'Main for mongod.  Contains mongod startup and shutdown code as well
+            as the network message handler for mongod'
             group_files:
             - src/mongo/db/db.cpp
             - src/mongo/db/db.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Mongod Options'
             group_description: Mongod command line options
             group_files:
             - src/mongo/db/mongod_options.cpp
             - src/mongo/db/mongod_options.h
             - src/mongo/db/mongod_options_init.cpp
-        -   group_title: 'TODO: Name this group'
-            group_description: Main for mongos
+        -   group_title: 'Mongos Main'
+            group_description: 'Main for mongos.  Contains mongos startup and shutdown code as well
+            as the network message handler for mongos'
             group_files:
             - src/mongo/s/server.cpp
             - src/mongo/s/server.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Mongos Options'
             group_description: Mongos command line options
             group_files:
             - src/mongo/s/mongos_options.cpp
