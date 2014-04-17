@@ -2444,7 +2444,6 @@
             - src/mongo/util/concurrency/mutexdebugger.cpp
             - src/mongo/util/concurrency/mutexdebugger.h
             - src/mongo/util/concurrency/mvar.h
-            - src/mongo/util/concurrency/qlock.h
             - src/mongo/util/concurrency/race.h
             - src/mongo/util/concurrency/shared_mutex_win.hpp
             - src/mongo/util/concurrency/simplerwlock.h
@@ -3534,26 +3533,56 @@
             - src/mongo/db/max_time.h
     -   module_title: Concurrency
         module_name: concurrency
-        module_description: 'TODO: concurrency description'
+        module_description: 'Concurrency management for operations on mongod as well as
+        synchronization primitives.'
         module_groups:
-        -   group_title: Core Database Locks
-            group_description: 'Core locks library. Only in mongod.
+        -   group_title: Mongod Concurrency System Interface
+            group_description: 'Top level entry point into the mongod concurrency system.'
+            group_files:
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/d_concurrency.h
+        -   group_title: Lock State
+            group_description: 'State of all the locks that this client/thread/operation has
+            aquired.  There is one LockState per thread stored in thread local storage.
 
-                TODO: Split up this section and go into more detail about the types
-                of locks used here.
+            The three lock types are:
 
-                TODO: There are also a bunch of concurrency related helpers in the
-                UTILITIES section.'
+            1. Global
+            2. DB Level - called "other" in the code
+            3. Special DB Level - called "nestable" in the code
+
+            The "Special DB Level" locks are for the "admin" and "local" databases.  The idea is
+            that sometimes we want to do something to one of those databases (like inserting into
+            the oplog), but we want still want to keep the lock on our original database (for
+            example, to preserve our ordering guarantees in relation to the oplog).  This is why the
+            lock is called "nestable".
+
+            All the DB level locks are "Reader Writer Locks", and the global lock is a "Quad Lock".'
+            group_files:
+            - src/mongo/db/lockstate.cpp
+            - src/mongo/db/lockstate.h
+        -   group_title: Reader Writer Locks
+            group_description: 'Implementation of a reader writer lock primitive.'
             group_files:
             - src/mongo/util/concurrency/rwlock.h
             - src/mongo/util/concurrency/rwlockimpl.cpp
             - src/mongo/util/concurrency/rwlockimpl.h
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/d_concurrency.h
-            - src/mongo/db/lockstat.cpp
-            - src/mongo/db/lockstat.h
-            - src/mongo/db/lockstate.cpp
-            - src/mongo/db/lockstate.h
+        -   group_title: Quad Locks
+            group_description: 'Implmentation of a lock with intents and an upgradeable lock state.
+
+            See http://technet.microsoft.com/en-us/library/aa213039(v=SQL.80).aspx for a general
+            discussion of locking.
+
+            The mapping between the names of the states are as follows:
+
+            <state in MongoDB Quad Lock> = <state in SQL Server Lock>
+            r = IS
+            w = IX
+            R = S
+            W = X
+            X = U'
+            group_files:
+            - src/mongo/util/concurrency/qlock.h
         -   group_title: Spin Locks
             group_description: Spin locks
             group_files:
@@ -3565,6 +3594,11 @@
             group_files:
             - src/mongo/util/concurrency/synchronization.cpp
             - src/mongo/util/concurrency/synchronization.h
+        -   group_title: Lock Stats
+            group_description: 'Statistics about locking behavior.'
+            group_files:
+            - src/mongo/db/lockstat.cpp
+            - src/mongo/db/lockstat.h
     -   module_title: Database Commands
         module_name: database_commands
         module_description: 'In the base MongoDB wire protocol, each packet has an
@@ -3688,6 +3722,20 @@
             group_files:
             - src/mongo/db/index/btree_interface.cpp
             - src/mongo/db/index/btree_interface.h
+        -   group_title: Btree Datastructure
+            group_description: Files containing the btree datastructure implementation.  Currently
+                this is the only index datastructure we use.  While this is intended to be a low
+                level datastructure, it currently has a few fingers into replication and other parts
+                of the server, including calling isMaster
+            group_files:
+            - src/mongo/db/structure/btree/btree.cpp
+            - src/mongo/db/structure/btree/btree.h
+            - src/mongo/db/structure/btree/btree_stats.cpp
+            - src/mongo/db/structure/btree/btree_stats.h
+            - src/mongo/db/structure/btree/btreebuilder.cpp
+            - src/mongo/db/structure/btree/btreebuilder.h
+            - src/mongo/db/structure/btree/key.cpp
+            - src/mongo/db/structure/btree/key.h
         -   group_title: 'Btree Indexes'
             group_description: 'Btree based index implementation'
             group_files:
@@ -5303,24 +5351,28 @@
             group_files:
             - src/mongo/util/logfile.cpp
             - src/mongo/util/logfile.h
-    -   module_title: Mmap
-        module_name: mmap
-        module_description: 'TODO: mmap description'
+    -   module_title: Data Files
+        module_name: data_files
+        module_description: 'Non journaling related code for dealing with database data files'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: mmap library (only depends on file allocation library)
+        -   group_title: 'Mmapped File Interface'
+            group_description: 'Portion of the code for interacting with memory mapped files that is
+            not platform specific.'
             group_files:
             - src/mongo/util/mmap.cpp
             - src/mongo/util/mmap.h
+        -   group_title: 'Posix Mmapped File Implementation'
+            group_description: 'Implementation for dealing with memory mapped files in a posix
+            system.'
+            group_files:
             - src/mongo/util/mmap_posix.cpp
-    -   module_title: Mmap File Interface
-        module_name: mmap_file_interface
-        module_description: 'TODO: mmap_file_interface description'
-        module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Interface to data file. Depends on journaling module.
-                These are the actual data files on disk# "<dbname>.#".  Handles file
-                preallocation.
+        -   group_title: 'Windows Mmapped File Implementation'
+            group_description: 'Implementation for dealing with memory mapped files in Windows.'
+            group_files:
+            - src/mongo/util/mmap_win.cpp
+        -   group_title: 'Data File Layout'
+            group_description: 'Class for interacting with a database data file and managing the on
+            disk data file format.'
             group_files:
             - src/mongo/db/storage/data_file.cpp
             - src/mongo/db/storage/data_file.h
@@ -5362,20 +5414,6 @@
             - src/mongo/db/structure/catalog/namespace.h
             - src/mongo/db/structure/catalog/namespace-inl.h
             - src/mongo/db/structure/catalog/namespace_test.cpp
-        -   group_title: Btree Datastructure
-            group_description: Files containing the btree datastructure code.  Currently
-                this is the only index datastructure we use.  While this is intended
-                to be a low level datastructure, it currently has a few fingers into
-                replication and other parts of the server, including calling isMaster
-            group_files:
-            - src/mongo/db/structure/btree/btree.cpp
-            - src/mongo/db/structure/btree/btree.h
-            - src/mongo/db/structure/btree/btree_stats.cpp
-            - src/mongo/db/structure/btree/btree_stats.h
-            - src/mongo/db/structure/btree/btreebuilder.cpp
-            - src/mongo/db/structure/btree/btreebuilder.h
-            - src/mongo/db/structure/btree/key.cpp
-            - src/mongo/db/structure/btree/key.h
         -   group_title: Index Catalog
             group_description: Classes to manage and iterate indexes.  There should
                 only be one index catalog per collection.  Contains some subset of
