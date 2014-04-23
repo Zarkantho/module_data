@@ -4708,9 +4708,35 @@
             group_description: 'MONGO_INITIALIZERs to add extra information to the server logs.'
             group_files:
             - src/mongo/db/server_extra_log_context.cpp
+    -   module_title: Mongod And Mongos Command Line Options
+        module_name: mongod_and_mongos_command_line_options
+        module_description: 'Command line options for mongod and mongos that are not connected to a
+        specific module.'
+        module_groups:
+        -   group_title: 'Server Options'
+            group_description: 'Command line options shared between mongod and mongos, such as some
+            basic network options'
+            group_files:
+            - src/mongo/db/server_options.cpp
+            - src/mongo/db/server_options.h
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/db/server_options_helpers.h
+            - src/mongo/db/server_options_test.cpp
+        -   group_title: 'Mongod Options'
+            group_description: Mongod command line options
+            group_files:
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/db/mongod_options.h
+            - src/mongo/db/mongod_options_init.cpp
+        -   group_title: 'Mongos Options'
+            group_description: Mongos command line options
+            group_files:
+            - src/mongo/s/mongos_options.cpp
+            - src/mongo/s/mongos_options.h
+            - src/mongo/s/mongos_options_init.cpp
     -   module_title: Mongos And Mongod Mains
         module_name: mongos_and_mongod_mains
-        module_description: 'TODO: mongos_and_mongod_mains description'
+        module_description: 'Main functions for the mongos and mongod binaries'
         module_groups:
         -   group_title: 'Mongod Main'
             group_description: 'Main for mongod.  Contains mongod startup and shutdown code as well
@@ -4718,38 +4744,27 @@
             group_files:
             - src/mongo/db/db.cpp
             - src/mongo/db/db.h
-        -   group_title: 'Mongod Options'
-            group_description: Mongod command line options
-            group_files:
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/db/mongod_options.h
-            - src/mongo/db/mongod_options_init.cpp
         -   group_title: 'Mongos Main'
             group_description: 'Main for mongos.  Contains mongos startup and shutdown code as well
             as the network message handler for mongos'
             group_files:
             - src/mongo/s/server.cpp
             - src/mongo/s/server.h
-        -   group_title: 'Mongos Options'
-            group_description: Mongos command line options
-            group_files:
-            - src/mongo/s/mongos_options.cpp
-            - src/mongo/s/mongos_options.h
-            - src/mongo/s/mongos_options_init.cpp
     -   module_title: Startup Initialization
         module_name: startup_initialization
         module_description: 'TODO: startup_initialization description'
         module_groups:
-        -   group_title: 'TODO: Name this group'
-            group_description: Check various expected startup conditions and log warnings
-                to the user if necessary## what uses these? everything? mongod/mongos
-                only? what sort of checks?
+        -   group_title: 'Startup Warnings'
+            group_description: 'Check various expected startup conditions, such as whether mongod is
+            running in 32 bit mode or on a numa machine, and log warnings to the startup warnings
+            log if necessary'
             group_files:
             - src/mongo/db/startup_warnings.cpp
             - src/mongo/db/startup_warnings.h
-        -   group_title: 'TODO: Name this group'
-            group_description: MONGO_INITIALIZER startup initialization framework.##
-                what should use these? any tool? mongod/mongos only?
+        -   group_title: 'Initialization Framework'
+            group_description: 'MONGO_INITIALIZER startup initialization framework.  Used by
+            anything that shares the server code, which currently includes the tools and the mongo
+            shell'
             group_files:
             - src/mongo/base/global_initializer.cpp
             - src/mongo/base/global_initializer.h
@@ -4768,16 +4783,14 @@
             - src/mongo/base/initializer_test.cpp
             - src/mongo/base/make_string_vector.cpp
             - src/mongo/base/make_string_vector.h
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Global State Initialization'
             group_description: Initialize the global state common to mongod and mongos,
                 such as logging.
             group_files:
             - src/mongo/db/initialize_server_global_state.cpp
             - src/mongo/db/initialize_server_global_state.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Options parser library (command line and config files)##
-                where do the options get stored / how can people grab options later?##
-                are they set once and immutable or can they be updated?
+        -   group_title: 'Options Parser'
+            group_description: Options parser library (command line and config files)
             group_files:
             - src/mongo/util/options_parser/constraints.cpp
             - src/mongo/util/options_parser/constraints.h
@@ -4798,29 +4811,19 @@
             - src/mongo/util/options_parser/startup_options.h
             - src/mongo/util/options_parser/value.cpp
             - src/mongo/util/options_parser/value.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Command line utilities## can you say a bit more? (give
-                an example?)
+        -   group_title: 'Command Line Censorship'
+            group_description: Utilities to censor passwords read in at startup
             group_files:
             - src/mongo/util/cmdline_utils/censor_cmdline.cpp
             - src/mongo/util/cmdline_utils/censor_cmdline.h
             - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Password Prompt'
             group_description: 'Only used to ask user for password at startup. TODO:
                 move into cmdline_utils directory'
             group_files:
             - src/mongo/util/password.cpp
             - src/mongo/util/password.h
-        -   group_title: 'TODO: Name this group'
-            group_description: Command line options shared between mongod and mongos##
-                give an example (--hostname?)
-            group_files:
-            - src/mongo/db/server_options.cpp
-            - src/mongo/db/server_options.h
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/db/server_options_helpers.h
-            - src/mongo/db/server_options_test.cpp
-        -   group_title: 'TODO: Name this group'
+        -   group_title: 'Server Parameters'
             group_description: ServerParameter class used to add new parameters to
                 the "setParameter" command. These can also be# configured to be runtime
                 modifiable.
