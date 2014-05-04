@@ -3429,11 +3429,10 @@
             - src/mongo/bson/mutable/mutable_bson_test.cpp
             - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
             - src/mongo/bson/mutable/mutable_bson_test_utils.h
--   system_title: Queries
-    system_name: queries
-    system_description: System for handling the processing of various queries, such
-        as full text search, geo queries, aggregation, and normal find queries.  This
-        layer also includes the update, remove, and insert systems
+-   system_title: Query And Operation Handling
+    system_name: query_and_operation_handling
+    system_description: 'Different operations that are supported in MongoDB, along with operation
+    management code.'
     system_modules:
     -   module_title: Client And Operation Tracking
         module_name: client_and_operation_tracking
@@ -3612,7 +3611,8 @@
 
             Well, it turns out that commands are simply queries against the special
             reserved "$cmd" collection.  What this means is that "db.serverStatus()"
-            calls "db.runCommand({serverStatus:1})" which then calls "db.$cmd.findOne({serverStatus:1})".
+            calls "db.runCommand({serverStatus:1})" which then calls
+            "db.$cmd.findOne({serverStatus:1})".
 
             See TODO: wiki on Commands for more details.'
         module_groups:
@@ -3656,9 +3656,6 @@
             - src/mongo/db/commands/get_last_error.cpp
             - src/mongo/db/commands/group.cpp
             - src/mongo/db/commands/hashcmd.cpp
-            - src/mongo/db/commands/index_filter_commands.cpp
-            - src/mongo/db/commands/index_filter_commands.h
-            - src/mongo/db/commands/index_filter_commands_test.cpp
             - src/mongo/db/commands/index_stats.cpp
             - src/mongo/db/commands/isself.cpp
             - src/mongo/db/commands/mr.cpp
@@ -3667,9 +3664,6 @@
             - src/mongo/db/commands/oplog_note.cpp
             - src/mongo/db/commands/parallel_collection_scan.cpp
             - src/mongo/db/commands/parameters.cpp
-            - src/mongo/db/commands/plan_cache_commands.cpp
-            - src/mongo/db/commands/plan_cache_commands.h
-            - src/mongo/db/commands/plan_cache_commands_test.cpp
             - src/mongo/db/commands/rename_collection.cpp
             - src/mongo/db/commands/rename_collection.h
             - src/mongo/db/commands/rename_collection_common.cpp
@@ -3859,16 +3853,114 @@
             group_files:
             - src/mongo/db/ttl.cpp
             - src/mongo/db/ttl.h
-    -   module_title: Core Query System
-        module_name: core_query_system
-        module_description: 'TODO: core query system description'
+-   system_title: Core Query System
+    system_name: core_query_system
+    system_description: 'Query execution framework.  Handles query parsing, optimization, and execution.
+
+    TODO: High level description of the phases of query execution.'
+    -   module_title: Query System Commands
+        module_name: query_system_commands
+        module_description: 'Database commands specifically for interacting with the query system.'
         module_groups:
-        -   group_title: Mongos Query System Commands Passthrough
+        -   group_title: Mongod Query System Commands
+            group_description: Query system commands for mongod.  They allow for some runtime
+            configuration of the query system.
+            group_files:
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/db/commands/index_filter_commands.h
+            - src/mongo/db/commands/index_filter_commands_test.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/commands/plan_cache_commands.h
+            - src/mongo/db/commands/plan_cache_commands_test.cpp
+        -   group_title: Mongos Query System Commands
             group_description: Query system commands for mongos.  These just pass
                 the operations through to the shards and aggregate the results.
             group_files:
             - src/mongo/s/commands/cluster_index_filter_cmd.cpp
             - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
+    -   module_title: Query System Parameters
+        module_name: query_system_parameters
+        module_description: 'User facing or hard coded tunables or configuration for the query
+        system.'
+        module_groups:
+        -   group_title: 'Query Constants'
+            group_description: 'Constants used in the query system.  Currently just has the maximum
+            batch size.'
+            group_files:
+            - src/mongo/db/query/find_constants.h
+        -   group_title: 'Query Knobs'
+            group_description: 'Server Parameters that can be used to tune the query system.'
+            group_files:
+            - src/mongo/db/query/query_knobs.cpp
+            - src/mongo/db/query/query_knobs.h
+        -   group_title: 'Query Settings'
+            group_description: 'User settings that put additional constraints on query execution.
+            See the index filter commands in index_filter_commands.cpp for an example.'
+            group_files:
+            - src/mongo/db/query/query_settings.cpp
+            - src/mongo/db/query/query_settings.h
+    -   module_title: Legacy Query Code
+        module_name: legacy_query_code
+        module_description: 'Old query code that is gradually being phased out.'
+        module_groups:
+        -   group_title: 'Legacy Query Utilities'
+            group_description: Legacy utilities for managing queries. Has utilities like range
+            intersection and application of skip and limit. These are allllmost dead. The
+            functionality should be replaced by the new matcher, expressions, and query system.
+            group_files:
+            - src/mongo/db/queryutil-inl.h
+            - src/mongo/db/queryutil.cpp
+            - src/mongo/db/queryutil.h
+    -   module_title: Query System Entry Points
+        module_name: query_system_entry_points
+        module_description: 'Entry points into the query system from outside the query system.  Note
+        that there may be other things in the query system that are used elsewhere, but this is
+        where query operations start.  For example, another query system entry point that may not be
+        here is the update code, which also directly interacts with the query system itself.'
+        -   group_title: 'Find and getMore Entry Point'
+            group_description: 'Top level entry point for find and getMore operations.  Essentially
+            a bunch of glue that connects all the different pieces of the query system together.'
+            group_files:
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/query/new_find.h
+        -   group_title: 'Count Command'
+            group_description: 'Entry point to run the count command.  Defers actual work to the
+            core query system.'
+            group_files:
+            - src/mongo/db/ops/count.cpp
+            - src/mongo/db/ops/count.h
+    -   module_title: Query Preprocessing
+        module_name: query_preprocessing
+        module_description: 'Classes that do processing of queries that is independent of the
+        database state, and does not involve coming up with a plan for executing the query.  This
+        parses the information contained in the query into a structured form that is easier to
+        manage as well as does some normalization of the query (for example, flattening a deep tree
+        of AND operations).'
+        module_groups:
+        -   group_title: 'Canonical Query'
+            group_description: 'Entry point into the first stage of processing a query.  This is
+            built on top of the Lite Parsed Query, which is the raw interface to information about
+            the query, and the parsed representations of the query and projection.'
+            group_files:
+            - src/mongo/db/query/canonical_query.cpp
+            - src/mongo/db/query/canonical_query.h
+            - src/mongo/db/query/canonical_query_test.cpp
+        -   group_title: 'Lite Parsed Query'
+            group_description: 'Lightweight class that parses a raw query message from the network
+            and provides accessors to make the data in the message easier to work with.  Created and
+            managed by the Canonical Query class.'
+            group_files:
+            - src/mongo/db/query/lite_parsed_query.cpp
+            - src/mongo/db/query/lite_parsed_query.h
+            - src/mongo/db/query/lite_parsed_query_test.cpp
+        -   group_title: 'Parsed Projection'
+            group_description: 'Class that parses and validates a projection object and can answer
+            questions that factor into query planning, such as what fields are required to satisfy
+            the projection.'
+            group_files:
+            - src/mongo/db/query/parsed_projection.cpp
+            - src/mongo/db/query/parsed_projection.h
+            - src/mongo/db/query/parsed_projection_test.cpp
         -   group_title: Query Expression Parser
             group_description: Matcher expressions. The point of all of this is to take a query
             string and turn it into a structured set of classes that represents a parsed query.
@@ -3933,29 +4025,65 @@
             group_files:
             - src/mongo/db/matcher/match_details.cpp
             - src/mongo/db/matcher/match_details.h
-        -   group_title: 'Query Runners'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: 'Projection Helper'
+            group_description: 'Standalone projection helper that does not represent a stage in the
+            core query system.  Seems to be used only in findAndModify.'
             group_files:
-            - src/mongo/db/query/cached_plan_runner.cpp
-            - src/mongo/db/query/cached_plan_runner.h
-            - src/mongo/db/query/eof_runner.cpp
-            - src/mongo/db/query/eof_runner.h
+            - src/mongo/db/projection.cpp
+            - src/mongo/db/projection.h
+    -   module_title: Query Planner
+        module_name: query_planner
+        module_description: 'This is the place where we try to make decisions that optimize query
+        execution.  We do both static and dynamic optimization.
+
+        The static optimization involves using information we have independendently of the actual
+        execution, such as whether a query can use an index, or whether a query can be satisfied
+        entirely by the index keys.
+
+        The dynamic optimization involves using information about the actual execution of the query
+        to determine what solution to use, which is done by executing multiple possible solutions
+        and caching the best one.'
+        module_groups:
+        -   group_title: 'Query Solution'
+            group_description: 'Abstract representation of a possible query execution plan.'
+            group_files:
+            - src/mongo/db/query/query_solution.cpp
+            - src/mongo/db/query/query_solution.h
+        -   group_title: LRU Key Value Cache
+            group_description: Key value store utility class with limited size and
+                an LRU replacement policy.
+            group_files:
+            - src/mongo/db/query/lru_key_value.h
+            - src/mongo/db/query/lru_key_value_test.cpp
+        -   group_title: 'Query Plan Cache'
+            group_description: 'Maps a parsed and canonicalized query to the best solution that we
+            know of.  Note that this is not the execution tree, but the solution tree, which is the
+            abstract representation of how we should execute the query.'
+            group_files:
+            - src/mongo/db/query/plan_cache.cpp
+            - src/mongo/db/query/plan_cache.h
+            - src/mongo/db/query/plan_cache_test.cpp
+        -   group_title: 'Get Query Runner'
+            group_description: 'Interface to get a query runner.  This contains the code that checks
+            if the plan is cached, looks at the plan parameters that are passed in, and executes the
+            query planner.  In essence, this code is the glue that is responsible for multiplexing
+            between the different types of runners.'
+            group_files:
             - src/mongo/db/query/get_runner.cpp
             - src/mongo/db/query/get_runner.h
             - src/mongo/db/query/get_runner_test.cpp
-            - src/mongo/db/query/idhack_runner.cpp
-            - src/mongo/db/query/idhack_runner.h
-            - src/mongo/db/query/internal_runner.cpp
-            - src/mongo/db/query/internal_runner.h
-            - src/mongo/db/query/multi_plan_runner.cpp
-            - src/mongo/db/query/multi_plan_runner.h
-            - src/mongo/db/query/runner.h
-            - src/mongo/db/query/runner_yield_policy.h
-            - src/mongo/db/query/single_solution_runner.cpp
-            - src/mongo/db/query/single_solution_runner.h
-            - src/mongo/db/query/subplan_runner.cpp
-            - src/mongo/db/query/subplan_runner.h
+        -   group_title: 'Query Explain Plan'
+            group_description: 'Code to handle constructing user facing explain output from internal
+            query execution information.'
+            group_files:
+            - src/mongo/db/query/explain_plan.cpp
+            - src/mongo/db/query/explain_plan.h
+        -   group_title: 'Explain Document Schema'
+            group_description: 'Schema of the document returned by the explain command, which is how
+            the user gets information about query execution.'
+            group_files:
+            - src/mongo/db/query/type_explain.cpp
+            - src/mongo/db/query/type_explain.h
         -   group_title: 'Query Planner'
             group_description: 'TODO: Document what these are for and how they fit into the query
             system.'
@@ -3975,13 +4103,6 @@
             - src/mongo/db/query/query_planner_test_lib.cpp
             - src/mongo/db/query/query_planner_test_lib.h
             - src/mongo/db/query/query_planner_text_test.cpp
-        -   group_title: 'Canonical Query'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/canonical_query.cpp
-            - src/mongo/db/query/canonical_query.h
-            - src/mongo/db/query/canonical_query_test.cpp
         -   group_title: 'Query Plan'
             group_description: 'TODO: Document what these are for and how they fit into the query
             system.'
@@ -3989,17 +4110,15 @@
             - src/mongo/db/query/internal_plans.h
             - src/mongo/db/query/plan_enumerator.cpp
             - src/mongo/db/query/plan_enumerator.h
-            - src/mongo/db/query/plan_executor.cpp
-            - src/mongo/db/query/plan_executor.h
             - src/mongo/db/query/plan_ranker.cpp
             - src/mongo/db/query/plan_ranker.h
-            - src/mongo/db/query/explain_plan.cpp
-            - src/mongo/db/query/explain_plan.h
-        -   group_title: 'Query Constants'
-            group_description: 'Constants used in the query system.  Currently just has the maximum
-            batch size.'
+        -   group_title: 'Interval'
+            group_description: 'TODO: Document what these are for and how they fit into the query
+            system.'
             group_files:
-            - src/mongo/db/query/find_constants.h
+            - src/mongo/db/query/interval.cpp
+            - src/mongo/db/query/interval.h
+            - src/mongo/db/query/interval_test.cpp
         -   group_title: 'Query Index Management'
             group_description: 'TODO: Document what these are for and how they fit into the query
             system.'
@@ -4014,75 +4133,17 @@
             - src/mongo/db/query/index_tag.cpp
             - src/mongo/db/query/index_tag.h
             - src/mongo/db/query/indexability.h
-        -   group_title: 'Lite Parsed Query'
-            group_description: 'Lightweight class that parses a raw query message from the network
-            and provides accessors to make the data in the message easier to work with.'
+    -   module_title: Query Execution
+        module_name: query_execution
+        module_description: 'This handles the actual execution of a query.  This is what interacts
+        with the indexes and the storage layer to actually fetch the stream of results.'
+        module_groups:
+        -   group_title: 'Query Plan Executor'
+            group_description: 'Class built on top of a Plan Stage tree that knows how to turn the
+            crank on query execution.'
             group_files:
-            - src/mongo/db/query/lite_parsed_query.cpp
-            - src/mongo/db/query/lite_parsed_query.h
-            - src/mongo/db/query/lite_parsed_query_test.cpp
-        -   group_title: 'Query Entry'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/query/new_find.h
-        -   group_title: 'Query Log'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/qlog.cpp
-            - src/mongo/db/query/qlog.h
-        -   group_title: 'Query Knobs'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/query_knobs.cpp
-            - src/mongo/db/query/query_knobs.h
-        -   group_title: 'Query Settings'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/query_settings.cpp
-            - src/mongo/db/query/query_settings.h
-        -   group_title: 'Query Solution'
-            group_description: 'Abstract representation of a possible query execution plan.'
-            group_files:
-            - src/mongo/db/query/query_solution.cpp
-            - src/mongo/db/query/query_solution.h
-        -   group_title: 'Interval'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/interval.cpp
-            - src/mongo/db/query/interval.h
-            - src/mongo/db/query/interval_test.cpp
-        -   group_title: 'Parsed Projection'
-            group_description: 'Class that parses and validates a projection object and can answer
-            some questions about the projection that have an effect on how the query should be
-            executed, such as whether the entire document needs to be loaded.'
-            group_files:
-            - src/mongo/db/query/parsed_projection.cpp
-            - src/mongo/db/query/parsed_projection.h
-            - src/mongo/db/query/parsed_projection_test.cpp
-        -   group_title: 'Explain Document Schema'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
-            group_files:
-            - src/mongo/db/query/type_explain.cpp
-            - src/mongo/db/query/type_explain.h
-        -   group_title: LRU Key Value Cache
-            group_description: Key value store utility class with limited size and
-                an LRU replacement policy.
-            group_files:
-            - src/mongo/db/query/lru_key_value.h
-            - src/mongo/db/query/lru_key_value_test.cpp
-        -   group_title: 'Query Plan Cache'
-            group_description: 'TODO: Document what these are for and how they fit into the system.'
-            group_files:
-            - src/mongo/db/query/plan_cache.cpp
-            - src/mongo/db/query/plan_cache.h
-            - src/mongo/db/query/plan_cache_test.cpp
+            - src/mongo/db/query/plan_executor.cpp
+            - src/mongo/db/query/plan_executor.h
         -   group_title: 'Query Plan Stage Interface'
             group_description: 'A plan stage is the basic building block of a query execution plan.
             The plan stage also keeps track of the state of the execution of the stage.'
@@ -4162,8 +4223,8 @@
             group_description: 'TODO: Document what these are for and how they fit into the system.'
             group_files:
             - src/mongo/db/exec/plan_stats.h
-        -   group_title: 'Query Framework Workspace'
-            group_description: 'TODO: Document what these are for and how they fit into the system.'
+        -   group_title: 'Working Set'
+            group_description: 'All data in use by a query operation.'
             group_files:
             - src/mongo/db/exec/working_set.cpp
             - src/mongo/db/exec/working_set.h
@@ -4171,26 +4232,34 @@
             - src/mongo/db/exec/working_set_common.h
             - src/mongo/db/exec/working_set_computed_data.h
             - src/mongo/db/exec/working_set_test.cpp
-        -   group_title: 'Legacy Query Utilities'
-            group_description: Legacy utilities for managing queries. Has utilities like range
-            intersection and application of skip and limit. These are allllmost dead. The
-            functionality should be replaced by the new matcher, expressions, and query system.
+        -   group_title: 'Query Runner Interface'
+            group_description: 'Interface for an object that '
             group_files:
-            - src/mongo/db/queryutil-inl.h
-            - src/mongo/db/queryutil.cpp
-            - src/mongo/db/queryutil.h
-        -   group_title: 'Projection Helper'
-            group_description: 'Standalone projection helper that does not represent a stage in the
-            core query system.  Seems to be used only in findAndModify.'
+            - src/mongo/db/query/runner.h
+        -   group_title: 'Cache Aware Query Runners'
+            group_description: 'Query runners that exist because of our strategy of running multiple
+            plans and caching the best one.  They both are aware of the cache and provide feeback to
+            it based on the results of the query execution.'
             group_files:
-            - src/mongo/db/projection.cpp
-            - src/mongo/db/projection.h
-        -   group_title: 'Count Command'
-            group_description: 'Entry point to run the count command.  Defers actual work to the
-            core query system.'
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/cached_plan_runner.h
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/db/query/multi_plan_runner.h
+        -   group_title: 'Query Runners'
+            group_description: 'TODO: Document what these are for and how they fit into the query
+            system.'
             group_files:
-            - src/mongo/db/ops/count.cpp
-            - src/mongo/db/ops/count.h
+            - src/mongo/db/query/eof_runner.cpp
+            - src/mongo/db/query/eof_runner.h
+            - src/mongo/db/query/idhack_runner.cpp
+            - src/mongo/db/query/idhack_runner.h
+            - src/mongo/db/query/internal_runner.cpp
+            - src/mongo/db/query/internal_runner.h
+            - src/mongo/db/query/runner_yield_policy.h
+            - src/mongo/db/query/single_solution_runner.cpp
+            - src/mongo/db/query/single_solution_runner.h
+            - src/mongo/db/query/subplan_runner.cpp
+            - src/mongo/db/query/subplan_runner.h
     -   module_title: Insert Operations
         module_name: insert_operations
         module_description: 'Code that is specific to insert operations'
@@ -4791,6 +4860,12 @@
             group_description: 'MONGO_INITIALIZERs to add extra information to the server logs.'
             group_files:
             - src/mongo/db/server_extra_log_context.cpp
+        -   group_title: 'Query Log'
+            group_description: 'Helper for verbose query logging.  Should be unified with the
+            logging system once it supports logging based on module.'
+            group_files:
+            - src/mongo/db/query/qlog.cpp
+            - src/mongo/db/query/qlog.h
     -   module_title: Mongod And Mongos Command Line Options
         module_name: mongod_and_mongos_command_line_options
         module_description: 'Command line options for mongod and mongos that are not connected to a
