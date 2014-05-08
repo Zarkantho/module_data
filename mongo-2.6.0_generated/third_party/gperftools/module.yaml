@@ -1,0 +1,3353 @@
+module_title: Gperftools
+module_name: gperftools
+module_description: Third Party - Google performance tools and tcmalloc
+module_groups:
+-   group_title: Gperftools
+    group_description: Third Party - Google performance tools and tcmalloc
+    group_files:
+    - src/third_party/shim_allocator.cpp
+    - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.cc
+    - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+    - src/third_party/gperftools-2.0/src/base/atomicops.h
+    - src/third_party/gperftools-2.0/src/base/basictypes.h
+    - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+    - src/third_party/gperftools-2.0/src/base/cycleclock.h
+    - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
+    - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+    - src/third_party/gperftools-2.0/src/base/elf_mem_image.h
+    - src/third_party/gperftools-2.0/src/base/googleinit.h
+    - src/third_party/gperftools-2.0/src/base/linux_syscall_support.h
+    - src/third_party/gperftools-2.0/src/base/logging.cc
+    - src/third_party/gperftools-2.0/src/base/logging.h
+    - src/third_party/gperftools-2.0/src/base/spinlock.cc
+    - src/third_party/gperftools-2.0/src/base/spinlock.h
+    - src/third_party/gperftools-2.0/src/base/spinlock_internal.cc
+    - src/third_party/gperftools-2.0/src/base/spinlock_internal.h
+    - src/third_party/gperftools-2.0/src/base/spinlock_linux-inl.h
+    - src/third_party/gperftools-2.0/src/base/spinlock_posix-inl.h
+    - src/third_party/gperftools-2.0/src/base/spinlock_win32-inl.h
+    - src/third_party/gperftools-2.0/src/base/synchronization_profiling.h
+    - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+    - src/third_party/gperftools-2.0/src/base/sysinfo.h
+    - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+    - src/third_party/gperftools-2.0/src/base/vdso_support.h
+    - src/third_party/gperftools-2.0/src/central_freelist.cc
+    - src/third_party/gperftools-2.0/src/central_freelist.h
+    - src/third_party/gperftools-2.0/src/common.cc
+    - src/third_party/gperftools-2.0/src/common.h
+    - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+    - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+    - src/third_party/gperftools-2.0/src/config.h
+    - src/third_party/gperftools-2.0/src/gperftools/heap-checker.h
+    - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+    - src/third_party/gperftools-2.0/src/gperftools/malloc_extension_c.h
+    - src/third_party/gperftools-2.0/src/gperftools/malloc_hook.h
+    - src/third_party/gperftools-2.0/src/gperftools/malloc_hook_c.h
+    - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+    - src/third_party/gperftools-2.0/src/gperftools/tcmalloc.h
+    - src/third_party/gperftools-2.0/src/internal_logging.cc
+    - src/third_party/gperftools-2.0/src/internal_logging.h
+    - src/third_party/gperftools-2.0/src/libc_override.h
+    - src/third_party/gperftools-2.0/src/libc_override_gcc_and_weak.h
+    - src/third_party/gperftools-2.0/src/libc_override_glibc.h
+    - src/third_party/gperftools-2.0/src/libc_override_osx.h
+    - src/third_party/gperftools-2.0/src/libc_override_redefine.h
+    - src/third_party/gperftools-2.0/src/linked_list.h
+    - src/third_party/gperftools-2.0/src/malloc_extension.cc
+    - src/third_party/gperftools-2.0/src/malloc_hook-inl.h
+    - src/third_party/gperftools-2.0/src/malloc_hook.cc
+    - src/third_party/gperftools-2.0/src/malloc_hook_mmap_freebsd.h
+    - src/third_party/gperftools-2.0/src/malloc_hook_mmap_linux.h
+    - src/third_party/gperftools-2.0/src/maybe_threads.cc
+    - src/third_party/gperftools-2.0/src/maybe_threads.h
+    - src/third_party/gperftools-2.0/src/memfs_malloc.cc
+    - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+    - src/third_party/gperftools-2.0/src/page_heap.cc
+    - src/third_party/gperftools-2.0/src/page_heap.h
+    - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+    - src/third_party/gperftools-2.0/src/pagemap.h
+    - src/third_party/gperftools-2.0/src/sampler.cc
+    - src/third_party/gperftools-2.0/src/sampler.h
+    - src/third_party/gperftools-2.0/src/span.cc
+    - src/third_party/gperftools-2.0/src/span.h
+    - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+    - src/third_party/gperftools-2.0/src/stack_trace_table.h
+    - src/third_party/gperftools-2.0/src/stacktrace.cc
+    - src/third_party/gperftools-2.0/src/stacktrace_arm-inl.h
+    - src/third_party/gperftools-2.0/src/stacktrace_config.h
+    - src/third_party/gperftools-2.0/src/stacktrace_generic-inl.h
+    - src/third_party/gperftools-2.0/src/stacktrace_libunwind-inl.h
+    - src/third_party/gperftools-2.0/src/stacktrace_powerpc-inl.h
+    - src/third_party/gperftools-2.0/src/stacktrace_win32-inl.h
+    - src/third_party/gperftools-2.0/src/stacktrace_x86-inl.h
+    - src/third_party/gperftools-2.0/src/static_vars.cc
+    - src/third_party/gperftools-2.0/src/static_vars.h
+    - src/third_party/gperftools-2.0/src/symbolize.cc
+    - src/third_party/gperftools-2.0/src/symbolize.h
+    - src/third_party/gperftools-2.0/src/system-alloc.cc
+    - src/third_party/gperftools-2.0/src/system-alloc.h
+    - src/third_party/gperftools-2.0/src/tcmalloc.cc
+    - src/third_party/gperftools-2.0/src/tcmalloc_guard.h
+    - src/third_party/gperftools-2.0/src/third_party/valgrind.h
+    - src/third_party/gperftools-2.0/src/thread_cache.cc
+    - src/third_party/gperftools-2.0/src/thread_cache.h
+    - src/third_party/gperftools-2.0/src/windows/mingw.h
+    - src/third_party/gperftools-2.0/src/windows/port.h
+    group_generated_data:
+    -   file_name: src/third_party/shim_allocator.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - /usr/bin/g++
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/googleinit.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/atomicops.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/basictypes.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/cycleclock.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/third_party/valgrind.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - /usr/bin/gcc
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: _RunningOnValgrind
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/elf_mem_image.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/googleinit.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/linux_syscall_support.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/logging.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface:
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int32_instead::FLAGS_verbose
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+            - src/third_party/gperftools-2.0/src/symbolize.cc
+        -   symbol_name: RawWrite(int, char const*, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/logging.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/cycleclock.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/synchronization_profiling.h
+        - src/third_party/gperftools-2.0/src/base/spinlock_internal.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/base/sysinfo.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        file_dependencies:
+        -   symbol_name: base::internal::SpinLockDelay(int volatile*, int, int)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock_internal.cc
+        -   symbol_name: base::internal::SpinLockWake(int volatile*, bool)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock_internal.cc
+        -   symbol_name: NumCPUs()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock_internal.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/spinlock_win32-inl.h
+        - src/third_party/gperftools-2.0/src/base/spinlock_linux-inl.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/base/spinlock_posix-inl.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/linux_syscall_support.h
+        - src/third_party/gperftools-2.0/src/base/spinlock_internal.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        file_interface:
+        -   symbol_name: base::internal::SpinLockDelay(int volatile*, int, int)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: base::internal::SpinLockWake(int volatile*, bool)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock_internal.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock_linux-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock_posix-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/spinlock_win32-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/synchronization_profiling.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/sysinfo.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/sysinfo.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/cycleclock.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::DumpProcSelfMaps(int)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/symbolize.cc
+        -   symbol_name: tcmalloc::FillProcSelfMaps(char*, int, bool*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: NumCPUs()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        file_dependencies:
+        -   symbol_name: RawWrite(int, char const*, unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/logging.cc
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int32_instead::FLAGS_verbose
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/logging.cc
+        -   symbol_name: _RunningOnValgrind
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
+    -   file_name: src/third_party/gperftools-2.0/src/base/sysinfo.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/base/vdso_support.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/central_freelist.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/linked_list.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::CentralFreeList::OverheadBytes()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::CentralFreeList::RemoveRange(void**, void**, int)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::CentralFreeList::InsertRange(void*, void*, int)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::CentralFreeList::tc_length()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::CentralFreeList::Init(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::PageHeap::RegisterSizeClass(tcmalloc::Span*, unsigned
+                long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::sizemap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Static::central_cache_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::PageHeap::Delete(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::Static::pageheap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::PageHeap::New(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::DLL_Prepend(tcmalloc::Span*, tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+    -   file_name: src/third_party/gperftools-2.0/src/central_freelist.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/common.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/system-alloc.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - /usr/bin/g++
+        file_interface:
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::metadata_system_bytes()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::SizeMap::Init()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::AlignmentForSize(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: TCMalloc_SystemAlloc(unsigned long, unsigned long*, unsigned
+                long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+    -   file_name: src/third_party/gperftools-2.0/src/common.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/config.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/heap-checker.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/malloc_extension_c.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/malloc_hook.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/malloc_hook_c.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/gperftools/tcmalloc.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/internal_logging.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: TCMalloc_Printer::printf(char const*, ...)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/common.cc
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/span.cc
+        file_dependencies:
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: MallocExtension::instance()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+    -   file_name: src/third_party/gperftools-2.0/src/internal_logging.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/libc_override.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/libc_override_gcc_and_weak.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/libc_override_glibc.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/libc_override_osx.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/libc_override_redefine.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/linked_list.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/malloc_extension.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/sysinfo.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/heap-checker.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/maybe_threads.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension_c.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: typeinfo for MallocExtension
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: SysAllocator::~SysAllocator()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: MallocExtension::GetHeapSample(std::string*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::VerifyAllMemory()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::VerifyMallocMemory(void const*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: typeinfo for SysAllocator
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: MallocExtension::instance()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+            - src/mongo/util/tcmalloc_server_status_section.cpp
+        -   symbol_name: MallocExtension::GetHeapGrowthStacks(std::string*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::ReleaseFreeMemory()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::Register(MallocExtension*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::~MallocExtension()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::VerifyArrayNewMemory(void const*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::VerifyNewMemory(void const*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::MallocMemoryStats(int*, unsigned long*,
+                int*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::FillProcSelfMaps(char*, int, bool*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+        -   symbol_name: _RunningOnValgrind
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
+        -   symbol_name: perftools_pthread_once(_opaque_pthread_once_t*, void (*)())
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+    -   file_name: src/third_party/gperftools-2.0/src/malloc_hook-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/malloc_hook.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_hook_c.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/base/linux_syscall_support.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_hook.h
+        - src/third_party/gperftools-2.0/src/maybe_threads.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/malloc_hook-inl.h
+        - src/third_party/gperftools-2.0/src/malloc_hook_mmap_linux.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/malloc_hook_mmap_freebsd.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: MallocHook::InvokeDeleteHookSlow(void const*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: base::internal::new_hook_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: base::internal::delete_hooks_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: base::internal::delete_hook_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: base::internal::new_hooks_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocHook::InvokeNewHookSlow(void const*, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int32_instead::FLAGS_verbose
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/logging.cc
+        -   symbol_name: perftools_pthread_once(_opaque_pthread_once_t*, void (*)())
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+    -   file_name: src/third_party/gperftools-2.0/src/malloc_hook_mmap_freebsd.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/malloc_hook_mmap_linux.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/maybe_threads.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/maybe_threads.h
+        - /usr/bin/g++
+        file_interface:
+        -   symbol_name: perftools_pthread_getspecific(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: perftools_pthread_key_create(unsigned long*, void (*)(void*))
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: perftools_pthread_once(_opaque_pthread_once_t*, void (*)())
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: perftools_pthread_setspecific(unsigned long, void*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/maybe_threads.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/memfs_malloc.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/sysinfo.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/googleinit.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/page_heap.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/system-alloc.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_double_instead::FLAGS_tcmalloc_release_rate
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::Delete(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::PageHeap::RegisterSizeClass(tcmalloc::Span*, unsigned
+                long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::PageHeap::ReleaseAtLeastNPages(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::GetNextRange(unsigned long, base::MallocRange*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::New(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::PageHeap::PageHeap()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::PageHeap::GetLargeSpanStats(tcmalloc::PageHeap::LargeSpanStats*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::Split(tcmalloc::Span*, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::GetSmallSpanStats(tcmalloc::PageHeap::SmallSpanStats*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::Static::sizemap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Static::stacktrace_allocator_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: TCMalloc_SystemAlloc(unsigned long, unsigned long*, unsigned
+                long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: TCMalloc_SystemRelease(void*, unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: tcmalloc::DeleteSpan(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::NewSpan(unsigned long, unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::DLL_Prepend(tcmalloc::Span*, tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::DLL_Length(tcmalloc::Span const*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::Static::growth_stacks_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+    -   file_name: src/third_party/gperftools-2.0/src/page_heap.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/pagemap.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/sampler.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/sampler.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface:
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int64_instead::FLAGS_tcmalloc_sample_parameter
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/sampler.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/span.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::DeleteSpan(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::NewSpan(unsigned long, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::DLL_Prepend(tcmalloc::Span*, tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::DLL_Length(tcmalloc::Span const*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::Static::span_allocator_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+    -   file_name: src/third_party/gperftools-2.0/src/span.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::StackTraceTable::StackTraceTable()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::StackTraceTable::AddTrace(tcmalloc::StackTrace
+                const&)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::StackTraceTable::~StackTraceTable()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::StackTraceTable::ReadStackTracesAndClear()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::Static::bucket_allocator_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+    -   file_name: src/third_party/gperftools-2.0/src/stack_trace_table.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/stacktrace_powerpc-inl.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/stacktrace_generic-inl.h
+        - src/third_party/gperftools-2.0/src/stacktrace_arm-inl.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/base/elf_mem_image.h
+        - src/third_party/gperftools-2.0/src/stacktrace_config.h
+        - src/third_party/gperftools-2.0/src/stacktrace_x86-inl.h
+        - src/third_party/gperftools-2.0/src/base/vdso_support.h
+        - src/third_party/gperftools-2.0/src/stacktrace_libunwind-inl.h
+        - src/third_party/gperftools-2.0/src/stacktrace_win32-inl.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_arm-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_config.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_generic-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_libunwind-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_powerpc-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_win32-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/stacktrace_x86-inl.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/static_vars.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/sampler.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::Static::sizemap_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::Static::bucket_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        -   symbol_name: tcmalloc::Static::stacktrace_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::Static::central_cache_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::Static::sampled_objects_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::Static::pageheap_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::Static::InitStaticVars()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::Static::span_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::Static::growth_stacks_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::PageHeap::PageHeap()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::CentralFreeList::Init(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::SizeMap::Init()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+    -   file_name: src/third_party/gperftools-2.0/src/static_vars.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/symbolize.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/symbolize.h
+        - src/third_party/gperftools-2.0/src/base/sysinfo.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/logging.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: tcmalloc::DumpProcSelfMaps(int)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int32_instead::FLAGS_verbose
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/logging.cc
+    -   file_name: src/third_party/gperftools-2.0/src/symbolize.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/system-alloc.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: TCMalloc_SystemAlloc(unsigned long, unsigned long*, unsigned
+                long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: TCMalloc_SystemRelease(void*, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: _sys_alloc
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: SysAllocator::~SysAllocator()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: typeinfo for SysAllocator
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+    -   file_name: src/third_party/gperftools-2.0/src/system-alloc.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/libc_override_osx.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_hook_c.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/mongo/platform/compiler_msvc.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_hook.h
+        - src/third_party/gperftools-2.0/src/maybe_threads.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/tcmalloc_guard.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/malloc_hook-inl.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/mongo/platform/compiler.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/linked_list.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/system-alloc.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/libc_override_redefine.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/thread_cache.h
+        - src/third_party/gperftools-2.0/src/libc_override_gcc_and_weak.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/mongo/platform/compiler_gcc.h
+        - src/third_party/gperftools-2.0/src/sampler.h
+        - src/third_party/gperftools-2.0/src/libc_override_glibc.h
+        - src/third_party/gperftools-2.0/src/gperftools/tcmalloc.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/libc_override.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface: []
+        file_dependencies:
+        -   symbol_name: typeinfo for MallocExtension
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::pageheap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::PageHeap::Delete(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::Static::span_allocator_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::CentralFreeList::tc_length()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: tcmalloc::metadata_system_bytes()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: MallocExtension::GetHeapGrowthStacks(std::string*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_double_instead::FLAGS_tcmalloc_release_rate
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: base::internal::new_hook_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: tcmalloc::ThreadCache::overall_thread_cache_size_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::StackTraceTable::AddTrace(tcmalloc::StackTrace
+                const&)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        -   symbol_name: tcmalloc::threadcache_allocator
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::AlignmentForSize(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: _sys_alloc
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::ListTooLong(tcmalloc::ThreadCache::FreeList*,
+                unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::ThreadCache::BecomeIdle()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::CentralFreeList::OverheadBytes()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: MallocExtension::GetHeapSample(std::string*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::StackTraceTable::~StackTraceTable()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        -   symbol_name: tcmalloc::ThreadCache::tsd_inited_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: MallocHook::InvokeDeleteHookSlow(void const*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: MallocExtension::ReleaseFreeMemory()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::ThreadCache::Scavenge()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::Static::growth_stacks_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::central_cache_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::PageHeap::Split(tcmalloc::Span*, unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: _RunningOnValgrind
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
+        -   symbol_name: tcmalloc::PageHeap::New(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::Static::sizemap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::ThreadCache::heap_key_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: perftools_pthread_getspecific(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+        -   symbol_name: tcmalloc::ThreadCache::InitTSD()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::ThreadCache::GetThreadStats(unsigned long long*,
+                unsigned long long*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: base::internal::delete_hooks_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: tcmalloc::PageHeap::ReleaseAtLeastNPages(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: MallocExtension::VerifyMallocMemory(void const*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: MallocExtension::instance()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: base::internal::delete_hook_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: tcmalloc::PageHeap::GetNextRange(unsigned long, base::MallocRange*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_int64_instead::FLAGS_tcmalloc_sample_parameter
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/sampler.cc
+        -   symbol_name: tcmalloc::Static::sampled_objects_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: base::internal::new_hooks_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: tcmalloc::Static::stacktrace_allocator_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: MallocExtension::VerifyAllMemory()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
+        -   symbol_name: tcmalloc::ThreadCache::FetchFromCentralCache(unsigned long,
+                unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::PageHeap::GetLargeSpanStats(tcmalloc::PageHeap::LargeSpanStats*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::PageHeap::GetSmallSpanStats(tcmalloc::PageHeap::SmallSpanStats*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: MallocExtension::Register(MallocExtension*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::CentralFreeList::InsertRange(void*, void*, int)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: MallocExtension::~MallocExtension()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: MallocExtension::VerifyArrayNewMemory(void const*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::ThreadCache::set_overall_thread_cache_size(unsigned
+                long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: MallocExtension::MallocMemoryStats(int*, unsigned long*,
+                int*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: MallocExtension::VerifyNewMemory(void const*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: tcmalloc::StackTraceTable::ReadStackTracesAndClear()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        -   symbol_name: tcmalloc::ThreadCache::GetSamplePeriod()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::StackTraceTable::StackTraceTable()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+        -   symbol_name: TCMalloc_Printer::printf(char const*, ...)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::ThreadCache::InitModule()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::ThreadCache::CreateCacheIfNecessary()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: MallocHook::InvokeNewHookSlow(void const*, unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+    -   file_name: src/third_party/gperftools-2.0/src/tcmalloc_guard.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/third_party/valgrind.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/thread_cache.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
+        - src/third_party/gperftools-2.0/src/common.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
+        - src/third_party/gperftools-2.0/src/stack_trace_table.h
+        - src/third_party/gperftools-2.0/src/pagemap.h
+        - src/third_party/gperftools-2.0/src/maybe_threads.h
+        - src/third_party/gperftools-2.0/src/static_vars.h
+        - /usr/bin/g++
+        - src/third_party/gperftools-2.0/src/base/thread_annotations.h
+        - src/third_party/gperftools-2.0/src/windows/mingw.h
+        - src/third_party/gperftools-2.0/src/base/spinlock.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
+        - src/third_party/gperftools-2.0/src/page_heap_allocator.h
+        - src/third_party/gperftools-2.0/src/windows/port.h
+        - src/third_party/gperftools-2.0/src/config-10gen-macos.h
+        - src/third_party/gperftools-2.0/src/span.h
+        - src/third_party/gperftools-2.0/src/internal_logging.h
+        - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
+        - src/third_party/gperftools-2.0/src/central_freelist.h
+        - src/third_party/gperftools-2.0/src/packed-cache-inl.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
+        - src/third_party/gperftools-2.0/src/config-10gen-linux.h
+        - src/third_party/gperftools-2.0/src/linked_list.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
+        - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
+        - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
+        - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
+        - src/third_party/gperftools-2.0/src/config.h
+        - src/third_party/gperftools-2.0/src/base/atomicops.h
+        - src/third_party/gperftools-2.0/src/thread_cache.h
+        - src/third_party/gperftools-2.0/src/page_heap.h
+        - src/third_party/gperftools-2.0/src/sampler.h
+        - src/third_party/gperftools-2.0/src/base/basictypes.h
+        - src/third_party/gperftools-2.0/src/base/commandlineflags.h
+        - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
+        file_interface:
+        -   symbol_name: tcmalloc::ThreadCache::overall_thread_cache_size_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::InitTSD()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::GetThreadStats(unsigned long long*,
+                unsigned long long*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::set_overall_thread_cache_size(unsigned
+                long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::tsd_inited_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::threadcache_allocator
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::Scavenge()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::heap_key_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::GetSamplePeriod()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::ListTooLong(tcmalloc::ThreadCache::FreeList*,
+                unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::FetchFromCentralCache(unsigned long,
+                unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::BecomeIdle()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::CreateCacheIfNecessary()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::InitModule()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        file_dependencies:
+        -   symbol_name: tcmalloc::Static::sizemap_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::central_cache_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: tcmalloc::Static::InitStaticVars()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: perftools_pthread_getspecific(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::CentralFreeList::RemoveRange(void**, void**, int)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: perftools_pthread_key_create(unsigned long*, void (*)(void*))
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+        -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
+                tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/internal_logging.cc
+        -   symbol_name: tcmalloc::CentralFreeList::InsertRange(void*, void*, int)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+        -   symbol_name: perftools_pthread_setspecific(unsigned long, void*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/maybe_threads.cc
+    -   file_name: src/third_party/gperftools-2.0/src/thread_cache.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/windows/mingw.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/gperftools-2.0/src/windows/port.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []

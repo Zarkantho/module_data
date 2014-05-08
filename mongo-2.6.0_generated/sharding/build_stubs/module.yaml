@@ -1,0 +1,27 @@
+module_title: Build Stubs
+module_name: build_stubs
+module_description: Stubs not related to sharding but needed to make mongos link
+module_groups:
+-   group_title: Storage Layer Stubs
+    group_description: Some code that is shared between mongos and mongod references
+        symbols in the storage layer, which should not be built into mongos.  You
+        should not care about this file unless you are trying to fix our build dependencies.
+    group_files:
+    - src/mongo/s/mongos_persistence_stubs.cpp
+    group_generated_data:
+    -   file_name: src/mongo/s/mongos_persistence_stubs.cpp
+        file_executables:
+        - mongos
+        file_headers:
+        - /usr/bin/g++
+        file_interface:
+        -   symbol_name: mongo::isJournalingEnabled()
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        -   symbol_name: mongo::getJournalCommitInterval()
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        -   symbol_name: mongo::setJournalCommitInterval(unsigned int)
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        file_dependencies: []

@@ -1,0 +1,267 @@
+module_title: Snappy
+module_name: snappy
+module_description: Third Party - Snappy compression library
+module_groups:
+-   group_title: Snappy Compression Library
+    group_description: Third Party - Snappy compression library
+    group_files:
+    - src/third_party/shim_snappy.cpp
+    - src/third_party/snappy/config.h
+    - src/third_party/snappy/snappy-internal.h
+    - src/third_party/snappy/snappy-sinksource.cc
+    - src/third_party/snappy/snappy-sinksource.h
+    - src/third_party/snappy/snappy-stubs-internal.h
+    - src/third_party/snappy/snappy-stubs-public.h
+    - src/third_party/snappy/snappy.cc
+    - src/third_party/snappy/snappy.h
+    group_generated_data:
+    -   file_name: src/third_party/shim_snappy.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - /usr/bin/g++
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/config.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy-internal.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy-sinksource.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/snappy/snappy-sinksource.h
+        - /usr/bin/g++
+        file_interface:
+        -   symbol_name: vtable for snappy::UncheckedByteArraySink
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
+        -   symbol_name: snappy::ByteArraySource::~ByteArraySource()
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
+        -   symbol_name: vtable for snappy::ByteArraySource
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
+        -   symbol_name: snappy::UncheckedByteArraySink::~UncheckedByteArraySink()
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy-sinksource.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy-stubs-internal.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy-stubs-public.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
+    -   file_name: src/third_party/snappy/snappy.cc
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/third_party/snappy/config.h
+        - src/third_party/snappy/snappy.h
+        - src/third_party/snappy/snappy-internal.h
+        - src/third_party/snappy/snappy-sinksource.h
+        - src/third_party/snappy/snappy-stubs-public.h
+        - src/third_party/snappy/snappy-stubs-internal.h
+        - /usr/bin/g++
+        file_interface:
+        -   symbol_name: snappy::MaxCompressedLength(unsigned long)
+            symbol_uses:
+            - src/mongo/util/compress.cpp
+        -   symbol_name: snappy::Compress(char const*, unsigned long, std::string*)
+            symbol_uses:
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/util/compress.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+        -   symbol_name: snappy::RawCompress(char const*, unsigned long, char*, unsigned
+                long*)
+            symbol_uses:
+            - src/mongo/util/compress.cpp
+        -   symbol_name: snappy::GetUncompressedLength(char const*, unsigned long,
+                unsigned long*)
+            symbol_uses:
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+        -   symbol_name: snappy::Uncompress(char const*, unsigned long, std::string*)
+            symbol_uses:
+            - src/mongo/util/compress.cpp
+        -   symbol_name: snappy::RawUncompress(char const*, unsigned long, char*)
+            symbol_uses:
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+        file_dependencies:
+        -   symbol_name: vtable for snappy::UncheckedByteArraySink
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
+        -   symbol_name: snappy::ByteArraySource::~ByteArraySource()
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
+        -   symbol_name: vtable for snappy::ByteArraySource
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
+        -   symbol_name: snappy::UncheckedByteArraySink::~UncheckedByteArraySink()
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
+    -   file_name: src/third_party/snappy/snappy.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []

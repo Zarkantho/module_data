@@ -1,0 +1,76 @@
+module_title: Authentication Utilities
+module_name: authentication_utilities
+module_description: Utilities used for authentication
+module_groups:
+-   group_title: Password Digest
+    group_description: Securely hash the password so that it is not sent or stored
+        in plaintext
+    group_files:
+    - src/mongo/util/password_digest.cpp
+    - src/mongo/util/password_digest.h
+    group_generated_data:
+    -   file_name: src/mongo/util/password_digest.cpp
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers:
+        - src/mongo/base/string_data-inl.h
+        - src/mongo/platform/windows_basic.h
+        - src/mongo/util/password_digest.h
+        - src/mongo/base/string_data.h
+        - src/mongo/util/md5.h
+        - src/mongo/platform/basic.h
+        - /usr/bin/g++
+        - src/mongo/util/md5.hpp
+        file_interface:
+        -   symbol_name: mongo::createPasswordDigest(mongo::StringData const&, mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/auth/security_key.cpp
+            - src/mongo/db/auth/user_management_commands_parser.cpp
+        file_dependencies:
+        -   symbol_name: _md5_init
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+        -   symbol_name: _md5_finish
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+        -   symbol_name: _md5_append
+            symbol_sources:
+            - src/mongo/util/md5.cpp
+    -   file_name: src/mongo/util/password_digest.h
+        file_executables:
+        - mongotop
+        - mongod
+        - perftest
+        - mongoperf
+        - mongosniff
+        - mongodump
+        - mongobridge
+        - mongofiles
+        - bsondump
+        - mongoimport
+        - mongos
+        - mongooplog
+        - test
+        - mongoexport
+        - mongostat
+        - mongorestore
+        file_headers: []
+        file_interface: []
+        file_dependencies: []
