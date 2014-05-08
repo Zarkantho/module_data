@@ -3858,13 +3858,14 @@
     system_description: 'Query execution framework.  Handles query parsing, optimization, and execution.
 
     TODO: High level description of the phases of query execution.'
+    system_modules:
     -   module_title: Query System Commands
         module_name: query_system_commands
         module_description: 'Database commands specifically for interacting with the query system.'
         module_groups:
         -   group_title: Mongod Query System Commands
-            group_description: Query system commands for mongod.  They allow for some runtime
-            configuration of the query system.
+            group_description: 'Query system commands for mongod.  They allow for some runtime
+            configuration of the query system.'
             group_files:
             - src/mongo/db/commands/index_filter_commands.cpp
             - src/mongo/db/commands/index_filter_commands.h
@@ -3904,9 +3905,9 @@
         module_description: 'Old query code that is gradually being phased out.'
         module_groups:
         -   group_title: 'Legacy Query Utilities'
-            group_description: Legacy utilities for managing queries. Has utilities like range
+            group_description: 'Legacy utilities for managing queries. Has utilities like range
             intersection and application of skip and limit. These are allllmost dead. The
-            functionality should be replaced by the new matcher, expressions, and query system.
+            functionality should be replaced by the new matcher, expressions, and query system.'
             group_files:
             - src/mongo/db/queryutil-inl.h
             - src/mongo/db/queryutil.cpp
@@ -3917,6 +3918,7 @@
         that there may be other things in the query system that are used elsewhere, but this is
         where query operations start.  For example, another query system entry point that may not be
         here is the update code, which also directly interacts with the query system itself.'
+        module_groups:
         -   group_title: 'Find and getMore Entry Point'
             group_description: 'Top level entry point for find and getMore operations.  Essentially
             a bunch of glue that connects all the different pieces of the query system together.'
@@ -3962,10 +3964,10 @@
             - src/mongo/db/query/parsed_projection.h
             - src/mongo/db/query/parsed_projection_test.cpp
         -   group_title: Query Expression Parser
-            group_description: Matcher expressions. The point of all of this is to take a query
+            group_description: 'Matcher expressions. The point of all of this is to take a query
             string and turn it into a structured set of classes that represents a parsed query.
             These classes can be used to efficiently test if a document matches the original
-            expression.
+            expression.'
             group_files:
             - src/mongo/db/matcher/expression.cpp
             - src/mongo/db/matcher/expression.h
