@@ -9,8 +9,11 @@ TODO: auditing description
 
 ### [Authorization](authorization)
 Authorization is the process of determining what a user is allowed to do in the system.  The five main entities in our authorization system are Users, Resources, Actions, Privileges, and Roles.
+
 1. A User is the basic entity that operates on the system. 2. A Resource is something that the system provides that can be acted on by a User. 3. An Action is something that a User can do to a Resource. 4. A Privilege is a set of Actions that can performed on a given Resource. 5. A Role is a set of Priviliges.
+
 Users can be assigned Roles and Privileges, which describe what the user is allowed to do.
+
 Note that some of this code, such as the code to access the User data, is shared by the Authentication module.
 
 ### [Authentication](authentication)

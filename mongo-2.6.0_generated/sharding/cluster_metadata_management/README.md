@@ -19,6 +19,7 @@ Global class that is a point of contact for top level cluster configurations and
 
 ## Database And Collection Configuration
 Contains the sharded configuration of a database and its collections, such as whether sharding is enabled and what the shard key is
+
 This file also has a class for interacting with the config servers, which bizarrely inherits from the class that stores all the metadata for a database.  I am not sure why the inheritance works this way, but it seems like a mistake, especially since the config server connection string gets stored in "\_primary", which is an instance of the "Shard" class.  The separation of work between this class and other classes that interact with the config server does not seem well defined, but the difference between this and the database class is that it manipulates metadata that is relevant to the cluster rather than database specific metadata.
 
 #### Files

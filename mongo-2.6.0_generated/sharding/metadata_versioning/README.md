@@ -6,6 +6,7 @@ Since a sharded cluster is distributed, mongos and mongod both have to cache met
 
 ## Chunk Diff
 Helper class that takes the current state of the configuration matadata for the chunks in a cluster and uses that to determine what query should be used to get only what has changed rather than releading all the chunk data.
+
 It does this by using the latest version that has been seen and makes a query that does not return anything lower than that version.
 
 #### Files

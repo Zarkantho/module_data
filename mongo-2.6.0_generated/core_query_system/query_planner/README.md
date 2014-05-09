@@ -1,6 +1,8 @@
 # Query Planner
 This is the place where we try to make decisions that optimize query execution.  We do both static and dynamic optimization.
+
 The static optimization involves using information we have independendently of the actual execution, such as whether a query can use an index, or whether a query can be satisfied entirely by the index keys.
+
 The dynamic optimization involves using information about the actual execution of the query to determine what solution to use, which is done by executing multiple possible solutions and caching the best one.
 
 

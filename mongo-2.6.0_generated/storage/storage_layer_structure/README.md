@@ -320,8 +320,11 @@ Contains various commands to copy entire collections and databases, as well as t
 
 ## Legacy Instance File
 One of the very hairy, very old parts of the server.  Contains code for the DBDirectClient, which is an implementation of the "DBClientBase" class in the client driver. The DBDirectClient has the same interface as the client driver, except that instead of connecting over the network it is just doing operations on the local server behind the scenes.
+
 This also has code for the "BSONElementManipulator which is what allows us to do in place updates in the old code. It appears now that it is only used in updating the "expireAfterSeconds" field for a document in a TTL index.
+
 Also have random things like "getDatabaseNames" which just iteratest the db directory getting all the names of the files there. Also has the version of "inShutdown" and "dbexit" for mongod.
+
 Unfortunately, it also has the code to handle decoding incoming network requests on mongod.
 
 #### Files
@@ -336,6 +339,7 @@ Unfortunately, it also has the code to handle decoding incoming network requests
 
 ## Legacy Pdfile File
 This is another really hairy, really old legacy file.
+
 A long time ago, in a galaxy far far away, when MongoDB was 10gen and providing a platform as a service, the persistence layer was called "p".  I have heard that the way to start the database in those days was to just type "p" on the command line.  While I cannot confirm this, it is an amusing story and fits with our past naming convention. That also explains why this is "pdfile" for "P Data File".  It contains various old functions for interacting directly with the storage layer that should soon die a horrible death.
 
 #### Files

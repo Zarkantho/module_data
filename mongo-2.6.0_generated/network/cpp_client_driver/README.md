@@ -46,6 +46,7 @@ Stubs to initialize the client driver when it is used standalone. Calls MONGO\_I
 
 ## Cpp Driver Core
 The Core C++ Client Driver Library
+
 TODO: Split into smaller components and document
 
 #### Files

@@ -19,9 +19,13 @@ Top level entry point into the mongod concurrency system.
 
 ## Lock State
 State of all the locks that this client/thread/operation has aquired.  There is one LockState per thread stored in thread local storage.
+
 The three lock types are:
+
 1. Global 2. DB Level - called "other" in the code 3. Special DB Level - called "nestable" in the code
+
 The "Special DB Level" locks are for the "admin" and "local" databases.  The idea is that sometimes we want to do something to one of those databases (like inserting into the oplog), but we want still want to keep the lock on our original database (for example, to preserve our ordering guarantees in relation to the oplog).  This is why the lock is called "nestable".
+
 All the DB level locks are "Reader Writer Locks", and the global lock is a "Quad Lock".
 
 #### Files
@@ -50,8 +54,11 @@ Implementation of a reader writer lock primitive.
 
 ## Quad Locks
 Implmentation of a lock with intents and an upgradeable lock state.
+
 See http://technet.microsoft.com/en-us/library/aa213039(v=SQL.80).aspx for a general discussion of locking.
+
 The mapping between the names of the states are as follows:
+
 <state in MongoDB Quad Lock> = <state in SQL Server Lock> r = IS w = IX R = S W = X X = U
 
 #### Files

@@ -6,6 +6,7 @@ The core network stack upon which everything that interacts with the network in 
 
 ## Base Wire Protocol Format
 The format of the packets in our wire protocol upon which everything else is built.  See http://docs.mongodb.org/meta-driver/latest/legacy/mongodb-wire-protocol/ for the concepts behind it.  WARNING: The names in the server code do not match the names in the documentation.
+
 The Message class has the lowest level buffer management, while the DbMessage class is a wrapper on top of it that helps for dealing with the different types of operations.
 
 #### Files
@@ -87,7 +88,9 @@ Code to poll a socket to check if it is still alive.  Useful for connection pool
 
 ## Message Server
 Main entry point into the MongoDB network stack.  The responsibility of this class is to listen on a port and interface, and make callbacks to a "handler" object.  The port, interface, and "handler" object are all passed into the constructor.
+
 Note that mongod and mongos have different "handler" classes.  Currently these are defined in db.cpp and server.cpp, the same files that have the "main()" functions for mongod and mongos.
+
 Note also that the classes that this is built on work with "Message" objects, which is the basic unit in the wire protocol, and what the name of this class is based on.
 
 #### Files

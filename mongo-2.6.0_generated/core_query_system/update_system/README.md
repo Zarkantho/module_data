@@ -139,6 +139,7 @@ Interface to keep tabs on the state of the database that might be relevent to th
 
 ## Dotted Field Utilities
 Utilites for managing dotted field names such as "a.b.c"
+
 TODO: Split this up and put all shared query utilities in the same module
 
 #### Files

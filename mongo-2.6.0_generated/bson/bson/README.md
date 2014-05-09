@@ -145,6 +145,7 @@ C++ representation of the BSON ObjectId type.
 
 ## BSON Timestamp
 C++ representation of the BSON Timestamp type.
+
 Note that the relationship between this class, the BSON Timestamp, the BSON Date and the Date\_t class, which is supposed to be the C++ equivalent of a BSON date, is rather convoluted and incestuous, so be aware that things you change here may affect how dates are handled, and vice versa.
 
 #### Files

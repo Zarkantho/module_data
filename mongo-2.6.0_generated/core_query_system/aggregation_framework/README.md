@@ -1,6 +1,8 @@
 # Aggregation Framework
 This is the aggregation framework for MongoDB.  It handles code to perform aggregation on a single instance as well as on a sharded cluster.
+
 The basic operation for sharded aggregation is that the mongos does the coordination of the aggregation and makes decisions on what can be done distributed (mapped) and what must be done centralized (reduced/merged).  It then sends out the necessary aggregation commands to the appropriate places.  The distributed step is handled by the source shards that have the inital data, and the merger step is handled by the primary shard for that database.
+
 There are various optimizations that are done as part of this process.  They are split into two categories:  Local, which rewrites the pipeline for more optimal performance on a single node, and Sharded, which rewrites and spits the pipeline for more optimal performance on the level of the whole cluster.  To see these optimizations in action, you can run "db.foo.aggregate([...], { explain : true }) from the mongo shell.  This will show how the pipeline was rewritten throughout the course of the operation.
 
 

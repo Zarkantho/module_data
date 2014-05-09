@@ -1,7 +1,10 @@
 # Database Commands
 In the base MongoDB wire protocol, each packet has an "opCode" field that specifies what kind of operation it is.  These are things like "OP\_GET\_MORE", "OP\_QUERY", "OP\_INSERT", etc.
+
 However, there is no "OP\_COMMAND" or anything that looks like it.  What are "Commands" then? What happens when you run "db.serverStatus()"?
+
 Well, it turns out that commands are simply queries against the special reserved "$cmd" collection.  What this means is that "db.serverStatus()" calls "db.runCommand({serverStatus:1})" which then calls "db.$cmd.findOne({serverStatus:1})".
+
 See TODO: wiki on Commands for more details.
 
 
@@ -34,6 +37,7 @@ A bunch of commands for mongod. However, this ALSO has the definition of Command
 
 ## Uncategorized Commands
 Commands (run using db.$cmd.findOne(...))
+
 TODO: Categorize and document these separately
 
 #### Files
