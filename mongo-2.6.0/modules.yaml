@@ -5658,11 +5658,19 @@
             - src/mongo/db/catalog/database.cpp
             - src/mongo/db/catalog/database.h
         -   group_title: Namespace Details
-            group_description: Class to manage the disk format of the ".ns" files
+            group_description: Class to manage the disk format of an entry for a single collection
+                in the ".ns" files
             group_files:
             - src/mongo/db/structure/catalog/namespace_details-inl.h
             - src/mongo/db/structure/catalog/namespace_details.cpp
             - src/mongo/db/structure/catalog/namespace_details.h
+        -   group_title: Namespace Index
+            group_description: Manages the disk format for the ".ns" files, including adding the
+                metadata for a new namespace or removing metadata for a deleted namespace.  Provides
+                a way to access the Namespace Details for a single namespace
+            group_files:
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/structure/catalog/namespace_index.h
         -   group_title: Collection Class
             group_description: Class to manage a single collection, including collection
                 data and collection metadata.
@@ -5711,12 +5719,6 @@
             group_files:
             - src/mongo/db/structure/catalog/index_details.cpp
             - src/mongo/db/structure/catalog/index_details.h
-        -   group_title: Namespace Index
-            group_description: Manages the ".ns" files, including adding the metadata
-                for a new namespace or removing metadata for a deleted namespace
-            group_files:
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-            - src/mongo/db/structure/catalog/namespace_index.h
         -   group_title: Collection Compact
             group_description: 'Contains the code that actually does the work of compacting
                 a collection.  TODO: put this near the actual compact command'
