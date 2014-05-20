@@ -1,7 +1,9 @@
 # MongoDB Server Codebase Map
 Categorization and documentation of the MongoDB server codebase.  This is a work in progress, and is by no means comprehensive.  Feel free to submit pull requests or suggestions.
 
-NOTE:  This README and entire subtree is automatically generated.## [Third Party](third\_party)
+NOTE:  This README and entire subtree is automatically generated.
+
+## [Third Party](third\_party)
 Third Party systems used in MongoDB
 
 ## [Tests](tests)
