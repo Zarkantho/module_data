@@ -75,7 +75,7 @@ Class to manage a single database.  This currently contains the code to manage d
 -------------
 
 ## Namespace Details
-Class to manage the disk format of the ".ns" files
+Class to manage the disk format of an entry for a single collection in the ".ns" files
 
 #### Files
 - src/mongo/db/structure/catalog/namespace\_details-inl.h   (mongod, tools, mongos)
@@ -88,6 +88,19 @@ Class to manage the disk format of the ".ns" files
 
 -------------
 
+## Namespace Index
+Manages the disk format for the ".ns" files, including adding the metadata for a new namespace or removing metadata for a deleted namespace.  Provides a way to access the Namespace Details for a single namespace
+
+#### Files
+- src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
+- src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
+
+#### [Interface](interface/6)
+
+#### [Dependencies](dependencies/6)
+
+-------------
+
 ## Collection Class
 Class to manage a single collection, including collection data and collection metadata.
 
@@ -95,9 +108,9 @@ Class to manage a single collection, including collection data and collection me
 - src/mongo/db/catalog/collection.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection.h   (mongod, tools, mongos)
 
-#### [Interface](interface/6)
+#### [Interface](interface/7)
 
-#### [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/7)
 
 -------------
 
@@ -108,9 +121,9 @@ Contains methods to update and access non persistent collection state, such as t
 - src/mongo/db/catalog/collection\_info\_cache.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection\_info\_cache.h   (mongod, tools, mongos)
 
-#### [Interface](interface/7)
+#### [Interface](interface/8)
 
-#### [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/8)
 
 -------------
 
@@ -121,9 +134,9 @@ Keeps track of cursors and query runners for timeout and invalidation purposes. 
 - src/mongo/db/catalog/collection\_cursor\_cache.cpp   (mongod, tools)
 - src/mongo/db/catalog/collection\_cursor\_cache.h   (mongod, tools, mongos)
 
-#### [Interface](interface/8)
+#### [Interface](interface/9)
 
-#### [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/9)
 
 -------------
 
@@ -134,9 +147,9 @@ Free function to create an index in the foreground.  TODO: Find all the ways an 
 - src/mongo/db/catalog/index\_create.cpp   (mongod, tools)
 - src/mongo/db/catalog/index\_create.h   (mongod, tools)
 
-#### [Interface](interface/9)
+#### [Interface](interface/10)
 
-#### [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/10)
 
 -------------
 
@@ -147,9 +160,9 @@ Command line options for the storage system.  This should only be in binaries th
 - src/mongo/db/storage\_options.cpp   (mongod, tools)
 - src/mongo/db/storage\_options.h   (mongod, tools, mongos)
 
-#### [Interface](interface/10)
+#### [Interface](interface/11)
 
-#### [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/11)
 
 -------------
 
@@ -159,9 +172,9 @@ Contains code to do low level storage management of a capped collection, such as
 #### Files
 - src/mongo/db/structure/catalog/cap.cpp   (mongod, tools)
 
-#### [Interface](interface/11)
+#### [Interface](interface/12)
 
-#### [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/12)
 
 -------------
 
@@ -171,9 +184,9 @@ Fixed size hash table that is appropriate for managing memory that is persisted 
 #### Files
 - src/mongo/db/structure/catalog/hashtab.h   (mongod, tools, mongos)
 
-#### [Interface](interface/12)
+#### [Interface](interface/13)
 
-#### [Dependencies](dependencies/12)
+#### [Dependencies](dependencies/13)
 
 -------------
 
@@ -183,19 +196,6 @@ On disk format of index metadata
 #### Files
 - src/mongo/db/structure/catalog/index\_details.cpp   (mongod, tools)
 - src/mongo/db/structure/catalog/index\_details.h   (mongod, tools, mongos)
-
-#### [Interface](interface/13)
-
-#### [Dependencies](dependencies/13)
-
--------------
-
-## Namespace Index
-Manages the ".ns" files, including adding the metadata for a new namespace or removing metadata for a deleted namespace
-
-#### Files
-- src/mongo/db/structure/catalog/namespace\_index.cpp   (mongod, tools)
-- src/mongo/db/structure/catalog/namespace\_index.h   (mongod, tools, mongos)
 
 #### [Interface](interface/14)
 

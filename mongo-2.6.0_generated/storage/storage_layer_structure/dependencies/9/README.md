@@ -1,32 +1,32 @@
 
-# Interface for Foreground Index Creation
+# Interface for Collection Cursor Cache
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
-### src/mongo/db/catalog/index\_create.cpp
+### src/mongo/db/catalog/collection\_cursor\_cache.cpp
 
 <div></div>
 
-    mongo::IndexNames::findPluginName(mongo::BSONObj const&)
+    mongo::PseudoRandom::PseudoRandom(long long)
 
 - Provided By:
 
-    - [src/mongo/db/index\_names.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/platform/random.cpp](../../../../utilities/utilities)
 
 <div></div>
 
-    mongo::replAllDead
+    mongo::ClientCursor::kill()
 
 - Provided By:
 
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
+    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
 
-    mongo::LastErrorHolder::get(bool)
+    mongo::StartupTest::StartupTest()
 
 - Provided By:
 
-    - [src/mongo/db/lasterror.cpp](../../../../network/network\_core)
+    - [src/mongo/util/startup\_test.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -38,11 +38,19 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::ErrorCodes::isInterruption(mongo::ErrorCodes::Error)
+    mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/base/error\_codes.cpp](../../../../utilities/base\_utilites)
+    - [src/mongo/db/audit.cpp](../../../../security/auditing)
+
+<div></div>
+
+    mongo::StaticObserver::_destroyingStatics
+
+- Provided By:
+
+    - [src/mongo/util/util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -54,22 +62,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::BackgroundOperation::BackgroundOperation(mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/background.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::theReplSet
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
     mongo::invariantFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -78,51 +70,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::getThreadName()
+    typeinfo for mongo::StartupTest
 
 - Provided By:
 
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::tlogLevel
-
-- Provided By:
-
-    - [src/mongo/util/log.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::ElapsedTracker::ElapsedTracker(int, int)
-
-- Provided By:
-
-    - [src/mongo/util/elapsed\_tracker.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::KillCurrentOp::checkForInterrupt(bool)
-
-- Provided By:
-
-    - [src/mongo/db/kill\_current\_op.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::Status::toString() const
-
-- Provided By:
-
-    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
-
-<div></div>
-
-    mongo::Timer::_countsPerSecond
-
-- Provided By:
-
-    - [src/mongo/util/timer.cpp](../../../../utilities/utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -142,83 +94,19 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    typeinfo for mongo::DBException
+    mongo::PseudoRandom::nextInt32()
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+    - [src/mongo/platform/random.cpp](../../../../utilities/utilities)
 
 <div></div>
 
-    mongo::dur::DurableInterface::_impl
+    mongo::ActionType::killCursors
 
 - Provided By:
 
-    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
-
-<div></div>
-
-    mongo::DBException::convertExceptionCode(int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::inDBRepair
-
-- Provided By:
-
-    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
-
-<div></div>
-
-    mongo::ElapsedTracker::intervalHasElapsed()
-
-- Provided By:
-
-    - [src/mongo/util/elapsed\_tracker.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::replSettings
-
-- Provided By:
-
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
-    mongo::ProgressMeter::hit(int)
-
-- Provided By:
-
-    - [src/mongo/util/progress\_meter.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::WorkingSet::WorkingSet()
-
-- Provided By:
-
-    - [src/mongo/db/exec/working\_set.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::logOp(char const*, char const*, mongo::BSONObj const&, mongo::BSONObj*, bool*, bool, mongo::BSONObj const*)
-
-- Provided By:
-
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -230,11 +118,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::logger::globalLogManager()
+    mongo::fassertFailed(int)
 
 - Provided By:
 
-    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -246,7 +134,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::Lock::isWriteLocked(mongo::StringData const&)
+    mongo::Lock::DBRead::~DBRead()
 
 - Provided By:
 
@@ -254,55 +142,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::replSet
-
-- Provided By:
-
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
-    mongo::audit::logCreateIndex(mongo::ClientBasic*, mongo::BSONObj const*, mongo::StringData const&, mongo::StringData const&)
-
-- Provided By:
-
-    - [src/mongo/db/audit.cpp](../../../../security/auditing)
-
-<div></div>
-
-    mongo::lastError
-
-- Provided By:
-
-    - [src/mongo/db/lasterror.cpp](../../../../network/network\_core)
-
-<div></div>
-
-    mongo::EOFRunner::EOFRunner(mongo::CanonicalQuery*, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::Lock::nested()
-
-- Provided By:
-
-    - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
-
-<div></div>
-
-    mongo::ClientCursor::suggestYieldMicros()
+    mongo::ClientCursor::~ClientCursor()
 
 - Provided By:
 
@@ -310,11 +150,19 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::CollectionScan::CollectionScan(mongo::CollectionScanParams const&, mongo::WorkingSet*, mongo::MatchExpression const*)
+    mongo::Lock::DBRead::DBRead(mongo::StringData const&)
 
 - Provided By:
 
-    - [src/mongo/db/exec/collection\_scan.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
+
+<div></div>
+
+    mongo::Client::Context::~Context()
+
+- Provided By:
+
+    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -335,79 +183,58 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    boost::this_thread::disable_interruption::~disable_interruption()
+    mongo::ClientBasic::getAuthorizationSession() const
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
+    - [src/mongo/db/client\_basic.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
 
-    std::string mongo::integerToHex<int>(int)
+    mongo::StartupTest::~StartupTest()
 
 - Provided By:
 
-    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)
+    - [src/mongo/util/startup\_test.cpp](../../../../utilities/utilities)
 
 <div></div>
 
-    mongo::CurOp::setMessage(char const*, std::string, unsigned long long, int)
+    mongo::inShutdown()
 
 - Provided By:
 
-    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+    mongo::AuthorizationSession::isAuthorizedForActionsOnNamespace(mongo::NamespaceString const&, mongo::ActionType)
 
 - Provided By:
 
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+    - [src/mongo/db/auth/authorization\_session.cpp](../../../../security/authorization)
 
 <div></div>
 
-    mongo::curTimeMicros64()
+    mongo::SecureRandom::create()
 
 - Provided By:
 
-    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
+    - [src/mongo/platform/random.cpp](../../../../utilities/utilities)
 
 <div></div>
 
-    boost::this_thread::interruption_point()
+    mongo::Client::Context::Context(std::string const&, mongo::Database*)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
+    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
 
-    mongo::ElapsedTracker::resetLastTime()
-
-- Provided By:
-
-    - [src/mongo/util/elapsed\_tracker.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    boost::this_thread::disable_interruption::disable_interruption()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
-
-<div></div>
-
-    mongo::InternalRunner::InternalRunner(mongo::Collection const*, mongo::PlanStage*, mongo::WorkingSet*)
-
-- Provided By:
-
-    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::ClientCursor::staticYield(int, mongo::StringData const&, mongo::Record const*)
+    mongo::ClientCursor::shouldTimeout(unsigned int)
 
 - Provided By:
 
@@ -415,8 +242,8 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    boost::detail::get_current_thread_data()
+    mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
 
 - Provided By:
 
-    - [src/third\_party/boost/libs/thread/src/pthread/thread.cpp](../../../../third\_party/boost\_thread)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
